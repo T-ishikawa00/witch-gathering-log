@@ -1,0 +1,439 @@
+{
+  "boundary": "Shop-list/resource readiness fixture; boss win is ASSUMED; full 24-slot strengthening is not a gameplay gate; natural gear and salvage excluded.",
+  "stages": [
+    {
+      "index": 0,
+      "available_gate": "G_START",
+      "assumed_clear_gate": "G_R01_A",
+      "xp_anchor_level": 6,
+      "operations": [],
+      "materials": {},
+      "dust": 0
+    },
+    {
+      "index": 1,
+      "available_gate": "G_R01_A",
+      "assumed_clear_gate": "G_R01_B",
+      "xp_anchor_level": 12,
+      "operations": [
+        {
+          "id": "RC_EQ_BODY_01",
+          "count": 3
+        },
+        {
+          "id": "RC_EQ_HAND_01",
+          "count": 3
+        },
+        {
+          "id": "RC_EQ_FEET_01",
+          "count": 3
+        },
+        {
+          "id": "RC_EQ_RING_01",
+          "count": 3
+        },
+        {
+          "id": "RC_EQ_AMU_01",
+          "count": 4
+        },
+        {
+          "id": "RC_EQ_F_BODY_01",
+          "count": 1
+        },
+        {
+          "id": "RC_EQ_F_HAND_01",
+          "count": 1
+        },
+        {
+          "id": "RC_EQ_F_FEET_01",
+          "count": 1
+        },
+        {
+          "id": "RC_EQ_F_RING_01",
+          "count": 1
+        },
+        {
+          "id": "ENHANCE_1",
+          "count": 24
+        },
+        {
+          "id": "ENHANCE_2",
+          "count": 24
+        },
+        {
+          "id": "ENHANCE_3",
+          "count": 24
+        }
+      ],
+      "materials": {
+        "M_R01_E2": 96,
+        "M_R01_G3": 128,
+        "M_R01_G4": 64,
+        "M_R01_E3": 64,
+        "M_R01_G1": 64,
+        "M_R01_E1": 32,
+        "M_R01_G2": 32
+      },
+      "dust": 720
+    },
+    {
+      "index": 2,
+      "available_gate": "G_R01_B",
+      "assumed_clear_gate": "G_R02_A",
+      "xp_anchor_level": 18,
+      "operations": [
+        {
+          "id": "RS_THEORY_2",
+          "count": 1
+        },
+        {
+          "id": "AW_C_WITCH_1",
+          "count": 1
+        },
+        {
+          "id": "AW_C_APPRENTICE_1",
+          "count": 1
+        },
+        {
+          "id": "AW_C_SMITH_1",
+          "count": 1
+        },
+        {
+          "id": "AW_C_FAMILIAR_1",
+          "count": 1
+        },
+        {
+          "id": "ATTUNE_1_2",
+          "count": 12
+        },
+        {
+          "id": "ENHANCE_4",
+          "count": 12
+        },
+        {
+          "id": "ENHANCE_5",
+          "count": 12
+        },
+        {
+          "id": "QUALITY_Q0_Q1",
+          "count": 3
+        },
+        {
+          "id": "QUALITY_Q1_Q2",
+          "count": 3
+        }
+      ],
+      "materials": {
+        "M_R01_G2": 42,
+        "M_R01_G4": 42,
+        "M_R01_BB": 4,
+        "M_R02_G1": 72,
+        "M_R02_G2": 72
+      },
+      "dust": 1380
+    },
+    {
+      "index": 3,
+      "available_gate": "G_R02_A",
+      "assumed_clear_gate": "G_R02_B",
+      "xp_anchor_level": 24,
+      "operations": [
+        {
+          "id": "ATTUNE_1_2",
+          "count": 12
+        },
+        {
+          "id": "ENHANCE_4",
+          "count": 12
+        },
+        {
+          "id": "ENHANCE_5",
+          "count": 12
+        },
+        {
+          "id": "RC_EQ_W_P1",
+          "count": 1
+        },
+        {
+          "id": "RC_EQ_F_02",
+          "count": 1
+        },
+        {
+          "id": "RC_EQ_BODY_02",
+          "count": 3
+        },
+        {
+          "id": "RC_EQ_AMU_02",
+          "count": 4
+        }
+      ],
+      "materials": {
+        "M_R02_G1": 120,
+        "M_R02_G2": 136,
+        "M_R02_E1": 32,
+        "M_R02_G4": 96,
+        "M_R02_BA": 1,
+        "M_R02_E4": 16,
+        "M_R02_E2": 48,
+        "M_R02_G3": 48,
+        "M_R02_E3": 64
+      },
+      "dust": 1260
+    },
+    {
+      "index": 4,
+      "available_gate": "G_R02_B",
+      "assumed_clear_gate": "G_R03_A",
+      "xp_anchor_level": 30,
+      "operations": [
+        {
+          "id": "RS_THEORY_3",
+          "count": 1
+        },
+        {
+          "id": "ATTUNE_2_3",
+          "count": 12
+        },
+        {
+          "id": "RC_EQ_A_02",
+          "count": 1
+        },
+        {
+          "id": "ENHANCE_6",
+          "count": 12
+        },
+        {
+          "id": "ENHANCE_7",
+          "count": 12
+        }
+      ],
+      "materials": {
+        "M_R02_G2": 12,
+        "M_R02_G3": 12,
+        "M_R03_G1": 96,
+        "M_R03_G2": 96,
+        "M_R02_G1": 20,
+        "M_R02_E3": 20,
+        "M_R02_BB": 1
+      },
+      "dust": 2220
+    },
+    {
+      "index": 5,
+      "available_gate": "G_R03_A",
+      "assumed_clear_gate": "G_R03_B",
+      "xp_anchor_level": 36,
+      "operations": [
+        {
+          "id": "ATTUNE_2_3",
+          "count": 12
+        },
+        {
+          "id": "ENHANCE_6",
+          "count": 12
+        },
+        {
+          "id": "ENHANCE_7",
+          "count": 12
+        },
+        {
+          "id": "RC_EQ_HAND_02",
+          "count": 3
+        },
+        {
+          "id": "RC_EQ_FEET_02",
+          "count": 3
+        },
+        {
+          "id": "RC_EQ_RING_02",
+          "count": 3
+        }
+      ],
+      "materials": {
+        "M_R03_G1": 156,
+        "M_R03_G2": 216,
+        "M_R03_G4": 120,
+        "M_R03_E1": 60,
+        "M_R03_E3": 60,
+        "M_R03_BA": 3,
+        "M_R03_E4": 60,
+        "M_R03_E2": 60
+      },
+      "dust": 2220
+    },
+    {
+      "index": 6,
+      "available_gate": "G_R03_B",
+      "assumed_clear_gate": "G_R04_A",
+      "xp_anchor_level": 42,
+      "operations": [
+        {
+          "id": "RS_THEORY_4",
+          "count": 1
+        },
+        {
+          "id": "AW_C_WITCH_2",
+          "count": 1
+        },
+        {
+          "id": "AW_C_APPRENTICE_2",
+          "count": 1
+        },
+        {
+          "id": "AW_C_SMITH_2",
+          "count": 1
+        },
+        {
+          "id": "AW_C_FAMILIAR_2",
+          "count": 1
+        },
+        {
+          "id": "ATTUNE_3_4",
+          "count": 12
+        },
+        {
+          "id": "RC_EQ_S_02",
+          "count": 1
+        },
+        {
+          "id": "ENHANCE_8",
+          "count": 12
+        },
+        {
+          "id": "ENHANCE_9",
+          "count": 12
+        }
+      ],
+      "materials": {
+        "M_R03_G1": 70,
+        "M_R03_G4": 14,
+        "M_R03_BB": 5,
+        "M_R03_G2": 56,
+        "M_R04_G1": 120,
+        "M_R04_G2": 120,
+        "M_R03_G3": 24
+      },
+      "dust": 3420
+    },
+    {
+      "index": 7,
+      "available_gate": "G_R04_A",
+      "assumed_clear_gate": "G_R04_B",
+      "xp_anchor_level": 48,
+      "operations": [
+        {
+          "id": "ATTUNE_3_4",
+          "count": 12
+        },
+        {
+          "id": "ENHANCE_8",
+          "count": 12
+        },
+        {
+          "id": "ENHANCE_9",
+          "count": 12
+        },
+        {
+          "id": "RC_EQ_BODY_03",
+          "count": 3
+        },
+        {
+          "id": "RC_EQ_FEET_03",
+          "count": 3
+        },
+        {
+          "id": "RC_EQ_RING_03",
+          "count": 3
+        }
+      ],
+      "materials": {
+        "M_R04_G1": 192,
+        "M_R04_G2": 192,
+        "M_R04_E1": 72,
+        "M_R04_G3": 144,
+        "M_R04_E3": 72,
+        "M_R04_BA": 3,
+        "M_R04_G4": 72,
+        "M_R04_E4": 72
+      },
+      "dust": 3420
+    },
+    {
+      "index": 8,
+      "available_gate": "G_R04_B",
+      "assumed_clear_gate": "G_R05_A",
+      "xp_anchor_level": 54,
+      "operations": [
+        {
+          "id": "RS_THEORY_5",
+          "count": 1
+        },
+        {
+          "id": "ATTUNE_4_5",
+          "count": 12
+        },
+        {
+          "id": "ENHANCE_10",
+          "count": 12
+        }
+      ],
+      "materials": {
+        "M_R04_G1": 16,
+        "M_R04_G2": 16,
+        "M_R05_G1": 144,
+        "M_R05_G2": 144
+      },
+      "dust": 4200
+    },
+    {
+      "index": 9,
+      "available_gate": "G_R05_A",
+      "assumed_clear_gate": "G_R05_B",
+      "xp_anchor_level": 60,
+      "operations": [
+        {
+          "id": "ATTUNE_4_5",
+          "count": 12
+        },
+        {
+          "id": "ENHANCE_10",
+          "count": 12
+        },
+        {
+          "id": "RC_EQ_W_P2",
+          "count": 1
+        },
+        {
+          "id": "RC_EQ_A_03",
+          "count": 1
+        },
+        {
+          "id": "RC_EQ_S_03",
+          "count": 1
+        },
+        {
+          "id": "RC_EQ_F_03",
+          "count": 1
+        },
+        {
+          "id": "RC_EQ_HAND_03",
+          "count": 3
+        }
+      ],
+      "materials": {
+        "M_R05_G1": 172,
+        "M_R05_G2": 256,
+        "M_R05_E4": 56,
+        "M_R05_BA": 4,
+        "M_R05_E1": 28,
+        "M_R05_G4": 28,
+        "M_R05_E2": 112,
+        "M_R04_G4": 28,
+        "M_R05_E3": 28,
+        "M_R04_E2": 28,
+        "M_R04_E4": 84
+      },
+      "dust": 4200
+    }
+  ]
+}

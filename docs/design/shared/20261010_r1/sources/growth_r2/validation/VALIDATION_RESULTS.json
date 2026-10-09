@@ -1,0 +1,227 @@
+{
+  "scope": "設計データ/純粋数式/装備操作の検査。戦闘・実機・売上を保証しない。",
+  "structural": [
+    {
+      "check": "source_ids_and_names_29",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "source_slots_and_actor_eligibility",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "source_parent_and_gate",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "source_ingredient_edges_preserved",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "original_quantity_null_retained",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "new_ids_do_not_collide",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exact_four_actor_ids",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "no_tactics_or_manual_skills",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "four_skills_each",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "skill_ids_unique",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "no_growth_reset",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "three_awakenings_each",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "all_consumable_references_exist",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "positive_integer_costs",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "materials_available_by_unlock",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "recipe_parent_available",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "evolution_graph_acyclic",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "six_valid_slots_for_each_actor",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "cat_not_allowed_human_boots",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "conditional_drop_weights_sum",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "rarity_not_primary_multiplier",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "stat_growth_positive",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "speed_and_reduction_finite",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "no_reaction_recursion",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "last_awakening_after_final_boss",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "world_no_new_material_id",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "all_numeric_overlays_marked",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "not_battle_engine_or_winrate_proof",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "source_file_sha256_matches",
+      "pass": true
+    }
+  ],
+  "mutation_tests": [
+    {
+      "mutation": "旧世界の素材を勝手に差替え",
+      "detected": true,
+      "failed_checks": [
+        "source_ingredient_edges_preserved",
+        "materials_available_by_unlock"
+      ]
+    },
+    {
+      "mutation": "未来素材を覚醒1へ要求",
+      "detected": true,
+      "failed_checks": [
+        "materials_available_by_unlock"
+      ]
+    },
+    {
+      "mutation": "作戦プリセットの再導入",
+      "detected": true,
+      "failed_checks": [
+        "no_tactics_or_manual_skills"
+      ]
+    },
+    {
+      "mutation": "猫に人用ブーツの適格権",
+      "detected": true,
+      "failed_checks": [
+        "source_slots_and_actor_eligibility",
+        "cat_not_allowed_human_boots"
+      ]
+    },
+    {
+      "mutation": "0個の素材コスト",
+      "detected": true,
+      "failed_checks": [
+        "positive_integer_costs"
+      ]
+    },
+    {
+      "mutation": "進化循環",
+      "detected": true,
+      "failed_checks": [
+        "source_parent_and_gate",
+        "evolution_graph_acyclic"
+      ]
+    },
+    {
+      "mutation": "クールダウン100%短縮",
+      "detected": true,
+      "failed_checks": [
+        "speed_and_reduction_finite"
+      ]
+    },
+    {
+      "mutation": "未定義素材ID",
+      "detected": true,
+      "failed_checks": [
+        "all_consumable_references_exist",
+        "materials_available_by_unlock",
+        "world_no_new_material_id"
+      ]
+    }
+  ],
+  "numeric_sweep": {
+    "stat_cases": 9360,
+    "defense_curve_cases": 2004,
+    "failed_cases": [],
+    "label": "数式の有界性・単調性のみ。全組合せが同じ進行段階で装備可能という意味ではない。"
+  },
+  "totals": {
+    "structural_pass": 29,
+    "structural_total": 29,
+    "mutations_detected": 8,
+    "mutations_total": 8
+  },
+  "battle_simulation": "NOT_RUN",
+  "human_playtest": "NOT_RUN",
+  "ios_test": "NOT_RUN"
+}

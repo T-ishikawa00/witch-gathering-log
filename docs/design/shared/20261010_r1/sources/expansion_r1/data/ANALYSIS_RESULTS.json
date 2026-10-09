@@ -1,0 +1,192 @@
+{
+  "status": "LIMITED_SPECIFICATION_TEST_AND_EXACT_ARITHMETIC_NOT_GAME_BALANCE_CERTIFICATION",
+  "invariant_tests": 46,
+  "invariant_result": "PASS",
+  "old_natural_proposal_arithmetic": {
+    "source_status": "Conversation R3 numerical proposal, not re-read from absent R3 data archive and not a combat run",
+    "base_high_rate": 0.01,
+    "natural_hard_pity": 100,
+    "drops_per_active_day": 48,
+    "first_high_expected_draws": 63.39676587267705,
+    "first_high_expected_active_hours": 31.698382936338525,
+    "long_run_high_fraction": 0.015773675300856053,
+    "long_run_highs_per_active_day": 0.7571364144410906
+  },
+  "probability_sensitivity_cases": [
+    {
+      "base_rate_percent": 1,
+      "top_guarantee_limit": 40,
+      "expected_first_top": 33.102824143031945,
+      "long_run_top_fraction": 0.03020890289236839,
+      "p50_first_top": 40,
+      "p90_first_top": 40,
+      "note": "Sensitivity example only. Does not include desired-item pity, actual pool or price."
+    },
+    {
+      "base_rate_percent": 1,
+      "top_guarantee_limit": 60,
+      "expected_first_top": 45.28433576092385,
+      "long_run_top_fraction": 0.022082691138044837,
+      "p50_first_top": 60,
+      "p90_first_top": 60,
+      "note": "Sensitivity example only. Does not include desired-item pity, actual pool or price."
+    },
+    {
+      "base_rate_percent": 1,
+      "top_guarantee_limit": 80,
+      "expected_first_top": 55.24767862361891,
+      "long_run_top_fraction": 0.018100308011357612,
+      "p50_first_top": 69,
+      "p90_first_top": 80,
+      "note": "Sensitivity example only. Does not include desired-item pity, actual pool or price."
+    },
+    {
+      "base_rate_percent": 1,
+      "top_guarantee_limit": 100,
+      "expected_first_top": 63.39676587267705,
+      "long_run_top_fraction": 0.015773675300856053,
+      "p50_first_top": 69,
+      "p90_first_top": 100,
+      "note": "Sensitivity example only. Does not include desired-item pity, actual pool or price."
+    },
+    {
+      "base_rate_percent": 3,
+      "top_guarantee_limit": 40,
+      "expected_first_top": 23.476257086695572,
+      "long_run_top_fraction": 0.04259622802336401,
+      "p50_first_top": 23,
+      "p90_first_top": 40,
+      "note": "Sensitivity example only. Does not include desired-item pity, actual pool or price."
+    },
+    {
+      "base_rate_percent": 3,
+      "top_guarantee_limit": 60,
+      "expected_first_top": 27.973111032614106,
+      "long_run_top_fraction": 0.03574861583447372,
+      "p50_first_top": 23,
+      "p90_first_top": 60,
+      "note": "Sensitivity example only. Does not include desired-item pity, actual pool or price."
+    },
+    {
+      "base_rate_percent": 3,
+      "top_guarantee_limit": 80,
+      "expected_first_top": 30.418474769372423,
+      "long_run_top_fraction": 0.032874758106112345,
+      "p50_first_top": 23,
+      "p90_first_top": 76,
+      "note": "Sensitivity example only. Does not include desired-item pity, actual pool or price."
+    },
+    {
+      "base_rate_percent": 3,
+      "top_guarantee_limit": 100,
+      "expected_first_top": 31.748249735819808,
+      "long_run_top_fraction": 0.03149779935338466,
+      "p50_first_top": 23,
+      "p90_first_top": 76,
+      "note": "Sensitivity example only. Does not include desired-item pity, actual pool or price."
+    },
+    {
+      "base_rate_percent": 5,
+      "top_guarantee_limit": 40,
+      "expected_first_top": 17.429756868697933,
+      "long_run_top_fraction": 0.05737314682776202,
+      "p50_first_top": 14,
+      "p90_first_top": 40,
+      "note": "Sensitivity example only. Does not include desired-item pity, actual pool or price."
+    },
+    {
+      "base_rate_percent": 5,
+      "top_guarantee_limit": 60,
+      "expected_first_top": 19.078604020260958,
+      "long_run_top_fraction": 0.05241473636844851,
+      "p50_first_top": 14,
+      "p90_first_top": 45,
+      "note": "Sensitivity example only. Does not include desired-item pity, actual pool or price."
+    },
+    {
+      "base_rate_percent": 5,
+      "top_guarantee_limit": 80,
+      "expected_first_top": 19.669692512299726,
+      "long_run_top_fraction": 0.05083963561579249,
+      "p50_first_top": 14,
+      "p90_first_top": 45,
+      "note": "Sensitivity example only. Does not include desired-item pity, actual pool or price."
+    },
+    {
+      "base_rate_percent": 5,
+      "top_guarantee_limit": 100,
+      "expected_first_top": 19.881589415593318,
+      "long_run_top_fraction": 0.05029778953264624,
+      "p50_first_top": 14,
+      "p90_first_top": 45,
+      "note": "Sensitivity example only. Does not include desired-item pity, actual pool or price."
+    }
+  ],
+  "pool_dilution_examples": [
+    {
+      "top_types": 8,
+      "top_rate": 0.03,
+      "target_per_draw": 0.00375,
+      "expected_target_draws_no_guarantees": 266.6666666666667,
+      "prob_no_target_after_100_no_guarantees": 0.6868049876885481,
+      "note": "Uniform top types and NO pity of any kind in this illustration."
+    },
+    {
+      "top_types": 16,
+      "top_rate": 0.03,
+      "target_per_draw": 0.001875,
+      "expected_target_draws_no_guarantees": 533.3333333333334,
+      "prob_no_target_after_100_no_guarantees": 0.8288832208288922,
+      "note": "Uniform top types and NO pity of any kind in this illustration."
+    }
+  ],
+  "nested_lottery_example": {
+    "top_rate": 0.03,
+    "types": 8,
+    "useful_roll_probability": 0.2,
+    "expected_target_and_roll_no_guarantees": 1333.3333333333333
+  },
+  "collection_effect_sensitivity": {
+    "100_unique_items_one_percent_additive_gain": 1.0,
+    "100_unique_items_one_percent_multiplicative_gain": 1.704813829421526,
+    "tested_cap_bp": 300,
+    "tested_cap_is_not_approved": true
+  },
+  "art_scope_examples": {
+    "actors": 4,
+    "looks_including_base_per_actor": 3,
+    "combat_states": 6,
+    "home_actions": 3,
+    "portrait_views": 1,
+    "look_context_coverage_cells": 120,
+    "weapon_looks_per_actor": 4,
+    "look_weapon_context_combinations": 480,
+    "meaning": "Coverage cells/QA combinations, not counts of completed images, hours, or mandatory launch scope."
+  },
+  "memory_arithmetic": {
+    "width_px": 512,
+    "height_px": 512,
+    "channels_bytes": 4,
+    "frames": 120,
+    "uncompressed_base_mib_one_set": 120.0,
+    "four_sets_mib": 480.0,
+    "excludes": [
+      "compression",
+      "texture atlas reuse",
+      "GPU compression",
+      "mipmaps",
+      "CPU/GPU copies",
+      "actual device measurements"
+    ]
+  },
+  "not_run": [
+    "R1-R6 battle regressions",
+    "30/90-day economic progression",
+    "actual StoreKit purchases",
+    "real concurrency or database failure",
+    "real refund of spent draws",
+    "visual quality/rigging",
+    "iPhone performance",
+    "revenue/retention tests"
+  ]
+}

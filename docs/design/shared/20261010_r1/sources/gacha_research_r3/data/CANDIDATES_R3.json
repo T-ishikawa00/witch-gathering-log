@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-10",
+  "scope": "rarity-cost-cadence research; NOT revenue/game-balance acceptance",
+  "quality_names": [
+    "普通",
+    "良質",
+    "希少",
+    "特級",
+    "伝説"
+  ],
+  "target_rule": "50% chosen template on each top; a non-target top guarantees the next top is the chosen template. Same target and frozen eligible pool in calculations.",
+  "mid_rule": "On the stated consecutive Q0-Q2 miss count, promote the low outcome to Q3; do NOT renormalize/increase base Q4 chance. Q4 pity has priority.",
+  "price_note": "金額はパック内の1回換算であり、実商品登録・App Store価格点・税/手数料/利益の検証ではない。",
+  "free_note": "開始配布・ボス初回券・無料広告・課金を除く、一定供給の比較。1日内の受け取りタイミングは連続時間換算。",
+  "affix_note": "全候補は同じ5品質上限・既存装備型。CのQ0に副効果なし、Q1は既存仕様の1枠が前提。Q0/Q1を高性能保証にしない。付与/昇格コードや戦闘接続はこの研究で実装しない。",
+  "candidates": [
+    {
+      "id": "A_PREVIOUS_R2",
+      "name": "前回R2・希少以上",
+      "status": "PREVIOUS_PROPOSAL_NOT_APPROVED",
+      "probability_bp": [
+        0,
+        0,
+        8000,
+        1700,
+        300
+      ],
+      "yen_equivalent_per_pull": 150,
+      "free_pulls_per_day": 1,
+      "top_pity": 40,
+      "mid_pity": 10,
+      "target_probability_bp": 5000,
+      "design_purpose": "前回案を内容変更せず比較基準にする"
+    },
+    {
+      "id": "B_VOLUME_ONLY_CONTROL",
+      "name": "回数10倍・ほぼ同じ到達コストの対照",
+      "status": "DIAGNOSTIC_ONLY_NOT_RECOMMENDATION",
+      "probability_bp": [
+        6000,
+        3000,
+        800,
+        170,
+        30
+      ],
+      "yen_equivalent_per_pull": 15,
+      "free_pulls_per_day": 10,
+      "top_pity": 400,
+      "mid_pity": 100,
+      "target_probability_bp": 5000,
+      "design_purpose": "回数・費用・基本上位確率・天井を10倍/10分の1にして、回数だけの印象改善を検出。厳密な全期待値同等モデルではない"
+    },
+    {
+      "id": "C_COMMON_PLAYTEST_CANDIDATE",
+      "name": "コモン入り・中頻度の試遊候補",
+      "status": "PLAYTEST_CANDIDATE_NOT_APPROVED",
+      "probability_bp": [
+        3500,
+        4000,
+        2000,
+        400,
+        100
+      ],
+      "yen_equivalent_per_pull": 30,
+      "free_pulls_per_day": 5,
+      "top_pity": 100,
+      "mid_pity": 20,
+      "target_probability_bp": 5000,
+      "design_purpose": "Aより目標到達も緩和した試遊候補。単なるレアリティ分布の比較ではなく、価格と供給も変えているため因果を分離する"
+    }
+  ]
+}

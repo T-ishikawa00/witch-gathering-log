@@ -1,0 +1,7 @@
+# 欠落原本と保存範囲
+
+未回収は旧UI/UXの完全ZIP `Witch_G2_UIUX_R1_20261010.zip` と `READABLE_UIUX_SPEC_R1.html`。旧18画面HTMLと撤回美術の一覧PNGはローカルに保全済みだが、完全ZIPと同等ではない。戦闘R1本文はR5統合原本に同梱されており、別の単体ZIP名は確認できていない。
+
+AfterDraw R4内のCommerce部分コピーは、同梱MANIFESTにある `source/UI_DIRECTION_R2_A_APPROVED_REFERENCE.png` が元ZIPに入っていない。15台帳948項目の947項目は存在・サイズ・SHA-256一致、残る1件は元パッケージの欠落である。完全Commerce原本と引継ぎ側で同一画像を回収済み。[共有したA/B原画像](sources/ui_a/UI_DIRECTION_R2_AB_ORIGINAL.png)のSHA-256は `c18be9d976ab34e944cc16dd9175530910ee47966515a8684d6237b574651710`。元MANIFESTを修正したり欠落をPASSに変えたりしていない。
+
+今回の共有用抜粋はフルZIPの代替や全シミュレーション再現用パッケージではない。除外原本はローカルの保存revisionに残り、共有台帳には必要な原本の由来・ハッシュを記録する。実行レイアウトが未移植であることと、未回収の原本を区別する。

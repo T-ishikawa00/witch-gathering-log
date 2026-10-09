@@ -1,0 +1,50 @@
+[
+  {
+    "id": "F01",
+    "severity": "HIGH",
+    "category": "SOURCE_FORMULA_BEHAVIOUR",
+    "title": "初期強化の費用があるのに能力が変化しない",
+    "evidence": "R2 item_primaryは装備単位で切り捨て。威力14の武器は+0/+1/+2/+3で14/14/14/15。初期の手袋と指環は+3まで全基礎値が同じ。",
+    "action": "現行値を凍結しない。固定小数点化・表示増分・強化単位/最低増分を別overlayで比較し、+1から実効改善が分かる規則を選ぶ。今回の実験は元式のまま。"
+  },
+  {
+    "id": "F02",
+    "severity": "HIGH_SCOPE",
+    "category": "GATE_REACHABILITY",
+    "title": "古樹の初回戦では毒杖/結界杖分岐や覚醒を使えない",
+    "evidence": "EQ_W_G1、覚醒I、研究2、研成IIはG_R01_B以降。EQ_W_P1はG_R02_A以降。森の初回戦へ持ち込むのは未来装備。",
+    "action": "初回森は役割・配分の導入として評価。武器分岐の評価は撃破後の再戦/次地域へ分離。初回攻略に未来素材を要求しない。"
+  },
+  {
+    "id": "F03",
+    "severity": "MEDIUM_HIGH",
+    "category": "CANDIDATE_BALANCE",
+    "title": "古樹の仮火力に対する勝率の感度が大きい",
+    "evidence": "同じ50seed、12時間・守備支援装備。仮火力190の42/50勝に対して209では5/50勝。HP12500は同じ。",
+    "action": "敵の数値は固定しない。標的偏り・回復周期・パーティー被害のログを比較し、複数の準備経路が成立する帯を詰める。"
+  },
+  {
+    "id": "F04",
+    "severity": "SPEC_GAP",
+    "category": "TIMING_AMBIGUITY",
+    "title": "通常攻撃の「間隔」が開始か命中か曖昧",
+    "evidence": "R2 combat.basic_first_hit_at_msと技能windup、本文のタイマー到達後に実行という表現に解釈の余地。2解釈を別モードで比較。",
+    "action": "本案は初弾/次弾の命中可能時刻を基準にする。未承認の解釈であり、正本の明示改訂が必要。"
+  },
+  {
+    "id": "F05",
+    "severity": "SPEC_GAP",
+    "category": "INTRO_FIXTURE",
+    "title": "導入報酬の品質・qはあるが副効果の種類と段階配布が未指定",
+    "evidence": "R3は総EXP920・粉30・4素材各12、Q2杖raw_q350のみ。本案はAF_POWER/AF_HP/AF_DEFを固定試験入力にした。",
+    "action": "今回の副効果は承認済みにしない。導入戦と配布順は本番UI付きで別に確定。"
+  },
+  {
+    "id": "F06",
+    "severity": "UX_REVIEW",
+    "category": "DROPS",
+    "title": "共用装備は装備者によって副効果が働かない場合がある",
+    "evidence": "R2は対応可能な仲間がいれば共用候補に含める。本試験の護符には呪毒効果があり、猫/鍛冶師に渡しても呪毒は発生しない。",
+    "action": "無効効果・適性を装備比較で明示し、総合戦力の上矢印だけで誤誘導しない。"
+  }
+]

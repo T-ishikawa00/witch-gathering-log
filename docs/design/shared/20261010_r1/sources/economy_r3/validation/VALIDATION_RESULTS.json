@@ -1,0 +1,249 @@
+{
+  "structural_checks": [
+    {
+      "id": "S01",
+      "pass": true,
+      "note": "50 unique sources"
+    },
+    {
+      "id": "S02",
+      "pass": true,
+      "note": "50 material IDs unchanged"
+    },
+    {
+      "id": "S03",
+      "pass": true,
+      "note": "world source edges unchanged"
+    },
+    {
+      "id": "S04",
+      "pass": true,
+      "note": "guaranteed selected yield"
+    },
+    {
+      "id": "S05",
+      "pass": true,
+      "note": "boss effort not normal source effort"
+    },
+    {
+      "id": "S06",
+      "pass": true,
+      "note": "common time base"
+    },
+    {
+      "id": "S07",
+      "pass": true,
+      "note": "48h same cap"
+    },
+    {
+      "id": "S08",
+      "pass": true,
+      "note": "no offline new progression and no click farm"
+    },
+    {
+      "id": "S09",
+      "pass": true,
+      "note": "view speed excluded"
+    },
+    {
+      "id": "S10",
+      "pass": true,
+      "note": "quality probability sum"
+    },
+    {
+      "id": "S11",
+      "pass": true,
+      "note": "R2 probability base unchanged"
+    },
+    {
+      "id": "S12",
+      "pass": true,
+      "note": "global 100-roll pity"
+    },
+    {
+      "id": "S13",
+      "pass": true,
+      "note": "33 forms in thematic pools"
+    },
+    {
+      "id": "S14",
+      "pass": true,
+      "note": "themed and global pool weights"
+    },
+    {
+      "id": "S15",
+      "pass": true,
+      "note": "no fake dust investment for natural rank"
+    },
+    {
+      "id": "S16",
+      "pass": true,
+      "note": "no ad cascade/loot duplication"
+    },
+    {
+      "id": "S17",
+      "pass": true,
+      "note": "8h earning, 6 stored"
+    },
+    {
+      "id": "S18",
+      "pass": true,
+      "note": "6.25% cap before rounding"
+    },
+    {
+      "id": "S19",
+      "pass": true,
+      "note": "free view/premium quantity equality"
+    },
+    {
+      "id": "S20",
+      "pass": true,
+      "note": "69 named operations"
+    },
+    {
+      "id": "S21",
+      "pass": true,
+      "note": "cost references and positive quantities"
+    },
+    {
+      "id": "S22",
+      "pass": true,
+      "note": "cost gates exist"
+    },
+    {
+      "id": "S23",
+      "pass": true,
+      "note": "all costs obtainable at operation gate"
+    },
+    {
+      "id": "S24",
+      "pass": true,
+      "note": "33 recipe ingredients/quantities/parents unchanged"
+    },
+    {
+      "id": "S25",
+      "pass": true,
+      "note": "attunement cost unchanged"
+    },
+    {
+      "id": "S26",
+      "pass": true,
+      "note": "awakening quantities and level gates unchanged"
+    },
+    {
+      "id": "S27",
+      "pass": true,
+      "note": "shared research unchanged"
+    },
+    {
+      "id": "S28",
+      "pass": true,
+      "note": "every material has a sink"
+    },
+    {
+      "id": "S29",
+      "pass": true,
+      "note": "endgame adds no compulsory new resource/reset/PvP"
+    },
+    {
+      "id": "S30",
+      "pass": true,
+      "note": "simulation limitation explicit"
+    },
+    {
+      "id": "S31",
+      "pass": true,
+      "note": "no tactic UI reintroduced"
+    },
+    {
+      "id": "S32",
+      "pass": true,
+      "note": "no auto destruction of 50 materials"
+    }
+  ],
+  "mutations": [
+    {
+      "case": "unknown material reference",
+      "detected": true,
+      "checks": [
+        "S21",
+        "S23",
+        "S24",
+        "S28"
+      ]
+    },
+    {
+      "case": "negative quantity",
+      "detected": true,
+      "checks": [
+        "S21",
+        "S24"
+      ]
+    },
+    {
+      "case": "future first boss source",
+      "detected": true,
+      "checks": [
+        "S03",
+        "S23"
+      ]
+    },
+    {
+      "case": "probabilities do not sum",
+      "detected": true,
+      "checks": [
+        "S10",
+        "S11"
+      ]
+    },
+    {
+      "case": "ad issues equipment",
+      "detected": true,
+      "checks": [
+        "S16"
+      ]
+    },
+    {
+      "case": "boss source 5-minute shortcut",
+      "detected": true,
+      "checks": [
+        "S05"
+      ]
+    },
+    {
+      "case": "R2 cost silently changed",
+      "detected": true,
+      "checks": [
+        "S24"
+      ]
+    },
+    {
+      "case": "nat rank fake reimbursement",
+      "detected": true,
+      "checks": [
+        "S15"
+      ]
+    },
+    {
+      "case": "auto fight grants gates",
+      "detected": true,
+      "checks": [
+        "S08"
+      ]
+    },
+    {
+      "case": "paid only cap",
+      "detected": true,
+      "checks": [
+        "S07"
+      ]
+    }
+  ],
+  "golden_vector_count": 6,
+  "unit_tests": {
+    "count": 61,
+    "result": "PASS",
+    "log": "UNIT_TEST_OUTPUT.txt"
+  },
+  "scope": "source and cost identities / economic reference / memory transactions only; battle, iOS and durable DB not tested"
+}

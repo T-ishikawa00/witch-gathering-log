@@ -1,0 +1,80 @@
+[
+  {
+    "id": "USER_AUTO_NO_TACTICS",
+    "status": "USER_CONFIRMED",
+    "text": "4人・完全自動戦闘。作戦プリセット、AI条件編集、手動スキルを要求しない。",
+    "supersedes": "AutoBattle R1 sections3/12 AI tactics proposals"
+  },
+  {
+    "id": "R2_GROWTH",
+    "status": "PROPOSED_PRESERVED",
+    "text": "Lv60/研成V/強化+3%/品質/研究/覚醒/猫4装備型は成長R2候補。全数値確定ではない。",
+    "source": "vendor/r5/history/Witch_G2C_Growth_Equipment_Skills_R2_20261009.zip"
+  },
+  {
+    "id": "R3_ECONOMY",
+    "status": "PROPOSED_PRESERVED",
+    "text": "48h、5分素材、30分装備、69費用、天井、広告補助、15課題を候補のまま保全。",
+    "source": "vendor/r5/history/Witch_G2C_Idle_Economy_R3_20261009.zip"
+  },
+  {
+    "id": "R5_FIXED_POINT",
+    "status": "RECOMMENDED_NOT_HUMAN_APPROVED",
+    "text": "内部HP/威力/防護を10000倍整数。費用・+3%不変。丸め位置を明示。"
+  },
+  {
+    "id": "R5_BASIC_TIMING",
+    "status": "RECOMMENDED_NOT_HUMAN_APPROVED",
+    "text": "通常は命中→次の最短命中。主CDは効果コミット起点。"
+  },
+  {
+    "id": "R5_FORECAST",
+    "status": "RECOMMENDED_NOT_HUMAN_APPROVED",
+    "text": "公開された期限と間に合う予約のみで防御予測。自分への攻撃にかばう回数を消費しない。"
+  },
+  {
+    "id": "R5_TREE_PATTERN",
+    "status": "TEST_CANDIDATE_NOT_FROZEN",
+    "text": "単体1.05P×3、全体1.275P/人、枝打ち休止2.6秒。森の仮敵のみ。"
+  },
+  {
+    "id": "F07_AI_UPGRADE_REVERSAL",
+    "status": "PARTIALLY_RESOLVED_GENERAL_CASE_OPEN",
+    "text": "R5の元の2症例は再現しR6-Bで解消。未使用seedの主比較2,000組ではR5 47→R6-B 6組、別副効果2,000比較20→0。一般の単調性は未証明。"
+  },
+  {
+    "id": "R5_MULTI_AXIS_SENSITIVITY",
+    "status": "OPEN",
+    "text": "HP/威力同時+10%では42%等。全条件で崖が消えたわけではない。"
+  },
+  {
+    "id": "SYNC_STATE",
+    "status": "CHAT_ARTIFACT_ONLY",
+    "text": "G2-C今回までの設計はこのパッケージに保存。Mac/GitHubは未書込・Codex適用指示なし。"
+  },
+  {
+    "id": "R6B_EFFECTIVE_HEAL",
+    "status": "RECOMMENDED_FOR_REVIEW_NOT_HUMAN_APPROVED",
+    "text": "通常回復の有効量50%以上を候補条件に使用。危機予測・対象順位は内部AI。"
+  },
+  {
+    "id": "R6B_TIMED_WARD",
+    "status": "RECOMMENDED_FOR_REVIEW_NOT_HUMAN_APPROVED",
+    "text": "公開済みの攻撃時刻と実際の消費見込みで結界を選ぶ。"
+  },
+  {
+    "id": "R6B_SUPPORT_COORDINATION",
+    "status": "RECOMMENDED_FOR_REVIEW_NOT_HUMAN_APPROVED",
+    "text": "同時刻のAI段階のみ、アイラ→ルナ→魔女→猫へ。予約済みかばうと結界先を整合。"
+  },
+  {
+    "id": "R6A_REJECTION",
+    "status": "PRESERVED_NOT_FINAL_RECOMMENDATION",
+    "text": "R6-Aは別構成の勝率を下げた。失敗結果を保持し、Bは新しいseedで再検証。"
+  },
+  {
+    "id": "R6B_LOADOUT_EXCEPTION",
+    "status": "OPEN",
+    "text": "10組のうち副効果seed01攻撃寄りで旧AIより勝率低下。全構成での優越を主張しない。"
+  }
+]

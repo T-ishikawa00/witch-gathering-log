@@ -1,0 +1,12 @@
+{
+ "status":"SELECTED_FOR_HOLDOUT_NOT_HUMAN_APPROVED",
+ "created":"2026-10-09",
+ "selection_basis":"28 x 50 development battles and 24 x 50 follow-up battles using seeds 2001..2050. No holdout seen at selection.",
+ "selected_profile":{"precision_scale":10000,"no_self_cover_charge":true,"urgent_support":false,"temporal_forecast":true},
+ "timing_mode":"first_impact_at_interval",
+ "boss":{"hp":12500,"power":190,"defense":105,"level":12,"root_hit_coefficient_bp":10500,"root_hit_count":3,"sweep_each_target_coefficient_bp":12750,"sweep_rest_ms":2600},
+ "unchanged":["R2 +3% enhancement and costs", "R2 caps and skill cooldowns", "R3 supply and loot", "item UUID and affixes", "full-auto without tactics", "no extra healing skill"],
+ "holdout_seed_range":[100001,100200],
+ "robustness_band":{"power_scale":[0.9,1.0,1.1],"hp_scale":[0.9,1.0,1.1]},
+ "comparison_limits":["Not user observations", "Loot not equipped or sold", "6h input is not a mandatory wait", "Normal onboarding and deep-area fights not implemented", "Holdout controls RNG-seed selection, not all model bias"]
+}

@@ -1,0 +1,192 @@
+{
+  "status": "PROPOSED_NOT_APPROVED",
+  "outfits": [
+    {
+      "id": "OUT_C_WITCH_MOON_01",
+      "actor": "C_WITCH",
+      "name": "月灯りの採集服",
+      "price_jpy_proposal": 1480,
+      "score": 20,
+      "scope": [
+        "home",
+        "detail",
+        "combat"
+      ],
+      "production_status": "DESIGN_ONLY"
+    },
+    {
+      "id": "OUT_C_APPRENTICE_MOON_01",
+      "actor": "C_APPRENTICE",
+      "name": "星綴じの弟子服",
+      "price_jpy_proposal": 1480,
+      "score": 20,
+      "scope": [
+        "home",
+        "detail",
+        "combat"
+      ],
+      "production_status": "DESIGN_ONLY"
+    },
+    {
+      "id": "OUT_C_SMITH_MOON_01",
+      "actor": "C_SMITH",
+      "name": "夜番の工房着",
+      "price_jpy_proposal": 1480,
+      "score": 20,
+      "scope": [
+        "home",
+        "detail",
+        "combat"
+      ],
+      "production_status": "DESIGN_ONLY"
+    },
+    {
+      "id": "OUT_C_FAMILIAR_MOON_01",
+      "actor": "C_FAMILIAR",
+      "name": "月結びのスカーフ装具",
+      "price_jpy_proposal": 980,
+      "score": 20,
+      "scope": [
+        "home",
+        "detail",
+        "combat"
+      ],
+      "production_status": "DESIGN_ONLY"
+    }
+  ],
+  "furniture": [
+    {
+      "id": "FUR_MOON_DESK",
+      "slot": "DESK",
+      "category": "desk",
+      "name": "作業机",
+      "interactions": [
+        "sit_read",
+        "mix"
+      ],
+      "price_jpy_proposal": 480,
+      "score": 2,
+      "production_status": "DESIGN_ONLY"
+    },
+    {
+      "id": "FUR_MOON_DESK_SEAT",
+      "slot": "DESK_SEAT",
+      "category": "seat",
+      "name": "机の椅子",
+      "interactions": [
+        "sit"
+      ],
+      "price_jpy_proposal": 320,
+      "score": 2,
+      "production_status": "DESIGN_ONLY"
+    },
+    {
+      "id": "FUR_MOON_HEARTH",
+      "slot": "HEARTH",
+      "category": "hearth",
+      "name": "暖炉まわり",
+      "interactions": [
+        "warm"
+      ],
+      "price_jpy_proposal": 480,
+      "score": 2,
+      "production_status": "DESIGN_ONLY"
+    },
+    {
+      "id": "FUR_MOON_SOFA",
+      "slot": "SOFA",
+      "category": "sofa",
+      "name": "長椅子",
+      "interactions": [
+        "sit"
+      ],
+      "price_jpy_proposal": 480,
+      "score": 2,
+      "production_status": "DESIGN_ONLY"
+    },
+    {
+      "id": "FUR_MOON_BOOKCASE",
+      "slot": "BOOKCASE",
+      "category": "storage",
+      "name": "本棚",
+      "interactions": [],
+      "price_jpy_proposal": 480,
+      "score": 2,
+      "production_status": "DESIGN_ONLY"
+    },
+    {
+      "id": "FUR_MOON_CURTAIN",
+      "slot": "CURTAIN",
+      "category": "window_dressing",
+      "name": "窓まわり",
+      "interactions": [],
+      "price_jpy_proposal": 320,
+      "score": 2,
+      "production_status": "DESIGN_ONLY"
+    },
+    {
+      "id": "FUR_MOON_RUG",
+      "slot": "RUG",
+      "category": "rug",
+      "name": "絨毯",
+      "interactions": [],
+      "price_jpy_proposal": 320,
+      "score": 2,
+      "production_status": "DESIGN_ONLY"
+    },
+    {
+      "id": "FUR_MOON_LIGHT",
+      "slot": "LIGHT",
+      "category": "light",
+      "name": "照明",
+      "interactions": [],
+      "price_jpy_proposal": 320,
+      "score": 2,
+      "production_status": "DESIGN_ONLY"
+    },
+    {
+      "id": "FUR_MOON_PLANT",
+      "slot": "PLANT",
+      "category": "decor",
+      "name": "植物・小飾り",
+      "interactions": [],
+      "price_jpy_proposal": 160,
+      "score": 2,
+      "production_status": "DESIGN_ONLY"
+    },
+    {
+      "id": "FUR_MOON_CAT_BED",
+      "slot": "CAT_BED",
+      "category": "cat_bed",
+      "name": "猫の寝床",
+      "interactions": [
+        "cat_sleep"
+      ],
+      "price_jpy_proposal": 320,
+      "score": 2,
+      "production_status": "DESIGN_ONLY"
+    }
+  ],
+  "release_quantity_is_target_not_commitment": true,
+  "price_status": "Unverified App Store price-point and market willingness; do not submit products",
+  "furniture_bundle_sale_at_launch": false,
+  "power": {
+    "score_cap": 100,
+    "bp_per_score": 3,
+    "maximum_bp": 300,
+    "stats": [
+      "hp",
+      "power",
+      "defense"
+    ],
+    "same_existing_additive_percentage_group": true,
+    "regional_boss_score_each": 20,
+    "paid_duplicate_scores": false,
+    "default_content_scores": false,
+    "outfit_score_each": 20,
+    "furniture_score_each": 2,
+    "placement_or_wearing_required": false,
+    "affects_speed_cooldown_drop_pity": false,
+    "battle_applies_next_snapshot_only": true
+  }
+}

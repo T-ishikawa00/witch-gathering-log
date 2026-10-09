@@ -1,0 +1,25 @@
+{
+  "status": "PREFROZEN_TEST_PLAN_NOT_GAME_RULE_APPROVAL",
+  "date": "2026-10-10",
+  "focus": "After-draw item retention, powder-to-enhancement and cleanup burden. Not paid launch approval.",
+  "source_candidates": "source/research_r3/data/CANDIDATES_R3.json",
+  "source_metadata": "source/commerce_r2/data/GEAR_METADATA_AND_NEW_AFFIX_PROPOSAL.json",
+  "primary": {"candidates": ["A_PREVIOUS_R2", "C_COMMON_PLAYTEST_CANDIDATE"], "seeds": [410001, 412000], "budget_yen_equivalent": 1500, "profiles": ["first_box", "established_box"]},
+  "daily": {"seeds": [420001, 421000], "free_pulls": "candidate free_pulls_per_day, no intro or boss grant", "profiles": ["first_box", "established_box"]},
+  "budget_sensitivity": {"seeds": [430001, 430500], "yen_equivalent": [300, 6000], "profiles": ["established_box"]},
+  "policies": {
+    "low_only": "Offer Q0/Q1 redundancy cleanup; preserve ALL Q2+ for later individual evaluation.",
+    "same_quality_q2_duplicate": "Sensitivity only: also offer same-template/same-quality Q2 candidates for which capacity-many survivors weakly dominate their affix vectors. Not combat-win dominance.",
+    "capacity_per_template": "Number of compatible joined actors in the supplied 29-template metadata. Fixture, not a new storage limit.",
+    "never_offer": ["locked", "equipped", "saved_loadout_ref", "actual_investment", "first_discovery_instance", "unique affix tradeoff", "Q3 or Q4"],
+    "cross_quality": "No cross-quality numerical comparison: actual growth R2 ranges unavailable.",
+    "execution": "Show quote and explicit user confirmation. No auto-salvage or auto-equip. Revalidate exact inventory revision and selected IDs. Atomic replacement in memory."
+  },
+  "powder_schedules": {"low": [1,2,4,0,0], "medium": [2,5,10,0,0], "high": [5,10,20,0,0]},
+  "enhancement_probe": {"source": "Conversation R4/R5 recorded +1=5, +2 incremental10, +3 incremental15; actual original growth runner unavailable", "incremental_costs": [5,10,15], "existing_powder": 0, "three_goals": ["witch_wand", "apprentice_book", "smith_body"], "order": "finish +3 of first, then second, then third; max90 powder; no automatic in-game application", "base_wand_power": 14, "enhancement_bp_per_step": 300, "probe_note": "Measures affordable enhancement operations, not final character power, battle wins or canonical materials economy."},
+  "natural_context": {"quality_bp": [4500,3000,1800,600,100], "gear_per_24h": 48, "top_pity": 100, "powder_per_hour": 12, "powder_per_24h_corrected": 288, "source_limitation": "Conversation R3 plus research R3 report. Do not execute as original economy runner. No combined natural item identity or full progression simulation."},
+  "storage_pressure_probe": {"days": [7,30], "seeds": [440001,440500], "measures": "Q2+ held if players use low_only, with natural and gacha separate counters; ignores initial items, retained Q0/Q1 and inventory improvements", "capacities_for_sensitivity_only": [120,240], "no_actual_inventory_cap_approved": true},
+  "ui": {"viewports": [[375,667],[390,844],[402,874]], "runtime": "Local Chromium no network, scripted clicks separate from human time", "human_timing_assumptions_seconds": {"summary_read":[5,10], "high_item_compare_each":[4,10], "low_item_inspect_each":[0.5,1.5], "click_each":[0.5,1], "bulk_scrap_confirmation":[2,5], "enhancement_decision":[2,5]}, "timing_note": "Not measured people, not KLM calibration. Includes no download/network/device performance or gacha animation wait."},
+  "gates": ["Exact reproduction of old tests", "Every acquired UID retained or explicitly converted once", "No protected item in proposal", "No replacement witness also discarded", "Single and batch results identical", "No loss on full box or failed transaction", "No paid/free odds difference", "No claim of real combat improvement without original R6"],
+  "not_tested": ["real players", "willingness to pay", "revenue", "R6 battles", "full R3 economy", "real database/power loss", "StoreKit", "iPhone", "furniture/outfit design"]
+}

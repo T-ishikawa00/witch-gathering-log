@@ -1,0 +1,132 @@
+[
+  {
+    "login_interval_h": 8,
+    "bonus": false,
+    "elapsed_days": 18.666667,
+    "completed_resource_stages": 10,
+    "credited_hours": 448.0,
+    "uncredited_hours": 0.0,
+    "ad_xp": 0,
+    "ad_dust": 0
+  },
+  {
+    "login_interval_h": 8,
+    "bonus": true,
+    "elapsed_days": 18.333333,
+    "completed_resource_stages": 10,
+    "credited_hours": 440.0,
+    "uncredited_hours": 0.0,
+    "ad_xp": 20273,
+    "ad_dust": 2058
+  },
+  {
+    "login_interval_h": 24,
+    "bonus": false,
+    "elapsed_days": 21.0,
+    "completed_resource_stages": 10,
+    "credited_hours": 504.0,
+    "uncredited_hours": 0.0,
+    "ad_xp": 0,
+    "ad_dust": 0
+  },
+  {
+    "login_interval_h": 24,
+    "bonus": true,
+    "elapsed_days": 21.0,
+    "completed_resource_stages": 10,
+    "credited_hours": 504.0,
+    "uncredited_hours": 0.0,
+    "ad_xp": 23176,
+    "ad_dust": 2365
+  },
+  {
+    "login_interval_h": 48,
+    "bonus": false,
+    "elapsed_days": 22.0,
+    "completed_resource_stages": 10,
+    "credited_hours": 528.0,
+    "uncredited_hours": 0.0,
+    "ad_xp": 0,
+    "ad_dust": 0
+  },
+  {
+    "login_interval_h": 72,
+    "bonus": false,
+    "elapsed_days": 33.0,
+    "completed_resource_stages": 10,
+    "credited_hours": 528.0,
+    "uncredited_hours": 264.0,
+    "ad_xp": 0,
+    "ad_dust": 0
+  }
+]
+{
+  "samples": 2000,
+  "days": 90,
+  "seed": 20261009,
+  "generator": "NumPy PCG64 distribution experiment, separate from game SHA256 counter vectors",
+  "natural_rolls_per_day": 48,
+  "max_level_full_discovery_fixture": true,
+  "desired_template": "EQ_W_P2",
+  "eligible_template_count": 33,
+  "local_pool_count": 7,
+  "affix_pool_count": 13,
+  "good_condition": "Q2 has 2 visible desired groups, or Q3/Q4 has >=2 of DOT/CDR/POWER among 3 visible; no q requirement; NOT a perfect build",
+  "condition_two_visible": {
+    "censor_days": 90,
+    "observed_fraction": 1.0,
+    "days_p10": 0.6437500000000002,
+    "days_p50": 4.125,
+    "days_p90": 13.0
+  },
+  "first_legend": {
+    "censor_days": 90,
+    "observed_fraction": 1.0,
+    "days_p10": 0.22916666666666666,
+    "days_p50": 1.5,
+    "days_p90": 2.0833333333333335
+  },
+  "checkpoints": {
+    "16": {
+      "hours": 8.0,
+      "mean_legends": 0.1605,
+      "any_legend_probability": 0.1495,
+      "two_desired_visible_probability": 0.0465
+    },
+    "48": {
+      "hours": 24.0,
+      "mean_legends": 0.4605,
+      "any_legend_probability": 0.3705,
+      "two_desired_visible_probability": 0.148
+    },
+    "96": {
+      "hours": 48.0,
+      "mean_legends": 0.935,
+      "any_legend_probability": 0.602,
+      "two_desired_visible_probability": 0.2755
+    },
+    "336": {
+      "hours": 168.0,
+      "mean_legends": 4.9335,
+      "any_legend_probability": 1.0,
+      "two_desired_visible_probability": 0.701
+    },
+    "1440": {
+      "hours": 720.0,
+      "mean_legends": 22.414,
+      "any_legend_probability": 1.0,
+      "two_desired_visible_probability": 0.9965
+    },
+    "4320": {
+      "hours": 2160.0,
+      "mean_legends": 67.7285,
+      "any_legend_probability": 1.0,
+      "two_desired_visible_probability": 1.0
+    }
+  },
+  "exact_first_legend_expected_rolls": 63.396765872677086,
+  "exact_first_legend_expected_hours": 31.698382936338543,
+  "exact_pity_effective_rate": 0.015773675300856046,
+  "reforge_and_crafting_excluded": true,
+  "natural_full_triplet_q800_probability_per_target_roll_no_pity_mix": 1.9816089117710275e-06
+}

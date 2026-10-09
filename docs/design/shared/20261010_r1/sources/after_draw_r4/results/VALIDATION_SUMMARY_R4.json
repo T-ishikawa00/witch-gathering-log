@@ -1,0 +1,58 @@
+{
+  "status": "C_CONDITIONAL_PLAYTEST_CANDIDATE_NOT_APPROVED",
+  "date": "2026-10-10",
+  "primary_sessions": 14000,
+  "primary_item_samples": 378000,
+  "paired_dependency_note": "same seeds and outcomes shared between profiles/policies; not people or independent unique pulls for every count",
+  "secondary_q2_reused_sessions": 8000,
+  "target_sensitivity_sessions": 6000,
+  "target_sensitivity_items": 180000,
+  "post_primary_inventory_sensitivity_sessions": 6000,
+  "post_primary_inventory_sensitivity_items": 180000,
+  "storage_series": 1000,
+  "new_contract_tests": 62,
+  "baseline_research_tests": 30,
+  "baseline_commerce_tests": 74,
+  "browser_functional_flows": 12,
+  "browser_checkpoints": 170,
+  "browser_automated_timing_repetitions": 40,
+  "human_timing_measured": false,
+  "human_time_is_assumption_only": true,
+  "combat_or_full_economy_rerun": false,
+  "source_math_correction": {
+    "file": "source/research_r3/tools/compare_gacha.py",
+    "original_fields": [
+      "forest_powder_per_day=144",
+      "ratio_to_R3_forest_144_per_day"
+    ],
+    "rule": "12/hour * 24hours = 288/day. 144 is12hours, not24. Prior relative daily powder ratio had denominator2x too small. Absolute 1500yen low-powder counts unaffected.",
+    "source_edited": false
+  },
+  "source_copies_hash_check": 47,
+  "findings": [
+    "C retained20.4 and low-schedulepowder42.4 with low spares; without low spares retained30.6 and30.1powder. Not 50 upgrades",
+    "Early sparse fixture retained27.7 and32.8powder",
+    "Daily5 does not guarantee one affordable upgrade",
+    "Q2+ hoarding dominates long-run box pressure in both plans",
+    "Do not interpret partial-order affix comparison as combat-win guarantee",
+    "First-pass bulk timing defers detailed high-quality curation"
+  ],
+  "not_tested": [
+    "real players",
+    "willingness to pay",
+    "revenue",
+    "R6 battles",
+    "full R3 economy",
+    "real database/power loss",
+    "StoreKit",
+    "iPhone",
+    "furniture/outfit design"
+  ],
+  "art_design_A_unchanged": true,
+  "Mac_GitHub_Codex_unchanged": true,
+  "implementation_sha256": {
+    "tools/after_draw_model.py": "bdca2e577dd6cacf2d2f8a53c4aae7d50f5a23d312eb999139fcc6e41cb96efd",
+    "tools/run_study.py": "29a7f7a66899b51522c83ed42321bfc7e9a5221315ec0b0ebb6c5c36b3af2d47",
+    "data/EXPERIMENT_PLAN.json": "75592b5628f0bc0c5f2ec3da2b876b18d3c776f187824d982847a98e12ab855e"
+  }
+}

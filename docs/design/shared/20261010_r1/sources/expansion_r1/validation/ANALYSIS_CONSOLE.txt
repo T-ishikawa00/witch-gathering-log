@@ -1,0 +1,57 @@
+{
+  "old": {
+    "source_status": "Conversation R3 numerical proposal, not re-read from absent R3 data archive and not a combat run",
+    "base_high_rate": 0.01,
+    "natural_hard_pity": 100,
+    "drops_per_active_day": 48,
+    "first_high_expected_draws": 63.39676587267705,
+    "first_high_expected_active_hours": 31.698382936338525,
+    "long_run_high_fraction": 0.015773675300856053,
+    "long_run_highs_per_active_day": 0.7571364144410906
+  },
+  "target": [
+    {
+      "top_types": 8,
+      "top_rate": 0.03,
+      "target_per_draw": 0.00375,
+      "expected_target_draws_no_guarantees": 266.6666666666667,
+      "prob_no_target_after_100_no_guarantees": 0.6868049876885481,
+      "note": "Uniform top types and NO pity of any kind in this illustration."
+    },
+    {
+      "top_types": 16,
+      "top_rate": 0.03,
+      "target_per_draw": 0.001875,
+      "expected_target_draws_no_guarantees": 533.3333333333334,
+      "prob_no_target_after_100_no_guarantees": 0.8288832208288922,
+      "note": "Uniform top types and NO pity of any kind in this illustration."
+    }
+  ],
+  "scope": {
+    "actors": 4,
+    "looks_including_base_per_actor": 3,
+    "combat_states": 6,
+    "home_actions": 3,
+    "portrait_views": 1,
+    "look_context_coverage_cells": 120,
+    "weapon_looks_per_actor": 4,
+    "look_weapon_context_combinations": 480,
+    "meaning": "Coverage cells/QA combinations, not counts of completed images, hours, or mandatory launch scope."
+  },
+  "memory": {
+    "width_px": 512,
+    "height_px": 512,
+    "channels_bytes": 4,
+    "frames": 120,
+    "uncompressed_base_mib_one_set": 120.0,
+    "four_sets_mib": 480.0,
+    "excludes": [
+      "compression",
+      "texture atlas reuse",
+      "GPU compression",
+      "mipmaps",
+      "CPU/GPU copies",
+      "actual device measurements"
+    ]
+  }
+}

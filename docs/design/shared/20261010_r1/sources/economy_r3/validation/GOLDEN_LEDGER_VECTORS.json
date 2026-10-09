@@ -1,0 +1,699 @@
+[
+  {
+    "input": {
+      "snapshot": {
+        "region_id": "R01",
+        "gates": [
+          "G_START"
+        ],
+        "joined": [
+          "C_WITCH",
+          "C_FAMILIAR"
+        ],
+        "known_evolved": [],
+        "focus_source": null,
+        "wished_template": null,
+        "cleared_area_ids": [
+          "A_R01_01"
+        ],
+        "content_version": "witch_economy_r3.0"
+      },
+      "seed": "golden-r3",
+      "elapsed_hours": 8
+    },
+    "expected": {
+      "materials": {
+        "M_R01_G2": 24,
+        "M_R01_E1": 24,
+        "M_R01_E2": 24,
+        "M_R01_G1": 24
+      },
+      "xp_by_actor": {
+        "C_WITCH": 1152,
+        "C_FAMILIAR": 1152
+      },
+      "dust": 96,
+      "work_index": 96,
+      "first_item": {
+        "uid": "d526710a1dd01e896f5913125487d412",
+        "template_id": "EQ_W_01",
+        "quality": "Q0",
+        "rank": 1,
+        "enhancement": 0,
+        "latent_affixes": [
+          {
+            "affix_id": "AF_STATUS_RESIST",
+            "roll_q": 607
+          },
+          {
+            "affix_id": "AF_WARD",
+            "roll_q": 511
+          },
+          {
+            "affix_id": "AF_CRIT",
+            "roll_q": 203
+          }
+        ],
+        "invested_dust": 0,
+        "natural_index": 1,
+        "pity": false,
+        "wish": false,
+        "origin": {
+          "kind": "relic_search",
+          "region_id": "R01",
+          "content_version": "witch_economy_r3.0"
+        }
+      },
+      "last_item": {
+        "uid": "9525e0662a519f64fd89d494f2496d85",
+        "template_id": "EQ_W_01",
+        "quality": "Q0",
+        "rank": 1,
+        "enhancement": 0,
+        "latent_affixes": [
+          {
+            "affix_id": "AF_POWER",
+            "roll_q": 591
+          },
+          {
+            "affix_id": "AF_HASTE",
+            "roll_q": 685
+          },
+          {
+            "affix_id": "AF_WARD",
+            "roll_q": 374
+          }
+        ],
+        "invested_dust": 0,
+        "natural_index": 16,
+        "pity": false,
+        "wish": false,
+        "origin": {
+          "kind": "relic_search",
+          "region_id": "R01",
+          "content_version": "witch_economy_r3.0"
+        }
+      },
+      "gear_count": 16,
+      "legend_misses": 16,
+      "credited_ms": 28800000,
+      "resting_ms": 0
+    }
+  },
+  {
+    "input": {
+      "snapshot": {
+        "region_id": "R01",
+        "gates": [
+          "G_R01_A",
+          "G_START"
+        ],
+        "joined": [
+          "C_WITCH",
+          "C_APPRENTICE",
+          "C_SMITH",
+          "C_FAMILIAR"
+        ],
+        "known_evolved": [],
+        "focus_source": null,
+        "wished_template": null,
+        "cleared_area_ids": [
+          "A_R01_01",
+          "A_R01_03"
+        ],
+        "content_version": "witch_economy_r3.0"
+      },
+      "seed": "golden-r3",
+      "elapsed_hours": 8
+    },
+    "expected": {
+      "materials": {
+        "M_R01_G3": 12,
+        "M_R01_E3": 12,
+        "M_R01_G4": 12,
+        "M_R01_E2": 12,
+        "M_R01_G1": 12,
+        "M_R01_G2": 12,
+        "M_R01_E1": 12,
+        "M_R01_E4": 12
+      },
+      "xp_by_actor": {
+        "C_WITCH": 1152,
+        "C_FAMILIAR": 1152,
+        "C_APPRENTICE": 1152,
+        "C_SMITH": 1152
+      },
+      "dust": 96,
+      "work_index": 96,
+      "first_item": {
+        "uid": "d526710a1dd01e896f5913125487d412",
+        "template_id": "EQ_HAND_01",
+        "quality": "Q0",
+        "rank": 1,
+        "enhancement": 0,
+        "latent_affixes": [
+          {
+            "affix_id": "AF_DOT_RESIST",
+            "roll_q": 607
+          },
+          {
+            "affix_id": "AF_DIRECT",
+            "roll_q": 511
+          },
+          {
+            "affix_id": "AF_CDR",
+            "roll_q": 203
+          }
+        ],
+        "invested_dust": 0,
+        "natural_index": 1,
+        "pity": false,
+        "wish": false,
+        "origin": {
+          "kind": "relic_search",
+          "region_id": "R01",
+          "content_version": "witch_economy_r3.0"
+        }
+      },
+      "last_item": {
+        "uid": "9525e0662a519f64fd89d494f2496d85",
+        "template_id": "EQ_AMU_01",
+        "quality": "Q0",
+        "rank": 1,
+        "enhancement": 0,
+        "latent_affixes": [
+          {
+            "affix_id": "AF_GUARD",
+            "roll_q": 591
+          },
+          {
+            "affix_id": "AF_COUNTER",
+            "roll_q": 685
+          },
+          {
+            "affix_id": "AF_HEAL",
+            "roll_q": 374
+          }
+        ],
+        "invested_dust": 0,
+        "natural_index": 16,
+        "pity": false,
+        "wish": false,
+        "origin": {
+          "kind": "relic_search",
+          "region_id": "R01",
+          "content_version": "witch_economy_r3.0"
+        }
+      },
+      "gear_count": 16,
+      "legend_misses": 16,
+      "credited_ms": 28800000,
+      "resting_ms": 0
+    }
+  },
+  {
+    "input": {
+      "snapshot": {
+        "region_id": "R02",
+        "gates": [
+          "G_R01_A",
+          "G_R01_B",
+          "G_R02_A",
+          "G_START"
+        ],
+        "joined": [
+          "C_WITCH",
+          "C_APPRENTICE",
+          "C_SMITH",
+          "C_FAMILIAR"
+        ],
+        "known_evolved": [],
+        "focus_source": null,
+        "wished_template": null,
+        "cleared_area_ids": [
+          "A_R01_01",
+          "A_R01_03",
+          "A_R02_01",
+          "A_R02_03"
+        ],
+        "content_version": "witch_economy_r3.0"
+      },
+      "seed": "golden-r3",
+      "elapsed_hours": 8
+    },
+    "expected": {
+      "materials": {
+        "M_R02_E1": 12,
+        "M_R02_G2": 12,
+        "M_R02_E4": 12,
+        "M_R02_G1": 12,
+        "M_R02_E3": 12,
+        "M_R02_G3": 12,
+        "M_R02_G4": 12,
+        "M_R02_E2": 12
+      },
+      "xp_by_actor": {
+        "C_WITCH": 2880,
+        "C_FAMILIAR": 2880,
+        "C_APPRENTICE": 2880,
+        "C_SMITH": 2880
+      },
+      "dust": 288,
+      "work_index": 96,
+      "first_item": {
+        "uid": "d526710a1dd01e896f5913125487d412",
+        "template_id": "EQ_F_BODY_01",
+        "quality": "Q0",
+        "rank": 2,
+        "enhancement": 0,
+        "latent_affixes": [
+          {
+            "affix_id": "AF_POWER",
+            "roll_q": 607
+          },
+          {
+            "affix_id": "AF_STATUS_RESIST",
+            "roll_q": 511
+          },
+          {
+            "affix_id": "AF_CHASE",
+            "roll_q": 203
+          }
+        ],
+        "invested_dust": 0,
+        "natural_index": 1,
+        "pity": false,
+        "wish": false,
+        "origin": {
+          "kind": "relic_search",
+          "region_id": "R02",
+          "content_version": "witch_economy_r3.0"
+        }
+      },
+      "last_item": {
+        "uid": "9525e0662a519f64fd89d494f2496d85",
+        "template_id": "EQ_F_HAND_01",
+        "quality": "Q0",
+        "rank": 2,
+        "enhancement": 0,
+        "latent_affixes": [
+          {
+            "affix_id": "AF_HP",
+            "roll_q": 591
+          },
+          {
+            "affix_id": "AF_GUARD",
+            "roll_q": 685
+          },
+          {
+            "affix_id": "AF_STATUS_RESIST",
+            "roll_q": 374
+          }
+        ],
+        "invested_dust": 0,
+        "natural_index": 16,
+        "pity": false,
+        "wish": false,
+        "origin": {
+          "kind": "relic_search",
+          "region_id": "R02",
+          "content_version": "witch_economy_r3.0"
+        }
+      },
+      "gear_count": 16,
+      "legend_misses": 16,
+      "credited_ms": 28800000,
+      "resting_ms": 0
+    }
+  },
+  {
+    "input": {
+      "snapshot": {
+        "region_id": "R03",
+        "gates": [
+          "G_R01_A",
+          "G_R01_B",
+          "G_R02_A",
+          "G_R02_B",
+          "G_R03_A",
+          "G_START"
+        ],
+        "joined": [
+          "C_WITCH",
+          "C_APPRENTICE",
+          "C_SMITH",
+          "C_FAMILIAR"
+        ],
+        "known_evolved": [],
+        "focus_source": null,
+        "wished_template": null,
+        "cleared_area_ids": [
+          "A_R01_01",
+          "A_R01_03",
+          "A_R02_01",
+          "A_R02_03",
+          "A_R03_01",
+          "A_R03_03"
+        ],
+        "content_version": "witch_economy_r3.0"
+      },
+      "seed": "golden-r3",
+      "elapsed_hours": 24
+    },
+    "expected": {
+      "materials": {
+        "M_R03_E4": 36,
+        "M_R03_G3": 36,
+        "M_R03_E2": 36,
+        "M_R03_G2": 36,
+        "M_R03_G1": 36,
+        "M_R03_E3": 36,
+        "M_R03_E1": 36,
+        "M_R03_G4": 36
+      },
+      "xp_by_actor": {
+        "C_WITCH": 15552,
+        "C_FAMILIAR": 15552,
+        "C_APPRENTICE": 15552,
+        "C_SMITH": 15552
+      },
+      "dust": 1440,
+      "work_index": 288,
+      "first_item": {
+        "uid": "d526710a1dd01e896f5913125487d412",
+        "template_id": "EQ_F_BODY_01",
+        "quality": "Q0",
+        "rank": 3,
+        "enhancement": 0,
+        "latent_affixes": [
+          {
+            "affix_id": "AF_POWER",
+            "roll_q": 607
+          },
+          {
+            "affix_id": "AF_STATUS_RESIST",
+            "roll_q": 511
+          },
+          {
+            "affix_id": "AF_CHASE",
+            "roll_q": 203
+          }
+        ],
+        "invested_dust": 0,
+        "natural_index": 1,
+        "pity": false,
+        "wish": false,
+        "origin": {
+          "kind": "relic_search",
+          "region_id": "R03",
+          "content_version": "witch_economy_r3.0"
+        }
+      },
+      "last_item": {
+        "uid": "220449c3dc2b7085f6a279ac1d116033",
+        "template_id": "EQ_FEET_01",
+        "quality": "Q3",
+        "rank": 3,
+        "enhancement": 0,
+        "latent_affixes": [
+          {
+            "affix_id": "AF_COUNTER",
+            "roll_q": 181
+          },
+          {
+            "affix_id": "AF_STATUS_RESIST",
+            "roll_q": 563
+          },
+          {
+            "affix_id": "AF_DIRECT",
+            "roll_q": 15
+          }
+        ],
+        "invested_dust": 0,
+        "natural_index": 48,
+        "pity": false,
+        "wish": false,
+        "origin": {
+          "kind": "relic_search",
+          "region_id": "R03",
+          "content_version": "witch_economy_r3.0"
+        }
+      },
+      "gear_count": 48,
+      "legend_misses": 12,
+      "credited_ms": 86400000,
+      "resting_ms": 0
+    }
+  },
+  {
+    "input": {
+      "snapshot": {
+        "region_id": "R04",
+        "gates": [
+          "G_R01_A",
+          "G_R01_B",
+          "G_R02_A",
+          "G_R02_B",
+          "G_R03_A",
+          "G_R03_B",
+          "G_R04_A",
+          "G_START"
+        ],
+        "joined": [
+          "C_WITCH",
+          "C_APPRENTICE",
+          "C_SMITH",
+          "C_FAMILIAR"
+        ],
+        "known_evolved": [],
+        "focus_source": null,
+        "wished_template": null,
+        "cleared_area_ids": [
+          "A_R01_01",
+          "A_R01_03",
+          "A_R02_01",
+          "A_R02_03",
+          "A_R03_01",
+          "A_R03_03",
+          "A_R04_01",
+          "A_R04_03"
+        ],
+        "content_version": "witch_economy_r3.0"
+      },
+      "seed": "golden-r3",
+      "elapsed_hours": 48
+    },
+    "expected": {
+      "materials": {
+        "M_R04_G2": 72,
+        "M_R04_G3": 72,
+        "M_R04_G1": 72,
+        "M_R04_G4": 72,
+        "M_R04_E1": 72,
+        "M_R04_E3": 72,
+        "M_R04_E4": 72,
+        "M_R04_E2": 72
+      },
+      "xp_by_actor": {
+        "C_WITCH": 46656,
+        "C_FAMILIAR": 46656,
+        "C_APPRENTICE": 46656,
+        "C_SMITH": 46656
+      },
+      "dust": 4608,
+      "work_index": 576,
+      "first_item": {
+        "uid": "d526710a1dd01e896f5913125487d412",
+        "template_id": "EQ_F_BODY_01",
+        "quality": "Q0",
+        "rank": 4,
+        "enhancement": 0,
+        "latent_affixes": [
+          {
+            "affix_id": "AF_POWER",
+            "roll_q": 607
+          },
+          {
+            "affix_id": "AF_STATUS_RESIST",
+            "roll_q": 511
+          },
+          {
+            "affix_id": "AF_CHASE",
+            "roll_q": 203
+          }
+        ],
+        "invested_dust": 0,
+        "natural_index": 1,
+        "pity": false,
+        "wish": false,
+        "origin": {
+          "kind": "relic_search",
+          "region_id": "R04",
+          "content_version": "witch_economy_r3.0"
+        }
+      },
+      "last_item": {
+        "uid": "256a71d4e98df46612262fae5a762773",
+        "template_id": "EQ_FEET_01",
+        "quality": "Q1",
+        "rank": 4,
+        "enhancement": 0,
+        "latent_affixes": [
+          {
+            "affix_id": "AF_GUARD",
+            "roll_q": 25
+          },
+          {
+            "affix_id": "AF_DEF",
+            "roll_q": 432
+          },
+          {
+            "affix_id": "AF_DOT_RESIST",
+            "roll_q": 867
+          }
+        ],
+        "invested_dust": 0,
+        "natural_index": 96,
+        "pity": false,
+        "wish": false,
+        "origin": {
+          "kind": "relic_search",
+          "region_id": "R04",
+          "content_version": "witch_economy_r3.0"
+        }
+      },
+      "gear_count": 96,
+      "legend_misses": 60,
+      "credited_ms": 172800000,
+      "resting_ms": 0
+    }
+  },
+  {
+    "input": {
+      "snapshot": {
+        "region_id": "R05",
+        "gates": [
+          "G_R01_A",
+          "G_R01_B",
+          "G_R02_A",
+          "G_R02_B",
+          "G_R03_A",
+          "G_R03_B",
+          "G_R04_A",
+          "G_R04_B",
+          "G_R05_A",
+          "G_R05_B",
+          "G_START"
+        ],
+        "joined": [
+          "C_WITCH",
+          "C_APPRENTICE",
+          "C_SMITH",
+          "C_FAMILIAR"
+        ],
+        "known_evolved": [],
+        "focus_source": null,
+        "wished_template": null,
+        "cleared_area_ids": [
+          "A_R01_01",
+          "A_R01_03",
+          "A_R02_01",
+          "A_R02_03",
+          "A_R03_01",
+          "A_R03_03",
+          "A_R04_01",
+          "A_R04_03",
+          "A_R05_01",
+          "A_R05_03"
+        ],
+        "content_version": "witch_economy_r3.0"
+      },
+      "seed": "golden-r3",
+      "elapsed_hours": 72
+    },
+    "expected": {
+      "materials": {
+        "M_R05_E1": 72,
+        "M_R05_G1": 72,
+        "M_R05_G2": 72,
+        "M_R05_E2": 72,
+        "M_R05_E4": 72,
+        "M_R05_E3": 72,
+        "M_R05_G4": 72,
+        "M_R05_G3": 72
+      },
+      "xp_by_actor": {
+        "C_WITCH": 62208,
+        "C_FAMILIAR": 62208,
+        "C_APPRENTICE": 62208,
+        "C_SMITH": 62208
+      },
+      "dust": 6912,
+      "work_index": 576,
+      "first_item": {
+        "uid": "d526710a1dd01e896f5913125487d412",
+        "template_id": "EQ_F_BODY_01",
+        "quality": "Q0",
+        "rank": 5,
+        "enhancement": 0,
+        "latent_affixes": [
+          {
+            "affix_id": "AF_POWER",
+            "roll_q": 607
+          },
+          {
+            "affix_id": "AF_STATUS_RESIST",
+            "roll_q": 511
+          },
+          {
+            "affix_id": "AF_CHASE",
+            "roll_q": 203
+          }
+        ],
+        "invested_dust": 0,
+        "natural_index": 1,
+        "pity": false,
+        "wish": false,
+        "origin": {
+          "kind": "relic_search",
+          "region_id": "R05",
+          "content_version": "witch_economy_r3.0"
+        }
+      },
+      "last_item": {
+        "uid": "256a71d4e98df46612262fae5a762773",
+        "template_id": "EQ_FEET_01",
+        "quality": "Q1",
+        "rank": 5,
+        "enhancement": 0,
+        "latent_affixes": [
+          {
+            "affix_id": "AF_GUARD",
+            "roll_q": 25
+          },
+          {
+            "affix_id": "AF_DEF",
+            "roll_q": 432
+          },
+          {
+            "affix_id": "AF_DOT_RESIST",
+            "roll_q": 867
+          }
+        ],
+        "invested_dust": 0,
+        "natural_index": 96,
+        "pity": false,
+        "wish": false,
+        "origin": {
+          "kind": "relic_search",
+          "region_id": "R05",
+          "content_version": "witch_economy_r3.0"
+        }
+      },
+      "gear_count": 96,
+      "legend_misses": 60,
+      "credited_ms": 172800000,
+      "resting_ms": 86400000
+    }
+  }
+]

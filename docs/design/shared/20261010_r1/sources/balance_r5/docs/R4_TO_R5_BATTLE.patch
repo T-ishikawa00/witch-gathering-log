@@ -1,0 +1,273 @@
+--- vendor/r01_r4/tools/battle_model.py
++++ tools/battle_r5.py
+@@ -1,7 +1,7 @@
+-"""R01 two-boss reference slice. Not production engine, not a player test.
+-R2 constants/stat helpers are imported unchanged; missing boss numbers and timing
+-choices live in LOCAL_CANDIDATES.json. Only R01 pre-clear gear is supported.
+-No network, rendering, account access, database or Mac writes.
++"""R5 R01 reference-only combat, forked from frozen R4.
++Input items, R2 constants and R3 economy remain unmodified. Default numerical
++unit is 1/10000 point; profile-based changes are comparisons, not UI options.
++No engine, network, DB, real-device test or Mac project writes.
+ """
+ from __future__ import annotations
+ from dataclasses import dataclass, field, asdict
+@@ -9,7 +9,7 @@
+ from collections import Counter
+ from fractions import Fraction
+ import sys, json, hashlib, heapq, copy
+-ROOT=Path(__file__).resolve().parents[1]
++ROOT=Path(__file__).resolve().parents[1]/'vendor/r01_r4'
+ sys.path.insert(0,str(ROOT/'source/growth_r2/validation'))
+ import reference_model as g
+ SKILLS={s['skill_id']:s for s in g.DATA['skills']}
+@@ -64,28 +64,35 @@
+     Detailed telemetry belongs to the validation tool, not player-facing AI.
+     """
+     def __init__(self,party:list[PartyInput],boss:dict,seed:int|str,
+-                 record:bool=False,disabled=frozenset(),timing_mode='first_impact_at_interval'):
++                 record:bool=False,disabled=frozenset(),timing_mode='first_impact_at_interval',profile=None):
++        from precision_rules import PrecisionRules, Profile
++        self.profile=profile or Profile()
++        self.rules=PrecisionRules(g,self.profile.precision_scale) if self.profile.precision_scale!=1 else g
++        self.unit_scale=self.profile.precision_scale
++        source_boss=copy.deepcopy(boss)
++        boss=copy.deepcopy(boss)
++        for k in ('hp','power','defense'):boss[k]*=self.unit_scale
+         if not party or len({p.actor_id for p in party})!=len(party):raise ValueError('invalid roster')
+-        g.validate_party_loadout({p.actor_id:list(p.items) for p in party})
++        self.rules.validate_party_loadout({p.actor_id:list(p.items) for p in party})
+         self.boss=copy.deepcopy(boss);self.seed=str(seed);self.record=record
+         self.disabled=set(disabled);self.timing_mode=timing_mode
+         self.actors={};self.now=0;self.seq=0;self.queue=[];self.pending_wakes=set()
+         self.telegraphs={};self.serial=0;self.logs=[];self.metrics=Counter();self.per_actor={};self.forecast_cache={}
+-        self.poison=g.PoisonSchedule();self.poison_power=0;self.poison_bonus=0
++        self.poison=self.rules.PoisonSchedule();self.poison_power=0;self.poison_bonus=0
+         self.mark_expiry=0;self.weaken_expiry=0;self.boss_hp=boss['hp']
+         self.outcome=None;self.iterations=0;self.transitions=0
+-        self.time_limit=boss.get('time_limit_ms',g.DATA['combat']['time_limit_ms'])
++        self.time_limit=boss.get('time_limit_ms',self.rules.DATA['combat']['time_limit_ms'])
+         for p in sorted(party,key=lambda p:ORDER.index(p.actor_id)):
+             if p.awakening:raise ValueError('R01 first-clear slice does not support awakening')
+             for it in p.items:
+-                if g.GEAR[it.template_id]['unlock_gate'] not in ('G_START','G_R01_A') or g.GEAR[it.template_id]['core_rules']:
++                if self.rules.GEAR[it.template_id]['unlock_gate'] not in ('G_START','G_R01_A') or self.rules.GEAR[it.template_id]['core_rules']:
+                     raise ValueError('unsupported future/core-rule item in R01 slice')
+-            st=g.actor_stats(p.actor_id,p.level,list(p.items),p.awakening)
+-            interval=g.scaled_basic_interval(g.ACTORS[p.actor_id]['basic_interval_ms'],st.get('haste_bp',0))
++            st=self.rules.actor_stats(p.actor_id,p.level,list(p.items),p.awakening)
++            interval=self.rules.scaled_basic_interval(self.rules.ACTORS[p.actor_id]['basic_interval_ms'],st.get('haste_bp',0))
+             first_start=interval-SKILLS[p.actor_id+'_BASIC']['windup_ms'] if timing_mode=='first_impact_at_interval' else interval
+             self.actors[p.actor_id]=Actor(p.actor_id,p.level,st,st['hp'],first_start)
+             self.per_actor[p.actor_id]=Counter()
+-        self.input_fingerprint=sha({'party':[{'actor_id':p.actor_id,'level':p.level,'items':[asdict(i) for i in p.items]} for p in party], 'boss':boss,'seed':self.seed,'disabled':sorted(disabled),'timing':timing_mode})
++        self.input_fingerprint=sha({'party':[{'actor_id':p.actor_id,'level':p.level,'items':[asdict(i) for i in p.items]} for p in party], 'boss':boss,'seed':self.seed,'disabled':sorted(disabled),'timing':timing_mode,'profile':asdict(self.profile)})
+         w=self.actors.get('C_WITCH')
+         if w and 'start_barrier' not in self.disabled:
+             amount=floor(Fraction(w.stats['power'])*(10000+w.stats.get('barrier_bonus_bp',0))/10000)
+@@ -110,7 +117,7 @@
+         for aid in self.actors:self.wake(aid,self.now if t is None else t)
+     def add_shield(self,source,target,amount,duration):
+         a=self.actors[target]
+-        actual=g.barrier_add(sum(s.amount for s in a.shields),a.stats['hp'],amount)
++        actual=self.rules.barrier_add(sum(s.amount for s in a.shields),a.stats['hp'],amount)
+         if not a.hp or actual<=0:return 0
+         self.serial+=1;s=Shield(source,actual,self.now+duration,self.serial)
+         a.shields.append(s);self.push(s.expiry,1,'expire_shield',{'target':target,'uid':s.uid})
+@@ -123,7 +130,7 @@
+         elif not any(a.hp>0 for a in self.actors.values()):self.outcome='DEFEAT'
+         return self.outcome is not None
+     def weights(self):
+-        table=g.DATA['combat']['party_target_weights'] if 'C_SMITH' in self.actors else g.DATA['combat']['pre_smith_weights']
++        table=self.rules.DATA['combat']['party_target_weights'] if 'C_SMITH' in self.actors else self.rules.DATA['combat']['pre_smith_weights']
+         return [(aid,table.get(aid,10)) for aid,a in self.actors.items() if a.hp>0]
+     def target(self,index):
+         weights=self.weights();roll=randint(self.seed,'enemy-target',index,sum(v for _,v in weights))
+@@ -138,7 +145,7 @@
+     def incoming(self,a,action,guard=False,redirect=False):
+         reduction=a.stats.get('heavy_reduction_bp',0) if action.get('heavy') else 0
+         if redirect:reduction+=1500
+-        return g.direct_incoming(self.enemy_raw(action),a.stats['defense'],self.boss['level'],guard,reduction)
++        return self.rules.direct_incoming(self.enemy_raw(action),a.stats['defense'],self.boss['level'],guard,reduction)
+     def reserved(self,aid,kind,before):
+         result=0
+         for a in self.actors.values():
+@@ -169,7 +176,7 @@
+             if target and not self.actors[target].hp:target=original if self.actors[original].hp else None
+             if pending and pending['finish']<first:
+                 charges=2;expiry=pending['finish']+4000;pending=None
+-            if not without_cover and not tele.get('resolved_target') and smith and smith.hp and charges and expiry>first:
++            if not without_cover and not tele.get('resolved_target') and smith and smith.hp and charges and expiry>first and (not self.profile.no_self_cover_charge or original!=smith.id):
+                 estimate=sum(self.incoming(smith,act,redirect=True) for t in remaining)
+                 if smith.hp*10000>smith.stats['hp']*3500 and max(0,estimate-self.shield_total(smith))<smith.hp:
+                     target=smith.id;charges-=1
+@@ -260,7 +267,7 @@
+         return floor(v),bool(crit)
+     def outgoing(self,a,coefficient,crit_allowed,kind,root,skill):
+         raw,crit=self.raw_outgoing(a,coefficient,crit_allowed,kind,root)
+-        damage=g.direct_incoming(raw,self.boss['defense'],a.level)
++        damage=self.rules.direct_incoming(raw,self.boss['defense'],a.level)
+         # Vulnerable recovery is NOT extra damage in this candidate; simply no boss action.
+         dealt=min(damage,self.boss_hp);self.boss_hp-=dealt
+         self.metrics['damage_'+kind]+=dealt;self.per_actor[a.id]['damage_'+kind]+=dealt
+@@ -300,7 +307,7 @@
+         elif sk=='SK_A_HEAL':
+             if not self.actors[target].hp:target=self.heal_target(a)
+             if target:
+-                t=self.actors[target];r=g.apply_heal(t.hp,t.stats['hp'],self.heal_nominal(a));t.hp=r['hp_after']
++                t=self.actors[target];r=self.rules.apply_heal(t.hp,t.stats['hp'],self.heal_nominal(a));t.hp=r['hp_after']
+                 success=r['effective']>0;self.metrics['effective_heal']+=r['effective'];self.per_actor[aid]['effective_heal']+=r['effective']
+                 self.log('heal',source=aid,target=target,**r)
+                 if success and r['effective']*20>=t.stats['hp'] and self.now>=a.echo_at and 'echo' not in self.disabled:
+@@ -324,10 +331,10 @@
+         if success:
+             self.metrics['cast_'+sk]+=1;self.per_actor[aid]['cast_'+sk]+=1
+             if spec['kind']=='basic':
+-                gap=g.scaled_basic_interval(g.ACTORS[aid]['basic_interval_ms'],a.stats.get('haste_bp',0))
++                gap=self.rules.scaled_basic_interval(self.rules.ACTORS[aid]['basic_interval_ms'],a.stats.get('haste_bp',0))
+                 a.basic_at=self.now+gap-(spec['windup_ms'] if self.timing_mode=='first_impact_at_interval' else 0)
+             else:
+-                a.ready[sk]=self.now+g.scaled_skill_cd(spec['cooldown_ms'],a.stats.get('cdr_bp',0))
++                a.ready[sk]=self.now+self.rules.scaled_skill_cd(spec['cooldown_ms'],a.stats.get('cdr_bp',0))
+                 self.wake(aid,a.ready[sk])
+             a.busy_until=self.now+spec['recovery_ms']
+         else:
+@@ -342,7 +349,7 @@
+         redirected=False
+         if not action['aoe']:
+             original=tele['target']
+-            if i==0 and a_smith and a_smith.hp and a_smith.cover_expiry>self.now and a_smith.cover_charges>0:
++            if i==0 and a_smith and a_smith.hp and a_smith.cover_expiry>self.now and a_smith.cover_charges>0 and (not self.profile.no_self_cover_charge or original!=a_smith.id):
+                 est=sum(self.incoming(a_smith,action,redirect=True) for _ in tele['hits'])
+                 if a_smith.hp*10000>a_smith.stats['hp']*3500 and max(0,est-self.shield_total(a_smith))<a_smith.hp:
+                     tele['resolved_target']=a_smith.id;a_smith.cover_charges-=1
+@@ -361,12 +368,12 @@
+                 used=min(rem,s.amount);s.amount-=used;rem-=used;absorbed+=used
+                 self.per_actor[s.source]['barrier_absorbed']+=used
+             a.shields=[s for s in a.shields if s.amount>0]
+-            loss=min(a.hp,rem);a.hp-=loss
++            hp_before=a.hp;loss=min(a.hp,rem);a.hp-=loss
+             self.metrics['received_hp']+=loss;self.metrics['barrier_absorbed']+=absorbed
+             self.metrics['guarded_hits']+=guarded;self.metrics['cover_hits']+=redirected
+             self.per_actor[aid]['received_hp']+=loss
+             if redirected:self.per_actor[aid]['covered_hp_loss']+=loss
+-            self.log('enemy_hit',source=self.boss['id'],target=aid,original_target=tele['target'],root=payload['root'],hit_index=i,action=action['id'],hp_loss=loss,absorbed=absorbed,guard=guarded,redirected=redirected,hp=a.hp)
++            self.log('enemy_hit',source=self.boss['id'],target=aid,original_target=tele['target'],root=payload['root'],hit_index=i,action=action['id'],hp_before=hp_before,incoming=incoming,hp_loss=loss,absorbed=absorbed,guard=guarded,redirected=redirected,hp=a.hp)
+             if a.hp==0:
+                 a.casting=None;self.metrics['deaths']+=1;self.log('death',actor=aid)
+             if self.end_check():return
+@@ -412,7 +419,7 @@
+                 self.outgoing(a,p['coefficient'],False,p['kind'],p['root'],'PS_'+p['kind'])
+         elif kind=='dot':
+             if self.poison.next_tick_ms!=self.now or not self.poison.stacks or self.now>self.poison.expires_ms:return
+-            dmg=g.poison_tick(self.poison_power,self.poison.stacks,1,self.poison_bonus,self.boss.get('dot_resist_bp',0))
++            dmg=self.rules.poison_tick(self.poison_power,self.poison.stacks,1,self.poison_bonus,self.boss.get('dot_resist_bp',0))
+             dealt=min(self.boss_hp,dmg);self.boss_hp-=dealt;self.metrics['damage_dot']+=dealt
+             self.per_actor['C_WITCH']['damage_dot']+=dealt;self.log('dot',source='C_WITCH',hp_loss=dealt,stacks=self.poison.stacks,boss_hp=self.boss_hp)
+             self.poison.next_tick_ms=self.now+1000
+@@ -421,7 +428,7 @@
+         elif kind=='expire_poison':
+             if self.now>=self.poison.expires_ms:self.poison.stacks=0;self.poison.next_tick_ms=None;self.wake_all()
+         elif kind=='expire_shield':
+-            a=self.actors[p['target']];a.shields=[s for s in a.shields if s.uid!=p['uid']];self.wake_all()
++            a=self.actors[p['target']];expired=sum(s.amount for s in a.shields if s.uid==p['uid']);self.metrics['barrier_expired_unused']+=expired;self.log('barrier_expiry',target=a.id,unused=expired);a.shields=[s for s in a.shields if s.uid!=p['uid']];self.wake_all()
+         elif kind=='wake_all':self.wake_all()
+         elif kind=='timeout':self.outcome='TIMEOUT'
+         else:raise ValueError(kind)
+@@ -434,6 +441,95 @@
+                 'party_remaining_hp':{aid:a.hp for aid,a in self.actors.items()},
+                 'metrics':dict(self.metrics),'per_actor':{aid:dict(v) for aid,v in self.per_actor.items()},
+                 'event_iterations':self.iterations,'input_fingerprint':self.input_fingerprint,
+-                'timing_mode':self.timing_mode,'provenance':'R2 formulas + R4 local candidate encounter/timing overlay'}
++                'timing_mode':self.timing_mode,'provenance':'R5 comparison candidate; original R2/R3 preserved','unit_scale':self.unit_scale,'profile':asdict(self.profile)}
+         if self.record:result['log']=self.logs;result['log_sha256']=sha(self.logs)
+         return result
++
++
++class BattleR5(Battle):
++    """Urgent support is opt-in for ablation; no player AI settings."""
++    def heal_target(self,a):
++        if not self.profile.urgent_support:
++            return super().heal_target(a)
++        choices=[]
++        for aid,t in self.actors.items():
++            if t.hp<=0:continue
++            hp=min(t.stats['hp'],t.hp+self.reserved(aid,'heal',self.now+300))
++            d,loss,projected=self.danger_for(aid)
++            if hp<t.stats['hp'] and (hp*10000<=t.stats['hp']*7000 or (d and projected*10000<=t.stats['hp']*3500)):
++                imminents=[h[0] for h in self.public_forecast() if h[1]==aid]
++                # Known lethal prediction first; tie-breaker keeps canonical ORDER.
++                urgency=0 if d and projected<=0 and imminents and self.now+300<min(imminents) else 1
++                choices.append((urgency,Fraction(hp,t.stats['hp']),ORDER.index(aid),aid))
++        return min(choices)[3] if choices else None
++
++    def choose(self,a):
++        if not self.profile.urgent_support or a.id!='C_APPRENTICE':
++            return super().choose(a)
++        # Compare feasible life-saving support against public impacts, without
++        # granting instant casts, resetting cooldowns, or seeing future RNG.
++        choices=[]
++        for aid,t in self.actors.items():
++            if t.hp<=0:continue
++            danger,loss,proj=self.danger_for(aid)
++            hit_times=[x[0] for x in self.public_forecast() if x[1]==aid]
++            if not danger or proj>0 or not hit_times:continue
++            first=min(hit_times)
++            for skill,kind,windup in [('SK_A_HEAL','heal',300),('SK_A_WARD','ward',250)]:
++                if kind in self.disabled or a.ready.get(skill,0)>self.now or self.now+windup>=first:continue
++                if kind=='heal':gain=min(t.stats['hp']-t.hp,self.heal_nominal(a))
++                else:
++                    amount=self.ward_nominal(a)*(10000+t.stats.get('barrier_received_bp',0))//10000
++                    gain=self.rules.barrier_add(self.shield_total(t),t.stats['hp'],amount)
++                if gain>0:
++                    can_save=proj+gain>0
++                    choices.append((0 if can_save else 1,first,-Fraction(proj+gain,t.stats['hp']),windup,ORDER.index(aid),skill,aid))
++        if choices:
++            best=min(choices)
++            return best[-2],best[-1]
++        # General rule: effective healing first, then ward; no emergency paired
++        # action was available. Keep buffs/reactions identical to R4.
++        heal=self.heal_target(a) if 'heal' not in self.disabled else None
++        ward=self.ward_target(a) if 'ward' not in self.disabled else None
++        if heal and a.ready.get('SK_A_HEAL',0)<=self.now:return 'SK_A_HEAL',heal
++        if ward and a.ready.get('SK_A_WARD',0)<=self.now:return 'SK_A_WARD',ward
++        if a.basic_at<=self.now:return a.id+'_BASIC','boss'
++        return None
++
++    def forecast_incoming_at(self,actor,action,time,redirect=False):
++        raw=Fraction(self.boss['power']*action['coefficient_bp'],10000)
++        if self.weaken_expiry>time:raw*=Fraction(8800,10000)
++        reduction=actor.stats.get('heavy_reduction_bp',0) if action.get('heavy') else 0
++        if redirect:reduction+=1500
++        return self.rules.direct_incoming(floor(raw),actor.stats['defense'],self.boss['level'],False,reduction)
++
++    def danger_for(self,aid,without_cover=False):
++        if not self.profile.temporal_forecast:
++            return super().danger_for(aid,without_cover)
++        a=self.actors[aid];hp=a.hp;loss=0;single=0
++        relevant=[x for x in self.public_forecast(without_cover) if x[1]==aid]
++        if not relevant:return False,0,hp
++        shields=[{'amount':s.amount,'expiry':s.expiry} for s in a.shields]
++        pending=[]
++        for actor in self.actors.values():
++            c=actor.casting
++            if actor.hp>0 and c and c['target']==aid and c['skill'] in ('SK_A_HEAL','SK_A_WARD'):
++                pending.append((c['finish'],ORDER.index(actor.id),c['skill'],actor))
++        pending.sort(key=lambda p:(p[0],p[1]))
++        for time,target,action,redirect in relevant:
++            while pending and pending[0][0]<time:
++                when,_,skill,source=pending.pop(0)
++                shields=[s for s in shields if s['expiry']>when and s['amount']>0]
++                if hp<=0:break # A normal heal cannot resurrect.
++                if skill=='SK_A_HEAL':hp=min(a.stats['hp'],hp+self.heal_nominal(source))
++                else:
++                    nominal=self.ward_nominal(source)*(10000+a.stats.get('barrier_received_bp',0))//10000
++                    gain=self.rules.barrier_add(sum(s['amount'] for s in shields),a.stats['hp'],nominal)
++                    if gain:shields.append({'amount':gain,'expiry':when+6000})
++            shields=[s for s in shields if s['expiry']>time and s['amount']>0]
++            inc=self.forecast_incoming_at(a,action,time,redirect)
++            for shield in sorted(shields,key=lambda s:s['expiry']):
++                take=min(inc,shield['amount']);inc-=take;shield['amount']-=take
++            hp-=inc;loss+=inc;single=max(single,inc)
++        danger=single*10000>=a.stats['hp']*2000 or hp*10000<=a.stats['hp']*3500
++        return danger,loss,hp

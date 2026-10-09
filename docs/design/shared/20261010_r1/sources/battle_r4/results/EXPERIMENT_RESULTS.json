@@ -1,0 +1,1695 @@
+{
+  "boundary": "R01-first-clear reference only; R2/R3 unchanged; enemy/timing and intro-affix types local proposals. No real UI/device/retention validation.",
+  "seeds": {
+    "main": [
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008,
+      1009,
+      1010,
+      1011,
+      1012,
+      1013,
+      1014,
+      1015,
+      1016,
+      1017,
+      1018,
+      1019,
+      1020,
+      1021,
+      1022,
+      1023,
+      1024,
+      1025,
+      1026,
+      1027,
+      1028,
+      1029,
+      1030,
+      1031,
+      1032,
+      1033,
+      1034,
+      1035,
+      1036,
+      1037,
+      1038,
+      1039,
+      1040,
+      1041,
+      1042,
+      1043,
+      1044,
+      1045,
+      1046,
+      1047,
+      1048,
+      1049,
+      1050,
+      1051,
+      1052,
+      1053,
+      1054,
+      1055,
+      1056,
+      1057,
+      1058,
+      1059,
+      1060,
+      1061,
+      1062,
+      1063,
+      1064,
+      1065,
+      1066,
+      1067,
+      1068,
+      1069,
+      1070,
+      1071,
+      1072,
+      1073,
+      1074,
+      1075,
+      1076,
+      1077,
+      1078,
+      1079,
+      1080,
+      1081,
+      1082,
+      1083,
+      1084,
+      1085,
+      1086,
+      1087,
+      1088,
+      1089,
+      1090,
+      1091,
+      1092,
+      1093,
+      1094,
+      1095,
+      1096,
+      1097,
+      1098,
+      1099,
+      1100
+    ],
+    "sensitivity": [
+      2001,
+      2050
+    ],
+    "timing": [
+      3001,
+      3050
+    ],
+    "craft": [
+      4001,
+      4010
+    ]
+  },
+  "candidate_sha256": "2253fc3d457045690d56ba7471c67aa3c72ad74cdcd31d550e0981b0a8e9e85a",
+  "scenarios": {
+    "A_INTRO_Q2": {
+      "boss": "B_R01_A",
+      "credited_h": 0.0,
+      "level": 6,
+      "n": 100,
+      "wins": 100,
+      "win_rate": 1.0,
+      "wilson95": [
+        0.9630051925239981,
+        0.9999999999999999
+      ],
+      "defeats": 0,
+      "timeouts": 0,
+      "win_seconds_p10": 16.05,
+      "win_seconds_p50": 16.4,
+      "win_seconds_p90": 16.6,
+      "mean_end_boss_hp": 0,
+      "mean_metrics": {
+        "effective_heal": 0,
+        "barrier_absorbed": 54.76,
+        "cover_hits": 0,
+        "damage_dot": 222.29,
+        "damage_counter": 0,
+        "damage_chase": 80.04,
+        "echo_consumed": 0,
+        "deaths": 0.03
+      }
+    },
+    "A_START_L1": {
+      "boss": "B_R01_A",
+      "credited_h": 0.0,
+      "level": 1,
+      "n": 100,
+      "wins": 0,
+      "win_rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.03699480747600191
+      ],
+      "defeats": 100,
+      "timeouts": 0,
+      "win_seconds_p10": null,
+      "win_seconds_p50": null,
+      "win_seconds_p90": null,
+      "mean_end_boss_hp": 759.56,
+      "mean_metrics": {
+        "effective_heal": 0,
+        "barrier_absorbed": 38.48,
+        "cover_hits": 0,
+        "damage_dot": 198.72,
+        "damage_counter": 0,
+        "damage_chase": 34.3,
+        "echo_consumed": 0,
+        "deaths": 2
+      }
+    },
+    "A_INTRO_PLUS1": {
+      "boss": "B_R01_A",
+      "credited_h": 0.0,
+      "level": 6,
+      "n": 100,
+      "wins": 100,
+      "win_rate": 1.0,
+      "wilson95": [
+        0.9630051925239981,
+        0.9999999999999999
+      ],
+      "defeats": 0,
+      "timeouts": 0,
+      "win_seconds_p10": 16.05,
+      "win_seconds_p50": 16.4,
+      "win_seconds_p90": 16.6,
+      "mean_end_boss_hp": 0,
+      "mean_metrics": {
+        "effective_heal": 0,
+        "barrier_absorbed": 54.76,
+        "cover_hits": 0,
+        "damage_dot": 222.29,
+        "damage_counter": 0,
+        "damage_chase": 80.04,
+        "echo_consumed": 0,
+        "deaths": 0.03
+      }
+    },
+    "A_INTRO_PLUS3": {
+      "boss": "B_R01_A",
+      "credited_h": 0.0,
+      "level": 6,
+      "n": 100,
+      "wins": 100,
+      "win_rate": 1.0,
+      "wilson95": [
+        0.9630051925239981,
+        0.9999999999999999
+      ],
+      "defeats": 0,
+      "timeouts": 0,
+      "win_seconds_p10": 16.05,
+      "win_seconds_p50": 16.35,
+      "win_seconds_p90": 16.6,
+      "mean_end_boss_hp": 0,
+      "mean_metrics": {
+        "effective_heal": 0,
+        "barrier_absorbed": 55.5,
+        "cover_hits": 0,
+        "damage_dot": 229.38,
+        "damage_counter": 0,
+        "damage_chase": 77.59,
+        "echo_consumed": 0,
+        "deaths": 0.03
+      }
+    },
+    "B_JOINED_NO_WAIT": {
+      "boss": "B_R01_B",
+      "credited_h": 0.0,
+      "level": 6,
+      "n": 100,
+      "wins": 0,
+      "win_rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.03699480747600191
+      ],
+      "defeats": 100,
+      "timeouts": 0,
+      "win_seconds_p10": null,
+      "win_seconds_p50": null,
+      "win_seconds_p90": null,
+      "mean_end_boss_hp": 6384.23,
+      "mean_metrics": {
+        "effective_heal": 913.06,
+        "barrier_absorbed": 353,
+        "cover_hits": 2.97,
+        "damage_dot": 817.76,
+        "damage_counter": 65.66,
+        "damage_chase": 176.32,
+        "echo_consumed": 5.73,
+        "deaths": 4
+      }
+    },
+    "B_PROTECT_6H": {
+      "boss": "B_R01_B",
+      "credited_h": 6.0,
+      "level": 8,
+      "n": 100,
+      "wins": 10,
+      "win_rate": 0.1,
+      "wilson95": [
+        0.05522854161313613,
+        0.1743673043676654
+      ],
+      "defeats": 84,
+      "timeouts": 6,
+      "win_seconds_p10": 80.37,
+      "win_seconds_p50": 91.85,
+      "win_seconds_p90": 108.13000000000001,
+      "mean_end_boss_hp": 1094.51,
+      "mean_metrics": {
+        "effective_heal": 2179.17,
+        "barrier_absorbed": 805.28,
+        "cover_hits": 3.6,
+        "damage_dot": 1630.61,
+        "damage_counter": 104.36,
+        "damage_chase": 270.48,
+        "echo_consumed": 8.63,
+        "deaths": 3.83
+      }
+    },
+    "B_PROTECT_12H": {
+      "boss": "B_R01_B",
+      "credited_h": 12.0,
+      "level": 9,
+      "n": 100,
+      "wins": 81,
+      "win_rate": 0.81,
+      "wilson95": [
+        0.7222097592919214,
+        0.8748534600729574
+      ],
+      "defeats": 19,
+      "timeouts": 0,
+      "win_seconds_p10": 61.8,
+      "win_seconds_p50": 63.4,
+      "win_seconds_p90": 71.75,
+      "mean_end_boss_hp": 97.48,
+      "mean_metrics": {
+        "effective_heal": 1776.64,
+        "barrier_absorbed": 644.15,
+        "cover_hits": 3.96,
+        "damage_dot": 1716.44,
+        "damage_counter": 115.53,
+        "damage_chase": 325.56,
+        "echo_consumed": 8.69,
+        "deaths": 1.84
+      }
+    },
+    "B_PROTECT_24H": {
+      "boss": "B_R01_B",
+      "credited_h": 24.0,
+      "level": 12,
+      "n": 100,
+      "wins": 100,
+      "win_rate": 1.0,
+      "wilson95": [
+        0.9630051925239981,
+        0.9999999999999999
+      ],
+      "defeats": 0,
+      "timeouts": 0,
+      "win_seconds_p10": 52.2,
+      "win_seconds_p50": 53.3,
+      "win_seconds_p90": 53.3,
+      "mean_end_boss_hp": 0,
+      "mean_metrics": {
+        "effective_heal": 1584.96,
+        "barrier_absorbed": 632.3,
+        "cover_hits": 2.85,
+        "damage_dot": 1586.1,
+        "damage_counter": 111.28,
+        "damage_chase": 343.99,
+        "echo_consumed": 6.92,
+        "deaths": 0
+      }
+    },
+    "B_OFFENSE_6H": {
+      "boss": "B_R01_B",
+      "credited_h": 6.0,
+      "level": 8,
+      "n": 100,
+      "wins": 1,
+      "win_rate": 0.01,
+      "wilson95": [
+        0.0017673865655472645,
+        0.0544875247609346
+      ],
+      "defeats": 99,
+      "timeouts": 0,
+      "win_seconds_p10": 96.12,
+      "win_seconds_p50": 96.12,
+      "win_seconds_p90": 96.12,
+      "mean_end_boss_hp": 2093.88,
+      "mean_metrics": {
+        "effective_heal": 1443.96,
+        "barrier_absorbed": 569.22,
+        "cover_hits": 3.39,
+        "damage_dot": 1507.8,
+        "damage_counter": 105.52,
+        "damage_chase": 246.59,
+        "echo_consumed": 6.89,
+        "deaths": 3.98
+      }
+    },
+    "B_OFFENSE_12H": {
+      "boss": "B_R01_B",
+      "credited_h": 12.0,
+      "level": 9,
+      "n": 100,
+      "wins": 56,
+      "win_rate": 0.56,
+      "wilson95": [
+        0.4622792771125631,
+        0.6532813459903167
+      ],
+      "defeats": 44,
+      "timeouts": 0,
+      "win_seconds_p10": 61.3,
+      "win_seconds_p50": 63.048,
+      "win_seconds_p90": 67.02199999999999,
+      "mean_end_boss_hp": 319.49,
+      "mean_metrics": {
+        "effective_heal": 1505.08,
+        "barrier_absorbed": 613.28,
+        "cover_hits": 3.9,
+        "damage_dot": 1747.74,
+        "damage_counter": 119.16,
+        "damage_chase": 295.66,
+        "echo_consumed": 7.57,
+        "deaths": 2.92
+      }
+    },
+    "B_OFFENSE_24H": {
+      "boss": "B_R01_B",
+      "credited_h": 24.0,
+      "level": 12,
+      "n": 100,
+      "wins": 100,
+      "win_rate": 1.0,
+      "wilson95": [
+        0.9630051925239981,
+        0.9999999999999999
+      ],
+      "defeats": 0,
+      "timeouts": 0,
+      "win_seconds_p10": 51.1,
+      "win_seconds_p50": 51.4,
+      "win_seconds_p90": 51.9,
+      "mean_end_boss_hp": 0,
+      "mean_metrics": {
+        "effective_heal": 1512,
+        "barrier_absorbed": 548.33,
+        "cover_hits": 3.12,
+        "damage_dot": 1647.07,
+        "damage_counter": 115.2,
+        "damage_chase": 318.87,
+        "echo_consumed": 6.6,
+        "deaths": 0
+      }
+    },
+    "B_SAME_ITEMS_REALLOCATED_12H": {
+      "boss": "B_R01_B",
+      "credited_h": 12.0,
+      "level": 9,
+      "n": 100,
+      "wins": 18,
+      "win_rate": 0.18,
+      "wilson95": [
+        0.11700131654251038,
+        0.26667536024213084
+      ],
+      "defeats": 82,
+      "timeouts": 0,
+      "win_seconds_p10": 64.75,
+      "win_seconds_p50": 70.875,
+      "win_seconds_p90": 92.5,
+      "mean_end_boss_hp": 968.73,
+      "mean_metrics": {
+        "effective_heal": 1553.08,
+        "barrier_absorbed": 620.76,
+        "cover_hits": 3.3,
+        "damage_dot": 1451.66,
+        "damage_counter": 124.86,
+        "damage_chase": 326.66,
+        "echo_consumed": 8.33,
+        "deaths": 3.76
+      }
+    }
+  },
+  "ablations": {
+    "no_support": {
+      "disabled_for_diagnostic_only": [
+        "counter",
+        "cover",
+        "echo",
+        "heal",
+        "ward"
+      ],
+      "n": 50,
+      "wins": 0,
+      "win_rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.07135003417431873
+      ],
+      "defeats": 50,
+      "timeouts": 0,
+      "win_seconds_p10": null,
+      "win_seconds_p50": null,
+      "win_seconds_p90": null,
+      "mean_end_boss_hp": 5432.06,
+      "mean_metrics": {
+        "effective_heal": 0,
+        "barrier_absorbed": 11.52,
+        "cover_hits": 0,
+        "damage_dot": 1024.8,
+        "damage_counter": 0,
+        "damage_chase": 161.5,
+        "echo_consumed": 0,
+        "deaths": 4
+      }
+    },
+    "no_heal": {
+      "disabled_for_diagnostic_only": [
+        "echo",
+        "heal"
+      ],
+      "n": 50,
+      "wins": 0,
+      "win_rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.07135003417431873
+      ],
+      "defeats": 50,
+      "timeouts": 0,
+      "win_seconds_p10": null,
+      "win_seconds_p50": null,
+      "win_seconds_p90": null,
+      "mean_end_boss_hp": 3964.56,
+      "mean_metrics": {
+        "effective_heal": 0,
+        "barrier_absorbed": 486.14,
+        "cover_hits": 2.22,
+        "damage_dot": 1218.6,
+        "damage_counter": 78.38,
+        "damage_chase": 220.4,
+        "echo_consumed": 0,
+        "deaths": 4
+      }
+    },
+    "no_dot": {
+      "disabled_for_diagnostic_only": [
+        "poison"
+      ],
+      "n": 50,
+      "wins": 8,
+      "win_rate": 0.16,
+      "wilson95": [
+        0.08337321362087696,
+        0.2851448096176598
+      ],
+      "defeats": 36,
+      "timeouts": 6,
+      "win_seconds_p10": 84.045,
+      "win_seconds_p50": 87.7,
+      "win_seconds_p90": 96.19999999999999,
+      "mean_end_boss_hp": 1020.22,
+      "mean_metrics": {
+        "effective_heal": 2312.78,
+        "barrier_absorbed": 863.32,
+        "cover_hits": 3.72,
+        "damage_dot": 0,
+        "damage_counter": 119.36,
+        "damage_chase": 220.78,
+        "echo_consumed": 8.28,
+        "deaths": 3.6
+      }
+    },
+    "no_chase": {
+      "disabled_for_diagnostic_only": [
+        "chase"
+      ],
+      "n": 50,
+      "wins": 36,
+      "win_rate": 0.72,
+      "wilson95": [
+        0.5833461285401034,
+        0.8252598564231963
+      ],
+      "defeats": 13,
+      "timeouts": 1,
+      "win_seconds_p10": 64.525,
+      "win_seconds_p50": 66.7,
+      "win_seconds_p90": 74.2,
+      "mean_end_boss_hp": 177.96,
+      "mean_metrics": {
+        "effective_heal": 1895.14,
+        "barrier_absorbed": 711.48,
+        "cover_hits": 3.72,
+        "damage_dot": 1764.62,
+        "damage_counter": 114.68,
+        "damage_chase": 0,
+        "echo_consumed": 8.94,
+        "deaths": 2.44
+      }
+    },
+    "no_counter": {
+      "disabled_for_diagnostic_only": [
+        "counter"
+      ],
+      "n": 50,
+      "wins": 39,
+      "win_rate": 0.78,
+      "wilson95": [
+        0.6475818431054045,
+        0.8724621377569771
+      ],
+      "defeats": 11,
+      "timeouts": 0,
+      "win_seconds_p10": 63.1,
+      "win_seconds_p50": 64.9,
+      "win_seconds_p90": 74.24000000000002,
+      "mean_end_boss_hp": 119.94,
+      "mean_metrics": {
+        "effective_heal": 1839.98,
+        "barrier_absorbed": 679.76,
+        "cover_hits": 3.72,
+        "damage_dot": 1731.86,
+        "damage_counter": 0,
+        "damage_chase": 322.46,
+        "echo_consumed": 8.82,
+        "deaths": 2.1
+      }
+    }
+  },
+  "sensitivity": [
+    {
+      "hp_scale": 0.9,
+      "power_scale": 0.9,
+      "hp": 11250,
+      "power": 171,
+      "n": 50,
+      "wins": 50,
+      "win_rate": 1.0,
+      "wilson95": [
+        0.9286499658256813,
+        1.0
+      ],
+      "defeats": 0,
+      "timeouts": 0,
+      "win_seconds_p10": 55.4,
+      "win_seconds_p50": 56.15,
+      "win_seconds_p90": 57.45,
+      "mean_end_boss_hp": 0,
+      "mean_metrics": {
+        "effective_heal": 1594,
+        "barrier_absorbed": 593.82,
+        "cover_hits": 4.08,
+        "damage_dot": 1519.06,
+        "damage_counter": 98.38,
+        "damage_chase": 302.26,
+        "echo_consumed": 8,
+        "deaths": 0.02
+      }
+    },
+    {
+      "hp_scale": 0.9,
+      "power_scale": 1,
+      "hp": 11250,
+      "power": 190,
+      "n": 50,
+      "wins": 50,
+      "win_rate": 1.0,
+      "wilson95": [
+        0.9286499658256813,
+        1.0
+      ],
+      "defeats": 0,
+      "timeouts": 0,
+      "win_seconds_p10": 55.339999999999996,
+      "win_seconds_p50": 56.15,
+      "win_seconds_p90": 59.305,
+      "mean_end_boss_hp": 0,
+      "mean_metrics": {
+        "effective_heal": 1599.04,
+        "barrier_absorbed": 593.32,
+        "cover_hits": 4.68,
+        "damage_dot": 1521.48,
+        "damage_counter": 110.78,
+        "damage_chase": 299.26,
+        "echo_consumed": 7.98,
+        "deaths": 0.42
+      }
+    },
+    {
+      "hp_scale": 0.9,
+      "power_scale": 1.1,
+      "hp": 11250,
+      "power": 209,
+      "n": 50,
+      "wins": 24,
+      "win_rate": 0.48,
+      "wilson95": [
+        0.3479691239550571,
+        0.6148848774119157
+      ],
+      "defeats": 26,
+      "timeouts": 0,
+      "win_seconds_p10": 57.684999999999995,
+      "win_seconds_p50": 64.95,
+      "win_seconds_p90": 85.98,
+      "mean_end_boss_hp": 397.72,
+      "mean_metrics": {
+        "effective_heal": 1836.04,
+        "barrier_absorbed": 656.1,
+        "cover_hits": 3.78,
+        "damage_dot": 1569.24,
+        "damage_counter": 114.96,
+        "damage_chase": 256.5,
+        "echo_consumed": 7.64,
+        "deaths": 3.22
+      }
+    },
+    {
+      "hp_scale": 1,
+      "power_scale": 0.9,
+      "hp": 12500,
+      "power": 171,
+      "n": 50,
+      "wins": 50,
+      "win_rate": 1.0,
+      "wilson95": [
+        0.9286499658256813,
+        1.0
+      ],
+      "defeats": 0,
+      "timeouts": 0,
+      "win_seconds_p10": 61.3,
+      "win_seconds_p50": 62.4,
+      "win_seconds_p90": 64.2,
+      "mean_end_boss_hp": 0,
+      "mean_metrics": {
+        "effective_heal": 1791,
+        "barrier_absorbed": 607.36,
+        "cover_hits": 4.38,
+        "damage_dot": 1696.3,
+        "damage_counter": 111.66,
+        "damage_chase": 338.36,
+        "echo_consumed": 9.02,
+        "deaths": 0.22
+      }
+    },
+    {
+      "hp_scale": 1,
+      "power_scale": 1,
+      "hp": 12500,
+      "power": 190,
+      "n": 50,
+      "wins": 42,
+      "win_rate": 0.84,
+      "wilson95": [
+        0.7148551903823401,
+        0.9166267863791231
+      ],
+      "defeats": 8,
+      "timeouts": 0,
+      "win_seconds_p10": 61.435,
+      "win_seconds_p50": 63.1,
+      "win_seconds_p90": 67.92,
+      "mean_end_boss_hp": 54.02,
+      "mean_metrics": {
+        "effective_heal": 1784.22,
+        "barrier_absorbed": 627.12,
+        "cover_hits": 4.68,
+        "damage_dot": 1713.48,
+        "damage_counter": 117.98,
+        "damage_chase": 328.9,
+        "echo_consumed": 8.88,
+        "deaths": 1.66
+      }
+    },
+    {
+      "hp_scale": 1,
+      "power_scale": 1.1,
+      "hp": 12500,
+      "power": 209,
+      "n": 50,
+      "wins": 5,
+      "win_rate": 0.1,
+      "wilson95": [
+        0.04347512399157111,
+        0.2136049033478839
+      ],
+      "defeats": 45,
+      "timeouts": 0,
+      "win_seconds_p10": 69.53,
+      "win_seconds_p50": 73.8,
+      "win_seconds_p90": 83.04,
+      "mean_end_boss_hp": 1330.54,
+      "mean_metrics": {
+        "effective_heal": 1981.82,
+        "barrier_absorbed": 736.34,
+        "cover_hits": 3.78,
+        "damage_dot": 1623.42,
+        "damage_counter": 116.12,
+        "damage_chase": 258.02,
+        "echo_consumed": 7.86,
+        "deaths": 3.88
+      }
+    },
+    {
+      "hp_scale": 1.1,
+      "power_scale": 0.9,
+      "hp": 13750,
+      "power": 171,
+      "n": 50,
+      "wins": 50,
+      "win_rate": 1.0,
+      "wilson95": [
+        0.9286499658256813,
+        1.0
+      ],
+      "defeats": 0,
+      "timeouts": 0,
+      "win_seconds_p10": 68.2,
+      "win_seconds_p50": 68.92500000000001,
+      "win_seconds_p90": 75.995,
+      "mean_end_boss_hp": 0,
+      "mean_metrics": {
+        "effective_heal": 2023.46,
+        "barrier_absorbed": 720.02,
+        "cover_hits": 4.5,
+        "damage_dot": 1881.98,
+        "damage_counter": 118.98,
+        "damage_chase": 362.76,
+        "echo_consumed": 10.08,
+        "deaths": 0.56
+      }
+    },
+    {
+      "hp_scale": 1.1,
+      "power_scale": 1,
+      "hp": 13750,
+      "power": 190,
+      "n": 50,
+      "wins": 32,
+      "win_rate": 0.64,
+      "wilson95": [
+        0.5014076201030195,
+        0.7586143703281711
+      ],
+      "defeats": 18,
+      "timeouts": 0,
+      "win_seconds_p10": 72.35499999999999,
+      "win_seconds_p50": 75.65,
+      "win_seconds_p90": 103.42500000000001,
+      "mean_end_boss_hp": 391.22,
+      "mean_metrics": {
+        "effective_heal": 2119.12,
+        "barrier_absorbed": 769.8,
+        "cover_hits": 4.68,
+        "damage_dot": 1923.56,
+        "damage_counter": 121.54,
+        "damage_chase": 331.18,
+        "echo_consumed": 9.62,
+        "deaths": 3.16
+      }
+    },
+    {
+      "hp_scale": 1.1,
+      "power_scale": 1.1,
+      "hp": 13750,
+      "power": 209,
+      "n": 50,
+      "wins": 0,
+      "win_rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.07135003417431873
+      ],
+      "defeats": 50,
+      "timeouts": 0,
+      "win_seconds_p10": null,
+      "win_seconds_p50": null,
+      "win_seconds_p90": null,
+      "mean_end_boss_hp": 2528.06,
+      "mean_metrics": {
+        "effective_heal": 2033.04,
+        "barrier_absorbed": 762.08,
+        "cover_hits": 3.78,
+        "damage_dot": 1628.4,
+        "damage_counter": 116.12,
+        "damage_chase": 258.02,
+        "echo_consumed": 7.86,
+        "deaths": 4
+      }
+    }
+  ],
+  "timing_ambiguity": [
+    {
+      "mode": "first_impact_at_interval",
+      "n": 50,
+      "wins": 45,
+      "win_rate": 0.9,
+      "wilson95": [
+        0.7863950966521162,
+        0.956524876008429
+      ],
+      "defeats": 5,
+      "timeouts": 0,
+      "win_seconds_p10": 61.54,
+      "win_seconds_p50": 63.15,
+      "win_seconds_p90": 69.5,
+      "mean_end_boss_hp": 32.26,
+      "mean_metrics": {
+        "effective_heal": 1769.06,
+        "barrier_absorbed": 644.36,
+        "cover_hits": 4.14,
+        "damage_dot": 1715.84,
+        "damage_counter": 122.86,
+        "damage_chase": 329.5,
+        "echo_consumed": 8.46,
+        "deaths": 1.52
+      }
+    },
+    {
+      "mode": "first_start_at_interval",
+      "n": 50,
+      "wins": 30,
+      "win_rate": 0.6,
+      "wilson95": [
+        0.4618118910275937,
+        0.7239181021375425
+      ],
+      "defeats": 19,
+      "timeouts": 1,
+      "win_seconds_p10": 69.1,
+      "win_seconds_p50": 70.45,
+      "win_seconds_p90": 82.9,
+      "mean_end_boss_hp": 228.24,
+      "mean_metrics": {
+        "effective_heal": 1958.18,
+        "barrier_absorbed": 739.68,
+        "cover_hits": 4.02,
+        "damage_dot": 1873.18,
+        "damage_counter": 127.66,
+        "damage_chase": 312.78,
+        "echo_consumed": 9.28,
+        "deaths": 2.9
+      }
+    }
+  ],
+  "craft_variance": [
+    {
+      "craft_seed": 0,
+      "n": 10,
+      "wins": 8,
+      "win_rate": 0.8,
+      "wilson95": [
+        0.49015684672072335,
+        0.9433190520193067
+      ],
+      "defeats": 2,
+      "timeouts": 0,
+      "win_seconds_p10": 62.015,
+      "win_seconds_p50": 63.474999999999994,
+      "win_seconds_p90": 84.66,
+      "mean_end_boss_hp": 10.4,
+      "mean_metrics": {
+        "effective_heal": 1908.9,
+        "barrier_absorbed": 751.2,
+        "cover_hits": 3.9,
+        "damage_dot": 1573.2,
+        "damage_counter": 143.4,
+        "damage_chase": 280.5,
+        "echo_consumed": 8.9,
+        "deaths": 1.8
+      }
+    },
+    {
+      "craft_seed": 1,
+      "n": 10,
+      "wins": 9,
+      "win_rate": 0.9,
+      "wilson95": [
+        0.5958436145024278,
+        0.9821242504842788
+      ],
+      "defeats": 1,
+      "timeouts": 0,
+      "win_seconds_p10": 60.75,
+      "win_seconds_p50": 61.75,
+      "win_seconds_p90": 76.26,
+      "mean_end_boss_hp": 43.4,
+      "mean_metrics": {
+        "effective_heal": 1795.5,
+        "barrier_absorbed": 696.4,
+        "cover_hits": 4.2,
+        "damage_dot": 1643.6,
+        "damage_counter": 134.1,
+        "damage_chase": 317.4,
+        "echo_consumed": 8.8,
+        "deaths": 1.5
+      }
+    },
+    {
+      "craft_seed": 2,
+      "n": 10,
+      "wins": 10,
+      "win_rate": 1.0,
+      "wilson95": [
+        0.7224598312333834,
+        1.0
+      ],
+      "defeats": 0,
+      "timeouts": 0,
+      "win_seconds_p10": 61.245,
+      "win_seconds_p50": 63.125,
+      "win_seconds_p90": 72.36,
+      "mean_end_boss_hp": 0,
+      "mean_metrics": {
+        "effective_heal": 1850.7,
+        "barrier_absorbed": 678.4,
+        "cover_hits": 4.2,
+        "damage_dot": 1558,
+        "damage_counter": 142,
+        "damage_chase": 318.3,
+        "echo_consumed": 9,
+        "deaths": 1.3
+      }
+    },
+    {
+      "craft_seed": 3,
+      "n": 10,
+      "wins": 10,
+      "win_rate": 1.0,
+      "wilson95": [
+        0.7224598312333834,
+        1.0
+      ],
+      "defeats": 0,
+      "timeouts": 0,
+      "win_seconds_p10": 61.3,
+      "win_seconds_p50": 62.45,
+      "win_seconds_p90": 73.91,
+      "mean_end_boss_hp": 0,
+      "mean_metrics": {
+        "effective_heal": 1870.6,
+        "barrier_absorbed": 644.6,
+        "cover_hits": 4.5,
+        "damage_dot": 1543,
+        "damage_counter": 135.2,
+        "damage_chase": 331.6,
+        "echo_consumed": 8.9,
+        "deaths": 1.3
+      }
+    },
+    {
+      "craft_seed": 4,
+      "n": 10,
+      "wins": 8,
+      "win_rate": 0.8,
+      "wilson95": [
+        0.49015684672072335,
+        0.9433190520193067
+      ],
+      "defeats": 2,
+      "timeouts": 0,
+      "win_seconds_p10": 62.905,
+      "win_seconds_p50": 65.15,
+      "win_seconds_p90": 68.82000000000001,
+      "mean_end_boss_hp": 128.1,
+      "mean_metrics": {
+        "effective_heal": 1719.9,
+        "barrier_absorbed": 646.4,
+        "cover_hits": 4.2,
+        "damage_dot": 1618,
+        "damage_counter": 126.7,
+        "damage_chase": 320.3,
+        "echo_consumed": 8.9,
+        "deaths": 2.1
+      }
+    },
+    {
+      "craft_seed": 5,
+      "n": 10,
+      "wins": 8,
+      "win_rate": 0.8,
+      "wilson95": [
+        0.49015684672072335,
+        0.9433190520193067
+      ],
+      "defeats": 2,
+      "timeouts": 0,
+      "win_seconds_p10": 62.905,
+      "win_seconds_p50": 63.547,
+      "win_seconds_p90": 79.27319999999999,
+      "mean_end_boss_hp": 16.5,
+      "mean_metrics": {
+        "effective_heal": 1812.4,
+        "barrier_absorbed": 664.1,
+        "cover_hits": 4.2,
+        "damage_dot": 1591.8,
+        "damage_counter": 127.6,
+        "damage_chase": 324.1,
+        "echo_consumed": 9,
+        "deaths": 1.8
+      }
+    },
+    {
+      "craft_seed": 6,
+      "n": 10,
+      "wins": 10,
+      "win_rate": 1.0,
+      "wilson95": [
+        0.7224598312333834,
+        1.0
+      ],
+      "defeats": 0,
+      "timeouts": 0,
+      "win_seconds_p10": 61.6705,
+      "win_seconds_p50": 62.849999999999994,
+      "win_seconds_p90": 70.91999999999999,
+      "mean_end_boss_hp": 0,
+      "mean_metrics": {
+        "effective_heal": 1878.6,
+        "barrier_absorbed": 646,
+        "cover_hits": 4.5,
+        "damage_dot": 1629.3,
+        "damage_counter": 132.3,
+        "damage_chase": 282.3,
+        "echo_consumed": 9,
+        "deaths": 1.2
+      }
+    },
+    {
+      "craft_seed": 7,
+      "n": 10,
+      "wins": 8,
+      "win_rate": 0.8,
+      "wilson95": [
+        0.49015684672072335,
+        0.9433190520193067
+      ],
+      "defeats": 2,
+      "timeouts": 0,
+      "win_seconds_p10": 61.615,
+      "win_seconds_p50": 64.4,
+      "win_seconds_p90": 77.02999999999999,
+      "mean_end_boss_hp": 41.9,
+      "mean_metrics": {
+        "effective_heal": 1814.4,
+        "barrier_absorbed": 668.8,
+        "cover_hits": 4.2,
+        "damage_dot": 1589.4,
+        "damage_counter": 120.7,
+        "damage_chase": 318.3,
+        "echo_consumed": 9.2,
+        "deaths": 2
+      }
+    },
+    {
+      "craft_seed": 8,
+      "n": 10,
+      "wins": 10,
+      "win_rate": 1.0,
+      "wilson95": [
+        0.7224598312333834,
+        1.0
+      ],
+      "defeats": 0,
+      "timeouts": 0,
+      "win_seconds_p10": 61.335,
+      "win_seconds_p50": 62.5,
+      "win_seconds_p90": 71.04499999999999,
+      "mean_end_boss_hp": 0,
+      "mean_metrics": {
+        "effective_heal": 1932,
+        "barrier_absorbed": 683.6,
+        "cover_hits": 4.2,
+        "damage_dot": 1679.6,
+        "damage_counter": 129.4,
+        "damage_chase": 286.1,
+        "echo_consumed": 8.8,
+        "deaths": 1.1
+      }
+    },
+    {
+      "craft_seed": 9,
+      "n": 10,
+      "wins": 10,
+      "win_rate": 1.0,
+      "wilson95": [
+        0.7224598312333834,
+        1.0
+      ],
+      "defeats": 0,
+      "timeouts": 0,
+      "win_seconds_p10": 61.3,
+      "win_seconds_p50": 63.1,
+      "win_seconds_p90": 66.44500000000001,
+      "mean_end_boss_hp": 0,
+      "mean_metrics": {
+        "effective_heal": 1988.9,
+        "barrier_absorbed": 641.4,
+        "cover_hits": 4.8,
+        "damage_dot": 1606.7,
+        "damage_counter": 129.8,
+        "damage_chase": 333.4,
+        "echo_consumed": 9,
+        "deaths": 0.7
+      }
+    },
+    {
+      "craft_seed": 10,
+      "n": 10,
+      "wins": 8,
+      "win_rate": 0.8,
+      "wilson95": [
+        0.49015684672072335,
+        0.9433190520193067
+      ],
+      "defeats": 2,
+      "timeouts": 0,
+      "win_seconds_p10": 61.0,
+      "win_seconds_p50": 66.775,
+      "win_seconds_p90": 83.8698,
+      "mean_end_boss_hp": 151.9,
+      "mean_metrics": {
+        "effective_heal": 1890,
+        "barrier_absorbed": 689.2,
+        "cover_hits": 4.5,
+        "damage_dot": 1647,
+        "damage_counter": 132.7,
+        "damage_chase": 309.3,
+        "echo_consumed": 9.3,
+        "deaths": 1.7
+      }
+    },
+    {
+      "craft_seed": 11,
+      "n": 10,
+      "wins": 8,
+      "win_rate": 0.8,
+      "wilson95": [
+        0.49015684672072335,
+        0.9433190520193067
+      ],
+      "defeats": 2,
+      "timeouts": 0,
+      "win_seconds_p10": 61.615,
+      "win_seconds_p50": 63.900000000000006,
+      "win_seconds_p90": 77.58,
+      "mean_end_boss_hp": 42.4,
+      "mean_metrics": {
+        "effective_heal": 1833.3,
+        "barrier_absorbed": 668.8,
+        "cover_hits": 4.2,
+        "damage_dot": 1591.8,
+        "damage_counter": 132.4,
+        "damage_chase": 316.5,
+        "echo_consumed": 9.3,
+        "deaths": 1.7
+      }
+    },
+    {
+      "craft_seed": 12,
+      "n": 10,
+      "wins": 8,
+      "win_rate": 0.8,
+      "wilson95": [
+        0.49015684672072335,
+        0.9433190520193067
+      ],
+      "defeats": 2,
+      "timeouts": 0,
+      "win_seconds_p10": 62.2346,
+      "win_seconds_p50": 64.03200000000001,
+      "win_seconds_p90": 75.715,
+      "mean_end_boss_hp": 10.7,
+      "mean_metrics": {
+        "effective_heal": 1880,
+        "barrier_absorbed": 658,
+        "cover_hits": 4.2,
+        "damage_dot": 1591.8,
+        "damage_counter": 134,
+        "damage_chase": 320.2,
+        "echo_consumed": 9.1,
+        "deaths": 1.8
+      }
+    },
+    {
+      "craft_seed": 13,
+      "n": 10,
+      "wins": 8,
+      "win_rate": 0.8,
+      "wilson95": [
+        0.49015684672072335,
+        0.9433190520193067
+      ],
+      "defeats": 2,
+      "timeouts": 0,
+      "win_seconds_p10": 62.56,
+      "win_seconds_p50": 63.4,
+      "win_seconds_p90": 78.39099999999999,
+      "mean_end_boss_hp": 69,
+      "mean_metrics": {
+        "effective_heal": 1814.4,
+        "barrier_absorbed": 697.5,
+        "cover_hits": 4.2,
+        "damage_dot": 1674.7,
+        "damage_counter": 129.6,
+        "damage_chase": 320.3,
+        "echo_consumed": 8.7,
+        "deaths": 1.9
+      }
+    },
+    {
+      "craft_seed": 14,
+      "n": 10,
+      "wins": 10,
+      "win_rate": 1.0,
+      "wilson95": [
+        0.7224598312333834,
+        1.0
+      ],
+      "defeats": 0,
+      "timeouts": 0,
+      "win_seconds_p10": 61.705,
+      "win_seconds_p50": 63.1,
+      "win_seconds_p90": 72.323,
+      "mean_end_boss_hp": 0,
+      "mean_metrics": {
+        "effective_heal": 1830.8,
+        "barrier_absorbed": 668.8,
+        "cover_hits": 4.2,
+        "damage_dot": 1613.2,
+        "damage_counter": 120.3,
+        "damage_chase": 308.8,
+        "echo_consumed": 8.9,
+        "deaths": 1.5
+      }
+    },
+    {
+      "craft_seed": 15,
+      "n": 10,
+      "wins": 10,
+      "win_rate": 1.0,
+      "wilson95": [
+        0.7224598312333834,
+        1.0
+      ],
+      "defeats": 0,
+      "timeouts": 0,
+      "win_seconds_p10": 61.3413,
+      "win_seconds_p50": 61.8,
+      "win_seconds_p90": 69.5238,
+      "mean_end_boss_hp": 0,
+      "mean_metrics": {
+        "effective_heal": 1955.2,
+        "barrier_absorbed": 700.2,
+        "cover_hits": 4.2,
+        "damage_dot": 1605.7,
+        "damage_counter": 120.1,
+        "damage_chase": 327.9,
+        "echo_consumed": 9.1,
+        "deaths": 0.7
+      }
+    },
+    {
+      "craft_seed": 16,
+      "n": 10,
+      "wins": 7,
+      "win_rate": 0.7,
+      "wilson95": [
+        0.39677321997956516,
+        0.892210712513788
+      ],
+      "defeats": 2,
+      "timeouts": 1,
+      "win_seconds_p10": 62.87,
+      "win_seconds_p50": 64.9,
+      "win_seconds_p90": 67.46000000000001,
+      "mean_end_boss_hp": 104.9,
+      "mean_metrics": {
+        "effective_heal": 1890,
+        "barrier_absorbed": 751.2,
+        "cover_hits": 4.2,
+        "damage_dot": 1591.7,
+        "damage_counter": 126.7,
+        "damage_chase": 320.3,
+        "echo_consumed": 8.6,
+        "deaths": 2.1
+      }
+    },
+    {
+      "craft_seed": 17,
+      "n": 10,
+      "wins": 9,
+      "win_rate": 0.9,
+      "wilson95": [
+        0.5958436145024278,
+        0.9821242504842788
+      ],
+      "defeats": 1,
+      "timeouts": 0,
+      "win_seconds_p10": 62.9216,
+      "win_seconds_p50": 63.266,
+      "win_seconds_p90": 73.58000000000001,
+      "mean_end_boss_hp": 12.2,
+      "mean_metrics": {
+        "effective_heal": 1871.1,
+        "barrier_absorbed": 680,
+        "cover_hits": 3.9,
+        "damage_dot": 1592.2,
+        "damage_counter": 135.4,
+        "damage_chase": 316.5,
+        "echo_consumed": 9.2,
+        "deaths": 1.8
+      }
+    },
+    {
+      "craft_seed": 18,
+      "n": 10,
+      "wins": 8,
+      "win_rate": 0.8,
+      "wilson95": [
+        0.49015684672072335,
+        0.9433190520193067
+      ],
+      "defeats": 2,
+      "timeouts": 0,
+      "win_seconds_p10": 62.504999999999995,
+      "win_seconds_p50": 65.025,
+      "win_seconds_p90": 69.645,
+      "mean_end_boss_hp": 51.1,
+      "mean_metrics": {
+        "effective_heal": 1776.6,
+        "barrier_absorbed": 657.6,
+        "cover_hits": 3.9,
+        "damage_dot": 1616.4,
+        "damage_counter": 123.4,
+        "damage_chase": 286.2,
+        "echo_consumed": 9.3,
+        "deaths": 1.9
+      }
+    },
+    {
+      "craft_seed": 19,
+      "n": 10,
+      "wins": 8,
+      "win_rate": 0.8,
+      "wilson95": [
+        0.49015684672072335,
+        0.9433190520193067
+      ],
+      "defeats": 2,
+      "timeouts": 0,
+      "win_seconds_p10": 62.24,
+      "win_seconds_p50": 63.275,
+      "win_seconds_p90": 71.68,
+      "mean_end_boss_hp": 30.4,
+      "mean_metrics": {
+        "effective_heal": 1810.9,
+        "barrier_absorbed": 656.4,
+        "cover_hits": 4.2,
+        "damage_dot": 1591.5,
+        "damage_counter": 123.4,
+        "damage_chase": 337.3,
+        "echo_consumed": 8.9,
+        "deaths": 1.5
+      }
+    }
+  ],
+  "enhancement_rounding": [
+    {
+      "template_id": "EQ_W_01",
+      "name": "若枝の採集杖",
+      "plus0_to_plus3": [
+        {
+          "hp": 0,
+          "power": 14,
+          "defense": 0
+        },
+        {
+          "hp": 0,
+          "power": 14,
+          "defense": 0
+        },
+        {
+          "hp": 0,
+          "power": 14,
+          "defense": 0
+        },
+        {
+          "hp": 0,
+          "power": 15,
+          "defense": 0
+        }
+      ],
+      "cumulative_cost": [
+        0,
+        5,
+        15,
+        30
+      ]
+    },
+    {
+      "template_id": "EQ_F_01",
+      "name": "灯爪の触媒",
+      "plus0_to_plus3": [
+        {
+          "hp": 0,
+          "power": 14,
+          "defense": 0
+        },
+        {
+          "hp": 0,
+          "power": 14,
+          "defense": 0
+        },
+        {
+          "hp": 0,
+          "power": 14,
+          "defense": 0
+        },
+        {
+          "hp": 0,
+          "power": 15,
+          "defense": 0
+        }
+      ],
+      "cumulative_cost": [
+        0,
+        5,
+        15,
+        30
+      ]
+    },
+    {
+      "template_id": "EQ_HAND_01",
+      "name": "灯糸の作業手袋",
+      "plus0_to_plus3": [
+        {
+          "hp": 0,
+          "power": 4,
+          "defense": 5
+        },
+        {
+          "hp": 0,
+          "power": 4,
+          "defense": 5
+        },
+        {
+          "hp": 0,
+          "power": 4,
+          "defense": 5
+        },
+        {
+          "hp": 0,
+          "power": 4,
+          "defense": 5
+        }
+      ],
+      "cumulative_cost": [
+        0,
+        5,
+        15,
+        30
+      ]
+    },
+    {
+      "template_id": "EQ_RING_01",
+      "name": "葉結びの指環",
+      "plus0_to_plus3": [
+        {
+          "hp": 0,
+          "power": 5,
+          "defense": 2
+        },
+        {
+          "hp": 0,
+          "power": 5,
+          "defense": 2
+        },
+        {
+          "hp": 0,
+          "power": 5,
+          "defense": 2
+        },
+        {
+          "hp": 0,
+          "power": 5,
+          "defense": 2
+        }
+      ],
+      "cumulative_cost": [
+        0,
+        5,
+        15,
+        30
+      ]
+    },
+    {
+      "template_id": "EQ_BODY_01",
+      "name": "灯糸の採集衣",
+      "plus0_to_plus3": [
+        {
+          "hp": 80,
+          "power": 0,
+          "defense": 10
+        },
+        {
+          "hp": 82,
+          "power": 0,
+          "defense": 10
+        },
+        {
+          "hp": 84,
+          "power": 0,
+          "defense": 10
+        },
+        {
+          "hp": 87,
+          "power": 0,
+          "defense": 10
+        }
+      ],
+      "cumulative_cost": [
+        0,
+        5,
+        15,
+        30
+      ]
+    },
+    {
+      "template_id": "EQ_FEET_01",
+      "name": "根道のブーツ",
+      "plus0_to_plus3": [
+        {
+          "hp": 40,
+          "power": 0,
+          "defense": 8
+        },
+        {
+          "hp": 41,
+          "power": 0,
+          "defense": 8
+        },
+        {
+          "hp": 42,
+          "power": 0,
+          "defense": 8
+        },
+        {
+          "hp": 43,
+          "power": 0,
+          "defense": 8
+        }
+      ],
+      "cumulative_cost": [
+        0,
+        5,
+        15,
+        30
+      ]
+    },
+    {
+      "template_id": "EQ_AMU_01",
+      "name": "露苔のお守り",
+      "plus0_to_plus3": [
+        {
+          "hp": 25,
+          "power": 5,
+          "defense": 0
+        },
+        {
+          "hp": 25,
+          "power": 5,
+          "defense": 0
+        },
+        {
+          "hp": 26,
+          "power": 5,
+          "defense": 0
+        },
+        {
+          "hp": 27,
+          "power": 5,
+          "defense": 0
+        }
+      ],
+      "cumulative_cost": [
+        0,
+        5,
+        15,
+        30
+      ]
+    }
+  ],
+  "q2_crafted_wand_two_inactive_for_test_bosses": {
+    "samples": 1000,
+    "count": 14,
+    "sample_indices": [
+      33,
+      122,
+      230,
+      232,
+      244,
+      326,
+      378,
+      613,
+      658,
+      779,
+      812,
+      857,
+      914,
+      984
+    ]
+  },
+  "primary_experiment_battles": 1200,
+  "diagnostic_battles": 1000,
+  "total_experiment_battles": 2200,
+  "golden_evidence_battles": 2,
+  "wall_seconds_on_this_machine": 27.536378622055054
+}
