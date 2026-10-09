@@ -1,0 +1,22 @@
+{
+  "scope": "iOS Simulator application background/foreground only; not physical sleep/kill/reboot",
+  "stable_pause_between_two_readbacks": true,
+  "resume_same_boundary": true,
+  "boundary": {
+    "before_inactive": {
+      "clock": 7.94999999999709,
+      "cycle": 16,
+      "event": "willResignActive",
+      "events": 597
+    },
+    "after_active": {
+      "clock": 7.94999999999709,
+      "cycle": 16,
+      "event": "didBecomeActive",
+      "events": 597
+    }
+  },
+  "post_resume_sample_max_callbacks": 60,
+  "duplicate_event_keys": 0,
+  "physical_iPhone": "NOT_TESTED"
+}

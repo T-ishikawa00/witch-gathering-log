@@ -1,0 +1,245 @@
+{
+  "schema": "codex.g2.effects_native_preview_qa.r001",
+  "status": "SIMULATOR_NATIVE_CONSUMER_PASS_WITH_PARTIAL_ASSET_FRAMES",
+  "created_at": "2026-10-09",
+  "consumer": {
+    "type": "independent iOS SpriteKit application",
+    "bundle_id": "com.codex.witch.effects.preview.r001",
+    "source_files": [
+      "source/EffectsPreviewApp.swift",
+      "source/EffectsPreviewScene.swift"
+    ],
+    "build": "arm64-apple-ios17.0-simulator via Xcode SDK 26.5 swiftc",
+    "code_signing": "Default local toolchain linker-generated ad-hoc signature for Simulator only; no Developer identity, Team, provisioning profile, explicit codesign command, or private-device signing.",
+    "new_paid_service": false,
+    "g1_mutation": false,
+    "unsigned_build": false,
+    "tested_binary": {
+      "path": "app/WitchEffectsPreview.app/WitchEffectsPreview",
+      "sha256": "5028eb736c299f27dc3d8ae0bc234f64ea6753e24b7f5bb6a1ee3d845eda7792",
+      "signature": "adhoc,linker-signed; TeamIdentifier not set"
+    },
+    "strict_unsigned_probe": {
+      "path": "qa/unsigned_probe_attempt/RESULTS.json",
+      "result": "unsigned install succeeded; SpringBoard launch blocked; probe isolated and did not replace successful test binary"
+    }
+  },
+  "device": {
+    "kind": "iOS Simulator",
+    "model": "iPhone 17e Simulator",
+    "udid": "836DFDF4-D1EB-4936-9390-D9A89FA9DF4F",
+    "os": "26.5",
+    "physical_iphone": false,
+    "scope": "independent effects viewer only"
+  },
+  "manifest_authority": [
+    {
+      "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/effects/R01/effect_manifest_r001.json",
+      "sha256": "1f6a21e7f485f4b475f3a0820f3c143dcfef306415d7369712f09aa235a829a4"
+    },
+    {
+      "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/effects/R02/effect_manifest_r002.json",
+      "sha256": "35f893e77622c5a9db07524f5ea37efe3c81bd15665bfc65b4355ebdb8939062"
+    },
+    {
+      "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/effects/R03/effect_manifest_r002.json",
+      "sha256": "25aab69d6d5cad5dab13abd3c4717b6432beee1a0ad3704ff8d56cd2d0bf0058"
+    },
+    {
+      "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/effects/R04/effect_manifest_r002.json",
+      "sha256": "7ad8ec76defcb99d7c530057ddf1678c7e08bd2ecf1c508084bedda1278fb8c4"
+    },
+    {
+      "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/effects/R05/effect_manifest_r002.json",
+      "sha256": "9fc486238db4467d3f169cd758ef9559f81d8869405f81ead835db555e11993a"
+    }
+  ],
+  "coverage": {
+    "region_count": 5,
+    "regional_r4_kit_ids": {
+      "R01": [
+        "ENV_R01",
+        "FX_R01"
+      ],
+      "R02": [
+        "ENV_R02",
+        "FX_R02"
+      ],
+      "R03": [
+        "ENV_R03",
+        "FX_R03"
+      ],
+      "R04": [
+        "ENV_R04",
+        "FX_R04"
+      ],
+      "R05": [
+        "ENV_R05",
+        "FX_R05"
+      ]
+    },
+    "effect_clip_count": 46,
+    "manifest_source_frames": 368,
+    "frame_assignments_recorded": 368,
+    "full_clip_frame_sequences_complete": true,
+    "size_points_tested": [
+      128,
+      64,
+      32
+    ],
+    "backdrops_tested": [
+      "black",
+      "#808080",
+      "white"
+    ],
+    "grid_samples_per_effect": 9,
+    "native_source_files_sha_verified": 944,
+    "bundled_resource_files_sha_verified": 944,
+    "source_missing": 0,
+    "sha_mismatches": 0,
+    "mode_or_dimension_mismatches": 0,
+    "exact_64_32_variants": 576,
+    "R01_scaled_128px_master_references": 160
+  },
+  "native_assignment_qa": {
+    "requested_vs_actual_mismatches": 0,
+    "assignment_records": 414,
+    "alpha_clip_count": 33,
+    "add_clip_count": 13,
+    "all_9_sample_nodes_match_manifest_blend_and_opacity": true,
+    "per_clip_actual_native_assignments": "telemetry_ALL.json clip_events[].blend_opacity_assignments_9cells"
+  },
+  "timing": {
+    "manifest_clip_duration_sum_seconds": 34.92,
+    "observed_end_to_end_clip_duration_sum_seconds": 38.44047433337255,
+    "average_end_to_end_overhead_seconds_per_clip": 0.07653205072549021,
+    "min_end_to_end_overhead_seconds": 0.05014574999222532,
+    "max_end_to_end_overhead_seconds": 0.2000270833290415,
+    "note": "Observed clip timing includes texture setup and terminal capture overhead in addition to the exact per-frame manifest waits. All 8/8 frame assignments were recorded for every clip."
+  },
+  "callback_and_memory": {
+    "preferred_fps": 60,
+    "observed_callbacks_per_second": 47.97223213224031,
+    "max_update_callback_gap_seconds": 0.2291620416654041,
+    "peak_resident_memory_mib": 249.359375,
+    "resident_memory_at_end_mib": 248.390625,
+    "texture_cache_policy": "released app-side texture references after each effect; simulator/Metal retained resident allocation",
+    "measurement_scope": "SpriteKit update callbacks and resident memory only; these are not display FPS or GPU timing."
+  },
+  "captures": {
+    "terminal_images": 46,
+    "terminal_image_paths": [
+      "qa/captures/terminals/terminal_ACT_B_R01_A_heavy_charge.png",
+      "qa/captures/terminals/terminal_ACT_B_R01_B_branch.png",
+      "qa/captures/terminals/terminal_ACT_B_R01_B_root_floor.png",
+      "qa/captures/terminals/terminal_ACT_B_R02_A_drowse_spore.png",
+      "qa/captures/terminals/terminal_ACT_B_R02_B_mirror_bolt.png",
+      "qa/captures/terminals/terminal_ACT_B_R03_A_three_hammer.png",
+      "qa/captures/terminals/terminal_ACT_B_R03_B_heat_floor.png",
+      "qa/captures/terminals/terminal_ACT_B_R04_A_snow_charge.png",
+      "qa/captures/terminals/terminal_ACT_B_R04_B_breath_fan.png",
+      "qa/captures/terminals/terminal_ACT_B_R05_A_pruning_ring.png",
+      "qa/captures/terminals/terminal_ACT_B_R05_B_seed_wave.png",
+      "qa/captures/terminals/terminal_ACT_E_R01_01_charge.png",
+      "qa/captures/terminals/terminal_ACT_E_R01_02_silk.png",
+      "qa/captures/terminals/terminal_ACT_E_R01_03_double_leaf.png",
+      "qa/captures/terminals/terminal_ACT_E_R01_04_shell.png",
+      "qa/captures/terminals/terminal_ACT_E_R02_01_spore.png",
+      "qa/captures/terminals/terminal_ACT_E_R02_02_mist_guard.png",
+      "qa/captures/terminals/terminal_ACT_E_R02_03_return_mote.png",
+      "qa/captures/terminals/terminal_ACT_E_R02_04_support_arc.png",
+      "qa/captures/terminals/terminal_ACT_E_R03_01_pincer_guard.png",
+      "qa/captures/terminals/terminal_ACT_E_R03_02_resonance.png",
+      "qa/captures/terminals/terminal_ACT_E_R03_03_tool_combo.png",
+      "qa/captures/terminals/terminal_ACT_E_R03_04_magnet_pullcue.png",
+      "qa/captures/terminals/terminal_ACT_E_R04_01_pursuit.png",
+      "qa/captures/terminals/terminal_ACT_E_R04_02_wing_gust.png",
+      "qa/captures/terminals/terminal_ACT_E_R04_03_hex_guard.png",
+      "qa/captures/terminals/terminal_ACT_E_R04_04_tool_arcs.png",
+      "qa/captures/terminals/terminal_ACT_E_R05_01_unbind.png",
+      "qa/captures/terminals/terminal_ACT_E_R05_02_guard_attack.png",
+      "qa/captures/terminals/terminal_ACT_E_R05_03_light_transfer.png",
+      "qa/captures/terminals/terminal_ACT_E_R05_04_heal_toxin.png",
+      "qa/captures/terminals/terminal_ENV_R01_01.png",
+      "qa/captures/terminals/terminal_ENV_R01_02.png",
+      "qa/captures/terminals/terminal_ENV_R01_03.png",
+      "qa/captures/terminals/terminal_ENV_R02_01.png",
+      "qa/captures/terminals/terminal_ENV_R02_02.png",
+      "qa/captures/terminals/terminal_ENV_R02_03.png",
+      "qa/captures/terminals/terminal_ENV_R03_01.png",
+      "qa/captures/terminals/terminal_ENV_R03_02.png",
+      "qa/captures/terminals/terminal_ENV_R03_03.png",
+      "qa/captures/terminals/terminal_ENV_R04_01.png",
+      "qa/captures/terminals/terminal_ENV_R04_02.png",
+      "qa/captures/terminals/terminal_ENV_R04_03.png",
+      "qa/captures/terminals/terminal_ENV_R05_01.png",
+      "qa/captures/terminals/terminal_ENV_R05_02.png",
+      "qa/captures/terminals/terminal_ENV_R05_03.png"
+    ],
+    "regional_native_captures": 5,
+    "regional_capture_paths": [
+      "qa/captures/regions/region_R01_native.png",
+      "qa/captures/regions/region_R02_native.png",
+      "qa/captures/regions/region_R03_native.png",
+      "qa/captures/regions/region_R04_native.png",
+      "qa/captures/regions/region_R05_native.png"
+    ],
+    "image_readback_issues": [],
+    "dimensions_px": [
+      1170,
+      2532
+    ],
+    "regional_capture_policy": "per region, capture effect frame with highest 128px alpha coverage on 9-panel matrix"
+  },
+  "preserved_zero_alpha": {
+    "zero_alpha_frames_by_region": {
+      "R01": 0,
+      "R02": 0,
+      "R03": 7,
+      "R04": 10,
+      "R05": 7
+    },
+    "zero_alpha_terminal_effect_ids": [
+      "ENV_R03_03",
+      "ACT_E_R03_02_resonance",
+      "ACT_B_R03_B_heat_floor",
+      "ENV_R04_03",
+      "ACT_E_R04_02_wing_gust",
+      "ACT_E_R04_03_hex_guard",
+      "ACT_E_R04_04_tool_arcs",
+      "ACT_B_R04_A_snow_charge",
+      "ACT_B_R04_B_breath_fan",
+      "ENV_R05_03",
+      "ACT_E_R05_03_light_transfer",
+      "ACT_B_R05_B_seed_wave"
+    ],
+    "policy": "all zero-alpha source frames and terminal frames were kept, assigned, captured and reported; none silently removed",
+    "semantic_status": "Zero-alpha frames are retained and verified; whether each terminal zero-alpha frame is semantically intentional remains unconfirmed."
+  },
+  "result": {
+    "source_manifest_128_hashes_and_RGBA": true,
+    "all_64_32_variants_hashes_and_RGBA": true,
+    "all_46_clip_sequences_replayed": true,
+    "actual_blend_opacity_verified": true,
+    "terminal_and_regional_captures_readable": true,
+    "full_R4_actor_anchor_integration": false,
+    "regional_scene_visual_harmony": false,
+    "physical_device_GPU_thermal_battery": false,
+    "formal_human_approval": false
+  },
+  "issues": {
+    "assignment_mismatches": [],
+    "missing_source_or_bundle_files": [],
+    "sha_mismatches": [],
+    "image_mode_or_size_mismatches": [],
+    "frame_sequence_mismatches": [],
+    "capture_readback_issues": []
+  },
+  "limits": [
+    "This is a separate SpriteKit preview app, not the G2 regional gameplay scene.",
+    "Symbolic body/actor anchors are not resolved; this does not make full environment/VFX kits or gameplay integration complete.",
+    "No GPU timing counters, physical-device load, battery, thermal or wake/sleep testing.",
+    "12 effects have a zero-alpha terminal source frame; see telemetry for IDs and do not interpret as a render-pass acceptance failure.",
+    "Callbacks are update-callback telemetry, not display FPS or GPU timing. Zero-alpha terminal-frame semantic intent is not confirmed."
+  ]
+}

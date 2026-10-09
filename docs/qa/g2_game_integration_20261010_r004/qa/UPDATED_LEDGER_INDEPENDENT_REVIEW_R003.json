@@ -1,0 +1,710 @@
+{
+  "schema": "codex.g2.updated_ledger_independent_review.r003",
+  "created_at": "2026-10-10",
+  "review_mode": "READ_ONLY",
+  "master_ledger_modified": false,
+  "primary_files": {
+    "ledger_path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/planning/UPDATED_159_LEDGER_R003.json",
+    "ledger_sha256": "840debc2f460fd8ca26b5d4b3ec1f2fce17ad4831a62839bb58e984904abc633",
+    "progress_path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/planning/PROGRESS_COUNTS_R003.json",
+    "progress_sha256": "db7147c0c74cfb3b6953956a4289d76d6cfa39b65c819c9340b69fb3bcaf6fb9",
+    "csv_path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/planning/UPDATED_159_LEDGER_R003.csv",
+    "csv_sha256": "25a9ae1d949fa439b795025f139ac477e3939580f57e2425814cd7fe0d146f47",
+    "R002_preserved": true,
+    "report_path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/G2_GAME_INTEGRATION_REPORT_R002.md",
+    "report_sha256": "cf5d0b438c186c38e5fe90a759ebf2492fcbb59b751ca9d6af9c5c69149b115c",
+    "delivery_manifest_path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/DELIVERY_MANIFEST_R002.json",
+    "delivery_manifest_sha256": "edb3729bc6ad9a785749296d0bf4c207ab760aa79c2885947b0930ee32ebe258"
+  },
+  "authority_reconciliation": {
+    "R4_work_package_count": 159,
+    "ledger_unit_count": 159,
+    "missing_ids": [],
+    "extra_ids": [],
+    "region_kind_mismatches": [],
+    "by_region": {
+      "R01": 36,
+      "R02": 31,
+      "R03": 30,
+      "R04": 29,
+      "R05": 33
+    },
+    "by_kind": {
+      "background_kit": 10,
+      "area_variant": 10,
+      "ambient_kit": 5,
+      "combat_vfx_kit": 5,
+      "enemy_actor_kit": 30,
+      "material_icon": 50,
+      "gather_prop": 20,
+      "gear_icon": 29
+    }
+  },
+  "revision_reconciliation": {
+    "R002_vs_R003_core_state_fields_compared": [
+      "canonical_ids",
+      "region_id",
+      "kind",
+      "revision",
+      "source_present",
+      "runtime_present",
+      "editable_source_present",
+      "stage",
+      "scoped_technical_qa",
+      "semantic_style_qa",
+      "Human_adoption",
+      "full_r4_kit_complete",
+      "accepted_manifest",
+      "integrated_into_G2",
+      "physical_iPhone",
+      "current_batch_touched",
+      "style_direction_Human_endorsed",
+      "formal_game_integration",
+      "iOS_Simulator",
+      "known_issues"
+    ],
+    "status_differences": [],
+    "counts_R002_equal_R003": true,
+    "counts_file_equal_ledger": true,
+    "progress_file_equal": true,
+    "CSV_rows": 159,
+    "CSV_mismatches": []
+  },
+  "file_integrity": {
+    "unit_reference_entry_count": 6712,
+    "unique_path_count": 2610,
+    "issues": [],
+    "control_refs": [
+      {
+        "label": "R4 source",
+        "path": "assets/g2/design/all_regions_art_r4_20261009/Witch_AllRegions_ArtSpec_R4_20261009/data/work_packages_R4.json",
+        "exists": true,
+        "expected_sha256": "b672179a123c83c04174ca3215636fa4aa00546671623003f8c4fae9f34dbcdc",
+        "actual_sha256": "b672179a123c83c04174ca3215636fa4aa00546671623003f8c4fae9f34dbcdc",
+        "sha256_matches": true,
+        "expected_bytes": 95131,
+        "actual_bytes": 95131
+      },
+      {
+        "label": "baseline R001",
+        "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/planning/FINAL_159_LEDGER_R001.json",
+        "exists": true,
+        "expected_sha256": "55f48fe35340eeeaa1960aadd3ac21157896415d0ecc5cac164345002742ec9d",
+        "actual_sha256": "55f48fe35340eeeaa1960aadd3ac21157896415d0ecc5cac164345002742ec9d",
+        "sha256_matches": true,
+        "expected_bytes": 1814077,
+        "actual_bytes": 1814077
+      },
+      {
+        "label": "independent inventory",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/planning/INDEPENDENT_UPDATED_ASSET_INVENTORY_R001.json",
+        "exists": true,
+        "expected_sha256": "cfe0a3b029a7a8cda67e58a367579e869d174fea155eefe11e94c863894b437a",
+        "actual_sha256": "cfe0a3b029a7a8cda67e58a367579e869d174fea155eefe11e94c863894b437a",
+        "sha256_matches": true,
+        "expected_bytes": 2274198,
+        "actual_bytes": 2274198
+      },
+      {
+        "label": "R005 build receipt",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/game/native_r005/BUILD_RECEIPT_R001.json",
+        "exists": true,
+        "expected_sha256": "88dbe473920a7c2eb8b75f6f1a91060a6340766f016094c94d9fb61846106dd6",
+        "actual_sha256": "88dbe473920a7c2eb8b75f6f1a91060a6340766f016094c94d9fb61846106dd6",
+        "sha256_matches": true,
+        "expected_bytes": 1168,
+        "actual_bytes": 1168
+      }
+    ]
+  },
+  "summary": {
+    "static_candidates": 99,
+    "style_direction_endorsed_count": 99,
+    "prior_qualified_static_preserved": 84,
+    "repairs_total": 15,
+    "repair_scoped64_pass": [
+      "ICO_EQ_W_P2"
+    ],
+    "repair_partial": [
+      "NODE_M_R01_G1",
+      "ICO_M_R01_G4",
+      "NODE_M_R03_G2",
+      "ICO_M_R04_G1",
+      "ICO_M_R04_G3",
+      "ICO_M_R05_G3",
+      "ICO_M_R05_G4",
+      "ICO_M_R01_E2",
+      "ICO_M_R01_BB",
+      "ICO_M_R02_E3",
+      "ICO_M_R04_E1",
+      "ICO_M_R04_BB",
+      "ICO_M_R05_E3",
+      "ICO_EQ_S_03"
+    ],
+    "remaining60_touched": 22,
+    "remaining60_untouched": 38,
+    "remaining60_touched_by_kind": {
+      "background_kit": 5,
+      "area_variant": 2,
+      "ambient_kit": 5,
+      "combat_vfx_kit": 5,
+      "enemy_actor_kit": 5
+    },
+    "source_present": 126,
+    "source_absent": 33,
+    "formal_individual_adoptions": 0,
+    "full_r4_kits": 0,
+    "physical_iphone_units": 0,
+    "unknown_model": "NOT_EXPOSED_BY_TOOL",
+    "per_image_actual_charge": "UNKNOWN",
+    "commercial_rights_final_clearance": "UNKNOWN"
+  },
+  "targeted_actor_review": [
+    {
+      "asset_id": "ACT_E_R01_01",
+      "display_name": "苔角いのしし",
+      "stage": "SIX_CLIP_NATIVE_FOREST_REPLAY_PASS_PARTIAL_ACTOR_KIT",
+      "runtime_present": true,
+      "runtime_eligible": true,
+      "full_r4_kit_complete": false,
+      "current_batch_file_ref_count": 156
+    },
+    {
+      "asset_id": "ACT_E_R01_02",
+      "display_name": "糸灯ぐも",
+      "stage": "SOURCE_POSE_STUDY_RUNTIME_WITHHELD",
+      "runtime_present": false,
+      "runtime_eligible": false,
+      "full_r4_kit_complete": false,
+      "current_batch_file_ref_count": 0
+    },
+    {
+      "asset_id": "ACT_E_R01_03",
+      "display_name": "葉刃むし",
+      "stage": "LOCAL_RIG_MOTION_QA_FAIL_RUNTIME_WITHHELD",
+      "runtime_present": true,
+      "runtime_eligible": false,
+      "full_r4_kit_complete": false,
+      "current_batch_file_ref_count": 4
+    },
+    {
+      "asset_id": "ACT_E_R01_04",
+      "display_name": "樹脂ころがし",
+      "stage": "LOCAL_RIG_MOTION_QA_FAIL_RUNTIME_WITHHELD",
+      "runtime_present": true,
+      "runtime_eligible": false,
+      "full_r4_kit_complete": false,
+      "current_batch_file_ref_count": 2
+    },
+    {
+      "asset_id": "ACT_E_R02_03",
+      "display_name": "水鏡くらげ",
+      "stage": "HALO_REPAIR_NATIVE_SIX_STATE_CANDIDATE_PARTIAL_ACTOR",
+      "runtime_present": true,
+      "runtime_eligible": null,
+      "full_r4_kit_complete": false,
+      "current_batch_file_ref_count": 198
+    }
+  ],
+  "effects_native_scope": {
+    "effect_units": 10,
+    "native_viewer_clips": 46,
+    "source_frame_assignments": 368,
+    "blend_opacity_mismatches": 0,
+    "all_clips_replayed": true,
+    "actor_anchor_integration": false,
+    "regional_visual_harmony": false,
+    "formal_Human_approval": false,
+    "zero_alpha_terminal_semantics_confirmed": false
+  },
+  "repair_reference_correction": {
+    "index_path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/STATIC_REPAIR_INDEX_R003.json",
+    "expected_previous_index_sha256": "0a588ac0609dfb2b9f53533f55b85919ae332600ee85112456027fb7e85ea43d",
+    "actual_index_sha256": "0a588ac0609dfb2b9f53533f55b85919ae332600ee85112456027fb7e85ea43d",
+    "index_hash_matches": true,
+    "correction_status": "EXACT_PATHS_CORRECTED_NO_ARTWORK_CHANGE",
+    "changes": [
+      {
+        "historical_path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/NODE_M_R03_G2/r006_localized/NODE_M_R03_G2_present__editable_source__r006.ora",
+        "historical_marked_missing": true,
+        "replacement_path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/NODE_M_R03_G2/r006_localized/NODE_M_R03_G2__editable_source__r006.ora",
+        "replacement_exists": true,
+        "correction_sha256": "f4cfbcdffb2ba3ae2417cd757d77ef7a968824a959dd81521e179784a4432f3f",
+        "actual_sha256": "f4cfbcdffb2ba3ae2417cd757d77ef7a968824a959dd81521e179784a4432f3f",
+        "replacement_hash_matches": true,
+        "replacement_in_ledger_refs": true,
+        "new_art_or_edit": false
+      },
+      {
+        "historical_path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/NODE_M_R03_G2/r006_localized/NODE_M_R03_G2_present__before_after_64__r006.png",
+        "historical_marked_missing": true,
+        "replacement_path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/NODE_M_R03_G2/r006_localized/NODE_M_R03_G2__before_after_64__r006.png",
+        "replacement_exists": true,
+        "correction_sha256": "36ed9732052fe04d020261a68b94e4cf6fa1a6e50e482c86c852cfa2c16e92e2",
+        "actual_sha256": "36ed9732052fe04d020261a68b94e4cf6fa1a6e50e482c86c852cfa2c16e92e2",
+        "replacement_hash_matches": true,
+        "replacement_in_ledger_refs": true,
+        "new_art_or_edit": false
+      }
+    ]
+  },
+  "delivery_manifest_verification": {
+    "entry_count": 17,
+    "entries": [
+      {
+        "role": "latest_report",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/G2_GAME_INTEGRATION_REPORT_R002.md",
+        "exists": true,
+        "sha256_matches": true,
+        "bytes_match": true,
+        "format": "md",
+        "actual_sha256": "cf5d0b438c186c38e5fe90a759ebf2492fcbb59b751ca9d6af9c5c69149b115c"
+      },
+      {
+        "role": "all_159_ledger",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/planning/UPDATED_159_LEDGER_R003.json",
+        "exists": true,
+        "sha256_matches": true,
+        "bytes_match": true,
+        "format": "json",
+        "actual_sha256": "840debc2f460fd8ca26b5d4b3ec1f2fce17ad4831a62839bb58e984904abc633"
+      },
+      {
+        "role": "human_159_table",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/planning/UPDATED_159_LEDGER_R003.csv",
+        "exists": true,
+        "sha256_matches": true,
+        "bytes_match": true,
+        "format": "csv",
+        "actual_sha256": "25a9ae1d949fa439b795025f139ac477e3939580f57e2425814cd7fe0d146f47"
+      },
+      {
+        "role": "progress_counts",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/planning/PROGRESS_COUNTS_R003.json",
+        "exists": true,
+        "sha256_matches": true,
+        "bytes_match": true,
+        "format": "json",
+        "actual_sha256": "db7147c0c74cfb3b6953956a4289d76d6cfa39b65c819c9340b69fb3bcaf6fb9"
+      },
+      {
+        "role": "selected_backgrounds",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/planning/CURRENT_BACKGROUND_CANDIDATES_R002.json",
+        "exists": true,
+        "sha256_matches": true,
+        "bytes_match": true,
+        "format": "json",
+        "actual_sha256": "f3d1543bda004035432971b370102bc55f5f74bec0bbd7182656d5fddfaf66f6"
+      },
+      {
+        "role": "all_unfinished",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/planning/UNFINISHED_AND_GAPS_R003.md",
+        "exists": true,
+        "sha256_matches": true,
+        "bytes_match": true,
+        "format": "md",
+        "actual_sha256": "644239d15183a1bf4374d7b3c2cd4fc1ab6bed2fbe3fb095e0150ce9fbda7490"
+      },
+      {
+        "role": "forest_measurements",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/qa/FOREST_FINAL_QA_SUMMARY_R005.json",
+        "exists": true,
+        "sha256_matches": true,
+        "bytes_match": true,
+        "format": "json",
+        "actual_sha256": "50d3871aafd5adb1759428fd46bf8229aa1ee244f086e1f1c5c395ed4cf6c23a"
+      },
+      {
+        "role": "simulator_resume",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/qa/FOREST_LIFECYCLE_QA_R005.json",
+        "exists": true,
+        "sha256_matches": true,
+        "bytes_match": true,
+        "format": "json",
+        "actual_sha256": "709b5f135e90da4e99358aa655a9f2c361cbf6b679787fca5bce5d706c788215"
+      },
+      {
+        "role": "signing_readback",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/qa/SIMULATOR_CODE_SIGNING_METADATA_CORRECTION_R001.json",
+        "exists": true,
+        "sha256_matches": true,
+        "bytes_match": true,
+        "format": "json",
+        "actual_sha256": "082a7250aa2d13486b0a96c92f0b690f184b1be179822722353318bda71dde10"
+      },
+      {
+        "role": "four_characters",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/characters/CHARACTER_EXPORT_INDEX_R001.json",
+        "exists": true,
+        "sha256_matches": true,
+        "bytes_match": true,
+        "format": "json",
+        "actual_sha256": "d852c36df890bc972ac0a7e646a51f825c5e5a54ab9fda6a0e73cdd43261ac65"
+      },
+      {
+        "role": "all_46_effects_consumer",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/effects/native_preview_r001/qa/report.json",
+        "exists": true,
+        "sha256_matches": true,
+        "bytes_match": true,
+        "format": "json",
+        "actual_sha256": "1e572e4933ec94ca10030df8e84e78efed460ea69a9ab7f13dc0ec8c0eb48242"
+      },
+      {
+        "role": "15_repairs",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/STATIC_REPAIR_INDEX_R004.json",
+        "exists": true,
+        "sha256_matches": true,
+        "bytes_match": true,
+        "format": "json",
+        "actual_sha256": "37305cdffd967ba24f6ea029c0a4a2413674c654933617a01e340e45f51c6b3b"
+      },
+      {
+        "role": "native_icon_sizes",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/native_ui_review_r001/qa/NATIVE_UI_QA_ADDENDUM_R002.json",
+        "exists": true,
+        "sha256_matches": true,
+        "bytes_match": true,
+        "format": "json",
+        "actual_sha256": "056baaa0ef07549d93f8159a69709966719d4a038d6e43cc8dc25269a167ecf6"
+      },
+      {
+        "role": "jelly_addendum",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/actors/ACT_E_R02_03/native_replay_r003/QA/REPLAY_QA_R003_ADDENDUM_R004.json",
+        "exists": true,
+        "sha256_matches": true,
+        "bytes_match": true,
+        "format": "json",
+        "actual_sha256": "991ca9f597697048d73f9cf2d0b0a5c52e9a0c2218dd15db6386652dbb0f5529"
+      },
+      {
+        "role": "selected_prototype_config",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/game/native_r005/WitchG2Forest.app/scene_config.json",
+        "exists": true,
+        "sha256_matches": true,
+        "bytes_match": true,
+        "format": "json",
+        "actual_sha256": "6fc99673ca6af1955e435c190af6a96ba768ad0717b1f346daf141c30bc79c30"
+      },
+      {
+        "role": "tested_build",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/game/native_r005/BUILD_RECEIPT_R001.json",
+        "exists": true,
+        "sha256_matches": true,
+        "bytes_match": true,
+        "format": "json",
+        "actual_sha256": "88dbe473920a7c2eb8b75f6f1a91060a6340766f016094c94d9fb61846106dd6"
+      },
+      {
+        "role": "actual_simulator_game_video",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/reviews/FOREST_GAME_R004_PREVIEW_40S.mp4",
+        "exists": true,
+        "sha256_matches": true,
+        "bytes_match": true,
+        "format": "mp4",
+        "actual_sha256": "e20399ea8b15df9974a03ffdfff668754f8e486aabeffd057f94728b918dc5d8"
+      }
+    ],
+    "report_local_link_count": 15,
+    "report_local_links": [
+      {
+        "target": "reviews/CYCLE_0_IDLE_R005_402PT.jpg",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/reviews/CYCLE_0_IDLE_R005_402PT.jpg",
+        "exists": true,
+        "sha256": "57a76f86e9b0cbb778cea01bb3376e057a1c83b26b20ce1c05b6029f2a0ad84c",
+        "bytes": 174123
+      },
+      {
+        "target": "planning/UPDATED_159_LEDGER_R003.csv",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/planning/UPDATED_159_LEDGER_R003.csv",
+        "exists": true,
+        "sha256": "25a9ae1d949fa439b795025f139ac477e3939580f57e2425814cd7fe0d146f47",
+        "bytes": 93377
+      },
+      {
+        "target": "planning/UPDATED_159_LEDGER_R003.json",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/planning/UPDATED_159_LEDGER_R003.json",
+        "exists": true,
+        "sha256": "840debc2f460fd8ca26b5d4b3ec1f2fce17ad4831a62839bb58e984904abc633",
+        "bytes": 5699810
+      },
+      {
+        "target": "planning/UNFINISHED_AND_GAPS_R003.md",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/planning/UNFINISHED_AND_GAPS_R003.md",
+        "exists": true,
+        "sha256": "644239d15183a1bf4374d7b3c2cd4fc1ab6bed2fbe3fb095e0150ce9fbda7490",
+        "bytes": 23663
+      },
+      {
+        "target": "reviews/ALL_FIVE_REGION_FIELD_CANDIDATES_R001.jpg",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/reviews/ALL_FIVE_REGION_FIELD_CANDIDATES_R001.jpg",
+        "exists": true,
+        "sha256": "a9b495ba43b6770b6d0869967e9d59b3c80a7e5e04e8c67fb66d712b51057e73",
+        "bytes": 407868
+      },
+      {
+        "target": "static_repairs/STATIC_REPAIR_INDEX_R004.json",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/STATIC_REPAIR_INDEX_R004.json",
+        "exists": true,
+        "sha256": "37305cdffd967ba24f6ea029c0a4a2413674c654933617a01e340e45f51c6b3b",
+        "bytes": 27063
+      },
+      {
+        "target": "static_repairs/native_ui_review_r001/NATIVE_UI_REVIEW_ADDENDUM_R002.md",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/native_ui_review_r001/NATIVE_UI_REVIEW_ADDENDUM_R002.md",
+        "exists": true,
+        "sha256": "103d19d72b1847b3b5858c32611da75bd4c18993d99e36711cec015037534638",
+        "bytes": 4496
+      },
+      {
+        "target": "qa/FOREST_FINAL_QA_SUMMARY_R005.json",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/qa/FOREST_FINAL_QA_SUMMARY_R005.json",
+        "exists": true,
+        "sha256": "50d3871aafd5adb1759428fd46bf8229aa1ee244f086e1f1c5c395ed4cf6c23a",
+        "bytes": 2623
+      },
+      {
+        "target": "qa/INDEPENDENT_FOREST_FINAL_R005/qa.json",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/qa/INDEPENDENT_FOREST_FINAL_R005/qa.json",
+        "exists": true,
+        "sha256": "1974fafc2d9f76114221aafd0ac4b295c0025a3370497159159de2c075f21581",
+        "bytes": 22907
+      },
+      {
+        "target": "qa/FOREST_LIFECYCLE_QA_R005.json",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/qa/FOREST_LIFECYCLE_QA_R005.json",
+        "exists": true,
+        "sha256": "709b5f135e90da4e99358aa655a9f2c361cbf6b679787fca5bce5d706c788215",
+        "bytes": 579
+      },
+      {
+        "target": "reviews/FOREST_GAME_R004_PREVIEW_40S.mp4",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/reviews/FOREST_GAME_R004_PREVIEW_40S.mp4",
+        "exists": true,
+        "sha256": "e20399ea8b15df9974a03ffdfff668754f8e486aabeffd057f94728b918dc5d8",
+        "bytes": 1277046
+      },
+      {
+        "target": "reviews/FOREST_NATIVE_PHASE_CONTACT_R004.jpg",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/reviews/FOREST_NATIVE_PHASE_CONTACT_R004.jpg",
+        "exists": true,
+        "sha256": "cf1ba4e4c7ecef1ee70640ad2a78a690db2bfd5e190631df2b7ad6a79b307ab3",
+        "bytes": 297637
+      },
+      {
+        "target": "reviews/forest_compact_r005/cycle_0_idle.png",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/reviews/forest_compact_r005/cycle_0_idle.png",
+        "exists": true,
+        "sha256": "3c29242880c7f07e7d93f002df2f642909880aaf0fffa4cae5b9894d93cd7c1e",
+        "bytes": 2169642
+      },
+      {
+        "target": "reviews/FOUR_CHARACTER_SIX_POSE_REVIEW_R001.png",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/reviews/FOUR_CHARACTER_SIX_POSE_REVIEW_R001.png",
+        "exists": true,
+        "sha256": "391de9abb38eba37c32fcd72d1d8ff3bb8bc2c9c0422322a3f67b43b82829ea8",
+        "bytes": 362010
+      },
+      {
+        "target": "reviews/ALL_FIVE_REGION_FIELD_CANDIDATES_R001.jpg",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/reviews/ALL_FIVE_REGION_FIELD_CANDIDATES_R001.jpg",
+        "exists": true,
+        "sha256": "a9b495ba43b6770b6d0869967e9d59b3c80a7e5e04e8c67fb66d712b51057e73",
+        "bytes": 407868
+      }
+    ],
+    "inline_images": [
+      {
+        "target": "reviews/CYCLE_0_IDLE_R005_402PT.jpg",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/reviews/CYCLE_0_IDLE_R005_402PT.jpg",
+        "exists": true,
+        "sha256": "57a76f86e9b0cbb778cea01bb3376e057a1c83b26b20ce1c05b6029f2a0ad84c",
+        "bytes": 174123,
+        "listed_in_delivery_manifest": false
+      },
+      {
+        "target": "reviews/ALL_FIVE_REGION_FIELD_CANDIDATES_R001.jpg",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/reviews/ALL_FIVE_REGION_FIELD_CANDIDATES_R001.jpg",
+        "exists": true,
+        "sha256": "a9b495ba43b6770b6d0869967e9d59b3c80a7e5e04e8c67fb66d712b51057e73",
+        "bytes": 407868,
+        "listed_in_delivery_manifest": false
+      }
+    ],
+    "valid_but_not_explicitly_listed_inline_images": [
+      {
+        "target": "reviews/CYCLE_0_IDLE_R005_402PT.jpg",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/reviews/CYCLE_0_IDLE_R005_402PT.jpg",
+        "exists": true,
+        "sha256": "57a76f86e9b0cbb778cea01bb3376e057a1c83b26b20ce1c05b6029f2a0ad84c",
+        "bytes": 174123,
+        "listed_in_delivery_manifest": false
+      },
+      {
+        "target": "reviews/ALL_FIVE_REGION_FIELD_CANDIDATES_R001.jpg",
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/reviews/ALL_FIVE_REGION_FIELD_CANDIDATES_R001.jpg",
+        "exists": true,
+        "sha256": "a9b495ba43b6770b6d0869967e9d59b3c80a7e5e04e8c67fb66d712b51057e73",
+        "bytes": 407868,
+        "listed_in_delivery_manifest": false
+      }
+    ],
+    "action": "Add the two linked preview images to the delivery manifest in the next manifest revision if the manifest is intended to be a complete file inventory."
+  },
+  "native_qa_reference_coverage": {
+    "long_forest_summary": {
+      "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/qa/FOREST_FINAL_QA_SUMMARY_R005.json",
+      "exists": true,
+      "sha256": "50d3871aafd5adb1759428fd46bf8229aa1ee244f086e1f1c5c395ed4cf6c23a",
+      "manifest_roles": [
+        "forest_measurements"
+      ],
+      "unit_current_batch_ref_count": 4,
+      "unit_refs": [
+        "BG_R01_FIELD",
+        "ENV_R01",
+        "FX_R01",
+        "ACT_E_R01_01"
+      ]
+    },
+    "independent_early_review": {
+      "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/qa/INDEPENDENT_FOREST_FINAL_R005/qa.json",
+      "exists": true,
+      "sha256": "1974fafc2d9f76114221aafd0ac4b295c0025a3370497159159de2c075f21581",
+      "manifest_roles": [],
+      "unit_current_batch_ref_count": 4,
+      "unit_refs": [
+        "BG_R01_FIELD",
+        "ENV_R01",
+        "FX_R01",
+        "ACT_E_R01_01"
+      ]
+    },
+    "lifecycle_resume": {
+      "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/qa/FOREST_LIFECYCLE_QA_R005.json",
+      "exists": true,
+      "sha256": "709b5f135e90da4e99358aa655a9f2c361cbf6b679787fca5bce5d706c788215",
+      "manifest_roles": [
+        "simulator_resume"
+      ],
+      "unit_current_batch_ref_count": 0,
+      "unit_refs": []
+    },
+    "pose_foot_overlap": {
+      "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/qa/FOOT_DEPTH_ALPHA_OVERLAP_R005.json",
+      "exists": true,
+      "sha256": "0e9ce640e7eef0d4a1d2ffd18c37bf098c969cace4ef17d3ca51120162e0dbf4",
+      "manifest_roles": [],
+      "unit_current_batch_ref_count": 0,
+      "unit_refs": []
+    }
+  },
+  "extended_simulator_scope": {
+    "long_snapshot": {
+      "Pro": {
+        "scene_points": [
+          402,
+          874
+        ],
+        "cycles": 24,
+        "event_count": 867,
+        "duplicate_event_keys": 0,
+        "missing_effects": 0,
+        "nonidle_trace_records": 216,
+        "terminal_assignment_failures": 0,
+        "post_capture_source_frame_gaps": 0,
+        "resident_mib_range": [
+          196.78125,
+          205.265625
+        ],
+        "update_callbacks_per_second_range": [
+          59,
+          60
+        ],
+        "display_GPU_fps": "NOT_MEASURED"
+      },
+      "SE3": {
+        "scene_points": [
+          375,
+          667
+        ],
+        "cycles": 35,
+        "event_count": 1296,
+        "duplicate_event_keys": 0,
+        "missing_effects": 0,
+        "nonidle_trace_records": 323,
+        "terminal_assignment_failures": 0,
+        "post_capture_source_frame_gaps": 16,
+        "resident_mib_range": [
+          188.75,
+          195.5
+        ],
+        "update_callbacks_per_second_range": [
+          49,
+          60.002436984687016
+        ],
+        "display_GPU_fps": "NOT_MEASURED"
+      }
+    },
+    "independent_review_early_scope": {
+      "iPhone17Pro_Simulator": {
+        "latest_cycle": 10,
+        "completed_full_cycles": 10,
+        "note": "short independent read-only sample; not the later 24/35 cycle comprehensive summary"
+      },
+      "iPhoneSE3_Simulator": {
+        "latest_cycle": 10,
+        "completed_full_cycles": 10,
+        "note": "short independent read-only sample; not the later 24/35 cycle comprehensive summary"
+      }
+    },
+    "lifecycle": {
+      "stable_pause_between_two_readbacks": true,
+      "resume_same_boundary": true,
+      "post_resume_sample_max_callbacks": 60,
+      "duplicate_event_keys": 0,
+      "physical_iPhone": "NOT_TESTED"
+    },
+    "foot_depth": {
+      "pose_count": 24,
+      "actors": [
+        "AIRA",
+        "ERNA",
+        "LUNA",
+        "NOIR"
+      ],
+      "all_source_geometry_alpha_overlap_counts_zero": true,
+      "scope_note": "alpha/scene geometry predicted overlap only; native visibility linked independently to INDEPENDENT_FOREST_FINAL_R005 QA"
+    }
+  },
+  "findings": [
+    "R003 reconciles exactly with R4 and R002 status columns/counts; updated references do not promote approval or full-kit status.",
+    "Both historical NODE_M_R03_G2 missing paths remain explicitly recorded with verified replacement mappings; old reference error is resolved for current use and preserved for audit history.",
+    "The long Pro/SE3 QA and lifecycle evidence are linked from the delivery manifest. The independent final review is linked from the four R01 units it covers.",
+    "The two inline preview images resolve and hash correctly, but are not enumerated among the 17 delivery-manifest files.",
+    "FOOT_DEPTH_ALPHA_OVERLAP_R005 is valid as a geometry prediction (24 key poses, all source-foot alpha-overlap counts zero); it is not currently in the manifest/unit refs, and it explicitly defers actual visibility to the independent native QA."
+  ],
+  "checks": {
+    "159 exact R4 IDs_region_kind": true,
+    "R002 to R003 state/status columns unchanged": true,
+    "R4 summary, R002 summary and R003 progress counts match": true,
+    "159 CSV rows and key fields agree": true,
+    "all current and retained file refs exist and match recorded SHA/bytes": true,
+    "top authority, baseline, inventory and game receipt hashes match": true,
+    "two old repair paths explicitly retained and exact replacements verified": true,
+    "delivery manifest all 17 file records exist/hash/bytes match": true,
+    "all report local links resolve": true,
+    "forest long QA and lifecycle summary are linked in manifest": true,
+    "independent forest QA and effect report status preserve scope": true,
+    "style endorsement is exactly 99 not individual adoption": true,
+    "full kit count remains zero": true,
+    "not executed external actions retained": true
+  },
+  "overall": "PASS_WITH_MINOR_MANIFEST_REFERENCE_GAPS",
+  "scope_limits": [
+    "No Simulator app operation, device lifecycle action, physical-device action, Git operation, or master-file edit performed.",
+    "Independent forest readback was an early short sample (10 complete event cycles); do not present it as the later 24-Pro/35-SE3 long summary.",
+    "Simulator update callback samples are not display FPS/GPU measurements.",
+    "Human adoption, full R4 completion and physical iPhone verification remain separately false/unknown as recorded."
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "revision": "NATIVE_UI_QA_ADDENDUM_R002",
+  "tested_binary_path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/native_ui_review_r001/WitchG2StaticUI.app/WitchG2StaticUI",
+  "tested_binary_sha256": "fd72ccf48a09b15db3692b39e42273911c884681d945e52d2de9ac889fe57a37",
+  "code_signing": {
+    "classification": "SIMULATOR_LINKER_AUTOMATIC_ADHOC",
+    "code_directory_flags": "0x20002 (adhoc, linker-signed)",
+    "signature": "adhoc",
+    "developer_identity": "none",
+    "team_identifier": "not set",
+    "provisioning_profile": "none embedded",
+    "entitlements": "none reported",
+    "manual_codesign_step": "none; build is swiftc simulator link",
+    "auth_or_security_setting_changes": false,
+    "scope": "simulator-only unsigned-by-developer identity; do not describe as strictly unsigned because linker added ad-hoc signature"
+  },
+  "performance_telemetry": {
+    "metric": "actual SpriteKit SKScene.update callbacks divided by 2.0 seconds after launch",
+    "not_measured": [
+      "GPU frame rate",
+      "display presentation frame rate",
+      "CPU/GPU utilization",
+      "memory footprint",
+      "thermal state",
+      "battery load"
+    ],
+    "observations": [
+      {
+        "group": "gear",
+        "points": 32,
+        "callbacks_per_second": 62.0,
+        "screenshot": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/native_ui_review_r001/qa/screenshots/gear_32pt.png",
+        "screenshot_sha256": "214e7794c4435b8f146b76c5b0a56c3455f601649b1a9a52f2c2f20cf695bc02"
+      },
+      {
+        "group": "gear",
+        "points": 48,
+        "callbacks_per_second": 62.5,
+        "screenshot": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/native_ui_review_r001/qa/screenshots/gear_48pt.png",
+        "screenshot_sha256": "5223fc85aa206ea06a2243fa40e6b3e7d33a51712a099737339876bcbfd25080"
+      },
+      {
+        "group": "gear",
+        "points": 64,
+        "callbacks_per_second": 62.5,
+        "screenshot": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/native_ui_review_r001/qa/screenshots/gear_64pt.png",
+        "screenshot_sha256": "df2765f81cd76cff7b6104b5617e58db775273a6eddf0af846fde3fb50c1e92a"
+      }
+    ]
+  },
+  "semantic_visual_review": {
+    "ICO_EQ_W_P2": {
+      "scope": "candidate full pass at 64pt only",
+      "32pt": "silver loop is too small to identify confidently as a pruning loop in the full UI screenshot",
+      "48pt": "loop reads as a ring, inner moonflower arc remains weak at this UI size",
+      "64pt": "loop and inner arc are legible around the existing orb; candidate-fullpass scope is limited to this size",
+      "screenshots": {
+        "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/native_ui_review_r001/qa/screenshots/gear_32pt.png": "214e7794c4435b8f146b76c5b0a56c3455f601649b1a9a52f2c2f20cf695bc02",
+        "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/native_ui_review_r001/qa/screenshots/gear_48pt.png": "5223fc85aa206ea06a2243fa40e6b3e7d33a51712a099737339876bcbfd25080",
+        "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/native_ui_review_r001/qa/screenshots/gear_64pt.png": "df2765f81cd76cff7b6104b5617e58db775273a6eddf0af846fde3fb50c1e92a"
+      },
+      "formal_human_adoption": false
+    },
+    "ICO_M_R05_E3": {
+      "32pt": "arc mark is not reliably legible at full-screen screenshot scale",
+      "48pt": "arc mark remains marginal; shard still reads primarily as crystal",
+      "64pt": "arc engraving is visible; material remains crystal-like. Partial credit applies only to the arc",
+      "screenshots": {
+        "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/native_ui_review_r001/qa/screenshots/materials_32pt.png": "0ebd04900adf983204923d351e880103c516745e7488432373b4df3609ac24e5",
+        "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/native_ui_review_r001/qa/screenshots/materials_48pt.png": "13d60f5ef37b3c8ed7466005952a84b23df468cdacec90b04618bb3f455388ba",
+        "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/native_ui_review_r001/qa/screenshots/materials_64pt.png": "3be90993228da2f3d5729310984506c0aea376764af82ff1cf9dd840a36a5648"
+      },
+      "formal_human_adoption": false
+    },
+    "other_repair_units": "all remain partial; no technical decode result was treated as semantic approval"
+  },
+  "partial_14": [
+    {
+      "asset_id": "NODE_M_R01_G1",
+      "status": "PARTIAL",
+      "reason": "Native local conduit/foot-edge repair and separated present/collected exports preserve identity and alpha, but conduit improvement remains weak at 64px. Imagegen broad branch change rejected."
+    },
+    {
+      "asset_id": "ICO_M_R01_G4",
+      "status": "PARTIAL",
+      "reason": "Weak glint overlay exported and editable, but the 64px glow still does not clearly read as a distinct effect."
+    },
+    {
+      "asset_id": "NODE_M_R03_G2",
+      "status": "PARTIAL",
+      "reason": "Localized silver seam layer preserved original ore silhouette; 64px semantic distinction still weak."
+    },
+    {
+      "asset_id": "ICO_M_R04_G1",
+      "status": "PARTIAL",
+      "reason": "Targeted imagegen attempt rejected because it changed plant scale, core and rendering style; exact provider output retained for provenance only. No production derivative."
+    },
+    {
+      "asset_id": "ICO_M_R04_G3",
+      "status": "PARTIAL",
+      "reason": "Low-opacity inter-fiber shadow on existing silver-gray hemp strands only; no silhouette modification. 64px review did not establish a clear semantic/material correction; candidate retained for root review."
+    },
+    {
+      "asset_id": "ICO_M_R05_G3",
+      "status": "PARTIAL",
+      "reason": "Small pale-rose core accent at the existing central opening only; preserve closed crescent-shell silhouette. 64px review did not establish a clear semantic/material correction; candidate retained for root review."
+    },
+    {
+      "asset_id": "ICO_M_R05_G4",
+      "status": "PARTIAL",
+      "reason": "Warm narrow moon-arc and glass highlight within the existing droplet body; silhouette and facets unchanged. 64px review did not establish a clear semantic/material correction; candidate retained for root review."
+    },
+    {
+      "asset_id": "ICO_M_R01_E2",
+      "status": "PARTIAL",
+      "reason": "Knot glow exported as a local layer; at 64px the difference from the already-bright knot is not strong enough to count as a repair."
+    },
+    {
+      "asset_id": "ICO_M_R01_BB",
+      "status": "PARTIAL",
+      "reason": "Pale conduit/sprout accent on the existing upper-right bud only; preserve oversized trunk-core form. 64px review did not establish a clear semantic/material correction; candidate retained for root review."
+    },
+    {
+      "asset_id": "ICO_M_R02_E3",
+      "status": "PARTIAL",
+      "reason": "Edge de-fringe candidate exported, but the external blue contour remains visible on matte review."
+    },
+    {
+      "asset_id": "ICO_M_R04_E1",
+      "status": "PARTIAL",
+      "reason": "Small rounded blue-gray rootward tufts at existing fiber tips; no feathers removed and no silhouette changes. 64px review did not establish a clear semantic/material correction; candidate retained for root review."
+    },
+    {
+      "asset_id": "ICO_M_R04_BB",
+      "status": "PARTIAL",
+      "reason": "Central stripe accent exported; the stripe still merges with nearby facet highlights at 64px."
+    },
+    {
+      "asset_id": "ICO_M_R05_E3",
+      "status": "PARTIAL",
+      "reason": "Existing engraved crescent arc was selectively strengthened on the same shard; 64px readability improves. Material still reads crystal-like, so only arc repair is a candidate; formal Human adoption pending."
+    },
+    {
+      "asset_id": "ICO_EQ_S_03",
+      "status": "PARTIAL",
+      "reason": "Small pale porcelain-like buffer inlay on the existing hammer head face; preserve head size and contour. 64px review did not establish a clear semantic/material correction; candidate retained for root review."
+    }
+  ],
+  "protection": {
+    "R001_checksum_entries": 165,
+    "R001_checksum_mismatches_at_addendum": 0,
+    "past_source_binary_capture_unchanged_from_R001_inventory": true
+  },
+  "device_boundary": {
+    "simulator": "iPhone 17 Pro / iOS 26.5",
+    "physical_iPhone_verified": false,
+    "human_formal_approval": false
+  }
+}

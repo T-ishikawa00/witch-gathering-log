@@ -1,0 +1,79 @@
+{
+  "report_id": "ACT_E_R02_03_REPLAY_R003_ADDENDUM_R004",
+  "asset_id": "ACT_E_R02_03",
+  "revision": "QA_ADDENDUM_R004",
+  "created_local": "2026-10-09T23:52:00+09:00",
+  "supersedes_limited_findings_in": "QA/REPLAY_QA_R003.json",
+  "scope": "Read-only exact source and geometry recheck; no rebuild or change to prior reports/runtime assets.",
+  "exact_r002_source": {
+    "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/representatives/ACT_E_R02_03/source_r002.png",
+    "sha256": "19abc2c6abb9ff00bc693b37c41f5c5a344eb936ac7d35d26d9b1b60c7d48fc4",
+    "provenance_record": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/representatives/ACT_E_R02_03/GENERATION_R002_BINDING_RECOVERY.json",
+    "provenance_status": "workspace source matches recovered exact provider source"
+  },
+  "r003_pixel_comparison": {
+    "r002_rgba_size_px": [
+      1536,
+      1024
+    ],
+    "r003_rgba_size_px": [
+      1536,
+      1024
+    ],
+    "rgb_channels_identical_all_pixels": true,
+    "rgb_diff_pixel_count": 0,
+    "r2_nonzero_alpha_pixels": 585656,
+    "r3_nonzero_alpha_pixels": 532388,
+    "nonzero_alpha_removed": 53268,
+    "removed_fraction_of_r2_nonzero_alpha_percent": 9.095,
+    "removed_pixels_all_outside_r003_edit_mask": true,
+    "removed_pixels_outside_mask": 53268,
+    "removed_pixels_inside_mask": 0,
+    "alpha_added_pixels": 0,
+    "r3_alpha_identical_to_r2_within_edit_mask": true,
+    "alpha_different_pixels_inside_mask": 0,
+    "r003_mask_pixels": 533201,
+    "r003_source_sha256": "1101df911ed08ef3a9fae9d6dea28271c6b6f2c72435d6250c2f202a40efc9bf",
+    "r003_editable_mask_sha256": "4fb98e44f65d25b10df906c9654ef6a10955a484ae47b229b693f76ae5071117",
+    "result": "RGB was preserved exactly. Internal alpha is pixel-identical within the r003 edit mask. All removed nonzero alpha lies outside the mask, consistent with the localized outer-fringe removal; no alpha was added."
+  },
+  "geometry_and_clip_reuse": {
+    "comparison_root": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/runtime/jellyfish_r002",
+    "r003_root": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/actors/ACT_E_R02_03/runtime",
+    "files": {
+      "mesh_weights_editable.json": {
+        "r002_sha256": "d7b0b96c1077711e8160966d8c8fb8cbbd726f7c6f2ed2800cc356c3e5dab2dd",
+        "r003_sha256": "d7b0b96c1077711e8160966d8c8fb8cbbd726f7c6f2ed2800cc356c3e5dab2dd",
+        "byte_identical": true
+      },
+      "clips_editable.json": {
+        "r002_sha256": "fd1ea3234046bb1cf4234f33e18ff4292441180d65092295a5de5fa311d622b3",
+        "r003_sha256": "fd1ea3234046bb1cf4234f33e18ff4292441180d65092295a5de5fa311d622b3",
+        "byte_identical": true
+      },
+      "part_roles_editable.json": {
+        "r002_sha256": "2ab16631c63ce1d02623a1a12bd2a3a9990219ef1d55941a4a8cefcf22eca00a",
+        "r003_sha256": "2ab16631c63ce1d02623a1a12bd2a3a9990219ef1d55941a4a8cefcf22eca00a",
+        "byte_identical": true
+      }
+    }
+  },
+  "simulator_binary_signature": {
+    "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/actors/ACT_E_R02_03/native_replay_r003/WitchG2JellyReplay.app/WitchG2JellyReplay",
+    "inspection": "read-only `codesign -dv --verbose=2`",
+    "signature": "adhoc linker-generated",
+    "team_identifier": "not set",
+    "developer_certificate": "none",
+    "provisioning_profile": "none",
+    "explicit_codesign_or_signing_service": "not used",
+    "binary_rebuilt_or_modified": "false",
+    "interpretation": "Simulator linker applies an automatic ad-hoc signature; this is not developer signing or a distribution signature."
+  },
+  "device_terminology_and_status": {
+    "tested_environment": "iOS 26.5 Simulator, iPhone 17 Pro simulator profile",
+    "physical_iPhone": "NOT_TESTED",
+    "all_replay_QA_is_simulator_only": true,
+    "no_physical_device_claim": true
+  },
+  "corrected_conclusion": "Direct R002 comparison confirms R003 preserves source RGB exactly and preserves alpha within the editable mask while removing exactly 53,268 nonzero-alpha pixels outside that mask (9.095% of R002 nonzero alpha). Mesh, clips, and part-role data are byte-identical to the R002 files. The replay binary has only the Simulator toolchain automatic ad-hoc linker signature, with no Developer identity, Team, provisioning profile, or explicit signing step."
+}

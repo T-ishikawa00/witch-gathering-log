@@ -1,0 +1,95 @@
+{
+  "pro": {
+    "scene_points": [
+      402,
+      874
+    ],
+    "cycles": 24,
+    "event_count": 867,
+    "duplicate_event_keys": 0,
+    "texture_decode_attempts": 261,
+    "unique_texture_files": 261,
+    "clip_cache_count": 5,
+    "effect_records": 193,
+    "missing_effects": 0,
+    "nonidle_trace_records": 216,
+    "terminal_assignment_failures": 0,
+    "post_capture_source_frame_gaps": 0,
+    "steady_samples_excluding_initial_capture_cycle": 462,
+    "resident_mib_range": [
+      196.78125,
+      205.265625
+    ],
+    "update_callbacks_per_second_range": [
+      59,
+      60
+    ],
+    "largest_raw_update_gap_seconds": 0.03404716665681917,
+    "physical_iPhone": false,
+    "display_GPU_fps": "NOT_MEASURED",
+    "lifecycle": [
+      {
+        "clock": 0,
+        "cycle": 0,
+        "event": "didBecomeActive",
+        "events": 0
+      },
+      {
+        "clock": 7.94999999999709,
+        "cycle": 16,
+        "event": "willResignActive",
+        "events": 597
+      },
+      {
+        "clock": 7.94999999999709,
+        "cycle": 16,
+        "event": "didBecomeActive",
+        "events": 597
+      }
+    ]
+  },
+  "compact": {
+    "scene_points": [
+      375,
+      667
+    ],
+    "cycles": 35,
+    "event_count": 1296,
+    "duplicate_event_keys": 0,
+    "texture_decode_attempts": 261,
+    "unique_texture_files": 261,
+    "clip_cache_count": 5,
+    "effect_records": 288,
+    "missing_effects": 0,
+    "nonidle_trace_records": 323,
+    "terminal_assignment_failures": 0,
+    "post_capture_source_frame_gaps": 16,
+    "steady_samples_excluding_initial_capture_cycle": 698,
+    "resident_mib_range": [
+      188.75,
+      195.5
+    ],
+    "update_callbacks_per_second_range": [
+      49,
+      60.002436984687016
+    ],
+    "largest_raw_update_gap_seconds": 0.07089424999139737,
+    "physical_iPhone": false,
+    "display_GPU_fps": "NOT_MEASURED",
+    "lifecycle": [
+      {
+        "clock": 0,
+        "cycle": 0,
+        "event": "didBecomeActive",
+        "events": 0
+      }
+    ]
+  },
+  "notes": [
+    "cycle0 still captures can skip intermediate source frames and reduce callback rate; terminal poses were assigned.",
+    "These are native Simulator callback/resident statistics, not physical iPhone/GPU performance.",
+    "Capture recording R004 has VFR 53.518 frames/s encoding; 40s preview transcodes to30fps and is not a performance benchmark.",
+    "R005 resets partial measurement counters after foreground resume to avoid R004 inflated first interval.",
+    "Diagnostics are development-only histories. Unlimited diagnostics are not a release runtime or a long-session memory guarantee."
+  ]
+}
