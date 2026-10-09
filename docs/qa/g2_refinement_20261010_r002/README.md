@@ -1,0 +1,9 @@
+# G2 refinement QA snapshot 2026-10-10 R002
+
+原画33単位を追加した制作途中の証拠。原画ファイルあり159は完成159ではありません。旧静的QA84を保全、64pt限定合格1、修正14は未解決、R4フルキット完成/個別Human正式採用/物理iPhone検証は0。
+
+本packは軽量QA資料だけです。PNG原画、ORA、.app、全尺原動画、profiler traceは同梱しません。SOURCE_REFERENCE_SHA256の参照先はMacの元成果であり、GitHub内にファイルがあることを意味しません。元成果のSHAとportable QAのSHAは別です。背景比較シートはR002時点で、R02地点の修正版は別画像R02_MUSHROOM_LOCATION_NATIVE_QA.jpgを参照。敵の矩形・anchorはQA_ONLY。
+
+動画はR007のSimulator実画面で約42秒・30fps配布変換。R008とartは同一ですが性能比較を意味しません。R008性能はLATEST_NATIVE_QA_R008と、R005長時間はLONG_SESSION_R005を区別します。callback数はrender FPSではありません。
+
+予定登録先 docs/qa/g2_refinement_20261010_r002/。今回commit/push未実行、原画等の大容量登録なし。Humanの別途承認待ち。

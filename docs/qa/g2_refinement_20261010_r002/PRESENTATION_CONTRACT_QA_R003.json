@@ -1,0 +1,32 @@
+{
+  "revision": "R003",
+  "test_name": "PresentationContractTestsR002.swift compiled and executed as isolated R003 binary",
+  "command": "swiftc -swift-version 6 PresentationContract.swift PresentationContractTestsR002.swift -o PresentationContractTestsR003; ./PresentationContractTestsR003",
+  "compiler": "Apple Swift 6.3.3 (swiftlang-6.3.3.1.3)",
+  "source": {
+    "path": "game/native_r007/source_snapshot/PresentationContract.swift",
+    "sha256": "a2aac4607e7a6c536f5a7fd062d529968143939dffc56ddccabbcf09a7c1cf89"
+  },
+  "test": {
+    "path": "qa/PresentationContractTestsR002.swift",
+    "sha256": "058ab1eb95d1be6fdf77385985f86089da7decfcb15619afe2cd34be421cfb70"
+  },
+  "binary": {
+    "path": "qa/PresentationContractTestsR003",
+    "sha256": "a3684e797a076d82c7b5c64c017125bdeae49006573607f0cd8cb3fcf7c3ff4f"
+  },
+  "execution": {
+    "exit_code": 0,
+    "stdout_json": {
+      "accepted": 306,
+      "checks": 167,
+      "does_not_implement_R6_or_combat_calculation": true,
+      "duplicate_rejections": 4,
+      "invalid_rejections": 11,
+      "pass": true
+    }
+  },
+  "scope": "Host contract test only; does not compile or exercise SpriteKit ForestScene cue/shot guards.",
+  "physical_iPhone_tested": false,
+  "r6_or_combat_calculation_implemented": false
+}

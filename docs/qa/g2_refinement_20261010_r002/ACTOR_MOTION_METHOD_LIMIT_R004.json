@@ -1,0 +1,17 @@
+{
+  "revision": "R004",
+  "task": "Last one-shot independent body/root-feet/pore plate capability test for ACT_E_R02_01 only.",
+  "result": "FAILED_AND_REJECTED",
+  "new_image_source": "actors/ACT_E_R02_01/candidate_r004_parts/ACT_E_R02_01__parts_sheet__r004.png",
+  "source_sha256": "3163da10593719eb995ce9dc76509c9e19a64bb50795a60f370198940ac81d70",
+  "native64pt_animation": "NOT_RUN; rejected on 2172x724 sheet identity/seam review before animation.",
+  "qa_montage": "actors/ACT_E_R02_01/candidate_r004_parts/components/assembled_review.png",
+  "qa_montage_sha256": "8a35e4e4483e25af896821c02f3f5f9e5da203a13daccb84e39fd8442d764190",
+  "required_missing_capability": [
+    "Generate exact-identity high-fidelity component plates while preserving original contour, palette, texture and scale.",
+    "Paint convincing hidden pouch underdraw and root attachment caps consistent with the original design.",
+    "Create a pore patch whose surrounding skin blends naturally with the original body, with no badge-like seam.",
+    "Deliver genuinely separate editing layers or component canvases, rather than a flat sheet requiring risky hand extraction."
+  ],
+  "stop_boundary": "No further image generation or animation test for this unit. Keep R002 as static concept candidate; keep R004 only as rejected capability evidence. No other actor receives this method."
+}

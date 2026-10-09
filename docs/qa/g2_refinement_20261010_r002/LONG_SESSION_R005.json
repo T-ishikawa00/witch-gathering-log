@@ -1,0 +1,416 @@
+{
+  "revision": "R005",
+  "physical_iPhone": false,
+  "render_gpu_fps": "NOT_CONTINUOUSLY_MEASURED",
+  "render_indicator": "Native SKView.showsFPS screenshots/video show instantaneous Simulator rates; update callbacks below are separate",
+  "measurement_limits": [
+    "Retained rolling windows are not a full-session continuous profiler trace.",
+    "Multiple owned Simulators and image/capture/build work share the Mac host.",
+    "Process CPU percent is relative to one Mac CPU core, not physical iPhone CPU/GPU.",
+    "update_body excludes didEvaluateActions and GPU rendering.",
+    "Texture frame assignment is not proof that every assigned texture reached a displayed frame."
+  ],
+  "runs": {
+    "performance_baseline_r005": {
+      "sample_summary": {
+        "retained_sample_count": 179,
+        "resident_mib": {
+          "min": 179.671875,
+          "median": 181.46875,
+          "max": 203.546875
+        },
+        "update_callbacks_per_second": {
+          "min": 58.77903491293496,
+          "median": 60,
+          "max": 60
+        },
+        "process_CPU_percent_one_core": "NOT_RECORDED",
+        "actual_largest_update_delta_seconds": {
+          "min": 0.01666666667733807,
+          "median": 0.01666666667733807,
+          "max": 0.04143883333017584
+        },
+        "update_body_maximum_seconds": "NOT_RECORDED",
+        "samples_with_capture": 0
+      },
+      "frame_assignment": {
+        "enemy_idle": {
+          "records": 54,
+          "records_with_interior_gaps": 0,
+          "terminal_not_assigned": 9,
+          "examples": []
+        },
+        "enemy_nonidle": {
+          "records": 80,
+          "records_with_interior_gaps": 0,
+          "terminal_not_assigned": 0,
+          "examples": []
+        },
+        "party_single_pose_idle": {
+          "records": 122,
+          "records_with_interior_gaps": 0,
+          "terminal_not_assigned": 0,
+          "examples": []
+        },
+        "party_single_pose_nonidle": {
+          "records": 185,
+          "records_with_interior_gaps": 0,
+          "terminal_not_assigned": 0,
+          "examples": []
+        }
+      },
+      "cycle": 8,
+      "json_bytes": 291661
+    },
+    "performance_candidate_r001": {
+      "sample_summary": {
+        "retained_sample_count": 180,
+        "resident_mib": {
+          "min": 159.078125,
+          "median": 159.765625,
+          "max": 160.109375
+        },
+        "update_callbacks_per_second": {
+          "min": 60,
+          "median": 60.0,
+          "max": 60
+        },
+        "process_CPU_percent_one_core": {
+          "min": 1.7012000000001137,
+          "median": 9.785100000000035,
+          "max": 13.220499999999902
+        },
+        "actual_largest_update_delta_seconds": {
+          "min": 0.01666666667733807,
+          "median": 0.01666666667733807,
+          "max": 0.01666666667733807
+        },
+        "update_body_maximum_seconds": {
+          "min": 3.675000334624201e-05,
+          "median": 0.00023741666518617421,
+          "max": 0.0013393749977694824
+        },
+        "samples_with_capture": 0
+      },
+      "frame_assignment": {
+        "enemy_nonidle": {
+          "records": 78,
+          "records_with_interior_gaps": 0,
+          "terminal_not_assigned": 0,
+          "examples": []
+        },
+        "enemy_idle": {
+          "records": 50,
+          "records_with_interior_gaps": 0,
+          "terminal_not_assigned": 9,
+          "examples": []
+        },
+        "party_single_pose_nonidle": {
+          "records": 270,
+          "records_with_interior_gaps": 0,
+          "terminal_not_assigned": 0,
+          "examples": []
+        },
+        "party_single_pose_idle": {
+          "records": 182,
+          "records_with_interior_gaps": 0,
+          "terminal_not_assigned": 0,
+          "examples": []
+        }
+      },
+      "cycle": 14,
+      "json_bytes": 239623
+    },
+    "native_r005_pro": {
+      "initial_window": {
+        "retained_sample_count": 131,
+        "resident_mib": {
+          "min": 126.9375,
+          "median": 141.921875,
+          "max": 216.984375
+        },
+        "update_callbacks_per_second": {
+          "min": 34.07156315422827,
+          "median": 60,
+          "max": 60.08638402733706
+        },
+        "process_CPU_percent_one_core": {
+          "min": 6.371717765889038,
+          "median": 10.689400000000049,
+          "max": 29.744999999999997
+        },
+        "actual_largest_update_delta_seconds": {
+          "min": 0.01666666667733807,
+          "median": 0.01666666667733807,
+          "max": 0.5798515000060434
+        },
+        "update_body_maximum_seconds": {
+          "min": 8.166665793396533e-06,
+          "median": 0.00012970833631698042,
+          "max": 0.561856208340032
+        },
+        "samples_with_capture": 7
+      },
+      "last_rolling_window": {
+        "retained_sample_count": 180,
+        "resident_mib": {
+          "min": 123.546875,
+          "median": 124.4375,
+          "max": 126.640625
+        },
+        "update_callbacks_per_second": {
+          "min": 37,
+          "median": 60.0,
+          "max": 60
+        },
+        "process_CPU_percent_one_core": {
+          "min": 2.8362999999998806,
+          "median": 14.796350000000302,
+          "max": 17.756199999999467
+        },
+        "actual_largest_update_delta_seconds": {
+          "min": 0.01666666667733807,
+          "median": 0.01666666667733807,
+          "max": 0.1822657500015339
+        },
+        "update_body_maximum_seconds": {
+          "min": 1.2166667147539556e-05,
+          "median": 0.00019933332805521786,
+          "max": 0.0015368750027846545
+        },
+        "samples_with_capture": 0
+      },
+      "cycle": 34,
+      "lifetime_counts": {
+        "effects": 311,
+        "events": 1522,
+        "metric_samples": 691
+      },
+      "frame_assignment": {
+        "enemy_nonidle": {
+          "records": 82,
+          "records_with_interior_gaps": 1,
+          "terminal_not_assigned": 0,
+          "examples": [
+            {
+              "actor": "ACT_E_R01_01",
+              "cycle": 26,
+              "state": "hit",
+              "missing_indices": [
+                6
+              ]
+            }
+          ]
+        },
+        "enemy_idle": {
+          "records": 55,
+          "records_with_interior_gaps": 0,
+          "terminal_not_assigned": 10,
+          "examples": []
+        },
+        "party_single_pose_nonidle": {
+          "records": 310,
+          "records_with_interior_gaps": 0,
+          "terminal_not_assigned": 0,
+          "examples": []
+        },
+        "party_single_pose_idle": {
+          "records": 202,
+          "records_with_interior_gaps": 0,
+          "terminal_not_assigned": 0,
+          "examples": []
+        }
+      },
+      "event_router": {
+        "accepted": 1522,
+        "calculator": "NONE_VISUAL_DEMO_DRIVER_EXTERNAL",
+        "duplicates": 0,
+        "rejected": 0,
+        "retained_keys": 26
+      },
+      "texture_decode_attempt_count": 261,
+      "unique_texture_file_count": 261,
+      "texture_preload_seconds": 0.015331000002333894,
+      "cached_motion_grids": 745,
+      "motion_grid_maximum": 768,
+      "motion_geometry": {
+        "actual_SKWarpGeometryGrid_inspections": 768,
+        "folds": false,
+        "full_skeletal_animation": false,
+        "maximum_fixed_foot_band_delta": 0,
+        "minimum_signed_triangle_area": 0.04139569774270058,
+        "pixel_source_images": "UNCHANGED"
+      },
+      "background_writer": {
+        "latest_file_bytes": 263432,
+        "main_thread_serialization": false,
+        "maximum_worker_write_seconds": 0.14045202732086182,
+        "pending_latest_only": true,
+        "writes": 174
+      },
+      "retained_counts": {
+        "events": 128,
+        "effects": 128,
+        "metrics": 180
+      },
+      "retention_caps": {
+        "archived_actor_frames": 128,
+        "completed_per_actor": 128,
+        "effects": 128,
+        "events": 128,
+        "lifecycle": 32,
+        "metrics": 180
+      },
+      "continuous_session_evidence": "Lifetime counters and rolling windows, not all historical samples"
+    },
+    "native_r005_compact": {
+      "initial_window": {
+        "retained_sample_count": 131,
+        "resident_mib": {
+          "min": 126.46875,
+          "median": 136.015625,
+          "max": 208.78125
+        },
+        "update_callbacks_per_second": {
+          "min": 41.2491128077009,
+          "median": 60,
+          "max": 60
+        },
+        "process_CPU_percent_one_core": {
+          "min": 5.81599999999991,
+          "median": 11.033399999999993,
+          "max": 19.715599999999966
+        },
+        "actual_largest_update_delta_seconds": {
+          "min": 0.01666666667733807,
+          "median": 0.01666666667733807,
+          "max": 0.21472175000235438
+        },
+        "update_body_maximum_seconds": {
+          "min": 1.4499993994832039e-05,
+          "median": 0.0001287500053877011,
+          "max": 0.1695352916722186
+        },
+        "samples_with_capture": 6
+      },
+      "last_rolling_window": {
+        "retained_sample_count": 180,
+        "resident_mib": {
+          "min": 123.34375,
+          "median": 124.15625,
+          "max": 124.40625
+        },
+        "update_callbacks_per_second": {
+          "min": 41.27909500496232,
+          "median": 60.0,
+          "max": 60
+        },
+        "process_CPU_percent_one_core": {
+          "min": 5.205399999999827,
+          "median": 15.156000000000347,
+          "max": 17.419499999999744
+        },
+        "actual_largest_update_delta_seconds": {
+          "min": 0.01666666667733807,
+          "median": 0.01666666667733807,
+          "max": 0.1820200833317358
+        },
+        "update_body_maximum_seconds": {
+          "min": 1.5083336620591581e-05,
+          "median": 0.00014270833344198763,
+          "max": 0.0013642916601384059
+        },
+        "samples_with_capture": 0
+      },
+      "cycle": 34,
+      "lifetime_counts": {
+        "effects": 311,
+        "events": 1522,
+        "metric_samples": 691
+      },
+      "frame_assignment": {
+        "enemy_nonidle": {
+          "records": 82,
+          "records_with_interior_gaps": 0,
+          "terminal_not_assigned": 0,
+          "examples": []
+        },
+        "enemy_idle": {
+          "records": 55,
+          "records_with_interior_gaps": 0,
+          "terminal_not_assigned": 11,
+          "examples": []
+        },
+        "party_single_pose_idle": {
+          "records": 202,
+          "records_with_interior_gaps": 0,
+          "terminal_not_assigned": 0,
+          "examples": []
+        },
+        "party_single_pose_nonidle": {
+          "records": 310,
+          "records_with_interior_gaps": 0,
+          "terminal_not_assigned": 0,
+          "examples": []
+        }
+      },
+      "event_router": {
+        "accepted": 1522,
+        "calculator": "NONE_VISUAL_DEMO_DRIVER_EXTERNAL",
+        "duplicates": 0,
+        "rejected": 0,
+        "retained_keys": 26
+      },
+      "texture_decode_attempt_count": 261,
+      "unique_texture_file_count": 261,
+      "texture_preload_seconds": 0.01906391666852869,
+      "cached_motion_grids": 745,
+      "motion_grid_maximum": 768,
+      "motion_geometry": {
+        "actual_SKWarpGeometryGrid_inspections": 768,
+        "folds": false,
+        "full_skeletal_animation": false,
+        "maximum_fixed_foot_band_delta": 0,
+        "minimum_signed_triangle_area": 0.04139569774270058,
+        "pixel_source_images": "UNCHANGED"
+      },
+      "background_writer": {
+        "latest_file_bytes": 263436,
+        "main_thread_serialization": false,
+        "maximum_worker_write_seconds": 0.025433897972106934,
+        "pending_latest_only": true,
+        "writes": 174
+      },
+      "retained_counts": {
+        "events": 128,
+        "effects": 128,
+        "metrics": 180
+      },
+      "retention_caps": {
+        "archived_actor_frames": 128,
+        "completed_per_actor": 128,
+        "effects": 128,
+        "events": 128,
+        "lifecycle": 32,
+        "metrics": 180
+      },
+      "continuous_session_evidence": "Lifetime counters and rolling windows, not all historical samples"
+    }
+  },
+  "lifecycle": {
+    "clock_unchanged_while_background": true,
+    "cycle_unchanged": true,
+    "accepted_events_unchanged": true,
+    "resume_boundary_matches_pause": true,
+    "post_resume_duplicates": 0,
+    "post_resume_rejected": 0,
+    "method": "Foreground another owned app and restore r005. Simulator only; physical lock/process kill not tested."
+  },
+  "performance_conclusion": "PARTIAL: bounded diagnostics/texture cache/geometry verified; hitches remain; not a full FPS or physical-device pass",
+  "profiler_attempt": {
+    "host_attach": "FAILED process not found",
+    "simulator_attach": "started but did not finish at 15s; interrupted then terminated after >3 min; no valid profiler result claimed",
+    "GPU_time": "NOT_MEASURED",
+    "thermal_battery": "NOT_TESTED"
+  }
+}

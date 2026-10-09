@@ -1,0 +1,1015 @@
+{
+  "revision": "R003",
+  "authority": "R4 actor-unit contracts and latest parent semantic rulings; R001 originals and R002 additions preserved.",
+  "scope": "21 unmade R4 actor units only; no game integration or adoption.",
+  "counts": {
+    "units": 21,
+    "latest_static_candidate_not_rejected": 17,
+    "explicitly_rejected": 4,
+    "full_animation_kits": 0,
+    "formal_adoptions": 0,
+    "game_integrated": 0,
+    "physical_iphone_verified": 0,
+    "all_source_payloads_present": true
+  },
+  "reject_ids": [
+    "ACT_E_R02_01",
+    "ACT_B_R03_B",
+    "ACT_E_R04_02",
+    "ACT_E_R05_02"
+  ],
+  "units": [
+    {
+      "asset_id": "ACT_E_R02_01",
+      "region_id": "R02",
+      "display_name": "胞子ふくろ",
+      "R4_delivery_requirement": "胞子ふくろ 本体・可動パーツ/フレーム・アニメ契約・見本",
+      "latest_eligible_candidate": null,
+      "rejected_concept": {
+        "status": "REJECTED_PRESERVED",
+        "latest_reviewed_runtime": {
+          "path": "actors/ACT_E_R02_01/candidate_r002/ACT_E_R02_01__runtime_candidate__r002.png",
+          "bytes": 277592,
+          "sha256": "08da7c81c66b7d69eff4da92bee4d3cbb35fac0afcfecebd1b2aafdb294e7b31"
+        }
+      },
+      "source_payload_exists": {
+        "generated_source": {
+          "path": "actors/ACT_E_R02_01/candidate_r001/ACT_E_R02_01__generated_source__r001.png",
+          "exists": true,
+          "bytes": 1469409,
+          "sha256": "0fc66711e23bfaa4a630029b2f07b340256ad7fd53ed1509ab3f123131794102"
+        },
+        "runtime_candidate": {
+          "path": "actors/ACT_E_R02_01/candidate_r002/ACT_E_R02_01__runtime_candidate__r002.png",
+          "exists": true,
+          "bytes": 277592,
+          "sha256": "08da7c81c66b7d69eff4da92bee4d3cbb35fac0afcfecebd1b2aafdb294e7b31"
+        },
+        "editable_source": {
+          "path": "actors/ACT_E_R02_01/candidate_r001/ACT_E_R02_01__editable_single_layer__r001.ora",
+          "exists": true,
+          "bytes": 2940202,
+          "sha256": "bbc4f6589b754705e2a0ae5d76c812c424937d88967c009626315da59fa75804"
+        }
+      },
+      "animation_kit": "NOT_COMPLETE",
+      "formal_adoption": false,
+      "game_integration": false,
+      "physical_iphone": false
+    },
+    {
+      "asset_id": "ACT_E_R02_02",
+      "region_id": "R02",
+      "display_name": "霧背の沼蜥蜴",
+      "R4_delivery_requirement": "霧背の沼蜥蜴 本体・可動パーツ/フレーム・アニメ契約・見本",
+      "latest_eligible_candidate": {
+        "revision": "r001",
+        "runtime_candidate": {
+          "path": "actors/ACT_E_R02_02/candidate_r001/ACT_E_R02_02__runtime_candidate__r001.png",
+          "bytes": 226903,
+          "sha256": "2cd12825d97b615632e34b1f123bf9ad3c4c0f7c1911228f476543d42a9f8ff4"
+        },
+        "static_review": "PARTIAL_CANDIDATE; fin too large/transparent haze; verify silhouette at 64px",
+        "formal_adoption": false
+      },
+      "rejected_concept": {
+        "status": "not rejected by current semantic review",
+        "latest_reviewed_runtime": {
+          "path": "actors/ACT_E_R02_02/candidate_r001/ACT_E_R02_02__runtime_candidate__r001.png",
+          "bytes": 226903,
+          "sha256": "2cd12825d97b615632e34b1f123bf9ad3c4c0f7c1911228f476543d42a9f8ff4"
+        }
+      },
+      "source_payload_exists": {
+        "generated_source": {
+          "path": "actors/ACT_E_R02_02/candidate_r001/ACT_E_R02_02__generated_source__r001.png",
+          "exists": true,
+          "bytes": 1935372,
+          "sha256": "fd12ad4450bc22de7293e6eba5299cd927635b8fd6a5f7785d4c4e3da141055c"
+        },
+        "runtime_candidate": {
+          "path": "actors/ACT_E_R02_02/candidate_r001/ACT_E_R02_02__runtime_candidate__r001.png",
+          "exists": true,
+          "bytes": 226903,
+          "sha256": "2cd12825d97b615632e34b1f123bf9ad3c4c0f7c1911228f476543d42a9f8ff4"
+        },
+        "editable_source": {
+          "path": "actors/ACT_E_R02_02/candidate_r001/ACT_E_R02_02__editable_single_layer__r001.ora",
+          "exists": true,
+          "bytes": 3879394,
+          "sha256": "0100dced51492cc82045b11a1649b47f3697ed461068ce4975fd9fd21a51b66b"
+        }
+      },
+      "animation_kit": "NOT_COMPLETE",
+      "formal_adoption": false,
+      "game_integration": false,
+      "physical_iphone": false
+    },
+    {
+      "asset_id": "ACT_E_R02_04",
+      "region_id": "R02",
+      "display_name": "月灯蛾",
+      "R4_delivery_requirement": "月灯蛾 本体・可動パーツ/フレーム・アニメ契約・見本",
+      "latest_eligible_candidate": {
+        "revision": "r001",
+        "runtime_candidate": {
+          "path": "actors/ACT_E_R02_04/candidate_r001/ACT_E_R02_04__runtime_candidate__r001.png",
+          "bytes": 268769,
+          "sha256": "632bab3766840d25d1ccd2d7d9f357aeb30132766f0b941952a3508332b8db7c"
+        },
+        "static_review": "PARTIAL_CANDIDATE; premium style, crescent wing silhouette; appears oversized for 0.62H and elaborate at mobile scale; 6 legs/wing articulation require part separation before motion test",
+        "formal_adoption": false
+      },
+      "rejected_concept": {
+        "status": "not rejected by current semantic review",
+        "latest_reviewed_runtime": {
+          "path": "actors/ACT_E_R02_04/candidate_r001/ACT_E_R02_04__runtime_candidate__r001.png",
+          "bytes": 268769,
+          "sha256": "632bab3766840d25d1ccd2d7d9f357aeb30132766f0b941952a3508332b8db7c"
+        }
+      },
+      "source_payload_exists": {
+        "generated_source": {
+          "path": "actors/ACT_E_R02_04/candidate_r001/ACT_E_R02_04__generated_source__r001.png",
+          "exists": true,
+          "bytes": 2148627,
+          "sha256": "7dc3e4f00140ed87914006f8c9ea353e1d369385454da5cd093b7eec68adf309"
+        },
+        "runtime_candidate": {
+          "path": "actors/ACT_E_R02_04/candidate_r001/ACT_E_R02_04__runtime_candidate__r001.png",
+          "exists": true,
+          "bytes": 268769,
+          "sha256": "632bab3766840d25d1ccd2d7d9f357aeb30132766f0b941952a3508332b8db7c"
+        },
+        "editable_source": {
+          "path": "actors/ACT_E_R02_04/candidate_r001/ACT_E_R02_04__editable_single_layer__r001.ora",
+          "exists": true,
+          "bytes": 4316024,
+          "sha256": "67e88fdcf7a2271904d831b33d516813e927fd9a371467e9fb6db5735048e439"
+        }
+      },
+      "animation_kit": "NOT_COMPLETE",
+      "formal_adoption": false,
+      "game_integration": false,
+      "physical_iphone": false
+    },
+    {
+      "asset_id": "ACT_B_R02_A",
+      "region_id": "R02",
+      "display_name": "夢茸の歩き主",
+      "R4_delivery_requirement": "夢茸の歩き主 本体・可動パーツ/フレーム・アニメ契約・見本",
+      "latest_eligible_candidate": {
+        "revision": "r001",
+        "runtime_candidate": {
+          "path": "actors/ACT_B_R02_A/candidate_r001/ACT_B_R02_A__runtime_candidate__r001.png",
+          "bytes": 442298,
+          "sha256": "556dd7dcc6e9a6f837748b8074e99d89d2bfdb587ad9744ff01b9a71153a46c9"
+        },
+        "static_review": "PARTIAL; plural pore-like dots visible on underside, multi-cap/root structure visually distinctive; static only",
+        "formal_adoption": false
+      },
+      "rejected_concept": {
+        "status": "not rejected by current semantic review",
+        "latest_reviewed_runtime": {
+          "path": "actors/ACT_B_R02_A/candidate_r001/ACT_B_R02_A__runtime_candidate__r001.png",
+          "bytes": 442298,
+          "sha256": "556dd7dcc6e9a6f837748b8074e99d89d2bfdb587ad9744ff01b9a71153a46c9"
+        }
+      },
+      "source_payload_exists": {
+        "generated_source": {
+          "path": "actors/ACT_B_R02_A/candidate_r001/ACT_B_R02_A__generated_source__r001.png",
+          "exists": true,
+          "bytes": 2036439,
+          "sha256": "29b267d01866f43106bbe3b4145d3cdc1f7164f85accce87ad1f67161c878d2f"
+        },
+        "runtime_candidate": {
+          "path": "actors/ACT_B_R02_A/candidate_r001/ACT_B_R02_A__runtime_candidate__r001.png",
+          "exists": true,
+          "bytes": 442298,
+          "sha256": "556dd7dcc6e9a6f837748b8074e99d89d2bfdb587ad9744ff01b9a71153a46c9"
+        },
+        "editable_source": {
+          "path": "actors/ACT_B_R02_A/candidate_r001/ACT_B_R02_A__editable_single_layer__r001.ora",
+          "exists": true,
+          "bytes": 4065993,
+          "sha256": "71aa6822c40ed339e5330e190e763c8ee0f44badb48c696edf059283d6d1eb3a"
+        }
+      },
+      "animation_kit": "NOT_COMPLETE",
+      "formal_adoption": false,
+      "game_integration": false,
+      "physical_iphone": false
+    },
+    {
+      "asset_id": "ACT_B_R02_B",
+      "region_id": "R02",
+      "display_name": "水鏡の大蜥蜴",
+      "R4_delivery_requirement": "水鏡の大蜥蜴 本体・可動パーツ/フレーム・アニメ契約・見本",
+      "latest_eligible_candidate": {
+        "revision": "r001",
+        "runtime_candidate": {
+          "path": "actors/ACT_B_R02_B/candidate_r001/ACT_B_R02_B__runtime_candidate__r001.png",
+          "bytes": 244543,
+          "sha256": "3dd2ccd13c8f21b87371e54a86680f316d473378ecc0d7533bdd9d8f37a2daba"
+        },
+        "static_review": "R02 boss candidate: elegant teal lizard and six petal crown; body is clean; body/reflection plate and limbs overlap as one static painting, no rig.",
+        "formal_adoption": false
+      },
+      "rejected_concept": {
+        "status": "not rejected by current semantic review",
+        "latest_reviewed_runtime": {
+          "path": "actors/ACT_B_R02_B/candidate_r001/ACT_B_R02_B__runtime_candidate__r001.png",
+          "bytes": 244543,
+          "sha256": "3dd2ccd13c8f21b87371e54a86680f316d473378ecc0d7533bdd9d8f37a2daba"
+        }
+      },
+      "source_payload_exists": {
+        "generated_source": {
+          "path": "actors/ACT_B_R02_B/candidate_r001/ACT_B_R02_B__generated_source__r001.png",
+          "exists": true,
+          "bytes": 2495592,
+          "sha256": "e7ec5e63514955a1055469cb132b6c86840a68b8efa3c879ae17e19bc87cc3ae"
+        },
+        "runtime_candidate": {
+          "path": "actors/ACT_B_R02_B/candidate_r001/ACT_B_R02_B__runtime_candidate__r001.png",
+          "exists": true,
+          "bytes": 244543,
+          "sha256": "3dd2ccd13c8f21b87371e54a86680f316d473378ecc0d7533bdd9d8f37a2daba"
+        },
+        "editable_source": {
+          "path": "actors/ACT_B_R02_B/candidate_r001/ACT_B_R02_B__editable_single_layer__r001.ora",
+          "exists": true,
+          "bytes": 5019717,
+          "sha256": "f8fd0f7831c93d5ed42d96c7ac311bc08d5327ad3ee2929b40fd9d7974d0cbd2"
+        }
+      },
+      "animation_kit": "NOT_COMPLETE",
+      "formal_adoption": false,
+      "game_integration": false,
+      "physical_iphone": false
+    },
+    {
+      "asset_id": "ACT_E_R03_01",
+      "region_id": "R03",
+      "display_name": "銅殻やどかり",
+      "R4_delivery_requirement": "銅殻やどかり 本体・可動パーツ/フレーム・アニメ契約・見本",
+      "latest_eligible_candidate": {
+        "revision": "r001",
+        "runtime_candidate": {
+          "path": "actors/ACT_E_R03_01/candidate_r001/ACT_E_R03_01__runtime_candidate__r001.png",
+          "bytes": 321009,
+          "sha256": "5847589123ef39eb1b3c96f6feabfb8813905321bee6cbc8ca976523bdcf1964"
+        },
+        "static_review": "PARTIAL; shell reads angular salvage copper, limbs overlap so segment rig not qualified",
+        "formal_adoption": false
+      },
+      "rejected_concept": {
+        "status": "not rejected by current semantic review",
+        "latest_reviewed_runtime": {
+          "path": "actors/ACT_E_R03_01/candidate_r001/ACT_E_R03_01__runtime_candidate__r001.png",
+          "bytes": 321009,
+          "sha256": "5847589123ef39eb1b3c96f6feabfb8813905321bee6cbc8ca976523bdcf1964"
+        }
+      },
+      "source_payload_exists": {
+        "generated_source": {
+          "path": "actors/ACT_E_R03_01/candidate_r001/ACT_E_R03_01__generated_source__r001.png",
+          "exists": true,
+          "bytes": 1834848,
+          "sha256": "7008275431678ca910a7e2d6496696ed7c72704033369b91240084b1517852ab"
+        },
+        "runtime_candidate": {
+          "path": "actors/ACT_E_R03_01/candidate_r001/ACT_E_R03_01__runtime_candidate__r001.png",
+          "exists": true,
+          "bytes": 321009,
+          "sha256": "5847589123ef39eb1b3c96f6feabfb8813905321bee6cbc8ca976523bdcf1964"
+        },
+        "editable_source": {
+          "path": "actors/ACT_E_R03_01/candidate_r001/ACT_E_R03_01__editable_single_layer__r001.ora",
+          "exists": true,
+          "bytes": 3725100,
+          "sha256": "36baaec0d692eee1620df824a59cde28570a345bb1aa7bbb749477ab1d173192"
+        }
+      },
+      "animation_kit": "NOT_COMPLETE",
+      "formal_adoption": false,
+      "game_integration": false,
+      "physical_iphone": false
+    },
+    {
+      "asset_id": "ACT_E_R03_02",
+      "region_id": "R03",
+      "display_name": "晶鳴こうもり",
+      "R4_delivery_requirement": "晶鳴こうもり 本体・可動パーツ/フレーム・アニメ契約・見本",
+      "latest_eligible_candidate": {
+        "revision": "r001",
+        "runtime_candidate": {
+          "path": "actors/ACT_E_R03_02/candidate_r001/ACT_E_R03_02__runtime_candidate__r001.png",
+          "bytes": 208487,
+          "sha256": "1fcb3881583d9b2b860f1c705918c06ac104676d26c5b63ffae7d764293e3003"
+        },
+        "static_review": "PARTIAL; bat membrane/crystal ear silhouette reads, fork prongs resemble branching ears; motion and joints untested",
+        "formal_adoption": false
+      },
+      "rejected_concept": {
+        "status": "not rejected by current semantic review",
+        "latest_reviewed_runtime": {
+          "path": "actors/ACT_E_R03_02/candidate_r001/ACT_E_R03_02__runtime_candidate__r001.png",
+          "bytes": 208487,
+          "sha256": "1fcb3881583d9b2b860f1c705918c06ac104676d26c5b63ffae7d764293e3003"
+        }
+      },
+      "source_payload_exists": {
+        "generated_source": {
+          "path": "actors/ACT_E_R03_02/candidate_r001/ACT_E_R03_02__generated_source__r001.png",
+          "exists": true,
+          "bytes": 2082306,
+          "sha256": "3ef4b311a0bb1e45f46b7e58397f65f66c114dfdbee222743e775666aecae97a"
+        },
+        "runtime_candidate": {
+          "path": "actors/ACT_E_R03_02/candidate_r001/ACT_E_R03_02__runtime_candidate__r001.png",
+          "exists": true,
+          "bytes": 208487,
+          "sha256": "1fcb3881583d9b2b860f1c705918c06ac104676d26c5b63ffae7d764293e3003"
+        },
+        "editable_source": {
+          "path": "actors/ACT_E_R03_02/candidate_r001/ACT_E_R03_02__editable_single_layer__r001.ora",
+          "exists": true,
+          "bytes": 4166884,
+          "sha256": "def21022edd616205c9852fb6969be424ab0a3dbcc104c55da26190a38872b5d"
+        }
+      },
+      "animation_kit": "NOT_COMPLETE",
+      "formal_adoption": false,
+      "game_integration": false,
+      "physical_iphone": false
+    },
+    {
+      "asset_id": "ACT_E_R03_03",
+      "region_id": "R03",
+      "display_name": "坑道の削り偶",
+      "R4_delivery_requirement": "坑道の削り偶 本体・可動パーツ/フレーム・アニメ契約・見本",
+      "latest_eligible_candidate": {
+        "revision": "r001",
+        "runtime_candidate": {
+          "path": "actors/ACT_E_R03_03/candidate_r001/ACT_E_R03_03__runtime_candidate__r001.png",
+          "bytes": 375032,
+          "sha256": "3429e7d905a0b929c2b6f15c747cb195ebe691dfb60ab11d65be9a3bcc8784f6"
+        },
+        "static_review": "PARTIAL; right appendage reads as long chisel and round chest plate distinct; one merged image prevents joint QA",
+        "formal_adoption": false
+      },
+      "rejected_concept": {
+        "status": "not rejected by current semantic review",
+        "latest_reviewed_runtime": {
+          "path": "actors/ACT_E_R03_03/candidate_r001/ACT_E_R03_03__runtime_candidate__r001.png",
+          "bytes": 375032,
+          "sha256": "3429e7d905a0b929c2b6f15c747cb195ebe691dfb60ab11d65be9a3bcc8784f6"
+        }
+      },
+      "source_payload_exists": {
+        "generated_source": {
+          "path": "actors/ACT_E_R03_03/candidate_r001/ACT_E_R03_03__generated_source__r001.png",
+          "exists": true,
+          "bytes": 2224328,
+          "sha256": "94bcbe92702b719940e92b3f3a1ee852986be34764999d35fdac79b4f6c104bc"
+        },
+        "runtime_candidate": {
+          "path": "actors/ACT_E_R03_03/candidate_r001/ACT_E_R03_03__runtime_candidate__r001.png",
+          "exists": true,
+          "bytes": 375032,
+          "sha256": "3429e7d905a0b929c2b6f15c747cb195ebe691dfb60ab11d65be9a3bcc8784f6"
+        },
+        "editable_source": {
+          "path": "actors/ACT_E_R03_03/candidate_r001/ACT_E_R03_03__editable_single_layer__r001.ora",
+          "exists": true,
+          "bytes": 4332256,
+          "sha256": "92b6ab1902474160d994cb8728f04ddf9b18f6b44d704d21622ef222c66df8f8"
+        }
+      },
+      "animation_kit": "NOT_COMPLETE",
+      "formal_adoption": false,
+      "game_integration": false,
+      "physical_iphone": false
+    },
+    {
+      "asset_id": "ACT_E_R03_04",
+      "region_id": "R03",
+      "display_name": "磁紋とかげ",
+      "R4_delivery_requirement": "磁紋とかげ 本体・可動パーツ/フレーム・アニメ契約・見本",
+      "latest_eligible_candidate": {
+        "revision": "r001",
+        "runtime_candidate": {
+          "path": "actors/ACT_E_R03_04/candidate_r001/ACT_E_R03_04__runtime_candidate__r001.png",
+          "bytes": 205904,
+          "sha256": "287a88bd1a6afa2c2d6030449242e16c78be13bf854c954eda5baa61e8e10b75"
+        },
+        "static_review": "PARTIAL; gray-black scales/blue arcs and tail mineral read, scale and mobile-size contrast untested",
+        "formal_adoption": false
+      },
+      "rejected_concept": {
+        "status": "not rejected by current semantic review",
+        "latest_reviewed_runtime": {
+          "path": "actors/ACT_E_R03_04/candidate_r001/ACT_E_R03_04__runtime_candidate__r001.png",
+          "bytes": 205904,
+          "sha256": "287a88bd1a6afa2c2d6030449242e16c78be13bf854c954eda5baa61e8e10b75"
+        }
+      },
+      "source_payload_exists": {
+        "generated_source": {
+          "path": "actors/ACT_E_R03_04/candidate_r001/ACT_E_R03_04__generated_source__r001.png",
+          "exists": true,
+          "bytes": 2012734,
+          "sha256": "f0888398c2181cb42c75f9c522fe533f5dd2db5a28dd9dcbcc5663642a9149f4"
+        },
+        "runtime_candidate": {
+          "path": "actors/ACT_E_R03_04/candidate_r001/ACT_E_R03_04__runtime_candidate__r001.png",
+          "exists": true,
+          "bytes": 205904,
+          "sha256": "287a88bd1a6afa2c2d6030449242e16c78be13bf854c954eda5baa61e8e10b75"
+        },
+        "editable_source": {
+          "path": "actors/ACT_E_R03_04/candidate_r001/ACT_E_R03_04__editable_single_layer__r001.ora",
+          "exists": true,
+          "bytes": 4004136,
+          "sha256": "0f2ea33278a632dfcf099686e02ebfbf0e03835c4cf6f0b9c4620d3c28fb5bc4"
+        }
+      },
+      "animation_kit": "NOT_COMPLETE",
+      "formal_adoption": false,
+      "game_integration": false,
+      "physical_iphone": false
+    },
+    {
+      "asset_id": "ACT_B_R03_B",
+      "region_id": "R03",
+      "display_name": "炉守りの鉱巨人",
+      "R4_delivery_requirement": "炉守りの鉱巨人 本体・可動パーツ/フレーム・アニメ契約・見本",
+      "latest_eligible_candidate": null,
+      "rejected_concept": {
+        "status": "REJECTED_PRESERVED",
+        "latest_reviewed_runtime": {
+          "path": "actors/ACT_B_R03_B/candidate_r001/ACT_B_R03_B__runtime_candidate__r001.png",
+          "bytes": 391190,
+          "sha256": "fb2384dd87ab31aeb92349e715698b0e098d828da5a636a50f4f7958952329df"
+        }
+      },
+      "source_payload_exists": {
+        "generated_source": {
+          "path": "actors/ACT_B_R03_B/candidate_r001/ACT_B_R03_B__generated_source__r001.png",
+          "exists": true,
+          "bytes": 2711700,
+          "sha256": "6c9263634e9186f21a3e73e167141c5f0255b548901cb7baecffc19f608edca5"
+        },
+        "runtime_candidate": {
+          "path": "actors/ACT_B_R03_B/candidate_r001/ACT_B_R03_B__runtime_candidate__r001.png",
+          "exists": true,
+          "bytes": 391190,
+          "sha256": "fb2384dd87ab31aeb92349e715698b0e098d828da5a636a50f4f7958952329df"
+        },
+        "editable_source": {
+          "path": "actors/ACT_B_R03_B/candidate_r001/ACT_B_R03_B__editable_single_layer__r001.ora",
+          "exists": true,
+          "bytes": 5407615,
+          "sha256": "3c7d9b89ced9ffdaef587a5828b97f612c0f31207b7e94dead110e966bd43bc5"
+        }
+      },
+      "animation_kit": "NOT_COMPLETE",
+      "formal_adoption": false,
+      "game_integration": false,
+      "physical_iphone": false
+    },
+    {
+      "asset_id": "ACT_E_R04_01",
+      "region_id": "R04",
+      "display_name": "霜毛おおかみ",
+      "R4_delivery_requirement": "霜毛おおかみ 本体・可動パーツ/フレーム・アニメ契約・見本",
+      "latest_eligible_candidate": {
+        "revision": "r001",
+        "runtime_candidate": {
+          "path": "actors/ACT_E_R04_01/candidate_r001/ACT_E_R04_01__runtime_candidate__r001.png",
+          "bytes": 225296,
+          "sha256": "c29f0bec4b3f04997da2efd72bc027fc334a776405a777695293183298d76512"
+        },
+        "static_review": "PARTIAL; long muzzle/body/ruff read, tail extends large; leg-pose animation untested",
+        "formal_adoption": false
+      },
+      "rejected_concept": {
+        "status": "not rejected by current semantic review",
+        "latest_reviewed_runtime": {
+          "path": "actors/ACT_E_R04_01/candidate_r001/ACT_E_R04_01__runtime_candidate__r001.png",
+          "bytes": 225296,
+          "sha256": "c29f0bec4b3f04997da2efd72bc027fc334a776405a777695293183298d76512"
+        }
+      },
+      "source_payload_exists": {
+        "generated_source": {
+          "path": "actors/ACT_E_R04_01/candidate_r001/ACT_E_R04_01__generated_source__r001.png",
+          "exists": true,
+          "bytes": 2087923,
+          "sha256": "510840b8b0dc781470b8e813e260a1673c038b9ac2673b8ca48d92679585f74d"
+        },
+        "runtime_candidate": {
+          "path": "actors/ACT_E_R04_01/candidate_r001/ACT_E_R04_01__runtime_candidate__r001.png",
+          "exists": true,
+          "bytes": 225296,
+          "sha256": "c29f0bec4b3f04997da2efd72bc027fc334a776405a777695293183298d76512"
+        },
+        "editable_source": {
+          "path": "actors/ACT_E_R04_01/candidate_r001/ACT_E_R04_01__editable_single_layer__r001.ora",
+          "exists": true,
+          "bytes": 4161918,
+          "sha256": "e87840823af974966c0f80be78b8b108efcc494b0131c15b9103ac1dd7e1694e"
+        }
+      },
+      "animation_kit": "NOT_COMPLETE",
+      "formal_adoption": false,
+      "game_integration": false,
+      "physical_iphone": false
+    },
+    {
+      "asset_id": "ACT_E_R04_02",
+      "region_id": "R04",
+      "display_name": "氷羽ふくろう",
+      "R4_delivery_requirement": "氷羽ふくろう 本体・可動パーツ/フレーム・アニメ契約・見本",
+      "latest_eligible_candidate": null,
+      "rejected_concept": {
+        "status": "REJECTED_PRESERVED",
+        "latest_reviewed_runtime": {
+          "path": "actors/ACT_E_R04_02/candidate_r002/ACT_E_R04_02__runtime_candidate__r002.png",
+          "bytes": 255669,
+          "sha256": "ece94540645c4de60f8f5604130226deeb1b1648d06194e4bcecce23ee2dbb69"
+        }
+      },
+      "source_payload_exists": {
+        "generated_source": {
+          "path": "actors/ACT_E_R04_02/candidate_r001/ACT_E_R04_02__generated_source__r001.png",
+          "exists": true,
+          "bytes": 1963201,
+          "sha256": "815fa293171e8769903869bc084fc65db05b866dce65ca46148e621aed050966"
+        },
+        "runtime_candidate": {
+          "path": "actors/ACT_E_R04_02/candidate_r002/ACT_E_R04_02__runtime_candidate__r002.png",
+          "exists": true,
+          "bytes": 255669,
+          "sha256": "ece94540645c4de60f8f5604130226deeb1b1648d06194e4bcecce23ee2dbb69"
+        },
+        "editable_source": {
+          "path": "actors/ACT_E_R04_02/candidate_r001/ACT_E_R04_02__editable_single_layer__r001.ora",
+          "exists": true,
+          "bytes": 3956040,
+          "sha256": "b2a45b2d9dd3c7ed30f7e023c3059c759d6f2d65310c94f3ec0ba1884f09125d"
+        }
+      },
+      "animation_kit": "NOT_COMPLETE",
+      "formal_adoption": false,
+      "game_integration": false,
+      "physical_iphone": false
+    },
+    {
+      "asset_id": "ACT_E_R04_03",
+      "region_id": "R04",
+      "display_name": "雪甲ころがし",
+      "R4_delivery_requirement": "雪甲ころがし 本体・可動パーツ/フレーム・アニメ契約・見本",
+      "latest_eligible_candidate": {
+        "revision": "r001",
+        "runtime_candidate": {
+          "path": "actors/ACT_E_R04_03/candidate_r001/ACT_E_R04_03__runtime_candidate__r001.png",
+          "bytes": 256846,
+          "sha256": "a3321e28ac81594cee791ec98edbcde96460c9ae34441ec4925b22f51a57db20"
+        },
+        "static_review": "PARTIAL; plated white shell/red feet read, need confirm exactly six appendages and seam movement",
+        "formal_adoption": false
+      },
+      "rejected_concept": {
+        "status": "not rejected by current semantic review",
+        "latest_reviewed_runtime": {
+          "path": "actors/ACT_E_R04_03/candidate_r001/ACT_E_R04_03__runtime_candidate__r001.png",
+          "bytes": 256846,
+          "sha256": "a3321e28ac81594cee791ec98edbcde96460c9ae34441ec4925b22f51a57db20"
+        }
+      },
+      "source_payload_exists": {
+        "generated_source": {
+          "path": "actors/ACT_E_R04_03/candidate_r001/ACT_E_R04_03__generated_source__r001.png",
+          "exists": true,
+          "bytes": 2144733,
+          "sha256": "9e6da98ade4c317cbb641e44f58386ce7c64cc88e0a3368961bd6ff1fc14374a"
+        },
+        "runtime_candidate": {
+          "path": "actors/ACT_E_R04_03/candidate_r001/ACT_E_R04_03__runtime_candidate__r001.png",
+          "exists": true,
+          "bytes": 256846,
+          "sha256": "a3321e28ac81594cee791ec98edbcde96460c9ae34441ec4925b22f51a57db20"
+        },
+        "editable_source": {
+          "path": "actors/ACT_E_R04_03/candidate_r001/ACT_E_R04_03__editable_single_layer__r001.ora",
+          "exists": true,
+          "bytes": 4299858,
+          "sha256": "885f85727a512651af18a06abecf3e459cd3ec96c8bd5f8fb1492e30fa4b2c6c"
+        }
+      },
+      "animation_kit": "NOT_COMPLETE",
+      "formal_adoption": false,
+      "game_integration": false,
+      "physical_iphone": false
+    },
+    {
+      "asset_id": "ACT_E_R04_04",
+      "region_id": "R04",
+      "display_name": "霜晶の削り偶",
+      "R4_delivery_requirement": "霜晶の削り偶 本体・可動パーツ/フレーム・アニメ契約・見本",
+      "latest_eligible_candidate": {
+        "revision": "r001",
+        "runtime_candidate": {
+          "path": "actors/ACT_E_R04_04/candidate_r001/ACT_E_R04_04__runtime_candidate__r001.png",
+          "bytes": 290514,
+          "sha256": "e6676ce9c6e9ebaa78ba47e7c0a7abbcb215f73200b5a25822af55630b19b63d"
+        },
+        "static_review": "PARTIAL; long tool and two-arm construction read, overly humanoid knight-like; styling gate needs review",
+        "formal_adoption": false
+      },
+      "rejected_concept": {
+        "status": "not rejected by current semantic review",
+        "latest_reviewed_runtime": {
+          "path": "actors/ACT_E_R04_04/candidate_r001/ACT_E_R04_04__runtime_candidate__r001.png",
+          "bytes": 290514,
+          "sha256": "e6676ce9c6e9ebaa78ba47e7c0a7abbcb215f73200b5a25822af55630b19b63d"
+        }
+      },
+      "source_payload_exists": {
+        "generated_source": {
+          "path": "actors/ACT_E_R04_04/candidate_r001/ACT_E_R04_04__generated_source__r001.png",
+          "exists": true,
+          "bytes": 1388889,
+          "sha256": "d6bb6f2dc1cf51cc9cc0aec6a3144afbd9716393a900d5de05f6fc8006c1c962"
+        },
+        "runtime_candidate": {
+          "path": "actors/ACT_E_R04_04/candidate_r001/ACT_E_R04_04__runtime_candidate__r001.png",
+          "exists": true,
+          "bytes": 290514,
+          "sha256": "e6676ce9c6e9ebaa78ba47e7c0a7abbcb215f73200b5a25822af55630b19b63d"
+        },
+        "editable_source": {
+          "path": "actors/ACT_E_R04_04/candidate_r001/ACT_E_R04_04__editable_single_layer__r001.ora",
+          "exists": true,
+          "bytes": 2746824,
+          "sha256": "068bb0804e91ab262ac68e3ab02ec1aa7f232e1956579cc37c45406df66e14ae"
+        }
+      },
+      "animation_kit": "NOT_COMPLETE",
+      "formal_adoption": false,
+      "game_integration": false,
+      "physical_iphone": false
+    },
+    {
+      "asset_id": "ACT_B_R04_A",
+      "region_id": "R04",
+      "display_name": "稜線の白角獣",
+      "R4_delivery_requirement": "稜線の白角獣 本体・可動パーツ/フレーム・アニメ契約・見本",
+      "latest_eligible_candidate": {
+        "revision": "r001",
+        "runtime_candidate": {
+          "path": "actors/ACT_B_R04_A/candidate_r001/ACT_B_R04_A__runtime_candidate__r001.png",
+          "bytes": 375913,
+          "sha256": "b97dab009499f231325e8242bca66855ba64e4a6ea414831cbb7eee96c404c1c"
+        },
+        "static_review": "R04 miniboss candidate: single thick arc horn and pale goat body read; scale against 1.75H and fur readability at screen size untested; single merged art only.",
+        "formal_adoption": false
+      },
+      "rejected_concept": {
+        "status": "not rejected by current semantic review",
+        "latest_reviewed_runtime": {
+          "path": "actors/ACT_B_R04_A/candidate_r001/ACT_B_R04_A__runtime_candidate__r001.png",
+          "bytes": 375913,
+          "sha256": "b97dab009499f231325e8242bca66855ba64e4a6ea414831cbb7eee96c404c1c"
+        }
+      },
+      "source_payload_exists": {
+        "generated_source": {
+          "path": "actors/ACT_B_R04_A/candidate_r001/ACT_B_R04_A__generated_source__r001.png",
+          "exists": true,
+          "bytes": 2344233,
+          "sha256": "18617ee01691e095d2c0b289774c2452b6d13a4a531a8a8b82a2571e01aca8af"
+        },
+        "runtime_candidate": {
+          "path": "actors/ACT_B_R04_A/candidate_r001/ACT_B_R04_A__runtime_candidate__r001.png",
+          "exists": true,
+          "bytes": 375913,
+          "sha256": "b97dab009499f231325e8242bca66855ba64e4a6ea414831cbb7eee96c404c1c"
+        },
+        "editable_source": {
+          "path": "actors/ACT_B_R04_A/candidate_r001/ACT_B_R04_A__editable_single_layer__r001.ora",
+          "exists": true,
+          "bytes": 4710009,
+          "sha256": "7d8e0dd884546a17177b247c3a06b385692ed5c4d25c105ec028e8e722734b30"
+        }
+      },
+      "animation_kit": "NOT_COMPLETE",
+      "formal_adoption": false,
+      "game_integration": false,
+      "physical_iphone": false
+    },
+    {
+      "asset_id": "ACT_E_R05_01",
+      "region_id": "R05",
+      "display_name": "蔓綴じの書霊",
+      "R4_delivery_requirement": "蔓綴じの書霊 本体・可動パーツ/フレーム・アニメ契約・見本",
+      "latest_eligible_candidate": {
+        "revision": "r001",
+        "runtime_candidate": {
+          "path": "actors/ACT_E_R05_01/candidate_r001/ACT_E_R05_01__runtime_candidate__r001.png",
+          "bytes": 347219,
+          "sha256": "44ae6efb526eb41cfa6eac603e5e0a9ceffe47281be52d5c4314c01d2bdfe556"
+        },
+        "static_review": "PARTIAL; book cover/spine and vine legs read; source is one flat painting and no rig",
+        "formal_adoption": false
+      },
+      "rejected_concept": {
+        "status": "not rejected by current semantic review",
+        "latest_reviewed_runtime": {
+          "path": "actors/ACT_E_R05_01/candidate_r001/ACT_E_R05_01__runtime_candidate__r001.png",
+          "bytes": 347219,
+          "sha256": "44ae6efb526eb41cfa6eac603e5e0a9ceffe47281be52d5c4314c01d2bdfe556"
+        }
+      },
+      "source_payload_exists": {
+        "generated_source": {
+          "path": "actors/ACT_E_R05_01/candidate_r001/ACT_E_R05_01__generated_source__r001.png",
+          "exists": true,
+          "bytes": 1838067,
+          "sha256": "647b70e93bf0d9f1cd09c134dad1e800ef9548ae2f62b89716f13c5aa8e6b0f9"
+        },
+        "runtime_candidate": {
+          "path": "actors/ACT_E_R05_01/candidate_r001/ACT_E_R05_01__runtime_candidate__r001.png",
+          "exists": true,
+          "bytes": 347219,
+          "sha256": "44ae6efb526eb41cfa6eac603e5e0a9ceffe47281be52d5c4314c01d2bdfe556"
+        },
+        "editable_source": {
+          "path": "actors/ACT_E_R05_01/candidate_r001/ACT_E_R05_01__editable_single_layer__r001.ora",
+          "exists": true,
+          "bytes": 3689466,
+          "sha256": "c882696292caa2de0d4d7e750705a8f0c64374841f1fe4be77533b3c6bd0665a"
+        }
+      },
+      "animation_kit": "NOT_COMPLETE",
+      "formal_adoption": false,
+      "game_integration": false,
+      "physical_iphone": false
+    },
+    {
+      "asset_id": "ACT_E_R05_02",
+      "region_id": "R05",
+      "display_name": "月面の庭衛",
+      "R4_delivery_requirement": "月面の庭衛 本体・可動パーツ/フレーム・アニメ契約・見本",
+      "latest_eligible_candidate": null,
+      "rejected_concept": {
+        "status": "REJECTED_PRESERVED",
+        "latest_reviewed_runtime": {
+          "path": "actors/ACT_E_R05_02/candidate_r002/ACT_E_R05_02__runtime_candidate__r002.png",
+          "bytes": 180826,
+          "sha256": "e41e93ba8fc6e5a3f0aa2cac5f5fb441c0beb32b3e1c07c103e676535bfd67d3"
+        }
+      },
+      "source_payload_exists": {
+        "generated_source": {
+          "path": "actors/ACT_E_R05_02/candidate_r001/ACT_E_R05_02__generated_source__r001.png",
+          "exists": true,
+          "bytes": 1066195,
+          "sha256": "236f5ef95525587e8ce1783554ea4cd244ff1ca717ae74d4702aebaca46e6e20"
+        },
+        "runtime_candidate": {
+          "path": "actors/ACT_E_R05_02/candidate_r002/ACT_E_R05_02__runtime_candidate__r002.png",
+          "exists": true,
+          "bytes": 180826,
+          "sha256": "e41e93ba8fc6e5a3f0aa2cac5f5fb441c0beb32b3e1c07c103e676535bfd67d3"
+        },
+        "editable_source": {
+          "path": "actors/ACT_E_R05_02/candidate_r001/ACT_E_R05_02__editable_single_layer__r001.ora",
+          "exists": true,
+          "bytes": 2107062,
+          "sha256": "a585f7c9c711a2c577a88630d2e5cdd343ff42d0521b8731ff9c9ec224792dff"
+        }
+      },
+      "animation_kit": "NOT_COMPLETE",
+      "formal_adoption": false,
+      "game_integration": false,
+      "physical_iphone": false
+    },
+    {
+      "asset_id": "ACT_E_R05_03",
+      "region_id": "R05",
+      "display_name": "灯瓶の使い魔",
+      "R4_delivery_requirement": "灯瓶の使い魔 本体・可動パーツ/フレーム・アニメ契約・見本",
+      "latest_eligible_candidate": {
+        "revision": "r001",
+        "runtime_candidate": {
+          "path": "actors/ACT_E_R05_03/candidate_r001/ACT_E_R05_03__runtime_candidate__r001.png",
+          "bytes": 235988,
+          "sha256": "169f9e1870e8b6dc154fa0b1da47ac0ba8d4b61971484d4402bbd358d18feb6d"
+        },
+        "static_review": "PARTIAL; lantern/glass/two shadow arms read; heavy gem-like details and diffuse outside glow need alpha-scale QA",
+        "formal_adoption": false
+      },
+      "rejected_concept": {
+        "status": "not rejected by current semantic review",
+        "latest_reviewed_runtime": {
+          "path": "actors/ACT_E_R05_03/candidate_r001/ACT_E_R05_03__runtime_candidate__r001.png",
+          "bytes": 235988,
+          "sha256": "169f9e1870e8b6dc154fa0b1da47ac0ba8d4b61971484d4402bbd358d18feb6d"
+        }
+      },
+      "source_payload_exists": {
+        "generated_source": {
+          "path": "actors/ACT_E_R05_03/candidate_r001/ACT_E_R05_03__generated_source__r001.png",
+          "exists": true,
+          "bytes": 1687435,
+          "sha256": "8d775f86e5c1f93d4c879b8db738b2e4f31daa75861fd78baed735052c1c57c2"
+        },
+        "runtime_candidate": {
+          "path": "actors/ACT_E_R05_03/candidate_r001/ACT_E_R05_03__runtime_candidate__r001.png",
+          "exists": true,
+          "bytes": 235988,
+          "sha256": "169f9e1870e8b6dc154fa0b1da47ac0ba8d4b61971484d4402bbd358d18feb6d"
+        },
+        "editable_source": {
+          "path": "actors/ACT_E_R05_03/candidate_r001/ACT_E_R05_03__editable_single_layer__r001.ora",
+          "exists": true,
+          "bytes": 3375516,
+          "sha256": "9a54d6692af7e2d1960c057c7a6f4eca81131d324ae888c8fad8cdfc6baa01ca"
+        }
+      },
+      "animation_kit": "NOT_COMPLETE",
+      "formal_adoption": false,
+      "game_integration": false,
+      "physical_iphone": false
+    },
+    {
+      "asset_id": "ACT_E_R05_04",
+      "region_id": "R05",
+      "display_name": "夜咲きの花獣",
+      "R4_delivery_requirement": "夜咲きの花獣 本体・可動パーツ/フレーム・アニメ契約・見本",
+      "latest_eligible_candidate": {
+        "revision": "r001",
+        "runtime_candidate": {
+          "path": "actors/ACT_E_R05_04/candidate_r001/ACT_E_R05_04__runtime_candidate__r001.png",
+          "bytes": 317222,
+          "sha256": "2b2884a16adc51c1d87348b42c19e5e60544006b49a427c88cc7b8ce6054126a"
+        },
+        "static_review": "PARTIAL; quadruped plant silhouette and dorsal rose bloom read; multiple smaller buds and extensive body vines, articulation needs test",
+        "formal_adoption": false
+      },
+      "rejected_concept": {
+        "status": "not rejected by current semantic review",
+        "latest_reviewed_runtime": {
+          "path": "actors/ACT_E_R05_04/candidate_r001/ACT_E_R05_04__runtime_candidate__r001.png",
+          "bytes": 317222,
+          "sha256": "2b2884a16adc51c1d87348b42c19e5e60544006b49a427c88cc7b8ce6054126a"
+        }
+      },
+      "source_payload_exists": {
+        "generated_source": {
+          "path": "actors/ACT_E_R05_04/candidate_r001/ACT_E_R05_04__generated_source__r001.png",
+          "exists": true,
+          "bytes": 1747708,
+          "sha256": "3bf9291c9674c6fb5a374ee91a3ff56b6d25ce4393d38273d8cddf479b79a020"
+        },
+        "runtime_candidate": {
+          "path": "actors/ACT_E_R05_04/candidate_r001/ACT_E_R05_04__runtime_candidate__r001.png",
+          "exists": true,
+          "bytes": 317222,
+          "sha256": "2b2884a16adc51c1d87348b42c19e5e60544006b49a427c88cc7b8ce6054126a"
+        },
+        "editable_source": {
+          "path": "actors/ACT_E_R05_04/candidate_r001/ACT_E_R05_04__editable_single_layer__r001.ora",
+          "exists": true,
+          "bytes": 3416014,
+          "sha256": "e66b3fcded74775705d39dbfdd42d89c6199a2c7955f86856925c2f41ffccf69"
+        }
+      },
+      "animation_kit": "NOT_COMPLETE",
+      "formal_adoption": false,
+      "game_integration": false,
+      "physical_iphone": false
+    },
+    {
+      "asset_id": "ACT_B_R05_A",
+      "region_id": "R05",
+      "display_name": "月環の剪定機",
+      "R4_delivery_requirement": "月環の剪定機 本体・可動パーツ/フレーム・アニメ契約・見本",
+      "latest_eligible_candidate": {
+        "revision": "r001",
+        "runtime_candidate": {
+          "path": "actors/ACT_B_R05_A/candidate_r001/ACT_B_R05_A__runtime_candidate__r001.png",
+          "bytes": 207254,
+          "sha256": "d5b727343f6712726696825b608fa4348c5642f5c5fad8db02d33cdb1241a7b8"
+        },
+        "static_review": "R05 miniboss candidate: round moon-silver ring, exactly two articulated pruning arms and planter workbench; distinct from the three-hammer guard; joint separation and mobile-scale readability untested.",
+        "formal_adoption": false
+      },
+      "rejected_concept": {
+        "status": "not rejected by current semantic review",
+        "latest_reviewed_runtime": {
+          "path": "actors/ACT_B_R05_A/candidate_r001/ACT_B_R05_A__runtime_candidate__r001.png",
+          "bytes": 207254,
+          "sha256": "d5b727343f6712726696825b608fa4348c5642f5c5fad8db02d33cdb1241a7b8"
+        }
+      },
+      "source_payload_exists": {
+        "generated_source": {
+          "path": "actors/ACT_B_R05_A/candidate_r001/ACT_B_R05_A__generated_source__r001.png",
+          "exists": true,
+          "bytes": 2227101,
+          "sha256": "312006b1297542227ae6282f040fdf37e9d022146774ef3bc9ac12feb7a3e61b"
+        },
+        "runtime_candidate": {
+          "path": "actors/ACT_B_R05_A/candidate_r001/ACT_B_R05_A__runtime_candidate__r001.png",
+          "exists": true,
+          "bytes": 207254,
+          "sha256": "d5b727343f6712726696825b608fa4348c5642f5c5fad8db02d33cdb1241a7b8"
+        },
+        "editable_source": {
+          "path": "actors/ACT_B_R05_A/candidate_r001/ACT_B_R05_A__editable_single_layer__r001.ora",
+          "exists": true,
+          "bytes": 4445603,
+          "sha256": "ef9e52e8ea7f9adce7954ebd660efff2da5917ae50465f13566f655afdbb8543"
+        }
+      },
+      "animation_kit": "NOT_COMPLETE",
+      "formal_adoption": false,
+      "game_integration": false,
+      "physical_iphone": false
+    },
+    {
+      "asset_id": "ACT_B_R05_B",
+      "region_id": "R05",
+      "display_name": "庭守りの月鹿",
+      "R4_delivery_requirement": "庭守りの月鹿 本体・可動パーツ/フレーム・アニメ契約・見本",
+      "latest_eligible_candidate": {
+        "revision": "r001",
+        "runtime_candidate": {
+          "path": "actors/ACT_B_R05_B/candidate_r001/ACT_B_R05_B__runtime_candidate__r001.png",
+          "bytes": 332204,
+          "sha256": "ecea44a0c3f639d569dd5dbcc46eef711d11edab7defa522a52381a9ba18d4e1"
+        },
+        "static_review": "R05 boss candidate: white-silver deer with branched leafy antlers and subtle crescent; serene; parts and 2.2H scaling untested.",
+        "formal_adoption": false
+      },
+      "rejected_concept": {
+        "status": "not rejected by current semantic review",
+        "latest_reviewed_runtime": {
+          "path": "actors/ACT_B_R05_B/candidate_r001/ACT_B_R05_B__runtime_candidate__r001.png",
+          "bytes": 332204,
+          "sha256": "ecea44a0c3f639d569dd5dbcc46eef711d11edab7defa522a52381a9ba18d4e1"
+        }
+      },
+      "source_payload_exists": {
+        "generated_source": {
+          "path": "actors/ACT_B_R05_B/candidate_r001/ACT_B_R05_B__generated_source__r001.png",
+          "exists": true,
+          "bytes": 1921933,
+          "sha256": "5e66c46dcd03e2830dcdc52ff7bbd28bf4f8a684a25dc811be1bcc336447fbff"
+        },
+        "runtime_candidate": {
+          "path": "actors/ACT_B_R05_B/candidate_r001/ACT_B_R05_B__runtime_candidate__r001.png",
+          "exists": true,
+          "bytes": 332204,
+          "sha256": "ecea44a0c3f639d569dd5dbcc46eef711d11edab7defa522a52381a9ba18d4e1"
+        },
+        "editable_source": {
+          "path": "actors/ACT_B_R05_B/candidate_r001/ACT_B_R05_B__editable_single_layer__r001.ora",
+          "exists": true,
+          "bytes": 3842007,
+          "sha256": "a7b2aa806ee91395c14723c5db9d1c452a709594c7aaecf20b5af595b83a329f"
+        }
+      },
+      "animation_kit": "NOT_COMPLETE",
+      "formal_adoption": false,
+      "game_integration": false,
+      "physical_iphone": false
+    }
+  ],
+  "representative_motion_qa": {
+    "asset_id": "ACT_E_R02_01",
+    "record": "actors/ACT_E_R02_01/motion_probe_r003/motion_qa_r003.json",
+    "native_static_64pt": "actors/ACT_E_R02_01/motion_probe_r003/ACT_E_R02_01__spritekit_64pt_composite.png",
+    "animation": "failed at segmentation/underdraw gate; no video"
+  },
+  "limitations": [
+    "Available ORA files are single flattened raster layers, not component source or rigs.",
+    "R4 state coverage (idle, anticipate, execute, recover, hit, resolve) is absent for all 21.",
+    "No iOS Simulator or physical iPhone QA in this actor-only subtask; 64pt render is macOS SpriteKit static compositing.",
+    "Image generation pricing and commercial licensing are not exposed by local tool metadata: UNKNOWN."
+  ],
+  "latest_attempt_r004": {
+    "asset_id": "ACT_E_R02_01",
+    "status": "REJECTED_RIG_PLATE_FEASIBILITY_ATTEMPT",
+    "source_path": "actors/ACT_E_R02_01/candidate_r004_parts/ACT_E_R02_01__parts_sheet__r004.png",
+    "source_sha256": "3163da10593719eb995ce9dc76509c9e19a64bb50795a60f370198940ac81d70",
+    "record_path": "actors/ACT_E_R02_01/candidate_r004_parts/asset_record_r004.json",
+    "reason": "body socket/underdraw, oversized root-feet, and pore patch identity/seam mismatch; no animation test"
+  }
+}

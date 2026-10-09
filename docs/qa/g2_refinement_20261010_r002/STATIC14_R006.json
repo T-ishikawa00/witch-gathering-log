@@ -1,0 +1,978 @@
+{
+  "title": "G2 Static14 final consolidated status index",
+  "revision": "R006",
+  "generated_at": "2026-10-10 JST",
+  "authority": {
+    "prior_index": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/STATIC_REPAIR_INDEX_R004.json",
+    "native_ui_addendum": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/native_ui_review_r001/qa/NATIVE_UI_QA_ADDENDUM_R002.json",
+    "scope": "The 14 unresolved static repair units only; no canonical design adoption."
+  },
+  "scope": "All 14 previously unresolved static repair units; candidate evidence only; no formal design adoption.",
+  "summary": {
+    "units": 14,
+    "overall_pass": 0,
+    "unresolved": 14,
+    "human_adopted": 0,
+    "game_integrated": 0,
+    "physical_iphone_tested": 0,
+    "r004_additional_candidates": 3,
+    "r005_method_trials": 1,
+    "r006_handdrawn_method_trials": 1,
+    "simulator_used": "iPhone 17 Pro Simulator / iOS 26.5",
+    "simulator_device_id": "DD7B4066-4BEE-472D-95E7-E7AA8720BF39",
+    "simulator_shutdown_after_capture": true,
+    "protected_project_baseline_recheck": "not repeated per parent instruction"
+  },
+  "preserved_full_pass_candidate": {
+    "asset_id": "ICO_EQ_W_P2",
+    "status": "PASS_CANDIDATE_REPAIR",
+    "reason": "Localized silver loop visible around existing orb at 64px; editable ORA and RGBA 64/128/256 read back. Human art approval remains pending.",
+    "source_outputs": [
+      "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_EQ_W_P2/r002_localized/ICO_EQ_W_P2__editable_source__r002.ora",
+      "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_EQ_W_P2/r002_localized/ICO_EQ_W_P2__64__r002.png",
+      "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_EQ_W_P2/r002_localized/ICO_EQ_W_P2__128__r002.png",
+      "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_EQ_W_P2/r002_localized/ICO_EQ_W_P2__256__r002.png",
+      "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_EQ_W_P2/r002_localized/ICO_EQ_W_P2__matte_black_gray_white__r002.png",
+      "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_EQ_W_P2/r002_localized/QA_AND_PROVENANCE_R002.json"
+    ],
+    "formal_human_adoption": false
+  },
+  "items": [
+    {
+      "asset_id": "NODE_M_R01_G1",
+      "region_id": "R01",
+      "kind": "gather_prop",
+      "prior_stage": "QUALITY_REPAIR_STOPPED_TECH_ONLY_FALLBACK",
+      "previous_failure_reason": "Native local conduit/foot-edge repair and separated present/collected exports preserve identity and alpha, but conduit improvement remains weak at 64px. Imagegen broad branch change rejected.",
+      "original": {
+        "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/nodes/NODE_M_R01_G1/atlas_r002.png",
+        "exists": true,
+        "sha256": "8bcc255f8a26f29903e1c23f4f6b6f0d90400036adfefad0a0a82fdc4d2b8835"
+      },
+      "current_modification": "R003 localized edit retained; no further edit. Semantic distinction remains weak at small UI sizes.",
+      "revision_history": [
+        {
+          "revision": "R003",
+          "targeted_candidate_paths": {
+            "asset_id": "NODE_M_R01_G1",
+            "directory": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/NODE_M_R01_G1/r009_state_balance",
+            "reason": "Medium contrast alternative for present/collected conduit. R008 over-dark version kept as rejected alternate.",
+            "present": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/NODE_M_R01_G1/r009_state_balance/present_candidate.png",
+            "collected": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/NODE_M_R01_G1/r009_state_balance/collected_candidate.png",
+            "QA": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/NODE_M_R01_G1/r009_state_balance/QA_PROVENANCE.json",
+            "visual_verdict": "R009 state pair more distinct at48/64pt; 32pt remains weak. No full pass."
+          },
+          "disposition": "unapproved"
+        }
+      ],
+      "size_specific_qa": {
+        "32pt": "weak",
+        "48pt": "partial",
+        "64pt": "improved but unresolved"
+      },
+      "overall_status": "UNRESOLVED_NO_PROMOTION",
+      "technical_qa_full_pass": false,
+      "human_formal_adoption": false,
+      "game_integrated": false,
+      "physical_iphone_tested": false,
+      "editable_source": [
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/NODE_M_R01_G1/r007_native_local_repair/NODE_M_R01_G1__editable_source__r007.ora",
+          "exists": true,
+          "sha256": "249edb853f7b82f0acc4eb2623cda8a5693fd99569ab406deb43c18689046128",
+          "disposition": "candidate or source evidence retained; not promoted"
+        }
+      ],
+      "runtime_candidate": [
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/NODE_M_R01_G1/r007_native_local_repair/NODE_M_R01_G1__two_state_atlas__r007.png",
+          "exists": true,
+          "sha256": "49db2805067843f69b7941509f42af164b2c6b417d52b654b950a5d35ff31129",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/NODE_M_R01_G1/r007_native_local_repair/NODE_M_R01_G1__64_before_after.png",
+          "exists": true,
+          "sha256": "41c0a9b25602e7713bd48f86e279a3e3ab0eec07f03347294c6e1ee54e5ea083",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/NODE_M_R01_G1/r009_state_balance/present_candidate.png",
+          "exists": true,
+          "sha256": "bac0ddb7bb29627f39e66b65a0b136e503f088830365f37e5e774b6b41cfbd81"
+        },
+        {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/NODE_M_R01_G1/r009_state_balance/collected_candidate.png",
+          "exists": true,
+          "sha256": "b486a903399fd8f59e4baf1faeb8d152d9501cb58f0abdd8332f640f3739edad"
+        }
+      ]
+    },
+    {
+      "asset_id": "ICO_M_R01_G4",
+      "region_id": "R01",
+      "kind": "material_icon",
+      "prior_stage": "UNAPPROVED_STATIC_EXPORT_CANDIDATE",
+      "previous_failure_reason": "Weak glint overlay exported and editable, but the 64px glow still does not clearly read as a distinct effect.",
+      "original": {
+        "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/verified_icons/ICO_M_R01_G4/source_r001.png",
+        "exists": true,
+        "sha256": "209191325587dca52918e1229afe162501d41287dc3e43e171f093a03c42bc51"
+      },
+      "current_modification": "No new revision in R006; prior unresolved candidate/evidence retained.",
+      "revision_history": [],
+      "size_specific_qa": {
+        "32pt": "Prior native UI R002 review only; not retested R006; remains unresolved per prior failure reason",
+        "48pt": "Prior native UI R002 review only; not retested R006; remains unresolved per prior failure reason",
+        "64pt": "Prior native UI R002 review only; not retested R006; remains unresolved per prior failure reason"
+      },
+      "overall_status": "UNRESOLVED_NO_PROMOTION",
+      "technical_qa_full_pass": false,
+      "human_formal_adoption": false,
+      "game_integrated": false,
+      "physical_iphone_tested": false,
+      "editable_source": [
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R01_G4/r002_localized/ICO_M_R01_G4__editable_source__r002.ora",
+          "exists": true,
+          "sha256": "4dce58ac477fa1997afd55be9c0e7e5b2ea2db528ec5b8c50c40f86b8dbde8ff",
+          "disposition": "candidate or source evidence retained; not promoted"
+        }
+      ],
+      "runtime_candidate": [
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R01_G4/r002_localized/ICO_M_R01_G4__64__r002.png",
+          "exists": true,
+          "sha256": "2ec01b5919b8d665e82268cd572d1ad2d18bdc4a1148de3558e7fbf7a2073d3c",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R01_G4/r002_localized/ICO_M_R01_G4__128__r002.png",
+          "exists": true,
+          "sha256": "09a3fee1986d2be9ab29d8afd01942ea601d4dcd8cf37387df1a02e3f25b8541",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R01_G4/r002_localized/ICO_M_R01_G4__256__r002.png",
+          "exists": true,
+          "sha256": "4b2d2fa9db419439320761424a8c4c878dd383be5127d0c440a7725809fb862b",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R01_G4/r002_localized/ICO_M_R01_G4__matte_black_gray_white__r002.png",
+          "exists": true,
+          "sha256": "265b4ed670c997fd6a48c5a1313e172ab757998d288958c3b09487a9c43c458b",
+          "disposition": "candidate or source evidence retained; not promoted"
+        }
+      ]
+    },
+    {
+      "asset_id": "NODE_M_R03_G2",
+      "region_id": "R03",
+      "kind": "gather_prop",
+      "prior_stage": "PARTIAL_MATERIAL_DISTINCTION_REPAIR_STOPPED",
+      "previous_failure_reason": "Localized silver seam layer preserved original ore silhouette; 64px semantic distinction still weak.",
+      "original": {
+        "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/nodes/NODE_M_R03_G2/atlas_r003.png",
+        "exists": true,
+        "sha256": "c3a165069d4b419a6dd79f74a3cebc645f7eea425359af20d59abdcb0c8fcedf"
+      },
+      "current_modification": "R003 localized edit retained; no further edit. Semantic distinction remains weak at small UI sizes.",
+      "revision_history": [
+        {
+          "revision": "R003",
+          "targeted_candidate_paths": {
+            "asset_id": "NODE_M_R03_G2",
+            "directory": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/NODE_M_R03_G2/r008_seam_contrast",
+            "reason": "Increase contrast and antialias width on the same existing silver seam track only; no extra fracture or changed ore contour.",
+            "previous": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/NODE_M_R03_G2/r008_seam_contrast/preserved_previous.png",
+            "candidate": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/NODE_M_R03_G2/r008_seam_contrast/runtime_candidate.png",
+            "editable": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/NODE_M_R03_G2/r008_seam_contrast/editable_source.ora",
+            "QA": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/NODE_M_R03_G2/r008_seam_contrast/QA_PROVENANCE.json",
+            "visual_verdict": "R003 candidate visible at64pt; 32/48pt semantic contrast remains weak. No full pass."
+          },
+          "disposition": "unapproved"
+        }
+      ],
+      "size_specific_qa": {
+        "32pt": "weak",
+        "48pt": "partial",
+        "64pt": "improved but unresolved"
+      },
+      "overall_status": "UNRESOLVED_NO_PROMOTION",
+      "technical_qa_full_pass": false,
+      "human_formal_adoption": false,
+      "game_integrated": false,
+      "physical_iphone_tested": false,
+      "editable_source": [
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/NODE_M_R03_G2/r006_localized/NODE_M_R03_G2__editable_source__r006.ora",
+          "exists": true,
+          "sha256": "f4cfbcdffb2ba3ae2417cd757d77ef7a968824a959dd81521e179784a4432f3f",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/NODE_M_R03_G2/r008_seam_contrast/editable_source.ora",
+          "exists": true,
+          "sha256": "451356f2cd009888fd57c4e36b63ee746809c5e7127838653c7ff86d6b674656"
+        }
+      ],
+      "runtime_candidate": [
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/NODE_M_R03_G2/r006_localized/NODE_M_R03_G2__before_after_64__r006.png",
+          "exists": true,
+          "sha256": "36ed9732052fe04d020261a68b94e4cf6fa1a6e50e482c86c852cfa2c16e92e2",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/NODE_M_R03_G2/r008_seam_contrast/preserved_previous.png",
+          "exists": true,
+          "sha256": "efcb5e75c0a1bd0468e2be1e34a1947811afd3d2b3b217ddb20e5d397f613f59"
+        },
+        {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/NODE_M_R03_G2/r008_seam_contrast/runtime_candidate.png",
+          "exists": true,
+          "sha256": "4a1804cbd77feeaad7eea180bf8a6bb3936278a4d0b97ff623a4b846fec27a18"
+        }
+      ]
+    },
+    {
+      "asset_id": "ICO_M_R04_G1",
+      "region_id": "R04",
+      "kind": "material_icon",
+      "prior_stage": "UNAPPROVED_STATIC_EXPORT_CANDIDATE",
+      "previous_failure_reason": "Targeted imagegen attempt rejected because it changed plant scale, core and rendering style; exact provider output retained for provenance only. No production derivative.",
+      "original": {
+        "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/verified_icons/ICO_M_R04_G1/source_r001.png",
+        "exists": true,
+        "sha256": "43bed7378f5281cb2400c808516e6fd4be5624d676c308a95d46d15e1b755677"
+      },
+      "current_modification": "R003 localized edit retained; no further edit. Semantic distinction remains weak at small UI sizes.",
+      "revision_history": [
+        {
+          "revision": "R003",
+          "targeted_candidate_paths": {
+            "asset_id": "ICO_M_R04_G1",
+            "directory": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R04_G1/r003_deep_red_core",
+            "reason": "Increase contrast only in the existing deep-red core, matching R4 Snowlight Grass contract; reject cyan petal stripes from R002.",
+            "previous": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R04_G1/r003_deep_red_core/preserved_previous.png",
+            "candidate": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R04_G1/r003_deep_red_core/runtime_candidate.png",
+            "editable": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R04_G1/r003_deep_red_core/editable_source.ora",
+            "QA": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R04_G1/r003_deep_red_core/QA_PROVENANCE.json",
+            "visual_verdict": "R003 candidate; red core reads more clearly at 48/64pt, subtle at32pt. No full pass."
+          },
+          "disposition": "unapproved"
+        }
+      ],
+      "size_specific_qa": {
+        "32pt": "weak / unreadable",
+        "48pt": "readable",
+        "64pt": "readable"
+      },
+      "overall_status": "UNRESOLVED_NO_PROMOTION",
+      "technical_qa_full_pass": false,
+      "human_formal_adoption": false,
+      "game_integrated": false,
+      "physical_iphone_tested": false,
+      "editable_source": [
+        {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R04_G1/r003_deep_red_core/editable_source.ora",
+          "exists": true,
+          "sha256": "8e0691df7b4267938217fddf8b31583291590ac9b453584d0346a7ec7c9848ad"
+        }
+      ],
+      "runtime_candidate": [
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R04_G1/imagegen_attempt_r002/provider_output_exact.png",
+          "exists": true,
+          "sha256": "cf172c405aa4edc3d6001b948c034d059bfef536391071f82f818fd769e68116",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R04_G1/r003_deep_red_core/preserved_previous.png",
+          "exists": true,
+          "sha256": "b0e7587063857e0aae18d7bc8da621d2a83ef5eec01c41270b48c6d99a322794"
+        },
+        {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R04_G1/r003_deep_red_core/runtime_candidate.png",
+          "exists": true,
+          "sha256": "719f20e24b3d5b153787069a74a68c5df1d3a48182500c4b7be60e8d77ef0eda"
+        }
+      ]
+    },
+    {
+      "asset_id": "ICO_M_R04_G3",
+      "region_id": "R04",
+      "kind": "material_icon",
+      "prior_stage": "UNAPPROVED_STATIC_EXPORT_CANDIDATE",
+      "previous_failure_reason": "Low-opacity inter-fiber shadow on existing silver-gray hemp strands only; no silhouette modification. 64px review did not establish a clear semantic/material correction; candidate retained for root review.",
+      "original": {
+        "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/verified_icons/ICO_M_R04_G3/source_r001.png",
+        "exists": true,
+        "sha256": "a5afbd723314acfaba66de0f1221f6e5ce87bc64688d9691115f4aaf2f7f480b"
+      },
+      "current_modification": "No new revision in R006; prior unresolved candidate/evidence retained.",
+      "revision_history": [],
+      "size_specific_qa": {
+        "32pt": "Prior native UI R002 review only; not retested R006; remains unresolved per prior failure reason",
+        "48pt": "Prior native UI R002 review only; not retested R006; remains unresolved per prior failure reason",
+        "64pt": "Prior native UI R002 review only; not retested R006; remains unresolved per prior failure reason"
+      },
+      "overall_status": "UNRESOLVED_NO_PROMOTION",
+      "technical_qa_full_pass": false,
+      "human_formal_adoption": false,
+      "game_integrated": false,
+      "physical_iphone_tested": false,
+      "editable_source": [
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R04_G3/r003_native_local/ICO_M_R04_G3__editable_source__r003.ora",
+          "exists": true,
+          "sha256": "118b90d83940f069366ef451a7f4cc725d00f4e6e2470831cbe0819435107c27",
+          "disposition": "candidate or source evidence retained; not promoted"
+        }
+      ],
+      "runtime_candidate": [
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R04_G3/r003_native_local/ICO_M_R04_G3__before_after_64__r003.png",
+          "exists": true,
+          "sha256": "7788cb838c0fab9b3717d889f5113ef3d1b6e7ad49de0e095b552633a4c96ad6",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R04_G3/r003_native_local/ICO_M_R04_G3__matte_black_gray_white__r003.png",
+          "exists": true,
+          "sha256": "a184befe92241342c089b8ace7e6f20b96fb4f65292d8b64a6756f9add52de82",
+          "disposition": "candidate or source evidence retained; not promoted"
+        }
+      ]
+    },
+    {
+      "asset_id": "ICO_M_R05_G3",
+      "region_id": "R05",
+      "kind": "material_icon",
+      "prior_stage": "UNAPPROVED_STATIC_EXPORT_CANDIDATE",
+      "previous_failure_reason": "Small pale-rose core accent at the existing central opening only; preserve closed crescent-shell silhouette. 64px review did not establish a clear semantic/material correction; candidate retained for root review.",
+      "original": {
+        "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/verified_icons/ICO_M_R05_G3/source_r001.png",
+        "exists": true,
+        "sha256": "1e1f331a2a7e8b632247fd9990fd088d4eff83f5cd0cdc8db55c83f65dd45e65"
+      },
+      "current_modification": "No new revision in R006; prior unresolved candidate/evidence retained.",
+      "revision_history": [],
+      "size_specific_qa": {
+        "32pt": "Prior native UI R002 review only; not retested R006; remains unresolved per prior failure reason",
+        "48pt": "Prior native UI R002 review only; not retested R006; remains unresolved per prior failure reason",
+        "64pt": "Prior native UI R002 review only; not retested R006; remains unresolved per prior failure reason"
+      },
+      "overall_status": "UNRESOLVED_NO_PROMOTION",
+      "technical_qa_full_pass": false,
+      "human_formal_adoption": false,
+      "game_integrated": false,
+      "physical_iphone_tested": false,
+      "editable_source": [
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R05_G3/r003_native_local/ICO_M_R05_G3__editable_source__r003.ora",
+          "exists": true,
+          "sha256": "41feb7108aabefb9e00ee0f0c6c622d15c6f83dc2d20f93b8dc6551911b48e21",
+          "disposition": "candidate or source evidence retained; not promoted"
+        }
+      ],
+      "runtime_candidate": [
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R05_G3/r003_native_local/ICO_M_R05_G3__before_after_64__r003.png",
+          "exists": true,
+          "sha256": "ad6e8789ca9cf40e822700c3adbb763226edc7291f50a48b358907aeb5160083",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R05_G3/r003_native_local/ICO_M_R05_G3__matte_black_gray_white__r003.png",
+          "exists": true,
+          "sha256": "51b4c87ff2f67406a2ffa74498d697e64d2b749d2079802e2b4e907f4bec02ca",
+          "disposition": "candidate or source evidence retained; not promoted"
+        }
+      ]
+    },
+    {
+      "asset_id": "ICO_M_R05_G4",
+      "region_id": "R05",
+      "kind": "material_icon",
+      "prior_stage": "UNAPPROVED_STATIC_EXPORT_CANDIDATE",
+      "previous_failure_reason": "Warm narrow moon-arc and glass highlight within the existing droplet body; silhouette and facets unchanged. 64px review did not establish a clear semantic/material correction; candidate retained for root review.",
+      "original": {
+        "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/verified_icons/ICO_M_R05_G4/source_r001.png",
+        "exists": true,
+        "sha256": "373d82e0f77ce3057b2f696d867f124aabb0a9aa128eb438c94fc0077af7422b"
+      },
+      "current_modification": "R004 local layer enhancement retained; all sizes below full-pass readability.",
+      "revision_history": [
+        {
+          "revision": "R004",
+          "candidate_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R05_G4/r004_moon_arc/runtime_candidate.png",
+          "candidate_sha256": "4bdd0cf19dfd2ddd99def4798e3c98d6dfdd0745d3fef85b3007d0984e8f2db6",
+          "editable_source_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R05_G4/r004_moon_arc/editable_source.ora",
+          "editable_source_sha256": "e18e419de0a5135d3428aab87d3e01fc7568b464f921b0f6aa7d19fc170459f6"
+        }
+      ],
+      "size_specific_qa": {
+        "32pt": "weak",
+        "48pt": "weak",
+        "64pt": "slight partial"
+      },
+      "overall_status": "UNRESOLVED_NO_PROMOTION",
+      "technical_qa_full_pass": false,
+      "human_formal_adoption": false,
+      "game_integrated": false,
+      "physical_iphone_tested": false,
+      "editable_source": [
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R05_G4/r003_native_local/ICO_M_R05_G4__editable_source__r003.ora",
+          "exists": true,
+          "sha256": "e913d977dbd80f887a88985e4d8bfb9eb20c6d152a8e5d84bb2b3849856acae3",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R05_G4/r004_moon_arc/editable_source.ora",
+          "exists": true,
+          "sha256": "e18e419de0a5135d3428aab87d3e01fc7568b464f921b0f6aa7d19fc170459f6",
+          "disposition": "editable candidate source"
+        }
+      ],
+      "runtime_candidate": [
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R05_G4/r003_native_local/ICO_M_R05_G4__before_after_64__r003.png",
+          "exists": true,
+          "sha256": "b633e81836603fc185fc39998ba637c18eee4072fd5910d6fced39bf9d3982cc",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R05_G4/r003_native_local/ICO_M_R05_G4__matte_black_gray_white__r003.png",
+          "exists": true,
+          "sha256": "732ed8da38378fb62ea1796268e9371811aaddffcdc5d7688a7a4b23e3508fc9",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R05_G4/r004_moon_arc/runtime_candidate.png",
+          "exists": true,
+          "sha256": "4bdd0cf19dfd2ddd99def4798e3c98d6dfdd0745d3fef85b3007d0984e8f2db6",
+          "disposition": "unapproved candidate"
+        }
+      ]
+    },
+    {
+      "asset_id": "ICO_M_R01_E2",
+      "region_id": "R01",
+      "kind": "material_icon",
+      "prior_stage": "UNAPPROVED_STATIC_EXPORT_CANDIDATE",
+      "previous_failure_reason": "Knot glow exported as a local layer; at 64px the difference from the already-bright knot is not strong enough to count as a repair.",
+      "original": {
+        "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/reused_icons/ICO_M_R01_E2/original_source.png",
+        "exists": true,
+        "sha256": "67fc3cc61705b892bf57487eec4b5f9c4c627e470b660f4fe55d5955abb40443"
+      },
+      "current_modification": "R004 local layer enhancement retained; all sizes below full-pass readability.",
+      "revision_history": [
+        {
+          "revision": "R004",
+          "candidate_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R01_E2/r003_knot_glint/runtime_candidate.png",
+          "candidate_sha256": "34f042c423618635fc66299e4f24e77999cf8f8413ba692d20bb875a21c7e0f3",
+          "editable_source_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R01_E2/r003_knot_glint/editable_source.ora",
+          "editable_source_sha256": "770eb9a452d7b03acf6c94dec912865562989c266f643348822387dcf51c8ee5"
+        }
+      ],
+      "size_specific_qa": {
+        "32pt": "not distinguishable",
+        "48pt": "weak",
+        "64pt": "weak"
+      },
+      "overall_status": "UNRESOLVED_NO_PROMOTION",
+      "technical_qa_full_pass": false,
+      "human_formal_adoption": false,
+      "game_integrated": false,
+      "physical_iphone_tested": false,
+      "editable_source": [
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R01_E2/r002_localized/ICO_M_R01_E2__editable_source__r002.ora",
+          "exists": true,
+          "sha256": "d26c0706b02c3e224b19ed8a7151e8a30bd598111bdbcd1bbaa1c9cc38ec14aa",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R01_E2/r003_knot_glint/editable_source.ora",
+          "exists": true,
+          "sha256": "770eb9a452d7b03acf6c94dec912865562989c266f643348822387dcf51c8ee5",
+          "disposition": "editable candidate source"
+        }
+      ],
+      "runtime_candidate": [
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R01_E2/r002_localized/ICO_M_R01_E2__64__r002.png",
+          "exists": true,
+          "sha256": "625d5108ca5c95c86002673d4a050e75692ea3c22bac6b65af22276285601800",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R01_E2/r002_localized/ICO_M_R01_E2__128__r002.png",
+          "exists": true,
+          "sha256": "4fd0c7e8098adc308f0171d32475102545ebe1812172179046698443bcd598df",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R01_E2/r002_localized/ICO_M_R01_E2__256__r002.png",
+          "exists": true,
+          "sha256": "63c41a5e9ebfea0dc5f9a28b6699dc3b74a00568ba8529eaf1f29f1a938b0b46",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R01_E2/r002_localized/ICO_M_R01_E2__matte_black_gray_white__r002.png",
+          "exists": true,
+          "sha256": "6fcb1c36e0f2d28c153dd114099937798dc40bb110e0adb0c6e5704a70d5b381",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R01_E2/r003_knot_glint/runtime_candidate.png",
+          "exists": true,
+          "sha256": "34f042c423618635fc66299e4f24e77999cf8f8413ba692d20bb875a21c7e0f3",
+          "disposition": "unapproved candidate"
+        }
+      ]
+    },
+    {
+      "asset_id": "ICO_M_R01_BB",
+      "region_id": "R01",
+      "kind": "material_icon",
+      "prior_stage": "UNAPPROVED_STATIC_EXPORT_CANDIDATE",
+      "previous_failure_reason": "Pale conduit/sprout accent on the existing upper-right bud only; preserve oversized trunk-core form. 64px review did not establish a clear semantic/material correction; candidate retained for root review.",
+      "original": {
+        "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/reused_icons/ICO_M_R01_BB/original_source.png",
+        "exists": true,
+        "sha256": "84b3962eb62ff21b7977635db8761965fcb6444bea3e7a0418dbe2dbe2cfcc77"
+      },
+      "current_modification": "No new revision in R006; prior unresolved candidate/evidence retained.",
+      "revision_history": [],
+      "size_specific_qa": {
+        "32pt": "Prior native UI R002 review only; not retested R006; remains unresolved per prior failure reason",
+        "48pt": "Prior native UI R002 review only; not retested R006; remains unresolved per prior failure reason",
+        "64pt": "Prior native UI R002 review only; not retested R006; remains unresolved per prior failure reason"
+      },
+      "overall_status": "UNRESOLVED_NO_PROMOTION",
+      "technical_qa_full_pass": false,
+      "human_formal_adoption": false,
+      "game_integrated": false,
+      "physical_iphone_tested": false,
+      "editable_source": [
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R01_BB/r003_native_local/ICO_M_R01_BB__editable_source__r003.ora",
+          "exists": true,
+          "sha256": "e869047264cf7dd7950b6aad31c2a026edd29f0bfdfd58a5a0c99f6e4185260c",
+          "disposition": "candidate or source evidence retained; not promoted"
+        }
+      ],
+      "runtime_candidate": [
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R01_BB/r003_native_local/ICO_M_R01_BB__before_after_64__r003.png",
+          "exists": true,
+          "sha256": "76649f6e6dab1cacbfa36267ca5be90049a2b96d5b39762fb208d47fcfc6fd66",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R01_BB/r003_native_local/ICO_M_R01_BB__matte_black_gray_white__r003.png",
+          "exists": true,
+          "sha256": "a0437a3898f126880448f70f6b390e1cec39c93612de878b0792ea86197428d1",
+          "disposition": "candidate or source evidence retained; not promoted"
+        }
+      ]
+    },
+    {
+      "asset_id": "ICO_M_R02_E3",
+      "region_id": "R02",
+      "kind": "material_icon",
+      "prior_stage": "UNAPPROVED_STATIC_EXPORT_CANDIDATE",
+      "previous_failure_reason": "Edge de-fringe candidate exported, but the external blue contour remains visible on matte review.",
+      "original": {
+        "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/verified_icons/ICO_M_R02_E3/source_r001.png",
+        "exists": true,
+        "sha256": "cd413e5768990bd51f762bf9618b9f6537bcbd59266ba710adc0357a0fb59fe5"
+      },
+      "current_modification": "No new revision in R006; prior unresolved candidate/evidence retained.",
+      "revision_history": [],
+      "size_specific_qa": {
+        "32pt": "Prior native UI R002 review only; not retested R006; remains unresolved per prior failure reason",
+        "48pt": "Prior native UI R002 review only; not retested R006; remains unresolved per prior failure reason",
+        "64pt": "Prior native UI R002 review only; not retested R006; remains unresolved per prior failure reason"
+      },
+      "overall_status": "UNRESOLVED_NO_PROMOTION",
+      "technical_qa_full_pass": false,
+      "human_formal_adoption": false,
+      "game_integrated": false,
+      "physical_iphone_tested": false,
+      "editable_source": [
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R02_E3/r002_localized/ICO_M_R02_E3__editable_source__r002.ora",
+          "exists": true,
+          "sha256": "418c3aa76678bfb4109b7ef8d72691658344db27c073b9816fdf1e9d1616a155",
+          "disposition": "candidate or source evidence retained; not promoted"
+        }
+      ],
+      "runtime_candidate": [
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R02_E3/r002_localized/ICO_M_R02_E3__64__r002.png",
+          "exists": true,
+          "sha256": "d204f1d10a424488f389940e45cad5003c092409ced8588e9a06272ac36b602b",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R02_E3/r002_localized/ICO_M_R02_E3__128__r002.png",
+          "exists": true,
+          "sha256": "90a6d20656ec6c0b7e13f7f0d9dfcdb000ce93b60ef06565f0b0f883cf4ce1f9",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R02_E3/r002_localized/ICO_M_R02_E3__256__r002.png",
+          "exists": true,
+          "sha256": "7bd15f8bcdc5a0bc29733e5dbc3e7df1c4204f928e9fb4b9400cb8cc34266447",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R02_E3/r002_localized/ICO_M_R02_E3__matte_black_gray_white__r002.png",
+          "exists": true,
+          "sha256": "13ff8e1498ad5af5e8d0524b412c7cf67ec7b2d43f38d12bd4f27904817c5309",
+          "disposition": "candidate or source evidence retained; not promoted"
+        }
+      ]
+    },
+    {
+      "asset_id": "ICO_M_R04_E1",
+      "region_id": "R04",
+      "kind": "material_icon",
+      "prior_stage": "UNAPPROVED_STATIC_EXPORT_CANDIDATE",
+      "previous_failure_reason": "Small rounded blue-gray rootward tufts at existing fiber tips; no feathers removed and no silhouette changes. 64px review did not establish a clear semantic/material correction; candidate retained for root review.",
+      "original": {
+        "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/verified_icons/ICO_M_R04_E1/source_r001.png",
+        "exists": true,
+        "sha256": "bb7d80f34dac1e23b9b2076e382db3ae75ac4c557c1fca7f899ff0faa9bc5953"
+      },
+      "current_modification": "R004 local layer enhancement retained; all sizes below full-pass readability.",
+      "revision_history": [
+        {
+          "revision": "R004",
+          "candidate_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R04_E1/r004_root_tufts/runtime_candidate.png",
+          "candidate_sha256": "bc9b5cc15a21b657ca1d872b129ed534e39e6e79e68a86dc514c4c474dc66549",
+          "editable_source_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R04_E1/r004_root_tufts/editable_source.ora",
+          "editable_source_sha256": "174d41e713e3724e35dd351454a1e70022a056238051270d66d8a0baf1d5769b"
+        }
+      ],
+      "size_specific_qa": {
+        "32pt": "not distinguishable",
+        "48pt": "weak",
+        "64pt": "weak"
+      },
+      "overall_status": "UNRESOLVED_NO_PROMOTION",
+      "technical_qa_full_pass": false,
+      "human_formal_adoption": false,
+      "game_integrated": false,
+      "physical_iphone_tested": false,
+      "editable_source": [
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R04_E1/r003_native_local/ICO_M_R04_E1__editable_source__r003.ora",
+          "exists": true,
+          "sha256": "10d73228b472559651d844b1960c988a046798191d9dc1ba450c17529dd0f270",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R04_E1/r004_root_tufts/editable_source.ora",
+          "exists": true,
+          "sha256": "174d41e713e3724e35dd351454a1e70022a056238051270d66d8a0baf1d5769b",
+          "disposition": "editable candidate source"
+        }
+      ],
+      "runtime_candidate": [
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R04_E1/r003_native_local/ICO_M_R04_E1__before_after_64__r003.png",
+          "exists": true,
+          "sha256": "2158def83e9198940dfc38700b6cce7a210e87b713f9b6629cd1f87c3616f5e9",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R04_E1/r003_native_local/ICO_M_R04_E1__matte_black_gray_white__r003.png",
+          "exists": true,
+          "sha256": "220544ae90028de716224dcf60419a987511a1e09edd0da81e06a74244d96181",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R04_E1/r004_root_tufts/runtime_candidate.png",
+          "exists": true,
+          "sha256": "bc9b5cc15a21b657ca1d872b129ed534e39e6e79e68a86dc514c4c474dc66549",
+          "disposition": "unapproved candidate"
+        }
+      ]
+    },
+    {
+      "asset_id": "ICO_M_R04_BB",
+      "region_id": "R04",
+      "kind": "material_icon",
+      "prior_stage": "UNAPPROVED_STATIC_EXPORT_CANDIDATE",
+      "previous_failure_reason": "Central stripe accent exported; the stripe still merges with nearby facet highlights at 64px.",
+      "original": {
+        "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/verified_icons/ICO_M_R04_BB/source_r001.png",
+        "exists": true,
+        "sha256": "540c7da4cc1bbc3c79b3407fd2e2788a3e015677135792f4db9c6393dea4a7d8"
+      },
+      "current_modification": "R004 imagegen edit rejected for geometry/alpha drift; R005 hand-drawn line clipped to central stripe mask; local RGB under-edge alternative explicitly not counted.",
+      "revision_history": [
+        {
+          "revision": "R004 imagegen range test",
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R04_BB/r004_imagegen_range_test/rejected_imagegen_output.png",
+          "sha256": "28cec6a3a5d772f9d59d199c53909a4ec79d2b1c78b8c3b731fbce4f56198f94",
+          "status": "rejected, 1254x1254 opaque output replacing transparent 1024 source"
+        },
+        {
+          "revision": "R005 handdrawn stripe",
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R04_BB/r005_handdrawn_stripe/runtime_candidate.png",
+          "sha256": "c8549a6ab486d6c6a5e46c7f9e75f1329615a8e53b5e369a960298b2cae954eb",
+          "editable_source_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R04_BB/r005_handdrawn_stripe/editable_source.ora",
+          "editable_source_sha256": "58e4ce02aa388c24ff9621af87a574fbd2808df5cda74c60fb2e9788e7523b48",
+          "status": "unresolved, no promotion"
+        }
+      ],
+      "size_specific_qa": {
+        "32pt": "Hand-drawn: FAIL, stripe difference unreadable. Imagegen: FAIL, opaque black background/geometry drift.",
+        "48pt": "Hand-drawn: FAIL, weak separation. Imagegen: FAIL, opaque black background/geometry drift.",
+        "64pt": "Hand-drawn: PARTIAL only, still no material distinction. Imagegen: FAIL, opaque black background/geometry drift."
+      },
+      "overall_status": "UNRESOLVED_NO_PROMOTION",
+      "technical_qa_full_pass": false,
+      "human_formal_adoption": false,
+      "game_integrated": false,
+      "physical_iphone_tested": false,
+      "editable_source": [
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R04_BB/r002_localized/ICO_M_R04_BB__editable_source__r002.ora",
+          "exists": true,
+          "sha256": "c93a01c95e2d49d57144bf37cb6e28b2bcc0a725913fe6cc0adcd06bc19058e5",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R04_BB/r005_handdrawn_stripe/editable_source.ora",
+          "exists": true,
+          "sha256": "58e4ce02aa388c24ff9621af87a574fbd2808df5cda74c60fb2e9788e7523b48",
+          "disposition": "editable local study"
+        }
+      ],
+      "runtime_candidate": [
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R04_BB/r002_localized/ICO_M_R04_BB__64__r002.png",
+          "exists": true,
+          "sha256": "10c7d3c5c88551ab1c628a802a363d88a8685265476746e79b70a77f82191cef",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R04_BB/r002_localized/ICO_M_R04_BB__128__r002.png",
+          "exists": true,
+          "sha256": "e891b069b307399083f0fdc9972e0647875a94f528d318b826325d3936c91e89",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R04_BB/r002_localized/ICO_M_R04_BB__256__r002.png",
+          "exists": true,
+          "sha256": "74aeed6bbed94d2daed1277d080eec6a3aa22838980445a3923106fa417504eb",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R04_BB/r002_localized/ICO_M_R04_BB__matte_black_gray_white__r002.png",
+          "exists": true,
+          "sha256": "4f5f586cdf5aedb1bac59ca3ac55c7af3f80a467f23203a64a94a7381fdddeb8",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R04_BB/r004_imagegen_range_test/rejected_imagegen_output.png",
+          "exists": true,
+          "sha256": "28cec6a3a5d772f9d59d199c53909a4ec79d2b1c78b8c3b731fbce4f56198f94",
+          "disposition": "rejected imagegen output"
+        },
+        {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R04_BB/r005_handdrawn_stripe/runtime_candidate.png",
+          "exists": true,
+          "sha256": "c8549a6ab486d6c6a5e46c7f9e75f1329615a8e53b5e369a960298b2cae954eb",
+          "disposition": "unapproved local study"
+        }
+      ],
+      "native_qa_reference": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/planning/STATIC14_NATIVE_REVIEW_R006.json",
+      "size_specific_qa_by_method": {
+        "imagegen": {
+          "32pt": "FAIL opaque black square",
+          "48pt": "FAIL opaque black square",
+          "64pt": "FAIL opaque black square"
+        },
+        "handdrawn": {
+          "32pt": "FAIL unreadable difference",
+          "48pt": "FAIL weak separation",
+          "64pt": "PARTIAL only; still not a semantic/material pass"
+        }
+      }
+    },
+    {
+      "asset_id": "ICO_M_R05_E3",
+      "region_id": "R05",
+      "kind": "material_icon",
+      "prior_stage": "UNAPPROVED_STATIC_EXPORT_CANDIDATE",
+      "previous_failure_reason": "Existing engraved crescent arc was selectively strengthened on the same shard; 64px readability improves. Material still reads crystal-like, so only arc repair is a candidate; formal Human adoption pending.",
+      "original": {
+        "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/verified_icons/ICO_M_R05_E3/source_r001.png",
+        "exists": true,
+        "sha256": "f2f439a300339a221437b6197c958f1e30f392cd7396d1122aef35c579818e45"
+      },
+      "current_modification": "R003 localized edit retained; no further edit. Semantic distinction remains weak at small UI sizes.",
+      "revision_history": [
+        {
+          "revision": "R003",
+          "targeted_candidate_paths": {
+            "asset_id": "ICO_M_R05_E3",
+            "directory": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R05_E3/r008_facet_reflection",
+            "reason": "Test a narrow high-contrast refraction highlight inside the original thick-glass shard; retain the R006 arc engraving and outer facets.",
+            "previous": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R05_E3/r008_facet_reflection/preserved_previous.png",
+            "candidate": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R05_E3/r008_facet_reflection/runtime_candidate.png",
+            "editable": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R05_E3/r008_facet_reflection/editable_source.ora",
+            "QA": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R05_E3/r008_facet_reflection/QA_PROVENANCE.json",
+            "visual_verdict": "R003 candidate; reflection visible at48/64pt; weak at32pt and object can still read as crystal. No full pass."
+          },
+          "disposition": "unapproved"
+        }
+      ],
+      "size_specific_qa": {
+        "32pt": "weak",
+        "48pt": "partial",
+        "64pt": "readable"
+      },
+      "overall_status": "UNRESOLVED_NO_PROMOTION",
+      "technical_qa_full_pass": false,
+      "human_formal_adoption": false,
+      "game_integrated": false,
+      "physical_iphone_tested": false,
+      "editable_source": [
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R05_E3/r006_localized/ICO_M_R05_E3__editable_source__r006.ora",
+          "exists": true,
+          "sha256": "968e824d49ffe9733ae15b488145bc65bbe2574300d313748b5a8043e484a610",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R05_E3/r008_facet_reflection/editable_source.ora",
+          "exists": true,
+          "sha256": "2d96b88cc99a9ce790c890ec41f305f067e28d3706720b6dfd5ac9fede618d34"
+        }
+      ],
+      "runtime_candidate": [
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R05_E3/r006_localized/ICO_M_R05_E3__before_after_64__r006.png",
+          "exists": true,
+          "sha256": "2cc1f67fc1bfc73b1218430199cf37cd6533972b0f8e7b52edecea30ee807a0e",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R05_E3/r008_facet_reflection/preserved_previous.png",
+          "exists": true,
+          "sha256": "35fd2b671df21db002a463d2837c1b987fd4acb060a2ce6e3ba40363610f70a3"
+        },
+        {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_M_R05_E3/r008_facet_reflection/runtime_candidate.png",
+          "exists": true,
+          "sha256": "eb0132a29535a7cb71511cddd2f790d6b576f03be93d68cd2eeee099aacaccbf"
+        }
+      ]
+    },
+    {
+      "asset_id": "ICO_EQ_S_03",
+      "region_id": "R05",
+      "kind": "gear_icon",
+      "prior_stage": "UNAPPROVED_STATIC_EXPORT_CANDIDATE",
+      "previous_failure_reason": "Small pale porcelain-like buffer inlay on the existing hammer head face; preserve head size and contour. 64px review did not establish a clear semantic/material correction; candidate retained for root review.",
+      "original": {
+        "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/verified_gear/ICO_EQ_S_03/source_r001.png",
+        "exists": true,
+        "sha256": "df73323aa65b7326b70ee9bae7b37414854552f9286f1e79d903e654c48f7fba"
+      },
+      "current_modification": "R003 localized edit retained; no further edit. Semantic distinction remains weak at small UI sizes.",
+      "revision_history": [
+        {
+          "revision": "R003",
+          "targeted_candidate_paths": {
+            "asset_id": "ICO_EQ_S_03",
+            "directory": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_EQ_S_03/r005_porcelain_inlay",
+            "reason": "Add a smaller white-porcelain buffer inside the existing head medallion; R004 larger cream disc retained as a rejected alternate, hammer silhouette unchanged.",
+            "previous": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_EQ_S_03/r005_porcelain_inlay/preserved_previous.png",
+            "candidate": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_EQ_S_03/r005_porcelain_inlay/runtime_candidate.png",
+            "editable": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_EQ_S_03/r005_porcelain_inlay/editable_source.ora",
+            "QA": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_EQ_S_03/r005_porcelain_inlay/QA_PROVENANCE.json",
+            "visual_verdict": "R003 candidate; small warm inlay clearer at64pt, marginal at32/48pt. No full pass."
+          },
+          "disposition": "unapproved"
+        }
+      ],
+      "size_specific_qa": {
+        "32pt": "weak",
+        "48pt": "marginal",
+        "64pt": "readable"
+      },
+      "overall_status": "UNRESOLVED_NO_PROMOTION",
+      "technical_qa_full_pass": false,
+      "human_formal_adoption": false,
+      "game_integrated": false,
+      "physical_iphone_tested": false,
+      "editable_source": [
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_EQ_S_03/r003_native_local/ICO_EQ_S_03__editable_source__r003.ora",
+          "exists": true,
+          "sha256": "1578e4abd8932757fb1ad7d3651be4231f6188e1c3779cf8d5f2d66705933c84",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_EQ_S_03/r005_porcelain_inlay/editable_source.ora",
+          "exists": true,
+          "sha256": "a39d9941ce8d8813e7ee4d01e12fd87b229faf8cf7d408ca1c28a69af082152b"
+        }
+      ],
+      "runtime_candidate": [
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_EQ_S_03/r003_native_local/ICO_EQ_S_03__before_after_64__r003.png",
+          "exists": true,
+          "sha256": "f28241b05f586463cafa5073517fe36f297d89cf6ee9dd139bec67eaff0df868",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_EQ_S_03/r003_native_local/ICO_EQ_S_03__matte_black_gray_white__r003.png",
+          "exists": true,
+          "sha256": "ca92f961dbce2e4ae3dacd4ac5077c21532f027554fa02a1e249568947523591",
+          "disposition": "candidate or source evidence retained; not promoted"
+        },
+        {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_EQ_S_03/r005_porcelain_inlay/preserved_previous.png",
+          "exists": true,
+          "sha256": "609fa9f7cca4e5a161887372cbaced798a7cf1c90241795b532ac5737083f891"
+        },
+        {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/static_repairs/ICO_EQ_S_03/r005_porcelain_inlay/runtime_candidate.png",
+          "exists": true,
+          "sha256": "3bc8a5e44cfaa614b9de3220253ae0808c66c7004b26b43f7ee4562def54a481"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "No unit was promoted to overall pass.",
+    "R004 RGB local edits for three assets did not provide clear 32-48pt distinction; ICO_M_R05_G4 only weakly improved at64pt.",
+    "Imagegen output for ICO_M_R04_BB changed dimensions and alpha across the full image and was rejected.",
+    "Hand-drawn central stripe edge for ICO_M_R04_BB was weak at32/48pt and partial only at64pt; remains unresolved.",
+    "All physical iPhone display/QA remains untested."
+  ],
+  "source_indexes": [
+    "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/planning/STATIC14_REVIEW_INDEX_R001.json",
+    "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/planning/STATIC14_REVIEW_INDEX_R002.json",
+    "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/planning/STATIC14_REVIEW_INDEX_R003.json",
+    "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/planning/STATIC14_REVIEW_INDEX_R004.json"
+  ],
+  "native_evidence": [
+    "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/planning/STATIC14_NATIVE_REVIEW_R004.json",
+    "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/planning/STATIC14_IMAGEGEN_TRIAL_R005.json",
+    "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/planning/STATIC14_NATIVE_REVIEW_R006.json"
+  ]
+}

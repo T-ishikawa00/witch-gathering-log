@@ -1,0 +1,232 @@
+{
+  "revision": "R008",
+  "measurement_scope": "Simulator native consumer only",
+  "physical_iPhone": false,
+  "source_png_byte_identity": "261/261; 24 party poses; original4 layer structure with 5 runtime entries",
+  "R6_UIUX_formal": false,
+  "full_skeletal_animation": false,
+  "combat_engine_complete": false,
+  "render_FPS": "instantaneous SpriteKit meter 60.0 in screenshots; no continuous presented/GPU trace",
+  "clean_run_wall_seconds": 232.07065606117249,
+  "runs": {
+    "pro_two_size": {
+      "cycle": 7,
+      "lifetime_counts": {
+        "effects": 63,
+        "events": 308,
+        "metric_samples": 141
+      },
+      "rolling_samples": 141,
+      "event_router": {
+        "accepted": 308,
+        "calculator": "NONE_VISUAL_DEMO_DRIVER_EXTERNAL",
+        "duplicates": 0,
+        "rejected": 0,
+        "retained_keys": 0
+      },
+      "background_writer": {
+        "failed_writes": 0,
+        "last_error": null,
+        "latest_file_bytes": 171154,
+        "main_thread_serialization": false,
+        "maximum_worker_write_seconds": 0.08722007274627686,
+        "pending_latest_only": true,
+        "successful_writes": 34
+      },
+      "cached_grids": 745,
+      "texture_decode_attempts": 261,
+      "has_QA_capture_flag": true,
+      "has_debug_overlay": true,
+      "resident_mib": {
+        "min": 195.390625,
+        "median": 195.859375,
+        "max": 222.390625
+      },
+      "update_callbacks_per_second": {
+        "min": 36.81759106298578,
+        "median": 60,
+        "max": 60
+      },
+      "actual_largest_update_delta_seconds": {
+        "min": 0.01666666667733807,
+        "median": 0.01666666667733807,
+        "max": 0.34419183334102854
+      },
+      "update_body_maximum_seconds": {
+        "min": 2.1833329810760915e-05,
+        "median": 0.0002022499975282699,
+        "max": 0.3419984583306359
+      },
+      "process_CPU_percent_one_core": {
+        "min": 8.241900000000157,
+        "median": 15.025900000000014,
+        "max": 31.334000000000017
+      },
+      "enemy_nonidle_records": 63,
+      "enemy_nonidle_interior_gap_records": [
+        {
+          "cycle": 0,
+          "state": "hit",
+          "missing": [
+            1
+          ]
+        },
+        {
+          "cycle": 0,
+          "state": "anticipate",
+          "missing": [
+            13
+          ]
+        },
+        {
+          "cycle": 0,
+          "state": "execute",
+          "missing": [
+            10
+          ]
+        }
+      ],
+      "enemy_nonidle_terminal_not_assigned": 0
+    },
+    "compact_two_size": {
+      "cycle": 7,
+      "lifetime_counts": {
+        "effects": 63,
+        "events": 308,
+        "metric_samples": 141
+      },
+      "rolling_samples": 141,
+      "event_router": {
+        "accepted": 308,
+        "calculator": "NONE_VISUAL_DEMO_DRIVER_EXTERNAL",
+        "duplicates": 0,
+        "rejected": 0,
+        "retained_keys": 0
+      },
+      "background_writer": {
+        "failed_writes": 0,
+        "last_error": null,
+        "latest_file_bytes": 177555,
+        "main_thread_serialization": false,
+        "maximum_worker_write_seconds": 0.02326500415802002,
+        "pending_latest_only": true,
+        "successful_writes": 37
+      },
+      "cached_grids": 745,
+      "texture_decode_attempts": 261,
+      "has_QA_capture_flag": true,
+      "has_debug_overlay": true,
+      "resident_mib": {
+        "min": 190.515625,
+        "median": 190.96875,
+        "max": 213.34375
+      },
+      "update_callbacks_per_second": {
+        "min": 41.70484945144838,
+        "median": 60,
+        "max": 60.23417764576075
+      },
+      "actual_largest_update_delta_seconds": {
+        "min": 0.01666666667733807,
+        "median": 0.01666666667733807,
+        "max": 0.2064326250110753
+      },
+      "update_body_maximum_seconds": {
+        "min": 2.17916676774621e-05,
+        "median": 0.00016762499581091106,
+        "max": 0.16843529166362714
+      },
+      "process_CPU_percent_one_core": {
+        "min": 6.725799999999982,
+        "median": 15.28659999999995,
+        "max": 24.049299999999985
+      },
+      "enemy_nonidle_records": 63,
+      "enemy_nonidle_interior_gap_records": [
+        {
+          "cycle": 0,
+          "state": "hit",
+          "missing": [
+            1
+          ]
+        },
+        {
+          "cycle": 0,
+          "state": "anticipate",
+          "missing": [
+            13
+          ]
+        },
+        {
+          "cycle": 0,
+          "state": "execute",
+          "missing": [
+            10,
+            11
+          ]
+        }
+      ],
+      "enemy_nonidle_terminal_not_assigned": 0
+    },
+    "compact_clean": {
+      "cycle": 11,
+      "lifetime_counts": {
+        "effects": 104,
+        "events": 511,
+        "metric_samples": 231
+      },
+      "rolling_samples": 180,
+      "event_router": {
+        "accepted": 511,
+        "calculator": "NONE_VISUAL_DEMO_DRIVER_EXTERNAL",
+        "duplicates": 0,
+        "rejected": 0,
+        "retained_keys": 27
+      },
+      "background_writer": {
+        "failed_writes": 0,
+        "last_error": null,
+        "latest_file_bytes": 237691,
+        "main_thread_serialization": false,
+        "maximum_worker_write_seconds": 0.02077805995941162,
+        "pending_latest_only": true,
+        "successful_writes": 59
+      },
+      "cached_grids": 745,
+      "texture_decode_attempts": 261,
+      "has_QA_capture_flag": false,
+      "has_debug_overlay": false,
+      "resident_mib": {
+        "min": 177.890625,
+        "median": 178.6015625,
+        "max": 179.078125
+      },
+      "update_callbacks_per_second": {
+        "min": 60,
+        "median": 60.0,
+        "max": 60
+      },
+      "actual_largest_update_delta_seconds": {
+        "min": 0.01666666667733807,
+        "median": 0.01666666667733807,
+        "max": 0.01666666667733807
+      },
+      "update_body_maximum_seconds": {
+        "min": 2.36249907175079e-05,
+        "median": 0.00014529166219290346,
+        "max": 0.0010889166733250022
+      },
+      "process_CPU_percent_one_core": {
+        "min": 3.886300000000009,
+        "median": 11.91020000000007,
+        "max": 14.484699999999862
+      },
+      "enemy_nonidle_records": 83,
+      "enemy_nonidle_interior_gap_records": [],
+      "enemy_nonidle_terminal_not_assigned": 0
+    }
+  },
+  "conclusion": "PARTIAL_PERFORMANCE_QA; no crashes in observed Simulator runs; no physical-device/full animation pass",
+  "CPU_stack_sample_inference": "2-second samples show render/texture resource operations and Simulator driver waits. Not causal A/B evidence, not GPU timing. Removed repeated enemy-name assignment without changing art.",
+  "contract_source_binding_same_as_tested_r007": true
+}

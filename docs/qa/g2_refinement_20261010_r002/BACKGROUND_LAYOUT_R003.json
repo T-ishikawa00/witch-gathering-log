@@ -1,0 +1,2118 @@
+{
+  "title": "Native layout review R003; one corrected R02 location image; prior R002 evidence retained",
+  "revision": "R003",
+  "scope": "12 new full-frame background/location candidates in R001; display QA only",
+  "not_claimed": [
+    "full R4 background kit",
+    "parallax/depth integration",
+    "production floor mask",
+    "regional battle integration",
+    "formal asset approval",
+    "physical iPhone test"
+  ],
+  "simulators": [
+    {
+      "device": "iPhone 17",
+      "simulator_uuid": "C6495BDE-00AC-40E1-B221-35829CEDFD15",
+      "runtime": "iOS 26.5",
+      "capture_target": "402pt width; screenshot pixels 1206x2622",
+      "owned_independent_QA_simulator": true
+    },
+    {
+      "device": "iPhone SE (3rd generation)",
+      "simulator_uuid": "9E3DA9FB-7478-47F9-A46F-630B235B5729",
+      "runtime": "iOS 26.5",
+      "capture_target": "375pt width; screenshot pixels 750x1334",
+      "owned_independent_QA_simulator": true
+    }
+  ],
+  "gallery_app": "source/Gallery.swift, standalone local.codex.g2.layout-gallery.qa; QA-specific build only",
+  "reused_character_images": {
+    "ERNA": {
+      "source_path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/game/native_r005/WitchG2Forest.app/Assets/Characters/ERNA/ERNA__idle__256__r001.png",
+      "gallery_copy_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/source/Resources/ERNA__idle.png",
+      "sha256": "9d2532504fec9818fe0e1b28ec8f8f4e4ed0f1c1baf6c6c96dd0b0408d585e20",
+      "byte_exact_to_baseline": true,
+      "bytes": 59270
+    },
+    "LUNA": {
+      "source_path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/game/native_r005/WitchG2Forest.app/Assets/Characters/LUNA/LUNA__idle__256__r001.png",
+      "gallery_copy_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/source/Resources/LUNA__idle.png",
+      "sha256": "aa3e9ab84b4158faee6faaddb39fd5aa52c03bbb96fab6e1ef5f092ddd3b524f",
+      "byte_exact_to_baseline": true,
+      "bytes": 50308
+    },
+    "AIRA": {
+      "source_path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/game/native_r005/WitchG2Forest.app/Assets/Characters/AIRA/AIRA__idle__256__r001.png",
+      "gallery_copy_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/source/Resources/AIRA__idle.png",
+      "sha256": "4220305153b79ed184b8a3884c948f2b8313c71ff3ecba5bd3d806dbaca92e55",
+      "byte_exact_to_baseline": true,
+      "bytes": 38545
+    },
+    "NOIR": {
+      "source_path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/game/native_r005/WitchG2Forest.app/Assets/Characters/NOIR/NOIR__idle__256__r001.png",
+      "gallery_copy_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/source/Resources/NOIR__idle.png",
+      "sha256": "9ea08a087b2d56c9bb56287dfd88540180548eb95b83bcdf88c28d46cfbd2577",
+      "byte_exact_to_baseline": true,
+      "bytes": 34663
+    }
+  },
+  "assets": [
+    {
+      "asset_id": "BG_R02_BOSS",
+      "revision": "R001_candidate+R002_layout_review",
+      "input_candidate_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/new_12_delivery_r001/BG_R02_BOSS/runtime/BG_R02_BOSS__fullframe_review_candidate__r001.png",
+      "input_candidate_sha256": "a721badb04571f1a56319863c977a97569c133d085811cb1f45dee9aa99ab5fe",
+      "gallery_resource_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/source/Resources/BG_R02_BOSS.png",
+      "gallery_resource_sha256": "a721badb04571f1a56319863c977a97569c133d085811cb1f45dee9aa99ab5fe",
+      "source_resource_byte_exact": true,
+      "review_status": "VISUAL_CANDIDATE",
+      "individual_human_approval": "PENDING",
+      "formal_adoption": false,
+      "r4_technical_kit_complete": false,
+      "iphone_physical_test": false,
+      "floor_mask_QA_ONLY": {
+        "coordinate_system": "normalized full-frame source image; origin top-left",
+        "polygon": [
+          [
+            0.08,
+            0.48
+          ],
+          [
+            0.92,
+            0.48
+          ],
+          [
+            0.91,
+            0.86
+          ],
+          [
+            0.09,
+            0.86
+          ]
+        ],
+        "quality": "manual conservative planning overlay; not a pixel mask and not runtime-approved"
+      },
+      "foot_anchors_QA_ONLY": [
+        {
+          "actor": "ERNA",
+          "normalized_top_left": [
+            0.18,
+            0.71
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "LUNA",
+          "normalized_top_left": [
+            0.31,
+            0.75
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "AIRA",
+          "normalized_top_left": [
+            0.43,
+            0.7
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "NOIR",
+          "normalized_top_left": [
+            0.55,
+            0.76
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "ENEMY_QA_ONLY",
+          "normalized_top_left": [
+            0.79,
+            0.72
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "QA_ONLY rectangle for enemy only"
+        }
+      ],
+      "avoid_regions_QA_ONLY": {
+        "lower_side_vegetation": [
+          [
+            0,
+            0.82
+          ],
+          [
+            0.1,
+            0.82
+          ],
+          [
+            0.1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "water_reflection": [
+          [
+            0.2,
+            0.44
+          ],
+          [
+            0.8,
+            0.44
+          ],
+          [
+            0.8,
+            0.6
+          ],
+          [
+            0.2,
+            0.6
+          ]
+        ]
+      },
+      "capture_screenshots": {
+        "402pt": {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/captures/402pt/BG_R02_BOSS_R002.png",
+          "sha256": "2a49762dbb2b9a01a58315bcddc7163e9c184792659c4901f65c560e437055b3",
+          "pixel_size": [
+            1206,
+            2622
+          ],
+          "capture_status": "CAPTURED_SIMULATOR"
+        },
+        "375pt": {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/captures/375pt/BG_R02_BOSS_R002.png",
+          "sha256": "bd19d101064982322393f044e576cd0f4b2f49669b9b28a1b98018792b4dd1be",
+          "pixel_size": [
+            750,
+            1334
+          ],
+          "capture_status": "CAPTURED_SIMULATOR"
+        }
+      },
+      "visual_semantic_note": "Layout-only visual inspection; semantic/art approval remains pending.",
+      "region_id": "R02",
+      "location_id": "A_R02_04",
+      "display_name": "眠り霧の湿原 BOSS / 水鏡の入江",
+      "asset_kind": "background_kit",
+      "R4_intent": "大きな根のアーチが鏡状の水面を囲む入江。冠鱗形の反射が読め、連続した乾いた土/板床が手前、水面は奥。",
+      "R4_required_deliverables": "far/back/playfield/frontの背景レイヤー、floor/foreground masks、depth/anchor QA、床を水面へ置換しない構成"
+    },
+    {
+      "asset_id": "VAR_A_R02_02",
+      "revision": "r002_candidate; native_layout_R003",
+      "input_candidate_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/new_12_delivery_r002/VAR_A_R02_02/runtime/VAR_A_R02_02__fullframe_review_candidate__r002.png",
+      "input_candidate_sha256": "1d0e565223cca8b9e2c8701820f5cdc723499da7c4308e11eefadc9a3184905f",
+      "gallery_resource_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r003/source/Resources/VAR_A_R02_02.png",
+      "gallery_resource_sha256": "1d0e565223cca8b9e2c8701820f5cdc723499da7c4308e11eefadc9a3184905f",
+      "source_resource_byte_exact": true,
+      "review_status": "VISUAL_CANDIDATE",
+      "individual_human_approval": "PENDING",
+      "formal_adoption": false,
+      "r4_technical_kit_complete": false,
+      "iphone_physical_test": false,
+      "floor_mask_QA_ONLY": {
+        "coordinate_system": "normalized full-frame source image; origin top-left",
+        "polygon": [
+          [
+            0.12,
+            0.52
+          ],
+          [
+            0.88,
+            0.52
+          ],
+          [
+            0.86,
+            0.86
+          ],
+          [
+            0.14,
+            0.86
+          ]
+        ],
+        "quality": "manual conservative planning overlay; not a pixel mask and not runtime-approved"
+      },
+      "foot_anchors_QA_ONLY": [
+        {
+          "actor": "ERNA",
+          "normalized_top_left": [
+            0.23,
+            0.63
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "LUNA",
+          "normalized_top_left": [
+            0.36,
+            0.68
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "AIRA",
+          "normalized_top_left": [
+            0.49,
+            0.63
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "NOIR",
+          "normalized_top_left": [
+            0.62,
+            0.68
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "ENEMY_QA_ONLY",
+          "normalized_top_left": [
+            0.79,
+            0.66
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "QA_ONLY rectangle for enemy only"
+        }
+      ],
+      "avoid_regions_QA_ONLY": {
+        "raised_mushroom_shelves_and_rotten_logs": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0.52
+          ],
+          [
+            0,
+            0.52
+          ]
+        ],
+        "side_reeds_and_foreground_plants": [
+          [
+            0,
+            0.8
+          ],
+          [
+            0.14,
+            0.8
+          ],
+          [
+            0.14,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0.86,
+            0.8
+          ],
+          [
+            1,
+            0.8
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0.86,
+            1
+          ]
+        ]
+      },
+      "capture_screenshots": {
+        "375pt": {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r003/captures/375pt/VAR_A_R02_02_R003.png",
+          "sha256": "a541993a463d94a0b8e52598b042958f1347b48dc93967627fb99598a52496a9",
+          "pixel_size": [
+            750,
+            1334
+          ],
+          "capture_status": "CAPTURED_SIMULATOR; R002 candidate; one independent SE3 preview; QA app terminated and simulator shutdown verified"
+        },
+        "402pt": {
+          "path": null,
+          "sha256": null,
+          "pixel_size": null,
+          "capture_status": "NOT_CAPTURED_AFTER_R002_IMAGE_REVISION"
+        }
+      },
+      "visual_semantic_note": "On the R003 375pt display the rotten log supports the stepped giant-cap shelves, while the broad central dry floor remains readable and leaves ample space for future spore telegraph. Background water sits behind/laterally. No bridge, hut, creature, collectible, UI or lettering in the source art. Review remains candidate-only.",
+      "region_id": "R02",
+      "location_id": "A_R02_02",
+      "display_name": "夢茸の足場",
+      "asset_kind": "area_variant",
+      "R4_intent": "朽ち木と菌傘の高低差。胞子予告を置ける余白。菌核を常設採取物として描かない。",
+      "R4_required_deliverables": "BG_R02_FIELDに対する位置合わせ差分sprite、保護床/anchor非変更、合成レシピ、胞子予告の余白QA",
+      "source_resource_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r003/source/Resources/VAR_A_R02_02.png",
+      "source_resource_sha256": "1d0e565223cca8b9e2c8701820f5cdc723499da7c4308e11eefadc9a3184905f",
+      "semantic_match_review": "PASS_CANDIDATE; R4 A_R02_02 main read now shows elevated multi-level mushroom-cap shelves supported by rotten logs, dry floor and spore-telegraph space.",
+      "individual_Human_approval": "PENDING",
+      "R4_technical_kit_complete": false,
+      "previous_candidate_r001_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/new_12_delivery_r001/VAR_A_R02_02",
+      "r002_candidate_delivery": {
+        "source": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/new_12_delivery_r002/VAR_A_R02_02/source/provider_output_exact.png",
+        "source_sha256": "1d0e565223cca8b9e2c8701820f5cdc723499da7c4308e11eefadc9a3184905f",
+        "runtime": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/new_12_delivery_r002/VAR_A_R02_02/runtime/VAR_A_R02_02__fullframe_review_candidate__r002.png",
+        "runtime_sha256": "1d0e565223cca8b9e2c8701820f5cdc723499da7c4308e11eefadc9a3184905f",
+        "editable_ora": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/new_12_delivery_r002/VAR_A_R02_02/editable/VAR_A_R02_02__editable_single_layer__r002.ora",
+        "editable_sha256": "70d18d8bb8cadc7a86de060992ad1bbc62e451bd8e8d6fb0309b47206bef119b",
+        "prompt": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/new_12_delivery_r002/VAR_A_R02_02/source/PROMPT.txt",
+        "prompt_sha256": "a615a8996ce1442304be524f67034b901799a488448f5065b819a29942edc343",
+        "provenance": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/new_12_delivery_r002/VAR_A_R02_02/qa/QA_PROVENANCE_R002.json",
+        "provenance_sha256": "b5c541bf7a57c83fd4d73e8decded926a9be5e9acc02f6e977ad53f0210c8fe4"
+      },
+      "prior_candidate_r002_layout_capture_paths_excluded_from_current_image_review": {
+        "402pt": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/captures/402pt/VAR_A_R02_02_R002.png",
+        "375pt": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/captures/375pt/VAR_A_R02_02_R002.png"
+      }
+    },
+    {
+      "asset_id": "VAR_A_R02_03",
+      "revision": "R001_candidate+R002_layout_review",
+      "input_candidate_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/new_12_delivery_r001/VAR_A_R02_03/runtime/VAR_A_R02_03__fullframe_review_candidate__r001.png",
+      "input_candidate_sha256": "b43f83273d165c366378859d5a40d9333bf89dec8e9de8c92c4bb0f7e029da32",
+      "gallery_resource_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/source/Resources/VAR_A_R02_03.png",
+      "gallery_resource_sha256": "b43f83273d165c366378859d5a40d9333bf89dec8e9de8c92c4bb0f7e029da32",
+      "source_resource_byte_exact": true,
+      "review_status": "VISUAL_CANDIDATE",
+      "individual_human_approval": "PENDING",
+      "formal_adoption": false,
+      "r4_technical_kit_complete": false,
+      "iphone_physical_test": false,
+      "floor_mask_QA_ONLY": {
+        "coordinate_system": "normalized full-frame source image; origin top-left",
+        "polygon": [
+          [
+            0.11,
+            0.5
+          ],
+          [
+            0.89,
+            0.5
+          ],
+          [
+            0.87,
+            0.85
+          ],
+          [
+            0.13,
+            0.85
+          ]
+        ],
+        "quality": "manual conservative planning overlay; not a pixel mask and not runtime-approved"
+      },
+      "foot_anchors_QA_ONLY": [
+        {
+          "actor": "ERNA",
+          "normalized_top_left": [
+            0.18,
+            0.68
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "LUNA",
+          "normalized_top_left": [
+            0.31,
+            0.73
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "AIRA",
+          "normalized_top_left": [
+            0.44,
+            0.68
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "NOIR",
+          "normalized_top_left": [
+            0.57,
+            0.74
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "ENEMY_QA_ONLY",
+          "normalized_top_left": [
+            0.79,
+            0.7
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "QA_ONLY rectangle for enemy only"
+        }
+      ],
+      "avoid_regions_QA_ONLY": {
+        "reflecting_water_and_flower_clusters": [
+          [
+            0,
+            0.32
+          ],
+          [
+            1,
+            0.32
+          ],
+          [
+            1,
+            0.51
+          ],
+          [
+            0,
+            0.51
+          ]
+        ],
+        "shore_edge_planting": [
+          [
+            0,
+            0.48
+          ],
+          [
+            0.1,
+            0.48
+          ],
+          [
+            0.1,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0.9,
+            0.48
+          ],
+          [
+            1,
+            0.48
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0.9,
+            1
+          ]
+        ]
+      },
+      "capture_screenshots": {
+        "402pt": {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/captures/402pt/VAR_A_R02_03_R002.png",
+          "sha256": "a5c4ba190ab0458c47c6a0c90ba35bd8062657832cf883ca844a8b26bb65ffbf",
+          "pixel_size": [
+            1206,
+            2622
+          ],
+          "capture_status": "CAPTURED_SIMULATOR"
+        },
+        "375pt": {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/captures/375pt/VAR_A_R02_03_R002.png",
+          "sha256": "d43ef37932c72ab000753fa8c783a6d9b4d82097d789670d67ed0c7ff067124e",
+          "pixel_size": [
+            750,
+            1334
+          ],
+          "capture_status": "CAPTURED_SIMULATOR"
+        }
+      },
+      "visual_semantic_note": "Layout-only visual inspection; semantic/art approval remains pending.",
+      "region_id": "R02",
+      "location_id": "A_R02_03",
+      "display_name": "月光花の水辺",
+      "asset_kind": "area_variant",
+      "R4_intent": "静水面に反射する六弁月光花。敵の輪郭を花反射から明暗で分離。霧結晶は短柱。",
+      "R4_required_deliverables": "BG_R02_FIELDに対する位置合わせ差分sprite、保護床/anchor非変更、合成レシピ、敵/反射の可読性QA"
+    },
+    {
+      "asset_id": "BG_R03_BOSS",
+      "revision": "R001_candidate+R002_layout_review",
+      "input_candidate_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/new_12_delivery_r001/BG_R03_BOSS/runtime/BG_R03_BOSS__fullframe_review_candidate__r001.png",
+      "input_candidate_sha256": "d641b8d724a7134e0bf292491931f309afffd358a4ad6b3ac15c7558d4c73ece",
+      "gallery_resource_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/source/Resources/BG_R03_BOSS.png",
+      "gallery_resource_sha256": "d641b8d724a7134e0bf292491931f309afffd358a4ad6b3ac15c7558d4c73ece",
+      "source_resource_byte_exact": true,
+      "review_status": "PARTIAL_VISUAL_CANDIDATE",
+      "individual_human_approval": "PENDING",
+      "formal_adoption": false,
+      "r4_technical_kit_complete": false,
+      "iphone_physical_test": false,
+      "floor_mask_QA_ONLY": {
+        "coordinate_system": "normalized full-frame source image; origin top-left",
+        "polygon": [
+          [
+            0.09,
+            0.48
+          ],
+          [
+            0.91,
+            0.48
+          ],
+          [
+            0.9,
+            0.88
+          ],
+          [
+            0.1,
+            0.88
+          ]
+        ],
+        "quality": "manual conservative planning overlay; not a pixel mask and not runtime-approved"
+      },
+      "foot_anchors_QA_ONLY": [
+        {
+          "actor": "ERNA",
+          "normalized_top_left": [
+            0.17,
+            0.7
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "LUNA",
+          "normalized_top_left": [
+            0.3,
+            0.75
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "AIRA",
+          "normalized_top_left": [
+            0.43,
+            0.7
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "NOIR",
+          "normalized_top_left": [
+            0.56,
+            0.76
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "ENEMY_QA_ONLY",
+          "normalized_top_left": [
+            0.8,
+            0.72
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "QA_ONLY rectangle for enemy only"
+        }
+      ],
+      "avoid_regions_QA_ONLY": {
+        "upper_arch_and_side_lamp_pedestals": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0.47
+          ],
+          [
+            0,
+            0.47
+          ]
+        ],
+        "lower_side_pillars": [
+          [
+            0,
+            0.8
+          ],
+          [
+            0.1,
+            0.8
+          ],
+          [
+            0.1,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0.9,
+            0.8
+          ],
+          [
+            1,
+            0.8
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0.9,
+            1
+          ]
+        ]
+      },
+      "capture_screenshots": {
+        "402pt": {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/captures/402pt/BG_R03_BOSS_R002.png",
+          "sha256": "54825e381ebaf415c0ca6135a152f10a7f26f14f9b21a512ff059576d169a79c",
+          "pixel_size": [
+            1206,
+            2622
+          ],
+          "capture_status": "CAPTURED_SIMULATOR"
+        },
+        "375pt": {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/captures/375pt/BG_R03_BOSS_R002.png",
+          "sha256": "e0c138868584d74a7f6a0ebf3cf4646e2b1d12ba201a077d35e2d9f393bf837a",
+          "pixel_size": [
+            750,
+            1334
+          ],
+          "capture_status": "CAPTURED_SIMULATOR"
+        }
+      },
+      "visual_semantic_note": "Warm secondary lanterns remain conspicuous; R4 requires the furnace as the principal warm light source.",
+      "region_id": "R03",
+      "location_id": "A_R03_04",
+      "display_name": "こだまの鉱洞 BOSS / 古い炉守りの間",
+      "asset_kind": "background_kit",
+      "R4_intent": "古い炉守りの間。炉光は中央のみ暖色を主役にし、巨体を独立、床熱予告を背景炎と分離。交換部品と広い暗床。",
+      "R4_required_deliverables": "far/back/playfield/front、floor masks、炉光レイヤー、boss silhouette clearance、heat-telegraph separation QA"
+    },
+    {
+      "asset_id": "VAR_A_R03_02",
+      "revision": "R001_candidate+R002_layout_review",
+      "input_candidate_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/new_12_delivery_r001/VAR_A_R03_02/runtime/VAR_A_R03_02__fullframe_review_candidate__r001.png",
+      "input_candidate_sha256": "ca993845b3e2d45623bbfb23826e03343774809c6d1c27c74ca9655b469d81fb",
+      "gallery_resource_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/source/Resources/VAR_A_R03_02.png",
+      "gallery_resource_sha256": "ca993845b3e2d45623bbfb23826e03343774809c6d1c27c74ca9655b469d81fb",
+      "source_resource_byte_exact": true,
+      "review_status": "PARTIAL_VISUAL_CANDIDATE",
+      "individual_human_approval": "PENDING",
+      "formal_adoption": false,
+      "r4_technical_kit_complete": false,
+      "iphone_physical_test": false,
+      "floor_mask_QA_ONLY": {
+        "coordinate_system": "normalized full-frame source image; origin top-left",
+        "polygon": [
+          [
+            0.12,
+            0.57
+          ],
+          [
+            0.88,
+            0.57
+          ],
+          [
+            0.84,
+            0.79
+          ],
+          [
+            0.16,
+            0.79
+          ]
+        ],
+        "quality": "manual conservative planning overlay; not a pixel mask and not runtime-approved"
+      },
+      "foot_anchors_QA_ONLY": [
+        {
+          "actor": "ERNA",
+          "normalized_top_left": [
+            0.2,
+            0.62
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "LUNA",
+          "normalized_top_left": [
+            0.29,
+            0.72
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "AIRA",
+          "normalized_top_left": [
+            0.43,
+            0.63
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "NOIR",
+          "normalized_top_left": [
+            0.54,
+            0.74
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "ENEMY_QA_ONLY",
+          "normalized_top_left": [
+            0.78,
+            0.67
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "QA_ONLY rectangle for enemy only"
+        }
+      ],
+      "avoid_regions_QA_ONLY": {
+        "central_chasm_below_forecourt": [
+          [
+            0.2,
+            0.8
+          ],
+          [
+            0.8,
+            0.8
+          ],
+          [
+            0.8,
+            1
+          ],
+          [
+            0.2,
+            1
+          ]
+        ],
+        "lateral_platforms_different_depth": [
+          [
+            0,
+            0.45
+          ],
+          [
+            0.12,
+            0.45
+          ],
+          [
+            0.12,
+            0.57
+          ],
+          [
+            0,
+            0.57
+          ],
+          [
+            0.88,
+            0.45
+          ],
+          [
+            1,
+            0.45
+          ],
+          [
+            1,
+            0.57
+          ],
+          [
+            0.88,
+            0.57
+          ]
+        ]
+      },
+      "capture_screenshots": {
+        "402pt": {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/captures/402pt/VAR_A_R03_02_R002.png",
+          "sha256": "237d05a7c8de56bc8bfed22ab802d4380ff3c4c39c78310cc917e951d653ff46",
+          "pixel_size": [
+            1206,
+            2622
+          ],
+          "capture_status": "CAPTURED_SIMULATOR"
+        },
+        "375pt": {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/captures/375pt/VAR_A_R03_02_R002.png",
+          "sha256": "724711f47fdabcc399c833c7d840891360a18427a59cef1bdd1c20503e785ba8",
+          "pixel_size": [
+            750,
+            1334
+          ],
+          "capture_status": "CAPTURED_SIMULATOR"
+        }
+      },
+      "visual_semantic_note": "Lateral stone shelves are separated by the central chasm and do not read as retreat surfaces at the same depth; shown anchors stay on the main forecourt only.",
+      "region_id": "R03",
+      "location_id": "A_R03_02",
+      "display_name": "連槌兵の橋",
+      "asset_kind": "area_variant",
+      "R4_intent": "低い橋と左右の同じ奥行きへ退避できる石床。横幅ある連撃予告床。",
+      "R4_required_deliverables": "FIELD差分sprite、同一play-depth上の左右退避床、保護床/anchor、合成レシピと横攻撃域QA"
+    },
+    {
+      "asset_id": "VAR_A_R03_03",
+      "revision": "R001_candidate+R002_layout_review",
+      "input_candidate_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/new_12_delivery_r001/VAR_A_R03_03/runtime/VAR_A_R03_03__fullframe_review_candidate__r001.png",
+      "input_candidate_sha256": "7f80b33a005c7b43803271b589824923877c58d0e79d90b492f477a9220069b1",
+      "gallery_resource_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/source/Resources/VAR_A_R03_03.png",
+      "gallery_resource_sha256": "7f80b33a005c7b43803271b589824923877c58d0e79d90b492f477a9220069b1",
+      "source_resource_byte_exact": true,
+      "review_status": "VISUAL_CANDIDATE",
+      "individual_human_approval": "PENDING",
+      "formal_adoption": false,
+      "r4_technical_kit_complete": false,
+      "iphone_physical_test": false,
+      "floor_mask_QA_ONLY": {
+        "coordinate_system": "normalized full-frame source image; origin top-left",
+        "polygon": [
+          [
+            0.12,
+            0.53
+          ],
+          [
+            0.88,
+            0.53
+          ],
+          [
+            0.86,
+            0.88
+          ],
+          [
+            0.14,
+            0.88
+          ]
+        ],
+        "quality": "manual conservative planning overlay; not a pixel mask and not runtime-approved"
+      },
+      "foot_anchors_QA_ONLY": [
+        {
+          "actor": "ERNA",
+          "normalized_top_left": [
+            0.18,
+            0.68
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "LUNA",
+          "normalized_top_left": [
+            0.3,
+            0.74
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "AIRA",
+          "normalized_top_left": [
+            0.43,
+            0.68
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "NOIR",
+          "normalized_top_left": [
+            0.55,
+            0.74
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "ENEMY_QA_ONLY",
+          "normalized_top_left": [
+            0.79,
+            0.7
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "QA_ONLY rectangle for enemy only"
+        }
+      ],
+      "avoid_regions_QA_ONLY": {
+        "pool_and_crystal_banks": [
+          [
+            0,
+            0.3
+          ],
+          [
+            1,
+            0.3
+          ],
+          [
+            1,
+            0.52
+          ],
+          [
+            0,
+            0.52
+          ]
+        ],
+        "edge_crystal_boulders": [
+          [
+            0,
+            0.65
+          ],
+          [
+            0.12,
+            0.65
+          ],
+          [
+            0.12,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0.88,
+            0.65
+          ],
+          [
+            1,
+            0.65
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0.88,
+            1
+          ]
+        ]
+      },
+      "capture_screenshots": {
+        "402pt": {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/captures/402pt/VAR_A_R03_03_R002.png",
+          "sha256": "c6d5c6f333e0f6d3a28c719ba1fab7dfcc439de4e4f28344fe8f4149d9450b0f",
+          "pixel_size": [
+            1206,
+            2622
+          ],
+          "capture_status": "CAPTURED_SIMULATOR"
+        },
+        "375pt": {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/captures/375pt/VAR_A_R03_03_R002.png",
+          "sha256": "11aea1aea0c0eedec475c46cb1eb9bfc373dc541bbea90c4037818ba155848f5",
+          "pixel_size": [
+            750,
+            1334
+          ],
+          "capture_status": "CAPTURED_SIMULATOR"
+        }
+      },
+      "visual_semantic_note": "Layout-only visual inspection; semantic/art approval remains pending.",
+      "region_id": "R03",
+      "location_id": "A_R03_03",
+      "display_name": "雲母の地下湖",
+      "asset_kind": "area_variant",
+      "R4_intent": "黒い地下湖、扇状雲母層、控えめな柱晶。小光量で装備色と混同しない。",
+      "R4_required_deliverables": "FIELD差分sprite、保護床/anchor、低輝度確認、合成レシピ"
+    },
+    {
+      "asset_id": "BG_R04_BOSS",
+      "revision": "R001_candidate+R002_layout_review",
+      "input_candidate_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/new_12_delivery_r001/BG_R04_BOSS/runtime/BG_R04_BOSS__fullframe_review_candidate__r001.png",
+      "input_candidate_sha256": "30a1dac8fd30c20b3e28d29f1a34c4dcd1bd42b24afbb1fa226d2d8c74cadcb1",
+      "gallery_resource_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/source/Resources/BG_R04_BOSS.png",
+      "gallery_resource_sha256": "30a1dac8fd30c20b3e28d29f1a34c4dcd1bd42b24afbb1fa226d2d8c74cadcb1",
+      "source_resource_byte_exact": true,
+      "review_status": "VISUAL_CANDIDATE",
+      "individual_human_approval": "PENDING",
+      "formal_adoption": false,
+      "r4_technical_kit_complete": false,
+      "iphone_physical_test": false,
+      "floor_mask_QA_ONLY": {
+        "coordinate_system": "normalized full-frame source image; origin top-left",
+        "polygon": [
+          [
+            0.16,
+            0.57
+          ],
+          [
+            0.84,
+            0.57
+          ],
+          [
+            0.82,
+            0.84
+          ],
+          [
+            0.18,
+            0.84
+          ]
+        ],
+        "quality": "manual conservative planning overlay; not a pixel mask and not runtime-approved"
+      },
+      "foot_anchors_QA_ONLY": [
+        {
+          "actor": "ERNA",
+          "normalized_top_left": [
+            0.19,
+            0.7
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "LUNA",
+          "normalized_top_left": [
+            0.31,
+            0.76
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "AIRA",
+          "normalized_top_left": [
+            0.44,
+            0.7
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "NOIR",
+          "normalized_top_left": [
+            0.56,
+            0.76
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "ENEMY_QA_ONLY",
+          "normalized_top_left": [
+            0.79,
+            0.72
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "QA_ONLY rectangle for enemy only"
+        }
+      ],
+      "avoid_regions_QA_ONLY": {
+        "side_cliff_and_icefall": [
+          [
+            0,
+            0
+          ],
+          [
+            0.16,
+            0
+          ],
+          [
+            0.16,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0.84,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0.84,
+            1
+          ]
+        ],
+        "foreground_edge_rocks": [
+          [
+            0,
+            0.84
+          ],
+          [
+            1,
+            0.84
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "capture_screenshots": {
+        "402pt": {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/captures/402pt/BG_R04_BOSS_R002.png",
+          "sha256": "7afcae385d1d5634e52e4ad5135c0a8801117c547c9f240a22136598c9cb89e3",
+          "pixel_size": [
+            1206,
+            2622
+          ],
+          "capture_status": "CAPTURED_SIMULATOR"
+        },
+        "375pt": {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/captures/375pt/BG_R04_BOSS_R002.png",
+          "sha256": "d08f8d2970e8ab016fa8dd91803fe7df09cbb5f5b027c309478c62d1a7297803",
+          "pixel_size": [
+            750,
+            1334
+          ],
+          "capture_status": "CAPTURED_SIMULATOR"
+        }
+      },
+      "visual_semantic_note": "Layout-only visual inspection; semantic/art approval remains pending.",
+      "region_id": "R04",
+      "location_id": "A_R04_04",
+      "display_name": "白霜の山嶺 BOSS / 月氷竜の岩棚",
+      "asset_kind": "background_kit",
+      "R4_intent": "月氷竜の暗い岩棚。人と竜の尺度差、頭/胸/翼のうち必要部位と予告域を右上に確保。",
+      "R4_required_deliverables": "far/back/playfield/front、floor masks、white-boss contrast、boss-scale/crop/attack-space QA"
+    },
+    {
+      "asset_id": "VAR_A_R04_02",
+      "revision": "R001_candidate+R002_layout_review",
+      "input_candidate_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/new_12_delivery_r001/VAR_A_R04_02/runtime/VAR_A_R04_02__fullframe_review_candidate__r001.png",
+      "input_candidate_sha256": "7b1608945f6ec9e412822f2ef28ac3c5006ee846c66dc113b803d30ec417e934",
+      "gallery_resource_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/source/Resources/VAR_A_R04_02.png",
+      "gallery_resource_sha256": "7b1608945f6ec9e412822f2ef28ac3c5006ee846c66dc113b803d30ec417e934",
+      "source_resource_byte_exact": true,
+      "review_status": "PARTIAL_VISUAL_CANDIDATE",
+      "individual_human_approval": "PENDING",
+      "formal_adoption": false,
+      "r4_technical_kit_complete": false,
+      "iphone_physical_test": false,
+      "floor_mask_QA_ONLY": {
+        "coordinate_system": "normalized full-frame source image; origin top-left",
+        "polygon": [
+          [
+            0.1,
+            0.55
+          ],
+          [
+            0.9,
+            0.55
+          ],
+          [
+            0.86,
+            0.88
+          ],
+          [
+            0.14,
+            0.88
+          ]
+        ],
+        "quality": "manual conservative planning overlay; not a pixel mask and not runtime-approved"
+      },
+      "foot_anchors_QA_ONLY": [
+        {
+          "actor": "ERNA",
+          "normalized_top_left": [
+            0.17,
+            0.68
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "LUNA",
+          "normalized_top_left": [
+            0.29,
+            0.74
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "AIRA",
+          "normalized_top_left": [
+            0.42,
+            0.68
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "NOIR",
+          "normalized_top_left": [
+            0.54,
+            0.75
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "ENEMY_QA_ONLY",
+          "normalized_top_left": [
+            0.78,
+            0.7
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "QA_ONLY rectangle for enemy only"
+        }
+      ],
+      "avoid_regions_QA_ONLY": {
+        "side_rocks_and_red_core_grass": [
+          [
+            0,
+            0.5
+          ],
+          [
+            0.13,
+            0.5
+          ],
+          [
+            0.13,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0.87,
+            0.5
+          ],
+          [
+            1,
+            0.5
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0.87,
+            1
+          ]
+        ]
+      },
+      "capture_screenshots": {
+        "402pt": {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/captures/402pt/VAR_A_R04_02_R002.png",
+          "sha256": "003a9a89fb3b1c769f6212b21f31573684f529e1161b9133b9b5a131c70c7b9f",
+          "pixel_size": [
+            1206,
+            2622
+          ],
+          "capture_status": "CAPTURED_SIMULATOR"
+        },
+        "375pt": {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/captures/375pt/VAR_A_R04_02_R002.png",
+          "sha256": "39792f57134faa88f724fc38178e2bd91ad05f9a1315c8043ab225c3172b2377",
+          "pixel_size": [
+            750,
+            1334
+          ],
+          "capture_status": "CAPTURED_SIMULATOR"
+        }
+      },
+      "visual_semantic_note": "The specified single-arc horn shadow is not legible; avoid formal adoption pending local revision.",
+      "region_id": "R04",
+      "location_id": "A_R04_02",
+      "display_name": "白角の稜線",
+      "asset_kind": "area_variant",
+      "R4_intent": "広い雪面と谷、薄い吹雪、風向きと一本弧角の影が読める。",
+      "R4_required_deliverables": "FIELD差分sprite、保護床/anchor、風向/影形と小画面可読性、合成レシピ"
+    },
+    {
+      "asset_id": "VAR_A_R04_03",
+      "revision": "R001_candidate+R002_layout_review",
+      "input_candidate_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/new_12_delivery_r001/VAR_A_R04_03/runtime/VAR_A_R04_03__fullframe_review_candidate__r001.png",
+      "input_candidate_sha256": "bd2689c4327b0bc63174c51b13b423de70ad73412ea7d0f6c54ea72256468de1",
+      "gallery_resource_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/source/Resources/VAR_A_R04_03.png",
+      "gallery_resource_sha256": "bd2689c4327b0bc63174c51b13b423de70ad73412ea7d0f6c54ea72256468de1",
+      "source_resource_byte_exact": true,
+      "review_status": "VISUAL_CANDIDATE",
+      "individual_human_approval": "PENDING",
+      "formal_adoption": false,
+      "r4_technical_kit_complete": false,
+      "iphone_physical_test": false,
+      "floor_mask_QA_ONLY": {
+        "coordinate_system": "normalized full-frame source image; origin top-left",
+        "polygon": [
+          [
+            0.14,
+            0.65
+          ],
+          [
+            0.86,
+            0.65
+          ],
+          [
+            0.84,
+            0.88
+          ],
+          [
+            0.16,
+            0.88
+          ]
+        ],
+        "quality": "manual conservative planning overlay; not a pixel mask and not runtime-approved"
+      },
+      "foot_anchors_QA_ONLY": [
+        {
+          "actor": "ERNA",
+          "normalized_top_left": [
+            0.18,
+            0.67
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "LUNA",
+          "normalized_top_left": [
+            0.3,
+            0.73
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "AIRA",
+          "normalized_top_left": [
+            0.43,
+            0.68
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "NOIR",
+          "normalized_top_left": [
+            0.55,
+            0.74
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "ENEMY_QA_ONLY",
+          "normalized_top_left": [
+            0.79,
+            0.7
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "QA_ONLY rectangle for enemy only"
+        }
+      ],
+      "avoid_regions_QA_ONLY": {
+        "tower_steps_and_tower_base": [
+          [
+            0.3,
+            0.0
+          ],
+          [
+            0.66,
+            0.0
+          ],
+          [
+            0.66,
+            0.66
+          ],
+          [
+            0.3,
+            0.66
+          ]
+        ],
+        "outer_edge_rocks": [
+          [
+            0,
+            0.8
+          ],
+          [
+            0.14,
+            0.8
+          ],
+          [
+            0.14,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0.86,
+            0.8
+          ],
+          [
+            1,
+            0.8
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0.86,
+            1
+          ]
+        ]
+      },
+      "capture_screenshots": {
+        "402pt": {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/captures/402pt/VAR_A_R04_03_R002.png",
+          "sha256": "2272c2ff8ce1eff455f75e7eeaa9cd2190c780ddb59bb2adb19b162b907c760a",
+          "pixel_size": [
+            1206,
+            2622
+          ],
+          "capture_status": "CAPTURED_SIMULATOR"
+        },
+        "375pt": {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/captures/375pt/VAR_A_R04_03_R002.png",
+          "sha256": "facbfb7bfb257c4f1e0eb5e83d6c27ef8f615948d1b3152740a6ff462e3756a6",
+          "pixel_size": [
+            750,
+            1334
+          ],
+          "capture_status": "CAPTURED_SIMULATOR"
+        }
+      },
+      "visual_semantic_note": "Layout-only visual inspection; semantic/art approval remains pending.",
+      "region_id": "R04",
+      "location_id": "A_R04_03",
+      "display_name": "風編みの観測塔",
+      "asset_kind": "area_variant",
+      "R4_intent": "風化した円窓の観測塔、月形器、長い銀灰繊維。塔は戦場後方。",
+      "R4_required_deliverables": "FIELD差分sprite、塔/器の後景分離、保護床/anchor、合成レシピと縮小表示QA"
+    },
+    {
+      "asset_id": "BG_R05_BOSS",
+      "revision": "R001_candidate+R002_layout_review",
+      "input_candidate_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/new_12_delivery_r001/BG_R05_BOSS/runtime/BG_R05_BOSS__fullframe_review_candidate__r001.png",
+      "input_candidate_sha256": "ea62b4306b9f17264d3089362fd9ad19eda9830b2e5d3586eb90a048f187e975",
+      "gallery_resource_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/source/Resources/BG_R05_BOSS.png",
+      "gallery_resource_sha256": "ea62b4306b9f17264d3089362fd9ad19eda9830b2e5d3586eb90a048f187e975",
+      "source_resource_byte_exact": true,
+      "review_status": "VISUAL_CANDIDATE",
+      "individual_human_approval": "PENDING",
+      "formal_adoption": false,
+      "r4_technical_kit_complete": false,
+      "iphone_physical_test": false,
+      "floor_mask_QA_ONLY": {
+        "coordinate_system": "normalized full-frame source image; origin top-left",
+        "polygon": [
+          [
+            0.12,
+            0.48
+          ],
+          [
+            0.88,
+            0.48
+          ],
+          [
+            0.85,
+            0.86
+          ],
+          [
+            0.15,
+            0.86
+          ]
+        ],
+        "quality": "manual conservative planning overlay; not a pixel mask and not runtime-approved"
+      },
+      "foot_anchors_QA_ONLY": [
+        {
+          "actor": "ERNA",
+          "normalized_top_left": [
+            0.17,
+            0.68
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "LUNA",
+          "normalized_top_left": [
+            0.29,
+            0.74
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "AIRA",
+          "normalized_top_left": [
+            0.43,
+            0.68
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "NOIR",
+          "normalized_top_left": [
+            0.55,
+            0.75
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "ENEMY_QA_ONLY",
+          "normalized_top_left": [
+            0.79,
+            0.71
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "QA_ONLY rectangle for enemy only"
+        }
+      ],
+      "avoid_regions_QA_ONLY": {
+        "garden_arch_and_greenhouse_posts": [
+          [
+            0,
+            0.0
+          ],
+          [
+            0.13,
+            0.0
+          ],
+          [
+            0.13,
+            0.72
+          ],
+          [
+            0,
+            0.72
+          ],
+          [
+            0.87,
+            0.0
+          ],
+          [
+            1,
+            0.0
+          ],
+          [
+            1,
+            0.72
+          ],
+          [
+            0.87,
+            0.72
+          ]
+        ],
+        "lower_corner_vines": [
+          [
+            0,
+            0.85
+          ],
+          [
+            0.18,
+            0.85
+          ],
+          [
+            0.18,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0.82,
+            0.85
+          ],
+          [
+            1,
+            0.85
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0.82,
+            1
+          ]
+        ]
+      },
+      "capture_screenshots": {
+        "402pt": {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/captures/402pt/BG_R05_BOSS_R002.png",
+          "sha256": "63c16f627d177d5c77c9fe407a1e98bb8221e6fb96a8edb9a3c72869fabe24d5",
+          "pixel_size": [
+            1206,
+            2622
+          ],
+          "capture_status": "CAPTURED_SIMULATOR"
+        },
+        "375pt": {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/captures/375pt/BG_R05_BOSS_R002.png",
+          "sha256": "a69e5663df68ed0fe2e288fc51a72adda1a88ff9deab61aca7eadcd0f68c4f92",
+          "pixel_size": [
+            750,
+            1334
+          ],
+          "capture_status": "CAPTURED_SIMULATOR"
+        }
+      },
+      "visual_semantic_note": "Layout-only visual inspection; semantic/art approval remains pending.",
+      "region_id": "R05",
+      "location_id": "A_R05_04",
+      "display_name": "月隠れの古庭 BOSS / 庭守りの月苑",
+      "asset_kind": "background_kit",
+      "R4_intent": "静かな月苑。中心は独立アクター月鹿のため空け、背後の小研究小屋は魔女の家と呼応。",
+      "R4_required_deliverables": "far/back/playfield/front、floor mask、独立actor clearance、cottage-shape review、no-boss-in-background QA"
+    },
+    {
+      "asset_id": "VAR_A_R05_02",
+      "revision": "R001_candidate+R002_layout_review",
+      "input_candidate_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/new_12_delivery_r001/VAR_A_R05_02/runtime/VAR_A_R05_02__fullframe_review_candidate__r001.png",
+      "input_candidate_sha256": "f21870c431fbd9610c108910d0bfaa2e4a032f84f5681ff362bd3329b4104bb0",
+      "gallery_resource_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/source/Resources/VAR_A_R05_02.png",
+      "gallery_resource_sha256": "f21870c431fbd9610c108910d0bfaa2e4a032f84f5681ff362bd3329b4104bb0",
+      "source_resource_byte_exact": true,
+      "review_status": "VISUAL_CANDIDATE",
+      "individual_human_approval": "PENDING",
+      "formal_adoption": false,
+      "r4_technical_kit_complete": false,
+      "iphone_physical_test": false,
+      "floor_mask_QA_ONLY": {
+        "coordinate_system": "normalized full-frame source image; origin top-left",
+        "polygon": [
+          [
+            0.12,
+            0.5
+          ],
+          [
+            0.88,
+            0.5
+          ],
+          [
+            0.85,
+            0.87
+          ],
+          [
+            0.15,
+            0.87
+          ]
+        ],
+        "quality": "manual conservative planning overlay; not a pixel mask and not runtime-approved"
+      },
+      "foot_anchors_QA_ONLY": [
+        {
+          "actor": "ERNA",
+          "normalized_top_left": [
+            0.18,
+            0.68
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "LUNA",
+          "normalized_top_left": [
+            0.3,
+            0.74
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "AIRA",
+          "normalized_top_left": [
+            0.43,
+            0.68
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "NOIR",
+          "normalized_top_left": [
+            0.55,
+            0.74
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "ENEMY_QA_ONLY",
+          "normalized_top_left": [
+            0.79,
+            0.7
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "QA_ONLY rectangle for enemy only"
+        }
+      ],
+      "avoid_regions_QA_ONLY": {
+        "greenhouse_frame_and_arm_mechanisms": [
+          [
+            0.2,
+            0.0
+          ],
+          [
+            0.8,
+            0.0
+          ],
+          [
+            0.8,
+            0.51
+          ],
+          [
+            0.2,
+            0.51
+          ]
+        ],
+        "outer_corner_vines": [
+          [
+            0,
+            0.78
+          ],
+          [
+            0.15,
+            0.78
+          ],
+          [
+            0.15,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0.85,
+            0.78
+          ],
+          [
+            1,
+            0.78
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0.85,
+            1
+          ]
+        ]
+      },
+      "capture_screenshots": {
+        "402pt": {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/captures/402pt/VAR_A_R05_02_R002.png",
+          "sha256": "2b97339801a132a3262affb3f5ca117bfce4a4bd10c193b8a602a088f53f0238",
+          "pixel_size": [
+            1206,
+            2622
+          ],
+          "capture_status": "CAPTURED_SIMULATOR"
+        },
+        "375pt": {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/captures/375pt/VAR_A_R05_02_R002.png",
+          "sha256": "a8ffbc9414f8e2df7711f7bad855e1b87fc56c4da1d5275c4889c4591f110bcb",
+          "pixel_size": [
+            750,
+            1334
+          ],
+          "capture_status": "CAPTURED_SIMULATOR"
+        }
+      },
+      "visual_semantic_note": "Layout-only visual inspection; semantic/art approval remains pending.",
+      "region_id": "R05",
+      "location_id": "A_R05_02",
+      "display_name": "剪定機の温室",
+      "asset_kind": "area_variant",
+      "R4_intent": "透明温室、剪定円弧構架、二腕輪装置を背景の建築とアクターで分離。広さは床予告に委ねる。",
+      "R4_required_deliverables": "FIELD差分sprite、glass/arch/mechanismを独立レイヤー、床予告域は空ける、protected floor/anchor、recipe"
+    },
+    {
+      "asset_id": "VAR_A_R05_03",
+      "revision": "R001_candidate+R002_layout_review",
+      "input_candidate_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/new_12_delivery_r001/VAR_A_R05_03/runtime/VAR_A_R05_03__fullframe_review_candidate__r001.png",
+      "input_candidate_sha256": "fc78fcdca595bde962d7979d8e56c75c4c2cc6a324482d43e0ef6f99d5b6df8e",
+      "gallery_resource_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/source/Resources/VAR_A_R05_03.png",
+      "gallery_resource_sha256": "fc78fcdca595bde962d7979d8e56c75c4c2cc6a324482d43e0ef6f99d5b6df8e",
+      "source_resource_byte_exact": true,
+      "review_status": "VISUAL_CANDIDATE",
+      "individual_human_approval": "PENDING",
+      "formal_adoption": false,
+      "r4_technical_kit_complete": false,
+      "iphone_physical_test": false,
+      "floor_mask_QA_ONLY": {
+        "coordinate_system": "normalized full-frame source image; origin top-left",
+        "polygon": [
+          [
+            0.13,
+            0.5
+          ],
+          [
+            0.87,
+            0.5
+          ],
+          [
+            0.84,
+            0.86
+          ],
+          [
+            0.16,
+            0.86
+          ]
+        ],
+        "quality": "manual conservative planning overlay; not a pixel mask and not runtime-approved"
+      },
+      "foot_anchors_QA_ONLY": [
+        {
+          "actor": "ERNA",
+          "normalized_top_left": [
+            0.17,
+            0.7
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "LUNA",
+          "normalized_top_left": [
+            0.3,
+            0.75
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "AIRA",
+          "normalized_top_left": [
+            0.43,
+            0.69
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "NOIR",
+          "normalized_top_left": [
+            0.55,
+            0.76
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "exact B/native_r005 idle PNG reused byte-for-byte; static display only"
+        },
+        {
+          "actor": "ENEMY_QA_ONLY",
+          "normalized_top_left": [
+            0.79,
+            0.72
+          ],
+          "foot_semantics": "proposed foot contact point; manually estimated",
+          "body_proxy": "QA_ONLY rectangle for enemy only"
+        }
+      ],
+      "avoid_regions_QA_ONLY": {
+        "moon_seed_and_dew_crystals_behind_playfloor": [
+          [
+            0.12,
+            0.0
+          ],
+          [
+            0.88,
+            0.0
+          ],
+          [
+            0.88,
+            0.48
+          ],
+          [
+            0.12,
+            0.48
+          ]
+        ],
+        "side_planters": [
+          [
+            0,
+            0.56
+          ],
+          [
+            0.13,
+            0.56
+          ],
+          [
+            0.13,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0.87,
+            0.56
+          ],
+          [
+            1,
+            0.56
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0.87,
+            1
+          ]
+        ]
+      },
+      "capture_screenshots": {
+        "402pt": {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/captures/402pt/VAR_A_R05_03_R002.png",
+          "sha256": "53af3378b40f276288d3c0679769b9fcea62b8a6c3abefa9de6c0a60d5a4c7b0",
+          "pixel_size": [
+            1206,
+            2622
+          ],
+          "capture_status": "CAPTURED_SIMULATOR"
+        },
+        "375pt": {
+          "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/captures/375pt/VAR_A_R05_03_R002.png",
+          "sha256": "55e511b8fc687af42e0d80f80952d535c643681e5cf83d415c538d98e663d3c8",
+          "pixel_size": [
+            750,
+            1334
+          ],
+          "capture_status": "CAPTURED_SIMULATOR"
+        }
+      },
+      "visual_semantic_note": "Layout-only visual inspection; semantic/art approval remains pending.",
+      "region_id": "R05",
+      "location_id": "A_R05_03",
+      "display_name": "月露の種床",
+      "asset_kind": "area_variant",
+      "R4_intent": "現実時刻に依存しない常夜の青と室内の金。三日月形の眠り種、露形晶。",
+      "R4_required_deliverables": "FIELD差分sprite、種床/露晶を背景と採取nodeに分離、保護床/anchor、no-real-time-gating visual QA、recipe"
+    }
+  ],
+  "capture_counts": {
+    "402pt": 12,
+    "375pt": 12,
+    "total": 24
+  },
+  "quality_checks": {
+    "screen_aspect_preserved": true,
+    "source_backgrounds_show_embedded_text_or_UI": false,
+    "QA_overlay_only": true,
+    "character_sprite_resource_copies_byte_exact": true,
+    "backgrounds_byte_exact_from_R001": true,
+    "anchor_presence": true,
+    "enemy_is_proxy_only": true,
+    "floor_mask_is_QA_only": true,
+    "source_backgrounds_visually_have_no_embedded_text_or_UI": "PASS on 12 candidate full-frame source images",
+    "all_24_captures_reviewed_as_layout_preview": "PASS",
+    "status": "display/layout preview only; no gameplay or integration"
+  },
+  "out_of_scope_capture_artifacts": "Six early test/diagnostic captures are preserved in captures/excluded_diagnostics/ and excluded from the 24 manifest-listed R002 images.",
+  "source_tree": {
+    "swift_source_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/source/Gallery.swift",
+    "swift_source_sha256": "d97ca0210efee5512d39f06574a4e55584a9ad3bf3f436d1527449eec200027a",
+    "build_script_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/source/BUILD_IN_SIMULATOR.sh",
+    "build_script_sha256": "1ef7b168383049ec0611f9a477bfd2b28e84003d9b78bc112087ab27fc184b61",
+    "build_method": "xcrun swiftc -parse-as-library for arm64 iOS Simulator, then local app bundle with resource copies; app installed/launched from build/LayoutGallery.app",
+    "built_binary_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/build/LayoutGallery.app/LayoutGallery",
+    "built_binary_sha256": "64b5dc3a6b5279048636818c87b61e30a629a6e516b07fd4d6e60d716b0b6aab",
+    "xcode_project_build": "BUILD_SUCCEEDED, but Simulator installation of that Xcode-generated bundle returned Missing bundle ID; final captured build is reproducible via BUILD_IN_SIMULATOR.sh and installed successfully."
+  },
+  "contactsheets": {
+    "402pt": {
+      "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/qa/CONTACTSHEET_402PT_R002.jpg",
+      "sha256": "d125badf02912516449c4c5437a56ca1445884d1ed0e66178daf351fd51d6d75"
+    },
+    "375pt": {
+      "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r001/qa/CONTACTSHEET_375PT_R002.jpg",
+      "sha256": "15e15016f47e02c9704ddcdf0df64e673f2ae3e263c64ddef499c8a1a553e370"
+    }
+  },
+  "existing_candidate_visual_review_revision": "R001; original candidate, prompt, ORA, R001 index and QA retained unchanged",
+  "status_counts_R002": {
+    "visual_layout_review_candidate": 8,
+    "partial_requires_revision": 4,
+    "formal_Human_approval": 0,
+    "R4_technical_kit_complete": 0,
+    "physical_iPhone_test": 0
+  },
+  "status_counts_R003": {
+    "visual_layout_candidate": 9,
+    "partial_requires_revision": 3,
+    "formal_Human_approval": 0,
+    "R4_technical_kit_complete": 0,
+    "physical_iPhone_test": 0
+  },
+  "r003_single_asset_update": {
+    "asset_id": "VAR_A_R02_02",
+    "old_candidate_r001_retained": true,
+    "new_candidate_r002_path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/new_12_delivery_r002/VAR_A_R02_02",
+    "native375_capture": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r003/captures/375pt/VAR_A_R02_02_R003.png",
+    "native402_capture": "NOT_CAPTURED",
+    "simulator_shutdown": {
+      "status": "SHUTDOWN_VERIFIED",
+      "devices": [
+        {
+          "uuid": "C6495BDE-00AC-40E1-B221-35829CEDFD15",
+          "device": "iPhone 17",
+          "state": "Shutdown"
+        },
+        {
+          "uuid": "9E3DA9FB-7478-47F9-A46F-630B235B5729",
+          "device": "iPhone SE (3rd generation)",
+          "state": "Shutdown"
+        }
+      ],
+      "app_termination": "local.codex.g2.layout-gallery.qa terminated where running; no simulator/app deletion"
+    }
+  },
+  "scope_notice": "R003 only updates the R02 A_02 semantic candidate and its 375pt layout display. Other 11 units carry forward their R002 record; only BG_R03_BOSS, VAR_A_R03_02 and VAR_A_R04_02 remain partial.",
+  "source_tree_r003": {
+    "gallery_source": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r003/source/Gallery.swift",
+    "gallery_source_sha256": "d97ca0210efee5512d39f06574a4e55584a9ad3bf3f436d1527449eec200027a",
+    "build_script": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r003/source/BUILD_IN_SIMULATOR.sh",
+    "build_script_sha256": "c4db23f2b020cb537cc1e38e893c1ad8567d0a7b40f977c1e4f7c5000aa02e95",
+    "built_binary": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/native_layout_review_r003/build/LayoutGallery.app/LayoutGallery",
+    "built_binary_sha256": "64b5dc3a6b5279048636818c87b61e30a629a6e516b07fd4d6e60d716b0b6aab",
+    "simulator": "iPhone SE (3rd generation), iOS 26.5, 9E3DA9FB-7478-47F9-A46F-630B235B5729; 375pt; capture pixels 750x1334"
+  }
+}

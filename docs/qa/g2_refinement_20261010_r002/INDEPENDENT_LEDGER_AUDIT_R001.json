@@ -1,0 +1,228 @@
+{
+  "schema": "codex.g2.independent_ledger_audit.r001",
+  "audit_date": "2026-10-10",
+  "auditor_scope": "Read-only reconciliation of latest 159-unit ledger against local R4 authority, actor R003, background layout R003, static14 R006; all recorded file path/SHA/byte claims actually read and verified. No ledger/design/assets edited.",
+  "sources": [
+    {
+      "label": "ledger_json",
+      "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/planning/UPDATED_159_LEDGER_R001.json",
+      "bytes": 5996330,
+      "sha256": "1407649335d1e76dfbc76863549f3555c8ba05fb8cd8450f7deda0eaab8d454c",
+      "matches_ledger_expected": null
+    },
+    {
+      "label": "ledger_csv",
+      "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/planning/UPDATED_159_LEDGER_R001.csv",
+      "bytes": 35370,
+      "sha256": "3a020d3f99ee0cf07332d0b3c207f3b2ec59f6c214ca94a2d369aa0149317749",
+      "matches_ledger_expected": null
+    },
+    {
+      "label": "R4_work_packages",
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/data/work_packages_R4.json",
+      "bytes": 95131,
+      "sha256": "b672179a123c83c04174ca3215636fa4aa00546671623003f8c4fae9f34dbcdc",
+      "matches_ledger_expected": true
+    },
+    {
+      "label": "protected_baseline_ledger",
+      "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/planning/UPDATED_159_LEDGER_R003.json",
+      "bytes": 5699810,
+      "sha256": "840debc2f460fd8ca26b5d4b3ec1f2fce17ad4831a62839bb58e984904abc633",
+      "matches_ledger_expected": true
+    },
+    {
+      "label": "ACTOR_NEW_21_R003",
+      "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/planning/ACTOR_NEW_21_R003.json",
+      "bytes": 44396,
+      "sha256": "5c18a3f051e396583d6ff22659f0630da1be8ef4d3f3df0437878f87082491f8",
+      "matches_ledger_expected": null
+    },
+    {
+      "label": "BACKGROUND_NEW_12_LAYOUT_REVIEW_R003",
+      "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/planning/BACKGROUND_NEW_12_LAYOUT_REVIEW_R003.json",
+      "bytes": 72697,
+      "sha256": "d103f187397b2aa5ba8ab89cce3574ee264ecf4ffeac65f18924dbf6d2a126ab",
+      "matches_ledger_expected": null
+    },
+    {
+      "label": "FINAL_STATIC14_INDEX_R006",
+      "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/planning/FINAL_STATIC14_INDEX_R006.json",
+      "bytes": 60740,
+      "sha256": "e98402a86ca6a582e6aa1726ecdc3143c34ae099213651012ee8bb0efc531396",
+      "matches_ledger_expected": null
+    },
+    {
+      "label": "BACKGROUND_NEW_12_INDEX_R002",
+      "path": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/planning/BACKGROUND_NEW_12_INDEX_R002.json",
+      "bytes": 48237,
+      "sha256": "189e4f7a28f8474ea9d46d81c4c2f5175a8b3c7100de9e66e206a1afe35ad387",
+      "matches_ledger_expected": null
+    }
+  ],
+  "catalog_reconciliation": {
+    "ledger_units": 159,
+    "unique_ledger_ids": 159,
+    "catalog_units": 159,
+    "unique_catalog_ids": 159,
+    "missing_ids": [],
+    "extra_ids": [],
+    "duplicate_ids": [],
+    "ledger_kind_counts": {
+      "ambient_kit": 5,
+      "area_variant": 10,
+      "background_kit": 10,
+      "combat_vfx_kit": 5,
+      "enemy_actor_kit": 30,
+      "gather_prop": 20,
+      "gear_icon": 29,
+      "material_icon": 50
+    },
+    "catalog_kind_counts": {
+      "ambient_kit": 5,
+      "area_variant": 10,
+      "background_kit": 10,
+      "combat_vfx_kit": 5,
+      "enemy_actor_kit": 30,
+      "gather_prop": 20,
+      "gear_icon": 29,
+      "material_icon": 50
+    },
+    "ledger_region_counts": {
+      "R01": 36,
+      "R02": 31,
+      "R03": 30,
+      "R04": 29,
+      "R05": 33
+    },
+    "catalog_region_counts": {
+      "R01": 36,
+      "R02": 31,
+      "R03": 30,
+      "R04": 29,
+      "R05": 33
+    },
+    "csv_rows": 159,
+    "csv_id_set_matches_json": true,
+    "result": "PASS"
+  },
+  "all_file_record_checks": {
+    "updated_159_ledger_file_references_read": 4232,
+    "unique_files_read_and_sha256_hashed": 3028,
+    "unique_bytes_read": 913533869,
+    "ledger_missing_or_sha_or_size_issues": [],
+    "result": "PASS",
+    "supporting_indexes_path_sha_records_verified": {
+      "ACTOR_NEW_21_R003": 102,
+      "BACKGROUND_NEW_12_LAYOUT_REVIEW_R003": 61,
+      "FINAL_STATIC14_INDEX_R006": 92,
+      "BACKGROUND_NEW_12_INDEX_R002": 25
+    },
+    "supporting_index_path_sha_issues": [],
+    "supporting_index_result": "PASS"
+  },
+  "new_33_payloads": {
+    "ledger_count_claim": 33,
+    "actor_index_units": 21,
+    "actor_all_source_payloads_present_claim": true,
+    "background_index_units": 12,
+    "background_candidate_count": 9,
+    "background_partial_count": 3,
+    "expected_composition": "21 actor payload units + 12 background/location payload units",
+    "actor_4_explicit_rejects": {
+      "ACT_E_R02_01": {
+        "candidate_eligible": null,
+        "animation_kit": "NOT_COMPLETE",
+        "formal_adoption": false,
+        "game_integration": false,
+        "physical_iphone": false
+      },
+      "ACT_B_R03_B": {
+        "candidate_eligible": null,
+        "animation_kit": "NOT_COMPLETE",
+        "formal_adoption": false,
+        "game_integration": false,
+        "physical_iphone": false
+      },
+      "ACT_E_R04_02": {
+        "candidate_eligible": null,
+        "animation_kit": "NOT_COMPLETE",
+        "formal_adoption": false,
+        "game_integration": false,
+        "physical_iphone": false
+      },
+      "ACT_E_R05_02": {
+        "candidate_eligible": null,
+        "animation_kit": "NOT_COMPLETE",
+        "formal_adoption": false,
+        "game_integration": false,
+        "physical_iphone": false
+      }
+    },
+    "rejects_marked_complete": false,
+    "R4_technical_kits_complete_count": 0,
+    "formal_Human_adoptions": 0,
+    "physical_iPhone_verified": 0,
+    "interpretation": "Payload/file presence and candidate status are not production completion. Four actor concepts remain explicitly rejected; 9 background rows are candidates and 3 remain partial."
+  },
+  "protected_84_and_static_repairs": {
+    "protected_prior_qualified_population": 84,
+    "expected_84_matches_ledger_and_baseline_count": false,
+    "protected_baseline_stages": {
+      "UNAPPROVED_GATHER_STATE_EXPORT_CANDIDATE": 18,
+      "UNAPPROVED_STATIC_EXPORT_CANDIDATE": 66
+    },
+    "current_QA_labels_on_protected_population": {
+      "PASS_RGBA_PNG_64_128_256_SOURCE_EDITABLE_HASH": 66,
+      "PASS_TWO_STATE_PNG_READBACK_ONLY": 18
+    },
+    "static_repair_population": 15,
+    "static14_index_units": 14,
+    "static14_all_unresolved_no_promotion": true,
+    "static14_ids": [
+      "NODE_M_R01_G1",
+      "ICO_M_R01_G4",
+      "NODE_M_R03_G2",
+      "ICO_M_R04_G1",
+      "ICO_M_R04_G3",
+      "ICO_M_R05_G3",
+      "ICO_M_R05_G4",
+      "ICO_M_R01_E2",
+      "ICO_M_R01_BB",
+      "ICO_M_R02_E3",
+      "ICO_M_R04_E1",
+      "ICO_M_R04_BB",
+      "ICO_M_R05_E3",
+      "ICO_EQ_S_03"
+    ],
+    "extra_scoped_64pt_candidate_outside_static14": "ICO_EQ_W_P2",
+    "interpretation": "The size-scoped 64pt result does not make a full/static14 pass; R006 retains all 14 as unresolved. The 84 protected prior units keep their limited prior QA classifications; none is a full R4 kit or Human-adopted."
+  },
+  "latest_candidate_reconciliation": {
+    "asset_id": "VAR_A_R02_02",
+    "R003_current_candidate_runtime": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/background/new_12_delivery_r002/VAR_A_R02_02/runtime/VAR_A_R02_02__fullframe_review_candidate__r002.png",
+    "R003_runtime_sha256": "1d0e565223cca8b9e2c8701820f5cdc723499da7c4308e11eefadc9a3184905f",
+    "ledger_R001_candidate_file_paths_include_latest_r003_runtime": true,
+    "finding": "PASS_CURRENT_REFERENCE: UPDATED_159_LEDGER_R001 contains VAR_A_R02_02 r002 candidate source/runtime/ORA/provenance and the R003 375pt capture with hashes matching BACKGROUND_NEW_12_LAYOUT_REVIEW_R003. It correctly leaves individual adoption and full-kit status false; the post-revision 402pt capture remains not captured."
+  },
+  "stage_and_QA_semantics": [
+    "source payload exists = source presence only; not runtime readiness, complete kit, adoption, or device verification.",
+    "NATIVE_LAYOUT_ONLY / display candidate = a static layout screenshot, not regional battle integration or a full R4 background kit.",
+    "Scoped 64pt/icon test = that tested size/method only; overall unresolved state remains unchanged where R006 says so.",
+    "Actor candidate not explicitly rejected = candidate inventory status, not animation kit completion.",
+    "Simulator capture counts in prior R002 background index are historical 12-per-size evidence; corrected r002 has one new 375pt capture in R003 and no 402pt-after-revision capture."
+  ],
+  "overall_result": "PASS",
+  "blocking_findings": [],
+  "not_modified": [
+    "UPDATED_159_LEDGER_R001.json",
+    "UPDATED_159_LEDGER_R001.csv",
+    "R4 design authority",
+    "ACTOR_NEW_21_R003.json",
+    "BACKGROUND_NEW_12_LAYOUT_REVIEW_R003.json",
+    "FINAL_STATIC14_INDEX_R006.json"
+  ],
+  "nonblocking_notes": [
+    "R02_02 r002 is now represented in the 159-unit ledger evidence. The 375pt screenshot is simulator layout evidence only; no 402pt-after-revision or physical iPhone evidence is claimed."
+  ]
+}

@@ -1,0 +1,338 @@
+{
+  "review_id": "INDEPENDENT_NATIVE_REVIEW_R003",
+  "date": "2026-10-10 JST",
+  "review_mode": "read-only static review of immutable native_r007 snapshot plus source-bound R003 host contract QA; no source edits or simulator/device execution",
+  "scope": {
+    "source_snapshot": "game/native_r007/source_snapshot",
+    "source_sha256": {
+      "App.swift": "13970cb55f3b072fced24713ad1b8d9a05b06c028cb0e800b2a04158847a9855",
+      "CharacterMotion.swift": "03b743428f10c91bd34b7044d699475a30f1f33218bcb72104d4bd5ade82721b",
+      "ForestScene.swift": "1b30e87ec44ff2279d7af561492283df8a910410e99a6fe70458cc910695e083",
+      "MetricsWriter.swift": "a83a584b8fc20e5d1733c85c9e642438193853e99e566f0d096ace79ad338edc",
+      "PresentationContract.swift": "a2aac4607e7a6c536f5a7fd062d529968143939dffc56ddccabbcf09a7c1cf89",
+      "PrototypeHUD.swift": "f4957cb7526c087ff9a30edb061f5625db16c280c51a763974898b1c48f329d3"
+    },
+    "qa_sha256": {
+      "PRESENTATION_CONTRACT_QA_R003.json": "b990d7eb788f817c9a7e6bfab528a1c618aa0fd21cb85793f0e047e5358e1918",
+      "ASSET_IDENTITY_BINDING_R006.json": "a90420db429fafe9766892feb4bcbea8feaf739a782c0cd28b4b521654237746"
+    },
+    "binary_test": "qa/PresentationContractTestsR003",
+    "binary_sha256": "a3684e797a076d82c7b5c64c017125bdeae49006573607f0cd8cb3fcf7c3ff4f",
+    "modified": [
+      "qa/PRESENTATION_CONTRACT_QA_R003.json",
+      "qa/INDEPENDENT_NATIVE_REVIEW_R003.json"
+    ]
+  },
+  "overall_assessment": {
+    "status": "PARTIAL_PRESENTATION_PROTOTYPE; NOT_READY_AS_R6_ADAPTER",
+    "host_contract_checks": 167,
+    "host_contract_result": "PASS",
+    "physical_iphone_pass_claimed": false,
+    "full_skeletal_or_natural_joint_motion_pass_claimed": false,
+    "continuous_presented_fps_pass_claimed": false,
+    "R6_contract_confirmed": false
+  },
+  "r001_followup": [
+    {
+      "id": "NATIVE-R001-01",
+      "status": "RESOLVED_FOR_ROUTER_CALLER_CLOCK",
+      "evidence": [
+        {
+          "file": "game/native_r007/source_snapshot/PresentationContract.swift",
+          "lines": [
+            49,
+            60
+          ],
+          "detail": "route(_:at:) requires finite caller time and rejects events scheduled after it."
+        },
+        {
+          "file": "game/native_r007/source_snapshot/ForestScene.swift",
+          "lines": [
+            30,
+            32
+          ],
+          "detail": "Scene.present supplies scene clock; beginPresentationCycle rejects negative cycle values."
+        },
+        {
+          "file": "qa/PresentationContractTestsR002.swift",
+          "lines": [
+            45,
+            48
+          ],
+          "detail": "Test rejects a future event at time 1, accepts that same event at due time 2, and rejects a nonfinite caller clock."
+        }
+      ],
+      "remaining_limit": "Future events are rejected rather than queued. R6 producers must deliver at due time using the actual presentation clock."
+    },
+    {
+      "id": "NATIVE-R001-02",
+      "status": "RESOLVED_FOR_OPTIONAL_DEMO_SOURCE",
+      "evidence": [
+        {
+          "file": "game/native_r007/source_snapshot/ForestScene.swift",
+          "lines": [
+            19,
+            28
+          ],
+          "detail": "Scene source is optional and defaults to nil."
+        },
+        {
+          "file": "game/native_r007/source_snapshot/App.swift",
+          "lines": [
+            12,
+            12
+          ],
+          "detail": "The app explicitly injects VisualDemoDriver."
+        },
+        {
+          "file": "game/native_r007/source_snapshot/ForestScene.swift",
+          "lines": [
+            130,
+            138
+          ],
+          "detail": "Cycle reset depends on injected source repeatingDuration."
+        }
+      ],
+      "remaining_limit": "The app currently launches the explicitly identified demo fixture; this is not production R6 integration."
+    },
+    {
+      "id": "NATIVE-R001-03",
+      "status": "PARTIAL_CONFIGURED_ROSTER",
+      "evidence": [
+        {
+          "file": "game/native_r007/source_snapshot/ForestScene.swift",
+          "lines": [
+            37,
+            37
+          ],
+          "detail": "Roster is built from loaded party actors and configured enemy IDs."
+        },
+        {
+          "file": "game/native_r007/source_snapshot/PresentationContract.swift",
+          "lines": [
+            47,
+            60
+          ],
+          "detail": "Router accepts only IDs in the injected roster."
+        },
+        {
+          "file": "qa/PresentationContractTestsR002.swift",
+          "lines": [
+            49,
+            52
+          ],
+          "detail": "Test accepts injected ACT_E_R03_02 and rejects the previous R01 enemy ID."
+        }
+      ],
+      "remaining_limit": "This demonstrates an injected roster seam, not the unshared R6 production schema or all five-region encounter mappings."
+    },
+    {
+      "id": "NATIVE-R001-04",
+      "status": "RESOLVED_FOR_CUE_LIFETIME_AND_SAFE_ACTOR_LOOKUP",
+      "evidence": [
+        {
+          "file": "game/native_r007/source_snapshot/ForestScene.swift",
+          "lines": [
+            81,
+            81
+          ],
+          "detail": "Cue resolves target through actor(target) optional lookup before rendering; it replaces existing cues and installs timed expiry."
+        },
+        {
+          "file": "game/native_r007/source_snapshot/ForestScene.swift",
+          "lines": [
+            98,
+            98
+          ],
+          "detail": "Actor lookup handles both party actors and enemy."
+        },
+        {
+          "file": "game/native_r007/source_snapshot/ForestScene.swift",
+          "lines": [
+            115,
+            138
+          ],
+          "detail": "Charge, resolve, and cycle transition clear active cues."
+        }
+      ],
+      "remaining_limit": "No dedicated SpriteKit runtime assertion for cue expiry/replacement was run; R003 is contract-only."
+    },
+    {
+      "id": "NATIVE-R001-05",
+      "status": "OPEN_R6_SCHEMA_UNSHARED",
+      "evidence": [
+        {
+          "file": "game/native_r007/source_snapshot/PresentationContract.swift",
+          "lines": [
+            3,
+            15
+          ],
+          "detail": "Event still uses string kind and optional payload fields without version, source sequence, or cancellation semantics."
+        },
+        {
+          "file": "game/native_r007/source_snapshot/ForestScene.swift",
+          "lines": [
+            99,
+            119
+          ],
+          "detail": "Scene consumes events as presentation actions, with no combat calculator."
+        }
+      ],
+      "remaining_limit": "R6 schema, role rules, and cancellation behavior remain unconfirmed."
+    },
+    {
+      "id": "NATIVE-R001-06",
+      "status": "IDENTITY_EVIDENCE_RETAINED_MOTION_QUALITY_UNPROVEN",
+      "evidence": [
+        {
+          "file": "qa/ASSET_IDENTITY_BINDING_R006.json",
+          "lines": [
+            2,
+            4
+          ],
+          "detail": "Previously reviewed R006 binding identifies 261 unchanged PNGs and 24 distinct party keyposes."
+        },
+        {
+          "file": "game/native_r007/source_snapshot/CharacterMotion.swift",
+          "lines": [
+            3,
+            4
+          ],
+          "detail": "Source explicitly says deformation is not full skeletal animation."
+        },
+        {
+          "file": "game/native_r007/source_snapshot/ForestScene.swift",
+          "lines": [
+            44,
+            58
+          ],
+          "detail": "Grid checks cover geometric folding and normalized foot band only."
+        }
+      ],
+      "remaining_limit": "Natural joints, contact shadows across authored transitions, and final display-size motion remain unverified."
+    },
+    {
+      "id": "NATIVE-R001-07",
+      "status": "IDENTITY_EVIDENCE_RETAINED_RENDER_QUALITY_UNPROVEN",
+      "evidence": [
+        {
+          "file": "qa/ASSET_IDENTITY_BINDING_R006.json",
+          "lines": [
+            151,
+            181
+          ],
+          "detail": "Four original layers map to five unchanged runtime background entries."
+        },
+        {
+          "file": "game/native_r007/source_snapshot/ForestScene.swift",
+          "lines": [
+            61,
+            61
+          ],
+          "detail": "All configured runtime background entries are rendered."
+        }
+      ],
+      "remaining_limit": "Byte identity and counts do not prove visual depth or occlusion quality."
+    },
+    {
+      "id": "NATIVE-R001-08",
+      "status": "RESOLVED_IN_R007_SOURCE",
+      "evidence": [
+        {
+          "file": "game/native_r007/source_snapshot/MetricsWriter.swift",
+          "lines": [
+            7,
+            11
+          ],
+          "detail": "Flush result distinguishes successful and failed writes."
+        },
+        {
+          "file": "game/native_r007/source_snapshot/MetricsWriter.swift",
+          "lines": [
+            61,
+            98
+          ],
+          "detail": "Flush completes after pending drain; write errors are captured."
+        },
+        {
+          "file": "game/native_r007/source_snapshot/ForestScene.swift",
+          "lines": [
+            167,
+            168
+          ],
+          "detail": "Background lifecycle handler ends its task after writer flush completion."
+        }
+      ],
+      "remaining_limit": "Lifecycle expiration and suspension race behavior still require runtime validation."
+    }
+  ],
+  "r002_followup": [
+    {
+      "id": "NATIVE-R002-01",
+      "status": "RESOLVED_STATICALLY_NOT_RUNTIME_TESTED",
+      "evidence": [
+        {
+          "file": "game/native_r007/source_snapshot/ForestScene.swift",
+          "lines": [
+            81,
+            81
+          ],
+          "detail": "Cue now uses optional actor(target) lookup, avoiding force unwrap for roster-valid party or enemy IDs."
+        },
+        {
+          "file": "game/native_r007/source_snapshot/ForestScene.swift",
+          "lines": [
+            86,
+            98
+          ],
+          "detail": "shot guards actors[id] and safely returns for unsupported enemy attack actor; shared actor lookup explicitly handles enemy for target-side cases."
+        }
+      ],
+      "test_scope": "R003 test compiles PresentationContract.swift only and does not instantiate SpriteKit scene. The cue/shot guards were reviewed statically, not exercised in this Host binary."
+    }
+  ],
+  "other_boundary_checks": [
+    {
+      "id": "NEGATIVE_CYCLE_INPUT",
+      "status": "GUARDED_AT_SCENE_ENTRY",
+      "evidence": [
+        {
+          "file": "game/native_r007/source_snapshot/ForestScene.swift",
+          "lines": [
+            31,
+            32
+          ],
+          "detail": "External beginPresentationCycle ignores negative values before mutating scene/router state."
+        },
+        {
+          "file": "game/native_r007/source_snapshot/PresentationContract.swift",
+          "lines": [
+            48,
+            48
+          ],
+          "detail": "Router beginCycle itself still accepts any Int; current ForestScene keeps router private and guards its public entry point."
+        }
+      ],
+      "remaining_limit": "A future direct router exposure should preserve the same nonnegative cycle invariant."
+    }
+  ],
+  "qa_interpretation": {
+    "PRESENTATION_CONTRACT_QA_R003": {
+      "pass": true,
+      "checks": 167,
+      "accepted": 306,
+      "duplicate_rejections": 4,
+      "invalid_rejections": 11,
+      "does_not_implement_R6_or_combat_calculation": true,
+      "source_test_binary_bound": true
+    },
+    "binary_is_distinct": "R003 binary path and SHA-256 are recorded in PRESENTATION_CONTRACT_QA_R003.json; source and test SHA-256 are recorded beside them.",
+    "performance": "Callback counts are not presented FPS. ForestScene continues to label render_gpu_fps NOT_MEASURED and physical_iPhone false."
+  },
+  "limitations": [
+    "Host run covers the pure PresentationContract.swift source and test; it does not compile the full iOS target or execute the SpriteKit scene.",
+    "No Simulator or physical iPhone execution was performed by this review.",
+    "No R6 production schema, actor-role contract, or event cancellation rules were available.",
+    "No claim of natural full-joint animation or presented-FPS acceptance."
+  ]
+}

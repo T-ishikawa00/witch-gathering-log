@@ -1,0 +1,231 @@
+{
+  "revision": "STATIC_REMAINING4_DIAGNOSIS_R001",
+  "generated_date": "2026-10-10 JST",
+  "scope": "Read-only diagnostic of the last four unresolved static14 units.",
+  "authority": {
+    "latest_status": "assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/planning/FINAL_STATIC14_INDEX_R006.json",
+    "prior_native_ui_qa": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/native_ui_review_r001/qa/NATIVE_UI_QA_R001.json",
+    "prior_native_ui_addendum": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/native_ui_review_r001/qa/NATIVE_UI_QA_ADDENDUM_R002.json"
+  },
+  "summary": {
+    "units": 4,
+    "low_risk_RGBA_technical_defects_found": 0,
+    "new_revisions_created": 0,
+    "all_remain_unresolved": true,
+    "old_material_quality_issues_not_retested_as_new_pass": true
+  },
+  "native_review_context": {
+    "device_os": "WitchG2StaticUI · iPhone 17 Pro · iOS 26.5",
+    "display_api": "SpriteKit iOS Simulator review documented in prior native UI QA",
+    "sizes_pt": [
+      32,
+      64
+    ],
+    "screenshot_proofs": [
+      "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/native_ui_review_r001/qa/screenshots/materials_32pt.png",
+      "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/native_ui_review_r001/qa/screenshots/materials_64pt.png",
+      "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/native_ui_review_r001/qa/screenshots/materials_r003partial_32pt.png",
+      "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/native_ui_review_r001/qa/screenshots/materials_r003partial_64pt.png"
+    ],
+    "physical_iphone": "NOT_TESTED"
+  },
+  "units": [
+    {
+      "asset_id": "ICO_M_R01_G4",
+      "display_name": "月白苔",
+      "old_qa_reason": "Weak glint overlay exported and editable, but the 64px glow still does not clearly read as a distinct effect.",
+      "actual_ui_32_64_review": "64pt native review reports weak glint; in 32/64pt actual UI the white moss tuft cluster has no isolated, readable glint cue. Alpha and silhouette are clean; this is semantic/mark-design weakness, not a technical RGBA defect.",
+      "next_method": "No low-risk pixel repair. Next method would need a deliberately designed, restrained glint mark integrated into original painting, then size review; previous weak-glow work already failed.",
+      "source": {
+        "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/verified_icons/ICO_M_R01_G4/source_r001.png",
+        "exists": true,
+        "sha256": "209191325587dca52918e1229afe162501d41287dc3e43e171f093a03c42bc51"
+      },
+      "latest_64px_png": {
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R01_G4/r002_localized/ICO_M_R01_G4__64__r002.png",
+        "exists": true,
+        "size_px": [
+          64,
+          64
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "sha256": "2ec01b5919b8d665e82268cd572d1ad2d18bdc4a1148de3558e7fbf7a2073d3c"
+      },
+      "native_simulator_display": {
+        "device": "WitchG2StaticUI · iPhone 17 Pro · iOS 26.5",
+        "32pt": {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/native_ui_review_r001/qa/screenshots/materials_32pt.png",
+          "exists": true,
+          "sha256": "0ebd04900adf983204923d351e880103c516745e7488432373b4df3609ac24e5",
+          "expected_sha256": "0ebd04900adf983204923d351e880103c516745e7488432373b4df3609ac24e5",
+          "hash_match": true
+        },
+        "64pt": {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/native_ui_review_r001/qa/screenshots/materials_64pt.png",
+          "exists": true,
+          "sha256": "3be90993228da2f3d5729310984506c0aea376764af82ff1cf9dd840a36a5648",
+          "expected_sha256": "3be90993228da2f3d5729310984506c0aea376764af82ff1cf9dd840a36a5648",
+          "hash_match": true
+        },
+        "cell_page": "1/7",
+        "display_note": "Prior native SpriteKit UI screenshot; actual icon rendered at logical point size; not rerun in this read-only pass."
+      },
+      "diagnosis": "NO_LOW_RISK_LOCAL_RGBA_DEFECT_IDENTIFIED",
+      "repair_attempted": false,
+      "promote": false,
+      "formal_human_adoption": false
+    },
+    {
+      "asset_id": "ICO_M_R04_G3",
+      "display_name": "風編み麻",
+      "old_qa_reason": "Low-opacity inter-fiber shadow on existing silver-gray hemp strands only; no silhouette modification. 64px review did not establish a clear semantic/material correction; candidate retained for root review.",
+      "actual_ui_32_64_review": "Silver-gray hemp strands read as a thin wisp/bundle at 32/64pt; low-opacity inter-fiber shadow did not add a distinctive material cue. Alpha/edge preview is clean.",
+      "next_method": "No low-risk RGBA repair. Need a new woven/bundled structure cue (e.g. binding/crossed fibers) painted into the source; that changes semantic shape and should remain a new candidate, not a color-channel tweak.",
+      "source": {
+        "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/verified_icons/ICO_M_R04_G3/source_r001.png",
+        "exists": true,
+        "sha256": "a5afbd723314acfaba66de0f1221f6e5ce87bc64688d9691115f4aaf2f7f480b"
+      },
+      "latest_64px_png": {
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R04_G3/r003_native_local/ICO_M_R04_G3__64__r003.png",
+        "exists": true,
+        "size_px": [
+          64,
+          64
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "sha256": "cdccb4f25bcdffbb5ea054d6df52fa05961e260a81b119538ea4a10b9bd5d80c"
+      },
+      "native_simulator_display": {
+        "device": "WitchG2StaticUI · iPhone 17 Pro · iOS 26.5",
+        "32pt": {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/native_ui_review_r001/qa/screenshots/materials_r003partial_32pt.png",
+          "exists": true,
+          "sha256": "d65366e6457ce001825b1edb5abe2bc2262fbe0f2354703172a69db5345af623",
+          "expected_sha256": "d65366e6457ce001825b1edb5abe2bc2262fbe0f2354703172a69db5345af623",
+          "hash_match": true
+        },
+        "64pt": {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/native_ui_review_r001/qa/screenshots/materials_r003partial_64pt.png",
+          "exists": true,
+          "sha256": "195f8ddc82025f397bff90f6694fea0d0ca15014b1e971cfc8a44f639cd4b719",
+          "expected_sha256": "195f8ddc82025f397bff90f6694fea0d0ca15014b1e971cfc8a44f639cd4b719",
+          "hash_match": true
+        },
+        "cell_page": "2/7",
+        "display_note": "Prior native SpriteKit UI screenshot; actual icon rendered at logical point size; not rerun in this read-only pass."
+      },
+      "diagnosis": "NO_LOW_RISK_LOCAL_RGBA_DEFECT_IDENTIFIED",
+      "repair_attempted": false,
+      "promote": false,
+      "formal_human_adoption": false
+    },
+    {
+      "asset_id": "ICO_M_R05_G3",
+      "display_name": "眠り種",
+      "old_qa_reason": "Small pale-rose core accent at the existing central opening only; preserve closed crescent-shell silhouette. 64px review did not establish a clear semantic/material correction; candidate retained for root review.",
+      "actual_ui_32_64_review": "Closed crescent shell with pale-rose center remains visible at 32/64pt, but the central seed/core does not materially distinguish the material. The existing core-color edit did not pass 64pt semantics.",
+      "next_method": "No low-risk RGBA repair. A recognizable seed/kernel form or clearer shell/core separation requires localized semantic drawing, not alpha/RGB cleanup; keep unresolved until a new art concept is reviewed.",
+      "source": {
+        "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/verified_icons/ICO_M_R05_G3/source_r001.png",
+        "exists": true,
+        "sha256": "1e1f331a2a7e8b632247fd9990fd088d4eff83f5cd0cdc8db55c83f65dd45e65"
+      },
+      "latest_64px_png": {
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R05_G3/r003_native_local/ICO_M_R05_G3__64__r003.png",
+        "exists": true,
+        "size_px": [
+          64,
+          64
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "sha256": "a16f8f87e3ee0d647053cc38323ec73a75585616330b585b74ecb79260eae336"
+      },
+      "native_simulator_display": {
+        "device": "WitchG2StaticUI · iPhone 17 Pro · iOS 26.5",
+        "32pt": {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/native_ui_review_r001/qa/screenshots/materials_r003partial_32pt.png",
+          "exists": true,
+          "sha256": "d65366e6457ce001825b1edb5abe2bc2262fbe0f2354703172a69db5345af623",
+          "expected_sha256": "d65366e6457ce001825b1edb5abe2bc2262fbe0f2354703172a69db5345af623",
+          "hash_match": true
+        },
+        "64pt": {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/native_ui_review_r001/qa/screenshots/materials_r003partial_64pt.png",
+          "exists": true,
+          "sha256": "195f8ddc82025f397bff90f6694fea0d0ca15014b1e971cfc8a44f639cd4b719",
+          "expected_sha256": "195f8ddc82025f397bff90f6694fea0d0ca15014b1e971cfc8a44f639cd4b719",
+          "hash_match": true
+        },
+        "cell_page": "2/7",
+        "display_note": "Prior native SpriteKit UI screenshot; actual icon rendered at logical point size; not rerun in this read-only pass."
+      },
+      "diagnosis": "NO_LOW_RISK_LOCAL_RGBA_DEFECT_IDENTIFIED",
+      "repair_attempted": false,
+      "promote": false,
+      "formal_human_adoption": false
+    },
+    {
+      "asset_id": "ICO_M_R01_BB",
+      "display_name": "苔冠の生木核",
+      "old_qa_reason": "Pale conduit/sprout accent on the existing upper-right bud only; preserve oversized trunk-core form. 64px review did not establish a clear semantic/material correction; candidate retained for root review.",
+      "actual_ui_32_64_review": "Upper-right pale sprout/conduit remains a tiny offshoot on the oversized wood core at 32 and 64pt. The icon is clean, but the key sprout cue is too small/weak.",
+      "next_method": "No low-risk RGBA repair. Enlarging or reshaping the bud changes semantic geometry; only a localized art revision with explicit shape/contrast redesign could address it, followed by visual review.",
+      "source": {
+        "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/reused_icons/ICO_M_R01_BB/original_source.png",
+        "exists": true,
+        "sha256": "84b3962eb62ff21b7977635db8761965fcb6444bea3e7a0418dbe2dbe2cfcc77"
+      },
+      "latest_64px_png": {
+        "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/ICO_M_R01_BB/r003_native_local/ICO_M_R01_BB__64__r003.png",
+        "exists": true,
+        "size_px": [
+          64,
+          64
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "sha256": "013eef46550bdd70c5cb9eac0dccbb69fc42e41d8f41f295b00fc51b5824bbc8"
+      },
+      "native_simulator_display": {
+        "device": "WitchG2StaticUI · iPhone 17 Pro · iOS 26.5",
+        "32pt": {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/native_ui_review_r001/qa/screenshots/materials_32pt.png",
+          "exists": true,
+          "sha256": "0ebd04900adf983204923d351e880103c516745e7488432373b4df3609ac24e5",
+          "expected_sha256": "0ebd04900adf983204923d351e880103c516745e7488432373b4df3609ac24e5",
+          "hash_match": true
+        },
+        "64pt": {
+          "path": "assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/static_repairs/native_ui_review_r001/qa/screenshots/materials_64pt.png",
+          "exists": true,
+          "sha256": "3be90993228da2f3d5729310984506c0aea376764af82ff1cf9dd840a36a5648",
+          "expected_sha256": "3be90993228da2f3d5729310984506c0aea376764af82ff1cf9dd840a36a5648",
+          "hash_match": true
+        },
+        "cell_page": "1/7",
+        "display_note": "Prior native SpriteKit UI screenshot; actual icon rendered at logical point size; not rerun in this read-only pass."
+      },
+      "diagnosis": "NO_LOW_RISK_LOCAL_RGBA_DEFECT_IDENTIFIED",
+      "repair_attempted": false,
+      "promote": false,
+      "formal_human_adoption": false
+    }
+  ],
+  "overall_decision": "Stop. These four gaps are semantic/readability issues rather than localized alpha/RGB defects. Previously failed glow/low-opacity/local-color methods should not be repeated. Changes would require a new drawn visual cue or shape; leave all four unresolved and preserve sources/candidates."
+}
