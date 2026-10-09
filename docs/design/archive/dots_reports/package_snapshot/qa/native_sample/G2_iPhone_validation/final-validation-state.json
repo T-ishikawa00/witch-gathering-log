@@ -1,0 +1,31 @@
+{
+  "binaries": [
+    {
+      "target": "iOS device",
+      "file": "g2_iphone_validation/sample/build/ios-device/G2AssetValidation.app/G2AssetValidation",
+      "sha256": "6ff0e8668dd0ac2c3744d185b58a6e5683bed7203586f0946d89072e94a2c82a",
+      "signature_inspection_exit_code": 1,
+      "signature_inspection_output": "g2_iphone_validation/sample/build/ios-device/G2AssetValidation.app/G2AssetValidation: code object is not signed at all",
+      "unsigned_confirmed": true
+    },
+    {
+      "target": "iOS simulator",
+      "file": "g2_iphone_validation/sample/build/ios-simulator/G2AssetValidation.app/G2AssetValidation",
+      "sha256": "3aaf33cef62fc832feb3faece4b845ad2070cb88dd296d046beb191bac324188",
+      "signature_inspection_exit_code": 1,
+      "signature_inspection_output": "g2_iphone_validation/sample/build/ios-simulator/G2AssetValidation.app/G2AssetValidation: code object is not signed at all",
+      "unsigned_confirmed": true
+    },
+    {
+      "target": "macOS",
+      "file": "g2_iphone_validation/sample/build/macos/G2AssetValidation",
+      "sha256": "ac252f5b0b5dbae95cbbd3f2a332725005530d9ba2fb9b64b24c2bbe71150fe4",
+      "compile_link_only": true,
+      "execution_attempted": false
+    }
+  ],
+  "input_file_count": 0,
+  "asset_rendering_attempted": false,
+  "simulator_execution_attempted": false,
+  "iphone_device_execution_attempted": false
+}

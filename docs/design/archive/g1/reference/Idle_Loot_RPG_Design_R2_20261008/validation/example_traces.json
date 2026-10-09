@@ -1,0 +1,1706 @@
+{
+  "before": {
+    "win": false,
+    "time_ms": 25600,
+    "hp_remaining": 0,
+    "boss_hp_remaining": 1632,
+    "stats": {
+      "hp": 1300,
+      "attack": 88,
+      "armor": 65,
+      "crit_bp": 500,
+      "crit_multiplier_bp": 17500,
+      "haste_bp": 3400,
+      "block_bp": 500,
+      "counter_bp": 0,
+      "poison_damage": 20,
+      "poison_duration_ms": 8000,
+      "attack_interval_ms": 746
+    },
+    "totals": {
+      "normal": 2108,
+      "poison": 2760,
+      "counter": 0,
+      "incoming": 1300,
+      "attacks": 34,
+      "crits": 0,
+      "blocks": 1,
+      "boss_hits": 25,
+      "poison_ticks": 25
+    },
+    "trace": [
+      {
+        "t": 746,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 1300,
+        "boss_hp": 6438,
+        "critical": false
+      },
+      {
+        "t": 1000,
+        "kind": "poison",
+        "damage": 20,
+        "player_hp": 1300,
+        "boss_hp": 6418,
+        "stacks": 1
+      },
+      {
+        "t": 1492,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 1300,
+        "boss_hp": 6356,
+        "critical": false
+      },
+      {
+        "t": 1600,
+        "kind": "boss_hit",
+        "damage": 54,
+        "player_hp": 1246,
+        "boss_hp": 6356,
+        "blocked": false
+      },
+      {
+        "t": 2000,
+        "kind": "poison",
+        "damage": 40,
+        "player_hp": 1246,
+        "boss_hp": 6316,
+        "stacks": 2
+      },
+      {
+        "t": 2200,
+        "kind": "boss_hit",
+        "damage": 54,
+        "player_hp": 1192,
+        "boss_hp": 6316,
+        "blocked": false
+      },
+      {
+        "t": 2238,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 1192,
+        "boss_hp": 6254,
+        "critical": false
+      },
+      {
+        "t": 2800,
+        "kind": "boss_hit",
+        "damage": 54,
+        "player_hp": 1138,
+        "boss_hp": 6254,
+        "blocked": false
+      },
+      {
+        "t": 2984,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 1138,
+        "boss_hp": 6192,
+        "critical": false
+      },
+      {
+        "t": 3000,
+        "kind": "poison",
+        "damage": 80,
+        "player_hp": 1138,
+        "boss_hp": 6112,
+        "stacks": 4
+      },
+      {
+        "t": 3400,
+        "kind": "boss_hit",
+        "damage": 54,
+        "player_hp": 1084,
+        "boss_hp": 6112,
+        "blocked": false
+      },
+      {
+        "t": 3730,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 1084,
+        "boss_hp": 6050,
+        "critical": false
+      },
+      {
+        "t": 4000,
+        "kind": "poison",
+        "damage": 100,
+        "player_hp": 1084,
+        "boss_hp": 5950,
+        "stacks": 5
+      },
+      {
+        "t": 4476,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 1084,
+        "boss_hp": 5888,
+        "critical": false
+      },
+      {
+        "t": 5000,
+        "kind": "poison",
+        "damage": 120,
+        "player_hp": 1084,
+        "boss_hp": 5768,
+        "stacks": 6
+      },
+      {
+        "t": 5222,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 1084,
+        "boss_hp": 5706,
+        "critical": false
+      },
+      {
+        "t": 5600,
+        "kind": "boss_hit",
+        "damage": 54,
+        "player_hp": 1030,
+        "boss_hp": 5706,
+        "blocked": false
+      },
+      {
+        "t": 5968,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 1030,
+        "boss_hp": 5644,
+        "critical": false
+      },
+      {
+        "t": 6000,
+        "kind": "poison",
+        "damage": 120,
+        "player_hp": 1030,
+        "boss_hp": 5524,
+        "stacks": 6
+      },
+      {
+        "t": 6200,
+        "kind": "boss_hit",
+        "damage": 54,
+        "player_hp": 976,
+        "boss_hp": 5524,
+        "blocked": false
+      },
+      {
+        "t": 6714,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 976,
+        "boss_hp": 5462,
+        "critical": false
+      },
+      {
+        "t": 6800,
+        "kind": "boss_hit",
+        "damage": 54,
+        "player_hp": 922,
+        "boss_hp": 5462,
+        "blocked": false
+      },
+      {
+        "t": 7000,
+        "kind": "poison",
+        "damage": 120,
+        "player_hp": 922,
+        "boss_hp": 5342,
+        "stacks": 6
+      },
+      {
+        "t": 7400,
+        "kind": "boss_hit",
+        "damage": 54,
+        "player_hp": 868,
+        "boss_hp": 5342,
+        "blocked": false
+      },
+      {
+        "t": 7460,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 868,
+        "boss_hp": 5280,
+        "critical": false
+      },
+      {
+        "t": 8000,
+        "kind": "poison",
+        "damage": 120,
+        "player_hp": 868,
+        "boss_hp": 5160,
+        "stacks": 6
+      },
+      {
+        "t": 8206,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 868,
+        "boss_hp": 5098,
+        "critical": false
+      },
+      {
+        "t": 8952,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 868,
+        "boss_hp": 5036,
+        "critical": false
+      },
+      {
+        "t": 9000,
+        "kind": "poison",
+        "damage": 120,
+        "player_hp": 868,
+        "boss_hp": 4916,
+        "stacks": 6
+      },
+      {
+        "t": 9600,
+        "kind": "boss_hit",
+        "damage": 54,
+        "player_hp": 814,
+        "boss_hp": 4916,
+        "blocked": false
+      },
+      {
+        "t": 9698,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 814,
+        "boss_hp": 4854,
+        "critical": false
+      },
+      {
+        "t": 10000,
+        "kind": "poison",
+        "damage": 120,
+        "player_hp": 814,
+        "boss_hp": 4734,
+        "stacks": 6
+      },
+      {
+        "t": 10200,
+        "kind": "boss_hit",
+        "damage": 54,
+        "player_hp": 760,
+        "boss_hp": 4734,
+        "blocked": false
+      },
+      {
+        "t": 10444,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 760,
+        "boss_hp": 4672,
+        "critical": false
+      },
+      {
+        "t": 10800,
+        "kind": "boss_hit",
+        "damage": 54,
+        "player_hp": 706,
+        "boss_hp": 4672,
+        "blocked": false
+      },
+      {
+        "t": 11000,
+        "kind": "poison",
+        "damage": 120,
+        "player_hp": 706,
+        "boss_hp": 4552,
+        "stacks": 6
+      },
+      {
+        "t": 11190,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 706,
+        "boss_hp": 4490,
+        "critical": false
+      },
+      {
+        "t": 11400,
+        "kind": "boss_hit",
+        "damage": 54,
+        "player_hp": 652,
+        "boss_hp": 4490,
+        "blocked": false
+      },
+      {
+        "t": 11936,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 652,
+        "boss_hp": 4428,
+        "critical": false
+      },
+      {
+        "t": 12000,
+        "kind": "poison",
+        "damage": 120,
+        "player_hp": 652,
+        "boss_hp": 4308,
+        "stacks": 6
+      },
+      {
+        "t": 12682,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 652,
+        "boss_hp": 4246,
+        "critical": false
+      },
+      {
+        "t": 13000,
+        "kind": "poison",
+        "damage": 120,
+        "player_hp": 652,
+        "boss_hp": 4126,
+        "stacks": 6
+      },
+      {
+        "t": 13428,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 652,
+        "boss_hp": 4064,
+        "critical": false
+      },
+      {
+        "t": 13600,
+        "kind": "boss_hit",
+        "damage": 54,
+        "player_hp": 598,
+        "boss_hp": 4064,
+        "blocked": false
+      },
+      {
+        "t": 14000,
+        "kind": "poison",
+        "damage": 120,
+        "player_hp": 598,
+        "boss_hp": 3944,
+        "stacks": 6
+      },
+      {
+        "t": 14174,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 598,
+        "boss_hp": 3882,
+        "critical": false
+      },
+      {
+        "t": 14200,
+        "kind": "boss_hit",
+        "damage": 54,
+        "player_hp": 544,
+        "boss_hp": 3882,
+        "blocked": false
+      },
+      {
+        "t": 14800,
+        "kind": "boss_hit",
+        "damage": 54,
+        "player_hp": 490,
+        "boss_hp": 3882,
+        "blocked": false
+      },
+      {
+        "t": 14920,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 490,
+        "boss_hp": 3820,
+        "critical": false
+      },
+      {
+        "t": 15000,
+        "kind": "poison",
+        "damage": 120,
+        "player_hp": 490,
+        "boss_hp": 3700,
+        "stacks": 6
+      },
+      {
+        "t": 15400,
+        "kind": "boss_hit",
+        "damage": 54,
+        "player_hp": 436,
+        "boss_hp": 3700,
+        "blocked": false
+      },
+      {
+        "t": 15666,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 436,
+        "boss_hp": 3638,
+        "critical": false
+      },
+      {
+        "t": 16000,
+        "kind": "poison",
+        "damage": 120,
+        "player_hp": 436,
+        "boss_hp": 3518,
+        "stacks": 6
+      },
+      {
+        "t": 16412,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 436,
+        "boss_hp": 3456,
+        "critical": false
+      },
+      {
+        "t": 17000,
+        "kind": "poison",
+        "damage": 120,
+        "player_hp": 436,
+        "boss_hp": 3336,
+        "stacks": 6
+      },
+      {
+        "t": 17158,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 436,
+        "boss_hp": 3274,
+        "critical": false
+      },
+      {
+        "t": 17600,
+        "kind": "boss_hit",
+        "damage": 24,
+        "player_hp": 412,
+        "boss_hp": 3274,
+        "blocked": true
+      },
+      {
+        "t": 17904,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 412,
+        "boss_hp": 3212,
+        "critical": false
+      },
+      {
+        "t": 18000,
+        "kind": "poison",
+        "damage": 120,
+        "player_hp": 412,
+        "boss_hp": 3092,
+        "stacks": 6
+      },
+      {
+        "t": 18200,
+        "kind": "boss_hit",
+        "damage": 54,
+        "player_hp": 358,
+        "boss_hp": 3092,
+        "blocked": false
+      },
+      {
+        "t": 18650,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 358,
+        "boss_hp": 3030,
+        "critical": false
+      },
+      {
+        "t": 18800,
+        "kind": "boss_hit",
+        "damage": 54,
+        "player_hp": 304,
+        "boss_hp": 3030,
+        "blocked": false
+      },
+      {
+        "t": 19000,
+        "kind": "poison",
+        "damage": 120,
+        "player_hp": 304,
+        "boss_hp": 2910,
+        "stacks": 6
+      },
+      {
+        "t": 19396,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 304,
+        "boss_hp": 2848,
+        "critical": false
+      },
+      {
+        "t": 19400,
+        "kind": "boss_hit",
+        "damage": 54,
+        "player_hp": 250,
+        "boss_hp": 2848,
+        "blocked": false
+      },
+      {
+        "t": 20000,
+        "kind": "poison",
+        "damage": 120,
+        "player_hp": 250,
+        "boss_hp": 2728,
+        "stacks": 6
+      },
+      {
+        "t": 20142,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 250,
+        "boss_hp": 2666,
+        "critical": false
+      },
+      {
+        "t": 20888,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 250,
+        "boss_hp": 2604,
+        "critical": false
+      },
+      {
+        "t": 21000,
+        "kind": "poison",
+        "damage": 120,
+        "player_hp": 250,
+        "boss_hp": 2484,
+        "stacks": 6
+      },
+      {
+        "t": 21600,
+        "kind": "boss_hit",
+        "damage": 54,
+        "player_hp": 196,
+        "boss_hp": 2484,
+        "blocked": false
+      },
+      {
+        "t": 21634,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 196,
+        "boss_hp": 2422,
+        "critical": false
+      },
+      {
+        "t": 22000,
+        "kind": "poison",
+        "damage": 120,
+        "player_hp": 196,
+        "boss_hp": 2302,
+        "stacks": 6
+      },
+      {
+        "t": 22200,
+        "kind": "boss_hit",
+        "damage": 54,
+        "player_hp": 142,
+        "boss_hp": 2302,
+        "blocked": false
+      },
+      {
+        "t": 22380,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 142,
+        "boss_hp": 2240,
+        "critical": false
+      },
+      {
+        "t": 22800,
+        "kind": "boss_hit",
+        "damage": 54,
+        "player_hp": 88,
+        "boss_hp": 2240,
+        "blocked": false
+      },
+      {
+        "t": 23000,
+        "kind": "poison",
+        "damage": 120,
+        "player_hp": 88,
+        "boss_hp": 2120,
+        "stacks": 6
+      },
+      {
+        "t": 23126,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 88,
+        "boss_hp": 2058,
+        "critical": false
+      },
+      {
+        "t": 23400,
+        "kind": "boss_hit",
+        "damage": 54,
+        "player_hp": 34,
+        "boss_hp": 2058,
+        "blocked": false
+      },
+      {
+        "t": 23872,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 34,
+        "boss_hp": 1996,
+        "critical": false
+      },
+      {
+        "t": 24000,
+        "kind": "poison",
+        "damage": 120,
+        "player_hp": 34,
+        "boss_hp": 1876,
+        "stacks": 6
+      },
+      {
+        "t": 24618,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 34,
+        "boss_hp": 1814,
+        "critical": false
+      },
+      {
+        "t": 25000,
+        "kind": "poison",
+        "damage": 120,
+        "player_hp": 34,
+        "boss_hp": 1694,
+        "stacks": 6
+      },
+      {
+        "t": 25364,
+        "kind": "normal",
+        "damage": 62,
+        "player_hp": 34,
+        "boss_hp": 1632,
+        "critical": false
+      },
+      {
+        "t": 25600,
+        "kind": "boss_hit",
+        "damage": 34,
+        "player_hp": 0,
+        "boss_hp": 1632,
+        "blocked": false
+      }
+    ]
+  },
+  "after": {
+    "win": true,
+    "time_ms": 38000,
+    "hp_remaining": 245,
+    "boss_hp_remaining": 0,
+    "stats": {
+      "hp": 1320,
+      "attack": 80,
+      "armor": 140,
+      "crit_bp": 500,
+      "crit_multiplier_bp": 17500,
+      "haste_bp": 2200,
+      "block_bp": 2300,
+      "counter_bp": 0,
+      "poison_damage": 18,
+      "poison_duration_ms": 8000,
+      "attack_interval_ms": 819
+    },
+    "totals": {
+      "normal": 2665,
+      "poison": 3835,
+      "counter": 0,
+      "incoming": 1075,
+      "attacks": 46,
+      "crits": 1,
+      "blocks": 14,
+      "boss_hits": 37,
+      "poison_ticks": 38
+    },
+    "trace": [
+      {
+        "t": 819,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 1320,
+        "boss_hp": 6443,
+        "critical": false
+      },
+      {
+        "t": 1000,
+        "kind": "poison",
+        "damage": 18,
+        "player_hp": 1320,
+        "boss_hp": 6425,
+        "stacks": 1
+      },
+      {
+        "t": 1600,
+        "kind": "boss_hit",
+        "damage": 37,
+        "player_hp": 1283,
+        "boss_hp": 6425,
+        "blocked": false
+      },
+      {
+        "t": 1638,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 1283,
+        "boss_hp": 6368,
+        "critical": false
+      },
+      {
+        "t": 2000,
+        "kind": "poison",
+        "damage": 36,
+        "player_hp": 1283,
+        "boss_hp": 6332,
+        "stacks": 2
+      },
+      {
+        "t": 2200,
+        "kind": "boss_hit",
+        "damage": 16,
+        "player_hp": 1267,
+        "boss_hp": 6332,
+        "blocked": true
+      },
+      {
+        "t": 2457,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 1267,
+        "boss_hp": 6275,
+        "critical": false
+      },
+      {
+        "t": 2800,
+        "kind": "boss_hit",
+        "damage": 37,
+        "player_hp": 1230,
+        "boss_hp": 6275,
+        "blocked": false
+      },
+      {
+        "t": 3000,
+        "kind": "poison",
+        "damage": 54,
+        "player_hp": 1230,
+        "boss_hp": 6221,
+        "stacks": 3
+      },
+      {
+        "t": 3276,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 1230,
+        "boss_hp": 6164,
+        "critical": false
+      },
+      {
+        "t": 3400,
+        "kind": "boss_hit",
+        "damage": 16,
+        "player_hp": 1214,
+        "boss_hp": 6164,
+        "blocked": true
+      },
+      {
+        "t": 4000,
+        "kind": "poison",
+        "damage": 72,
+        "player_hp": 1214,
+        "boss_hp": 6092,
+        "stacks": 4
+      },
+      {
+        "t": 4095,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 1214,
+        "boss_hp": 6035,
+        "critical": false
+      },
+      {
+        "t": 4914,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 1214,
+        "boss_hp": 5978,
+        "critical": false
+      },
+      {
+        "t": 5000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 1214,
+        "boss_hp": 5870,
+        "stacks": 6
+      },
+      {
+        "t": 5600,
+        "kind": "boss_hit",
+        "damage": 37,
+        "player_hp": 1177,
+        "boss_hp": 5870,
+        "blocked": false
+      },
+      {
+        "t": 5733,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 1177,
+        "boss_hp": 5813,
+        "critical": false
+      },
+      {
+        "t": 6000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 1177,
+        "boss_hp": 5705,
+        "stacks": 6
+      },
+      {
+        "t": 6200,
+        "kind": "boss_hit",
+        "damage": 16,
+        "player_hp": 1161,
+        "boss_hp": 5705,
+        "blocked": true
+      },
+      {
+        "t": 6552,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 1161,
+        "boss_hp": 5648,
+        "critical": false
+      },
+      {
+        "t": 6800,
+        "kind": "boss_hit",
+        "damage": 37,
+        "player_hp": 1124,
+        "boss_hp": 5648,
+        "blocked": false
+      },
+      {
+        "t": 7000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 1124,
+        "boss_hp": 5540,
+        "stacks": 6
+      },
+      {
+        "t": 7371,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 1124,
+        "boss_hp": 5483,
+        "critical": false
+      },
+      {
+        "t": 7400,
+        "kind": "boss_hit",
+        "damage": 16,
+        "player_hp": 1108,
+        "boss_hp": 5483,
+        "blocked": true
+      },
+      {
+        "t": 8000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 1108,
+        "boss_hp": 5375,
+        "stacks": 6
+      },
+      {
+        "t": 8190,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 1108,
+        "boss_hp": 5318,
+        "critical": false
+      },
+      {
+        "t": 9000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 1108,
+        "boss_hp": 5210,
+        "stacks": 6
+      },
+      {
+        "t": 9009,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 1108,
+        "boss_hp": 5153,
+        "critical": false
+      },
+      {
+        "t": 9600,
+        "kind": "boss_hit",
+        "damage": 37,
+        "player_hp": 1071,
+        "boss_hp": 5153,
+        "blocked": false
+      },
+      {
+        "t": 9828,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 1071,
+        "boss_hp": 5096,
+        "critical": false
+      },
+      {
+        "t": 10000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 1071,
+        "boss_hp": 4988,
+        "stacks": 6
+      },
+      {
+        "t": 10200,
+        "kind": "boss_hit",
+        "damage": 37,
+        "player_hp": 1034,
+        "boss_hp": 4988,
+        "blocked": false
+      },
+      {
+        "t": 10647,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 1034,
+        "boss_hp": 4931,
+        "critical": false
+      },
+      {
+        "t": 10800,
+        "kind": "boss_hit",
+        "damage": 37,
+        "player_hp": 997,
+        "boss_hp": 4931,
+        "blocked": false
+      },
+      {
+        "t": 11000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 997,
+        "boss_hp": 4823,
+        "stacks": 6
+      },
+      {
+        "t": 11400,
+        "kind": "boss_hit",
+        "damage": 37,
+        "player_hp": 960,
+        "boss_hp": 4823,
+        "blocked": false
+      },
+      {
+        "t": 11466,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 960,
+        "boss_hp": 4766,
+        "critical": false
+      },
+      {
+        "t": 12000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 960,
+        "boss_hp": 4658,
+        "stacks": 6
+      },
+      {
+        "t": 12285,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 960,
+        "boss_hp": 4601,
+        "critical": false
+      },
+      {
+        "t": 13000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 960,
+        "boss_hp": 4493,
+        "stacks": 6
+      },
+      {
+        "t": 13104,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 960,
+        "boss_hp": 4436,
+        "critical": false
+      },
+      {
+        "t": 13600,
+        "kind": "boss_hit",
+        "damage": 37,
+        "player_hp": 923,
+        "boss_hp": 4436,
+        "blocked": false
+      },
+      {
+        "t": 13923,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 923,
+        "boss_hp": 4379,
+        "critical": false
+      },
+      {
+        "t": 14000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 923,
+        "boss_hp": 4271,
+        "stacks": 6
+      },
+      {
+        "t": 14200,
+        "kind": "boss_hit",
+        "damage": 37,
+        "player_hp": 886,
+        "boss_hp": 4271,
+        "blocked": false
+      },
+      {
+        "t": 14742,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 886,
+        "boss_hp": 4214,
+        "critical": false
+      },
+      {
+        "t": 14800,
+        "kind": "boss_hit",
+        "damage": 16,
+        "player_hp": 870,
+        "boss_hp": 4214,
+        "blocked": true
+      },
+      {
+        "t": 15000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 870,
+        "boss_hp": 4106,
+        "stacks": 6
+      },
+      {
+        "t": 15400,
+        "kind": "boss_hit",
+        "damage": 37,
+        "player_hp": 833,
+        "boss_hp": 4106,
+        "blocked": false
+      },
+      {
+        "t": 15561,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 833,
+        "boss_hp": 4049,
+        "critical": false
+      },
+      {
+        "t": 16000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 833,
+        "boss_hp": 3941,
+        "stacks": 6
+      },
+      {
+        "t": 16380,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 833,
+        "boss_hp": 3884,
+        "critical": false
+      },
+      {
+        "t": 17000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 833,
+        "boss_hp": 3776,
+        "stacks": 6
+      },
+      {
+        "t": 17199,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 833,
+        "boss_hp": 3719,
+        "critical": false
+      },
+      {
+        "t": 17600,
+        "kind": "boss_hit",
+        "damage": 37,
+        "player_hp": 796,
+        "boss_hp": 3719,
+        "blocked": false
+      },
+      {
+        "t": 18000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 796,
+        "boss_hp": 3611,
+        "stacks": 6
+      },
+      {
+        "t": 18018,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 796,
+        "boss_hp": 3554,
+        "critical": false
+      },
+      {
+        "t": 18200,
+        "kind": "boss_hit",
+        "damage": 16,
+        "player_hp": 780,
+        "boss_hp": 3554,
+        "blocked": true
+      },
+      {
+        "t": 18800,
+        "kind": "boss_hit",
+        "damage": 37,
+        "player_hp": 743,
+        "boss_hp": 3554,
+        "blocked": false
+      },
+      {
+        "t": 18837,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 743,
+        "boss_hp": 3497,
+        "critical": false
+      },
+      {
+        "t": 19000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 743,
+        "boss_hp": 3389,
+        "stacks": 6
+      },
+      {
+        "t": 19400,
+        "kind": "boss_hit",
+        "damage": 37,
+        "player_hp": 706,
+        "boss_hp": 3389,
+        "blocked": false
+      },
+      {
+        "t": 19656,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 706,
+        "boss_hp": 3332,
+        "critical": false
+      },
+      {
+        "t": 20000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 706,
+        "boss_hp": 3224,
+        "stacks": 6
+      },
+      {
+        "t": 20475,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 706,
+        "boss_hp": 3167,
+        "critical": false
+      },
+      {
+        "t": 21000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 706,
+        "boss_hp": 3059,
+        "stacks": 6
+      },
+      {
+        "t": 21294,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 706,
+        "boss_hp": 3002,
+        "critical": false
+      },
+      {
+        "t": 21600,
+        "kind": "boss_hit",
+        "damage": 16,
+        "player_hp": 690,
+        "boss_hp": 3002,
+        "blocked": true
+      },
+      {
+        "t": 22000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 690,
+        "boss_hp": 2894,
+        "stacks": 6
+      },
+      {
+        "t": 22113,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 690,
+        "boss_hp": 2837,
+        "critical": false
+      },
+      {
+        "t": 22200,
+        "kind": "boss_hit",
+        "damage": 16,
+        "player_hp": 674,
+        "boss_hp": 2837,
+        "blocked": true
+      },
+      {
+        "t": 22800,
+        "kind": "boss_hit",
+        "damage": 37,
+        "player_hp": 637,
+        "boss_hp": 2837,
+        "blocked": false
+      },
+      {
+        "t": 22932,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 637,
+        "boss_hp": 2780,
+        "critical": false
+      },
+      {
+        "t": 23000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 637,
+        "boss_hp": 2672,
+        "stacks": 6
+      },
+      {
+        "t": 23400,
+        "kind": "boss_hit",
+        "damage": 37,
+        "player_hp": 600,
+        "boss_hp": 2672,
+        "blocked": false
+      },
+      {
+        "t": 23751,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 600,
+        "boss_hp": 2615,
+        "critical": false
+      },
+      {
+        "t": 24000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 600,
+        "boss_hp": 2507,
+        "stacks": 6
+      },
+      {
+        "t": 24570,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 600,
+        "boss_hp": 2450,
+        "critical": false
+      },
+      {
+        "t": 25000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 600,
+        "boss_hp": 2342,
+        "stacks": 6
+      },
+      {
+        "t": 25389,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 600,
+        "boss_hp": 2285,
+        "critical": false
+      },
+      {
+        "t": 25600,
+        "kind": "boss_hit",
+        "damage": 37,
+        "player_hp": 563,
+        "boss_hp": 2285,
+        "blocked": false
+      },
+      {
+        "t": 26000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 563,
+        "boss_hp": 2177,
+        "stacks": 6
+      },
+      {
+        "t": 26200,
+        "kind": "boss_hit",
+        "damage": 37,
+        "player_hp": 526,
+        "boss_hp": 2177,
+        "blocked": false
+      },
+      {
+        "t": 26208,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 526,
+        "boss_hp": 2120,
+        "critical": false
+      },
+      {
+        "t": 26800,
+        "kind": "boss_hit",
+        "damage": 16,
+        "player_hp": 510,
+        "boss_hp": 2120,
+        "blocked": true
+      },
+      {
+        "t": 27000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 510,
+        "boss_hp": 2012,
+        "stacks": 6
+      },
+      {
+        "t": 27027,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 510,
+        "boss_hp": 1955,
+        "critical": false
+      },
+      {
+        "t": 27400,
+        "kind": "boss_hit",
+        "damage": 37,
+        "player_hp": 473,
+        "boss_hp": 1955,
+        "blocked": false
+      },
+      {
+        "t": 27846,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 473,
+        "boss_hp": 1898,
+        "critical": false
+      },
+      {
+        "t": 28000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 473,
+        "boss_hp": 1790,
+        "stacks": 6
+      },
+      {
+        "t": 28665,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 473,
+        "boss_hp": 1733,
+        "critical": false
+      },
+      {
+        "t": 29000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 473,
+        "boss_hp": 1625,
+        "stacks": 6
+      },
+      {
+        "t": 29484,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 473,
+        "boss_hp": 1568,
+        "critical": false
+      },
+      {
+        "t": 29600,
+        "kind": "boss_hit",
+        "damage": 16,
+        "player_hp": 457,
+        "boss_hp": 1568,
+        "blocked": true
+      },
+      {
+        "t": 30000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 457,
+        "boss_hp": 1460,
+        "stacks": 6
+      },
+      {
+        "t": 30200,
+        "kind": "boss_hit",
+        "damage": 16,
+        "player_hp": 441,
+        "boss_hp": 1460,
+        "blocked": true
+      },
+      {
+        "t": 30303,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 441,
+        "boss_hp": 1403,
+        "critical": false
+      },
+      {
+        "t": 30800,
+        "kind": "boss_hit",
+        "damage": 16,
+        "player_hp": 425,
+        "boss_hp": 1403,
+        "blocked": true
+      },
+      {
+        "t": 31000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 425,
+        "boss_hp": 1295,
+        "stacks": 6
+      },
+      {
+        "t": 31122,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 425,
+        "boss_hp": 1238,
+        "critical": false
+      },
+      {
+        "t": 31400,
+        "kind": "boss_hit",
+        "damage": 16,
+        "player_hp": 409,
+        "boss_hp": 1238,
+        "blocked": true
+      },
+      {
+        "t": 31941,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 409,
+        "boss_hp": 1181,
+        "critical": false
+      },
+      {
+        "t": 32000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 409,
+        "boss_hp": 1073,
+        "stacks": 6
+      },
+      {
+        "t": 32760,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 409,
+        "boss_hp": 1016,
+        "critical": false
+      },
+      {
+        "t": 33000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 409,
+        "boss_hp": 908,
+        "stacks": 6
+      },
+      {
+        "t": 33579,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 409,
+        "boss_hp": 851,
+        "critical": false
+      },
+      {
+        "t": 33600,
+        "kind": "boss_hit",
+        "damage": 37,
+        "player_hp": 372,
+        "boss_hp": 851,
+        "blocked": false
+      },
+      {
+        "t": 34000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 372,
+        "boss_hp": 743,
+        "stacks": 6
+      },
+      {
+        "t": 34200,
+        "kind": "boss_hit",
+        "damage": 37,
+        "player_hp": 335,
+        "boss_hp": 743,
+        "blocked": false
+      },
+      {
+        "t": 34398,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 335,
+        "boss_hp": 686,
+        "critical": false
+      },
+      {
+        "t": 34800,
+        "kind": "boss_hit",
+        "damage": 16,
+        "player_hp": 319,
+        "boss_hp": 686,
+        "blocked": true
+      },
+      {
+        "t": 35000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 319,
+        "boss_hp": 578,
+        "stacks": 6
+      },
+      {
+        "t": 35217,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 319,
+        "boss_hp": 521,
+        "critical": false
+      },
+      {
+        "t": 35400,
+        "kind": "boss_hit",
+        "damage": 37,
+        "player_hp": 282,
+        "boss_hp": 521,
+        "blocked": false
+      },
+      {
+        "t": 36000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 282,
+        "boss_hp": 413,
+        "stacks": 6
+      },
+      {
+        "t": 36036,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 282,
+        "boss_hp": 356,
+        "critical": false
+      },
+      {
+        "t": 36855,
+        "kind": "normal",
+        "damage": 57,
+        "player_hp": 282,
+        "boss_hp": 299,
+        "critical": false
+      },
+      {
+        "t": 37000,
+        "kind": "poison",
+        "damage": 108,
+        "player_hp": 282,
+        "boss_hp": 191,
+        "stacks": 6
+      },
+      {
+        "t": 37600,
+        "kind": "boss_hit",
+        "damage": 37,
+        "player_hp": 245,
+        "boss_hp": 191,
+        "blocked": false
+      },
+      {
+        "t": 37674,
+        "kind": "normal",
+        "damage": 100,
+        "player_hp": 245,
+        "boss_hp": 91,
+        "critical": true
+      },
+      {
+        "t": 38000,
+        "kind": "poison",
+        "damage": 91,
+        "player_hp": 245,
+        "boss_hp": 0,
+        "stacks": 6
+      }
+    ]
+  }
+}

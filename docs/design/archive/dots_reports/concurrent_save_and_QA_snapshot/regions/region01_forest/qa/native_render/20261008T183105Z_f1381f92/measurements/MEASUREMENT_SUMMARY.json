@@ -1,0 +1,303 @@
+{
+  "created_utc": "2026-10-08T18:37:02.910713+00:00",
+  "native_measurements_report": "PNG_NATIVE_MEASUREMENTS.json",
+  "alpha_readback_pass_7_of_7": true,
+  "source_hashes_preserved_7_of_7": true,
+  "existing_qa_v2_top_left_bounds_and_counts_match": true,
+  "notes": [
+    "PNG datastream alpha is straight/unassociated by PNG specification. ImageIO reports last/unassociated for RGBA inputs. The measurement CGContext intentionally uses premultipliedLast internally; these are distinct storage stages.",
+    "No measured input contains gAMA/sRGB/iCCP/cHRM PNG chunks. ImageIO selected sRGB for decoding; embedded authored sRGB profile was not proven.",
+    "Bounding boxes use original native pixels, top-left origin, right/bottom exclusive. alpha>=1 includes faint peripheral pixels; alpha>=16 and >=128 are threshold observations, not approved crop/pivot.",
+    "The opaque far RGB image has vertically symmetric alpha, so alpha alone cannot establish its row orientation. RGBA inputs matched PNG top-left rows byte-for-byte.",
+    "All visual quality/game rendering, Simulator execution and iPhone execution judgments remain outside this measurement subtask."
+  ],
+  "files": [
+    {
+      "relative_package_path": "backgrounds/BG_R01_FIELD/BG_R01_FIELD_far_v01.png",
+      "native_canvas": {
+        "width": 941,
+        "height": 1671
+      },
+      "alpha_bins": {
+        "0": 0,
+        "1_to_15": 0,
+        "16_to_127": 0,
+        "128_to_253": 0,
+        "254": 0,
+        "255": 1572411
+      },
+      "mean_alpha_over_nonzero": 255.0,
+      "bbox_gte_1": [
+        0,
+        0,
+        941,
+        1671
+      ],
+      "bbox_gte_16": [
+        0,
+        0,
+        941,
+        1671
+      ],
+      "bbox_gte_128": [
+        0,
+        0,
+        941,
+        1671
+      ],
+      "decoder_alpha": "noneSkipLast",
+      "embedded_color_space_chunks": {},
+      "decoder_color_space": {
+        "model_raw_value": 1,
+        "name": "kCGColorSpaceSRGB",
+        "number_of_components": 3
+      }
+    },
+    {
+      "relative_package_path": "backgrounds/BG_R01_FIELD/BG_R01_FIELD_back_trees_v01.png",
+      "native_canvas": {
+        "width": 941,
+        "height": 1671
+      },
+      "alpha_bins": {
+        "0": 71942,
+        "1_to_15": 29581,
+        "16_to_127": 15369,
+        "128_to_253": 1455309,
+        "254": 101,
+        "255": 109
+      },
+      "mean_alpha_over_nonzero": 244.4510976234764,
+      "bbox_gte_1": [
+        0,
+        0,
+        941,
+        1671
+      ],
+      "bbox_gte_16": [
+        0,
+        0,
+        941,
+        1671
+      ],
+      "bbox_gte_128": [
+        0,
+        0,
+        941,
+        1671
+      ],
+      "decoder_alpha": "last (unassociated)",
+      "embedded_color_space_chunks": {},
+      "decoder_color_space": {
+        "model_raw_value": 1,
+        "name": "kCGColorSpaceSRGB",
+        "number_of_components": 3
+      }
+    },
+    {
+      "relative_package_path": "backgrounds/BG_R01_FIELD/BG_R01_FIELD_playfield_v02.png",
+      "native_canvas": {
+        "width": 941,
+        "height": 1671
+      },
+      "alpha_bins": {
+        "0": 398520,
+        "1_to_15": 17588,
+        "16_to_127": 2128,
+        "128_to_253": 1150937,
+        "254": 3220,
+        "255": 18
+      },
+      "mean_alpha_over_nonzero": 248.68232996078854,
+      "bbox_gte_1": [
+        0,
+        2,
+        941,
+        1671
+      ],
+      "bbox_gte_16": [
+        0,
+        258,
+        941,
+        1671
+      ],
+      "bbox_gte_128": [
+        0,
+        259,
+        941,
+        1671
+      ],
+      "decoder_alpha": "last (unassociated)",
+      "embedded_color_space_chunks": {},
+      "decoder_color_space": {
+        "model_raw_value": 1,
+        "name": "kCGColorSpaceSRGB",
+        "number_of_components": 3
+      }
+    },
+    {
+      "relative_package_path": "backgrounds/BG_R01_FIELD/BG_R01_FIELD_foreground_v02.png",
+      "native_canvas": {
+        "width": 941,
+        "height": 1671
+      },
+      "alpha_bins": {
+        "0": 1310572,
+        "1_to_15": 12929,
+        "16_to_127": 4899,
+        "128_to_253": 233311,
+        "254": 10661,
+        "255": 39
+      },
+      "mean_alpha_over_nonzero": 235.10934200023678,
+      "bbox_gte_1": [
+        0,
+        100,
+        941,
+        1671
+      ],
+      "bbox_gte_16": [
+        0,
+        1066,
+        941,
+        1671
+      ],
+      "bbox_gte_128": [
+        0,
+        1068,
+        941,
+        1671
+      ],
+      "decoder_alpha": "last (unassociated)",
+      "embedded_color_space_chunks": {},
+      "decoder_color_space": {
+        "model_raw_value": 1,
+        "name": "kCGColorSpaceSRGB",
+        "number_of_components": 3
+      }
+    },
+    {
+      "relative_package_path": "enemies/E_R01_01/E_R01_01_MOSS_TUSK_BOAR_sprite_prototype_v2.png",
+      "native_canvas": {
+        "width": 1536,
+        "height": 1024
+      },
+      "alpha_bins": {
+        "0": 1070414,
+        "1_to_15": 25528,
+        "16_to_127": 4511,
+        "128_to_253": 461642,
+        "254": 10769,
+        "255": 0
+      },
+      "mean_alpha_over_nonzero": 237.71196735993632,
+      "bbox_gte_1": [
+        0,
+        32,
+        1516,
+        1024
+      ],
+      "bbox_gte_16": [
+        265,
+        116,
+        1301,
+        904
+      ],
+      "bbox_gte_128": [
+        266,
+        117,
+        1300,
+        903
+      ],
+      "decoder_alpha": "last (unassociated)",
+      "embedded_color_space_chunks": {},
+      "decoder_color_space": {
+        "model_raw_value": 1,
+        "name": "kCGColorSpaceSRGB",
+        "number_of_components": 3
+      }
+    },
+    {
+      "relative_package_path": "source/boar_rig/textures/E_R01_01_body_plate_v1.png",
+      "native_canvas": {
+        "width": 1536,
+        "height": 1024
+      },
+      "alpha_bins": {
+        "0": 1091540,
+        "1_to_15": 20221,
+        "16_to_127": 3779,
+        "128_to_253": 404703,
+        "254": 52621,
+        "255": 0
+      },
+      "mean_alpha_over_nonzero": 240.3677876025297,
+      "bbox_gte_1": [
+        0,
+        9,
+        1506,
+        1024
+      ],
+      "bbox_gte_16": [
+        265,
+        117,
+        1302,
+        883
+      ],
+      "bbox_gte_128": [
+        265,
+        117,
+        1301,
+        882
+      ],
+      "decoder_alpha": "last (unassociated)",
+      "embedded_color_space_chunks": {},
+      "decoder_color_space": {
+        "model_raw_value": 1,
+        "name": "kCGColorSpaceSRGB",
+        "number_of_components": 3
+      }
+    },
+    {
+      "relative_package_path": "source/boar_rig/textures/E_R01_01_foreleg_layer_v1.png",
+      "native_canvas": {
+        "width": 1536,
+        "height": 1024
+      },
+      "alpha_bins": {
+        "0": 1483604,
+        "1_to_15": 4525,
+        "16_to_127": 1272,
+        "128_to_253": 73411,
+        "254": 10052,
+        "255": 0
+      },
+      "mean_alpha_over_nonzero": 236.33466278288148,
+      "bbox_gte_1": [
+        121,
+        54,
+        1444,
+        968
+      ],
+      "bbox_gte_16": [
+        764,
+        371,
+        1004,
+        904
+      ],
+      "bbox_gte_128": [
+        765,
+        372,
+        1003,
+        903
+      ],
+      "decoder_alpha": "last (unassociated)",
+      "embedded_color_space_chunks": {},
+      "decoder_color_space": {
+        "model_raw_value": 1,
+        "name": "kCGColorSpaceSRGB",
+        "number_of_components": 3
+      }
+    }
+  ]
+}

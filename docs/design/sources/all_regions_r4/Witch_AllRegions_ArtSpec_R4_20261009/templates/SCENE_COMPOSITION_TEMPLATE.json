@@ -1,0 +1,77 @@
+{
+  "example_not_delivery": true,
+  "status": "TEMPLATE_DO_NOT_IMPORT",
+  "scene_id": "SCN_A_R01_01",
+  "area_id": "A_R01_01",
+  "base_family_id": "BG_R01_FIELD",
+  "variant_id": null,
+  "profile_id": "P0_ART_TEST_20261009",
+  "canvas_logical": [
+    384,
+    512
+  ],
+  "layers": [
+    {
+      "slot": "far",
+      "path": null,
+      "sha256": null,
+      "parallax_factor_proposal": 0.1,
+      "z": 0
+    },
+    {
+      "slot": "back",
+      "path": null,
+      "sha256": null,
+      "parallax_factor_proposal": 0.35,
+      "z": 10
+    },
+    {
+      "slot": "playfield",
+      "path": null,
+      "sha256": null,
+      "parallax_factor_proposal": 1.0,
+      "z": 20
+    },
+    {
+      "slot": "front",
+      "path": null,
+      "sha256": null,
+      "parallax_factor_proposal": 1.08,
+      "z": 30
+    }
+  ],
+  "parallax_policy": "optional small movement only; cancel movement/reduced effects supported; no camera-driven gameplay",
+  "protected_floor_normalized": [
+    0.08,
+    0.56,
+    0.94,
+    0.9
+  ],
+  "spawn_ground_anchors": {
+    "C_WITCH": [
+      0.17,
+      0.66
+    ],
+    "C_APPRENTICE": [
+      0.16,
+      0.86
+    ],
+    "C_SMITH": [
+      0.37,
+      0.77
+    ],
+    "C_FAMILIAR": [
+      0.34,
+      0.88
+    ],
+    "enemy_primary": [
+      0.76,
+      0.76
+    ]
+  },
+  "gather_nodes": [],
+  "attack_telegraphs_baked_in": false,
+  "boss_body_baked_in": false,
+  "text_ui_baked_in": false,
+  "device_verified": false
+}

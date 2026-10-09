@@ -1,0 +1,249 @@
+{
+  "date": "2026-10-08T11:47:08.155Z",
+  "baseURL": "http://127.0.0.1:4173",
+  "browser": "Google Chrome via bundled Playwright",
+  "scenarios": [
+    {
+      "name": "A2.1_initial_six_starter_items",
+      "status": "PASS"
+    },
+    {
+      "name": "A2.1_gatekeeper_first_victory",
+      "status": "PASS"
+    },
+    {
+      "name": "A2.1_trial_12_available",
+      "status": "PASS"
+    },
+    {
+      "name": "A2.1_poison_build_equipped",
+      "status": "PASS"
+    },
+    {
+      "name": "A2.1_second_boss_comparable_result",
+      "status": "PASS"
+    },
+    {
+      "name": "A2.1_third_boss_clear_and_scope_complete",
+      "status": "PASS"
+    },
+    {
+      "name": "A2.1_reload_does_not_regrant_trial_items",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop_four_primary_screenshots",
+      "status": "PASS",
+      "paths": [
+        "desktop-01-return.png",
+        "desktop-02-equipment.png",
+        "desktop-03-expedition.png",
+        "desktop-04-result.png"
+      ]
+    },
+    {
+      "name": "A2.2_debug_8h_award",
+      "status": "PASS"
+    },
+    {
+      "name": "A2.2_reload_no_duplicate_reward",
+      "status": "PASS"
+    },
+    {
+      "name": "A2.2_debug_marked_after_reload",
+      "status": "PASS"
+    },
+    {
+      "name": "A2.3_auto_duplicate_keeps_equipped_locked_preset",
+      "status": "PASS"
+    },
+    {
+      "name": "A2.3_manual_bulk_rejects_fixture:locked:weapon_c",
+      "status": "PASS"
+    },
+    {
+      "name": "A2.3_manual_bulk_rejects_starter:weapon_c",
+      "status": "PASS"
+    },
+    {
+      "name": "A2.3_manual_bulk_rejects_fixture:preset:weapon",
+      "status": "PASS"
+    },
+    {
+      "name": "A2.3_safe_bulk_preserves_protection_and_removes_free_dupes",
+      "status": "PASS"
+    },
+    {
+      "name": "A2.4_quota_preserves_previous_save",
+      "status": "PASS"
+    },
+    {
+      "name": "A2.4_quota_one_award_after_retry_or_reload",
+      "status": "PASS"
+    },
+    {
+      "name": "A2.4_before_commit_preserves_previous_save",
+      "status": "PASS"
+    },
+    {
+      "name": "A2.4_before_commit_one_award_after_retry_or_reload",
+      "status": "PASS"
+    },
+    {
+      "name": "A2.4_after_commit_readback_reconciled",
+      "status": "PASS"
+    },
+    {
+      "name": "A2.4_after_commit_one_award_after_retry_or_reload",
+      "status": "PASS"
+    },
+    {
+      "name": "A2.5_poison_sentinels_loss_reason_and_breakdown",
+      "status": "PASS"
+    },
+    {
+      "name": "A2.5_changed_build_wins_same_boss_seed",
+      "status": "PASS"
+    },
+    {
+      "name": "A2.6_one_two_skip_results_identical",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile_375_no_horizontal_overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile_375_reduced_motion",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile_375_cancel_restores_focus",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile_375_apply_restores_focus",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile_375_after_apply_no_overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile_375_200pct_text_applied",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile_375_200pct_text_no_horizontal_overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile_375_200pct_labels_fit_controls",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile_375_buttons_at_least_44px",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile_390_no_horizontal_overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile_390_reduced_motion",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile_390_cancel_restores_focus",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile_390_apply_restores_focus",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile_390_after_apply_no_overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile_390_200pct_text_applied",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile_390_200pct_text_no_horizontal_overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile_390_200pct_labels_fit_controls",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile_390_buttons_at_least_44px",
+      "status": "PASS"
+    },
+    {
+      "name": "edge_zero_items_renders_without_exception",
+      "status": "PASS"
+    },
+    {
+      "name": "edge_full_inventory_craft_fails_without_charge",
+      "status": "PASS"
+    },
+    {
+      "name": "edge_missing_two_slots_repairable",
+      "status": "PASS"
+    },
+    {
+      "name": "edge_clock_anomaly_no_rewards",
+      "status": "PASS"
+    },
+    {
+      "name": "edge_clock_rebase_requires_and_accepts_confirmation",
+      "status": "PASS"
+    },
+    {
+      "name": "external_requests_blocked_and_none_attempted",
+      "status": "PASS",
+      "externalRequestsAborted": 0,
+      "externalRequestOrigins": []
+    },
+    {
+      "name": "no_browser_page_errors",
+      "status": "PASS",
+      "pageErrors": []
+    },
+    {
+      "name": "no_browser_console_errors",
+      "status": "PASS",
+      "consoleErrors": []
+    }
+  ],
+  "passCount": 51,
+  "failCount": 0,
+  "externalRequestsAborted": 0,
+  "externalRequestOrigins": [],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "errors": [],
+  "sourceFingerprint": {
+    "src/ui.js": "3ea65d5b508a5f3fd2430b52d15e7a874955f14f021588d6dca19149ab012ddf",
+    "src/game.js": "7a7a157085fdd2dc2b6036a24289f2fceb15411341d4a1bd01560d2cc094014b",
+    "src/core/combat.js": "854c7fe84b0beec21d5b861cee32ee9c5581d3fd09f90ce9e0d2320ec9494d6d",
+    "src/core/progression.js": "0fbb267b018020fcd5f1246b0e4be676329b6a64104a988fc156a2ac289979e0",
+    "src/platform/storage.js": "86033cde40a30e1abb020c675d77c0104b55691672c0738420da6e389e2e9904",
+    "styles.css": "77c075794e731086ca1507b9993537751d0f455d53c2c964749ab5d778e6da28",
+    "index.html": "09bd6e78beb1961cf8862eb6fc92b4f6e50a231d41bf58ae573bb567460a885a"
+  },
+  "screenshots": [
+    "reports/browser-evidence/desktop-01-return.png",
+    "reports/browser-evidence/desktop-02-equipment.png",
+    "reports/browser-evidence/desktop-03-expedition.png",
+    "reports/browser-evidence/desktop-04-result.png",
+    "reports/browser-evidence/mobile-375-equipment-200pct.png",
+    "reports/browser-evidence/mobile-375-return.png",
+    "reports/browser-evidence/mobile-390-equipment-200pct.png",
+    "reports/browser-evidence/mobile-390-return.png",
+    "reports/browser-evidence/offline-after-reload.png"
+  ],
+  "overall": "PASS"
+}

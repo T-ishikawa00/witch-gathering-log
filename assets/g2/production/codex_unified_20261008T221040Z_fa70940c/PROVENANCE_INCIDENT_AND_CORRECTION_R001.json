@@ -1,0 +1,28 @@
+{
+  "schema": "g2_provenance_incident_and_corrective_index_r001",
+  "incident": "Some parallel agent importers inferred the newest shared image file rather than the output_hint from their own tool call.",
+  "responsibility": "Root integration did not catch the importer assumption before candidate QA. Root acknowledged and corrected it.",
+  "confirmed_cross_import_asset_ids": [
+    "ICO_EQ_S_02",
+    "ICO_EQ_AMU_01",
+    "ICO_EQ_AMU_02",
+    "ICO_EQ_AMU_03",
+    "ICO_EQ_RING_02",
+    "ICO_M_R05_E1"
+  ],
+  "legacy_scope": "Legacy agent-produced gear/icon raws before exact output capture may not be attributable to their stored prompts. Keep all old files; do not count as current verified sources.",
+  "incorrect_failure_interpretation": "Cross imports are importer/provenance failures, not evidence that the requested original concept could not be generated.",
+  "corrective_action": "Per-call returned output_hint UUID file captured before import, provider/raw SHA comparison, prompt/reference SHA, new revision with explicit current selection indexes.",
+  "current_authority": [
+    "planning/VERIFIED_RUNTIME_STATIC_ROLLUP_R001.json",
+    "planning/VERIFIED_SPEC_STATIC_ROLLUP_R001.json",
+    "planning/STATIC_CATALOG_INDEX_R001.json",
+    "planning/CURRENT_NODE_SELECTION_R001.json"
+  ],
+  "source_rights": "UNKNOWN_FINAL_CLEARANCE",
+  "new_generated_source_binding": "Only current source/provider copy verification establishes exact current-call binding. A visually valid legacy reference image retains legacy UNKNOWN attribution.",
+  "adoption": "NONE",
+  "deletion_or_replacement_of_legacy_files": "NONE",
+  "dots_contact": "NONE",
+  "known_other_case": "R05_G4 r002 result metadata was lost; no inferred file was imported. Bounded r003 exact-call retry recorded. Actual generation cost of the lost call UNKNOWN."
+}

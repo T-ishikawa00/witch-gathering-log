@@ -1,0 +1,37 @@
+{
+  "fixture": "static_icons_r002",
+  "bundle_id": "com.example.witchg2.codexunified.icons.r002",
+  "simulator": "iPhone17Pro / iOS26.5",
+  "loaded_static_units": 79,
+  "decoded_PNG": 237,
+  "decode_seconds_observed": 0.20827720833040075,
+  "readback_dimensions_and_alpha": "237 actual CGImage decode rows; expected64/128/256 dimensions; structural alpha in build readback",
+  "texture_preload_completion": "OBSERVED",
+  "regional_mattes_rendered": 15,
+  "stable_screenshot_sha256": "c928a7b6f23f5591d39feda8abf1009443943469c56565a175ca852bc99da29f",
+  "baseline_metrics_sha256": "25acf6e002447d8723b03b2361792d6e3f2ec39ab7a1c8744f462a84c9ff4935",
+  "return_metrics_sha256": "87cb238019bebda5e2f159b921d2b3d93201e086e9c4d5a5ee5a8a68df629a6d",
+  "baseline_resident_mib_range": [
+    157.890625,
+    158.359375
+  ],
+  "baseline_callbacks_s_range": [
+    59.99764342589687,
+    60.33122005550537
+  ],
+  "background_return": "PASS_LIMITED_SIMULATOR_APP_SWITCH_EVENTS_AND_CONTINUED_CATALOG_LOOP_WITHOUT_TERMINATION",
+  "background_return_limits": "Switch to isolated jelly QA app and back; no actual hardware lock/sleep/energy test, no game save or battle state test",
+  "image_binding": "237 byte-exact copies checked in BUILD_RECEIPT",
+  "visual_adoption": "NONE; unqualified and partial labels retained",
+  "final_inventory_UI_readability": "NOT_QUALIFIED_PROFILE_UNFROZEN; at QA 50/28points most silhouettes readable, pale F02 weak on white",
+  "integration_into_G1_or_G2": "NONE_ISOLATED_CONSUMER",
+  "device": "NOT_TESTED",
+  "sleep_resume": "NOT_TESTED",
+  "actual_display_GPU_FPS_cpu_gpu_heat_battery": "NOT_MEASURED",
+  "known_limits": [
+    "Callback rate is not displayFPS",
+    "Short isolated consumer with all icon sizes loaded, not full game scene or final memory budget",
+    "Original failed static_icons_r001 compile preserved; current successful r002 uses parse-as-library",
+    "Nineteen metadata references had no historic expected SHA; current observed digests do not establish older equality"
+  ]
+}

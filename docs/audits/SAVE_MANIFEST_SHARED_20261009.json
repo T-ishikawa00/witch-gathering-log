@@ -1,0 +1,1032 @@
+{
+  "schema": "shared_save_receipt_20261009",
+  "derived_from_project_relative": "docs/design/archive/dots_reports/concurrent_save_and_QA_snapshot/regions/region01_forest/deliveries/20261008T182055Z_a2250721/SAVE_MANIFEST.json",
+  "original_sha256": "e560e8f85fe063dbcdb0bf223edb002dd03a95cfd3f8acff7b0ec0dbfebdbad0",
+  "notice": "派生共有資料。原本の保存証拠を上書きしない。historical_recordのパスはGitルート相対/論理外部名に正規化済みで、再実行設定ではない。",
+  "external_source_namespace": "external_source/downloads/ は原ZIPの論理出所名。実ファイルを同梱したという意味ではない。",
+  "historical_record": {
+    "success": true,
+    "started_at_utc": "2026-10-08T18:20:55.470597+00:00",
+    "region_directory": "assets/g2/regions/region01_forest",
+    "source_archive_directory": "assets/g2/regions/region01_forest/source_archives/20261008T182055Z_a2250721",
+    "delivery_directory": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721",
+    "source_archives": [
+      {
+        "canonical_name": "Witch_G2_R01_02_Boss_Background.zip",
+        "actual_source_path": "external_source/downloads/Witch_G2_R01_02_Boss_Background.zip",
+        "saved_archive_path": "assets/g2/regions/region01_forest/source_archives/20261008T182055Z_a2250721/Witch_G2_R01_02_Boss_Background.zip",
+        "bytes": 9724469,
+        "sha256": "97b58c8749d2278b4489bfefdf1b243b96d0c16e4fe1519e5930ae87f1785b17",
+        "zip_bytes_match_initial_sha256": true,
+        "member_hashes_match_initial_inspection": true,
+        "crc_passed": true,
+        "source_path_exists_after_copy": true,
+        "source_device": 16777232,
+        "source_inode": 18090855,
+        "other_matching_candidate_paths": []
+      },
+      {
+        "canonical_name": "Witch_G2_R01_Small_01_Field_Background.zip",
+        "actual_source_path": "external_source/downloads/Witch_G2_R01_Small_01_Field_Background.zip",
+        "saved_archive_path": "assets/g2/regions/region01_forest/source_archives/20261008T182055Z_a2250721/Witch_G2_R01_Small_01_Field_Background.zip",
+        "bytes": 6962512,
+        "sha256": "d97584502971e3cad150979756fc7ef974ee4b6bb30807691bb0ff85589b4358",
+        "zip_bytes_match_initial_sha256": true,
+        "member_hashes_match_initial_inspection": true,
+        "crc_passed": true,
+        "source_path_exists_after_copy": true,
+        "source_device": 16777232,
+        "source_inode": 18090899,
+        "other_matching_candidate_paths": []
+      },
+      {
+        "canonical_name": "Witch_G2_R01_Small_02_Field_Background.zip",
+        "actual_source_path": "external_source/downloads/Witch_G2_R01_Small_02_Field_Background.zip",
+        "saved_archive_path": "assets/g2/regions/region01_forest/source_archives/20261008T182055Z_a2250721/Witch_G2_R01_Small_02_Field_Background.zip",
+        "bytes": 6437527,
+        "sha256": "fac2982a6046a8d00873960bd1e7400d77a20003fa59b4783f8ba2088d6790ce",
+        "zip_bytes_match_initial_sha256": true,
+        "member_hashes_match_initial_inspection": true,
+        "crc_passed": true,
+        "source_path_exists_after_copy": true,
+        "source_device": 16777232,
+        "source_inode": 18090879,
+        "other_matching_candidate_paths": []
+      },
+      {
+        "canonical_name": "Witch_G2_R01_Small_03_Actors_Items.zip",
+        "actual_source_path": "external_source/downloads/Witch_G2_R01_Small_03_Actors_Items.zip",
+        "saved_archive_path": "assets/g2/regions/region01_forest/source_archives/20261008T182055Z_a2250721/Witch_G2_R01_Small_03_Actors_Items.zip",
+        "bytes": 5910584,
+        "sha256": "ebecfcde3938bde5ad52ba139427ca480f8ce603f0f81bf94d6f30b440d95d80",
+        "zip_bytes_match_initial_sha256": true,
+        "member_hashes_match_initial_inspection": true,
+        "crc_passed": true,
+        "source_path_exists_after_copy": true,
+        "source_device": 16777232,
+        "source_inode": 18090889,
+        "other_matching_candidate_paths": []
+      },
+      {
+        "canonical_name": "Witch_G2_R01_Small_04_Actors_Items.zip",
+        "actual_source_path": "external_source/downloads/Witch_G2_R01_Small_04_Actors_Items.zip",
+        "saved_archive_path": "assets/g2/regions/region01_forest/source_archives/20261008T182055Z_a2250721/Witch_G2_R01_Small_04_Actors_Items.zip",
+        "bytes": 6917730,
+        "sha256": "dfd5178f6fa54404336a95f42ea2cdf6d556a1640f9952707bdba91e46d8a3b9",
+        "zip_bytes_match_initial_sha256": true,
+        "member_hashes_match_initial_inspection": true,
+        "crc_passed": true,
+        "source_path_exists_after_copy": true,
+        "source_device": 16777232,
+        "source_inode": 18090954,
+        "other_matching_candidate_paths": []
+      },
+      {
+        "canonical_name": "Witch_G2_R01_Small_05_Actors_Items.zip",
+        "actual_source_path": "external_source/downloads/Witch_G2_R01_Small_05_Actors_Items.zip",
+        "saved_archive_path": "assets/g2/regions/region01_forest/source_archives/20261008T182055Z_a2250721/Witch_G2_R01_Small_05_Actors_Items.zip",
+        "bytes": 4553390,
+        "sha256": "d2aaf81fafc721b8bae97db4b8308cc4c969a6d3424699219280032c86b87da9",
+        "zip_bytes_match_initial_sha256": true,
+        "member_hashes_match_initial_inspection": true,
+        "crc_passed": true,
+        "source_path_exists_after_copy": true,
+        "source_device": 16777232,
+        "source_inode": 18090922,
+        "other_matching_candidate_paths": []
+      },
+      {
+        "canonical_name": "Witch_G2_R01_Small_06_Rig_QA_Docs.zip",
+        "actual_source_path": "external_source/downloads/Witch_G2_R01_Small_06_Rig_QA_Docs.zip",
+        "saved_archive_path": "assets/g2/regions/region01_forest/source_archives/20261008T182055Z_a2250721/Witch_G2_R01_Small_06_Rig_QA_Docs.zip",
+        "bytes": 7050001,
+        "sha256": "8a6234d69bb8471a08f31a2b64be6c84b51f53e2a4f77702cbc7c5e98a14dfee",
+        "zip_bytes_match_initial_sha256": true,
+        "member_hashes_match_initial_inspection": true,
+        "crc_passed": true,
+        "source_path_exists_after_copy": true,
+        "source_device": 16777232,
+        "source_inode": 18090956,
+        "other_matching_candidate_paths": []
+      },
+      {
+        "canonical_name": "Witch_G2_R01_Small_07_Rig_QA_Docs.zip",
+        "actual_source_path": "external_source/downloads/Witch_G2_R01_Small_07_Rig_QA_Docs.zip",
+        "saved_archive_path": "assets/g2/regions/region01_forest/source_archives/20261008T182055Z_a2250721/Witch_G2_R01_Small_07_Rig_QA_Docs.zip",
+        "bytes": 7358692,
+        "sha256": "d9dd42a516160000dcd55be679605b85d0b2fcad3dfb33f8f05478162d1219e4",
+        "zip_bytes_match_initial_sha256": true,
+        "member_hashes_match_initial_inspection": true,
+        "crc_passed": true,
+        "source_path_exists_after_copy": true,
+        "source_device": 16777232,
+        "source_inode": 18090935,
+        "other_matching_candidate_paths": []
+      },
+      {
+        "canonical_name": "Witch_G2_R01_Small_08_Rig_QA_Docs.zip",
+        "actual_source_path": "external_source/downloads/Witch_G2_R01_Small_08_Rig_QA_Docs.zip",
+        "saved_archive_path": "assets/g2/regions/region01_forest/source_archives/20261008T182055Z_a2250721/Witch_G2_R01_Small_08_Rig_QA_Docs.zip",
+        "bytes": 2275225,
+        "sha256": "14c8c52617cc98fd7111a0ad19191af43cb597a1732b73f55745ce695706eba5",
+        "zip_bytes_match_initial_sha256": true,
+        "member_hashes_match_initial_inspection": true,
+        "crc_passed": true,
+        "source_path_exists_after_copy": true,
+        "source_device": 16777232,
+        "source_inode": 18090911,
+        "other_matching_candidate_paths": []
+      },
+      {
+        "canonical_name": "Witch_G2_R01_Small_09_Archive.zip",
+        "actual_source_path": "external_source/downloads/Witch_G2_R01_Small_09_Archive.zip",
+        "saved_archive_path": "assets/g2/regions/region01_forest/source_archives/20261008T182055Z_a2250721/Witch_G2_R01_Small_09_Archive.zip",
+        "bytes": 7364438,
+        "sha256": "0b2ac94401ffd22ddcde26f6e7263c2a18245d5a6bf6dd7b3bf437882a9e6c2a",
+        "zip_bytes_match_initial_sha256": true,
+        "member_hashes_match_initial_inspection": true,
+        "crc_passed": true,
+        "source_path_exists_after_copy": true,
+        "source_device": 16777232,
+        "source_inode": 18090948,
+        "other_matching_candidate_paths": []
+      },
+      {
+        "canonical_name": "Witch_G2_R01_Small_10_Archive.zip",
+        "actual_source_path": "external_source/downloads/Witch_G2_R01_Small_10_Archive.zip",
+        "saved_archive_path": "assets/g2/regions/region01_forest/source_archives/20261008T182055Z_a2250721/Witch_G2_R01_Small_10_Archive.zip",
+        "bytes": 6872674,
+        "sha256": "36297268c6ed31b2a646ee550a2760bf56001af4f6b01a0cb23edf6873ff6386",
+        "zip_bytes_match_initial_sha256": true,
+        "member_hashes_match_initial_inspection": true,
+        "crc_passed": true,
+        "source_path_exists_after_copy": true,
+        "source_device": 16777232,
+        "source_inode": 18090973,
+        "other_matching_candidate_paths": []
+      },
+      {
+        "canonical_name": "Witch_G2_R01_Small_11_Archive.zip",
+        "actual_source_path": "external_source/downloads/Witch_G2_R01_Small_11_Archive.zip",
+        "saved_archive_path": "assets/g2/regions/region01_forest/source_archives/20261008T182055Z_a2250721/Witch_G2_R01_Small_11_Archive.zip",
+        "bytes": 7156842,
+        "sha256": "b0d0e3518956b15618f57f85da917b7bcce66b2c6553c7308f78a47d0c1f48af",
+        "zip_bytes_match_initial_sha256": true,
+        "member_hashes_match_initial_inspection": true,
+        "crc_passed": true,
+        "source_path_exists_after_copy": true,
+        "source_device": 16777232,
+        "source_inode": 18090987,
+        "other_matching_candidate_paths": []
+      }
+    ],
+    "candidate_errors": [],
+    "missing_archive_names": [],
+    "files": [
+      {
+        "relative_path": "R01_PACKAGE/FILE_LIST.csv",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/FILE_LIST.csv",
+        "bytes": 17530,
+        "sha256": "79fb761a0c8390edf057586492f7f61aeb89e764deec9fced397ec582bec47e3",
+        "source_archive": "Witch_G2_R01_Small_06_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/PACKAGE_CHECK.json",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/PACKAGE_CHECK.json",
+        "bytes": 302,
+        "sha256": "509442ae099415b9b14ffba812db9560815a719836cfdd2498ef25b1f8787fe4",
+        "source_archive": "Witch_G2_R01_Small_06_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/README.md",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/README.md",
+        "bytes": 2253,
+        "sha256": "48f15273a55c95a85f4dae03ff5ccaf9347b6019bf52d9305a102f92d818a2b4",
+        "source_archive": "Witch_G2_R01_Small_06_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/SELECTED_ASSETS.json",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/SELECTED_ASSETS.json",
+        "bytes": 1642,
+        "sha256": "d688a75af873c917c7da1ec753241c218f414bab03762aba5cca0361ca1df241",
+        "source_archive": "Witch_G2_R01_Small_06_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/SHA256SUMS.txt",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/SHA256SUMS.txt",
+        "bytes": 11480,
+        "sha256": "6eed96edc5cf98ed02be1d3d83e3590d83a06fd4ac45ceae4d3960557f6ba530",
+        "source_archive": "Witch_G2_R01_Small_06_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/SOURCE_MAP.json",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/SOURCE_MAP.json",
+        "bytes": 9787,
+        "sha256": "26fde838543f7005e81f8887c7437b55a8de34a6fc48c6c6943bd7d2b2af87b8",
+        "source_archive": "Witch_G2_R01_Small_06_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/ZIP_PARTS_README.txt",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/ZIP_PARTS_README.txt",
+        "bytes": 1091,
+        "sha256": "cf16a5ce8c05fd1a6d0f6c8b602f915cc9d2aafb00042d86f05703356f1f0bbb",
+        "source_archive": "Witch_G2_R01_Small_01_Field_Background.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/archive/not_selected/README.md",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/archive/not_selected/README.md",
+        "bytes": 166,
+        "sha256": "3b4b2ba336e98723d43b3654f0be6d662979a05efcb007cbbb04ac0e21130af7",
+        "source_archive": "Witch_G2_R01_Small_09_Archive.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/archive/not_selected/actors/B_R01_A_base_v1.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/archive/not_selected/actors/B_R01_A_base_v1.png",
+        "bytes": 2183033,
+        "sha256": "b8ad3594da1b2e797305ca61d6fabdb551f0b369b8f9fd756ddf8eec7d9400d5",
+        "source_archive": "Witch_G2_R01_Small_09_Archive.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/archive/not_selected/actors/E_R01_01_MOSS_TUSK_BOAR_sprite_prototype_v1.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/archive/not_selected/actors/E_R01_01_MOSS_TUSK_BOAR_sprite_prototype_v1.png",
+        "bytes": 1294409,
+        "sha256": "53747c6062061cbdbe64860f247318686a0f1ede843dddc2f7fe74f00c231517",
+        "source_archive": "Witch_G2_R01_Small_09_Archive.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/archive/not_selected/actors/E_R01_01_MOSS_TUSK_BOAR_sprite_prototype_v3.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/archive/not_selected/actors/E_R01_01_MOSS_TUSK_BOAR_sprite_prototype_v3.png",
+        "bytes": 1569071,
+        "sha256": "5a7d1677465028b8da37fd6123681d59a2f8a50659c81e4cf5b2c098be95674b",
+        "source_archive": "Witch_G2_R01_Small_09_Archive.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/archive/not_selected/actors/E_R01_02_base_v1.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/archive/not_selected/actors/E_R01_02_base_v1.png",
+        "bytes": 1589246,
+        "sha256": "05455602a653721ea61d8b726311011bb493cf0eb51f068838cb9e83396bd6bb",
+        "source_archive": "Witch_G2_R01_Small_09_Archive.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/archive/not_selected/actors/E_R01_04_base_v1.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/archive/not_selected/actors/E_R01_04_base_v1.png",
+        "bytes": 836479,
+        "sha256": "b1e6a9fdc7310d2825f354667c4840b003ae90f52972225578fd1c007690e5e8",
+        "source_archive": "Witch_G2_R01_Small_09_Archive.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/archive/not_selected/backgrounds/BG_R01_FIELD_back_forest_v01.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/archive/not_selected/backgrounds/BG_R01_FIELD_back_forest_v01.png",
+        "bytes": 3534217,
+        "sha256": "cab20016b29202415c2edb23ff274e28184c85f69b71a3e53d075d5886104d61",
+        "source_archive": "Witch_G2_R01_Small_10_Archive.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/archive/not_selected/backgrounds/BG_R01_FIELD_clean_plate_v01.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/archive/not_selected/backgrounds/BG_R01_FIELD_clean_plate_v01.png",
+        "bytes": 3433993,
+        "sha256": "03634b72f9d6de3c536c2905ab95ac23f4b96b7a1fddf1ac6f9cc98c234644b7",
+        "source_archive": "Witch_G2_R01_Small_10_Archive.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/archive/not_selected/backgrounds/BG_R01_FIELD_foreground_v01.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/archive/not_selected/backgrounds/BG_R01_FIELD_foreground_v01.png",
+        "bytes": 734986,
+        "sha256": "9df061df46d25ea788e097e9d6478419bac8bd2c0a177492a22a1a43925b322b",
+        "source_archive": "Witch_G2_R01_Small_11_Archive.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/archive/not_selected/backgrounds/BG_R01_FIELD_master_v01.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/archive/not_selected/backgrounds/BG_R01_FIELD_master_v01.png",
+        "bytes": 3636145,
+        "sha256": "6df1d9ef625141d8376d2dd9214772e8221fda3eeebc40e263d6754f7606607c",
+        "source_archive": "Witch_G2_R01_Small_11_Archive.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/archive/not_selected/backgrounds/BG_R01_FIELD_playfield_v01.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/archive/not_selected/backgrounds/BG_R01_FIELD_playfield_v01.png",
+        "bytes": 2919006,
+        "sha256": "60ff9d6e3e495f04292ed9864bf96395d6b793056e45e7588979af6c788b5ac9",
+        "source_archive": "Witch_G2_R01_Small_11_Archive.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/backgrounds/BG_R01_BOSS/BG_R01_BOSS_master_v01.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/backgrounds/BG_R01_BOSS/BG_R01_BOSS_master_v01.png",
+        "bytes": 3498306,
+        "sha256": "7411796c8cc64797a52e7f4d999a7dfad6112837cffca985c431eca5d94613a2",
+        "source_archive": "Witch_G2_R01_02_Boss_Background.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/backgrounds/BG_R01_BOSS/README.md",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/backgrounds/BG_R01_BOSS/README.md",
+        "bytes": 1141,
+        "sha256": "5fd6f5654990996daa909beafe874d32460f192cccef3497478ba4084ebe1c85",
+        "source_archive": "Witch_G2_R01_02_Boss_Background.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/backgrounds/BG_R01_BOSS/layer_manifest.json",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/backgrounds/BG_R01_BOSS/layer_manifest.json",
+        "bytes": 3592,
+        "sha256": "3bec1fe5626e5a0c2808452de8f4f901a2c2c94bdc379da12d1d7956362bb290",
+        "source_archive": "Witch_G2_R01_02_Boss_Background.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/backgrounds/BG_R01_BOSS/layers/BG_R01_BOSS_backforest_v01.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/backgrounds/BG_R01_BOSS/layers/BG_R01_BOSS_backforest_v01.png",
+        "bytes": 3676204,
+        "sha256": "059e462cde540b6c2ad05424a61147997d6540ca7b16f0b7f9d885212c083646",
+        "source_archive": "Witch_G2_R01_02_Boss_Background.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/backgrounds/BG_R01_BOSS/layers/BG_R01_BOSS_foreground_v01.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/backgrounds/BG_R01_BOSS/layers/BG_R01_BOSS_foreground_v01.png",
+        "bytes": 593427,
+        "sha256": "5cef7b974c4894976f70d9f5e0fa150182e4c163fbadd6c44c65f1ca06cd3fbe",
+        "source_archive": "Witch_G2_R01_02_Boss_Background.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/backgrounds/BG_R01_BOSS/layers/BG_R01_BOSS_terrain_stone_v01.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/backgrounds/BG_R01_BOSS/layers/BG_R01_BOSS_terrain_stone_v01.png",
+        "bytes": 2139856,
+        "sha256": "208b94233eac5f06ba348d71035ff6663a33c12765c96ff183b567c5bcadd7ec",
+        "source_archive": "Witch_G2_R01_02_Boss_Background.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/backgrounds/BG_R01_BOSS/sources/back_prompt.txt",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/backgrounds/BG_R01_BOSS/sources/back_prompt.txt",
+        "bytes": 1007,
+        "sha256": "9fab63a42697e7f49f7456d76f5c642f7b58d90ac614a4440d7b0f7fb32beb70",
+        "source_archive": "Witch_G2_R01_02_Boss_Background.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/backgrounds/BG_R01_BOSS/sources/front_prompt.txt",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/backgrounds/BG_R01_BOSS/sources/front_prompt.txt",
+        "bytes": 1099,
+        "sha256": "41ac48f6ea5bb83dd2598a8089b7436d61513bbf073c4e991a63a430fe53072a",
+        "source_archive": "Witch_G2_R01_02_Boss_Background.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/backgrounds/BG_R01_BOSS/sources/master_prompt.txt",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/backgrounds/BG_R01_BOSS/sources/master_prompt.txt",
+        "bytes": 1901,
+        "sha256": "c5630c2d11b352c5fb86ebfabe5f82e0d923b697146260c95288ec28d071c7a1",
+        "source_archive": "Witch_G2_R01_02_Boss_Background.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/backgrounds/BG_R01_BOSS/sources/terrain_prompt.txt",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/backgrounds/BG_R01_BOSS/sources/terrain_prompt.txt",
+        "bytes": 1169,
+        "sha256": "7f2217abdcff56089dd694dc78fd410e2e40fe6396247a16ad349b01b63e582e",
+        "source_archive": "Witch_G2_R01_02_Boss_Background.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/backgrounds/BG_R01_FIELD/BG_R01_FIELD_back_trees_v01.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/backgrounds/BG_R01_FIELD/BG_R01_FIELD_back_trees_v01.png",
+        "bytes": 3783380,
+        "sha256": "052845c791009e0badf1725814cc3dd427a35625abff49ce96471cf496ee43ac",
+        "source_archive": "Witch_G2_R01_Small_01_Field_Background.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/backgrounds/BG_R01_FIELD/BG_R01_FIELD_back_trees_v01_prompt.txt",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/backgrounds/BG_R01_FIELD/BG_R01_FIELD_back_trees_v01_prompt.txt",
+        "bytes": 1000,
+        "sha256": "2db525e49102569e505dee58325ab1bc664f806e5a503d61ca685215ce17e9b1",
+        "source_archive": "Witch_G2_R01_Small_01_Field_Background.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/backgrounds/BG_R01_FIELD/BG_R01_FIELD_clean_plate_v02.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/backgrounds/BG_R01_FIELD/BG_R01_FIELD_clean_plate_v02.png",
+        "bytes": 3229731,
+        "sha256": "d6b48c45236703e02ace9192e967de4330f5c759c6df58895ec4fb0b48f78078",
+        "source_archive": "Witch_G2_R01_Small_01_Field_Background.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/backgrounds/BG_R01_FIELD/BG_R01_FIELD_clean_plate_v02_prompt.txt",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/backgrounds/BG_R01_FIELD/BG_R01_FIELD_clean_plate_v02_prompt.txt",
+        "bytes": 934,
+        "sha256": "c19bb3db53d06852120b4d62dfbbb7543c721665744dab8e0a61a1a6bc9492cc",
+        "source_archive": "Witch_G2_R01_Small_01_Field_Background.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/backgrounds/BG_R01_FIELD/BG_R01_FIELD_far_v01.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/backgrounds/BG_R01_FIELD/BG_R01_FIELD_far_v01.png",
+        "bytes": 3038978,
+        "sha256": "a6d8a9ee3c3638ab5dac4ea7ab946c52ecac6e2df1f97e96def26061feeec4f5",
+        "source_archive": "Witch_G2_R01_Small_02_Field_Background.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/backgrounds/BG_R01_FIELD/BG_R01_FIELD_far_v01_prompt.txt",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/backgrounds/BG_R01_FIELD/BG_R01_FIELD_far_v01_prompt.txt",
+        "bytes": 1253,
+        "sha256": "bc6228fec5f6ef634392bde4e639fd4b4a305bd0d64b771acf0948693ccde4b9",
+        "source_archive": "Witch_G2_R01_Small_02_Field_Background.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/backgrounds/BG_R01_FIELD/BG_R01_FIELD_foreground_v02.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/backgrounds/BG_R01_FIELD/BG_R01_FIELD_foreground_v02.png",
+        "bytes": 723256,
+        "sha256": "269898fd5c4c48c40df630fe83a832329af5628f29b6c3c8ee4a31d2010bd32e",
+        "source_archive": "Witch_G2_R01_Small_02_Field_Background.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/backgrounds/BG_R01_FIELD/BG_R01_FIELD_foreground_v02_prompt.txt",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/backgrounds/BG_R01_FIELD/BG_R01_FIELD_foreground_v02_prompt.txt",
+        "bytes": 966,
+        "sha256": "64029e1dc5f0148c076a5d41b3bc93d7d7338d07de578fb0b2830afd3e2d9998",
+        "source_archive": "Witch_G2_R01_Small_02_Field_Background.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/backgrounds/BG_R01_FIELD/BG_R01_FIELD_layers_manifest.json",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/backgrounds/BG_R01_FIELD/BG_R01_FIELD_layers_manifest.json",
+        "bytes": 2013,
+        "sha256": "dcaeba81170afc5a6d347375a6641270145a81eb510814c19e89003ec8d58a2b",
+        "source_archive": "Witch_G2_R01_Small_02_Field_Background.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/backgrounds/BG_R01_FIELD/BG_R01_FIELD_playfield_v02.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/backgrounds/BG_R01_FIELD/BG_R01_FIELD_playfield_v02.png",
+        "bytes": 2771594,
+        "sha256": "d15dd250d132e606cff0d391e4b06425cc50e6ef7f36f55e1c20264b5c0f7c44",
+        "source_archive": "Witch_G2_R01_Small_02_Field_Background.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/backgrounds/BG_R01_FIELD/BG_R01_FIELD_playfield_v02_prompt.txt",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/backgrounds/BG_R01_FIELD/BG_R01_FIELD_playfield_v02_prompt.txt",
+        "bytes": 1000,
+        "sha256": "e04ad31f32f33df8ae5a3f214c615f796fc65534b1c7b85865a3c8ffe75904c9",
+        "source_archive": "Witch_G2_R01_Small_02_Field_Background.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/bosses/B_R01_A/B_R01_A_base_v2.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/bosses/B_R01_A/B_R01_A_base_v2.png",
+        "bytes": 2186372,
+        "sha256": "c8d4d9a88b3db897bab69f13c13189d536eef62b31de451fd851d22adf972511",
+        "source_archive": "Witch_G2_R01_Small_03_Actors_Items.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/bosses/B_R01_B/ASSET_NOTES.md",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/bosses/B_R01_B/ASSET_NOTES.md",
+        "bytes": 3485,
+        "sha256": "c4fab5ce7338cab38cf79a3c5c600db31d663153824f7ad802438c7288ec90e8",
+        "source_archive": "Witch_G2_R01_Small_03_Actors_Items.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/bosses/B_R01_B/B_R01_B_ANCIENT_TREE_base_v1.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/bosses/B_R01_B/B_R01_B_ANCIENT_TREE_base_v1.png",
+        "bytes": 2433047,
+        "sha256": "ba61464c40c8cacc8217e58db56f17bbd8f5b9f3fd38e6e3b3d1749b99e5a8c1",
+        "source_archive": "Witch_G2_R01_Small_03_Actors_Items.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/bosses/B_R01_B/prompt_v1.txt",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/bosses/B_R01_B/prompt_v1.txt",
+        "bytes": 2089,
+        "sha256": "81ab359b13ba229020129f5b8bff891f1a3e9051727db4b5cef7147a90eae1ca",
+        "source_archive": "Witch_G2_R01_Small_03_Actors_Items.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/bosses/B_R01_B/qa_manifest.json",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/bosses/B_R01_B/qa_manifest.json",
+        "bytes": 469,
+        "sha256": "00e352350c726747a28a930099f56315de2b345cc3b3bd711f42b16af276d119",
+        "source_archive": "Witch_G2_R01_Small_03_Actors_Items.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/docs/IMPORT_SETTINGS_AND_LIMITS.md",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/docs/IMPORT_SETTINGS_AND_LIMITS.md",
+        "bytes": 2873,
+        "sha256": "88d46003ee77eea2a79b2836f56955f99e0c85ebfc4d1963f66d088e391e5b9a",
+        "source_archive": "Witch_G2_R01_Small_06_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/docs/SOURCE_PRIORITY.md",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/docs/SOURCE_PRIORITY.md",
+        "bytes": 932,
+        "sha256": "ee11407c9476ef528410285d81e1c730b695e6119dc0367817e14ce07bb99c2f",
+        "source_archive": "Witch_G2_R01_Small_06_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/docs/provenance/RESIN_BOAR_BASE_ART_NOTES.md",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/docs/provenance/RESIN_BOAR_BASE_ART_NOTES.md",
+        "bytes": 3421,
+        "sha256": "72919560d405ff424c1140eed752fb59f22d97098843d2eb064f48aadc0f8dc4",
+        "source_archive": "Witch_G2_R01_Small_06_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/docs/provenance/resin_boar_asset_metrics.json",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/docs/provenance/resin_boar_asset_metrics.json",
+        "bytes": 3696,
+        "sha256": "99bbfc2a5f94512c963bf65288c171868c8aaf66a478c0402dbbb3fa0b1eaae7",
+        "source_archive": "Witch_G2_R01_Small_06_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/docs/provenance/resin_boar_generation_prompts.json",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/docs/provenance/resin_boar_generation_prompts.json",
+        "bytes": 6402,
+        "sha256": "3693eed4fe84841c117cb67d9fe90e9cb2a45538cdafbd2258d973974d82378f",
+        "source_archive": "Witch_G2_R01_Small_06_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/docs/provenance/spider_leaf_alpha_qa.json",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/docs/provenance/spider_leaf_alpha_qa.json",
+        "bytes": 1812,
+        "sha256": "7afa9159911d6bbdb6ee9068fafa760b588afec9fbd0c03c9bb92afb41095d63",
+        "source_archive": "Witch_G2_R01_Small_06_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/docs/provenance/spider_leaf_prompts.json",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/docs/provenance/spider_leaf_prompts.json",
+        "bytes": 4946,
+        "sha256": "1b93b18cdf7a2c6126d5e14d3216ee80050739b5a4aee725b04df60d0d41c298",
+        "source_archive": "Witch_G2_R01_Small_06_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/docs/witch_g2_r01_validation.docx",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/docs/witch_g2_r01_validation.docx",
+        "bytes": 2946798,
+        "sha256": "307e780bc419a03223fb76ddc775931712aa8030d5df1fc5f3226239537e6381",
+        "source_archive": "Witch_G2_R01_Small_06_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/docs/witch_g2_r01_validation.pdf",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/docs/witch_g2_r01_validation.pdf",
+        "bytes": 815309,
+        "sha256": "41ba8f7992f10753768fc8db17af3d0da99bacb05af184aa563ccbd3f0e57688",
+        "source_archive": "Witch_G2_R01_Small_06_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/enemies/E_R01_01/E_R01_01_MOSS_TUSK_BOAR_sprite_prototype_v2.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/enemies/E_R01_01/E_R01_01_MOSS_TUSK_BOAR_sprite_prototype_v2.png",
+        "bytes": 1341280,
+        "sha256": "f7352eb595d36fd6d1a478c38678653bc709d40e3051da6c5fc182941d19e096",
+        "source_archive": "Witch_G2_R01_Small_03_Actors_Items.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/enemies/E_R01_01/prompt_v2.txt",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/enemies/E_R01_01/prompt_v2.txt",
+        "bytes": 734,
+        "sha256": "408bff8c858d4228c342e12ecb6f85096e7df5cce71fa6816708355725b9a8d8",
+        "source_archive": "Witch_G2_R01_Small_03_Actors_Items.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/enemies/E_R01_01/qa_v2.json",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/enemies/E_R01_01/qa_v2.json",
+        "bytes": 267,
+        "sha256": "2076f25f15ce5a532a199a3f0d16434a6a1047d3ba77a23aa4d9ed1c107246df",
+        "source_archive": "Witch_G2_R01_Small_03_Actors_Items.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/enemies/E_R01_02/E_R01_02_base_v2.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/enemies/E_R01_02/E_R01_02_base_v2.png",
+        "bytes": 1751843,
+        "sha256": "576d65caf7459a2dfeb207cbfd54fc741ba7b552a141d677e0bf516901a22864",
+        "source_archive": "Witch_G2_R01_Small_04_Actors_Items.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/enemies/E_R01_03/E_R01_03_base_v1.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/enemies/E_R01_03/E_R01_03_base_v1.png",
+        "bytes": 1660878,
+        "sha256": "de6df63b4a472fae0ab5385aeffd66038414c3087aa19368b13be8b5ecb42bf3",
+        "source_archive": "Witch_G2_R01_Small_04_Actors_Items.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/enemies/E_R01_04/E_R01_04_base_v2.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/enemies/E_R01_04/E_R01_04_base_v2.png",
+        "bytes": 904698,
+        "sha256": "f2fbb27ef1c796ec328bbc07e48b786b1816a4a2ee58ac05de98abfc14e6802a",
+        "source_archive": "Witch_G2_R01_Small_04_Actors_Items.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/items/M_R01_BA/ICO_M_R01_BA.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/items/M_R01_BA/ICO_M_R01_BA.png",
+        "bytes": 1687478,
+        "sha256": "d3e85b10cd55245e9f9da18aef4c2a17e57431e8462b7152bcb65644f790be80",
+        "source_archive": "Witch_G2_R01_Small_04_Actors_Items.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/items/M_R01_BB/ASSET_NOTES.md",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/items/M_R01_BB/ASSET_NOTES.md",
+        "bytes": 1038,
+        "sha256": "8624555345247238bad49ab7b525167d885488d119baef5d8663032d1926faad",
+        "source_archive": "Witch_G2_R01_Small_04_Actors_Items.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/items/M_R01_BB/ICO_M_R01_BB_base_v1.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/items/M_R01_BB/ICO_M_R01_BB_base_v1.png",
+        "bytes": 1051912,
+        "sha256": "84b3962eb62ff21b7977635db8761965fcb6444bea3e7a0418dbe2dbe2cfcc77",
+        "source_archive": "Witch_G2_R01_Small_04_Actors_Items.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/items/M_R01_BB/prompt_v1.txt",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/items/M_R01_BB/prompt_v1.txt",
+        "bytes": 1120,
+        "sha256": "da7fcfa1e8ec2c837ea515999604ed12aaf4138b387ede433eae35bdf7206934",
+        "source_archive": "Witch_G2_R01_Small_04_Actors_Items.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/items/M_R01_BB/qa_manifest.json",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/items/M_R01_BB/qa_manifest.json",
+        "bytes": 463,
+        "sha256": "0e629dc0bfb8b4191c2404adf54947012cd1d50748d95a53cfba456a059eaaae",
+        "source_archive": "Witch_G2_R01_Small_04_Actors_Items.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/items/M_R01_E1/ICO_M_R01_E1_moss_tusk_fragment.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/items/M_R01_E1/ICO_M_R01_E1_moss_tusk_fragment.png",
+        "bytes": 881567,
+        "sha256": "45ef7f1511b33a48774ef97ea561c32b740f5b8cf81fcb439d4884e483b56d10",
+        "source_archive": "Witch_G2_R01_Small_05_Actors_Items.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/items/M_R01_E1/metadata.json",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/items/M_R01_E1/metadata.json",
+        "bytes": 428,
+        "sha256": "fe335036dc86d8e00358ca176fa4b070bfc987bb4ca4028d0782d697d644ef88",
+        "source_archive": "Witch_G2_R01_Small_05_Actors_Items.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/items/M_R01_E1/prompt.txt",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/items/M_R01_E1/prompt.txt",
+        "bytes": 464,
+        "sha256": "3803334da365af3216ada21eb423bea81bd998b54c57897231b83103efedf8a3",
+        "source_archive": "Witch_G2_R01_Small_05_Actors_Items.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/items/M_R01_E2/ICO_M_R01_E2.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/items/M_R01_E2/ICO_M_R01_E2.png",
+        "bytes": 1037841,
+        "sha256": "67fc3cc61705b892bf57487eec4b5f9c4c627e470b660f4fe55d5955abb40443",
+        "source_archive": "Witch_G2_R01_Small_05_Actors_Items.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/items/M_R01_E3/ICO_M_R01_E3.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/items/M_R01_E3/ICO_M_R01_E3.png",
+        "bytes": 1295237,
+        "sha256": "21fd2741ee4db9696e0058e8a969f304ad189c43afae5bacc28a24f851347d5e",
+        "source_archive": "Witch_G2_R01_Small_05_Actors_Items.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/items/M_R01_E4/ICO_M_R01_E4.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/items/M_R01_E4/ICO_M_R01_E4.png",
+        "bytes": 1428774,
+        "sha256": "c2e8ac22ef3b5f6ebbbf9c03bba12bac65b94f72cc8aef3e4cb11983f10b49e5",
+        "source_archive": "Witch_G2_R01_Small_05_Actors_Items.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/qa/blender/INDEPENDENT_VISUAL_QA.md",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/qa/blender/INDEPENDENT_VISUAL_QA.md",
+        "bytes": 3448,
+        "sha256": "00117ffbf124b011da778bdf6260af3864d554d2886ae981c32a57464ab6e944",
+        "source_archive": "Witch_G2_R01_Small_06_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/qa/blender/R01_EIGHT_ASSET_REVIEW.md",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/qa/blender/R01_EIGHT_ASSET_REVIEW.md",
+        "bytes": 5057,
+        "sha256": "c17d8429365fbbba13553517b67fd1bbd95172fc1ba37dadec1418e1bb870920",
+        "source_archive": "Witch_G2_R01_Small_06_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/qa/blender/R01_eight_base_assets_review.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/qa/blender/R01_eight_base_assets_review.png",
+        "bytes": 1578401,
+        "sha256": "e1cef683d4dcb1e12cc66f45685d1f70ce8449990bd63c3dc7f2cf949821f8b9",
+        "source_archive": "Witch_G2_R01_Small_06_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/qa/blender/all_actor_metrics.json",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/qa/blender/all_actor_metrics.json",
+        "bytes": 1844,
+        "sha256": "a5edd10257e96a117049e8716e45d8d3cc2a8242f4ff115d70dd4b1096dbc29a",
+        "source_archive": "Witch_G2_R01_Small_06_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/qa/blender/ancient_tree_in_arena_390x694.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/qa/blender/ancient_tree_in_arena_390x694.png",
+        "bytes": 730570,
+        "sha256": "b6630a8ceb569228526ed08e459b3459b75b6357d7609ff3c9adabea97cb8e30",
+        "source_archive": "Witch_G2_R01_Small_06_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/qa/blender/boar_alpha_black_390x694.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/qa/blender/boar_alpha_black_390x694.png",
+        "bytes": 148633,
+        "sha256": "bdc3d96b92e31d3477fb94574ec111d692632bdc65e67d683e25e2d97f7b3720",
+        "source_archive": "Witch_G2_R01_Small_06_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/qa/blender/boar_alpha_gray_390x694.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/qa/blender/boar_alpha_gray_390x694.png",
+        "bytes": 151578,
+        "sha256": "b32099e7797834124bdcfd3d3ac59eede050f80560cfafdd1c6ea10d5df7af7b",
+        "source_archive": "Witch_G2_R01_Small_06_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/qa/blender/boar_alpha_white_390x694.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/qa/blender/boar_alpha_white_390x694.png",
+        "bytes": 29781,
+        "sha256": "dd095f3adbe9af43e0b2c584b99c3daa2f12d5c0ade42d520a97ff449da8a6b7",
+        "source_archive": "Witch_G2_R01_Small_06_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/qa/blender/boss_arena_three_layers_390x694.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/qa/blender/boss_arena_three_layers_390x694.png",
+        "bytes": 726709,
+        "sha256": "dfe4b9536f832af7e8ded8c80194ed9ca69edb5150963541740a7d77f8e57066",
+        "source_archive": "Witch_G2_R01_Small_06_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/qa/blender/four_layer_neutral_390x694.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/qa/blender/four_layer_neutral_390x694.png",
+        "bytes": 745869,
+        "sha256": "c5dd01daf5b0637201731ee548adaaa6c8113f6030df8896990c2995372c1415",
+        "source_archive": "Witch_G2_R01_Small_07_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/qa/blender/four_layer_offset_negative_390x694.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/qa/blender/four_layer_offset_negative_390x694.png",
+        "bytes": 746401,
+        "sha256": "c85d445d4060c704f0d47b3945ac5828f889e808d784ab9cf8f8da1fe2999c93",
+        "source_archive": "Witch_G2_R01_Small_07_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/qa/blender/four_layer_offset_positive_390x694.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/qa/blender/four_layer_offset_positive_390x694.png",
+        "bytes": 745983,
+        "sha256": "7fb44d106de8be1634c46f66918d5265b04cf6e8c76ab5e94b402545b2d7c782",
+        "source_archive": "Witch_G2_R01_Small_07_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/qa/blender/four_layer_offset_xneg_ypos_390x694.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/qa/blender/four_layer_offset_xneg_ypos_390x694.png",
+        "bytes": 745831,
+        "sha256": "530b870d7b60e239d9a75205a17bb092414615e0764bf52c6c36880eaa7f12de",
+        "source_archive": "Witch_G2_R01_Small_07_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/qa/blender/four_layer_offset_xpos_yneg_390x694.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/qa/blender/four_layer_offset_xpos_yneg_390x694.png",
+        "bytes": 746008,
+        "sha256": "7f8fc83176fb17cb7d6ba3bbce85f84b0f88cf5f4689e88a1167cea7e66a85b8",
+        "source_archive": "Witch_G2_R01_Small_07_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/qa/blender/four_layer_settings.json",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/qa/blender/four_layer_settings.json",
+        "bytes": 693,
+        "sha256": "521118e1e7b03f8f4aae0fce9c65fb4d933522ee4873d7d2b812dea6842dde71",
+        "source_archive": "Witch_G2_R01_Small_07_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/qa/blender/four_normal_enemies_in_field_390x694.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/qa/blender/four_normal_enemies_in_field_390x694.png",
+        "bytes": 748108,
+        "sha256": "eadbb0dc859f54b37c7a8df251220ea62801bc683b83511aa02c8bf297fd63fe",
+        "source_archive": "Witch_G2_R01_Small_07_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/qa/blender/portrait_composite_390x694.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/qa/blender/portrait_composite_390x694.png",
+        "bytes": 749845,
+        "sha256": "69450dd7b2c93c09ec0f9eb6621a39406645811b1760ac3d7da25a0b78881f42",
+        "source_archive": "Witch_G2_R01_Small_07_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/qa/blender/remaining_set_render_settings.json",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/qa/blender/remaining_set_render_settings.json",
+        "bytes": 598,
+        "sha256": "2e882f4b8b9e70626063d2abfb9c58ad8adbb0fabdeeeb088d5ae1bf8fc8e177",
+        "source_archive": "Witch_G2_R01_Small_07_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/qa/blender/render_settings.json",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/qa/blender/render_settings.json",
+        "bytes": 821,
+        "sha256": "9fd78cfb9d6af85451dd8e89cf930b138bb3da91e77c9013f8a65ac70d9461d0",
+        "source_archive": "Witch_G2_R01_Small_07_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/qa/boar_packed_blend_check.json",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/qa/boar_packed_blend_check.json",
+        "bytes": 373,
+        "sha256": "e0273a788f52bc8b14c55d98716d60b234df97641418f54f0419b84855a7ceec",
+        "source_archive": "Witch_G2_R01_Small_07_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/qa/native_sample/G2_iPhone_validation/binary-verification.log",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/qa/native_sample/G2_iPhone_validation/binary-verification.log",
+        "bytes": 809,
+        "sha256": "9988a377c218b24564ce76c5ef57cb3440000e9e91f1088d78e723603c324d78",
+        "source_archive": "Witch_G2_R01_Small_07_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/qa/native_sample/G2_iPhone_validation/build-final.log",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/qa/native_sample/G2_iPhone_validation/build-final.log",
+        "bytes": 179,
+        "sha256": "253f0c658616e079fbe1b642b81ff96fc99accad34a23e611f415d9bd99a8cee",
+        "source_archive": "Witch_G2_R01_Small_07_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/qa/native_sample/G2_iPhone_validation/final-status.txt",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/qa/native_sample/G2_iPhone_validation/final-status.txt",
+        "bytes": 2973,
+        "sha256": "66298dbffe70e47f866130328c29e985d1d2c81ccc900c159fcc3b6f66dfea6a",
+        "source_archive": "Witch_G2_R01_Small_07_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/qa/native_sample/G2_iPhone_validation/final-validation-state.json",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/qa/native_sample/G2_iPhone_validation/final-validation-state.json",
+        "bytes": 1376,
+        "sha256": "b401d02507cae14c1bcc3f70c8f2fbbe4ad64f8d22bf73679c7673947c84237e",
+        "source_archive": "Witch_G2_R01_Small_07_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/qa/native_sample/G2_iPhone_validation/sample/README.txt",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/qa/native_sample/G2_iPhone_validation/sample/README.txt",
+        "bytes": 5780,
+        "sha256": "ac94a9c5696e6a1b9ca21982aae45cdd1b77e3bc1ce4b5ebd7dd63cd5535a207",
+        "source_archive": "Witch_G2_R01_Small_07_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/qa/native_sample/G2_iPhone_validation/sample/Shared/G2Scene.swift",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/qa/native_sample/G2_iPhone_validation/sample/Shared/G2Scene.swift",
+        "bytes": 18940,
+        "sha256": "c7fb2d1d4476babc8baf980e535e1aaab4915a6fda2718e82a955a9e0c4ae19b",
+        "source_archive": "Witch_G2_R01_Small_07_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/qa/native_sample/G2_iPhone_validation/sample/iOS/App.swift",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/qa/native_sample/G2_iPhone_validation/sample/iOS/App.swift",
+        "bytes": 1549,
+        "sha256": "88672ba662e9fbc081068671f77b8a14112ad2c0acf5c9f8b1035d285ca2cc42",
+        "source_archive": "Witch_G2_R01_Small_07_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/qa/native_sample/G2_iPhone_validation/sample/macOS/App.swift",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/qa/native_sample/G2_iPhone_validation/sample/macOS/App.swift",
+        "bytes": 3136,
+        "sha256": "14cf312de3a177e580669d5efdebd1e3d35513d3998d458fbd1a27cc49831ce9",
+        "source_archive": "Witch_G2_R01_Small_07_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/source/boar_rig/E_R01_01_cutout_behind_body.blend",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/source/boar_rig/E_R01_01_cutout_behind_body.blend",
+        "bytes": 2582484,
+        "sha256": "ab1f47f2e4f69f6eaedcc175410d33402edeca0ffddf5158fde5763fcb85aa26",
+        "source_archive": "Witch_G2_R01_Small_07_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/source/boar_rig/E_R01_01_cutout_review_behind.mp4",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/source/boar_rig/E_R01_01_cutout_review_behind.mp4",
+        "bytes": 252293,
+        "sha256": "16d7bd88bec523568cb02d2b63d73daa6ad9ad0a3f9e5afa5f760dd75333cfc3",
+        "source_archive": "Witch_G2_R01_Small_08_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/source/boar_rig/REVIEW.md",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/source/boar_rig/REVIEW.md",
+        "bytes": 4395,
+        "sha256": "e7f9c1205e7628141c5ef82dba671980ae81a349b0cd6e7e81e604e394a82a3b",
+        "source_archive": "Witch_G2_R01_Small_08_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/source/boar_rig/build_rig.py",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/source/boar_rig/build_rig.py",
+        "bytes": 5490,
+        "sha256": "2170f7c6e7261dc8314b96cd53b830bc9c93239dd973b919aaa7302635239bef",
+        "source_archive": "Witch_G2_R01_Small_08_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/source/boar_rig/manifest.json",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/source/boar_rig/manifest.json",
+        "bytes": 1559,
+        "sha256": "58932a4f6340b8b1668e50bfe32e8fcba76d51f45a0773a22f819092ffbebebc",
+        "source_archive": "Witch_G2_R01_Small_08_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/source/boar_rig/prompt_body_v1.txt",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/source/boar_rig/prompt_body_v1.txt",
+        "bytes": 1176,
+        "sha256": "edd960c7081ae890ddde58481ad1b76bac1eeb05d5b6cae0f52b09ba5ce0e321",
+        "source_archive": "Witch_G2_R01_Small_08_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/source/boar_rig/prompt_foreleg_v1.txt",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/source/boar_rig/prompt_foreleg_v1.txt",
+        "bytes": 984,
+        "sha256": "bf698157265e557e011f9351a71880462c761d0bc9590a4594943436cf4697b8",
+        "source_archive": "Witch_G2_R01_Small_08_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/source/boar_rig/textures/E_R01_01_body_plate_v1.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/source/boar_rig/textures/E_R01_01_body_plate_v1.png",
+        "bytes": 1368899,
+        "sha256": "e4a0aa413028afe344ea803cffab7aa7879857b988edcdbb09b93aced6f5793d",
+        "source_archive": "Witch_G2_R01_Small_08_Rig_QA_Docs.zip"
+      },
+      {
+        "relative_path": "R01_PACKAGE/source/boar_rig/textures/E_R01_01_foreleg_layer_v1.png",
+        "actual_saved_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE/source/boar_rig/textures/E_R01_01_foreleg_layer_v1.png",
+        "bytes": 673913,
+        "sha256": "15c21fbc2cf1ca79e8cb9ab637bd5fd074e112349f8a6ae684f1f530664ad0a2",
+        "source_archive": "Witch_G2_R01_Small_08_Rig_QA_Docs.zip"
+      }
+    ],
+    "originals_modified_or_removed_by_task": false,
+    "library_download_attempted": false,
+    "existing_files_overwritten": false,
+    "input_route": "local ZIPs; stable verified copies used for extraction",
+    "completed_at_utc": "2026-10-08T18:20:56.597040+00:00",
+    "source_archive_count": 12,
+    "source_archive_total_bytes": 78584084,
+    "package_directory": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/R01_PACKAGE",
+    "package_file_count": 107,
+    "package_total_bytes": 80236802,
+    "FILE_LIST_size_and_sha256_matches": 103,
+    "SHA256SUMS_matches": 103,
+    "checksum_scope_excluded_files": [
+      "FILE_LIST.csv",
+      "SHA256SUMS.txt",
+      "PACKAGE_CHECK.json",
+      "ZIP_PARTS_README.txt"
+    ],
+    "png_count": 46,
+    "png_decode_failures": 0,
+    "png_readability_report": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/PNG_READABILITY.json",
+    "stable_mapping_path": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/SOURCE_NAME_TO_STABLE_ID.json",
+    "mapping_count": 30,
+    "background_groups": 2,
+    "normal_enemy_bases": 4,
+    "boss_bases": 2,
+    "item_icons": 6,
+    "selected_assets_manifest": {
+      "E_R01_01": {
+        "name": "苔角いのしし",
+        "file": "enemies/E_R01_01/E_R01_01_MOSS_TUSK_BOAR_sprite_prototype_v2.png",
+        "scope": "base source art"
+      },
+      "E_R01_02": {
+        "name": "糸灯ぐも",
+        "file": "enemies/E_R01_02/E_R01_02_base_v2.png",
+        "scope": "base source art"
+      },
+      "E_R01_03": {
+        "name": "葉刃むし",
+        "file": "enemies/E_R01_03/E_R01_03_base_v1.png",
+        "scope": "base source art"
+      },
+      "E_R01_04": {
+        "name": "樹脂ころがし",
+        "file": "enemies/E_R01_04/E_R01_04_base_v2.png",
+        "scope": "base source art"
+      },
+      "B_R01_A": {
+        "name": "根絡みの大猪",
+        "file": "bosses/B_R01_A/B_R01_A_base_v2.png",
+        "scope": "base source art"
+      },
+      "B_R01_B": {
+        "name": "苔冠の古樹",
+        "file": "bosses/B_R01_B/B_R01_B_ANCIENT_TREE_base_v1.png",
+        "scope": "base source art"
+      },
+      "M_R01_E1": {
+        "name": "苔角片",
+        "file": "items/M_R01_E1/ICO_M_R01_E1_moss_tusk_fragment.png",
+        "scope": "base source art"
+      },
+      "M_R01_E2": {
+        "name": "灯糸",
+        "file": "items/M_R01_E2/ICO_M_R01_E2.png",
+        "scope": "base source art"
+      },
+      "M_R01_E3": {
+        "name": "葉刃殻",
+        "file": "items/M_R01_E3/ICO_M_R01_E3.png",
+        "scope": "base source art"
+      },
+      "M_R01_E4": {
+        "name": "琥珀の甲片",
+        "file": "items/M_R01_E4/ICO_M_R01_E4.png",
+        "scope": "base source art"
+      },
+      "M_R01_BA": {
+        "name": "根絡みの牙",
+        "file": "items/M_R01_BA/ICO_M_R01_BA.png",
+        "scope": "base source art"
+      },
+      "M_R01_BB": {
+        "name": "苔冠の生木核",
+        "file": "items/M_R01_BB/ICO_M_R01_BB_base_v1.png",
+        "scope": "base source art"
+      }
+    },
+    "library_http_403_fixed": false,
+    "source_docs_modified": false,
+    "simulator_execution": "NOT_TESTED",
+    "iphone_device_execution": "NOT_TESTED",
+    "verification_addendum": "assets/g2/regions/region01_forest/deliveries/20261008T182055Z_a2250721/MAC_SAVE_VERIFICATION.md"
+  },
+  "normalized_path_occurrences": 138
+}

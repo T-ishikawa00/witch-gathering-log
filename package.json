@@ -1,0 +1,13 @@
+{
+  "name": "idle-loot-rpg-g1",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node tools/server.js",
+    "test": "node --test tests/*.test.js",
+    "test:browser": "node tools/browser-tests.js",
+    "verify": "node tools/verify-source.js"
+  },
+  "engines": { "node": ">=20" }
+}

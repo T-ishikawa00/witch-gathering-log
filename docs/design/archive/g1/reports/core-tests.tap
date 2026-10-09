@@ -1,0 +1,209 @@
+
+> idle-loot-rpg-g1@0.1.0 test
+> node --test tests/*.test.js
+
+TAP version 13
+# Subtest: poison tick, player attack, and boss hit resolve in reference order at one timestamp
+ok 1 - poison tick, player attack, and boss hit resolve in reference order at one timestamp
+  ---
+  duration_ms: 1.554041
+  ...
+# Subtest: poison expiry at the exact tick/attack/boss timestamp excludes that tick
+ok 2 - poison expiry at the exact tick/attack/boss timestamp excludes that tick
+  ---
+  duration_ms: 0.224708
+  ...
+# Subtest: a poison tick that kills the boss suppresses same-time player and boss events
+ok 3 - a poison tick that kills the boss suppresses same-time player and boss events
+  ---
+  duration_ms: 0.195459
+  ...
+# Subtest: a player attack that kills the boss suppresses a same-time enemy hit
+ok 4 - a player attack that kills the boss suppresses a same-time enemy hit
+  ---
+  duration_ms: 0.205167
+  ...
+# Subtest: the first event beyond 90 seconds becomes a time-limit loss with remaining HP
+ok 5 - the first event beyond 90 seconds becomes a time-limit loss with remaining HP
+  ---
+  duration_ms: 0.2105
+  ...
+# Subtest: a lethal guarded enemy hit does not trigger a counterattack
+ok 6 - a lethal guarded enemy hit does not trigger a counterattack
+  ---
+  duration_ms: 0.130291
+  ...
+# Subtest: counter damage neither crits nor applies poison stacks recursively
+ok 7 - counter damage neither crits nor applies poison stacks recursively
+  ---
+  duration_ms: 0.180042
+  ...
+# Subtest: golden_fights reference results match exactly
+ok 8 - golden_fights reference results match exactly
+  ---
+  duration_ms: 4.697667
+  ...
+# Subtest: seed zero uses the specified xorshift32 replacement and unsigned outputs
+ok 9 - seed zero uses the specified xorshift32 replacement and unsigned outputs
+  ---
+  duration_ms: 0.174042
+  ...
+# Subtest: rejects wrong slot and unknown boss inputs
+ok 10 - rejects wrong slot and unknown boss inputs
+  ---
+  duration_ms: 0.20525
+  ...
+# Subtest: all 729 family loadouts preserve damage and incoming HP accounting
+ok 11 - all 729 family loadouts preserve damage and incoming HP accounting
+  ---
+  duration_ms: 15.031916
+  ...
+# Subtest: mixed poison-defense loadout reproduces the reference complete event trace
+ok 12 - mixed poison-defense loadout reproduces the reference complete event trace
+  ---
+  duration_ms: 1.308292
+  ...
+# Subtest: a lower-attack mixed loadout wins sentinels across the reference seed interval
+ok 13 - a lower-attack mixed loadout wins sentinels across the reference seed interval
+  ---
+  duration_ms: 3.535666
+  ...
+# Subtest: trace stops immediately on player death without postmortem events
+ok 14 - trace stops immediately on player death without postmortem events
+  ---
+  duration_ms: 0.090042
+  ...
+# Subtest: zero boss scale is an immediate zero-time victory with no combat events
+ok 15 - zero boss scale is an immediate zero-time victory with no combat events
+  ---
+  duration_ms: 0.0705
+  ...
+# Subtest: empty settlement fixture matches the eight-hour R2 sample and is idempotent
+ok 16 - empty settlement fixture matches the eight-hour R2 sample and is idempotent
+  ---
+  duration_ms: 1.093917
+  ...
+# Subtest: actual modes separate starter and balance inventory from collection history
+ok 17 - actual modes separate starter and balance inventory from collection history
+  ---
+  duration_ms: 0.161792
+  ...
+# Subtest: route changes settle old route first and preserve its fractional time
+ok 18 - route changes settle old route first and preserve its fractional time
+  ---
+  duration_ms: 0.089083
+  ...
+# Subtest: clock rollback gives no reward and rebase requires explicit confirmation
+ok 19 - clock rollback gives no reward and rebase requires explicit confirmation
+  ---
+  duration_ms: 0.550667
+  ...
+# Subtest: equipment, presets, locks and final copies are protected in whole-batch dismantle
+ok 20 - equipment, presets, locks and final copies are protected in whole-batch dismantle
+  ---
+  duration_ms: 0.512833
+  ...
+# Subtest: craft charges only when valid, and overflow operations preserve the last copy
+ok 21 - craft charges only when valid, and overflow operations preserve the last copy
+  ---
+  duration_ms: 0.211083
+  ...
+# Subtest: first gatekeeper victory unlocks twelve explicitly marked trial items once
+ok 22 - first gatekeeper victory unlocks twelve explicitly marked trial items once
+  ---
+  duration_ms: 0.239125
+  ...
+# Subtest: automation switch is immutable
+ok 23 - automation switch is immutable
+  ---
+  duration_ms: 0.230041
+  ...
+# Subtest: 15-minute boundary accrues only complete steps and keeps the remainder
+ok 24 - 15-minute boundary accrues only complete steps and keeps the remainder
+  ---
+  duration_ms: 0.218
+  ...
+# Subtest: 24-hour cap awards 96 steps; 48-hour elapsed time does not allow catch-up past the checkpoint
+ok 25 - 24-hour cap awards 96 steps; 48-hour elapsed time does not allow catch-up past the checkpoint
+  ---
+  duration_ms: 0.306166
+  ...
+# Subtest: split settlements preserve the same drops and essence as a single settlement
+ok 26 - split settlements preserve the same drops and essence as a single settlement
+  ---
+  duration_ms: 0.47325
+  ...
+# Subtest: route-local remainder stays with its route through repeated switches
+ok 27 - route-local remainder stays with its route through repeated switches
+  ---
+  duration_ms: 0.154792
+  ...
+# Subtest: explicit clock rebase awards nothing and subsequent time starts at the new checkpoint
+ok 28 - explicit clock rebase awards nothing and subsequent time starts at the new checkpoint
+  ---
+  duration_ms: 0.099292
+  ...
+# Subtest: settlement and inventory mutations leave their input objects unchanged
+ok 29 - settlement and inventory mutations leave their input objects unchanged
+  ---
+  duration_ms: 0.195291
+  ...
+# Subtest: lock, equipped, preset reference, and multi-item last-copy protections reject the entire batch
+ok 30 - lock, equipped, preset reference, and multi-item last-copy protections reject the entire batch
+  ---
+  duration_ms: 0.210333
+  ...
+# Subtest: craft failures for insufficient essence and a full inventory are charge-free
+ok 31 - craft failures for insufficient essence and a full inventory are charge-free
+  ---
+  duration_ms: 0.175458
+  ...
+# Subtest: overflow reclaim requires space, retains aggregate count, and uses unique instance IDs
+ok 32 - overflow reclaim requires space, retains aggregate count, and uses unique instance IDs
+  ---
+  duration_ms: 0.181291
+  ...
+# Subtest: overflow conversion preserves final owned copy and rejects invalid counts atomically
+ok 33 - overflow conversion preserves final owned copy and rejects invalid counts atomically
+  ---
+  duration_ms: 0.155667
+  ...
+# Subtest: trial grant remains individually claimable at full capacity and does not repeat
+ok 34 - trial grant remains individually claimable at full capacity and does not repeat
+  ---
+  duration_ms: 0.756083
+  ...
+# Subtest: all three boss victories persist completion, while losses do not complete the G1 scope
+ok 35 - all three boss victories persist completion, while losses do not complete the G1 scope
+  ---
+  duration_ms: 0.225792
+  ...
+# Subtest: reload-equivalent restoration does not duplicate the same settlement or starter grant
+ok 36 - reload-equivalent restoration does not duplicate the same settlement or starter grant
+  ---
+  duration_ms: 0.1685
+  ...
+# Subtest: craft and reclaimed-overflow instance IDs avoid collisions in recovered generations
+ok 37 - craft and reclaimed-overflow instance IDs avoid collisions in recovered generations
+  ---
+  duration_ms: 0.081833
+  ...
+# Subtest: normal drop history includes converted and overflowed loot while excluding starter and trial grants
+ok 38 - normal drop history includes converted and overflowed loot while excluding starter and trial grants
+  ---
+  duration_ms: 0.128459
+  ...
+# Subtest: overflow conversion can retain one protected template instance despite repeated preset references
+ok 39 - overflow conversion can retain one protected template instance despite repeated preset references
+  ---
+  duration_ms: 0.055875
+  ...
+1..39
+# tests 39
+# suites 0
+# pass 39
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 63.074542

@@ -1,0 +1,101 @@
+{
+  "source": "R1 catalog exact ID mapping; R2 presentation only",
+  "counts": {
+    "areas": 4,
+    "enemies": 6,
+    "materials": 10,
+    "gear": 10,
+    "recipes": 10,
+    "sources": 10,
+    "planned_asset_entities": 28
+  },
+  "checks": [
+    {
+      "test": "region R01 exists",
+      "pass": true,
+      "details": null
+    },
+    {
+      "test": "areas count 4",
+      "pass": true,
+      "details": null
+    },
+    {
+      "test": "enemy count 6 / 4 normal 2 boss",
+      "pass": true,
+      "details": null
+    },
+    {
+      "test": "material count 10, gather4 enemy6",
+      "pass": true,
+      "details": null
+    },
+    {
+      "test": "gear count 10",
+      "pass": true,
+      "details": null
+    },
+    {
+      "test": "recipes count 10",
+      "pass": true,
+      "details": null
+    },
+    {
+      "test": "all enemy drops have forest material",
+      "pass": true,
+      "details": null
+    },
+    {
+      "test": "all area refs within R01",
+      "pass": true,
+      "details": null
+    },
+    {
+      "test": "all recipe materials exist",
+      "pass": true,
+      "details": null
+    },
+    {
+      "test": "all forest materials have one or more source",
+      "pass": true,
+      "details": null
+    },
+    {
+      "test": "all recipe ingredient quantities unresolved",
+      "pass": true,
+      "details": null
+    },
+    {
+      "test": "recipe gear IDs valid",
+      "pass": true,
+      "details": null
+    },
+    {
+      "test": "no forest recipe requires external region material",
+      "pass": true,
+      "details": null
+    },
+    {
+      "test": "source enemy references valid",
+      "pass": true,
+      "details": null
+    },
+    {
+      "test": "original data still contains numeric blanks",
+      "pass": true,
+      "details": null
+    },
+    {
+      "test": "recipe components obtainable by unlock",
+      "pass": true,
+      "details": []
+    },
+    {
+      "test": "post-boss staff requires main boss drop",
+      "pass": true,
+      "details": null
+    }
+  ],
+  "passed": true,
+  "known_art_mismatch": "smith approved image shows metal hammer but R1 EQ_S_01 named wooden mallet"
+}

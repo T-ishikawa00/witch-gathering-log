@@ -1,0 +1,67 @@
+{
+  "asset_id": "BG_R01_FIELD",
+  "status": "independent-layer prototype: neutral + four corner positions visually checked",
+  "canvas": [
+    941,
+    1671
+  ],
+  "generation": "built-in imagegen; original PNGs preserved",
+  "registration": {
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "anchor": "full canvas top-left"
+  },
+  "layers": [
+    {
+      "role": "far",
+      "file": "BG_R01_FIELD_far_v01.png",
+      "library_file_id": "libfile_b7c172cd91108191ba96674cd0fe0f64",
+      "test_only_max_shift_px": [
+        2,
+        1
+      ]
+    },
+    {
+      "role": "back",
+      "file": "BG_R01_FIELD_back_trees_v01.png",
+      "library_file_id": "libfile_ba0a355332888191bc415e1ea64cc9df",
+      "test_only_max_shift_px": [
+        4,
+        2
+      ]
+    },
+    {
+      "role": "playfield",
+      "file": "BG_R01_FIELD_playfield_v02.png",
+      "library_file_id": "libfile_4c143845da8c8191a8f942179bc86f20",
+      "test_only_max_shift_px": [
+        0,
+        0
+      ]
+    },
+    {
+      "role": "front",
+      "file": "BG_R01_FIELD_foreground_v02.png",
+      "library_file_id": "libfile_8e00ec76006c8191a44a726e8ce7b1e3",
+      "test_only_max_shift_px": [
+        8,
+        4
+      ]
+    }
+  ],
+  "scope": "Fixed oblique portrait camera; tested 390x694 viewport, neutral plus four corner positions only. Continuous motion and larger shifts untested. Far uses 1.01 render overscan. Do not place the original opaque master beneath this stack.",
+  "remaining": [
+    "Lighting and shadows are baked in rasters; no independent normal, lighting or actor-shadow passes.",
+    "Collision/telegraph masks and production pixel grid remain undefined.",
+    "Not a production-ready five-layer background or iPhone validation."
+  ],
+  "qa": {
+    "report": "qa/blender/INDEPENDENT_VISUAL_QA.md",
+    "renderer": "Blender Cycles CPU",
+    "positions_inspected": 5,
+    "visible_empty_holes_or_broken_joins": "none observed at tested positions",
+    "continuous_motion": "not tested",
+    "device": "not tested"
+  }
+}

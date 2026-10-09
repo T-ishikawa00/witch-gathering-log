@@ -1,0 +1,82 @@
+{
+  "asset_id": "E_R01_01",
+  "status": "independent-motion-demonstrated; seamless-production-join-failed",
+  "blender": "4.3.2",
+  "resolution": [
+    768,
+    576
+  ],
+  "fps": 24,
+  "frames": [
+    1,
+    120
+  ],
+  "duration_seconds": 5,
+  "source_canvas": [
+    1536,
+    1024
+  ],
+  "pixel_origin": "top-left",
+  "pixels_per_unit": 100,
+  "pivot_px": [
+    900,
+    540
+  ],
+  "hoof_landmark_px": [
+    825,
+    860
+  ],
+  "leg_angle_extrema_degrees": [
+    -7,
+    5
+  ],
+  "body_root_max_translation_pixels": [
+    -122,
+    0
+  ],
+  "source_pixels_modified": false,
+  "head_motion_demonstrated": false,
+  "textures": [
+    {
+      "file": "textures/E_R01_01_body_plate_v1.png",
+      "sha256": "e4a0aa413028afe344ea803cffab7aa7879857b988edcdbb09b93aced6f5793d",
+      "size_bytes": 1368899
+    },
+    {
+      "file": "textures/E_R01_01_foreleg_layer_v1.png",
+      "sha256": "15c21fbc2cf1ca79e8cb9ab637bd5fd074e112349f8a6ae684f1f530664ad0a2",
+      "size_bytes": 673913
+    }
+  ],
+  "notes": "Original texture RGBA uses nearest filtering, alpha mix, packed source bytes. Shoulder cap seam visible; no production acceptance.",
+  "variants": {
+    "front": "leg z +0.03; visible cap outline",
+    "behind": "leg z -0.03; cap occluded but upper-leg anatomy hidden"
+  },
+  "timing": {
+    "idle": [
+      1,
+      24
+    ],
+    "scrape1": [
+      25,
+      42
+    ],
+    "scrape2": [
+      43,
+      60
+    ],
+    "root_charge": [
+      61,
+      80
+    ],
+    "recovery_settle": [
+      81,
+      99
+    ],
+    "hold": [
+      100,
+      120
+    ]
+  }
+}

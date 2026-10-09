@@ -1,0 +1,27 @@
+{
+  "renderer": "Blender CPU Cycles8samples",
+  "viewport": [
+    390,
+    694
+  ],
+  "far_source": "backgrounds/BG_R01_FIELD/BG_R01_FIELD_far_v01.png",
+  "overscan_far_only": 1.01,
+  "far_max_offset_source_px": [
+    2,
+    1
+  ],
+  "back_max_offset_source_px": [
+    4,
+    2
+  ],
+  "front_max_offset_source_px": [
+    8,
+    4
+  ],
+  "playfield": "static",
+  "inspected_positions": "neutral and four corner extrema, not intermediate animation frames",
+  "shadow": "Separate neutral22% opacity scene ellipse, QA-only",
+  "alpha": "Unchanged source, straightalpha, no threshold",
+  "look": "None",
+  "caveats": "Not game integration or device test; neutral rectangles not character sprites"
+}

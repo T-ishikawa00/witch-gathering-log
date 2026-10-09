@@ -1,0 +1,6076 @@
+{
+  "schema": "r03_hammer_r004_clip_render_qa",
+  "state_count": 5,
+  "resolve": "NOT_IMPLEMENTED",
+  "source_inputs_read_only": true,
+  "transparent_rgba": true,
+  "keys_path": "runtime/hammer_r004/clip_keys_r004_r002.json",
+  "frames_subdir": "frames_r003",
+  "clips": {
+    "idle": {
+      "duration_s": 1.0,
+      "fps": 24,
+      "frame_count": 25,
+      "loop": true,
+      "status": "PROVISIONAL_PRESENTATION",
+      "frames": [
+        {
+          "index": 0,
+          "normalized_t": 0.0,
+          "source_time_s": 0.0,
+          "pose": {
+            "upper_world_deg": [
+              -132,
+              148,
+              2
+            ],
+            "forearm_world_deg": [
+              -132,
+              178,
+              0
+            ],
+            "forearm_local_deg": [
+              0,
+              30,
+              -2
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115618,
+          "bbox": [
+            304,
+            391,
+            1114,
+            880
+          ],
+          "bytes": 338877,
+          "sha256": "0765a7b17589de01b8a69e31a34de0f89f3c4af21a7400486f983871a3be6830"
+        },
+        {
+          "index": 1,
+          "normalized_t": 0.041666666666666664,
+          "source_time_s": 0.041666666666666664,
+          "pose": {
+            "upper_world_deg": [
+              228.03935185185185,
+              148.03935185185185,
+              2.019675925925926
+            ],
+            "forearm_world_deg": [
+              228.03935185185185,
+              178.03935185185185,
+              0.019675925925925927
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              -2.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115669,
+          "bbox": [
+            304,
+            391,
+            1114,
+            880
+          ],
+          "bytes": 338656,
+          "sha256": "86cbfa79e890a91ee6ee0e135160d9c4e7f85c8260372c2faea1b0edfd6760e6"
+        },
+        {
+          "index": 2,
+          "normalized_t": 0.08333333333333333,
+          "source_time_s": 0.08333333333333333,
+          "pose": {
+            "upper_world_deg": [
+              228.14814814814815,
+              148.14814814814815,
+              2.074074074074074
+            ],
+            "forearm_world_deg": [
+              228.14814814814815,
+              178.14814814814815,
+              0.07407407407407407
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              -2.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115527,
+          "bbox": [
+            303,
+            390,
+            1114,
+            880
+          ],
+          "bytes": 338730,
+          "sha256": "be8ba30d46c43f82fc92201b9db570bb63bd32f1a8e1a901685f2ab0ac814cc9"
+        },
+        {
+          "index": 3,
+          "normalized_t": 0.125,
+          "source_time_s": 0.125,
+          "pose": {
+            "upper_world_deg": [
+              228.3125,
+              148.3125,
+              2.15625
+            ],
+            "forearm_world_deg": [
+              228.3125,
+              178.3125,
+              0.15625
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              -2.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115561,
+          "bbox": [
+            303,
+            390,
+            1114,
+            880
+          ],
+          "bytes": 338788,
+          "sha256": "112a0401f1dcfae30113ac96c97b30e2f305d97fa5f77abf5afdc8c734077f91"
+        },
+        {
+          "index": 4,
+          "normalized_t": 0.16666666666666666,
+          "source_time_s": 0.16666666666666666,
+          "pose": {
+            "upper_world_deg": [
+              228.5185185185185,
+              148.5185185185185,
+              2.259259259259259
+            ],
+            "forearm_world_deg": [
+              228.5185185185185,
+              178.5185185185185,
+              0.25925925925925924
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              -2.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115538,
+          "bbox": [
+            303,
+            389,
+            1114,
+            880
+          ],
+          "bytes": 338711,
+          "sha256": "73529425da75455a5788b43af669f86ba31a2c9b365af45e6db9f657ae403da9"
+        },
+        {
+          "index": 5,
+          "normalized_t": 0.20833333333333334,
+          "source_time_s": 0.20833333333333334,
+          "pose": {
+            "upper_world_deg": [
+              228.7523148148148,
+              148.7523148148148,
+              2.3761574074074074
+            ],
+            "forearm_world_deg": [
+              228.7523148148148,
+              178.7523148148148,
+              0.37615740740740744
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              -2.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115575,
+          "bbox": [
+            303,
+            389,
+            1114,
+            880
+          ],
+          "bytes": 338785,
+          "sha256": "5363039fb865e2cfed523d11fd80d59f694acd4a57c9e2523afa325144d194d4"
+        },
+        {
+          "index": 6,
+          "normalized_t": 0.25,
+          "source_time_s": 0.25,
+          "pose": {
+            "upper_world_deg": [
+              229.0,
+              149.0,
+              2.5
+            ],
+            "forearm_world_deg": [
+              229.0,
+              179.0,
+              0.5
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              -2.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115540,
+          "bbox": [
+            302,
+            388,
+            1114,
+            880
+          ],
+          "bytes": 338879,
+          "sha256": "3796e42ab439fceb162ac3fae6420f387ee84d8277f7984a7b9bd956b269a1ec"
+        },
+        {
+          "index": 7,
+          "normalized_t": 0.2916666666666667,
+          "source_time_s": 0.2916666666666667,
+          "pose": {
+            "upper_world_deg": [
+              229.2476851851852,
+              149.2476851851852,
+              2.6238425925925926
+            ],
+            "forearm_world_deg": [
+              229.2476851851852,
+              179.2476851851852,
+              0.6238425925925927
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              -2.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115572,
+          "bbox": [
+            302,
+            387,
+            1114,
+            880
+          ],
+          "bytes": 338935,
+          "sha256": "4f824a4e1a7507f98cc37541679297c5d6c404b7b3803aeb065a1ae4d3ce5015"
+        },
+        {
+          "index": 8,
+          "normalized_t": 0.3333333333333333,
+          "source_time_s": 0.3333333333333333,
+          "pose": {
+            "upper_world_deg": [
+              229.4814814814815,
+              149.4814814814815,
+              2.7407407407407405
+            ],
+            "forearm_world_deg": [
+              229.4814814814815,
+              179.4814814814815,
+              0.7407407407407407
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              -2.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115579,
+          "bbox": [
+            302,
+            386,
+            1114,
+            880
+          ],
+          "bytes": 338887,
+          "sha256": "71e30a5382f393f915b60b18091b9ace21a03ac1046db74332e2987959d09501"
+        },
+        {
+          "index": 9,
+          "normalized_t": 0.375,
+          "source_time_s": 0.375,
+          "pose": {
+            "upper_world_deg": [
+              229.6875,
+              149.6875,
+              2.84375
+            ],
+            "forearm_world_deg": [
+              229.6875,
+              179.6875,
+              0.84375
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              -2.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115525,
+          "bbox": [
+            302,
+            386,
+            1114,
+            880
+          ],
+          "bytes": 338898,
+          "sha256": "b4130665fa5d8c570ebf846b13a6c325847ad63b9e0488cd650e46651bbd1eff"
+        },
+        {
+          "index": 10,
+          "normalized_t": 0.4166666666666667,
+          "source_time_s": 0.4166666666666667,
+          "pose": {
+            "upper_world_deg": [
+              229.85185185185185,
+              149.85185185185185,
+              2.925925925925926
+            ],
+            "forearm_world_deg": [
+              229.85185185185185,
+              179.85185185185185,
+              0.925925925925926
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              -2.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115588,
+          "bbox": [
+            301,
+            385,
+            1114,
+            880
+          ],
+          "bytes": 338915,
+          "sha256": "487dae819d39a77739c2ed09f29089ec195565fc92f9af307251e359f78bd294"
+        },
+        {
+          "index": 11,
+          "normalized_t": 0.4583333333333333,
+          "source_time_s": 0.4583333333333333,
+          "pose": {
+            "upper_world_deg": [
+              229.96064814814815,
+              149.96064814814815,
+              2.980324074074074
+            ],
+            "forearm_world_deg": [
+              229.96064814814815,
+              179.96064814814815,
+              0.9803240740740741
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              -2.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115569,
+          "bbox": [
+            301,
+            385,
+            1114,
+            880
+          ],
+          "bytes": 339058,
+          "sha256": "28f51f5f9321b681259d6b6c24ede1cbcebd71e649e6172388214ee19af177ef"
+        },
+        {
+          "index": 12,
+          "normalized_t": 0.5,
+          "source_time_s": 0.5,
+          "pose": {
+            "upper_world_deg": [
+              230.0,
+              150.0,
+              3.0
+            ],
+            "forearm_world_deg": [
+              230.0,
+              180.0,
+              1.0
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              -2.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115580,
+          "bbox": [
+            301,
+            385,
+            1114,
+            880
+          ],
+          "bytes": 339046,
+          "sha256": "fb0c996ccba2fcfb2d00ea9a857d717956fe154f9c8da3d1a5041ba5c7318a78"
+        },
+        {
+          "index": 13,
+          "normalized_t": 0.5416666666666666,
+          "source_time_s": 0.5416666666666666,
+          "pose": {
+            "upper_world_deg": [
+              229.96064814814815,
+              149.96064814814815,
+              2.980324074074074
+            ],
+            "forearm_world_deg": [
+              229.96064814814815,
+              179.96064814814815,
+              0.9803240740740741
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              -2.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115569,
+          "bbox": [
+            301,
+            385,
+            1114,
+            880
+          ],
+          "bytes": 339058,
+          "sha256": "28f51f5f9321b681259d6b6c24ede1cbcebd71e649e6172388214ee19af177ef"
+        },
+        {
+          "index": 14,
+          "normalized_t": 0.5833333333333334,
+          "source_time_s": 0.5833333333333334,
+          "pose": {
+            "upper_world_deg": [
+              229.85185185185185,
+              149.85185185185185,
+              2.925925925925926
+            ],
+            "forearm_world_deg": [
+              229.85185185185185,
+              179.85185185185185,
+              0.9259259259259258
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              -2.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115588,
+          "bbox": [
+            301,
+            385,
+            1114,
+            880
+          ],
+          "bytes": 338915,
+          "sha256": "487dae819d39a77739c2ed09f29089ec195565fc92f9af307251e359f78bd294"
+        },
+        {
+          "index": 15,
+          "normalized_t": 0.625,
+          "source_time_s": 0.625,
+          "pose": {
+            "upper_world_deg": [
+              229.6875,
+              149.6875,
+              2.84375
+            ],
+            "forearm_world_deg": [
+              229.6875,
+              179.6875,
+              0.84375
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              -2.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115525,
+          "bbox": [
+            302,
+            386,
+            1114,
+            880
+          ],
+          "bytes": 338898,
+          "sha256": "b4130665fa5d8c570ebf846b13a6c325847ad63b9e0488cd650e46651bbd1eff"
+        },
+        {
+          "index": 16,
+          "normalized_t": 0.6666666666666666,
+          "source_time_s": 0.6666666666666666,
+          "pose": {
+            "upper_world_deg": [
+              229.4814814814815,
+              149.4814814814815,
+              2.740740740740741
+            ],
+            "forearm_world_deg": [
+              229.4814814814815,
+              179.4814814814815,
+              0.7407407407407408
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              -2.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115579,
+          "bbox": [
+            302,
+            386,
+            1114,
+            880
+          ],
+          "bytes": 338887,
+          "sha256": "71e30a5382f393f915b60b18091b9ace21a03ac1046db74332e2987959d09501"
+        },
+        {
+          "index": 17,
+          "normalized_t": 0.7083333333333334,
+          "source_time_s": 0.7083333333333334,
+          "pose": {
+            "upper_world_deg": [
+              229.2476851851852,
+              149.2476851851852,
+              2.6238425925925926
+            ],
+            "forearm_world_deg": [
+              229.2476851851852,
+              179.2476851851852,
+              0.6238425925925926
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              -2.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115572,
+          "bbox": [
+            302,
+            387,
+            1114,
+            880
+          ],
+          "bytes": 338935,
+          "sha256": "4f824a4e1a7507f98cc37541679297c5d6c404b7b3803aeb065a1ae4d3ce5015"
+        },
+        {
+          "index": 18,
+          "normalized_t": 0.75,
+          "source_time_s": 0.75,
+          "pose": {
+            "upper_world_deg": [
+              229.0,
+              149.0,
+              2.5
+            ],
+            "forearm_world_deg": [
+              229.0,
+              179.0,
+              0.5
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              -2.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115540,
+          "bbox": [
+            302,
+            388,
+            1114,
+            880
+          ],
+          "bytes": 338879,
+          "sha256": "3796e42ab439fceb162ac3fae6420f387ee84d8277f7984a7b9bd956b269a1ec"
+        },
+        {
+          "index": 19,
+          "normalized_t": 0.7916666666666666,
+          "source_time_s": 0.7916666666666666,
+          "pose": {
+            "upper_world_deg": [
+              228.7523148148148,
+              148.7523148148148,
+              2.3761574074074074
+            ],
+            "forearm_world_deg": [
+              228.7523148148148,
+              178.7523148148148,
+              0.37615740740740755
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              -2.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115575,
+          "bbox": [
+            303,
+            389,
+            1114,
+            880
+          ],
+          "bytes": 338785,
+          "sha256": "5363039fb865e2cfed523d11fd80d59f694acd4a57c9e2523afa325144d194d4"
+        },
+        {
+          "index": 20,
+          "normalized_t": 0.8333333333333334,
+          "source_time_s": 0.8333333333333334,
+          "pose": {
+            "upper_world_deg": [
+              228.5185185185185,
+              148.5185185185185,
+              2.259259259259259
+            ],
+            "forearm_world_deg": [
+              228.5185185185185,
+              178.5185185185185,
+              0.2592592592592592
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              -2.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115538,
+          "bbox": [
+            303,
+            389,
+            1114,
+            880
+          ],
+          "bytes": 338711,
+          "sha256": "73529425da75455a5788b43af669f86ba31a2c9b365af45e6db9f657ae403da9"
+        },
+        {
+          "index": 21,
+          "normalized_t": 0.875,
+          "source_time_s": 0.875,
+          "pose": {
+            "upper_world_deg": [
+              228.3125,
+              148.3125,
+              2.15625
+            ],
+            "forearm_world_deg": [
+              228.3125,
+              178.3125,
+              0.15625
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              -2.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115561,
+          "bbox": [
+            303,
+            390,
+            1114,
+            880
+          ],
+          "bytes": 338788,
+          "sha256": "112a0401f1dcfae30113ac96c97b30e2f305d97fa5f77abf5afdc8c734077f91"
+        },
+        {
+          "index": 22,
+          "normalized_t": 0.9166666666666666,
+          "source_time_s": 0.9166666666666666,
+          "pose": {
+            "upper_world_deg": [
+              228.14814814814815,
+              148.14814814814815,
+              2.0740740740740744
+            ],
+            "forearm_world_deg": [
+              228.14814814814815,
+              178.14814814814815,
+              0.07407407407407418
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              -2.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115527,
+          "bbox": [
+            303,
+            390,
+            1114,
+            880
+          ],
+          "bytes": 338730,
+          "sha256": "be8ba30d46c43f82fc92201b9db570bb63bd32f1a8e1a901685f2ab0ac814cc9"
+        },
+        {
+          "index": 23,
+          "normalized_t": 0.9583333333333334,
+          "source_time_s": 0.9583333333333334,
+          "pose": {
+            "upper_world_deg": [
+              228.03935185185185,
+              148.03935185185185,
+              2.019675925925926
+            ],
+            "forearm_world_deg": [
+              228.03935185185185,
+              178.03935185185185,
+              0.01967592592592593
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              -2.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115669,
+          "bbox": [
+            304,
+            391,
+            1114,
+            880
+          ],
+          "bytes": 338656,
+          "sha256": "86cbfa79e890a91ee6ee0e135160d9c4e7f85c8260372c2faea1b0edfd6760e6"
+        },
+        {
+          "index": 24,
+          "normalized_t": 1.0,
+          "source_time_s": 1.0,
+          "pose": {
+            "upper_world_deg": [
+              -132,
+              148,
+              2
+            ],
+            "forearm_world_deg": [
+              -132,
+              178,
+              0
+            ],
+            "forearm_local_deg": [
+              0,
+              30,
+              -2
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115618,
+          "bbox": [
+            304,
+            391,
+            1114,
+            880
+          ],
+          "bytes": 338877,
+          "sha256": "0765a7b17589de01b8a69e31a34de0f89f3c4af21a7400486f983871a3be6830"
+        }
+      ]
+    },
+    "anticipate": {
+      "duration_s": 0.7,
+      "fps": 24,
+      "frame_count": 18,
+      "loop": false,
+      "status": "PROVISIONAL_PRESENTATION",
+      "frames": [
+        {
+          "index": 0,
+          "normalized_t": 0.0,
+          "source_time_s": 0.0,
+          "pose": {
+            "upper_world_deg": [
+              -132,
+              148,
+              2
+            ],
+            "forearm_world_deg": [
+              -132,
+              178,
+              0
+            ],
+            "forearm_local_deg": [
+              0,
+              30,
+              -2
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115618,
+          "bbox": [
+            304,
+            391,
+            1114,
+            880
+          ],
+          "bytes": 338877,
+          "sha256": "0765a7b17589de01b8a69e31a34de0f89f3c4af21a7400486f983871a3be6830"
+        },
+        {
+          "index": 1,
+          "normalized_t": 0.058823529411764705,
+          "source_time_s": 0.041176470588235294,
+          "pose": {
+            "upper_world_deg": [
+              228.22308529036337,
+              148.2868239447529,
+              1.2351361473255995
+            ],
+            "forearm_world_deg": [
+              228.12747730877908,
+              178.31869327194767,
+              358.34279498587216
+            ],
+            "forearm_local_deg": [
+              -0.09560798158429407,
+              30.031869327194755,
+              -2.892341161453487
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115543,
+          "bbox": [
+            303,
+            390,
+            1114,
+            880
+          ],
+          "bytes": 338767,
+          "sha256": "8cf189a85d4788a015edcacb057fcaafa5d1498e61050b40f782569a963fcba6"
+        },
+        {
+          "index": 2,
+          "normalized_t": 0.11764705882352941,
+          "source_time_s": 0.08235294117647059,
+          "pose": {
+            "upper_world_deg": [
+              228.82383128341482,
+              149.05921165010477,
+              359.17543559972063
+            ],
+            "forearm_world_deg": [
+              228.4707607333799,
+              179.17690183344973,
+              353.8801104660614
+            ],
+            "forearm_local_deg": [
+              -0.3530705500349143,
+              30.117690183344962,
+              -5.295325133659219
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115556,
+          "bbox": [
+            302,
+            389,
+            1114,
+            880
+          ],
+          "bytes": 339035,
+          "sha256": "ae7586d8ec1f00e96c12ff4b0e1ad1504f53fbe49cd9996761746f3484ec9839"
+        },
+        {
+          "index": 3,
+          "normalized_t": 0.17647058823529413,
+          "source_time_s": 0.12352941176470589,
+          "pose": {
+            "upper_world_deg": [
+              229.69947316209635,
+              150.18503692269533,
+              356.1732348728125
+            ],
+            "forearm_world_deg": [
+              228.97112752119793,
+              180.4278188029948,
+              347.375342224427
+            ],
+            "forearm_local_deg": [
+              -0.728345640898425,
+              30.242781880299475,
+              -8.79789264838547
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115545,
+          "bbox": [
+            301,
+            387,
+            1111,
+            880
+          ],
+          "bytes": 339882,
+          "sha256": "c843091954d428c93d06278fd10284126b94481c38be88ea23a5dc49c6a02ee3"
+        },
+        {
+          "index": 4,
+          "normalized_t": 0.23529411764705882,
+          "source_time_s": 0.16470588235294117,
+          "pose": {
+            "upper_world_deg": [
+              230.74724610935002,
+              151.5321735691643,
+              352.5808704822285
+            ],
+            "forearm_world_deg": [
+              229.5698549196286,
+              181.92463729907146,
+              339.5918860448284
+            ],
+            "forearm_local_deg": [
+              -1.177391189721419,
+              30.39246372990715,
+              -12.988984437400063
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115500,
+          "bbox": [
+            299,
+            384,
+            1108,
+            880
+          ],
+          "bytes": 340810,
+          "sha256": "69c78e72a7ee171405b8d8268354bd3f1d22c7a45713e10ec00272b38d3f1565"
+        },
+        {
+          "index": 5,
+          "normalized_t": 0.29411764705882354,
+          "source_time_s": 0.20588235294117646,
+          "pose": {
+            "upper_world_deg": [
+              231.86438530811782,
+              152.9684953961515,
+              348.75067894359603
+            ],
+            "forearm_world_deg": [
+              230.20822017606733,
+              183.5205504401683,
+              331.29313771112476
+            ],
+            "forearm_local_deg": [
+              -1.6561651320504893,
+              30.55205504401681,
+              -17.45754123247127
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115430,
+          "bbox": [
+            297,
+            382,
+            1102,
+            880
+          ],
+          "bytes": 340998,
+          "sha256": "d037440609243bb222dd01f5f579e732896df11cdb60fe6755111ca66e4b95e4"
+        },
+        {
+          "index": 6,
+          "normalized_t": 0.35294117647058826,
+          "source_time_s": 0.24705882352941178,
+          "pose": {
+            "upper_world_deg": [
+              232.9481259413418,
+              154.36187621029657,
+              345.03499677254246
+            ],
+            "forearm_world_deg": [
+              230.8275005379096,
+              185.06875134477397,
+              323.2424930071753
+            ],
+            "forearm_local_deg": [
+              -2.1206254034322,
+              30.7068751344774,
+              -21.792503765367144
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115413,
+          "bbox": [
+            295,
+            379,
+            1092,
+            880
+          ],
+          "bytes": 341089,
+          "sha256": "fc81e483eb6761336b7190c44747abd92cc58e0b6e05027a9d009a6634beb543"
+        },
+        {
+          "index": 7,
+          "normalized_t": 0.4117647058823529,
+          "source_time_s": 0.28823529411764703,
+          "pose": {
+            "upper_world_deg": [
+              233.89570319196392,
+              155.58018981823932,
+              341.78616048469513
+            ],
+            "forearm_world_deg": [
+              231.3689732525508,
+              186.42243313137703,
+              316.2033477168395
+            ],
+            "forearm_local_deg": [
+              -2.5267299394131157,
+              30.842243313137715,
+              -25.582812767855614
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115375,
+          "bbox": [
+            294,
+            377,
+            1081,
+            880
+          ],
+          "bytes": 340633,
+          "sha256": "fdb4c020f3a3a395c788f2da9aad29db62cfb5ad27253a4f06ff49e7c55fc65a"
+        },
+        {
+          "index": 8,
+          "normalized_t": 0.47058823529411764,
+          "source_time_s": 0.32941176470588235,
+          "pose": {
+            "upper_world_deg": [
+              234.60435224292624,
+              156.49131002661946,
+              339.3565065956815
+            ],
+            "forearm_world_deg": [
+              231.7739155673864,
+              187.43478891846607,
+              310.9390976239765
+            ],
+            "forearm_local_deg": [
+              -2.830436675539829,
+              30.94347889184661,
+              -28.41740897170496
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115306,
+          "bbox": [
+            293,
+            376,
+            1071,
+            880
+          ],
+          "bytes": 340402,
+          "sha256": "1b3f2fcf65d4c478ab1a20a01234412ced5a18e07de77f933fa13e83161b154e"
+        },
+        {
+          "index": 9,
+          "normalized_t": 0.5294117647058824,
+          "source_time_s": 0.3705882352941176,
+          "pose": {
+            "upper_world_deg": [
+              234.97130827717078,
+              156.9631106420767,
+              338.09837162112876
+            ],
+            "forearm_world_deg": [
+              231.98360472981187,
+              187.95901182452968,
+              308.21313851244565
+            ],
+            "forearm_local_deg": [
+              -2.9877035473589046,
+              30.995901182452968,
+              -29.88523310868311
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115344,
+          "bbox": [
+            293,
+            375,
+            1066,
+            880
+          ],
+          "bytes": 340581,
+          "sha256": "35a9e8ae4824ce6cd0614e910e6ff5cd5a85b54de44eb07b04c81a818534b1e5"
+        },
+        {
+          "index": 10,
+          "normalized_t": 0.5882352941176471,
+          "source_time_s": 0.4117647058823529,
+          "pose": {
+            "upper_world_deg": [
+              235.14302051861512,
+              157.1021575132965,
+              337.73439046542904
+            ],
+            "forearm_world_deg": [
+              232.0612945079779,
+              188.1225890159558,
+              307.63223295213254
+            ],
+            "forearm_local_deg": [
+              -3.081726010637226,
+              31.020431502659306,
+              -30.102157513296504
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115308,
+          "bbox": [
+            293,
+            375,
+            1065,
+            880
+          ],
+          "bytes": 340804,
+          "sha256": "45994d6c41f5fd4b4d51742b2c88fee62bc8b4c94e866c55ca1cefc32cf1568a"
+        },
+        {
+          "index": 11,
+          "normalized_t": 0.6470588235294118,
+          "source_time_s": 0.45294117647058824,
+          "pose": {
+            "upper_world_deg": [
+              235.8364580741947,
+              157.59747005299621,
+              336.44657786220984
+            ],
+            "forearm_world_deg": [
+              232.35848203179773,
+              188.71696406359544,
+              305.84910780921365
+            ],
+            "forearm_local_deg": [
+              -3.4779760423969606,
+              31.119494010599226,
+              -30.597470052996186
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115287,
+          "bbox": [
+            292,
+            373,
+            1060,
+            880
+          ],
+          "bytes": 340928,
+          "sha256": "2d94af336c36f29ee736279b903204daa4e0880f3cb1de73b55964f1022eed03"
+        },
+        {
+          "index": 12,
+          "normalized_t": 0.7058823529411765,
+          "source_time_s": 0.49411764705882355,
+          "pose": {
+            "upper_world_deg": [
+              236.9379840221221,
+              158.38427430151577,
+              334.40088681605897
+            ],
+            "forearm_world_deg": [
+              232.83056458090948,
+              189.66112916181893,
+              303.01661251454317
+            ],
+            "forearm_local_deg": [
+              -4.107419441212613,
+              31.27685486030316,
+              -31.384274301515802
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115287,
+          "bbox": [
+            292,
+            371,
+            1053,
+            880
+          ],
+          "bytes": 341044,
+          "sha256": "a74443234b82dc308d3b6a6cd6bb054673a5ed1a5dd649932459ab26e1bed0c7"
+        },
+        {
+          "index": 13,
+          "normalized_t": 0.7647058823529411,
+          "source_time_s": 0.5352941176470587,
+          "pose": {
+            "upper_world_deg": [
+              238.25997151534085,
+              159.32855108238633,
+              331.94576718579555
+            ],
+            "forearm_world_deg": [
+              233.3971306494318,
+              190.7942612988636,
+              299.6172161034092
+            ],
+            "forearm_local_deg": [
+              -4.86284086590905,
+              31.465710216477277,
+              -32.328551082386355
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115214,
+          "bbox": [
+            292,
+            369,
+            1043,
+            880
+          ],
+          "bytes": 341124,
+          "sha256": "8289d6609f63c7159397984e72b92747c0461da339b38a1a74a0e3ddac66d5bf"
+        },
+        {
+          "index": 14,
+          "normalized_t": 0.8235294117647058,
+          "source_time_s": 0.5764705882352941,
+          "pose": {
+            "upper_world_deg": [
+              239.6147937067945,
+              160.29628121913893,
+              329.42966883023877
+            ],
+            "forearm_world_deg": [
+              233.97776873148337,
+              191.95553746296673,
+              296.1333876110998
+            ],
+            "forearm_local_deg": [
+              -5.637024975311135,
+              31.659256243827798,
+              -33.29628121913896
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115145,
+          "bbox": [
+            291,
+            367,
+            1033,
+            880
+          ],
+          "bytes": 341031,
+          "sha256": "55ed72b2e464053496b57a14d92e3883ae5a3fe999f3b4d9ff0854a448bb6f86"
+        },
+        {
+          "index": 15,
+          "normalized_t": 0.8823529411764706,
+          "source_time_s": 0.6176470588235293,
+          "pose": {
+            "upper_world_deg": [
+              240.81482374942658,
+              161.1534455353047,
+              327.2010416082078
+            ],
+            "forearm_world_deg": [
+              234.49206732118282,
+              192.98413464236563,
+              293.04759607290305
+            ],
+            "forearm_local_deg": [
+              -6.322756428243764,
+              31.83068910706092,
+              -34.15344553530474
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115145,
+          "bbox": [
+            291,
+            364,
+            1024,
+            880
+          ],
+          "bytes": 341131,
+          "sha256": "07b1a8f35935cb6c5e9460084863c80652418b2c4f72f02a4d244787e9a71e5c"
+        },
+        {
+          "index": 16,
+          "normalized_t": 0.9411764705882353,
+          "source_time_s": 0.6588235294117647,
+          "pose": {
+            "upper_world_deg": [
+              241.67243479618057,
+              161.7660248544147,
+              325.6083353785218
+            ],
+            "forearm_world_deg": [
+              234.8596149126488,
+              193.71922982529762,
+              290.8423105241071
+            ],
+            "forearm_local_deg": [
+              -6.812819883531773,
+              31.953204970882922,
+              -34.766024854414695
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115142,
+          "bbox": [
+            291,
+            363,
+            1017,
+            880
+          ],
+          "bytes": 341096,
+          "sha256": "a147861647abcd41b9359bd4c9229624a24109d603bca3efd6e0d94032668c57"
+        },
+        {
+          "index": 17,
+          "normalized_t": 1.0,
+          "source_time_s": 0.7,
+          "pose": {
+            "upper_world_deg": [
+              -118,
+              162,
+              -35
+            ],
+            "forearm_world_deg": [
+              -125,
+              194,
+              -70
+            ],
+            "forearm_local_deg": [
+              -7,
+              32,
+              -35
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115119,
+          "bbox": [
+            290,
+            363,
+            1014,
+            880
+          ],
+          "bytes": 341427,
+          "sha256": "6ba3679788e2ff6d5ff91f0ae13e606f7c5a6b1e7c2d033d065288e892a7cae9"
+        }
+      ]
+    },
+    "execute": {
+      "duration_s": 1.0,
+      "fps": 24,
+      "frame_count": 25,
+      "loop": false,
+      "status": "PROVISIONAL_PRESENTATION",
+      "frames": [
+        {
+          "index": 0,
+          "normalized_t": 0.0,
+          "source_time_s": 0.0,
+          "pose": {
+            "upper_world_deg": [
+              -118,
+              162,
+              -35
+            ],
+            "forearm_world_deg": [
+              -125,
+              194,
+              -70
+            ],
+            "forearm_local_deg": [
+              -7,
+              32,
+              -35
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115119,
+          "bbox": [
+            290,
+            363,
+            1014,
+            880
+          ],
+          "bytes": 341427,
+          "sha256": "6ba3679788e2ff6d5ff91f0ae13e606f7c5a6b1e7c2d033d065288e892a7cae9"
+        },
+        {
+          "index": 1,
+          "normalized_t": 0.041666666666666664,
+          "source_time_s": 0.041666666666666664,
+          "pose": {
+            "upper_world_deg": [
+              238.10848551097394,
+              162.55593064128945,
+              329.7254104509602
+            ],
+            "forearm_world_deg": [
+              233.05424275548697,
+              194.55593064128945,
+              299.72878622256513
+            ],
+            "forearm_local_deg": [
+              -5.0542427554869676,
+              32.0,
+              -29.996624228395092
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115209,
+          "bbox": [
+            290,
+            370,
+            1041,
+            880
+          ],
+          "bytes": 341327,
+          "sha256": "d70f6258608cf7f013e4c14da8c7653494403ce68e70d24943503d26334b3240"
+        },
+        {
+          "index": 2,
+          "normalized_t": 0.08333333333333333,
+          "source_time_s": 0.08333333333333333,
+          "pose": {
+            "upper_world_deg": [
+              231.12251371742113,
+              163.55392661179698,
+              338.20837620027436
+            ],
+            "forearm_world_deg": [
+              229.56125685871055,
+              195.55392661179698,
+              317.19371570644716
+            ],
+            "forearm_local_deg": [
+              -1.5612568587105784,
+              32.0,
+              -21.014660493827193
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115358,
+          "bbox": [
+            290,
+            384,
+            1080,
+            880
+          ],
+          "bytes": 340863,
+          "sha256": "ac863a37a699bbf2e93a0a54b324b8806b2f6908d67d61a9a9bd3949c7fe9003"
+        },
+        {
+          "index": 3,
+          "normalized_t": 0.125,
+          "source_time_s": 0.125,
+          "pose": {
+            "upper_world_deg": [
+              228.0,
+              164.0,
+              342.1825185185185
+            ],
+            "forearm_world_deg": [
+              228.0,
+              196.0,
+              325.35525925925924
+            ],
+            "forearm_local_deg": [
+              0.0,
+              32.0,
+              -16.82725925925928
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115412,
+          "bbox": [
+            290,
+            391,
+            1093,
+            880
+          ],
+          "bytes": 341195,
+          "sha256": "0f4a23711d304d1422ffd6446d928fb39cb622604b3667b800afe17d1201f44f"
+        },
+        {
+          "index": 4,
+          "normalized_t": 0.16666666666666666,
+          "source_time_s": 0.16666666666666666,
+          "pose": {
+            "upper_world_deg": [
+              228.0,
+              164.0,
+              354.8881426611797
+            ],
+            "forearm_world_deg": [
+              228.0,
+              196.0,
+              350.0858491083676
+            ],
+            "forearm_local_deg": [
+              0.0,
+              32.0,
+              -4.8022935528121025
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115537,
+          "bbox": [
+            290,
+            391,
+            1112,
+            880
+          ],
+          "bytes": 340233,
+          "sha256": "b1d42897b434f0a5e20a17c8e27907424395472608a9ffa17aa0a4848d67d87c"
+        },
+        {
+          "index": 5,
+          "normalized_t": 0.20833333333333334,
+          "source_time_s": 0.20833333333333334,
+          "pose": {
+            "upper_world_deg": [
+              228.0,
+              164.0,
+              17.388005486968453
+            ],
+            "forearm_world_deg": [
+              228.0,
+              196.0,
+              33.88022496570645
+            ],
+            "forearm_local_deg": [
+              0.0,
+              32.0,
+              16.49221947873798
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115636,
+          "bbox": [
+            290,
+            391,
+            1087,
+            880
+          ],
+          "bytes": 342705,
+          "sha256": "4258efe467e18405b8827f0454c37e08953405b18daedcc55376bd7a6f4befa7"
+        },
+        {
+          "index": 6,
+          "normalized_t": 0.25,
+          "source_time_s": 0.25,
+          "pose": {
+            "upper_world_deg": [
+              228.0,
+              164.0,
+              35.278814814814815
+            ],
+            "forearm_world_deg": [
+              228.0,
+              196.0,
+              68.7034074074074
+            ],
+            "forearm_local_deg": [
+              0.0,
+              32.0,
+              33.424592592592575
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115650,
+          "bbox": [
+            290,
+            391,
+            1014,
+            911
+          ],
+          "bytes": 342471,
+          "sha256": "41555cd364b37d9d66f6d14ec7b72f617878f463086cefa50df2c8748f0810a7"
+        },
+        {
+          "index": 7,
+          "normalized_t": 0.2916666666666667,
+          "source_time_s": 0.2916666666666667,
+          "pose": {
+            "upper_world_deg": [
+              228.0,
+              163.55555555555554,
+              35.77777777777778
+            ],
+            "forearm_world_deg": [
+              228.0,
+              195.40740740740742,
+              69.4074074074074
+            ],
+            "forearm_local_deg": [
+              0.0,
+              31.851851851851876,
+              33.62962962962962
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115655,
+          "bbox": [
+            290,
+            391,
+            1012,
+            912
+          ],
+          "bytes": 342657,
+          "sha256": "def38fcf70880745e21ea482f2b63c3566672149b42e352bafa350a70f6086c7"
+        },
+        {
+          "index": 8,
+          "normalized_t": 0.3333333333333333,
+          "source_time_s": 0.3333333333333333,
+          "pose": {
+            "upper_world_deg": [
+              228.0,
+              161.11535932837708,
+              23.57679664188541
+            ],
+            "forearm_world_deg": [
+              228.0,
+              192.1538124378361,
+              44.192046393229845
+            ],
+            "forearm_local_deg": [
+              0.0,
+              31.038453109459027,
+              20.615249751344436
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115641,
+          "bbox": [
+            290,
+            391,
+            1066,
+            880
+          ],
+          "bytes": 342978,
+          "sha256": "f6a60fb26f6a269eaa7375bfe1759d56df2be77a105be17d33a4a5d821b19647"
+        },
+        {
+          "index": 9,
+          "normalized_t": 0.375,
+          "source_time_s": 0.375,
+          "pose": {
+            "upper_world_deg": [
+              228.0,
+              158.58033682294038,
+              10.901684114701872
+            ],
+            "forearm_world_deg": [
+              228.0,
+              188.77378243058718,
+              17.99681383705053
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.193445607646794,
+              7.095129722348645
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115618,
+          "bbox": [
+            292,
+            391,
+            1108,
+            880
+          ],
+          "bytes": 341581,
+          "sha256": "3c0913fefe3d14c9067b49e24dab4c5a5fc31c7fb8281231b90d667cba6f4ba3"
+        },
+        {
+          "index": 10,
+          "normalized_t": 0.4166666666666667,
+          "source_time_s": 0.4166666666666667,
+          "pose": {
+            "upper_world_deg": [
+              228.0,
+              155.9256224818355,
+              8.0
+            ],
+            "forearm_world_deg": [
+              228.0,
+              183.40029332928742,
+              12.0
+            ],
+            "forearm_local_deg": [
+              0.0,
+              27.474670847451932,
+              4.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115598,
+          "bbox": [
+            294,
+            391,
+            1112,
+            880
+          ],
+          "bytes": 340544,
+          "sha256": "d0dee3c8e4f23b999844f8e76be3f6af02814dc2bfe97bb1ed6fefb4aa7361ef"
+        },
+        {
+          "index": 11,
+          "normalized_t": 0.4583333333333333,
+          "source_time_s": 0.4583333333333333,
+          "pose": {
+            "upper_world_deg": [
+              228.0,
+              138.52605404676413,
+              8.0
+            ],
+            "forearm_world_deg": [
+              228.0,
+              144.81864158195526,
+              12.0
+            ],
+            "forearm_local_deg": [
+              0.0,
+              6.292587535191132,
+              4.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115443,
+          "bbox": [
+            333,
+            391,
+            1112,
+            907
+          ],
+          "bytes": 341486,
+          "sha256": "364fe92ff16cf06b746ccc8b42988028fcf7045f51ec04b66a7d6c5f4d437f59"
+        },
+        {
+          "index": 12,
+          "normalized_t": 0.5,
+          "source_time_s": 0.5,
+          "pose": {
+            "upper_world_deg": [
+              228.0,
+              118.21847974510698,
+              8.0
+            ],
+            "forearm_world_deg": [
+              228.0,
+              99.7888029130633,
+              12.0
+            ],
+            "forearm_local_deg": [
+              0.0,
+              -18.429676832043697,
+              4.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 113375,
+          "bbox": [
+            395,
+            391,
+            1112,
+            989
+          ],
+          "bytes": 334541,
+          "sha256": "1cb59815350a287010671122d6bf60cbd12382027f7eabfc0a94e1dffaab6bf3"
+        },
+        {
+          "index": 13,
+          "normalized_t": 0.5416666666666666,
+          "source_time_s": 0.5416666666666666,
+          "pose": {
+            "upper_world_deg": [
+              228.0,
+              112.81778182369898,
+              8.0
+            ],
+            "forearm_world_deg": [
+              228.0,
+              88.08988688278627,
+              12.0
+            ],
+            "forearm_local_deg": [
+              0.0,
+              -24.727894940912705,
+              4.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 111761,
+          "bbox": [
+            395,
+            391,
+            1112,
+            995
+          ],
+          "bytes": 329135,
+          "sha256": "022d689be83307e76d1951b38e721ed9199d2d6895aa35812d3bef953cf36dfb"
+        },
+        {
+          "index": 14,
+          "normalized_t": 0.5833333333333334,
+          "source_time_s": 0.5833333333333334,
+          "pose": {
+            "upper_world_deg": [
+              228.0,
+              125.20588681535428,
+              8.0
+            ],
+            "forearm_world_deg": [
+              228.0,
+              119.74837741701647,
+              12.0
+            ],
+            "forearm_local_deg": [
+              0.0,
+              -5.457509398337805,
+              4.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 114970,
+          "bbox": [
+            395,
+            391,
+            1112,
+            965
+          ],
+          "bytes": 339812,
+          "sha256": "162a2a1cbbbc98200faf0a8b275d485a98059958d22bce75d483ce4b509cbc26"
+        },
+        {
+          "index": 15,
+          "normalized_t": 0.625,
+          "source_time_s": 0.625,
+          "pose": {
+            "upper_world_deg": [
+              228.0,
+              141.57669549385525,
+              8.0
+            ],
+            "forearm_world_deg": [
+              228.0,
+              161.58488848429675,
+              12.0
+            ],
+            "forearm_local_deg": [
+              0.0,
+              20.0081929904415,
+              4.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115534,
+          "bbox": [
+            317,
+            391,
+            1112,
+            880
+          ],
+          "bytes": 341355,
+          "sha256": "ae05dc15d17f6557c9ad601e572937c64547240f91dbde915c881e5f0e3e7e84"
+        },
+        {
+          "index": 16,
+          "normalized_t": 0.6666666666666666,
+          "source_time_s": 0.6666666666666666,
+          "pose": {
+            "upper_world_deg": [
+              228.35665294924553,
+              148.0,
+              8.0
+            ],
+            "forearm_world_deg": [
+              228.68655692729766,
+              178.0,
+              12.0
+            ],
+            "forearm_local_deg": [
+              0.3299039780521298,
+              30.0,
+              4.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115569,
+          "bbox": [
+            304,
+            389,
+            1112,
+            880
+          ],
+          "bytes": 340843,
+          "sha256": "745e829c91d94c91fdcc096f14c55d9816b0820a3179dbe169beb2d97d248088"
+        },
+        {
+          "index": 17,
+          "normalized_t": 0.7083333333333334,
+          "source_time_s": 0.7083333333333334,
+          "pose": {
+            "upper_world_deg": [
+              242.24018347050753,
+              148.0,
+              8.0
+            ],
+            "forearm_world_deg": [
+              255.41235318072702,
+              178.0,
+              12.0
+            ],
+            "forearm_local_deg": [
+              13.172169710219492,
+              30.0,
+              4.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115579,
+          "bbox": [
+            304,
+            351,
+            1112,
+            880
+          ],
+          "bytes": 341163,
+          "sha256": "fb30ac073bf765d9ad51f9e28901c7a78e6cb65e7ceb3a681d9eeadcc3ac4798"
+        },
+        {
+          "index": 18,
+          "normalized_t": 0.75,
+          "source_time_s": 0.75,
+          "pose": {
+            "upper_world_deg": [
+              261.75,
+              148.0,
+              8.0
+            ],
+            "forearm_world_deg": [
+              292.96875,
+              178.0,
+              12.0
+            ],
+            "forearm_local_deg": [
+              31.21875,
+              30.0,
+              4.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 19,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115360,
+          "bbox": [
+            304,
+            340,
+            1112,
+            880
+          ],
+          "bytes": 340382,
+          "sha256": "f8dea877004f9c635b07029963c0a606786f3fd851b58fa1fbe0bd3c506ad576"
+        },
+        {
+          "index": 19,
+          "normalized_t": 0.7916666666666666,
+          "source_time_s": 0.7916666666666666,
+          "pose": {
+            "upper_world_deg": [
+              265.7405555555556,
+              148.0,
+              8.0
+            ],
+            "forearm_world_deg": [
+              300.44345370370377,
+              178.0,
+              12.0
+            ],
+            "forearm_local_deg": [
+              34.702898148148165,
+              30.0,
+              4.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 29,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115263,
+          "bbox": [
+            304,
+            347,
+            1112,
+            880
+          ],
+          "bytes": 339816,
+          "sha256": "b57a6b47c3c54487cab0cbab56d16184ca01874be3f4debda1cbd1779a6f0978"
+        },
+        {
+          "index": 20,
+          "normalized_t": 0.8333333333333334,
+          "source_time_s": 0.8333333333333334,
+          "pose": {
+            "upper_world_deg": [
+              235.00444444444443,
+              148.0,
+              8.0
+            ],
+            "forearm_world_deg": [
+              238.45896296296291,
+              178.0,
+              12.0
+            ],
+            "forearm_local_deg": [
+              3.4545185185184835,
+              30.0,
+              4.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115569,
+          "bbox": [
+            304,
+            368,
+            1112,
+            880
+          ],
+          "bytes": 341178,
+          "sha256": "2a4279a8c2d186515f9bbed14d35d0b6b6999fd23f39147f80155ef02db45bb5"
+        },
+        {
+          "index": 21,
+          "normalized_t": 0.875,
+          "source_time_s": 0.875,
+          "pose": {
+            "upper_world_deg": [
+              208.435,
+              148.0,
+              8.0
+            ],
+            "forearm_world_deg": [
+              184.87725,
+              178.0,
+              12.0
+            ],
+            "forearm_local_deg": [
+              -23.55775,
+              30.0,
+              4.0
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115532,
+          "bbox": [
+            304,
+            513,
+            1112,
+            880
+          ],
+          "bytes": 338260,
+          "sha256": "47b70be55c3425f190acfa05f2f8b2ee0e9b53cae5c25d088ff0947e5803c79f"
+        },
+        {
+          "index": 22,
+          "normalized_t": 0.9166666666666666,
+          "source_time_s": 0.9166666666666666,
+          "pose": {
+            "upper_world_deg": [
+              212.46073388203018,
+              148.0,
+              13.79895404663922
+            ],
+            "forearm_world_deg": [
+              193.81361454046638,
+              178.0,
+              24.490054869684478
+            ],
+            "forearm_local_deg": [
+              -18.64711934156381,
+              30.0,
+              10.691100823045247
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115582,
+          "bbox": [
+            304,
+            484,
+            1100,
+            880
+          ],
+          "bytes": 340770,
+          "sha256": "116d0db7362189172690a214d3b615fa75f24c34db88e3c38684b06e14b8cd17"
+        },
+        {
+          "index": 23,
+          "normalized_t": 0.9583333333333334,
+          "source_time_s": 0.9583333333333334,
+          "pose": {
+            "upper_world_deg": [
+              222.44069358710564,
+              148.0,
+              26.772901663237324
+            ],
+            "forearm_world_deg": [
+              215.76952589163238,
+              178.0,
+              52.43394204389577
+            ],
+            "forearm_local_deg": [
+              -6.671167695473258,
+              30.0,
+              25.66104038065845
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115596,
+          "bbox": [
+            304,
+            419,
+            1052,
+            880
+          ],
+          "bytes": 342110,
+          "sha256": "e812af1d7a84041339fa5088fef0473ed2651891ab74bf34105dcf0c34f0a810"
+        },
+        {
+          "index": 24,
+          "normalized_t": 1.0,
+          "source_time_s": 1.0,
+          "pose": {
+            "upper_world_deg": [
+              -132,
+              148,
+              34
+            ],
+            "forearm_world_deg": [
+              -132,
+              178,
+              68
+            ],
+            "forearm_local_deg": [
+              0,
+              30,
+              34
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115612,
+          "bbox": [
+            304,
+            391,
+            1017,
+            908
+          ],
+          "bytes": 342404,
+          "sha256": "fc8bc758c0fd563bb9b0ad881fa68756586aed69a2f7f29d7b7a3dbd4bd26089"
+        }
+      ]
+    },
+    "recover": {
+      "duration_s": 0.6,
+      "fps": 24,
+      "frame_count": 15,
+      "loop": false,
+      "status": "PROVISIONAL_PRESENTATION",
+      "frames": [
+        {
+          "index": 0,
+          "normalized_t": 0.0,
+          "source_time_s": 0.0,
+          "pose": {
+            "upper_world_deg": [
+              -132,
+              148,
+              34
+            ],
+            "forearm_world_deg": [
+              -132,
+              178,
+              68
+            ],
+            "forearm_local_deg": [
+              0,
+              30,
+              34
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115612,
+          "bbox": [
+            304,
+            391,
+            1017,
+            908
+          ],
+          "bytes": 342404,
+          "sha256": "fc8bc758c0fd563bb9b0ad881fa68756586aed69a2f7f29d7b7a3dbd4bd26089"
+        },
+        {
+          "index": 1,
+          "normalized_t": 0.07142857142857142,
+          "source_time_s": 0.04285714285714285,
+          "pose": {
+            "upper_world_deg": [
+              228.0,
+              148.0,
+              31.71083036389159
+            ],
+            "forearm_world_deg": [
+              228.0,
+              178.0,
+              62.84936831875608
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              31.13853795486449
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115630,
+          "bbox": [
+            304,
+            391,
+            1030,
+            900
+          ],
+          "bytes": 342652,
+          "sha256": "aca77d7117fb21c78f6d8f24fe51027590dd882edb89fced346726ef328e7878"
+        },
+        {
+          "index": 2,
+          "normalized_t": 0.14285714285714285,
+          "source_time_s": 0.0857142857142857,
+          "pose": {
+            "upper_world_deg": [
+              228.0,
+              148.0,
+              26.570996652629308
+            ],
+            "forearm_world_deg": [
+              228.0,
+              178.0,
+              51.28474246841594
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              24.713745815786638
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115633,
+          "bbox": [
+            304,
+            391,
+            1053,
+            880
+          ],
+          "bytes": 342282,
+          "sha256": "21d511f822bce3171016dd3b40576edf707a28f6ae19d09e0819d0891bf49b48"
+        },
+        {
+          "index": 3,
+          "normalized_t": 0.21428571428571427,
+          "source_time_s": 0.12857142857142856,
+          "pose": {
+            "upper_world_deg": [
+              228.0,
+              148.0,
+              21.17201166180758
+            ],
+            "forearm_world_deg": [
+              228.0,
+              178.0,
+              39.137026239067055
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              17.965014577259467
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115638,
+          "bbox": [
+            304,
+            391,
+            1076,
+            880
+          ],
+          "bytes": 342246,
+          "sha256": "1355722303463b5c5afff16dbdb1fc656406a1b4dcf8bdfcdd9202b70278a72e"
+        },
+        {
+          "index": 4,
+          "normalized_t": 0.2857142857142857,
+          "source_time_s": 0.1714285714285714,
+          "pose": {
+            "upper_world_deg": [
+              228.0,
+              148.0,
+              18.10538818702084
+            ],
+            "forearm_world_deg": [
+              228.0,
+              178.0,
+              32.23712342079689
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              14.131735233776055
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115620,
+          "bbox": [
+            304,
+            391,
+            1088,
+            880
+          ],
+          "bytes": 342176,
+          "sha256": "30c2eb7667bddb48cbefe666f5236b0ae8b7ced4e3d494064b7a8d2772e6549f"
+        },
+        {
+          "index": 5,
+          "normalized_t": 0.35714285714285715,
+          "source_time_s": 0.21428571428571427,
+          "pose": {
+            "upper_world_deg": [
+              228.0,
+              148.0,
+              17.697540990573657
+            ],
+            "forearm_world_deg": [
+              228.0,
+              178.0,
+              31.39508198114731
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              13.697540990573657
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115621,
+          "bbox": [
+            304,
+            391,
+            1090,
+            880
+          ],
+          "bytes": 342111,
+          "sha256": "1246394ed5d2c8453c8498257607ea7a3548ddb4bfd5510e5ddac61d3d9478e7"
+        },
+        {
+          "index": 6,
+          "normalized_t": 0.42857142857142855,
+          "source_time_s": 0.2571428571428571,
+          "pose": {
+            "upper_world_deg": [
+              228.0,
+              148.0,
+              16.578959447169122
+            ],
+            "forearm_world_deg": [
+              228.0,
+              178.0,
+              29.157918894338245
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              12.578959447169126
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115626,
+          "bbox": [
+            304,
+            391,
+            1094,
+            880
+          ],
+          "bytes": 342137,
+          "sha256": "039edd3da3e5c91bbe175660f399ec6e3ebdedf6f9a806a9a1fdb228738f8102"
+        },
+        {
+          "index": 7,
+          "normalized_t": 0.5,
+          "source_time_s": 0.3,
+          "pose": {
+            "upper_world_deg": [
+              228.0,
+              148.0,
+              14.82798833819242
+            ],
+            "forearm_world_deg": [
+              228.0,
+              178.0,
+              25.65597667638484
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              10.827988338192426
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115610,
+          "bbox": [
+            304,
+            391,
+            1099,
+            880
+          ],
+          "bytes": 341990,
+          "sha256": "9b0476a8320328cec089247996797a7c321304b1f845ce543c02afa731490b78"
+        },
+        {
+          "index": 8,
+          "normalized_t": 0.5714285714285714,
+          "source_time_s": 0.3428571428571428,
+          "pose": {
+            "upper_world_deg": [
+              228.0,
+              148.0,
+              12.648624297699088
+            ],
+            "forearm_world_deg": [
+              228.0,
+              178.0,
+              21.297248595398177
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              8.648624297699087
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115600,
+          "bbox": [
+            304,
+            391,
+            1104,
+            880
+          ],
+          "bytes": 341811,
+          "sha256": "682188aa36cfb599c90811fdaa8203ba3240354ec5f52dfe9b15480af3ba28cc"
+        },
+        {
+          "index": 9,
+          "normalized_t": 0.6428571428571429,
+          "source_time_s": 0.38571428571428573,
+          "pose": {
+            "upper_world_deg": [
+              228.0,
+              148.0,
+              10.244863959744663
+            ],
+            "forearm_world_deg": [
+              228.0,
+              178.0,
+              16.489727919489326
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              6.244863959744663
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115600,
+          "bbox": [
+            304,
+            391,
+            1109,
+            880
+          ],
+          "bytes": 341348,
+          "sha256": "4307d5ba4a4542f7dc48a36f79ea1d87cfcc0154d15d9260c02a40bfc79239a8"
+        },
+        {
+          "index": 10,
+          "normalized_t": 0.7142857142857143,
+          "source_time_s": 0.42857142857142855,
+          "pose": {
+            "upper_world_deg": [
+              228.0,
+              148.0,
+              7.820703958384685
+            ],
+            "forearm_world_deg": [
+              228.0,
+              178.0,
+              11.64140791676937
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              3.8207039583846836
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115587,
+          "bbox": [
+            304,
+            391,
+            1112,
+            880
+          ],
+          "bytes": 340951,
+          "sha256": "3acc2d3923d04bab3f2efcba347463feac5446fef4efc6c7b175ccfe4e640726"
+        },
+        {
+          "index": 11,
+          "normalized_t": 0.7857142857142857,
+          "source_time_s": 0.4714285714285714,
+          "pose": {
+            "upper_world_deg": [
+              228.0,
+              148.0,
+              5.5801409276746945
+            ],
+            "forearm_world_deg": [
+              228.0,
+              178.0,
+              7.160281855349389
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              1.5801409276747052
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115576,
+          "bbox": [
+            304,
+            391,
+            1114,
+            880
+          ],
+          "bytes": 340069,
+          "sha256": "a0d297c7f2c7afc493cfb91a24e69f7e5fcd60cbfec3c50bb9d2818b94827002"
+        },
+        {
+          "index": 12,
+          "normalized_t": 0.8571428571428571,
+          "source_time_s": 0.5142857142857142,
+          "pose": {
+            "upper_world_deg": [
+              228.0,
+              148.0,
+              3.7271715016702203
+            ],
+            "forearm_world_deg": [
+              228.0,
+              178.0,
+              3.4543430033404405
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              -0.27282849832977263
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115580,
+          "bbox": [
+            304,
+            391,
+            1114,
+            880
+          ],
+          "bytes": 339394,
+          "sha256": "565d727a74a8d6abb268787d907ea8a3e82123c0d91186cf0b0be476d02f1a2d"
+        },
+        {
+          "index": 13,
+          "normalized_t": 0.9285714285714286,
+          "source_time_s": 0.5571428571428572,
+          "pose": {
+            "upper_world_deg": [
+              228.0,
+              148.0,
+              2.465792314426812
+            ],
+            "forearm_world_deg": [
+              228.0,
+              178.0,
+              0.9315846288536243
+            ],
+            "forearm_local_deg": [
+              0.0,
+              30.0,
+              -1.5342076855731932
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115543,
+          "bbox": [
+            304,
+            391,
+            1114,
+            880
+          ],
+          "bytes": 339094,
+          "sha256": "725ea4f59755d24fa6d756895e47594ba74d267ccc63ef6637836e49b3044a46"
+        },
+        {
+          "index": 14,
+          "normalized_t": 1.0,
+          "source_time_s": 0.6,
+          "pose": {
+            "upper_world_deg": [
+              -132,
+              148,
+              2
+            ],
+            "forearm_world_deg": [
+              -132,
+              178,
+              0
+            ],
+            "forearm_local_deg": [
+              0,
+              30,
+              -2
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115618,
+          "bbox": [
+            304,
+            391,
+            1114,
+            880
+          ],
+          "bytes": 338877,
+          "sha256": "0765a7b17589de01b8a69e31a34de0f89f3c4af21a7400486f983871a3be6830"
+        }
+      ]
+    },
+    "hit": {
+      "duration_s": 0.4,
+      "fps": 24,
+      "frame_count": 11,
+      "loop": false,
+      "status": "PROVISIONAL_LOCAL_ARM_REACTION",
+      "frames": [
+        {
+          "index": 0,
+          "normalized_t": 0.0,
+          "source_time_s": 0.0,
+          "pose": {
+            "upper_world_deg": [
+              -132,
+              148,
+              2
+            ],
+            "forearm_world_deg": [
+              -132,
+              178,
+              0
+            ],
+            "forearm_local_deg": [
+              0,
+              30,
+              -2
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115618,
+          "bbox": [
+            304,
+            391,
+            1114,
+            880
+          ],
+          "bytes": 338877,
+          "sha256": "0765a7b17589de01b8a69e31a34de0f89f3c4af21a7400486f983871a3be6830"
+        },
+        {
+          "index": 1,
+          "normalized_t": 0.1,
+          "source_time_s": 0.04000000000000001,
+          "pose": {
+            "upper_world_deg": [
+              223.91836734693877,
+              152.66472303206996,
+              357.9183673469388
+            ],
+            "forearm_world_deg": [
+              220.41982507288628,
+              184.99708454810497,
+              351.83673469387753
+            ],
+            "forearm_local_deg": [
+              -3.4985422740524825,
+              32.33236151603501,
+              -6.081632653061263
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115554,
+          "bbox": [
+            297,
+            409,
+            1113,
+            880
+          ],
+          "bytes": 339511,
+          "sha256": "858394d6aaff5436222397036707672cada24e6a384011b4ae29273ad98279f3"
+        },
+        {
+          "index": 2,
+          "normalized_t": 0.2,
+          "source_time_s": 0.08000000000000002,
+          "pose": {
+            "upper_world_deg": [
+              216.77551020408163,
+              160.82798833819243,
+              350.7755102040816
+            ],
+            "forearm_world_deg": [
+              207.1545189504373,
+              197.24198250728864,
+              337.55102040816325
+            ],
+            "forearm_local_deg": [
+              -9.62099125364432,
+              36.41399416909621,
+              -13.224489795918373
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115465,
+          "bbox": [
+            293,
+            447,
+            1107,
+            880
+          ],
+          "bytes": 341302,
+          "sha256": "10eeecdab35dc5ad50ad5e511e62d44bec89e7754aa96fd5d0b5217853223338"
+        },
+        {
+          "index": 3,
+          "normalized_t": 0.3,
+          "source_time_s": 0.12,
+          "pose": {
+            "upper_world_deg": [
+              214.19947079177692,
+              163.73071443110115,
+              348.2393649501323
+            ],
+            "forearm_world_deg": [
+              202.37899450437615,
+              201.58111133726848,
+              332.5385711377977
+            ],
+            "forearm_local_deg": [
+              -11.820476287400766,
+              37.85039690616733,
+              -15.70079381233461
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115459,
+          "bbox": [
+            294,
+            463,
+            1103,
+            880
+          ],
+          "bytes": 341476,
+          "sha256": "df67183db4c57aa1e01db426ff20d9d6e95362bad22a800c3a1aecfc2312888a"
+        },
+        {
+          "index": 4,
+          "normalized_t": 0.4,
+          "source_time_s": 0.16000000000000003,
+          "pose": {
+            "upper_world_deg": [
+              219.7154488092815,
+              156.28414410746998,
+              354.8585385711378
+            ],
+            "forearm_world_deg": [
+              212.85935273763485,
+              189.99755750050886,
+              347.43171178506003
+            ],
+            "forearm_local_deg": [
+              -6.856096071646647,
+              33.71341339303888,
+              -7.426826786077754
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115555,
+          "bbox": [
+            294,
+            430,
+            1111,
+            880
+          ],
+          "bytes": 340274,
+          "sha256": "04cd41c3b997e69faa6f2940d2547124c4c2fc61cc63f5723fba565528e9e286"
+        },
+        {
+          "index": 5,
+          "normalized_t": 0.5,
+          "source_time_s": 0.2,
+          "pose": {
+            "upper_world_deg": [
+              228.2845511907185,
+              144.71585589253002,
+              5.1414614288622005
+            ],
+            "forearm_world_deg": [
+              229.14064726236515,
+              172.00244249949114,
+              10.568288214939955
+            ],
+            "forearm_local_deg": [
+              0.8560960716466468,
+              27.286586606961123,
+              5.426826786077754
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115566,
+          "bbox": [
+            309,
+            389,
+            1113,
+            880
+          ],
+          "bytes": 340666,
+          "sha256": "9b56225dcd11505b420c76958db60694bf8eacda4a2b69bfab81f1c508edf3d9"
+        },
+        {
+          "index": 6,
+          "normalized_t": 0.6,
+          "source_time_s": 0.24,
+          "pose": {
+            "upper_world_deg": [
+              233.80052920822308,
+              137.26928556889885,
+              11.760635049867702
+            ],
+            "forearm_world_deg": [
+              239.62100549562385,
+              160.41888866273152,
+              25.461428862202325
+            ],
+            "forearm_local_deg": [
+              5.820476287400766,
+              23.149603093832667,
+              13.70079381233461
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115499,
+          "bbox": [
+            324,
+            369,
+            1101,
+            884
+          ],
+          "bytes": 342628,
+          "sha256": "8883752629cb68788a6c804a89554374a098a5904a8dbbfd61a58df195b22680"
+        },
+        {
+          "index": 7,
+          "normalized_t": 0.7,
+          "source_time_s": 0.27999999999999997,
+          "pose": {
+            "upper_world_deg": [
+              233.3141857413617,
+              138.25732614083685,
+              10.856976235602858
+            ],
+            "forearm_world_deg": [
+              238.62837148272342,
+              162.05744277591486,
+              23.028138212567434
+            ],
+            "forearm_local_deg": [
+              5.314185741361712,
+              23.800116635078012,
+              12.171161976964584
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115511,
+          "bbox": [
+            322,
+            371,
+            1104,
+            880
+          ],
+          "bytes": 342709,
+          "sha256": "2e3c54a667d3b9ffa0030ea744f96c06469e001351332fb03e3373d6c06ec8cc"
+        },
+        {
+          "index": 8,
+          "normalized_t": 0.8,
+          "source_time_s": 0.32000000000000006,
+          "pose": {
+            "upper_world_deg": [
+              231.2366234144919,
+              142.06619040676483,
+              7.394372357486512
+            ],
+            "forearm_world_deg": [
+              234.4732468289838,
+              168.29012975652427,
+              14.025368129464931
+            ],
+            "forearm_local_deg": [
+              3.236623414491902,
+              26.223939349759434,
+              6.630995771978405
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115578,
+          "bbox": [
+            315,
+            378,
+            1111,
+            880
+          ],
+          "bytes": 341485,
+          "sha256": "2198377f813f64cf8fd21aa6784499a64fbb383896eb12e6dd9a7dc973f68ba4"
+        },
+        {
+          "index": 9,
+          "normalized_t": 0.9,
+          "source_time_s": 0.36000000000000004,
+          "pose": {
+            "upper_world_deg": [
+              229.02784662487244,
+              146.11561452106722,
+              3.713077708120716
+            ],
+            "forearm_world_deg": [
+              230.05569324974485,
+              174.9164601253827,
+              4.45400204111386
+            ],
+            "forearm_local_deg": [
+              1.02784662487241,
+              28.800845604315498,
+              0.7409243329931314
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115589,
+          "bbox": [
+            307,
+            386,
+            1114,
+            880
+          ],
+          "bytes": 339748,
+          "sha256": "896206c20fde8f6544a930425e4d22d5519fed9bb3c10565272b8499c1c5e51d"
+        },
+        {
+          "index": 10,
+          "normalized_t": 1.0,
+          "source_time_s": 0.4,
+          "pose": {
+            "upper_world_deg": [
+              -132,
+              148,
+              2
+            ],
+            "forearm_world_deg": [
+              -132,
+              178,
+              0
+            ],
+            "forearm_local_deg": [
+              0,
+              30,
+              -2
+            ]
+          },
+          "arm_pair_overlap": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                0,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "intersection_alpha_ge64_px": 0
+            }
+          ],
+          "ring_roi_xyxy": [
+            646,
+            554,
+            761,
+            637
+          ],
+          "arm_alpha_ge64_in_ring_roi_px": 0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "edge_nonzero_px": 0,
+          "nonzero_alpha_px": 115618,
+          "bbox": [
+            304,
+            391,
+            1114,
+            880
+          ],
+          "bytes": 338877,
+          "sha256": "0765a7b17589de01b8a69e31a34de0f89f3c4af21a7400486f983871a3be6830"
+        }
+      ]
+    }
+  },
+  "visual_adoption": "PENDING_HUMAN_REVIEW",
+  "game_timing": "PROVISIONAL_PRESENTATION_ONLY",
+  "game_integration": "NOT_TESTED",
+  "device": "NOT_TESTED"
+}

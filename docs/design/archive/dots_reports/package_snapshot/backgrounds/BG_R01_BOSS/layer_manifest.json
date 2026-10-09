@@ -1,0 +1,117 @@
+{
+  "asset_id": "BG_R01_BOSS",
+  "name": "苔冠の古樹前",
+  "status": "Staged; production paused by user priority change 2026-10-08 17:18 UTC",
+  "generation": "Built-in imagegen only; independent repainted layers, not strip crops",
+  "canvas": {
+    "width": 941,
+    "height": 1672,
+    "origin": "top-left",
+    "registration": "all native canvases mapped 1:1 at x=0,y=0; approximate feature registration, not exact master reconstruction",
+    "dimensions_status": "provisional, not engine-approved"
+  },
+  "draw_order": [
+    "backforest",
+    "terrain_stone",
+    "actor shadows (not included)",
+    "actors (not included)",
+    "battle VFX (not included)",
+    "foreground",
+    "UI (not included)"
+  ],
+  "files": [
+    {
+      "file": "BG_R01_BOSS_master_v01.png",
+      "size": [
+        941,
+        1672
+      ],
+      "mode": "RGB",
+      "sha256": "7411796c8cc64797a52e7f4d999a7dfad6112837cffca985c431eca5d94613a2"
+    },
+    {
+      "file": "layers/BG_R01_BOSS_backforest_v01.png",
+      "size": [
+        941,
+        1672
+      ],
+      "mode": "RGB",
+      "sha256": "059e462cde540b6c2ad05424a61147997d6540ca7b16f0b7f9d885212c083646"
+    },
+    {
+      "file": "layers/BG_R01_BOSS_foreground_v01.png",
+      "size": [
+        941,
+        1672
+      ],
+      "mode": "RGBA",
+      "sha256": "5cef7b974c4894976f70d9f5e0fa150182e4c163fbadd6c44c65f1ca06cd3fbe",
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "clear_pixels": 1351134,
+        "opaque_pixels": 2,
+        "partial_pixels": 222216,
+        "nonzero_bounds": [
+          0,
+          140,
+          941,
+          1672
+        ]
+      }
+    },
+    {
+      "file": "layers/BG_R01_BOSS_terrain_stone_v01.png",
+      "size": [
+        941,
+        1672
+      ],
+      "mode": "RGBA",
+      "sha256": "208b94233eac5f06ba348d71035ff6663a33c12765c96ff183b567c5bcadd7ec",
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "clear_pixels": 728054,
+        "opaque_pixels": 31,
+        "partial_pixels": 845267,
+        "nonzero_bounds": [
+          0,
+          21,
+          941,
+          1672
+        ]
+      }
+    }
+  ],
+  "qa": {
+    "visual_pass": [
+      "master natural forest, ordinary trunks",
+      "modest ivory moon-vine stone",
+      "large dry readable floor",
+      "no boss, face, blue crystal, temple, castle, UI or labels",
+      "three genuinely independent generated layers",
+      "real alpha in terrain and foreground"
+    ],
+    "not_verified": [
+      "composite seam and color match",
+      "precise monument registration: generated terrain monument is somewhat higher/larger than master",
+      "parallax safe movement and outer-edge overscan",
+      "four party plus boss actor placement/telegraphs",
+      "phone or engine performance",
+      "exact reconstruction or full 3D geometry"
+    ],
+    "note": "No composite generated and no postprocessing/editing applied. Foreground edge clumps extend farther inward than prompt at lowest corners; review with actors before integration."
+  },
+  "library_master": "libfile_8c95e5c97edc8191846c54e2a2e7def9",
+  "source_outputs": {
+    "master": "exec-fee02183-0393-4e64-b2ac-4cd35ca2a3ee.png",
+    "backforest": "exec-9bf3fb17-a720-44f1-98c3-438adf877c4c.png",
+    "terrain_stone": "exec-6efe2681-18cb-4c0c-a03f-dccb2049489b.png",
+    "foreground": "exec-06982569-26d7-4ab0-813f-14deb7a45b5a.png"
+  },
+  "library_layers": {
+    "backforest": "libfile_844a1e200b2c81918be76f13ae30485b",
+    "terrain_stone": "libfile_bd9a27cedaa48191890366e4e5f67be7",
+    "foreground": "libfile_8ef0bf7f713c8191aa96d1a7d9620988"
+  }
+}

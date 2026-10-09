@@ -1,0 +1,53 @@
+{
+  "asset_id": "ACT_E_R01_01",
+  "canonical_ids": [
+    "E_R01_01"
+  ],
+  "region_id": "R01",
+  "region_name": "木漏れ日の森",
+  "kind": "enemy_actor_kit",
+  "display_name": "苔角いのしし",
+  "current_owner": "Codex",
+  "revision": "delivery_r001",
+  "source_present": true,
+  "runtime_present": false,
+  "editable_source_present": false,
+  "stage": "PROTECTED_EXISTING_SOURCE_PARTIAL",
+  "scoped_technical_qa": "PARTIAL_PASS_MAC_CONSUMER; PRODUCTION_GATE_FAILED",
+  "semantic_style_qa": "LIMITED_SCOPE_ACCEPTANCE_RECORDED",
+  "Human_adoption": "NO_NEW_ADOPTION",
+  "full_r4_kit_complete": false,
+  "accepted_manifest": "NOT_CREATED",
+  "integrated_into_G2": "NO",
+  "physical_iPhone": "NOT_TESTED",
+  "model": "NOT_EXPOSED_BY_TOOL",
+  "per_image_actual_charge": "UNKNOWN",
+  "commercial_rights_final_clearance": "UNKNOWN",
+  "files": [
+    {
+      "role": "protected_existing_source",
+      "path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/regions/region01_forest/imports/20261009_R01_delivery/R01_PACKAGE/enemies/E_R01_01/E_R01_01_MOSS_TUSK_BOAR_sprite_prototype_v2.png",
+      "sha256": "f7352eb595d36fd6d1a478c38678653bc709d40e3051da6c5fc182941d19e096",
+      "bytes": 1341280,
+      "format": "png"
+    },
+    {
+      "role": "protected_existing_source",
+      "path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/regions/region01_forest/imports/20261009_R01_delivery/R01_PACKAGE/source/boar_rig/E_R01_01_cutout_behind_body.blend",
+      "sha256": "ab1f47f2e4f69f6eaedcc175410d33402edeca0ffddf5158fde5763fcb85aa26",
+      "bytes": 2582484,
+      "format": "blend"
+    },
+    {
+      "role": "protected_existing_source",
+      "path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/regions/region01_forest/imports/20261009_R01_delivery/R01_PACKAGE/source/boar_rig/manifest.json",
+      "sha256": "58932a4f6340b8b1668e50bfe32e8fcba76d51f45a0773a22f819092ffbebebc",
+      "bytes": 1559,
+      "format": "json"
+    }
+  ],
+  "known_issues": [
+    "Current source does not satisfy full R4 delivery contract.",
+    "Existing source/reference preserved. No full rig/runtime delivery is inferred from cropped sheets or review MP4."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "checks": {
+    "world_snapshot_identical": true,
+    "forest_snapshot_identical": true,
+    "approved_character_identical": true,
+    "pilot_video_identical": true,
+    "work_package_json_consistent": true,
+    "region_docs_complete": true,
+    "game_or_font_binary_absent": true,
+    "mac_not_written": true,
+    "html_ids_unique": true,
+    "html_internal_anchors_valid": true,
+    "html_local_links_exist": true,
+    "html_no_external_dependencies": true
+  },
+  "all_passed": true,
+  "not_asserted": [
+    "Mac file save",
+    "new artwork",
+    "runtime asset quality",
+    "iPhone tests"
+  ]
+}

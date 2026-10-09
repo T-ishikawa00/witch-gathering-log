@@ -1,0 +1,49 @@
+{
+  "status": "G1_IMPLEMENTATION_AND_TECHNICAL_VALIDATION_COMPLETE",
+  "human_evaluation": "USER_TEST_NOT_RUN",
+  "source_fingerprint": "27e9779b4f184271075a03eec41ab70f1895e5567980b7456375c0fb4c8407fe",
+  "content_sha256": "297e97b4e619e8ea0e9b49f1a9b94544c81fee38f35b2cb2441694af5c543dd1",
+  "source_reports_match_current": true,
+  "reference_files_unchanged": true,
+  "node_tests": {
+    "passed": 39,
+    "failed": 0
+  },
+  "python_reference_tests": {
+    "passed": 30,
+    "failed": 0
+  },
+  "golden_fights": {
+    "matched": 28,
+    "failed": 0
+  },
+  "combat_parity": {
+    "matched": 69984,
+    "failed": 0
+  },
+  "storage_browser_checks": 27,
+  "browser_ui_checks": 51,
+  "supplementary_recovery_ui_checks": 7,
+  "page_errors": 0,
+  "console_errors": 0,
+  "game_external_http_requests": 0,
+  "workspace_size_bytes": 6122420,
+  "observed_work_interval_minutes": 23.8,
+  "finished_at_jst": "2026-10-08T20:52:31.514225+09:00",
+  "dependencies_installed": 0,
+  "git_commits": 0,
+  "git_pushes": 0,
+  "external_deployments": 0,
+  "g2_g3": "NOT_STARTED",
+  "not_run": [
+    "HUMAN_PLAYTEST",
+    "IPHONE_SAFARI",
+    "NATIVE_IOS",
+    "REAL_8_24_48_HOUR_DEVICE_RESUME",
+    "PROCESS_KILL_DURING_ACTIVE_TRANSACTION",
+    "ACTUAL_HARDWARE_DISK_FULL",
+    "SCHEMA_MIGRATION",
+    "FINAL_ART_AUDIO",
+    "LONG_TERM_RETENTION_MARKET_SALES"
+  ]
+}

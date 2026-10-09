@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0.0",
+  "example_not_delivery": true,
+  "status": "TEMPLATE_DO_NOT_IMPORT",
+  "profile_id": null,
+  "package_revision": "r001",
+  "project_path_target": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/regions/region01_forest/",
+  "art_assets": [
+    {
+      "asset_id": "ACT_E_R01_01",
+      "canonical_id": "E_R01_01",
+      "revision": "r001",
+      "status": "WORKING",
+      "method": null,
+      "source_files": [],
+      "export_files": [],
+      "alpha_mode": null,
+      "original_canvas_px": null,
+      "pixels_per_H": null,
+      "facing": "three_quarter_left",
+      "in_place": true,
+      "anchors": {
+        "ground": null,
+        "body_center": null,
+        "head": null,
+        "action_origin": null,
+        "material_reference": null,
+        "nameplate": null
+      },
+      "parts": [],
+      "clips": [
+        {
+          "name": "idle",
+          "duration_ms": null,
+          "source_timeline": null,
+          "frames": [],
+          "presentation_events": [],
+          "gameplay_authoritative": false
+        },
+        {
+          "name": "anticipate",
+          "duration_ms": null,
+          "source_timeline": null,
+          "frames": [],
+          "presentation_events": [],
+          "gameplay_authoritative": false
+        },
+        {
+          "name": "execute",
+          "duration_ms": null,
+          "source_timeline": null,
+          "frames": [],
+          "presentation_events": [],
+          "gameplay_authoritative": false
+        },
+        {
+          "name": "recover",
+          "duration_ms": null,
+          "source_timeline": null,
+          "frames": [],
+          "presentation_events": [],
+          "gameplay_authoritative": false
+        },
+        {
+          "name": "hit",
+          "duration_ms": null,
+          "source_timeline": null,
+          "frames": [],
+          "presentation_events": [],
+          "gameplay_authoritative": false
+        },
+        {
+          "name": "resolve",
+          "duration_ms": null,
+          "source_timeline": null,
+          "frames": [],
+          "presentation_events": [],
+          "gameplay_authoritative": false
+        }
+      ],
+      "review_files": [],
+      "source_authority": [
+        "world_catalog_R1.json#E_R01_01",
+        "APPROVED_CHARACTERS_R1.png",
+        "DOTS_E_R01_01_REVIEW_ONLY.mp4"
+      ],
+      "qa": {
+        "visual": "USER_ACCEPTED_LIMITED_PILOT",
+        "alpha": "NOT_TESTED",
+        "source_readback": "NOT_TESTED",
+        "engine": "NOT_TESTED",
+        "ios": "NOT_TESTED"
+      },
+      "known_issues": [],
+      "provenance": {
+        "tool": null,
+        "model": null,
+        "reference_sha256": [],
+        "usage_rights_evidence": null
+      }
+    }
+  ]
+}

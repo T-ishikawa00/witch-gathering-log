@@ -1,0 +1,98 @@
+[
+  {
+    "id": "OD01",
+    "topic": "描画方式と実ピクセル密度",
+    "status": "cutout/フレーム、2D多層/3D環境は未確定",
+    "owner": "Dots＋Codex",
+    "gate": "全地域runtime量産前",
+    "boundary": "P0は比較案、現物を上書きしない"
+  },
+  {
+    "id": "OD02",
+    "topic": "iPhone対象機種とシーン/HUD比",
+    "status": "最低対象端末は未指定",
+    "owner": "Human＋Codex",
+    "gate": "runtime profile確定前",
+    "boundary": "Mac上の動画にiOS_PASSを付けない"
+  },
+  {
+    "id": "OD03",
+    "topic": "背景マスター/座標/ピボット",
+    "status": "P0で仮置き",
+    "owner": "Dots＋Codex",
+    "gate": "背景本出力前",
+    "boundary": "現在のR01を非破壊で合わせる"
+  },
+  {
+    "id": "OD04",
+    "topic": "4人の行動順/対象/支援",
+    "status": "G1は一人モデル",
+    "owner": "Chat＋Codex",
+    "gate": "戦闘VFXを結合する前",
+    "boundary": "見せ方とダメージ処理を分ける"
+  },
+  {
+    "id": "OD05",
+    "topic": "鍛冶師の木槌",
+    "status": "承認金属槌との説明が未決",
+    "owner": "Human＋Chat",
+    "gate": "武器装着差分前",
+    "boundary": "アイコン制作と既成武器表現を分離"
+  },
+  {
+    "id": "OD06",
+    "topic": "猫の全装備枠",
+    "status": "weapon/amuletの既存例以外は未確定",
+    "owner": "Chat＋Human",
+    "gate": "猫の装備画面確定前",
+    "boundary": "人型用装備を自動適用しない"
+  },
+  {
+    "id": "OD07",
+    "topic": "素材数/ドロップ/放置上限",
+    "status": "R1数値nullを保持",
+    "owner": "Chat＋Codex",
+    "gate": "G2経済テスト前",
+    "boundary": "素材の絵は作れる、数字を焼き込まない"
+  },
+  {
+    "id": "OD08",
+    "topic": "装備副効果・進化互換性",
+    "status": "元IDの進化骨格のみ",
+    "owner": "Chat＋Codex",
+    "gate": "強化/進化を実装する前",
+    "boundary": "無断rerollしない"
+  },
+  {
+    "id": "OD09",
+    "topic": "家/研究/覚醒/全UI",
+    "status": "方向性のみ、完成美術は別",
+    "owner": "Chat",
+    "gate": "G2統合前",
+    "boundary": "今回の地域仕様完成をG2全部完成と呼ばない"
+  },
+  {
+    "id": "OD10",
+    "topic": "全地域アセット量産の開始",
+    "status": "R01作業継続、他は計画",
+    "owner": "Human",
+    "gate": "新規の制作依頼時",
+    "boundary": "そのとき本台帳で一括発注できる"
+  },
+  {
+    "id": "OD11",
+    "topic": "保存先実在とソース現物",
+    "status": "ローカル保存未確認",
+    "owner": "Dots",
+    "gate": "納品時",
+    "boundary": "readback＋sha256＋ファイル一覧"
+  },
+  {
+    "id": "OD12",
+    "topic": "公開/集客/収益検証",
+    "status": "この美術設計では未実施",
+    "owner": "Human＋Chat",
+    "gate": "G3投資判断前",
+    "boundary": "絵の完成から売上を推測しない"
+  }
+]

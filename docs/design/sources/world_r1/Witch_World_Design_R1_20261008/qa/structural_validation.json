@@ -1,0 +1,208 @@
+{
+  "pass": true,
+  "checks": [
+    {
+      "id": "V01",
+      "name": "全テーブル内のIDの一意性",
+      "status": "PASS"
+    },
+    {
+      "id": "V02",
+      "name": "11到達フラグの参照・循環・順位",
+      "status": "PASS"
+    },
+    {
+      "id": "V03",
+      "name": "地域・エリア・敵・素材・入手先の参照",
+      "status": "PASS"
+    },
+    {
+      "id": "V04",
+      "name": "各素材に現存する入手経路",
+      "status": "PASS"
+    },
+    {
+      "id": "V05",
+      "name": "全素材に用途が存在",
+      "status": "PASS"
+    },
+    {
+      "id": "V06",
+      "name": "レシピの親装備・出力・対象者・工房",
+      "status": "PASS"
+    },
+    {
+      "id": "V07",
+      "name": "29レシピの解放時点で材料・親・対象者・工房へ到達可能",
+      "status": "PASS"
+    },
+    {
+      "id": "V08",
+      "name": "装備進化の非循環性",
+      "status": "PASS"
+    },
+    {
+      "id": "V09",
+      "name": "10ボスそれぞれ2候補の準備装備が挑戦前に入手可能",
+      "status": "PASS"
+    },
+    {
+      "id": "V10",
+      "name": "ボスの初回素材は撃破後。進行キーとして消費しない",
+      "status": "PASS"
+    },
+    {
+      "id": "V11",
+      "name": "確率・必要数・能力の未決値をnullで区別",
+      "status": "PASS"
+    },
+    {
+      "id": "V12",
+      "name": "5地域・20エリア・30敵・50素材・29装備の提案範囲",
+      "status": "PASS"
+    },
+    {
+      "id": "V13",
+      "name": "原本ファイルのSHA-256一致",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "acquisition_closure": [
+    {
+      "gate": "G_START",
+      "rank": 0,
+      "available_materials": 4,
+      "craftable_templates": 2
+    },
+    {
+      "gate": "G_R01_A",
+      "rank": 1,
+      "available_materials": 9,
+      "craftable_templates": 9
+    },
+    {
+      "gate": "G_R01_B",
+      "rank": 2,
+      "available_materials": 14,
+      "craftable_templates": 10
+    },
+    {
+      "gate": "G_R02_A",
+      "rank": 3,
+      "available_materials": 19,
+      "craftable_templates": 14
+    },
+    {
+      "gate": "G_R02_B",
+      "rank": 4,
+      "available_materials": 24,
+      "craftable_templates": 15
+    },
+    {
+      "gate": "G_R03_A",
+      "rank": 5,
+      "available_materials": 29,
+      "craftable_templates": 18
+    },
+    {
+      "gate": "G_R03_B",
+      "rank": 6,
+      "available_materials": 34,
+      "craftable_templates": 19
+    },
+    {
+      "gate": "G_R04_A",
+      "rank": 7,
+      "available_materials": 39,
+      "craftable_templates": 22
+    },
+    {
+      "gate": "G_R04_B",
+      "rank": 8,
+      "available_materials": 44,
+      "craftable_templates": 22
+    },
+    {
+      "gate": "G_R05_A",
+      "rank": 9,
+      "available_materials": 49,
+      "craftable_templates": 28
+    },
+    {
+      "gate": "G_R05_B",
+      "rank": 10,
+      "available_materials": 50,
+      "craftable_templates": 29
+    }
+  ],
+  "scope_warning": "素材・レシピ・到達の構造検査のみ。戦闘勝率・必要周回数・経済の無限増殖・ユーザー体験・iPhone性能は未検証。",
+  "negative_tests": [
+    {
+      "case": "存在しない素材IDをレシピへ混入",
+      "detected": true,
+      "failure_checks": [
+        "V05",
+        "V06",
+        "V07",
+        "V09"
+      ]
+    },
+    {
+      "case": "霊枝の全入手先を削除",
+      "detected": true,
+      "failure_checks": [
+        "V04",
+        "V07",
+        "V09",
+        "V12"
+      ]
+    },
+    {
+      "case": "初期素材を最終ボス後へ移動",
+      "detected": true,
+      "failure_checks": [
+        "V04",
+        "V07",
+        "V09"
+      ]
+    },
+    {
+      "case": "初期杖に末端杖を親指定して循環",
+      "detected": true,
+      "failure_checks": [
+        "V06",
+        "V08"
+      ]
+    },
+    {
+      "case": "素材IDの重複",
+      "detected": true,
+      "failure_checks": [
+        "V01",
+        "V12"
+      ]
+    },
+    {
+      "case": "最初のボスの準備に最終素材装備を要求",
+      "detected": true,
+      "failure_checks": [
+        "V09"
+      ]
+    },
+    {
+      "case": "開始フラグを最終クリアへ依存させる",
+      "detected": true,
+      "failure_checks": [
+        "V02"
+      ]
+    },
+    {
+      "case": "未決レシピ必要数を0に自動補完",
+      "detected": true,
+      "failure_checks": [
+        "V11"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "runAt": "2026-10-08T11:50:33.786Z",
+  "browser": "Google Chrome via bundled Playwright",
+  "browserVersion": "154.0.8037.98",
+  "storageAdapterSha256": "86033cde40a30e1abb020c675d77c0104b55691672c0738420da6e389e2e9904",
+  "baseURL": "http://127.0.0.1:4173",
+  "database": "idle-loot-storage-test-33eec12d-e680-495b-9665-f6b50064cff3",
+  "networkPolicy": "all requests outside 127.0.0.1:4173 aborted",
+  "externalRequestsAborted": 0,
+  "pageErrors": [],
+  "tests": [
+    {
+      "name": "new_profile_is_null",
+      "status": "PASS"
+    },
+    {
+      "name": "create_revision_zero",
+      "status": "PASS"
+    },
+    {
+      "name": "duplicate_create_conflicts",
+      "status": "PASS"
+    },
+    {
+      "name": "commit_increments_generation",
+      "status": "PASS"
+    },
+    {
+      "name": "reopen_persists_committed_state",
+      "status": "PASS"
+    },
+    {
+      "name": "profiles_are_separate",
+      "status": "PASS"
+    },
+    {
+      "name": "retains_current_and_previous_two",
+      "status": "PASS"
+    },
+    {
+      "name": "concurrent_stale_revision_conflicts",
+      "status": "PASS"
+    },
+    {
+      "name": "before_commit_abort_keeps_old",
+      "status": "PASS"
+    },
+    {
+      "name": "before_commit_retry_awards_once",
+      "status": "PASS"
+    },
+    {
+      "name": "quota_abort_keeps_old",
+      "status": "PASS"
+    },
+    {
+      "name": "quota_retry_awards_once",
+      "status": "PASS"
+    },
+    {
+      "name": "after_commit_reports_unknown_revision",
+      "status": "PASS"
+    },
+    {
+      "name": "after_commit_readback_prevents_duplicate",
+      "status": "PASS"
+    },
+    {
+      "name": "corrupt_latest_falls_back_with_actual_head_revision",
+      "status": "PASS"
+    },
+    {
+      "name": "recovered_save_can_advance_without_reset",
+      "status": "PASS"
+    },
+    {
+      "name": "unsupported_schema_throws_and_preserves_data",
+      "status": "PASS"
+    },
+    {
+      "name": "unknown_schema_create_refused",
+      "status": "PASS"
+    },
+    {
+      "name": "missing_equipped_id_allowed",
+      "status": "PASS"
+    },
+    {
+      "name": "unknown_content_template_rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "corrupt_only_generation_is_not_new_save",
+      "status": "PASS"
+    },
+    {
+      "name": "orphan_generation_refuses_first_run",
+      "status": "PASS"
+    },
+    {
+      "name": "optional_fields_valid_shapes_accepted",
+      "status": "PASS"
+    },
+    {
+      "name": "optional_fields_absent_accepted",
+      "status": "PASS"
+    },
+    {
+      "name": "clock_rebase_minimal_receipt_accepted",
+      "status": "PASS"
+    },
+    {
+      "name": "invalid_optional_fields_refused_without_overwriting_existing_save",
+      "status": "PASS"
+    },
+    {
+      "name": "game_ui_boots_without_page_error",
+      "status": "PASS"
+    }
+  ],
+  "limitations": [
+    "Abrupt browser/process termination during an active IndexedDB transaction was not deterministically injected; before-commit abort and committed-but-unconfirmed paths were injected.",
+    "Corruption of the latest generation intentionally recovers the preceding valid generation; changes present only in the corrupt generation are lost, and the UI must preserve and show the recovery warning."
+  ],
+  "uiBoot": {
+    "status": "PASS",
+    "pageErrors": []
+  },
+  "overall": "PASS",
+  "testCount": 27
+}

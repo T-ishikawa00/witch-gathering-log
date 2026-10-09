@@ -1,0 +1,4243 @@
+{
+  "schema": "witch-gathering-log_initial_manifest_20261009",
+  "visibility_proposal": "Private",
+  "approval": "PENDING",
+  "existing_files": [
+    {
+      "path": "PROJECT_CURRENT.md",
+      "bytes": 4457,
+      "sha256": "9e7377d17b14d71498cb2ccf775d565d5914b80739e92fdc39d91b81fbb671c1",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5306,
+      "sha256": "868877cf73d514da35d593f53e6705b05dfe94a9ed30fe9a7bfce05ec2a17586",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/AUTHORITY.md",
+      "bytes": 855,
+      "sha256": "efc7db70e8ae98d6f44fc28f0455a2110963986b2502e80c0e9fab3652a796cc",
+      "role": "Authority and scope for this production revision",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/FINAL_REPORT_R001.md",
+      "bytes": 14252,
+      "sha256": "93ec1939fb4be2691593f64a284d43229cb68536d5b5f41fa16ba69fc26327f3",
+      "role": "Current G2 status and overall caveats",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/PIPELINE_AND_OPERATIONS_R001.md",
+      "bytes": 6027,
+      "sha256": "8926cd62e4dd734c2351fb3c5bb9105e0fd4775096b3a3c9cc01812c1b52cad2",
+      "role": "制作パイプラインと台帳更新の手順。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/PROVENANCE_INCIDENT_AND_CORRECTION_R001.json",
+      "bytes": 1829,
+      "sha256": "2a9f176b5101b9e85ce18b66ca5b6f18d22ce9f84a73c692da1ab537cfb0ebca",
+      "role": "生成素材の帰属事故・修正とUNKNOWN履歴。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/REPRESENTATIVE_ASSESSMENT_R001.md",
+      "bytes": 3741,
+      "sha256": "b6668c5134279d373ed1347c4bc8cb0824094f6a3789d0d339d5728dd088c936",
+      "role": "Representative-method evidence, including known failures",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_B_R01_A/delivery_manifest_r001.json",
+      "bytes": 1367,
+      "sha256": "3e527f7808f462a495f29871e679433b2898468d190932ee2584231aad672c74",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_B_R01_B/delivery_manifest_r001.json",
+      "bytes": 1377,
+      "sha256": "23d86ee334f4931179b6f79d076964993e60fb08250d992ac496f25f33dfc89c",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_B_R02_A/delivery_manifest_r001.json",
+      "bytes": 1078,
+      "sha256": "9c9f622b8c7cd0c0410221f932e6ffbf357f62942c7f600c594a897bcc355604",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_B_R02_B/delivery_manifest_r001.json",
+      "bytes": 1078,
+      "sha256": "de70495d512f32c2733b5f16fa94bf2ed4c55ca794998e284ae7f21fd4df65c5",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_B_R03_A/delivery_manifest_r001.json",
+      "bytes": 36878,
+      "sha256": "22e53c7caaf4e9aa478fe97a1acfa555987dc1edfd5f4b04ec7ffa59c322cc95",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_B_R03_B/delivery_manifest_r001.json",
+      "bytes": 1081,
+      "sha256": "9633aa143f3298fd3609decfd41f5d4fa511797b327bacb0d1b3ebd04c20d262",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_B_R04_A/delivery_manifest_r001.json",
+      "bytes": 1075,
+      "sha256": "4bc45a074c6bc8b9ec01246af51013667e22e4a30d444deeee5b3c823a644aab",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_B_R04_B/delivery_manifest_r001.json",
+      "bytes": 4331,
+      "sha256": "cddaeb569d87e3397a7e2870ae10657db46959ba9a01595ec6aa8927c42eea37",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_B_R05_A/delivery_manifest_r001.json",
+      "bytes": 1078,
+      "sha256": "7945cfe45451ac590b6fc613f60eab3aa25a8244691342ae4e95be3e70117cf6",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_B_R05_B/delivery_manifest_r001.json",
+      "bytes": 1078,
+      "sha256": "083752b108dfd1cb1b7258281998e34741d474f00536490d91ff1285ed9b4223",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R01_01/delivery_manifest_r001.json",
+      "bytes": 2155,
+      "sha256": "93626fd53f01c2d95e39cce7f6e4e83dc55ee8091829b3a58d8be69972f29d3a",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R01_02/delivery_manifest_r001.json",
+      "bytes": 1366,
+      "sha256": "5244107c637722aab3fc9e7a179d0d503834797e1b260dbc5e27cc474d190668",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R01_03/delivery_manifest_r001.json",
+      "bytes": 1366,
+      "sha256": "3a7cae43eec3ed3cfc7fcdd97ba7399e65cfe56dd9f31bb4993faebba1827f23",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R01_04/delivery_manifest_r001.json",
+      "bytes": 1371,
+      "sha256": "0e40c9e925eabc05f05b4f1cdd65702275b28775a5728218c7f4af701537efc7",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R02_01/delivery_manifest_r001.json",
+      "bytes": 1077,
+      "sha256": "d18ccba5d4be73ab8f244d7600c55d901fe0af28817dad3bf62338583cf1a533",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R02_02/delivery_manifest_r001.json",
+      "bytes": 1080,
+      "sha256": "9982d7478d154e1b036587a1cddf20771da7c7cf0a9e382b4884e558451d559c",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R02_03/delivery_manifest_r001.json",
+      "bytes": 24685,
+      "sha256": "153da6f39d3feb73d936d813c2814eecd942d9c03766ed2bf61b3ca50c087863",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R02_04/delivery_manifest_r001.json",
+      "bytes": 1071,
+      "sha256": "9d7ed07c73608e1738621c69b0c53f15854ee37f4416d36707ac2d460f6f11bc",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R03_01/delivery_manifest_r001.json",
+      "bytes": 1080,
+      "sha256": "80a94c763c7caa596c4b9cf31dcff63cebce65fb11e77079df61f70c0eed969b",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R03_02/delivery_manifest_r001.json",
+      "bytes": 1080,
+      "sha256": "8f6c9e6669ca5f41ca3e0dfe6d8304cf0aeb3f3975361301487d7a1e6933aaff",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R03_03/delivery_manifest_r001.json",
+      "bytes": 1080,
+      "sha256": "5ec7489921d20d844cdf9a2b513c94a697621af95d7a055b3186c9226a26f56f",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R03_04/delivery_manifest_r001.json",
+      "bytes": 1077,
+      "sha256": "71777d710f49264c2a302ec5cabee421611d990e4f4aaa8e2e1daa8276586998",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R04_01/delivery_manifest_r001.json",
+      "bytes": 1077,
+      "sha256": "1fed70bb5aef67d23b3e3f37f5fa52e7ffa11cae7b2f16608625aa508b4490d6",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R04_02/delivery_manifest_r001.json",
+      "bytes": 1077,
+      "sha256": "34a8f7aa23fb79d89dc1b2069d9bb5fa42f4218a45cdab01a8b5ec3235d988b0",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R04_03/delivery_manifest_r001.json",
+      "bytes": 1077,
+      "sha256": "8f6fa27383e8e7f46bdec8d5a8bee780fc8596c45edcc844bc02275a0f3c2266",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R04_04/delivery_manifest_r001.json",
+      "bytes": 1077,
+      "sha256": "91d3b0f8d80560addf46941f4dbf929206f87a0feed0d0ba306e7410bfb1d298",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R05_01/delivery_manifest_r001.json",
+      "bytes": 1080,
+      "sha256": "ef2910241c7eb22710c3dbce139ee23211fd90392343fcbfab9106d39f5869fe",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R05_02/delivery_manifest_r001.json",
+      "bytes": 1077,
+      "sha256": "dd1fc9dfe062b5cab01b25f9beacd166848c848ffde4eeebd526a59a6494f206",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R05_03/delivery_manifest_r001.json",
+      "bytes": 1080,
+      "sha256": "45217ccf92541ce11171abaa5684f1e24641a49f0c527ef184a50588edf4869c",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R05_04/delivery_manifest_r001.json",
+      "bytes": 1080,
+      "sha256": "daa0c0d42073db2271e355114c76d3fe881c65acb33bb1383195b49af977dfd5",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/BG_R01_BOSS/delivery_manifest_r001.json",
+      "bytes": 2873,
+      "sha256": "7a684848c46e33cf9dcb5afb33b88b674d4d7c74917e34f6a5cab87d9c364c68",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/BG_R01_FIELD/delivery_manifest_r001.json",
+      "bytes": 6249,
+      "sha256": "24f0434ea8b60d200189cca17a273c8b75f07d7fbdd87b74d39c26946d1da0ed",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/BG_R02_BOSS/delivery_manifest_r001.json",
+      "bytes": 1014,
+      "sha256": "82d6a273327d524b55ed06537154ae94180b98104247b18208b749dc64bcb1d0",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/BG_R02_FIELD/delivery_manifest_r001.json",
+      "bytes": 2839,
+      "sha256": "ff543fecfaad10a6fb1b0e3ad502b9a51057df41dc7fb94b224c049c46ded03f",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/BG_R03_BOSS/delivery_manifest_r001.json",
+      "bytes": 1014,
+      "sha256": "12d30aa3d18e57e05254fbcaafb6cc95987d7c24583894585bf07b6bbd06d8d7",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/BG_R03_FIELD/delivery_manifest_r001.json",
+      "bytes": 1016,
+      "sha256": "89377613df7ac23195579d7c24e3f8ac3fc1ddbe1e62a63e9446d63efab685b3",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/BG_R04_BOSS/delivery_manifest_r001.json",
+      "bytes": 1008,
+      "sha256": "4a467079ceee55498169fb6b791c881dc0963596a155091c35957babe508f019",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/BG_R04_FIELD/delivery_manifest_r001.json",
+      "bytes": 1010,
+      "sha256": "396c7d0296a3937a64bb8f9ddb6f5dbb831857b90dcbe211e7314f7754999a5b",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/BG_R05_BOSS/delivery_manifest_r001.json",
+      "bytes": 1014,
+      "sha256": "0995870c0ea507ba64e4e49bbc9c75be134eef23cb97727c61956cc042e7b46b",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/BG_R05_FIELD/delivery_manifest_r001.json",
+      "bytes": 1016,
+      "sha256": "19873149227ede4a54878db3e3f14d843246ba655a13b29159f4520c4fc06a71",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ENV_R01/delivery_manifest_r001.json",
+      "bytes": 1060,
+      "sha256": "bcdbcdd9196827d97f7a327d476a8ca15b70bf63c224b21e4dfbe5b218c81423",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ENV_R02/delivery_manifest_r001.json",
+      "bytes": 1060,
+      "sha256": "e5fad558e405388cecf5d47bea7d09a7692beebcf2351e0c066e9dc14c496f7f",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ENV_R03/delivery_manifest_r001.json",
+      "bytes": 1060,
+      "sha256": "1cc2d187a24216fb85c2f3dd9b33f72424101be28ad279167413206b9a6a1e8b",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ENV_R04/delivery_manifest_r001.json",
+      "bytes": 1054,
+      "sha256": "550df5066d4661c93611573463ba9ba474a578a7f7b5ce1714e65d328932650d",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ENV_R05/delivery_manifest_r001.json",
+      "bytes": 1060,
+      "sha256": "c205ff532fec03f784a55ec49d084ef737f58135ecce739acd11dae13b13e1ef",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/FX_R01/delivery_manifest_r001.json",
+      "bytes": 1089,
+      "sha256": "ec33db999fe7f02e928b8abda87f48eb48f870f6bd52d284861c55ce1cc95e8a",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/FX_R02/delivery_manifest_r001.json",
+      "bytes": 1089,
+      "sha256": "375d2510741156d95d74ffa445ab8dbacdee8d644c78ebf356393251bfe9f34e",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/FX_R03/delivery_manifest_r001.json",
+      "bytes": 1089,
+      "sha256": "ec1a1b150ff2cbc37170500465fa1aab18b3f5a183fd7179fdd6535c5d2023bc",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/FX_R04/delivery_manifest_r001.json",
+      "bytes": 1083,
+      "sha256": "ece0eb67727809bb25def2ae7d87b021cc848e93c6d68e212b7e511a889e3847",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/FX_R05/delivery_manifest_r001.json",
+      "bytes": 1089,
+      "sha256": "5a612c01103f8ebfff2eb56e2bbc031bb048efc74f33d7570a7406b20653a32d",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_AMU_01/delivery_manifest_r001.json",
+      "bytes": 11090,
+      "sha256": "d3d871e906b62d51299d4807e7f1ad64e0cfe2f60ec075f77c4f9d6176d425dd",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_AMU_02/delivery_manifest_r001.json",
+      "bytes": 10786,
+      "sha256": "92a9a41eade1e9cf632651a2098f30dda3f93867f90a25d09ec0f8ece0a02aa6",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_AMU_03/delivery_manifest_r001.json",
+      "bytes": 10786,
+      "sha256": "267c72fb174c136968bf5f89b2dd31cb47ee2a7e65f9754f61c6299d44a830f3",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_A_01/delivery_manifest_r001.json",
+      "bytes": 10507,
+      "sha256": "5ab210cd04597de3a33328e1d4212816fc9730f353925f79c9d12169d3d7971a",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_A_02/delivery_manifest_r001.json",
+      "bytes": 10508,
+      "sha256": "7e7fcd6730e72e959f013ca5fb96e37428c3c318df46c8e2acc18110b4c6e3df",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_A_03/delivery_manifest_r001.json",
+      "bytes": 10513,
+      "sha256": "bac3e9f733aaab27b4f4065c7d50e7adad3482fb121efc772747063091028e72",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_BODY_01/delivery_manifest_r001.json",
+      "bytes": 11187,
+      "sha256": "e16b8d87260485479f2c3ad5d40b44fb5013369f6a8856ed3f3402989e4ab283",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_BODY_02/delivery_manifest_r001.json",
+      "bytes": 11213,
+      "sha256": "9043b799d334d0bf2d5e8b5143c0b5a0e05174fc3d634deabcdca63169cce6f0",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_BODY_03/delivery_manifest_r001.json",
+      "bytes": 11239,
+      "sha256": "1258bb9c00a06348ff61b5dc384bc0f4e0961ea128ebee328b625d12fe0abf73",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_FEET_01/delivery_manifest_r001.json",
+      "bytes": 11210,
+      "sha256": "d8a9e08bc2f5e0a3ad4ab1b5a9ae5c45bfdcde886a15c1e80eca655dbb80fdef",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_FEET_02/delivery_manifest_r001.json",
+      "bytes": 11252,
+      "sha256": "ef62b2f72457a38e6116bd185b16d07576cd633d92f9ae9898d3cb9508299c7f",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_FEET_03/delivery_manifest_r001.json",
+      "bytes": 11228,
+      "sha256": "06d2d63fa496bd39184068c1d81c70fd9eb758d85eb04aee6663984847068da0",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_F_01/delivery_manifest_r001.json",
+      "bytes": 10501,
+      "sha256": "e86cd6f8597e788694924c03ff033a1a86fd285007586016ead67b2a3068d771",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_F_02/delivery_manifest_r001.json",
+      "bytes": 10521,
+      "sha256": "2604beb9f0c356153cc17f215b385850d6976113811450cc7328a8301506f325",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_F_03/delivery_manifest_r001.json",
+      "bytes": 10538,
+      "sha256": "91216faa68867275797353395d3aa989434a188fd391e1a848159a59bed5a2e0",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_HAND_01/delivery_manifest_r001.json",
+      "bytes": 11219,
+      "sha256": "b305ce811d07bb2b048cfb015a2b6bb16272ad5837297d6d9784331dcfd9b80c",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_HAND_02/delivery_manifest_r001.json",
+      "bytes": 11224,
+      "sha256": "1e34ff671e566a806c00a8048290b50200029615c81a04711db6dc785d49665e",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_HAND_03/delivery_manifest_r001.json",
+      "bytes": 11322,
+      "sha256": "392813ea988d5fc0cab07b96ec1916650fb551a2c943f9f90550754cc8441523",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_RING_01/delivery_manifest_r001.json",
+      "bytes": 11198,
+      "sha256": "c817afeedbf2e3ffb431a41193a421a7e654ebe32844253399809dc4142033b9",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_RING_02/delivery_manifest_r001.json",
+      "bytes": 10810,
+      "sha256": "93f36b031ae0db35087e8d62f436363f74576440ccc7b6861dbe9633d0263200",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_RING_03/delivery_manifest_r001.json",
+      "bytes": 10807,
+      "sha256": "25310c1fae0dc00c367bb24088f3d97a81f204d9804793ba2713fb29e3f94ca1",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_S_01/delivery_manifest_r001.json",
+      "bytes": 10515,
+      "sha256": "4bd78303c6a3fb3812a2832612aebc789033c7c0ebf4e83f58f017468c3a0820",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_S_02/delivery_manifest_r001.json",
+      "bytes": 10515,
+      "sha256": "ef7118040d9894854ec56ba5b0fbb3d28b5e2fd719ad815f6fc01c9361558096",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_S_03/delivery_manifest_r001.json",
+      "bytes": 10544,
+      "sha256": "36ee04d75b77d1eec8878f3f3d8392e1148343fbee6ec172f2b19169dcdec6f8",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_W_01/delivery_manifest_r001.json",
+      "bytes": 10990,
+      "sha256": "f254a5eef7a6e6ea00657d94fe40b77c85ed8fd1b4274285ac0b75da6649fbc5",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_W_G1/delivery_manifest_r001.json",
+      "bytes": 10539,
+      "sha256": "c3f65854f26d0d61380bc5c7c7b7821961b4802d44d7f4fab5d25cfe99c58014",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_W_G2/delivery_manifest_r001.json",
+      "bytes": 10532,
+      "sha256": "a4d4639bdf00fab02030b05933815faa4f29a65c055ceff5afc2056674b34e97",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_W_P1/delivery_manifest_r001.json",
+      "bytes": 10519,
+      "sha256": "deece8aee46e52052cad6bb097889a27dd120301d2e6b7ddcb2c8b77e7edfde9",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_W_P2/delivery_manifest_r001.json",
+      "bytes": 10621,
+      "sha256": "8e71dcad13f6ab503e72db423050b7985f218ae0cf7f33c165e4399771d85006",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R01_BA/delivery_manifest_r001.json",
+      "bytes": 11418,
+      "sha256": "111a12d19f615fa0aae2becc57fac88cadfb177a37a88f1aed34e85e29ebe39e",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R01_BB/delivery_manifest_r001.json",
+      "bytes": 11505,
+      "sha256": "efeedc93c7d82e5b4442cb531c0ea457268e52461d69b7daa77f7dd14d852f64",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R01_E1/delivery_manifest_r001.json",
+      "bytes": 11414,
+      "sha256": "de22229e86f64fc0681f57c66950b89569e312ba707cd3c0fe89faa1f56e7c0f",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R01_E2/delivery_manifest_r001.json",
+      "bytes": 11443,
+      "sha256": "b416156cc21f7b7070d6127314c24b4d1acefccbe4f960008cf14ff4bf9966d9",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R01_E3/delivery_manifest_r001.json",
+      "bytes": 11381,
+      "sha256": "c406d87ee2d731fe508dc88277884bbc2eee164af696ab93b1ca9fc8de4c7d02",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R01_E4/delivery_manifest_r001.json",
+      "bytes": 11378,
+      "sha256": "47912401168e85d5f4028462d87c5741cc5b8525377f5c98e2f8934928bc8799",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R01_G1/delivery_manifest_r001.json",
+      "bytes": 10776,
+      "sha256": "c59455fe437a83826030ebbb91f3207f41fc94608e4b1e331b1c543f2ba690a0",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R01_G2/delivery_manifest_r001.json",
+      "bytes": 10766,
+      "sha256": "826878693a5dfe91a76ca981f782b91d69a83d0596c80f20c7c76cbf68827226",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R01_G3/delivery_manifest_r001.json",
+      "bytes": 10771,
+      "sha256": "956fcdad43d3156e836a4b9ddf8eeb79ac425daca75d04490cfdc8df1326dbf7",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R01_G4/delivery_manifest_r001.json",
+      "bytes": 10786,
+      "sha256": "21e43b6f910ad39441ae238303692f47c728d941b8f37de418ad62e071569798",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R02_BA/delivery_manifest_r001.json",
+      "bytes": 10587,
+      "sha256": "b9ac3f24541d1f15c8b253dddd800cb6ea699e846ac5701d87f58829b0e61787",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R02_BB/delivery_manifest_r001.json",
+      "bytes": 10607,
+      "sha256": "d7a3661be2cb33cdebf7ad055f8a95137747d0bc069e99ef9edb4637425d640f",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R02_E1/delivery_manifest_r001.json",
+      "bytes": 10567,
+      "sha256": "669545e11b952caf7c408d7977fe2b49001d62228494be6936bf1d8fdbdf589b",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R02_E2/delivery_manifest_r001.json",
+      "bytes": 10557,
+      "sha256": "c61084d1aeb3c3efd77d0558ea48a60bf38eb4433a8eeea258f28ed9eea25a10",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R02_E3/delivery_manifest_r001.json",
+      "bytes": 10624,
+      "sha256": "4870e8412cbf761ce91a3a64a048f5d948db8809d5574277d898c54cbd81acea",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R02_E4/delivery_manifest_r001.json",
+      "bytes": 10560,
+      "sha256": "ef14c17b5b6fab493bfb3b7e43cc200a970f0b9fb3affd73f42978cdd20b2012",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R02_G1/delivery_manifest_r001.json",
+      "bytes": 10543,
+      "sha256": "639b6c5a7025fe13bf81b59bab5025aefc6a9786363ec64c54319ec036f67884",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R02_G2/delivery_manifest_r001.json",
+      "bytes": 10541,
+      "sha256": "7ddc6b34f36ec2285941d471ca3f9946a7596194508012ecb8c62506c0dc20b5",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R02_G3/delivery_manifest_r001.json",
+      "bytes": 10548,
+      "sha256": "76386da9dcf580b9b27316d2f8691a8b90aee1c0edac96b68a2d9a5931834b6a",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R02_G4/delivery_manifest_r001.json",
+      "bytes": 10545,
+      "sha256": "07a3fac488168ddd8d724ccf899c15cd9696eb365e2b8c6b9bfb6883dcf9a946",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R03_BA/delivery_manifest_r001.json",
+      "bytes": 10468,
+      "sha256": "d26080e84444060043888bbc5644b3378fc8225de738aa751579e66f9562a4e1",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R03_BB/delivery_manifest_r001.json",
+      "bytes": 10557,
+      "sha256": "063f90154b138565b0f322c7c6928d91e5cba68e9210d20b350edf743714c9a8",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R03_E1/delivery_manifest_r001.json",
+      "bytes": 10461,
+      "sha256": "2be0854eae2c766e86b59e82fc5b45e19b90289daaf958b8b89ddcedb2b5b2a9",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R03_E2/delivery_manifest_r001.json",
+      "bytes": 10439,
+      "sha256": "e69b9fc9a10667b5b85bc5d636fb12e4378f03200681eba701c66ea87d699207",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R03_E3/delivery_manifest_r001.json",
+      "bytes": 10467,
+      "sha256": "1b71401e4ba8ec4dc7802c3b1319480a1f2ae502b94c29aa352bc7baba9ba1d9",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R03_E4/delivery_manifest_r001.json",
+      "bytes": 10545,
+      "sha256": "c9cbac83fb5eef226607d3352a25a690e698781c2a4124ec2eb8657245783318",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R03_G1/delivery_manifest_r001.json",
+      "bytes": 10439,
+      "sha256": "d55bff7db95979fa25afea8260c416f4b5ee74da93de77f595d13de55b51bb83",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R03_G2/delivery_manifest_r001.json",
+      "bytes": 10539,
+      "sha256": "c06139a81219af1a0c03cbc650eefee3b608d8508481256463c874a455a8cb84",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R03_G3/delivery_manifest_r001.json",
+      "bytes": 10446,
+      "sha256": "9903a07cc2a48b1db30460c7a01df54cb9128b7e866918d0a9189518662ce56b",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R03_G4/delivery_manifest_r001.json",
+      "bytes": 10558,
+      "sha256": "0bde6e1d936270770fa902a3e62aecfc0c7ab528999d76e7f76c2c68b0b0e6ee",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R04_BA/delivery_manifest_r001.json",
+      "bytes": 10762,
+      "sha256": "a7d59f9ba6206159df74af258465b8aa16d208a8f2b8ff5fc93004aaf6834316",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R04_BB/delivery_manifest_r001.json",
+      "bytes": 10794,
+      "sha256": "d155f5465a80f6ce82a4104ec3153d1b5d5786d639cb2f9e0f907dc1d317f227",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R04_E1/delivery_manifest_r001.json",
+      "bytes": 10783,
+      "sha256": "7ab5a0a9ebd27b68720151fe52334da295c47ff6cad86128c2d3ce3e9ad89239",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R04_E2/delivery_manifest_r001.json",
+      "bytes": 10762,
+      "sha256": "3716ce1d2670c8095d4db498894ef94d03e0fa097ad382d7bdf3b1db60cba12a",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R04_E3/delivery_manifest_r001.json",
+      "bytes": 10762,
+      "sha256": "42cf159b9c1821f194e10f0d106615772e5106d812c456e724acd4bb3a1edc18",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R04_E4/delivery_manifest_r001.json",
+      "bytes": 10769,
+      "sha256": "db582adcb7dae5138bb7318788b1d059c82a934105935602736e18f93b71e1fe",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R04_G1/delivery_manifest_r001.json",
+      "bytes": 10782,
+      "sha256": "60359a87ab4ca5ce83a8753f3d45baedc06f21086f071d4adcda47952060d85b",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R04_G2/delivery_manifest_r001.json",
+      "bytes": 10762,
+      "sha256": "f0ed7b2babed16023557b553eaa652499cab6ffb5dbcea1cc607d93bb4f95d34",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R04_G3/delivery_manifest_r001.json",
+      "bytes": 10789,
+      "sha256": "79a46059bdf0b2098357e9de415dfb484b29d8fda502ef20b933e90f468c9cb0",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R04_G4/delivery_manifest_r001.json",
+      "bytes": 10762,
+      "sha256": "1745dbdb4c7ec22ae214cf87f92e0684013dfe1319969f1265b3397d3b4b9789",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R05_BA/delivery_manifest_r001.json",
+      "bytes": 10783,
+      "sha256": "07840fe81948343927c49fc8cb13eca7629cbbad8cfcf462ff8b4e54c5a0ae3e",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R05_BB/delivery_manifest_r001.json",
+      "bytes": 10777,
+      "sha256": "52b397513326556f341d2e1efdd5482088dd27d4b274905f6b27cf61aaf7adac",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R05_E1/delivery_manifest_r001.json",
+      "bytes": 10764,
+      "sha256": "7068b571b7db8b8ffbaeedc19069b2038ac9b64ad2a8abd00042b93d0690635c",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R05_E2/delivery_manifest_r001.json",
+      "bytes": 10765,
+      "sha256": "6a8ce696027f1d5d47550fd4ab317f4dfe76be2ae158e697ec728e11013dac5c",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R05_E3/delivery_manifest_r001.json",
+      "bytes": 10791,
+      "sha256": "a8ed10f376ff9367761ac8510f4c9f76e3848104eec5f391d11cfb3fa548b1a9",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R05_E4/delivery_manifest_r001.json",
+      "bytes": 10765,
+      "sha256": "64f581a170136b06de857f88559b5a2bdc22a7da88a8d2b8bc7e52e7ed258226",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R05_G1/delivery_manifest_r001.json",
+      "bytes": 11271,
+      "sha256": "511ea96e055d4dad2f721f016afc0fbf1ad35d34e3f6947e7beaa7e9d43f69ad",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R05_G2/delivery_manifest_r001.json",
+      "bytes": 10766,
+      "sha256": "f84149abcd426bd9e35c7e4601faf92dcd9ff4271fb5fc3df7e8f9a17eb4cf1e",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R05_G3/delivery_manifest_r001.json",
+      "bytes": 10785,
+      "sha256": "cff1de38b5219b4897acd427b3d276a8a08dd394caa21ea06b830772e941a3ff",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R05_G4/delivery_manifest_r001.json",
+      "bytes": 10785,
+      "sha256": "4225e78530385b4c2d39125d5fd0b41808f231b0a5efea6c217dbb5f7f3ba780",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R01_G1/delivery_manifest_r001.json",
+      "bytes": 7407,
+      "sha256": "ae72c975b024de45109ebda5944449d845702672dc41a8d5baad6a5552ab9284",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R01_G2/delivery_manifest_r001.json",
+      "bytes": 7865,
+      "sha256": "ca7e4b61f172cf41a68d92b76363829fb14591c8f056198215fc2f3330fac0fa",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R01_G3/delivery_manifest_r001.json",
+      "bytes": 7768,
+      "sha256": "7636336684bf4c27445c9198854d90577e50329cf600fdece1cabe9aa8e1c2c3",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R01_G4/delivery_manifest_r001.json",
+      "bytes": 7748,
+      "sha256": "662e174448cc4a8973cc49f6c08820cc0d63aa42945c99ffbde5cf14064db039",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R02_G1/delivery_manifest_r001.json",
+      "bytes": 7742,
+      "sha256": "9443d7bb543ab3717521816511b0e56592db20138a0db3a88fa621045e20e167",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R02_G2/delivery_manifest_r001.json",
+      "bytes": 5076,
+      "sha256": "bb03fbd3ed7569b459d5abcea70d20d99997566243011248bac480ec797a0ac5",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R02_G3/delivery_manifest_r001.json",
+      "bytes": 7436,
+      "sha256": "5460d8b7a5193ebd3cde01ffd4c92d67e329f7e8cdca5745f63785425af327c0",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R02_G4/delivery_manifest_r001.json",
+      "bytes": 7531,
+      "sha256": "3cd3b80f14b787eca0a83db8e9afa27b02b821522e26173778b24242790b6ee3",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R03_G1/delivery_manifest_r001.json",
+      "bytes": 7416,
+      "sha256": "3bb5fbebbe811fdc0401e95e318963db474732feac1135a0fd02a428371b807b",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R03_G2/delivery_manifest_r001.json",
+      "bytes": 7852,
+      "sha256": "40bfdfc0e5beac9409b6fdc933152c42bbdb3f0c779dd81cba72c39f6daf8293",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R03_G3/delivery_manifest_r001.json",
+      "bytes": 7359,
+      "sha256": "f3769f0e4bba93db4575e5b07b01b8b5b9cf3f17a9992ac8489244834401c98c",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R03_G4/delivery_manifest_r001.json",
+      "bytes": 7958,
+      "sha256": "20000ebdb8922c222a188c083ec23c4076e223cf3b957756726ae86c9e3ecbc6",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R04_G1/delivery_manifest_r001.json",
+      "bytes": 7749,
+      "sha256": "ec1bc8b261debc753300b35d557da08a23e51e4bb37947f9c10951f987e6a1c9",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R04_G2/delivery_manifest_r001.json",
+      "bytes": 7396,
+      "sha256": "305184cab8f5392c5291cafedf951d7f9d4f2b99cd4721a641f9a6ab7607d99b",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R04_G3/delivery_manifest_r001.json",
+      "bytes": 7361,
+      "sha256": "ba3c9e7490bf02d6b59bb4ffe2ebc18e3946451fdf81c309860805803d5aabc8",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R04_G4/delivery_manifest_r001.json",
+      "bytes": 7349,
+      "sha256": "9c2dfbfe1708a77a1a4edd81fdf52eafd239098713366e91b53ae2ba211f06c3",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R05_G1/delivery_manifest_r001.json",
+      "bytes": 7362,
+      "sha256": "da16350e5e93cb5992dd8e09b07d499ced4c0efe2ce2990d1146770f691d7355",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R05_G2/delivery_manifest_r001.json",
+      "bytes": 7365,
+      "sha256": "5039720dc2b77ce4a45cf0e83f590cd64d0f116fbeb8e30f4a09fa371a22326f",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R05_G3/delivery_manifest_r001.json",
+      "bytes": 7340,
+      "sha256": "66753567289b29b802eb1245901111e91722ff220abb4103249b2cb71aa4d6b1",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R05_G4/delivery_manifest_r001.json",
+      "bytes": 7897,
+      "sha256": "0ab6389d056b98f040585ffec3baae63456744435de4255f3abdcce7a86fc84c",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/VAR_A_R01_02/delivery_manifest_r001.json",
+      "bytes": 1060,
+      "sha256": "cd951f7f1b2dc37e0089990624a0b30d930d632ba9445dfa907899843723ac4c",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/VAR_A_R01_03/delivery_manifest_r001.json",
+      "bytes": 1057,
+      "sha256": "994d243487ad36443f612ed80ecddfd39c7ef126f10e69b072e97e155c418c17",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/VAR_A_R02_02/delivery_manifest_r001.json",
+      "bytes": 1057,
+      "sha256": "fb4a3b2e5d5f38810462fb437b9c31acf65114939c2576edc676a098b8dfc53b",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/VAR_A_R02_03/delivery_manifest_r001.json",
+      "bytes": 1060,
+      "sha256": "a9d4d84e723c224c025fcc2c1403e2454e9e965b0b4c64d180563e0636cd368e",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/VAR_A_R03_02/delivery_manifest_r001.json",
+      "bytes": 1057,
+      "sha256": "189f25eb20a69a234f02fedb9618000eac8c127ac04fb13c1234ca40aa4d8b86",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/VAR_A_R03_03/delivery_manifest_r001.json",
+      "bytes": 1060,
+      "sha256": "b01e5e6b6fa1c7f12be7e44c0f2bbc89ee72d07e32c62e49682b7df96b5e72aa",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/VAR_A_R04_02/delivery_manifest_r001.json",
+      "bytes": 1054,
+      "sha256": "1329ba2ded7ed22df4ca44ac301eff3ea8376c263079c27a7e9beca13b5d1ef7",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/VAR_A_R04_03/delivery_manifest_r001.json",
+      "bytes": 1060,
+      "sha256": "dde3187e9331fbec0fead7192eb4056ed4c5e26e35c741570bf1be829359e35a",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/VAR_A_R05_02/delivery_manifest_r001.json",
+      "bytes": 1060,
+      "sha256": "efad1791cba930f6b7440386e3940a843d246745c278a603cd42f2d15b7815fd",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/VAR_A_R05_03/delivery_manifest_r001.json",
+      "bytes": 1057,
+      "sha256": "fb0767d53044b47bee0d73bf099ed8a6b5bf20b5ee27c7cf77e8508a941dae05",
+      "role": "全159単位の個別状態・不足・file参照台帳。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/native_sample/jellyfish_r004/SIMULATOR_QA_CURRENT_R001.json",
+      "bytes": 1726,
+      "sha256": "c864b4b0ddd7baaf2980345d10a279c5a73e65bcb63d75219411b8256f8d341e",
+      "role": "現行くらげfixtureの限定QA。部分品質・実機未検証。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/native_sample/static_icons_r002/SIMULATOR_QA_CURRENT_R001.json",
+      "bytes": 2017,
+      "sha256": "c9a84b8f6528f490426afabbc97b029c3594e2a31d8977b4b5a213303e402d57",
+      "role": "Simulator static-icon scoped technical QA; not device QA",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/native_sample/static_icons_r002/simulator_stable_r001.png",
+      "bytes": 487655,
+      "sha256": "c928a7b6f23f5591d39feda8abf1009443943469c56565a175ca852bc99da29f",
+      "role": "現在のアイコンSimulator画面。未承認/部分/実機未検証表示を含む。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/planning/ALL20_NODE_QA_R001.json",
+      "bytes": 264518,
+      "sha256": "6aa8c4ae36af873660c544439894fba68841f8eb697288d4642c0067237b8abb",
+      "role": "20 gathering-node QA status evidence; include partial and failed states",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/planning/ALL20_NODE_QA_R001/R02_CONTACT_R001.png",
+      "bytes": 136358,
+      "sha256": "56dc9c84a3ba043c37a62614edd436324627a8672a8b58d2bd4a02082b504afc",
+      "role": "Visual contact sheet: present/collected state examples; pair with machine status data",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/planning/CURRENT_NODE_SELECTION_R001.json",
+      "bytes": 57183,
+      "sha256": "9fbccb962645f2579868c77ee0cbbb8af9f45ee7aa268b9da6b468431e0ab588",
+      "role": "20採取物の現在選択版。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/planning/FINAL_159_LEDGER_R001.csv",
+      "bytes": 90834,
+      "sha256": "bdd5ea61f65a2e78978eda84454cb51540ddc6bf090a089980dd53436b8bd2aa",
+      "role": "Readable 159-unit progress ledger",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/planning/FINAL_159_LEDGER_R001.json",
+      "bytes": 1814077,
+      "sha256": "55f48fe35340eeeaa1960aadd3ac21157896415d0ecc5cac164345002742ec9d",
+      "role": "Machine-readable 159-unit progress ledger with revisions, QA, adoption, integration, device and known-issue fields",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/planning/MATERIAL_GEAR_87_TRACE_READBACK_R001.json",
+      "bytes": 163893,
+      "sha256": "fe40ee2921dad112efc18585e9ddd3263481785529aa6a9e7ec74ff055d1a2d5",
+      "role": "素材から装備への87接続ID検査。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/planning/STATIC_CATALOG_INDEX_R001.json",
+      "bytes": 637495,
+      "sha256": "3efa655f64560366e3c2be8e2530baa3137fab846524a843b2bda71e5e8b2194",
+      "role": "Current static catalog selection and references",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/planning/static_catalog_review_r001/R01_static_icon_contact_r001.png",
+      "bytes": 215285,
+      "sha256": "c3a08f9361bcc3786b8136377247c37e6ccc2b1995220329dc21e50748586c30",
+      "role": "Visual contact sheet: examples of qualified and partial icons across R01",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/qa/DELIVERY_SHA256_R001.json",
+      "bytes": 2741575,
+      "sha256": "da286204f591b4b38a289edd54d98c5e5913bd23594727250f9e73833e90b0c4",
+      "role": "保存成果物のhash台帳。実体を全同梱したという意味ではない。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/qa/DELIVERY_SHA256_READBACK_R001.json",
+      "bytes": 251,
+      "sha256": "5d14408708d3909ae09b4dfa18a346df273d0103462facf5a035b0df7c76f9fd",
+      "role": "保存hashの過去readback集約結果。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/qa/FINAL_LEDGER_INDEPENDENT_REVIEW_R003.json",
+      "bytes": 6113,
+      "sha256": "b945174cee74dfc20542f958162956470455688f9d57225b962faa3c4e92de79",
+      "role": "Independent ledger review R003; latest review revision, validate exact status before use",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/qa/PROTECTED_STATE_FINAL_R001.json",
+      "bytes": 616,
+      "sha256": "51aa6a843e2b5bd474e1424b1478230e4db07b2e6282c9388c3e558bda799a96",
+      "role": "既存保護の集約レシート。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/representatives/BG_R01_FIELD/layer_study_r002/floor_protection_comparison.png",
+      "bytes": 657077,
+      "sha256": "cb8339e1c83ebfeb1b3687521eb7f9a106c027020931e9bf9f1f7574ab3ea6db",
+      "role": "Representative known failure: floor protection comparison still demonstrates overlap risk",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/representatives/BG_R02_FIELD/source_r001/floor_proxy_review.png",
+      "bytes": 1194673,
+      "sha256": "7e922da3d90da8217d565a570e694f2f80d4dd1cfdb2e044510fc6073d27a590",
+      "role": "Representative known failure: R02 background floor proxy and encroachment risk",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/runtime/hammer_r004/qa/CLIP_QA_R003.json",
+      "bytes": 146771,
+      "sha256": "b3ccd8b6d405370d07f3efcbd527a63793079660200a7fea6b88156c9f68f86d",
+      "role": "現行5clipのframe・関節・既知不足と接合性の技術QA。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/runtime/hammer_r004/qa/TECH_QA_FINAL_R004_R003.json",
+      "bytes": 52753,
+      "sha256": "36ae00bb1d8c9a0db78f0a2b4d827c5dde79abad5e8840c21fd5be82b1863657",
+      "role": "現行hammer r004の技術QAレシート。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "assets/g2/production/codex_unified_20261008T221040Z_fa70940c/runtime/hammer_r004/qa/clip_contact_sheet_r003.png",
+      "bytes": 174701,
+      "sha256": "202c5394e5894707a2218fccc903c499df1c9c5fea2b24f469cda50a57236c38",
+      "role": "現行hammer r004・frames r003の5候補clip。resolve/環開閉は未完成。",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/ASSET_MANIFEST.md",
+      "bytes": 8741,
+      "sha256": "91d776bf4ae2bdd79d0feb203c9f6e20094dd03ff09b42a4b7583ee33b3ede0a",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/DECISION_LOG.md",
+      "bytes": 2937,
+      "sha256": "e28cbdef4d43e0a36a8de861a001d5ec6b195c7195b143837767a48c3c23abf9",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/DESIGN_BIBLE.md",
+      "bytes": 6258,
+      "sha256": "59970b613fdafadb7b7efdc0714aa6121a3f4ec2c1a59d47af2949a8924681fb",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/MISSING_FILES.md",
+      "bytes": 3235,
+      "sha256": "099cef1330a300e1db30ba351a1a09d6b625ffd59fc71d69a2f49ff08d46c6ab",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/OPEN_ISSUES.md",
+      "bytes": 5513,
+      "sha256": "efc0878b0edcec1a82123a437c3df08ed354ccd7f458f4f268a806bbbc180832",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/README.md",
+      "bytes": 2241,
+      "sha256": "7fd70f820fbfe627f18befb90e3af855fd9dfa21b398241c1536973f0c140cab",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/concurrent_save_and_QA_snapshot/regions/region01_forest/deliveries/20261008T182055Z_a2250721/MAC_SAVE_VERIFICATION.md",
+      "bytes": 2066,
+      "sha256": "0d55eaf91e4518bb6dd4f5ee8f86f2d0e083e9ba2b543a78d4f43eb12a915586",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/concurrent_save_and_QA_snapshot/regions/region01_forest/deliveries/20261008T182055Z_a2250721/PNG_READABILITY.json",
+      "bytes": 11503,
+      "sha256": "c204a14259586350acf75ecf14ea7de860cbf40a7d33e46b120f70bf1b264b10",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/concurrent_save_and_QA_snapshot/regions/region01_forest/deliveries/20261008T182055Z_a2250721/SOURCE_NAME_TO_STABLE_ID.json",
+      "bytes": 19343,
+      "sha256": "7c89c6abb114c979554133499759efd49897c8392c021ee0b46037c751929af4",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/concurrent_save_and_QA_snapshot/regions/region01_forest/qa/native_render/20261008T183105Z_f1381f92/INPUT_ASSETS.json",
+      "bytes": 3316,
+      "sha256": "73a7a99a5f76492ede69f631e22092a5e59581904c5fcab113856c55783bf993",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/concurrent_save_and_QA_snapshot/regions/region01_forest/qa/native_render/20261008T183105Z_f1381f92/IOS_RESOURCE_COPY.json",
+      "bytes": 3906,
+      "sha256": "33940c827cb964ae72d2846ad2d2e9738f00310026305caddab14a1df3858ab1",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/concurrent_save_and_QA_snapshot/regions/region01_forest/qa/native_render/20261008T183105Z_f1381f92/RENDER_RUNS.json",
+      "bytes": 10824,
+      "sha256": "542d0a47e8d3c85af8894691048bf06bac31f482b6dd5bc7032d81b7850a37c8",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/concurrent_save_and_QA_snapshot/regions/region01_forest/qa/native_render/20261008T183105Z_f1381f92/logs/alpha_black_result.json",
+      "bytes": 487,
+      "sha256": "f30575247fe447c10438b8b0588a4afa8311089f6407e375bd2536269882cb4a",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/concurrent_save_and_QA_snapshot/regions/region01_forest/qa/native_render/20261008T183105Z_f1381f92/logs/alpha_gray_result.json",
+      "bytes": 485,
+      "sha256": "eb82fe4272e9fa8ab3e508d138bcbab8f544c46ece438c451d58b0020edd3a02",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/concurrent_save_and_QA_snapshot/regions/region01_forest/qa/native_render/20261008T183105Z_f1381f92/logs/alpha_white_result.json",
+      "bytes": 487,
+      "sha256": "8b870916c533a7ef143571fee45fc7a79d188664f929f40296f6954847b3f352",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/concurrent_save_and_QA_snapshot/regions/region01_forest/qa/native_render/20261008T183105Z_f1381f92/logs/build_ios_unsigned.log",
+      "bytes": 143,
+      "sha256": "8687745fcf23343108ae7408b6c7b7fc966df139b9f59c61c39e2c5a65460b7b",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/concurrent_save_and_QA_snapshot/regions/region01_forest/qa/native_render/20261008T183105Z_f1381f92/logs/build_ios_unsigned_result.json",
+      "bytes": 3346,
+      "sha256": "691e40eab637bbe404f66adbf62ce1d89dcae80c5316ee2e9a6b8cc30a81f688",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/concurrent_save_and_QA_snapshot/regions/region01_forest/qa/native_render/20261008T183105Z_f1381f92/logs/build_mac.log",
+      "bytes": 36,
+      "sha256": "b9b5917ac378c2670d5cb5ece4cc6626538f86bc5d3f909d019e116197f1015a",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/concurrent_save_and_QA_snapshot/regions/region01_forest/qa/native_render/20261008T183105Z_f1381f92/logs/build_mac_result.json",
+      "bytes": 284,
+      "sha256": "6047f6a983800531ba9346fce473bcb72cd940af6492573f27f929b3f064656b",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/concurrent_save_and_QA_snapshot/regions/region01_forest/qa/native_render/20261008T183105Z_f1381f92/logs/occlusion_with_front_result.json",
+      "bytes": 509,
+      "sha256": "0a56acb04271d305f2813da1e97f88d6e28df6775e133217d7c8af4a6a907419",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/concurrent_save_and_QA_snapshot/regions/region01_forest/qa/native_render/20261008T183105Z_f1381f92/logs/occlusion_without_front_result.json",
+      "bytes": 515,
+      "sha256": "11d297da0637f3af030b5b8b32390031daa5e198ab6d29f09db5a28a9dec08ac",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/concurrent_save_and_QA_snapshot/regions/region01_forest/qa/native_render/20261008T183105Z_f1381f92/logs/portrait_fill_130_result.json",
+      "bytes": 5595,
+      "sha256": "df2005829562103e92298f1d3285e4e3473eca3eea27a50fa302208e6bee89c3",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/concurrent_save_and_QA_snapshot/regions/region01_forest/qa/native_render/20261008T183105Z_f1381f92/logs/portrait_fill_180_result.json",
+      "bytes": 500,
+      "sha256": "ac424584740aca5866cd3abd3217e8e3412fb490dfaa5c2c5547e5380ac65b4d",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/concurrent_save_and_QA_snapshot/regions/region01_forest/qa/native_render/20261008T183105Z_f1381f92/logs/portrait_fit_130_result.json",
+      "bytes": 498,
+      "sha256": "b757130fcba1a4214055dccaa33c70f8be68b709aface6cff3ae8d1ee36dd025",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/concurrent_save_and_QA_snapshot/regions/region01_forest/qa/native_render/20261008T183105Z_f1381f92/logs/rig_behind_still_result.json",
+      "bytes": 497,
+      "sha256": "8d4d80e5511f15e5d9b9569649dd84fbe7a53d92d44cf84b7882d12549dad47e",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/concurrent_save_and_QA_snapshot/regions/region01_forest/qa/native_render/20261008T183105Z_f1381f92/logs/rig_front_still_result.json",
+      "bytes": 495,
+      "sha256": "41611b273c14896dc132c78d12aa8f6a68b571206bb5501f7f55309b82510674",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/concurrent_save_and_QA_snapshot/regions/region01_forest/qa/native_render/20261008T183105Z_f1381f92/logs/source_aspect_390x694_result.json",
+      "bytes": 508,
+      "sha256": "13c5e385462f440040e72f24876c1f426e847862a48851d4a1fd03fb8fef2211",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/concurrent_save_and_QA_snapshot/regions/region01_forest/qa/native_render/20261008T183105Z_f1381f92/measurements/MEASUREMENT_ARTIFACTS.json",
+      "bytes": 2059,
+      "sha256": "e7c4f32032c33f5e58d92aae40abe95c0c2baa6358d5f2f851ecbb08a4678bf1",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/concurrent_save_and_QA_snapshot/regions/region01_forest/qa/native_render/20261008T183105Z_f1381f92/measurements/MEASUREMENT_SUMMARY.json",
+      "bytes": 7334,
+      "sha256": "939a7947b7fa08064305674873f625938e9aab7eb9bacfeaeb3704f88b704a5b",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/concurrent_save_and_QA_snapshot/regions/region01_forest/qa/native_render/20261008T183105Z_f1381f92/measurements/PNG_NATIVE_MEASUREMENTS.json",
+      "bytes": 82291,
+      "sha256": "365fb7fd156a01bf998e5d5a361e086770886306278b59851fe0bbce3fa9f1af",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/concurrent_save_and_QA_snapshot/regions/region01_forest/qa/native_render/20261008T183105Z_f1381f92/measurements/compile.log",
+      "bytes": 88,
+      "sha256": "c500265c35987141e5dc26dde211fd6930e3223d25341a3729ca9cb5a41184ac",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/concurrent_save_and_QA_snapshot/regions/region01_forest/qa/native_render/20261008T183105Z_f1381f92/measurements/compile02.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/concurrent_save_and_QA_snapshot/regions/region01_forest/qa/native_render/20261008T183105Z_f1381f92/measurements/imageio_measurements.json",
+      "bytes": 18197,
+      "sha256": "a16515d06db4f77d8b7aeeb3100e38e7f84b716ffc6bd2b82e58b4e329b9202e",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/concurrent_save_and_QA_snapshot/regions/region01_forest/qa/native_render/20261008T183105Z_f1381f92/measurements/imageio_run.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/downloads_version/witch_g2_r01_validation.pdf",
+      "bytes": 840433,
+      "sha256": "6487a461520bcbce16bad26611035ac7d6987e12a7c53a1c63f90fd36fe29fd8",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/FILE_LIST.csv",
+      "bytes": 17530,
+      "sha256": "79fb761a0c8390edf057586492f7f61aeb89e764deec9fced397ec582bec47e3",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/PACKAGE_CHECK.json",
+      "bytes": 302,
+      "sha256": "509442ae099415b9b14ffba812db9560815a719836cfdd2498ef25b1f8787fe4",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/README.md",
+      "bytes": 2253,
+      "sha256": "48f15273a55c95a85f4dae03ff5ccaf9347b6019bf52d9305a102f92d818a2b4",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/SELECTED_ASSETS.json",
+      "bytes": 1642,
+      "sha256": "d688a75af873c917c7da1ec753241c218f414bab03762aba5cca0361ca1df241",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/SHA256SUMS.txt",
+      "bytes": 11480,
+      "sha256": "6eed96edc5cf98ed02be1d3d83e3590d83a06fd4ac45ceae4d3960557f6ba530",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/SOURCE_MAP.json",
+      "bytes": 9787,
+      "sha256": "26fde838543f7005e81f8887c7437b55a8de34a6fc48c6c6943bd7d2b2af87b8",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/ZIP_PARTS_README.txt",
+      "bytes": 1091,
+      "sha256": "cf16a5ce8c05fd1a6d0f6c8b602f915cc9d2aafb00042d86f05703356f1f0bbb",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/archive/not_selected/README.md",
+      "bytes": 166,
+      "sha256": "3b4b2ba336e98723d43b3654f0be6d662979a05efcb007cbbb04ac0e21130af7",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/backgrounds/BG_R01_BOSS/README.md",
+      "bytes": 1141,
+      "sha256": "5fd6f5654990996daa909beafe874d32460f192cccef3497478ba4084ebe1c85",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/backgrounds/BG_R01_BOSS/layer_manifest.json",
+      "bytes": 3592,
+      "sha256": "3bec1fe5626e5a0c2808452de8f4f901a2c2c94bdc379da12d1d7956362bb290",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/backgrounds/BG_R01_BOSS/sources/back_prompt.txt",
+      "bytes": 1007,
+      "sha256": "9fab63a42697e7f49f7456d76f5c642f7b58d90ac614a4440d7b0f7fb32beb70",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/backgrounds/BG_R01_BOSS/sources/front_prompt.txt",
+      "bytes": 1099,
+      "sha256": "41ac48f6ea5bb83dd2598a8089b7436d61513bbf073c4e991a63a430fe53072a",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/backgrounds/BG_R01_BOSS/sources/master_prompt.txt",
+      "bytes": 1901,
+      "sha256": "c5630c2d11b352c5fb86ebfabe5f82e0d923b697146260c95288ec28d071c7a1",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/backgrounds/BG_R01_BOSS/sources/terrain_prompt.txt",
+      "bytes": 1169,
+      "sha256": "7f2217abdcff56089dd694dc78fd410e2e40fe6396247a16ad349b01b63e582e",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/backgrounds/BG_R01_FIELD/BG_R01_FIELD_back_trees_v01_prompt.txt",
+      "bytes": 1000,
+      "sha256": "2db525e49102569e505dee58325ab1bc664f806e5a503d61ca685215ce17e9b1",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/backgrounds/BG_R01_FIELD/BG_R01_FIELD_clean_plate_v02_prompt.txt",
+      "bytes": 934,
+      "sha256": "c19bb3db53d06852120b4d62dfbbb7543c721665744dab8e0a61a1a6bc9492cc",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/backgrounds/BG_R01_FIELD/BG_R01_FIELD_far_v01_prompt.txt",
+      "bytes": 1253,
+      "sha256": "bc6228fec5f6ef634392bde4e639fd4b4a305bd0d64b771acf0948693ccde4b9",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/backgrounds/BG_R01_FIELD/BG_R01_FIELD_foreground_v02_prompt.txt",
+      "bytes": 966,
+      "sha256": "64029e1dc5f0148c076a5d41b3bc93d7d7338d07de578fb0b2830afd3e2d9998",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/backgrounds/BG_R01_FIELD/BG_R01_FIELD_layers_manifest.json",
+      "bytes": 2013,
+      "sha256": "dcaeba81170afc5a6d347375a6641270145a81eb510814c19e89003ec8d58a2b",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/backgrounds/BG_R01_FIELD/BG_R01_FIELD_playfield_v02_prompt.txt",
+      "bytes": 1000,
+      "sha256": "e04ad31f32f33df8ae5a3f214c615f796fc65534b1c7b85865a3c8ffe75904c9",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/bosses/B_R01_B/ASSET_NOTES.md",
+      "bytes": 3485,
+      "sha256": "c4fab5ce7338cab38cf79a3c5c600db31d663153824f7ad802438c7288ec90e8",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/bosses/B_R01_B/prompt_v1.txt",
+      "bytes": 2089,
+      "sha256": "81ab359b13ba229020129f5b8bff891f1a3e9051727db4b5cef7147a90eae1ca",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/bosses/B_R01_B/qa_manifest.json",
+      "bytes": 469,
+      "sha256": "00e352350c726747a28a930099f56315de2b345cc3b3bd711f42b16af276d119",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/docs/IMPORT_SETTINGS_AND_LIMITS.md",
+      "bytes": 2873,
+      "sha256": "88d46003ee77eea2a79b2836f56955f99e0c85ebfc4d1963f66d088e391e5b9a",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/docs/SOURCE_PRIORITY.md",
+      "bytes": 932,
+      "sha256": "ee11407c9476ef528410285d81e1c730b695e6119dc0367817e14ce07bb99c2f",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/docs/provenance/RESIN_BOAR_BASE_ART_NOTES.md",
+      "bytes": 3421,
+      "sha256": "72919560d405ff424c1140eed752fb59f22d97098843d2eb064f48aadc0f8dc4",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/docs/provenance/resin_boar_asset_metrics.json",
+      "bytes": 3696,
+      "sha256": "99bbfc2a5f94512c963bf65288c171868c8aaf66a478c0402dbbb3fa0b1eaae7",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/docs/provenance/resin_boar_generation_prompts.json",
+      "bytes": 6402,
+      "sha256": "3693eed4fe84841c117cb67d9fe90e9cb2a45538cdafbd2258d973974d82378f",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/docs/provenance/spider_leaf_alpha_qa.json",
+      "bytes": 1812,
+      "sha256": "7afa9159911d6bbdb6ee9068fafa760b588afec9fbd0c03c9bb92afb41095d63",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/docs/provenance/spider_leaf_prompts.json",
+      "bytes": 4946,
+      "sha256": "1b93b18cdf7a2c6126d5e14d3216ee80050739b5a4aee725b04df60d0d41c298",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/docs/witch_g2_r01_validation.docx",
+      "bytes": 2946798,
+      "sha256": "307e780bc419a03223fb76ddc775931712aa8030d5df1fc5f3226239537e6381",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/docs/witch_g2_r01_validation.pdf",
+      "bytes": 815309,
+      "sha256": "41ba8f7992f10753768fc8db17af3d0da99bacb05af184aa563ccbd3f0e57688",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/enemies/E_R01_01/prompt_v2.txt",
+      "bytes": 734,
+      "sha256": "408bff8c858d4228c342e12ecb6f85096e7df5cce71fa6816708355725b9a8d8",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/enemies/E_R01_01/qa_v2.json",
+      "bytes": 267,
+      "sha256": "2076f25f15ce5a532a199a3f0d16434a6a1047d3ba77a23aa4d9ed1c107246df",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/items/M_R01_BB/ASSET_NOTES.md",
+      "bytes": 1038,
+      "sha256": "8624555345247238bad49ab7b525167d885488d119baef5d8663032d1926faad",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/items/M_R01_BB/prompt_v1.txt",
+      "bytes": 1120,
+      "sha256": "da7fcfa1e8ec2c837ea515999604ed12aaf4138b387ede433eae35bdf7206934",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/items/M_R01_BB/qa_manifest.json",
+      "bytes": 463,
+      "sha256": "0e629dc0bfb8b4191c2404adf54947012cd1d50748d95a53cfba456a059eaaae",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/items/M_R01_E1/metadata.json",
+      "bytes": 428,
+      "sha256": "fe335036dc86d8e00358ca176fa4b070bfc987bb4ca4028d0782d697d644ef88",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/items/M_R01_E1/prompt.txt",
+      "bytes": 464,
+      "sha256": "3803334da365af3216ada21eb423bea81bd998b54c57897231b83103efedf8a3",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/qa/blender/INDEPENDENT_VISUAL_QA.md",
+      "bytes": 3448,
+      "sha256": "00117ffbf124b011da778bdf6260af3864d554d2886ae981c32a57464ab6e944",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/qa/blender/R01_EIGHT_ASSET_REVIEW.md",
+      "bytes": 5057,
+      "sha256": "c17d8429365fbbba13553517b67fd1bbd95172fc1ba37dadec1418e1bb870920",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/qa/blender/all_actor_metrics.json",
+      "bytes": 1844,
+      "sha256": "a5edd10257e96a117049e8716e45d8d3cc2a8242f4ff115d70dd4b1096dbc29a",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/qa/blender/four_layer_settings.json",
+      "bytes": 693,
+      "sha256": "521118e1e7b03f8f4aae0fce9c65fb4d933522ee4873d7d2b812dea6842dde71",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/qa/blender/remaining_set_render_settings.json",
+      "bytes": 598,
+      "sha256": "2e882f4b8b9e70626063d2abfb9c58ad8adbb0fabdeeeb088d5ae1bf8fc8e177",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/qa/blender/render_settings.json",
+      "bytes": 821,
+      "sha256": "9fd78cfb9d6af85451dd8e89cf930b138bb3da91e77c9013f8a65ac70d9461d0",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/qa/boar_packed_blend_check.json",
+      "bytes": 373,
+      "sha256": "e0273a788f52bc8b14c55d98716d60b234df97641418f54f0419b84855a7ceec",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/qa/native_sample/G2_iPhone_validation/binary-verification.log",
+      "bytes": 809,
+      "sha256": "9988a377c218b24564ce76c5ef57cb3440000e9e91f1088d78e723603c324d78",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/qa/native_sample/G2_iPhone_validation/build-final.log",
+      "bytes": 179,
+      "sha256": "253f0c658616e079fbe1b642b81ff96fc99accad34a23e611f415d9bd99a8cee",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/qa/native_sample/G2_iPhone_validation/final-status.txt",
+      "bytes": 2973,
+      "sha256": "66298dbffe70e47f866130328c29e985d1d2c81ccc900c159fcc3b6f66dfea6a",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/qa/native_sample/G2_iPhone_validation/final-validation-state.json",
+      "bytes": 1376,
+      "sha256": "b401d02507cae14c1bcc3f70c8f2fbbe4ad64f8d22bf73679c7673947c84237e",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/qa/native_sample/G2_iPhone_validation/sample/README.txt",
+      "bytes": 5780,
+      "sha256": "ac94a9c5696e6a1b9ca21982aae45cdd1b77e3bc1ce4b5ebd7dd63cd5535a207",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/source/boar_rig/REVIEW.md",
+      "bytes": 4395,
+      "sha256": "e7f9c1205e7628141c5ef82dba671980ae81a349b0cd6e7e81e604e394a82a3b",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/source/boar_rig/manifest.json",
+      "bytes": 1559,
+      "sha256": "58932a4f6340b8b1668e50bfe32e8fcba76d51f45a0773a22f819092ffbebebc",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/source/boar_rig/prompt_body_v1.txt",
+      "bytes": 1176,
+      "sha256": "edd960c7081ae890ddde58481ad1b76bac1eeb05d5b6cae0f52b09ba5ce0e321",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/dots_reports/package_snapshot/source/boar_rig/prompt_foreleg_v1.txt",
+      "bytes": 984,
+      "sha256": "bf698157265e557e011f9351a71880462c761d0bc9590a4594943436cf4697b8",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/README_G1_ORIGINAL.md",
+      "bytes": 5306,
+      "sha256": "868877cf73d514da35d593f53e6705b05dfe94a9ed30fe9a7bfce05ec2a17586",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/CODEX_REQUEST_G1_R3_START_HERE.md",
+      "bytes": 1437,
+      "sha256": "6feb7470beb528c513d823adf13da342f8f095d70fb5d6ae2a321ac14ecefedb",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/01_DECISION_AND_GAME_DESIGN_R2.md",
+      "bytes": 7475,
+      "sha256": "3683f5a1fc89c091324300b15cc5239ebf217ee3e5d300f85a7547b5ef5fce64",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/CODEX_REQUEST_G1_R2.md",
+      "bytes": 6606,
+      "sha256": "a3853922cc7a7be5a55a47818503bc6b7281fe3859a87bf81a7ed2eae88d5649",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/INPUT_LINEAGE.json",
+      "bytes": 232,
+      "sha256": "118ce6f9dc0c0f1723c4d0a4f13fca35d03e26c1daaf4162df31a2222a04dbdc",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/README.md",
+      "bytes": 2852,
+      "sha256": "5c0f18b4b174326c3e5a9fe8a952b09a6a076310564ce0c38809ae377b1e41a5",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/SHA256SUMS.json",
+      "bytes": 3120,
+      "sha256": "aea93687c2853045ed9b91795d204acd81d530cecf1a471eb7f2fbf602f02d69",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/data/content.json",
+      "bytes": 5944,
+      "sha256": "297e97b4e619e8ea0e9b49f1a9b94544c81fee38f35b2cb2441694af5c543dd1",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/data/items.csv",
+      "bytes": 1478,
+      "sha256": "6438c5cf5d7448f0adcf02552dacbc952fb4cb492f19e5ea2170860e11dded8b",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/spec/02_COMBAT_AND_ITEMS_R2.md",
+      "bytes": 7082,
+      "sha256": "1ba368ec4606ff963affcbfd481d846e5ac13389deede2f8c412c2458f36ef18",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/spec/03_OFFLINE_SAVE_ECONOMY_R2.md",
+      "bytes": 7519,
+      "sha256": "d7cfb226dda35be39a487f74e04d1707902266f69cd9710655e178a3e894e996",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/spec/04_UX_AND_VISUAL_GATE_R2.md",
+      "bytes": 6361,
+      "sha256": "80d3e716a8a4ad85b3f188b0296f577f0ebed6303454e4657d30ed9ab52bef87",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/spec/05_ACCEPTANCE_AND_PLAYTEST_R2.md",
+      "bytes": 4205,
+      "sha256": "457e471ed3ddb2ca124f7aee1c21f7178692e1c648d05271ec0617980456581e",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/spec/06_VALIDATION_RESULTS_R2.md",
+      "bytes": 4438,
+      "sha256": "40094eb2e6ad2b5dacd2984fae5f5a74cfaf84e4878ce0cdbc048052a9b5f0bb",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/spec/07_SOURCES_AND_LINEAGE_R2.md",
+      "bytes": 1893,
+      "sha256": "f7a73bcf241878d47a959af07d9e5d174b2d648248ee30c393c3679f1d9f8655",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/ux/UX_PREVIEW_R2.html",
+      "bytes": 24444,
+      "sha256": "077f1b2c4de2890650c4cc3566b440a85fdc2e522672ffd061cae22485d2b66e",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/validation/STATUS.json",
+      "bytes": 610,
+      "sha256": "c19a7d2feb8e02c675f031b46896fed57700c94a9cff7ccecec933dbd13848bb",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/validation/all_loadouts.csv",
+      "bytes": 110135,
+      "sha256": "4a22d099f0f54182c2403c234d96710dcd6d8178987edeac37939eb958d83a66",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/validation/balance_console.txt",
+      "bytes": 4179,
+      "sha256": "7f629af359303820d46818e57c5f7322422202bb05aaf44fc481771edb4fe50d",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/validation/build_report.py",
+      "bytes": 3719,
+      "sha256": "8bfb31fb9273b0e3a691e40210c64e0e9481872d9801f90f2de1ba66aafd0f96",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/validation/check_balance.py",
+      "bytes": 1754,
+      "sha256": "8ab7f43952d8c2fca2c662d2fe6826995dc0a5cfb7efc43889aed377d6b25ece",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/validation/core.py",
+      "bytes": 4919,
+      "sha256": "626904651b8d99d4b0f413bf63eb4f7cb3823394b11ba7985613bd364a555008",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/validation/curated_results.json",
+      "bytes": 1864,
+      "sha256": "ef25c6c912f49dfc90f1a129d0434592d56bfa2416e5e90423aaf91cbd8b1eca",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/validation/example_traces.json",
+      "bytes": 34192,
+      "sha256": "034f1956e18aea927ef48cb2f4fdb1f5376cbbf9a9567d5f6921a942d5c23277",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/validation/golden_fights.json",
+      "bytes": 24822,
+      "sha256": "1139ae8638f2fa1f2261244499431372f82cf6c2c485c18b0e9a3936af9c6058",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/validation/progression.py",
+      "bytes": 4975,
+      "sha256": "016e53b65120c94110f24260b11b89e437a653745a9b953248d3368e457b08ac",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/validation/report.json",
+      "bytes": 10533,
+      "sha256": "91ccbf2a9c06484840ea9908228930f32b44d2f5e16adfb97b786fe2427e6224",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/validation/test_output.txt",
+      "bytes": 2681,
+      "sha256": "36cf83606a098e964c5515e4e924c7cf2efbcc0c9bcab8b71b09e782062f36ad",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/validation/test_reference.py",
+      "bytes": 6258,
+      "sha256": "2b943c5650013f0ca1cf09e60d415bd3737137b2d11042ab5c188c28763f4f16",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/validation/test_ui_optional.py",
+      "bytes": 3822,
+      "sha256": "da7a2ebd011b11a52767022848a290e45d379f80f72918356f32b5b74beb21c1",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/validation/ui_comparison_375.png",
+      "bytes": 48304,
+      "sha256": "6610e909629b74f103fd4dc37e44387bd2e1cbff2d92fd9dbd423676babe3b9c",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/validation/ui_desktop_1280.png",
+      "bytes": 248541,
+      "sha256": "9b412468f59f5d63dce4ea8ef08629070cfde987710c07be72a0020336fc6f2f",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/validation/ui_result_375.png",
+      "bytes": 67024,
+      "sha256": "855eb70374309573d5e07c9360840475d48147b80054e89ec93e3be48d88c1a7",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_Design_R2_20261008/validation/ui_test_results.json",
+      "bytes": 1318,
+      "sha256": "aa51c65f698661b822f81a618b1e368676893a1621d55c2653fa9e88a48daee0",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reference/Idle_Loot_RPG_G1_Preflight_Audit_R3_20261008.md",
+      "bytes": 11967,
+      "sha256": "938ebad708bdabe347ba6949f321ddf43bfe12626c2065c8b739646b75b9fbce",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reports/G1_FINAL_STATUS.json",
+      "bytes": 1343,
+      "sha256": "a204df5a3bbacb04fc1ccdbf24b2cfe91185ec6af382fbad6a50292b7e993a01",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reports/G1_REPORT.md",
+      "bytes": 7203,
+      "sha256": "c78570cf0613c10798aa2c5b052fa0ba7a0697f049553d6aa2417f3296b76f8f",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reports/HUMAN_REVIEW.md",
+      "bytes": 2642,
+      "sha256": "d27ac0ac1a9a17a047d9e5d6b5a8b2b4dad77596d6e041e77334cde841123077",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reports/browser-evidence/battle-desktop.png",
+      "bytes": 346872,
+      "sha256": "c96e5387e6fe1df3d96f988e3bb70d16187ea765f794d789549c7b9690211cf7",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reports/browser-evidence/clock-anomaly.png",
+      "bytes": 327326,
+      "sha256": "874ccdebd02dbee304d278f076006408030fe0d763ca161c160f245aa073f004",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reports/browser-evidence/desktop-01-return.png",
+      "bytes": 311686,
+      "sha256": "d3c738ab0cff7c26171532b0a596546c0367738281a45c2b1efd45f10c2611b9",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reports/browser-evidence/desktop-02-equipment.png",
+      "bytes": 593865,
+      "sha256": "1d9a4473c2ccd2083b20064ea11a06ff3714eaea9603acc718852e95c7f795c5",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reports/browser-evidence/desktop-03-expedition.png",
+      "bytes": 359605,
+      "sha256": "4f9f703b990c925d740cab6c617badff9468a221e11d943331e6a89beae809ca",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reports/browser-evidence/desktop-04-result.png",
+      "bytes": 411654,
+      "sha256": "884a00d26fbdc5e0b02be43bbfec62bc5410872e87f54346928b45fe77f9a587",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reports/browser-evidence/mobile-375-equipment-200pct.png",
+      "bytes": 406020,
+      "sha256": "c8750be04afd058aae88676884566f2f67dbb5324576662fa00819a2f9197bc7",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reports/browser-evidence/mobile-375-return.png",
+      "bytes": 184135,
+      "sha256": "5647967aeef2d3b8f2d789f5330a1c3573f585cd3c6eb61d90155ce41f152981",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reports/browser-evidence/mobile-390-equipment-200pct.png",
+      "bytes": 405119,
+      "sha256": "709e47e85e3207286efdd40bb877b690067f51c565964b20b65f63b780fa69e2",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reports/browser-evidence/mobile-390-return.png",
+      "bytes": 186964,
+      "sha256": "52d179d29069a2984b0588e883519e1c6b5a632b4c81114d59e1e392584c395f",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reports/browser-evidence/offline-after-reload.png",
+      "bytes": 318361,
+      "sha256": "7739ed8fef2bbfaadb4bc05e8928c265496c8860d4e354c57613db365f569816",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reports/browser-evidence/recovery-warning.png",
+      "bytes": 319353,
+      "sha256": "8cb0495334cf02d2e355617e6f0ead3dff1c81a91456e1d9ea14258f10ab94f8",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reports/browser-tests.json",
+      "bytes": 6417,
+      "sha256": "2a25d272cb55b509bced0b30e93998173d86fb4b67b44c659654baa3d0dd4d1e",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reports/combat-parity.json",
+      "bytes": 515,
+      "sha256": "8f4006c75c3bd747046b550bbaa2a9026c2538dce596bab03932a6b49c35d1ca",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reports/core-tests.tap",
+      "bytes": 8187,
+      "sha256": "cc3c951862a06e8c539f38f2514b81f13e2a1cd5d2c063af4449cee294d3697e",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reports/evidence/01-return-desktop.png",
+      "bytes": 311558,
+      "sha256": "30e6d8f532ba807acafcf189d3076ee4b5e504b7c7c28824917c8443f9a4ad4f",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reports/evidence/02-equipment-375.png",
+      "bytes": 333377,
+      "sha256": "48942a67ccd2bbce82cf23d47a3f4844452dd6acc50ce85ca2d0c27efeb992f0",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reports/evidence/04-result-desktop.png",
+      "bytes": 337548,
+      "sha256": "1ef86d52fa6891cd8d404d44e0692667642f1cfdd364477965a65c42b5714e35",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reports/evidence/compare-375.png",
+      "bytes": 57170,
+      "sha256": "89bcb1f46c696d0f17558e3710042df313e73c3331aeefbff0a93ee2f054cc05",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reports/preflight.json",
+      "bytes": 366,
+      "sha256": "85e0e4f00387ed096f38db50dd78d96383f4e00ab9671085ae8724c666475c4f",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reports/recovery-ui-tests.json",
+      "bytes": 836,
+      "sha256": "655e578de047b576347c7149eda03255f31e45176936c9eaa43497fe4f5e54fa",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reports/reference-audit.md",
+      "bytes": 10635,
+      "sha256": "8d2da6c974ca3e5d312c527cac9d3efc93ddd95177ebc54ba069d1c479242ebd",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reports/reference-tests.txt",
+      "bytes": 1940,
+      "sha256": "6e688d10ccd9f44af544b3ebc76f337b0c0e3ed399692af5640b371abdc686cf",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reports/source-manifest.json",
+      "bytes": 2214,
+      "sha256": "2ceb9963d10a529e54e2e9346b3aba7c968c0dd98491507f345ef5982c9ee2ce",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/reports/storage-tests.json",
+      "bytes": 3351,
+      "sha256": "dbd7eb8de670866bc8bc51241206ca3359428d9d487190e1e9ec3c7ac4425fd3",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/CODEX_REQUEST_G1_R3_START_HERE.md",
+      "bytes": 1437,
+      "sha256": "6feb7470beb528c513d823adf13da342f8f095d70fb5d6ae2a321ac14ecefedb",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/01_DECISION_AND_GAME_DESIGN_R2.md",
+      "bytes": 7475,
+      "sha256": "3683f5a1fc89c091324300b15cc5239ebf217ee3e5d300f85a7547b5ef5fce64",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/CODEX_REQUEST_G1_R2.md",
+      "bytes": 6606,
+      "sha256": "a3853922cc7a7be5a55a47818503bc6b7281fe3859a87bf81a7ed2eae88d5649",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/INPUT_LINEAGE.json",
+      "bytes": 232,
+      "sha256": "118ce6f9dc0c0f1723c4d0a4f13fca35d03e26c1daaf4162df31a2222a04dbdc",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/README.md",
+      "bytes": 2852,
+      "sha256": "5c0f18b4b174326c3e5a9fe8a952b09a6a076310564ce0c38809ae377b1e41a5",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/SHA256SUMS.json",
+      "bytes": 3120,
+      "sha256": "aea93687c2853045ed9b91795d204acd81d530cecf1a471eb7f2fbf602f02d69",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/data/content.json",
+      "bytes": 5944,
+      "sha256": "297e97b4e619e8ea0e9b49f1a9b94544c81fee38f35b2cb2441694af5c543dd1",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/data/items.csv",
+      "bytes": 1478,
+      "sha256": "6438c5cf5d7448f0adcf02552dacbc952fb4cb492f19e5ea2170860e11dded8b",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/spec/02_COMBAT_AND_ITEMS_R2.md",
+      "bytes": 7082,
+      "sha256": "1ba368ec4606ff963affcbfd481d846e5ac13389deede2f8c412c2458f36ef18",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/spec/03_OFFLINE_SAVE_ECONOMY_R2.md",
+      "bytes": 7519,
+      "sha256": "d7cfb226dda35be39a487f74e04d1707902266f69cd9710655e178a3e894e996",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/spec/04_UX_AND_VISUAL_GATE_R2.md",
+      "bytes": 6361,
+      "sha256": "80d3e716a8a4ad85b3f188b0296f577f0ebed6303454e4657d30ed9ab52bef87",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/spec/05_ACCEPTANCE_AND_PLAYTEST_R2.md",
+      "bytes": 4205,
+      "sha256": "457e471ed3ddb2ca124f7aee1c21f7178692e1c648d05271ec0617980456581e",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/spec/06_VALIDATION_RESULTS_R2.md",
+      "bytes": 4438,
+      "sha256": "40094eb2e6ad2b5dacd2984fae5f5a74cfaf84e4878ce0cdbc048052a9b5f0bb",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/spec/07_SOURCES_AND_LINEAGE_R2.md",
+      "bytes": 1893,
+      "sha256": "f7a73bcf241878d47a959af07d9e5d174b2d648248ee30c393c3679f1d9f8655",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/ux/UX_PREVIEW_R2.html",
+      "bytes": 24444,
+      "sha256": "077f1b2c4de2890650c4cc3566b440a85fdc2e522672ffd061cae22485d2b66e",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/validation/STATUS.json",
+      "bytes": 610,
+      "sha256": "c19a7d2feb8e02c675f031b46896fed57700c94a9cff7ccecec933dbd13848bb",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/validation/all_loadouts.csv",
+      "bytes": 110135,
+      "sha256": "4a22d099f0f54182c2403c234d96710dcd6d8178987edeac37939eb958d83a66",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/validation/balance_console.txt",
+      "bytes": 4179,
+      "sha256": "7f629af359303820d46818e57c5f7322422202bb05aaf44fc481771edb4fe50d",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/validation/build_report.py",
+      "bytes": 3719,
+      "sha256": "8bfb31fb9273b0e3a691e40210c64e0e9481872d9801f90f2de1ba66aafd0f96",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/validation/check_balance.py",
+      "bytes": 1754,
+      "sha256": "8ab7f43952d8c2fca2c662d2fe6826995dc0a5cfb7efc43889aed377d6b25ece",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/validation/core.py",
+      "bytes": 4919,
+      "sha256": "626904651b8d99d4b0f413bf63eb4f7cb3823394b11ba7985613bd364a555008",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/validation/curated_results.json",
+      "bytes": 1864,
+      "sha256": "ef25c6c912f49dfc90f1a129d0434592d56bfa2416e5e90423aaf91cbd8b1eca",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/validation/example_traces.json",
+      "bytes": 34192,
+      "sha256": "034f1956e18aea927ef48cb2f4fdb1f5376cbbf9a9567d5f6921a942d5c23277",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/validation/golden_fights.json",
+      "bytes": 24822,
+      "sha256": "1139ae8638f2fa1f2261244499431372f82cf6c2c485c18b0e9a3936af9c6058",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/validation/progression.py",
+      "bytes": 4975,
+      "sha256": "016e53b65120c94110f24260b11b89e437a653745a9b953248d3368e457b08ac",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/validation/report.json",
+      "bytes": 10533,
+      "sha256": "91ccbf2a9c06484840ea9908228930f32b44d2f5e16adfb97b786fe2427e6224",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/validation/test_output.txt",
+      "bytes": 2681,
+      "sha256": "36cf83606a098e964c5515e4e924c7cf2efbcc0c9bcab8b71b09e782062f36ad",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/validation/test_reference.py",
+      "bytes": 6258,
+      "sha256": "2b943c5650013f0ca1cf09e60d415bd3737137b2d11042ab5c188c28763f4f16",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/validation/test_ui_optional.py",
+      "bytes": 3822,
+      "sha256": "da7a2ebd011b11a52767022848a290e45d379f80f72918356f32b5b74beb21c1",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/validation/ui_comparison_375.png",
+      "bytes": 48304,
+      "sha256": "6610e909629b74f103fd4dc37e44387bd2e1cbff2d92fd9dbd423676babe3b9c",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/validation/ui_desktop_1280.png",
+      "bytes": 248541,
+      "sha256": "9b412468f59f5d63dce4ea8ef08629070cfde987710c07be72a0020336fc6f2f",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/validation/ui_result_375.png",
+      "bytes": 67024,
+      "sha256": "855eb70374309573d5e07c9360840475d48147b80054e89ec93e3be48d88c1a7",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_Design_R2_20261008/validation/ui_test_results.json",
+      "bytes": 1318,
+      "sha256": "aa51c65f698661b822f81a618b1e368676893a1621d55c2653fa9e88a48daee0",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/g1/source_package/Idle_Loot_RPG_G1_Preflight_Audit_R3_20261008.md",
+      "bytes": 11967,
+      "sha256": "938ebad708bdabe347ba6949f321ddf43bfe12626c2065c8b739646b75b9fbce",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/research_r1/Idle_Loot_RPG_Research_R1/01_RESEARCH_AND_DECISION_R1.md",
+      "bytes": 25038,
+      "sha256": "32c805f87676569a04a2c42a0f39ee975d53a46181fd6d75a61c5c79d0a44408",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/research_r1/Idle_Loot_RPG_Research_R1/02_COMPETITORS.csv",
+      "bytes": 9566,
+      "sha256": "35523eb13f29e52901c667a5ead397984adb45b5630d7054e20ca73d1bac5a11",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/research_r1/Idle_Loot_RPG_Research_R1/03_REVIEW_EVIDENCE.csv",
+      "bytes": 10805,
+      "sha256": "144fff97391b1981cf9cee073c0f1a293eed172d73586b1b4ac0c738cf0451e7",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/research_r1/Idle_Loot_RPG_Research_R1/04_VALIDATION_BRIEF_R1.md",
+      "bytes": 4523,
+      "sha256": "2d2aad0412576fb81bfc0fc5e13dedf98c051444676fe77e128e41b3aaa3fa92",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/research_r1/Idle_Loot_RPG_Research_R1/05_SOURCE_INDEX.md",
+      "bytes": 6246,
+      "sha256": "739aebf2ce68b8ec741ea0744c27b2d7f4a11f6514624b740327729f93653fc8",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/research_r1/Idle_Loot_RPG_Research_R1/Idle_RPG_Research_20261008.xlsx",
+      "bytes": 32462,
+      "sha256": "ef953331393e8d5112c47371a0b26ffb9d9aa16aac5264771bbfd8f654f708f3",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/research_r1/Idle_Loot_RPG_Research_R1/README.md",
+      "bytes": 929,
+      "sha256": "8aca780d950caf6bd21ccd896cd3640633948228606bfa0e0037bf3401b4ded5",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/research_r1/Idle_Loot_RPG_Research_R1/SHA256SUMS.json",
+      "bytes": 765,
+      "sha256": "521de52faa8da5d11819fbf6dce4cc87dbdf16d58cfa12c94e2f12db19fb6d3f",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/archive/research_r1/Idle_Loot_RPG_Research_R1/research_data.json",
+      "bytes": 37201,
+      "sha256": "accb9912ae0ecc7d40c8f087be08ad5223e58342e25c4541bc0316d61b538970",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/00_START_HERE.md",
+      "bytes": 2580,
+      "sha256": "7ff6359a57c2e65bce3765de274f094f0632bf4e04a2435814e0d16e9e9c9eaa",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/ART_BIBLE_R4.html",
+      "bytes": 715984,
+      "sha256": "3e455afd8154bf7d55857bff9da14fec378dfccadaf5ab46b0fbe2b20c168356",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/PACKAGE_SHA256.json",
+      "bytes": 9781,
+      "sha256": "0997d63c06c3216ed06db7dd41647443f0890cd90079cfd5a600f62c407f2ac0",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/Witch_AllRegions_Production_Catalog_R4.xlsx",
+      "bytes": 66655,
+      "sha256": "a43a12d3d789ad413321cb63d21978db4c8a48367e69bca8b3465a97533ed032",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/data/art_catalog_R4.json",
+      "bytes": 408118,
+      "sha256": "0111b15d1f995ec9600a7ea6560e17610cade4138cbff8d2c7b0e7c1cc06f352",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/data/conflicts.json",
+      "bytes": 4905,
+      "sha256": "fa659f5f71d28cdfa352542386c167c9e9907e16e728b8dccf7482b20cde259d",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/data/material_gear_traces_R4.csv",
+      "bytes": 19027,
+      "sha256": "e85d241d15bf5add158feb0718865da7393e5ecfa2c2e43fbcd205c53875da1d",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/data/open_decisions.json",
+      "bytes": 2988,
+      "sha256": "6debbc73712bd2e5d15846e358c5b6dd2c280a051724c088279e2e998c5815b7",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/data/source_provenance.json",
+      "bytes": 2246,
+      "sha256": "dda5c646abea005b11fc66ad85782ddf3f068b48819551ee36d4639079d5ab57",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/data/work_packages_R4.csv",
+      "bytes": 26472,
+      "sha256": "f6326a308a69b698d07bf06b03e0498cc5d496c5518e51cff02fb0f7ac9c1be6",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/data/work_packages_R4.json",
+      "bytes": 95131,
+      "sha256": "b672179a123c83c04174ca3215636fa4aa00546671623003f8c4fae9f34dbcdc",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/docs/01_AUTHORITY_AND_CHANGELOG.md",
+      "bytes": 5574,
+      "sha256": "bfdf15aaef8bc095951a635bb707d24d03cdc46f632721783d6463e0ee34deed",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/docs/02_SHARED_ART_STANDARD.md",
+      "bytes": 5794,
+      "sha256": "0fb9521c3e2da6dcfb2b3de1eb057c18153a554cac4cfae8b8f3c2bf96969ad3",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/docs/03_ANIMATION_EXPORT_CONTRACT.md",
+      "bytes": 5732,
+      "sha256": "d8c9097dcdf210ed150538b74cfe29e0d733c52cfd6e4e7cb818e88aebb2032e",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/docs/04_MATERIAL_GEAR_AND_SCOPE.md",
+      "bytes": 8623,
+      "sha256": "3cec4723d081c46907ea7fbd2463086831d4e0bbc298b5fdb83d46e88d1f0940",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/docs/05_QA_AND_BATCH_PLAN.md",
+      "bytes": 4077,
+      "sha256": "14f5e8b97b3cf31220b33a27a3a9244bf540c3164c0dfc5dd09c1d1671970f2f",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/docs/06_ROADMAP_AND_OPEN_DECISIONS.md",
+      "bytes": 3297,
+      "sha256": "9cc1de1bb7a0157315f7b8efbe81b62db4a87e7d145efcf7a3b3e22138db309d",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/handoff/CODEX_ASSET_INTERFACE_R4.md",
+      "bytes": 1665,
+      "sha256": "aee1a604c7da1543043582f60e85157ff8388d889a844d03cb71fd1385c622e5",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/handoff/DOTS_APPEND_R4.md",
+      "bytes": 2858,
+      "sha256": "89bf43a9055bfdb51d64efb5ac54a51cd8dbcebdaf02747bedee09758fe7320e",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/qa/ART_BIBLE_DESKTOP.png",
+      "bytes": 686802,
+      "sha256": "cea363c32dff20482c836d7986bfb7950603b303749e879e6ca4abed19226009",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/qa/ART_BIBLE_MOBILE.png",
+      "bytes": 247189,
+      "sha256": "dcdd0b6ef3a13a3eb3c7e9de4ba8c21257f8d85a62e1fcc745ea4c0515b60fd3",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/qa/ART_BIBLE_MOBILE_REGION.png",
+      "bytes": 98885,
+      "sha256": "536896f06f63f19f9e58eb141adaa4d6f06f27f26c303274b0e69855517998eb",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/qa/DOTS_PILOT_OBSERVATION.json",
+      "bytes": 588,
+      "sha256": "ff682407de60b83ed18df034d3488ecebe369559c33037fb50d5321cc7e9cdd1",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/qa/HTML_BROWSER_QA.json",
+      "bytes": 543,
+      "sha256": "c551295a15af429c9992fcddb78dec46cf154b0bc68c12b0b311174d9a73e3ce",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/qa/PACKAGE_CHECKS_R4.json",
+      "bytes": 603,
+      "sha256": "0bf1beacce28342e68698917b93a9a1885cb4d4fca3287ddf8b8d0c2f7ddb88a",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/qa/STRUCTURAL_VALIDATION_R4.json",
+      "bytes": 3575,
+      "sha256": "f8cc26f6104aadb9dc0972a1fba343b9e360bfa86fbe5c45c470bf228a8fdf65",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/qa/UNIT_TESTS_R4.txt",
+      "bytes": 1506,
+      "sha256": "99510b5ad8e232e8ec635dc8ed0185100f2bc7d109534e6abd9ff8b08dc91732",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/qa/WORKBOOK_ENEMY_SAMPLE.png",
+      "bytes": 91255,
+      "sha256": "caf76d99bb229cdacc5b527110a45872df631e9b69225f1f2cb8c1e1dcbeb6d1",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/qa/WORKBOOK_OVERVIEW.png",
+      "bytes": 281772,
+      "sha256": "3ba7b5212020e0d08b81f639edd045ad58fd095d3e161ce8bf56e031b41c78d9",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/references/APPROVED_CHARACTERS_R1.png",
+      "bytes": 3114648,
+      "sha256": "c20e010feec532d3fba9bc33a2a9e4bc54fae67aa4b5ffc7554e6ab884537601",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/references/DOTS_CONVERSATION_EVIDENCE.png",
+      "bytes": 953741,
+      "sha256": "668c1bde6bdfc8c539d4b056e2b7c7f26935697f6c39c361eb73c39e04105bc5",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/references/DOTS_PILOT_FRAME_REVIEW_ONLY.png",
+      "bytes": 255345,
+      "sha256": "f78696761f1d6b8de1ae7011aec19b10cc5a40bdfa0fad7ea25d70b3219946f1",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/regions/R01_ART_SPEC_R4.md",
+      "bytes": 22180,
+      "sha256": "9fffdd363a6ee06336002c163d87c163b0c8e072cfa4cd013a41198f00795e4a",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/regions/R02_ART_SPEC_R4.md",
+      "bytes": 20472,
+      "sha256": "2403985bda908d1c08129229388ce6d3df880b9232d751fbba5a487e92592cde",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/regions/R03_ART_SPEC_R4.md",
+      "bytes": 20223,
+      "sha256": "07a1bbc8e482538b4fc2867c174e1a6001e700c4e0be19f2f1ad4c157edecd26",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/regions/R04_ART_SPEC_R4.md",
+      "bytes": 19709,
+      "sha256": "5ecc29d70c8866cc87b05f4a3aec7d7cf268b1f96bccc8a2ed6bb5218d029c05",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/regions/R05_ART_SPEC_R4.md",
+      "bytes": 20981,
+      "sha256": "3cfc963913b9b53a14af9f07dc73c64d9e145860ec9a899d64fb3f72640577b2",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/source_snapshot/R01_CONTRACT_R2.json",
+      "bytes": 38486,
+      "sha256": "09d06d249166ea1330d922b083e0daa07b61349e5bb681db5d8f9bf44597beb2",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/source_snapshot/forest_docs/01_FOREST_SCENE_AND_PROGRESS_R2.md",
+      "bytes": 6418,
+      "sha256": "587d71e6739534251ae111b01ceaba249b2c05a799a87bbb7f638b74a24737cb",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/source_snapshot/forest_docs/02_BESTIARY_VISUAL_R2.md",
+      "bytes": 8008,
+      "sha256": "4ed67a63fe1969777ef220de62440ac2edd77d2ef3b6c54243750dd044cad1ec",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/source_snapshot/forest_docs/02_VISUAL_QA_R3.md",
+      "bytes": 4641,
+      "sha256": "25f2fd901bfd8e90e32c2b046e58a47091d4638c82bec8f602fe4e4a7e549e50",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/source_snapshot/forest_docs/03_MATERIAL_EQUIPMENT_R2.md",
+      "bytes": 6379,
+      "sha256": "81d737de8e9db710291ee800b1f7b2c89e60d770c103661382b7ded90eb046be",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/source_snapshot/forest_docs/03_PRODUCTION_BRIEF_R3.md",
+      "bytes": 4430,
+      "sha256": "7f43eed05fa3e40963a5584772ec405019692743173d061ea50fcef7f1782896",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/source_snapshot/forest_docs/04_G2_VERTICAL_SLICE_GATE_R2.md",
+      "bytes": 5124,
+      "sha256": "0592379903d1e6a898f61d6f3a00de9cba4c975d4a0d783684840a6ec313c2f3",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/source_snapshot/forest_docs/05_OPEN_ISSUES_AND_SOURCE_PRIORITY_R2.md",
+      "bytes": 4252,
+      "sha256": "c2364f24a1d9ac5474821706ffbc1ac0a2f1087b0415fca16bd0604369f307ef",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/source_snapshot/world_catalog_R1.json",
+      "bytes": 144485,
+      "sha256": "8452568dc72091de455521b5fe9e9fcca96237d4ba791bdfca712c9beb82bec5",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/source_snapshot/world_docs/01_WORLD_AND_REGIONS_R1.md",
+      "bytes": 22944,
+      "sha256": "84c6860ee76f9dde862042402cf9c4b1787e8596ad3f7681e48531cc4d44ea1b",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/source_snapshot/world_docs/02_BESTIARY_AND_MATERIALS_R1.md",
+      "bytes": 26471,
+      "sha256": "71310780f1e81540fcb44c8575f748b469df5abcf7716097fcdceda721f6f1a8",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/source_snapshot/world_docs/03_EQUIPMENT_AND_PROGRESSION_R1.md",
+      "bytes": 11390,
+      "sha256": "85010719482863b77fb1ecb69253d6e3fe8e1da2d3bc0be83fcc81c41cd615da",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/source_snapshot/world_docs/04_VISUAL_PRODUCTION_BRIEF_R1.md",
+      "bytes": 5109,
+      "sha256": "2d42e8c1c39d90d916cd3024e2ae64674d150e939625588667820ce040f28327",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/source_snapshot/world_docs/05_INTEGRATION_AND_VALIDATION_R1.md",
+      "bytes": 9208,
+      "sha256": "38199b3193996b3d5db8b038dd37a23de33294d595c7e46f0c627d769512c2c7",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/templates/DELIVERY_MANIFEST_TEMPLATE.json",
+      "bytes": 2740,
+      "sha256": "3fe289b72b52a6dee0b11491f13d94d516ce32724f7eaa52abddcba4d5bd4226",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/templates/P0_PROFILE_PROPOSAL.json",
+      "bytes": 1077,
+      "sha256": "dd640c4fbf5d3437fea760a91b0a3bab843cc5a431617704a9846e0e455fe571",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/templates/SCENE_COMPOSITION_TEMPLATE.json",
+      "bytes": 1443,
+      "sha256": "9dde6fe07a2f113a82762b3d4062f56c973050276243101ed3a44b75a34aaa6f",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/tools/test_art_spec.py",
+      "bytes": 2802,
+      "sha256": "dce85149982c84e6d0f8cf802ecfc4e7e3dd9c333a699d5211848a68adb1d1c2",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/tools/validate_art_spec.py",
+      "bytes": 7056,
+      "sha256": "6081479f8d9373e9862e0ac54eda2ce99b8fd7c5c176b1cea715f22a15f09997",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/tools/verify_package.py",
+      "bytes": 778,
+      "sha256": "734272f31a78d04df4656188a7e1c6fa2514372fd7e4e7bad3b09dccdfae501f",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_r2/Witch_Forest_G2_R2_20261009/00_READ_FIRST.md",
+      "bytes": 2398,
+      "sha256": "efb8e45fbaae68bf0d923199266783b7084dd19d9f37911744b9bcf52dbb77b7",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_r2/Witch_Forest_G2_R2_20261009/MANIFEST_SHA256.json",
+      "bytes": 3732,
+      "sha256": "7d9dcafed0a6a7b683f4c6e8b1a7d8f7080bfd64eda55d54a0d9a07705c128f7",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_r2/Witch_Forest_G2_R2_20261009/PREVIEW.html",
+      "bytes": 1158915,
+      "sha256": "5d7e7b50427b77783cb5034599318b49945211b45cbb1a73df689b074a0c5263",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_r2/Witch_Forest_G2_R2_20261009/concept/FOREST_CONCEPT_OVERVIEW_A.png",
+      "bytes": 3521842,
+      "sha256": "4e876d91233b57ba61b60d3805073e99ff131ed2a5b8495b72a6a3a4c73a87d2",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_r2/Witch_Forest_G2_R2_20261009/concept/FOREST_CONCEPT_OVERVIEW_B.png",
+      "bytes": 3414245,
+      "sha256": "ef5b5ef04fe4a2685fabcbc3b28e8758fbfc9eefd82c13d9df163fe513cafebf",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_r2/Witch_Forest_G2_R2_20261009/concept/REFERENCE_BATTLE_BOSS_THUMBNAILS.jpg",
+      "bytes": 109459,
+      "sha256": "9b404dca6c66ff086886988826826896d2b45ba2dc6f6d983512ed01635769ba",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_r2/Witch_Forest_G2_R2_20261009/concept/REFERENCE_BOSSES.jpg",
+      "bytes": 104151,
+      "sha256": "b7926e5beadef91acea443fa177b0fb897d25f7c45912b86fe389790585c2f42",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_r2/Witch_Forest_G2_R2_20261009/concept/REFERENCE_FIELD_THUMBNAILS.jpg",
+      "bytes": 149450,
+      "sha256": "4d2802e635d0d33eb5cbd467db7ac56bd493a3dd82e762904fbdd9694b5a9614",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_r2/Witch_Forest_G2_R2_20261009/concept/REFERENCE_FOREST_HERO.jpg",
+      "bytes": 255883,
+      "sha256": "66fcfc6cfce364ee493f68064997fe6fc10962e76a8ac78171cb49063e8a836f",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_r2/Witch_Forest_G2_R2_20261009/concept/REFERENCE_GATHERING_MATERIALS.jpg",
+      "bytes": 79136,
+      "sha256": "8808b34ca0c7d74cab09228cdc06922130f226beb42acd1e77ced17692be81a5",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_r2/Witch_Forest_G2_R2_20261009/concept/REFERENCE_GEAR.jpg",
+      "bytes": 56849,
+      "sha256": "e27012ff95a445fa92ecf7e7a7d3edc178dfe137bc7628109412bce2471ec299",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_r2/Witch_Forest_G2_R2_20261009/concept/REFERENCE_NORMAL_MONSTERS.jpg",
+      "bytes": 107370,
+      "sha256": "2b102103d3111fcc31a9dbe2efb81c6941121704c9e191ebc4f3ae9590c4e49e",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_r2/Witch_Forest_G2_R2_20261009/data/R01_CONTRACT_R2.json",
+      "bytes": 38486,
+      "sha256": "09d06d249166ea1330d922b083e0daa07b61349e5bb681db5d8f9bf44597beb2",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_r2/Witch_Forest_G2_R2_20261009/docs/01_FOREST_SCENE_AND_PROGRESS_R2.md",
+      "bytes": 6418,
+      "sha256": "587d71e6739534251ae111b01ceaba249b2c05a799a87bbb7f638b74a24737cb",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_r2/Witch_Forest_G2_R2_20261009/docs/02_BESTIARY_VISUAL_R2.md",
+      "bytes": 8008,
+      "sha256": "4ed67a63fe1969777ef220de62440ac2edd77d2ef3b6c54243750dd044cad1ec",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_r2/Witch_Forest_G2_R2_20261009/docs/03_MATERIAL_EQUIPMENT_R2.md",
+      "bytes": 6379,
+      "sha256": "81d737de8e9db710291ee800b1f7b2c89e60d770c103661382b7ded90eb046be",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_r2/Witch_Forest_G2_R2_20261009/docs/04_G2_VERTICAL_SLICE_GATE_R2.md",
+      "bytes": 5124,
+      "sha256": "0592379903d1e6a898f61d6f3a00de9cba4c975d4a0d783684840a6ec313c2f3",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_r2/Witch_Forest_G2_R2_20261009/docs/05_OPEN_ISSUES_AND_SOURCE_PRIORITY_R2.md",
+      "bytes": 4252,
+      "sha256": "c2364f24a1d9ac5474821706ffbc1ac0a2f1087b0415fca16bd0604369f307ef",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_r2/Witch_Forest_G2_R2_20261009/qa/PREVIEW_STATIC_QA_R2.json",
+      "bytes": 506,
+      "sha256": "5dbb8211a30d06f8dfc319195d7d6c07aa90eae6841a75e8d9daa5c99722673f",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_r2/Witch_Forest_G2_R2_20261009/qa/VALIDATION_REPORT_R2.json",
+      "bytes": 2121,
+      "sha256": "f39a5c51877d34de81d95ed0020dd974169969de6d79053f60b4b83f9a42d411",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_r2/Witch_Forest_G2_R2_20261009/reference/CHARACTERS_APPROVED_R1.png",
+      "bytes": 3114648,
+      "sha256": "c20e010feec532d3fba9bc33a2a9e4bc54fae67aa4b5ffc7554e6ab884537601",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_r2/Witch_Forest_G2_R2_20261009/reference/VISUAL_PRODUCTION_BRIEF_R1.md",
+      "bytes": 5109,
+      "sha256": "2d42e8c1c39d90d916cd3024e2ae64674d150e939625588667820ce040f28327",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_r2/Witch_Forest_G2_R2_20261009/reference/world_catalog_R1.json",
+      "bytes": 144485,
+      "sha256": "8452568dc72091de455521b5fe9e9fcca96237d4ba791bdfca712c9beb82bec5",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_review_r3/Witch_Forest_G2_R3_20261009/01_READ_FIRST.md",
+      "bytes": 4011,
+      "sha256": "b2f5a2f58f26b8ca246328d1bd71c9194cdd3111409dedbf5b9fd9efea93fd85",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_review_r3/Witch_Forest_G2_R3_20261009/02_VISUAL_QA_R3.md",
+      "bytes": 4641,
+      "sha256": "25f2fd901bfd8e90e32c2b046e58a47091d4638c82bec8f602fe4e4a7e549e50",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_review_r3/Witch_Forest_G2_R3_20261009/03_PRODUCTION_BRIEF_R3.md",
+      "bytes": 4430,
+      "sha256": "7f43eed05fa3e40963a5584772ec405019692743173d061ea50fcef7f1782896",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_review_r3/Witch_Forest_G2_R3_20261009/REVIEW.html",
+      "bytes": 1420289,
+      "sha256": "0766555bfd2ffe1310f7c4cd0e85b02127f49cf10b130f708d2990576f571cb1",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_review_r3/Witch_Forest_G2_R3_20261009/SHA256_MANIFEST.json",
+      "bytes": 2479,
+      "sha256": "bc6695e01a7c88c6a0a1e4021d5da780d505664ff06e34c988576b92c864d390",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_review_r3/Witch_Forest_G2_R3_20261009/data/R01_ASSET_REVIEW_MANIFEST_R3.json",
+      "bytes": 8801,
+      "sha256": "fe1d5ad7ae5a393285b00469b2e65018241d784d580dad3f1c0ccaea3cfa81ba",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_review_r3/Witch_Forest_G2_R3_20261009/images/background_refs/BG_R01_BOSS_SCENE_REF.png",
+      "bytes": 279153,
+      "sha256": "5633c71803033d809af9f67f4df476c9b97cdd72c11475bc3c4622ed2bdb1db9",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_review_r3/Witch_Forest_G2_R3_20261009/images/background_refs/BG_R01_FIELD_SCENE_REF.png",
+      "bytes": 280063,
+      "sha256": "40d37770d71cbf890d8cb0b4b989ce3bbc5bb166ad33606ffc8668674b4e749f",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_review_r3/Witch_Forest_G2_R3_20261009/images/creature_refs/B_R01_A_ROOTED_BOAR.png",
+      "bytes": 137318,
+      "sha256": "fa6a81b65017d04de704226ce396b36c81e059c58baeac32b6d0bacc67e57d44",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_review_r3/Witch_Forest_G2_R3_20261009/images/creature_refs/B_R01_B_ANCIENT_CROWN_TREE.png",
+      "bytes": 146847,
+      "sha256": "6fc43d5340d06d605847228c801e42a96c9cd083d5926096565273756726e42d",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_review_r3/Witch_Forest_G2_R3_20261009/images/creature_refs/E_R01_01_MOSS_TUSK_BOAR.png",
+      "bytes": 56926,
+      "sha256": "8c1451270f37aa9d4c148a6bc72fa917caca567244da1f6be3f470676ad03835",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_review_r3/Witch_Forest_G2_R3_20261009/images/creature_refs/E_R01_02_LANTERN_SPIDER.png",
+      "bytes": 54882,
+      "sha256": "854eb76754b1910ece470f95988c11206e8bcbd469cc5f55d1bc96865c0068a9",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_review_r3/Witch_Forest_G2_R3_20261009/images/creature_refs/E_R01_03_LEAF_BLADE_INSECT.png",
+      "bytes": 50262,
+      "sha256": "cd6b7af3d7e2dcf723e3439ac15daab5b292cebbc384dc9ed82f67ee6deeb2d8",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_review_r3/Witch_Forest_G2_R3_20261009/images/creature_refs/E_R01_04_AMBER_ROLLER.png",
+      "bytes": 53762,
+      "sha256": "6764f3a84abd9e19ac1fbd592d8b4d32281747250b2420ce1614311bdbb1380a",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_review_r3/Witch_Forest_G2_R3_20261009/reference/AI_COMPOSITE_SOURCE_DO_NOT_USE_IN_GAME.png",
+      "bytes": 3540745,
+      "sha256": "7a1ece16a79b6092e3d757cc8032d2431d52bbf123d1d7394c23908a1d0cd727",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/forest_review_r3/Witch_Forest_G2_R3_20261009/reference/APPROVED_CHARACTERS_R1.png",
+      "bytes": 3114648,
+      "sha256": "c20e010feec532d3fba9bc33a2a9e4bc54fae67aa4b5ffc7554e6ab884537601",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/world_r1/Witch_World_Design_R1_20261008/00_READ_FIRST.md",
+      "bytes": 2513,
+      "sha256": "9c013771894bcb5649ce0d6fb7ac3bac92f5cdbdab5ec515639802129d9525e2",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/world_r1/Witch_World_Design_R1_20261008/MANIFEST_SHA256.json",
+      "bytes": 3913,
+      "sha256": "28dfbafc2f8e25e2ddf4f1fdf34642b953ba313f18b4e6eb40e58845e053fde1",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/world_r1/Witch_World_Design_R1_20261008/WORLD_BIBLE_R1.html",
+      "bytes": 4248874,
+      "sha256": "b3da4d2ec0c0371792ff5d2c6cfd731802094676688a9582c1e7331d586402b0",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/world_r1/Witch_World_Design_R1_20261008/Witch_World_Catalog_R1.xlsx",
+      "bytes": 63657,
+      "sha256": "9b84bb33a18a9adc437d739a2a0a05d127ec8df2192b7e157bd4a086a125a2aa",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/world_r1/Witch_World_Design_R1_20261008/data/actors.csv",
+      "bytes": 908,
+      "sha256": "ef4038a515bfe4c3e6f0c24179cdcd1148c05a28b6a267a18419f5245057a9b8",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/world_r1/Witch_World_Design_R1_20261008/data/areas.csv",
+      "bytes": 7251,
+      "sha256": "97c602aa931fcd0c242ce5d566a49a2e26e4b206fd84e4ec539b254ba0e59f29",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/world_r1/Witch_World_Design_R1_20261008/data/decision_register.csv",
+      "bytes": 2271,
+      "sha256": "39f2d0555d8b6493f709d0e78c12c964672422265693945a1d720c19fe5f8581",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/world_r1/Witch_World_Design_R1_20261008/data/enemies.csv",
+      "bytes": 11628,
+      "sha256": "28c51a91effaa97100e2ea6f9c98f1b9418f965fd08532f23b054728dd7865d5",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/world_r1/Witch_World_Design_R1_20261008/data/gates.csv",
+      "bytes": 621,
+      "sha256": "44f4562f5feac877c24340659e9f869cf7df7f5bb926549e85cafc731e643325",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/world_r1/Witch_World_Design_R1_20261008/data/gear.csv",
+      "bytes": 10160,
+      "sha256": "879d6d5f4b1461df2e760d0e84bdf3116ba47ffb33d1b7b693cb04a71f5ba479",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/world_r1/Witch_World_Design_R1_20261008/data/materials.csv",
+      "bytes": 9908,
+      "sha256": "53a257eaa4e2aa8f7e2d780554d157736c7e7c3871812c6e3557a58af8ed9a6c",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/world_r1/Witch_World_Design_R1_20261008/data/recipes.csv",
+      "bytes": 15484,
+      "sha256": "129bc7623ca11010c99d4492d5f4054ff522b12583c4e71bdbeed6ce8632960f",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/world_r1/Witch_World_Design_R1_20261008/data/regions.csv",
+      "bytes": 3616,
+      "sha256": "87e1aa32107e3deb2b1c96edbf7cc4fa9e9990ba304117f59fd3faf135a52364",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/world_r1/Witch_World_Design_R1_20261008/data/sources.csv",
+      "bytes": 11516,
+      "sha256": "a86596191501dd42bf65595419ea7624a0b3c50862905c0e121eb1ed6c9500d2",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/world_r1/Witch_World_Design_R1_20261008/data/world_catalog.json",
+      "bytes": 144485,
+      "sha256": "8452568dc72091de455521b5fe9e9fcca96237d4ba791bdfca712c9beb82bec5",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/world_r1/Witch_World_Design_R1_20261008/docs/01_WORLD_AND_REGIONS_R1.md",
+      "bytes": 22944,
+      "sha256": "84c6860ee76f9dde862042402cf9c4b1787e8596ad3f7681e48531cc4d44ea1b",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/world_r1/Witch_World_Design_R1_20261008/docs/02_BESTIARY_AND_MATERIALS_R1.md",
+      "bytes": 26471,
+      "sha256": "71310780f1e81540fcb44c8575f748b469df5abcf7716097fcdceda721f6f1a8",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/world_r1/Witch_World_Design_R1_20261008/docs/03_EQUIPMENT_AND_PROGRESSION_R1.md",
+      "bytes": 11390,
+      "sha256": "85010719482863b77fb1ecb69253d6e3fe8e1da2d3bc0be83fcc81c41cd615da",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/world_r1/Witch_World_Design_R1_20261008/docs/04_VISUAL_PRODUCTION_BRIEF_R1.md",
+      "bytes": 5109,
+      "sha256": "2d42e8c1c39d90d916cd3024e2ae64674d150e939625588667820ce040f28327",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/world_r1/Witch_World_Design_R1_20261008/docs/05_INTEGRATION_AND_VALIDATION_R1.md",
+      "bytes": 9208,
+      "sha256": "38199b3193996b3d5db8b038dd37a23de33294d595c7e46f0c627d769512c2c7",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/world_r1/Witch_World_Design_R1_20261008/qa/document_render_checks.json",
+      "bytes": 477,
+      "sha256": "a747f15e2b628c556a8933053877dc15836131e5a33e7057451a33714220003d",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/world_r1/Witch_World_Design_R1_20261008/qa/package_checks.json",
+      "bytes": 537,
+      "sha256": "335b4b57d5c5fd89a56f41829b5f6b081eed8eefca4e0b9c6774d0a5d5372e2b",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/world_r1/Witch_World_Design_R1_20261008/qa/structural_validation.json",
+      "bytes": 4498,
+      "sha256": "aad3843c2f85d825546407308c30a23a3f3dfc92e188b1e6f24f46358fc33641",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/world_r1/Witch_World_Design_R1_20261008/reference/Idle_Loot_RPG_G1_Preflight_Audit_R3_20261008.md",
+      "bytes": 11967,
+      "sha256": "938ebad708bdabe347ba6949f321ddf43bfe12626c2065c8b739646b75b9fbce",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/world_r1/Witch_World_Design_R1_20261008/reference/README.md",
+      "bytes": 5306,
+      "sha256": "868877cf73d514da35d593f53e6705b05dfe94a9ed30fe9a7bfce05ec2a17586",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/world_r1/Witch_World_Design_R1_20261008/reference/witch_characters_R1.png",
+      "bytes": 3114648,
+      "sha256": "c20e010feec532d3fba9bc33a2a9e4bc54fae67aa4b5ffc7554e6ab884537601",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/sources/world_r1/Witch_World_Design_R1_20261008/tools/validate_catalog.py",
+      "bytes": 10287,
+      "sha256": "9610bcb54f7fca7b8e6e0a317321c7d31de09bb5dba5c9941c426d9bacdf558c",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/visual/reference_only/木漏れ日の森：魔女の採集帳.png",
+      "bytes": 3414245,
+      "sha256": "ef5b5ef04fe4a2685fabcbc3b28e8758fbfc9eefd82c13d9df163fe513cafebf",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/visual/reference_only/魔女の採集帳：五つの地域図鑑-1.png",
+      "bytes": 3536358,
+      "sha256": "fdae86f297d5100fbcd6d4b2e9653eea3dbc141bd00e389c8479cf6077b3e5eb",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/visual/reference_only/魔女の採集帳：五つの地域図鑑.png",
+      "bytes": 3536358,
+      "sha256": "fdae86f297d5100fbcd6d4b2e9653eea3dbc141bd00e389c8479cf6077b3e5eb",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/visual/reference_only/魔女の採集帳：五つの幻想地域-2.png",
+      "bytes": 3345806,
+      "sha256": "f11f776b69cf321549934408be8d7f43af0640f0cca548cba68959dfbad554f9",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/visual/reference_only/魔女の採集帳：五つの幻想地域-5.png",
+      "bytes": 3346089,
+      "sha256": "2bfeba3b269afdf370c80552d83016ba3595c0023bd1b13e1c4e307fa7021233",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/visual/reference_only/魔女の採集帳：幻想世界ガイド-4.png",
+      "bytes": 3483972,
+      "sha256": "577b1d83b70f6147a4f7327d6edb04ce12e40da21d78bb012f2c8393b7b63837",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/visual/reference_only/魔女の採集帳：幻想世界図鑑-3.png",
+      "bytes": 3758977,
+      "sha256": "d1b60bb6f871e9e14fc4a27851f644cd22811d37151ea7dad289b4e8881a5dae",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/visual/supporting/a_detailed_character_design_sheet_concept_art_co.png",
+      "bytes": 3085245,
+      "sha256": "c128eac93b3b542d3197fda1d183ca638d225592fc9e901610bbd847416fa05d",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/visual/supporting/a_detailed_character_design_sheet_game_asset_con.png",
+      "bytes": 3061325,
+      "sha256": "50c2fac6b5a5c812a14020099b4264166ba124183fff1d2779fe8d93909d72c0",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/visual/supporting/a_detailed_multi_panel_character_design_sheet_co.png",
+      "bytes": 3152636,
+      "sha256": "085e61ff37f67f6faa585dfd3c5b57246a38ccd11a6fcbf836efe639fcb3eea7",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/visual/supporting/a_wide_detailed_anime_game_concept_art_sheet_in_a.png",
+      "bytes": 3253711,
+      "sha256": "6c6192d034a0f42df6d8171bdbfa58daa5b471b26aae485a50437c2ee09e0d6b",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/visual/supporting/魔女の採集帳 キャラクター設定資料集.png",
+      "bytes": 3253711,
+      "sha256": "6c6192d034a0f42df6d8171bdbfa58daa5b471b26aae485a50437c2ee09e0d6b",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/visual/supporting/魔女の採集帳 キャラクター設定集.png",
+      "bytes": 3152636,
+      "sha256": "085e61ff37f67f6faa585dfd3c5b57246a38ccd11a6fcbf836efe639fcb3eea7",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "docs/design/visual/witch_characters_R1.png",
+      "bytes": 3114648,
+      "sha256": "c20e010feec532d3fba9bc33a2a9e4bc54fae67aa4b5ffc7554e6ab884537601",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "favicon.svg",
+      "bytes": 266,
+      "sha256": "7e6d7c13fa467f26b07900a79e2151a2216dab3cf3c0f29a6b1726309ce4d01f",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "index.html",
+      "bytes": 1131,
+      "sha256": "09bd6e78beb1961cf8862eb6fc92b4f6e50a231d41bf58ae573bb567460a885a",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "package.json",
+      "bytes": 322,
+      "sha256": "14e123e013ddab103b165dee3af0cfd70af37a9eb84c2ddbb1fde82fd8f1507a",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/CODEX_REQUEST_G1_R3_START_HERE.md",
+      "bytes": 1437,
+      "sha256": "6feb7470beb528c513d823adf13da342f8f095d70fb5d6ae2a321ac14ecefedb",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/01_DECISION_AND_GAME_DESIGN_R2.md",
+      "bytes": 7475,
+      "sha256": "3683f5a1fc89c091324300b15cc5239ebf217ee3e5d300f85a7547b5ef5fce64",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/CODEX_REQUEST_G1_R2.md",
+      "bytes": 6606,
+      "sha256": "a3853922cc7a7be5a55a47818503bc6b7281fe3859a87bf81a7ed2eae88d5649",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/INPUT_LINEAGE.json",
+      "bytes": 232,
+      "sha256": "118ce6f9dc0c0f1723c4d0a4f13fca35d03e26c1daaf4162df31a2222a04dbdc",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/README.md",
+      "bytes": 2852,
+      "sha256": "5c0f18b4b174326c3e5a9fe8a952b09a6a076310564ce0c38809ae377b1e41a5",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/SHA256SUMS.json",
+      "bytes": 3120,
+      "sha256": "aea93687c2853045ed9b91795d204acd81d530cecf1a471eb7f2fbf602f02d69",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/data/content.json",
+      "bytes": 5944,
+      "sha256": "297e97b4e619e8ea0e9b49f1a9b94544c81fee38f35b2cb2441694af5c543dd1",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/data/items.csv",
+      "bytes": 1478,
+      "sha256": "6438c5cf5d7448f0adcf02552dacbc952fb4cb492f19e5ea2170860e11dded8b",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/spec/02_COMBAT_AND_ITEMS_R2.md",
+      "bytes": 7082,
+      "sha256": "1ba368ec4606ff963affcbfd481d846e5ac13389deede2f8c412c2458f36ef18",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/spec/03_OFFLINE_SAVE_ECONOMY_R2.md",
+      "bytes": 7519,
+      "sha256": "d7cfb226dda35be39a487f74e04d1707902266f69cd9710655e178a3e894e996",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/spec/04_UX_AND_VISUAL_GATE_R2.md",
+      "bytes": 6361,
+      "sha256": "80d3e716a8a4ad85b3f188b0296f577f0ebed6303454e4657d30ed9ab52bef87",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/spec/05_ACCEPTANCE_AND_PLAYTEST_R2.md",
+      "bytes": 4205,
+      "sha256": "457e471ed3ddb2ca124f7aee1c21f7178692e1c648d05271ec0617980456581e",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/spec/06_VALIDATION_RESULTS_R2.md",
+      "bytes": 4438,
+      "sha256": "40094eb2e6ad2b5dacd2984fae5f5a74cfaf84e4878ce0cdbc048052a9b5f0bb",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/spec/07_SOURCES_AND_LINEAGE_R2.md",
+      "bytes": 1893,
+      "sha256": "f7a73bcf241878d47a959af07d9e5d174b2d648248ee30c393c3679f1d9f8655",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/ux/UX_PREVIEW_R2.html",
+      "bytes": 24444,
+      "sha256": "077f1b2c4de2890650c4cc3566b440a85fdc2e522672ffd061cae22485d2b66e",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/validation/STATUS.json",
+      "bytes": 610,
+      "sha256": "c19a7d2feb8e02c675f031b46896fed57700c94a9cff7ccecec933dbd13848bb",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/validation/all_loadouts.csv",
+      "bytes": 110135,
+      "sha256": "4a22d099f0f54182c2403c234d96710dcd6d8178987edeac37939eb958d83a66",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/validation/balance_console.txt",
+      "bytes": 4179,
+      "sha256": "7f629af359303820d46818e57c5f7322422202bb05aaf44fc481771edb4fe50d",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/validation/build_report.py",
+      "bytes": 3719,
+      "sha256": "8bfb31fb9273b0e3a691e40210c64e0e9481872d9801f90f2de1ba66aafd0f96",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/validation/check_balance.py",
+      "bytes": 1754,
+      "sha256": "8ab7f43952d8c2fca2c662d2fe6826995dc0a5cfb7efc43889aed377d6b25ece",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/validation/core.py",
+      "bytes": 4919,
+      "sha256": "626904651b8d99d4b0f413bf63eb4f7cb3823394b11ba7985613bd364a555008",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/validation/curated_results.json",
+      "bytes": 1864,
+      "sha256": "ef25c6c912f49dfc90f1a129d0434592d56bfa2416e5e90423aaf91cbd8b1eca",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/validation/example_traces.json",
+      "bytes": 34192,
+      "sha256": "034f1956e18aea927ef48cb2f4fdb1f5376cbbf9a9567d5f6921a942d5c23277",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/validation/golden_fights.json",
+      "bytes": 24822,
+      "sha256": "1139ae8638f2fa1f2261244499431372f82cf6c2c485c18b0e9a3936af9c6058",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/validation/progression.py",
+      "bytes": 4975,
+      "sha256": "016e53b65120c94110f24260b11b89e437a653745a9b953248d3368e457b08ac",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/validation/report.json",
+      "bytes": 10533,
+      "sha256": "91ccbf2a9c06484840ea9908228930f32b44d2f5e16adfb97b786fe2427e6224",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/validation/test_output.txt",
+      "bytes": 2681,
+      "sha256": "36cf83606a098e964c5515e4e924c7cf2efbcc0c9bcab8b71b09e782062f36ad",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/validation/test_reference.py",
+      "bytes": 6258,
+      "sha256": "2b943c5650013f0ca1cf09e60d415bd3737137b2d11042ab5c188c28763f4f16",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/validation/test_ui_optional.py",
+      "bytes": 3822,
+      "sha256": "da7a2ebd011b11a52767022848a290e45d379f80f72918356f32b5b74beb21c1",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/validation/ui_comparison_375.png",
+      "bytes": 48304,
+      "sha256": "6610e909629b74f103fd4dc37e44387bd2e1cbff2d92fd9dbd423676babe3b9c",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/validation/ui_desktop_1280.png",
+      "bytes": 248541,
+      "sha256": "9b412468f59f5d63dce4ea8ef08629070cfde987710c07be72a0020336fc6f2f",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/validation/ui_result_375.png",
+      "bytes": 67024,
+      "sha256": "855eb70374309573d5e07c9360840475d48147b80054e89ec93e3be48d88c1a7",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_Design_R2_20261008/validation/ui_test_results.json",
+      "bytes": 1318,
+      "sha256": "aa51c65f698661b822f81a618b1e368676893a1621d55c2653fa9e88a48daee0",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reference/Idle_Loot_RPG_G1_Preflight_Audit_R3_20261008.md",
+      "bytes": 11967,
+      "sha256": "938ebad708bdabe347ba6949f321ddf43bfe12626c2065c8b739646b75b9fbce",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reports/G1_FINAL_STATUS.json",
+      "bytes": 1343,
+      "sha256": "a204df5a3bbacb04fc1ccdbf24b2cfe91185ec6af382fbad6a50292b7e993a01",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reports/G1_REPORT.md",
+      "bytes": 7203,
+      "sha256": "c78570cf0613c10798aa2c5b052fa0ba7a0697f049553d6aa2417f3296b76f8f",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reports/HUMAN_REVIEW.md",
+      "bytes": 2642,
+      "sha256": "d27ac0ac1a9a17a047d9e5d6b5a8b2b4dad77596d6e041e77334cde841123077",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reports/browser-evidence/battle-desktop.png",
+      "bytes": 346872,
+      "sha256": "c96e5387e6fe1df3d96f988e3bb70d16187ea765f794d789549c7b9690211cf7",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reports/browser-evidence/clock-anomaly.png",
+      "bytes": 327326,
+      "sha256": "874ccdebd02dbee304d278f076006408030fe0d763ca161c160f245aa073f004",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reports/browser-evidence/desktop-01-return.png",
+      "bytes": 311686,
+      "sha256": "d3c738ab0cff7c26171532b0a596546c0367738281a45c2b1efd45f10c2611b9",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reports/browser-evidence/desktop-02-equipment.png",
+      "bytes": 593865,
+      "sha256": "1d9a4473c2ccd2083b20064ea11a06ff3714eaea9603acc718852e95c7f795c5",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reports/browser-evidence/desktop-03-expedition.png",
+      "bytes": 359605,
+      "sha256": "4f9f703b990c925d740cab6c617badff9468a221e11d943331e6a89beae809ca",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reports/browser-evidence/desktop-04-result.png",
+      "bytes": 411654,
+      "sha256": "884a00d26fbdc5e0b02be43bbfec62bc5410872e87f54346928b45fe77f9a587",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reports/browser-evidence/mobile-375-equipment-200pct.png",
+      "bytes": 406020,
+      "sha256": "c8750be04afd058aae88676884566f2f67dbb5324576662fa00819a2f9197bc7",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reports/browser-evidence/mobile-375-return.png",
+      "bytes": 184135,
+      "sha256": "5647967aeef2d3b8f2d789f5330a1c3573f585cd3c6eb61d90155ce41f152981",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reports/browser-evidence/mobile-390-equipment-200pct.png",
+      "bytes": 405119,
+      "sha256": "709e47e85e3207286efdd40bb877b690067f51c565964b20b65f63b780fa69e2",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reports/browser-evidence/mobile-390-return.png",
+      "bytes": 186964,
+      "sha256": "52d179d29069a2984b0588e883519e1c6b5a632b4c81114d59e1e392584c395f",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reports/browser-evidence/offline-after-reload.png",
+      "bytes": 318361,
+      "sha256": "7739ed8fef2bbfaadb4bc05e8928c265496c8860d4e354c57613db365f569816",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reports/browser-evidence/recovery-warning.png",
+      "bytes": 319353,
+      "sha256": "8cb0495334cf02d2e355617e6f0ead3dff1c81a91456e1d9ea14258f10ab94f8",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reports/browser-tests.json",
+      "bytes": 6417,
+      "sha256": "2a25d272cb55b509bced0b30e93998173d86fb4b67b44c659654baa3d0dd4d1e",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reports/combat-parity.json",
+      "bytes": 515,
+      "sha256": "8f4006c75c3bd747046b550bbaa2a9026c2538dce596bab03932a6b49c35d1ca",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reports/core-tests.tap",
+      "bytes": 8187,
+      "sha256": "cc3c951862a06e8c539f38f2514b81f13e2a1cd5d2c063af4449cee294d3697e",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reports/evidence/01-return-desktop.png",
+      "bytes": 311558,
+      "sha256": "30e6d8f532ba807acafcf189d3076ee4b5e504b7c7c28824917c8443f9a4ad4f",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reports/evidence/02-equipment-375.png",
+      "bytes": 333377,
+      "sha256": "48942a67ccd2bbce82cf23d47a3f4844452dd6acc50ce85ca2d0c27efeb992f0",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reports/evidence/04-result-desktop.png",
+      "bytes": 337548,
+      "sha256": "1ef86d52fa6891cd8d404d44e0692667642f1cfdd364477965a65c42b5714e35",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reports/evidence/compare-375.png",
+      "bytes": 57170,
+      "sha256": "89bcb1f46c696d0f17558e3710042df313e73c3331aeefbff0a93ee2f054cc05",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reports/preflight.json",
+      "bytes": 366,
+      "sha256": "85e0e4f00387ed096f38db50dd78d96383f4e00ab9671085ae8724c666475c4f",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reports/recovery-ui-tests.json",
+      "bytes": 836,
+      "sha256": "655e578de047b576347c7149eda03255f31e45176936c9eaa43497fe4f5e54fa",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reports/reference-audit.md",
+      "bytes": 10635,
+      "sha256": "8d2da6c974ca3e5d312c527cac9d3efc93ddd95177ebc54ba069d1c479242ebd",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reports/reference-tests.txt",
+      "bytes": 1940,
+      "sha256": "6e688d10ccd9f44af544b3ebc76f337b0c0e3ed399692af5640b371abdc686cf",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reports/source-manifest.json",
+      "bytes": 2214,
+      "sha256": "2ceb9963d10a529e54e2e9346b3aba7c968c0dd98491507f345ef5982c9ee2ce",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "reports/storage-tests.json",
+      "bytes": 3351,
+      "sha256": "dbd7eb8de670866bc8bc51241206ca3359428d9d487190e1e9ec3c7ac4425fd3",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "src/content.js",
+      "bytes": 6036,
+      "sha256": "572db6a5f000ba0a0d30602c301b68c1990d4738a01798a1ff6f4c14364f3f0e",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "src/content.json",
+      "bytes": 5944,
+      "sha256": "297e97b4e619e8ea0e9b49f1a9b94544c81fee38f35b2cb2441694af5c543dd1",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "src/core/combat.js",
+      "bytes": 5266,
+      "sha256": "854c7fe84b0beec21d5b861cee32ee9c5581d3fd09f90ce9e0d2320ec9494d6d",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "src/core/progression.js",
+      "bytes": 13505,
+      "sha256": "0fbb267b018020fcd5f1246b0e4be676329b6a64104a988fc156a2ac289979e0",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "src/game.js",
+      "bytes": 6796,
+      "sha256": "7a7a157085fdd2dc2b6036a24289f2fceb15411341d4a1bd01560d2cc094014b",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "src/platform/storage.js",
+      "bytes": 22739,
+      "sha256": "86033cde40a30e1abb020c675d77c0104b55691672c0738420da6e389e2e9904",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "src/ui.js",
+      "bytes": 36637,
+      "sha256": "3ea65d5b508a5f3fd2430b52d15e7a874955f14f021588d6dca19149ab012ddf",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 13356,
+      "sha256": "77c075794e731086ca1507b9993537751d0f455d53c2c964749ab5d778e6da28",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "tests/combat-boundaries.test.js",
+      "bytes": 6274,
+      "sha256": "5d000240253a758fbdaf9740578bec7f26ad1e77ccc51f847ee9bc30b30c44d3",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "tests/combat.test.js",
+      "bytes": 3909,
+      "sha256": "558b4fa54b6771f0aa1665e251568c325cba09f3c2ee76ec200eccfc00dded74",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "tests/progression.test.js",
+      "bytes": 16624,
+      "sha256": "959f2889c0537dc498955dd832e4c205a1e1dece02fa62c708ed1ec301852883",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "tools/browser-tests.js",
+      "bytes": 22802,
+      "sha256": "7790ab413a21c3363563d9cbea31c5e8f8bd715db21cf46ebd608ee2c9bd17f1",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "tools/compare-reference.js",
+      "bytes": 2927,
+      "sha256": "bb469253caa7505bbf545946ea281a22c6c8a6a156978736339e1cffed0ce452",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "tools/recovery-ui-tests.js",
+      "bytes": 4497,
+      "sha256": "c8140b4008a78e08137af06e02d53913893930e0be2383a893baddff1ad8a8ff",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "tools/server.js",
+      "bytes": 1647,
+      "sha256": "a1fc2384ccc3a2227b08c6bd573efecbc71c526d9968829f5c2dbf0d045450a1",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "tools/storage-browser-tests.js",
+      "bytes": 20173,
+      "sha256": "bec168a50aa141f238224616c2bb24e2dd40867f1d07d2d5d48b298ab11853a6",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    },
+    {
+      "path": "tools/verify-source.js",
+      "bytes": 1844,
+      "sha256": "a51649219728a1692256406425e35fb6f7482ebecc1b0d3ab02235a6a4f0060b",
+      "role": "初回435候補から維持",
+      "origin": "existing_project"
+    }
+  ],
+  "proposed_new_files_except_self": [
+    {
+      "path": ".gitignore",
+      "bytes": 80628,
+      "sha256": "d3764838c956145d761475b5bebde6d8753e1589f7804f92d1a903c4e5bbc04c",
+      "origin": "PROPOSED_NEW_FILE_OUTSIDE_PROJECT",
+      "review_source": "gitignore.proposed",
+      "role": "新規共有入口/派生台帳/ignore案。承認後にのみプロジェクトへ配置。"
+    },
+    {
+      "path": "docs/audits/G2_CURRENT_STATUS_20261009.txt",
+      "bytes": 34864,
+      "sha256": "b547e271015abb15eaa4b719998538e8e5cefd6ae64e5d7aa76583fc95378e52",
+      "origin": "PROPOSED_NEW_FILE_OUTSIDE_PROJECT",
+      "review_source": "G2_CURRENT_STATUS_20261009.proposed.txt",
+      "role": "新規共有入口/派生台帳/ignore案。承認後にのみプロジェクトへ配置。"
+    },
+    {
+      "path": "docs/audits/SAVE_MANIFEST_SHARED_20261009.json",
+      "bytes": 60146,
+      "sha256": "2bdd56ce2363a996a2031c5ecb98a9681f3aa630049f60aa0b0856ef19ecc25e",
+      "origin": "PROPOSED_NEW_FILE_OUTSIDE_PROJECT",
+      "review_source": "SAVE_MANIFEST_SHARED_20261009.proposed.json",
+      "role": "新規共有入口/派生台帳/ignore案。承認後にのみプロジェクトへ配置。"
+    }
+  ],
+  "self_reference_policy": "このmanifest自体のhashは外部final-registration-manifest.jsonに記録。自己参照hashを省く。",
+  "absolute_path_policy": "原資料・既存QAの個人ユーザー名/端末パスを限定開示してPrivateへ維持する案。認証情報の検出なしは完全不存在の保証ではない。",
+  "G2_missing_payloads": "原画/ORA/Blender/動画/全runtime frame/未選定QA/buildは未同梱。"
+}

@@ -1,0 +1,160 @@
+{
+  "schema": "final-ledger-independent-review-r003",
+  "review_date": "2026-10-09",
+  "review_mode": "read-only final readback after correction; no source or ledger edits",
+  "supersedes": "None. R001 and R002 remain unchanged historical audit records.",
+  "ledger": {
+    "path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/planning/FINAL_159_LEDGER_R001.json",
+    "sha256": "55f48fe35340eeeaa1960aadd3ac21157896415d0ecc5cac164345002742ec9d"
+  },
+  "csv": {
+    "path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/planning/FINAL_159_LEDGER_R001.csv",
+    "sha256": "bdd5ea61f65a2e78978eda84454cb51540ddc6bf090a089980dd53436b8bd2aa"
+  },
+  "summary": {
+    "current_R4_159_asset_ids_and_types_regions_match": true,
+    "CSV_159_rows_and_IDs_match": true,
+    "canonical_ids_resolve_in_hashed_World_R1_catalog": true,
+    "all_input_authority_hashes_match": true,
+    "all_ledger_file_references_exist_and_SHA_match": true,
+    "typed_source_runtime_editable_flags_match_file_roles": true,
+    "all_runtime_and_frame_files_readable_PNG": true,
+    "scoped_static_and_node_99_units_357_PNGs_verified": true,
+    "no_full_kit_or_formal_adoption_or_G2_integration_or_device_claims": true
+  },
+  "counts": {
+    "R4_units": 159,
+    "CSV_rows": 159,
+    "file_references": 1048,
+    "runtime_references": 516,
+    "source_present_units": 111,
+    "no_source_units": 48,
+    "scoped_static_node_units": 99,
+    "scoped_static_node_PNGs": 357,
+    "full_R4_kits_complete": 0,
+    "formal_visual_adoptions": 0,
+    "G2_integrations": 0,
+    "physical_iPhone_verified": 0,
+    "by_region": {
+      "R01": {
+        "total": 36,
+        "source_present": 32,
+        "no_source": 4,
+        "static_png_units": 24,
+        "full_r4_kit_complete": 0,
+        "physical_iPhone_verified": 0
+      },
+      "R02": {
+        "total": 31,
+        "source_present": 21,
+        "no_source": 10,
+        "static_png_units": 19,
+        "full_r4_kit_complete": 0,
+        "physical_iPhone_verified": 0
+      },
+      "R03": {
+        "total": 30,
+        "source_present": 19,
+        "no_source": 11,
+        "static_png_units": 18,
+        "full_r4_kit_complete": 0,
+        "physical_iPhone_verified": 0
+      },
+      "R04": {
+        "total": 29,
+        "source_present": 18,
+        "no_source": 11,
+        "static_png_units": 17,
+        "full_r4_kit_complete": 0,
+        "physical_iPhone_verified": 0
+      },
+      "R05": {
+        "total": 33,
+        "source_present": 21,
+        "no_source": 12,
+        "static_png_units": 21,
+        "full_r4_kit_complete": 0,
+        "physical_iPhone_verified": 0
+      }
+    }
+  },
+  "input_authorities": [
+    {
+      "role": "World_R1_canonical_authority",
+      "path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/docs/design/sources/world_r1/Witch_World_Design_R1_20261008/data/world_catalog.json",
+      "sha256": "8452568dc72091de455521b5fe9e9fcca96237d4ba791bdfca712c9beb82bec5"
+    },
+    {
+      "role": "Approved_character_design_authority",
+      "path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/docs/design/visual/witch_characters_R1.png",
+      "sha256": "c20e010feec532d3fba9bc33a2a9e4bc54fae67aa4b5ffc7554e6ab884537601"
+    },
+    {
+      "role": "static_index",
+      "path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/planning/STATIC_CATALOG_INDEX_R001.json",
+      "sha256": "3efa655f64560366e3c2be8e2530baa3137fab846524a843b2bda71e5e8b2194"
+    },
+    {
+      "role": "node_selection",
+      "path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/planning/CURRENT_NODE_SELECTION_R001.json",
+      "sha256": "9fbccb962645f2579868c77ee0cbbb8af9f45ee7aa268b9da6b468431e0ab588"
+    },
+    {
+      "role": "node_qa",
+      "path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/planning/ALL20_NODE_QA_R001.json",
+      "sha256": "6aa8c4ae36af873660c544439894fba68841f8eb697288d4642c0067237b8abb"
+    },
+    {
+      "role": "R4_work_packages",
+      "path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/design/all_regions_art_r4_20261009/Witch_AllRegions_ArtSpec_R4_20261009/data/work_packages_R4.json",
+      "sha256": "b672179a123c83c04174ca3215636fa4aa00546671623003f8c4fae9f34dbcdc"
+    }
+  ],
+  "BG_R01_FIELD_correction": {
+    "source_layers_directly_referenced_and_SHA_verified": 4,
+    "native_app_copies_exact_SHA_match": 4,
+    "empty_composition_review_attached": true,
+    "current_layer_index_and_render_coordinate_QA_attached": true,
+    "scope_limit": "Source aspect-fill was not non-uniformly stretched. The final source canvas / viewport anchor profile is unresolved; recorded candidate layer exports do not equal final background kit approval."
+  },
+  "prior_findings_status": {
+    "R001_findings": "Historical record preserved.",
+    "R002_findings": "The representative role/flag correction and R1 authority hash additions have been verified in the current rebuild.",
+    "residual_findings": []
+  },
+  "verification_details": {
+    "static_icon_PNGs": {
+      "count": 237,
+      "per_asset_dimensions": [
+        64,
+        128,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "hash_against_index": "PASS"
+    },
+    "gather_node_PNGs": {
+      "count": 120,
+      "per_asset_dimensions": [
+        64,
+        128,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "hash_against_runtime_records": "PASS"
+    },
+    "other_runtime_candidates": "Readable hashed PNG samples/frames; not counted toward the 357 scoped static/index PNGs.",
+    "source_to_app_copy": "BG_R01_FIELD 4 source layers each exactly match their app candidate copy SHA."
+  },
+  "limitations": [
+    "This readback validates artifact identity and file integrity; it does not grant visual adoption, rights clearance, final R4 kit completion, game integration, or physical-device verification."
+  ]
+}

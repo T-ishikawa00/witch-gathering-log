@@ -1,0 +1,2137 @@
+{
+  "schema": "r03_hammer_r004_final_qa",
+  "revision": "hammer-r004 frame set r002 keys / r003 render pass",
+  "source_files_read_only": true,
+  "source_hashes": {
+    "body_fixed_legs": {
+      "path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/representatives/ACT_B_R03_A/qa/rig_r003/layout_candidate_d/body_fixed_legs.png",
+      "sha256": "1028b2d54b2675d2a52f7a1bb04a825eea6ef126e23c1d2ec0cdf7e44b0c03f6",
+      "expected_sha256": "1028b2d54b2675d2a52f7a1bb04a825eea6ef126e23c1d2ec0cdf7e44b0c03f6",
+      "match": true,
+      "dimensions": [
+        628,
+        617
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ]
+    },
+    "upper_link": {
+      "path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/representatives/ACT_B_R03_A/qa/rig_r003/layout_candidate_d/upper_link.png",
+      "sha256": "18ff050d32291d7958b73c27c7de9e474ca2d187b472b754e01aedfde83b1ab5",
+      "expected_sha256": "18ff050d32291d7958b73c27c7de9e474ca2d187b472b754e01aedfde83b1ab5",
+      "match": true,
+      "dimensions": [
+        398,
+        138
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ]
+    },
+    "forearm_hammer": {
+      "path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/representatives/ACT_B_R03_A/qa/rig_r003/layout_candidate_d/forearm_hammer.png",
+      "sha256": "9fce88221e927b33fa4bf0f2103da53b64e0310cb138862e358874405cc2bbf0",
+      "expected_sha256": "9fce88221e927b33fa4bf0f2103da53b64e0310cb138862e358874405cc2bbf0",
+      "match": true,
+      "dimensions": [
+        474,
+        269
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ]
+    }
+  },
+  "neutral": {
+    "path": "neutral_r004.png",
+    "sha256": "0765a7b17589de01b8a69e31a34de0f89f3c4af21a7400486f983871a3be6830",
+    "bytes": 338877,
+    "size": [
+      1400,
+      1024
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "outer_nonzero_px": 0,
+    "alpha_bbox": [
+      304,
+      391,
+      1114,
+      880
+    ]
+  },
+  "corrective_baseline": {
+    "r003_idle_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/representatives/ACT_B_R03_A/qa/rig_r003/layout_candidate_d/idle.png",
+    "r003_idle_sha256": "7f8606d7663e926913a5287ed70113af3cc23c3f603d688dcbdbf0a6f6065f5e",
+    "r003_idle_metrics": {
+      "size": [
+        1400,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_min": 255,
+      "alpha_max": 255,
+      "outer_nonzero_px": 4848,
+      "alpha_bbox": [
+        0,
+        0,
+        1400,
+        1024
+      ]
+    },
+    "correction": "r003 PNG was an opaque dark-matte RGBA review image; r004 emits transparent RGBA actor frames."
+  },
+  "registration": {
+    "root_torso_pivot_xy": [
+      700,
+      820
+    ],
+    "foot_registration_xy": [
+      700,
+      880
+    ],
+    "computed_body_xy": [
+      530.5,
+      546.94
+    ],
+    "body_size_scaled": [
+      339,
+      333
+    ],
+    "static_foot_y": 880,
+    "fixed_foot_and_root": true,
+    "shoulder_anchors_xy": [
+      [
+        622,
+        647
+      ],
+      [
+        598,
+        690
+      ],
+      [
+        798,
+        660
+      ]
+    ],
+    "upper_link_pivot_nearest_alpha_px": 0.573,
+    "forearm_pivot_nearest_alpha_px": 0.1,
+    "shoulder_anchor_nearest_body_alpha_px": [
+      0.504,
+      0.504,
+      0.504
+    ],
+    "elbow_world_gap_px_by_construction": [
+      0,
+      0,
+      0
+    ]
+  },
+  "pose_neutral": {
+    "upper_world_deg": [
+      -132,
+      148,
+      2
+    ],
+    "forearm_world_deg": [
+      -132,
+      178,
+      0
+    ],
+    "forearm_local_deg": [
+      0,
+      30,
+      -2
+    ]
+  },
+  "clips": {
+    "idle": {
+      "duration_s": 1.0,
+      "fps": 24,
+      "frame_count": 25,
+      "loop": true,
+      "status": "PROVISIONAL_PRESENTATION",
+      "frame_pixel_change_counts_between_adjacent": [
+        40192,
+        44372,
+        45738,
+        46403,
+        46763,
+        47006,
+        46957,
+        46917,
+        46332,
+        45739,
+        44536,
+        39390,
+        39390,
+        44536,
+        45739,
+        46332,
+        46917,
+        46957,
+        47006,
+        46763,
+        46403,
+        45738,
+        44372,
+        40192
+      ],
+      "min_changed_pixels": 39390,
+      "max_changed_pixels": 47006,
+      "r003_metrics": {
+        "max_arm_pair_intersection_alpha_ge64_px": 0,
+        "max_arm_alpha_ge64_in_ring_roi_px": 0,
+        "max_outer_nonzero_px": 0
+      },
+      "frames": [
+        {
+          "path": "frames_r003/idle/000.png",
+          "sha256": "0765a7b17589de01b8a69e31a34de0f89f3c4af21a7400486f983871a3be6830",
+          "bytes": 338877,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            304,
+            391,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/idle/001.png",
+          "sha256": "86cbfa79e890a91ee6ee0e135160d9c4e7f85c8260372c2faea1b0edfd6760e6",
+          "bytes": 338656,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            304,
+            391,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/idle/002.png",
+          "sha256": "be8ba30d46c43f82fc92201b9db570bb63bd32f1a8e1a901685f2ab0ac814cc9",
+          "bytes": 338730,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            303,
+            390,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/idle/003.png",
+          "sha256": "112a0401f1dcfae30113ac96c97b30e2f305d97fa5f77abf5afdc8c734077f91",
+          "bytes": 338788,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            303,
+            390,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/idle/004.png",
+          "sha256": "73529425da75455a5788b43af669f86ba31a2c9b365af45e6db9f657ae403da9",
+          "bytes": 338711,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            303,
+            389,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/idle/005.png",
+          "sha256": "5363039fb865e2cfed523d11fd80d59f694acd4a57c9e2523afa325144d194d4",
+          "bytes": 338785,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            303,
+            389,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/idle/006.png",
+          "sha256": "3796e42ab439fceb162ac3fae6420f387ee84d8277f7984a7b9bd956b269a1ec",
+          "bytes": 338879,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            302,
+            388,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/idle/007.png",
+          "sha256": "4f824a4e1a7507f98cc37541679297c5d6c404b7b3803aeb065a1ae4d3ce5015",
+          "bytes": 338935,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            302,
+            387,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/idle/008.png",
+          "sha256": "71e30a5382f393f915b60b18091b9ace21a03ac1046db74332e2987959d09501",
+          "bytes": 338887,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            302,
+            386,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/idle/009.png",
+          "sha256": "b4130665fa5d8c570ebf846b13a6c325847ad63b9e0488cd650e46651bbd1eff",
+          "bytes": 338898,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            302,
+            386,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/idle/010.png",
+          "sha256": "487dae819d39a77739c2ed09f29089ec195565fc92f9af307251e359f78bd294",
+          "bytes": 338915,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            301,
+            385,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/idle/011.png",
+          "sha256": "28f51f5f9321b681259d6b6c24ede1cbcebd71e649e6172388214ee19af177ef",
+          "bytes": 339058,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            301,
+            385,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/idle/012.png",
+          "sha256": "fb0c996ccba2fcfb2d00ea9a857d717956fe154f9c8da3d1a5041ba5c7318a78",
+          "bytes": 339046,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            301,
+            385,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/idle/013.png",
+          "sha256": "28f51f5f9321b681259d6b6c24ede1cbcebd71e649e6172388214ee19af177ef",
+          "bytes": 339058,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            301,
+            385,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/idle/014.png",
+          "sha256": "487dae819d39a77739c2ed09f29089ec195565fc92f9af307251e359f78bd294",
+          "bytes": 338915,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            301,
+            385,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/idle/015.png",
+          "sha256": "b4130665fa5d8c570ebf846b13a6c325847ad63b9e0488cd650e46651bbd1eff",
+          "bytes": 338898,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            302,
+            386,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/idle/016.png",
+          "sha256": "71e30a5382f393f915b60b18091b9ace21a03ac1046db74332e2987959d09501",
+          "bytes": 338887,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            302,
+            386,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/idle/017.png",
+          "sha256": "4f824a4e1a7507f98cc37541679297c5d6c404b7b3803aeb065a1ae4d3ce5015",
+          "bytes": 338935,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            302,
+            387,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/idle/018.png",
+          "sha256": "3796e42ab439fceb162ac3fae6420f387ee84d8277f7984a7b9bd956b269a1ec",
+          "bytes": 338879,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            302,
+            388,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/idle/019.png",
+          "sha256": "5363039fb865e2cfed523d11fd80d59f694acd4a57c9e2523afa325144d194d4",
+          "bytes": 338785,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            303,
+            389,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/idle/020.png",
+          "sha256": "73529425da75455a5788b43af669f86ba31a2c9b365af45e6db9f657ae403da9",
+          "bytes": 338711,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            303,
+            389,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/idle/021.png",
+          "sha256": "112a0401f1dcfae30113ac96c97b30e2f305d97fa5f77abf5afdc8c734077f91",
+          "bytes": 338788,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            303,
+            390,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/idle/022.png",
+          "sha256": "be8ba30d46c43f82fc92201b9db570bb63bd32f1a8e1a901685f2ab0ac814cc9",
+          "bytes": 338730,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            303,
+            390,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/idle/023.png",
+          "sha256": "86cbfa79e890a91ee6ee0e135160d9c4e7f85c8260372c2faea1b0edfd6760e6",
+          "bytes": 338656,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            304,
+            391,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/idle/024.png",
+          "sha256": "0765a7b17589de01b8a69e31a34de0f89f3c4af21a7400486f983871a3be6830",
+          "bytes": 338877,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            304,
+            391,
+            1114,
+            880
+          ]
+        }
+      ]
+    },
+    "anticipate": {
+      "duration_s": 0.7,
+      "fps": 24,
+      "frame_count": 18,
+      "loop": false,
+      "status": "PROVISIONAL_PRESENTATION",
+      "frame_pixel_change_counts_between_adjacent": [
+        48603,
+        51255,
+        52980,
+        53986,
+        54334,
+        54051,
+        53197,
+        51598,
+        49485,
+        46807,
+        49627,
+        50993,
+        51696,
+        51669,
+        51154,
+        50058,
+        47898
+      ],
+      "min_changed_pixels": 46807,
+      "max_changed_pixels": 54334,
+      "r003_metrics": {
+        "max_arm_pair_intersection_alpha_ge64_px": 0,
+        "max_arm_alpha_ge64_in_ring_roi_px": 0,
+        "max_outer_nonzero_px": 0
+      },
+      "frames": [
+        {
+          "path": "frames_r003/anticipate/000.png",
+          "sha256": "0765a7b17589de01b8a69e31a34de0f89f3c4af21a7400486f983871a3be6830",
+          "bytes": 338877,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            304,
+            391,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/anticipate/001.png",
+          "sha256": "8cf189a85d4788a015edcacb057fcaafa5d1498e61050b40f782569a963fcba6",
+          "bytes": 338767,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            303,
+            390,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/anticipate/002.png",
+          "sha256": "ae7586d8ec1f00e96c12ff4b0e1ad1504f53fbe49cd9996761746f3484ec9839",
+          "bytes": 339035,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            302,
+            389,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/anticipate/003.png",
+          "sha256": "c843091954d428c93d06278fd10284126b94481c38be88ea23a5dc49c6a02ee3",
+          "bytes": 339882,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            301,
+            387,
+            1111,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/anticipate/004.png",
+          "sha256": "69c78e72a7ee171405b8d8268354bd3f1d22c7a45713e10ec00272b38d3f1565",
+          "bytes": 340810,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            299,
+            384,
+            1108,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/anticipate/005.png",
+          "sha256": "d037440609243bb222dd01f5f579e732896df11cdb60fe6755111ca66e4b95e4",
+          "bytes": 340998,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            297,
+            382,
+            1102,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/anticipate/006.png",
+          "sha256": "fc81e483eb6761336b7190c44747abd92cc58e0b6e05027a9d009a6634beb543",
+          "bytes": 341089,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            295,
+            379,
+            1092,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/anticipate/007.png",
+          "sha256": "fdb4c020f3a3a395c788f2da9aad29db62cfb5ad27253a4f06ff49e7c55fc65a",
+          "bytes": 340633,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            294,
+            377,
+            1081,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/anticipate/008.png",
+          "sha256": "1b3f2fcf65d4c478ab1a20a01234412ced5a18e07de77f933fa13e83161b154e",
+          "bytes": 340402,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            293,
+            376,
+            1071,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/anticipate/009.png",
+          "sha256": "35a9e8ae4824ce6cd0614e910e6ff5cd5a85b54de44eb07b04c81a818534b1e5",
+          "bytes": 340581,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            293,
+            375,
+            1066,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/anticipate/010.png",
+          "sha256": "45994d6c41f5fd4b4d51742b2c88fee62bc8b4c94e866c55ca1cefc32cf1568a",
+          "bytes": 340804,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            293,
+            375,
+            1065,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/anticipate/011.png",
+          "sha256": "2d94af336c36f29ee736279b903204daa4e0880f3cb1de73b55964f1022eed03",
+          "bytes": 340928,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            292,
+            373,
+            1060,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/anticipate/012.png",
+          "sha256": "a74443234b82dc308d3b6a6cd6bb054673a5ed1a5dd649932459ab26e1bed0c7",
+          "bytes": 341044,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            292,
+            371,
+            1053,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/anticipate/013.png",
+          "sha256": "8289d6609f63c7159397984e72b92747c0461da339b38a1a74a0e3ddac66d5bf",
+          "bytes": 341124,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            292,
+            369,
+            1043,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/anticipate/014.png",
+          "sha256": "55ed72b2e464053496b57a14d92e3883ae5a3fe999f3b4d9ff0854a448bb6f86",
+          "bytes": 341031,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            291,
+            367,
+            1033,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/anticipate/015.png",
+          "sha256": "07b1a8f35935cb6c5e9460084863c80652418b2c4f72f02a4d244787e9a71e5c",
+          "bytes": 341131,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            291,
+            364,
+            1024,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/anticipate/016.png",
+          "sha256": "a147861647abcd41b9359bd4c9229624a24109d603bca3efd6e0d94032668c57",
+          "bytes": 341096,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            291,
+            363,
+            1017,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/anticipate/017.png",
+          "sha256": "6ba3679788e2ff6d5ff91f0ae13e606f7c5a6b1e7c2d033d065288e892a7cae9",
+          "bytes": 341427,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            290,
+            363,
+            1014,
+            880
+          ]
+        }
+      ]
+    },
+    "execute": {
+      "duration_s": 1.0,
+      "fps": 24,
+      "frame_count": 25,
+      "loop": false,
+      "status": "PROVISIONAL_PRESENTATION",
+      "frame_pixel_change_counts_between_adjacent": [
+        56440,
+        63214,
+        55178,
+        28260,
+        31131,
+        30404,
+        33958,
+        47030,
+        47512,
+        39452,
+        30429,
+        30626,
+        22212,
+        28606,
+        30096,
+        39224,
+        27931,
+        29770,
+        19114,
+        31119,
+        30722,
+        42862,
+        54389,
+        45942
+      ],
+      "min_changed_pixels": 19114,
+      "max_changed_pixels": 63214,
+      "r003_metrics": {
+        "max_arm_pair_intersection_alpha_ge64_px": 0,
+        "max_arm_alpha_ge64_in_ring_roi_px": 29,
+        "max_outer_nonzero_px": 0
+      },
+      "frames": [
+        {
+          "path": "frames_r003/execute/000.png",
+          "sha256": "6ba3679788e2ff6d5ff91f0ae13e606f7c5a6b1e7c2d033d065288e892a7cae9",
+          "bytes": 341427,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            290,
+            363,
+            1014,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/execute/001.png",
+          "sha256": "d70f6258608cf7f013e4c14da8c7653494403ce68e70d24943503d26334b3240",
+          "bytes": 341327,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            290,
+            370,
+            1041,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/execute/002.png",
+          "sha256": "ac863a37a699bbf2e93a0a54b324b8806b2f6908d67d61a9a9bd3949c7fe9003",
+          "bytes": 340863,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            290,
+            384,
+            1080,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/execute/003.png",
+          "sha256": "0f4a23711d304d1422ffd6446d928fb39cb622604b3667b800afe17d1201f44f",
+          "bytes": 341195,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            290,
+            391,
+            1093,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/execute/004.png",
+          "sha256": "b1d42897b434f0a5e20a17c8e27907424395472608a9ffa17aa0a4848d67d87c",
+          "bytes": 340233,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            290,
+            391,
+            1112,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/execute/005.png",
+          "sha256": "4258efe467e18405b8827f0454c37e08953405b18daedcc55376bd7a6f4befa7",
+          "bytes": 342705,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            290,
+            391,
+            1087,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/execute/006.png",
+          "sha256": "41555cd364b37d9d66f6d14ec7b72f617878f463086cefa50df2c8748f0810a7",
+          "bytes": 342471,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            290,
+            391,
+            1014,
+            911
+          ]
+        },
+        {
+          "path": "frames_r003/execute/007.png",
+          "sha256": "def38fcf70880745e21ea482f2b63c3566672149b42e352bafa350a70f6086c7",
+          "bytes": 342657,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            290,
+            391,
+            1012,
+            912
+          ]
+        },
+        {
+          "path": "frames_r003/execute/008.png",
+          "sha256": "f6a60fb26f6a269eaa7375bfe1759d56df2be77a105be17d33a4a5d821b19647",
+          "bytes": 342978,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            290,
+            391,
+            1066,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/execute/009.png",
+          "sha256": "3c0913fefe3d14c9067b49e24dab4c5a5fc31c7fb8281231b90d667cba6f4ba3",
+          "bytes": 341581,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            292,
+            391,
+            1108,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/execute/010.png",
+          "sha256": "d0dee3c8e4f23b999844f8e76be3f6af02814dc2bfe97bb1ed6fefb4aa7361ef",
+          "bytes": 340544,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            294,
+            391,
+            1112,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/execute/011.png",
+          "sha256": "364fe92ff16cf06b746ccc8b42988028fcf7045f51ec04b66a7d6c5f4d437f59",
+          "bytes": 341486,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            333,
+            391,
+            1112,
+            907
+          ]
+        },
+        {
+          "path": "frames_r003/execute/012.png",
+          "sha256": "1cb59815350a287010671122d6bf60cbd12382027f7eabfc0a94e1dffaab6bf3",
+          "bytes": 334541,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            395,
+            391,
+            1112,
+            989
+          ]
+        },
+        {
+          "path": "frames_r003/execute/013.png",
+          "sha256": "022d689be83307e76d1951b38e721ed9199d2d6895aa35812d3bef953cf36dfb",
+          "bytes": 329135,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            395,
+            391,
+            1112,
+            995
+          ]
+        },
+        {
+          "path": "frames_r003/execute/014.png",
+          "sha256": "162a2a1cbbbc98200faf0a8b275d485a98059958d22bce75d483ce4b509cbc26",
+          "bytes": 339812,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            395,
+            391,
+            1112,
+            965
+          ]
+        },
+        {
+          "path": "frames_r003/execute/015.png",
+          "sha256": "ae05dc15d17f6557c9ad601e572937c64547240f91dbde915c881e5f0e3e7e84",
+          "bytes": 341355,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            317,
+            391,
+            1112,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/execute/016.png",
+          "sha256": "745e829c91d94c91fdcc096f14c55d9816b0820a3179dbe169beb2d97d248088",
+          "bytes": 340843,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            304,
+            389,
+            1112,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/execute/017.png",
+          "sha256": "fb30ac073bf765d9ad51f9e28901c7a78e6cb65e7ceb3a681d9eeadcc3ac4798",
+          "bytes": 341163,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            304,
+            351,
+            1112,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/execute/018.png",
+          "sha256": "f8dea877004f9c635b07029963c0a606786f3fd851b58fa1fbe0bd3c506ad576",
+          "bytes": 340382,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            304,
+            340,
+            1112,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/execute/019.png",
+          "sha256": "b57a6b47c3c54487cab0cbab56d16184ca01874be3f4debda1cbd1779a6f0978",
+          "bytes": 339816,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            304,
+            347,
+            1112,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/execute/020.png",
+          "sha256": "2a4279a8c2d186515f9bbed14d35d0b6b6999fd23f39147f80155ef02db45bb5",
+          "bytes": 341178,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            304,
+            368,
+            1112,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/execute/021.png",
+          "sha256": "47b70be55c3425f190acfa05f2f8b2ee0e9b53cae5c25d088ff0947e5803c79f",
+          "bytes": 338260,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            304,
+            513,
+            1112,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/execute/022.png",
+          "sha256": "116d0db7362189172690a214d3b615fa75f24c34db88e3c38684b06e14b8cd17",
+          "bytes": 340770,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            304,
+            484,
+            1100,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/execute/023.png",
+          "sha256": "e812af1d7a84041339fa5088fef0473ed2651891ab74bf34105dcf0c34f0a810",
+          "bytes": 342110,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            304,
+            419,
+            1052,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/execute/024.png",
+          "sha256": "fc8bc758c0fd563bb9b0ad881fa68756586aed69a2f7f29d7b7a3dbd4bd26089",
+          "bytes": 342404,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            304,
+            391,
+            1017,
+            908
+          ]
+        }
+      ]
+    },
+    "recover": {
+      "duration_s": 0.6,
+      "fps": 24,
+      "frame_count": 15,
+      "loop": false,
+      "status": "PROVISIONAL_PRESENTATION",
+      "frame_pixel_change_counts_between_adjacent": [
+        19108,
+        22403,
+        22777,
+        20182,
+        16832,
+        17722,
+        18461,
+        18931,
+        19237,
+        19233,
+        19019,
+        18583,
+        17857,
+        16869
+      ],
+      "min_changed_pixels": 16832,
+      "max_changed_pixels": 22777,
+      "r003_metrics": {
+        "max_arm_pair_intersection_alpha_ge64_px": 0,
+        "max_arm_alpha_ge64_in_ring_roi_px": 0,
+        "max_outer_nonzero_px": 0
+      },
+      "frames": [
+        {
+          "path": "frames_r003/recover/000.png",
+          "sha256": "fc8bc758c0fd563bb9b0ad881fa68756586aed69a2f7f29d7b7a3dbd4bd26089",
+          "bytes": 342404,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            304,
+            391,
+            1017,
+            908
+          ]
+        },
+        {
+          "path": "frames_r003/recover/001.png",
+          "sha256": "aca77d7117fb21c78f6d8f24fe51027590dd882edb89fced346726ef328e7878",
+          "bytes": 342652,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            304,
+            391,
+            1030,
+            900
+          ]
+        },
+        {
+          "path": "frames_r003/recover/002.png",
+          "sha256": "21d511f822bce3171016dd3b40576edf707a28f6ae19d09e0819d0891bf49b48",
+          "bytes": 342282,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            304,
+            391,
+            1053,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/recover/003.png",
+          "sha256": "1355722303463b5c5afff16dbdb1fc656406a1b4dcf8bdfcdd9202b70278a72e",
+          "bytes": 342246,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            304,
+            391,
+            1076,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/recover/004.png",
+          "sha256": "30c2eb7667bddb48cbefe666f5236b0ae8b7ced4e3d494064b7a8d2772e6549f",
+          "bytes": 342176,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            304,
+            391,
+            1088,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/recover/005.png",
+          "sha256": "1246394ed5d2c8453c8498257607ea7a3548ddb4bfd5510e5ddac61d3d9478e7",
+          "bytes": 342111,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            304,
+            391,
+            1090,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/recover/006.png",
+          "sha256": "039edd3da3e5c91bbe175660f399ec6e3ebdedf6f9a806a9a1fdb228738f8102",
+          "bytes": 342137,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            304,
+            391,
+            1094,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/recover/007.png",
+          "sha256": "9b0476a8320328cec089247996797a7c321304b1f845ce543c02afa731490b78",
+          "bytes": 341990,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            304,
+            391,
+            1099,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/recover/008.png",
+          "sha256": "682188aa36cfb599c90811fdaa8203ba3240354ec5f52dfe9b15480af3ba28cc",
+          "bytes": 341811,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            304,
+            391,
+            1104,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/recover/009.png",
+          "sha256": "4307d5ba4a4542f7dc48a36f79ea1d87cfcc0154d15d9260c02a40bfc79239a8",
+          "bytes": 341348,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            304,
+            391,
+            1109,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/recover/010.png",
+          "sha256": "3acc2d3923d04bab3f2efcba347463feac5446fef4efc6c7b175ccfe4e640726",
+          "bytes": 340951,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            304,
+            391,
+            1112,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/recover/011.png",
+          "sha256": "a0d297c7f2c7afc493cfb91a24e69f7e5fcd60cbfec3c50bb9d2818b94827002",
+          "bytes": 340069,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            304,
+            391,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/recover/012.png",
+          "sha256": "565d727a74a8d6abb268787d907ea8a3e82123c0d91186cf0b0be476d02f1a2d",
+          "bytes": 339394,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            304,
+            391,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/recover/013.png",
+          "sha256": "725ea4f59755d24fa6d756895e47594ba74d267ccc63ef6637836e49b3044a46",
+          "bytes": 339094,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            304,
+            391,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/recover/014.png",
+          "sha256": "0765a7b17589de01b8a69e31a34de0f89f3c4af21a7400486f983871a3be6830",
+          "bytes": 338877,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            304,
+            391,
+            1114,
+            880
+          ]
+        }
+      ]
+    },
+    "hit": {
+      "duration_s": 0.4,
+      "fps": 24,
+      "frame_count": 11,
+      "loop": false,
+      "status": "PROVISIONAL_LOCAL_ARM_REACTION",
+      "frame_pixel_change_counts_between_adjacent": [
+        61863,
+        71210,
+        56339,
+        68897,
+        78095,
+        69280,
+        50419,
+        58806,
+        59470,
+        53122
+      ],
+      "min_changed_pixels": 50419,
+      "max_changed_pixels": 78095,
+      "r003_metrics": {
+        "max_arm_pair_intersection_alpha_ge64_px": 0,
+        "max_arm_alpha_ge64_in_ring_roi_px": 0,
+        "max_outer_nonzero_px": 0
+      },
+      "frames": [
+        {
+          "path": "frames_r003/hit/000.png",
+          "sha256": "0765a7b17589de01b8a69e31a34de0f89f3c4af21a7400486f983871a3be6830",
+          "bytes": 338877,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            304,
+            391,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/hit/001.png",
+          "sha256": "858394d6aaff5436222397036707672cada24e6a384011b4ae29273ad98279f3",
+          "bytes": 339511,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            297,
+            409,
+            1113,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/hit/002.png",
+          "sha256": "10eeecdab35dc5ad50ad5e511e62d44bec89e7754aa96fd5d0b5217853223338",
+          "bytes": 341302,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            293,
+            447,
+            1107,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/hit/003.png",
+          "sha256": "df67183db4c57aa1e01db426ff20d9d6e95362bad22a800c3a1aecfc2312888a",
+          "bytes": 341476,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            294,
+            463,
+            1103,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/hit/004.png",
+          "sha256": "04cd41c3b997e69faa6f2940d2547124c4c2fc61cc63f5723fba565528e9e286",
+          "bytes": 340274,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            294,
+            430,
+            1111,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/hit/005.png",
+          "sha256": "9b56225dcd11505b420c76958db60694bf8eacda4a2b69bfab81f1c508edf3d9",
+          "bytes": 340666,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            309,
+            389,
+            1113,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/hit/006.png",
+          "sha256": "8883752629cb68788a6c804a89554374a098a5904a8dbbfd61a58df195b22680",
+          "bytes": 342628,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            324,
+            369,
+            1101,
+            884
+          ]
+        },
+        {
+          "path": "frames_r003/hit/007.png",
+          "sha256": "2e3c54a667d3b9ffa0030ea744f96c06469e001351332fb03e3373d6c06ec8cc",
+          "bytes": 342709,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            322,
+            371,
+            1104,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/hit/008.png",
+          "sha256": "2198377f813f64cf8fd21aa6784499a64fbb383896eb12e6dd9a7dc973f68ba4",
+          "bytes": 341485,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            315,
+            378,
+            1111,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/hit/009.png",
+          "sha256": "896206c20fde8f6544a930425e4d22d5519fed9bb3c10565272b8499c1c5e51d",
+          "bytes": 339748,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            307,
+            386,
+            1114,
+            880
+          ]
+        },
+        {
+          "path": "frames_r003/hit/010.png",
+          "sha256": "0765a7b17589de01b8a69e31a34de0f89f3c4af21a7400486f983871a3be6830",
+          "bytes": 338877,
+          "size": [
+            1400,
+            1024
+          ],
+          "mode": "RGBA",
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "outer_nonzero_px": 0,
+          "alpha_bbox": [
+            304,
+            391,
+            1114,
+            880
+          ]
+        }
+      ]
+    }
+  },
+  "resolve": "NOT_IMPLEMENTED",
+  "central_ring": "STATIC_SOURCE_ART_ONLY; no open/exchange art supplied",
+  "presentation_timing": "PROVISIONAL_ONLY; not gameplay timing",
+  "visual_adoption": "PENDING_HUMAN_REVIEW",
+  "game_integration": "NOT_TESTED",
+  "device": "NOT_TESTED",
+  "review_paths": [
+    "qa/neutral_matte_review_aspect_correct_r002.png",
+    "qa/neutral_vs_r003_small_aspect_correct_r002.png",
+    "qa/clip_contact_sheet_r003.png"
+  ],
+  "scripts": {
+    "consumer_sha256": "de0f890c393cb422a3b4d7b3ed30a944496fd64c1ee35902ce83dfa4e3d63223",
+    "contract_sha256": "85d00b9f59d85697f173e724006d213b3385f1b1057bca05f1cb982ceecb7abc",
+    "keys_sha256": "88ff2b75a8319c792d5720d19b6cac82b48578f1df38a21ed1c31654179bc6a3",
+    "clip_qa_sha256": "b3ccd8b6d405370d07f3efcbd527a63793079660200a7fea6b88156c9f68f86d",
+    "validator_sha256": "273cceadad4476cc7d669c500e6877fd7aa86755a78fb5d5c0bb03d618fc802a"
+  }
+}

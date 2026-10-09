@@ -1,0 +1,138 @@
+{
+  "asset_id": "NODE_M_R01_G1",
+  "canonical_ids": [
+    "M_R01_G1"
+  ],
+  "region_id": "R01",
+  "region_name": "木漏れ日の森",
+  "kind": "gather_prop",
+  "display_name": "しなり霊枝 採取地点小物",
+  "current_owner": "Codex",
+  "revision": "delivery_r001",
+  "source_present": true,
+  "runtime_present": true,
+  "editable_source_present": true,
+  "stage": "QUALITY_REPAIR_STOPPED_TECH_ONLY_FALLBACK",
+  "scoped_technical_qa": "PASS_TWO_STATE_PNG_READBACK_ONLY",
+  "semantic_style_qa": "NOT_QUALIFIED_STOPPED",
+  "Human_adoption": "PENDING",
+  "full_r4_kit_complete": false,
+  "accepted_manifest": "NOT_CREATED",
+  "integrated_into_G2": "NO",
+  "physical_iPhone": "NOT_TESTED",
+  "model": "NOT_EXPOSED_BY_TOOL",
+  "per_image_actual_charge": "UNKNOWN",
+  "commercial_rights_final_clearance": "UNKNOWN",
+  "files": [
+    {
+      "role": "metadata",
+      "path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/nodes/NODE_M_R01_G1/runtime_r002/manifest.json",
+      "sha256": "24356cc5add0f730aaa0245deb415490169630956d88b03f45335d167640019a",
+      "bytes": 4655,
+      "format": "json"
+    },
+    {
+      "role": "source",
+      "path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/nodes/NODE_M_R01_G1/atlas_r002.png",
+      "sha256": "8bcc255f8a26f29903e1c23f4f6b6f0d90400036adfefad0a0a82fdc4d2b8835",
+      "bytes": 819445,
+      "format": "png"
+    },
+    {
+      "role": "editable",
+      "path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/nodes/NODE_M_R01_G1/runtime_r002/editable_source.ora",
+      "sha256": "c37ef1141f1c933392540d8485a9fbdc23207306fa4dade9b8d63342d650e3ed",
+      "bytes": 1233598,
+      "format": "ora"
+    },
+    {
+      "role": "runtime_present_64",
+      "path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/nodes/NODE_M_R01_G1/runtime_r002/NODE_M_R01_G1__present__64__r002.png",
+      "sha256": "57a25d527b55a689a1fe0e82ef5f4d865960b958b1e108a9bce653fcdc175ab1",
+      "bytes": 3434,
+      "format": "png"
+    },
+    {
+      "role": "runtime_present_128",
+      "path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/nodes/NODE_M_R01_G1/runtime_r002/NODE_M_R01_G1__present__128__r002.png",
+      "sha256": "20e650a5b75b99fd6c89ede1a8d3fa46ccb165d7762e351feedb085d04fb6d17",
+      "bytes": 10658,
+      "format": "png"
+    },
+    {
+      "role": "runtime_present_256",
+      "path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/nodes/NODE_M_R01_G1/runtime_r002/NODE_M_R01_G1__present__256__r002.png",
+      "sha256": "3a0fed6dd32f4f91bf0004aa63ae23206a37872a9f31bce84738dcc287749813",
+      "bytes": 36626,
+      "format": "png"
+    },
+    {
+      "role": "runtime_collected_64",
+      "path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/nodes/NODE_M_R01_G1/runtime_r002/NODE_M_R01_G1__collected__64__r002.png",
+      "sha256": "4e016b2ecaf6e7657093456373afaa966050f4f47215a822bb67a110a9920b81",
+      "bytes": 1924,
+      "format": "png"
+    },
+    {
+      "role": "runtime_collected_128",
+      "path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/nodes/NODE_M_R01_G1/runtime_r002/NODE_M_R01_G1__collected__128__r002.png",
+      "sha256": "8bd15ef88e8dadde77dbac39a35330cfd1ea42fc04b7d120b67802aea62e5818",
+      "bytes": 5626,
+      "format": "png"
+    },
+    {
+      "role": "runtime_collected_256",
+      "path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/nodes/NODE_M_R01_G1/runtime_r002/NODE_M_R01_G1__collected__256__r002.png",
+      "sha256": "54159de5b229fedfd495ce8e6c137172f09e23abe69ae9ab61451b3e565da986",
+      "bytes": 18486,
+      "format": "png"
+    },
+    {
+      "role": "qa",
+      "path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/planning/ALL20_NODE_QA_R001.json",
+      "sha256": "6aa8c4ae36af873660c544439894fba68841f8eb697288d4642c0067237b8abb",
+      "bytes": 264518,
+      "format": "json"
+    }
+  ],
+  "known_issues": [
+    "r003 composition failure and one authorized layout-only r004 retry still lacked the required alpha-empty pose gutter. Last valid runtime is a technical-only fallback.",
+    "State art defines no quantity, timer, extraction logic or battle result.",
+    "Foot is a shared export registration; final on-ground iPhone placement not verified."
+  ],
+  "profile_id": "G2_GATHER_NODE_CANDIDATE_R001",
+  "profile_status": "UNFROZEN",
+  "current_selection": {
+    "asset_id": "NODE_M_R01_G1",
+    "selection_status": "NOT_QUALIFIED_STOPPED",
+    "reason": "r003 composition failure and one authorized layout-only r004 retry still lacked the required alpha-empty pose gutter. Last valid runtime is a technical-only fallback.",
+    "fallback_runtime_revision": "runtime_r002",
+    "fallback_status": "TECH_ONLY_NOT_QUALIFIED",
+    "fallback_manifest_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/nodes/NODE_M_R01_G1/runtime_r002/manifest.json",
+    "fallback_manifest_sha256": "24356cc5add0f730aaa0245deb415490169630956d88b03f45335d167640019a",
+    "fallback_source_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/nodes/NODE_M_R01_G1/atlas_r002.png",
+    "fallback_source_sha256_recorded": "8bcc255f8a26f29903e1c23f4f6b6f0d90400036adfefad0a0a82fdc4d2b8835",
+    "fallback_source_sha256_actual": "8bcc255f8a26f29903e1c23f4f6b6f0d90400036adfefad0a0a82fdc4d2b8835",
+    "fallback_qa_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/nodes/NODE_M_R01_G1/runtime_r002/QA_REPORT.json",
+    "fallback_qa_sha256": "50a50c19157c65667a88c92956cc361c3777b93a968d40f418b6276f5a40ea67",
+    "newest_failed_sources": [
+      {
+        "source_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/nodes/NODE_M_R01_G1/atlas_r003.png",
+        "source_sha256": "7a12bd358ad0632fc600d8b125ba2f0ee4d7236b607261b91c5d72a42a713568",
+        "failure_record_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/nodes/NODE_M_R01_G1/FAILURE_R003_COMPOSITION_GUTTER.json",
+        "failure_record_sha256": "3bce03b4e0b5778908a59d4dd3a5b18eb41a057756c93c6c1d6db06ffe9d6fc7",
+        "runtime_created": false
+      },
+      {
+        "source_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/nodes/NODE_M_R01_G1/provider_source_r004_failed_layout.png",
+        "source_sha256": "e34a2eb9b251f5222166e258b73a2a96ba2f304d9edbcbc202b1c64b14408ff0",
+        "failure_record_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/nodes/NODE_M_R01_G1/FAILURE_R004_LAYOUT_ONLY.json",
+        "failure_record_sha256": "875a48d39bf957f4e3209bd8472b40689dec53df541d000f2cb21ad732d0fae5",
+        "runtime_created": false
+      }
+    ],
+    "r004_runtime": "NOT_CREATED",
+    "selected_as_candidate": false,
+    "human_adoption": "NONE"
+  }
+}

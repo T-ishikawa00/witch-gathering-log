@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-08T11:49:08.908Z",
+  "overall": "PASS",
+  "cases": [
+    {
+      "name": "recovery_warning_survives_startup_settlement",
+      "status": "PASS"
+    },
+    {
+      "name": "recovery_warning_survives_navigation",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow_reclaim_ui_atomic",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow_reclaim_reload_keeps_count",
+      "status": "PASS"
+    },
+    {
+      "name": "clock_rebase_ui_confirmed",
+      "status": "PASS"
+    },
+    {
+      "name": "live_battle_trace_display",
+      "status": "PASS"
+    },
+    {
+      "name": "battle_abort_has_no_clear_record",
+      "status": "PASS"
+    }
+  ],
+  "external_requests": 0,
+  "page_errors": [],
+  "scope": "Browser fixtures for corruption, overflow and clock rollback; actual UI interaction after setup"
+}

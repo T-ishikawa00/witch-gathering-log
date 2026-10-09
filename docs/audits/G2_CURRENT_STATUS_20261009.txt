@@ -1,0 +1,205 @@
+魔女の採集帳 — GitHub用G2現況・監査入口（2026-10-09）
+
+リポジトリ名案: witch-gathering-log / Private。原文の制作指示・権限記録は履歴であり、この資料は制作/公開/契約の追加権限を与えない。
+
+最初にPROJECT_CURRENT.md、docs/design/DESIGN_BIBLE.mdを読む。src/とルートREADMEは旧G1の1人用試作。以下のG2制作候補は本番統合済みのゲームではない。
+
+現行正本: assets/g2/production/codex_unified_20261008T221040Z_fa70940c/FINAL_REPORT_R001.md
+現行台帳JSON: assets/g2/production/codex_unified_20261008T221040Z_fa70940c/planning/FINAL_159_LEDGER_R001.json
+現行台帳CSV: assets/g2/production/codex_unified_20261008T221040Z_fa70940c/planning/FINAL_159_LEDGER_R001.csv
+
+159制作単位。静的候補99単位/357 PNG、そのうち見た目の確認待ち84・部分/不適格15。残る60は未完成。完全R4 kit=0、Human正式採用=0、G2統合=0、物理iPhone検証=0。source存在111は完成数ではない。Simulator callback rateは実表示FPSではない。
+
+先行codex_g2_20261008T205747Z_eb8a2329/FINAL_REPORT.mdの14候補/145不足は過去スナップショット。現行報告に混ぜない。旧rig_r003/layout_candidate_c/six_state_contact_sheet.pngは現行hammer r004証拠として採用しない。
+
+初回同梱するG2資料（すべてGitルート相対パス）:
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/AUTHORITY.md | Authority and scope for this production revision
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/FINAL_REPORT_R001.md | Current G2 status and overall caveats
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/PIPELINE_AND_OPERATIONS_R001.md | 制作パイプラインと台帳更新の手順。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/PROVENANCE_INCIDENT_AND_CORRECTION_R001.json | 生成素材の帰属事故・修正とUNKNOWN履歴。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/REPRESENTATIVE_ASSESSMENT_R001.md | Representative-method evidence, including known failures
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_B_R01_A/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_B_R01_B/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_B_R02_A/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_B_R02_B/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_B_R03_A/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_B_R03_B/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_B_R04_A/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_B_R04_B/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_B_R05_A/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_B_R05_B/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R01_01/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R01_02/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R01_03/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R01_04/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R02_01/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R02_02/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R02_03/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R02_04/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R03_01/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R03_02/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R03_03/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R03_04/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R04_01/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R04_02/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R04_03/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R04_04/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R05_01/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R05_02/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R05_03/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_E_R05_04/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/BG_R01_BOSS/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/BG_R01_FIELD/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/BG_R02_BOSS/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/BG_R02_FIELD/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/BG_R03_BOSS/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/BG_R03_FIELD/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/BG_R04_BOSS/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/BG_R04_FIELD/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/BG_R05_BOSS/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/BG_R05_FIELD/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ENV_R01/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ENV_R02/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ENV_R03/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ENV_R04/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ENV_R05/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/FX_R01/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/FX_R02/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/FX_R03/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/FX_R04/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/FX_R05/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_AMU_01/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_AMU_02/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_AMU_03/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_A_01/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_A_02/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_A_03/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_BODY_01/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_BODY_02/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_BODY_03/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_FEET_01/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_FEET_02/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_FEET_03/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_F_01/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_F_02/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_F_03/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_HAND_01/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_HAND_02/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_HAND_03/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_RING_01/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_RING_02/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_RING_03/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_S_01/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_S_02/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_S_03/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_W_01/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_W_G1/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_W_G2/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_W_P1/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_EQ_W_P2/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R01_BA/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R01_BB/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R01_E1/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R01_E2/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R01_E3/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R01_E4/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R01_G1/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R01_G2/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R01_G3/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R01_G4/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R02_BA/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R02_BB/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R02_E1/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R02_E2/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R02_E3/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R02_E4/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R02_G1/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R02_G2/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R02_G3/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R02_G4/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R03_BA/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R03_BB/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R03_E1/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R03_E2/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R03_E3/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R03_E4/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R03_G1/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R03_G2/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R03_G3/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R03_G4/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R04_BA/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R04_BB/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R04_E1/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R04_E2/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R04_E3/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R04_E4/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R04_G1/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R04_G2/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R04_G3/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R04_G4/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R05_BA/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R05_BB/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R05_E1/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R05_E2/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R05_E3/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R05_E4/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R05_G1/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R05_G2/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R05_G3/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ICO_M_R05_G4/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R01_G1/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R01_G2/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R01_G3/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R01_G4/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R02_G1/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R02_G2/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R02_G3/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R02_G4/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R03_G1/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R03_G2/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R03_G3/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R03_G4/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R04_G1/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R04_G2/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R04_G3/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R04_G4/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R05_G1/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R05_G2/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R05_G3/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/NODE_M_R05_G4/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/VAR_A_R01_02/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/VAR_A_R01_03/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/VAR_A_R02_02/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/VAR_A_R02_03/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/VAR_A_R03_02/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/VAR_A_R03_03/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/VAR_A_R04_02/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/VAR_A_R04_03/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/VAR_A_R05_02/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/VAR_A_R05_03/delivery_manifest_r001.json | 全159単位の個別状態・不足・file参照台帳。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/native_sample/jellyfish_r004/SIMULATOR_QA_CURRENT_R001.json | 現行くらげfixtureの限定QA。部分品質・実機未検証。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/native_sample/static_icons_r002/SIMULATOR_QA_CURRENT_R001.json | Simulator static-icon scoped technical QA; not device QA
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/native_sample/static_icons_r002/simulator_stable_r001.png | 現在のアイコンSimulator画面。未承認/部分/実機未検証表示を含む。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/planning/ALL20_NODE_QA_R001.json | 20 gathering-node QA status evidence; include partial and failed states
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/planning/ALL20_NODE_QA_R001/R02_CONTACT_R001.png | Visual contact sheet: present/collected state examples; pair with machine status data
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/planning/CURRENT_NODE_SELECTION_R001.json | 20採取物の現在選択版。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/planning/FINAL_159_LEDGER_R001.csv | Readable 159-unit progress ledger
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/planning/FINAL_159_LEDGER_R001.json | Machine-readable 159-unit progress ledger with revisions, QA, adoption, integration, device and known-issue fields
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/planning/MATERIAL_GEAR_87_TRACE_READBACK_R001.json | 素材から装備への87接続ID検査。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/planning/STATIC_CATALOG_INDEX_R001.json | Current static catalog selection and references
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/planning/static_catalog_review_r001/R01_static_icon_contact_r001.png | Visual contact sheet: examples of qualified and partial icons across R01
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/qa/DELIVERY_SHA256_R001.json | 保存成果物のhash台帳。実体を全同梱したという意味ではない。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/qa/DELIVERY_SHA256_READBACK_R001.json | 保存hashの過去readback集約結果。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/qa/FINAL_LEDGER_INDEPENDENT_REVIEW_R003.json | Independent ledger review R003; latest review revision, validate exact status before use
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/qa/PROTECTED_STATE_FINAL_R001.json | 既存保護の集約レシート。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/representatives/BG_R01_FIELD/layer_study_r002/floor_protection_comparison.png | Representative known failure: floor protection comparison still demonstrates overlap risk
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/representatives/BG_R02_FIELD/source_r001/floor_proxy_review.png | Representative known failure: R02 background floor proxy and encroachment risk
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/runtime/hammer_r004/qa/CLIP_QA_R003.json | 現行5clipのframe・関節・既知不足と接合性の技術QA。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/runtime/hammer_r004/qa/TECH_QA_FINAL_R004_R003.json | 現行hammer r004の技術QAレシート。
+- assets/g2/production/codex_unified_20261008T221040Z_fa70940c/runtime/hammer_r004/qa/clip_contact_sheet_r003.png | 現行hammer r004・frames r003の5候補clip。resolve/環開閉は未完成。
+
+読み方と監査範囲:
+原本の絶対リンクはGitHubでは開けない。/Users/PUBLIC_USER/idle-loot-rpg/より後の部分をGitルート相対パスへ対応させ、GITHUB_INITIAL_MANIFEST_20261009.jsonで同梱の有無とhashを確認する。R4入力work_packages正本は同一SHAのdocs/design/sources/all_regions_r4/Witch_AllRegions_ArtSpec_R4_20261009/data/work_packages_R4.jsonも同梱する。
+357 runtime PNG、原画、ORA/Blender、動画、アプリ/ビルド/キャッシュ、未選定の個別QA実体は初回対象外。報告・台帳の状態/ID/manifest/hash記録と代表静止画の整合性は監査可能だが、すべての画素・動作・実機性能をGitHubだけで再検証できる完全制作パッケージではない。
+商用権利の最終確認と個別生成費用は原記録でUNKNOWN。正式採用/公開への許可と扱わない。
+Private登録だけでChatGPTがアクセスできるわけではない。利用するChatGPTのGitHub接続にこのリポジトリの閲覧権限を付与し、既知の台帳ファイルを読み戻して確認する。現在の接続/所有者/権限は未確認。公開化は必要ない。

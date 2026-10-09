@@ -1,0 +1,42 @@
+G2 iPhone表示検証 — 今回の到達点
+
+隔離場所: g2_iphone_validation
+既存ゲーム、署名/アカウント設定は変更していません。外部連絡、公開、GitHub push、インストールなし。
+
+成功:
+- SpriteKit最小サンプルの共有シーンとMac/iOS入口を作成
+- 390 x 844 points、画面サイズ/原点/縮尺/背景モード/前景位置・倍率/占有矩形/仮プレイ領域をJSON設定可能
+- 背景プレート→猪→独立前景の描画順を実装
+- iPhoneOS SDK 26.5 / arm64 / iOS17.0 target: コンパイル・リンク成功
+- iPhoneSimulator SDK 26.5 / arm64 / iOS17.0-simulator target: コンパイル・リンク成功
+- iOS両成果物のcodesign読み取り検査で未署名を確認
+- macOS SDK26.5 / arm64 / macOS14.0 target: コンパイル・リンク成功
+- 通常コンパイルで追加権限要求・失敗なし
+
+4範囲を分離:
+Mac描画: 未実施。Macバイナリのコンパイルのみ成功。画像デコード/描画成功とは扱わない
+iOSビルド: 上記署名なしコンパイル・リンク成功。素材バンドル・実行成功とは扱わない
+Simulator実行: 未実施。先のCoreSimulator権限/接続エラーを回避していない
+iPhone実機: 未実施。性能、実色、発熱、電池、実機メモリ適性は未検証
+
+素材取得の阻害要因:
+正規Library prepare_materialize + 現行の未改変helperを使用。
+初回旧背景はPython3.9互換性エラー後、導入済みPython3.13で1回再試行してdownload failed。
+猪v2、clean_plate_v02、foreground_v02、witch_characters_R1は初回と1回再試行ともdownload failed。
+すべて明示的なMac入力ディレクトリを宛先に指定。Mac入力ファイル数は0。
+helperからそれ以上の原因は得られず、権限/ネットワーク原因は未確定。
+経路回避、helper改変、raw URL取得、昇格、追加再試行はしていない。
+body_plate_v1/foreleg_layer_v1は任意取得の依頼のため取得保留。
+
+未評価:
+実ピクセル、白/黒/灰色/背景での透過合成、前景の実遮蔽、縮小時のドット密度/相対縮尺、参照crop、アニメ原点ブレ。
+呼吸/位置移動/足掻き/メッシュ変形は未実装・未検証。正式な脚アニメやフルリグ完成とは扱わない。
+入力PNGを変更・生成・美術修正していない。
+描画方式や設定は検証用であり、製品エンジン・仕様の採用決定ではない。
+
+証拠:
+build-final.log: 最終共有ソースの対象別コンパイル結果
+final-validation-state.json: 未署名確認、ローカル入力数、未実行フラグ
+library-*-transfer-errors.txt / library-current-input-transfer-log.json: 素材取得失敗
+sample/README.txt: 再現コマンド、設定、座標系、制限
+スクリーンショットは未作成。実素材を見ていない状態で素材検証済みの画像を作らない。

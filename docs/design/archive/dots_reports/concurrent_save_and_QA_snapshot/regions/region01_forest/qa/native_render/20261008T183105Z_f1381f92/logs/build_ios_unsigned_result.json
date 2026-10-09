@@ -1,0 +1,83 @@
+{
+  "compiler_exit_code": 0,
+  "stdout": "iOS device SDK arm64 compile/link completed (unsigned; not executed).\niOS simulator SDK arm64 compile/link completed (unsigned; not executed).\n",
+  "stderr": "",
+  "target_checks": [
+    {
+      "target": "device",
+      "app_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/regions/region01_forest/qa/native_render/20261008T183105Z_f1381f92/sample/build/ios-device/G2AssetValidation.app",
+      "codesign_exit_code": 1,
+      "codesign_output": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/regions/region01_forest/qa/native_render/20261008T183105Z_f1381f92/sample/build/ios-device/G2AssetValidation.app: code object is not signed at all\n",
+      "resources": [
+        {
+          "relative_path": "backgrounds/BG_R01_FIELD/BG_R01_FIELD_far_v01.png",
+          "sha256_matches": true
+        },
+        {
+          "relative_path": "backgrounds/BG_R01_FIELD/BG_R01_FIELD_back_trees_v01.png",
+          "sha256_matches": true
+        },
+        {
+          "relative_path": "backgrounds/BG_R01_FIELD/BG_R01_FIELD_playfield_v02.png",
+          "sha256_matches": true
+        },
+        {
+          "relative_path": "backgrounds/BG_R01_FIELD/BG_R01_FIELD_foreground_v02.png",
+          "sha256_matches": true
+        },
+        {
+          "relative_path": "enemies/E_R01_01/E_R01_01_MOSS_TUSK_BOAR_sprite_prototype_v2.png",
+          "sha256_matches": true
+        },
+        {
+          "relative_path": "source/boar_rig/textures/E_R01_01_body_plate_v1.png",
+          "sha256_matches": true
+        },
+        {
+          "relative_path": "source/boar_rig/textures/E_R01_01_foreleg_layer_v1.png",
+          "sha256_matches": true
+        }
+      ],
+      "executed": false
+    },
+    {
+      "target": "simulator",
+      "app_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/regions/region01_forest/qa/native_render/20261008T183105Z_f1381f92/sample/build/ios-simulator/G2AssetValidation.app",
+      "codesign_exit_code": 1,
+      "codesign_output": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/regions/region01_forest/qa/native_render/20261008T183105Z_f1381f92/sample/build/ios-simulator/G2AssetValidation.app: code object is not signed at all\n",
+      "resources": [
+        {
+          "relative_path": "backgrounds/BG_R01_FIELD/BG_R01_FIELD_far_v01.png",
+          "sha256_matches": true
+        },
+        {
+          "relative_path": "backgrounds/BG_R01_FIELD/BG_R01_FIELD_back_trees_v01.png",
+          "sha256_matches": true
+        },
+        {
+          "relative_path": "backgrounds/BG_R01_FIELD/BG_R01_FIELD_playfield_v02.png",
+          "sha256_matches": true
+        },
+        {
+          "relative_path": "backgrounds/BG_R01_FIELD/BG_R01_FIELD_foreground_v02.png",
+          "sha256_matches": true
+        },
+        {
+          "relative_path": "enemies/E_R01_01/E_R01_01_MOSS_TUSK_BOAR_sprite_prototype_v2.png",
+          "sha256_matches": true
+        },
+        {
+          "relative_path": "source/boar_rig/textures/E_R01_01_body_plate_v1.png",
+          "sha256_matches": true
+        },
+        {
+          "relative_path": "source/boar_rig/textures/E_R01_01_foreleg_layer_v1.png",
+          "sha256_matches": true
+        }
+      ],
+      "executed": false
+    }
+  ],
+  "completed_at_utc": "2026-10-08T18:36:41.043949+00:00",
+  "source_rasters_unchanged": true
+}

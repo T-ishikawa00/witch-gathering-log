@@ -1,0 +1,473 @@
+{
+  "scope": "Design-model tests, not user tests or iOS runtime tests",
+  "content_sha256": "297e97b4e619e8ea0e9b49f1a9b94544c81fee38f35b2cb2441694af5c543dd1",
+  "enumeration": {
+    "unique_loadouts": 729,
+    "bosses": 3,
+    "seeds_per_case": 32,
+    "seed_range": [
+      101,
+      132
+    ],
+    "fight_runs": 69984,
+    "reliable_threshold": 0.875,
+    "reliable_loadout_counts": {
+      "gatekeeper": 666,
+      "stonebeast": 387,
+      "sentinels": 91
+    },
+    "best_median_win_ms": {
+      "gatekeeper": 16940,
+      "stonebeast": 30702,
+      "sentinels": 30900
+    },
+    "within_10pct_best_counts": {
+      "gatekeeper": 24,
+      "stonebeast": 17,
+      "sentinels": 2
+    },
+    "intersection_all_bosses_within_10pct": []
+  },
+  "curated": [
+    {
+      "preset": "critical",
+      "boss": "gatekeeper",
+      "win_rate": 1.0,
+      "median_win_ms": 16940,
+      "median_hp": 324,
+      "mean_normal": 3600,
+      "mean_poison": 0,
+      "mean_counter": 0
+    },
+    {
+      "preset": "critical",
+      "boss": "stonebeast",
+      "win_rate": 0.0,
+      "median_win_ms": null,
+      "median_hp": 0,
+      "mean_normal": 3558.36,
+      "mean_poison": 0,
+      "mean_counter": 0
+    },
+    {
+      "preset": "critical",
+      "boss": "sentinels",
+      "win_rate": 0.0,
+      "median_win_ms": null,
+      "median_hp": 0,
+      "mean_normal": 3630.45,
+      "mean_poison": 0,
+      "mean_counter": 0
+    },
+    {
+      "preset": "poison",
+      "boss": "gatekeeper",
+      "win_rate": 1.0,
+      "median_win_ms": 18650,
+      "median_hp": 495,
+      "mean_normal": 1696.58,
+      "mean_poison": 1903.42,
+      "mean_counter": 0
+    },
+    {
+      "preset": "poison",
+      "boss": "stonebeast",
+      "win_rate": 1.0,
+      "median_win_ms": 31000,
+      "median_hp": 400,
+      "mean_normal": 1403.67,
+      "mean_poison": 3396.33,
+      "mean_counter": 0
+    },
+    {
+      "preset": "poison",
+      "boss": "sentinels",
+      "win_rate": 0.0,
+      "median_win_ms": null,
+      "median_hp": 0,
+      "mean_normal": 2211.88,
+      "mean_poison": 2805.6,
+      "mean_counter": 0
+    },
+    {
+      "preset": "counter",
+      "boss": "gatekeeper",
+      "win_rate": 1.0,
+      "median_win_ms": 28000,
+      "median_hp": 1005,
+      "mean_normal": 1795.03,
+      "mean_poison": 0,
+      "mean_counter": 1804.97
+    },
+    {
+      "preset": "counter",
+      "boss": "stonebeast",
+      "win_rate": 0.5233333333333333,
+      "median_win_ms": 80000,
+      "median_hp": 198,
+      "mean_normal": 2504.65,
+      "mean_poison": 0,
+      "mean_counter": 2148.7
+    },
+    {
+      "preset": "counter",
+      "boss": "sentinels",
+      "win_rate": 1.0,
+      "median_win_ms": 30800,
+      "median_hp": 902,
+      "mean_normal": 1808.64,
+      "mean_poison": 0,
+      "mean_counter": 4691.36
+    }
+  ],
+  "lower_attack_example": {
+    "boss": "sentinels",
+    "seed_range": [
+      1001,
+      1300
+    ],
+    "before": {
+      "items": [
+        "weapon_p",
+        "armor_p",
+        "gloves_p",
+        "boots_p",
+        "charm_p",
+        "ring_p"
+      ],
+      "win_rate": 0.0,
+      "median_win_ms": null,
+      "median_hp": 0,
+      "mean_normal": 2211.89,
+      "mean_poison": 2798.8,
+      "mean_counter": 0
+    },
+    "after": {
+      "items": [
+        "weapon_p",
+        "armor_p",
+        "gloves_p",
+        "boots_g",
+        "charm_p",
+        "ring_g"
+      ],
+      "win_rate": 1.0,
+      "median_win_ms": 38000,
+      "median_hp": 124,
+      "mean_normal": 2713.54,
+      "mean_poison": 3786.46,
+      "mean_counter": 0
+    },
+    "attack_before": 88,
+    "attack_after": 80
+  },
+  "heldout_top_configs": [
+    {
+      "boss": "gatekeeper",
+      "loadout": "cccccc",
+      "win_rate": 1.0,
+      "median_win_ms": 16940,
+      "median_hp": 324,
+      "mean_normal": 3600,
+      "mean_poison": 0,
+      "mean_counter": 0
+    },
+    {
+      "boss": "gatekeeper",
+      "loadout": "pcpcpc",
+      "win_rate": 1.0,
+      "median_win_ms": 17136,
+      "median_hp": 324,
+      "mean_normal": 2192.59,
+      "mean_poison": 1407.41,
+      "mean_counter": 0
+    },
+    {
+      "boss": "gatekeeper",
+      "loadout": "ccpccc",
+      "win_rate": 1.0,
+      "median_win_ms": 17136,
+      "median_hp": 324,
+      "mean_normal": 3251.4,
+      "mean_poison": 348.6,
+      "mean_counter": 0
+    },
+    {
+      "boss": "stonebeast",
+      "loadout": "pppcpp",
+      "win_rate": 1.0,
+      "median_win_ms": 30702,
+      "median_hp": 310,
+      "mean_normal": 1455.14,
+      "mean_poison": 3344.86,
+      "mean_counter": 0
+    },
+    {
+      "boss": "stonebeast",
+      "loadout": "pcpcpp",
+      "win_rate": 1.0,
+      "median_win_ms": 31000,
+      "median_hp": 80,
+      "mean_normal": 1705.53,
+      "mean_poison": 3094.47,
+      "mean_counter": 0
+    },
+    {
+      "boss": "stonebeast",
+      "loadout": "pppcpc",
+      "win_rate": 1.0,
+      "median_win_ms": 30702,
+      "median_hp": 310,
+      "mean_normal": 1762.77,
+      "mean_poison": 3037.23,
+      "mean_counter": 0
+    },
+    {
+      "boss": "sentinels",
+      "loadout": "gggggg",
+      "win_rate": 1.0,
+      "median_win_ms": 30800,
+      "median_hp": 920,
+      "mean_normal": 1810.81,
+      "mean_poison": 0,
+      "mean_counter": 4689.19
+    },
+    {
+      "boss": "sentinels",
+      "loadout": "ggpggg",
+      "win_rate": 1.0,
+      "median_win_ms": 32380,
+      "median_hp": 762,
+      "mean_normal": 2328.72,
+      "mean_poison": 715.14,
+      "mean_counter": 3456.14
+    },
+    {
+      "boss": "sentinels",
+      "loadout": "pgpppc",
+      "win_rate": 0.9233333333333333,
+      "median_win_ms": 34000,
+      "median_hp": 89,
+      "mean_normal": 3489.33,
+      "mean_poison": 3004.8,
+      "mean_counter": 0
+    }
+  ],
+  "boss_stat_sensitivity": [
+    {
+      "scale_bp": 9000,
+      "preset": "critical",
+      "boss": "gatekeeper",
+      "win_rate": 1.0,
+      "median_win_ms": 15246
+    },
+    {
+      "scale_bp": 9000,
+      "preset": "critical",
+      "boss": "stonebeast",
+      "win_rate": 0.17,
+      "median_win_ms": 38962
+    },
+    {
+      "scale_bp": 9000,
+      "preset": "critical",
+      "boss": "sentinels",
+      "win_rate": 0.0,
+      "median_win_ms": null
+    },
+    {
+      "scale_bp": 9000,
+      "preset": "poison",
+      "boss": "gatekeeper",
+      "win_rate": 1.0,
+      "median_win_ms": 17000
+    },
+    {
+      "scale_bp": 9000,
+      "preset": "poison",
+      "boss": "stonebeast",
+      "win_rate": 1.0,
+      "median_win_ms": 28000
+    },
+    {
+      "scale_bp": 9000,
+      "preset": "poison",
+      "boss": "sentinels",
+      "win_rate": 0.01,
+      "median_win_ms": 29094
+    },
+    {
+      "scale_bp": 9000,
+      "preset": "counter",
+      "boss": "gatekeeper",
+      "win_rate": 1.0,
+      "median_win_ms": 26000
+    },
+    {
+      "scale_bp": 9000,
+      "preset": "counter",
+      "boss": "stonebeast",
+      "win_rate": 0.95,
+      "median_win_ms": 75000
+    },
+    {
+      "scale_bp": 9000,
+      "preset": "counter",
+      "boss": "sentinels",
+      "win_rate": 1.0,
+      "median_win_ms": 27400
+    },
+    {
+      "scale_bp": 10000,
+      "preset": "critical",
+      "boss": "gatekeeper",
+      "win_rate": 1.0,
+      "median_win_ms": 16940
+    },
+    {
+      "scale_bp": 10000,
+      "preset": "critical",
+      "boss": "stonebeast",
+      "win_rate": 0.0,
+      "median_win_ms": null
+    },
+    {
+      "scale_bp": 10000,
+      "preset": "critical",
+      "boss": "sentinels",
+      "win_rate": 0.0,
+      "median_win_ms": null
+    },
+    {
+      "scale_bp": 10000,
+      "preset": "poison",
+      "boss": "gatekeeper",
+      "win_rate": 1.0,
+      "median_win_ms": 18650
+    },
+    {
+      "scale_bp": 10000,
+      "preset": "poison",
+      "boss": "stonebeast",
+      "win_rate": 1.0,
+      "median_win_ms": 31000
+    },
+    {
+      "scale_bp": 10000,
+      "preset": "poison",
+      "boss": "sentinels",
+      "win_rate": 0.0,
+      "median_win_ms": null
+    },
+    {
+      "scale_bp": 10000,
+      "preset": "counter",
+      "boss": "gatekeeper",
+      "win_rate": 1.0,
+      "median_win_ms": 30000
+    },
+    {
+      "scale_bp": 10000,
+      "preset": "counter",
+      "boss": "stonebeast",
+      "win_rate": 0.45,
+      "median_win_ms": 80000
+    },
+    {
+      "scale_bp": 10000,
+      "preset": "counter",
+      "boss": "sentinels",
+      "win_rate": 1.0,
+      "median_win_ms": 30800
+    },
+    {
+      "scale_bp": 11000,
+      "preset": "critical",
+      "boss": "gatekeeper",
+      "win_rate": 0.74,
+      "median_win_ms": 18634
+    },
+    {
+      "scale_bp": 11000,
+      "preset": "critical",
+      "boss": "stonebeast",
+      "win_rate": 0.0,
+      "median_win_ms": null
+    },
+    {
+      "scale_bp": 11000,
+      "preset": "critical",
+      "boss": "sentinels",
+      "win_rate": 0.0,
+      "median_win_ms": null
+    },
+    {
+      "scale_bp": 11000,
+      "preset": "poison",
+      "boss": "gatekeeper",
+      "win_rate": 1.0,
+      "median_win_ms": 20142
+    },
+    {
+      "scale_bp": 11000,
+      "preset": "poison",
+      "boss": "stonebeast",
+      "win_rate": 1.0,
+      "median_win_ms": 34000
+    },
+    {
+      "scale_bp": 11000,
+      "preset": "poison",
+      "boss": "sentinels",
+      "win_rate": 0.0,
+      "median_win_ms": null
+    },
+    {
+      "scale_bp": 11000,
+      "preset": "counter",
+      "boss": "gatekeeper",
+      "win_rate": 0.99,
+      "median_win_ms": 32000
+    },
+    {
+      "scale_bp": 11000,
+      "preset": "counter",
+      "boss": "stonebeast",
+      "win_rate": 0.01,
+      "median_win_ms": 84000
+    },
+    {
+      "scale_bp": 11000,
+      "preset": "counter",
+      "boss": "sentinels",
+      "win_rate": 1.0,
+      "median_win_ms": 34200
+    }
+  ],
+  "offline_8h_example": {
+    "status": "APPLIED",
+    "request_id": "sample-8h",
+    "raw_ms": 28800000,
+    "credited_ms": 28800000,
+    "capped_ms": 0,
+    "awarded_steps": 32,
+    "new_ids": [
+      "ash:0",
+      "ash:1",
+      "ash:3",
+      "ash:12",
+      "ash:16",
+      "ash:17"
+    ],
+    "converted": 26,
+    "overflowed": 0,
+    "essence_delta": 212
+  },
+  "limitations": [
+    "Only 18 fixed items and 3 bosses; no random affixes, levels, awakening, or late game modeled.",
+    "Equal crafting budget and tier are not proof of equal intrinsic stat efficiency.",
+    "A 32-seed search is a limited numerical screen; statistics are not player retention, purchase probability, or proof of fun.",
+    "Extremes of armor, haste and counter still need future expansion testing.",
+    "Long-term contents, visual quality, native save interruption, ads and IAP are not tested by this package."
+  ]
+}
