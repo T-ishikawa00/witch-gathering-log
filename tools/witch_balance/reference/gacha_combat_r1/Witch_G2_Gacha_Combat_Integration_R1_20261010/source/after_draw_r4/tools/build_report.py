@@ -1,0 +1,125 @@
+from pathlib import Path
+import json,re,html,hashlib,platform
+ROOT=Path(__file__).resolve().parents[1]
+r=json.loads((ROOT/'results/study/ANALYSIS_R4.json').read_text());ui=json.loads((ROOT/'qa/BROWSER_QA.json').read_text());targets=json.loads((ROOT/'results/TARGET_SENSITIVITY.json').read_text());s=r['primary_summaries']
+f=lambda x:f'{x:.1f}'
+pct=lambda x:f'{x*100:.1f}%'
+A=s['budget1500|established_box|A'];C=s['budget1500|established_box|C'];CE=s['budget1500|first_box|C'];daily=s['daily|established_box|C']
+q2A=r['optional_q2_duplicate_sensitivity']['budget1500|established_box|A'];q2C=r['optional_q2_duplicate_sensitivity']['budget1500|established_box|C']
+rows=[]
+rows += ['# 魔女の採集帳｜まとめ引き後の整理・強化 接続検証 R4','',
+'2026-10-10 / 前回Gacha Research R3・Commerce R2を保全した比較。実課金・実ユーザー試験ではない。','',
+'## 1. 今回の判断','',
+'**コモン入りCは、次の実ゲーム試遊へ進める候補として残す。ただし、確率表だけを正式採用しない。** 一括整理・保護・保留・強化導線が必要。50個を1個ずつ処理させる設計にはしない。','',
+f'低品質の控えも所有する60個の比較用装備箱に限定した1,500円相当の比較では、Cは50個中平均{f(C["retained"]["mean"])}個を保持し、平均{f(C["offered_for_optional_scrap"]["mean"])}個を確認付き分解へ提案できた。普通1粉・良質2粉という試験値では平均{f(C["powder"]["low"]["mean"])}粉。最初の杖を＋0→＋3にする30粉へ、{pct(C["progress"]["low"]["one_plus3_rate"])}の試行が届く。一方、全部の50個が装備更新になるわけではない。','',
+'低品質を自動で捨てた結果ではない。初入手・ロック・装備中・保存構成・実投資・共用装備の必要数・副効果の違いを保護する。高品質は原則あとで比較するため保持する。','',
+'**人の整理時間は未測定。** 実行したのはブラウザの自動操作と、明示した時間仮定による作業量モデル。自動操作の1秒未満の値を、人が判断する時間へ転用しない。','',
+'## 2. 参照したものと、今回補った比較用条件','',
+'|区分|内容|','|---|---|',
+'|原本から適用|Gacha R3のA/C確率・40/100回の伝説保証・10/20回の特級以上保証・目標50%/すり抜け後保証。Commerce R2の装備29型メタデータと提案副効果プール。|',
+'|今回の初期条件|4人加入済み、森中ボス後の9基本型、全個体研成I・＋0。初期武器4個の箱と、一通り型を所有した60個の比較用箱。60個は20装備枠相当のQ2＋同数のQ1/Q0控え。猫の追加4型は未取得の成長R2に属するため捏造追加しない。完全な24枠編成の再現ではない。|',
+'|未確定の入力|分解量1/2/4粉などの3案、共用品の保護個数、整理提案の条件、収納120/240枠の感度検査。正式なゲームルールではない。|',
+'|会話記録に基づく強化プローブ|＋1の費用5、次に10、次に15、＋3累計30。3個の目標を順に＋3にする上限90。基礎杖14、1段＋3%の算術。元の成長R2/R5実装を再実行したわけではない。|',
+'|未取得・未検証|実際の成長R2・経済R3・R6戦闘ランナー。真の装備更新数、キャラ実効能力、ボス勝率、全レシピ消費、30日攻略、購入意欲。|','',
+'「同品質内の副効果分位が同等以上」は比較候補の根拠にはなるが、R6のAI挙動や勝利の単調改善を保証しない。総合戦力へ勝手に換算しない。','',
+'## 3. 同じ1,500円相当、同じ所持品、同じ乱数系列で比較','',
+'|条件|A：前回・希少以上|C：コモン入り|','|---|---:|---:|',
+'|普通/良質/希少/特級/伝説|0/0/80/17/3%|35/40/20/4/1%|',
+'|1回の価格換算|150円|30円|','|引く個数|10|50|','|伝説保証|40回|100回|','|無料基礎供給|1回/日|5回/日|',
+'|特級以上保証|10回|20回|','',
+'価格はパック中の換算値。販売済み商品価格でも推奨購入額でもない。Cは排出品質だけでなく供給も緩和しているため、良い結果が出ても「コモンを混ぜた効果だけ」とは結論できない。今回の初回配布・ボス券は比較外。','',
+'一通り所有した60個の箱、各2,000系列の結果：','',
+'|開封・一次整理の結果|A|C|','|---|---:|---:|',
+f'|希少以上・比較用に保持|{f(A["higher_quality_for_review"]["mean"])}個|{f(C["higher_quality_for_review"]["mean"])}個|',
+f'|保持する低品質|0個|{f(C["retained_low"]["mean"])}個|',
+f'|今回の結果から保持する合計|{f(A["retained"]["mean"])}個|{f(C["retained"]["mean"])}個|',
+f'|確認付き分解の候補|{f(A["offered_for_optional_scrap"]["mean"])}個|{f(C["offered_for_optional_scrap"]["mean"])}個|',
+f'|試験分解量1/2粉で得られる粉|{f(A["powder"]["low"]["mean"])}|{f(C["powder"]["low"]["mean"])}|',
+f'|目標型の伝説が出た試行|{pct(A["target_legendary"]["rate"])}|{pct(C["target_legendary"]["rate"])}|','',
+'ここでの「保持」は「全部使う」「全部強くなる」ではない。特に希少以上は性能判定を完了せず、比較候補として保留している。Aの粉が0なのは全10個を保持する条件だからであり、Aの装備に価値がないという意味ではない。','',
+'同品質・同型の明確な重複候補だけQ2も確認付き分解する感度比較では、',
+f'Aは平均{f(q2A["powder"]["low"]["mean"])}粉、Cは{f(q2C["powder"]["low"]["mean"])}粉だった（Q2=4粉の仮定）。Q2の整理を標準で自動実行する採用判断はしていない。','',
+'### 少ない所持品では、残すべき装備が多くなる','',
+f'初期武器4個だけの比較では、Cは平均{f(CE["retained"]["mean"])}個を保持し、粉は{f(CE["powder"]["low"]["mean"])}。＋3の30粉へ届いた割合は{pct(CE["progress"]["low"]["one_plus3_rate"])}。同じガチャ結果でも、初めて手に入れた装備や必要な共用品を残すため、得られる粉は減る。','',
+'### 装備が揃っていても、低品質の控えを持っているとは限らない','',
+'主比較の後、装備中のQ2を同じ20個に固定し、低品質の控えだけ変えた6,000条件を追試した。この感度比較は、事前の主比較に混ぜず別記録とする。','',
+'|C・50個開封の在庫感度|今回保持する装備|得られる粉|＋3の30粉へ届く割合|','|---|---:|---:|---:|',
+'|Q2装備20個だけ、低品質の控えなし|30.6個|30.1粉|53.9%|',
+'|各型の低品質を1個ずつ控えに所持|26.6個|34.8粉|82.9%|',
+'|主比較と同じ、共用人数分の控えあり|20.3個|42.4粉|99.2%|','',
+'**99%近く強化できたという数字を、全プレイヤーの保証にはしない。** 今回は元の品質別ステータス範囲がないため、違う品質同士を比較して下位を一律不要にしていない。実際の装備値とプレイヤーの保管方針をつなぐまで、残す個数と粉にはこの程度の幅がある。','',
+'### 目標を共用品に変えると、結果も変わる','',
+'追加の500系列×6対象×2案を検査。Cで杖を目標にした場合の平均粉は42.9、3人共用の身体装備で39.4、4人共用の護符で37.6。1個だけ残せばよい武器と、人数分を残す共用品を同じ整理規則で潰してはいけない。これは今回の保護数案の感度であり、素材還元率の最終値ではない。','',
+'## 4. コモンの「育成への寄与」は条件付きで確認できた','',
+'普通1粉・良質2粉の仮定で、使用したことのない＋0装備だけを分解する。生来の研成に対する架空の投資返還や、強化して再分解する循環は入れない。','',
+'|C・1,500円相当|初期武器中心|一通り所有|','|---|---:|---:|',
+f'|獲得粉の平均|{f(CE["powder"]["low"]["mean"])}|{f(C["powder"]["low"]["mean"])}|',
+f'|獲得粉の10〜90%点|{f(CE["powder"]["low"]["p10"])}〜{f(CE["powder"]["low"]["p90"])}|{f(C["powder"]["low"]["p10"])}〜{f(C["powder"]["low"]["p90"])}|',
+f'|＋0から＋3へ届く割合|{pct(CE["progress"]["low"]["one_plus3_rate"])}|{pct(C["progress"]["low"]["one_plus3_rate"])}|',
+f'|旧森供給12粉/時に対する平均換算|{f(CE["powder"]["low"]["mean"]/12)}時間分|{f(C["powder"]["low"]["mean"]/12)}時間分|','',
+'「30粉あれば杖の威力加算14.00→15.26まで強化できる」という範囲を検査した。キャラ全体が9%強くなる意味ではない。また、目標装備が既に現在の強化上限に達していれば、新しい粉は保管され、即時の能力上昇は0。','',
+'### 全低レアを捨てる前提では、還元量を過大評価する','',
+'前回の理論上限は、Cの普通・良質をすべて分解した約56.2粉。今回の一通り所有ケースでは約42.4粉、初期ケースでは約32.8粉。初入手や有用な控えを残すことで、実際に提案できる分解数は変わる。','',
+'粉はガチャの副次的な価値。これだけを商品の主な魅力にすると、希少な道具を探すゲームではなく粉を買う画面になってしまう。目標型の狙いやすさと実効副効果、見た目の魅力が必要なことは変わらない。','',
+'## 5. 無料5回の日は、毎回＋1を保証できない','',
+f'一通り所有・保証0から無料5回の独立した1,000例では、Cの平均粉は{f(daily["powder"]["low"]["mean"])}、その粉だけで＋1の5粉へ届く割合は{pct(daily["progress"]["low"]["at_least_plus1_rate"])}だった。','',
+f'「新しい型なし・希少以上なし・得た粉だけでは＋1未満」の狭い条件は{pct(daily["no_new_type_high_or_plus1"]["rate"])}。これは全ての良質個体が無価値、あるいはプレイヤーがつまらないと感じた、という判定ではない。','',
+'毎日の継続で保証は蓄積する。この日次比較は各試行を保証0から始めたもので、長期定常率ではない。基礎の自然採集・既存粉・初回配布・ボス報酬も入れていない。','',
+'「1日5回必ず引けば毎回強化できる」と表示しない。足りない場合は次の強化までの不足を見せる。結果を良く見せるために新しいデイリー通貨や無料ドロップの弱体化は加えていない。','',
+'## 6. 装備箱を圧迫するのは、コモンだけではなかった','',
+'旧案の自然装備48個/24時間と無料ガチャを足し、希少以上を全て残した場合の収納圧を500系列ずつ検査。自然とガチャの品質保証は分離。型・実効性能・育成進行は計算しない。','',
+'|保留する希少以上だけの個数|A|C|','|---|---:|---:|',
+f'|7日後の平均|{f(r["storage_pressure"]["A"]["days"]["7"]["held_high"]["mean"])}|{f(r["storage_pressure"]["C"]["days"]["7"]["held_high"]["mean"])}|',
+f'|30日後の平均|{f(r["storage_pressure"]["A"]["days"]["30"]["held_high"]["mean"])}|{f(r["storage_pressure"]["C"]["days"]["30"]["held_high"]["mean"])}|','',
+'自然装備由来だけで約367個/月。Cへ切り替える増分はこの条件で約11個/月。コモンを除けば収納問題が解決するのではなく、どちらの案でも高品質の比較・保留を後で整理する必要がある。','',
+'仮に120枠なら希少以上だけで中央値約9〜10日、240枠なら18〜19日で超える。120/240は感度用の仮容量で、G2の所持上限として採用しない。初期所持品と保持した低品質を加えていないため、この運用の収納負担の下側を見ている。','',
+'対策は枠課金へ誘導することではなく、保護した受信箱、型別グループ、比較候補のマーク、確認付き重複整理。自動で最適装備を着せることや、古いお気に入りを捨てることは別の行為であり今回追加しない。','',
+'## 7. 整理は一括にする。ただし「保留」と「全件厳選完了」を混同しない','',
+'今回の操作見本：[まとめ引き後の操作検証](review/AFTER_DRAW_REVIEW.html)。A案の新しい完成デザインではなく、保護・一括整理・強化へ戻る手順の検証画面。既存のA案や家R3を置き換えない。','',
+'**Cの最短経路は、結果表示後から6操作。** 余剰確認→まとめて選択→確認画面→分解確定→工房→＋1。初期は一件も選択されていない。戻れば何も減らない。目立つ3点以外も残り、未読を理由に消さない。','',
+'実操作では対象の確認や比較に時間が必要。以下の人手時間は、要約5〜10秒、高品質1点4〜10秒、低品質1点0.5〜1.5秒、1クリック0.5〜1秒などを置いた範囲計算。実験参加者の測定や既存モデルへの較正はない。','',
+'|整理の課題|A|C|','|---|---:|---:|','|注目最大3点＋一次整理＋強化判断、残りは保持|約20〜47秒|約24〜56秒|','|全個体をそれぞれ開いて判断する仮定|約58〜137秒|約130〜306秒|','',
+'上段と下段は完了した作業が違う。一次整理が速いのは、後の詳細比較を一部保留するからであり、全厳選が同じ時間で終わる証拠ではない。開封演出・通信・読み込み時間は別。','',
+f'実際のブラウザ自動試験は12通し動線、{ui["checkpoints"]}チェックポイントを通過。20反復ずつのスクリプト操作はA中央値{ui["scripted_timings"]["A"]["median_seconds"]:.3f}秒（粉なしで工房を確認）、C中央値{ui["scripted_timings"]["C"]["median_seconds"]:.3f}秒（6操作で＋1）だった。**読解・判断を持たない自動操作の数字であり、人の整理時間やiPhoneの性能値ではない。**','',
+'本人が試すときは「結果を開いて、操作時間を測る」からスタートできる。計測はそのページ内だけで保持し、外部送信しない。固定サンプルはCの粉中央値に近いseedを選び、Aも同じseedで作成した。全ての尺度で平均的な結果という意味ではない。','',
+'## 8. 一括整理の安全条件','',
+'同型・同品質・同研成・同強化・同じ副効果の種類の範囲だけで、分位値を比較する。違う特性を「戦力が低いから不要」とはしない。共用護符は4人分など、同時使用候補を残す比較設定。','',
+'提案した品ごとに、削除後も残る比較対象のUIDを保持する。提案品同士を互いの根拠にして全消去することを防いだ。所有状態の版とハッシュを確認し、確認後のロックや装備状態変化があれば再確認。抽選結果の再受信・分解の再送は同じ操作として処理する。','',
+'容量が足りない場合は保留箱へ入れる。保存失敗では所持品・粉の一方だけ変えない。以上はメモリ内の契約モデルとブラウザの模擬操作であり、実DBの電源断耐性、返金の派生資産処理、StoreKit、認証安全性の検証ではない。','',
+'## 9. 前回資料の算術誤りを訂正','',
+'前回R3コードの一部に、森の12粉/時を144粉/日として比率の分母に使う箇所があった。24時間なら **12×24＝288粉/日**。144粉は12時間分。今回の日次比率は288で計算する。原資料は修正せず保全し、訂正を記録する。','',
+'1,500円のガチャ品質期待値、目標伝説の確率、約56.2粉という全低品質分解の絶対値には影響しない。日次供給に対する比率をそのまま引用しない。','',
+'## 10. 実行した検査と、限界','',
+f'主比較14,000開封条件・378,000個。Q2の重複まで含める感度比較は同じ8,000条件を再利用したもので、独立した追加抽選ではない。目標6種類の補助比較は6,000条件・180,000個。主比較後の在庫感度は別の6,000条件・180,000個。収納圧は500系列×2案×30日。これらを人数や実際のプレイ日数に読み替えない。','',
+'新しい契約テスト62件、前回のR3テスト30件・Commerce R2テスト74件が通過した。ブラウザは3サイズで12動線、170チェックポイント、保存失敗・再送・状態更新の試験を実施。検査範囲でJavaScriptエラーと外部HTTP通信は0。','',
+'旧R6や元の装備数値が今回の実ファイルにないため、正確な「装備更新数」「勝率」「30/90日攻略速度」はまだ示さない。本検証では、代わりに保持数・比較候補・獲得粉・支払える強化段階を明示した。購入意欲、楽しさ、長期継続も人の確認が必要。','',
+'## 11. 採用候補と未確定事項','',
+'|論点|今回の判断|','|---|---|','|Cのコモン入り・まとめ引き|次のゲーム内試遊の本命候補として継続。価格/確率は未凍結。|','|低品質の確認付き一括整理|必要。初期選択OFF、初入手/投資/装備/ロックなどの保護を維持。|','|一括処理後の強化案内|粉と次の支払額を見せる。自動強化や自動購入はしない。|','|希少以上を永遠に保留|不可。後で比較・整理する機能を別に必要とする。|','|普通1/良質2粉|出発点として比較可能。経済全体の採用値ではない。|','|人の整理秒数|未測定。時間見積と自動操作は区別。添付見本で確認できる。|','|本番公開/課金|未承認。実R6・経済・所有権基盤・実機・本人評価へ接続してから判断。|','',
+'今回、Mac・GitHub・Codexの制作中ファイルは変更していない。前回R3ZIPを原本のまま同梱し、さらにその中に前回Commerce R2が保全される。未取得の旧戦闘R1〜R6まで含む完全統合版ではない。','']
+text='\n'.join(rows);(ROOT/'REPORT_R4.md').write_text(text)
+# Controlled Markdown rendering with no third-party dependency.
+def inline(t):
+    t=html.escape(t);t=re.sub(r'\*\*(.+?)\*\*',r'<strong>\1</strong>',t)
+    t=re.sub(r'\[([^\]]+)\]\(([^)]+)\)',r'<a href="\2">\1</a>',t);return t
+parts=[];table=[]
+def flush():
+    if not table:return
+    body=[line for line in table if not re.match(r'^\|[ \-:|]+$',line)]
+    cells=[line.strip('|').split('|') for line in body]
+    parts.append('<div class="scroll"><table><thead><tr>'+''.join('<th>'+inline(x.strip())+'</th>' for x in cells[0])+'</tr></thead><tbody>'+''.join('<tr>'+''.join('<td>'+inline(x.strip())+'</td>' for x in row)+'</tr>' for row in cells[1:])+'</tbody></table></div>');table.clear()
+for line in rows:
+    if line.startswith('|'):table.append(line);continue
+    flush()
+    if not line:continue
+    if line.startswith('# '):continue
+    if line.startswith('## '):parts.append('<h2>'+inline(line[3:])+'</h2>')
+    elif line.startswith('### '):parts.append('<h3>'+inline(line[4:])+'</h3>')
+    else:parts.append('<p>'+inline(line)+'</p>')
+flush()
+style='''*{box-sizing:border-box}body{margin:0;background:#f8f7f1;color:#20342f;font:16px/1.9 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif}header{background:#172b32;color:#fcf8eb;padding:35px max(20px,calc((100vw - 1040px)/2))}header h1{font-size:clamp(25px,4vw,37px);line-height:1.5;margin:8px 0}header p{font-size:13px;color:#dbc698}main{max-width:1100px;margin:auto;padding:26px 28px 70px}h2{font-size:23px;border-top:2px solid #647965;padding-top:16px;margin-top:42px;line-height:1.6}h3{font-size:19px;margin-top:28px}strong{color:#234f3e}p{margin:14px 0}.scroll{overflow-x:auto;margin:20px 0}table{border-collapse:collapse;width:100%;min-width:590px;font-size:14px;line-height:1.8}th{text-align:left;background:#264838;color:white;padding:12px}td{border-bottom:1px solid #ccd6cb;padding:12px;vertical-align:top}tr:nth-child(even){background:#ecf0e7}.notice{padding:16px;border-left:4px solid #ad894a;background:#f2ecda}.cards{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}.cards>div{flex:1;min-width:190px;border:1px solid #ccd6cd;background:#edf1e8;padding:16px}.cards b{display:block;font-size:24px}.cards small{display:block;font-size:12px}.button{display:inline-block;background:#294c42;color:#fff!important;padding:12px 20px;border-radius:6px;text-decoration:none}a{color:#28655c;overflow-wrap:anywhere}footer{font-size:12px;padding:20px;border-top:1px solid #ddd;color:#53675b}@media(max-width:600px){main{padding:22px 16px}h2{font-size:21px}.cards{display:block}.cards>div{margin:9px 0}}'''
+page='<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>魔女の採集帳｜ガチャ後の整理・強化 検証R4</title><style>'+style+'</style></head><body><header><p>WITCH’S GATHERING LOG / AFTER-DRAW VALIDATION R4 / 2026-10-10</p><h1>たくさん引いた、その後まで。</h1><p>残る装備・進む強化・整理の負担を、前回案と比較する。</p></header><main><div class="notice"><strong>一括整理まで含めれば、コモン入りは有力。</strong><br>ただし、実戦の強さと人間の整理時間は未測定。保持数を「装備更新数」と呼び替えません。</div><div class="cards"><div><b>50個 → 約20〜31個保持</b><small>C・既存の控え所持数によって変化</small></div><div><b>約30〜42粉</b><small>確認付き分解／普通1・良質2の仮値</small></div><div><b>6操作</b><small>結果から余剰整理・工房・＋1まで</small></div></div><a class="button" href="review/AFTER_DRAW_REVIEW.html">操作検証用の見本を開く</a>'+''.join(parts)+'</main><footer>設計検証のみ。購入・公開・Git・Macの既存プロジェクト変更なし。</footer></body></html>'
+(ROOT/'READABLE_REPORT.html').write_text(page)
+summary={'status':'C_CONDITIONAL_PLAYTEST_CANDIDATE_NOT_APPROVED','date':'2026-10-10','primary_sessions':r['sessions'],'primary_item_samples':r['mock_acquired_items'],'paired_dependency_note':'same seeds and outcomes shared between profiles/policies; not people or independent unique pulls for every count','secondary_q2_reused_sessions':r['secondary_repeated_sessions'],'target_sensitivity_sessions':targets['sessions'],'target_sensitivity_items':targets['drawn_items'],'post_primary_inventory_sensitivity_sessions':6000,'post_primary_inventory_sensitivity_items':180000,'storage_series':1000,'new_contract_tests':62,'baseline_research_tests':30,'baseline_commerce_tests':74,'browser_functional_flows':12,'browser_checkpoints':ui['checkpoints'],'browser_automated_timing_repetitions':40,'human_timing_measured':False,'human_time_is_assumption_only':True,'combat_or_full_economy_rerun':False,'source_math_correction':r['known_source_correction'],'source_copies_hash_check':47,'findings':['C retained20.4 and low-schedulepowder42.4 with low spares; without low spares retained30.6 and30.1powder. Not 50 upgrades','Early sparse fixture retained27.7 and32.8powder','Daily5 does not guarantee one affordable upgrade','Q2+ hoarding dominates long-run box pressure in both plans','Do not interpret partial-order affix comparison as combat-win guarantee','First-pass bulk timing defers detailed high-quality curation'], 'not_tested':r['limits'],'art_design_A_unchanged':True,'Mac_GitHub_Codex_unchanged':True}
+summary['implementation_sha256']={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in [ROOT/'tools/after_draw_model.py',ROOT/'tools/run_study.py',ROOT/'data/EXPERIMENT_PLAN.json']}
+(ROOT/'results/VALIDATION_SUMMARY_R4.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n')
+print('report',len(text),'HTML',len(page))

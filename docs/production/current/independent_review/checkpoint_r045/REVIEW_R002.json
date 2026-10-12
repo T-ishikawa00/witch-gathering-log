@@ -1,0 +1,56 @@
+{
+  "ancestry": {
+    "currentHEAD": "a63ab3a56ba66183f0fa6722ef6eab635c6454b7",
+    "parentCheckpoint": "93dff6a7c380227266e175a969c422a6a73031d3",
+    "parentIsAncestor": true
+  },
+  "correctionNote": "REVIEW_R001 used the union of payload+media paths in two git-count fields. This R002 reports the manifest sets separately: payload 561/561 tracked and in HEAD; media 0/163 tracked and in HEAD, as expected for local-only media. R001 is retained unchanged.",
+  "exclusionAudit": {
+    "activeR005RunnerExcluded": true,
+    "binaryMediaInPayload": [
+      "native/GeneratedArt/r001/LUNA_EXEC_RECOVER_BRIDGE_R088_SOURCE.png"
+    ],
+    "buildCachesDerivedDataXCResultIncluded": false,
+    "declaredExclusionMatchCount": 0,
+    "mediaDeltaTypes": {
+      ".jpg": 127,
+      ".mp4": 12,
+      ".png": 24
+    }
+  },
+  "mediaDelta": {
+    "actualBytes": 1122411753,
+    "actualFiles": 163,
+    "allPathsPresentAndSHA256SizeMatched": true,
+    "crossManifestDuplicateCount": 0,
+    "declaredBytes": 1122411753,
+    "declaredFiles": 163,
+    "localOnlyPaths": 163,
+    "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/LOCAL_QA_MEDIA_DELTA_R045_R001.json",
+    "pathsInHEAD": 0,
+    "pathsInIndex": 0,
+    "sha256": "ad5091b976c6421ab50d99b1622c108287676ef23ebbfc4568bf647f475d6d0c"
+  },
+  "payloadManifest": {
+    "actualBytes": 144093374,
+    "actualFiles": 561,
+    "allPathsPresentAndSHA256SizeMatched": true,
+    "declaredBytes": 144093374,
+    "declaredFiles": 561,
+    "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/CHECKPOINT_R045_CANDIDATE_FILES_R001.json",
+    "pathsInHEAD": 561,
+    "pathsInIndex": 561,
+    "pathsMissingFromHEAD": [],
+    "pathsMissingFromIndex": [],
+    "sha256": "f0d6070fd2ff6fc3bfd6c27c680baab84f44e6d67e21fdb50180b8eecd473fb2"
+  },
+  "reviewedAtUTC": "2026-10-12T02:30:27.069456+00:00",
+  "status": "PASS",
+  "workingTreeContext": {
+    "interpretation": "working tree change observed at review time; excluded from both manifests",
+    "reportedWorktreeChanges": [
+      "native/WitchGathering.xcodeproj/project.pbxproj"
+    ],
+    "thatPathInPayloadOrMedia": false
+  }
+}

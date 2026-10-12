@@ -1,0 +1,26 @@
+{
+  "schema": "independent-integration-review-r093-r001",
+  "status": "NO_BLOCKING_SOURCE_DEFECT_FOUND_NATIVE_VISUAL_REVIEW_PENDING",
+  "scope": "Read-only source review of wardrobe preview/wear/reset, furniture gating, R092 notice observer lifecycle, and R088 LUNA motion timing/cleanup.",
+  "sourceVerification": {
+    "integrationRecord": "recovery_r022/integration_r093_notice_luna_grounding_r001/INTEGRATION_R004.json",
+    "sourceInputs": 140,
+    "directHashMatches": 139,
+    "observerSeparateCorrection": {
+      "path": "native/WitchApp/PursuitNoticeRenderObserverR092.swift",
+      "correctionRecord": "recovery_r022/integration_r093_notice_luna_grounding_r001/COMPILE_FIX_R002.json",
+      "actualSha256": "d0cae7d57506f48887d341ce2591fd3b29e2cdd3ff95a2c27228f8a74e0b5761",
+      "matchesRecordedAfterSha": true
+    },
+    "buildStatus": "SIMULATOR_BUILD_PASS",
+    "resourceCount": 1914
+  },
+  "findings": [
+    {
+      "severity": "informational",
+      "topic": "candidate appearance ownership",
+      "detail": "wearCandidate dispatches setCosmetic(owned:true) for an unowned item before appearance selection; current UI explicitly says these are test candidates, not sale items. Keep this separate from a future purchase/acquisition flow."
+    }
+  ],
+  "nativeVisualAcceptance": "NOT_PERFORMED"
+}

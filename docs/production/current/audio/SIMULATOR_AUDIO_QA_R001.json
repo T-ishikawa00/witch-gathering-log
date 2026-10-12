@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "authority": "UNAPPROVED_TEST_OVERLAY_SIMULATOR_QA",
+  "date": "2026-10-10",
+  "simulator": {
+    "name": "Witch 03to05 R1 QA",
+    "udid": "9A067715-7CF3-40D3-9064-38423223959B",
+    "bundleID": "local.witch.autonomous.r1"
+  },
+  "build": {
+    "project": "native/WitchGatheringQA_20261010T161529.xcodeproj",
+    "derivedData": "native/DerivedDataAudioQA_161529",
+    "result": "BUILD SUCCEEDED",
+    "sourceManifest": "native/qa_source_20261010T161529/SOURCE_SHA256.json"
+  },
+  "probe": {
+    "rateLimited": 1,
+    "isMuted": false,
+    "qaProbePassed": true,
+    "activeVoices": 0,
+    "voiceLimitDropped": 2,
+    "activeResumes": 1,
+    "interruptionStops": 1,
+    "settingsReloadMatched": true,
+    "inactiveStops": 0,
+    "playRequests": 11,
+    "playStarted": 7,
+    "mutedSuppressed": 1,
+    "stoppedVoices": 7,
+    "volume": 1
+  },
+  "settingsBeforeTerminate": {
+    "mutedSuppressed": 0,
+    "playStarted": 0,
+    "activeVoices": 0,
+    "inactiveStops": 0,
+    "interruptionStops": 0,
+    "isMuted": true,
+    "voiceLimitDropped": 0,
+    "playRequests": 0,
+    "rateLimited": 0,
+    "volume": 0.37,
+    "activeResumes": 1,
+    "stoppedVoices": 0
+  },
+  "settingsAfterRelaunch": {
+    "voiceLimitDropped": 0,
+    "stoppedVoices": 0,
+    "inactiveStops": 0,
+    "mutedSuppressed": 0,
+    "playStarted": 0,
+    "interruptionStops": 0,
+    "isMuted": true,
+    "volume": 0.37,
+    "rateLimited": 0,
+    "activeResumes": 1,
+    "playRequests": 0,
+    "activeVoices": 0
+  },
+  "backgroundResumeFinal": {
+    "activeResumes": 2,
+    "playStarted": 1,
+    "voiceLimitDropped": 0,
+    "activeVoices": 0,
+    "isMuted": false,
+    "inactiveStops": 1,
+    "stoppedVoices": 1,
+    "volume": 0.65,
+    "playRequests": 1,
+    "interruptionStops": 0,
+    "lastInactiveStoppedVoices": 1,
+    "mutedSuppressed": 0,
+    "rateLimited": 0
+  },
+  "uiAccessibilityEvidence": "docs/production/current/independent_review/accessibility_audit_r001/r007_large_all.xcresult::testAudioControlsAndMutePersistence PASS",
+  "boundaries": [
+    "Human listening not run",
+    "physical iPhone/Silent switch not run",
+    "real AVAudioSession interruption not injected; shared QA stop branch tested",
+    "no production defaults or OS audio setting changed"
+  ]
+}

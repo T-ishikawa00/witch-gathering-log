@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-12T11:35:36.592793+09:00",
+  "rawBuildStatus": "exit0 manualcompilelink",
+  "warning": "clang: warning: using sysroot for 'MacOSX' but targeting 'iPhone' [-Wincompatible-sysroot]",
+  "inheritedSDKROOT": "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk",
+  "cause": "Swift -sdk is iPhoneOS but inherited SDKROOT is MacOSX; linker environment inconsistency observed",
+  "status": "NOT_FINAL_DEVICE_TARGET_VALIDATION",
+  "action": "preserve R003; rebuild exact frozen140source with subprocess SDKROOT set to explicit iPhoneOS sdk in R004",
+  "securityChanges": false
+}

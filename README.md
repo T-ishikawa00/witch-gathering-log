@@ -1,67 +1,33 @@
-# Idle Loot RPG — G1ローカル試作
+# 魔女の採集帳 — ③〜⑤ 独立監査用チェックポイント R046
 
-固定18装備・3ボスの実計算に、装備変更、放置収集、制作、端末保存を接続した試作です。G1の開発・検証までが今回の範囲です。
+このブランチは既存Privateリポジトリのmainを親にした、監査用の選別スナップショットです。実装の参照対象はSwiftUI/SpriteKitのiPhone版R093です。既存main由来の `src/`、`index.html` などは旧G1ブラウザ試作であり、正式な4人制ゲーム実装と混同しないでください。
 
-## 起動
+開発は継続中です。新規美術・バランス・商品設定は未承認候補を含みます。自動テストの成功は、Humanの美術採用、楽しさ評価、実機確認、課金完成、公開承認を意味しません。
 
-Macのターミナルで実行します。Node.js 20以上が必要です。依存パッケージのインストールは不要です。
+## 読む順序
 
-```sh
-cd /Users/PUBLIC_USER/Projects/idle-loot-rpg
-npm start
-```
+1. [全体進捗と残作業](docs/production/current/qa_drafts/progress_checkpoint_r046/PROGRESS_REPORT_R046.md)
+2. [正式委任と禁止事項](docs/production/mission_20261010_r1/Witch_Codex_Autonomous_03to05_20261010/01_CODEX_MASTER_MISSION.md)、[受入条件](docs/production/mission_20261010_r1/Witch_Codex_Autonomous_03to05_20261010/03_ACCEPTANCE_AND_BLOCKERS.md)
+3. [設計正本の目次](docs/design/CURRENT_DESIGN_INDEX.md)、[設計本文](docs/design/DESIGN_BIBLE.md)、[未解決の競合](docs/design/DESIGN_CONFLICTS.md)、[決定状態](docs/design/DECISION_STATUS.md)
+4. [現在の進捗](docs/production/current/CURRENT_STATUS.md)、[次の作業](docs/production/current/NEXT_ACTIONS.md)、[159制作単位の現物照合](docs/production/current/qa_drafts/progress_checkpoint_r046/ALL159_CURRENT_MAPPING_R001.json)、[個別コンテンツ台帳](docs/production/current/CONTENT_MATRIX_R059_APP020805.json)、[後発の個別検証](docs/production/current/CONTENT_PROGRESS_SUPPLEMENT_R071.json)
+5. [ゲームコア](native/WitchGameCore/Sources/WitchGameCore)、[SwiftUI/SpriteKit実装](native/WitchApp)、[コア回帰テスト](native/WitchGameCore/Tests/WitchGameCoreTests)、[ネイティブUI検証コード](native/WitchUITests)
+6. [R093ビルド証跡](docs/production/current/recovery_r022/integration_r093_notice_luna_grounding_r001/BUILD_RECEIPT_R002.json)、[コア212件の結果](docs/production/current/recovery_r022/integration_r093_notice_luna_grounding_r001/CORE_FULL_R006.json)、[iPhone向けコンパイル検証](docs/production/current/recovery_r022/integration_r093_notice_luna_grounding_r001/UNSIGNED_FINAL_VERIFICATION_R004.json)
+7. [90日・複数ビルド比較](docs/production/current/independent_review/earned_build_comparison_r025/R025_REPORT_CURRENT.md)、[課金・クラッシュ・権限エラーの切り分け](docs/production/current/purchases/STOREKIT_INCIDENT_CURRENT.md)
+8. [53装備利用箇所の監査](docs/production/current/independent_review/equipment_r093_native_r001/REVIEW_R001.md)、[追撃表示監査](docs/production/current/independent_review/notice_r092_native_r001/REVIEW.md)、[LUNA動作監査](docs/production/current/independent_review/luna_r093_r088_native_r001/REVIEW_R001.md)
+9. [共有ファイルとハッシュ](docs/production/current/sharing_r046/SHARED_PAYLOAD_MANIFEST_R002.json)、[画面の出典とハッシュ](docs/production/current/sharing_r046/gallery/GALLERY_MANIFEST_R001.json)
 
-[ゲームを開く](http://127.0.0.1:4173)。サーバーは127.0.0.1だけで待ち受けます。終了は起動したターミナルでControl+C。ポート4173を変更するとブラウザの保存先も変わります。
+## 実際のiOS Simulator画面
 
-## 操作
+| 家（R052時点） | 探索・R04戦闘（R093） | 試着（R093） |
+|---|---|---|
+| ![Home](docs/production/current/sharing_r046/gallery/home_r052.png) | ![Exploration](docs/production/current/sharing_r046/gallery/exploration_r093.jpg) | ![Wardrobe](docs/production/current/sharing_r046/gallery/wardrobe_r093.png) |
 
-1. 「探索」で崩門の番人を選び、挑戦します。初期の会心6点は一度だけ付与されます。
-2. 1倍・2倍で戦闘を観察できます。「演出を省略して結果へ」も同じ計算結果です。敗北・中断では装備や素材を失いません。
-3. 番人の初回クリア後、毒・防御の試用12点が利用できます。「装備」で各枠を選び、構成全体を比較して適用してください。試用付与と通常の収集履歴は分けて保存します。
-4. 保存構成は3枠です。名前変更・適用・確認付き上書きができます。ロック・装備中・保存構成参照・最後の1点は分解から保護されます。
-5. 「探索」で地域を選び、閉じてから戻ると経過時間を精算します。15分で装備1点＋素材5、離席1回は24時間まで。端数は地域別に持ち越します。
-6. 「帰還」の「開発用：8時間分を計算」で待ち時間を省略できます。`debugSimulated=true`とオフセットを保存し、再読込で同じ時間分を再付与しません。
-7. 素材120で装備を指定制作できます。所持72点を超えた装備は保留に残り、空き枠への受取・確認付き素材化ができます。
-8. 3ボスをクリアするとG1の確認範囲完了を表示します。引き続き編集・再戦できます。
+上記は実アプリの画面です。家は先行QA、探索は追撃表示の配置問題を含む検証中画面、試着はテストの選択子不一致を調査した時点です。正式な完成画面という扱いではありません。
 
-「設定・記録」には別セーブのバランス検証モード、端末内の観察ログ出力、セーブJSONの出力、時計基準の再設定、開発用保存故障注入があります。JSONの再取込UIはありません。初見での体験評価はまず攻略例を読まずに進めてください。
+## 共有範囲と再現限界
 
-## 再現する比較例
+共有するのは、現在の実装ソース、コア用データとテスト、検証・制作コード、主要な結果、品質台帳、設計正本、少数の画面です。大容量の原画・生成フレーム・音源・録画・xcresult・ビルド・キャッシュ・過去の重複中間出力はローカルに保持し、この追加スナップショットでは送信しません。署名秘密鍵、認証情報、実取引の生ログも共有対象外です。
 
-seed `1001`、群刃の衛兵を使用します。
+このため、この監査ブランチだけで画像・音源付きの完全なiPhoneアプリを再ビルドできるとは主張しません。`native/WitchGameCore` のパッケージとコアテストは含みますが、一部の長時間・外部証跡依存テストには個別条件があります。画像・録画のローカル保存先とハッシュは進捗報告および台帳に記録しています。絶対ローカルパスへのリンクはGitHub上からは開けません。
 
-- 毒6点：攻撃88、防御65、ガード5%、25.600秒で敗北。
-- 毒6点の靴を鉄根の脛当て、指輪を不退の指輪へ：攻撃80、防御140、ガード23%、38.000秒で突破、自HP245。
-
-結果画面で通常・毒・反撃、敵ヒット・ガード、HP、経過時間、前戦との構成差を確認できます。seedを替えると抽選結果が変わり、別の相手への勝利は保証しません。
-
-## 保存と復旧
-
-ブラウザのIndexedDBで候補状態・世代の更新を1つのトランザクションとして保存し、読戻し後に画面へ反映します。現在と前2世代を保持し、世代競合は再読込して計算し直します。失敗した精算は従来セーブから同じ抽選を再計算できます。完了直後の確認中断では操作IDで完了済みを確認します。
-
-最新世代が破損している場合は、有効な前世代から復旧して警告を表示します。その世代だけに保存されていた編集・結果・デバッグ時間送りは失われる場合があります。全世代が壊れた場合や非対応schemaでは初期化で上書きせず停止します。SHA-256は破損検知用です。
-
-端末時計や古いセーブの複製を完全に防ぐ仕組みではありません。ブラウザデータの削除、別ブラウザ、別端末への自動復元はありません。iOSの保存・復帰・移行は未検証です。
-
-## 検証
-
-```sh
-npm test
-node tools/compare-reference.js
-npm run verify
-```
-
-実ブラウザ試験は既存のCodex同梱PlaywrightとMacのGoogle Chromeを使用します。プロジェクトには依存を追加していません。別のMacでは`IDLE_LOOT_PLAYWRIGHT`と`IDLE_LOOT_CHROME`で既存環境のパスを指定します。サーバーを起動してから実行してください。
-
-```sh
-node tools/storage-browser-tests.js
-npm run test:browser
-```
-
-検証結果・画面証拠は`reports/`、実装は`src/`、元資料は`reference/`です。参照資料は変更していません。source識別は`reports/source-manifest.json`に記録します。
-
-## 技術構成と停止点
-
-`src/core/`は描画・IndexedDB・時計APIに依存しない純粋な計算です。`src/content.json`の数値はR2正本と一致し、`content.js`はブラウザ用の同内容です。`src/platform/storage.js`が保存、`src/game.js`が操作と保存の調整、`src/ui.js`と`styles.css`が画面を担当します。最終iOS技術と2D/3D方式は未決定です。
-
-最終アート・音・ランダム副効果・覚醒・広告・課金・iOSビルドは今回実装しません。人による評価は`USER_TEST_NOT_RUN`です。G2移行前の確認項目は`reports/HUMAN_REVIEW.md`を参照してください。G2・G3には着手していません。
+監査では、実行済みの証拠と未実行コードを区別し、使用ビルド・テスト条件・セーブ識別子・品質判定の範囲を確認してください。部分完成・検証不足・未制作・Human/Apple環境待ちを一括して「完成」にしないでください。過去台帳の数値を現在の完成数へ転用しないでください。

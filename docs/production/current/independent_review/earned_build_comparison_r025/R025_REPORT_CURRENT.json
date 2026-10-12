@@ -1,0 +1,403 @@
+{
+  "schema": "r025_current_reconciled_summary_r001",
+  "status": "UNAPPROVED_TEST_OVERLAY",
+  "formalAdoption": false,
+  "runtimeOrCatalogChanged": false,
+  "simulationConfiguration": {
+    "candidateOverlay": "R014_MAGNET_MARK_STRIKE",
+    "growth": "R017 relative growth",
+    "seed": 4742,
+    "activity": "scripted virtual-day target switching/settlement; not literal daily login",
+    "purchasesOrAds": "none"
+  },
+  "strictFrozenRerun": {
+    "packagePath": "tier_safe/frozen_r003/package",
+    "manifestPath": "tier_safe/frozen_r003/FROZEN_PACKAGE_MANIFEST.json",
+    "manifestSHA256": "3d7229ea315a89fd9048369b1bc2789d05f99fa76cf33b7b9c95cc201e8dafba",
+    "fileCount": 4974,
+    "runnerPath": "Tests/WitchGameCoreTests/ProgressionE2ERunnerTests.swift",
+    "runnerSHA256": "000340e9d796bc672b5640267180fc3be6d826c6ea5184c36d336c46f9ad0457",
+    "packageByteRecheck": "all manifest-listed files matched after both runs",
+    "runs": [
+      {
+        "path": "tier_safe/frozen_r003/free_ward",
+        "reportSHA256": "1e661ae3a6c24887e62d374f60efc82cd2944e76ce67f65f7e583aa2b58b3f8f",
+        "actionSHA256": "bf5ec92e94643eab49820e596706b6cd1f38992a2ea622c667057c788a976778",
+        "runnerSHA256": "Tests/WitchGameCoreTests/ProgressionE2ERunnerTests.swift",
+        "actions": 1409,
+        "campaignWins": 30,
+        "campaignDefeats": 0,
+        "campaignAttempts": 30,
+        "challengeWins": 15,
+        "challengeDefeats": 0,
+        "reportedFirstCampaignClearDay": 20,
+        "reportedChallengesClearDay": 25,
+        "actualCampaignClearDayFromCommittedR05B": 20,
+        "campaignR05BBossReceipt": "VICTORY: B_R05_B, rewards committed atomically; ticks=23",
+        "crafts": 2,
+        "evolutions": 0,
+        "enhancements": 26,
+        "refinements": 18,
+        "qualityPromotions": 9,
+        "freeSummons": 450,
+        "dismantles": 411,
+        "finalGearInstances": 45,
+        "finalEquippedSlots": 24,
+        "spentRefineDust": 510,
+        "spentFreeTickets": 450,
+        "day30LastEncounterID": "CH_R05_03",
+        "day30LastEncounterTicks": 23,
+        "day30LastEncounterRemainingPartyHP": {
+          "C_APPRENTICE": 103,
+          "C_FAMILIAR": 133,
+          "C_SMITH": 163,
+          "C_WITCH": 121
+        },
+        "day30LastEncounterInitialPartyHP": {
+          "C_APPRENTICE": 143,
+          "C_FAMILIAR": 139,
+          "C_SMITH": 198,
+          "C_WITCH": 161
+        }
+      },
+      {
+        "path": "tier_safe/frozen_r003/free_poison",
+        "reportSHA256": "aa5556a22f863734a4dabb195b805298504c54aa972e99b1e016b7c3e49705a5",
+        "actionSHA256": "e79c5d4d8f7d914827a9dfaba9278be7ae9c8a278742d5bfc663e1513c608067",
+        "runnerSHA256": "Tests/WitchGameCoreTests/ProgressionE2ERunnerTests.swift",
+        "actions": 1416,
+        "campaignWins": 30,
+        "campaignDefeats": 0,
+        "campaignAttempts": 30,
+        "challengeWins": 15,
+        "challengeDefeats": 0,
+        "reportedFirstCampaignClearDay": 20,
+        "reportedChallengesClearDay": 25,
+        "actualCampaignClearDayFromCommittedR05B": 20,
+        "campaignR05BBossReceipt": "VICTORY: B_R05_B, rewards committed atomically; ticks=22",
+        "crafts": 2,
+        "evolutions": 0,
+        "enhancements": 28,
+        "refinements": 19,
+        "qualityPromotions": 13,
+        "freeSummons": 450,
+        "dismantles": 411,
+        "finalGearInstances": 45,
+        "finalEquippedSlots": 24,
+        "spentRefineDust": 620,
+        "spentFreeTickets": 450,
+        "day30LastEncounterID": "CH_R05_03",
+        "day30LastEncounterTicks": 22,
+        "day30LastEncounterRemainingPartyHP": {
+          "C_APPRENTICE": 103,
+          "C_FAMILIAR": 124,
+          "C_SMITH": 163,
+          "C_WITCH": 110
+        },
+        "day30LastEncounterInitialPartyHP": {
+          "C_APPRENTICE": 143,
+          "C_FAMILIAR": 139,
+          "C_SMITH": 198,
+          "C_WITCH": 150
+        }
+      }
+    ]
+  },
+  "legacy500Runs": {
+    "sourceBytesRetained": false,
+    "sourcePinOnly": true,
+    "runnerSHA256": "4c98a48391ff14f88ab37866629a31a0081d85a975149033b5c590a2e7eed3d8",
+    "runs": [
+      {
+        "path": "free_ward",
+        "reportSHA256": "0e9e227f5656a3ec2f7415e93711f2f6df85cbeb0fe4616ffb1f07c2f8e04593",
+        "actionSHA256": "a22de94738995f0b0754b0e01e4229d52674d9c8f94d2505a447c43d3cbc3ec3",
+        "runnerSHA256": "Tests/WitchGameCoreTests/ProgressionE2ERunnerTests.swift",
+        "actions": 1418,
+        "campaignWins": 30,
+        "campaignDefeats": 0,
+        "campaignAttempts": 30,
+        "challengeWins": 15,
+        "challengeDefeats": 0,
+        "reportedFirstCampaignClearDay": 21,
+        "reportedChallengesClearDay": 25,
+        "actualCampaignClearDayFromCommittedR05B": 20,
+        "campaignR05BBossReceipt": "VICTORY: B_R05_B, rewards committed atomically; ticks=24",
+        "crafts": 2,
+        "evolutions": 0,
+        "enhancements": 29,
+        "refinements": 20,
+        "qualityPromotions": 12,
+        "freeSummons": 450,
+        "dismantles": 411,
+        "finalGearInstances": 45,
+        "finalEquippedSlots": 24,
+        "spentRefineDust": 620,
+        "spentFreeTickets": 450,
+        "day30LastEncounterID": "CH_R05_03",
+        "day30LastEncounterTicks": 23,
+        "day30LastEncounterRemainingPartyHP": {
+          "C_APPRENTICE": 103,
+          "C_FAMILIAR": 122,
+          "C_SMITH": 163,
+          "C_WITCH": 110
+        },
+        "day30LastEncounterInitialPartyHP": {
+          "C_APPRENTICE": 143,
+          "C_FAMILIAR": 128,
+          "C_SMITH": 198,
+          "C_WITCH": 150
+        }
+      },
+      {
+        "path": "free_poison",
+        "reportSHA256": "29ef5b4939c2d214f2249e9c0f5af2b640ae0b7b7e433b9dad80f3ab3baa1099",
+        "actionSHA256": "8bfd6c128a22b410c1fa637c1d9a43f1561db740319a670b8fecb080d27db523",
+        "runnerSHA256": "Tests/WitchGameCoreTests/ProgressionE2ERunnerTests.swift",
+        "actions": 1424,
+        "campaignWins": 30,
+        "campaignDefeats": 0,
+        "campaignAttempts": 30,
+        "challengeWins": 15,
+        "challengeDefeats": 0,
+        "reportedFirstCampaignClearDay": 21,
+        "reportedChallengesClearDay": 25,
+        "actualCampaignClearDayFromCommittedR05B": 20,
+        "campaignR05BBossReceipt": "VICTORY: B_R05_B, rewards committed atomically; ticks=20",
+        "crafts": 2,
+        "evolutions": 0,
+        "enhancements": 31,
+        "refinements": 21,
+        "qualityPromotions": 15,
+        "freeSummons": 450,
+        "dismantles": 411,
+        "finalGearInstances": 45,
+        "finalEquippedSlots": 24,
+        "spentRefineDust": 700,
+        "spentFreeTickets": 450,
+        "day30LastEncounterID": "CH_R05_03",
+        "day30LastEncounterTicks": 20,
+        "day30LastEncounterRemainingPartyHP": {
+          "C_APPRENTICE": 103,
+          "C_FAMILIAR": 113,
+          "C_SMITH": 163,
+          "C_WITCH": 110
+        },
+        "day30LastEncounterInitialPartyHP": {
+          "C_APPRENTICE": 143,
+          "C_FAMILIAR": 128,
+          "C_SMITH": 198,
+          "C_WITCH": 150
+        }
+      },
+      {
+        "path": "passive_control",
+        "reportSHA256": "527758418f9b7f1feed6038fa977c9834544445cdeb4200426be905a733993b4",
+        "actionSHA256": "5a066f43f93c250fb88b0ec6366a85452e5afcbb373f579eb404ce9605d08c5a",
+        "runnerSHA256": "Tests/WitchGameCoreTests/ProgressionE2ERunnerTests.swift",
+        "actions": 731,
+        "campaignWins": 30,
+        "campaignDefeats": 1,
+        "campaignAttempts": 31,
+        "challengeWins": 15,
+        "challengeDefeats": 0,
+        "reportedFirstCampaignClearDay": 22,
+        "reportedChallengesClearDay": 26,
+        "actualCampaignClearDayFromCommittedR05B": 21,
+        "campaignR05BBossReceipt": "VICTORY: B_R05_B, rewards committed atomically; ticks=39",
+        "crafts": 1,
+        "evolutions": 0,
+        "enhancements": 0,
+        "refinements": 0,
+        "qualityPromotions": 0,
+        "freeSummons": 0,
+        "dismantles": 0,
+        "finalGearInstances": 5,
+        "finalEquippedSlots": 5,
+        "spentRefineDust": 0,
+        "spentFreeTickets": 0,
+        "day30LastEncounterID": "CH_R05_03",
+        "day30LastEncounterTicks": 40,
+        "day30LastEncounterRemainingPartyHP": {
+          "C_APPRENTICE": 92,
+          "C_FAMILIAR": 55,
+          "C_SMITH": 46,
+          "C_WITCH": 13
+        },
+        "day30LastEncounterInitialPartyHP": {
+          "C_APPRENTICE": 110,
+          "C_FAMILIAR": 85,
+          "C_SMITH": 155,
+          "C_WITCH": 97
+        }
+      }
+    ]
+  },
+  "legacyDowngradeEvidence": {
+    "ward": [
+      {
+        "day": 1,
+        "equip": "EQ_W_G2"
+      },
+      {
+        "day": 3,
+        "equip": "EQ_W_G1"
+      }
+    ],
+    "poison": [
+      {
+        "day": 3,
+        "equip": "EQ_W_P2"
+      },
+      {
+        "day": 18,
+        "equip": "EQ_W_P1"
+      }
+    ],
+    "evidence": "top-level R025 raw progression_actions_seed_1286.json files; not the similarly named tier_safe attempts"
+  },
+  "growth250Runs": [
+    {
+      "path": "growth250/passive_control",
+      "reportSHA256": "a4e5269cbc8a6ddf0446fcdc13fb6b535edc14b3d6186c8ef602d88f14e324c4",
+      "actionSHA256": "435d330cb831afc6a321c54a1b09f9146220013e90caf896d65ed1e406f18c42",
+      "runnerSHA256": "Tests/WitchGameCoreTests/ProgressionE2ERunnerTests.swift",
+      "actions": 505,
+      "campaignWins": 28,
+      "campaignDefeats": 72,
+      "campaignAttempts": 100,
+      "challengeWins": 0,
+      "challengeDefeats": 0,
+      "reportedFirstCampaignClearDay": null,
+      "reportedChallengesClearDay": null,
+      "actualCampaignClearDayFromCommittedR05B": null,
+      "campaignR05BBossReceipt": null,
+      "crafts": 1,
+      "evolutions": 0,
+      "enhancements": 0,
+      "refinements": 0,
+      "qualityPromotions": 0,
+      "freeSummons": 0,
+      "dismantles": 0,
+      "finalGearInstances": 5,
+      "finalEquippedSlots": 5,
+      "spentRefineDust": 0,
+      "spentFreeTickets": 0,
+      "day30LastEncounterID": "B_R05_A",
+      "day30LastEncounterTicks": 29,
+      "day30LastEncounterRemainingPartyHP": {
+        "C_APPRENTICE": 0,
+        "C_FAMILIAR": 0,
+        "C_SMITH": 0,
+        "C_WITCH": 0
+      },
+      "day30LastEncounterInitialPartyHP": {
+        "C_APPRENTICE": 100,
+        "C_FAMILIAR": 77,
+        "C_SMITH": 142,
+        "C_WITCH": 88
+      }
+    },
+    {
+      "path": "growth250/free_ward",
+      "reportSHA256": "e5eaf44ba8d73506a561405aa32966c8783b12fa9d99dd54f1bffae89ada2f9e",
+      "actionSHA256": "55be79c29703ee7e0d6dd431088fd4737f0b6699e7491522061ee2b87094f17f",
+      "runnerSHA256": "Tests/WitchGameCoreTests/ProgressionE2ERunnerTests.swift",
+      "actions": 1418,
+      "campaignWins": 30,
+      "campaignDefeats": 0,
+      "campaignAttempts": 30,
+      "challengeWins": 15,
+      "challengeDefeats": 0,
+      "reportedFirstCampaignClearDay": 21,
+      "reportedChallengesClearDay": 25,
+      "actualCampaignClearDayFromCommittedR05B": 20,
+      "campaignR05BBossReceipt": "VICTORY: B_R05_B, rewards committed atomically; ticks=26",
+      "crafts": 2,
+      "evolutions": 0,
+      "enhancements": 29,
+      "refinements": 20,
+      "qualityPromotions": 12,
+      "freeSummons": 450,
+      "dismantles": 411,
+      "finalGearInstances": 45,
+      "finalEquippedSlots": 24,
+      "spentRefineDust": 620,
+      "spentFreeTickets": 450,
+      "day30LastEncounterID": "CH_R05_03",
+      "day30LastEncounterTicks": 26,
+      "day30LastEncounterRemainingPartyHP": {
+        "C_APPRENTICE": 132,
+        "C_FAMILIAR": 114,
+        "C_SMITH": 150,
+        "C_WITCH": 99
+      },
+      "day30LastEncounterInitialPartyHP": {
+        "C_APPRENTICE": 133,
+        "C_FAMILIAR": 120,
+        "C_SMITH": 185,
+        "C_WITCH": 141
+      }
+    }
+  ],
+  "firstCampaignClearDayErratum": {
+    "earlierReportsWereOneDayLate": true,
+    "method": "read committed campaign-encounter:B_R05_B action day and daily snapshot; preserved raw report JSON not rewritten",
+    "actualDays": {
+      "legacy500Passive": 21,
+      "legacy500FreeWard": 20,
+      "legacy500FreePoison": 20,
+      "growth250Passive": "NOT_REACHED",
+      "growth250FreeWard": 20,
+      "frozen500FreeWard": 20,
+      "frozen500FreePoison": 20
+    }
+  },
+  "loadoutMatrix": {
+    "path": "loadout_checks/LOADOUT_MATRIX_R002_GROWTH_SENSITIVITY.json",
+    "sha256": "0e3398bee92b1e214c905ba66ab43e956f4ab68909d810baa823d00309adfe50",
+    "totalRows": 48,
+    "byGrowthBP": {
+      "250": {
+        "availableAndWon": 18,
+        "unavailable": 6,
+        "totalRows": 24
+      },
+      "500": {
+        "availableAndWon": 18,
+        "unavailable": 6,
+        "totalRows": 24
+      }
+    },
+    "pairedInput": "same file-backed day30/day90 snapshot and owned instances, actual equip/resolve B_R05_B seed 100049; rewards only in disposable clone",
+    "passiveInventoryAtCheckpoint30": [
+      "EQ_A_01",
+      "EQ_BODY_01",
+      "EQ_F_01",
+      "EQ_S_01",
+      "EQ_W_01"
+    ],
+    "appCandidateGrowth": "500 BP; 250 BP is test-only comparator"
+  },
+  "interpretation": [
+    "The R003 corrected tier selector removes the documented G2\u2192G1 and P2\u2192P1 target downgrades in the new action traces. It is an explicit analysis policy, not a runtime auto-equip feature or proof that the highest tier is universally strongest.",
+    "Compared with legacy action logs, corrected free_ward uses 1409 vs 1418 commands, 510 vs 620 refine dust, 26 vs 29 enhancements, 18 vs 20 refinements, 9 vs 12 quality promotions; its R05 final campaign receipt is 23 vs 24 ticks. Corrected free_poison uses 1416 vs 1424 commands, 620 vs 700 refine dust, 28 vs 31 enhancements, 19 vs 21 refinements, 13 vs 15 promotions; its R05 final receipt is 22 vs 20 ticks. Clear commit remains day20 in actual actions. These differences include changed tier selection and spending schedule; they do not isolate a combat effect.",
+    "free_poison is a target-policy label, not an accomplished evolution path: all legacy, corrected and frozen R003 poison runs recorded zero successful evolution commands.",
+    "The day30 snapshot stores the last challenge CH_R05_03 result, not the campaign boss result. Campaign R05_B receipts preserve ticks but not its full HP maps in the action log, so no campaign-boss HP delta is asserted. The fixed-snapshot matrix supplies bounded HP and elapsed-time evidence for B_R05_B.",
+    "The 48-row loadout matrix has 36 available/winning rows and 12 unavailable rows (18/6 at each growth multiplier). Missing loadouts were not fabricated. This is one seed and one boss; no balance approval follows.",
+    "250BP passive reached all five region unlocks but finished at 28/30 campaign with 72 repeated defeats at R05_A/B and 0/15 challenges; 250BP active ward finished campaign/challenges by actual days20/25 with no defeat. At 500BP, passive cleared by actual days21/26 with one campaign defeat. These are distinct strategies/inventories and do not isolate growth.",
+    "No full campaign completion day or result is changed by the report erratum; only the stale summary day counter was corrected in current analysis. Raw JSON artifacts remain unchanged."
+  ],
+  "artifactReferences": [
+    "tier_safe/frozen_r003/FINAL_RUN_NOTE.md",
+    "tier_safe/frozen_r003/free_ward/PROVENANCE.json",
+    "tier_safe/frozen_r003/free_poison/PROVENANCE.json",
+    "LOADOUT_GROWTH_SENSITIVITY_R002.md",
+    "GROWTH_250_VS_500_R003.md"
+  ],
+  "campaignBossHPAvailability": {
+    "activeRuns": "UNAVAILABLE: action receipts log victory/ticks but not full CombatResult HP maps at the exact R05_B commit; milestone snapshots were taken later.",
+    "passive500": "A day21 milestone snapshot immediately after B_R05_B records total remaining party HP 168.",
+    "day30LastEncounter": "CH_R05_03 result is recorded and reported per-run; its HP is not a proxy for campaign boss HP."
+  }
+}

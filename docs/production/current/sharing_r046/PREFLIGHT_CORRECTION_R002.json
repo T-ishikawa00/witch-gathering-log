@@ -1,0 +1,24 @@
+{
+  "at": "2026-10-12T12:06:44.859259+09:00",
+  "corrects": "PREFLIGHT_R001 canonicalDesignDiffFromRemoteMain:0 was an insufficient HEAD diff check, not proof that selected local docs all existed on remote main.",
+  "designSelected": 12,
+  "existingIdentical": [
+    "docs/design/ASSET_MANIFEST.md",
+    "docs/design/DECISION_LOG.md",
+    "docs/design/DESIGN_BIBLE.md",
+    "docs/design/MISSING_FILES.md",
+    "docs/design/OPEN_ISSUES.md",
+    "docs/design/README.md"
+  ],
+  "newRelativeToMain": [
+    "docs/design/CURRENT_DESIGN_INDEX.md",
+    "docs/design/DECISION_STATUS.md",
+    "docs/design/DESIGN_CONFLICTS.md",
+    "docs/design/IMPLEMENTATION_READINESS.md",
+    "docs/design/MISSING_ORIGINALS.md",
+    "docs/design/SOURCE_MANIFEST.json"
+  ],
+  "existingDifferent": [],
+  "readmeMapping": "AUDIT_README_R001.md is a source template mapped to audit-root README.md; final tree must validate root-relative links.",
+  "forbiddenChanges": false
+}

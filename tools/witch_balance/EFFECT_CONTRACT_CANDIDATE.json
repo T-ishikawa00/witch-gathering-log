@@ -1,0 +1,48 @@
+{
+  "status": "UNAPPROVED_IMPLEMENTATION_TRIAL_CONTRACT",
+  "source": "docs/design/shared/20261010_r1/sources/growth_r2/data/growth_gear_skills_R2.json",
+  "scope": "Candidate exact effect serialization for native WitchGameCore implementation and tests. Not a rules approval.",
+  "combat_contract": {
+    "mode": "four_actor_fully_automatic",
+    "player_tactics_or_ai_editing": false,
+    "battle_loadout_snapshot_at_start": true,
+    "deterministic_seeded_replay": true,
+    "event_order_preserves_r6b": true,
+    "reaction_depth_limit": 1,
+    "multi_hit_counter_unit": "one eligible enemy root action, not each hit",
+    "same_root_action_counter_cap": 1
+  },
+  "gear_effects": [
+    {"template_id":"EQ_W_P1","ops":[{"op":"poison_stack_cap_add","value":2}]},
+    {"template_id":"EQ_W_P2","ops":[{"op":"poison_stack_cap_add","value":2},{"op":"burst_bonus_if_poison_at_least","stacks":5,"bonus_bp":2500}]},
+    {"template_id":"EQ_W_G1","ops":[{"op":"replace_seed_with_ward","coefficient_bp":20000,"cooldown_ms":10000,"duration_ms":6000}]},
+    {"template_id":"EQ_W_G2","ops":[{"op":"replace_seed_with_ward","coefficient_bp":20000,"cooldown_ms":10000,"duration_ms":6000},{"op":"reflect_on_own_barrier_absorb","coefficient_bp":5000,"icd_ms":3000,"depth":1}]},
+    {"template_id":"EQ_A_02","ops":[{"op":"effective_heal_to_barrier","ratio_bp":2000,"duration_ms":6000,"root_heal_only":true}]},
+    {"template_id":"EQ_A_03","ops":[{"op":"effective_heal_to_barrier","ratio_bp":2000,"duration_ms":6000,"root_heal_only":true},{"op":"echo_bonus_set_bp","value":2000}]},
+    {"template_id":"EQ_S_02","ops":[{"op":"pressure_store","on":"eligible_counter","max_stacks":3,"consume_skill":"SK_S_HAMMER","extra_coefficient_per_stack_bp":2000}]},
+    {"template_id":"EQ_S_03","ops":[{"op":"pressure_store","on":"eligible_counter","max_stacks":3,"consume_skill":"SK_S_HAMMER","extra_coefficient_per_stack_bp":2000},{"op":"cover_target_barrier","coefficient_bp":4000,"duration_ms":4000,"icd_ms":3000,"depth":1}]},
+    {"template_id":"EQ_F_02","ops":[{"op":"mark_duration_set_ms","value":10000},{"op":"dash_conditional_extra_set_bp","value":6000}]},
+    {"template_id":"EQ_F_03","ops":[{"op":"mark_duration_set_ms","value":10000},{"op":"dash_conditional_extra_set_bp","value":6000},{"op":"chase_icd_set_ms","value":1500}]}
+  ],
+  "mandatory_contract_tests": [
+    "poison persists and ticks by authored duration; cap changes by item; >=5-stack bonus only qualifies at impact-time snapshot",
+    "ward replaces only the authored seed action; ward expiry/replacement/absorption conservation; reflection only on own ward absorption and cannot recurse",
+    "only effective healing (actual HP deficit) creates barrier, with root-heal gate; full/dead targets do not trigger",
+    "counter and pressure increment once per eligible root action, not per hit; cap3; hammer consumes snapshot stacks once",
+    "cover barrier target, expiry, ICD and recursion cap are deterministic",
+    "familiar mark expiry and dash condition; chase once per eligible event subject to 1500ms ICD",
+    "equipment rarity upgrades preserve latent affixes and do not change core effect semantics",
+    "same combat seed and same equipment snapshot replay byte-identically"
+  ],
+  "candidate_first_challenges": [
+    {"source_id":"CH_R01_03","title":"古樹の脈動","enemy":"B_R01_B","test":"root multi-hit + branch heavy; counter capped per root action; compare fortress and poison endurance"},
+    {"source_id":"CH_R02_02","title":"水鏡のゆらぎ","enemy":"B_R02_B","test":"6s closed / 4s open; closed direct mitigation 50%; poison remains effective; values are test-only"},
+    {"source_id":"CH_R03_01","title":"連槌の検分","enemy":"B_R03_A","test":"separate root-action cadence from multi-hit; compare pressure/counter and ward/heal approaches"}
+  ],
+  "reject_conditions": [
+    "evolved item silently ignored or accepted with base-only semantics",
+    "victory is made dependent on direct damage only, a specific paid item, or LR quality",
+    "enemy mitigation is raised after seeing build results to force diversity",
+    "seed, player-controlled tactic, or future enemy action leaks into automatic policy"
+  ]
+}

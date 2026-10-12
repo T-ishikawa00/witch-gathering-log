@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-12T10:36:54.867221+09:00",
+  "finding": "Agent candidate appended50ms to original execute300ms/attack900ms, potentially truncated by normalrecover transition",
+  "decision": "Dualoptin only split final100ms endpoint into34+33+33ms. R050-only and ordinary unchanged. Fixedcanvas unchanged; no bodyheightnormalization.",
+  "originalCandidatePreserved": "qa_drafts/luna_pose_bridge_r088/candidate_r002/renderer_candidate_r001",
+  "files": [
+    {
+      "path": "native/WitchGameCore/Sources/WitchGameCore/LunaBookMotion.swift",
+      "sha256": "2f4139612b41ff72c0de3864d9903863475c7817ca9baf4648c62332a29da296"
+    },
+    {
+      "path": "native/WitchGameCore/Sources/WitchGameCore/LunaBookMotionDataR088Candidate.swift",
+      "sha256": "6511e22887d860af7c0118867568bd1c55f775a524a5a8283eb52f4a91feb733"
+    },
+    {
+      "path": "native/WitchGameCore/Tests/WitchGameCoreTests/LunaBookBridgeR088Tests.swift",
+      "sha256": "69b768763838a5e55c62ab31ce9451cf181e64c1ad689b0d90317f5084962736"
+    }
+  ],
+  "status": "SOURCE_FIXED_TEST_PENDING"
+}

@@ -1,0 +1,62 @@
+{
+  "schema": "remaining-priority-review-r046-r001",
+  "worktreeHead": "a63ab3a56ba66183f0fa6722ef6eab635c6454b7",
+  "scope": "Read-only review of mission acceptance, status/next actions, the R093 159-unit mapping, R059/R071 status artifacts, later R037/R039 reviews, and App/WorkflowViews. No product edits, Simulator, remote access, or Git mutation.",
+  "sourcePins": {
+    "missionAcceptance": {"path": "docs/production/mission_20261010_r1/Witch_Codex_Autonomous_03to05_20261010/03_ACCEPTANCE_AND_BLOCKERS.md", "sha256": "5c26036ca41f3a45a870c3e5590481c97321ae01e54aa52a26a74c12d674012c", "bytes": 5867},
+    "currentStatus": {"path": "docs/production/current/CURRENT_STATUS.md", "sha256": "930a48cd840e9cc2514fdcd072b6fbb777873eadcacde022217a4e17a1de0a53", "bytes": 3045},
+    "nextActions": {"path": "docs/production/current/NEXT_ACTIONS.md", "sha256": "d1c75fff43856d337a8ad166d682191fd69aa3f62097ca02167d7d0d169602d0", "bytes": 1670},
+    "progressReportR046": {"path": "docs/production/current/qa_drafts/progress_checkpoint_r046/PROGRESS_REPORT_R046.md", "sha256": "d924560164a1dd6692f3d65845c3ac64634d9ff2476d5e4ee73a64bec119525a", "bytes": 10674},
+    "r093UnitMapping": {"path": "docs/production/current/qa_drafts/progress_checkpoint_r046/ALL159_CURRENT_MAPPING_R001.json", "sha256": "de256970041c3bb3b8ff9ec6f4d04eaa247f7d1844c5e37b154b481c21db0aac", "bytes": 1385513},
+    "r059Matrix": {"path": "docs/production/current/CONTENT_MATRIX_R059_APP020805.json", "sha256": "c0a1bebf0f03fcf6db521c5ecf9b2d43be20de12031dc67cce9a5397b516a27d", "bytes": 996276},
+    "r071Supplement": {"path": "docs/production/current/CONTENT_PROGRESS_SUPPLEMENT_R071.json", "sha256": "a5933bd123809f67a14961526693d45ef087c6f989b09bd6e30329e39f1a52d0", "bytes": 24461},
+    "r037Review": {"path": "docs/production/current/independent_review/recipe_goal_r037_success_r003/REVIEW.md", "sha256": "44f2f97d492fc812e7133bc09846ec1b86f6fd04507e030cbe5be3ea929447cc", "bytes": 4270},
+    "r039Review": {"path": "docs/production/current/independent_review/r039_r041_r001/REVIEW_R001.md", "sha256": "e56524782ab169dc1bd39874104c9014dd8c58d5677fe6797d84c5cfc9ee2bdc", "bytes": 5693},
+    "wardrobeDiagnosis": {"path": "docs/production/current/qa_drafts/wardrobe_home_r094/independent_failure_diagnosis_r001/DIAGNOSIS_R001.md", "sha256": "99ad5b46ea9f3a555daad3a92115ed005405b359e706d7a7932061bb97cbe54c", "bytes": 1723},
+    "wardrobeRunFinal": {"path": "docs/production/current/qa_drafts/wardrobe_home_r094/native_run_r005_F843_large_erna_travel/RUN_FINAL.json", "sha256": "bba3fab100addddfbff2d8ab0fde2f8a7567569bd554252653608262ef5fe7c7", "bytes": 917826},
+    "wardrobeViewSource": {"path": "native/WitchApp/WorkflowViews.swift", "sha256": "a761d88c9171b35580bed435b8e2facc25e53237f5153e5ea0a8fcfe84388546", "bytes": 26758},
+    "appSource": {"path": "native/WitchApp/App.swift", "sha256": "5dd0415b1265869d356b96fd8a98e58014b9119455daf9a500269c60ab5d4d71", "bytes": 100349},
+    "stageIII-VReview": {"path": "docs/production/current/qa_drafts/progress_checkpoint_r046/STAGE_III_V_R001.md", "sha256": "a5f9ad5d9296dc07fa04aaf15e7be19f2a663938e50bc7fe0c7d7349bdbee890", "bytes": 9872},
+    "stageIVR002": {"path": "docs/production/current/qa_drafts/progress_checkpoint_r046/STAGE_IV_R002.md", "sha256": "06518e4e4109819840ff9634890de853689e6a1a9f8c7bbbcd8806ef1638d394", "bytes": 5303},
+    "r041ProjectionView": {"path": "native/WitchApp/GatheringProgressViewR041.swift", "sha256": "2e0ace592c5b7627becf58b3a18720758a09592565d06c6f31f85e5668c49094", "bytes": 2348}
+  },
+  "interpretationLimits": [
+    "CURRENT_STATUS and NEXT_ACTIONS now read R110; the 248-row R059 matrix targets APP020805, and the 159-unit mapping targets R093. These are not one synchronized current-build acceptance snapshot. R110 identifies R011 as pending and R010 as not run.",
+    "A view, catalog row, runtime image, or QA-only candidate is not by itself evidence of complete end-to-end behavior or Human approval."
+  ],
+  "remainingLocalPriorities": [
+    {
+      "priority": 1,
+      "area": "Wardrobe native-flow binding and end-to-end verification",
+      "status": "PARTIAL; current recorded run not accepted",
+      "evidence": "WorkflowViews.swift contains actor selection, preview-only selection, explicit wear, reset, and model persistence actions. R094 diagnosis shows an ERNA fallback portrait after selecting NOIR, while picker AX value returned empty; it attributes the assertion to the query contract rather than a demonstrated product fallback defect. The R005 final record is TEST_FAILED_OR_UNBOUND with a container change, not a pass.",
+      "nextConcreteWork": "Bind and read back the actual XCTest bundle/method for the app under evaluation; complete six scoped Large/AXXXL flows for actor fallback, preview without save mutation, explicit apply/reset, reopen/relaunch persistence, and save preservation. Treat a repeated assertion failure as a product issue only if the actual hierarchy contradicts the visible actor/portrait.",
+      "alreadyCoveredSeparately": "R037 validates recipe-goal craft, in-place evolution, and locked-goal track/clear at two size classes; it does not cover wardrobe."
+    },
+    {
+      "priority": 2,
+      "area": "One synchronized current-scope status/readiness record",
+      "status": "PARTIAL; documentation reconciliation needed",
+      "evidence": "ALL159_CURRENT_MAPPING_R001 exists and maps 159 baseline IDs to R093 payload references. The R059 matrix targets APP020805; CURRENT_STATUS and NEXT_ACTIONS are R108-era snapshots; R071's 57 rows remain PARTIAL. These cannot imply later integrated-app coverage.",
+      "nextConcreteWork": "After current UI and asset captures settle, update only scope/readiness joins whose pinned runtime or source changed, preserve prior evidence and build IDs, and publish one synchronized status snapshot. Do not redo the mapping or relabel historical rows as current PASS."
+    },
+    {
+      "priority": 3,
+      "area": "Optional player-facing gathering-progress projection",
+      "status": "Candidate exists but is not wired into App",
+      "evidence": "GatheringProgressViewR041.swift is present, but no App/WorkflowViews reference was found. R039 proves a bounded route/claim/reopen flow; it does not require a live countdown projection.",
+      "nextConcreteWork": "Only if the launch scope includes a visible next-claim/progress panel, route this read-only view into the gathering/home UI and verify its projected units against the existing claim path without issuing a command. Keep this below wardrobe verification; do not describe the already-implemented gather/claim mechanic as missing."
+    }
+  ],
+  "completedEvidenceNotToRepeat": [
+    {"item": "R037 recipe-goal UI", "scope": "Six synthetic-fixture cases across Large/AXXXL: craft, in-place evolution, and locked-goal track/clear with persistence/reopen.", "boundary": "Not earned campaign and not wardrobe."},
+    {"item": "R039 gathering handoff", "scope": "One synthetic-seeded R01 route/claim/reopen path, with original native result and additive validator revalidation preserved.", "boundary": "Not earned-play campaign. R041 progress view is disconnected, but this does not establish that gathering claim mechanics are absent."}
+  ],
+  "humanOrExternalDependencies": [
+    {"item": "Paid commerce, restore, and server entitlement", "evidence": "The in-app shop says paid clothing/furniture are in preparation, restore is unavailable, and the development build makes no charges; release rows mark formal products, Apple Sandbox, and server authority incomplete.", "dependency": "Approved product/price/catalog and legal decisions, Apple Sandbox/device setup, and server-authoritative receipt/refund/restore design. Do not invent SKUs or enable live purchase."},
+    {"item": "Voice production and final creative adoption", "evidence": "R059 marks character_voice NOT_PRODUCED; candidate art/motion remain PARTIAL and Human approval pending.", "dependency": "Human decision on voice direction/rights and final visual adoption."},
+    {"item": "Physical-device and release evidence", "evidence": "Acceptance requires physical iPhone and release/signing gates; cited evidence is Simulator/unsigned rather than device execution.", "dependency": "Device availability and authorized signing/release setup."}
+  ],
+  "priorityConclusion": "The inspected records do not support calling the core gameplay loop absent: combat, gathering, crafting, evolution, and save/reopen paths exist with scoped evidence. The clearest local gate is reliable wardrobe end-to-end proof, followed by status reconciliation against the build actually under review. An unintegrated gathering-progress projection is a scope-dependent local UI item, not missing gathering mechanics. Paid commerce and voice are true gaps whose next steps depend on Human/platform decisions rather than autonomous local product implementation.",
+  "notClaimed": ["formal acceptance", "current all159 build pass", "all UI complete", "R037/R039 absent", "paid products approved", "physical device tested"]
+}

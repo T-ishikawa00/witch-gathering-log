@@ -1,0 +1,70 @@
+{
+  "at": "2026-10-12T10:35:14.058717+09:00",
+  "status": "SOURCE_INTEGRATED_NOT_BUILT",
+  "baseCommit": "93dff6a7c380227266e175a969c422a6a73031d3",
+  "changes": [
+    {
+      "path": "native/WitchApp/LivingScene.swift",
+      "beforeSHA256": "5ece24db5ca463e90e26ac0b0224ac2899c5c36f6c1d714efa16a52d3955d87c",
+      "afterSHA256": "159bf8dce410208a23468057426fe2b7c76bd7858039d27099b93324778a11ed",
+      "source": "docs/production/current/qa_drafts/pursuit_notice_r092/candidate_r002/source_candidate_r002/LivingScene.swift",
+      "reason": "R092 QA-only actualrender notice lifecycle"
+    },
+    {
+      "path": "native/WitchApp/PursuitNoticeRenderObserverR092.swift",
+      "beforeSHA256": null,
+      "afterSHA256": "3421ebe21c094011e4e5f0c41623e7969c8049e99effc6ca52a734a4633c5545",
+      "source": "docs/production/current/qa_drafts/pursuit_notice_r092/candidate_r002/source_candidate_r002/PursuitNoticeRenderObserverR092.swift",
+      "reason": "R092 QA-only actualrender notice lifecycle"
+    },
+    {
+      "path": "native/WitchApp/PursuitNoticeCaptureWindowR092.swift",
+      "beforeSHA256": null,
+      "afterSHA256": "2ce7398350c95cfc98fe7236a9438ebe74c6a167da411096d9133818f1492a9a",
+      "source": "docs/production/current/qa_drafts/pursuit_notice_r092/candidate_r002/source_candidate_r002/PursuitNoticeCaptureWindowR092.swift",
+      "reason": "R092 QA-only actualrender notice lifecycle"
+    },
+    {
+      "path": "native/WitchGameCore/Sources/WitchGameCore/LunaBookMotion.swift",
+      "beforeSHA256": "10d60346419850d62e741b93ea1281f060bd8653ee242d052355598218afe721",
+      "afterSHA256": "188e73511bf9c6f5a9d5b103a12e78977a897dda4299e90e85f06271ae17e5ea",
+      "source": "docs/production/current/recovery_r022/integration_r093_notice_luna_grounding_r001/source_candidate_r001/native/WitchGameCore/Sources/WitchGameCore/LunaBookMotion.swift",
+      "reason": "R088 dual-opt-in native pose bridge fixed canvas"
+    },
+    {
+      "path": "native/WitchApp/LunaBookSpriteMotion.swift",
+      "beforeSHA256": "9d7f91f2fc67ce6ffc2f218ccb9a7abacb19f1fb4d08c16ac2fc386b41a075c3",
+      "afterSHA256": "1ce1c8b281c475ba5ea73e220fe9245c0d7ee5cc244e8b5c9d838b0f5f1190e1",
+      "source": "docs/production/current/recovery_r022/integration_r093_notice_luna_grounding_r001/source_candidate_r001/native/WitchApp/LunaBookSpriteMotion.swift",
+      "reason": "R088 dual-opt-in native pose bridge fixed canvas"
+    },
+    {
+      "path": "native/WitchGameCore/Sources/WitchGameCore/LunaBookMotionDataR088Candidate.swift",
+      "beforeSHA256": null,
+      "afterSHA256": "fadd7063dff36a43dffca2341455771ea8a3c559848c62b80f09017c3736ef4f",
+      "source": "docs/production/current/recovery_r022/integration_r093_notice_luna_grounding_r001/source_candidate_r001/native/WitchGameCore/Sources/WitchGameCore/LunaBookMotionDataR088Candidate.swift",
+      "reason": "R088 dual-opt-in native pose bridge fixed canvas"
+    },
+    {
+      "path": "native/WitchApp/EquipmentDetailRenderer.swift",
+      "beforeSHA256": "1c24b99a15ff1c9591abc081e4fab33dca591940630594e14c0b9e22e1bb98b8",
+      "afterSHA256": "2a3565691e3a5f426dfb2f156fbab903a196b57828ed13e8dffc3bdf4a222f6d",
+      "source": "docs/production/current/qa_drafts/equipment_r091_registration_followup_r001/EquipmentDetailRenderer_R001_candidate.swift",
+      "reason": "AIRA ring workingHand matches actual27frame landmarks"
+    },
+    {
+      "path": "native/WitchApp/EquipmentMultiConsumerObserverR084.swift",
+      "beforeSHA256": "333942fa10329328357b61c8c11d78a51bc135608fdef21642dd6d4dcdedb00d",
+      "afterSHA256": "d67e0db1743e4cd3a3fe666d7f1d1385a6199d9f1dec1969f837e92821b7dd44",
+      "reason": "QA video badge moved away from ERNA hat and staff"
+    }
+  ],
+  "addedResource": {
+    "path": "native/GeneratedArt/r001/LUNA_EXEC_RECOVER_BRIDGE_R088_SOURCE.png",
+    "sha256": "7566146524e8c0ef24d1d33a265b71db5ecbe3d1dde1d141c33750dcfcb276d3",
+    "bytes": 664913,
+    "sourcePixelsUnchanged": true
+  },
+  "humanApproved": false,
+  "remaining": "R094 updated wardrobe merge, compile, actualnative regressions; R005 notintegrated"
+}

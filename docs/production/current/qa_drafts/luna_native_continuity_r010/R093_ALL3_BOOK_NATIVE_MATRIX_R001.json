@@ -1,0 +1,86 @@
+{
+  "schema": "r093-luna-six-native-cases",
+  "cases": [
+    {
+      "gearID": "EQ_A_01",
+      "case": "control",
+      "run": "docs/production/current/qa_drafts/luna_native_continuity_r010/native_capture_r007/native_control_EQ_A_01_r088_r001",
+      "rawStatus": "FAIL_PRESERVED",
+      "addendumStatus": "NATIVE_SEMANTICS_AND_RESTART_PASS_VISUAL_PENDING",
+      "rowCount": 1402,
+      "bridgeRows": 35,
+      "fallbackWalkRows": 0,
+      "readbackPass": true,
+      "priorJSONExact": true,
+      "visualAcceptance": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "gearID": "EQ_A_02",
+      "case": "control",
+      "run": "docs/production/current/qa_drafts/luna_native_continuity_r010/native_capture_r008/native_control_EQ_A_02_r088_r001",
+      "rawStatus": "CAPTURED_REQUIRES_VISUAL_REVIEW",
+      "addendumStatus": null,
+      "rowCount": 1402,
+      "bridgeRows": 33,
+      "fallbackWalkRows": 0,
+      "readbackPass": true,
+      "priorJSONExact": true,
+      "visualAcceptance": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "gearID": "EQ_A_03",
+      "case": "control",
+      "run": "docs/production/current/qa_drafts/luna_native_continuity_r010/native_capture_r008/native_control_EQ_A_03_r088_r001",
+      "rawStatus": "CAPTURED_REQUIRES_VISUAL_REVIEW",
+      "addendumStatus": null,
+      "rowCount": 1409,
+      "bridgeRows": 33,
+      "fallbackWalkRows": 0,
+      "readbackPass": true,
+      "priorJSONExact": true,
+      "visualAcceptance": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "gearID": "EQ_A_01",
+      "case": "fault",
+      "run": "docs/production/current/qa_drafts/luna_native_continuity_r010/native_capture_r008/native_fault_EQ_A_01_r088_r001",
+      "rawStatus": "FAIL_PRESERVED",
+      "addendumStatus": "NATIVE_SEMANTICS_AND_RESTART_PASS_VISUAL_PENDING",
+      "rowCount": 1407,
+      "bridgeRows": 32,
+      "fallbackWalkRows": 36,
+      "readbackPass": true,
+      "priorJSONExact": true,
+      "visualAcceptance": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "gearID": "EQ_A_02",
+      "case": "fault",
+      "run": "docs/production/current/qa_drafts/luna_native_continuity_r010/native_capture_r009/native_fault_EQ_A_02_r088_r001",
+      "rawStatus": "CAPTURED_REQUIRES_VISUAL_REVIEW",
+      "addendumStatus": null,
+      "rowCount": 1400,
+      "bridgeRows": 27,
+      "fallbackWalkRows": 36,
+      "readbackPass": true,
+      "priorJSONExact": true,
+      "visualAcceptance": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "gearID": "EQ_A_03",
+      "case": "fault",
+      "run": "docs/production/current/qa_drafts/luna_native_continuity_r010/native_capture_r009/native_fault_EQ_A_03_r088_r001",
+      "rawStatus": "CAPTURED_REQUIRES_VISUAL_REVIEW",
+      "addendumStatus": null,
+      "rowCount": 1409,
+      "bridgeRows": 31,
+      "fallbackWalkRows": 36,
+      "readbackPass": true,
+      "priorJSONExact": true,
+      "visualAcceptance": "PENDING_INDEPENDENT_REVIEW"
+    }
+  ],
+  "formalAdoption": false,
+  "scope": "same exact R093 runtime, isolated QA fixtures, dual-optinR050+R088",
+  "originalRawFailuresRetained": true
+}

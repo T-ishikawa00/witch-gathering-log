@@ -1,0 +1,177 @@
+{
+  "schema": "current_remaining_r025_v1",
+  "auditMode": "INDEPENDENT_READ_ONLY_SCOPE_RECONCILIATION",
+  "reviewedAtLocal": "2026-10-11",
+  "worktree": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg",
+  "bundle": {
+    "label": "R034_APP141658",
+    "app": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/app_20261011T141658/WitchGathering.app",
+    "buildReceipt": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/app_20261011T141658/BUILD_RECEIPT.json",
+    "executableSHA256": "8c5a5e2e4261040733aa100ed240891856bc9d69bbaeebea9b3c9d5c65850b6a",
+    "executableMatchesBuildReceipt": true,
+    "runtimeIndexSHA256": "c41c8708805f9b76a3f745cbad04d53f47cca4781850176ec0c5444e4d7e2947",
+    "catalogSHA256": "bb218f0fe6b4b1a6037faa75ddb301ded27d7b9de070747bebf99a3e72209337",
+    "runtimeIndexStatus": "candidate_asset_resolution_only_not_human_adopted_or_device_verified",
+    "catalogAuthority": "UNAPPROVED_TEST_OVERLAY"
+  },
+  "bundleSummary": {
+    "bundleFileCount": 1912,
+    "pngCount": 1892,
+    "pngDecodePassCount": 1892,
+    "pngDecodeFailureCount": 0,
+    "missingRuntimePathReferenceCount": 0,
+    "runtimeEntryCount": 187,
+    "generatedMotionClipCount": 38,
+    "generatedMotionFrameCount": 126
+  },
+  "priorBacklogSuperseded": [
+    {
+      "id": "dragon_real_battle_entry_sync",
+      "priorPriority": "P0",
+      "currentDisposition": "CLOSED_FOR_THE_MEASURED_ENTRY_SYNC_SCOPE",
+      "evidence": "CURRENT_STATUS R025 records R004/R005/standard entrance captures; R005 host verification passed. Foot-contact naturalness remains partial, but the old missing-entry-observation task is no longer open."
+    },
+    {
+      "id": "earned_loadout_unavailable_cells",
+      "priorLabel": "12 unavailable cells",
+      "currentDisposition": "REACHED_BY_VALID_CAMPAIGN_COMMANDS_WITH_COST_RECORDED",
+      "evidence": "R026 reachability review resolves six save-plan combinations using 988 winning drop battles, 20 recipe evolutions and 36 fixed-seed validation wins; six original saves unchanged. Grind acceptability is not established."
+    },
+    {
+      "id": "broad_effect_campaign_sweep",
+      "priorDisposition": "NARROWED_TO_ONE_UNBOUND_COMBAT_ASSET_AND_LEDGER_ERRATA",
+      "evidence": "Independent R025 reconciliation finds 30 of 31 combat effect IDs with committed traces across builds and historical counts for all 15 environment IDs. It is not a single-build full-46 verification."
+    },
+    {
+      "id": "AIRA_FEET_source_points",
+      "currentDisposition": "27_POINT_SOURCE_AUDIT_MOSTLY_RESOLVED; walk6 remains uncertain",
+      "evidence": "Independent review says walk6 point is visible on dark lower-leg/boot transition and should not be moved without a crisp cuff edge; held samples are not continuity proof."
+    }
+  ],
+  "remainingLocalWork": [
+    {
+      "priority": "P0",
+      "id": "jelly_settled_transition_current_source_validation",
+      "status": "CAPTURED_BUT_HOST_VISUAL_REVIEW_PENDING",
+      "concreteGap": "R034 bundle 141658 has 21 sample captures recorded (14 early/late plus 7 settled), but the case status is CAPTURED_REQUIRES_HOST_AND_VISUAL_REVIEW. The report requires exact host verification and review; no claim of 7-state PASS follows from capture count or helper unit tests.",
+      "nextAction": "After Root completes the frozen build, validate one ACT_E_R02_03 run with the final monotonic-time helper, checking 7 requested states, each settled receipt UUID/state, clip-derived delay ≤ elapsed ≤ delay+0.5s, expected path/index, video decode and receipt restoration. Preserve the old failure and the R003 capture report.",
+      "limits": "QA viewer only; no EnemyMotion/game-duration change; Simulator candidate evidence, not naturalness or Human acceptance."
+    },
+    {
+      "priority": "P1",
+      "id": "research_challenge_actual_battle_coverage",
+      "status": "OPEN_LOCAL_EVIDENCE_GAP",
+      "concreteGap": "Mission acceptance requires 15 research challenge conditions to be specified and battle-tested. R026 strict earned-save comparison contains only CH_R02_03, CH_R03_03 and CH_R05_02; the version-order document explicitly says all 15 actual-battle tests are incomplete.",
+      "nextAction": "Enumerate the 15 canonical challenge IDs and existing saved evidence, then execute actual resolveChallenge battles for only the uncovered IDs on isolated candidate saves, recording event/root/targets, win/loss, reward idempotency, revision, save/restart readback. Reuse existing challenge rules and values; do not add or tune conditions.",
+      "limits": "Do not present these candidate runs as Human balance approval, and distinguish already-cleared zero first-clear rewards from new rewards."
+    },
+    {
+      "priority": "P1",
+      "id": "magnet_effect_current_bundle_event_to_visual_proof",
+      "status": "ONE_COMBAT_EFFECT_REMAINS_WITHOUT_COMMITTED_DEFAULT_OR_CURRENT_CANDIDATE_BATTLE_PROOF",
+      "concreteGap": "Independent R025 audit reports 30/31 combat effect asset IDs with committed traces across different builds; ACT_E_R03_04_magnet_pullcue is explicitly opt-in-preview-only in that audit. Current source contains a dedicated E_R03_04 binding for enemy_magnet_mark/telegraph_heavy, so the actionable gap is build-scoped proof, not a request to bind unrelated effects.",
+      "nextAction": "On the first stable bundle containing the current candidate composition, run one actual E_R03_04 battle and assert same-root mark tell, locked intended target, amplified next actual hit or typed-interrupt cancellation, source/target placement, cue/impact cleanup and unchanged saved combat result. If candidate mechanics are not enabled in that build, report not exercised rather than infer coverage.",
+      "limits": "Candidate-only mechanic, no new balance values or default authority; no repeated all-46 sweep."
+    }
+  ],
+  "notSelectedAsLocalBlockers": [
+    {
+      "item": "Unresolved challenge affordability/grind judgments",
+      "reason": "The six missing R026 loadouts are command-reachable; each costs 77, 202 or 215 winning drop fights. Whether that grind is acceptable is a design/value judgment; do not tune economy in this evidence task."
+    },
+    {
+      "item": "AIRA walk6 coordinate replacement",
+      "reason": "The source review explicitly classifies the point as visible but uncertain and finds no clear misregistration. Ambiguity is not evidence for a coordinate shift."
+    },
+    {
+      "item": "New broad asset generation for naturalness",
+      "reason": "The existing B_R04_B four-leg alternatives have rejected intermediate candidates and R005 entry synchronization is measured. No bounded, source-supported next redraw is established by this comparison."
+    },
+    {
+      "item": "Historical intermittent UIKit crash / physical iPhone / VoiceOver / StoreKit production",
+      "reason": "Crash remains without a concrete reproducible sequence; physical and Apple authority tasks are external conditions rather than local code gaps."
+    }
+  ],
+  "documentationFreshness": {
+    "finding": "CURRENT_STATUS is timestamped 14:06, CONTENT_SCOPE_AND_GATES is 08:49 and points at app074517/R023, while the supplied current bundle is R034 app141658. The R024 local backlog is pinned to app094028 and has stale tasks. The summary/report should be reconciled after current validation; do not treat these old labels as current source defects.",
+    "recommendation": "Regenerate the status, matrix and backlog pins once the fresh 7-state build and selected candidate checks finish, keeping historic records immutable."
+  },
+  "sourcePins": [
+    {
+      "path": "docs/production/current/CONTENT_MATRIX_R034_APP141658.md",
+      "sha256": "866482caaadebe31766982253a01fc98181700e7abf61383bad0c9f373b6b964",
+      "bytes": 31498
+    },
+    {
+      "path": "docs/production/current/CONTENT_SCOPE_AND_GATES_R1.md",
+      "sha256": "7b85db1391ad9e799f9a514374f7db6f8e2bfbcbbf5a86e3b88aabd8f76fd4cb",
+      "bytes": 6466
+    },
+    {
+      "path": "docs/production/current/CURRENT_BUNDLE_READINESS_R034_APP141658.json",
+      "sha256": "b15a43b990f4f2f6964e2500889a14f2a5162c4363c940f504c47df8396a88fd",
+      "bytes": 4764308
+    },
+    {
+      "path": "docs/production/current/CURRENT_STATUS.md",
+      "sha256": "47d6e79030acd651dd59107d38b9166e961b1dae43518cc16ddc4ed41dff055b",
+      "bytes": 32795
+    },
+    {
+      "path": "docs/production/current/independent_review/aira_boot_remaining_pose_source_audit_r001/WALK6_CONTINUITY_RECHECK_R001.md",
+      "sha256": "a211691fcbce534eac098a9098e63a7773b00e226dd733ec876ee404f263b2f6",
+      "bytes": 3004
+    },
+    {
+      "path": "docs/production/current/qa_drafts/jelly_settled_transition_r001/NATIVE_STATES_R003.log",
+      "sha256": "a420cc3026a6176df95b17263b80427a05b08b70629b6310733671732ef70ee8",
+      "bytes": 291692
+    },
+    {
+      "path": "docs/production/current/qa_drafts/jelly_settled_transition_r001/QA_OBSERVER_CHANGE_R001.md",
+      "sha256": "932f0c44250bae31be63df5b1b41863f90ce5c0455e820a88b9bc4c8b67a95a0",
+      "bytes": 1346
+    },
+    {
+      "path": "docs/production/current/recovery_r022/effect_campaign_audit/independent_r025/INDEPENDENT_RECONCILIATION_R025.json",
+      "sha256": "e0144cda16bffec5d333f89347928c9421bdb57ace8b40627ce970bcfa548729",
+      "bytes": 9107
+    },
+    {
+      "path": "docs/production/current/recovery_r022/effect_campaign_audit/independent_r025/INDEPENDENT_REVIEW_R025.md",
+      "sha256": "52a15b3adc23a64f66d563050998a816676b6f9a08ac4a3c1aa918936173e579",
+      "bytes": 4411
+    },
+    {
+      "path": "docs/production/current/recovery_r022/local_work_backlog/BACKLOG.json",
+      "sha256": "35728027cff5dd3cd86ed482d4152c9d4a252e2a26d9b624952c7e63f5587704",
+      "bytes": 9512
+    },
+    {
+      "path": "docs/production/current/recovery_r022/local_work_backlog/BACKLOG.md",
+      "sha256": "0551113ae59528c00a26a60e07694e98919d108939636ad3745eb2fb02a64909",
+      "bytes": 8105
+    },
+    {
+      "path": "docs/production/current/recovery_r022/local_work_backlog/earned_loadout_reachability_r001/REVIEW.md",
+      "sha256": "aa1d356abd092c142832aa82e27c18be640980c9bfcba67f8d4867ed4cbd687e",
+      "bytes": 7517
+    },
+    {
+      "path": "docs/production/mission_20261010_r1/Witch_Codex_Autonomous_03to05_20261010/02_DECISIONS_AND_VERSION_ORDER.md",
+      "sha256": "e26f050e08956e3cfe990992683dc4b87398634e86039087cdfe3dc0966ca09c",
+      "bytes": 4455
+    },
+    {
+      "path": "docs/production/mission_20261010_r1/Witch_Codex_Autonomous_03to05_20261010/03_ACCEPTANCE_AND_BLOCKERS.md",
+      "sha256": "5c26036ca41f3a45a870c3e5590481c97321ae01e54aa52a26a74c12d674012c",
+      "bytes": 5867
+    },
+    {
+      "path": "native/build/app_20261011T141658/BUILD_RECEIPT.json",
+      "sha256": "5e68bc7112802c3331a09d4f6d17e30d95a853d396bd5c3b36c4ad349cd1ce10",
+      "bytes": 276593
+    }
+  ],
+  "interpretation": "Read-only comparison. No source, asset, simulator, save, product value or acceptance status was changed."
+}

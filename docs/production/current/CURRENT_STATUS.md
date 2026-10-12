@@ -1,0 +1,15 @@
+# Current state R110
+
+Stages III–V ACTIVE/PARTIAL. Development continues. R046 is being frozen for the one authorized private GitHub audit/checkpoint share; no push yet. Target T-ishikawa00/witch-gathering-log, separate audit snapshot branch parented on existing remote main497549e9. No force push/history rewrite/privacy change. Later development remains local unless separately authorized.
+
+Current Simulator runtime: R093 compile2, 140 Swift / 1,914 resources; Core212 tests/6skipped/0fail. Installed on both Root devices. Unsigned device R093 manual compile/link R004 PASS, Mach-O iOS17/SDK26.5,1,915 resources; not signed, no new Xcode packaging/physical run.
+
+All159 baseline IDs map to current R093 index/payloads; 1,557 unique reference paths SHA-exact. Old111 source/48 empty-source-field is historical provenance, NOT current missing-art count. All111 declared source units remain hash-exact. Current editable-source provenance of the old48 remains UNKNOWN. All30 enemy natural-motion acceptance remains PARTIAL;29 indexed seven-state sets, R04B dragon uses PartRig/Simulator walk candidate and device flight fallback. Four party animations remain PARTIAL. Individual mapping and detailed progress are in qa_drafts/progress_checkpoint_r046/.
+
+R094 wardrobe is integrated but six-flow native acceptance is not complete. R005 picker.value and R007 inherited accessibility ID failures are test-query issues. R009 installed new bundle but executed old source assertion; cause UNKNOWN. R010 unique class/binary identity candidate was reviewed before execution; Root found split-attachment verification mismatch, R011 correction is being prepared. R010 has NOT run. Preserve all raw failures. F843 idle1,099 prior/current JSON;9A idle770. All prior data/restoration from R009 exact. Protected A8/1D processes untouched.
+
+Equipment53consumers×630 rows=33,390 forced observations pass resource/geometry checks, yet gameplay-scale readability and natural full-speed acceptance remain PARTIAL. R09291 native same-buffer joins: technical trace passes, recipient position remains visually ambiguous. R095R002 dynamic layout candidate is host-only, not integrated. Compact-grounding candidate is also off-live. LUNA3control+3fault semantic/restart PASS; independent visualPARTIAL on book grip. R0962px offset is preserved but deferred because it does not solve finger wrap.
+
+R045 a63ab3a5 preserves562paths; independentR002561payload+163media exact. OriginalR05324,420/24,420 files exact. User recovery point2c4b3c20 is an ancestor. No restart from scratch. Payment remains INCOMPLETE; local Xcode paths are QA only, Code3/notEntitled unresolved separately from fixed Probe nil trap. Disk around1.9GiB; APFS clones/no deletion.
+
+Priority: reliable full wardrobe flow; actual missing long-term/launch-scope features after respecting prior recipe/gathering passes; meaningful missing art/initial selection expansion; bounded notice/grounding correction; real-device/performance/commerce gates. Tiny polish must not displace whole-game completion.

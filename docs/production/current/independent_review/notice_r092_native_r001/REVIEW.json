@@ -1,0 +1,645 @@
+{
+  "schema": "independent-r092-native-visual-review-v1",
+  "reviewStatus": "PARTIAL_VISUAL_ACCEPTANCE",
+  "scope": "Read-only visual reconciliation of two R092 normal challenge route captures on 9A and F843; no device/build/source changes.",
+  "overallFindings": {
+    "noticeText": "PASS_READABLE_IN_SELECTED_FRAMES",
+    "targetAssociation": "PARTIAL_AMBIGUOUS_SPATIAL_ASSOCIATION",
+    "postHitCleanup": "VISUALLY_CONFIRMED_ABSENT_IN_NEXT_SELECTED_POST_REMOVAL_FRAME",
+    "gameplayAndPersistence": "CAPTURE_RECEIPTS_REPORT_WIN_AND_SAME_SAVE_RESTART; launch was QA challenge argument, not UI-click evidence",
+    "formalAdoption": false,
+    "allVisualAcceptance": false
+  },
+  "visualAssessment": {
+    "observed": "The dark gold-edged notice reads “追撃 / アイラ” in both device captures. Its text is readable at the captured scale. The gold recipient ring is around red-haired AIRA (C_SMITH), while the notice panel sits low beside the pink-haired foreground actor and NOIR. The visible gap/placement does not make the recipient connection unambiguous; this agrees with receipt layoutReadback actualLayoutSafe=false, requiredLeaderPresent=false, and actualCollisionIDs including party nodes.",
+    "recipientMapping": "App.swift actorNames maps C_SMITH to アイラ; capture targetID is AIRA. The red-haired hammer wielder is the named recipient. Pink foreground character and NOIR are separate actors.",
+    "removal": "Notice is absent in exported frame 604 (9A) and 573 (F843), the first selected source frames after the respective first-root removal; additional later frames 610/768 and 580/762 also show it absent. Export records bind selected frames to exact AVAssetReader source indices. This confirms sampled visual disappearance, not every intervening frame.",
+    "otherOverlay": "Cyan “詠唱遅延” and R92 sequence badge are QA diagnostics, not evidence of normal player-facing notice design.",
+    "limits": "Notice trace explicitly says visualPixelsEvaluated=false and visualStatus=PENDING_ORIGINAL_PTS_VIDEO_REVIEW. Image review is bounded to exact same-buffer selected frames; it does not establish naturalness, comprehensive accessibility, or formal art/product acceptance."
+  },
+  "runs": {
+    "R04_9A_r001": {
+      "device": "9A067715-7CF3-40D3-9064-38423223959B",
+      "launchArgs": [
+        "--qa-isolated",
+        "--qa-save-key=dc32bf06-4283-4938-851d-c54c2dbbbe30",
+        "--qa-challenge=CH_R04_02",
+        "--qa-pursuit-notice-render-r092",
+        "--qa-load-delay-ms=1500"
+      ],
+      "launchPID": 51285,
+      "restartSameSaveBytes": true,
+      "priorJSONCount": 754,
+      "priorJSONExactAfterRestore": true,
+      "ownedProcessStopped": true,
+      "video": {
+        "bytes": 61420082,
+        "decodeExitCode": 0,
+        "probeExitCode": 0,
+        "sha256": "c61b79761d155b2e742cc33a19a98d63c390e667e7db398ec34427aef6be03e9"
+      },
+      "run": {
+        "path": "docs/production/current/recovery_r022/integration_r093_notice_luna_grounding_r001/notice_capture_r001/R04_9A_r001/RUN.json",
+        "sha256": "6591e1e3edde4cfa1edf62927e40698ea6f160e3c66a6b6aaddf38830e251dca",
+        "status": "CAPTURED_REQUIRES_TRACE_AND_VISUAL_REVIEW",
+        "resolutionPair": {
+          "exactValueAndRevision": true,
+          "resolutionID": "419AE0F4-A833-43A2-8B41-980CE8BE510E",
+          "revision": 522,
+          "won": true
+        },
+        "saveKey": "dc32bf06-4283-4938-851d-c54c2dbbbe30",
+        "buildReceiptSHA256": "f91908d541ac816d2ac48bb9b66bbcd371ce61fa9994c24ed0dea1ca2ceb8309",
+        "executableSHA256": "3190724a9cd50be11468d5241956e5ee4da34de997f5c0d8eb3f62f5cc5866ee",
+        "sourceSHA256": "f2fc578c275dcc0d4d876389dc56e618ac8e986d9816e66409a71b2f31970b31"
+      },
+      "trace": {
+        "path": "docs/production/current/recovery_r022/integration_r093_notice_luna_grounding_r001/notice_capture_r001/R04_9A_r001/NOTICE_TRACE.json",
+        "sha256": "32ddacbbf14eb80d8c2f9ef8dcfb814e4c3a8b1eb50af607d5e79edbbefbc2b2",
+        "rowCount": 45,
+        "status": "TRACE_ONLY_PENDING_VISUAL_REVIEW",
+        "visualStatus": "PENDING_ORIGINAL_PTS_VIDEO_REVIEW",
+        "visualPixelsEvaluated": false,
+        "cueCount": 2,
+        "removalCount": 2,
+        "overflowCount": 0,
+        "cues": [
+          {
+            "effectID": "ACT_E_R04_01_pursuit",
+            "phase": "cue_handler_after_install_before_render",
+            "rootActionID": "enemy:E_R04_01:followup:enemy:E_R04_02:1",
+            "sceneFrame": 277,
+            "sceneGeneration": 5,
+            "sceneTime": 5.032861583330669,
+            "sourceID": "E_R04_01",
+            "spriteKitTime": 314067.50000000006,
+            "systemUptime": 314067.5400294167,
+            "targetID": "AIRA"
+          },
+          {
+            "effectID": "ACT_E_R04_01_pursuit",
+            "phase": "cue_handler_after_install_before_render",
+            "rootActionID": "enemy:E_R04_01:followup:enemy:E_R04_02:2",
+            "sceneFrame": 440,
+            "sceneGeneration": 5,
+            "sceneTime": 7.949528250016738,
+            "sourceID": "E_R04_01",
+            "spriteKitTime": 314070.41666666674,
+            "systemUptime": 314070.4357665417,
+            "targetID": "AIRA"
+          }
+        ],
+        "removals": [
+          {
+            "effectID": "ACT_E_R04_01_pursuit",
+            "phase": "removal_handler_before_node_removal",
+            "reason": "enemy_hit",
+            "rootActionID": "enemy:E_R04_01:followup:enemy:E_R04_02:1",
+            "sceneFrame": 298,
+            "sceneGeneration": 5,
+            "sceneTime": 5.466194916679524,
+            "sourceID": "E_R04_01",
+            "spriteKitTime": 314067.9333333334,
+            "systemUptime": 314067.94392425,
+            "targetID": "AIRA"
+          },
+          {
+            "effectID": "ACT_E_R04_01_pursuit",
+            "phase": "removal_handler_before_node_removal",
+            "reason": "enemy_hit",
+            "rootActionID": "enemy:E_R04_01:followup:enemy:E_R04_02:2",
+            "sceneFrame": 464,
+            "sceneGeneration": 5,
+            "sceneTime": 8.382861583365592,
+            "sourceID": "E_R04_01",
+            "spriteKitTime": 314070.8500000001,
+            "systemUptime": 314070.8442011667,
+            "targetID": "AIRA"
+          }
+        ],
+        "selectedRows": [
+          {
+            "traceSequence": 1,
+            "root": "enemy:E_R04_01:followup:enemy:E_R04_02:1",
+            "marker": "R92 0001",
+            "frame": 413,
+            "pts": 8.825,
+            "text": "R92 0001",
+            "file": "frame_413.jpg",
+            "sha256": "3e87081dc8ce043b3b47f75367a074f39b8604ecbad3f22543b0cf0b4d14ef95",
+            "exportMethod": "same AVAssetReader CVPixelBuffer as marker OCR, no ffmpeg frame-index transfer",
+            "sizeBytes": 1102279
+          },
+          {
+            "traceSequence": 11,
+            "root": "enemy:E_R04_01:followup:enemy:E_R04_02:1",
+            "marker": "R92 0011",
+            "frame": 423,
+            "pts": 9.01,
+            "text": "R92 0011",
+            "file": "frame_423.jpg",
+            "sha256": "94739f35400b722346d8cb48f491a703dbd011f3ee18259b63ce10764ebe0c5b",
+            "exportMethod": "same AVAssetReader CVPixelBuffer as marker OCR, no ffmpeg frame-index transfer",
+            "sizeBytes": 1096200
+          },
+          {
+            "traceSequence": 21,
+            "root": "enemy:E_R04_01:followup:enemy:E_R04_02:1",
+            "marker": "R92 0021",
+            "frame": 433,
+            "pts": 9.19,
+            "text": "R92 0021",
+            "file": "frame_433.jpg",
+            "sha256": "afe1a36bb124f98ae869cfa458479a42c02d28f8ac1cd070b8eac2d8978a051e",
+            "exportMethod": "same AVAssetReader CVPixelBuffer as marker OCR, no ffmpeg frame-index transfer",
+            "sizeBytes": 1101088
+          },
+          {
+            "traceSequence": 22,
+            "root": "enemy:E_R04_01:followup:enemy:E_R04_02:2",
+            "marker": "R92 0164",
+            "frame": 580,
+            "pts": 11.716667,
+            "text": "R92 0164",
+            "file": "frame_580.jpg",
+            "sha256": "cb68bd0809ef60deb88570a2ce744c8af5a1b10e50492b7e5188462f171e718d",
+            "exportMethod": "same AVAssetReader CVPixelBuffer as marker OCR, no ffmpeg frame-index transfer",
+            "sizeBytes": 1091489
+          },
+          {
+            "traceSequence": 34,
+            "root": "enemy:E_R04_01:followup:enemy:E_R04_02:2",
+            "marker": "R92 0176",
+            "frame": 592,
+            "pts": 11.913333,
+            "text": "R92 0176",
+            "file": "frame_592.jpg",
+            "sha256": "11ad0fed0b442d6cc668b19de0a25a7496e27388b193df5a4f170b4b1018dfcf",
+            "exportMethod": "same AVAssetReader CVPixelBuffer as marker OCR, no ffmpeg frame-index transfer",
+            "sizeBytes": 1091169
+          },
+          {
+            "traceSequence": 45,
+            "root": "enemy:E_R04_01:followup:enemy:E_R04_02:2",
+            "marker": "R92 0187",
+            "frame": 603,
+            "pts": 12.091667,
+            "text": "R92 0187",
+            "file": "frame_603.jpg",
+            "sha256": "e68c0f3726e186945098492ab82e78919798c8b5591140aa06acf5987cb28b4f",
+            "exportMethod": "same AVAssetReader CVPixelBuffer as marker OCR, no ffmpeg frame-index transfer",
+            "sizeBytes": 1096526
+          }
+        ]
+      },
+      "join": {
+        "path": "docs/production/current/recovery_r022/integration_r093_notice_luna_grounding_r001/notice_capture_r001/R04_9A_r001/root_marker_review_r002/JOIN_R002.json",
+        "sha256": "b4301320e8a6dab60adcacdec54c1b172c47eb97b0c063c1625fc2d01cc0ff49",
+        "scope": "AVAssetReader decoded sample PTS/OCR and exact same pixel-buffer JPEG export",
+        "traceRows": 45,
+        "joinedRows": 45,
+        "missingTraceSequences": [],
+        "strictOCRFrames": 330,
+        "markerRegressionCount": 0,
+        "visualAcceptance": "PENDING_ROOT_AND_INDEPENDENT_REVIEW",
+        "previousExportInvalidated": "R001 JPEG used ffmpeg frame indices from AVAssetReader; images are offset and do not establish exact joins. R001 OCR-trace joins remain valid; R001 JPEGs approximate only.",
+        "selectedFrames": [
+          {
+            "traceSequence": 1,
+            "root": "enemy:E_R04_01:followup:enemy:E_R04_02:1",
+            "marker": "R92 0001",
+            "frame": 413,
+            "pts": 8.825,
+            "text": "R92 0001",
+            "file": "frame_413.jpg",
+            "sha256": "3e87081dc8ce043b3b47f75367a074f39b8604ecbad3f22543b0cf0b4d14ef95",
+            "exportMethod": "same AVAssetReader CVPixelBuffer as marker OCR, no ffmpeg frame-index transfer",
+            "sizeBytes": 1102279
+          },
+          {
+            "traceSequence": 11,
+            "root": "enemy:E_R04_01:followup:enemy:E_R04_02:1",
+            "marker": "R92 0011",
+            "frame": 423,
+            "pts": 9.01,
+            "text": "R92 0011",
+            "file": "frame_423.jpg",
+            "sha256": "94739f35400b722346d8cb48f491a703dbd011f3ee18259b63ce10764ebe0c5b",
+            "exportMethod": "same AVAssetReader CVPixelBuffer as marker OCR, no ffmpeg frame-index transfer",
+            "sizeBytes": 1096200
+          },
+          {
+            "traceSequence": 21,
+            "root": "enemy:E_R04_01:followup:enemy:E_R04_02:1",
+            "marker": "R92 0021",
+            "frame": 433,
+            "pts": 9.19,
+            "text": "R92 0021",
+            "file": "frame_433.jpg",
+            "sha256": "afe1a36bb124f98ae869cfa458479a42c02d28f8ac1cd070b8eac2d8978a051e",
+            "exportMethod": "same AVAssetReader CVPixelBuffer as marker OCR, no ffmpeg frame-index transfer",
+            "sizeBytes": 1101088
+          },
+          {
+            "traceSequence": 22,
+            "root": "enemy:E_R04_01:followup:enemy:E_R04_02:2",
+            "marker": "R92 0164",
+            "frame": 580,
+            "pts": 11.716667,
+            "text": "R92 0164",
+            "file": "frame_580.jpg",
+            "sha256": "cb68bd0809ef60deb88570a2ce744c8af5a1b10e50492b7e5188462f171e718d",
+            "exportMethod": "same AVAssetReader CVPixelBuffer as marker OCR, no ffmpeg frame-index transfer",
+            "sizeBytes": 1091489
+          },
+          {
+            "traceSequence": 34,
+            "root": "enemy:E_R04_01:followup:enemy:E_R04_02:2",
+            "marker": "R92 0176",
+            "frame": 592,
+            "pts": 11.913333,
+            "text": "R92 0176",
+            "file": "frame_592.jpg",
+            "sha256": "11ad0fed0b442d6cc668b19de0a25a7496e27388b193df5a4f170b4b1018dfcf",
+            "exportMethod": "same AVAssetReader CVPixelBuffer as marker OCR, no ffmpeg frame-index transfer",
+            "sizeBytes": 1091169
+          },
+          {
+            "traceSequence": 45,
+            "root": "enemy:E_R04_01:followup:enemy:E_R04_02:2",
+            "marker": "R92 0187",
+            "frame": 603,
+            "pts": 12.091667,
+            "text": "R92 0187",
+            "file": "frame_603.jpg",
+            "sha256": "e68c0f3726e186945098492ab82e78919798c8b5591140aa06acf5987cb28b4f",
+            "exportMethod": "same AVAssetReader CVPixelBuffer as marker OCR, no ffmpeg frame-index transfer",
+            "sizeBytes": 1096526
+          }
+        ]
+      },
+      "battle": {
+        "path": "docs/production/current/recovery_r022/integration_r093_notice_luna_grounding_r001/notice_capture_r001/R04_9A_r001/BATTLE_EVENTS.json",
+        "sha256": "95585c58083d958e8160b36af1a4611b566c510c76592e9d3e73a661f231cbb1",
+        "won": true,
+        "initialPartyHP": {
+          "C_APPRENTICE": 143,
+          "C_FAMILIAR": 139,
+          "C_SMITH": 198,
+          "C_WITCH": 150
+        },
+        "remainingPartyHP": {
+          "C_APPRENTICE": 143,
+          "C_FAMILIAR": 118,
+          "C_SMITH": 140,
+          "C_WITCH": 150
+        },
+        "initialEnemyHP": {
+          "E_R04_01": 468,
+          "E_R04_02": 468
+        },
+        "remainingEnemyHP": {
+          "E_R04_01": 0,
+          "E_R04_02": 0
+        }
+      },
+      "postRemovalVisuals": [
+        {
+          "path": "docs/production/current/independent_review/notice_r092_native_r001/post_event_frames_r001/R04_9A_r001/frame_604.jpg",
+          "frame": 604,
+          "sha256": "74b2b632245bf84d1033ab77d5499a919c6d15ff1ee21a577cad7abcf8a66fd6",
+          "sizeBytes": 1096649
+        },
+        {
+          "path": "docs/production/current/independent_review/notice_r092_native_r001/post_event_frames_r001/R04_9A_r001/frame_610.jpg",
+          "frame": 610,
+          "sha256": "dce9e8a4db7ac25383ed360c292a36401f3cd27c256e0cb568651ae459ea1a0d",
+          "sizeBytes": 1092370
+        },
+        {
+          "path": "docs/production/current/independent_review/notice_r092_native_r001/post_event_frames_r001/R04_9A_r001/frame_768.jpg",
+          "frame": 768,
+          "sha256": "5f0ff1daad10c89346860be0555fcff323a36eeb89252970a4f583c64961612f",
+          "sizeBytes": 1092732
+        }
+      ]
+    },
+    "R04_F843_r001": {
+      "device": "F843518C-7377-434C-A960-B26FB7F34C4B",
+      "launchArgs": [
+        "--qa-isolated",
+        "--qa-save-key=e2ce77ca-e182-42e5-8e19-659f19f9e771",
+        "--qa-challenge=CH_R04_02",
+        "--qa-pursuit-notice-render-r092",
+        "--qa-load-delay-ms=1500"
+      ],
+      "launchPID": 52102,
+      "restartSameSaveBytes": true,
+      "priorJSONCount": 1094,
+      "priorJSONExactAfterRestore": true,
+      "ownedProcessStopped": true,
+      "video": {
+        "bytes": 20916599,
+        "decodeExitCode": 0,
+        "probeExitCode": 0,
+        "sha256": "4e75b8c2662395cdacb292bd8948a43fda55f09268bc7a1b08e7fa8e7b9ce2d1"
+      },
+      "run": {
+        "path": "docs/production/current/recovery_r022/integration_r093_notice_luna_grounding_r001/notice_capture_r001/R04_F843_r001/RUN.json",
+        "sha256": "3e480e4e58a156eaf4266bfa8e8fe297c700dacb8d72c1040b1bfdbf600c455d",
+        "status": "CAPTURED_REQUIRES_TRACE_AND_VISUAL_REVIEW",
+        "resolutionPair": {
+          "exactValueAndRevision": true,
+          "resolutionID": "B55C64F0-8354-4ACE-A4AB-C6263BF812DD",
+          "revision": 522,
+          "won": true
+        },
+        "saveKey": "e2ce77ca-e182-42e5-8e19-659f19f9e771",
+        "buildReceiptSHA256": "f91908d541ac816d2ac48bb9b66bbcd371ce61fa9994c24ed0dea1ca2ceb8309",
+        "executableSHA256": "3190724a9cd50be11468d5241956e5ee4da34de997f5c0d8eb3f62f5cc5866ee",
+        "sourceSHA256": "f2fc578c275dcc0d4d876389dc56e618ac8e986d9816e66409a71b2f31970b31"
+      },
+      "trace": {
+        "path": "docs/production/current/recovery_r022/integration_r093_notice_luna_grounding_r001/notice_capture_r001/R04_F843_r001/NOTICE_TRACE.json",
+        "sha256": "0542577c4c74d5a3c2aec1710fbbc99f3dac0ed4b1548304e666f35f388f7011",
+        "rowCount": 46,
+        "status": "TRACE_ONLY_PENDING_VISUAL_REVIEW",
+        "visualStatus": "PENDING_ORIGINAL_PTS_VIDEO_REVIEW",
+        "visualPixelsEvaluated": false,
+        "cueCount": 2,
+        "removalCount": 2,
+        "overflowCount": 0,
+        "cues": [
+          {
+            "effectID": "ACT_E_R04_01_pursuit",
+            "phase": "cue_handler_after_install_before_render",
+            "rootActionID": "enemy:E_R04_01:followup:enemy:E_R04_02:1",
+            "sceneFrame": 278,
+            "sceneGeneration": 5,
+            "sceneTime": 4.994391416688449,
+            "sourceID": "E_R04_01",
+            "spriteKitTime": 314184.2666666667,
+            "systemUptime": 314184.29368295835,
+            "targetID": "AIRA"
+          },
+          {
+            "effectID": "ACT_E_R04_01_pursuit",
+            "phase": "cue_handler_after_install_before_render",
+            "rootActionID": "enemy:E_R04_01:followup:enemy:E_R04_02:2",
+            "sceneFrame": 441,
+            "sceneGeneration": 5,
+            "sceneTime": 7.927724750037305,
+            "sourceID": "E_R04_01",
+            "spriteKitTime": 314187.20000000007,
+            "systemUptime": 314187.2221175833,
+            "targetID": "AIRA"
+          }
+        ],
+        "removals": [
+          {
+            "effectID": "ACT_E_R04_01_pursuit",
+            "phase": "removal_handler_before_node_removal",
+            "reason": "enemy_hit",
+            "rootActionID": "enemy:E_R04_01:followup:enemy:E_R04_02:1",
+            "sceneFrame": 300,
+            "sceneGeneration": 5,
+            "sceneTime": 5.427724750037305,
+            "sourceID": "E_R04_01",
+            "spriteKitTime": 314184.70000000007,
+            "systemUptime": 314184.7066680834,
+            "targetID": "AIRA"
+          },
+          {
+            "effectID": "ACT_E_R04_01_pursuit",
+            "phase": "removal_handler_before_node_removal",
+            "reason": "enemy_hit",
+            "rootActionID": "enemy:E_R04_01:followup:enemy:E_R04_02:2",
+            "sceneFrame": 465,
+            "sceneGeneration": 5,
+            "sceneTime": 8.36105808338616,
+            "sourceID": "E_R04_01",
+            "spriteKitTime": 314187.6333333334,
+            "systemUptime": 314187.6261775,
+            "targetID": "AIRA"
+          }
+        ],
+        "selectedRows": [
+          {
+            "traceSequence": 1,
+            "root": "enemy:E_R04_01:followup:enemy:E_R04_02:1",
+            "marker": "R92 0001",
+            "frame": 382,
+            "pts": 8.428333,
+            "text": "R92 0001",
+            "file": "frame_382.jpg",
+            "sha256": "1b006b977673e514e7d6ed83f538a23e31659fb42d5a21f99a619bbab64ffe26",
+            "exportMethod": "same AVAssetReader CVPixelBuffer as marker OCR, no ffmpeg frame-index transfer",
+            "sizeBytes": 485843
+          },
+          {
+            "traceSequence": 12,
+            "root": "enemy:E_R04_01:followup:enemy:E_R04_02:1",
+            "marker": "R92 0012",
+            "frame": 393,
+            "pts": 8.613333,
+            "text": "R92 0012",
+            "file": "frame_393.jpg",
+            "sha256": "a1a8129c750e32df42f22c30d0fa2c354d57a888e00400dcbb99ee2e80152766",
+            "exportMethod": "same AVAssetReader CVPixelBuffer as marker OCR, no ffmpeg frame-index transfer",
+            "sizeBytes": 481944
+          },
+          {
+            "traceSequence": 22,
+            "root": "enemy:E_R04_01:followup:enemy:E_R04_02:1",
+            "marker": "R92 0022",
+            "frame": 403,
+            "pts": 8.795,
+            "text": "R92 0022",
+            "file": "frame_403.jpg",
+            "sha256": "4a702790be2abbedec27bae6b201f7737f3a5937776639f81dc72bae74eab76b",
+            "exportMethod": "same AVAssetReader CVPixelBuffer as marker OCR, no ffmpeg frame-index transfer",
+            "sizeBytes": 485331
+          },
+          {
+            "traceSequence": 23,
+            "root": "enemy:E_R04_01:followup:enemy:E_R04_02:2",
+            "marker": "R92 0164",
+            "frame": 548,
+            "pts": 11.336667,
+            "text": "R92 0164",
+            "file": "frame_548.jpg",
+            "sha256": "e414b6b742f1fc4f7681f5552f6e753dc7a4e20b6b1ff20bb5e7cb09030f21e7",
+            "exportMethod": "same AVAssetReader CVPixelBuffer as marker OCR, no ffmpeg frame-index transfer",
+            "sizeBytes": 476328
+          },
+          {
+            "traceSequence": 35,
+            "root": "enemy:E_R04_01:followup:enemy:E_R04_02:2",
+            "marker": "R92 0176",
+            "frame": 561,
+            "pts": 11.53,
+            "text": "R92 0176",
+            "file": "frame_561.jpg",
+            "sha256": "bbd9bf99506f47f5f2f5f2a48c484852fa97505ecdcb311aff8ee5bc6cc957a6",
+            "exportMethod": "same AVAssetReader CVPixelBuffer as marker OCR, no ffmpeg frame-index transfer",
+            "sizeBytes": 476668
+          },
+          {
+            "traceSequence": 46,
+            "root": "enemy:E_R04_01:followup:enemy:E_R04_02:2",
+            "marker": "R92 0187",
+            "frame": 572,
+            "pts": 11.711667,
+            "text": "R92 0187",
+            "file": "frame_572.jpg",
+            "sha256": "145b70d62c8168ee57b67c95898029f3a10fa07d28e32b4e5779f3d058067c35",
+            "exportMethod": "same AVAssetReader CVPixelBuffer as marker OCR, no ffmpeg frame-index transfer",
+            "sizeBytes": 479490
+          }
+        ]
+      },
+      "join": {
+        "path": "docs/production/current/recovery_r022/integration_r093_notice_luna_grounding_r001/notice_capture_r001/R04_F843_r001/root_marker_review_r002/JOIN_R002.json",
+        "sha256": "fee35fd92cb54061bf0dd50db7eca4ca38f7ff5d528c1b784d250448846f1071",
+        "scope": "AVAssetReader decoded sample PTS/OCR and exact same pixel-buffer JPEG export",
+        "traceRows": 46,
+        "joinedRows": 46,
+        "missingTraceSequences": [],
+        "strictOCRFrames": 377,
+        "markerRegressionCount": 0,
+        "visualAcceptance": "PENDING_ROOT_AND_INDEPENDENT_REVIEW",
+        "previousExportInvalidated": "R001 JPEG used ffmpeg frame indices from AVAssetReader; images are offset and do not establish exact joins. R001 OCR-trace joins remain valid; R001 JPEGs approximate only.",
+        "selectedFrames": [
+          {
+            "traceSequence": 1,
+            "root": "enemy:E_R04_01:followup:enemy:E_R04_02:1",
+            "marker": "R92 0001",
+            "frame": 382,
+            "pts": 8.428333,
+            "text": "R92 0001",
+            "file": "frame_382.jpg",
+            "sha256": "1b006b977673e514e7d6ed83f538a23e31659fb42d5a21f99a619bbab64ffe26",
+            "exportMethod": "same AVAssetReader CVPixelBuffer as marker OCR, no ffmpeg frame-index transfer",
+            "sizeBytes": 485843
+          },
+          {
+            "traceSequence": 12,
+            "root": "enemy:E_R04_01:followup:enemy:E_R04_02:1",
+            "marker": "R92 0012",
+            "frame": 393,
+            "pts": 8.613333,
+            "text": "R92 0012",
+            "file": "frame_393.jpg",
+            "sha256": "a1a8129c750e32df42f22c30d0fa2c354d57a888e00400dcbb99ee2e80152766",
+            "exportMethod": "same AVAssetReader CVPixelBuffer as marker OCR, no ffmpeg frame-index transfer",
+            "sizeBytes": 481944
+          },
+          {
+            "traceSequence": 22,
+            "root": "enemy:E_R04_01:followup:enemy:E_R04_02:1",
+            "marker": "R92 0022",
+            "frame": 403,
+            "pts": 8.795,
+            "text": "R92 0022",
+            "file": "frame_403.jpg",
+            "sha256": "4a702790be2abbedec27bae6b201f7737f3a5937776639f81dc72bae74eab76b",
+            "exportMethod": "same AVAssetReader CVPixelBuffer as marker OCR, no ffmpeg frame-index transfer",
+            "sizeBytes": 485331
+          },
+          {
+            "traceSequence": 23,
+            "root": "enemy:E_R04_01:followup:enemy:E_R04_02:2",
+            "marker": "R92 0164",
+            "frame": 548,
+            "pts": 11.336667,
+            "text": "R92 0164",
+            "file": "frame_548.jpg",
+            "sha256": "e414b6b742f1fc4f7681f5552f6e753dc7a4e20b6b1ff20bb5e7cb09030f21e7",
+            "exportMethod": "same AVAssetReader CVPixelBuffer as marker OCR, no ffmpeg frame-index transfer",
+            "sizeBytes": 476328
+          },
+          {
+            "traceSequence": 35,
+            "root": "enemy:E_R04_01:followup:enemy:E_R04_02:2",
+            "marker": "R92 0176",
+            "frame": 561,
+            "pts": 11.53,
+            "text": "R92 0176",
+            "file": "frame_561.jpg",
+            "sha256": "bbd9bf99506f47f5f2f5f2a48c484852fa97505ecdcb311aff8ee5bc6cc957a6",
+            "exportMethod": "same AVAssetReader CVPixelBuffer as marker OCR, no ffmpeg frame-index transfer",
+            "sizeBytes": 476668
+          },
+          {
+            "traceSequence": 46,
+            "root": "enemy:E_R04_01:followup:enemy:E_R04_02:2",
+            "marker": "R92 0187",
+            "frame": 572,
+            "pts": 11.711667,
+            "text": "R92 0187",
+            "file": "frame_572.jpg",
+            "sha256": "145b70d62c8168ee57b67c95898029f3a10fa07d28e32b4e5779f3d058067c35",
+            "exportMethod": "same AVAssetReader CVPixelBuffer as marker OCR, no ffmpeg frame-index transfer",
+            "sizeBytes": 479490
+          }
+        ]
+      },
+      "battle": {
+        "path": "docs/production/current/recovery_r022/integration_r093_notice_luna_grounding_r001/notice_capture_r001/R04_F843_r001/BATTLE_EVENTS.json",
+        "sha256": "95585c58083d958e8160b36af1a4611b566c510c76592e9d3e73a661f231cbb1",
+        "won": true,
+        "initialPartyHP": {
+          "C_APPRENTICE": 143,
+          "C_FAMILIAR": 139,
+          "C_SMITH": 198,
+          "C_WITCH": 150
+        },
+        "remainingPartyHP": {
+          "C_APPRENTICE": 143,
+          "C_FAMILIAR": 118,
+          "C_SMITH": 140,
+          "C_WITCH": 150
+        },
+        "initialEnemyHP": {
+          "E_R04_01": 468,
+          "E_R04_02": 468
+        },
+        "remainingEnemyHP": {
+          "E_R04_01": 0,
+          "E_R04_02": 0
+        }
+      },
+      "postRemovalVisuals": [
+        {
+          "path": "docs/production/current/independent_review/notice_r092_native_r001/post_event_frames_r001/R04_F843_r001/frame_573.jpg",
+          "frame": 573,
+          "sha256": "8a809505a3e8b7563eb11e795889e512459d1fe0a2e54585200da73810832992",
+          "sizeBytes": 476732
+        },
+        {
+          "path": "docs/production/current/independent_review/notice_r092_native_r001/post_event_frames_r001/R04_F843_r001/frame_580.jpg",
+          "frame": 580,
+          "sha256": "5501c29fcf95e77a0a85a952a75c08efec56a8b94d5748dbcf1c25eaee617f26",
+          "sizeBytes": 475563
+        },
+        {
+          "path": "docs/production/current/independent_review/notice_r092_native_r001/post_event_frames_r001/R04_F843_r001/frame_762.jpg",
+          "frame": 762,
+          "sha256": "329608a70285d958f64e8c7433e22e10829ac89e10fdd2f75f6cf8d6b5388cc4",
+          "sizeBytes": 475997
+        }
+      ]
+    }
+  },
+  "sharedBuildReceipt": {
+    "path": "docs/production/current/recovery_r022/integration_r093_notice_luna_grounding_r001/BUILD_RECEIPT_R002.json",
+    "sha256": "f91908d541ac816d2ac48bb9b66bbcd371ce61fa9994c24ed0dea1ca2ceb8309",
+    "status": "SIMULATOR_BUILD_PASS",
+    "bundle": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/app_R093_compile_r002/WitchGathering.app"
+  },
+  "invalidatedEvidence": "R001 selected JPEG frame files are not used for exact frame joins: they were exported by ffmpeg frame-index transfer and are explicitly invalidated in JOIN_R002. R002 selected images use the same AVAssetReader pixel buffer as OCR.",
+  "reviewFiles": {
+    "sameBufferContact9A": "docs/production/current/recovery_r022/integration_r093_notice_luna_grounding_r001/notice_capture_r001/R04_9A_r001/root_marker_review_r002/CONTACT_SAME_BUFFER_R002.jpg",
+    "sameBufferContactF843": "docs/production/current/recovery_r022/integration_r093_notice_luna_grounding_r001/notice_capture_r001/R04_F843_r001/root_marker_review_r002/CONTACT_SAME_BUFFER_R002.jpg"
+  }
+}

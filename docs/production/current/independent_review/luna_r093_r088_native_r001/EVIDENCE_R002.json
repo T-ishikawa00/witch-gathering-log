@@ -1,0 +1,1049 @@
+{
+  "schema": "luna-r093-r088-native-visual-review-evidence-r002",
+  "build": {
+    "path": "native/build/app_R093_compile_r002/WitchGathering.app",
+    "executableSHA256": "3190724a9cd50be11468d5241956e5ee4da34de997f5c0d8eb3f62f5cc5866ee",
+    "receiptPath": "docs/production/current/recovery_r022/integration_r093_notice_luna_grounding_r001/BUILD_RECEIPT_R002.json",
+    "receiptSHA256": "f91908d541ac816d2ac48bb9b66bbcd371ce61fa9994c24ed0dea1ca2ceb8309",
+    "runtimeCount": 140,
+    "resourceCount": 1914
+  },
+  "decoder": {
+    "helper": "docs/production/current/independent_review/luna_r093_r088_native_r001/avreader_marker_export.swift",
+    "helperSHA256": "f9a5eb644372407c0c9dba16c4aaaa979c772396ba0e89be5f9e56b35e09a7d7",
+    "method": "AVAssetReader CMSampleBuffer BGRA; OCR and JPEG export use the same CVPixelBuffer; no FFmpeg frame-index transfer"
+  },
+  "cases": [
+    {
+      "gearID": "EQ_A_01",
+      "runPath": "docs/production/current/qa_drafts/luna_native_continuity_r010/native_capture_r007/native_control_EQ_A_01_r088_r001",
+      "saveKey": "r010-control-fbea23b3-75af-405f-ad06-531994e5d1c3",
+      "rawRUNStatus": "FAIL_PRESERVED",
+      "rawRUNError": "NameError(\"name 'validate_payload_r006' is not defined\")",
+      "observerStatus": "CAPTURED",
+      "observerRows": 1402,
+      "traceSHA256": "14c1002fd7840d9cf1f52233421110a4708b099e2aac9d79fbafe5d4a079e624",
+      "videoSHA256": "7f63c8bcb26b5eb82190e57b226beca703cc971a35fc242cbe61c4978c1cefcd",
+      "videoBytes": 70560303,
+      "ocrRows": 1458,
+      "ocrMaxSequence": 1426,
+      "observerLastSequence": 1401,
+      "selectedSamples": [
+        {
+          "sequence": 159,
+          "state": "anticipate",
+          "assetID": "LUNA_BOOK_MOTION_ANTICIPATE_F01_CANDIDATE_R001",
+          "durationMilliseconds": 100,
+          "bodyCanvas": [
+            256,
+            256
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0159",
+          "videoDecodedFrameIndex": 285,
+          "videoPTSSeconds": 6.791667,
+          "selectedFrameSHA256": "099f7da3ed8e59862f21cf0b18b1175cf36b1f9ba6cffef823d78abb90730cda",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a01_frames/frame_0159.jpg",
+          "bookAssetID": "BOOK_EQ_A_01",
+          "bookVisible": true,
+          "bookXY": [
+            30.747812271118164,
+            55.950565338134766
+          ],
+          "bookRotationRadians": -0.0872664600610733,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 164,
+          "state": "anticipate",
+          "assetID": "LUNA_BOOK_MOTION_ANTICIPATE_F02_CANDIDATE_R001",
+          "durationMilliseconds": 100,
+          "bodyCanvas": [
+            256,
+            256
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0164",
+          "videoDecodedFrameIndex": 290,
+          "videoPTSSeconds": 6.875,
+          "selectedFrameSHA256": "ee67d8481902e16e8cbc1cc616810757728afed1803d9f1d9536cdd762f75452",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a01_frames/frame_0164.jpg",
+          "bookAssetID": "BOOK_EQ_A_01",
+          "bookVisible": true,
+          "bookXY": [
+            30.244596481323242,
+            55.447349548339844
+          ],
+          "bookRotationRadians": -0.03490658476948738,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 171,
+          "state": "anticipate",
+          "assetID": "LUNA_BOOK_MOTION_ANTICIPATE_F03_CANDIDATE_R001",
+          "durationMilliseconds": 100,
+          "bodyCanvas": [
+            256,
+            256
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0171",
+          "videoDecodedFrameIndex": 297,
+          "videoPTSSeconds": 6.991667,
+          "selectedFrameSHA256": "81219491623b54fbd4c045ea5e9b1e9a5fd7d3da2e1bb8fc4aa3bd85a79025e3",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a01_frames/frame_0171.jpg",
+          "bookAssetID": "BOOK_EQ_A_01",
+          "bookVisible": true,
+          "bookXY": [
+            31.75424575805664,
+            54.44091796875
+          ],
+          "bookRotationRadians": 0,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 176,
+          "state": "execute",
+          "assetID": "LUNA_BOOK_MOTION_EXECUTE_F01_CANDIDATE_R001",
+          "durationMilliseconds": 100,
+          "bodyCanvas": [
+            256,
+            256
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0176",
+          "videoDecodedFrameIndex": 303,
+          "videoPTSSeconds": 7.151667,
+          "selectedFrameSHA256": "a39897250b560de9ef5d8564058c1a7656275a8ee4fc9d044076b24ba90236b4",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a01_frames/frame_0176.jpg",
+          "bookAssetID": "BOOK_EQ_A_01",
+          "bookVisible": true,
+          "bookXY": [
+            24.696311950683594,
+            47.886199951171875
+          ],
+          "bookRotationRadians": 0.03490658476948738,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 179,
+          "state": "execute",
+          "assetID": "LUNA_BOOK_MOTION_EXECUTE_F02_CANDIDATE_R001",
+          "durationMilliseconds": 100,
+          "bodyCanvas": [
+            256,
+            256
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0179",
+          "videoDecodedFrameIndex": 306,
+          "videoPTSSeconds": 7.188333,
+          "selectedFrameSHA256": "630c25f3f005f80c4e2596e1d7cd18f13680de0cff9c62b88de74d62ab92b577",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a01_frames/frame_0179.jpg",
+          "bookAssetID": "BOOK_EQ_A_01",
+          "bookVisible": true,
+          "bookXY": [
+            27.21239471435547,
+            49.395851135253906
+          ],
+          "bookRotationRadians": 0.12217304855585098,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 185,
+          "state": "execute",
+          "assetID": "LUNA_BOOK_MOTION_EXECUTE_F03_CANDIDATE_R001",
+          "durationMilliseconds": 34,
+          "bodyCanvas": [
+            256,
+            256
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0185",
+          "videoDecodedFrameIndex": 312,
+          "videoPTSSeconds": 7.29,
+          "selectedFrameSHA256": "830608b9f32370f2d8ae6d0d96af0720e6833737065387488d8420f00f6ff357",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a01_frames/frame_0185.jpg",
+          "bookAssetID": "BOOK_EQ_A_01",
+          "bookVisible": true,
+          "bookXY": [
+            10.58044719696045,
+            46.363651275634766
+          ],
+          "bookRotationRadians": 0.06981316953897476,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 187,
+          "state": "execute",
+          "assetID": "LUNA_BOOK_MOTION_EXEC_RECOVER_MID_R001_CANDIDATE",
+          "durationMilliseconds": 33,
+          "bodyCanvas": [
+            1254,
+            1254
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0187",
+          "videoDecodedFrameIndex": 314,
+          "videoPTSSeconds": 7.328333,
+          "selectedFrameSHA256": "60c19bfe3b6c571976ebccb47b63c50a66bc6d48daf4b7d92ede6424beaad1c6",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a01_frames/frame_0187.jpg",
+          "bookAssetID": "BOOK_EQ_A_01",
+          "bookVisible": true,
+          "bookXY": [
+            28.734947204589844,
+            37.59849166870117
+          ],
+          "bookRotationRadians": 0.04363323003053665,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 189,
+          "state": "execute",
+          "assetID": "LUNA_EXEC_RECOVER_BRIDGE_R088_SOURCE",
+          "durationMilliseconds": 33,
+          "bodyCanvas": [
+            1254,
+            1254
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0189",
+          "videoDecodedFrameIndex": 316,
+          "videoPTSSeconds": 7.361667,
+          "selectedFrameSHA256": "869ac89f4d0c482c6e5cc1760d624e668fd031d8157c6dc866c2e10a46baba50",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a01_frames/frame_0189.jpg",
+          "bookAssetID": "BOOK_EQ_A_01",
+          "bookVisible": true,
+          "bookXY": [
+            20.644775390625,
+            40.705108642578125
+          ],
+          "bookRotationRadians": 0.04363323003053665,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 193,
+          "state": "recover",
+          "assetID": "LUNA_BOOK_MOTION_RECOVER_F01_CANDIDATE_R001",
+          "durationMilliseconds": 100,
+          "bodyCanvas": [
+            256,
+            256
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0193",
+          "videoDecodedFrameIndex": 320,
+          "videoPTSSeconds": 7.45,
+          "selectedFrameSHA256": "af124ae01e31d1972766cc5f8f2ccffa0e9f986ca862fb60543e6f5eaaa1242e",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a01_frames/frame_0193.jpg",
+          "bookAssetID": "BOOK_EQ_A_01",
+          "bookVisible": true,
+          "bookXY": [
+            33.263893127441406,
+            56.45378494262695
+          ],
+          "bookRotationRadians": 0.01745329238474369,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 200,
+          "state": "recover",
+          "assetID": "LUNA_BOOK_MOTION_RECOVER_F02_CANDIDATE_R001",
+          "durationMilliseconds": 100,
+          "bodyCanvas": [
+            256,
+            256
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0200",
+          "videoDecodedFrameIndex": 327,
+          "videoPTSSeconds": 7.556667,
+          "selectedFrameSHA256": "4ba0a8a82f49e752bc22bfe7d4e03fcaf4073e8cc371a4768fec8c138f0a4b82",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a01_frames/frame_0200.jpg",
+          "bookAssetID": "BOOK_EQ_A_01",
+          "bookVisible": true,
+          "bookXY": [
+            32.760677337646484,
+            55.950565338134766
+          ],
+          "bookRotationRadians": -0.03490658476948738,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 206,
+          "state": "recover",
+          "assetID": "LUNA_BOOK_MOTION_RECOVER_F03_CANDIDATE_R001",
+          "durationMilliseconds": 100,
+          "bodyCanvas": [
+            256,
+            256
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0206",
+          "videoDecodedFrameIndex": 333,
+          "videoPTSSeconds": 7.655,
+          "selectedFrameSHA256": "5bd6c7d934a84a5e535ea9875f5490b31a1b08a1b4c202eafd9be0c04f938ba2",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a01_frames/frame_0206.jpg",
+          "bookAssetID": "BOOK_EQ_A_01",
+          "bookVisible": true,
+          "bookXY": [
+            32.25746154785156,
+            55.950565338134766
+          ],
+          "bookRotationRadians": -0.01745329238474369,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 215,
+          "state": "idle",
+          "assetID": "LUNA_BOOK_MOTION_IDLE_F01_CANDIDATE_R001",
+          "durationMilliseconds": 450,
+          "bodyCanvas": [
+            256,
+            256
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0215",
+          "videoDecodedFrameIndex": 342,
+          "videoPTSSeconds": 7.806667,
+          "selectedFrameSHA256": "fbed572fe614cc07edb7e31f84f0a41cd086133bd21116b9d89174ac5ebd43cf",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a01_frames/frame_0215.jpg",
+          "bookAssetID": "BOOK_EQ_A_01",
+          "bookVisible": true,
+          "bookXY": [
+            32.760677337646484,
+            54.94413375854492
+          ],
+          "bookRotationRadians": -0.01745329238474369,
+          "foregroundHandVisible": true
+        }
+      ],
+      "validationFiles": {},
+      "caseSpecificSameSaveSidecar": {
+        "at": "2026-10-12T11:10:03.827562+09:00",
+        "device": "9A067715-7CF3-40D3-9064-38423223959B",
+        "finishedAt": "2026-10-12T11:10:06.039274+09:00",
+        "launch": {
+          "argv": [
+            "xcrun",
+            "simctl",
+            "launch",
+            "9A067715-7CF3-40D3-9064-38423223959B",
+            "local.witch.autonomous.r1",
+            "--qa-isolated",
+            "--qa-save-key=r010-control-fbea23b3-75af-405f-ad06-531994e5d1c3",
+            "--qa-readback-save"
+          ],
+          "exitCode": 0,
+          "stderr": "",
+          "stdout": "local.witch.autonomous.r1: 58091\n"
+        },
+        "observerRows": 1402,
+        "observerValidationErrors": [],
+        "ownedProcessStopped": true,
+        "priorJSONCount": 760,
+        "priorJSONExact": true,
+        "priorRawStatusPreserved": true,
+        "priorRun": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/luna_native_continuity_r010/native_capture_r007/native_control_EQ_A_01_r088_r001",
+        "rawObserverSHA256": "14c1002fd7840d9cf1f52233421110a4708b099e2aac9d79fbafe5d4a079e624",
+        "revision": 3,
+        "sameSaveBytes": true,
+        "saveKey": "r010-control-fbea23b3-75af-405f-ad06-531994e5d1c3",
+        "status": "NATIVE_SEMANTICS_AND_RESTART_PASS_VISUAL_PENDING"
+      },
+      "preservationFields": {
+        "preexistingJSONExact": true,
+        "preexistingCount": 758,
+        "preexistingNonfixedExact": true,
+        "finalCount": 760,
+        "capturedOutputsPreserved": true,
+        "capturedOutputCount": 2,
+        "restoredChangedFixedCount": 10,
+        "restoredChangedFixedAllTrue": true,
+        "saveKey": "r010-control-fbea23b3-75af-405f-ad06-531994e5d1c3",
+        "saveRevision": 3
+      },
+      "contactSHA256": "378c8a196d8ec397072bb7137c9bc76187a528f3fdcb22664850bcfd3d45ec95",
+      "detailSHA256": "a87f5bb2425ce5d687bc1899897cf6028bb1866d6c9b72c6523922a1120f1ebe"
+    },
+    {
+      "gearID": "EQ_A_02",
+      "runPath": "docs/production/current/qa_drafts/luna_native_continuity_r010/native_capture_r008/native_control_EQ_A_02_r088_r001",
+      "saveKey": "r010-control-e8329800-3050-4aab-a817-ddb7c3ecfc96",
+      "rawRUNStatus": "CAPTURED_REQUIRES_VISUAL_REVIEW",
+      "rawRUNError": null,
+      "observerStatus": "CAPTURED",
+      "observerRows": 1402,
+      "traceSHA256": "3c85043d12281b92b4ca0611501a69fce7b993489283ffbbea81a7080e03af0b",
+      "videoSHA256": "af1895d8610b7124887ebf87af8f2e280535203d63fb8e93aacda001920fd673",
+      "videoBytes": 74725338,
+      "ocrRows": 1471,
+      "ocrMaxSequence": 1428,
+      "observerLastSequence": 1401,
+      "selectedSamples": [
+        {
+          "sequence": 160,
+          "state": "anticipate",
+          "assetID": "LUNA_BOOK_MOTION_ANTICIPATE_F01_CANDIDATE_R001",
+          "durationMilliseconds": 100,
+          "bodyCanvas": [
+            256,
+            256
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0160",
+          "videoDecodedFrameIndex": 283,
+          "videoPTSSeconds": 6.456667,
+          "selectedFrameSHA256": "bddff55be44ebcb590701e0523cf6b46faf7bed041b1517d95bac01b72cb19aa",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a02_frames/frame_0160.jpg",
+          "bookAssetID": "BOOK_EQ_A_02",
+          "bookVisible": true,
+          "bookXY": [
+            30.747812271118164,
+            55.950565338134766
+          ],
+          "bookRotationRadians": -0.0872664600610733,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 165,
+          "state": "anticipate",
+          "assetID": "LUNA_BOOK_MOTION_ANTICIPATE_F02_CANDIDATE_R001",
+          "durationMilliseconds": 100,
+          "bodyCanvas": [
+            256,
+            256
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0165",
+          "videoDecodedFrameIndex": 288,
+          "videoPTSSeconds": 6.556667,
+          "selectedFrameSHA256": "4773c87a249292a0df879630639e18f52c3bc6d9d7231bcc065c68653e2e179d",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a02_frames/frame_0165.jpg",
+          "bookAssetID": "BOOK_EQ_A_02",
+          "bookVisible": true,
+          "bookXY": [
+            30.244596481323242,
+            55.447349548339844
+          ],
+          "bookRotationRadians": -0.03490658476948738,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 171,
+          "state": "anticipate",
+          "assetID": "LUNA_BOOK_MOTION_ANTICIPATE_F03_CANDIDATE_R001",
+          "durationMilliseconds": 100,
+          "bodyCanvas": [
+            256,
+            256
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0171",
+          "videoDecodedFrameIndex": 294,
+          "videoPTSSeconds": 6.658333,
+          "selectedFrameSHA256": "bc17e254e6b381fe69780d65a6eb9dd4215eca36a3461848b4be1afa47f209bc",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a02_frames/frame_0171.jpg",
+          "bookAssetID": "BOOK_EQ_A_02",
+          "bookVisible": true,
+          "bookXY": [
+            31.75424575805664,
+            54.44091796875
+          ],
+          "bookRotationRadians": 0,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 175,
+          "state": "execute",
+          "assetID": "LUNA_BOOK_MOTION_EXECUTE_F01_CANDIDATE_R001",
+          "durationMilliseconds": 100,
+          "bodyCanvas": [
+            256,
+            256
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0175",
+          "videoDecodedFrameIndex": 299,
+          "videoPTSSeconds": 6.798333,
+          "selectedFrameSHA256": "a55bc5286d030b370d8ccbd2bc30161efa7a47e16a28301b8a1a9437645040c5",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a02_frames/frame_0175.jpg",
+          "bookAssetID": "BOOK_EQ_A_02",
+          "bookVisible": true,
+          "bookXY": [
+            24.696311950683594,
+            47.886199951171875
+          ],
+          "bookRotationRadians": 0.03490658476948738,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 178,
+          "state": "execute",
+          "assetID": "LUNA_BOOK_MOTION_EXECUTE_F02_CANDIDATE_R001",
+          "durationMilliseconds": 100,
+          "bodyCanvas": [
+            256,
+            256
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0178",
+          "videoDecodedFrameIndex": 302,
+          "videoPTSSeconds": 6.843333,
+          "selectedFrameSHA256": "0549775e9b21e0d0f39c76ef5842a3a6105642dc5a8acc810ef6918756288788",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a02_frames/frame_0178.jpg",
+          "bookAssetID": "BOOK_EQ_A_02",
+          "bookVisible": true,
+          "bookXY": [
+            27.21239471435547,
+            49.395851135253906
+          ],
+          "bookRotationRadians": 0.12217304855585098,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 184,
+          "state": "execute",
+          "assetID": "LUNA_BOOK_MOTION_EXECUTE_F03_CANDIDATE_R001",
+          "durationMilliseconds": 34,
+          "bodyCanvas": [
+            256,
+            256
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0184",
+          "videoDecodedFrameIndex": 308,
+          "videoPTSSeconds": 6.941667,
+          "selectedFrameSHA256": "3d826d0a61246b504eb7d29660284820323af5e482ccefca4e2d2ce1b802fb3f",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a02_frames/frame_0184.jpg",
+          "bookAssetID": "BOOK_EQ_A_02",
+          "bookVisible": true,
+          "bookXY": [
+            10.58044719696045,
+            46.363651275634766
+          ],
+          "bookRotationRadians": 0.06981316953897476,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 186,
+          "state": "execute",
+          "assetID": "LUNA_BOOK_MOTION_EXEC_RECOVER_MID_R001_CANDIDATE",
+          "durationMilliseconds": 33,
+          "bodyCanvas": [
+            1254,
+            1254
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0186",
+          "videoDecodedFrameIndex": 310,
+          "videoPTSSeconds": 6.98,
+          "selectedFrameSHA256": "0b707801eeafc2a5c2bc27c62db6666e3f2d3f8dff52348d1a428527236ee171",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a02_frames/frame_0186.jpg",
+          "bookAssetID": "BOOK_EQ_A_02",
+          "bookVisible": true,
+          "bookXY": [
+            28.734947204589844,
+            37.59849166870117
+          ],
+          "bookRotationRadians": 0.04363323003053665,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 188,
+          "state": "execute",
+          "assetID": "LUNA_EXEC_RECOVER_BRIDGE_R088_SOURCE",
+          "durationMilliseconds": 33,
+          "bodyCanvas": [
+            1254,
+            1254
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0188",
+          "videoDecodedFrameIndex": 312,
+          "videoPTSSeconds": 7.016667,
+          "selectedFrameSHA256": "936fb712a3495e0fd10df9594cf117732c2b2fb4c623d2c8a01d9ab04a5850f6",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a02_frames/frame_0188.jpg",
+          "bookAssetID": "BOOK_EQ_A_02",
+          "bookVisible": true,
+          "bookXY": [
+            20.644775390625,
+            40.705108642578125
+          ],
+          "bookRotationRadians": 0.04363323003053665,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 191,
+          "state": "recover",
+          "assetID": "LUNA_BOOK_MOTION_RECOVER_F01_CANDIDATE_R001",
+          "durationMilliseconds": 100,
+          "bodyCanvas": [
+            256,
+            256
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0191",
+          "videoDecodedFrameIndex": 315,
+          "videoPTSSeconds": 7.086667,
+          "selectedFrameSHA256": "e7797dd0b6e81a58c29852db80ecf5bb39edd33c0684a4e704c8ee17ffad801c",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a02_frames/frame_0191.jpg",
+          "bookAssetID": "BOOK_EQ_A_02",
+          "bookVisible": true,
+          "bookXY": [
+            33.263893127441406,
+            56.45378494262695
+          ],
+          "bookRotationRadians": 0.01745329238474369,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 198,
+          "state": "recover",
+          "assetID": "LUNA_BOOK_MOTION_RECOVER_F02_CANDIDATE_R001",
+          "durationMilliseconds": 100,
+          "bodyCanvas": [
+            256,
+            256
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0198",
+          "videoDecodedFrameIndex": 322,
+          "videoPTSSeconds": 7.193333,
+          "selectedFrameSHA256": "994781af04e26b4b7a331044653d3e3c827123d764f4c22feb0a6e86cc20a091",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a02_frames/frame_0198.jpg",
+          "bookAssetID": "BOOK_EQ_A_02",
+          "bookVisible": true,
+          "bookXY": [
+            32.760677337646484,
+            55.950565338134766
+          ],
+          "bookRotationRadians": -0.03490658476948738,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 204,
+          "state": "recover",
+          "assetID": "LUNA_BOOK_MOTION_RECOVER_F03_CANDIDATE_R001",
+          "durationMilliseconds": 100,
+          "bodyCanvas": [
+            256,
+            256
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0204",
+          "videoDecodedFrameIndex": 328,
+          "videoPTSSeconds": 7.291667,
+          "selectedFrameSHA256": "e926a28dd7a8c4ec5f39389ae5cde15749e4e634f3463531d3550883961a7756",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a02_frames/frame_0204.jpg",
+          "bookAssetID": "BOOK_EQ_A_02",
+          "bookVisible": true,
+          "bookXY": [
+            32.25746154785156,
+            55.950565338134766
+          ],
+          "bookRotationRadians": -0.01745329238474369,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 213,
+          "state": "idle",
+          "assetID": "LUNA_BOOK_MOTION_IDLE_F01_CANDIDATE_R001",
+          "durationMilliseconds": 450,
+          "bodyCanvas": [
+            256,
+            256
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0213",
+          "videoDecodedFrameIndex": 337,
+          "videoPTSSeconds": 7.46,
+          "selectedFrameSHA256": "7ceaebb80a913ff7d4ae8d5ba07e9889167e3af7c3c8f35f5682e11d6dfeeb09",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a02_frames/frame_0213.jpg",
+          "bookAssetID": "BOOK_EQ_A_02",
+          "bookVisible": true,
+          "bookXY": [
+            32.760677337646484,
+            54.94413375854492
+          ],
+          "bookRotationRadians": -0.01745329238474369,
+          "foregroundHandVisible": true
+        }
+      ],
+      "validationFiles": {
+        "TRACE_VALIDATION.json": {
+          "errors": [],
+          "observerRowCount": 1402,
+          "rawReceiptSHA256": "3c85043d12281b92b4ca0611501a69fce7b993489283ffbbea81a7080e03af0b",
+          "status": "PASS"
+        },
+        "READBACK_VALIDATION.json": {
+          "rawReceiptSHA256": "064adec5c4c7d98fe5699802703de810af78ae00fd58fdec2a6903bdb1cc3eb6",
+          "revision": 3,
+          "saveFile": "qa-r010-control-e8329800-3050-4aab-a817-ddb7c3ecfc96-save.json",
+          "saveFileSHA256": "2b7ce217c6c8387cfe18116b0103ea2ea7b8e54897a3de405c86c8438abf5c1b",
+          "snapshotJSONSHA256": "d58f4983d43eb3125b52392b6e326a04e20eea96449f911aa6cfa9485efabc37",
+          "status": "PASS"
+        }
+      },
+      "caseSpecificSameSaveSidecar": null,
+      "preservationFields": {
+        "preexistingJSONExact": true,
+        "preexistingCount": 760,
+        "preexistingNonfixedExact": true,
+        "finalCount": 762,
+        "capturedOutputsPreserved": true,
+        "capturedOutputCount": 2,
+        "restoredChangedFixedCount": 11,
+        "restoredChangedFixedAllTrue": true,
+        "saveKey": "r010-control-e8329800-3050-4aab-a817-ddb7c3ecfc96",
+        "saveRevision": 3
+      },
+      "contactSHA256": "d4f86722e3f35a6772ebac265c5193352b9a936a0f3714b65f091946148b9724",
+      "detailSHA256": "f9947418c1fe28a99926d9fe6fb8ba504fed5681250a1290149bba7ac1247f2f"
+    },
+    {
+      "gearID": "EQ_A_03",
+      "runPath": "docs/production/current/qa_drafts/luna_native_continuity_r010/native_capture_r008/native_control_EQ_A_03_r088_r001",
+      "saveKey": "r010-control-0d8687e5-41a7-4c0e-b581-895a1aad348d",
+      "rawRUNStatus": "CAPTURED_REQUIRES_VISUAL_REVIEW",
+      "rawRUNError": null,
+      "observerStatus": "CAPTURED",
+      "observerRows": 1409,
+      "traceSHA256": "2d25946be9672b51a507bede9bd9d333d40302ee48c088f0d5233f1428099eb1",
+      "videoSHA256": "1bcaac7548d7ee64e188959ace0ee32e8d05cd7c1f13743e15056250f73c2311",
+      "videoBytes": 74424398,
+      "ocrRows": 1461,
+      "ocrMaxSequence": 1434,
+      "observerLastSequence": 1408,
+      "selectedSamples": [
+        {
+          "sequence": 159,
+          "state": "anticipate",
+          "assetID": "LUNA_BOOK_MOTION_ANTICIPATE_F01_CANDIDATE_R001",
+          "durationMilliseconds": 100,
+          "bodyCanvas": [
+            256,
+            256
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0159",
+          "videoDecodedFrameIndex": 281,
+          "videoPTSSeconds": 6.388333,
+          "selectedFrameSHA256": "e89c884800b00e37705d97a9f3d025b94b8ccd2ff43bfd8a0d287c2d8cb984d7",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a03_frames/frame_0159.jpg",
+          "bookAssetID": "BOOK_EQ_A_03",
+          "bookVisible": true,
+          "bookXY": [
+            30.747812271118164,
+            55.950565338134766
+          ],
+          "bookRotationRadians": -0.0872664600610733,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 164,
+          "state": "anticipate",
+          "assetID": "LUNA_BOOK_MOTION_ANTICIPATE_F02_CANDIDATE_R001",
+          "durationMilliseconds": 100,
+          "bodyCanvas": [
+            256,
+            256
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0164",
+          "videoDecodedFrameIndex": 286,
+          "videoPTSSeconds": 6.493333,
+          "selectedFrameSHA256": "87d450b89220ca344a3bf9f756d52bc2a3a18de618506fa58da507203486ef95",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a03_frames/frame_0164.jpg",
+          "bookAssetID": "BOOK_EQ_A_03",
+          "bookVisible": true,
+          "bookXY": [
+            30.244596481323242,
+            55.447349548339844
+          ],
+          "bookRotationRadians": -0.03490658476948738,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 170,
+          "state": "anticipate",
+          "assetID": "LUNA_BOOK_MOTION_ANTICIPATE_F03_CANDIDATE_R001",
+          "durationMilliseconds": 100,
+          "bodyCanvas": [
+            256,
+            256
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0170",
+          "videoDecodedFrameIndex": 292,
+          "videoPTSSeconds": 6.593333,
+          "selectedFrameSHA256": "a102daa136d8caaa26d44385e4795b2ddd1f19a5e1967f48b2a20ba22579d20c",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a03_frames/frame_0170.jpg",
+          "bookAssetID": "BOOK_EQ_A_03",
+          "bookVisible": true,
+          "bookXY": [
+            31.75424575805664,
+            54.44091796875
+          ],
+          "bookRotationRadians": 0,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 174,
+          "state": "execute",
+          "assetID": "LUNA_BOOK_MOTION_EXECUTE_F01_CANDIDATE_R001",
+          "durationMilliseconds": 100,
+          "bodyCanvas": [
+            256,
+            256
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0174",
+          "videoDecodedFrameIndex": 297,
+          "videoPTSSeconds": 6.731667,
+          "selectedFrameSHA256": "84b290f768f04fad760d8bbc5537d69bcf87b4af8517f7b8f989fb3843ed9ec3",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a03_frames/frame_0174.jpg",
+          "bookAssetID": "BOOK_EQ_A_03",
+          "bookVisible": true,
+          "bookXY": [
+            24.696311950683594,
+            47.886199951171875
+          ],
+          "bookRotationRadians": 0.03490658476948738,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 177,
+          "state": "execute",
+          "assetID": "LUNA_BOOK_MOTION_EXECUTE_F02_CANDIDATE_R001",
+          "durationMilliseconds": 100,
+          "bodyCanvas": [
+            256,
+            256
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0177",
+          "videoDecodedFrameIndex": 300,
+          "videoPTSSeconds": 6.773333,
+          "selectedFrameSHA256": "269a06f6ddfea4d806f0fdbf53975de536404763553b113828e57583f6297341",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a03_frames/frame_0177.jpg",
+          "bookAssetID": "BOOK_EQ_A_03",
+          "bookVisible": true,
+          "bookXY": [
+            27.21239471435547,
+            49.395851135253906
+          ],
+          "bookRotationRadians": 0.12217304855585098,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 183,
+          "state": "execute",
+          "assetID": "LUNA_BOOK_MOTION_EXECUTE_F03_CANDIDATE_R001",
+          "durationMilliseconds": 34,
+          "bodyCanvas": [
+            256,
+            256
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0183",
+          "videoDecodedFrameIndex": 306,
+          "videoPTSSeconds": 6.873333,
+          "selectedFrameSHA256": "053f92a9b835e0e491d50250db03165867c6a689cafbd45e0406f0aeb6313b7b",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a03_frames/frame_0183.jpg",
+          "bookAssetID": "BOOK_EQ_A_03",
+          "bookVisible": true,
+          "bookXY": [
+            10.58044719696045,
+            46.363651275634766
+          ],
+          "bookRotationRadians": 0.06981316953897476,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 185,
+          "state": "execute",
+          "assetID": "LUNA_BOOK_MOTION_EXEC_RECOVER_MID_R001_CANDIDATE",
+          "durationMilliseconds": 33,
+          "bodyCanvas": [
+            1254,
+            1254
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0185",
+          "videoDecodedFrameIndex": 308,
+          "videoPTSSeconds": 6.91,
+          "selectedFrameSHA256": "50a254b1f0dcb7f47e4ce015a7c890a0c7b187e0a70790c7ace06f6f35d118e2",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a03_frames/frame_0185.jpg",
+          "bookAssetID": "BOOK_EQ_A_03",
+          "bookVisible": true,
+          "bookXY": [
+            28.734947204589844,
+            37.59849166870117
+          ],
+          "bookRotationRadians": 0.04363323003053665,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 187,
+          "state": "execute",
+          "assetID": "LUNA_EXEC_RECOVER_BRIDGE_R088_SOURCE",
+          "durationMilliseconds": 33,
+          "bodyCanvas": [
+            1254,
+            1254
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0187",
+          "videoDecodedFrameIndex": 310,
+          "videoPTSSeconds": 6.945,
+          "selectedFrameSHA256": "7306ba66e7c18a7a8cbf9b33bacc428b99ee426bcbd098cf3de2b929c5bbacc3",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a03_frames/frame_0187.jpg",
+          "bookAssetID": "BOOK_EQ_A_03",
+          "bookVisible": true,
+          "bookXY": [
+            20.644775390625,
+            40.705108642578125
+          ],
+          "bookRotationRadians": 0.04363323003053665,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 190,
+          "state": "recover",
+          "assetID": "LUNA_BOOK_MOTION_RECOVER_F01_CANDIDATE_R001",
+          "durationMilliseconds": 100,
+          "bodyCanvas": [
+            256,
+            256
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0190",
+          "videoDecodedFrameIndex": 313,
+          "videoPTSSeconds": 7.011667,
+          "selectedFrameSHA256": "e03fd459dbdc4b72adbff53b8a6d42a2753379c22bb4319b395ae88adf7206ca",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a03_frames/frame_0190.jpg",
+          "bookAssetID": "BOOK_EQ_A_03",
+          "bookVisible": true,
+          "bookXY": [
+            33.263893127441406,
+            56.45378494262695
+          ],
+          "bookRotationRadians": 0.01745329238474369,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 197,
+          "state": "recover",
+          "assetID": "LUNA_BOOK_MOTION_RECOVER_F02_CANDIDATE_R001",
+          "durationMilliseconds": 100,
+          "bodyCanvas": [
+            256,
+            256
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0197",
+          "videoDecodedFrameIndex": 320,
+          "videoPTSSeconds": 7.121667,
+          "selectedFrameSHA256": "af061465ffe1908f4f765efd1211ed36929c6a285abcf51f832aad02e2e68ba2",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a03_frames/frame_0197.jpg",
+          "bookAssetID": "BOOK_EQ_A_03",
+          "bookVisible": true,
+          "bookXY": [
+            32.760677337646484,
+            55.950565338134766
+          ],
+          "bookRotationRadians": -0.03490658476948738,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 203,
+          "state": "recover",
+          "assetID": "LUNA_BOOK_MOTION_RECOVER_F03_CANDIDATE_R001",
+          "durationMilliseconds": 100,
+          "bodyCanvas": [
+            256,
+            256
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0203",
+          "videoDecodedFrameIndex": 326,
+          "videoPTSSeconds": 7.223333,
+          "selectedFrameSHA256": "206c2ebc7d1ba5398cdff6aafe0847aae6a6c62b5444de4befeae742b47a2c16",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a03_frames/frame_0203.jpg",
+          "bookAssetID": "BOOK_EQ_A_03",
+          "bookVisible": true,
+          "bookXY": [
+            32.25746154785156,
+            55.950565338134766
+          ],
+          "bookRotationRadians": -0.01745329238474369,
+          "foregroundHandVisible": true
+        },
+        {
+          "sequence": 212,
+          "state": "idle",
+          "assetID": "LUNA_BOOK_MOTION_IDLE_F01_CANDIDATE_R001",
+          "durationMilliseconds": 450,
+          "bodyCanvas": [
+            256,
+            256
+          ],
+          "actualTextureMatches": true,
+          "marker": "LUNA 0212",
+          "videoDecodedFrameIndex": 335,
+          "videoPTSSeconds": 7.371667,
+          "selectedFrameSHA256": "7ffa69e433a03fa847a7b9f3f1537336f48bf327b0634b704a68e175133c219d",
+          "selectedFramePath": "docs/production/current/independent_review/luna_r093_r088_native_r001/eq_a03_frames/frame_0212.jpg",
+          "bookAssetID": "BOOK_EQ_A_03",
+          "bookVisible": true,
+          "bookXY": [
+            32.760677337646484,
+            54.94413375854492
+          ],
+          "bookRotationRadians": -0.01745329238474369,
+          "foregroundHandVisible": true
+        }
+      ],
+      "validationFiles": {
+        "TRACE_VALIDATION.json": {
+          "errors": [],
+          "observerRowCount": 1409,
+          "rawReceiptSHA256": "2d25946be9672b51a507bede9bd9d333d40302ee48c088f0d5233f1428099eb1",
+          "status": "PASS"
+        },
+        "READBACK_VALIDATION.json": {
+          "rawReceiptSHA256": "6e1118dc3c0f31fa29db9fd44b71a96316501817d89dcc3fd3f0095edd32b5cf",
+          "revision": 3,
+          "saveFile": "qa-r010-control-0d8687e5-41a7-4c0e-b581-895a1aad348d-save.json",
+          "saveFileSHA256": "785757d7589f92990cfed86edd1531e649debb544c2ebf74ba69232f3e139a4e",
+          "snapshotJSONSHA256": "db3ef31c6efcc4c67ae5df125b5778368eeb1ce0ee22175466116ad7eeeb35df",
+          "status": "PASS"
+        }
+      },
+      "caseSpecificSameSaveSidecar": null,
+      "preservationFields": {
+        "preexistingJSONExact": true,
+        "preexistingCount": 762,
+        "preexistingNonfixedExact": true,
+        "finalCount": 764,
+        "capturedOutputsPreserved": true,
+        "capturedOutputCount": 2,
+        "restoredChangedFixedCount": 11,
+        "restoredChangedFixedAllTrue": true,
+        "saveKey": "r010-control-0d8687e5-41a7-4c0e-b581-895a1aad348d",
+        "saveRevision": 3
+      },
+      "contactSHA256": "d5fcc8db8f7e52f6bdcc60c0d5450556b25b9e18171865c5cfdc16d138afb7c1",
+      "detailSHA256": "d71b493068502e835e32c961e755cfde92e298408aab7e597abcb891c3dd1c95"
+    }
+  ],
+  "limits": [
+    "Selected points are sparse and do not certify full naturalness.",
+    "OCR continued after the observer trace tail; markers were joined only where the exact sequence appears in both.",
+    "Contact sheets and crops are diagnostic and do not alter source pixels.",
+    "A01 raw RUN wrapper error is distinct from captured trace and same-save semantic/restart sidecar."
+  ],
+  "supersedes": "EVIDENCE_R001.json; R001 remains unchanged, R002 adds the exact preservation summary fields from raw RUN receipts."
+}
