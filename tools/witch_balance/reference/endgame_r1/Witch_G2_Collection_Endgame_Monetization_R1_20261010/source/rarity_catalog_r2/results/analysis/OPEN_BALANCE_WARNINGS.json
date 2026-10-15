@@ -1,0 +1,34 @@
+{
+  "quality_upgrade_costs": [
+    {
+      "from": "Q0",
+      "to": "Q1",
+      "gate": "G_R01_A",
+      "dust": 10
+    },
+    {
+      "from": "Q1",
+      "to": "Q2",
+      "gate": "G_R01_B",
+      "dust": 30
+    },
+    {
+      "from": "Q2",
+      "to": "Q3",
+      "gate": "G_R02_B",
+      "dust": 100
+    },
+    {
+      "from": "Q3",
+      "to": "Q4",
+      "gate": "G_R04_B",
+      "dust": 300
+    }
+  ],
+  "R05_powder_per_hour": 144,
+  "UR_to_LR_single_hours_if_all_powder": 2.0833333333333335,
+  "UR_to_LR_24_slots_hours_if_all_powder": 50.0,
+  "C_to_LR_24_slots_hours_if_all_powder": 73.33333333333333,
+  "SR_to_LR_24_slots_hours_if_all_powder": 66.66666666666667,
+  "scope": "Powder-only arithmetic at existing gates, not calendar-clear forecast; no conflicting powder spend or salvage included. Rarity boost makes old promotion costs a new economy decision. Do not silently nerf free progression."
+}

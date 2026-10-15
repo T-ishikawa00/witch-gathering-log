@@ -1,0 +1,2701 @@
+{
+  "schema": "noir_equipment_frame_landmarks_r001",
+  "status": "UNAPPROVED_VISUAL_MEASUREMENT_CANDIDATE",
+  "authority": "Measurement aid only. Does not authorize gear design, asset adoption, or renderer integration.",
+  "actorID": "C_FAMILIAR",
+  "spriteID": "NOIR",
+  "coordinateSystem": "pixel coordinates, origin top-left, x right, y down, points are in each exported frame canvas before scene scaling",
+  "measurementMethod": "Visual estimates read from state contact sheets overlaid with 32px coordinate grid; chest and paw positions have stated tolerance. No source pixels were edited. Exact alpha bounds and SHA-256 were measured from exported PNG files.",
+  "references": {
+    "sourceDesign": "native/Art/Characters/NOIR/NOIR__idle__256__r001.png",
+    "restManifest": "native/GeneratedArt/party_rest_r001/MANIFEST.json",
+    "attackManifest": "native/GeneratedArt/party_attack_r001/MANIFEST.json",
+    "walkManifest": "native/GeneratedArt/party_walk_r001/MANIFEST.json",
+    "contactSheets": [
+      "native/Art/GeneratedCandidates/EquipmentDetails/noir_rest_coordinate_contact_r001.png",
+      "native/Art/GeneratedCandidates/EquipmentDetails/noir_attack_coordinate_contact_r001.png",
+      "native/Art/GeneratedCandidates/EquipmentDetails/noir_walk_coordinate_contact_r001.png"
+    ]
+  },
+  "states": {
+    "rest": {
+      "fps": null,
+      "canvas": [
+        320,
+        256
+      ],
+      "frameCount": 9,
+      "footAnchorPx": [
+        160,
+        244
+      ],
+      "sourceSet": "native/GeneratedArt/party_rest_r001",
+      "frames": [
+        {
+          "path": "native/GeneratedArt/party_rest_r001/NOIR__rest_00.png",
+          "canvas": [
+            320,
+            256
+          ],
+          "footAnchorPx": [
+            160,
+            244
+          ],
+          "alphaBoundsExclusive": [
+            62,
+            68,
+            272,
+            248
+          ],
+          "sha256": "0a7fcc791b417a5b151f4f5e669efe603432226d0709ea79aa01517d066f783d",
+          "landmarks": {
+            "neckChestAnchor": {
+              "x": 166,
+              "y": 164,
+              "confidence": "visual_approx_4px",
+              "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+            },
+            "primaryFrontPawAnchor": {
+              "x": 220,
+              "y": 233,
+              "confidence": "visual_approx_6px",
+              "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+            },
+            "catalystEffectOriginCandidate": {
+              "x": 238,
+              "y": 209,
+              "confidence": "derived_from_visual_paw_anchor",
+              "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+            },
+            "occlusion": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          "sourceFrameIndex": 0,
+          "runtimeFrameIndex": 0,
+          "frameIndex": 0,
+          "sourceFrameSemantics": "exported PNG suffix / source atlas cell; may differ from runtime sequence index",
+          "verificationAssetID": "NOIR__rest_00",
+          "runtimeBodyAssetID": "GeneratedArt/PartyRest/NOIR__rest_00.png",
+          "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+        },
+        {
+          "path": "native/GeneratedArt/party_rest_r001/NOIR__rest_01.png",
+          "canvas": [
+            320,
+            256
+          ],
+          "footAnchorPx": [
+            160,
+            244
+          ],
+          "alphaBoundsExclusive": [
+            33,
+            27,
+            257,
+            256
+          ],
+          "sha256": "3dfc1060abe373d62b999415acf9d154b0d5bfb16a8f1ae34aab1a6999c8bdad",
+          "landmarks": {
+            "neckChestAnchor": {
+              "x": 169,
+              "y": 164,
+              "confidence": "visual_approx_4px",
+              "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+            },
+            "primaryFrontPawAnchor": {
+              "x": 218,
+              "y": 233,
+              "confidence": "visual_approx_6px",
+              "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+            },
+            "catalystEffectOriginCandidate": {
+              "x": 236,
+              "y": 209,
+              "confidence": "derived_from_visual_paw_anchor",
+              "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+            },
+            "occlusion": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          "sourceFrameIndex": 1,
+          "runtimeFrameIndex": 1,
+          "frameIndex": 1,
+          "sourceFrameSemantics": "exported PNG suffix / source atlas cell; may differ from runtime sequence index",
+          "verificationAssetID": "NOIR__rest_01",
+          "runtimeBodyAssetID": "GeneratedArt/PartyRest/NOIR__rest_01.png",
+          "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+        },
+        {
+          "path": "native/GeneratedArt/party_rest_r001/NOIR__rest_02.png",
+          "canvas": [
+            320,
+            256
+          ],
+          "footAnchorPx": [
+            160,
+            244
+          ],
+          "alphaBoundsExclusive": [
+            49,
+            13,
+            258,
+            248
+          ],
+          "sha256": "828cb8d53c92642a85d1f687fd6af333fc874624f771606eb5ffb31aa1900ec1",
+          "landmarks": {
+            "neckChestAnchor": {
+              "x": 188,
+              "y": 165,
+              "confidence": "visual_approx_4px",
+              "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+            },
+            "primaryFrontPawAnchor": {
+              "x": 225,
+              "y": 232,
+              "confidence": "visual_approx_6px",
+              "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+            },
+            "catalystEffectOriginCandidate": {
+              "x": 243,
+              "y": 208,
+              "confidence": "derived_from_visual_paw_anchor",
+              "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+            },
+            "occlusion": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          "sourceFrameIndex": 2,
+          "runtimeFrameIndex": 2,
+          "frameIndex": 2,
+          "sourceFrameSemantics": "exported PNG suffix / source atlas cell; may differ from runtime sequence index",
+          "verificationAssetID": "NOIR__rest_02",
+          "runtimeBodyAssetID": "GeneratedArt/PartyRest/NOIR__rest_02.png",
+          "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+        },
+        {
+          "path": "native/GeneratedArt/party_rest_r001/NOIR__rest_03.png",
+          "canvas": [
+            320,
+            256
+          ],
+          "footAnchorPx": [
+            160,
+            244
+          ],
+          "alphaBoundsExclusive": [
+            32,
+            68,
+            261,
+            251
+          ],
+          "sha256": "fcdd43506856340887479ee405f7ac9cc7a98ade8043bd760171269f39cb8193",
+          "landmarks": {
+            "neckChestAnchor": {
+              "x": 160,
+              "y": 165,
+              "confidence": "visual_approx_4px",
+              "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+            },
+            "primaryFrontPawAnchor": {
+              "x": 177,
+              "y": 230,
+              "confidence": "visual_approx_6px",
+              "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+            },
+            "catalystEffectOriginCandidate": {
+              "x": 195,
+              "y": 206,
+              "confidence": "derived_from_visual_paw_anchor",
+              "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+            },
+            "occlusion": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          "sourceFrameIndex": 3,
+          "runtimeFrameIndex": 3,
+          "frameIndex": 3,
+          "sourceFrameSemantics": "exported PNG suffix / source atlas cell; may differ from runtime sequence index",
+          "verificationAssetID": "NOIR__rest_03",
+          "runtimeBodyAssetID": "GeneratedArt/PartyRest/NOIR__rest_03.png",
+          "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+        },
+        {
+          "path": "native/GeneratedArt/party_rest_r001/NOIR__rest_04.png",
+          "canvas": [
+            320,
+            256
+          ],
+          "footAnchorPx": [
+            160,
+            244
+          ],
+          "alphaBoundsExclusive": [
+            42,
+            55,
+            263,
+            252
+          ],
+          "sha256": "fb215f5f611382d7a6925403e13e3d5cb3f63528a4c551e3790e0fe90fa1eb6c",
+          "landmarks": {
+            "neckChestAnchor": {
+              "x": 177,
+              "y": 168,
+              "confidence": "visual_approx_4px",
+              "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+            },
+            "primaryFrontPawAnchor": {
+              "x": 188,
+              "y": 232,
+              "confidence": "visual_approx_6px",
+              "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+            },
+            "catalystEffectOriginCandidate": {
+              "x": 206,
+              "y": 208,
+              "confidence": "derived_from_visual_paw_anchor",
+              "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+            },
+            "occlusion": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          "sourceFrameIndex": 4,
+          "runtimeFrameIndex": 4,
+          "frameIndex": 4,
+          "sourceFrameSemantics": "exported PNG suffix / source atlas cell; may differ from runtime sequence index",
+          "verificationAssetID": "NOIR__rest_04",
+          "runtimeBodyAssetID": "GeneratedArt/PartyRest/NOIR__rest_04.png",
+          "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+        },
+        {
+          "path": "native/GeneratedArt/party_rest_r001/NOIR__rest_05.png",
+          "canvas": [
+            320,
+            256
+          ],
+          "footAnchorPx": [
+            160,
+            244
+          ],
+          "alphaBoundsExclusive": [
+            59,
+            55,
+            251,
+            251
+          ],
+          "sha256": "9646b93c53653f83856abd14cefdd7ac18ee3b488e61cf4831d1d61f09277e34",
+          "landmarks": {
+            "neckChestAnchor": {
+              "x": 180,
+              "y": 166,
+              "confidence": "visual_approx_4px",
+              "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+            },
+            "primaryFrontPawAnchor": {
+              "x": 217,
+              "y": 232,
+              "confidence": "visual_approx_6px",
+              "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+            },
+            "catalystEffectOriginCandidate": {
+              "x": 235,
+              "y": 208,
+              "confidence": "derived_from_visual_paw_anchor",
+              "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+            },
+            "occlusion": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          "sourceFrameIndex": 5,
+          "runtimeFrameIndex": 5,
+          "frameIndex": 5,
+          "sourceFrameSemantics": "exported PNG suffix / source atlas cell; may differ from runtime sequence index",
+          "verificationAssetID": "NOIR__rest_05",
+          "runtimeBodyAssetID": "GeneratedArt/PartyRest/NOIR__rest_05.png",
+          "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+        },
+        {
+          "path": "native/GeneratedArt/party_rest_r001/NOIR__rest_06.png",
+          "canvas": [
+            320,
+            256
+          ],
+          "footAnchorPx": [
+            160,
+            244
+          ],
+          "alphaBoundsExclusive": [
+            58,
+            43,
+            258,
+            248
+          ],
+          "sha256": "d4eba79af38b2d45eb4712b2ddede4f5c8ebe14e5dd42dab724f4049a16ad3b1",
+          "landmarks": {
+            "neckChestAnchor": {
+              "x": 198,
+              "y": 229,
+              "confidence": "visual_approx_4px",
+              "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+            },
+            "primaryFrontPawAnchor": {
+              "x": 190,
+              "y": 228,
+              "confidence": "visual_approx_6px",
+              "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+            },
+            "catalystEffectOriginCandidate": {
+              "x": 208,
+              "y": 204,
+              "confidence": "derived_from_visual_paw_anchor",
+              "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+            },
+            "occlusion": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          "sourceFrameIndex": 6,
+          "runtimeFrameIndex": 6,
+          "frameIndex": 6,
+          "sourceFrameSemantics": "exported PNG suffix / source atlas cell; may differ from runtime sequence index",
+          "verificationAssetID": "NOIR__rest_06",
+          "runtimeBodyAssetID": "GeneratedArt/PartyRest/NOIR__rest_06.png",
+          "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+        },
+        {
+          "path": "native/GeneratedArt/party_rest_r001/NOIR__rest_07.png",
+          "canvas": [
+            320,
+            256
+          ],
+          "footAnchorPx": [
+            160,
+            244
+          ],
+          "alphaBoundsExclusive": [
+            22,
+            44,
+            262,
+            255
+          ],
+          "sha256": "715ee4d2f7f5fbc816f862615a6681e511c2c24e37e1c159e7fc7a47885500eb",
+          "landmarks": {
+            "neckChestAnchor": {
+              "x": 185,
+              "y": 187,
+              "confidence": "visual_approx_4px",
+              "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+            },
+            "primaryFrontPawAnchor": {
+              "x": 197,
+              "y": 230,
+              "confidence": "visual_approx_6px",
+              "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+            },
+            "catalystEffectOriginCandidate": {
+              "x": 215,
+              "y": 206,
+              "confidence": "derived_from_visual_paw_anchor",
+              "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+            },
+            "occlusion": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          "sourceFrameIndex": 7,
+          "runtimeFrameIndex": 7,
+          "frameIndex": 7,
+          "sourceFrameSemantics": "exported PNG suffix / source atlas cell; may differ from runtime sequence index",
+          "verificationAssetID": "NOIR__rest_07",
+          "runtimeBodyAssetID": "GeneratedArt/PartyRest/NOIR__rest_07.png",
+          "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+        },
+        {
+          "path": "native/GeneratedArt/party_rest_r001/NOIR__rest_08.png",
+          "canvas": [
+            320,
+            256
+          ],
+          "footAnchorPx": [
+            160,
+            244
+          ],
+          "alphaBoundsExclusive": [
+            34,
+            52,
+            238,
+            253
+          ],
+          "sha256": "b6166468dd4fd09e0b3c5e775d83033696ba9b60e256d86ea7d9ef0a2ae627f8",
+          "landmarks": {
+            "neckChestAnchor": {
+              "x": 197,
+              "y": 187,
+              "confidence": "visual_approx_4px",
+              "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+            },
+            "primaryFrontPawAnchor": {
+              "x": 216,
+              "y": 233,
+              "confidence": "visual_approx_6px",
+              "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+            },
+            "catalystEffectOriginCandidate": {
+              "x": 234,
+              "y": 209,
+              "confidence": "derived_from_visual_paw_anchor",
+              "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+            },
+            "occlusion": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          "sourceFrameIndex": 8,
+          "runtimeFrameIndex": 8,
+          "frameIndex": 8,
+          "sourceFrameSemantics": "exported PNG suffix / source atlas cell; may differ from runtime sequence index",
+          "verificationAssetID": "NOIR__rest_08",
+          "runtimeBodyAssetID": "GeneratedArt/PartyRest/NOIR__rest_08.png",
+          "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+        }
+      ],
+      "timingStatus": "FPS_NOT_DECLARED_IN_SOURCE_MANIFEST; landmark table makes no timing assumption"
+    },
+    "attack": {
+      "fps": null,
+      "canvas": [
+        320,
+        256
+      ],
+      "frameCount": 9,
+      "footAnchorPx": [
+        160,
+        244
+      ],
+      "sourceSet": "native/GeneratedArt/party_attack_r001",
+      "frames": [
+        {
+          "path": "native/GeneratedArt/party_attack_r001/NOIR__attack_00.png",
+          "canvas": [
+            320,
+            256
+          ],
+          "footAnchorPx": [
+            160,
+            244
+          ],
+          "alphaBoundsExclusive": [
+            58,
+            72,
+            245,
+            256
+          ],
+          "sha256": "c088713f72a243403d261a6b87e8356350ea77231a8f94c039c59e303dc6b825",
+          "landmarks": {
+            "neckChestAnchor": {
+              "x": 190,
+              "y": 178,
+              "confidence": "visual_approx_4px",
+              "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+            },
+            "primaryFrontPawAnchor": {
+              "x": 220,
+              "y": 232,
+              "confidence": "visual_approx_6px",
+              "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+            },
+            "catalystEffectOriginCandidate": {
+              "x": 238,
+              "y": 208,
+              "confidence": "derived_from_visual_paw_anchor",
+              "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+            },
+            "occlusion": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          "sourceFrameIndex": 0,
+          "runtimeFrameIndex": 0,
+          "frameIndex": 0,
+          "sourceFrameSemantics": "exported PNG suffix / source atlas cell; may differ from runtime sequence index",
+          "verificationAssetID": "NOIR__attack_00",
+          "runtimeBodyAssetID": "GeneratedArt/PartyAttack/NOIR__attack_00.png",
+          "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+        },
+        {
+          "path": "native/GeneratedArt/party_attack_r001/NOIR__attack_01.png",
+          "canvas": [
+            320,
+            256
+          ],
+          "footAnchorPx": [
+            160,
+            244
+          ],
+          "alphaBoundsExclusive": [
+            11,
+            23,
+            222,
+            252
+          ],
+          "sha256": "51fa6ec463b8fdc152acdadc678f73eba89816c70fc7d69ade958fe138a8698f",
+          "landmarks": {
+            "neckChestAnchor": {
+              "x": 171,
+              "y": 194,
+              "confidence": "visual_approx_4px",
+              "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+            },
+            "primaryFrontPawAnchor": {
+              "x": 199,
+              "y": 234,
+              "confidence": "visual_approx_6px",
+              "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+            },
+            "catalystEffectOriginCandidate": {
+              "x": 217,
+              "y": 210,
+              "confidence": "derived_from_visual_paw_anchor",
+              "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+            },
+            "occlusion": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          "sourceFrameIndex": 1,
+          "runtimeFrameIndex": 1,
+          "frameIndex": 1,
+          "sourceFrameSemantics": "exported PNG suffix / source atlas cell; may differ from runtime sequence index",
+          "verificationAssetID": "NOIR__attack_01",
+          "runtimeBodyAssetID": "GeneratedArt/PartyAttack/NOIR__attack_01.png",
+          "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+        },
+        {
+          "path": "native/GeneratedArt/party_attack_r001/NOIR__attack_02.png",
+          "canvas": [
+            320,
+            256
+          ],
+          "footAnchorPx": [
+            160,
+            244
+          ],
+          "alphaBoundsExclusive": [
+            22,
+            23,
+            218,
+            246
+          ],
+          "sha256": "26b22fe55522b07893d2c2de19c0d5a3daf039cf7fcbc5d1791ac95dd7d52645",
+          "landmarks": {
+            "neckChestAnchor": {
+              "x": 194,
+              "y": 209,
+              "confidence": "visual_approx_4px",
+              "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+            },
+            "primaryFrontPawAnchor": {
+              "x": 224,
+              "y": 231,
+              "confidence": "visual_approx_6px",
+              "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+            },
+            "catalystEffectOriginCandidate": {
+              "x": 242,
+              "y": 207,
+              "confidence": "derived_from_visual_paw_anchor",
+              "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+            },
+            "occlusion": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          "sourceFrameIndex": 2,
+          "runtimeFrameIndex": 2,
+          "frameIndex": 2,
+          "sourceFrameSemantics": "exported PNG suffix / source atlas cell; may differ from runtime sequence index",
+          "verificationAssetID": "NOIR__attack_02",
+          "runtimeBodyAssetID": "GeneratedArt/PartyAttack/NOIR__attack_02.png",
+          "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+        },
+        {
+          "path": "native/GeneratedArt/party_attack_r001/NOIR__attack_03.png",
+          "canvas": [
+            320,
+            256
+          ],
+          "footAnchorPx": [
+            160,
+            244
+          ],
+          "alphaBoundsExclusive": [
+            31,
+            79,
+            224,
+            247
+          ],
+          "sha256": "a16055b0d1b1f773a61ecb9d92fd6996885eea023ade4d19e865f0582b0e887e",
+          "landmarks": {
+            "neckChestAnchor": {
+              "x": 188,
+              "y": 211,
+              "confidence": "visual_approx_4px",
+              "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+            },
+            "primaryFrontPawAnchor": {
+              "x": 200,
+              "y": 231,
+              "confidence": "visual_approx_6px",
+              "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+            },
+            "catalystEffectOriginCandidate": {
+              "x": 218,
+              "y": 207,
+              "confidence": "derived_from_visual_paw_anchor",
+              "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+            },
+            "occlusion": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          "sourceFrameIndex": 3,
+          "runtimeFrameIndex": 3,
+          "frameIndex": 3,
+          "sourceFrameSemantics": "exported PNG suffix / source atlas cell; may differ from runtime sequence index",
+          "verificationAssetID": "NOIR__attack_03",
+          "runtimeBodyAssetID": "GeneratedArt/PartyAttack/NOIR__attack_03.png",
+          "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+        },
+        {
+          "path": "native/GeneratedArt/party_attack_r001/NOIR__attack_04.png",
+          "canvas": [
+            320,
+            256
+          ],
+          "footAnchorPx": [
+            160,
+            244
+          ],
+          "alphaBoundsExclusive": [
+            0,
+            74,
+            232,
+            255
+          ],
+          "sha256": "d5b8ed6a1d07770cc45de6ceea0dbba6aad0abaa0d4e6bf22a43275d958e8595",
+          "landmarks": {
+            "neckChestAnchor": {
+              "x": 169,
+              "y": 198,
+              "confidence": "visual_approx_4px",
+              "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+            },
+            "primaryFrontPawAnchor": {
+              "x": 232,
+              "y": 199,
+              "confidence": "visual_approx_6px",
+              "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+            },
+            "catalystEffectOriginCandidate": {
+              "x": 250,
+              "y": 175,
+              "confidence": "derived_from_visual_paw_anchor",
+              "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+            },
+            "occlusion": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          "sourceFrameIndex": 4,
+          "runtimeFrameIndex": 4,
+          "frameIndex": 4,
+          "sourceFrameSemantics": "exported PNG suffix / source atlas cell; may differ from runtime sequence index",
+          "verificationAssetID": "NOIR__attack_04",
+          "runtimeBodyAssetID": "GeneratedArt/PartyAttack/NOIR__attack_04.png",
+          "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+        },
+        {
+          "path": "native/GeneratedArt/party_attack_r001/NOIR__attack_05.png",
+          "canvas": [
+            320,
+            256
+          ],
+          "footAnchorPx": [
+            160,
+            244
+          ],
+          "alphaBoundsExclusive": [
+            6,
+            65,
+            223,
+            252
+          ],
+          "sha256": "22e4c2509d511fc46269c7db2b3771df7ff8866103528b178fc0c1d1ceda31b1",
+          "landmarks": {
+            "neckChestAnchor": {
+              "x": 165,
+              "y": 213,
+              "confidence": "visual_approx_4px",
+              "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+            },
+            "primaryFrontPawAnchor": {
+              "x": 250,
+              "y": 214,
+              "confidence": "visual_approx_6px",
+              "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+            },
+            "catalystEffectOriginCandidate": {
+              "x": 268,
+              "y": 190,
+              "confidence": "derived_from_visual_paw_anchor",
+              "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+            },
+            "occlusion": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          "sourceFrameIndex": 5,
+          "runtimeFrameIndex": 5,
+          "frameIndex": 5,
+          "sourceFrameSemantics": "exported PNG suffix / source atlas cell; may differ from runtime sequence index",
+          "verificationAssetID": "NOIR__attack_05",
+          "runtimeBodyAssetID": "GeneratedArt/PartyAttack/NOIR__attack_05.png",
+          "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+        },
+        {
+          "path": "native/GeneratedArt/party_attack_r001/NOIR__attack_06.png",
+          "canvas": [
+            320,
+            256
+          ],
+          "footAnchorPx": [
+            160,
+            244
+          ],
+          "alphaBoundsExclusive": [
+            17,
+            46,
+            239,
+            248
+          ],
+          "sha256": "4a9966a9a8b69863154d4791dae843f4cd60a6c95dbfe8445badef75ae2a788b",
+          "landmarks": {
+            "neckChestAnchor": {
+              "x": 168,
+              "y": 212,
+              "confidence": "visual_approx_4px",
+              "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+            },
+            "primaryFrontPawAnchor": {
+              "x": 241,
+              "y": 215,
+              "confidence": "visual_approx_6px",
+              "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+            },
+            "catalystEffectOriginCandidate": {
+              "x": 259,
+              "y": 191,
+              "confidence": "derived_from_visual_paw_anchor",
+              "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+            },
+            "occlusion": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          "sourceFrameIndex": 6,
+          "runtimeFrameIndex": 6,
+          "frameIndex": 6,
+          "sourceFrameSemantics": "exported PNG suffix / source atlas cell; may differ from runtime sequence index",
+          "verificationAssetID": "NOIR__attack_06",
+          "runtimeBodyAssetID": "GeneratedArt/PartyAttack/NOIR__attack_06.png",
+          "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+        },
+        {
+          "path": "native/GeneratedArt/party_attack_r001/NOIR__attack_07.png",
+          "canvas": [
+            320,
+            256
+          ],
+          "footAnchorPx": [
+            160,
+            244
+          ],
+          "alphaBoundsExclusive": [
+            34,
+            46,
+            270,
+            253
+          ],
+          "sha256": "aaf986d8900c58eda03cb6b8e03e9c54418c5652c941cb96671c9a10b2309a28",
+          "landmarks": {
+            "neckChestAnchor": {
+              "x": 190,
+              "y": 186,
+              "confidence": "visual_approx_4px",
+              "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+            },
+            "primaryFrontPawAnchor": {
+              "x": 220,
+              "y": 234,
+              "confidence": "visual_approx_6px",
+              "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+            },
+            "catalystEffectOriginCandidate": {
+              "x": 238,
+              "y": 210,
+              "confidence": "derived_from_visual_paw_anchor",
+              "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+            },
+            "occlusion": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          "sourceFrameIndex": 7,
+          "runtimeFrameIndex": 7,
+          "frameIndex": 7,
+          "sourceFrameSemantics": "exported PNG suffix / source atlas cell; may differ from runtime sequence index",
+          "verificationAssetID": "NOIR__attack_07",
+          "runtimeBodyAssetID": "GeneratedArt/PartyAttack/NOIR__attack_07.png",
+          "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+        },
+        {
+          "path": "native/GeneratedArt/party_attack_r001/NOIR__attack_08.png",
+          "canvas": [
+            320,
+            256
+          ],
+          "footAnchorPx": [
+            160,
+            244
+          ],
+          "alphaBoundsExclusive": [
+            35,
+            45,
+            223,
+            249
+          ],
+          "sha256": "d57801f6b087067b174cea3e9051f464d48ec5d627092835d1102065abc89703",
+          "landmarks": {
+            "neckChestAnchor": {
+              "x": 199,
+              "y": 187,
+              "confidence": "visual_approx_4px",
+              "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+            },
+            "primaryFrontPawAnchor": {
+              "x": 223,
+              "y": 234,
+              "confidence": "visual_approx_6px",
+              "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+            },
+            "catalystEffectOriginCandidate": {
+              "x": 241,
+              "y": 210,
+              "confidence": "derived_from_visual_paw_anchor",
+              "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+            },
+            "occlusion": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          "sourceFrameIndex": 8,
+          "runtimeFrameIndex": 8,
+          "frameIndex": 8,
+          "sourceFrameSemantics": "exported PNG suffix / source atlas cell; may differ from runtime sequence index",
+          "verificationAssetID": "NOIR__attack_08",
+          "runtimeBodyAssetID": "GeneratedArt/PartyAttack/NOIR__attack_08.png",
+          "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+        }
+      ],
+      "timingStatus": "FPS_NOT_DECLARED_IN_SOURCE_MANIFEST; landmark table makes no timing assumption"
+    },
+    "walk": {
+      "fps": 12,
+      "canvas": [
+        256,
+        256
+      ],
+      "frameCount": 8,
+      "expectedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "availableFrameIndices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "missingFrameIndices": [
+        1
+      ],
+      "missingFrameDisposition": "MANIFEST marks atlas cell 1 REJECTED_SITTING_POSE_OR_CROP; no image created or guessed",
+      "footAnchorPx": [
+        128,
+        244
+      ],
+      "sourceSet": "native/GeneratedArt/party_walk_r001",
+      "frames": [
+        {
+          "path": "native/GeneratedArt/party_walk_r001/NOIR__walk_0.png",
+          "canvas": [
+            256,
+            256
+          ],
+          "footAnchorPx": [
+            128,
+            244
+          ],
+          "alphaBoundsExclusive": [
+            26,
+            70,
+            216,
+            246
+          ],
+          "sha256": "9f705cb909742b80837a8a51cb9ecd44bb09df3925b6240f1be5aa99ab0fe2a9",
+          "landmarks": {
+            "neckChestAnchor": {
+              "x": 169,
+              "y": 181,
+              "confidence": "visual_approx_4px",
+              "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+            },
+            "primaryFrontPawAnchor": {
+              "x": 174,
+              "y": 229,
+              "confidence": "visual_approx_6px",
+              "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+            },
+            "catalystEffectOriginCandidate": {
+              "x": 192,
+              "y": 205,
+              "confidence": "derived_from_visual_paw_anchor",
+              "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+            },
+            "occlusion": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          "sourceFrameIndex": 0,
+          "runtimeFrameIndex": 0,
+          "frameIndex": 0,
+          "sourceFrameSemantics": "exported PNG suffix / source atlas cell; may differ from runtime sequence index",
+          "verificationAssetID": "NOIR__walk_0",
+          "runtimeBodyAssetID": "GeneratedArt/PartyWalk/NOIR__walk_0.png",
+          "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+        },
+        {
+          "path": "native/GeneratedArt/party_walk_r001/NOIR__walk_2.png",
+          "canvas": [
+            256,
+            256
+          ],
+          "footAnchorPx": [
+            128,
+            244
+          ],
+          "alphaBoundsExclusive": [
+            38,
+            70,
+            237,
+            246
+          ],
+          "sha256": "a54d25444d05a2d647f73972cfa0a26293ee4bf5852b33f4cd9bbaa301860de5",
+          "landmarks": {
+            "neckChestAnchor": {
+              "x": 171,
+              "y": 181,
+              "confidence": "visual_approx_4px",
+              "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+            },
+            "primaryFrontPawAnchor": {
+              "x": 180,
+              "y": 228,
+              "confidence": "visual_approx_6px",
+              "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+            },
+            "catalystEffectOriginCandidate": {
+              "x": 198,
+              "y": 204,
+              "confidence": "derived_from_visual_paw_anchor",
+              "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+            },
+            "occlusion": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          "sourceFrameIndex": 2,
+          "runtimeFrameIndex": 1,
+          "frameIndex": 1,
+          "sourceFrameSemantics": "exported PNG suffix / source atlas cell; may differ from runtime sequence index",
+          "verificationAssetID": "NOIR__walk_2",
+          "runtimeBodyAssetID": "GeneratedArt/PartyWalk/NOIR__walk_2.png",
+          "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+        },
+        {
+          "path": "native/GeneratedArt/party_walk_r001/NOIR__walk_3.png",
+          "canvas": [
+            256,
+            256
+          ],
+          "footAnchorPx": [
+            128,
+            244
+          ],
+          "alphaBoundsExclusive": [
+            21,
+            59,
+            234,
+            252
+          ],
+          "sha256": "d52ad1cdb3d19199913a58b422e569be9c92b94d6801ec200697437f90b7e26f",
+          "landmarks": {
+            "neckChestAnchor": {
+              "x": 175,
+              "y": 181,
+              "confidence": "visual_approx_4px",
+              "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+            },
+            "primaryFrontPawAnchor": {
+              "x": 180,
+              "y": 230,
+              "confidence": "visual_approx_6px",
+              "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+            },
+            "catalystEffectOriginCandidate": {
+              "x": 198,
+              "y": 206,
+              "confidence": "derived_from_visual_paw_anchor",
+              "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+            },
+            "occlusion": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          "sourceFrameIndex": 3,
+          "runtimeFrameIndex": 2,
+          "frameIndex": 2,
+          "sourceFrameSemantics": "exported PNG suffix / source atlas cell; may differ from runtime sequence index",
+          "verificationAssetID": "NOIR__walk_3",
+          "runtimeBodyAssetID": "GeneratedArt/PartyWalk/NOIR__walk_3.png",
+          "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+        },
+        {
+          "path": "native/GeneratedArt/party_walk_r001/NOIR__walk_4.png",
+          "canvas": [
+            256,
+            256
+          ],
+          "footAnchorPx": [
+            128,
+            244
+          ],
+          "alphaBoundsExclusive": [
+            40,
+            53,
+            237,
+            247
+          ],
+          "sha256": "01abaa2f71e39e0c7cc1da1368a3509f8158197e2e42bb4a1bb656bb351f0ab0",
+          "landmarks": {
+            "neckChestAnchor": {
+              "x": 168,
+              "y": 181,
+              "confidence": "visual_approx_4px",
+              "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+            },
+            "primaryFrontPawAnchor": {
+              "x": 177,
+              "y": 230,
+              "confidence": "visual_approx_6px",
+              "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+            },
+            "catalystEffectOriginCandidate": {
+              "x": 195,
+              "y": 206,
+              "confidence": "derived_from_visual_paw_anchor",
+              "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+            },
+            "occlusion": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          "sourceFrameIndex": 4,
+          "runtimeFrameIndex": 3,
+          "frameIndex": 3,
+          "sourceFrameSemantics": "exported PNG suffix / source atlas cell; may differ from runtime sequence index",
+          "verificationAssetID": "NOIR__walk_4",
+          "runtimeBodyAssetID": "GeneratedArt/PartyWalk/NOIR__walk_4.png",
+          "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+        },
+        {
+          "path": "native/GeneratedArt/party_walk_r001/NOIR__walk_5.png",
+          "canvas": [
+            256,
+            256
+          ],
+          "footAnchorPx": [
+            128,
+            244
+          ],
+          "alphaBoundsExclusive": [
+            37,
+            57,
+            236,
+            253
+          ],
+          "sha256": "0313d0e1b3dfc2463bfcedd4442d960f07697b17402025a492326ca7fa50912d",
+          "landmarks": {
+            "neckChestAnchor": {
+              "x": 170,
+              "y": 182,
+              "confidence": "visual_approx_4px",
+              "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+            },
+            "primaryFrontPawAnchor": {
+              "x": 175,
+              "y": 229,
+              "confidence": "visual_approx_6px",
+              "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+            },
+            "catalystEffectOriginCandidate": {
+              "x": 193,
+              "y": 205,
+              "confidence": "derived_from_visual_paw_anchor",
+              "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+            },
+            "occlusion": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          "sourceFrameIndex": 5,
+          "runtimeFrameIndex": 4,
+          "frameIndex": 4,
+          "sourceFrameSemantics": "exported PNG suffix / source atlas cell; may differ from runtime sequence index",
+          "verificationAssetID": "NOIR__walk_5",
+          "runtimeBodyAssetID": "GeneratedArt/PartyWalk/NOIR__walk_5.png",
+          "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+        },
+        {
+          "path": "native/GeneratedArt/party_walk_r001/NOIR__walk_6.png",
+          "canvas": [
+            256,
+            256
+          ],
+          "footAnchorPx": [
+            128,
+            244
+          ],
+          "alphaBoundsExclusive": [
+            11,
+            61,
+            225,
+            251
+          ],
+          "sha256": "c48e7c892dbd997cf6fd3052b4d2d25f4ac07d2a401e39a9ada92b02a83d0f92",
+          "landmarks": {
+            "neckChestAnchor": {
+              "x": 173,
+              "y": 183,
+              "confidence": "visual_approx_4px",
+              "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+            },
+            "primaryFrontPawAnchor": {
+              "x": 183,
+              "y": 229,
+              "confidence": "visual_approx_6px",
+              "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+            },
+            "catalystEffectOriginCandidate": {
+              "x": 201,
+              "y": 205,
+              "confidence": "derived_from_visual_paw_anchor",
+              "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+            },
+            "occlusion": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          "sourceFrameIndex": 6,
+          "runtimeFrameIndex": 5,
+          "frameIndex": 5,
+          "sourceFrameSemantics": "exported PNG suffix / source atlas cell; may differ from runtime sequence index",
+          "verificationAssetID": "NOIR__walk_6",
+          "runtimeBodyAssetID": "GeneratedArt/PartyWalk/NOIR__walk_6.png",
+          "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+        },
+        {
+          "path": "native/GeneratedArt/party_walk_r001/NOIR__walk_7.png",
+          "canvas": [
+            256,
+            256
+          ],
+          "footAnchorPx": [
+            128,
+            244
+          ],
+          "alphaBoundsExclusive": [
+            23,
+            68,
+            236,
+            252
+          ],
+          "sha256": "ed6158b332d21c62137447ab2972e9563b3fa9da7f2c3ffa0fd8bb0a889116f9",
+          "landmarks": {
+            "neckChestAnchor": {
+              "x": 170,
+              "y": 182,
+              "confidence": "visual_approx_4px",
+              "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+            },
+            "primaryFrontPawAnchor": {
+              "x": 177,
+              "y": 230,
+              "confidence": "visual_approx_6px",
+              "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+            },
+            "catalystEffectOriginCandidate": {
+              "x": 195,
+              "y": 206,
+              "confidence": "derived_from_visual_paw_anchor",
+              "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+            },
+            "occlusion": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          "sourceFrameIndex": 7,
+          "runtimeFrameIndex": 6,
+          "frameIndex": 6,
+          "sourceFrameSemantics": "exported PNG suffix / source atlas cell; may differ from runtime sequence index",
+          "verificationAssetID": "NOIR__walk_7",
+          "runtimeBodyAssetID": "GeneratedArt/PartyWalk/NOIR__walk_7.png",
+          "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+        },
+        {
+          "path": "native/GeneratedArt/party_walk_r001/NOIR__walk_8.png",
+          "canvas": [
+            256,
+            256
+          ],
+          "footAnchorPx": [
+            128,
+            244
+          ],
+          "alphaBoundsExclusive": [
+            32,
+            58,
+            217,
+            246
+          ],
+          "sha256": "bb248c70fba0b251abdc36b72d3dde8ed0ec17ac59519f3b0a8381afee215f87",
+          "landmarks": {
+            "neckChestAnchor": {
+              "x": 173,
+              "y": 182,
+              "confidence": "visual_approx_4px",
+              "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+            },
+            "primaryFrontPawAnchor": {
+              "x": 179,
+              "y": 230,
+              "confidence": "visual_approx_6px",
+              "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+            },
+            "catalystEffectOriginCandidate": {
+              "x": 197,
+              "y": 206,
+              "confidence": "derived_from_visual_paw_anchor",
+              "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+            },
+            "occlusion": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          "sourceFrameIndex": 8,
+          "runtimeFrameIndex": 7,
+          "frameIndex": 7,
+          "sourceFrameSemantics": "exported PNG suffix / source atlas cell; may differ from runtime sequence index",
+          "verificationAssetID": "NOIR__walk_8",
+          "runtimeBodyAssetID": "GeneratedArt/PartyWalk/NOIR__walk_8.png",
+          "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+        }
+      ],
+      "frameIndexMapping": [
+        {
+          "runtimeFrameIndex": 0,
+          "sourceFrameIndex": 0,
+          "assetID": "NOIR__walk_0"
+        },
+        {
+          "runtimeFrameIndex": 1,
+          "sourceFrameIndex": 2,
+          "assetID": "NOIR__walk_2"
+        },
+        {
+          "runtimeFrameIndex": 2,
+          "sourceFrameIndex": 3,
+          "assetID": "NOIR__walk_3"
+        },
+        {
+          "runtimeFrameIndex": 3,
+          "sourceFrameIndex": 4,
+          "assetID": "NOIR__walk_4"
+        },
+        {
+          "runtimeFrameIndex": 4,
+          "sourceFrameIndex": 5,
+          "assetID": "NOIR__walk_5"
+        },
+        {
+          "runtimeFrameIndex": 5,
+          "sourceFrameIndex": 6,
+          "assetID": "NOIR__walk_6"
+        },
+        {
+          "runtimeFrameIndex": 6,
+          "sourceFrameIndex": 7,
+          "assetID": "NOIR__walk_7"
+        },
+        {
+          "runtimeFrameIndex": 7,
+          "sourceFrameIndex": 8,
+          "assetID": "NOIR__walk_8"
+        }
+      ]
+    }
+  },
+  "coverage": {
+    "restFrames": 9,
+    "attackFrames": 9,
+    "walkAvailableFrames": 8,
+    "totalMeasuredFrames": 26,
+    "walk9Completion": "PARTIAL_MISSING_FRAME_1",
+    "walkFrameIndexRule": "frameIndex/runtimeFrameIndex follow CharacterLocomotion.play paths.enumerated index; sourceFrameIndex is the PNG suffix/source atlas cell. Rejected source cell 1 is omitted from runtime array, so source frame 2 maps to runtime frame 1."
+  },
+  "candidateEquipmentUse": {
+    "bodySlot": "chest/torso anchor only; baked scarf and pendant create occlusion conflict, so body armor overlay requires approved cutout/layer asset before production use",
+    "handSlot": "use per-frame primaryFrontPawAnchor as approximate attachment pivot; retain body alpha mask/foreground paw pixels",
+    "feetSlot": "use per-frame visible paw/toe geometry; current single paw anchor is not sufficient to independently anchor all four footwear pieces",
+    "ringSlot": "test at front paw anchor but validate species identity and readability; no ring mesh/art implied",
+    "catalyst": "effect origin is an unapproved forward offset from paw; root/renderer must decide whether familiar action originates at chest pendant or paw"
+  },
+  "framesIndex": {
+    "rest:00": {
+      "sequenceIndex": 0,
+      "frameIndex": 0,
+      "path": "native/GeneratedArt/party_rest_r001/NOIR__rest_00.png",
+      "canvas": [
+        320,
+        256
+      ],
+      "footAnchorPx": [
+        160,
+        244
+      ],
+      "alphaBoundsExclusive": [
+        62,
+        68,
+        272,
+        248
+      ],
+      "sha256": "0a7fcc791b417a5b151f4f5e669efe603432226d0709ea79aa01517d066f783d",
+      "landmarks": {
+        "neckChestAnchor": {
+          "x": 166,
+          "y": 164,
+          "confidence": "visual_approx_4px",
+          "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+        },
+        "primaryFrontPawAnchor": {
+          "x": 220,
+          "y": 233,
+          "confidence": "visual_approx_6px",
+          "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+        },
+        "catalystEffectOriginCandidate": {
+          "x": 238,
+          "y": 209,
+          "confidence": "derived_from_visual_paw_anchor",
+          "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+        },
+        "occlusion": {
+          "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+          "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+          "effect": "render over body, preserve icon/projectile readability"
+        }
+      },
+      "verificationAssetID": "NOIR__rest_00",
+      "runtimeBodyAssetID": "GeneratedArt/PartyRest/NOIR__rest_00.png",
+      "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+    },
+    "rest:01": {
+      "sequenceIndex": 1,
+      "frameIndex": 1,
+      "path": "native/GeneratedArt/party_rest_r001/NOIR__rest_01.png",
+      "canvas": [
+        320,
+        256
+      ],
+      "footAnchorPx": [
+        160,
+        244
+      ],
+      "alphaBoundsExclusive": [
+        33,
+        27,
+        257,
+        256
+      ],
+      "sha256": "3dfc1060abe373d62b999415acf9d154b0d5bfb16a8f1ae34aab1a6999c8bdad",
+      "landmarks": {
+        "neckChestAnchor": {
+          "x": 169,
+          "y": 164,
+          "confidence": "visual_approx_4px",
+          "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+        },
+        "primaryFrontPawAnchor": {
+          "x": 218,
+          "y": 233,
+          "confidence": "visual_approx_6px",
+          "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+        },
+        "catalystEffectOriginCandidate": {
+          "x": 236,
+          "y": 209,
+          "confidence": "derived_from_visual_paw_anchor",
+          "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+        },
+        "occlusion": {
+          "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+          "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+          "effect": "render over body, preserve icon/projectile readability"
+        }
+      },
+      "verificationAssetID": "NOIR__rest_01",
+      "runtimeBodyAssetID": "GeneratedArt/PartyRest/NOIR__rest_01.png",
+      "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+    },
+    "rest:02": {
+      "sequenceIndex": 2,
+      "frameIndex": 2,
+      "path": "native/GeneratedArt/party_rest_r001/NOIR__rest_02.png",
+      "canvas": [
+        320,
+        256
+      ],
+      "footAnchorPx": [
+        160,
+        244
+      ],
+      "alphaBoundsExclusive": [
+        49,
+        13,
+        258,
+        248
+      ],
+      "sha256": "828cb8d53c92642a85d1f687fd6af333fc874624f771606eb5ffb31aa1900ec1",
+      "landmarks": {
+        "neckChestAnchor": {
+          "x": 188,
+          "y": 165,
+          "confidence": "visual_approx_4px",
+          "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+        },
+        "primaryFrontPawAnchor": {
+          "x": 225,
+          "y": 232,
+          "confidence": "visual_approx_6px",
+          "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+        },
+        "catalystEffectOriginCandidate": {
+          "x": 243,
+          "y": 208,
+          "confidence": "derived_from_visual_paw_anchor",
+          "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+        },
+        "occlusion": {
+          "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+          "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+          "effect": "render over body, preserve icon/projectile readability"
+        }
+      },
+      "verificationAssetID": "NOIR__rest_02",
+      "runtimeBodyAssetID": "GeneratedArt/PartyRest/NOIR__rest_02.png",
+      "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+    },
+    "rest:03": {
+      "sequenceIndex": 3,
+      "frameIndex": 3,
+      "path": "native/GeneratedArt/party_rest_r001/NOIR__rest_03.png",
+      "canvas": [
+        320,
+        256
+      ],
+      "footAnchorPx": [
+        160,
+        244
+      ],
+      "alphaBoundsExclusive": [
+        32,
+        68,
+        261,
+        251
+      ],
+      "sha256": "fcdd43506856340887479ee405f7ac9cc7a98ade8043bd760171269f39cb8193",
+      "landmarks": {
+        "neckChestAnchor": {
+          "x": 160,
+          "y": 165,
+          "confidence": "visual_approx_4px",
+          "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+        },
+        "primaryFrontPawAnchor": {
+          "x": 177,
+          "y": 230,
+          "confidence": "visual_approx_6px",
+          "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+        },
+        "catalystEffectOriginCandidate": {
+          "x": 195,
+          "y": 206,
+          "confidence": "derived_from_visual_paw_anchor",
+          "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+        },
+        "occlusion": {
+          "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+          "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+          "effect": "render over body, preserve icon/projectile readability"
+        }
+      },
+      "verificationAssetID": "NOIR__rest_03",
+      "runtimeBodyAssetID": "GeneratedArt/PartyRest/NOIR__rest_03.png",
+      "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+    },
+    "rest:04": {
+      "sequenceIndex": 4,
+      "frameIndex": 4,
+      "path": "native/GeneratedArt/party_rest_r001/NOIR__rest_04.png",
+      "canvas": [
+        320,
+        256
+      ],
+      "footAnchorPx": [
+        160,
+        244
+      ],
+      "alphaBoundsExclusive": [
+        42,
+        55,
+        263,
+        252
+      ],
+      "sha256": "fb215f5f611382d7a6925403e13e3d5cb3f63528a4c551e3790e0fe90fa1eb6c",
+      "landmarks": {
+        "neckChestAnchor": {
+          "x": 177,
+          "y": 168,
+          "confidence": "visual_approx_4px",
+          "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+        },
+        "primaryFrontPawAnchor": {
+          "x": 188,
+          "y": 232,
+          "confidence": "visual_approx_6px",
+          "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+        },
+        "catalystEffectOriginCandidate": {
+          "x": 206,
+          "y": 208,
+          "confidence": "derived_from_visual_paw_anchor",
+          "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+        },
+        "occlusion": {
+          "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+          "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+          "effect": "render over body, preserve icon/projectile readability"
+        }
+      },
+      "verificationAssetID": "NOIR__rest_04",
+      "runtimeBodyAssetID": "GeneratedArt/PartyRest/NOIR__rest_04.png",
+      "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+    },
+    "rest:05": {
+      "sequenceIndex": 5,
+      "frameIndex": 5,
+      "path": "native/GeneratedArt/party_rest_r001/NOIR__rest_05.png",
+      "canvas": [
+        320,
+        256
+      ],
+      "footAnchorPx": [
+        160,
+        244
+      ],
+      "alphaBoundsExclusive": [
+        59,
+        55,
+        251,
+        251
+      ],
+      "sha256": "9646b93c53653f83856abd14cefdd7ac18ee3b488e61cf4831d1d61f09277e34",
+      "landmarks": {
+        "neckChestAnchor": {
+          "x": 180,
+          "y": 166,
+          "confidence": "visual_approx_4px",
+          "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+        },
+        "primaryFrontPawAnchor": {
+          "x": 217,
+          "y": 232,
+          "confidence": "visual_approx_6px",
+          "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+        },
+        "catalystEffectOriginCandidate": {
+          "x": 235,
+          "y": 208,
+          "confidence": "derived_from_visual_paw_anchor",
+          "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+        },
+        "occlusion": {
+          "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+          "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+          "effect": "render over body, preserve icon/projectile readability"
+        }
+      },
+      "verificationAssetID": "NOIR__rest_05",
+      "runtimeBodyAssetID": "GeneratedArt/PartyRest/NOIR__rest_05.png",
+      "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+    },
+    "rest:06": {
+      "sequenceIndex": 6,
+      "frameIndex": 6,
+      "path": "native/GeneratedArt/party_rest_r001/NOIR__rest_06.png",
+      "canvas": [
+        320,
+        256
+      ],
+      "footAnchorPx": [
+        160,
+        244
+      ],
+      "alphaBoundsExclusive": [
+        58,
+        43,
+        258,
+        248
+      ],
+      "sha256": "d4eba79af38b2d45eb4712b2ddede4f5c8ebe14e5dd42dab724f4049a16ad3b1",
+      "landmarks": {
+        "neckChestAnchor": {
+          "x": 198,
+          "y": 229,
+          "confidence": "visual_approx_4px",
+          "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+        },
+        "primaryFrontPawAnchor": {
+          "x": 190,
+          "y": 228,
+          "confidence": "visual_approx_6px",
+          "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+        },
+        "catalystEffectOriginCandidate": {
+          "x": 208,
+          "y": 204,
+          "confidence": "derived_from_visual_paw_anchor",
+          "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+        },
+        "occlusion": {
+          "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+          "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+          "effect": "render over body, preserve icon/projectile readability"
+        }
+      },
+      "verificationAssetID": "NOIR__rest_06",
+      "runtimeBodyAssetID": "GeneratedArt/PartyRest/NOIR__rest_06.png",
+      "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+    },
+    "rest:07": {
+      "sequenceIndex": 7,
+      "frameIndex": 7,
+      "path": "native/GeneratedArt/party_rest_r001/NOIR__rest_07.png",
+      "canvas": [
+        320,
+        256
+      ],
+      "footAnchorPx": [
+        160,
+        244
+      ],
+      "alphaBoundsExclusive": [
+        22,
+        44,
+        262,
+        255
+      ],
+      "sha256": "715ee4d2f7f5fbc816f862615a6681e511c2c24e37e1c159e7fc7a47885500eb",
+      "landmarks": {
+        "neckChestAnchor": {
+          "x": 185,
+          "y": 187,
+          "confidence": "visual_approx_4px",
+          "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+        },
+        "primaryFrontPawAnchor": {
+          "x": 197,
+          "y": 230,
+          "confidence": "visual_approx_6px",
+          "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+        },
+        "catalystEffectOriginCandidate": {
+          "x": 215,
+          "y": 206,
+          "confidence": "derived_from_visual_paw_anchor",
+          "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+        },
+        "occlusion": {
+          "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+          "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+          "effect": "render over body, preserve icon/projectile readability"
+        }
+      },
+      "verificationAssetID": "NOIR__rest_07",
+      "runtimeBodyAssetID": "GeneratedArt/PartyRest/NOIR__rest_07.png",
+      "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+    },
+    "rest:08": {
+      "sequenceIndex": 8,
+      "frameIndex": 8,
+      "path": "native/GeneratedArt/party_rest_r001/NOIR__rest_08.png",
+      "canvas": [
+        320,
+        256
+      ],
+      "footAnchorPx": [
+        160,
+        244
+      ],
+      "alphaBoundsExclusive": [
+        34,
+        52,
+        238,
+        253
+      ],
+      "sha256": "b6166468dd4fd09e0b3c5e775d83033696ba9b60e256d86ea7d9ef0a2ae627f8",
+      "landmarks": {
+        "neckChestAnchor": {
+          "x": 197,
+          "y": 187,
+          "confidence": "visual_approx_4px",
+          "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+        },
+        "primaryFrontPawAnchor": {
+          "x": 216,
+          "y": 233,
+          "confidence": "visual_approx_6px",
+          "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+        },
+        "catalystEffectOriginCandidate": {
+          "x": 234,
+          "y": 209,
+          "confidence": "derived_from_visual_paw_anchor",
+          "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+        },
+        "occlusion": {
+          "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+          "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+          "effect": "render over body, preserve icon/projectile readability"
+        }
+      },
+      "verificationAssetID": "NOIR__rest_08",
+      "runtimeBodyAssetID": "GeneratedArt/PartyRest/NOIR__rest_08.png",
+      "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+    },
+    "attack:00": {
+      "sequenceIndex": 0,
+      "frameIndex": 0,
+      "path": "native/GeneratedArt/party_attack_r001/NOIR__attack_00.png",
+      "canvas": [
+        320,
+        256
+      ],
+      "footAnchorPx": [
+        160,
+        244
+      ],
+      "alphaBoundsExclusive": [
+        58,
+        72,
+        245,
+        256
+      ],
+      "sha256": "c088713f72a243403d261a6b87e8356350ea77231a8f94c039c59e303dc6b825",
+      "landmarks": {
+        "neckChestAnchor": {
+          "x": 190,
+          "y": 178,
+          "confidence": "visual_approx_4px",
+          "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+        },
+        "primaryFrontPawAnchor": {
+          "x": 220,
+          "y": 232,
+          "confidence": "visual_approx_6px",
+          "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+        },
+        "catalystEffectOriginCandidate": {
+          "x": 238,
+          "y": 208,
+          "confidence": "derived_from_visual_paw_anchor",
+          "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+        },
+        "occlusion": {
+          "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+          "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+          "effect": "render over body, preserve icon/projectile readability"
+        }
+      },
+      "verificationAssetID": "NOIR__attack_00",
+      "runtimeBodyAssetID": "GeneratedArt/PartyAttack/NOIR__attack_00.png",
+      "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+    },
+    "attack:01": {
+      "sequenceIndex": 1,
+      "frameIndex": 1,
+      "path": "native/GeneratedArt/party_attack_r001/NOIR__attack_01.png",
+      "canvas": [
+        320,
+        256
+      ],
+      "footAnchorPx": [
+        160,
+        244
+      ],
+      "alphaBoundsExclusive": [
+        11,
+        23,
+        222,
+        252
+      ],
+      "sha256": "51fa6ec463b8fdc152acdadc678f73eba89816c70fc7d69ade958fe138a8698f",
+      "landmarks": {
+        "neckChestAnchor": {
+          "x": 171,
+          "y": 194,
+          "confidence": "visual_approx_4px",
+          "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+        },
+        "primaryFrontPawAnchor": {
+          "x": 199,
+          "y": 234,
+          "confidence": "visual_approx_6px",
+          "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+        },
+        "catalystEffectOriginCandidate": {
+          "x": 217,
+          "y": 210,
+          "confidence": "derived_from_visual_paw_anchor",
+          "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+        },
+        "occlusion": {
+          "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+          "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+          "effect": "render over body, preserve icon/projectile readability"
+        }
+      },
+      "verificationAssetID": "NOIR__attack_01",
+      "runtimeBodyAssetID": "GeneratedArt/PartyAttack/NOIR__attack_01.png",
+      "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+    },
+    "attack:02": {
+      "sequenceIndex": 2,
+      "frameIndex": 2,
+      "path": "native/GeneratedArt/party_attack_r001/NOIR__attack_02.png",
+      "canvas": [
+        320,
+        256
+      ],
+      "footAnchorPx": [
+        160,
+        244
+      ],
+      "alphaBoundsExclusive": [
+        22,
+        23,
+        218,
+        246
+      ],
+      "sha256": "26b22fe55522b07893d2c2de19c0d5a3daf039cf7fcbc5d1791ac95dd7d52645",
+      "landmarks": {
+        "neckChestAnchor": {
+          "x": 194,
+          "y": 209,
+          "confidence": "visual_approx_4px",
+          "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+        },
+        "primaryFrontPawAnchor": {
+          "x": 224,
+          "y": 231,
+          "confidence": "visual_approx_6px",
+          "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+        },
+        "catalystEffectOriginCandidate": {
+          "x": 242,
+          "y": 207,
+          "confidence": "derived_from_visual_paw_anchor",
+          "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+        },
+        "occlusion": {
+          "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+          "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+          "effect": "render over body, preserve icon/projectile readability"
+        }
+      },
+      "verificationAssetID": "NOIR__attack_02",
+      "runtimeBodyAssetID": "GeneratedArt/PartyAttack/NOIR__attack_02.png",
+      "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+    },
+    "attack:03": {
+      "sequenceIndex": 3,
+      "frameIndex": 3,
+      "path": "native/GeneratedArt/party_attack_r001/NOIR__attack_03.png",
+      "canvas": [
+        320,
+        256
+      ],
+      "footAnchorPx": [
+        160,
+        244
+      ],
+      "alphaBoundsExclusive": [
+        31,
+        79,
+        224,
+        247
+      ],
+      "sha256": "a16055b0d1b1f773a61ecb9d92fd6996885eea023ade4d19e865f0582b0e887e",
+      "landmarks": {
+        "neckChestAnchor": {
+          "x": 188,
+          "y": 211,
+          "confidence": "visual_approx_4px",
+          "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+        },
+        "primaryFrontPawAnchor": {
+          "x": 200,
+          "y": 231,
+          "confidence": "visual_approx_6px",
+          "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+        },
+        "catalystEffectOriginCandidate": {
+          "x": 218,
+          "y": 207,
+          "confidence": "derived_from_visual_paw_anchor",
+          "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+        },
+        "occlusion": {
+          "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+          "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+          "effect": "render over body, preserve icon/projectile readability"
+        }
+      },
+      "verificationAssetID": "NOIR__attack_03",
+      "runtimeBodyAssetID": "GeneratedArt/PartyAttack/NOIR__attack_03.png",
+      "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+    },
+    "attack:04": {
+      "sequenceIndex": 4,
+      "frameIndex": 4,
+      "path": "native/GeneratedArt/party_attack_r001/NOIR__attack_04.png",
+      "canvas": [
+        320,
+        256
+      ],
+      "footAnchorPx": [
+        160,
+        244
+      ],
+      "alphaBoundsExclusive": [
+        0,
+        74,
+        232,
+        255
+      ],
+      "sha256": "d5b8ed6a1d07770cc45de6ceea0dbba6aad0abaa0d4e6bf22a43275d958e8595",
+      "landmarks": {
+        "neckChestAnchor": {
+          "x": 169,
+          "y": 198,
+          "confidence": "visual_approx_4px",
+          "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+        },
+        "primaryFrontPawAnchor": {
+          "x": 232,
+          "y": 199,
+          "confidence": "visual_approx_6px",
+          "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+        },
+        "catalystEffectOriginCandidate": {
+          "x": 250,
+          "y": 175,
+          "confidence": "derived_from_visual_paw_anchor",
+          "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+        },
+        "occlusion": {
+          "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+          "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+          "effect": "render over body, preserve icon/projectile readability"
+        }
+      },
+      "verificationAssetID": "NOIR__attack_04",
+      "runtimeBodyAssetID": "GeneratedArt/PartyAttack/NOIR__attack_04.png",
+      "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+    },
+    "attack:05": {
+      "sequenceIndex": 5,
+      "frameIndex": 5,
+      "path": "native/GeneratedArt/party_attack_r001/NOIR__attack_05.png",
+      "canvas": [
+        320,
+        256
+      ],
+      "footAnchorPx": [
+        160,
+        244
+      ],
+      "alphaBoundsExclusive": [
+        6,
+        65,
+        223,
+        252
+      ],
+      "sha256": "22e4c2509d511fc46269c7db2b3771df7ff8866103528b178fc0c1d1ceda31b1",
+      "landmarks": {
+        "neckChestAnchor": {
+          "x": 165,
+          "y": 213,
+          "confidence": "visual_approx_4px",
+          "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+        },
+        "primaryFrontPawAnchor": {
+          "x": 250,
+          "y": 214,
+          "confidence": "visual_approx_6px",
+          "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+        },
+        "catalystEffectOriginCandidate": {
+          "x": 268,
+          "y": 190,
+          "confidence": "derived_from_visual_paw_anchor",
+          "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+        },
+        "occlusion": {
+          "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+          "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+          "effect": "render over body, preserve icon/projectile readability"
+        }
+      },
+      "verificationAssetID": "NOIR__attack_05",
+      "runtimeBodyAssetID": "GeneratedArt/PartyAttack/NOIR__attack_05.png",
+      "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+    },
+    "attack:06": {
+      "sequenceIndex": 6,
+      "frameIndex": 6,
+      "path": "native/GeneratedArt/party_attack_r001/NOIR__attack_06.png",
+      "canvas": [
+        320,
+        256
+      ],
+      "footAnchorPx": [
+        160,
+        244
+      ],
+      "alphaBoundsExclusive": [
+        17,
+        46,
+        239,
+        248
+      ],
+      "sha256": "4a9966a9a8b69863154d4791dae843f4cd60a6c95dbfe8445badef75ae2a788b",
+      "landmarks": {
+        "neckChestAnchor": {
+          "x": 168,
+          "y": 212,
+          "confidence": "visual_approx_4px",
+          "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+        },
+        "primaryFrontPawAnchor": {
+          "x": 241,
+          "y": 215,
+          "confidence": "visual_approx_6px",
+          "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+        },
+        "catalystEffectOriginCandidate": {
+          "x": 259,
+          "y": 191,
+          "confidence": "derived_from_visual_paw_anchor",
+          "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+        },
+        "occlusion": {
+          "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+          "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+          "effect": "render over body, preserve icon/projectile readability"
+        }
+      },
+      "verificationAssetID": "NOIR__attack_06",
+      "runtimeBodyAssetID": "GeneratedArt/PartyAttack/NOIR__attack_06.png",
+      "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+    },
+    "attack:07": {
+      "sequenceIndex": 7,
+      "frameIndex": 7,
+      "path": "native/GeneratedArt/party_attack_r001/NOIR__attack_07.png",
+      "canvas": [
+        320,
+        256
+      ],
+      "footAnchorPx": [
+        160,
+        244
+      ],
+      "alphaBoundsExclusive": [
+        34,
+        46,
+        270,
+        253
+      ],
+      "sha256": "aaf986d8900c58eda03cb6b8e03e9c54418c5652c941cb96671c9a10b2309a28",
+      "landmarks": {
+        "neckChestAnchor": {
+          "x": 190,
+          "y": 186,
+          "confidence": "visual_approx_4px",
+          "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+        },
+        "primaryFrontPawAnchor": {
+          "x": 220,
+          "y": 234,
+          "confidence": "visual_approx_6px",
+          "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+        },
+        "catalystEffectOriginCandidate": {
+          "x": 238,
+          "y": 210,
+          "confidence": "derived_from_visual_paw_anchor",
+          "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+        },
+        "occlusion": {
+          "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+          "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+          "effect": "render over body, preserve icon/projectile readability"
+        }
+      },
+      "verificationAssetID": "NOIR__attack_07",
+      "runtimeBodyAssetID": "GeneratedArt/PartyAttack/NOIR__attack_07.png",
+      "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+    },
+    "attack:08": {
+      "sequenceIndex": 8,
+      "frameIndex": 8,
+      "path": "native/GeneratedArt/party_attack_r001/NOIR__attack_08.png",
+      "canvas": [
+        320,
+        256
+      ],
+      "footAnchorPx": [
+        160,
+        244
+      ],
+      "alphaBoundsExclusive": [
+        35,
+        45,
+        223,
+        249
+      ],
+      "sha256": "d57801f6b087067b174cea3e9051f464d48ec5d627092835d1102065abc89703",
+      "landmarks": {
+        "neckChestAnchor": {
+          "x": 199,
+          "y": 187,
+          "confidence": "visual_approx_4px",
+          "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+        },
+        "primaryFrontPawAnchor": {
+          "x": 223,
+          "y": 234,
+          "confidence": "visual_approx_6px",
+          "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+        },
+        "catalystEffectOriginCandidate": {
+          "x": 241,
+          "y": 210,
+          "confidence": "derived_from_visual_paw_anchor",
+          "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+        },
+        "occlusion": {
+          "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+          "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+          "effect": "render over body, preserve icon/projectile readability"
+        }
+      },
+      "verificationAssetID": "NOIR__attack_08",
+      "runtimeBodyAssetID": "GeneratedArt/PartyAttack/NOIR__attack_08.png",
+      "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+    },
+    "walk:00": {
+      "sequenceIndex": 0,
+      "frameIndex": 0,
+      "path": "native/GeneratedArt/party_walk_r001/NOIR__walk_0.png",
+      "canvas": [
+        256,
+        256
+      ],
+      "footAnchorPx": [
+        128,
+        244
+      ],
+      "alphaBoundsExclusive": [
+        26,
+        70,
+        216,
+        246
+      ],
+      "sha256": "9f705cb909742b80837a8a51cb9ecd44bb09df3925b6240f1be5aa99ab0fe2a9",
+      "landmarks": {
+        "neckChestAnchor": {
+          "x": 169,
+          "y": 181,
+          "confidence": "visual_approx_4px",
+          "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+        },
+        "primaryFrontPawAnchor": {
+          "x": 174,
+          "y": 229,
+          "confidence": "visual_approx_6px",
+          "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+        },
+        "catalystEffectOriginCandidate": {
+          "x": 192,
+          "y": 205,
+          "confidence": "derived_from_visual_paw_anchor",
+          "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+        },
+        "occlusion": {
+          "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+          "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+          "effect": "render over body, preserve icon/projectile readability"
+        }
+      },
+      "verificationAssetID": "NOIR__walk_0",
+      "runtimeBodyAssetID": "GeneratedArt/PartyWalk/NOIR__walk_0.png",
+      "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+    },
+    "walk:02": {
+      "sequenceIndex": 1,
+      "frameIndex": 2,
+      "path": "native/GeneratedArt/party_walk_r001/NOIR__walk_2.png",
+      "canvas": [
+        256,
+        256
+      ],
+      "footAnchorPx": [
+        128,
+        244
+      ],
+      "alphaBoundsExclusive": [
+        38,
+        70,
+        237,
+        246
+      ],
+      "sha256": "a54d25444d05a2d647f73972cfa0a26293ee4bf5852b33f4cd9bbaa301860de5",
+      "landmarks": {
+        "neckChestAnchor": {
+          "x": 171,
+          "y": 181,
+          "confidence": "visual_approx_4px",
+          "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+        },
+        "primaryFrontPawAnchor": {
+          "x": 180,
+          "y": 228,
+          "confidence": "visual_approx_6px",
+          "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+        },
+        "catalystEffectOriginCandidate": {
+          "x": 198,
+          "y": 204,
+          "confidence": "derived_from_visual_paw_anchor",
+          "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+        },
+        "occlusion": {
+          "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+          "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+          "effect": "render over body, preserve icon/projectile readability"
+        }
+      },
+      "verificationAssetID": "NOIR__walk_2",
+      "runtimeBodyAssetID": "GeneratedArt/PartyWalk/NOIR__walk_2.png",
+      "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+    },
+    "walk:03": {
+      "sequenceIndex": 2,
+      "frameIndex": 3,
+      "path": "native/GeneratedArt/party_walk_r001/NOIR__walk_3.png",
+      "canvas": [
+        256,
+        256
+      ],
+      "footAnchorPx": [
+        128,
+        244
+      ],
+      "alphaBoundsExclusive": [
+        21,
+        59,
+        234,
+        252
+      ],
+      "sha256": "d52ad1cdb3d19199913a58b422e569be9c92b94d6801ec200697437f90b7e26f",
+      "landmarks": {
+        "neckChestAnchor": {
+          "x": 175,
+          "y": 181,
+          "confidence": "visual_approx_4px",
+          "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+        },
+        "primaryFrontPawAnchor": {
+          "x": 180,
+          "y": 230,
+          "confidence": "visual_approx_6px",
+          "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+        },
+        "catalystEffectOriginCandidate": {
+          "x": 198,
+          "y": 206,
+          "confidence": "derived_from_visual_paw_anchor",
+          "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+        },
+        "occlusion": {
+          "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+          "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+          "effect": "render over body, preserve icon/projectile readability"
+        }
+      },
+      "verificationAssetID": "NOIR__walk_3",
+      "runtimeBodyAssetID": "GeneratedArt/PartyWalk/NOIR__walk_3.png",
+      "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+    },
+    "walk:04": {
+      "sequenceIndex": 3,
+      "frameIndex": 4,
+      "path": "native/GeneratedArt/party_walk_r001/NOIR__walk_4.png",
+      "canvas": [
+        256,
+        256
+      ],
+      "footAnchorPx": [
+        128,
+        244
+      ],
+      "alphaBoundsExclusive": [
+        40,
+        53,
+        237,
+        247
+      ],
+      "sha256": "01abaa2f71e39e0c7cc1da1368a3509f8158197e2e42bb4a1bb656bb351f0ab0",
+      "landmarks": {
+        "neckChestAnchor": {
+          "x": 168,
+          "y": 181,
+          "confidence": "visual_approx_4px",
+          "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+        },
+        "primaryFrontPawAnchor": {
+          "x": 177,
+          "y": 230,
+          "confidence": "visual_approx_6px",
+          "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+        },
+        "catalystEffectOriginCandidate": {
+          "x": 195,
+          "y": 206,
+          "confidence": "derived_from_visual_paw_anchor",
+          "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+        },
+        "occlusion": {
+          "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+          "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+          "effect": "render over body, preserve icon/projectile readability"
+        }
+      },
+      "verificationAssetID": "NOIR__walk_4",
+      "runtimeBodyAssetID": "GeneratedArt/PartyWalk/NOIR__walk_4.png",
+      "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+    },
+    "walk:05": {
+      "sequenceIndex": 4,
+      "frameIndex": 5,
+      "path": "native/GeneratedArt/party_walk_r001/NOIR__walk_5.png",
+      "canvas": [
+        256,
+        256
+      ],
+      "footAnchorPx": [
+        128,
+        244
+      ],
+      "alphaBoundsExclusive": [
+        37,
+        57,
+        236,
+        253
+      ],
+      "sha256": "0313d0e1b3dfc2463bfcedd4442d960f07697b17402025a492326ca7fa50912d",
+      "landmarks": {
+        "neckChestAnchor": {
+          "x": 170,
+          "y": 182,
+          "confidence": "visual_approx_4px",
+          "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+        },
+        "primaryFrontPawAnchor": {
+          "x": 175,
+          "y": 229,
+          "confidence": "visual_approx_6px",
+          "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+        },
+        "catalystEffectOriginCandidate": {
+          "x": 193,
+          "y": 205,
+          "confidence": "derived_from_visual_paw_anchor",
+          "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+        },
+        "occlusion": {
+          "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+          "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+          "effect": "render over body, preserve icon/projectile readability"
+        }
+      },
+      "verificationAssetID": "NOIR__walk_5",
+      "runtimeBodyAssetID": "GeneratedArt/PartyWalk/NOIR__walk_5.png",
+      "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+    },
+    "walk:06": {
+      "sequenceIndex": 5,
+      "frameIndex": 6,
+      "path": "native/GeneratedArt/party_walk_r001/NOIR__walk_6.png",
+      "canvas": [
+        256,
+        256
+      ],
+      "footAnchorPx": [
+        128,
+        244
+      ],
+      "alphaBoundsExclusive": [
+        11,
+        61,
+        225,
+        251
+      ],
+      "sha256": "c48e7c892dbd997cf6fd3052b4d2d25f4ac07d2a401e39a9ada92b02a83d0f92",
+      "landmarks": {
+        "neckChestAnchor": {
+          "x": 173,
+          "y": 183,
+          "confidence": "visual_approx_4px",
+          "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+        },
+        "primaryFrontPawAnchor": {
+          "x": 183,
+          "y": 229,
+          "confidence": "visual_approx_6px",
+          "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+        },
+        "catalystEffectOriginCandidate": {
+          "x": 201,
+          "y": 205,
+          "confidence": "derived_from_visual_paw_anchor",
+          "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+        },
+        "occlusion": {
+          "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+          "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+          "effect": "render over body, preserve icon/projectile readability"
+        }
+      },
+      "verificationAssetID": "NOIR__walk_6",
+      "runtimeBodyAssetID": "GeneratedArt/PartyWalk/NOIR__walk_6.png",
+      "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+    },
+    "walk:07": {
+      "sequenceIndex": 6,
+      "frameIndex": 7,
+      "path": "native/GeneratedArt/party_walk_r001/NOIR__walk_7.png",
+      "canvas": [
+        256,
+        256
+      ],
+      "footAnchorPx": [
+        128,
+        244
+      ],
+      "alphaBoundsExclusive": [
+        23,
+        68,
+        236,
+        252
+      ],
+      "sha256": "ed6158b332d21c62137447ab2972e9563b3fa9da7f2c3ffa0fd8bb0a889116f9",
+      "landmarks": {
+        "neckChestAnchor": {
+          "x": 170,
+          "y": 182,
+          "confidence": "visual_approx_4px",
+          "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+        },
+        "primaryFrontPawAnchor": {
+          "x": 177,
+          "y": 230,
+          "confidence": "visual_approx_6px",
+          "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+        },
+        "catalystEffectOriginCandidate": {
+          "x": 195,
+          "y": 206,
+          "confidence": "derived_from_visual_paw_anchor",
+          "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+        },
+        "occlusion": {
+          "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+          "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+          "effect": "render over body, preserve icon/projectile readability"
+        }
+      },
+      "verificationAssetID": "NOIR__walk_7",
+      "runtimeBodyAssetID": "GeneratedArt/PartyWalk/NOIR__walk_7.png",
+      "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+    },
+    "walk:08": {
+      "sequenceIndex": 7,
+      "frameIndex": 8,
+      "path": "native/GeneratedArt/party_walk_r001/NOIR__walk_8.png",
+      "canvas": [
+        256,
+        256
+      ],
+      "footAnchorPx": [
+        128,
+        244
+      ],
+      "alphaBoundsExclusive": [
+        32,
+        58,
+        217,
+        246
+      ],
+      "sha256": "bb248c70fba0b251abdc36b72d3dde8ed0ec17ac59519f3b0a8381afee215f87",
+      "landmarks": {
+        "neckChestAnchor": {
+          "x": 173,
+          "y": 182,
+          "confidence": "visual_approx_4px",
+          "interpretation": "scarf-knot/pendant chest center; accessory may be obscured by baked-in scarf/pendant"
+        },
+        "primaryFrontPawAnchor": {
+          "x": 179,
+          "y": 230,
+          "confidence": "visual_approx_6px",
+          "interpretation": "rightmost visible forepaw/wrist center for gear placement; paw silhouette changes with pose"
+        },
+        "catalystEffectOriginCandidate": {
+          "x": 197,
+          "y": 206,
+          "confidence": "derived_from_visual_paw_anchor",
+          "interpretation": "provisional forward-offset from paw; effect art/gameplay not established"
+        },
+        "occlusion": {
+          "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+          "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+          "effect": "render over body, preserve icon/projectile readability"
+        }
+      },
+      "verificationAssetID": "NOIR__walk_8",
+      "runtimeBodyAssetID": "GeneratedArt/PartyWalk/NOIR__walk_8.png",
+      "runtimeRecordContract": "ActorBodyFrame.record(runtimeBodyAssetID,index:runtimeFrameIndex,on:)"
+    }
+  }
+}

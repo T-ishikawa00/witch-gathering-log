@@ -1,0 +1,3521 @@
+{
+  "actor_id": "ACT_B_R04_B",
+  "revision": "rig_candidate_r001",
+  "status": "TECHNICAL_CANDIDATE_UNAPPROVED",
+  "canvas_px": [
+    512,
+    341
+  ],
+  "anchor_px": [
+    256,
+    331
+  ],
+  "fps": 24,
+  "coordinate_system": "top-left origin; output and part images use bundle pixels",
+  "source_atlas_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/representatives/ACT_B_R04_B/parts_pilot_r005/parts_atlas.png",
+  "source_atlas_sha256": "e3c0f89df6bf6f1e10855c241c4236edde103ae9bf162234e9491298e2719982",
+  "registration_reference": "native/Art/GeneratedCandidates/ACT_B_R04_B/ACT_B_R04_B__static_candidate__r004.png",
+  "registration_method": "manual visual registration; placements and pivots are candidate estimates, not source-authored",
+  "pivot_status": "VISUAL_ESTIMATE_UNAPPROVED",
+  "parts": [
+    {
+      "id": "farwing",
+      "path": "GeneratedCandidates/ACT_B_R04_B/rig_candidate_r001/parts/farwing_part_r001.png",
+      "source_path": "../parts/farwing_part_r001.png",
+      "source_sha256": "5c1586f4d31a406d6f14f05b181d2be00d624866827dead9e64d1de0f0188b8b",
+      "part_image_px": [
+        149,
+        163
+      ],
+      "pivot_in_part_px": [
+        2,
+        49
+      ],
+      "rest_position_px": [
+        287,
+        165
+      ],
+      "z_position": 1,
+      "pivot_basis": "VISUAL_ESTIMATE_UNAPPROVED"
+    },
+    {
+      "id": "body4legs_tail",
+      "path": "GeneratedCandidates/ACT_B_R04_B/rig_candidate_r001/parts/body4legs_tail_part_r001.png",
+      "source_path": "../parts/body4legs_tail_part_r001.png",
+      "source_sha256": "eb6ca303e2255abccda333adede44c468ac48f75d3695480e089ba7c27c6b902",
+      "part_image_px": [
+        455,
+        157
+      ],
+      "pivot_in_part_px": [
+        178,
+        56
+      ],
+      "rest_position_px": [
+        212,
+        236
+      ],
+      "z_position": 2,
+      "pivot_basis": "VISUAL_ESTIMATE_UNAPPROVED"
+    },
+    {
+      "id": "nearwing",
+      "path": "GeneratedCandidates/ACT_B_R04_B/rig_candidate_r001/parts/nearwing_part_r001.png",
+      "source_path": "../parts/nearwing_part_r001.png",
+      "source_sha256": "a418bc6f6e710780f434a393b53827d9ef3263354daa77881cac801410843097",
+      "part_image_px": [
+        208,
+        180
+      ],
+      "pivot_in_part_px": [
+        4,
+        64
+      ],
+      "rest_position_px": [
+        157,
+        174
+      ],
+      "z_position": 3,
+      "pivot_basis": "VISUAL_ESTIMATE_UNAPPROVED"
+    },
+    {
+      "id": "neck_head",
+      "path": "GeneratedCandidates/ACT_B_R04_B/rig_candidate_r001/parts/neck_head_part_r001.png",
+      "source_path": "../parts/neck_head_part_r001.png",
+      "source_sha256": "c49dce4541735a5840c8a360d1af395ea0f71cf3e79ba9d1036572db50d733d3",
+      "part_image_px": [
+        123,
+        192
+      ],
+      "pivot_in_part_px": [
+        107,
+        189
+      ],
+      "rest_position_px": [
+        124,
+        197
+      ],
+      "z_position": 4,
+      "pivot_basis": "VISUAL_ESTIMATE_UNAPPROVED"
+    }
+  ],
+  "clips": {
+    "idle": {
+      "fps": 24,
+      "loop": true,
+      "frame_count": 24,
+      "keyframes": [
+        {
+          "frame": 0,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                0.0
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 0.0
+            },
+            "farwing": {
+              "rotation_deg": -0.0
+            },
+            "neck_head": {
+              "rotation_deg": 0.0
+            }
+          }
+        },
+        {
+          "frame": 1,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                0.207
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 0.621
+            },
+            "farwing": {
+              "rotation_deg": -0.699
+            },
+            "neck_head": {
+              "rotation_deg": 0.388
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                0.4
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 1.2
+            },
+            "farwing": {
+              "rotation_deg": -1.35
+            },
+            "neck_head": {
+              "rotation_deg": 0.75
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                0.566
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 1.697
+            },
+            "farwing": {
+              "rotation_deg": -1.909
+            },
+            "neck_head": {
+              "rotation_deg": 1.061
+            }
+          }
+        },
+        {
+          "frame": 4,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                0.693
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 2.078
+            },
+            "farwing": {
+              "rotation_deg": -2.338
+            },
+            "neck_head": {
+              "rotation_deg": 1.299
+            }
+          }
+        },
+        {
+          "frame": 5,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                0.773
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 2.318
+            },
+            "farwing": {
+              "rotation_deg": -2.608
+            },
+            "neck_head": {
+              "rotation_deg": 1.449
+            }
+          }
+        },
+        {
+          "frame": 6,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                0.8
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 2.4
+            },
+            "farwing": {
+              "rotation_deg": -2.7
+            },
+            "neck_head": {
+              "rotation_deg": 1.5
+            }
+          }
+        },
+        {
+          "frame": 7,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                0.773
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 2.318
+            },
+            "farwing": {
+              "rotation_deg": -2.608
+            },
+            "neck_head": {
+              "rotation_deg": 1.449
+            }
+          }
+        },
+        {
+          "frame": 8,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                0.693
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 2.078
+            },
+            "farwing": {
+              "rotation_deg": -2.338
+            },
+            "neck_head": {
+              "rotation_deg": 1.299
+            }
+          }
+        },
+        {
+          "frame": 9,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                0.566
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 1.697
+            },
+            "farwing": {
+              "rotation_deg": -1.909
+            },
+            "neck_head": {
+              "rotation_deg": 1.061
+            }
+          }
+        },
+        {
+          "frame": 10,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                0.4
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 1.2
+            },
+            "farwing": {
+              "rotation_deg": -1.35
+            },
+            "neck_head": {
+              "rotation_deg": 0.75
+            }
+          }
+        },
+        {
+          "frame": 11,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                0.207
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 0.621
+            },
+            "farwing": {
+              "rotation_deg": -0.699
+            },
+            "neck_head": {
+              "rotation_deg": 0.388
+            }
+          }
+        },
+        {
+          "frame": 12,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                0.0
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 0.0
+            },
+            "farwing": {
+              "rotation_deg": -0.0
+            },
+            "neck_head": {
+              "rotation_deg": 0.0
+            }
+          }
+        },
+        {
+          "frame": 13,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -0.207
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -0.621
+            },
+            "farwing": {
+              "rotation_deg": 0.699
+            },
+            "neck_head": {
+              "rotation_deg": -0.388
+            }
+          }
+        },
+        {
+          "frame": 14,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -0.4
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -1.2
+            },
+            "farwing": {
+              "rotation_deg": 1.35
+            },
+            "neck_head": {
+              "rotation_deg": -0.75
+            }
+          }
+        },
+        {
+          "frame": 15,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -0.566
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -1.697
+            },
+            "farwing": {
+              "rotation_deg": 1.909
+            },
+            "neck_head": {
+              "rotation_deg": -1.061
+            }
+          }
+        },
+        {
+          "frame": 16,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -0.693
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -2.078
+            },
+            "farwing": {
+              "rotation_deg": 2.338
+            },
+            "neck_head": {
+              "rotation_deg": -1.299
+            }
+          }
+        },
+        {
+          "frame": 17,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -0.773
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -2.318
+            },
+            "farwing": {
+              "rotation_deg": 2.608
+            },
+            "neck_head": {
+              "rotation_deg": -1.449
+            }
+          }
+        },
+        {
+          "frame": 18,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -0.8
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -2.4
+            },
+            "farwing": {
+              "rotation_deg": 2.7
+            },
+            "neck_head": {
+              "rotation_deg": -1.5
+            }
+          }
+        },
+        {
+          "frame": 19,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -0.773
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -2.318
+            },
+            "farwing": {
+              "rotation_deg": 2.608
+            },
+            "neck_head": {
+              "rotation_deg": -1.449
+            }
+          }
+        },
+        {
+          "frame": 20,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -0.693
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -2.078
+            },
+            "farwing": {
+              "rotation_deg": 2.338
+            },
+            "neck_head": {
+              "rotation_deg": -1.299
+            }
+          }
+        },
+        {
+          "frame": 21,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -0.566
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -1.697
+            },
+            "farwing": {
+              "rotation_deg": 1.909
+            },
+            "neck_head": {
+              "rotation_deg": -1.061
+            }
+          }
+        },
+        {
+          "frame": 22,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -0.4
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -1.2
+            },
+            "farwing": {
+              "rotation_deg": 1.35
+            },
+            "neck_head": {
+              "rotation_deg": -0.75
+            }
+          }
+        },
+        {
+          "frame": 23,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -0.207
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -0.621
+            },
+            "farwing": {
+              "rotation_deg": 0.699
+            },
+            "neck_head": {
+              "rotation_deg": -0.388
+            }
+          }
+        }
+      ]
+    },
+    "flight": {
+      "fps": 24,
+      "loop": true,
+      "frame_count": 24,
+      "keyframes": [
+        {
+          "frame": 0,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -3.0
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 0.0
+            },
+            "farwing": {
+              "rotation_deg": -0.0
+            },
+            "neck_head": {
+              "rotation_deg": 0.0
+            }
+          }
+        },
+        {
+          "frame": 1,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -2.482
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 3.106
+            },
+            "farwing": {
+              "rotation_deg": -3.882
+            },
+            "neck_head": {
+              "rotation_deg": 0.466
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -2.0
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 6.0
+            },
+            "farwing": {
+              "rotation_deg": -7.5
+            },
+            "neck_head": {
+              "rotation_deg": 0.9
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -1.586
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 8.485
+            },
+            "farwing": {
+              "rotation_deg": -10.607
+            },
+            "neck_head": {
+              "rotation_deg": 1.273
+            }
+          }
+        },
+        {
+          "frame": 4,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -1.268
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 10.392
+            },
+            "farwing": {
+              "rotation_deg": -12.99
+            },
+            "neck_head": {
+              "rotation_deg": 1.559
+            }
+          }
+        },
+        {
+          "frame": 5,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -1.068
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 11.591
+            },
+            "farwing": {
+              "rotation_deg": -14.489
+            },
+            "neck_head": {
+              "rotation_deg": 1.739
+            }
+          }
+        },
+        {
+          "frame": 6,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -1.0
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 12.0
+            },
+            "farwing": {
+              "rotation_deg": -15.0
+            },
+            "neck_head": {
+              "rotation_deg": 1.8
+            }
+          }
+        },
+        {
+          "frame": 7,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -1.068
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 11.591
+            },
+            "farwing": {
+              "rotation_deg": -14.489
+            },
+            "neck_head": {
+              "rotation_deg": 1.739
+            }
+          }
+        },
+        {
+          "frame": 8,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -1.268
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 10.392
+            },
+            "farwing": {
+              "rotation_deg": -12.99
+            },
+            "neck_head": {
+              "rotation_deg": 1.559
+            }
+          }
+        },
+        {
+          "frame": 9,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -1.586
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 8.485
+            },
+            "farwing": {
+              "rotation_deg": -10.607
+            },
+            "neck_head": {
+              "rotation_deg": 1.273
+            }
+          }
+        },
+        {
+          "frame": 10,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -2.0
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 6.0
+            },
+            "farwing": {
+              "rotation_deg": -7.5
+            },
+            "neck_head": {
+              "rotation_deg": 0.9
+            }
+          }
+        },
+        {
+          "frame": 11,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -2.482
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 3.106
+            },
+            "farwing": {
+              "rotation_deg": -3.882
+            },
+            "neck_head": {
+              "rotation_deg": 0.466
+            }
+          }
+        },
+        {
+          "frame": 12,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -3.0
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 0.0
+            },
+            "farwing": {
+              "rotation_deg": -0.0
+            },
+            "neck_head": {
+              "rotation_deg": 0.0
+            }
+          }
+        },
+        {
+          "frame": 13,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -3.518
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -3.106
+            },
+            "farwing": {
+              "rotation_deg": 3.882
+            },
+            "neck_head": {
+              "rotation_deg": -0.466
+            }
+          }
+        },
+        {
+          "frame": 14,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -4.0
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -6.0
+            },
+            "farwing": {
+              "rotation_deg": 7.5
+            },
+            "neck_head": {
+              "rotation_deg": -0.9
+            }
+          }
+        },
+        {
+          "frame": 15,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -4.414
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -8.485
+            },
+            "farwing": {
+              "rotation_deg": 10.607
+            },
+            "neck_head": {
+              "rotation_deg": -1.273
+            }
+          }
+        },
+        {
+          "frame": 16,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -4.732
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -10.392
+            },
+            "farwing": {
+              "rotation_deg": 12.99
+            },
+            "neck_head": {
+              "rotation_deg": -1.559
+            }
+          }
+        },
+        {
+          "frame": 17,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -4.932
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -11.591
+            },
+            "farwing": {
+              "rotation_deg": 14.489
+            },
+            "neck_head": {
+              "rotation_deg": -1.739
+            }
+          }
+        },
+        {
+          "frame": 18,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -5.0
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -12.0
+            },
+            "farwing": {
+              "rotation_deg": 15.0
+            },
+            "neck_head": {
+              "rotation_deg": -1.8
+            }
+          }
+        },
+        {
+          "frame": 19,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -4.932
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -11.591
+            },
+            "farwing": {
+              "rotation_deg": 14.489
+            },
+            "neck_head": {
+              "rotation_deg": -1.739
+            }
+          }
+        },
+        {
+          "frame": 20,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -4.732
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -10.392
+            },
+            "farwing": {
+              "rotation_deg": 12.99
+            },
+            "neck_head": {
+              "rotation_deg": -1.559
+            }
+          }
+        },
+        {
+          "frame": 21,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -4.414
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -8.485
+            },
+            "farwing": {
+              "rotation_deg": 10.607
+            },
+            "neck_head": {
+              "rotation_deg": -1.273
+            }
+          }
+        },
+        {
+          "frame": 22,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -4.0
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -6.0
+            },
+            "farwing": {
+              "rotation_deg": 7.5
+            },
+            "neck_head": {
+              "rotation_deg": -0.9
+            }
+          }
+        },
+        {
+          "frame": 23,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                -3.518
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -3.106
+            },
+            "farwing": {
+              "rotation_deg": 3.882
+            },
+            "neck_head": {
+              "rotation_deg": -0.466
+            }
+          }
+        }
+      ]
+    },
+    "anticipate": {
+      "fps": 24,
+      "loop": false,
+      "frame_count": 24,
+      "keyframes": [
+        {
+          "frame": 0,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -0.0,
+                0.0
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 0.0
+            },
+            "farwing": {
+              "rotation_deg": -0.0
+            },
+            "neck_head": {
+              "rotation_deg": -0.0
+            }
+          }
+        },
+        {
+          "frame": 1,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -0.021,
+                0.021
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 0.15
+            },
+            "farwing": {
+              "rotation_deg": -0.192
+            },
+            "neck_head": {
+              "rotation_deg": -0.064
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -0.08,
+                0.08
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 0.562
+            },
+            "farwing": {
+              "rotation_deg": -0.722
+            },
+            "neck_head": {
+              "rotation_deg": -0.241
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -0.169,
+                0.169
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 1.181
+            },
+            "farwing": {
+              "rotation_deg": -1.518
+            },
+            "neck_head": {
+              "rotation_deg": -0.506
+            }
+          }
+        },
+        {
+          "frame": 4,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -0.279,
+                0.279
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 1.952
+            },
+            "farwing": {
+              "rotation_deg": -2.509
+            },
+            "neck_head": {
+              "rotation_deg": -0.836
+            }
+          }
+        },
+        {
+          "frame": 5,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -0.403,
+                0.403
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 2.819
+            },
+            "farwing": {
+              "rotation_deg": -3.625
+            },
+            "neck_head": {
+              "rotation_deg": -1.208
+            }
+          }
+        },
+        {
+          "frame": 6,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -0.533,
+                0.533
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 3.728
+            },
+            "farwing": {
+              "rotation_deg": -4.793
+            },
+            "neck_head": {
+              "rotation_deg": -1.598
+            }
+          }
+        },
+        {
+          "frame": 7,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -0.66,
+                0.66
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 4.623
+            },
+            "farwing": {
+              "rotation_deg": -5.944
+            },
+            "neck_head": {
+              "rotation_deg": -1.981
+            }
+          }
+        },
+        {
+          "frame": 8,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -0.778,
+                0.778
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 5.449
+            },
+            "farwing": {
+              "rotation_deg": -7.006
+            },
+            "neck_head": {
+              "rotation_deg": -2.335
+            }
+          }
+        },
+        {
+          "frame": 9,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -0.879,
+                0.879
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 6.151
+            },
+            "farwing": {
+              "rotation_deg": -7.909
+            },
+            "neck_head": {
+              "rotation_deg": -2.636
+            }
+          }
+        },
+        {
+          "frame": 10,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -0.953,
+                0.953
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 6.674
+            },
+            "farwing": {
+              "rotation_deg": -8.581
+            },
+            "neck_head": {
+              "rotation_deg": -2.86
+            }
+          }
+        },
+        {
+          "frame": 11,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -0.994,
+                0.994
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 6.961
+            },
+            "farwing": {
+              "rotation_deg": -8.95
+            },
+            "neck_head": {
+              "rotation_deg": -2.983
+            }
+          }
+        },
+        {
+          "frame": 12,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -1,
+                1
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 7
+            },
+            "farwing": {
+              "rotation_deg": -9
+            },
+            "neck_head": {
+              "rotation_deg": -3
+            }
+          }
+        },
+        {
+          "frame": 13,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -1,
+                1
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 7
+            },
+            "farwing": {
+              "rotation_deg": -9
+            },
+            "neck_head": {
+              "rotation_deg": -3
+            }
+          }
+        },
+        {
+          "frame": 14,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -1,
+                1
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 7
+            },
+            "farwing": {
+              "rotation_deg": -9
+            },
+            "neck_head": {
+              "rotation_deg": -3
+            }
+          }
+        },
+        {
+          "frame": 15,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -1,
+                1
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 7
+            },
+            "farwing": {
+              "rotation_deg": -9
+            },
+            "neck_head": {
+              "rotation_deg": -3
+            }
+          }
+        },
+        {
+          "frame": 16,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -1,
+                1
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 7
+            },
+            "farwing": {
+              "rotation_deg": -9
+            },
+            "neck_head": {
+              "rotation_deg": -3
+            }
+          }
+        },
+        {
+          "frame": 17,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -1,
+                1
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 7
+            },
+            "farwing": {
+              "rotation_deg": -9
+            },
+            "neck_head": {
+              "rotation_deg": -3
+            }
+          }
+        },
+        {
+          "frame": 18,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -1,
+                1
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 7
+            },
+            "farwing": {
+              "rotation_deg": -9
+            },
+            "neck_head": {
+              "rotation_deg": -3
+            }
+          }
+        },
+        {
+          "frame": 19,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -1,
+                1
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 7
+            },
+            "farwing": {
+              "rotation_deg": -9
+            },
+            "neck_head": {
+              "rotation_deg": -3
+            }
+          }
+        },
+        {
+          "frame": 20,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -1,
+                1
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 7
+            },
+            "farwing": {
+              "rotation_deg": -9
+            },
+            "neck_head": {
+              "rotation_deg": -3
+            }
+          }
+        },
+        {
+          "frame": 21,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -1,
+                1
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 7
+            },
+            "farwing": {
+              "rotation_deg": -9
+            },
+            "neck_head": {
+              "rotation_deg": -3
+            }
+          }
+        },
+        {
+          "frame": 22,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -1,
+                1
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 7
+            },
+            "farwing": {
+              "rotation_deg": -9
+            },
+            "neck_head": {
+              "rotation_deg": -3
+            }
+          }
+        },
+        {
+          "frame": 23,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -1,
+                1
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 7
+            },
+            "farwing": {
+              "rotation_deg": -9
+            },
+            "neck_head": {
+              "rotation_deg": -3
+            }
+          }
+        }
+      ]
+    },
+    "execute": {
+      "fps": 24,
+      "loop": false,
+      "frame_count": 24,
+      "keyframes": [
+        {
+          "frame": 0,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -0.0,
+                -0.0
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 6.0
+            },
+            "farwing": {
+              "rotation_deg": -7.0
+            },
+            "neck_head": {
+              "rotation_deg": -0.0
+            }
+          }
+        },
+        {
+          "frame": 1,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -0.13,
+                -0.065
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 6.454
+            },
+            "farwing": {
+              "rotation_deg": -7.519
+            },
+            "neck_head": {
+              "rotation_deg": -0.13
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -0.459,
+                -0.229
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 7.606
+            },
+            "farwing": {
+              "rotation_deg": -8.835
+            },
+            "neck_head": {
+              "rotation_deg": -0.459
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -0.898,
+                -0.449
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 9.142
+            },
+            "farwing": {
+              "rotation_deg": -10.591
+            },
+            "neck_head": {
+              "rotation_deg": -0.898
+            }
+          }
+        },
+        {
+          "frame": 4,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -1.356,
+                -0.678
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 10.747
+            },
+            "farwing": {
+              "rotation_deg": -12.425
+            },
+            "neck_head": {
+              "rotation_deg": -1.356
+            }
+          }
+        },
+        {
+          "frame": 5,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -1.745,
+                -0.872
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 12.107
+            },
+            "farwing": {
+              "rotation_deg": -13.979
+            },
+            "neck_head": {
+              "rotation_deg": -1.745
+            }
+          }
+        },
+        {
+          "frame": 6,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -1.973,
+                -0.987
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 12.906
+            },
+            "farwing": {
+              "rotation_deg": -14.893
+            },
+            "neck_head": {
+              "rotation_deg": -1.973
+            }
+          }
+        },
+        {
+          "frame": 7,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.021,
+                -0.032
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 12.733
+            },
+            "farwing": {
+              "rotation_deg": -14.701
+            },
+            "neck_head": {
+              "rotation_deg": 2.085
+            }
+          }
+        },
+        {
+          "frame": 8,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.153,
+                -0.23
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 11.087
+            },
+            "farwing": {
+              "rotation_deg": -12.858
+            },
+            "neck_head": {
+              "rotation_deg": 2.612
+            }
+          }
+        },
+        {
+          "frame": 9,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.378,
+                -0.568
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 8.27
+            },
+            "farwing": {
+              "rotation_deg": -9.703
+            },
+            "neck_head": {
+              "rotation_deg": 3.514
+            }
+          }
+        },
+        {
+          "frame": 10,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.667,
+                -1.0
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 4.667
+            },
+            "farwing": {
+              "rotation_deg": -5.667
+            },
+            "neck_head": {
+              "rotation_deg": 4.667
+            }
+          }
+        },
+        {
+          "frame": 11,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.987,
+                -1.48
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 0.663
+            },
+            "farwing": {
+              "rotation_deg": -1.183
+            },
+            "neck_head": {
+              "rotation_deg": 5.948
+            }
+          }
+        },
+        {
+          "frame": 12,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                1.308,
+                -1.963
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -3.356
+            },
+            "farwing": {
+              "rotation_deg": 3.319
+            },
+            "neck_head": {
+              "rotation_deg": 7.234
+            }
+          }
+        },
+        {
+          "frame": 13,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                1.6,
+                -2.401
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -7.006
+            },
+            "farwing": {
+              "rotation_deg": 7.406
+            },
+            "neck_head": {
+              "rotation_deg": 8.402
+            }
+          }
+        },
+        {
+          "frame": 14,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                1.832,
+                -2.748
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -9.9
+            },
+            "farwing": {
+              "rotation_deg": 10.648
+            },
+            "neck_head": {
+              "rotation_deg": 9.328
+            }
+          }
+        },
+        {
+          "frame": 15,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                1.972,
+                -2.958
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -11.654
+            },
+            "farwing": {
+              "rotation_deg": 12.612
+            },
+            "neck_head": {
+              "rotation_deg": 9.889
+            }
+          }
+        },
+        {
+          "frame": 16,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                1.986,
+                -2.979
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -11.917
+            },
+            "farwing": {
+              "rotation_deg": 12.91
+            },
+            "neck_head": {
+              "rotation_deg": 9.931
+            }
+          }
+        },
+        {
+          "frame": 17,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                1.82,
+                -2.731
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -10.922
+            },
+            "farwing": {
+              "rotation_deg": 11.832
+            },
+            "neck_head": {
+              "rotation_deg": 9.102
+            }
+          }
+        },
+        {
+          "frame": 18,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                1.515,
+                -2.272
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -9.09
+            },
+            "farwing": {
+              "rotation_deg": 9.847
+            },
+            "neck_head": {
+              "rotation_deg": 7.575
+            }
+          }
+        },
+        {
+          "frame": 19,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                1.13,
+                -1.695
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -6.781
+            },
+            "farwing": {
+              "rotation_deg": 7.346
+            },
+            "neck_head": {
+              "rotation_deg": 5.651
+            }
+          }
+        },
+        {
+          "frame": 20,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.726,
+                -1.089
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -4.356
+            },
+            "farwing": {
+              "rotation_deg": 4.719
+            },
+            "neck_head": {
+              "rotation_deg": 3.63
+            }
+          }
+        },
+        {
+          "frame": 21,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.363,
+                -0.544
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -2.177
+            },
+            "farwing": {
+              "rotation_deg": 2.358
+            },
+            "neck_head": {
+              "rotation_deg": 1.814
+            }
+          }
+        },
+        {
+          "frame": 22,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.101,
+                -0.151
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -0.604
+            },
+            "farwing": {
+              "rotation_deg": 0.655
+            },
+            "neck_head": {
+              "rotation_deg": 0.504
+            }
+          }
+        },
+        {
+          "frame": 23,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.0,
+                -0.0
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": 0.0
+            },
+            "farwing": {
+              "rotation_deg": 0.0
+            },
+            "neck_head": {
+              "rotation_deg": 0.0
+            }
+          }
+        }
+      ]
+    },
+    "recover": {
+      "fps": 24,
+      "loop": false,
+      "frame_count": 24,
+      "keyframes": [
+        {
+          "frame": 0,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                1.0,
+                -2.0
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -7.0
+            },
+            "farwing": {
+              "rotation_deg": 8.0
+            },
+            "neck_head": {
+              "rotation_deg": 4.0
+            }
+          }
+        },
+        {
+          "frame": 1,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.994,
+                -1.989
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -6.961
+            },
+            "farwing": {
+              "rotation_deg": 7.956
+            },
+            "neck_head": {
+              "rotation_deg": 3.978
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.979,
+                -1.957
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -6.85
+            },
+            "farwing": {
+              "rotation_deg": 7.829
+            },
+            "neck_head": {
+              "rotation_deg": 3.915
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.953,
+                -1.907
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -6.674
+            },
+            "farwing": {
+              "rotation_deg": 7.627
+            },
+            "neck_head": {
+              "rotation_deg": 3.814
+            }
+          }
+        },
+        {
+          "frame": 4,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.92,
+                -1.84
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -6.438
+            },
+            "farwing": {
+              "rotation_deg": 7.358
+            },
+            "neck_head": {
+              "rotation_deg": 3.679
+            }
+          }
+        },
+        {
+          "frame": 5,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.879,
+                -1.758
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -6.151
+            },
+            "farwing": {
+              "rotation_deg": 7.03
+            },
+            "neck_head": {
+              "rotation_deg": 3.515
+            }
+          }
+        },
+        {
+          "frame": 6,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.831,
+                -1.663
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -5.819
+            },
+            "farwing": {
+              "rotation_deg": 6.651
+            },
+            "neck_head": {
+              "rotation_deg": 3.325
+            }
+          }
+        },
+        {
+          "frame": 7,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.778,
+                -1.557
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -5.449
+            },
+            "farwing": {
+              "rotation_deg": 6.228
+            },
+            "neck_head": {
+              "rotation_deg": 3.114
+            }
+          }
+        },
+        {
+          "frame": 8,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.721,
+                -1.442
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -5.048
+            },
+            "farwing": {
+              "rotation_deg": 5.77
+            },
+            "neck_head": {
+              "rotation_deg": 2.885
+            }
+          }
+        },
+        {
+          "frame": 9,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.66,
+                -1.321
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -4.623
+            },
+            "farwing": {
+              "rotation_deg": 5.284
+            },
+            "neck_head": {
+              "rotation_deg": 2.642
+            }
+          }
+        },
+        {
+          "frame": 10,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.597,
+                -1.195
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -4.181
+            },
+            "farwing": {
+              "rotation_deg": 4.778
+            },
+            "neck_head": {
+              "rotation_deg": 2.389
+            }
+          }
+        },
+        {
+          "frame": 11,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.533,
+                -1.065
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -3.728
+            },
+            "farwing": {
+              "rotation_deg": 4.261
+            },
+            "neck_head": {
+              "rotation_deg": 2.13
+            }
+          }
+        },
+        {
+          "frame": 12,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.467,
+                -0.935
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -3.272
+            },
+            "farwing": {
+              "rotation_deg": 3.739
+            },
+            "neck_head": {
+              "rotation_deg": 1.87
+            }
+          }
+        },
+        {
+          "frame": 13,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.403,
+                -0.805
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -2.819
+            },
+            "farwing": {
+              "rotation_deg": 3.222
+            },
+            "neck_head": {
+              "rotation_deg": 1.611
+            }
+          }
+        },
+        {
+          "frame": 14,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.34,
+                -0.679
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -2.377
+            },
+            "farwing": {
+              "rotation_deg": 2.716
+            },
+            "neck_head": {
+              "rotation_deg": 1.358
+            }
+          }
+        },
+        {
+          "frame": 15,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.279,
+                -0.558
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -1.952
+            },
+            "farwing": {
+              "rotation_deg": 2.23
+            },
+            "neck_head": {
+              "rotation_deg": 1.115
+            }
+          }
+        },
+        {
+          "frame": 16,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.222,
+                -0.443
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -1.551
+            },
+            "farwing": {
+              "rotation_deg": 1.772
+            },
+            "neck_head": {
+              "rotation_deg": 0.886
+            }
+          }
+        },
+        {
+          "frame": 17,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.169,
+                -0.337
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -1.181
+            },
+            "farwing": {
+              "rotation_deg": 1.349
+            },
+            "neck_head": {
+              "rotation_deg": 0.675
+            }
+          }
+        },
+        {
+          "frame": 18,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.121,
+                -0.242
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -0.849
+            },
+            "farwing": {
+              "rotation_deg": 0.97
+            },
+            "neck_head": {
+              "rotation_deg": 0.485
+            }
+          }
+        },
+        {
+          "frame": 19,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.08,
+                -0.16
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -0.562
+            },
+            "farwing": {
+              "rotation_deg": 0.642
+            },
+            "neck_head": {
+              "rotation_deg": 0.321
+            }
+          }
+        },
+        {
+          "frame": 20,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.047,
+                -0.093
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -0.326
+            },
+            "farwing": {
+              "rotation_deg": 0.373
+            },
+            "neck_head": {
+              "rotation_deg": 0.186
+            }
+          }
+        },
+        {
+          "frame": 21,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.021,
+                -0.043
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -0.15
+            },
+            "farwing": {
+              "rotation_deg": 0.171
+            },
+            "neck_head": {
+              "rotation_deg": 0.085
+            }
+          }
+        },
+        {
+          "frame": 22,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.006,
+                -0.011
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -0.039
+            },
+            "farwing": {
+              "rotation_deg": 0.044
+            },
+            "neck_head": {
+              "rotation_deg": 0.022
+            }
+          }
+        },
+        {
+          "frame": 23,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0.0,
+                -0.0
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -0.0
+            },
+            "farwing": {
+              "rotation_deg": 0.0
+            },
+            "neck_head": {
+              "rotation_deg": 0.0
+            }
+          }
+        }
+      ]
+    },
+    "hit": {
+      "fps": 24,
+      "loop": false,
+      "frame_count": 24,
+      "keyframes": [
+        {
+          "frame": 0,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -0.0,
+                -0.0
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -0.0
+            },
+            "farwing": {
+              "rotation_deg": 0.0
+            },
+            "neck_head": {
+              "rotation_deg": 0.0
+            }
+          }
+        },
+        {
+          "frame": 1,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -0.408,
+                -0.272
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -1.362
+            },
+            "farwing": {
+              "rotation_deg": 1.634
+            },
+            "neck_head": {
+              "rotation_deg": 1.089
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -0.809,
+                -0.54
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -2.698
+            },
+            "farwing": {
+              "rotation_deg": 3.238
+            },
+            "neck_head": {
+              "rotation_deg": 2.158
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -1.195,
+                -0.797
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -3.984
+            },
+            "farwing": {
+              "rotation_deg": 4.781
+            },
+            "neck_head": {
+              "rotation_deg": 3.187
+            }
+          }
+        },
+        {
+          "frame": 4,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -1.559,
+                -1.039
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -5.196
+            },
+            "farwing": {
+              "rotation_deg": 6.235
+            },
+            "neck_head": {
+              "rotation_deg": 4.157
+            }
+          }
+        },
+        {
+          "frame": 5,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -1.893,
+                -1.262
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -6.311
+            },
+            "farwing": {
+              "rotation_deg": 7.573
+            },
+            "neck_head": {
+              "rotation_deg": 5.049
+            }
+          }
+        },
+        {
+          "frame": 6,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -2.193,
+                -1.462
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -7.308
+            },
+            "farwing": {
+              "rotation_deg": 8.77
+            },
+            "neck_head": {
+              "rotation_deg": 5.847
+            }
+          }
+        },
+        {
+          "frame": 7,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -2.451,
+                -1.634
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -8.17
+            },
+            "farwing": {
+              "rotation_deg": 9.804
+            },
+            "neck_head": {
+              "rotation_deg": 6.536
+            }
+          }
+        },
+        {
+          "frame": 8,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -2.664,
+                -1.776
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -8.879
+            },
+            "farwing": {
+              "rotation_deg": 10.655
+            },
+            "neck_head": {
+              "rotation_deg": 7.103
+            }
+          }
+        },
+        {
+          "frame": 9,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -2.827,
+                -1.885
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -9.423
+            },
+            "farwing": {
+              "rotation_deg": 11.307
+            },
+            "neck_head": {
+              "rotation_deg": 7.538
+            }
+          }
+        },
+        {
+          "frame": 10,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -2.937,
+                -1.958
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -9.791
+            },
+            "farwing": {
+              "rotation_deg": 11.749
+            },
+            "neck_head": {
+              "rotation_deg": 7.833
+            }
+          }
+        },
+        {
+          "frame": 11,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -2.993,
+                -1.995
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -9.977
+            },
+            "farwing": {
+              "rotation_deg": 11.972
+            },
+            "neck_head": {
+              "rotation_deg": 7.981
+            }
+          }
+        },
+        {
+          "frame": 12,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -2.993,
+                -1.995
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -9.977
+            },
+            "farwing": {
+              "rotation_deg": 11.972
+            },
+            "neck_head": {
+              "rotation_deg": 7.981
+            }
+          }
+        },
+        {
+          "frame": 13,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -2.937,
+                -1.958
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -9.791
+            },
+            "farwing": {
+              "rotation_deg": 11.749
+            },
+            "neck_head": {
+              "rotation_deg": 7.833
+            }
+          }
+        },
+        {
+          "frame": 14,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -2.827,
+                -1.885
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -9.423
+            },
+            "farwing": {
+              "rotation_deg": 11.307
+            },
+            "neck_head": {
+              "rotation_deg": 7.538
+            }
+          }
+        },
+        {
+          "frame": 15,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -2.664,
+                -1.776
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -8.879
+            },
+            "farwing": {
+              "rotation_deg": 10.655
+            },
+            "neck_head": {
+              "rotation_deg": 7.103
+            }
+          }
+        },
+        {
+          "frame": 16,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -2.451,
+                -1.634
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -8.17
+            },
+            "farwing": {
+              "rotation_deg": 9.804
+            },
+            "neck_head": {
+              "rotation_deg": 6.536
+            }
+          }
+        },
+        {
+          "frame": 17,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -2.193,
+                -1.462
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -7.308
+            },
+            "farwing": {
+              "rotation_deg": 8.77
+            },
+            "neck_head": {
+              "rotation_deg": 5.847
+            }
+          }
+        },
+        {
+          "frame": 18,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -1.893,
+                -1.262
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -6.311
+            },
+            "farwing": {
+              "rotation_deg": 7.573
+            },
+            "neck_head": {
+              "rotation_deg": 5.049
+            }
+          }
+        },
+        {
+          "frame": 19,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -1.559,
+                -1.039
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -5.196
+            },
+            "farwing": {
+              "rotation_deg": 6.235
+            },
+            "neck_head": {
+              "rotation_deg": 4.157
+            }
+          }
+        },
+        {
+          "frame": 20,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -1.195,
+                -0.797
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -3.984
+            },
+            "farwing": {
+              "rotation_deg": 4.781
+            },
+            "neck_head": {
+              "rotation_deg": 3.187
+            }
+          }
+        },
+        {
+          "frame": 21,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -0.809,
+                -0.54
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -2.698
+            },
+            "farwing": {
+              "rotation_deg": 3.238
+            },
+            "neck_head": {
+              "rotation_deg": 2.158
+            }
+          }
+        },
+        {
+          "frame": 22,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -0.408,
+                -0.272
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -1.362
+            },
+            "farwing": {
+              "rotation_deg": 1.634
+            },
+            "neck_head": {
+              "rotation_deg": 1.089
+            }
+          }
+        },
+        {
+          "frame": 23,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                -0.0,
+                -0.0
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -0.0
+            },
+            "farwing": {
+              "rotation_deg": 0.0
+            },
+            "neck_head": {
+              "rotation_deg": 0.0
+            }
+          }
+        }
+      ]
+    },
+    "resolve": {
+      "fps": 24,
+      "loop": false,
+      "frame_count": 24,
+      "keyframes": [
+        {
+          "frame": 0,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                0.0
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -0.0
+            },
+            "farwing": {
+              "rotation_deg": 0.0
+            },
+            "neck_head": {
+              "rotation_deg": -0.0
+            }
+          }
+        },
+        {
+          "frame": 1,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                0.022
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -0.028
+            },
+            "farwing": {
+              "rotation_deg": 0.033
+            },
+            "neck_head": {
+              "rotation_deg": -0.028
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                0.085
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -0.107
+            },
+            "farwing": {
+              "rotation_deg": 0.128
+            },
+            "neck_head": {
+              "rotation_deg": -0.107
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                0.186
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -0.233
+            },
+            "farwing": {
+              "rotation_deg": 0.28
+            },
+            "neck_head": {
+              "rotation_deg": -0.233
+            }
+          }
+        },
+        {
+          "frame": 4,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                0.321
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -0.401
+            },
+            "farwing": {
+              "rotation_deg": 0.481
+            },
+            "neck_head": {
+              "rotation_deg": -0.401
+            }
+          }
+        },
+        {
+          "frame": 5,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                0.485
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -0.606
+            },
+            "farwing": {
+              "rotation_deg": 0.727
+            },
+            "neck_head": {
+              "rotation_deg": -0.606
+            }
+          }
+        },
+        {
+          "frame": 6,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                0.675
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -0.843
+            },
+            "farwing": {
+              "rotation_deg": 1.012
+            },
+            "neck_head": {
+              "rotation_deg": -0.843
+            }
+          }
+        },
+        {
+          "frame": 7,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                0.886
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -1.108
+            },
+            "farwing": {
+              "rotation_deg": 1.329
+            },
+            "neck_head": {
+              "rotation_deg": -1.108
+            }
+          }
+        },
+        {
+          "frame": 8,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                1.115
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -1.394
+            },
+            "farwing": {
+              "rotation_deg": 1.673
+            },
+            "neck_head": {
+              "rotation_deg": -1.394
+            }
+          }
+        },
+        {
+          "frame": 9,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                1.358
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -1.698
+            },
+            "farwing": {
+              "rotation_deg": 2.037
+            },
+            "neck_head": {
+              "rotation_deg": -1.698
+            }
+          }
+        },
+        {
+          "frame": 10,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                1.611
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -2.014
+            },
+            "farwing": {
+              "rotation_deg": 2.416
+            },
+            "neck_head": {
+              "rotation_deg": -2.014
+            }
+          }
+        },
+        {
+          "frame": 11,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                1.87
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -2.337
+            },
+            "farwing": {
+              "rotation_deg": 2.804
+            },
+            "neck_head": {
+              "rotation_deg": -2.337
+            }
+          }
+        },
+        {
+          "frame": 12,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                2.13
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -2.663
+            },
+            "farwing": {
+              "rotation_deg": 3.196
+            },
+            "neck_head": {
+              "rotation_deg": -2.663
+            }
+          }
+        },
+        {
+          "frame": 13,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                2.389
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -2.986
+            },
+            "farwing": {
+              "rotation_deg": 3.584
+            },
+            "neck_head": {
+              "rotation_deg": -2.986
+            }
+          }
+        },
+        {
+          "frame": 14,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                2.642
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -3.302
+            },
+            "farwing": {
+              "rotation_deg": 3.963
+            },
+            "neck_head": {
+              "rotation_deg": -3.302
+            }
+          }
+        },
+        {
+          "frame": 15,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                2.885
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -3.606
+            },
+            "farwing": {
+              "rotation_deg": 4.327
+            },
+            "neck_head": {
+              "rotation_deg": -3.606
+            }
+          }
+        },
+        {
+          "frame": 16,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                3.114
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -3.892
+            },
+            "farwing": {
+              "rotation_deg": 4.671
+            },
+            "neck_head": {
+              "rotation_deg": -3.892
+            }
+          }
+        },
+        {
+          "frame": 17,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                3.325
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -4.157
+            },
+            "farwing": {
+              "rotation_deg": 4.988
+            },
+            "neck_head": {
+              "rotation_deg": -4.157
+            }
+          }
+        },
+        {
+          "frame": 18,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                3.515
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -4.394
+            },
+            "farwing": {
+              "rotation_deg": 5.273
+            },
+            "neck_head": {
+              "rotation_deg": -4.394
+            }
+          }
+        },
+        {
+          "frame": 19,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                3.679
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -4.599
+            },
+            "farwing": {
+              "rotation_deg": 5.519
+            },
+            "neck_head": {
+              "rotation_deg": -4.599
+            }
+          }
+        },
+        {
+          "frame": 20,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                3.814
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -4.767
+            },
+            "farwing": {
+              "rotation_deg": 5.72
+            },
+            "neck_head": {
+              "rotation_deg": -4.767
+            }
+          }
+        },
+        {
+          "frame": 21,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                3.915
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -4.893
+            },
+            "farwing": {
+              "rotation_deg": 5.872
+            },
+            "neck_head": {
+              "rotation_deg": -4.893
+            }
+          }
+        },
+        {
+          "frame": 22,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                3.978
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -4.972
+            },
+            "farwing": {
+              "rotation_deg": 5.967
+            },
+            "neck_head": {
+              "rotation_deg": -4.972
+            }
+          }
+        },
+        {
+          "frame": 23,
+          "pose_by_part": {
+            "body4legs_tail": {
+              "translation_px": [
+                0,
+                4.0
+              ]
+            },
+            "nearwing": {
+              "rotation_deg": -5.0
+            },
+            "farwing": {
+              "rotation_deg": 6.0
+            },
+            "neck_head": {
+              "rotation_deg": -5.0
+            }
+          }
+        }
+      ]
+    }
+  },
+  "motion_limits": [
+    "walk absent: all four legs and tail are one source raster part",
+    "flight is wing/neck motion plus small torso float; no tucked-leg art exists",
+    "execute is a transform candidate only; no breath/projectile effect integrated",
+    "fused legs may shift with torso during hit/resolve; not a foot-contact qualification",
+    "candidate placements and pivots need SpriteKit visual review; adoption remains pending"
+  ],
+  "source_art_originals_mutated": false
+}

@@ -1,0 +1,21 @@
+{
+  "preparationFailure": {
+    "step": "prepare_supplements_r001 first invocation",
+    "error": "KeyError: app",
+    "cause": "R443 START uses r420App instead of R433 app field",
+    "repair": "Read explicit version-specific r420App fallback and verify pinned executable SHA",
+    "gameFilesChanged": false
+  },
+  "selectionRefinement": {
+    "removedDuplicatePackageScratchEntries": 257,
+    "bytesOmitted": 6454263,
+    "filesDeleted": false
+  },
+  "externalActionsSoFar": "read-only repo/ref inspection; no push yet",
+  "prePushPathFilterCorrection": {
+    "excluded": "one StoreKit probe Xcode xcuserdata scheme preference",
+    "purpose": "unnecessary local IDE preference, not source/QA",
+    "filesDeleted": false,
+    "originalRetained": true
+  }
+}

@@ -1,0 +1,2827 @@
+{
+  "schema": "erna_body_underlay_r004_draft",
+  "status": "SUPERSEDED_PRELIMINARY_UNVALIDATED",
+  "humanApproval": false,
+  "runtimeEnabled": false,
+  "scope": "ERNA/C_WITCH standard and travel body frames only; 54 frames each gear; source-coordinate candidate data, no renderer changes",
+  "sourceOverlay": "native/Art/runtime_overlay_zzzzzzzzzzzzzzzzzzzzzzz_body_underlay_candidate_r003.json",
+  "sourceOverlaySHA256": "8c93c35a9fd5985c1135096633e854a80e6ccbd350eba1ed3b1178fd79f48b3e",
+  "landmarkSource": "native/Art/GeneratedCandidates/EquipmentDetails/body01_hem_body02_lining_landmarks_r001.json",
+  "landmarkSourceSHA256": "58329d42c4b06b5841f2c8f9c7411bdd78f1f3977f9fd830e87cb8caf3aede73",
+  "rendererCoordinateNote": "EquipmentDetailRenderer treats normalized registration point as SKSpriteNode center. The legacy field placement_px_top_left was misleading; this draft uses measured hem marker as center for BODY01.",
+  "reviewBasis": "All 54 standard/travel rows were checked on existing marked 16px source grid contacts, not inferred from alpha. BODY01 anchors are candidate points at visible outer hem trim; BODY02 lining remains unresolved/hidden where no distinct inner face can be identified.",
+  "entries": {
+    "DETAIL_EQ_BODY_01": [
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_0.png",
+        "frameIndex": 0,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__walk_0.png",
+        "sourceSHA256": "ee5c86b4b5d7686f29c04a2ed4ed2795ed9143258337dad84cef716474f56b1d",
+        "sourceRowState": "walk",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_walk_grid_2x.png",
+        "sourceMarker_px": [
+          189,
+          207
+        ],
+        "spriteCenter_px_candidate": [
+          189,
+          207
+        ],
+        "previousCenter_px": [
+          193,
+          211
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_1.png",
+        "frameIndex": 1,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__walk_1.png",
+        "sourceSHA256": "37a9bba2a7c40968c396b7b40c378d9b2a9460f97f363b4b167df05eda6fa306",
+        "sourceRowState": "walk",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_walk_grid_2x.png",
+        "sourceMarker_px": [
+          191,
+          208
+        ],
+        "spriteCenter_px_candidate": [
+          191,
+          208
+        ],
+        "previousCenter_px": [
+          195,
+          212
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_2.png",
+        "frameIndex": 2,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__walk_2.png",
+        "sourceSHA256": "8a712cc80291e54b2fad35d04dab926b556fe3d8c2f58a84e42f8ce5d2ea4713",
+        "sourceRowState": "walk",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_walk_grid_2x.png",
+        "sourceMarker_px": [
+          191,
+          206
+        ],
+        "spriteCenter_px_candidate": [
+          191,
+          206
+        ],
+        "previousCenter_px": [
+          195,
+          210
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_3.png",
+        "frameIndex": 3,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__walk_3.png",
+        "sourceSHA256": "d16ba038973e08c5706103a2895f0ea979873206a6c66f9328f9f5d9f9fe1010",
+        "sourceRowState": "walk",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_walk_grid_2x.png",
+        "sourceMarker_px": [
+          190,
+          206
+        ],
+        "spriteCenter_px_candidate": [
+          190,
+          206
+        ],
+        "previousCenter_px": [
+          194,
+          210
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_4.png",
+        "frameIndex": 4,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__walk_4.png",
+        "sourceSHA256": "c3946c5c85042b0e71445a6784f0e821a13a5d16447a77143d5639dca242b03e",
+        "sourceRowState": "walk",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_walk_grid_2x.png",
+        "sourceMarker_px": [
+          190,
+          206
+        ],
+        "spriteCenter_px_candidate": [
+          190,
+          206
+        ],
+        "previousCenter_px": [
+          194,
+          210
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_5.png",
+        "frameIndex": 5,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__walk_5.png",
+        "sourceSHA256": "dfc1eb29ed4418a8ccb8525f604c9bca11d9a7269f347db676bc0daefa17d19b",
+        "sourceRowState": "walk",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_walk_grid_2x.png",
+        "sourceMarker_px": [
+          191,
+          206
+        ],
+        "spriteCenter_px_candidate": [
+          191,
+          206
+        ],
+        "previousCenter_px": [
+          195,
+          210
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_6.png",
+        "frameIndex": 6,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__walk_6.png",
+        "sourceSHA256": "e7c58d91b31ac683f64c1e9826dff86a0f532271e880cabb3ddfcc9614946d71",
+        "sourceRowState": "walk",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_walk_grid_2x.png",
+        "sourceMarker_px": [
+          190,
+          207
+        ],
+        "spriteCenter_px_candidate": [
+          190,
+          207
+        ],
+        "previousCenter_px": [
+          194,
+          211
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_7.png",
+        "frameIndex": 7,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__walk_7.png",
+        "sourceSHA256": "b777e7db61a315f957b444a9374e59242324e9fe7dbfa81844964eb36127b98e",
+        "sourceRowState": "walk",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_walk_grid_2x.png",
+        "sourceMarker_px": [
+          191,
+          207
+        ],
+        "spriteCenter_px_candidate": [
+          191,
+          207
+        ],
+        "previousCenter_px": [
+          195,
+          211
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_8.png",
+        "frameIndex": 8,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__walk_8.png",
+        "sourceSHA256": "b048230b0745ef7bdcfd7426ee26af3c5debed9a17acfe71eba60c06725fbc34",
+        "sourceRowState": "walk",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_walk_grid_2x.png",
+        "sourceMarker_px": [
+          191,
+          206
+        ],
+        "spriteCenter_px_candidate": [
+          191,
+          206
+        ],
+        "previousCenter_px": [
+          195,
+          210
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_0.png",
+        "frameIndex": 0,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__cast_0.png",
+        "sourceSHA256": "574441442b3c2dfad2285fa133febea703dadbf675eeeafc2c1e6126a39728c8",
+        "sourceRowState": "anticipate",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_anticipate_grid_2x.png",
+        "sourceMarker_px": [
+          191,
+          204
+        ],
+        "spriteCenter_px_candidate": [
+          191,
+          204
+        ],
+        "previousCenter_px": [
+          195,
+          208
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_1.png",
+        "frameIndex": 1,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__cast_1.png",
+        "sourceSHA256": "72d454a32a23f5a23f31c5257e3e66af9100eaa2c8580013ca498460cd006bec",
+        "sourceRowState": "anticipate",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_anticipate_grid_2x.png",
+        "sourceMarker_px": [
+          192,
+          204
+        ],
+        "spriteCenter_px_candidate": [
+          192,
+          204
+        ],
+        "previousCenter_px": [
+          196,
+          208
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_2.png",
+        "frameIndex": 2,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__cast_2.png",
+        "sourceSHA256": "02c1ddbe1390fd19dc6f0a0be3680131e2c8e05121c57ac2688d700933a3c0d3",
+        "sourceRowState": "anticipate",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_anticipate_grid_2x.png",
+        "sourceMarker_px": [
+          192,
+          203
+        ],
+        "spriteCenter_px_candidate": [
+          192,
+          203
+        ],
+        "previousCenter_px": [
+          196,
+          207
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_3.png",
+        "frameIndex": 0,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__cast_3.png",
+        "sourceSHA256": "416d953b150d02de8695c355387dadd4277c61ab3fd4c0d76efa59dcf3bf35a6",
+        "sourceRowState": "execute",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_execute_grid_2x.png",
+        "sourceMarker_px": [
+          194,
+          201
+        ],
+        "spriteCenter_px_candidate": [
+          194,
+          201
+        ],
+        "previousCenter_px": [
+          198,
+          205
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_4.png",
+        "frameIndex": 1,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__cast_4.png",
+        "sourceSHA256": "51422c4e6a5f359d9fe0250f0894ae6493145a324100cbfe7c70b151ae57da9e",
+        "sourceRowState": "execute",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_execute_grid_2x.png",
+        "sourceMarker_px": [
+          195,
+          204
+        ],
+        "spriteCenter_px_candidate": [
+          195,
+          204
+        ],
+        "previousCenter_px": [
+          199,
+          208
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_5.png",
+        "frameIndex": 2,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__cast_5.png",
+        "sourceSHA256": "944d659675544d5674987020f1b7fae3dff6f6ba21f9d141aeb35aa5029eaee1",
+        "sourceRowState": "execute",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_execute_grid_2x.png",
+        "sourceMarker_px": [
+          195,
+          204
+        ],
+        "spriteCenter_px_candidate": [
+          195,
+          204
+        ],
+        "previousCenter_px": [
+          199,
+          208
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_6.png",
+        "frameIndex": 0,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__cast_6.png",
+        "sourceSHA256": "3950bca15103c5dd253abc211996d0e078865553c4eeb2b7c152c0b84b9fb77a",
+        "sourceRowState": "recover",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_recover_grid_2x.png",
+        "sourceMarker_px": [
+          193,
+          205
+        ],
+        "spriteCenter_px_candidate": [
+          193,
+          205
+        ],
+        "previousCenter_px": [
+          197,
+          209
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_7.png",
+        "frameIndex": 1,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__cast_7.png",
+        "sourceSHA256": "42604bb6d1e56853c4e391edaed580fa203020d167ad88797bc28210911c5c80",
+        "sourceRowState": "recover",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_recover_grid_2x.png",
+        "sourceMarker_px": [
+          193,
+          204
+        ],
+        "spriteCenter_px_candidate": [
+          193,
+          204
+        ],
+        "previousCenter_px": [
+          197,
+          208
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_8.png",
+        "frameIndex": 2,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__cast_8.png",
+        "sourceSHA256": "bcfb121127809ad5499af465f47d813c2574425ec19b340ce6545503f093b128",
+        "sourceRowState": "recover",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_recover_grid_2x.png",
+        "sourceMarker_px": [
+          192,
+          205
+        ],
+        "spriteCenter_px_candidate": [
+          192,
+          205
+        ],
+        "previousCenter_px": [
+          196,
+          209
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_0.png",
+        "frameIndex": 0,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__rest_0.png",
+        "sourceSHA256": "7575ce7ef6c88d85e9dc26c61fc0e91b0dfe09638117df2a6b4588b62b2efa6d",
+        "sourceRowState": "idle",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_idle_grid_2x.png",
+        "sourceMarker_px": [
+          190,
+          204
+        ],
+        "spriteCenter_px_candidate": [
+          190,
+          204
+        ],
+        "previousCenter_px": [
+          194,
+          208
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_1.png",
+        "frameIndex": 1,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__rest_1.png",
+        "sourceSHA256": "892d6346310c101880552911aa1306a4ee7800c78b08cb8c7d938de46f26bfa3",
+        "sourceRowState": "idle",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_idle_grid_2x.png",
+        "sourceMarker_px": [
+          191,
+          204
+        ],
+        "spriteCenter_px_candidate": [
+          191,
+          204
+        ],
+        "previousCenter_px": [
+          195,
+          208
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_2.png",
+        "frameIndex": 2,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__rest_2.png",
+        "sourceSHA256": "be4e8e75891e002d9ee7970c51f9eb4285834bc06b3d84531c6a4e85292833bf",
+        "sourceRowState": "idle",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_idle_grid_2x.png",
+        "sourceMarker_px": [
+          190,
+          204
+        ],
+        "spriteCenter_px_candidate": [
+          190,
+          204
+        ],
+        "previousCenter_px": [
+          194,
+          208
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_3.png",
+        "frameIndex": 0,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__rest_3.png",
+        "sourceSHA256": "38794859d5ab1468e9d388189e531abe1cac48fa05d7d43a72689906656d83fb",
+        "sourceRowState": "hit",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_hit_grid_2x.png",
+        "sourceMarker_px": [
+          191,
+          204
+        ],
+        "spriteCenter_px_candidate": [
+          191,
+          204
+        ],
+        "previousCenter_px": [
+          195,
+          208
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_4.png",
+        "frameIndex": 1,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__rest_4.png",
+        "sourceSHA256": "3ec449bc60c41f7f93d765396d8c1d1ab932320152753026791c1076a1520dfa",
+        "sourceRowState": "hit",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_hit_grid_2x.png",
+        "sourceMarker_px": [
+          191,
+          204
+        ],
+        "spriteCenter_px_candidate": [
+          191,
+          204
+        ],
+        "previousCenter_px": [
+          195,
+          208
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_5.png",
+        "frameIndex": 2,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__rest_5.png",
+        "sourceSHA256": "49c890c0afae1927d5a5b6138cf9edc2d30b96571b8126691acfaec0419ee60d",
+        "sourceRowState": "hit",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_hit_grid_2x.png",
+        "sourceMarker_px": [
+          191,
+          204
+        ],
+        "spriteCenter_px_candidate": [
+          191,
+          204
+        ],
+        "previousCenter_px": [
+          195,
+          208
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_6.png",
+        "frameIndex": 0,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__rest_6.png",
+        "sourceSHA256": "674ea3d1fb7d4c4caf1085b25c9a91275ef3f313d804af842013fabc66bf8474",
+        "sourceRowState": "resolve",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_resolve_grid_2x.png",
+        "sourceMarker_px": [
+          190,
+          204
+        ],
+        "spriteCenter_px_candidate": [
+          190,
+          204
+        ],
+        "previousCenter_px": [
+          194,
+          208
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_7.png",
+        "frameIndex": 1,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__rest_7.png",
+        "sourceSHA256": "db4ffc38aaa57a9e1dec45717f1762c2701c82991145b5d9286519b17f828856",
+        "sourceRowState": "resolve",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_resolve_grid_2x.png",
+        "sourceMarker_px": [
+          191,
+          204
+        ],
+        "spriteCenter_px_candidate": [
+          191,
+          204
+        ],
+        "previousCenter_px": [
+          195,
+          208
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_8.png",
+        "frameIndex": 2,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__rest_8.png",
+        "sourceSHA256": "99a7ec62f798fa86c73c7697e3fed6882ed9cfb3d9c877b306d501309702d91b",
+        "sourceRowState": "resolve",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_resolve_grid_2x.png",
+        "sourceMarker_px": [
+          190,
+          204
+        ],
+        "spriteCenter_px_candidate": [
+          190,
+          204
+        ],
+        "previousCenter_px": [
+          194,
+          208
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_0.png",
+        "frameIndex": 0,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__walk_0.png",
+        "sourceSHA256": "a8461e071f8c10eecf6e42fe595ff9f68bceb67819709a7a1890d8a1715820c1",
+        "sourceRowState": "walk",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_walk_grid_2x.png",
+        "sourceMarker_px": [
+          188,
+          207
+        ],
+        "spriteCenter_px_candidate": [
+          188,
+          207
+        ],
+        "previousCenter_px": [
+          192,
+          211
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_1.png",
+        "frameIndex": 1,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__walk_1.png",
+        "sourceSHA256": "7241025579552eb4f15efd6d1974b18ebd9cfca033b520e04631cdd48b6b3618",
+        "sourceRowState": "walk",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_walk_grid_2x.png",
+        "sourceMarker_px": [
+          189,
+          208
+        ],
+        "spriteCenter_px_candidate": [
+          189,
+          208
+        ],
+        "previousCenter_px": [
+          193,
+          212
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_2.png",
+        "frameIndex": 2,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__walk_2.png",
+        "sourceSHA256": "9721b79fe68d2786baa9ec2ba607ceaa707654d4ace8f2ef4860e88e8b026702",
+        "sourceRowState": "walk",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_walk_grid_2x.png",
+        "sourceMarker_px": [
+          189,
+          206
+        ],
+        "spriteCenter_px_candidate": [
+          189,
+          206
+        ],
+        "previousCenter_px": [
+          193,
+          210
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_3.png",
+        "frameIndex": 3,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__walk_3.png",
+        "sourceSHA256": "2ef4e8564f0d0893926e649e486346f6cda235a70b6023f25e131933abeb7edf",
+        "sourceRowState": "walk",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_walk_grid_2x.png",
+        "sourceMarker_px": [
+          189,
+          207
+        ],
+        "spriteCenter_px_candidate": [
+          189,
+          207
+        ],
+        "previousCenter_px": [
+          193,
+          211
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_4.png",
+        "frameIndex": 4,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__walk_4.png",
+        "sourceSHA256": "11ec631b06a72ada7e2567c08b080bb6421db28933953582138409b77473a1de",
+        "sourceRowState": "walk",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_walk_grid_2x.png",
+        "sourceMarker_px": [
+          190,
+          207
+        ],
+        "spriteCenter_px_candidate": [
+          190,
+          207
+        ],
+        "previousCenter_px": [
+          194,
+          211
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_5.png",
+        "frameIndex": 5,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__walk_5.png",
+        "sourceSHA256": "0fd49f8b45bef2bd83d13666bbf0ba55b0d6e1fb926500c1df56fe9b1c8d4fee",
+        "sourceRowState": "walk",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_walk_grid_2x.png",
+        "sourceMarker_px": [
+          189,
+          206
+        ],
+        "spriteCenter_px_candidate": [
+          189,
+          206
+        ],
+        "previousCenter_px": [
+          193,
+          210
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_6.png",
+        "frameIndex": 6,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__walk_6.png",
+        "sourceSHA256": "3671a95aceee0cca0554e4742ea11ae98de881e1895305460c05f36a1af3b3d1",
+        "sourceRowState": "walk",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_walk_grid_2x.png",
+        "sourceMarker_px": [
+          188,
+          208
+        ],
+        "spriteCenter_px_candidate": [
+          188,
+          208
+        ],
+        "previousCenter_px": [
+          192,
+          212
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_7.png",
+        "frameIndex": 7,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__walk_7.png",
+        "sourceSHA256": "276aef3b8f72a12e865213238c9058c2ff22a66b22fb9b62640ae25bd352c3f6",
+        "sourceRowState": "walk",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_walk_grid_2x.png",
+        "sourceMarker_px": [
+          189,
+          207
+        ],
+        "spriteCenter_px_candidate": [
+          189,
+          207
+        ],
+        "previousCenter_px": [
+          193,
+          211
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_8.png",
+        "frameIndex": 8,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__walk_8.png",
+        "sourceSHA256": "4f9f3b41d7158a45b1c6e881305ebc58ed77961f0af839d47710380f00c864cd",
+        "sourceRowState": "walk",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_walk_grid_2x.png",
+        "sourceMarker_px": [
+          189,
+          207
+        ],
+        "spriteCenter_px_candidate": [
+          189,
+          207
+        ],
+        "previousCenter_px": [
+          193,
+          211
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_0.png",
+        "frameIndex": 0,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__cast_0.png",
+        "sourceSHA256": "956a61aa45138cf3e3833550cf2905170c1e947f134c8028b6c3dc8205820d85",
+        "sourceRowState": "anticipate",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_anticipate_grid_2x.png",
+        "sourceMarker_px": [
+          190,
+          204
+        ],
+        "spriteCenter_px_candidate": [
+          190,
+          204
+        ],
+        "previousCenter_px": [
+          194,
+          208
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_1.png",
+        "frameIndex": 1,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__cast_1.png",
+        "sourceSHA256": "7e48ab790b8f899946f3eb961bc1c6d5940b9c31013ccf38eca64148e2805169",
+        "sourceRowState": "anticipate",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_anticipate_grid_2x.png",
+        "sourceMarker_px": [
+          191,
+          204
+        ],
+        "spriteCenter_px_candidate": [
+          191,
+          204
+        ],
+        "previousCenter_px": [
+          195,
+          208
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_2.png",
+        "frameIndex": 2,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__cast_2.png",
+        "sourceSHA256": "90eefdf698caad44b691d0e67956d055e6f4582fa16b06afeb504a6590c81ee5",
+        "sourceRowState": "anticipate",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_anticipate_grid_2x.png",
+        "sourceMarker_px": [
+          191,
+          203
+        ],
+        "spriteCenter_px_candidate": [
+          191,
+          203
+        ],
+        "previousCenter_px": [
+          195,
+          207
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_3.png",
+        "frameIndex": 0,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__cast_3.png",
+        "sourceSHA256": "ce690bceb86530c404bf2df60567466e18fde290d12b2d2dbff53b8b63432fde",
+        "sourceRowState": "execute",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_execute_grid_2x.png",
+        "sourceMarker_px": [
+          192,
+          201
+        ],
+        "spriteCenter_px_candidate": [
+          192,
+          201
+        ],
+        "previousCenter_px": [
+          196,
+          205
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_4.png",
+        "frameIndex": 1,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__cast_4.png",
+        "sourceSHA256": "859472321d091a3e3851a4f757652fe5ddaac7de70f441c49773ffa87fb060b6",
+        "sourceRowState": "execute",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_execute_grid_2x.png",
+        "sourceMarker_px": [
+          194,
+          204
+        ],
+        "spriteCenter_px_candidate": [
+          194,
+          204
+        ],
+        "previousCenter_px": [
+          198,
+          208
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_5.png",
+        "frameIndex": 2,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__cast_5.png",
+        "sourceSHA256": "b4cc1c0422a73c73fc95e104e87c1b5bbc959900bc2b2a1ae4b5ebcef41c6272",
+        "sourceRowState": "execute",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_execute_grid_2x.png",
+        "sourceMarker_px": [
+          194,
+          204
+        ],
+        "spriteCenter_px_candidate": [
+          194,
+          204
+        ],
+        "previousCenter_px": [
+          198,
+          208
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_6.png",
+        "frameIndex": 0,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__cast_6.png",
+        "sourceSHA256": "05b4f8b22ef0835636daee2d29626676d096f0a0adf5440e578c130ff2952600",
+        "sourceRowState": "recover",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_recover_grid_2x.png",
+        "sourceMarker_px": [
+          192,
+          204
+        ],
+        "spriteCenter_px_candidate": [
+          192,
+          204
+        ],
+        "previousCenter_px": [
+          196,
+          208
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_7.png",
+        "frameIndex": 1,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__cast_7.png",
+        "sourceSHA256": "07076326209c6568ff7dbf33713650e21e4a6e36170cfcd992d7875b940fb8c7",
+        "sourceRowState": "recover",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_recover_grid_2x.png",
+        "sourceMarker_px": [
+          192,
+          204
+        ],
+        "spriteCenter_px_candidate": [
+          192,
+          204
+        ],
+        "previousCenter_px": [
+          196,
+          208
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_8.png",
+        "frameIndex": 2,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__cast_8.png",
+        "sourceSHA256": "54ecaf3712437c4ac63735a128dac5d900ce35731b34630664e457d86ae8d80d",
+        "sourceRowState": "recover",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_recover_grid_2x.png",
+        "sourceMarker_px": [
+          191,
+          205
+        ],
+        "spriteCenter_px_candidate": [
+          191,
+          205
+        ],
+        "previousCenter_px": [
+          195,
+          209
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_0.png",
+        "frameIndex": 0,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__rest_0.png",
+        "sourceSHA256": "ffdc5e4218d2431a88f57cdce7296e6a1b24f6c0b6ee7ea547d16bbd47625714",
+        "sourceRowState": "idle",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_idle_grid_2x.png",
+        "sourceMarker_px": [
+          189,
+          204
+        ],
+        "spriteCenter_px_candidate": [
+          189,
+          204
+        ],
+        "previousCenter_px": [
+          193,
+          208
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_1.png",
+        "frameIndex": 1,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__rest_1.png",
+        "sourceSHA256": "eca214927d3dbb572fc897d9fc1643a657c5eaacade741b7e8b03df756157f0a",
+        "sourceRowState": "idle",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_idle_grid_2x.png",
+        "sourceMarker_px": [
+          190,
+          204
+        ],
+        "spriteCenter_px_candidate": [
+          190,
+          204
+        ],
+        "previousCenter_px": [
+          194,
+          208
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_2.png",
+        "frameIndex": 2,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__rest_2.png",
+        "sourceSHA256": "76d3909dc7edc53cfcf5492e08170efcd43d9e5a1219f6bff233040885936558",
+        "sourceRowState": "idle",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_idle_grid_2x.png",
+        "sourceMarker_px": [
+          189,
+          204
+        ],
+        "spriteCenter_px_candidate": [
+          189,
+          204
+        ],
+        "previousCenter_px": [
+          193,
+          208
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_3.png",
+        "frameIndex": 0,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__rest_3.png",
+        "sourceSHA256": "5c612f8f88d1f714ea0f70c2bf2482c996de5027cea1dc7aa12ed91f199152bf",
+        "sourceRowState": "hit",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_hit_grid_2x.png",
+        "sourceMarker_px": [
+          189,
+          204
+        ],
+        "spriteCenter_px_candidate": [
+          189,
+          204
+        ],
+        "previousCenter_px": [
+          193,
+          208
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_4.png",
+        "frameIndex": 1,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__rest_4.png",
+        "sourceSHA256": "4e0b298c1a51629a4fe62683e9ad9faaf1a2f5e6e8cf66335ef6f5b3d6e0402e",
+        "sourceRowState": "hit",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_hit_grid_2x.png",
+        "sourceMarker_px": [
+          189,
+          204
+        ],
+        "spriteCenter_px_candidate": [
+          189,
+          204
+        ],
+        "previousCenter_px": [
+          193,
+          208
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_5.png",
+        "frameIndex": 2,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__rest_5.png",
+        "sourceSHA256": "47c30f61cdc11ece328903d82740ddaccc78fa94c5ab5f588ed277186e696271",
+        "sourceRowState": "hit",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_hit_grid_2x.png",
+        "sourceMarker_px": [
+          189,
+          204
+        ],
+        "spriteCenter_px_candidate": [
+          189,
+          204
+        ],
+        "previousCenter_px": [
+          193,
+          208
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_6.png",
+        "frameIndex": 0,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__rest_6.png",
+        "sourceSHA256": "4cf27a11fd352549e60bdee9fa04d7c6206067815cc3599ca8c9db0f8a9f5dd2",
+        "sourceRowState": "resolve",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_resolve_grid_2x.png",
+        "sourceMarker_px": [
+          189,
+          204
+        ],
+        "spriteCenter_px_candidate": [
+          189,
+          204
+        ],
+        "previousCenter_px": [
+          193,
+          208
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_7.png",
+        "frameIndex": 1,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__rest_7.png",
+        "sourceSHA256": "056fd4711c1992a21b7f7a88c2bdcf319f76f3b34702abcf091dd61854c3c950",
+        "sourceRowState": "resolve",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_resolve_grid_2x.png",
+        "sourceMarker_px": [
+          190,
+          204
+        ],
+        "spriteCenter_px_candidate": [
+          190,
+          204
+        ],
+        "previousCenter_px": [
+          194,
+          208
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_8.png",
+        "frameIndex": 2,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__rest_8.png",
+        "sourceSHA256": "6aacb3cbf8833b599f1cd0fcb0f14a7c3630888b0e68b62074c52a32b849b7ec",
+        "sourceRowState": "resolve",
+        "part": "BODY_HEM_INSERT",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_resolve_grid_2x.png",
+        "sourceMarker_px": [
+          189,
+          204
+        ],
+        "spriteCenter_px_candidate": [
+          189,
+          204
+        ],
+        "previousCenter_px": [
+          193,
+          208
+        ],
+        "visible": true,
+        "status": "UNAPPROVED_VISUAL_CANDIDATE",
+        "rationale": "Direct marked source-grid review places anchor on the visible character-right outer coat hem trim. Position uses measured hem marker as sprite center; prior +4px,+4px offset lacked a source landmark basis. Runtime fit is not established."
+      }
+    ],
+    "DETAIL_EQ_BODY_02": [
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_0.png",
+        "frameIndex": 0,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__walk_0.png",
+        "sourceSHA256": "ee5c86b4b5d7686f29c04a2ed4ed2795ed9143258337dad84cef716474f56b1d",
+        "sourceRowState": "walk",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_walk_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          193,
+          211
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_1.png",
+        "frameIndex": 1,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__walk_1.png",
+        "sourceSHA256": "37a9bba2a7c40968c396b7b40c378d9b2a9460f97f363b4b167df05eda6fa306",
+        "sourceRowState": "walk",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_walk_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          195,
+          212
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_2.png",
+        "frameIndex": 2,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__walk_2.png",
+        "sourceSHA256": "8a712cc80291e54b2fad35d04dab926b556fe3d8c2f58a84e42f8ce5d2ea4713",
+        "sourceRowState": "walk",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_walk_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          195,
+          210
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_3.png",
+        "frameIndex": 3,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__walk_3.png",
+        "sourceSHA256": "d16ba038973e08c5706103a2895f0ea979873206a6c66f9328f9f5d9f9fe1010",
+        "sourceRowState": "walk",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_walk_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          194,
+          210
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_4.png",
+        "frameIndex": 4,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__walk_4.png",
+        "sourceSHA256": "c3946c5c85042b0e71445a6784f0e821a13a5d16447a77143d5639dca242b03e",
+        "sourceRowState": "walk",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_walk_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          194,
+          210
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_5.png",
+        "frameIndex": 5,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__walk_5.png",
+        "sourceSHA256": "dfc1eb29ed4418a8ccb8525f604c9bca11d9a7269f347db676bc0daefa17d19b",
+        "sourceRowState": "walk",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_walk_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          195,
+          210
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_6.png",
+        "frameIndex": 6,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__walk_6.png",
+        "sourceSHA256": "e7c58d91b31ac683f64c1e9826dff86a0f532271e880cabb3ddfcc9614946d71",
+        "sourceRowState": "walk",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_walk_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          194,
+          211
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_7.png",
+        "frameIndex": 7,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__walk_7.png",
+        "sourceSHA256": "b777e7db61a315f957b444a9374e59242324e9fe7dbfa81844964eb36127b98e",
+        "sourceRowState": "walk",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_walk_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          195,
+          211
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_8.png",
+        "frameIndex": 8,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__walk_8.png",
+        "sourceSHA256": "b048230b0745ef7bdcfd7426ee26af3c5debed9a17acfe71eba60c06725fbc34",
+        "sourceRowState": "walk",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_walk_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          195,
+          210
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_0.png",
+        "frameIndex": 0,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__cast_0.png",
+        "sourceSHA256": "574441442b3c2dfad2285fa133febea703dadbf675eeeafc2c1e6126a39728c8",
+        "sourceRowState": "anticipate",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_anticipate_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          195,
+          208
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_1.png",
+        "frameIndex": 1,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__cast_1.png",
+        "sourceSHA256": "72d454a32a23f5a23f31c5257e3e66af9100eaa2c8580013ca498460cd006bec",
+        "sourceRowState": "anticipate",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_anticipate_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          196,
+          208
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_2.png",
+        "frameIndex": 2,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__cast_2.png",
+        "sourceSHA256": "02c1ddbe1390fd19dc6f0a0be3680131e2c8e05121c57ac2688d700933a3c0d3",
+        "sourceRowState": "anticipate",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_anticipate_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          196,
+          207
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_3.png",
+        "frameIndex": 0,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__cast_3.png",
+        "sourceSHA256": "416d953b150d02de8695c355387dadd4277c61ab3fd4c0d76efa59dcf3bf35a6",
+        "sourceRowState": "execute",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_execute_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          198,
+          205
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_4.png",
+        "frameIndex": 1,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__cast_4.png",
+        "sourceSHA256": "51422c4e6a5f359d9fe0250f0894ae6493145a324100cbfe7c70b151ae57da9e",
+        "sourceRowState": "execute",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_execute_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          199,
+          208
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_5.png",
+        "frameIndex": 2,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__cast_5.png",
+        "sourceSHA256": "944d659675544d5674987020f1b7fae3dff6f6ba21f9d141aeb35aa5029eaee1",
+        "sourceRowState": "execute",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_execute_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          199,
+          208
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_6.png",
+        "frameIndex": 0,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__cast_6.png",
+        "sourceSHA256": "3950bca15103c5dd253abc211996d0e078865553c4eeb2b7c152c0b84b9fb77a",
+        "sourceRowState": "recover",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_recover_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          197,
+          209
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_7.png",
+        "frameIndex": 1,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__cast_7.png",
+        "sourceSHA256": "42604bb6d1e56853c4e391edaed580fa203020d167ad88797bc28210911c5c80",
+        "sourceRowState": "recover",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_recover_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          197,
+          208
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_8.png",
+        "frameIndex": 2,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__cast_8.png",
+        "sourceSHA256": "bcfb121127809ad5499af465f47d813c2574425ec19b340ce6545503f093b128",
+        "sourceRowState": "recover",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_recover_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          196,
+          209
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_0.png",
+        "frameIndex": 0,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__rest_0.png",
+        "sourceSHA256": "7575ce7ef6c88d85e9dc26c61fc0e91b0dfe09638117df2a6b4588b62b2efa6d",
+        "sourceRowState": "idle",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_idle_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          194,
+          208
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_1.png",
+        "frameIndex": 1,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__rest_1.png",
+        "sourceSHA256": "892d6346310c101880552911aa1306a4ee7800c78b08cb8c7d938de46f26bfa3",
+        "sourceRowState": "idle",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_idle_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          195,
+          208
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_2.png",
+        "frameIndex": 2,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__rest_2.png",
+        "sourceSHA256": "be4e8e75891e002d9ee7970c51f9eb4285834bc06b3d84531c6a4e85292833bf",
+        "sourceRowState": "idle",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_idle_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          194,
+          208
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_3.png",
+        "frameIndex": 0,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__rest_3.png",
+        "sourceSHA256": "38794859d5ab1468e9d388189e531abe1cac48fa05d7d43a72689906656d83fb",
+        "sourceRowState": "hit",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_hit_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          195,
+          208
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_4.png",
+        "frameIndex": 1,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__rest_4.png",
+        "sourceSHA256": "3ec449bc60c41f7f93d765396d8c1d1ab932320152753026791c1076a1520dfa",
+        "sourceRowState": "hit",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_hit_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          195,
+          208
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_5.png",
+        "frameIndex": 2,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__rest_5.png",
+        "sourceSHA256": "49c890c0afae1927d5a5b6138cf9edc2d30b96571b8126691acfaec0419ee60d",
+        "sourceRowState": "hit",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_hit_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          195,
+          208
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_6.png",
+        "frameIndex": 0,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__rest_6.png",
+        "sourceSHA256": "674ea3d1fb7d4c4caf1085b25c9a91275ef3f313d804af842013fabc66bf8474",
+        "sourceRowState": "resolve",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_resolve_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          194,
+          208
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_7.png",
+        "frameIndex": 1,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__rest_7.png",
+        "sourceSHA256": "db4ffc38aaa57a9e1dec45717f1762c2701c82991145b5d9286519b17f828856",
+        "sourceRowState": "resolve",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_resolve_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          195,
+          208
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_8.png",
+        "frameIndex": 2,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/standard__rest_8.png",
+        "sourceSHA256": "99a7ec62f798fa86c73c7697e3fed6882ed9cfb3d9c877b306d501309702d91b",
+        "sourceRowState": "resolve",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/standard_resolve_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          194,
+          208
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_0.png",
+        "frameIndex": 0,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__walk_0.png",
+        "sourceSHA256": "a8461e071f8c10eecf6e42fe595ff9f68bceb67819709a7a1890d8a1715820c1",
+        "sourceRowState": "walk",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_walk_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          192,
+          211
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_1.png",
+        "frameIndex": 1,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__walk_1.png",
+        "sourceSHA256": "7241025579552eb4f15efd6d1974b18ebd9cfca033b520e04631cdd48b6b3618",
+        "sourceRowState": "walk",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_walk_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          193,
+          212
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_2.png",
+        "frameIndex": 2,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__walk_2.png",
+        "sourceSHA256": "9721b79fe68d2786baa9ec2ba607ceaa707654d4ace8f2ef4860e88e8b026702",
+        "sourceRowState": "walk",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_walk_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          193,
+          210
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_3.png",
+        "frameIndex": 3,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__walk_3.png",
+        "sourceSHA256": "2ef4e8564f0d0893926e649e486346f6cda235a70b6023f25e131933abeb7edf",
+        "sourceRowState": "walk",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_walk_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          193,
+          211
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_4.png",
+        "frameIndex": 4,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__walk_4.png",
+        "sourceSHA256": "11ec631b06a72ada7e2567c08b080bb6421db28933953582138409b77473a1de",
+        "sourceRowState": "walk",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_walk_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          194,
+          211
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_5.png",
+        "frameIndex": 5,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__walk_5.png",
+        "sourceSHA256": "0fd49f8b45bef2bd83d13666bbf0ba55b0d6e1fb926500c1df56fe9b1c8d4fee",
+        "sourceRowState": "walk",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_walk_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          193,
+          210
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_6.png",
+        "frameIndex": 6,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__walk_6.png",
+        "sourceSHA256": "3671a95aceee0cca0554e4742ea11ae98de881e1895305460c05f36a1af3b3d1",
+        "sourceRowState": "walk",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_walk_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          192,
+          212
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_7.png",
+        "frameIndex": 7,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__walk_7.png",
+        "sourceSHA256": "276aef3b8f72a12e865213238c9058c2ff22a66b22fb9b62640ae25bd352c3f6",
+        "sourceRowState": "walk",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_walk_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          193,
+          211
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_8.png",
+        "frameIndex": 8,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__walk_8.png",
+        "sourceSHA256": "4f9f3b41d7158a45b1c6e881305ebc58ed77961f0af839d47710380f00c864cd",
+        "sourceRowState": "walk",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_walk_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          193,
+          211
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_0.png",
+        "frameIndex": 0,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__cast_0.png",
+        "sourceSHA256": "956a61aa45138cf3e3833550cf2905170c1e947f134c8028b6c3dc8205820d85",
+        "sourceRowState": "anticipate",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_anticipate_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          194,
+          208
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_1.png",
+        "frameIndex": 1,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__cast_1.png",
+        "sourceSHA256": "7e48ab790b8f899946f3eb961bc1c6d5940b9c31013ccf38eca64148e2805169",
+        "sourceRowState": "anticipate",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_anticipate_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          195,
+          208
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_2.png",
+        "frameIndex": 2,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__cast_2.png",
+        "sourceSHA256": "90eefdf698caad44b691d0e67956d055e6f4582fa16b06afeb504a6590c81ee5",
+        "sourceRowState": "anticipate",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_anticipate_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          195,
+          207
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_3.png",
+        "frameIndex": 0,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__cast_3.png",
+        "sourceSHA256": "ce690bceb86530c404bf2df60567466e18fde290d12b2d2dbff53b8b63432fde",
+        "sourceRowState": "execute",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_execute_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          196,
+          205
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_4.png",
+        "frameIndex": 1,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__cast_4.png",
+        "sourceSHA256": "859472321d091a3e3851a4f757652fe5ddaac7de70f441c49773ffa87fb060b6",
+        "sourceRowState": "execute",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_execute_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          198,
+          208
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_5.png",
+        "frameIndex": 2,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__cast_5.png",
+        "sourceSHA256": "b4cc1c0422a73c73fc95e104e87c1b5bbc959900bc2b2a1ae4b5ebcef41c6272",
+        "sourceRowState": "execute",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_execute_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          198,
+          208
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_6.png",
+        "frameIndex": 0,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__cast_6.png",
+        "sourceSHA256": "05b4f8b22ef0835636daee2d29626676d096f0a0adf5440e578c130ff2952600",
+        "sourceRowState": "recover",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_recover_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          196,
+          208
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_7.png",
+        "frameIndex": 1,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__cast_7.png",
+        "sourceSHA256": "07076326209c6568ff7dbf33713650e21e4a6e36170cfcd992d7875b940fb8c7",
+        "sourceRowState": "recover",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_recover_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          196,
+          208
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_8.png",
+        "frameIndex": 2,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__cast_8.png",
+        "sourceSHA256": "54ecaf3712437c4ac63735a128dac5d900ce35731b34630664e457d86ae8d80d",
+        "sourceRowState": "recover",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_recover_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          195,
+          209
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_0.png",
+        "frameIndex": 0,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__rest_0.png",
+        "sourceSHA256": "ffdc5e4218d2431a88f57cdce7296e6a1b24f6c0b6ee7ea547d16bbd47625714",
+        "sourceRowState": "idle",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_idle_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          193,
+          208
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_1.png",
+        "frameIndex": 1,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__rest_1.png",
+        "sourceSHA256": "eca214927d3dbb572fc897d9fc1643a657c5eaacade741b7e8b03df756157f0a",
+        "sourceRowState": "idle",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_idle_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          194,
+          208
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_2.png",
+        "frameIndex": 2,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__rest_2.png",
+        "sourceSHA256": "76d3909dc7edc53cfcf5492e08170efcd43d9e5a1219f6bff233040885936558",
+        "sourceRowState": "idle",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_idle_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          193,
+          208
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_3.png",
+        "frameIndex": 0,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__rest_3.png",
+        "sourceSHA256": "5c612f8f88d1f714ea0f70c2bf2482c996de5027cea1dc7aa12ed91f199152bf",
+        "sourceRowState": "hit",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_hit_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          193,
+          208
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_4.png",
+        "frameIndex": 1,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__rest_4.png",
+        "sourceSHA256": "4e0b298c1a51629a4fe62683e9ad9faaf1a2f5e6e8cf66335ef6f5b3d6e0402e",
+        "sourceRowState": "hit",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_hit_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          193,
+          208
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_5.png",
+        "frameIndex": 2,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__rest_5.png",
+        "sourceSHA256": "47c30f61cdc11ece328903d82740ddaccc78fa94c5ab5f588ed277186e696271",
+        "sourceRowState": "hit",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_hit_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          193,
+          208
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_6.png",
+        "frameIndex": 0,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__rest_6.png",
+        "sourceSHA256": "4cf27a11fd352549e60bdee9fa04d7c6206067815cc3599ca8c9db0f8a9f5dd2",
+        "sourceRowState": "resolve",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_resolve_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          193,
+          208
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_7.png",
+        "frameIndex": 1,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__rest_7.png",
+        "sourceSHA256": "056fd4711c1992a21b7f7a88c2bdcf319f76f3b34702abcf091dd61854c3c950",
+        "sourceRowState": "resolve",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_resolve_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          194,
+          208
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      },
+      {
+        "actorID": "ERNA",
+        "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_8.png",
+        "frameIndex": 2,
+        "canvas_px": [
+          256,
+          256
+        ],
+        "source_path": "native/GeneratedArt/layered_motion_r001/travel__rest_8.png",
+        "sourceSHA256": "6aacb3cbf8833b599f1cd0fcb0f14a7c3630888b0e68b62074c52a32b849b7ec",
+        "sourceRowState": "resolve",
+        "part": "BODY_CLOAK_LINING",
+        "sourceGrid": "native/Art/GeneratedCandidates/EquipmentDetails/erna_landmark_contacts_r002/travel_resolve_grid_2x.png",
+        "sourceMarker_px": null,
+        "spriteCenter_px_candidate": null,
+        "previousCenter_px": [
+          193,
+          208
+        ],
+        "visible": null,
+        "status": "UNMEASURED_PENDING_R001_3POSE_REVIEW",
+        "rationale": "Prior hidden/unresolved disposition withdrawn. No occlusion claim; 3-pose candidate assessment is tracked in erna_body_underlay_3pose_r001.json, and full 54-frame fit remains pending."
+      }
+    ]
+  }
+}

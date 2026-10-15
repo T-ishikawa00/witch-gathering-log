@@ -1,0 +1,7 @@
+# R433 independent visual review
+
+Status: **scoped visual pass with limits**. I directly viewed the saved preview, home, companion, battle, and furniture screenshots listed in `REVIEW_R001.json`. The four selected actor appearances are legible on their intended companions, with no obvious clipping. NOIR's moss collar is at the neck; the green object by the paw is the equipped catalyst. Both staff variants are distinguishable in their battle captures. The moon-staff battle frame contains all four party members and the enemy; its checkpoint is marked at six seconds. The botanical desk reads clearly in the room, Luna's reading pose is recognizable, and the preview/store screen has legible instructions and action controls.
+
+I found no additional visual defect in these captured states. The known Luna reading-mantle limitation remains under R435 and is not re-reported as a new issue. The checkpoint metadata shows the selected appearance IDs at revision 23, the moon staff selected for revision 30, and the furniture placed at revision 26 then stored by revision 27. The available cold readbacks match the saved bytes exactly for revisions 23, 26, and 29.
+
+This is a visual-only review of saved captures. There was no top-level final RUN/closure receipt when I checked, so final protected-tree preservation and run closure remain unverified by this review. This does not establish formal art approval, accessibility coverage, physical-device quality, or general wardrobe acceptance.

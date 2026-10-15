@@ -1,0 +1,350 @@
+{
+  "schema": "witch.enemy_rest_hit_resolve_candidate.v1",
+  "actorId": "ACT_E_R01_02",
+  "revision": "rest_hit_resolve_packed_r001",
+  "status": "UNAPPROVED_AUTHORED_REST_HIT_RESOLVE_CANDIDATE",
+  "sourceApprovedStill": "ActorStills/ACT_E_R01_02/ACT_E_R01_02__still__E_R01_02_base_v2.png",
+  "sourceApprovedStillSHA256": "576d65caf7459a2dfeb207cbfd54fc741ba7b552a141d677e0bf516901a22864",
+  "imagegenAtlas": "GeneratedCandidates/ACT_E_R01_02/rest_hit_resolve_r001/imagegen_atlas_corrected_r002.png",
+  "imagegenAtlasSHA256": "f3020e572341015dba9af90c8b006dc54262bb50d58f376c6234be17045e1722",
+  "atlasPx": [
+    1536,
+    1024
+  ],
+  "gridYEdgesPx": [
+    0,
+    362,
+    684,
+    1024
+  ],
+  "gridXEdgesByRowPx": [
+    [
+      0,
+      512,
+      1024,
+      1536
+    ],
+    [
+      0,
+      512,
+      1024,
+      1536
+    ],
+    [
+      0,
+      512,
+      1024,
+      1536
+    ]
+  ],
+  "baselineIdleFrames": [
+    {
+      "path": "GeneratedCandidates/ACT_E_R01_02/idle_1.png",
+      "alpha16BBox": [
+        48,
+        16,
+        450,
+        336
+      ],
+      "height": 320
+    },
+    {
+      "path": "GeneratedCandidates/ACT_E_R01_02/idle_2.png",
+      "alpha16BBox": [
+        41,
+        16,
+        454,
+        336
+      ],
+      "height": 320
+    }
+  ],
+  "baselineCanvasPx": [
+    512,
+    341
+  ],
+  "baselineAnchorPx": [
+    256,
+    330
+  ],
+  "targetIdleAlpha16HeightPx": 320.0,
+  "candidateAnchorPx": [
+    256,
+    495
+  ],
+  "candidateFitScale": 1.28,
+  "candidateDisplayScale": 1.0,
+  "commonScaleAcrossAllStatesAndFrames": true,
+  "packing": "Measured alpha>=16 transparent gutters; full RGBA cells resized together and placed on transparent 512x512 canvas. No per-frame alpha cleanup or recoloring. All PNGs published atomically.",
+  "frameRecords": [
+    {
+      "path": "GeneratedCandidates/ACT_E_R01_02/rest_hit_resolve_packed_r001/frames/idle_000.png",
+      "state": "idle",
+      "index": 0,
+      "sourceCellBoundsPx": [
+        0,
+        0,
+        512,
+        362
+      ],
+      "sourceAlpha16BoundsPx": [
+        115,
+        80,
+        432,
+        326
+      ],
+      "sourceAlpha16MarginPx": 36,
+      "exportedAlpha16BoundsPx": [
+        53,
+        180,
+        459,
+        495
+      ],
+      "packingTranslationPx": [
+        -94,
+        78
+      ],
+      "sha256": "a56cdd900055d00ca91c966d1e8f82b7f3c7de831ce76dab52d371490a9aa1ed"
+    },
+    {
+      "path": "GeneratedCandidates/ACT_E_R01_02/rest_hit_resolve_packed_r001/frames/idle_001.png",
+      "state": "idle",
+      "index": 1,
+      "sourceCellBoundsPx": [
+        512,
+        0,
+        1024,
+        362
+      ],
+      "sourceAlpha16BoundsPx": [
+        94,
+        73,
+        395,
+        324
+      ],
+      "sourceAlpha16MarginPx": 38,
+      "exportedAlpha16BoundsPx": [
+        64,
+        174,
+        449,
+        495
+      ],
+      "packingTranslationPx": [
+        -56,
+        81
+      ],
+      "sha256": "1f461608762a871708cb0fd073b7351d389213df3e30eb8af673dea1fe7d2373"
+    },
+    {
+      "path": "GeneratedCandidates/ACT_E_R01_02/rest_hit_resolve_packed_r001/frames/idle_002.png",
+      "state": "idle",
+      "index": 2,
+      "sourceCellBoundsPx": [
+        1024,
+        0,
+        1536,
+        362
+      ],
+      "sourceAlpha16BoundsPx": [
+        76,
+        75,
+        397,
+        325
+      ],
+      "sourceAlpha16MarginPx": 37,
+      "exportedAlpha16BoundsPx": [
+        51,
+        175,
+        462,
+        495
+      ],
+      "packingTranslationPx": [
+        -46,
+        79
+      ],
+      "sha256": "bc3a534db2bfbf7b2514ed87cdcc5b8dacf9b5d9c7fbb18a96d1d98c788887d6"
+    },
+    {
+      "path": "GeneratedCandidates/ACT_E_R01_02/rest_hit_resolve_packed_r001/frames/hit_000.png",
+      "state": "hit",
+      "index": 0,
+      "sourceCellBoundsPx": [
+        0,
+        362,
+        512,
+        684
+      ],
+      "sourceAlpha16BoundsPx": [
+        125,
+        38,
+        437,
+        279
+      ],
+      "sourceAlpha16MarginPx": 38,
+      "exportedAlpha16BoundsPx": [
+        56,
+        187,
+        455,
+        495
+      ],
+      "packingTranslationPx": [
+        -104,
+        138
+      ],
+      "sha256": "343999fa925b55eb865408cfb8b09cb13d065050aca88bd79eef07287feabcb6"
+    },
+    {
+      "path": "GeneratedCandidates/ACT_E_R01_02/rest_hit_resolve_packed_r001/frames/hit_001.png",
+      "state": "hit",
+      "index": 1,
+      "sourceCellBoundsPx": [
+        512,
+        362,
+        1024,
+        684
+      ],
+      "sourceAlpha16BoundsPx": [
+        112,
+        40,
+        400,
+        282
+      ],
+      "sourceAlpha16MarginPx": 40,
+      "exportedAlpha16BoundsPx": [
+        71,
+        185,
+        440,
+        495
+      ],
+      "packingTranslationPx": [
+        -72,
+        134
+      ],
+      "sha256": "6561b877251f5ee866ca2f882a8418db4e682f894c8342e5f87356310abf5bd2"
+    },
+    {
+      "path": "GeneratedCandidates/ACT_E_R01_02/rest_hit_resolve_packed_r001/frames/hit_002.png",
+      "state": "hit",
+      "index": 2,
+      "sourceCellBoundsPx": [
+        1024,
+        362,
+        1536,
+        684
+      ],
+      "sourceAlpha16BoundsPx": [
+        86,
+        42,
+        390,
+        283
+      ],
+      "sourceAlpha16MarginPx": 39,
+      "exportedAlpha16BoundsPx": [
+        62,
+        187,
+        451,
+        495
+      ],
+      "packingTranslationPx": [
+        -48,
+        133
+      ],
+      "sha256": "018d9e592528920f1b3e721eeb07f05ab7152cbff9613794f80d29b5668a055a"
+    },
+    {
+      "path": "GeneratedCandidates/ACT_E_R01_02/rest_hit_resolve_packed_r001/frames/resolve_000.png",
+      "state": "resolve",
+      "index": 0,
+      "sourceCellBoundsPx": [
+        0,
+        684,
+        512,
+        1024
+      ],
+      "sourceAlpha16BoundsPx": [
+        117,
+        42,
+        425,
+        275
+      ],
+      "sourceAlpha16MarginPx": 42,
+      "exportedAlpha16BoundsPx": [
+        59,
+        197,
+        453,
+        495
+      ],
+      "packingTranslationPx": [
+        -91,
+        143
+      ],
+      "sha256": "711e2a173109cb0458dcb578d00877e3c85a55e8aed911bedb1abf144aee8c85"
+    },
+    {
+      "path": "GeneratedCandidates/ACT_E_R01_02/rest_hit_resolve_packed_r001/frames/resolve_001.png",
+      "state": "resolve",
+      "index": 1,
+      "sourceCellBoundsPx": [
+        512,
+        684,
+        1024,
+        1024
+      ],
+      "sourceAlpha16BoundsPx": [
+        120,
+        42,
+        396,
+        263
+      ],
+      "sourceAlpha16MarginPx": 42,
+      "exportedAlpha16BoundsPx": [
+        80,
+        213,
+        433,
+        495
+      ],
+      "packingTranslationPx": [
+        -74,
+        159
+      ],
+      "sha256": "374f3fd1e8a221bd152517767bb14e447f6b226d02f0779026009bbe1050b0c2"
+    },
+    {
+      "path": "GeneratedCandidates/ACT_E_R01_02/rest_hit_resolve_packed_r001/frames/resolve_002.png",
+      "state": "resolve",
+      "index": 2,
+      "sourceCellBoundsPx": [
+        1024,
+        684,
+        1536,
+        1024
+      ],
+      "sourceAlpha16BoundsPx": [
+        116,
+        41,
+        396,
+        267
+      ],
+      "sourceAlpha16MarginPx": 41,
+      "exportedAlpha16BoundsPx": [
+        76,
+        205,
+        435,
+        495
+      ],
+      "packingTranslationPx": [
+        -72,
+        153
+      ],
+      "sha256": "343b4f6deb1c82167c1d3210cc62928476fef254df1d521a9715538ef3fa7b00"
+    }
+  ],
+  "qaContactDark": "qa_contact_dark.jpg",
+  "runtimeOverlay": "runtime_overlay_act_e_r01_02_rest_hit_resolve_candidate_r001.json",
+  "notRuntimeApproved": true,
+  "naturalMotionComplete": false,
+  "limitations": [
+    "Candidate drawn from imagegen; preserve source still and existing clips.",
+    "Native SpriteKit frame-by-frame review pending."
+  ]
+}

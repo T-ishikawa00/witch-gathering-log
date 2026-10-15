@@ -1,0 +1,239 @@
+{
+  "actor_id": "ACT_E_R02_02",
+  "revision": "r001",
+  "status": "CANDIDATE_UNAPPROVED",
+  "source_reference_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/actors/ACT_E_R02_02/candidate_r001/ACT_E_R02_02__runtime_candidate__r001.png",
+  "source_reference_sha256": "2cd12825d97b615632e34b1f123bf9ad3c4c0f7c1911228f476543d42a9f8ff4",
+  "imagegen_atlas_path": "native/Art/GeneratedCandidates/ACT_E_R02_02/pose_candidate_r001/imagegen_atlas_r001.png",
+  "imagegen_atlas_sha256": "3f227a62ff5d9f7b137cb1e1b8147aabec926acf7628cb1782a7349d5dc84d11",
+  "pose_order": [
+    "idle_a",
+    "idle_b",
+    "walk_a",
+    "walk_b",
+    "anticipate",
+    "execute",
+    "recover",
+    "hit",
+    "resolve"
+  ],
+  "state_frames": {
+    "idle": [
+      "native/Art/GeneratedCandidates/ACT_E_R02_02/pose_candidate_r001/frames/idle_a.png",
+      "native/Art/GeneratedCandidates/ACT_E_R02_02/pose_candidate_r001/frames/idle_b.png"
+    ],
+    "walk": [
+      "native/Art/GeneratedCandidates/ACT_E_R02_02/pose_candidate_r001/frames/walk_a.png",
+      "native/Art/GeneratedCandidates/ACT_E_R02_02/pose_candidate_r001/frames/walk_b.png"
+    ],
+    "anticipate": [
+      "native/Art/GeneratedCandidates/ACT_E_R02_02/pose_candidate_r001/frames/anticipate.png"
+    ],
+    "execute": [
+      "native/Art/GeneratedCandidates/ACT_E_R02_02/pose_candidate_r001/frames/execute.png"
+    ],
+    "recover": [
+      "native/Art/GeneratedCandidates/ACT_E_R02_02/pose_candidate_r001/frames/recover.png"
+    ],
+    "hit": [
+      "native/Art/GeneratedCandidates/ACT_E_R02_02/pose_candidate_r001/frames/hit.png"
+    ],
+    "resolve": [
+      "native/Art/GeneratedCandidates/ACT_E_R02_02/pose_candidate_r001/frames/resolve.png"
+    ]
+  },
+  "frames": [
+    {
+      "pose": "idle_a",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R02_02/pose_candidate_r001/frames/idle_a.png",
+      "sha256": "4b7dbbc4d43cb928cecc2d8e204219b5a5994b5e22f58007cd1e888c183cbf56",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        9,
+        117,
+        419,
+        385
+      ]
+    },
+    {
+      "pose": "idle_b",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R02_02/pose_candidate_r001/frames/idle_b.png",
+      "sha256": "286a7773835f8d9960f98756a1f763459d9abcb8a44cc1bc160f5033077d9640",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        425,
+        142,
+        822,
+        383
+      ]
+    },
+    {
+      "pose": "walk_a",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R02_02/pose_candidate_r001/frames/walk_a.png",
+      "sha256": "5cae6aa1216216c8881d629fb1e8251f8a429ec1f004aae21a42e643c8ddd789",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        827,
+        137,
+        1243,
+        383
+      ]
+    },
+    {
+      "pose": "walk_b",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R02_02/pose_candidate_r001/frames/walk_b.png",
+      "sha256": "be0468d3aebc255998ade779d5a56bf6e138273c7a5f036332304928e13cdce8",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        9,
+        523,
+        434,
+        767
+      ]
+    },
+    {
+      "pose": "anticipate",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R02_02/pose_candidate_r001/frames/anticipate.png",
+      "sha256": "41c59358f954f4d24e263a7b824b9baa7744943edf3ae368a21f0f34695f39b6",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        438,
+        535,
+        815,
+        767
+      ]
+    },
+    {
+      "pose": "execute",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R02_02/pose_candidate_r001/frames/execute.png",
+      "sha256": "7feacf70fca98f3cce15b160ba2e314efece4b75ec38e3595bac56149c057d33",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        829,
+        556,
+        1246,
+        777
+      ]
+    },
+    {
+      "pose": "recover",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R02_02/pose_candidate_r001/frames/recover.png",
+      "sha256": "f0ca37b90125cb7077a7e672a89af97b3244f5c2ad5e859fde408e29450efd07",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        25,
+        901,
+        399,
+        1173
+      ]
+    },
+    {
+      "pose": "hit",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R02_02/pose_candidate_r001/frames/hit.png",
+      "sha256": "933b3c4db817e2e69b2b89b5f5ef84db06bf3ec7d1c6d309cebab0b169d47ee8",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        415,
+        972,
+        821,
+        1169
+      ]
+    },
+    {
+      "pose": "resolve",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R02_02/pose_candidate_r001/frames/resolve.png",
+      "sha256": "c09bbcf44ff09f189a511033e5f2b603cf6171d0900ec02fc799b4b08dd84ed1",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        827,
+        941,
+        1244,
+        1173
+      ]
+    }
+  ],
+  "fps": 6,
+  "canvas_px": [
+    512,
+    512
+  ],
+  "anchor_px": [
+    256.0,
+    490
+  ],
+  "review": "Compared against canonical lizard: low teal scale-covered body, pale belly, amber eye, curled tail and white aqua dorsal crest preserved. Head/tail/limb poses differ visibly; generated fin and scale detail redraw, no authored continuous subclips/runtime integration.",
+  "qa_contact_sheet_path": "native/Art/GeneratedCandidates/ACT_E_R02_02/pose_candidate_r001/qa_contact_sheet_r001.png",
+  "qa_contact_sheet_sha256": "2f591842ac81c87f48d359e8187fa1cbeed9fb6cebffda814d567fb77058b27a",
+  "runtime_integration": "NOT_DONE",
+  "runtime_visual_qa": "PENDING_ROOT_REVIEW",
+  "human_adoption": "PENDING",
+  "limitations": [
+    "Each action state currently has only one authored pose; idle and walk each have two poses.",
+    "This is a corrected composition/identity candidate, not evidence of natural continuous animation.",
+    "All frames derive from a generated atlas and remain unapproved pending visual/runtime review.",
+    "Source reference was not modified."
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "design_ready_for_prototype": true,
+  "production_approval": false,
+  "prototype_first": [
+    "BL_DOT",
+    "BL_WARD",
+    "BL_COUNTER"
+  ],
+  "challenge_first": [
+    "CH_R01_03",
+    "CH_R02_02",
+    "CH_R03_01"
+  ],
+  "required_before_playtest": [
+    "same source-valid core effects and 1-slot reforge contract finalized",
+    "fixed enemy/data revision; no adaptation to purchaser",
+    "same-stat free/crafted/purchased items equal",
+    "loadout switching and protection tests",
+    "actual iPhone run and plain-result replay"
+  ],
+  "acceptance_candidates": {
+    "standard_challenge": "each of first3 has >=2 different build families at >=90/100 seeded reference wins after tuning; subject to playtest",
+    "diversity": "at least2 families non-dominated across speed/survival and differ in >=1 scenario; do not fabricate thresholds after results",
+    "economy": "first alternate uses4-8 replacements as target, shared pieces keep24 active max; pay all upgrade/recipe costs",
+    "purchases": "no sales until verified purchase/restore/refund and product visibility scope",
+    "human": "owner can explain why changed gear and prefers >=2 contexts in blind-order trial; not retention/population proof"
+  },
+  "must_not_block_prototype_on": [
+    "90days actual retention",
+    "all15 completed challenges",
+    "new outfit everyweek",
+    "zero failures for all possible RNG worldwide"
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "status": "UNAPPROVED_PARTIAL_GAIT_CANDIDATE_OVERLAY",
+  "complete_animation": false,
+  "source_candidate_manifest": "GeneratedCandidates/ACT_E_R02_01/walk_cycle_r005/walk_cycle_manifest_r005.json",
+  "entries": {
+    "ACT_E_R02_01": {
+      "kind": "enemy_actor_kit",
+      "selectedPNG": "GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/idle_a.png",
+      "sequenceFrames": {
+        "idle": [
+          "GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/idle_a.png",
+          "GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/idle_b.png"
+        ],
+        "walk": [
+          "GeneratedCandidates/ACT_E_R02_01/walk_cycle_r005/frames/walk_000.png",
+          "GeneratedCandidates/ACT_E_R02_01/walk_cycle_r005/frames/walk_001.png",
+          "GeneratedCandidates/ACT_E_R02_01/walk_cycle_r005/frames/walk_002.png",
+          "GeneratedCandidates/ACT_E_R02_01/walk_cycle_r005/frames/walk_003.png",
+          "GeneratedCandidates/ACT_E_R02_01/walk_cycle_r005/frames/walk_004.png",
+          "GeneratedCandidates/ACT_E_R02_01/walk_cycle_r005/frames/walk_005.png",
+          "GeneratedCandidates/ACT_E_R02_01/walk_cycle_r005/frames/walk_006.png",
+          "GeneratedCandidates/ACT_E_R02_01/walk_cycle_r005/frames/walk_007.png",
+          "GeneratedCandidates/ACT_E_R02_01/walk_cycle_r005/frames/walk_008.png"
+        ],
+        "anticipate": [
+          "GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/idle_b.png",
+          "GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/anticipate.png"
+        ],
+        "execute": [
+          "GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/anticipate.png",
+          "GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/execute.png"
+        ],
+        "recover": [
+          "GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/execute.png",
+          "GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/recover.png",
+          "GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/idle_a.png"
+        ],
+        "hit": [
+          "GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/hit.png",
+          "GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/recover.png"
+        ],
+        "resolve": [
+          "GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/hit.png",
+          "GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/resolve.png"
+        ]
+      },
+      "states_present": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "status": "SEVEN_STATE_POSE_CANDIDATE_WITH_NINE_FRAME_GAIT_CANDIDATE_PARTIAL_UNAPPROVED",
+      "fps": null,
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor": [
+        256,
+        460
+      ],
+      "anchor_status": "VISUAL_ESTIMATE_UNAPPROVED",
+      "partsAtlasExcluded": true,
+      "anchor_type": "foot_registration_candidate",
+      "clips": {
+        "idle": {
+          "frames": [
+            "GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/idle_a.png",
+            "GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/idle_b.png"
+          ],
+          "frame_count": 2,
+          "fps": 3,
+          "duration_seconds": 0.6666666666666666,
+          "loop": true,
+          "status": "DISCRETE_POSE_CANDIDATE_INBETWEENS_PENDING"
+        },
+        "walk": {
+          "frames": [
+            "GeneratedCandidates/ACT_E_R02_01/walk_cycle_r005/frames/walk_000.png",
+            "GeneratedCandidates/ACT_E_R02_01/walk_cycle_r005/frames/walk_001.png",
+            "GeneratedCandidates/ACT_E_R02_01/walk_cycle_r005/frames/walk_002.png",
+            "GeneratedCandidates/ACT_E_R02_01/walk_cycle_r005/frames/walk_003.png",
+            "GeneratedCandidates/ACT_E_R02_01/walk_cycle_r005/frames/walk_004.png",
+            "GeneratedCandidates/ACT_E_R02_01/walk_cycle_r005/frames/walk_005.png",
+            "GeneratedCandidates/ACT_E_R02_01/walk_cycle_r005/frames/walk_006.png",
+            "GeneratedCandidates/ACT_E_R02_01/walk_cycle_r005/frames/walk_007.png",
+            "GeneratedCandidates/ACT_E_R02_01/walk_cycle_r005/frames/walk_008.png"
+          ],
+          "frame_count": 9,
+          "fps": 12,
+          "duration_seconds": 0.75,
+          "loop": true,
+          "status": "NINE_FRAME_GAIT_CANDIDATE_PARTIAL_UNAPPROVED",
+          "canvas_px": [
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            460
+          ],
+          "anchor_status": "VISUAL_ESTIMATE_UNAPPROVED"
+        },
+        "anticipate": {
+          "frames": [
+            "GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/idle_b.png",
+            "GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/anticipate.png"
+          ],
+          "frame_count": 2,
+          "fps": 6,
+          "duration_seconds": 0.3333333333333333,
+          "loop": false,
+          "status": "DISCRETE_POSE_CANDIDATE_INBETWEENS_PENDING"
+        },
+        "execute": {
+          "frames": [
+            "GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/anticipate.png",
+            "GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/execute.png"
+          ],
+          "frame_count": 2,
+          "fps": 8,
+          "duration_seconds": 0.25,
+          "loop": false,
+          "status": "DISCRETE_POSE_CANDIDATE_INBETWEENS_PENDING"
+        },
+        "recover": {
+          "frames": [
+            "GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/execute.png",
+            "GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/recover.png",
+            "GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/idle_a.png"
+          ],
+          "frame_count": 3,
+          "fps": 8,
+          "duration_seconds": 0.375,
+          "loop": false,
+          "status": "DISCRETE_POSE_CANDIDATE_INBETWEENS_PENDING"
+        },
+        "hit": {
+          "frames": [
+            "GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/hit.png",
+            "GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/recover.png"
+          ],
+          "frame_count": 2,
+          "fps": 8,
+          "duration_seconds": 0.25,
+          "loop": false,
+          "status": "DISCRETE_POSE_CANDIDATE_INBETWEENS_PENDING"
+        },
+        "resolve": {
+          "frames": [
+            "GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/hit.png",
+            "GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/resolve.png"
+          ],
+          "frame_count": 2,
+          "fps": 3,
+          "duration_seconds": 0.6666666666666666,
+          "loop": false,
+          "status": "DISCRETE_POSE_CANDIDATE_INBETWEENS_PENDING"
+        }
+      },
+      "motion_family": "spore_body_ground",
+      "walk_semantics": "root_feet_shuffle",
+      "art_acceptance": "PENDING_ROOT_AND_HUMAN_REVIEW",
+      "runtime_integration": "OVERLAY_CANDIDATE_ONLY",
+      "continuous_animation_complete": false,
+      "pose_manifest": "native/Art/GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/pose_clip_manifest_candidate_r001.json",
+      "stateFrameContracts": {
+        "walk": {
+          "texture_canvas_px": [
+            512,
+            512
+          ],
+          "anchor_px": [
+            256,
+            460
+          ],
+          "fps": 12,
+          "loop": true,
+          "motion_semantics": "four_legged_mushroom_trot",
+          "status": "UNAPPROVED_VISUAL_ESTIMATE",
+          "contract_path": "GeneratedCandidates/ACT_E_R02_01/walk_cycle_r005/walk_cycle_manifest_r005.json"
+        }
+      },
+      "candidate_notes": {
+        "walk_candidate": "walk_cycle_r005",
+        "continuous_animation_complete": false,
+        "art_acceptance": "PENDING_ROOT_AND_HUMAN_REVIEW",
+        "walk_review_path": "GeneratedCandidates/ACT_E_R02_01/walk_cycle_r005/qa_contact_sheet_walk_r005.jpg",
+        "limitations": [
+          "Nine separated gait poses; root has observed runtime pose changes, but spots/body width vary and natural cyclic contact remains unaccepted.",
+          "All non-walk states retain the existing pose candidates."
+        ]
+      },
+      "complete_animation": false
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "status": "SOURCE_LAYER_ORDER_CANDIDATE_REVIEW_REQUIRED",
+  "complete_layered_background": false,
+  "entries": {
+    "BG_R01_BOSS": {
+      "kind": "background_kit",
+      "selectedPNG": null,
+      "sceneLayers": [
+        {
+          "path": "Backgrounds/BG_R01_BOSS/BG_R01_BOSS_backforest_v01.png",
+          "z": -20
+        },
+        {
+          "path": "Backgrounds/BG_R01_BOSS/BG_R01_BOSS_terrain_stone_v01.png",
+          "z": -10
+        },
+        {
+          "path": "Backgrounds/BG_R01_BOSS/BG_R01_BOSS_foreground_v01.png",
+          "z": 12
+        }
+      ],
+      "status": "SOURCE_LAYERED_CANDIDATE_MASTER_EXCLUDED_FROM_RUNTIME_STACK",
+      "draw_order_contract": "backforest(-20) -> terrain_stone(-10) -> actors_and_vfx(runtime actor z around 9-10) -> foreground(12)",
+      "comparison_master_path": "Backgrounds/BG_R01_BOSS/BG_R01_BOSS_master_v01.png",
+      "comparison_master_in_scene_layers": false,
+      "sourceContract": "docs/design/archive/dots_reports/package_snapshot/backgrounds/BG_R01_BOSS/README.md; docs/design/archive/dots_reports/package_snapshot/docs/IMPORT_SETTINGS_AND_LIMITS.md",
+      "registration": "COMMON_941x1672_TOPLEFT_SOURCE_SPACE",
+      "humanAdoption": "PENDING",
+      "runtimeVisualReview": "PENDING_SIMULATOR_CAPTURE",
+      "knownLimitations": [
+        "Layer assets are preserved source candidates; prior QA reports terrain registration drift and dense foreground corners.",
+        "This overlay corrects the layer list contract only; it does not revise source pixels or establish natural actor occlusion.",
+        "Parallax, overscan, actor/telegraph placement, and device performance remain unverified."
+      ]
+    }
+  }
+}

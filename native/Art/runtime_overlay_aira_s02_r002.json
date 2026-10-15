@@ -1,0 +1,651 @@
+{
+  "status": "UNAPPROVED_CANDIDATE_FOR_ISOLATED_FIT_QA",
+  "scope": "Replace only DETAIL_EQ_S_02 selected detail asset; preserve old candidate and all other IDs, especially S03. No gameplay/stat changes.",
+  "mergePriority": 100,
+  "humanApproval": false,
+  "newProductCount": 0,
+  "entries": {
+    "DETAIL_EQ_S_02": {
+      "kind": "equipment_small_detail",
+      "assetID": "DETAIL_EQ_S_02",
+      "equipmentID": "EQ_S_02",
+      "selectedPNG": "GeneratedCandidates/EquipmentDetails/aira_hammer_inlay_r002/DETAIL_EQ_S_02_inlay_candidate_r002.png",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "canvas_px": [
+        256,
+        256
+      ],
+      "part_anchor_px": [
+        128,
+        128
+      ],
+      "attachmentSlotCandidate": "HAMMER_HEAD_FURNACE_CORE_INLAY",
+      "status": "UNAPPROVED_HAMMER_INLAY_CANDIDATE_R002",
+      "scope": "existing EQ_S_02 appearance correction only",
+      "humanAdoption": "PENDING",
+      "runtimeIntegrationStatus": "CANDIDATE_SELECTION_FOR_ISOLATED_QA_ONLY",
+      "visualFitStatus": "PENDING_ROOT_REVIEW_AND_RUNTIME_FIT",
+      "preserveActorOrWeaponBase": true,
+      "description": "Small faceted orange furnace-core crystal with four tiny metal claws; no square plate or icon frame.",
+      "sourceIcon": "GearIcons/ICO_EQ_S_02/ICO_EQ_S_02__128__r001.png",
+      "sourceIconSHA256": "91cb796fd9ac004ed8b2672d2f96e07c75b414019949a783c181a0fd80e6a86e",
+      "supersedesCandidate": {
+        "assetID": "DETAIL_EQ_S_02",
+        "selectedPNG": "GeneratedCandidates/EquipmentDetails/details_r003/DETAIL_EQ_S_02__candidate_r001.png",
+        "sha256": "1a1900e5a938f58363ce5a9877fae0395f3779a6ce7bc1e80bfe6b44f0337435"
+      },
+      "candidateManifestPath": "native/Art/GeneratedCandidates/EquipmentDetails/aira_hammer_inlay_r002/candidate_manifest_r002.json",
+      "candidateManifestSHA256": "968caf121d8e73fa1288419a0ab1b7990ce40fb37068087a140d0073ed16c355",
+      "candidatePNG_SHA256": "9d1a20f3fedf5cda02845a769c5757cb5e97b925082727bc1ef770f71548d774",
+      "frameRegistrationCandidate": {
+        "status": "UNAPPROVED_SOURCE_FRAME_ANCHORS_NOT_RUNTIME_FIT",
+        "key": [
+          "actorID",
+          "runtimeBodyAssetID",
+          "runtimeClip",
+          "runtimeClipLocalFrameIndex"
+        ],
+        "coordinate_origin": "top_left_canvas_pixels",
+        "rows": [
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_00.png",
+            "sourcePath": "native/GeneratedArt/party_rest_r001/AIRA__rest_00.png",
+            "sourceSHA256": "0169baa14bf0dabb0a5a5ce9a9513649b41d0411af5a1eeac359d9fbe5d4de82",
+            "sourceRowState": "idle",
+            "runtimeClip": "idle",
+            "frameIndex": 0,
+            "sourceCanvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              212,
+              199
+            ],
+            "anchor_normalized_top_left": [
+              0.6625,
+              0.777344
+            ],
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_01.png",
+            "sourcePath": "native/GeneratedArt/party_rest_r001/AIRA__rest_01.png",
+            "sourceSHA256": "fc76df184341e3793eab4827ba3ef618e5c3cb4896497f987dcea89264adb19e",
+            "sourceRowState": "idle",
+            "runtimeClip": "idle",
+            "frameIndex": 1,
+            "sourceCanvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              211,
+              200
+            ],
+            "anchor_normalized_top_left": [
+              0.659375,
+              0.78125
+            ],
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_02.png",
+            "sourcePath": "native/GeneratedArt/party_rest_r001/AIRA__rest_02.png",
+            "sourceSHA256": "1f63421f2c86af9bce96aa89b24f7efeb996cb08fbc915852d5d680fde082894",
+            "sourceRowState": "idle",
+            "runtimeClip": "idle",
+            "frameIndex": 2,
+            "sourceCanvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              209,
+              197
+            ],
+            "anchor_normalized_top_left": [
+              0.653125,
+              0.769531
+            ],
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_0.png",
+            "sourcePath": "native/GeneratedArt/party_walk_r001/AIRA__walk_0.png",
+            "sourceSHA256": "4d8e9b5eca47f5881a34b153f32c610bb1738f7f4e84754dc53269aa156504b6",
+            "sourceRowState": "walk",
+            "runtimeClip": "walk",
+            "frameIndex": 0,
+            "sourceCanvas_px": [
+              256,
+              256
+            ],
+            "anchor_px_top_left": [
+              193,
+              208
+            ],
+            "anchor_normalized_top_left": [
+              0.753906,
+              0.8125
+            ],
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_1.png",
+            "sourcePath": "native/GeneratedArt/party_walk_r001/AIRA__walk_1.png",
+            "sourceSHA256": "55f44337652f718d2d3625ffcbef13cf10f3852e68a9a91ae38a4496ff8c73f4",
+            "sourceRowState": "walk",
+            "runtimeClip": "walk",
+            "frameIndex": 1,
+            "sourceCanvas_px": [
+              256,
+              256
+            ],
+            "anchor_px_top_left": [
+              193,
+              208
+            ],
+            "anchor_normalized_top_left": [
+              0.753906,
+              0.8125
+            ],
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_2.png",
+            "sourcePath": "native/GeneratedArt/party_walk_r001/AIRA__walk_2.png",
+            "sourceSHA256": "edd703655de1420b46e5a24253aae99871e8d101b89ea935ca488bb53830e077",
+            "sourceRowState": "walk",
+            "runtimeClip": "walk",
+            "frameIndex": 2,
+            "sourceCanvas_px": [
+              256,
+              256
+            ],
+            "anchor_px_top_left": [
+              190,
+              208
+            ],
+            "anchor_normalized_top_left": [
+              0.742188,
+              0.8125
+            ],
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_3.png",
+            "sourcePath": "native/GeneratedArt/party_walk_r001/AIRA__walk_3.png",
+            "sourceSHA256": "c9bf20184a233fd50ffdd26f6820edbb1eb2566366739619790bb5bb4ea0d0c6",
+            "sourceRowState": "walk",
+            "runtimeClip": "walk",
+            "frameIndex": 3,
+            "sourceCanvas_px": [
+              256,
+              256
+            ],
+            "anchor_px_top_left": [
+              193,
+              207
+            ],
+            "anchor_normalized_top_left": [
+              0.753906,
+              0.808594
+            ],
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_4.png",
+            "sourcePath": "native/GeneratedArt/party_walk_r001/AIRA__walk_4.png",
+            "sourceSHA256": "6f4b8bae624a94a3a6acf0d226283ab7d1beaaaeb9f63128f58ddcc103272910",
+            "sourceRowState": "walk",
+            "runtimeClip": "walk",
+            "frameIndex": 4,
+            "sourceCanvas_px": [
+              256,
+              256
+            ],
+            "anchor_px_top_left": [
+              193,
+              208
+            ],
+            "anchor_normalized_top_left": [
+              0.753906,
+              0.8125
+            ],
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_5.png",
+            "sourcePath": "native/GeneratedArt/party_walk_r001/AIRA__walk_5.png",
+            "sourceSHA256": "18adee37bbce247e84dc48844c70f63464683d6f7e6bb48b1e1373b04c556a00",
+            "sourceRowState": "walk",
+            "runtimeClip": "walk",
+            "frameIndex": 5,
+            "sourceCanvas_px": [
+              256,
+              256
+            ],
+            "anchor_px_top_left": [
+              202,
+              203
+            ],
+            "anchor_normalized_top_left": [
+              0.789062,
+              0.792969
+            ],
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_6.png",
+            "sourcePath": "native/GeneratedArt/party_walk_r001/AIRA__walk_6.png",
+            "sourceSHA256": "9ac868e8dcc5c6e268b4cd2372bdcf8206fb778850b4ef5d461ca5cefcaad83c",
+            "sourceRowState": "walk",
+            "runtimeClip": "walk",
+            "frameIndex": 6,
+            "sourceCanvas_px": [
+              256,
+              256
+            ],
+            "anchor_px_top_left": [
+              193,
+              208
+            ],
+            "anchor_normalized_top_left": [
+              0.753906,
+              0.8125
+            ],
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_7.png",
+            "sourcePath": "native/GeneratedArt/party_walk_r001/AIRA__walk_7.png",
+            "sourceSHA256": "59edcd8212f9f5946daf6ef578c1e695fc4bcfba437572691a4806841678e0cd",
+            "sourceRowState": "walk",
+            "runtimeClip": "walk",
+            "frameIndex": 7,
+            "sourceCanvas_px": [
+              256,
+              256
+            ],
+            "anchor_px_top_left": [
+              193,
+              208
+            ],
+            "anchor_normalized_top_left": [
+              0.753906,
+              0.8125
+            ],
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_8.png",
+            "sourcePath": "native/GeneratedArt/party_walk_r001/AIRA__walk_8.png",
+            "sourceSHA256": "14195b5b08605dd7e4e2b4b9c7d8c0223cadba2cc3b037c33c0df1a3a17fad50",
+            "sourceRowState": "walk",
+            "runtimeClip": "walk",
+            "frameIndex": 8,
+            "sourceCanvas_px": [
+              256,
+              256
+            ],
+            "anchor_px_top_left": [
+              193,
+              208
+            ],
+            "anchor_normalized_top_left": [
+              0.753906,
+              0.8125
+            ],
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_00.png",
+            "sourcePath": "native/GeneratedArt/party_attack_r001/AIRA__attack_00.png",
+            "sourceSHA256": "50cbd3a45a3aa5f3a9c938f77fd59dbd8c850328beeec8d47a0b8cfa41072044",
+            "sourceRowState": "anticipate",
+            "runtimeClip": "anticipate",
+            "frameIndex": 0,
+            "sourceCanvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              212,
+              199
+            ],
+            "anchor_normalized_top_left": [
+              0.6625,
+              0.777344
+            ],
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_01.png",
+            "sourcePath": "native/GeneratedArt/party_attack_r001/AIRA__attack_01.png",
+            "sourceSHA256": "7a0dd13d7ba6e2222b4edfb0ad3b04a37f90249a04b34a0e7558095d7b9d51f8",
+            "sourceRowState": "anticipate",
+            "runtimeClip": "anticipate",
+            "frameIndex": 1,
+            "sourceCanvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              80,
+              86
+            ],
+            "anchor_normalized_top_left": [
+              0.25,
+              0.335938
+            ],
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_02.png",
+            "sourcePath": "native/GeneratedArt/party_attack_r001/AIRA__attack_02.png",
+            "sourceSHA256": "be07aa515ab14e82589e04a32053734b1c239cb4bc0589d3de3acfd022a38fe3",
+            "sourceRowState": "anticipate",
+            "runtimeClip": "anticipate",
+            "frameIndex": 2,
+            "sourceCanvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              78,
+              80
+            ],
+            "anchor_normalized_top_left": [
+              0.24375,
+              0.3125
+            ],
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_03.png",
+            "sourcePath": "native/GeneratedArt/party_attack_r001/AIRA__attack_03.png",
+            "sourceSHA256": "681fd98de966891ac4f7b3ed6090c014372aa7c9a9219b1436049e9da1233958",
+            "sourceRowState": "execute",
+            "runtimeClip": "execute",
+            "frameIndex": 0,
+            "sourceCanvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              119,
+              70
+            ],
+            "anchor_normalized_top_left": [
+              0.371875,
+              0.273438
+            ],
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_04.png",
+            "sourcePath": "native/GeneratedArt/party_attack_r001/AIRA__attack_04.png",
+            "sourceSHA256": "8b61676670a6a7b2fe47def150b4190230effc065ed0655f5d2ba7bf88ae7641",
+            "sourceRowState": "execute",
+            "runtimeClip": "execute",
+            "frameIndex": 1,
+            "sourceCanvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              227,
+              207
+            ],
+            "anchor_normalized_top_left": [
+              0.709375,
+              0.808594
+            ],
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_05.png",
+            "sourcePath": "native/GeneratedArt/party_attack_r001/AIRA__attack_05.png",
+            "sourceSHA256": "973cb7f285dd545aea5178a4fd9af9e134ad96b8352d548453992add58199106",
+            "sourceRowState": "execute",
+            "runtimeClip": "execute",
+            "frameIndex": 2,
+            "sourceCanvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              227,
+              207
+            ],
+            "anchor_normalized_top_left": [
+              0.709375,
+              0.808594
+            ],
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_06.png",
+            "sourcePath": "native/GeneratedArt/party_attack_r001/AIRA__attack_06.png",
+            "sourceSHA256": "c93e4788a2ab41f62ef8a9916bc064b186269a486951ed2f439edaf982d242de",
+            "sourceRowState": "recover",
+            "runtimeClip": "recover",
+            "frameIndex": 0,
+            "sourceCanvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              211,
+              196
+            ],
+            "anchor_normalized_top_left": [
+              0.659375,
+              0.765625
+            ],
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_07.png",
+            "sourcePath": "native/GeneratedArt/party_attack_r001/AIRA__attack_07.png",
+            "sourceSHA256": "c9c926380275c17d6cd21de70b2fbd461351deb9dea95275184d54524764862d",
+            "sourceRowState": "recover",
+            "runtimeClip": "recover",
+            "frameIndex": 1,
+            "sourceCanvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              206,
+              200
+            ],
+            "anchor_normalized_top_left": [
+              0.64375,
+              0.78125
+            ],
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_08.png",
+            "sourcePath": "native/GeneratedArt/party_attack_r001/AIRA__attack_08.png",
+            "sourceSHA256": "357aca385b1033d5e15d977fd01eae58263a0f3ea02e320ce79a109037342581",
+            "sourceRowState": "recover",
+            "runtimeClip": "recover",
+            "frameIndex": 2,
+            "sourceCanvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              205,
+              200
+            ],
+            "anchor_normalized_top_left": [
+              0.640625,
+              0.78125
+            ],
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_03.png",
+            "sourcePath": "native/GeneratedArt/party_rest_r001/AIRA__rest_03.png",
+            "sourceSHA256": "e7dd10a55b4b6ad19d045a9885a0f4a614dc1d720f55dc55099e4bbb1eeadd00",
+            "sourceRowState": "hit",
+            "runtimeClip": "hit",
+            "frameIndex": 0,
+            "sourceCanvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              218,
+              190
+            ],
+            "anchor_normalized_top_left": [
+              0.68125,
+              0.742188
+            ],
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_04.png",
+            "sourcePath": "native/GeneratedArt/party_rest_r001/AIRA__rest_04.png",
+            "sourceSHA256": "a3d53259739e79f7af2b10e4d975d4762a4365cbc86c176cbf5a7fead5a983e3",
+            "sourceRowState": "hit",
+            "runtimeClip": "hit",
+            "frameIndex": 1,
+            "sourceCanvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              224,
+              195
+            ],
+            "anchor_normalized_top_left": [
+              0.7,
+              0.761719
+            ],
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_05.png",
+            "sourcePath": "native/GeneratedArt/party_rest_r001/AIRA__rest_05.png",
+            "sourceSHA256": "f0a087417c4320a24aa9879974fbc4263cf6c2e195237639c88467c634da5e7c",
+            "sourceRowState": "hit",
+            "runtimeClip": "hit",
+            "frameIndex": 2,
+            "sourceCanvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              224,
+              195
+            ],
+            "anchor_normalized_top_left": [
+              0.7,
+              0.761719
+            ],
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_06.png",
+            "sourcePath": "native/GeneratedArt/party_rest_r001/AIRA__rest_06.png",
+            "sourceSHA256": "2fa5371afc1a04d2f2c85ddb177852c52fc4f6c2414c25976c2426a03d5cc3ba",
+            "sourceRowState": "resolve",
+            "runtimeClip": "resolve",
+            "frameIndex": 0,
+            "sourceCanvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              98,
+              207
+            ],
+            "anchor_normalized_top_left": [
+              0.30625,
+              0.808594
+            ],
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_07.png",
+            "sourcePath": "native/GeneratedArt/party_rest_r001/AIRA__rest_07.png",
+            "sourceSHA256": "09116d4094ffefbd11ff6fb7826884eff362b8f00457aefa0be9328236ad2bd8",
+            "sourceRowState": "resolve",
+            "runtimeClip": "resolve",
+            "frameIndex": 1,
+            "sourceCanvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              85,
+              207
+            ],
+            "anchor_normalized_top_left": [
+              0.265625,
+              0.808594
+            ],
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_08.png",
+            "sourcePath": "native/GeneratedArt/party_rest_r001/AIRA__rest_08.png",
+            "sourceSHA256": "85fadc481cc8943d2999f8477a5a928d69520d418180c15eee2f3e0de9b4b36e",
+            "sourceRowState": "resolve",
+            "runtimeClip": "resolve",
+            "frameIndex": 2,
+            "sourceCanvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              86,
+              207
+            ],
+            "anchor_normalized_top_left": [
+              0.26875,
+              0.808594
+            ],
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,258 @@
+{
+  "actor_id": "ACT_B_R03_A",
+  "revision": "motion_r001",
+  "status": "UNAPPROVED_GENERATED_MISSING_STATE_CANDIDATE",
+  "source_reference": "native/Art/Enemies/ACT_B_R03_A/idle/000.png",
+  "source_reference_sha256": "0765a7b17589de01b8a69e31a34de0f89f3c4af21a7400486f983871a3be6830",
+  "imagegen_source_atlas_path": "native/Art/GeneratedCandidates/ACT_B_R03_A/pose_candidate_motion_r001/imagegen_atlas_r001.png",
+  "imagegen_source_atlas_sha256": "0013c6100b5132690df2d043194079038aa0263af725c96508ddca06e5e4eba3",
+  "source_atlas_canvas_px": [
+    1536,
+    1024
+  ],
+  "runtime_canvas_px": [
+    1400,
+    1024
+  ],
+  "anchor_px": [
+    700,
+    880
+  ],
+  "anchor_status": "DERIVED_FROM_EXISTING_SOURCE_REGISTRATION_CANDIDATE",
+  "motion_family": "heavy_mech_stomp",
+  "pose_frames": [
+    {
+      "pose": "idle_a",
+      "path": "native/Art/GeneratedCandidates/ACT_B_R03_A/pose_candidate_motion_r001/frames_native/idle_a.png",
+      "sha256": "6303bc55c838e29cc274993a17dccdbdad10285b4a86eddd4b578ed5407afadd",
+      "source_bounds_xyxy": [
+        48,
+        36,
+        515,
+        319
+      ],
+      "target_canvas_px": [
+        1400,
+        1024
+      ],
+      "target_visible_bounds_xyxy": [
+        304,
+        391,
+        1114,
+        880
+      ],
+      "anchor_px": [
+        700,
+        880
+      ]
+    },
+    {
+      "pose": "idle_b",
+      "path": "native/Art/GeneratedCandidates/ACT_B_R03_A/pose_candidate_motion_r001/frames_native/idle_b.png",
+      "sha256": "30c5d4ffeb12ec3d7490e9485cac44ec04445343575caffaf45e0fdb7ad0edff",
+      "source_bounds_xyxy": [
+        563,
+        47,
+        1005,
+        317
+      ],
+      "target_canvas_px": [
+        1400,
+        1024
+      ],
+      "target_visible_bounds_xyxy": [
+        304,
+        391,
+        1114,
+        880
+      ],
+      "anchor_px": [
+        700,
+        880
+      ]
+    },
+    {
+      "pose": "walk_a",
+      "path": "native/Art/GeneratedCandidates/ACT_B_R03_A/pose_candidate_motion_r001/frames_native/walk_a.png",
+      "sha256": "7569484def2161e519a4a7e14dd2e462a4e121f93eacd83e9f3b5520cb6c58ad",
+      "source_bounds_xyxy": [
+        1055,
+        47,
+        1490,
+        320
+      ],
+      "target_canvas_px": [
+        1400,
+        1024
+      ],
+      "target_visible_bounds_xyxy": [
+        304,
+        391,
+        1114,
+        880
+      ],
+      "anchor_px": [
+        700,
+        880
+      ]
+    },
+    {
+      "pose": "walk_b",
+      "path": "native/Art/GeneratedCandidates/ACT_B_R03_A/pose_candidate_motion_r001/frames_native/walk_b.png",
+      "sha256": "33bb8ef91cb8e358cae263980b73a7097ffd840260ace08f7a8b2a2ad943294f",
+      "source_bounds_xyxy": [
+        1069,
+        344,
+        1490,
+        668
+      ],
+      "target_canvas_px": [
+        1400,
+        1024
+      ],
+      "target_visible_bounds_xyxy": [
+        304,
+        391,
+        1114,
+        880
+      ],
+      "anchor_px": [
+        700,
+        880
+      ]
+    },
+    {
+      "pose": "anticipate",
+      "path": "native/Art/GeneratedCandidates/ACT_B_R03_A/pose_candidate_motion_r001/frames_native/anticipate.png",
+      "sha256": "ae53d6ae04ccba2c4a580d76269effdcaf4c957097b45a765a03a75b85fa520d",
+      "source_bounds_xyxy": [
+        566,
+        369,
+        971,
+        654
+      ],
+      "target_canvas_px": [
+        1400,
+        1024
+      ],
+      "target_visible_bounds_xyxy": [
+        304,
+        391,
+        1114,
+        880
+      ],
+      "anchor_px": [
+        700,
+        880
+      ]
+    },
+    {
+      "pose": "execute",
+      "path": "native/Art/GeneratedCandidates/ACT_B_R03_A/pose_candidate_motion_r001/frames_native/execute.png",
+      "sha256": "9b1b06e825a76c45a165813314957e4d80d0c52c8fc243b24d85e01d31e3ef4d",
+      "source_bounds_xyxy": [
+        53,
+        385,
+        507,
+        654
+      ],
+      "target_canvas_px": [
+        1400,
+        1024
+      ],
+      "target_visible_bounds_xyxy": [
+        304,
+        391,
+        1114,
+        880
+      ],
+      "anchor_px": [
+        700,
+        880
+      ]
+    },
+    {
+      "pose": "recover",
+      "path": "native/Art/GeneratedCandidates/ACT_B_R03_A/pose_candidate_motion_r001/frames_native/recover.png",
+      "sha256": "3e0e9fa369436bf2f7a6827c9b4ac22c239f37033a5e0ab1de26303538408523",
+      "source_bounds_xyxy": [
+        72,
+        699,
+        496,
+        977
+      ],
+      "target_canvas_px": [
+        1400,
+        1024
+      ],
+      "target_visible_bounds_xyxy": [
+        304,
+        391,
+        1114,
+        880
+      ],
+      "anchor_px": [
+        700,
+        880
+      ]
+    },
+    {
+      "pose": "hit",
+      "path": "native/Art/GeneratedCandidates/ACT_B_R03_A/pose_candidate_motion_r001/frames_native/hit.png",
+      "sha256": "e9c6590d3bb04754843c1149296eb49fb125ce1ea11b2b73cf4a9c341f468c49",
+      "source_bounds_xyxy": [
+        1073,
+        699,
+        1500,
+        977
+      ],
+      "target_canvas_px": [
+        1400,
+        1024
+      ],
+      "target_visible_bounds_xyxy": [
+        304,
+        391,
+        1114,
+        880
+      ],
+      "anchor_px": [
+        700,
+        880
+      ]
+    },
+    {
+      "pose": "resolve",
+      "path": "native/Art/GeneratedCandidates/ACT_B_R03_A/pose_candidate_motion_r001/frames_native/resolve.png",
+      "sha256": "1abcc7f719def460d6ad8adbcb2f0d3d94d4944413553d67940c9fa6294d56b7",
+      "source_bounds_xyxy": [
+        619,
+        777,
+        1011,
+        961
+      ],
+      "target_canvas_px": [
+        1400,
+        1024
+      ],
+      "target_visible_bounds_xyxy": [
+        304,
+        391,
+        1114,
+        880
+      ],
+      "anchor_px": [
+        700,
+        880
+      ]
+    }
+  ],
+  "preview_path": "native/Art/GeneratedCandidates/ACT_B_R03_A/pose_candidate_motion_r001/qa_contact_sheet_candidate_r001.jpg",
+  "preview_sha256": "d8a04965d11a7b614e0b28b2bca3b03c485ae8348310d9eb90155d696e59eba9",
+  "normalization": "Connected alpha component crop per pose, then LANCZOS nonuniform resize into existing source visible bounds; candidate-only registration match. Original art untouched.",
+  "continuous_animation_complete": false,
+  "human_adoption": "PENDING",
+  "runtime_visual_qa": "PENDING_ROOT_SIMULATOR_REVIEW",
+  "resolve_pose_source_path": "native/Art/GeneratedCandidates/ACT_B_R03_A/pose_candidate_motion_r001/resolve_candidate_imagegen_source_r001.png",
+  "resolve_pose_source_sha256": "21c5b9f512404dbf15f78c16ef8a80a4e1bc833771d022ca99a9ce10d035440f"
+}

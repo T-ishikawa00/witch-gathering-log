@@ -1,0 +1,8 @@
+{
+  "status": "TEST_ONLY_REPAIR_NOT_EXECUTED",
+  "cause": "Swift 6 prohibits capturing XCTestCase self from two async let children. Prepare Sendable observation values before starting concurrent tasks. Production candidate unchanged.",
+  "previousTestSHA256": "9c8a3b4e2c96e46cf9d0eb9c3d5b7f8d042b1cea50fed30f171f5bed10c3e98a",
+  "newTestSHA256": "a0beb5aaa4bb2eceb7268f7ffa20f45a4f3deb828a325e446c524118bd96dd47",
+  "productionSourceSHA256": "03bad37f64f990d7b344a0c6a8b60a7cfefac19f0eb864abe6aa24fadc605f9d",
+  "priorFailure": "root_test_tools_r001/RESULT.json"
+}

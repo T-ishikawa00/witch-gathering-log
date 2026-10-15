@@ -1,0 +1,29 @@
+{
+  "status": "EXACT_REVIEWED_CANDIDATES_INTEGRATED",
+  "at": "2026-10-15T07:38:02.923071+09:00",
+  "files": [
+    {
+      "candidate": "swift_candidate_r002/AuthorityClientContractR461.swift",
+      "live": "native/WitchGameCore/Sources/WitchGameCore/AuthorityClientContractR461.swift",
+      "sha256": "03bad37f64f990d7b344a0c6a8b60a7cfefac19f0eb864abe6aa24fadc605f9d"
+    },
+    {
+      "candidate": "root_candidate_r005/swift/AuthorityClientContractR461Tests.swift",
+      "live": "native/WitchGameCore/Tests/WitchGameCoreTests/AuthorityClientContractR461Tests.swift",
+      "sha256": "a0beb5aaa4bb2eceb7268f7ffa20f45a4f3deb828a325e446c524118bd96dd47"
+    },
+    {
+      "candidate": "root_candidate_r004/python/local_service_r461.py",
+      "live": "tools/witch_purchase_authority/local_service_r461.py",
+      "sha256": "564b0b2d4fb4c079345c36ced790507c1d722e1b1436dec7ba9e6ba967fb84fe"
+    },
+    {
+      "candidate": "root_candidate_r004/python/tests/test_local_service_r461.py",
+      "live": "tools/witch_purchase_authority/tests/test_local_service_r461.py",
+      "sha256": "d1c4db90f54bf27fb19ce3f1268de359d3efaee96f0c3256f1bc14b291b2bb50"
+    }
+  ],
+  "scope": "Inert typed client and no-network Sandbox rehearsal facade only. No UI enablement, production authorization, GameSnapshot mutation, transport or authentication implementation.",
+  "freeBytes": 133686669312,
+  "preflightErratum": "First attempt had transposed literal service pin; assertion stopped before any file writes. Corrected to independently recorded 564b0b...dec7... pin."
+}

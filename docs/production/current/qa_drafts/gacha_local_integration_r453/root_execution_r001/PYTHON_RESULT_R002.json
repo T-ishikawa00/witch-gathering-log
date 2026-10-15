@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "exitCode": 0,
+  "testSummary": [
+    [
+      "73",
+      "0.568"
+    ]
+  ],
+  "passed": 73,
+  "skipped": 0,
+  "elapsedSeconds": 1.2031455,
+  "sourcePins": [
+    {
+      "path": "tools/witch_purchase_authority/authority.py",
+      "sha256": "3967d70f3bb4f5d90e1afec789114503250e3df41d9bb6efb6972531f5d06a98"
+    },
+    {
+      "path": "tools/witch_purchase_authority/local_delivery_r453.py",
+      "sha256": "d0c254bfcbf682c31dbd82cbe87c298e0207410509bfb0e139dafe1093beb8a4"
+    },
+    {
+      "path": "tools/witch_purchase_authority/tests/test_local_delivery_r453.py",
+      "sha256": "3fb400f5d6b3f9f5ab8569af181dbbd0fb022d12f70623ee946cae4a76df0959"
+    }
+  ],
+  "sourceUnchanged": true,
+  "manifestSHA256": "27cd066a0d9cc8d95861b5783ebc502873b52f0ff6b2019e691d4e4944e17b10",
+  "logSHA256": "c59d4ec7b036e197255d078eea6af63c9603477d357d0f54e5374aa09a618de6",
+  "command": [
+    "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tools/witch_purchase_authority/tests",
+    "-v"
+  ]
+}

@@ -1,8 +1,18 @@
 import XCTest
+import CryptoKit
 final class WitchUITests:XCTestCase {
     let app=XCUIApplication()
     override func setUpWithError() throws {continueAfterFailure=false;app.launchArguments=["--qa-isolated","--qa-save-key=ui-"+UUID().uuidString];app.launch()}
-    func capture(_ name:String){let attachment=XCTAttachment(screenshot:app.screenshot());attachment.name=name;attachment.lifetime = .keepAlways;add(attachment)}
+    func capture(_ name:String){
+        let attachment=XCTAttachment(screenshot:app.screenshot());attachment.name=name;attachment.lifetime = .keepAlways;add(attachment)
+        var fields=["testCase":self.name,"capture":name,"launchArguments":app.launchArguments.joined(separator:" ")]
+        if let executable=Bundle(for:type(of:self)).executableURL,let data=try? Data(contentsOf:executable) {
+            fields["testExecutableSHA256"]=SHA256.hash(data:data).map{String(format:"%02x",$0)}.joined()
+        }
+        if let data=try? JSONSerialization.data(withJSONObject:fields,options:[.sortedKeys,.prettyPrinted]),let text=String(data:data,encoding:.utf8) {
+            let identity=XCTAttachment(string:text);identity.name=name+"_identity";identity.lifetime = .keepAlways;add(identity)
+        }
+    }
     func openExploreControls() {
         let button=app.buttons["explore_controls"]
         if button.waitForExistence(timeout:5) { button.tap() }
@@ -438,7 +448,11 @@ final class WitchUITests:XCTestCase {
         XCTAssertTrue(alert.waitForExistence(timeout:10),"Exhausted revision should be rejected by Core and shown as a recoverable error")
         XCTAssertTrue(alert.staticTexts["この操作の条件をまだ満たしていません。装備・素材・探索の進み具合をご確認ください。"].exists)
         capture("exhausted_revision_rejected")
-        alert.buttons["閉じる"].tap()
+        // SwiftUI can expose the same alert action as nested accessibility nodes.
+        // Match its visible action within this alert instead of requiring one node.
+        let dismiss = alert.buttons.matching(NSPredicate(format:"label == %@","閉じる")).firstMatch
+        XCTAssertTrue(dismiss.waitForExistence(timeout:5))
+        dismiss.tap()
         app.buttons["settings"].tap()
         XCTAssertEqual(revisionLabel.label,initialRevision,"Rejected operation must leave the snapshot revision unchanged")
         app.buttons["閉じる"].tap()
@@ -654,10 +668,30 @@ final class WitchUITests:XCTestCase {
     }
     func testAppearancePersistsAcrossRelaunch(){
         XCTAssertTrue(app.buttons["tab_仲間"].waitForExistence(timeout:15));app.buttons["tab_仲間"].tap();app.buttons["試着"].tap()
-        app.buttons["appearance_ERNA_TRAVEL"].tap();XCTAssertTrue(app.buttons["appearance_ERNA_TRAVEL"].waitForExistence(timeout:5))
-        app.buttons["appearance_STAFF_MOON"].tap();capture("wardrobe")
+        func action(_ id:String,_ label:String)->XCUIElement {
+            app.buttons.matching(identifier:"appearance_"+id)
+                .matching(NSPredicate(format:"label == %@",label)).firstMatch
+        }
+        func reveal(_ element:XCUIElement) {
+            let scroll=app.scrollViews["sheet_scroll_試着"]
+            for _ in 0..<8 {
+                if element.exists && element.isHittable { return }
+                scroll.swipeUp()
+            }
+        }
+        for id in ["ERNA_TRAVEL","STAFF_MOON"] {
+            let use=action(id,"この見た目を使う")
+            reveal(use);XCTAssertTrue(use.waitForExistence(timeout:5));XCTAssertTrue(use.isHittable)
+            use.tap()
+            XCTAssertTrue(action(id,"選択中").waitForExistence(timeout:8),"Applying an appearance must complete before relaunch")
+        }
+        capture("wardrobe")
         app.buttons["閉じる"].tap();capture("detail_costume_weapon")
         app.terminate();app.launch();XCTAssertTrue(app.buttons["tab_仲間"].waitForExistence(timeout:15));app.buttons["tab_仲間"].tap();app.buttons["試着"].tap()
-        XCTAssertEqual(app.buttons["appearance_ERNA_TRAVEL"].label,"選択中");XCTAssertEqual(app.buttons["appearance_STAFF_MOON"].label,"選択中")
+        for id in ["ERNA_TRAVEL","STAFF_MOON"] {
+            let selected=action(id,"選択中");reveal(selected)
+            XCTAssertTrue(selected.waitForExistence(timeout:5));XCTAssertFalse(selected.isEnabled)
+        }
+        capture("wardrobe_persisted")
     }
 }

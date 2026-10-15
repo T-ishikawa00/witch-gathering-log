@@ -1,0 +1,349 @@
+{
+  "schema": "witch.enemy.attack_cycle_candidate.v1",
+  "actorId": "ACT_B_R01_A",
+  "revision": "attack_cycle_candidate_r001",
+  "status": "UNAPPROVED_AUTHORED_ATTACK_CYCLE_CANDIDATE",
+  "attackFamily": "low quadruped tusk-led charge",
+  "referenceStill": "native/Art/ActorStills/ACT_B_R01_A/ACT_B_R01_A__still__B_R01_A_base_v2.png",
+  "referenceStillSHA256": "c8d4d9a88b3db897bab69f13c13189d536eef62b31de451fd851d22adf972511",
+  "imagegenAtlasSource": "/Users/PUBLIC_USER/.codex/generated_images/01a12399-b8c7-76a0-adb6-39606fe83b65/exec-d8b11ad5-2502-48c1-996c-16bc6d41ad64.png",
+  "imagegenAtlasPacked": "native/Art/GeneratedCandidates/ACT_B_R01_A/attack_cycle_candidate_r001/imagegen_atlas_r001.png",
+  "atlasSHA256": "4eb285361f2c76e1e8a006c143999640e4cf2ba892b82c9ccae5062f83e0f19f",
+  "atlasPx": [
+    1254,
+    1254
+  ],
+  "gridYEdgesPx": [
+    0,
+    440,
+    820,
+    1254
+  ],
+  "gridXEdgesByRowPx": [
+    [
+      0,
+      436,
+      858,
+      1254
+    ],
+    [
+      0,
+      406,
+      874,
+      1254
+    ],
+    [
+      0,
+      435,
+      842,
+      1254
+    ]
+  ],
+  "baselineRestFrame": "native/Art/GeneratedCandidates/ACT_B_R01_A/rest_hit_resolve_r001/frames/idle_000.png",
+  "baselineAlpha16HeightPx": 333,
+  "windupAlpha16MedianHeightPx": 220,
+  "uniformPackScale": 1.2953367875647668,
+  "displayScaleCommonAcrossAllAttackStates": 1.168527,
+  "canvas_px": [
+    512,
+    512
+  ],
+  "anchor": [
+    256,
+    490
+  ],
+  "frames": [
+    {
+      "state": "anticipate",
+      "index": 0,
+      "path": "GeneratedCandidates/ACT_B_R01_A/attack_cycle_candidate_r001/frames/anticipate_000.png",
+      "sha256": "35db3ce088bdaff6d91cec1ffa3432b6992fef5a4c063bcdec4350d8316e61a4",
+      "source_cell_xyxy": [
+        0,
+        0,
+        436,
+        440
+      ],
+      "source_alpha16_bbox": [
+        63,
+        143,
+        386,
+        363
+      ],
+      "source_alpha16_margin_px": 50,
+      "packed_alpha16_bbox": [
+        47,
+        206,
+        466,
+        490
+      ],
+      "translation_px": [
+        -34,
+        20
+      ]
+    },
+    {
+      "state": "anticipate",
+      "index": 1,
+      "path": "GeneratedCandidates/ACT_B_R01_A/attack_cycle_candidate_r001/frames/anticipate_001.png",
+      "sha256": "e02995386a7a539d61db8335a69d6ebf4661bc0c8d0fdcb4161264ddc345ed76",
+      "source_cell_xyxy": [
+        436,
+        0,
+        858,
+        440
+      ],
+      "source_alpha16_bbox": [
+        51,
+        151,
+        375,
+        367
+      ],
+      "source_alpha16_margin_px": 47,
+      "packed_alpha16_bbox": [
+        46,
+        211,
+        466,
+        490
+      ],
+      "translation_px": [
+        -20,
+        15
+      ]
+    },
+    {
+      "state": "anticipate",
+      "index": 2,
+      "path": "GeneratedCandidates/ACT_B_R01_A/attack_cycle_candidate_r001/frames/anticipate_002.png",
+      "sha256": "c713ea4ac9c1b85b29130bf0b02931f0c1366a4be2bcb745a7a4b42ca3bf6337",
+      "source_cell_xyxy": [
+        858,
+        0,
+        1254,
+        440
+      ],
+      "source_alpha16_bbox": [
+        48,
+        150,
+        342,
+        372
+      ],
+      "source_alpha16_margin_px": 48,
+      "packed_alpha16_bbox": [
+        65,
+        203,
+        447,
+        490
+      ],
+      "translation_px": [
+        3,
+        8
+      ]
+    },
+    {
+      "state": "execute",
+      "index": 0,
+      "path": "GeneratedCandidates/ACT_B_R01_A/attack_cycle_candidate_r001/frames/execute_000.png",
+      "sha256": "8f8c11e7e950be1125633ab60dfcc3dddbfbed532faa87c29c3d1027709cca34",
+      "source_cell_xyxy": [
+        0,
+        440,
+        406,
+        820
+      ],
+      "source_alpha16_bbox": [
+        56,
+        84,
+        362,
+        319
+      ],
+      "source_alpha16_margin_px": 44,
+      "packed_alpha16_bbox": [
+        58,
+        185,
+        454,
+        490
+      ],
+      "translation_px": [
+        -15,
+        76
+      ]
+    },
+    {
+      "state": "execute",
+      "index": 1,
+      "path": "GeneratedCandidates/ACT_B_R01_A/attack_cycle_candidate_r001/frames/execute_001.png",
+      "sha256": "20e96004043f5b0775887612eba2f3307ad1eb80e24bd399062d760da461f2d6",
+      "source_cell_xyxy": [
+        406,
+        440,
+        874,
+        820
+      ],
+      "source_alpha16_bbox": [
+        44,
+        106,
+        430,
+        308
+      ],
+      "source_alpha16_margin_px": 38,
+      "packed_alpha16_bbox": [
+        6,
+        229,
+        507,
+        490
+      ],
+      "translation_px": [
+        -50,
+        91
+      ]
+    },
+    {
+      "state": "execute",
+      "index": 2,
+      "path": "GeneratedCandidates/ACT_B_R01_A/attack_cycle_candidate_r001/frames/execute_002.png",
+      "sha256": "2d08ef7bd00814991d965c755c7f95ddec1c82f0669a2948145678bea55ef95d",
+      "source_cell_xyxy": [
+        874,
+        440,
+        1254,
+        820
+      ],
+      "source_alpha16_bbox": [
+        38,
+        74,
+        343,
+        316
+      ],
+      "source_alpha16_margin_px": 37,
+      "packed_alpha16_bbox": [
+        59,
+        176,
+        453,
+        490
+      ],
+      "translation_px": [
+        9,
+        81
+      ]
+    },
+    {
+      "state": "recover",
+      "index": 0,
+      "path": "GeneratedCandidates/ACT_B_R01_A/attack_cycle_candidate_r001/frames/recover_000.png",
+      "sha256": "167c0dc4ee26638872f641d4bb9cbe716c7fcd333971ef14d103e7143bbeb973",
+      "source_cell_xyxy": [
+        0,
+        820,
+        435,
+        1254
+      ],
+      "source_alpha16_bbox": [
+        57,
+        75,
+        391,
+        308
+      ],
+      "source_alpha16_margin_px": 44,
+      "packed_alpha16_bbox": [
+        40,
+        188,
+        471,
+        490
+      ],
+      "translation_px": [
+        -34,
+        91
+      ]
+    },
+    {
+      "state": "recover",
+      "index": 1,
+      "path": "GeneratedCandidates/ACT_B_R01_A/attack_cycle_candidate_r001/frames/recover_001.png",
+      "sha256": "53eebd65a045e999321d32ac3430668cc6112872e51046b90dcff7c341026556",
+      "source_cell_xyxy": [
+        435,
+        820,
+        842,
+        1254
+      ],
+      "source_alpha16_bbox": [
+        45,
+        62,
+        366,
+        311
+      ],
+      "source_alpha16_margin_px": 41,
+      "packed_alpha16_bbox": [
+        48,
+        168,
+        464,
+        490
+      ],
+      "translation_px": [
+        -10,
+        87
+      ]
+    },
+    {
+      "state": "recover",
+      "index": 2,
+      "path": "GeneratedCandidates/ACT_B_R01_A/attack_cycle_candidate_r001/frames/recover_002.png",
+      "sha256": "4a3286bcc6905d2f7c0b511c1be14b5b10ce79a0ac1b9e1dc33a56023fb0deae",
+      "source_cell_xyxy": [
+        842,
+        820,
+        1254,
+        1254
+      ],
+      "source_alpha16_bbox": [
+        41,
+        97,
+        367,
+        316
+      ],
+      "source_alpha16_margin_px": 41,
+      "packed_alpha16_bbox": [
+        45,
+        207,
+        468,
+        490
+      ],
+      "translation_px": [
+        -8,
+        81
+      ]
+    }
+  ],
+  "contactSheet": "native/Art/GeneratedCandidates/ACT_B_R01_A/attack_cycle_candidate_r001/qa_contact_dark.jpg",
+  "overlay": "native/Art/runtime_overlay_zzzzzzz_act_b_r01_a_attack_cycle_r001.json",
+  "overlaySHA256": "128ccc66ea199b3d5a8fe98f0a4d6211d18b5e55977d669475bd21fb606b711f",
+  "packing": "Measured alpha>=16 transparent gutters; preserve source cell RGBA; common Lanczos packing scale; no per-frame alpha processing. Candidate PNGs and overlay published atomically.",
+  "qa": [
+    "Transparent atlas measured RGBA alpha 0 exterior; nine alpha>=16 major components separated by empty gutters.",
+    "Composited dark preview reviewed: no visible low-alpha red fringe.",
+    "All nine sprites retain boar body/tusks/root-crown; noticeable forward lunge appears in execute middle/late frame, though several adjacent phase poses remain similar.",
+    "Candidate needs native playback/scale review; no natural animation or art acceptance claimed."
+  ],
+  "rejectedAttempts": [
+    {
+      "path": "/Users/PUBLIC_USER/.codex/generated_images/01a12399-b8c7-76a0-adb6-39606fe83b65/exec-6186763b-d056-454a-b048-bbafa9372462.png",
+      "reason": "opaque brown background; incompatible with transparent runtime frames"
+    },
+    {
+      "path": "/Users/PUBLIC_USER/.codex/generated_images/01a12399-b8c7-76a0-adb6-39606fe83b65/exec-acda1d04-3114-4b00-aac2-2ac9803a31c2.png",
+      "reason": "targeted background-extraction edit retained opaque brown background; rejected"
+    },
+    {
+      "path": "/Users/PUBLIC_USER/.codex/generated_images/01a12399-b8c7-76a0-adb6-39606fe83b65/exec-97ac68bd-9e05-497e-92c9-5a944b9c5ef2.png",
+      "reason": "adjacent art overlapped at column gutter, so cells could not be safely separated"
+    },
+    {
+      "path": "/Users/PUBLIC_USER/.codex/generated_images/01a12399-b8c7-76a0-adb6-39606fe83b65/exec-1441c2d7-4736-46c9-9129-c164a90965be.png",
+      "reason": "phase poses too similar and cell separation margins insufficient; superseded by spacing repair"
+    }
+  ],
+  "runtimeReview": "PENDING_ROOT_REVIEW",
+  "humanAdoption": "PENDING",
+  "naturalMotionComplete": false
+}

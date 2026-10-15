@@ -1,0 +1,102 @@
+{
+  "status": "UNAPPROVED_PARTIAL_MOTION_CANDIDATE_OVERLAY",
+  "complete_animation": false,
+  "human_approval": false,
+  "source_art_untouched": true,
+  "merge_note": "Partial state overlay; updates anticipate/execute/recover only. Existing idle/hit/resolve/walk are inherited.",
+  "entries": {
+    "ACT_B_R01_A": {
+      "clips": {
+        "anticipate": {
+          "frames": [
+            "GeneratedCandidates/ACT_B_R01_A/attack_cycle_candidate_r001/frames/anticipate_000.png",
+            "GeneratedCandidates/ACT_B_R01_A/attack_cycle_candidate_r001/frames/anticipate_001.png",
+            "GeneratedCandidates/ACT_B_R01_A/attack_cycle_candidate_r001/frames/anticipate_002.png"
+          ],
+          "frame_count": 3,
+          "fps": 8,
+          "duration_seconds": 0.375,
+          "loop": false,
+          "canvas_px": [
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            490
+          ],
+          "display_scale": 1.168527,
+          "status": "UNAPPROVED_AUTHORED_ATTACK_CYCLE_CANDIDATE",
+          "complete_animation": false,
+          "movement_semantics": "Large quadruped charge windup: shoulders compress, head lowers, forefeet brace.",
+          "anchor_status": "VISUAL_ESTIMATE_UNAPPROVED"
+        },
+        "execute": {
+          "frames": [
+            "GeneratedCandidates/ACT_B_R01_A/attack_cycle_candidate_r001/frames/execute_000.png",
+            "GeneratedCandidates/ACT_B_R01_A/attack_cycle_candidate_r001/frames/execute_001.png",
+            "GeneratedCandidates/ACT_B_R01_A/attack_cycle_candidate_r001/frames/execute_002.png"
+          ],
+          "frame_count": 3,
+          "fps": 10,
+          "duration_seconds": 0.3,
+          "loop": false,
+          "canvas_px": [
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            490
+          ],
+          "display_scale": 1.168527,
+          "status": "UNAPPROVED_AUTHORED_ATTACK_CYCLE_CANDIDATE",
+          "complete_animation": false,
+          "movement_semantics": "Tusk-led forward body thrust with progressive head/shoulder extension and hind-leg push.",
+          "anchor_status": "VISUAL_ESTIMATE_UNAPPROVED"
+        },
+        "recover": {
+          "frames": [
+            "GeneratedCandidates/ACT_B_R01_A/attack_cycle_candidate_r001/frames/recover_000.png",
+            "GeneratedCandidates/ACT_B_R01_A/attack_cycle_candidate_r001/frames/recover_001.png",
+            "GeneratedCandidates/ACT_B_R01_A/attack_cycle_candidate_r001/frames/recover_002.png"
+          ],
+          "frame_count": 3,
+          "fps": 8,
+          "duration_seconds": 0.375,
+          "loop": false,
+          "canvas_px": [
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            490
+          ],
+          "display_scale": 1.168527,
+          "status": "UNAPPROVED_AUTHORED_ATTACK_CYCLE_CANDIDATE",
+          "complete_animation": false,
+          "movement_semantics": "Non-gory recoil, forefoot brace, weight settles toward the stable low ready stance.",
+          "anchor_status": "VISUAL_ESTIMATE_UNAPPROVED"
+        }
+      },
+      "sequenceFrames": {
+        "anticipate": [
+          "GeneratedCandidates/ACT_B_R01_A/attack_cycle_candidate_r001/frames/anticipate_000.png",
+          "GeneratedCandidates/ACT_B_R01_A/attack_cycle_candidate_r001/frames/anticipate_001.png",
+          "GeneratedCandidates/ACT_B_R01_A/attack_cycle_candidate_r001/frames/anticipate_002.png"
+        ],
+        "execute": [
+          "GeneratedCandidates/ACT_B_R01_A/attack_cycle_candidate_r001/frames/execute_000.png",
+          "GeneratedCandidates/ACT_B_R01_A/attack_cycle_candidate_r001/frames/execute_001.png",
+          "GeneratedCandidates/ACT_B_R01_A/attack_cycle_candidate_r001/frames/execute_002.png"
+        ],
+        "recover": [
+          "GeneratedCandidates/ACT_B_R01_A/attack_cycle_candidate_r001/frames/recover_000.png",
+          "GeneratedCandidates/ACT_B_R01_A/attack_cycle_candidate_r001/frames/recover_001.png",
+          "GeneratedCandidates/ACT_B_R01_A/attack_cycle_candidate_r001/frames/recover_002.png"
+        ]
+      }
+    }
+  }
+}

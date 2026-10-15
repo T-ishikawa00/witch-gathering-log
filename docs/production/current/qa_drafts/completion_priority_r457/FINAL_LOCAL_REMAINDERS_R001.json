@@ -1,0 +1,163 @@
+{
+  "schema": "final-local-remainders-r457-v1",
+  "status": "READ_ONLY_SCOPED_TRIAGE; NO_SOURCE_OR_ART_CHANGES",
+  "scope": "159-unit ledger, 4 party actors, 30 enemy actors, R010 acceptance, R455 triage and R444/R446/R450 appearance and motion evidence.",
+  "authority": {
+    "formalArtAdoption": "Human decision remains separate.",
+    "localTechnicalWork": "Not deferred wholesale to Human; no specific reproducible appearance defect was confirmed in the reviewed evidence.",
+    "statusFreshness": "CURRENT_STATUS.md identifies itself as R084 and still describes R445/R453-era state. R455 explicitly flags CURRENT_STATUS/NEXT_ACTIONS as stale relative to R454. Use R010 as acceptance criteria, but use pinned later evidence for results."
+  },
+  "asset159": {
+    "ledger": "R308 per-unit ledger; exact rows and IDs preserved.",
+    "totalRows": 159,
+    "runtimeKeyMatches": 159,
+    "kindCounts": {
+      "ambient_kit": 5,
+      "area_variant": 10,
+      "background_kit": 10,
+      "combat_vfx_kit": 5,
+      "enemy_actor_kit": 30,
+      "gather_prop": 20,
+      "gear_icon": 29,
+      "material_icon": 50
+    },
+    "explicitHistoricalEffectKindConsolidations": 10,
+    "classificationCounts": {
+      "PARTIAL_OR_NOT_ACCEPTED": 159,
+      "finishedOrFormallyAccepted": 0
+    },
+    "reviewCoverage": "R010/R450 report 149 static units with scoped review and 10 ambient/VFX units with limited temporal review. R416/R407 reviews found no gross defect in the windows inspected; this is not 159 final visual approvals.",
+    "missingContent": "No specific absent required asset or confirmed gross rendering defect established by this pass. Runtime mapping is not evidence that a unit is finished.",
+    "decision": "Do not produce or replace assets from this evidence. Keep all 159 unit classifications partial/unaccepted until their stated individual criteria are closed; do not infer all are defective or unmade."
+  },
+  "party4": {
+    "actors": [
+      "AIRA",
+      "ERNA",
+      "LUNA",
+      "NOIR"
+    ],
+    "implementation": "4/4 current actor routes include the required state categories; R377 trace covers all seven categories for each. R407 images join hit visuals for AIRA/LUNA/NOIR and separately ERNA.",
+    "localVisualReview": "R374 samples ordinary-world/home/battle composition; no reproduced crop/collision or high-impact defect in sampled evidence. R446 selected/reset reading-mantle comparison shows a selected-only shoulder accent, readable book/hands, and clean reset.",
+    "result": "No concrete locally fixable blocker or missing required actor art identified. Full combination naturalness and formal art adoption are not claimed.",
+    "knownHarnessLimit": "R446 raw run remains INCOMPLETE_RETAINED because three new app-specific Saved Application State plists were absent at baseline; separate readback confirms installed app, protected trees, and cold save bytes exact. This is a harness/OS-state closure issue, not evidence of a broken wardrobe flow."
+  },
+  "enemies30": {
+    "mappedAndClips": "30/30 mapped; R083 requested-state clips exist for all 30 but are pose evidence, not natural transitions.",
+    "execute": "29/29 direct-attack applicable enemies have rendered execute evidence after R418/R424 additive captures; E_R02_04 is support and direct execute is not applicable.",
+    "recover": {
+      "unobservedDirectAttackCount": 17,
+      "unobservedDirectAttackIDs": [
+        "B_R01_A",
+        "B_R01_B",
+        "B_R03_A",
+        "B_R03_B",
+        "B_R04_A",
+        "B_R04_B",
+        "B_R05_B",
+        "E_R01_02",
+        "E_R01_03",
+        "E_R02_02",
+        "E_R03_02",
+        "E_R03_03",
+        "E_R03_04",
+        "E_R04_01",
+        "E_R04_02",
+        "E_R04_04",
+        "E_R05_02"
+      ],
+      "closedRoute": [
+        "E_R02_01"
+      ],
+      "roleException": [
+        "E_R02_04"
+      ]
+    },
+    "defectAssessment": "No observed gross defect across reviewed scopes. Execute→hit preemption is an allowed event priority and does not prove recover is broken. The 17 entries are a bounded technical evidence gap, not 17 missing assets or confirmed failures.",
+    "nextLocalAction": "No broad recapture or source fix justified under R455. Only if the acceptance owner requires closure of these remaining routes, reuse retained inputs and target an eligible nonlethal execute that is not superseded by hit; require two rendered recover frames and a visually joined return to idle. Record unreachable/preempted cases as such; do not force state or alter combat values.",
+    "unobservedDirectRecoverIDs": [
+      "B_R01_A",
+      "B_R01_B",
+      "B_R03_A",
+      "B_R03_B",
+      "B_R04_A",
+      "B_R04_B",
+      "B_R05_B",
+      "E_R01_02",
+      "E_R01_03",
+      "E_R02_02",
+      "E_R03_02",
+      "E_R03_03",
+      "E_R03_04",
+      "E_R04_01",
+      "E_R04_02",
+      "E_R04_04",
+      "E_R05_02"
+    ]
+  },
+  "locallyFixableLaunchBlockers": [],
+  "notClaimed": [
+    "all 159 visually finished",
+    "all 30 enemies natural-motion accepted",
+    "formal art adoption",
+    "all outfit/weapon/state combinations",
+    "physical-device or Apple/production acceptance"
+  ],
+  "evidencePins": {
+    "acceptanceRegister": {
+      "path": "docs/production/current/qa_drafts/final_acceptance_r360/COMPLETION_REGISTER_R010.json",
+      "sha256": "c5e81cd4c4a2a206a5055bfe97a0df4d758e5fe8c477051838c5672351b1758f",
+      "bytes": 17876
+    },
+    "currentStatus": {
+      "path": "docs/production/current/CURRENT_STATUS.md",
+      "sha256": "700fa864f7168f16a766759fee298591f93aeed20d05949c9ed4417288019dc9",
+      "bytes": 2082
+    },
+    "r455Triage": {
+      "path": "docs/production/current/qa_drafts/completion_priority_r455/REVIEW_R001.json",
+      "sha256": "b41cf1ce218d53966592ee610f36f55f5fabc2f3ebfe512683ece222cd03873e",
+      "bytes": 6528
+    },
+    "r450ArtReview": {
+      "path": "docs/production/current/qa_drafts/art_completion_acceptance_r450/REVIEW_R001.json",
+      "sha256": "69de2cb89cc028b8e493c7b35d0fa4e7a13b4b0a818f9e4b4799df9f58f5c2fd",
+      "bytes": 6357
+    },
+    "r450RecoverErratum": {
+      "path": "docs/production/current/qa_drafts/art_completion_acceptance_r450/RECOVER_PATH_CLASSIFICATION_ERRATUM_R003.json",
+      "sha256": "9fec1fd628c07b9c4642a1ecaad40b72ff1ff12b651669b2531db9be7c60f877",
+      "bytes": 3259
+    },
+    "r450RecoverVisual": {
+      "path": "docs/production/current/qa_drafts/art_completion_acceptance_r450/recover_path_r004/REVIEW_R004.json",
+      "sha256": "084634725e9c7d366b8c6bd69357b105e8b1427b87541601711e4c6c97ac3e7c",
+      "bytes": 3428
+    },
+    "r308AssetReadiness": {
+      "path": "docs/production/current/qa_drafts/asset_readiness_r308/ASSET_READINESS_R001.json",
+      "sha256": "02b76b68239cdaf0af7934dfc7bbcdb4eef1592dff2cff99aec896b6f8d29a25",
+      "bytes": 1587027
+    },
+    "r374AllyReview": {
+      "path": "docs/production/current/qa_drafts/ally159_evidence_reuse_r374/REVIEW_R001.json",
+      "sha256": "394a8716cf2cf9871626b6ffc5bf80072decb2166ec8f0fb5eaa29e9944ab8d9",
+      "bytes": 10211
+    },
+    "r446Visual": {
+      "path": "docs/production/current/qa_drafts/native_reading_mantle_r446/independent_review_r001/REVIEW_R001.json",
+      "sha256": "d7388f92521f94bdc9d0143c372ef6427432febcbbb12d57540d9d0a4732c153",
+      "bytes": 4118
+    },
+    "r446Preservation": {
+      "path": "docs/production/current/qa_drafts/native_reading_mantle_r446/independent_review_r001/PRESERVATION_READBACK_R002.json",
+      "sha256": "0f919c74cdf64f582b1cba2845eae88b925e9075e9833060090565cd9612d573",
+      "bytes": 5847
+    },
+    "r450RecoverClassification": {
+      "path": "docs/production/current/qa_drafts/art_completion_acceptance_r450/RECOVER_PATH_CLASSIFICATION_R002.json",
+      "sha256": "0512c966412dba78c5a8fdf88a12018ada91b6604ae52fb080b0a904a46152ea",
+      "bytes": 8814
+    }
+  }
+}

@@ -1,33 +1,69 @@
-# 魔女の採集帳 — ③〜⑤ 独立監査用チェックポイント R046
+# 『魔女の採集帳』R088 総合監査目次
 
-このブランチは既存Privateリポジトリのmainを親にした、監査用の選別スナップショットです。実装の参照対象はSwiftUI/SpriteKitのiPhone版R093です。既存main由来の `src/`、`index.html` などは旧G1ブラウザ試作であり、正式な4人制ゲーム実装と混同しないでください。
+**発売完成は未達。これはソースと証拠の監査用スナップショットです。**
 
-開発は継続中です。新規美術・バランス・商品設定は未承認候補を含みます。自動テストの成功は、Humanの美術採用、楽しさ評価、実機確認、課金完成、公開承認を意味しません。
+- 実装基準：R087 `28d3d0b92c840f215a945f47e574fcb30ef2253b`。
+- 最新ローカル記録：R088 `a63990d29ee3e1b9114c512c5abe9e30904c45fe`。R088は監査記録のみで、240入力の実装はR087と同じです。
+- 監査ブランチ：`codex/audit-03to05-20261015-r088`。このブランチの共有コミットはR088開発コミットとは別です。共有マニフェストで元の版と各ファイルを照合できます。
+- 親：以前の共有R046 `1547dde77605a3e16195f892d9add20b66d5c63a`。既存main・開発履歴は変更せず、重いローカル履歴を共有コミットの祖先に含めていません。
+- ソースは固定チェックポイントから取得。補足の未追跡ローカル証拠は別の由来として明記し、R088に含まれていたとは扱いません。既存の未コミットPBX/PROJECT_CURRENT変更はMacに別途保全し、検証済みソースへ混入させていません。
+- **HumanとChatGPTの総合レビュー待ち。共有後の新しい大規模仕様変更・実装・アセット制作は一時停止。** 過去のNEXT_ACTIONSや自律継続の記述より、この待機状態を優先します。
 
-## 読む順序
+## 読む順番と一次証拠
 
-1. [全体進捗と残作業](docs/production/current/qa_drafts/progress_checkpoint_r046/PROGRESS_REPORT_R046.md)
-2. [正式委任と禁止事項](docs/production/mission_20261010_r1/Witch_Codex_Autonomous_03to05_20261010/01_CODEX_MASTER_MISSION.md)、[受入条件](docs/production/mission_20261010_r1/Witch_Codex_Autonomous_03to05_20261010/03_ACCEPTANCE_AND_BLOCKERS.md)
-3. [設計正本の目次](docs/design/CURRENT_DESIGN_INDEX.md)、[設計本文](docs/design/DESIGN_BIBLE.md)、[未解決の競合](docs/design/DESIGN_CONFLICTS.md)、[決定状態](docs/design/DECISION_STATUS.md)
-4. [現在の進捗](docs/production/current/CURRENT_STATUS.md)、[次の作業](docs/production/current/NEXT_ACTIONS.md)、[159制作単位の現物照合](docs/production/current/qa_drafts/progress_checkpoint_r046/ALL159_CURRENT_MAPPING_R001.json)、[個別コンテンツ台帳](docs/production/current/CONTENT_MATRIX_R059_APP020805.json)、[後発の個別検証](docs/production/current/CONTENT_PROGRESS_SUPPLEMENT_R071.json)
-5. [ゲームコア](native/WitchGameCore/Sources/WitchGameCore)、[SwiftUI/SpriteKit実装](native/WitchApp)、[コア回帰テスト](native/WitchGameCore/Tests/WitchGameCoreTests)、[ネイティブUI検証コード](native/WitchUITests)
-6. [R093ビルド証跡](docs/production/current/recovery_r022/integration_r093_notice_luna_grounding_r001/BUILD_RECEIPT_R002.json)、[コア212件の結果](docs/production/current/recovery_r022/integration_r093_notice_luna_grounding_r001/CORE_FULL_R006.json)、[iPhone向けコンパイル検証](docs/production/current/recovery_r022/integration_r093_notice_luna_grounding_r001/UNSIGNED_FINAL_VERIFICATION_R004.json)
-7. [90日・複数ビルド比較](docs/production/current/independent_review/earned_build_comparison_r025/R025_REPORT_CURRENT.md)、[課金・クラッシュ・権限エラーの切り分け](docs/production/current/purchases/STOREKIT_INCIDENT_CURRENT.md)
-8. [53装備利用箇所の監査](docs/production/current/independent_review/equipment_r093_native_r001/REVIEW_R001.md)、[追撃表示監査](docs/production/current/independent_review/notice_r092_native_r001/REVIEW.md)、[LUNA動作監査](docs/production/current/independent_review/luna_r093_r088_native_r001/REVIEW_R001.md)
-9. [共有ファイルとハッシュ](docs/production/current/sharing_r046/SHARED_PAYLOAD_MANIFEST_R002.json)、[画面の出典とハッシュ](docs/production/current/sharing_r046/gallery/GALLERY_MANIFEST_R001.json)
+- [最新報告 R088](docs/production/current/FINAL_LOCAL_REPORT_R088.md)
+- [完成条件台帳：実装・検証・品質・正式承認を分離](docs/production/current/qa_drafts/final_acceptance_r360/COMPLETION_REGISTER_R014.json)
+- [3分野固定版監査の統合判定](docs/production/current/qa_drafts/final_fixed_audit_r466/root/FINAL_VERDICT_R001.json)
+- [ゲーム・保存監査](docs/production/current/qa_drafts/final_fixed_audit_r466/gameplay/REVIEW_R001.md)
+- [UI・美術監査](docs/production/current/qa_drafts/final_fixed_audit_r466/ui_art/REVIEW_R001.md)
+- [課金監査](docs/production/current/qa_drafts/final_fixed_audit_r466/commerce/REVIEW_R001.md)
+- [SwiftUI・SpriteKit実装](native/WitchApp)
+- [ゲームCore・安定ID・保存・設定・試験](native/WitchGameCore)
+- [課金権威モデルと試験](tools/witch_purchase_authority/README.md)
+- [設計正本と判断履歴](docs/design)
+- [30/90日16条件の経済試験](docs/production/current/qa_drafts/economy_release_matrix_r374/candidate_r002/runner_r002/runs/R374_MATRIX_001/RUN.json)
+- [経済試験の独立評価](docs/production/current/qa_drafts/economy_release_matrix_r374/independent_qualitative_review_r001/REVIEW_R001.md)
+- [複数ビルドの受入範囲](docs/production/current/qa_drafts/build_diversity_acceptance_r428)
+- [通常画面での全5地域進行](docs/production/current/qa_drafts/normal_progression_continuation_r443/independent_review_r001/REVIEW_R001.md)
+- [15課題の通常装備勝利と制約](docs/production/current/qa_drafts/native_challenge_completion_r449/independent_review_r001/REVIEW_R001.md)
+- [新規無ガチャ3seedのうち追加2seed](docs/production/current/qa_drafts/zero_summon_seed_robustness_r452/ROOT_SCOPED_RESULT_R001.json)
+- [159制作単位の個別台帳](docs/production/current/qa_drafts/asset_readiness_r308/ASSET_READINESS_R001.json)
+- [159単位・敵30単位の最新整理](docs/production/current/qa_drafts/completion_priority_r457/FINAL_LOCAL_REMAINDERS_R001.json)
+- [未観測recoverの分類](docs/production/current/qa_drafts/completion_priority_r457/RECOVERY_ELIGIBILITY_R002.json)
+- [衣装・家具の実操作と保存](docs/production/current/qa_drafts/wardrobe_furniture_runtime_r433/ROOT_CLOSEOUT_R001.json)
+- [読書衣装の後続修正検証](docs/production/current/qa_drafts/native_reading_mantle_r446)
+- [R465 両SDKビルド](docs/production/current/qa_drafts/native_completion_r465/ROOT_BUILD_RESULT_R001.json)
+- [保護ファイル数の訂正：15,400](docs/production/current/qa_drafts/native_completion_r465/PROTECTION_COUNT_ERRATUM_R002.json)
+- [R465 実画面・保存・冷起動](docs/production/current/qa_drafts/native_completion_r465/ROOT_RUNTIME_RESULT_R001.json)
+- [R462 失敗したIME解除](docs/production/current/qa_drafts/native_completion_r462/ROOT_RUNTIME_RESULT_R001.json)
+- [StoreKitクラッシュ・権限エラーの区別](docs/production/current/qa_drafts/final_fixed_audit_r460/root/STOREKIT_INCIDENT_READBACK_R001.json)
+- [R461 契約と初回失敗・修正後結果](docs/production/current/qa_drafts/authority_contract_r461)
+- [R463 隔離永続ストアと7プロセス試験](docs/production/current/qa_drafts/authority_persistence_r463)
+- [代表実画面と撮影版](docs/production/current/sharing_r088/GALLERY.md)
+- [Macに保全した一次証拠のパス・ハッシュ](docs/production/current/sharing_r088/LOCAL_ONLY_EVIDENCE_R001.json)
+- [再現可能な範囲と不足物](docs/production/current/sharing_r088/REPRODUCTION.md)
+- [総合レビュー待ち・再開手順](docs/production/current/sharing_r088/REVIEW_HOLD_R001.json)
+- [共有ファイルの版・SHA-256・Git blob](docs/production/current/sharing_r088/SHARED_PAYLOAD_MANIFEST_R001.json)
 
-## 実際のiOS Simulator画面
+## R046からの主な変化
 
-| 家（R052時点） | 探索・R04戦闘（R093） | 試着（R093） |
+| 領域 | 現在の到達点 | まだ証明できないこと |
 |---|---|---|
-| ![Home](docs/production/current/sharing_r046/gallery/home_r052.png) | ![Exploration](docs/production/current/sharing_r046/gallery/exploration_r093.jpg) | ![Wardrobe](docs/production/current/sharing_r046/gallery/wardrobe_r093.png) |
+| 保存 | 世代保存・破損/将来形式の扱い・復旧・取引重複防止、通常UIと冷起動の照合を追加 | 実機電源断・全OS条件 |
+| 通常進行 | 全5地域30通常戦・15課題を通常画面で検証。別途、無ガチャ新規Core3seedの仮想30日到達を記録 | 人の自然なペース・全ビルド最適性。UI系譜の過去5回の無料QAガチャは消していない |
+| 装備・経済 | 自然入手、制作、進化、強化/錬成、分解、装備セット、30/90日16条件、複数ビルドの検証を追加 | 正式価格・販売数・実購入価値・継続率。購入相当の入力は実課金ではない |
+| UI・美術 | 家と主要画面、衣装/家具/装備外観、状態別動作を統合。読書衣装とIME検索解除を修正 | 159単位はすべてPARTIAL_OR_NOT_ACCEPTED。17敵recover未観測は17不具合ではなく、全30品質合格でもない |
+| 課金 | Xcodeローカル購入/キャンセル/取得失敗/復元/重複、mock→装備受取、署名形式の隔離検証、Swift契約と永続保存を追加 | 本番サービス・実ネットワーク・通常アプリの正式課金配線は未実装。実Apple Sandboxも未実施 |
+| iOS | 最新R465の同じ240入力/1922資源から両SDKRelease成功、実画面と保存一致 | iPhoneOSは無署名コンパイル。実機・配布・正式品質合格ではない |
 
-上記は実アプリの画面です。家は先行QA、探索は追撃表示の配置問題を含む検証中画面、試着はテストの選択子不一致を調査した時点です。正式な完成画面という扱いではありません。
+最新3分野監査は確認範囲内で再現P0/P1を報告していません。これは未発見の不具合がない保証ではありません。旧StoreKit `Code3/notEntitled` の根本原因は未確定で、空商品配列のnil強制アンラップとは因果関係を立証していません。IMEのR462失敗、R448の初回5assertion失敗とwrapper未完了、R461のfixture/コンパイル失敗、R463の初回assertion失敗、R465の事前検査失敗を保全しています。原記録のPENDING/INCOMPLETEを後からPASSへ書き換えていません。最新判定・訂正と対にして読んでください。
 
-## 共有範囲と再現限界
+試験件数は範囲別です。R461のSwift37件はR463の45件に含まれ、加算した独立要件数ではありません。R463は別途7プロセスの再起動/競合試験があります。R449はその実行で15課題に勝利し、初回クリア数は7→15の+8です。仮想時計のCore試験を人間の通し試験と読み替えないでください。
 
-共有するのは、現在の実装ソース、コア用データとテスト、検証・制作コード、主要な結果、品質台帳、設計正本、少数の画面です。大容量の原画・生成フレーム・音源・録画・xcresult・ビルド・キャッシュ・過去の重複中間出力はローカルに保持し、この追加スナップショットでは送信しません。署名秘密鍵、認証情報、実取引の生ログも共有対象外です。
+## Humanの操作・決定と、開発側に残る作業
 
-このため、この監査ブランチだけで画像・音源付きの完全なiPhoneアプリを再ビルドできるとは主張しません。`native/WitchGameCore` のパッケージとコアテストは含みますが、一部の長時間・外部証跡依存テストには個別条件があります。画像・録画のローカル保存先とハッシュは進捗報告および台帳に記録しています。絶対ローカルパスへのリンクはGitHub上からは開けません。
+Humanが必要なのは、Apple Account/Developer・App Store Connectの認証と設定、実機導入/操作への協力、正式仕様・美術・販売商品/価格の採用、新規サービス契約や公開の判断です。共有権限は今回のPrivate監査ブランチのみです。
 
-監査では、実行済みの証拠と未実行コードを区別し、使用ビルド・テスト条件・セーブ識別子・品質判定の範囲を確認してください。部分完成・検証不足・未制作・Human/Apple環境待ちを一括して「完成」にしないでください。過去台帳の数値を現在の完成数へ転用しないでください。
+**本番サービスと通常アプリ課金接続の実装、追加の美術品質審査は開発側の未完了作業でもあります。Human承認待ちだけに置き換えていません。** 総合レビューで今後の優先順位を決めてから再開します。実課金・本番公開・有料契約・第三者連絡は未実施です。
+
+共有はコード/軽量証拠を中心とし、アプリ・原画・動画・DerivedData・Simulator内部全体は含めていません。完全なiOS再ビルド/見た目の再審査にはMac保管資源が必要です。旧R046由来のファイルも親から残っており、共有manifest外の全ファイルを最新版証拠とは扱わないでください。

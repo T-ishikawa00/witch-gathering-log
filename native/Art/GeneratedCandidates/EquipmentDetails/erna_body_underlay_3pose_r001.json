@@ -1,0 +1,123 @@
+{
+  "schema": "erna_underlay_3pose_proposal_r001",
+  "status": "UNAPPROVED_PROPOSED_CENTERS_REVIEW_REQUIRED",
+  "humanApproval": false,
+  "runtimeEnabled": false,
+  "scope": "C_WITCH ERNA standard idle1, execute1, walk6 only; BODY01 hem tab and BODY02 lining trim center proposals. Not a complete 54-frame overlay.",
+  "method": "Viewed original 256x256 RGBA source at 4x with 8/16px coordinate grid. HemBoundary is manual visual reading of the exposed screen-right outer garment edge, not alpha-derived. The red-point source grid and green-center compositing contact show proposed placement. Source sprite alpha bounds are used only to estimate rendered occupied span for a target of 3px protrusion.",
+  "rendererContract": "EquipmentDetailRenderer positions SKSpriteNode by its center at normalized point; `placement_px_top_left` is a misleading legacy key. Preview composites place the candidate texture behind original body, with size 0.12 * 256 = 30.72px.",
+  "detailAssets": {
+    "EQ_BODY_01": {
+      "path": "native/Art/GeneratedCandidates/EquipmentDetails/details_r002/DETAIL_EQ_EQ_BODY_01__candidate_r002.png",
+      "sha256": "1e697896d4710e8f395f02258b04b4b8d1e6451f9e5a1a492c00557ac5f59f4f",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "alpha16BBox": [
+        40,
+        56,
+        216,
+        199
+      ],
+      "alphaHalfWidthAtRenderSize_px": 10.56
+    },
+    "EQ_BODY_02": {
+      "path": "native/Art/GeneratedCandidates/EquipmentDetails/details_r002/DETAIL_EQ_EQ_BODY_02__candidate_r002.png",
+      "sha256": "43c19b51469d998f5a8025e1eb304e34fa4b8bde169222cb92a9dc084f0094da",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "alpha16BBox": [
+        55,
+        40,
+        200,
+        216
+      ],
+      "alphaHalfWidthAtRenderSize_px": 8.7
+    }
+  },
+  "contactEvidence": "docs/production/current/art/erna_body_hem_fit_r001/ERNA_BODY_UNDERLAY_3POSE_PROPOSAL_R001.jpg",
+  "sourceGridEvidence": "docs/production/current/art/erna_body_hem_fit_r001/ERNA_SOURCE_HEM_DETAIL_ZOOM_R001.jpg",
+  "frames": [
+    {
+      "state": "idle",
+      "runtimeFrameIndex": 1,
+      "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_1.png",
+      "source_path": "native/GeneratedArt/layered_motion_r001/standard__rest_1.png",
+      "sourceSHA256": "892d6346310c101880552911aa1306a4ee7800c78b08cb8c7d938de46f26bfa3",
+      "hemBoundary_px": [
+        211,
+        204
+      ],
+      "outwardNormal": [
+        1.0,
+        0.0
+      ],
+      "desiredProtrusion_px": 3,
+      "centers": {
+        "EQ_BODY_01": [
+          203,
+          204
+        ],
+        "EQ_BODY_02": [
+          205,
+          204
+        ]
+      }
+    },
+    {
+      "state": "execute",
+      "runtimeFrameIndex": 1,
+      "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_4.png",
+      "source_path": "native/GeneratedArt/layered_motion_r001/standard__cast_4.png",
+      "sourceSHA256": "51422c4e6a5f359d9fe0250f0894ae6493145a324100cbfe7c70b151ae57da9e",
+      "hemBoundary_px": [
+        228,
+        205
+      ],
+      "outwardNormal": [
+        1.0,
+        0.0
+      ],
+      "desiredProtrusion_px": 3,
+      "centers": {
+        "EQ_BODY_01": [
+          220,
+          205
+        ],
+        "EQ_BODY_02": [
+          222,
+          205
+        ]
+      }
+    },
+    {
+      "state": "walk",
+      "runtimeFrameIndex": 6,
+      "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_6.png",
+      "source_path": "native/GeneratedArt/layered_motion_r001/standard__walk_6.png",
+      "sourceSHA256": "e7c58d91b31ac683f64c1e9826dff86a0f532271e880cabb3ddfcc9614946d71",
+      "hemBoundary_px": [
+        209,
+        207
+      ],
+      "outwardNormal": [
+        1.0,
+        0.0
+      ],
+      "desiredProtrusion_px": 3,
+      "centers": {
+        "EQ_BODY_01": [
+          201,
+          207
+        ],
+        "EQ_BODY_02": [
+          203,
+          207
+        ]
+      }
+    }
+  ]
+}

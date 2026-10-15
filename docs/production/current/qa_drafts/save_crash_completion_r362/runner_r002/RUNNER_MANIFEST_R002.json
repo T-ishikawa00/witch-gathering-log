@@ -1,0 +1,22 @@
+{
+  "changes": [
+    "Crash-child acceptance reads termination.returnCode, matching kill_validated_test_pid output.",
+    "Process census captures PID, PPID, PGID, start identity, and full command; tracks wrapper descendants plus marker-bound XCTest bundle processes.",
+    "Timeout/interruption cleanup signals only identity-verified individual PIDs, TERM then bounded KILL, never process groups, and records/verifies all-owned-process absence.",
+    "No-competing Swift/XCTest guard runs before both verify-only and execute; execution remains disabled in this preparation."
+  ],
+  "createdAt": "2026-10-14T05:59:19.501965+09:00",
+  "executionPath": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/save_crash_completion_r362/runner_r002/execution_r002",
+  "inputManifestPath": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/save_crash_completion_r362/runner_r002/INPUT_MANIFEST_R001.json",
+  "inputManifestSHA256": "388616de0070128dea2190713f804bd21645b989615cd46adda7d1fec94aa7f8",
+  "knownLimit": "No test/build validation was run. Root must review the updated runner and its process cleanup semantics before any future invocation.",
+  "noExecution": true,
+  "r001Preserved": true,
+  "runnerPath": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/save_crash_completion_r362/runner_r002/run_r362.py",
+  "runnerSHA256": "7d090dc396dfd9a6c926ff76eb427f16b59e94e4fe7dd4762343e3cbb198edfb",
+  "schema": "r362-runner-r002-source-seal-v1",
+  "simulatorUsed": false,
+  "sourceManifestRowsSameAsR001": true,
+  "status": "PREPARED_NOT_EXECUTED",
+  "swiftBuildOrTestRun": false
+}

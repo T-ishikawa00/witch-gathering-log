@@ -1,0 +1,278 @@
+{
+  "state": "LOCKED_BEFORE_HELDOUT_RUNS_NOT_HUMAN_APPROVED",
+  "utc": "2026-10-09T14:50:16.665724+00:00",
+  "selected": {
+    "name": "timed_support",
+    "packet_guard": true,
+    "predictive_ward": true,
+    "deficit_heal": true,
+    "whole_packet": true,
+    "urgent_choice": false,
+    "heal_min_use_bp": 5000,
+    "ward_min_use_bp": 5000,
+    "heal_rank": "lowest_ratio",
+    "packet_danger": false,
+    "timed_ward_value": true
+  },
+  "selection_basis": "Mechanism-driven public telegraph guarding; useful healing >=50% rather than max-HP gates; timed shield absorption. Development 300001..300100 only; known R5 regression cases are not holdout. Use ratio target triage. Reject guard-only and high healing thresholds because regressions increase. Choose 50% over 25% to avoid unnecessary overheal; not maximum development win-rate.",
+  "frozen_code_sha256": "48ce4dbe47b53976662d1a5c6a44f4d7e485da4a2fdb846de71dde4894cfc886",
+  "development_files": {
+    "DEV_r5.json": "96a104e259d438e9ac006d1ad18cb4a6b48efec3180cde48f1b4bea4b52c38f1",
+    "DEV_ratio_heal75.json": "75ecba7ce54df7e32917e002fee109d2bb6f40bc945fb76ff536a2e965614211",
+    "DEV_guard_only.json": "06114ddfd440a7304b0dc5776cc453763c2a9661dcdb71d09118de881e97f5b7",
+    "DEV_packet_utility.json": "005e00b7f31696c049b7463800d1eb7b5bdd43d3357eabf109ebc68079d6c635",
+    "DEV_ratio_heal25.json": "c1eaef7f382da081ad55c81c1b9e82fe8dcc0506e107baf1a1e3d679cbb24073",
+    "DEV_packet_risk.json": "7b327ede2af50d8b1fa48bbbe6387918faf7349974f0568f330e797d4b2e3b77",
+    "DEV_utility.json": "bd0d10cf546352be5142b296a534ba6039433b8f0a6734cfe644f1bdb136ecd0",
+    "DEV_ratio_heal.json": "8b4baa1b1ebebe88210b7f3e2a4317376cfaa793364c7ba9cecb7c81713f496d",
+    "DEV_packet_urgent.json": "d486e9516d45bca2c9759eba117845bb76807d19b4275cf6e73875d88be6a03b",
+    "DEV_timed_support.json": "0ae77bbd28400588f6422cecebe08b118fed0decb546b8b0bf216bb73277a3a2",
+    "DEV_guard_ward.json": "72b701014fafd8511d7f82734bd4ae322864ab77ea273614cd564a7d9544100e"
+  },
+  "interrupted_run": "packet_risk_old_heal timed out before final record; excluded from completed counts and no results used for lock",
+  "jobs": [
+    {
+      "id": "legacy_replay_protect6",
+      "kind": "protect",
+      "hours": 6,
+      "power": 190,
+      "hp_bp": 10000,
+      "seed_start": 100001,
+      "n": 200,
+      "upgrades": [
+        "paid90"
+      ],
+      "set": "legacy_replay"
+    },
+    {
+      "id": "holdout_protect6",
+      "kind": "protect",
+      "hours": 6,
+      "power": 190,
+      "hp_bp": 10000,
+      "seed_start": 700001,
+      "n": 500,
+      "upgrades": [
+        "paid90"
+      ],
+      "set": "heldout_combat_seeds"
+    },
+    {
+      "id": "holdout_offense6",
+      "kind": "offense",
+      "hours": 6,
+      "power": 190,
+      "hp_bp": 10000,
+      "seed_start": 700001,
+      "n": 500,
+      "upgrades": [
+        "paid90"
+      ],
+      "set": "heldout_combat_seeds"
+    },
+    {
+      "id": "holdout_protect12_power110",
+      "kind": "protect",
+      "hours": 12,
+      "power": 209,
+      "hp_bp": 10000,
+      "seed_start": 700001,
+      "n": 500,
+      "upgrades": [
+        "paid90"
+      ],
+      "set": "heldout_combat_seeds"
+    },
+    {
+      "id": "holdout_protect12_joint110",
+      "kind": "protect",
+      "hours": 12,
+      "power": 209,
+      "hp_bp": 11000,
+      "seed_start": 700001,
+      "n": 500,
+      "upgrades": [
+        "paid90"
+      ],
+      "set": "heldout_combat_seeds"
+    },
+    {
+      "id": "gear_00_protect",
+      "kind": "protect",
+      "hours": 6,
+      "power": 190,
+      "hp_bp": 10000,
+      "craft_seed": "r6-holdout-craft-0",
+      "seed_start": 800001,
+      "n": 50,
+      "upgrades": [
+        "paid90",
+        "witch5",
+        "healer5",
+        "armor5"
+      ],
+      "set": "heldout_gear_and_combat"
+    },
+    {
+      "id": "gear_01_offense",
+      "kind": "offense",
+      "hours": 6,
+      "power": 190,
+      "hp_bp": 10000,
+      "craft_seed": "r6-holdout-craft-1",
+      "seed_start": 800001,
+      "n": 50,
+      "upgrades": [
+        "paid90",
+        "witch5",
+        "healer5",
+        "armor5"
+      ],
+      "set": "heldout_gear_and_combat"
+    },
+    {
+      "id": "gear_02_protect",
+      "kind": "protect",
+      "hours": 6,
+      "power": 190,
+      "hp_bp": 10000,
+      "craft_seed": "r6-holdout-craft-2",
+      "seed_start": 800001,
+      "n": 50,
+      "upgrades": [
+        "paid90",
+        "witch5",
+        "healer5",
+        "armor5"
+      ],
+      "set": "heldout_gear_and_combat"
+    },
+    {
+      "id": "gear_03_offense",
+      "kind": "offense",
+      "hours": 6,
+      "power": 190,
+      "hp_bp": 10000,
+      "craft_seed": "r6-holdout-craft-3",
+      "seed_start": 800001,
+      "n": 50,
+      "upgrades": [
+        "paid90",
+        "witch5",
+        "healer5",
+        "armor5"
+      ],
+      "set": "heldout_gear_and_combat"
+    },
+    {
+      "id": "gear_04_protect",
+      "kind": "protect",
+      "hours": 6,
+      "power": 190,
+      "hp_bp": 10000,
+      "craft_seed": "r6-holdout-craft-4",
+      "seed_start": 800001,
+      "n": 50,
+      "upgrades": [
+        "paid90",
+        "witch5",
+        "healer5",
+        "armor5"
+      ],
+      "set": "heldout_gear_and_combat"
+    },
+    {
+      "id": "gear_05_offense",
+      "kind": "offense",
+      "hours": 6,
+      "power": 190,
+      "hp_bp": 10000,
+      "craft_seed": "r6-holdout-craft-5",
+      "seed_start": 800001,
+      "n": 50,
+      "upgrades": [
+        "paid90",
+        "witch5",
+        "healer5",
+        "armor5"
+      ],
+      "set": "heldout_gear_and_combat"
+    },
+    {
+      "id": "gear_06_protect",
+      "kind": "protect",
+      "hours": 6,
+      "power": 190,
+      "hp_bp": 10000,
+      "craft_seed": "r6-holdout-craft-6",
+      "seed_start": 800001,
+      "n": 50,
+      "upgrades": [
+        "paid90",
+        "witch5",
+        "healer5",
+        "armor5"
+      ],
+      "set": "heldout_gear_and_combat"
+    },
+    {
+      "id": "gear_07_offense",
+      "kind": "offense",
+      "hours": 6,
+      "power": 190,
+      "hp_bp": 10000,
+      "craft_seed": "r6-holdout-craft-7",
+      "seed_start": 800001,
+      "n": 50,
+      "upgrades": [
+        "paid90",
+        "witch5",
+        "healer5",
+        "armor5"
+      ],
+      "set": "heldout_gear_and_combat"
+    },
+    {
+      "id": "gear_08_protect",
+      "kind": "protect",
+      "hours": 6,
+      "power": 190,
+      "hp_bp": 10000,
+      "craft_seed": "r6-holdout-craft-8",
+      "seed_start": 800001,
+      "n": 50,
+      "upgrades": [
+        "paid90",
+        "witch5",
+        "healer5",
+        "armor5"
+      ],
+      "set": "heldout_gear_and_combat"
+    },
+    {
+      "id": "gear_09_offense",
+      "kind": "offense",
+      "hours": 6,
+      "power": 190,
+      "hp_bp": 10000,
+      "craft_seed": "r6-holdout-craft-9",
+      "seed_start": 800001,
+      "n": 50,
+      "upgrades": [
+        "paid90",
+        "witch5",
+        "healer5",
+        "armor5"
+      ],
+      "set": "heldout_gear_and_combat"
+    }
+  ],
+  "acceptance_checks": {
+    "known_F07": "Both R5 formerly reversed seeds must win before and after with R6",
+    "aggregate_paid_upgrade": "Compare victory-to-defeat counts within same-model upgrade pairs; never equate higher win rate with monotonicity",
+    "generalization": "Report all four held-out loadout/difficulty cells and ten crafting seeds even if they worsen",
+    "no_cherry_pick": "No policy change after held-out results; failure becomes an open finding",
+    "mechanics": "No changes to HP, attack, defense, skill multipliers, cooldown, costs, or RNG implementation",
+    "production": "No release gate; R01 reference only"
+  }
+}

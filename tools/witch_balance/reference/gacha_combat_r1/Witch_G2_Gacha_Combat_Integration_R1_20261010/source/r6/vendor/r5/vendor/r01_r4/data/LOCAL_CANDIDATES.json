@@ -1,0 +1,93 @@
+{
+  "status": "TEST_ONLY_PROPOSAL_NOT_HUMAN_APPROVED",
+  "purpose": "R2/R3を改変せず、未定義の敵数値等を別設定で通す。勝率はこの仮敵に対するモデル結果。",
+  "timing": {
+    "initial_active_ready_ms": 0,
+    "basic_first_impact": "intervalを初弾命中可能時刻と読む。windupを引いて開始。行動中は延期。",
+    "basic_next_impact": "前の通常着弾+interval。windup開始可能時刻はそれよりwindupだけ前。",
+    "multihit_public_prediction": "1.5秒以内の公開済み残ヒットを合計して瀕死判定、単発20%も併用。",
+    "cover_charge": "最初のヒットで1主動作につき1消費。同じ対象の連撃を固定。死亡後は元標的が生存すれば戻す。",
+    "ward_priority": "致死予告への結界を回復より先に、非致死では有効回復を先。",
+    "rank1_research": "first-clearではrank1、覚醒0。未来分岐・進化武器の効果は未実装として入力拒否。"
+  },
+  "bosses": {
+    "B_R01_A": {
+      "id": "B_R01_A",
+      "name": "根絡みの大猪",
+      "level": 6,
+      "hp": 2300,
+      "power": 115,
+      "defense": 42,
+      "dot_resist_bp": 0,
+      "first_telegraph_ms": 1400,
+      "time_limit_ms": 120000,
+      "actions": [
+        {
+          "id": "ROOT_BOAR_CHARGE",
+          "coefficient_bp": 26000,
+          "windup_ms": 1800,
+          "hit_offsets_ms": [
+            0
+          ],
+          "recovery_ms": 3000,
+          "rest_ms": 1400,
+          "aoe": false,
+          "heavy": true
+        }
+      ]
+    },
+    "B_R01_B": {
+      "id": "B_R01_B",
+      "name": "苔冠の古樹",
+      "level": 12,
+      "hp": 12500,
+      "power": 190,
+      "defense": 105,
+      "dot_resist_bp": 0,
+      "first_telegraph_ms": 1800,
+      "time_limit_ms": 120000,
+      "actions": [
+        {
+          "id": "ROOT_VOLLEY",
+          "coefficient_bp": 7500,
+          "windup_ms": 1300,
+          "hit_offsets_ms": [
+            0,
+            250,
+            500
+          ],
+          "recovery_ms": 2000,
+          "rest_ms": 1000,
+          "aoe": false,
+          "heavy": false
+        },
+        {
+          "id": "BRANCH_SWEEP",
+          "coefficient_bp": 15000,
+          "windup_ms": 2000,
+          "hit_offsets_ms": [
+            0
+          ],
+          "recovery_ms": 2500,
+          "rest_ms": 1800,
+          "aoe": true,
+          "heavy": true
+        }
+      ]
+    }
+  },
+  "intro_fixed_affixes": {
+    "status": "R3にraw_q=350はあるが種類指定なし。本試験だけの固定案。",
+    "visible": [
+      "AF_POWER",
+      "AF_HP"
+    ],
+    "latent_third": "AF_DEF",
+    "roll_q": 350
+  },
+  "extra_constraints": [
+    "表示、実機、ゲーム本体、通常敵導入戦は未実装。数値試験のみ。",
+    "素材獲得と初回ボス勝利を接続するが、UIを読む20-30分や移動演出時間を測定しない。",
+    "Lv・装備などの元R2値は変更しない。数値調整はLOCAL_CANDIDATESを版管理。"
+  ]
+}

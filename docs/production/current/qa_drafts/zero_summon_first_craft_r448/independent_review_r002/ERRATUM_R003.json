@@ -1,0 +1,24 @@
+{
+  "basedOn": {
+    "compatibilityEvidence": {
+      "explanation": "R447 is unsigned compile only of the identical R445 frozen source; no R447 launched identity exists. R446 is the actual runtime identity of that exact R445 Release. Candidate R002 verifies the effective App profile chain and component fingerprints. No claim of device runtime is made.",
+      "r445InstallReceiptSHA256": "8990781fbbff10c073ee8e6085e0edc9e71f8eeff6f2d3ec55c6d6fd4f3113ee",
+      "r445ReleaseReceiptSHA256": "f6482cdd910d30e633af9a78068e751a85074bcdfa744a9ccffa0bde2f2d123c",
+      "r446InstalledAppExact": true,
+      "r447ReceiptSHA256": "151e293555ab813a4eb267e7214e954b77f3a5d21fe6babf593ee1c4c4904dbc",
+      "sameR445R447SourceMapSHA256": "0202edfce1602c2937274c5e1c72fad8b75d1e654fba576ca8855df94d748fe0"
+    },
+    "identity": {
+      "path": "docs/production/current/qa_drafts/native_reading_mantle_r446/execution_r001/checkpoints/cold_after/support/last_standard_play_identity_r169.json",
+      "sha256": "c5b1bdecd61b3b49b17c02b38283f681236d2d3ce34cdf92cc3acbbb01ebc3b2",
+      "sizeBytes": 2711
+    },
+    "manifestSHA256": "77bc0270e256429b1078eb1c7e0dc245f4355466dc254a99c9c280e805deccc9",
+    "rootExecutionSealPath": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r002/ROOT_EXECUTION_SEAL_R002.json",
+    "rootExecutionSealSHA256": "5cbeeb18faa8ca98e1ad49c88e9e17c7f05ef7ddc96d796b7bb77a11f51b7b39",
+    "runnerSHA256": "f447c23ce4051d867164c3f8772aa5d9d3b8319e123decd5439a1d4d0a2f7d6b"
+  },
+  "correction": "R447 is unsigned compile-only and has no launched runtime identity; R446 is the observed runtime of the exact R445 Release source. The R447 receipt and R445/R447 identical source map plus test reconstruction of App profile chain are sufficient bounded provenance. Prior blocker is retracted.",
+  "executionReviewStillPending": true,
+  "status": "RETRACT_IDENTITY_BLOCKER"
+}

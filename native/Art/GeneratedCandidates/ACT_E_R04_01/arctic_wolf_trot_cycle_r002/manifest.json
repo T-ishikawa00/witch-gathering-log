@@ -1,0 +1,425 @@
+{
+  "asset_id": "ACT_E_R04_01",
+  "revision": "arctic_wolf_trot_cycle_r002",
+  "movement_semantics": "right_facing_arctic_wolf_diagonal_quadruped_trot",
+  "quality_limit": "Candidate trot; exact footfalls, consistent coat anatomy and game-scale read require native screen review.",
+  "source_still_path": "ActorStills/ACT_E_R04_01/ACT_E_R04_01__still__r001.png",
+  "source_still_sha256": "c29f0bec4b3f04997da2efd72bc027fc334a776405a777695293183298d76512",
+  "atlas_path": "GeneratedCandidates/ACT_E_R04_01/arctic_wolf_trot_cycle_r002/imagegen_atlas_source.png",
+  "atlas_sha256": "3427f63a41ca28a4e20b39f8256a715dcdaf0301444c678b61e4f024ad63b848",
+  "atlas_px": [
+    1536,
+    1024
+  ],
+  "grid_x": [
+    0,
+    512,
+    1024,
+    1536
+  ],
+  "grid_y": [
+    0,
+    341,
+    683,
+    1024
+  ],
+  "frame_canvas_px": [
+    512,
+    512
+  ],
+  "anchor_candidate_px": [
+    256,
+    490
+  ],
+  "registration": "alpha16 x-centering and foot baseline to visual anchor or alpha16 bbox centering for hover. Translation only, no resize/recolor; frame RGBA preserved byte-for-byte from source cell, with no alpha cleanup. Constant clip display_scale from config. Alpha16 occupancy and connected-component sizes are measured only.",
+  "idle_alpha16_bounds_px": [
+    [
+      57,
+      200,
+      453,
+      489
+    ],
+    [
+      62,
+      233,
+      448,
+      489
+    ]
+  ],
+  "idle_alpha16_size_px": [
+    [
+      397,
+      290
+    ],
+    [
+      387,
+      257
+    ]
+  ],
+  "candidate_walk_alpha16_bounds_px": [
+    [
+      20,
+      221,
+      492,
+      490
+    ],
+    [
+      15,
+      221,
+      498,
+      490
+    ],
+    [
+      17,
+      231,
+      494,
+      490
+    ],
+    [
+      22,
+      229,
+      491,
+      490
+    ],
+    [
+      20,
+      226,
+      492,
+      490
+    ],
+    [
+      17,
+      222,
+      496,
+      490
+    ],
+    [
+      19,
+      223,
+      494,
+      490
+    ],
+    [
+      16,
+      225,
+      497,
+      490
+    ],
+    [
+      19,
+      221,
+      492,
+      490
+    ]
+  ],
+  "candidate_walk_alpha16_size_px": [
+    [
+      473,
+      270
+    ],
+    [
+      484,
+      270
+    ],
+    [
+      478,
+      260
+    ],
+    [
+      470,
+      262
+    ],
+    [
+      473,
+      265
+    ],
+    [
+      480,
+      269
+    ],
+    [
+      476,
+      268
+    ],
+    [
+      482,
+      266
+    ],
+    [
+      474,
+      270
+    ]
+  ],
+  "clip_display_scale": 1.0,
+  "fps_candidate": 10,
+  "frames": [
+    {
+      "frame": "walk_000.png",
+      "source_cell_px": [
+        0,
+        0,
+        512,
+        341
+      ],
+      "translation_px": [
+        -2,
+        173
+      ],
+      "alpha16_bounds_px": [
+        20,
+        221,
+        492,
+        490
+      ],
+      "alpha16_size_px": [
+        473,
+        270
+      ],
+      "alpha16_pixels": 68794,
+      "source_alpha16_component_count": 1,
+      "largest_alpha16_component_pixels": 68794,
+      "other_alpha16_component_pixels": [],
+      "alpha_preserved_from_source_cell": true,
+      "sha256": "00c9cba2d126d148e22e14f6195bd7ec4c60113744891523d87b96e12e37b124"
+    },
+    {
+      "frame": "walk_001.png",
+      "source_cell_px": [
+        512,
+        0,
+        512,
+        341
+      ],
+      "translation_px": [
+        6,
+        175
+      ],
+      "alpha16_bounds_px": [
+        15,
+        221,
+        498,
+        490
+      ],
+      "alpha16_size_px": [
+        484,
+        270
+      ],
+      "alpha16_pixels": 71743,
+      "source_alpha16_component_count": 2,
+      "largest_alpha16_component_pixels": 71742,
+      "other_alpha16_component_pixels": [
+        1
+      ],
+      "alpha_preserved_from_source_cell": true,
+      "sha256": "5a7a4c8fe6d1b7acbcf4fae56245b7a15225d8e1d1882da64cb80a79699677e5"
+    },
+    {
+      "frame": "walk_002.png",
+      "source_cell_px": [
+        1024,
+        0,
+        512,
+        341
+      ],
+      "translation_px": [
+        2,
+        181
+      ],
+      "alpha16_bounds_px": [
+        17,
+        231,
+        494,
+        490
+      ],
+      "alpha16_size_px": [
+        478,
+        260
+      ],
+      "alpha16_pixels": 68019,
+      "source_alpha16_component_count": 1,
+      "largest_alpha16_component_pixels": 68019,
+      "other_alpha16_component_pixels": [],
+      "alpha_preserved_from_source_cell": true,
+      "sha256": "551c1f9515b3bd868a2be4d7ef885943a36534edea1c7dd46964f663f089f41f"
+    },
+    {
+      "frame": "walk_003.png",
+      "source_cell_px": [
+        0,
+        341,
+        512,
+        342
+      ],
+      "translation_px": [
+        -4,
+        200
+      ],
+      "alpha16_bounds_px": [
+        22,
+        229,
+        491,
+        490
+      ],
+      "alpha16_size_px": [
+        470,
+        262
+      ],
+      "alpha16_pixels": 66656,
+      "source_alpha16_component_count": 1,
+      "largest_alpha16_component_pixels": 66656,
+      "other_alpha16_component_pixels": [],
+      "alpha_preserved_from_source_cell": true,
+      "sha256": "70aa191bc179722510e59dcce621b8dc725cf7003c25bbd2005a4255e18a5e9a"
+    },
+    {
+      "frame": "walk_004.png",
+      "source_cell_px": [
+        512,
+        341,
+        512,
+        342
+      ],
+      "translation_px": [
+        4,
+        198
+      ],
+      "alpha16_bounds_px": [
+        20,
+        226,
+        492,
+        490
+      ],
+      "alpha16_size_px": [
+        473,
+        265
+      ],
+      "alpha16_pixels": 66184,
+      "source_alpha16_component_count": 1,
+      "largest_alpha16_component_pixels": 66184,
+      "other_alpha16_component_pixels": [],
+      "alpha_preserved_from_source_cell": true,
+      "sha256": "161d0aaaa3b6b272f5c47583f26d96574d6c4159d5f8de61303bb2033382aece"
+    },
+    {
+      "frame": "walk_005.png",
+      "source_cell_px": [
+        1024,
+        341,
+        512,
+        342
+      ],
+      "translation_px": [
+        4,
+        195
+      ],
+      "alpha16_bounds_px": [
+        17,
+        222,
+        496,
+        490
+      ],
+      "alpha16_size_px": [
+        480,
+        269
+      ],
+      "alpha16_pixels": 70765,
+      "source_alpha16_component_count": 1,
+      "largest_alpha16_component_pixels": 70765,
+      "other_alpha16_component_pixels": [],
+      "alpha_preserved_from_source_cell": true,
+      "sha256": "abfe924f41a596ac419d4cb94a6768fba708d403d92068da349a8de99912aed7"
+    },
+    {
+      "frame": "walk_006.png",
+      "source_cell_px": [
+        0,
+        683,
+        512,
+        341
+      ],
+      "translation_px": [
+        -2,
+        214
+      ],
+      "alpha16_bounds_px": [
+        19,
+        223,
+        494,
+        490
+      ],
+      "alpha16_size_px": [
+        476,
+        268
+      ],
+      "alpha16_pixels": 67792,
+      "source_alpha16_component_count": 1,
+      "largest_alpha16_component_pixels": 67792,
+      "other_alpha16_component_pixels": [],
+      "alpha_preserved_from_source_cell": true,
+      "sha256": "4e2b79e38074790a183be4cee740e325b67265ebe4c5cf6830f1958415981b32"
+    },
+    {
+      "frame": "walk_007.png",
+      "source_cell_px": [
+        512,
+        683,
+        512,
+        341
+      ],
+      "translation_px": [
+        6,
+        219
+      ],
+      "alpha16_bounds_px": [
+        16,
+        225,
+        497,
+        490
+      ],
+      "alpha16_size_px": [
+        482,
+        266
+      ],
+      "alpha16_pixels": 68745,
+      "source_alpha16_component_count": 1,
+      "largest_alpha16_component_pixels": 68745,
+      "other_alpha16_component_pixels": [],
+      "alpha_preserved_from_source_cell": true,
+      "sha256": "25288f81ab9a9af1648bedc065527b2e96957b3dec4ddfed9c5079ebfc4b2854"
+    },
+    {
+      "frame": "walk_008.png",
+      "source_cell_px": [
+        1024,
+        683,
+        512,
+        341
+      ],
+      "translation_px": [
+        0,
+        215
+      ],
+      "alpha16_bounds_px": [
+        19,
+        221,
+        492,
+        490
+      ],
+      "alpha16_size_px": [
+        474,
+        270
+      ],
+      "alpha16_pixels": 68784,
+      "source_alpha16_component_count": 1,
+      "largest_alpha16_component_pixels": 68784,
+      "other_alpha16_component_pixels": [],
+      "alpha_preserved_from_source_cell": true,
+      "sha256": "fef1aaa5f8aa9bb9ed05d7e762e97d256ed251259d66fc9681c32c59544a223d"
+    }
+  ],
+  "qa_contact_sheet": "GeneratedCandidates/ACT_E_R04_01/arctic_wolf_trot_cycle_r002/qa_contact_sheet.jpg",
+  "runtime_overlay": "runtime_overlay_act_e_r04_01_pose_candidate_r003_trot_cycle.json",
+  "visual_status": "UNAPPROVED_CANDIDATE_PENDING_ROOT_NATIVE_SCREEN_REVIEW",
+  "approval_status": "HUMAN_ADOPTION_PENDING",
+  "natural_motion_complete": false
+}

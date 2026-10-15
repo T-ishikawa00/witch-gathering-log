@@ -1,0 +1,67 @@
+{
+  "schema": "furniture_completion_r361_source_assessment_v1",
+  "scope": "Read-only reconciliation of R360 furniture-use gap against current source and existing R340 native screen; no candidate code is justified by the evidence.",
+  "decision": "NO_FURNITURE_USE_IMPLEMENTATION_PATCH_JUSTIFIED",
+  "r360Correction": {
+    "priorClaim": "R360 classified companion use at the desk as not demonstrated.",
+    "correctedFinding": "The narrow initial furniture-use slice is already implemented: placing the botanical desk in the home scene routes LUNA into a reading presentation, and the ordinary furniture screen shows LUNA reading at the placed desk with an explicit caption and remove control.",
+    "scopeLimit": "This does not establish multiple furniture categories, user-commanded sit/use selection, final natural-motion quality, or Human art adoption. It does establish that the one existing desk-to-companion-use behavior is present, so it should not be tracked as unimplemented. If “利用動作” is intended to require a separately player-commanded interaction rather than furniture-triggered reading, that stricter interpretation is not established by the source of the acceptance text and should remain UNKNOWN; the currently documented one-table × companion-use example is visibly represented."
+  },
+  "sourceEvidence": [
+    {
+      "path": "native/WitchApp/App.swift",
+      "sha256": "4fb1093c09ede1a31a9743f3d502f1741e487dd12d25ca1805953c7877369837",
+      "lines": "2179",
+      "finding": "The make-over sheet renders FurnitureRoomPreviewR275 and a persisted place/remove command for FURN_DESK_BOTANICAL."
+    },
+    {
+      "path": "native/WitchApp/LivingScene.swift",
+      "sha256": "3520f93057a3434be001e3b343e8aa895c399a9b1522e379689b6ec4a37cfd86",
+      "lines": "493-494,522-525,2463-2465",
+      "finding": "In the home scene, placed botanical desk selects LUNA_READING__0, moves LUNA to the desk location, binds the reading body state and foreground hand overlay; update selects among reading frame IDs while the desk remains placed."
+    },
+    {
+      "path": "native/WitchApp/FurnitureRoomPreviewR275.swift",
+      "sha256": "79a6512b9c9abffa6b53863b19ae14aaf70bb93ef51b9baffe3800e6884dec9d",
+      "lines": "15-43,56-68",
+      "finding": "Uses a separate short-lived LivingScene configured with the current home cosmetics/furniture, labels the placed/stored state, and describes the desk-triggered reading presentation. Preview does not share the primary scene."
+    }
+  ],
+  "nativeEvidence": {
+    "path": "docs/production/current/qa_drafts/release_navigation_lifecycle_r340/root_candidate_r002/manual_run_001/phases/furniture_preview/screen.png",
+    "sha256": "592d8fd8870fd27094d5ed3ae2c0e2d327853d66fff3e809462c5018f9d0d391",
+    "observed": "Actual native screenshot says '机を置いた家', shows LUNA at the placed desk with an open book, includes the caption '机を置くと、ルナがこの場所で本を読みます。' and the '机をしまう' control.",
+    "runContext": "The R340 ordinary navigation run had zero gameplay/save transactions; this frame proves the placed-state presentation, not that the tester changed placement in that run."
+  },
+  "remainingStatus": {
+    "furnitureUse": "Implemented as one automatic desk→LUNA reading presentation and represented in a native screenshot. A separately player-commanded use action is not evidenced or required by the cited initial-slice wording; if that is intended, clarify before creating another interaction.",
+    "appearanceAndMotionQuality": "Still partial/unaccepted; this review did not judge animation continuity or art adoption.",
+    "partyAndEnemyMotion": "R313 says all four actors have source routes and walk routes, but no ordinary event-to-render sequence covering all four; R308/R340/R337 do not identify a new missing source pose. Treat as broad visual-acceptance gap, not a confirmed implementation bug.",
+    "nextAction": "Do not implement a duplicate furniture-use trigger. Continue the bounded ordinary event-to-render review for party/enemy motion; create a source correction only when a specific visible defect is reproduced."
+  },
+  "pins": [
+    {
+      "path": "docs/production/current/qa_drafts/final_acceptance_r360/UI_ART_REMAINING_R001.json",
+      "sha256": "f8436677e369bf58b0240250a6467d3b8a115b72136f9170bc4531a2b9772321"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/release_navigation_lifecycle_r340/ROOT_UI_OBSERVATIONS_R001.json",
+      "sha256": "fc31d5c7a41fb75bc463adc62a75e09514d8abcc95f8c0872b12927b9caa4fef"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/party_motion_review_r313/REVIEW_R001.json",
+      "sha256": "a6386f6b070c726b4e73edea5237f7d3a8d2dc50f9fbec0a3e12843ec9514480"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/asset_readiness_r308/ASSET_READINESS_R001.json",
+      "sha256": "02b76b68239cdaf0af7934dfc7bbcdb4eef1592dff2cff99aec896b6f8d29a25"
+    }
+  ],
+  "actions": {
+    "sourceEdits": 0,
+    "builds": 0,
+    "simulatorOperations": 0,
+    "assetEditsOrGeneration": 0,
+    "newMediaCopies": 0
+  }
+}

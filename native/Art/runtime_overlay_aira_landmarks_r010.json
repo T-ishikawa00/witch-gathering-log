@@ -1,0 +1,3187 @@
+{
+  "status": "REJECTED_SUPERSEDED_R011_GOLD_CUFF_SOURCE_REVIEW",
+  "scope": "AIRA per-frame semantic landmark correction R010; source PNGs unchanged; Human visual approval pending.",
+  "humanApproval": false,
+  "entries": {
+    "AIRA": {
+      "semanticFrameLandmarksCandidate": {
+        "schema": "equipment_semantic_frame_landmarks_r009",
+        "status": "UNAPPROVED_AIRA_WORKING_PALM_OCCLUSION_AND_BOOT_CUFF_MEASUREMENTS",
+        "humanApproval": false,
+        "key": [
+          "actorID",
+          "bodyAssetID",
+          "frameIndex",
+          "canvas_px"
+        ],
+        "coordinate_origin": "top_left_canvas_pixels",
+        "measurementMethod": "All 27 original AIRA frames inspected individually at 3x nearest-neighbor with 16px source grid; screenshot-assisted error review R016. Values are candidates and require runtime fit recheck. Root cross-check supplied attack04 neck/chest/hand/ankle/hammer points. R008 adds metadata-only detail size/angle candidates; not a fit approval. R009 individually re-read all 27 3x source grids for visible screen-right boot cuff (leg/boot junction); workingPalm is explicitly null/occluded because fingers are covered by armored gloves.",
+        "sourceEvidence": [
+          "docs/production/current/art/aira_landmark_contacts_r002/individual/",
+          "docs/production/current/native/attachment_audit_r016_aira_semantic_pinned/",
+          "docs/production/current/art/aira_landmark_contacts_r002/individual/*_GRID.png",
+          "docs/production/current/art/aira_landmark_contacts_r003/AIRA_*_FOOTGRID_R003.jpg"
+        ],
+        "rows": [
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_00.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                153,
+                112
+              ],
+              "neck": [
+                158,
+                136
+              ],
+              "chest": [
+                159,
+                145
+              ],
+              "waist": [
+                147,
+                173
+              ],
+              "workingHand": [
+                137,
+                174
+              ],
+              "visibleRightAnkle": [
+                169,
+                216
+              ],
+              "hammerHead": [
+                212,
+                199
+              ],
+              "screenRightBootCuff": [
+                169,
+                216
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  153,
+                  112
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_rest_r001/AIRA__rest_00.png",
+            "sourceSHA256": "0169baa14bf0dabb0a5a5ce9a9513649b41d0411af5a1eeac359d9fbe5d4de82",
+            "measurementStatus": "INDIVIDUAL_SOURCE_GRID_REMEASURED_CANDIDATE_R010",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "idle",
+            "sourceFrameIndex": 0,
+            "measurementNotes": "Read against individual 3x nearest-neighbor source image with 16px grid. Candidate point is visible physical contact/center, not proof of runtime fit; original pixels unchanged. R010: source-grid audit re-read this exact PNG at 3x nearest-neighbor display; coordinate values remain native source-pixel units with top-left origin. Selected screen-right leg-to-boot cuff/upper boot seam, not boot toe, floor contact, hammer, or shadow. Candidate only; spatial runtime fit not verified.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 22,
+                "fitStatus": "UNAPPROVED_HAMMER_FACE_ORIENTATION_CANDIDATE",
+                "sourceFrameIndex": 0,
+                "reason": "Small inlay candidate; angle estimate follows authored hammer-face plane and requires held-frame QA."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_01.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                150,
+                113
+              ],
+              "neck": [
+                156,
+                136
+              ],
+              "chest": [
+                158,
+                145
+              ],
+              "waist": [
+                147,
+                174
+              ],
+              "workingHand": [
+                132,
+                175
+              ],
+              "visibleRightAnkle": [
+                160,
+                216
+              ],
+              "hammerHead": [
+                211,
+                200
+              ],
+              "screenRightBootCuff": [
+                160,
+                216
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  150,
+                  113
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_rest_r001/AIRA__rest_01.png",
+            "sourceSHA256": "fc76df184341e3793eab4827ba3ef618e5c3cb4896497f987dcea89264adb19e",
+            "measurementStatus": "INDIVIDUAL_SOURCE_GRID_REMEASURED_CANDIDATE_R010",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "idle",
+            "sourceFrameIndex": 1,
+            "measurementNotes": "Read against individual 3x nearest-neighbor source image with 16px grid. Candidate point is visible physical contact/center, not proof of runtime fit; original pixels unchanged. R010: source-grid audit re-read this exact PNG at 3x nearest-neighbor display; coordinate values remain native source-pixel units with top-left origin. Selected screen-right leg-to-boot cuff/upper boot seam, not boot toe, floor contact, hammer, or shadow. Candidate only; spatial runtime fit not verified.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": -18,
+                "fitStatus": "UNAPPROVED_HAMMER_FACE_ORIENTATION_CANDIDATE",
+                "sourceFrameIndex": 1,
+                "reason": "Small inlay candidate; angle estimate follows authored hammer-face plane and requires held-frame QA."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_02.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                157,
+                113
+              ],
+              "neck": [
+                160,
+                136
+              ],
+              "chest": [
+                160,
+                145
+              ],
+              "waist": [
+                147,
+                174
+              ],
+              "workingHand": [
+                135,
+                175
+              ],
+              "visibleRightAnkle": [
+                156,
+                220
+              ],
+              "hammerHead": [
+                209,
+                197
+              ],
+              "screenRightBootCuff": [
+                156,
+                220
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  157,
+                  113
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_rest_r001/AIRA__rest_02.png",
+            "sourceSHA256": "1f63421f2c86af9bce96aa89b24f7efeb996cb08fbc915852d5d680fde082894",
+            "measurementStatus": "INDIVIDUAL_SOURCE_GRID_REMEASURED_CANDIDATE_R010",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "idle",
+            "sourceFrameIndex": 2,
+            "measurementNotes": "Read against individual 3x nearest-neighbor source image with 16px grid. Candidate point is visible physical contact/center, not proof of runtime fit; original pixels unchanged. R010: source-grid audit re-read this exact PNG at 3x nearest-neighbor display; coordinate values remain native source-pixel units with top-left origin. Selected screen-right leg-to-boot cuff/upper boot seam, not boot toe, floor contact, hammer, or shadow. Candidate only; spatial runtime fit not verified. R010 local edge correction after inspecting full-frame and boot crop: cuff candidate moved to native pixel (177,221); point is on visible boot contour, not selected by alpha alone. R010 source-grid revision: previous provisional point visibly overlapped non-cuff anatomy; this candidate was moved onto the upper boot/leg-to-boot seam after full frame plus zoom-crop review.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": -25,
+                "fitStatus": "UNAPPROVED_HAMMER_FACE_ORIENTATION_CANDIDATE",
+                "sourceFrameIndex": 2,
+                "reason": "Small inlay candidate; angle estimate follows authored hammer-face plane and requires held-frame QA."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_03.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                167,
+                130
+              ],
+              "neck": [
+                156,
+                149
+              ],
+              "chest": [
+                160,
+                156
+              ],
+              "waist": [
+                163,
+                179
+              ],
+              "workingHand": [
+                141,
+                156
+              ],
+              "visibleRightAnkle": [
+                180,
+                220
+              ],
+              "hammerHead": [
+                218,
+                190
+              ],
+              "screenRightBootCuff": [
+                180,
+                220
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  167,
+                  130
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              },
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  152,
+                  153
+                ],
+                "radius_px": [
+                  19,
+                  11
+                ],
+                "name": "arm_foreground_candidate",
+                "reason": "folded forearm overlaps chest/neck edge"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_rest_r001/AIRA__rest_03.png",
+            "sourceSHA256": "e7dd10a55b4b6ad19d045a9885a0f4a614dc1d720f55dc55099e4bbb1eeadd00",
+            "measurementStatus": "INDIVIDUAL_SOURCE_GRID_REMEASURED_CANDIDATE_R010",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "hit",
+            "sourceFrameIndex": 3,
+            "measurementNotes": "Read against individual 3x nearest-neighbor source image with 16px grid. Candidate point is visible physical contact/center, not proof of runtime fit; original pixels unchanged. R010: source-grid audit re-read this exact PNG at 3x nearest-neighbor display; coordinate values remain native source-pixel units with top-left origin. Selected screen-right leg-to-boot cuff/upper boot seam, not boot toe, floor contact, hammer, or shadow. Candidate only; spatial runtime fit not verified.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 18,
+                "fitStatus": "UNAPPROVED_HAMMER_FACE_ORIENTATION_CANDIDATE",
+                "sourceFrameIndex": 3,
+                "reason": "Small inlay candidate; angle estimate follows authored hammer-face plane and requires held-frame QA."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_04.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                174,
+                132
+              ],
+              "neck": [
+                160,
+                150
+              ],
+              "chest": [
+                158,
+                156
+              ],
+              "waist": [
+                165,
+                180
+              ],
+              "workingHand": [
+                145,
+                170
+              ],
+              "visibleRightAnkle": [
+                170,
+                219
+              ],
+              "hammerHead": [
+                224,
+                195
+              ],
+              "screenRightBootCuff": [
+                170,
+                219
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  174,
+                  132
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              },
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  152,
+                  153
+                ],
+                "radius_px": [
+                  19,
+                  11
+                ],
+                "name": "arm_foreground_candidate",
+                "reason": "folded forearm overlaps chest/neck edge"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_rest_r001/AIRA__rest_04.png",
+            "sourceSHA256": "a3d53259739e79f7af2b10e4d975d4762a4365cbc86c176cbf5a7fead5a983e3",
+            "measurementStatus": "INDIVIDUAL_SOURCE_GRID_REMEASURED_CANDIDATE_R010",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "hit",
+            "sourceFrameIndex": 4,
+            "measurementNotes": "Read against individual 3x nearest-neighbor source image with 16px grid. Candidate point is visible physical contact/center, not proof of runtime fit; original pixels unchanged. R010: source-grid audit re-read this exact PNG at 3x nearest-neighbor display; coordinate values remain native source-pixel units with top-left origin. Selected screen-right leg-to-boot cuff/upper boot seam, not boot toe, floor contact, hammer, or shadow. Candidate only; spatial runtime fit not verified.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 0,
+                "fitStatus": "UNAPPROVED_HAMMER_FACE_ORIENTATION_CANDIDATE",
+                "sourceFrameIndex": 4,
+                "reason": "Small inlay candidate; angle estimate follows authored hammer-face plane and requires held-frame QA."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_05.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                147,
+                126
+              ],
+              "neck": [
+                154,
+                145
+              ],
+              "chest": [
+                157,
+                154
+              ],
+              "waist": [
+                162,
+                180
+              ],
+              "workingHand": [
+                151,
+                171
+              ],
+              "visibleRightAnkle": [
+                168,
+                218
+              ],
+              "hammerHead": [
+                224,
+                195
+              ],
+              "screenRightBootCuff": [
+                168,
+                218
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  147,
+                  126
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              },
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  152,
+                  153
+                ],
+                "radius_px": [
+                  19,
+                  11
+                ],
+                "name": "arm_foreground_candidate",
+                "reason": "folded forearm overlaps chest/neck edge"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_rest_r001/AIRA__rest_05.png",
+            "sourceSHA256": "f0a087417c4320a24aa9879974fbc4263cf6c2e195237639c88467c634da5e7c",
+            "measurementStatus": "INDIVIDUAL_SOURCE_GRID_REMEASURED_CANDIDATE_R010",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "hit",
+            "sourceFrameIndex": 5,
+            "measurementNotes": "Read against individual 3x nearest-neighbor source image with 16px grid. Candidate point is visible physical contact/center, not proof of runtime fit; original pixels unchanged. R010: source-grid audit re-read this exact PNG at 3x nearest-neighbor display; coordinate values remain native source-pixel units with top-left origin. Selected screen-right leg-to-boot cuff/upper boot seam, not boot toe, floor contact, hammer, or shadow. Candidate only; spatial runtime fit not verified. R010 local edge correction after inspecting full-frame and boot crop: cuff candidate moved to native pixel (168,218); point is on visible boot contour, not selected by alpha alone.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 0,
+                "fitStatus": "UNAPPROVED_HAMMER_FACE_ORIENTATION_CANDIDATE",
+                "sourceFrameIndex": 5,
+                "reason": "Small inlay candidate; angle estimate follows authored hammer-face plane and requires held-frame QA."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_06.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                181,
+                111
+              ],
+              "neck": [
+                174,
+                134
+              ],
+              "chest": [
+                170,
+                148
+              ],
+              "waist": [
+                166,
+                173
+              ],
+              "workingHand": [
+                152,
+                170
+              ],
+              "visibleRightAnkle": [
+                181,
+                218
+              ],
+              "hammerHead": [
+                98,
+                207
+              ],
+              "screenRightBootCuff": [
+                181,
+                218
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  181,
+                  111
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              },
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  196,
+                  111
+                ],
+                "radius_px": [
+                  18,
+                  22
+                ],
+                "name": "arm_foreground_candidate",
+                "reason": "raised gauntlet crosses temple/neck edge"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_rest_r001/AIRA__rest_06.png",
+            "sourceSHA256": "2fa5371afc1a04d2f2c85ddb177852c52fc4f6c2414c25976c2426a03d5cc3ba",
+            "measurementStatus": "INDIVIDUAL_SOURCE_GRID_REMEASURED_CANDIDATE_R010",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "resolve",
+            "sourceFrameIndex": 6,
+            "measurementNotes": "Read against individual 3x nearest-neighbor source image with 16px grid. Candidate point is visible physical contact/center, not proof of runtime fit; original pixels unchanged. R010: source-grid audit re-read this exact PNG at 3x nearest-neighbor display; coordinate values remain native source-pixel units with top-left origin. Selected screen-right leg-to-boot cuff/upper boot seam, not boot toe, floor contact, hammer, or shadow. Candidate only; spatial runtime fit not verified.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 12,
+                "fitStatus": "UNAPPROVED_HAMMER_FACE_ORIENTATION_CANDIDATE",
+                "sourceFrameIndex": 6,
+                "reason": "Small inlay candidate; angle estimate follows authored hammer-face plane and requires held-frame QA."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_07.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                167,
+                111
+              ],
+              "neck": [
+                166,
+                133
+              ],
+              "chest": [
+                169,
+                145
+              ],
+              "waist": [
+                165,
+                173
+              ],
+              "workingHand": [
+                139,
+                171
+              ],
+              "visibleRightAnkle": [
+                181,
+                217
+              ],
+              "hammerHead": [
+                85,
+                207
+              ],
+              "screenRightBootCuff": [
+                181,
+                217
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  167,
+                  111
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              },
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  196,
+                  111
+                ],
+                "radius_px": [
+                  18,
+                  22
+                ],
+                "name": "arm_foreground_candidate",
+                "reason": "raised gauntlet crosses temple/neck edge"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_rest_r001/AIRA__rest_07.png",
+            "sourceSHA256": "09116d4094ffefbd11ff6fb7826884eff362b8f00457aefa0be9328236ad2bd8",
+            "measurementStatus": "INDIVIDUAL_SOURCE_GRID_REMEASURED_CANDIDATE_R010",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "resolve",
+            "sourceFrameIndex": 7,
+            "measurementNotes": "Read against individual 3x nearest-neighbor source image with 16px grid. Candidate point is visible physical contact/center, not proof of runtime fit; original pixels unchanged. R010: source-grid audit re-read this exact PNG at 3x nearest-neighbor display; coordinate values remain native source-pixel units with top-left origin. Selected screen-right leg-to-boot cuff/upper boot seam, not boot toe, floor contact, hammer, or shadow. Candidate only; spatial runtime fit not verified.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 8,
+                "fitStatus": "UNAPPROVED_HAMMER_FACE_ORIENTATION_CANDIDATE",
+                "sourceFrameIndex": 7,
+                "reason": "Small inlay candidate; angle estimate follows authored hammer-face plane and requires held-frame QA."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_08.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                171,
+                111
+              ],
+              "neck": [
+                170,
+                134
+              ],
+              "chest": [
+                169,
+                145
+              ],
+              "waist": [
+                166,
+                173
+              ],
+              "workingHand": [
+                135,
+                171
+              ],
+              "visibleRightAnkle": [
+                181,
+                216
+              ],
+              "hammerHead": [
+                86,
+                207
+              ],
+              "screenRightBootCuff": [
+                181,
+                216
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  171,
+                  111
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              },
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  196,
+                  111
+                ],
+                "radius_px": [
+                  18,
+                  22
+                ],
+                "name": "arm_foreground_candidate",
+                "reason": "raised gauntlet crosses temple/neck edge"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_rest_r001/AIRA__rest_08.png",
+            "sourceSHA256": "85fadc481cc8943d2999f8477a5a928d69520d418180c15eee2f3e0de9b4b36e",
+            "measurementStatus": "INDIVIDUAL_SOURCE_GRID_REMEASURED_CANDIDATE_R010",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "resolve",
+            "sourceFrameIndex": 8,
+            "measurementNotes": "Read against individual 3x nearest-neighbor source image with 16px grid. Candidate point is visible physical contact/center, not proof of runtime fit; original pixels unchanged. R010: source-grid audit re-read this exact PNG at 3x nearest-neighbor display; coordinate values remain native source-pixel units with top-left origin. Selected screen-right leg-to-boot cuff/upper boot seam, not boot toe, floor contact, hammer, or shadow. Candidate only; spatial runtime fit not verified.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 8,
+                "fitStatus": "UNAPPROVED_HAMMER_FACE_ORIENTATION_CANDIDATE",
+                "sourceFrameIndex": 8,
+                "reason": "Small inlay candidate; angle estimate follows authored hammer-face plane and requires held-frame QA."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_00.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                171,
+                112
+              ],
+              "neck": [
+                164,
+                134
+              ],
+              "chest": [
+                161,
+                143
+              ],
+              "waist": [
+                151,
+                169
+              ],
+              "workingHand": [
+                167,
+                175
+              ],
+              "visibleRightAnkle": [
+                160,
+                215
+              ],
+              "hammerHead": [
+                212,
+                199
+              ],
+              "screenRightBootCuff": [
+                160,
+                215
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  171,
+                  112
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_00.png",
+            "sourceSHA256": "50cbd3a45a3aa5f3a9c938f77fd59dbd8c850328beeec8d47a0b8cfa41072044",
+            "measurementStatus": "INDIVIDUAL_SOURCE_GRID_REMEASURED_CANDIDATE_R010",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "anticipate",
+            "sourceFrameIndex": 0,
+            "measurementNotes": "Read against individual 3x nearest-neighbor source image with 16px grid. Candidate point is visible physical contact/center, not proof of runtime fit; original pixels unchanged. R010: source-grid audit re-read this exact PNG at 3x nearest-neighbor display; coordinate values remain native source-pixel units with top-left origin. Selected screen-right leg-to-boot cuff/upper boot seam, not boot toe, floor contact, hammer, or shadow. Candidate only; spatial runtime fit not verified. R010 local edge correction after inspecting full-frame and boot crop: cuff candidate moved to native pixel (182,220); point is on visible boot contour, not selected by alpha alone. R010 source-grid revision: previous provisional point visibly overlapped non-cuff anatomy; this candidate was moved onto the upper boot/leg-to-boot seam after full frame plus zoom-crop review.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 22,
+                "fitStatus": "UNAPPROVED_HAMMER_FACE_ORIENTATION_CANDIDATE",
+                "sourceFrameIndex": 0,
+                "reason": "Small inlay candidate; angle estimate follows authored hammer-face plane and requires held-frame QA."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_01.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                190,
+                114
+              ],
+              "neck": [
+                178,
+                141
+              ],
+              "chest": [
+                185,
+                148
+              ],
+              "waist": [
+                159,
+                177
+              ],
+              "workingHand": [
+                164,
+                117
+              ],
+              "visibleRightAnkle": [
+                198,
+                222
+              ],
+              "hammerHead": [
+                80,
+                86
+              ],
+              "screenRightBootCuff": [
+                198,
+                222
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  190,
+                  114
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              },
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  156,
+                  132
+                ],
+                "radius_px": [
+                  25,
+                  12
+                ],
+                "name": "arm_foreground_candidate",
+                "reason": "raised gauntlet crosses neck/upper chest"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_01.png",
+            "sourceSHA256": "7a0dd13d7ba6e2222b4edfb0ad3b04a37f90249a04b34a0e7558095d7b9d51f8",
+            "measurementStatus": "INDIVIDUAL_SOURCE_GRID_REMEASURED_CANDIDATE_R010",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "anticipate",
+            "sourceFrameIndex": 1,
+            "measurementNotes": "Read against individual 3x nearest-neighbor source image with 16px grid. Candidate point is visible physical contact/center, not proof of runtime fit; original pixels unchanged. R010: source-grid audit re-read this exact PNG at 3x nearest-neighbor display; coordinate values remain native source-pixel units with top-left origin. Selected screen-right leg-to-boot cuff/upper boot seam, not boot toe, floor contact, hammer, or shadow. Candidate only; spatial runtime fit not verified. R010 source-grid revision: previous provisional point visibly overlapped non-cuff anatomy; this candidate was moved onto the upper boot/leg-to-boot seam after full frame plus zoom-crop review.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": -18,
+                "fitStatus": "UNAPPROVED_HAMMER_FACE_ORIENTATION_CANDIDATE",
+                "sourceFrameIndex": 1,
+                "reason": "Small inlay candidate; angle estimate follows authored hammer-face plane and requires held-frame QA."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_02.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                174,
+                115
+              ],
+              "neck": [
+                174,
+                138
+              ],
+              "chest": [
+                175,
+                146
+              ],
+              "waist": [
+                152,
+                173
+              ],
+              "workingHand": [
+                179,
+                79
+              ],
+              "visibleRightAnkle": [
+                199,
+                222
+              ],
+              "hammerHead": [
+                78,
+                80
+              ],
+              "screenRightBootCuff": [
+                199,
+                222
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  174,
+                  115
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              },
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  181,
+                  109
+                ],
+                "radius_px": [
+                  17,
+                  28
+                ],
+                "name": "arm_foreground_candidate",
+                "reason": "vertical gauntlet crosses face/neck"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_02.png",
+            "sourceSHA256": "be07aa515ab14e82589e04a32053734b1c239cb4bc0589d3de3acfd022a38fe3",
+            "measurementStatus": "INDIVIDUAL_SOURCE_GRID_REMEASURED_CANDIDATE_R010",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "anticipate",
+            "sourceFrameIndex": 2,
+            "measurementNotes": "Read against individual 3x nearest-neighbor source image with 16px grid. Candidate point is visible physical contact/center, not proof of runtime fit; original pixels unchanged. R010: source-grid audit re-read this exact PNG at 3x nearest-neighbor display; coordinate values remain native source-pixel units with top-left origin. Selected screen-right leg-to-boot cuff/upper boot seam, not boot toe, floor contact, hammer, or shadow. Candidate only; spatial runtime fit not verified. R010 source-grid revision: previous provisional point visibly overlapped non-cuff anatomy; this candidate was moved onto the upper boot/leg-to-boot seam after full frame plus zoom-crop review.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": -25,
+                "fitStatus": "UNAPPROVED_HAMMER_FACE_ORIENTATION_CANDIDATE",
+                "sourceFrameIndex": 2,
+                "reason": "Small inlay candidate; angle estimate follows authored hammer-face plane and requires held-frame QA."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_03.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                195,
+                125
+              ],
+              "neck": [
+                180,
+                149
+              ],
+              "chest": [
+                181,
+                155
+              ],
+              "waist": [
+                167,
+                180
+              ],
+              "workingHand": [
+                155,
+                117
+              ],
+              "visibleRightAnkle": [
+                213,
+                221
+              ],
+              "hammerHead": [
+                119,
+                70
+              ],
+              "screenRightBootCuff": [
+                213,
+                221
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  195,
+                  125
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              },
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  157,
+                  123
+                ],
+                "radius_px": [
+                  24,
+                  24
+                ],
+                "name": "arm_foreground_candidate",
+                "reason": "crossed arms overlap face/neck edge"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_03.png",
+            "sourceSHA256": "681fd98de966891ac4f7b3ed6090c014372aa7c9a9219b1436049e9da1233958",
+            "measurementStatus": "INDIVIDUAL_SOURCE_GRID_REMEASURED_CANDIDATE_R010",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "execute",
+            "sourceFrameIndex": 3,
+            "measurementNotes": "Read against individual 3x nearest-neighbor source image with 16px grid. Candidate point is visible physical contact/center, not proof of runtime fit; original pixels unchanged. R010: source-grid audit re-read this exact PNG at 3x nearest-neighbor display; coordinate values remain native source-pixel units with top-left origin. Selected screen-right leg-to-boot cuff/upper boot seam, not boot toe, floor contact, hammer, or shadow. Candidate only; spatial runtime fit not verified. R010 local edge correction after inspecting full-frame and boot crop: cuff candidate moved to native pixel (162,219); point is on visible boot contour, not selected by alpha alone. R010 source-grid revision: previous provisional point visibly overlapped non-cuff anatomy; this candidate was moved onto the upper boot/leg-to-boot seam after full frame plus zoom-crop review. Attack_03 cuff point corrected after full source grid showed the visible right boot at x211–219; the prior x199 point was outside that boot and has been removed.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 18,
+                "fitStatus": "UNAPPROVED_HAMMER_FACE_ORIENTATION_CANDIDATE",
+                "sourceFrameIndex": 3,
+                "reason": "Small inlay candidate; angle estimate follows authored hammer-face plane and requires held-frame QA."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_04.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                145,
+                116
+              ],
+              "neck": [
+                145,
+                141
+              ],
+              "chest": null,
+              "waist": [
+                159,
+                177
+              ],
+              "workingHand": [
+                173,
+                174
+              ],
+              "visibleRightAnkle": [
+                160,
+                220
+              ],
+              "hammerHead": [
+                227,
+                207
+              ],
+              "screenRightBootCuff": [
+                160,
+                220
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  145,
+                  116
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              },
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  151,
+                  150
+                ],
+                "radius_px": [
+                  25,
+                  12
+                ],
+                "name": "arm_foreground_candidate",
+                "reason": "forward forearm occludes upper chest"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_04.png",
+            "sourceSHA256": "8b61676670a6a7b2fe47def150b4190230effc065ed0655f5d2ba7bf88ae7641",
+            "measurementStatus": "INDIVIDUAL_SOURCE_GRID_REMEASURED_CANDIDATE_R010",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "execute",
+            "sourceFrameIndex": 4,
+            "measurementNotes": "Read against individual 3x nearest-neighbor source image with 16px grid. Candidate point is visible physical contact/center, not proof of runtime fit; original pixels unchanged. R010: source-grid audit re-read this exact PNG at 3x nearest-neighbor display; coordinate values remain native source-pixel units with top-left origin. Selected screen-right leg-to-boot cuff/upper boot seam, not boot toe, floor contact, hammer, or shadow. Candidate only; spatial runtime fit not verified. Attack execute source frames 04/05: chest is covered by the crossed forearm; amulet withheld as explicitly occluded rather than attached to the shoulder via a false chest point. AMU chest anchor withheld because the source forearm crosses/occludes the chest; no shoulder-chain substitute. R010 source-grid revision: previous provisional point visibly overlapped non-cuff anatomy; this candidate was moved onto the upper boot/leg-to-boot seam after full frame plus zoom-crop review.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 0,
+                "fitStatus": "UNAPPROVED_HAMMER_FACE_ORIENTATION_CANDIDATE",
+                "sourceFrameIndex": 4,
+                "reason": "Small inlay candidate; angle estimate follows authored hammer-face plane and requires held-frame QA."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "occluded"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_05.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                147,
+                127
+              ],
+              "neck": [
+                146,
+                143
+              ],
+              "chest": null,
+              "waist": [
+                164,
+                180
+              ],
+              "workingHand": [
+                173,
+                176
+              ],
+              "visibleRightAnkle": [
+                158,
+                222
+              ],
+              "hammerHead": [
+                227,
+                207
+              ],
+              "screenRightBootCuff": [
+                158,
+                222
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  147,
+                  127
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              },
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  151,
+                  151
+                ],
+                "radius_px": [
+                  25,
+                  12
+                ],
+                "name": "arm_foreground_candidate",
+                "reason": "forward forearm occludes upper chest"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_05.png",
+            "sourceSHA256": "973cb7f285dd545aea5178a4fd9af9e134ad96b8352d548453992add58199106",
+            "measurementStatus": "INDIVIDUAL_SOURCE_GRID_REMEASURED_CANDIDATE_R010",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "execute",
+            "sourceFrameIndex": 5,
+            "measurementNotes": "Read against individual 3x nearest-neighbor source image with 16px grid. Candidate point is visible physical contact/center, not proof of runtime fit; original pixels unchanged. R010: source-grid audit re-read this exact PNG at 3x nearest-neighbor display; coordinate values remain native source-pixel units with top-left origin. Selected screen-right leg-to-boot cuff/upper boot seam, not boot toe, floor contact, hammer, or shadow. Candidate only; spatial runtime fit not verified. Attack execute source frames 04/05: chest is covered by the crossed forearm; amulet withheld as explicitly occluded rather than attached to the shoulder via a false chest point. AMU chest anchor withheld because the source forearm crosses/occludes the chest; no shoulder-chain substitute. R010 source-grid revision: previous provisional point visibly overlapped non-cuff anatomy; this candidate was moved onto the upper boot/leg-to-boot seam after full frame plus zoom-crop review. Attack_05 cuff marker shifted onto opaque upper-boot seam pixels after low-alpha check; source remains unchanged.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 0,
+                "fitStatus": "UNAPPROVED_HAMMER_FACE_ORIENTATION_CANDIDATE",
+                "sourceFrameIndex": 5,
+                "reason": "Small inlay candidate; angle estimate follows authored hammer-face plane and requires held-frame QA."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "occluded"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_06.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                131,
+                124
+              ],
+              "neck": [
+                145,
+                145
+              ],
+              "chest": [
+                144,
+                152
+              ],
+              "waist": [
+                148,
+                174
+              ],
+              "workingHand": [
+                151,
+                163
+              ],
+              "visibleRightAnkle": [
+                157,
+                219
+              ],
+              "hammerHead": [
+                211,
+                196
+              ],
+              "screenRightBootCuff": [
+                157,
+                219
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  131,
+                  124
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              },
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  149,
+                  145
+                ],
+                "radius_px": [
+                  21,
+                  14
+                ],
+                "name": "arm_foreground_candidate",
+                "reason": "lowered glove passes in front of collar"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_06.png",
+            "sourceSHA256": "c93e4788a2ab41f62ef8a9916bc064b186269a486951ed2f439edaf982d242de",
+            "measurementStatus": "INDIVIDUAL_SOURCE_GRID_REMEASURED_CANDIDATE_R010",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "recover",
+            "sourceFrameIndex": 6,
+            "measurementNotes": "Read against individual 3x nearest-neighbor source image with 16px grid. Candidate point is visible physical contact/center, not proof of runtime fit; original pixels unchanged. R010: source-grid audit re-read this exact PNG at 3x nearest-neighbor display; coordinate values remain native source-pixel units with top-left origin. Selected screen-right leg-to-boot cuff/upper boot seam, not boot toe, floor contact, hammer, or shadow. Candidate only; spatial runtime fit not verified. R010 local edge correction after inspecting full-frame and boot crop: cuff candidate moved to native pixel (157,219); point is on visible boot contour, not selected by alpha alone.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 12,
+                "fitStatus": "UNAPPROVED_HAMMER_FACE_ORIENTATION_CANDIDATE",
+                "sourceFrameIndex": 6,
+                "reason": "Small inlay candidate; angle estimate follows authored hammer-face plane and requires held-frame QA."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_07.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                175,
+                112
+              ],
+              "neck": [
+                171,
+                137
+              ],
+              "chest": [
+                169,
+                145
+              ],
+              "waist": [
+                166,
+                171
+              ],
+              "workingHand": [
+                185,
+                174
+              ],
+              "visibleRightAnkle": [
+                141,
+                219
+              ],
+              "hammerHead": [
+                206,
+                200
+              ],
+              "screenRightBootCuff": [
+                141,
+                219
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  175,
+                  112
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              },
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  148,
+                  145
+                ],
+                "radius_px": [
+                  17,
+                  11
+                ],
+                "name": "arm_foreground_candidate",
+                "reason": "forearms meet across upper chest"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_07.png",
+            "sourceSHA256": "c9c926380275c17d6cd21de70b2fbd461351deb9dea95275184d54524764862d",
+            "measurementStatus": "INDIVIDUAL_SOURCE_GRID_REMEASURED_CANDIDATE_R010",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "recover",
+            "sourceFrameIndex": 7,
+            "measurementNotes": "Read against individual 3x nearest-neighbor source image with 16px grid. Candidate point is visible physical contact/center, not proof of runtime fit; original pixels unchanged. R010: source-grid audit re-read this exact PNG at 3x nearest-neighbor display; coordinate values remain native source-pixel units with top-left origin. Selected screen-right leg-to-boot cuff/upper boot seam, not boot toe, floor contact, hammer, or shadow. Candidate only; spatial runtime fit not verified. R010 source-grid revision: previous provisional point visibly overlapped non-cuff anatomy; this candidate was moved onto the upper boot/leg-to-boot seam after full frame plus zoom-crop review. Attack_07 cuff point adjusted onto the opaque boot/leg edge after checking actual source-pixel support; prior x144,y217 fell on transparent space.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 8,
+                "fitStatus": "UNAPPROVED_HAMMER_FACE_ORIENTATION_CANDIDATE",
+                "sourceFrameIndex": 7,
+                "reason": "Small inlay candidate; angle estimate follows authored hammer-face plane and requires held-frame QA."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_08.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                172,
+                112
+              ],
+              "neck": [
+                173,
+                139
+              ],
+              "chest": [
+                169,
+                145
+              ],
+              "waist": [
+                166,
+                171
+              ],
+              "workingHand": [
+                185,
+                174
+              ],
+              "visibleRightAnkle": [
+                165,
+                218
+              ],
+              "hammerHead": [
+                205,
+                200
+              ],
+              "screenRightBootCuff": [
+                165,
+                218
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  172,
+                  112
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              },
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  148,
+                  145
+                ],
+                "radius_px": [
+                  17,
+                  11
+                ],
+                "name": "arm_foreground_candidate",
+                "reason": "forearms meet across upper chest"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_08.png",
+            "sourceSHA256": "357aca385b1033d5e15d977fd01eae58263a0f3ea02e320ce79a109037342581",
+            "measurementStatus": "INDIVIDUAL_SOURCE_GRID_REMEASURED_CANDIDATE_R010",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "recover",
+            "sourceFrameIndex": 8,
+            "measurementNotes": "Read against individual 3x nearest-neighbor source image with 16px grid. Candidate point is visible physical contact/center, not proof of runtime fit; original pixels unchanged. R010: source-grid audit re-read this exact PNG at 3x nearest-neighbor display; coordinate values remain native source-pixel units with top-left origin. Selected screen-right leg-to-boot cuff/upper boot seam, not boot toe, floor contact, hammer, or shadow. Candidate only; spatial runtime fit not verified. R010 local edge correction after inspecting full-frame and boot crop: cuff candidate moved to native pixel (162,221); point is on visible boot contour, not selected by alpha alone. R010 source-grid revision: previous provisional point visibly overlapped non-cuff anatomy; this candidate was moved onto the upper boot/leg-to-boot seam after full frame plus zoom-crop review. Attack_08 cuff marker moved from empty gap to the visible upper-boot seam after source-pixel alpha and enlarged crop review.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 8,
+                "fitStatus": "UNAPPROVED_HAMMER_FACE_ORIENTATION_CANDIDATE",
+                "sourceFrameIndex": 8,
+                "reason": "Small inlay candidate; angle estimate follows authored hammer-face plane and requires held-frame QA."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_0.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                126,
+                112
+              ],
+              "neck": [
+                126,
+                136
+              ],
+              "chest": [
+                127,
+                145
+              ],
+              "waist": [
+                128,
+                171
+              ],
+              "workingHand": [
+                88,
+                173
+              ],
+              "visibleRightAnkle": [
+                111,
+                213
+              ],
+              "hammerHead": [
+                193,
+                208
+              ],
+              "screenRightBootCuff": [
+                111,
+                213
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  126,
+                  112
+                ],
+                "radius_px": [
+                  17,
+                  19
+                ],
+                "name": "face_foreground_candidate"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_walk_r001/AIRA__walk_0.png",
+            "sourceSHA256": "4d8e9b5eca47f5881a34b153f32c610bb1738f7f4e84754dc53269aa156504b6",
+            "measurementStatus": "INDIVIDUAL_SOURCE_GRID_REMEASURED_CANDIDATE_R010",
+            "estimatedUncertaintyPx": 6,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 0,
+            "measurementNotes": "Read against individual 3x nearest-neighbor source image with 16px grid. Candidate point is visible physical contact/center, not proof of runtime fit; original pixels unchanged. R010: source-grid audit re-read this exact PNG at 3x nearest-neighbor display; coordinate values remain native source-pixel units with top-left origin. Selected screen-right leg-to-boot cuff/upper boot seam, not boot toe, floor contact, hammer, or shadow. Candidate only; spatial runtime fit not verified.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 22,
+                "fitStatus": "UNAPPROVED_HAMMER_FACE_ORIENTATION_CANDIDATE",
+                "sourceFrameIndex": 0,
+                "reason": "Small inlay candidate; angle estimate follows authored hammer-face plane and requires held-frame QA."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_1.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                130,
+                116
+              ],
+              "neck": [
+                129,
+                137
+              ],
+              "chest": [
+                128,
+                145
+              ],
+              "waist": [
+                128,
+                171
+              ],
+              "workingHand": [
+                89,
+                174
+              ],
+              "visibleRightAnkle": [
+                111,
+                215
+              ],
+              "hammerHead": [
+                193,
+                208
+              ],
+              "screenRightBootCuff": [
+                111,
+                215
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  130,
+                  116
+                ],
+                "radius_px": [
+                  17,
+                  19
+                ],
+                "name": "face_foreground_candidate"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_walk_r001/AIRA__walk_1.png",
+            "sourceSHA256": "55f44337652f718d2d3625ffcbef13cf10f3852e68a9a91ae38a4496ff8c73f4",
+            "measurementStatus": "INDIVIDUAL_SOURCE_GRID_REMEASURED_CANDIDATE_R010",
+            "estimatedUncertaintyPx": 6,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 1,
+            "measurementNotes": "Read against individual 3x nearest-neighbor source image with 16px grid. Candidate point is visible physical contact/center, not proof of runtime fit; original pixels unchanged. R010: source-grid audit re-read this exact PNG at 3x nearest-neighbor display; coordinate values remain native source-pixel units with top-left origin. Selected screen-right leg-to-boot cuff/upper boot seam, not boot toe, floor contact, hammer, or shadow. Candidate only; spatial runtime fit not verified.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": -18,
+                "fitStatus": "UNAPPROVED_HAMMER_FACE_ORIENTATION_CANDIDATE",
+                "sourceFrameIndex": 1,
+                "reason": "Small inlay candidate; angle estimate follows authored hammer-face plane and requires held-frame QA."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_2.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                134,
+                117
+              ],
+              "neck": [
+                133,
+                138
+              ],
+              "chest": [
+                128,
+                145
+              ],
+              "waist": [
+                128,
+                171
+              ],
+              "workingHand": [
+                84,
+                174
+              ],
+              "visibleRightAnkle": [
+                129,
+                212
+              ],
+              "hammerHead": [
+                190,
+                208
+              ],
+              "screenRightBootCuff": [
+                129,
+                212
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  134,
+                  117
+                ],
+                "radius_px": [
+                  17,
+                  19
+                ],
+                "name": "face_foreground_candidate"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_walk_r001/AIRA__walk_2.png",
+            "sourceSHA256": "edd703655de1420b46e5a24253aae99871e8d101b89ea935ca488bb53830e077",
+            "measurementStatus": "INDIVIDUAL_SOURCE_GRID_REMEASURED_CANDIDATE_R010",
+            "estimatedUncertaintyPx": 6,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 2,
+            "measurementNotes": "Read against individual 3x nearest-neighbor source image with 16px grid. Candidate point is visible physical contact/center, not proof of runtime fit; original pixels unchanged. R010: source-grid audit re-read this exact PNG at 3x nearest-neighbor display; coordinate values remain native source-pixel units with top-left origin. Selected screen-right leg-to-boot cuff/upper boot seam, not boot toe, floor contact, hammer, or shadow. Candidate only; spatial runtime fit not verified. R010 local edge correction after inspecting full-frame and boot crop: cuff candidate moved to native pixel (137,223); point is on visible boot contour, not selected by alpha alone. R010 source-grid revision: previous provisional point visibly overlapped non-cuff anatomy; this candidate was moved onto the upper boot/leg-to-boot seam after full frame plus zoom-crop review. Walk_2 cuff point moved to the raised boot/leg entry after the toe point failed zoom review; this is a visually estimated seam candidate and requires runtime fit review.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": -25,
+                "fitStatus": "UNAPPROVED_HAMMER_FACE_ORIENTATION_CANDIDATE",
+                "sourceFrameIndex": 2,
+                "reason": "Small inlay candidate; angle estimate follows authored hammer-face plane and requires held-frame QA."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_3.png",
+            "frameIndex": 3,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                138,
+                114
+              ],
+              "neck": [
+                136,
+                137
+              ],
+              "chest": [
+                128,
+                145
+              ],
+              "waist": [
+                128,
+                171
+              ],
+              "workingHand": [
+                87,
+                177
+              ],
+              "visibleRightAnkle": [
+                140,
+                221
+              ],
+              "hammerHead": [
+                193,
+                207
+              ],
+              "screenRightBootCuff": [
+                140,
+                221
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  138,
+                  114
+                ],
+                "radius_px": [
+                  17,
+                  19
+                ],
+                "name": "face_foreground_candidate"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_walk_r001/AIRA__walk_3.png",
+            "sourceSHA256": "c9bf20184a233fd50ffdd26f6820edbb1eb2566366739619790bb5bb4ea0d0c6",
+            "measurementStatus": "INDIVIDUAL_SOURCE_GRID_REMEASURED_CANDIDATE_R010",
+            "estimatedUncertaintyPx": 6,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 3,
+            "measurementNotes": "Read against individual 3x nearest-neighbor source image with 16px grid. Candidate point is visible physical contact/center, not proof of runtime fit; original pixels unchanged. R010: source-grid audit re-read this exact PNG at 3x nearest-neighbor display; coordinate values remain native source-pixel units with top-left origin. Selected screen-right leg-to-boot cuff/upper boot seam, not boot toe, floor contact, hammer, or shadow. Candidate only; spatial runtime fit not verified. R010 local edge correction after inspecting full-frame and boot crop: cuff candidate moved to native pixel (120,218); point is on visible boot contour, not selected by alpha alone. R010 source-grid revision: previous provisional point visibly overlapped non-cuff anatomy; this candidate was moved onto the upper boot/leg-to-boot seam after full frame plus zoom-crop review.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 18,
+                "fitStatus": "UNAPPROVED_HAMMER_FACE_ORIENTATION_CANDIDATE",
+                "sourceFrameIndex": 3,
+                "reason": "Small inlay candidate; angle estimate follows authored hammer-face plane and requires held-frame QA."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_4.png",
+            "frameIndex": 4,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                139,
+                115
+              ],
+              "neck": [
+                137,
+                138
+              ],
+              "chest": [
+                128,
+                145
+              ],
+              "waist": [
+                128,
+                171
+              ],
+              "workingHand": [
+                95,
+                177
+              ],
+              "visibleRightAnkle": [
+                117,
+                219
+              ],
+              "hammerHead": [
+                193,
+                208
+              ],
+              "screenRightBootCuff": [
+                117,
+                219
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  139,
+                  115
+                ],
+                "radius_px": [
+                  17,
+                  19
+                ],
+                "name": "face_foreground_candidate"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_walk_r001/AIRA__walk_4.png",
+            "sourceSHA256": "6f4b8bae624a94a3a6acf0d226283ab7d1beaaaeb9f63128f58ddcc103272910",
+            "measurementStatus": "INDIVIDUAL_SOURCE_GRID_REMEASURED_CANDIDATE_R010",
+            "estimatedUncertaintyPx": 6,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 4,
+            "measurementNotes": "Read against individual 3x nearest-neighbor source image with 16px grid. Candidate point is visible physical contact/center, not proof of runtime fit; original pixels unchanged. R010: source-grid audit re-read this exact PNG at 3x nearest-neighbor display; coordinate values remain native source-pixel units with top-left origin. Selected screen-right leg-to-boot cuff/upper boot seam, not boot toe, floor contact, hammer, or shadow. Candidate only; spatial runtime fit not verified.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 0,
+                "fitStatus": "UNAPPROVED_HAMMER_FACE_ORIENTATION_CANDIDATE",
+                "sourceFrameIndex": 4,
+                "reason": "Small inlay candidate; angle estimate follows authored hammer-face plane and requires held-frame QA."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_5.png",
+            "frameIndex": 5,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                147,
+                114
+              ],
+              "neck": [
+                144,
+                137
+              ],
+              "chest": [
+                128,
+                145
+              ],
+              "waist": [
+                128,
+                171
+              ],
+              "workingHand": [
+                102,
+                172
+              ],
+              "visibleRightAnkle": [
+                125,
+                215
+              ],
+              "hammerHead": [
+                202,
+                203
+              ],
+              "screenRightBootCuff": [
+                125,
+                215
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  147,
+                  114
+                ],
+                "radius_px": [
+                  17,
+                  19
+                ],
+                "name": "face_foreground_candidate"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_walk_r001/AIRA__walk_5.png",
+            "sourceSHA256": "18adee37bbce247e84dc48844c70f63464683d6f7e6bb48b1e1373b04c556a00",
+            "measurementStatus": "INDIVIDUAL_SOURCE_GRID_REMEASURED_CANDIDATE_R010",
+            "estimatedUncertaintyPx": 6,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 5,
+            "measurementNotes": "Read against individual 3x nearest-neighbor source image with 16px grid. Candidate point is visible physical contact/center, not proof of runtime fit; original pixels unchanged. R010: source-grid audit re-read this exact PNG at 3x nearest-neighbor display; coordinate values remain native source-pixel units with top-left origin. Selected screen-right leg-to-boot cuff/upper boot seam, not boot toe, floor contact, hammer, or shadow. Candidate only; spatial runtime fit not verified.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 0,
+                "fitStatus": "UNAPPROVED_HAMMER_FACE_ORIENTATION_CANDIDATE",
+                "sourceFrameIndex": 5,
+                "reason": "Small inlay candidate; angle estimate follows authored hammer-face plane and requires held-frame QA."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_6.png",
+            "frameIndex": 6,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                135,
+                114
+              ],
+              "neck": [
+                133,
+                137
+              ],
+              "chest": [
+                128,
+                145
+              ],
+              "waist": [
+                128,
+                171
+              ],
+              "workingHand": [
+                87,
+                177
+              ],
+              "visibleRightAnkle": [
+                126,
+                219
+              ],
+              "hammerHead": [
+                193,
+                208
+              ],
+              "screenRightBootCuff": [
+                126,
+                219
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  135,
+                  114
+                ],
+                "radius_px": [
+                  17,
+                  19
+                ],
+                "name": "face_foreground_candidate"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_walk_r001/AIRA__walk_6.png",
+            "sourceSHA256": "9ac868e8dcc5c6e268b4cd2372bdcf8206fb778850b4ef5d461ca5cefcaad83c",
+            "measurementStatus": "INDIVIDUAL_SOURCE_GRID_REMEASURED_CANDIDATE_R010",
+            "estimatedUncertaintyPx": 6,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 6,
+            "measurementNotes": "Read against individual 3x nearest-neighbor source image with 16px grid. Candidate point is visible physical contact/center, not proof of runtime fit; original pixels unchanged. R010: source-grid audit re-read this exact PNG at 3x nearest-neighbor display; coordinate values remain native source-pixel units with top-left origin. Selected screen-right leg-to-boot cuff/upper boot seam, not boot toe, floor contact, hammer, or shadow. Candidate only; spatial runtime fit not verified.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 12,
+                "fitStatus": "UNAPPROVED_HAMMER_FACE_ORIENTATION_CANDIDATE",
+                "sourceFrameIndex": 6,
+                "reason": "Small inlay candidate; angle estimate follows authored hammer-face plane and requires held-frame QA."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_7.png",
+            "frameIndex": 7,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                137,
+                112
+              ],
+              "neck": [
+                136,
+                136
+              ],
+              "chest": [
+                128,
+                145
+              ],
+              "waist": [
+                128,
+                171
+              ],
+              "workingHand": [
+                90,
+                170
+              ],
+              "visibleRightAnkle": [
+                116,
+                218
+              ],
+              "hammerHead": [
+                193,
+                208
+              ],
+              "screenRightBootCuff": [
+                116,
+                218
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  137,
+                  112
+                ],
+                "radius_px": [
+                  17,
+                  19
+                ],
+                "name": "face_foreground_candidate"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_walk_r001/AIRA__walk_7.png",
+            "sourceSHA256": "59edcd8212f9f5946daf6ef578c1e695fc4bcfba437572691a4806841678e0cd",
+            "measurementStatus": "INDIVIDUAL_SOURCE_GRID_REMEASURED_CANDIDATE_R010",
+            "estimatedUncertaintyPx": 6,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 7,
+            "measurementNotes": "Read against individual 3x nearest-neighbor source image with 16px grid. Candidate point is visible physical contact/center, not proof of runtime fit; original pixels unchanged. R010: source-grid audit re-read this exact PNG at 3x nearest-neighbor display; coordinate values remain native source-pixel units with top-left origin. Selected screen-right leg-to-boot cuff/upper boot seam, not boot toe, floor contact, hammer, or shadow. Candidate only; spatial runtime fit not verified.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 8,
+                "fitStatus": "UNAPPROVED_HAMMER_FACE_ORIENTATION_CANDIDATE",
+                "sourceFrameIndex": 7,
+                "reason": "Small inlay candidate; angle estimate follows authored hammer-face plane and requires held-frame QA."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_8.png",
+            "frameIndex": 8,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                141,
+                113
+              ],
+              "neck": [
+                139,
+                137
+              ],
+              "chest": [
+                128,
+                145
+              ],
+              "waist": [
+                128,
+                171
+              ],
+              "workingHand": [
+                94,
+                168
+              ],
+              "visibleRightAnkle": [
+                121,
+                218
+              ],
+              "hammerHead": [
+                193,
+                208
+              ],
+              "screenRightBootCuff": [
+                121,
+                218
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  141,
+                  113
+                ],
+                "radius_px": [
+                  17,
+                  19
+                ],
+                "name": "face_foreground_candidate"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_walk_r001/AIRA__walk_8.png",
+            "sourceSHA256": "14195b5b08605dd7e4e2b4b9c7d8c0223cadba2cc3b037c33c0df1a3a17fad50",
+            "measurementStatus": "INDIVIDUAL_SOURCE_GRID_REMEASURED_CANDIDATE_R010",
+            "estimatedUncertaintyPx": 6,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 8,
+            "measurementNotes": "Read against individual 3x nearest-neighbor source image with 16px grid. Candidate point is visible physical contact/center, not proof of runtime fit; original pixels unchanged. R010: source-grid audit re-read this exact PNG at 3x nearest-neighbor display; coordinate values remain native source-pixel units with top-left origin. Selected screen-right leg-to-boot cuff/upper boot seam, not boot toe, floor contact, hammer, or shadow. Candidate only; spatial runtime fit not verified.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 8,
+                "fitStatus": "UNAPPROVED_HAMMER_FACE_ORIENTATION_CANDIDATE",
+                "sourceFrameIndex": 8,
+                "reason": "Small inlay candidate; angle estimate follows authored hammer-face plane and requires held-frame QA."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "mergePriority": 100,
+  "revision": "R010",
+  "provenanceNote": "R009 boot-cuff coordinates were superseded after an independent source-grid audit found several points on hammer/empty space. R010 uses source PNG dimensions and top-left native pixel coordinates. Alpha support is recorded in separate QA output and is not semantic evidence. R010 was rejected after close source-crop review: several points were on the hammer, boot vamp/low shaft, a trouser/gap area, or the cuff outer edge. Do not use for runtime. R011 off-glob candidate is pending independent review.",
+  "coordinateContract": {
+    "units": "native source PNG pixels",
+    "origin": "top-left",
+    "gridDisplayScale": 3,
+    "gridMap": "display grid x,y = native source x,y multiplied by 3; source PNG canvas_px is authoritative",
+    "status": "candidate; not runtime visual-fit proof"
+  },
+  "supersededBy": "native/Art/GeneratedCandidates/EquipmentDetails/aira_equipment_landmarks_r011_candidate.json"
+}

@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 """Build a separate, unsigned local Simulator app. Never signs or uploads."""
 from pathlib import Path
-import subprocess, shutil, plistlib, json, hashlib, time, argparse
+import subprocess, shutil, plistlib, json, hashlib, time, argparse, uuid
 # Parse help/unknown arguments before creating bundles or rewriting receipts.
 argparse.ArgumentParser(description=__doc__).parse_args()
 ROOT=Path(__file__).resolve().parents[2]
+from storage_guard import check_capacity
+check_capacity(ROOT, 'manual-simulator-build-before', heavy=True, expected_bytes=2_000_000_000)
 OUT=ROOT/'native/build'; OUT.mkdir(parents=True,exist_ok=True)
-APP=OUT/('app_'+time.strftime('%Y%m%dT%H%M%S'))/'WitchGathering.app';APP.mkdir(parents=True,exist_ok=True)
+stamp=time.strftime('%Y%m%dT%H%M%S')+'_'+uuid.uuid4().hex[:12]
+APP=OUT/('app_'+stamp)/'WitchGathering.app';APP.mkdir(parents=True,exist_ok=False)
 # The global receipt describes the latest attempt. A failed build must never
 # leave the previous successful receipt looking like the current result.
 def attempt_receipt(status,**fields):
@@ -16,7 +19,7 @@ def attempt_receipt(status,**fields):
 attempt_receipt('BUILD_IN_PROGRESS')
 sdk=subprocess.check_output(['xcrun','--sdk','iphonesimulator','--show-sdk-path'],text=True).strip()
 sources=sorted((ROOT/'native/WitchGameCore/Sources/WitchGameCore').glob('*.swift'))+sorted((ROOT/'native/WitchApp').glob('*.swift'))+[ROOT/'native/StoreKitLocalQA/ReusableBridge.swift']
-snapshot=OUT/('source_'+time.strftime('%Y%m%dT%H%M%S'));snapshot.mkdir(exist_ok=True)
+snapshot=OUT/('source_'+stamp);snapshot.mkdir(exist_ok=False)
 catalog_snapshot=snapshot/'catalog';catalog_snapshot.mkdir()
 for p in (ROOT/'native/WitchGameCore/Sources/WitchGameCore/Resources').glob('*.json'):shutil.copy2(p,catalog_snapshot/p.name)
 frozen=[]
@@ -50,3 +53,4 @@ receipt['resource_sha256']={str(p.relative_to(APP)):hashlib.sha256(p.read_bytes(
 (OUT/'BUILD_RECEIPT.json').write_text(json.dumps(receipt,ensure_ascii=False,indent=2))
 (APP.parent/'BUILD_RECEIPT.json').write_text(json.dumps(receipt,ensure_ascii=False,indent=2))
 print(APP)
+check_capacity(ROOT, 'manual-simulator-build-after', artifact_paths=[APP.parent,snapshot])

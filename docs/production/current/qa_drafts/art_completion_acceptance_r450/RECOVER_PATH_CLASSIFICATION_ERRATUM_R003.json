@@ -1,0 +1,60 @@
+{
+  "schema": "r450-recover-path-classification-erratum-r003-v1",
+  "status": "ADDITIVE_CORRECTION; ORIGINAL_R002_PRESERVED; NO_NEW_CAPTURE",
+  "corrects": "docs/production/current/qa_drafts/art_completion_acceptance_r450/RECOVER_PATH_CLASSIFICATION_R002.json",
+  "findings": {
+    "B_R01_A": {
+      "execute": "OBSERVED_RENDERED",
+      "recover": "UNOBSERVED_NO_ELIGIBLE_WINDOW",
+      "executeRootGroups": 3,
+      "visibleExecuteFramesByGroup": [16, 18, 11],
+      "totalVisibleExecuteFrames": 45,
+      "sceneGeneration": 6,
+      "visualSamples": [
+        {"sceneFrame": 367, "marker": "E145 00365", "sha256": "3d922481f98dd015be34e261e1045ea99d1c867ca42acab60afca91942f88675"},
+        {"sceneFrame": 375, "marker": "E145 00373", "sha256": "d982bab61f1cf314be7435d70575892ea7d4dc7c9b9f218f7a1f0457706b625f"},
+        {"sceneFrame": 382, "marker": "E145 00380", "sha256": "2e8af3f272e7116190c09281ca659788bb99f76a83c7c36518873a2d153fe071"}
+      ],
+      "reasonRecoverUnobserved": "First two execute windows are followed by deferred hit; third is followed by lethal resolve.",
+      "captureStatus": "RAW_CAPTURE_AND_SAVE_PAIR_RECOVERED_REQUIRES_VISUAL_AND_CORE_REPLAY; ORIGINAL_WRAPPER_FAILED_BEFORE_BATCH_CLOSURE"
+    },
+    "E_R02_01": {
+      "traceSequence": [
+        {"state": "execute", "frames": "433-451"},
+        {"state": "recover", "frames": "452-470"},
+        {"state": "idle", "frames": "471-508"},
+        {"state": "hit", "starts": 509},
+        {"state": "resolve", "starts": 573}
+      ],
+      "videoSamples": [
+        {"marker": "E145 00451", "videoTimeSeconds": 7.87, "visualScope": "execute-end boundary; enemy alive and visible"},
+        {"marker": "E145 00461", "videoTimeSeconds": 8.05, "visualScope": "recover interval; enemy alive and visible"}
+      ],
+      "idleVisualStill": false,
+      "joinLimit": "Trace videoJoin remains NOT_ESTABLISHED_OCR_REQUIRED; idle interval is trace-only in these cited stills."
+    }
+  },
+  "correctedCounts": {
+    "r418OriginalRecoverGaps": 19,
+    "closedRouteE_R02_01": 1,
+    "remainingR418GapCountIncludingSupportException": 18,
+    "directAttackIDsStillWithoutRecover": 17,
+    "directAttackIDsWithExecuteButNoRecover": 17,
+    "directAttackIDsWithNeitherExecuteNorRecover": 0,
+    "supportException": "E_R02_04"
+  },
+  "inputPins": {
+    "firstCaseRecovery": "fc479ddddbf3bfc71b1e5951f2b99594a8e4955f62509926b729b197b0186631",
+    "firstCaseTrace": "968127c0012cc8df28ed116e0ba9f73224a99f78d2776fdf7e765bf348238184",
+    "firstCaseVideo": "8dcba148552935d7812f66e48824a8875feb0e39db40010ce05aa2c8cc91b17c",
+    "r424IndependentReview": "87873c1b56c804dccebece3449084a5da859c8f68aebd266550584b20f220f8164",
+    "eR0201Review": "78f57e936f8245491e96b3ccc58f9bce940dcbc3225b972239f6c9b07ba9fedf",
+    "r425ReplayRun": "b79b5086305892c8f7e144e3614997b6f8e02aefd54a23e9f65b0767b42e2952"
+  },
+  "limitations": [
+    "R424 B_R01_A wrapper failure remains a failure; its preserved individual raw evidence is not a successful batch.",
+    "R425 is Core snapshot replay, not additional video evidence.",
+    "E_R02_01 idle return is present in trace but not visually sampled in the cited stills.",
+    "No all-enemy, full-art, ordinary-progression, or formal art-adoption claim."
+  ]
+}

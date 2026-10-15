@@ -1,0 +1,87 @@
+{
+  "schema": "witch.runtime.motion-metadata-overlay.v1",
+  "status": "TECHNICAL_CONTRACT_CORRECTIONS_CANDIDATE_NOT_ART_ACCEPTANCE",
+  "mergePolicy": "Patch metadata only; retain existing frame PNGs, byte payloads, and authored clips unless a path is explicitly named.",
+  "entries": {
+    "ACT_E_R01_01": {
+      "canvas_px": [384, 256],
+      "coordinate_space": "top_left_frame_pixel",
+      "anchor": {
+        "type": "foot_anchor_px",
+        "value_px": [207.5, 225],
+        "source_value_px": [830, 900],
+        "source_canvas_px": [1536, 1024],
+        "source_to_bundle_scale": [0.25, 0.25]
+      },
+      "fps": 24,
+      "clips_status": "EXISTING_SIX_CLIPS_KEEP_PATHS_AND_TIMINGS",
+      "groundEvidence": {
+        "method": "alpha bbox row scan over all frames, alpha thresholds >=64/128/240; compare against original source rig ground sample after source-to-frame scale",
+        "opaque_bottom_bundle_px": {
+          "idle": [224, 224],
+          "anticipate": [222, 224],
+          "execute": [224, 225],
+          "recover": [223, 224],
+          "hit": [224, 224],
+          "resolve": [224, 224]
+        },
+        "result": "The main opaque silhouette contact remains within 3px of mapped y=225 across existing clips. Low-alpha edge pixels extend to y=255 and must not be used as ground samples.",
+        "sourceRigManifest": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/actors/ACT_E_R01_01/source/rig_manifest.json",
+        "sourceAnchorSamples": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/actors/ACT_E_R01_01/source/anchor_samples.json",
+        "sourceCanvasPx": [1536, 1024],
+        "sourceRuntimeCanvasPx": [768, 512],
+        "bundleFramePx": [384, 256],
+        "sourceVsBundleByteIdentity": false
+      },
+      "approval": "HUMAN_ADOPTION_PENDING"
+    },
+    "ACT_E_R02_03": {
+      "canvas_px": [384, 256],
+      "coordinate_space": "top_left_frame_pixel",
+      "anchor": {
+        "type": "named_registration_points_px",
+        "source_canvas_px": [1536, 1024],
+        "source_to_bundle_scale": [0.25, 0.25],
+        "bell_registration": [192, 97.5],
+        "left_tentacle_root": [148.75, 127.5],
+        "right_tentacle_root": [213.75, 127.5]
+      },
+      "fps": 24,
+      "clipFrameRanges": {
+        "idle": {"first": 0, "count": 12, "loop": true},
+        "anticipate": {"first": 12, "count": 10, "loop": false},
+        "execute": {"first": 22, "count": 8, "loop": false},
+        "recover": {"first": 30, "count": 10, "loop": false},
+        "hit": {"first": 40, "count": 8, "loop": false},
+        "resolve": {"first": 48, "count": 12, "loop": false}
+      },
+      "clipMapping": "For each state, select that contiguous range from sequenceFrames.all_frames in its existing order.",
+      "anchorStatus": "SCALED_FROM_SOURCE_COORDINATES; prior raw source-pixel coordinates were incorrectly treated as output-frame coordinates.",
+      "qaStatus": "TECH_CANDIDATE_NOT_PROMOTED; existing native replay covers 60 frames and 6 states; cue and resolve quality remain partial.",
+      "sourceManifest": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/actors/ACT_E_R02_03/runtime/manifest_r003.json",
+      "sourcePartRoles": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/actors/ACT_E_R02_03/runtime/part_roles_editable.json",
+      "approval": "HUMAN_ADOPTION_PENDING"
+    },
+    "ACT_B_R03_A": {
+      "canvas_px": [1400, 1024],
+      "coordinate_space": "top_left_frame_pixel",
+      "anchor": {"type": "foot_anchor_px", "value_px": [700, 880]},
+      "fps": 24,
+      "states_present": ["idle", "anticipate", "execute", "recover", "hit"],
+      "states_missing": ["walk", "resolve"],
+      "contactReview": {
+        "method": "Thresholded alpha-bottom rows are a diagnostic only; compare paw contacts by visual state because hammers and limbs can extend lower than feet.",
+        "alphaBottomByStateAtLeast64": {
+          "idle": [879, 879],
+          "anticipate": [879, 879],
+          "execute": [879, 994],
+          "recover": [879, 904],
+          "hit": [879, 881]
+        },
+        "visualEvidence": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/representatives/ACT_B_R03_A/qa/rig_r003/layout_candidate_d/six_state_contact_sheet.png",
+        "result": "Idle/anticipate/hit paws visually share the y≈880 floor. Execute low hammer and recover appendages explain lower alpha extents; do not change foot anchor from bbox alone."
+      },
+      "approval": "HUMAN_ADOPTION_PENDING"
+    }
+  }
+}

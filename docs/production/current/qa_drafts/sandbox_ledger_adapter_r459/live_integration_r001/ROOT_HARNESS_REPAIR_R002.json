@@ -1,0 +1,25 @@
+{
+  "at": "2026-10-15T07:05:18.421294+09:00",
+  "changes": [
+    {
+      "path": "tools/witch_purchase_authority/tests/test_authority.py",
+      "beforeSHA256": "94ecca7044d8d89eba87d0531a4b0e4a363f2c19c3be0fe264ce5eb7432bb081",
+      "afterSHA256": "8f50056755334b199a58d4392853a15c08fe7f374106360fd7f4f54ae021bc21",
+      "connectionsExplicitlyClosed": 3
+    },
+    {
+      "path": "tools/witch_purchase_authority/tests/test_notifications.py",
+      "beforeSHA256": "5dfc9df8cf66d27d2184392e89dc869c91fc1583afbbfb08f2a7319665fb8c41",
+      "afterSHA256": "8192e63fd2b88ef06dc43f0fa002778a315483557d5f13e291b84e6c1a9bd9c6",
+      "connectionsExplicitlyClosed": 6
+    },
+    {
+      "path": "tools/witch_purchase_authority/sandbox_ledger_adapter_r459.py",
+      "beforeSHA256": "ec7f71d46a35b4d9e4cc3478d117ec8a30b263549ecb523c3720311e6809bd68",
+      "afterSHA256": "b4ec379f82d2f1c4cf7da6848e5e68de793cc9db65ec5ff88a3e5947704a4edd",
+      "reason": "Support package and documented standalone import modes without mixing typed-record modules"
+    }
+  ],
+  "trigger": "live_regression_r001: two imports missingrepo PYTHONPATH; warnings from preexisting test SQLitecontext does notcloseconnection",
+  "nativeChange": false
+}

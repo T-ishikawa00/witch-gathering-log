@@ -1,0 +1,34 @@
+{
+  "schema": "r458-final-local-integration-precheck-v1",
+  "status": "READ_ONLY_REVIEW_COMPLETE",
+  "scope": "R454 local purchase integration and current R010/R456 status boundary",
+  "actions": {
+    "sourceEdited": false,
+    "buildRun": false,
+    "testsRun": false,
+    "simulatorTouched": false,
+    "saveMutated": false
+  },
+  "findings": {
+    "newSaveOrCrashBlockerEstablished": false,
+    "r454LocalXcodeToMockPath": "SCOPED_RUNTIME_PASS",
+    "productionCommerce": "NOT_IMPLEMENTED_OR_VALIDATED",
+    "physicalIPhoneRuntime": "NOT_VALIDATED",
+    "distributionOrPublication": "NOT_AUTHORIZED_OR_PERFORMED",
+    "registerR010StaleAgainstR454": true,
+    "r456BuildResultUsed": false
+  },
+  "evidence": {
+    "r454RuntimePath": "docs/production/current/qa_drafts/storekit_event_export_r454/runtime_r001/RUNTIME_RESULT_R001.json",
+    "r454RuntimeSHA256": "ec784e713b85b1cdaef76a6ee1ab73ef703074ac4e8c34d7878ae5e80afce10a",
+    "r454SaveSHA256": "63936957bb1ac8c592ee485b17591d294856652c04c06afc2d1766bc70a38034",
+    "r454SaveRevision": 3,
+    "r456InputSourceCount": 238,
+    "r456InputResourceCount": 1922,
+    "r456Result": "NOT_ASSESSED_BUILD_REPORTED_RUNNING"
+  },
+  "statusCorrectionNeeded": [
+    "Update COMMERCE-01 to record R454 scoped local delivery verification while keeping real Apple/backend commerce incomplete.",
+    "Update iOS/source-map status after R456 reaches a terminal receipt; do not equate unsigned compilation with physical-device runtime."
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "schema": "effect-build-comparison-coverage-ledger-r376-r001",
+  "status": "SOURCE_ONLY_R376_NOT_RUN; prior test evidence is bounded and does not establish build-value acceptance",
+  "sixBuildFamilies": [
+    {
+      "family": "direct attack/control",
+      "existingEvidence": [
+        {
+          "id": "R346 54 outcome previews",
+          "status": "PASS_SCOPED",
+          "path": "docs/production/current/qa_drafts/current_economy_outcomes_r346/runner_root_r002/runs/run_001/RUN_RESULT_R001.json",
+          "sha256": "36ac26bca0edd73aa711b83a091113401ec20984910872e6b64d4c1142d08058",
+          "scope": "3 synthetic economy arms x 3 seeds, 3 challenge IDs x 2 owned loadouts; 54 previews, not pure effect isolation"
+        },
+        {
+          "id": "R371 direct event ledger",
+          "status": "PASS_SCOPED",
+          "path": "docs/production/current/qa_drafts/research_mechanic_closure_r371/execution_r002/runs/37100000-0002-4001-8000-000000000001/RUN.json",
+          "sha256": "65f0e11aa1c2bb677bd8489435543fc71da88ab610ccac3794e8a80cd5f4cfbe",
+          "scope": "15 fixed mechanism tests, one MECHANISM_ONLY fixture seed; direct damage included in HP replay"
+        }
+      ],
+      "comparativeGap": "No earned direct-vs-effect matched-weapon comparison on same challenge beyond R376 candidate."
+    },
+    {
+      "family": "poison / DoT",
+      "existingEvidence": [
+        {
+          "id": "R371 CH_R02_01 DoT/heal event linkage",
+          "status": "PASS_SCOPED",
+          "path": "docs/production/current/qa_drafts/research_mechanic_closure_r371/execution_r002/runs/37100000-0002-4001-8000-000000000001/RUN.json",
+          "sha256": "65f0e11aa1c2bb677bd8489435543fc71da88ab610ccac3794e8a80cd5f4cfbe",
+          "scope": "mechanism-only verification, not weapon build value"
+        }
+      ],
+      "candidate": "R376: six no-reward previews using actual R368 free-cohort inventory EQ_W_01 vs EQ_W_P1 on CH_R02_01, 3 fixed seeds. Q0/+0/rank-I/investment-0 and catalog attack +3 match; latent slots differ and stay a confound. No winner assertion."
+    },
+    {
+      "family": "barrier / ward / membrane",
+      "existingEvidence": [
+        {
+          "id": "R359 earned R02 membrane matched active-window test",
+          "status": "PASS_SCOPED",
+          "path": "docs/production/current/qa_drafts/research_completion_triage_r359/diagnostic_root_r004/runs/5eb7eabe-9b4f-47da-a013-da8b862bd3d9/RUN.json",
+          "sha256": "3b25ecc1e2ec1b12a29ce6b05b75c14bd6eafb43d1468baf4a149c86610dd971",
+          "scope": "one earned-loadout event comparison, active-window damage prevention +47/+9/+26/+9/+11 reported; not an owned-item pair"
+        }
+      ],
+      "comparativeGap": "R324 barrier-reflect pair had no combat preview; do not count it. Next candidate must use actual owned, same-quality/upgrade/refinement items and a membrane/reflect-compatible challenge, or explicitly unavailable."
+    },
+    {
+      "family": "counter / reflect",
+      "existingEvidence": [
+        {
+          "id": "R371 CH_R04_02 buff/weaken/damage action-root test",
+          "status": "PASS_SCOPED",
+          "path": "docs/production/current/qa_drafts/research_mechanic_closure_r371/execution_r002/runs/37100000-0002-4001-8000-000000000001/RUN.json",
+          "sha256": "65f0e11aa1c2bb677bd8489435543fc71da88ab610ccac3794e8a80cd5f4cfbe",
+          "scope": "fixture event mechanics; not counter build comparison"
+        },
+        {
+          "id": "R371 event replay set includes counter/reflect channels",
+          "status": "PASS_SCOPED",
+          "path": "docs/production/current/qa_drafts/research_mechanic_closure_r371/candidate_r003/ResearchMechanicClosureR371Tests.swift",
+          "sha256": "b78acbb5917d55782a8de904abb5a41145ce868b65fb5227dac8f71d457a93dc",
+          "scope": "mechanics-only damage accounting; no matched owned counter gear comparison"
+        }
+      ],
+      "comparativeGap": "No verified same-seed owned counter/reflect loadout outcome comparison."
+    },
+    {
+      "family": "healing / support",
+      "existingEvidence": [
+        {
+          "id": "R371 CH_R02_01 and CH_R05_02 support/heal semantics",
+          "status": "PASS_SCOPED",
+          "path": "docs/production/current/qa_drafts/research_mechanic_closure_r371/execution_r002/runs/37100000-0002-4001-8000-000000000001/RUN.json",
+          "sha256": "65f0e11aa1c2bb677bd8489435543fc71da88ab610ccac3794e8a80cd5f4cfbe",
+          "scope": "controlled event tests, including enemy light transfer to guardian; not a player loadout value comparison"
+        }
+      ],
+      "comparativeGap": "No same-snapshot owned support/heal build comparison."
+    },
+    {
+      "family": "chase / follow-up",
+      "existingEvidence": [
+        {
+          "id": "R371 CH_R05_03 combo/multi-hit/AOE sequence",
+          "status": "PASS_SCOPED",
+          "path": "docs/production/current/qa_drafts/research_mechanic_closure_r371/execution_r002/runs/37100000-0002-4001-8000-000000000001/RUN.json",
+          "sha256": "65f0e11aa1c2bb677bd8489435543fc71da88ab610ccac3794e8a80cd5f4cfbe",
+          "scope": "fixture combo/tell/event mechanics, not a chase-item comparison"
+        }
+      ],
+      "comparativeGap": "No earned chase/follow-up build comparison."
+    }
+  ],
+  "existingComparisonBoundary": {
+    "R346": "54 previews (9 cases, six each), exact result above. R346 used current equipped vs a deterministic alternative selected by investment/quality; it was not an effect-family isolation. R346 README_R002: docs/production/current/qa_drafts/current_economy_outcomes_r346/candidate_r001/README_R002.md.",
+    "R371": "15/15 tests PASS in one R002 run, 0 failed/skipped; one MECHANISM_ONLY fixed seed. It validates challenge/event contracts, not build superiority, normal acquisition, or all 15 design studies.",
+    "R376": "One new paired comparison candidate only; not compiled/run. R368 source save is a virtual free/no-ad cohort result, not actual player-earned acquisition."
+  },
+  "futureBoundedSequence": [
+    {
+      "order": 1,
+      "family": "poison",
+      "candidate": "R376 six previews",
+      "why": "ready and uses two actual owned same-base-stat weapons; latent rolls remain a documented confound"
+    },
+    {
+      "order": 2,
+      "family": "barrier/ward",
+      "gate": "only if the saved earned inventory has a genuinely owned compatible pair; pin full IDs/stats first; no substitute templates"
+    },
+    {
+      "order": 3,
+      "family": "counter/reflect",
+      "gate": "only after exact compatible owned pair and triggering authored challenge are confirmed"
+    },
+    {
+      "order": 4,
+      "family": "healing/support",
+      "gate": "only if owned build pair can trigger a player-side effect; enemy lamp transfer is not player-build evidence"
+    },
+    {
+      "order": 5,
+      "family": "chase/follow-up",
+      "gate": "only if owned relevant gear actually yields chase/follow-up events in the selected scenario"
+    },
+    {
+      "order": 6,
+      "family": "direct/control",
+      "gate": "use as same-save comparator for each other family where possible; does not need a separate replay absent a paired hypothesis"
+    }
+  ],
+  "globalLimitations": [
+    "No finding here proves a winning build, causal latent-only effect, balanced rarity, purchase value, fun, or formal adoption.",
+    "R368 is a 30-virtual-day simulated cohort under an unapproved runtime; provenance is a test fixture, not normal human play.",
+    "Do not rerun R346 or R371 for effect comparisons; use only a new preregistered owned-pair question.",
+    "No R376 compile, XCTest, Simulator, save mutation, grant, or purchase was performed."
+  ]
+}

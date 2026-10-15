@@ -1,0 +1,83 @@
+{
+  "schema": "witch.actor_candidate_art_pack.v1",
+  "actorID": "ACT_E_R02_03",
+  "status": "UNAPPROVED_CANDIDATE_ONLY",
+  "complete_animation": false,
+  "humanApproved": false,
+  "sourceBuild": "native/build/app_20261011T130510/WitchGathering.app",
+  "sourceFrames": [
+    {
+      "id": "walk_a",
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/app_20261011T130510/WitchGathering.app/Art/GeneratedCandidates/ACT_E_R02_03/pose_candidate_motion_r001/frames_native/walk_a.png",
+      "sha256": "09e18d7f4e0abe73f8eb30af55652732f0619c5b0292e3ba30fd89a7036fd340"
+    },
+    {
+      "id": "walk_b",
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/app_20261011T130510/WitchGathering.app/Art/GeneratedCandidates/ACT_E_R02_03/pose_candidate_motion_r001/frames_native/walk_b.png",
+      "sha256": "ac163f822233abd37b886523df3f2f9d0d4a95515963fbb1c3efcce6e7b9c44f"
+    },
+    {
+      "id": "idle_a",
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/app_20261011T130510/WitchGathering.app/Art/GeneratedCandidates/ACT_E_R02_03/pose_candidate_motion_r001/frames_native/idle_a.png",
+      "sha256": "17116960be77a0ea7b74e9906320dabe79aeccde9f534476e2710e1091b5a446"
+    },
+    {
+      "id": "idle_b",
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/app_20261011T130510/WitchGathering.app/Art/GeneratedCandidates/ACT_E_R02_03/pose_candidate_motion_r001/frames_native/idle_b.png",
+      "sha256": "a7f874a548c8a9da2cb3349c171c53b2d5061c50d720c48b25f37c0b8aac5abb"
+    }
+  ],
+  "candidateSource": "docs/production/current/qa_drafts/enemy_loop_seams_r001/jelly_e02_r001/midpoint_walkb_idle_a_r002/mid_walkb_idle_a_r002_384x256.png",
+  "candidateSHA256": "2d5dd39b847523a1d8d2c792b22bbb56a1562d19c03bf96d6d61acca07b6c4cf",
+  "canvas_px": [
+    384,
+    256
+  ],
+  "anchor": [
+    192,
+    97.5
+  ],
+  "anchor_type": "floating_core_pivot_candidate",
+  "clip": {
+    "frames": [
+      "GeneratedCandidates/ACT_E_R02_03/walk_midpoint_candidate_r002/walk_a.png",
+      "GeneratedCandidates/ACT_E_R02_03/walk_midpoint_candidate_r002/walk_b.png",
+      "GeneratedCandidates/ACT_E_R02_03/walk_midpoint_candidate_r002/mid_walkb_idle_a_r002.png",
+      "GeneratedCandidates/ACT_E_R02_03/walk_midpoint_candidate_r002/idle_a.png",
+      "GeneratedCandidates/ACT_E_R02_03/walk_midpoint_candidate_r002/idle_b.png"
+    ],
+    "frame_count": 5,
+    "fps": 10,
+    "duration_seconds": 0.5,
+    "loop": true
+  },
+  "frames": [
+    {
+      "id": "walk_a",
+      "path": "GeneratedCandidates/ACT_E_R02_03/walk_midpoint_candidate_r002/walk_a.png",
+      "sha256": "09e18d7f4e0abe73f8eb30af55652732f0619c5b0292e3ba30fd89a7036fd340"
+    },
+    {
+      "id": "walk_b",
+      "path": "GeneratedCandidates/ACT_E_R02_03/walk_midpoint_candidate_r002/walk_b.png",
+      "sha256": "ac163f822233abd37b886523df3f2f9d0d4a95515963fbb1c3efcce6e7b9c44f"
+    },
+    {
+      "id": "mid_walkb_idle_a_r002",
+      "path": "GeneratedCandidates/ACT_E_R02_03/walk_midpoint_candidate_r002/mid_walkb_idle_a_r002.png",
+      "sha256": "2d5dd39b847523a1d8d2c792b22bbb56a1562d19c03bf96d6d61acca07b6c4cf"
+    },
+    {
+      "id": "idle_a",
+      "path": "GeneratedCandidates/ACT_E_R02_03/walk_midpoint_candidate_r002/idle_a.png",
+      "sha256": "17116960be77a0ea7b74e9906320dabe79aeccde9f534476e2710e1091b5a446"
+    },
+    {
+      "id": "idle_b",
+      "path": "GeneratedCandidates/ACT_E_R02_03/walk_midpoint_candidate_r002/idle_b.png",
+      "sha256": "a7f874a548c8a9da2cb3349c171c53b2d5061c50d720c48b25f37c0b8aac5abb"
+    }
+  ],
+  "preservation": "All four original frames copied byte-identically; original app and native production originals remain untouched.",
+  "qualityLimit": "Candidate only. Right appendage free-tip semantic coordinate remains unknown; generated bell/details and left silhouette show small drift. No naturalness/Human adoption claim."
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "r433-wardrobe-furniture-bounded-ui-check-v2",
+  "status": "PREPARED_NOT_RUN",
+  "supersedes": "CHECKLIST_R001.md and SCOPE_R001.json for execution scope; originals retained",
+  "authority": "Root authorized ordinary user-visible selection, free starter furniture claim, place/store/reset; no synthetic QA/direct-engine/save injection",
+  "baseline": {
+    "appBuild": "R420 normal Release",
+    "ordinaryRun": "docs/production/current/qa_drafts/normal_progression_r421/runs/ce157294-34aa-4b44-8afa-3e77fbbd4b09",
+    "save": "docs/production/current/qa_drafts/normal_progression_r421/runs/ce157294-34aa-4b44-8afa-3e77fbbd4b09/checkpoints/close/files/save.json",
+    "revision": 13,
+    "saveSHA256": "07252129426c3d68b9617c2569f1a6c79c16f86968ed6a6841a1aa472150cab6",
+    "ownedCosmeticIDs": [],
+    "selectedCosmeticIDs": {},
+    "selectedWeaponAppearanceIDs": {},
+    "ownedFurnitureIDs": [],
+    "placedFurnitureIDs": []
+  },
+  "appearanceItems": [
+    {"id":"ERNA_TRAVEL","actor":"C_WITCH","kind":"costume","status":"UNAPPROVED_TEST_OVERLAY_CANDIDATE"},
+    {"id":"LUNA_MANTLE_CANDIDATE_R128","actor":"C_APPRENTICE","kind":"costume","status":"UNAPPROVED_LOCAL_QA_CANDIDATE_NOT_FOR_SALE"},
+    {"id":"AIRA_HARVEST_APRON_GREEN_CANDIDATE_R130","actor":"C_SMITH","kind":"costume","status":"UNAPPROVED_LOCAL_QA_CANDIDATE_NOT_FOR_SALE"},
+    {"id":"NOIR_NECKWEAR_MOSS_R001","actor":"C_FAMILIAR","kind":"accessory","status":"UNAPPROVED_LOCAL_QA_CANDIDATE_NOT_FOR_SALE"},
+    {"id":"STAFF_BRANCH","actor":"C_WITCH","kind":"weapon","status":"UNAPPROVED_TEST_OVERLAY_CANDIDATE"},
+    {"id":"STAFF_MOON","actor":"C_WITCH","kind":"weapon","status":"UNAPPROVED_TEST_OVERLAY_CANDIDATE"}
+  ],
+  "furniture": {"id":"FURN_DESK_BOTANICAL","ordinaryAction":"free claim, place, cold reopen, store, cold reopen","baseline":"unowned/unplaced"},
+  "acceptance": [
+    "All six previews and applications visibly match the intended actor/item; both staff choices render distinctly in home, companion, and ordinary battle context.",
+    "Cold reopen preserves selected cosmetic/weapon appearance IDs and ownership; cosmetic selection does not alter gear, equipped IDs, combat stats, or currency.",
+    "The free desk claim/place/store sequence changes only expected furniture fields plus its receipts/revisions; cold reopen preserves placed then stored state.",
+    "Only ordinary UI actions are used; no direct command, test fixture, QA flag, time change, purchase, or save replacement.",
+    "Report candidate art/UX verification separately from formal product/art approval and real-device/release acceptance."
+  ],
+  "sourcePins": {
+    "native/WitchApp/WorkflowViews.swift":"8bea8f0ac8eccd580236d9eea7703568b36ded1716d9e2b4f2b76e3bb860f72a",
+    "native/WitchApp/App.swift":"3ae262c5c3bae250b20e7c4971256ff1c3ec00043f4b607de34b2e683603594a",
+    "native/WitchApp/LivingScene.swift":"e4505b57d66f41b391831392ed23c25a4829bf9cd6301bd8127012cb1486038",
+    "native/WitchApp/FurnitureRoomPreviewR275.swift":"79a6512b9c9abffa6b53863b19ae14aaf70bb93ef51b9baffe3800e6884dec9d",
+    "native/WitchGameCore/Sources/WitchGameCore/GameEngine.swift":"c50d7418a1442c7f8b5a5ecd1b0a76f937877fc90267cb0b2460fb6645347b65",
+    "native/WitchGameCore/Sources/WitchGameCore/GearAppearanceProjection.swift":"dc22dda14c754d5b0dd9fd80f69b0f1debac581bb9354ae8907a047d1229b663",
+    "native/qa_source_20261014T124430/WitchGameCore/Sources/WitchGameCore/Resources/catalog_overlay.json":"bb218f0fe6b4b1a6037faa75ddb301ded27d7b9de070747bebf99a3e72209337",
+    "R431Review":"docs/production/current/qa_drafts/wardrobe_furniture_source_audit_r431/REVIEW_R001.md",
+    "R420BuildContract":"docs/production/current/qa_drafts/native_completion_r420/build_tools_r001/ROOT_SEALED_CONTRACT_R002.json"
+  },
+  "execution": {"build":false,"simulator":false,"executed":false,"saveReplacement":false,"directStateMutation":false,"QAflags":false,"purchase":false}
+}

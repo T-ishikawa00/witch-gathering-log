@@ -1,0 +1,65 @@
+{
+  "unchanged_catalog": "rarity_product_r2",
+  "candidate_delta": {
+    "id": "STARTER_PLUS_CHOICE_R1",
+    "replaces_if_approved": "STARTER",
+    "price_yen_candidate": 160,
+    "tickets": 10,
+    "choice_grants": 1,
+    "quality": "Q2",
+    "rank": 1,
+    "enhancement": 0,
+    "pool": "13 base G_START/G_R01_A types only",
+    "choice_raw_q": 500,
+    "fixed_affixes_before_purchase": true,
+    "no_expiry": true,
+    "purchase_limit": "once",
+    "extra_top_guarantee": false,
+    "new_currency": false,
+    "status": "NEW_UNAPPROVED_TEST_VARIANT"
+  },
+  "audiences": [
+    {
+      "audience": "無購入・広告なし",
+      "value": "本編と常設課題、制作・昇格・装備比較",
+      "acceptance": "課金専用型や最高個体値を必須にせず、少なくとも2方式で各標準課題を突破できる。",
+      "measured": "R01既存比較と今回条件付き抽選。全15課題は未実装。"
+    },
+    {
+      "audience": "160円だけ",
+      "value": "小さく引ける＋確実に選べる一品の比較候補",
+      "acceptance": "装備の選択と実際の反映を購入前に説明。新案は10券+基本13型からSR1品。",
+      "measured": "旧20取得対新21取得の森96戦ずつ。実購入・満足は未検証。"
+    },
+    {
+      "audience": "480円小包・少額継続",
+      "value": "狙いに届く機会を増やす",
+      "acceptance": "2有効効果の対象装備への到達分布、使用機会、交換価値を測る。24枠LR完成日だけにしない。",
+      "measured": "今回固定終盤カタログの到達分布。価格受容は未検証。"
+    },
+    {
+      "audience": "広告省略だけ",
+      "value": "任意報酬の同量同回数を、視聴なしで",
+      "acceptance": "通常収集へ強制広告を追加しない。視聴群と省略群は同条件。",
+      "measured": "以前の経済一致。今回装備抽選では無料群と同じ入力。"
+    },
+    {
+      "audience": "衣装中心",
+      "value": "好きな衣装で家・全身・戦闘が統一",
+      "acceptance": "1着の全反映・動作・試着を実機で確認してから販売。",
+      "measured": "数式で価値合格にしない。追加衣装の完成ビジュアルは未制作。"
+    },
+    {
+      "audience": "家具中心",
+      "value": "帰宅した家の見た目と仲間の過ごし方が変わる",
+      "acceptance": "差し替え後の座面・手・影・遮蔽を確認。",
+      "measured": "配置規格のみ。実商品・可愛さの評価は未実施。"
+    },
+    {
+      "audience": "高額の装備収集",
+      "value": "複数型・複数個体・試せる構成の幅を早く増やす",
+      "acceptance": "上位課金者限定ルールや隠れた確率優遇なし。理想3枠高数値を攻略必須にしない。",
+      "measured": "今回の固定目標の入手率。売上・継続課金・複数ビルド実戦は未証明。"
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "version": "APPEARANCE_CONTRACT_R1_PROPOSED",
+  "region159_unchanged": true,
+  "required_outfit_contexts": [
+    "home",
+    "detail",
+    "combat"
+  ],
+  "required_combat": [
+    "idle",
+    "anticipate",
+    "execute",
+    "recover",
+    "hit",
+    "resolve",
+    "locomotion"
+  ],
+  "required_home": [
+    "idle",
+    "use_slot",
+    "transition"
+  ],
+  "required_detail": [
+    "fullbody"
+  ],
+  "required_bindings": [
+    "feet",
+    "hand_front",
+    "hand_back",
+    "weapon_grip",
+    "effect_origin"
+  ],
+  "genuine_layers_required": true,
+  "flat_ora_counts_as_rig": false,
+  "content_manifest_fields": [
+    "asset_id",
+    "actor_id",
+    "base_appearance_ref",
+    "revision",
+    "sha256",
+    "contexts",
+    "action_coverage",
+    "bindings",
+    "compatible_weapon_ids",
+    "editable_components",
+    "underpaint",
+    "dependencies",
+    "fallback_asset",
+    "rights_record",
+    "qa_status"
+  ],
+  "home_slots": [
+    {
+      "slot": "DESK",
+      "name": "作業机",
+      "category": "desk",
+      "required_interactions": [
+        "sit_read",
+        "mix"
+      ],
+      "supports_rotation": false
+    },
+    {
+      "slot": "DESK_SEAT",
+      "name": "机の椅子",
+      "category": "seat",
+      "required_interactions": [
+        "sit"
+      ],
+      "supports_rotation": false
+    },
+    {
+      "slot": "HEARTH",
+      "name": "暖炉まわり",
+      "category": "hearth",
+      "required_interactions": [
+        "warm"
+      ],
+      "supports_rotation": false
+    },
+    {
+      "slot": "SOFA",
+      "name": "長椅子",
+      "category": "sofa",
+      "required_interactions": [
+        "sit"
+      ],
+      "supports_rotation": false
+    },
+    {
+      "slot": "BOOKCASE",
+      "name": "本棚",
+      "category": "storage",
+      "required_interactions": [],
+      "supports_rotation": false
+    },
+    {
+      "slot": "CURTAIN",
+      "name": "窓まわり",
+      "category": "window_dressing",
+      "required_interactions": [],
+      "supports_rotation": false
+    },
+    {
+      "slot": "RUG",
+      "name": "絨毯",
+      "category": "rug",
+      "required_interactions": [],
+      "supports_rotation": false
+    },
+    {
+      "slot": "LIGHT",
+      "name": "照明",
+      "category": "light",
+      "required_interactions": [],
+      "supports_rotation": false
+    },
+    {
+      "slot": "PLANT",
+      "name": "植物・小飾り",
+      "category": "decor",
+      "required_interactions": [],
+      "supports_rotation": false
+    },
+    {
+      "slot": "CAT_BED",
+      "name": "猫の寝床",
+      "category": "cat_bed",
+      "required_interactions": [
+        "cat_sleep"
+      ],
+      "supports_rotation": false
+    }
+  ],
+  "home_semantics": "home is a return/rest vignette; does not double the party; no productive second party",
+  "proof_scope": {
+    "actor": "C_WITCH",
+    "looks_including_default": 2,
+    "weapons": [
+      "EQ_W_01",
+      "EQ_W_G1"
+    ],
+    "actions_per_look": 11,
+    "state_weapon_look_coverage_cells": 44,
+    "furniture": [
+      "DESK",
+      "DESK_SEAT"
+    ],
+    "test_only_future_weapon_allowed_with_explicit_QA_fixture": true
+  },
+  "rollout_hypothesis": {
+    "actors": 4,
+    "looks_each_including_default": 2,
+    "outfit_context_action_cells": 88,
+    "world_weapon_templates": 14,
+    "look_weapon_compatibility_pairs": 28,
+    "home_rooms": 1,
+    "home_slots": 10,
+    "default_furniture": 10,
+    "additional_furniture": 10
+  },
+  "no_new_art_created": true
+}

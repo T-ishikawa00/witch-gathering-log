@@ -1,0 +1,12 @@
+{
+  "status": "R001_SETUP_FAILURE_RETAINED",
+  "ran": 73,
+  "errors": 15,
+  "failedAssertions": 0,
+  "skipped": 0,
+  "passed": 58,
+  "cause": "All 15 R453 test methods failed in setUp: macOS /var temporary-directory parent is a symlink. Strict adapter policy rejected it before delivery. Other 58 tests passed. The raw ok-line counter returned 57 because one success line has diagnostic output; unittest aggregate is authoritative.",
+  "repair": "Resolve only newly created test temp root; retain symlink rejection policy.",
+  "logSHA256": "73e810e2e759d70ff0c9a45c6023cb658dc55ad1c4d983721341ca20918f15c2",
+  "time": 1792011063.255578
+}

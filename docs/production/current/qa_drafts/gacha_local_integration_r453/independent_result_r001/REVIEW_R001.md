@@ -1,0 +1,7 @@
+# R453 independent result review
+
+**Result: scoped pass.** The sealed Swift run reports 24 passed, 0 failed, 0 skipped in 17.98 seconds: seven importer tests and 17 `SaveRepositoryRecoveryR001Tests`. The input manifest records 61 pinned files, marks them unchanged, and binds the delivery fixture SHA `eb6600a3…f7c2c75a` to the execution. The run log includes cold reopen/replay, injected pre- and post-primary-replacement cases, current-provider recheck, invalid payload/pity rejection, and save-recovery coverage.
+
+Python evidence has two distinct scopes. The full R005-era result is 73 passed, 0 failed, 0 skipped. Its log contains SQLite `ResourceWarning`s. The later R006 focused run passes all 15 adapter tests with `-W error::ResourceWarning`, reports no such warning, and records the final R006 source pins unchanged; it reuses the 58 other test results from the earlier full run. These are complementary records, not one 73-test run against the final R006 files. A Swift compile warning remains for an unused-mutability local in the new test helper; it did not affect the passing run.
+
+These results validate the local fixture-to-SaveRepository boundary, not Apple authority. The Swift provider is a mock seam that can simulate a refund/tombstone response, and the Python authority is explicitly local mock authority. No StoreKit transaction, Apple account, Sandbox, or production entitlement was exercised. Keep the separate R454 StoreKit integration status open.

@@ -1,0 +1,261 @@
+{
+  "schema": "r443-independent-final-review-v1",
+  "status": "SCOPED_PASS_FINAL_STATE_AND_PRESERVATION; HISTORY_NOT_CLEAN_NO_MOCK",
+  "scope": "Independent readback of sealed R443 closeout, save lineage, five rev13 mock products, equipment/progression receipts, and cold reopen. No app, Simulator, build, test, or save mutation.",
+  "evidence": {
+    "execution": {
+      "closurePath": "docs/production/current/qa_drafts/normal_progression_continuation_r443/candidate_r002/execution_r001/CLOSURE.json",
+      "closureSHA256": "bee6afc91e27fbcee4dac0632ebdbddf1738f5ea63706fb31dec76f2665fdf51",
+      "closureStatus": "CLOSED_PRESERVATION_EXACT",
+      "elapsedSeconds": 2281.186184167862,
+      "wallBudgetSeconds": 2400,
+      "evidenceBytes": 28634676,
+      "evidenceBudgetBytes": 40000000,
+      "screenshots": 8,
+      "screenshotBudget": 10,
+      "allProtectedExact": true,
+      "historicalProtectedTrees": 14,
+      "r420AppExact": true,
+      "r420AppFiles": 1925,
+      "r437AppAndDataExact": true,
+      "build": false,
+      "restore": false,
+      "purchase": false,
+      "clockChanges": false,
+      "deletion": false,
+      "saveInjection": false,
+      "rootGameplayReviewAtClose": "PENDING_ROOT_REVIEW"
+    },
+    "saves": [
+      {
+        "label": "baseline",
+        "revision": 75,
+        "sha256": "51c07a8d8c262f930bda41728b2775ac1338187644ed3a60fda05fbf24786475",
+        "campaignEncounters": 28,
+        "challengeClears": 0,
+        "xpEach": 969,
+        "research": [
+          "RS_THEORY_1"
+        ]
+      },
+      {
+        "label": "all_five_regions_cleared",
+        "revision": 91,
+        "sha256": "46abb206178cac46b722a5dd8b1dabd26a3c2f0885835f05d589c79ada6fa9ba",
+        "campaignEncounters": 30,
+        "challengeClears": 0,
+        "xpEach": 5559
+      },
+      {
+        "label": "all_mock_draw_gear_removed",
+        "revision": 102,
+        "sha256": "dc50c178563d0a006c861879ae2857b86ff6a1b05b6558c774e87c970dc4ff9d",
+        "campaignEncounters": 30,
+        "challengeClears": 7,
+        "xpEach": 5775
+      },
+      {
+        "label": "no_mock_armor_r05_a_win",
+        "revision": 112,
+        "sha256": "935fbb13215a30b420a9f14da4b701b1c532524c82a8ec2ab8e567d5e450f118",
+        "lastResult": "repeat B_R05_A victory, 33 ticks, immediate rewards 0"
+      },
+      {
+        "label": "final",
+        "revision": 113,
+        "sha256": "86b3ad5cbf46ca0bb946bb36324df2192953a9d824cc26e91af1fdd1df269a20",
+        "campaignEncounters": 30,
+        "challengeClears": 7,
+        "xpEach": 5883,
+        "completedResearch": [
+          "RS_THEORY_1"
+        ],
+        "completedChallengeIDs": [
+          "CH_R01_01",
+          "CH_R01_02",
+          "CH_R01_03",
+          "CH_R02_01",
+          "CH_R02_02",
+          "CH_R02_03",
+          "CH_R03_01"
+        ]
+      }
+    ],
+    "coldReopen": {
+      "receiptPath": "docs/production/current/qa_drafts/normal_progression_continuation_r443/candidate_r002/execution_r001/cold_after_COLD.json",
+      "receiptSHA256": "70dd21a059d56ff317ea2ad22f7726aa05f9dc7cece5eb4d28b5ff89b4dcf78c",
+      "beforePID": 5871,
+      "afterPID": 12536,
+      "pidChanged": true,
+      "beforeSaveSHA256": "86b3ad5cbf46ca0bb946bb36324df2192953a9d824cc26e91af1fdd1df269a20",
+      "afterSaveSHA256": "86b3ad5cbf46ca0bb946bb36324df2192953a9d824cc26e91af1fdd1df269a20",
+      "saveBytesExact": true,
+      "helperRewroteSave": false
+    },
+    "mockProducts": {
+      "rev13OperationID": "C385C74B-86AC-4EE7-8DF7-84EBDF76F208",
+      "rev13Result": "MOCK_ONLY R3 test draw x5, paid=0; visible free-ticket mockSummon UI path; candidate overlay",
+      "items": [
+        {
+          "uuid": "8C49CD7A-29A5-407E-AEE3-F60C35B31C30",
+          "template": "EQ_HAND_02",
+          "quality": "Q0",
+          "affixes": [
+            "AFFIX_VITALITY_TEST"
+          ],
+          "initiallyEquipped": true
+        },
+        {
+          "uuid": "E56F7BB6-D8A6-4611-8B5D-94DB13508979",
+          "template": "EQ_RING_03",
+          "quality": "Q1",
+          "affixes": [
+            "AFFIX_POWER_TEST"
+          ],
+          "initiallyEquipped": true
+        },
+        {
+          "uuid": "45135D4D-CECB-4896-80B6-2D1894782322",
+          "template": "EQ_W_P2",
+          "quality": "Q1",
+          "affixes": [
+            "AFFIX_GUARD_TEST"
+          ],
+          "initiallyEquipped": true
+        },
+        {
+          "uuid": "C71D598A-C628-4B98-967D-0F3FF551E1E6",
+          "template": "EQ_S_02",
+          "quality": "Q1",
+          "affixes": [
+            "AFFIX_GUARD_TEST"
+          ],
+          "initiallyEquipped": true
+        },
+        {
+          "uuid": "EA238209-61A6-442D-9BB2-A37C6D8A3AB3",
+          "template": "EQ_S_03",
+          "quality": "Q0",
+          "affixes": [],
+          "initiallyEquipped": false
+        }
+      ],
+      "finalInventoryStillContainsAllFive": true,
+      "finalEquippedOverlap": 0,
+      "allFiveRemovedFromEquippedByRevision": 102
+    },
+    "postMockRemovalProgression": {
+      "naturalEquips": [
+        {
+          "revision": 99,
+          "gearUUID": "B249D396-50F6-5020-ABEA-5A3052314F35",
+          "template": "EQ_W_01",
+          "sourceRegion": "R02",
+          "naturalRollIndex": 14,
+          "actor": "C_WITCH",
+          "slot": "weapon"
+        },
+        {
+          "revision": 100,
+          "gearUUID": "1C501430-3F52-5C84-8BDD-42753AF6E248",
+          "template": "EQ_RING_01",
+          "sourceRegion": "R02",
+          "naturalRollIndex": 17,
+          "actor": "C_WITCH",
+          "slot": "ring"
+        },
+        {
+          "revision": 101,
+          "gearUUID": "8DEFA64C-B486-5BBD-9B47-45F7839488C1",
+          "template": "EQ_HAND_01",
+          "sourceRegion": "R02",
+          "naturalRollIndex": 5,
+          "actor": "C_WITCH",
+          "slot": "hands"
+        },
+        {
+          "revision": 107,
+          "gearUUID": "FAFFEF49-8716-5AAA-89F5-621895FA5C5E",
+          "template": "EQ_BODY_01",
+          "sourceRegion": "R02",
+          "naturalRollIndex": 7,
+          "actor": "C_WITCH",
+          "slot": "body"
+        },
+        {
+          "revision": 108,
+          "gearUUID": "C3E5969C-9012-50E2-A4B3-BE499BEE8396",
+          "template": "EQ_BODY_01",
+          "sourceRegion": "R02",
+          "naturalRollIndex": 29,
+          "actor": "C_SMITH",
+          "slot": "body"
+        },
+        {
+          "revision": 109,
+          "gearUUID": "A7C9CDD7-DB20-5A0E-AD08-06587D130E2D",
+          "template": "EQ_HAND_01",
+          "sourceRegion": "R02",
+          "naturalRollIndex": 11,
+          "actor": "C_SMITH",
+          "slot": "hands"
+        },
+        {
+          "revision": 110,
+          "gearUUID": "FF83F342-CABF-59D0-8099-4C9CECBA85B3",
+          "template": "EQ_FEET_01",
+          "sourceRegion": "R02",
+          "naturalRollIndex": 24,
+          "actor": "C_SMITH",
+          "slot": "feet"
+        },
+        {
+          "revision": 111,
+          "gearUUID": "824A058B-57CC-54CC-8CDA-59B3960389EC",
+          "template": "EQ_RING_01",
+          "sourceRegion": "R02",
+          "naturalRollIndex": 21,
+          "actor": "C_SMITH",
+          "slot": "ring"
+        }
+      ],
+      "naturalDiscoveryProvenance": "Every listed UUID is in naturalGearDiscoveryR350.acquisitionRecords; the record carries an acquisition operationID, region, quality, and naturalRollIndex. The remaining final equipped item is Smith starter EQ_S_01 UUID 10000000-0000-4000-8000-000000000003. Final 19 equipped slots therefore contain 18 natural-discovery items plus 1 starter; no rev13 draw item.",
+      "enhancement": "Witch natural EQ_W_01 UUID B249... was enhanced +1/+2/+3; receipts at revisions 104,105,106 charge 5+10+15=30 refine_dust. Equipment swaps themselves show no currency/material cost.",
+      "evolution": "Apprentice natural EQ_A_01 UUID EC52E887-C109-5FAC-A4AA-C429A37C2C82 evolved in place to EQ_A_02 at rev88 by RC_EQ_A_02. The R443 receipt says investment preserved. Inventory checkpoints plus intervening R144 receipts reconcile the actual candidate transaction to 20 M_R02_G1, 20 M_R02_E3, and 1 M_R02_BB; the canonical reference recipe still marks ingredient quantities TUNE_PENDING, so this is evidence of this runtime configuration, not adopted canonical pricing.",
+      "xpAndDust": "Final XP is 5883 per actor. It is accrued across encounter rewards and R144 offline/shared-work claims; it cannot be attributed only to equipment/evolution. Final RS_THEORY_1 was already complete at baseline; no new research completed in this continuation. Seven challenge simulated first-clear receipts each award 200 dust (1400 total) before mock gear was unequipped. Dust then also reflects R144 work settlement and the 30-dust enhancement debit; final refine_dust=1958.",
+      "bossOutcomes": [
+        {
+          "revision": 103,
+          "encounter": "B_R05_A",
+          "result": "DEFEAT",
+          "ticks": 50,
+          "gearState": "all five rev13 items already unequipped"
+        },
+        {
+          "revision": 112,
+          "encounter": "B_R05_A",
+          "result": "VICTORY",
+          "ticks": 33,
+          "rewards": "repeat; immediate rewards 0"
+        },
+        {
+          "revision": 113,
+          "encounter": "B_R05_B",
+          "result": "VICTORY",
+          "ticks": 38,
+          "rewards": "repeat; immediate rewards 0"
+        }
+      ]
+    }
+  },
+  "judgment": {
+    "validClaim": "This fresh R420 local Release UI run reached 30/30 campaign clears and then repeated both final bosses with zero rev13 mock-draw equipment equipped; all 8 post-removal gear equips listed above have natural-discovery records. The final exact save survived a cold PID change.",
+    "notEstablished": [
+      "The first 30 campaign clears are no-mock progression: the rev13 five-ticket local MOCK_ONLY draw was used, four of its five items were equipped, and the initial R05_A/R05_B victories plus all seven challenge clears preceded rev102 unequip.",
+      "All 15 challenge completion: only 7/15 simulated challenge IDs are persisted; 8 were unrun. Receipts label the challenge victories SIMULATED_VICTORY / DESIGN_ONLY_NOT_PLAYTESTED.",
+      "A clean no-mock full campaign: only the later R05_A and R05_B repeat victories are no-mock evidence; they followed real offline claims, gear replacement, armor filling, evolution, and enhancement, so those factors are confounded.",
+      "Approved/final progression balance: this was a single candidate-profile run with inherited tuning and local test overlay features."
+    ],
+    "closeoutAssessment": "Evidence and preservation gates pass for this bounded run. The run is not an all-challenges or no-mock-from-start acceptance and does not establish final economy balance."
+  }
+}

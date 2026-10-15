@@ -1,0 +1,39 @@
+{
+  "schema": "witch.generated_runtime_overlay.actor_candidate.v1",
+  "status": "UNAPPROVED_CANDIDATE_WALK_LEG_LAYER",
+  "approval": "HUMAN_ADOPTION_PENDING",
+  "mergePriority": 133,
+  "entries": {
+    "ACT_B_R04_B": {
+      "clips": {
+        "walk": {
+          "mode": "part_rig_leg_overlay_candidate_v1",
+          "status": "UNAPPROVED_TWO_POSE_WALK_CANDIDATE",
+          "loop": true,
+          "fps": 4,
+          "body_part_id": "body4legs_tail",
+          "canvas_px": [455, 157],
+          "base_transform_state": "idle",
+          "frame_paths": [
+            "GeneratedCandidates/ACT_B_R04_B/leg_walk_candidate_r001/leg_pose_a_r001.png",
+            "GeneratedCandidates/ACT_B_R04_B/leg_walk_candidate_r001/leg_pose_b_r002.png"
+          ],
+          "mask_revision": "R003_union_leg_polygons_variant_2",
+          "mask_polygons_px": [
+            [[0,106],[10,82],[24,69],[49,67],[64,78],[61,101],[57,116],[78,132],[82,146],[72,155],[8,155],[0,147]],
+            [[70,107],[76,79],[95,58],[121,55],[143,69],[150,92],[141,111],[154,127],[164,140],[161,155],[84,156],[74,147],[92,127],[81,116]],
+            [[143,115],[149,86],[166,68],[194,67],[211,82],[215,103],[209,121],[225,134],[228,148],[214,156],[148,156],[139,145],[162,115]],
+            [[203,118],[205,90],[221,71],[248,70],[265,85],[270,106],[282,122],[290,140],[284,154],[210,155],[199,145],[216,125]]
+          ],
+          "evidence": {
+            "prototype": "docs/production/current/qa_drafts/dragon_leg_crop_rig_r001/imagegen_pose_tests/local_legs_r001/crop_composite_phase_d/CROP_RIG_PROTOTYPE_R004.md",
+            "candidateBodySHA256": "66cb4bc19239fb91808e163a0bceb88cf2016bc52dbfcb3dd45045f28af83065",
+            "restPixelMatch": true,
+            "scope": "walk only; existing flight, idle, anticipate, execute, recover, hit and resolve art/rig clips are preserved",
+            "limitations": "two leg poses only; candidate ground-contact legs must not be used for flight"
+          }
+        }
+      }
+    }
+  }
+}

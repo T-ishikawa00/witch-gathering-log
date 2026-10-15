@@ -1,0 +1,94 @@
+{
+  "candidate": "R453 local receipt delivery adapter",
+  "revision": "R003",
+  "status": "PREPARED_NOT_RUN",
+  "scope": "host-side explicit Xcode mock fixture exporter only; no StoreKit/Core/App wiring",
+  "rulesStatus": "UNAPPROVED_R3_CANDIDATE",
+  "execution": {
+    "testsRun": false,
+    "cliRun": false,
+    "authorityDatabaseOpened": false,
+    "swiftBuildOrRun": false,
+    "note": "A Python syntax compile check was run during R002 authoring before R003 changes; no authority database was opened and no tests or CLI were run. R002 source/test snapshots are preserved under snapshot_r002."
+  },
+  "changeSummary": [
+    "Exact integer-only schemaVersion validation for both profile and event.",
+    "Template keys now exactly equal the summon-pool set, and each key must equal its Core definitionID.",
+    "FIFO ticket-source and committed draw rows bind environment, bundleID, and transactionID tuples.",
+    "CLI validates output/cache/input paths before opening PurchaseAuthority; rejects symlinked components, hardlink cache aliases, existing outputs, and output/cache destination aliasing.",
+    "Corrected first replay expectation to same count/seed; differing count is treated as an idempotency collision.",
+    "Example profile uses 33 existing catalog gear IDs with matching slot/actor rows; focused unit fixture uses two actual catalog entries and actual test affix/latent identifiers."
+  ],
+  "ownedCandidateFiles": [
+    {
+      "path": "tools/witch_purchase_authority/local_delivery_r453.py",
+      "sha256": "a7dcca1b6fe12d137f3a8cdbfa1b23641ffeb69250114477d9b844117955860f"
+    },
+    {
+      "path": "tools/witch_purchase_authority/tests/test_local_delivery_r453.py",
+      "sha256": "1ec97c15c0fdc5587f4febd4b534174abc87c5aba7d78ddc967006aff79005c9"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/gacha_local_integration_r453/candidate_r003/CONTRACT_R453.md",
+      "sha256": "e2e558ca696c6aa17e55bf6c672b6332497b9d500acdf13fb73115067563b5b9"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/gacha_local_integration_r453/candidate_r003/PROFILE_EXAMPLE_R453.json",
+      "sha256": "a035a79504b70ab766135f754dfca19b48ebe763b401b262892ecbcc365e3151"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/gacha_local_integration_r453/candidate_r003/EVENT_ENVELOPE_EXAMPLE_R453.json",
+      "sha256": "d9910f0d11b5e5ad948535b3733b27d0414427ab943ec3fe9d9548596a4030d1"
+    }
+  ],
+  "testMethodCount": 13,
+  "r002Preserved": {
+    "manifestPath": "docs/production/current/qa_drafts/gacha_local_integration_r453/candidate_r002/MANIFEST_R453_R002.json",
+    "manifestSHA256": "feee5fa7dc53f96b62d02fa1827ddea9be8c02c0c81fc880f9c2e3cba427a9c6",
+    "sourceSnapshotSHA256": "20e1a7a2a13199423cf2a535768836b3d22d1d9f596cfd0e72d32a2654f16142",
+    "testSnapshotSHA256": "c5fdfde1a4fb049cc1202a13d5afd9484e99c058d668cce266acda5ebcd1b5e5"
+  },
+  "readOnlySourcePins": [
+    {
+      "path": "tools/witch_purchase_authority/authority.py",
+      "sha256": "ba1ce9e581de66f4f28b7fc0de903700f5505e19832c8fdc4901c656ebc0b02c",
+      "role": "existing explicit mock authority/ledger; unchanged"
+    },
+    {
+      "path": "native/qa_source_20261015T041901/WitchGameCore/Sources/WitchGameCore/Resources/catalog_overlay.json",
+      "sha256": "bb218f0fe6b4b1a6037faa75ddb301ded27d7b9de070747bebf99a3e72209337",
+      "role": "33-entry catalog used for the profile example; no production rules changed"
+    },
+    {
+      "path": "native/qa_source_20261015T041901/WitchGameCore/Sources/WitchGameCore/Domain.swift",
+      "sha256": "9e4df37260d5e39a8e6354121f9ccd5ad9a4202bf16b493f8878ce6480d92eda",
+      "role": "GearInstance/GachaPityState shape and recognized test affix/latent IDs"
+    },
+    {
+      "path": "native/qa_source_20261015T041901/WitchGameCore/Sources/WitchGameCore/SaveRepository.swift",
+      "sha256": "e072b14bf922f90d5840a6031a7bb0cc0f9b8197342b94f41045b88a346341ce",
+      "role": "SaveRepository atomic stable operation ID/fingerprint boundary"
+    },
+    {
+      "path": "native/qa_source_20261015T041901/StoreKitLocalQA/ReusableBridge.swift",
+      "sha256": "4c6582273ac9c19e775e89bf6b2cc9d75ac2d3abe99718be6fa66f6de60ea6b7",
+      "role": "current local StoreKit event schema; lacks full R453 identity envelope"
+    },
+    {
+      "path": "native/qa_source_20261015T041901/WitchApp/GameStoreKitQASink.swift",
+      "sha256": "7da7f638c8ac80803e10cce2069c9590f94f19539a3d03ab17f626f18630652f",
+      "role": "current local QA sink is not connected to PurchaseAuthority"
+    },
+    {
+      "path": "native/qa_source_20261015T041901/WitchApp/GameStoreKitQA.swift",
+      "sha256": "e368e306df24a4045e7a0d7036e337de209cec40b4ad84e46d01f09ed97f070a",
+      "role": "existing QA gating; unchanged"
+    }
+  ],
+  "acceptancePending": [
+    "Root static review of R003.",
+    "Root-owned bounded Python tests; no test has run.",
+    "Separate test-only Swift importer must pin fixture SHA, expected bundle/account/profile and use SaveRepository operation ID plus request fingerprint in one transaction.",
+    "No StoreKit-to-PurchaseAuthority or StoreKit-to-SaveRepository integration is claimed."
+  ]
+}

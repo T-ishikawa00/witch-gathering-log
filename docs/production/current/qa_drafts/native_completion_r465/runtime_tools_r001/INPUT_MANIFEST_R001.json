@@ -1,0 +1,93 @@
+{
+  "schema": "native-completion-r465-runtime-preparation-v1",
+  "status": "PREPARED_NOT_RUN",
+  "scope": "Install-only R465 normal Release bundle, then Root-operated home/search clear/refocus/cold checkpoints; no UI judgment in harness.",
+  "fixedBundleID": "local.witch.autonomous.r1.completion.r465",
+  "targetSimulator": "9A067715-7CF3-40D3-9064-38423223959B",
+  "seedRevision": 138,
+  "seedSHA256": "3725e9c13d0e514804d5941d23b7847e12d7c13eb04aac0b3e676b190ae3a3c1",
+  "protectedTreeCount": 8,
+  "protectedTrees": [
+    "R445 app/data",
+    "R454 app/data",
+    "R456 app/data",
+    "R462 app/data"
+  ],
+  "captureLabels": [
+    "home",
+    "empty_search",
+    "filters_cleared",
+    "before_cold",
+    "cold"
+  ],
+  "screenshotLabels": [
+    "home",
+    "empty_search",
+    "filters_cleared",
+    "cold"
+  ],
+  "limits": {
+    "maxSeconds": 600,
+    "maxAdditionalBytes": 1040000000,
+    "requiredStartFreeBytes": 15000000000,
+    "minimumFreeBytes": 10000000000,
+    "maxScreenshots": 4,
+    "maxScreenshotBytes": 20000000,
+    "maxEvidenceBytes": 40000000,
+    "video": false,
+    "automaticLaunch": false,
+    "delete": false
+  },
+  "preparedFiles": [
+    {
+      "path": "run_r465.py",
+      "sha256": "361832145b4d281ceaf35014fdd21f3c0075886c157c0f2c5fec43c867025896",
+      "sizeBytes": 34685
+    },
+    {
+      "path": "test_runtime_clock_r465.py",
+      "sha256": "9ee590f30b6fb0d0e42653554bcbcd9b6b1865bfba5a509e6a50be787e25c955",
+      "sizeBytes": 843
+    },
+    {
+      "path": "RUNTIME_SEAL_R001.template.json",
+      "sha256": "1433cd66a50c7f37d038c236ea34c7adf6914c22fe67900306d8deeb2be1d553",
+      "sizeBytes": 7365
+    },
+    {
+      "path": "README_R001.md",
+      "sha256": "843f90ab867108aab0a9099021fc2ea33267af4bcf7ed4c32a070ce934e96881",
+      "sizeBytes": 2261
+    }
+  ],
+  "sealedInputs": [
+    {
+      "path": "docs/production/current/qa_drafts/native_completion_r462/runtime_tools_r003/runs/799b47c3-09fb-4461-a16b-2f754a5278be/RUN.json",
+      "sha256": "70f6aad69924dee2b1bab2d5e9f469ba35671b6b6e25328767b81ceec701e71a"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/native_completion_r462/build_tools_r002/BUILD_RESULT_R001.json",
+      "sha256": "f5ec66928475e0ea74515921eb0c7b156f137196d005645b99c85440680107de"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/native_completion_r456/runtime_tools_r002/runs/1605ec80-407f-4736-a077-1be866dac17a/RUN.json",
+      "sha256": "ea11dedb64844a89002fe3ea1412f921058a6a64ee704502f39f69d6f6f48252"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/native_completion_r456/build_tools_r003/BUILD_RESULT_R003.json",
+      "sha256": "1c3d3074e9d867e4c1cf478da8cc91e9e7ca13022cfda25a9aa67e95222efb71"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/storekit_event_export_r454/runtime_r001/INSTALLED_ORIGIN_R004.json",
+      "sha256": "cdc41ac4e074b0cc209bbf49dd0e1f4e24734b46ce1986005bb0f8fe3de817de"
+    }
+  ],
+  "execution": {
+    "runnerInvoked": false,
+    "build": false,
+    "install": false,
+    "launch": false,
+    "simulatorOperated": false,
+    "saveMutated": false
+  }
+}

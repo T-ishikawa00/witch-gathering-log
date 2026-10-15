@@ -1,0 +1,98 @@
+{
+  "schema": "r446-independent-preservation-readback-r002",
+  "scope": "Read-only characterization of the three dataUnexpectedNew files recorded by the terminal R446 closure. No files changed, app launched, or cleanup performed.",
+  "sourceRecords": {
+    "closurePath": "docs/production/current/qa_drafts/native_reading_mantle_r446/execution_r001/CLOSURE.json",
+    "closureSHA256": "01b33e7a5d35a52b25769e3df67a72657dfeab8fc6b41656c67ec50782be1518",
+    "sessionPath": "docs/production/current/qa_drafts/native_reading_mantle_r446/execution_r001/SESSION.json",
+    "sessionSHA256": "8e1dbb235856169db4094393a4c71157a6b7cbb014096b5100ff51b483e8e2d5",
+    "sessionStatus": "PREPARED_NOT_RUN was the pre-capture inventory receipt; terminal outcome is read from CLOSURE.json",
+    "terminalStatus": "INCOMPLETE_RETAINED",
+    "device": "9A067715-7CF3-40D3-9064-38423223959B",
+    "bundleID": "local.witch.autonomous.r1.completion.r445",
+    "dataContainer": "/Users/PUBLIC_USER/Library/Developer/CoreSimulator/Devices/9A067715-7CF3-40D3-9064-38423223959B/data/Containers/Data/Application/61DD54AD-8723-4481-9FF0-46624F4C8096"
+  },
+  "baseline": {
+    "prelaunchInventoryPathCount": 6,
+    "savedApplicationStateEntriesPresent": false,
+    "result": "None of the three Saved Application State paths existed in the six-file prelaunch data inventory."
+  },
+  "unexpectedNewFiles": [
+    {
+      "relativePath": "Library/Saved Application State/local.witch.autonomous.r1.completion.r445.savedState/5F21554A-B60B-4443-AAE5-44EA0F7EE051/data.data",
+      "absolutePath": "/Users/PUBLIC_USER/Library/Developer/CoreSimulator/Devices/9A067715-7CF3-40D3-9064-38423223959B/data/Containers/Data/Application/61DD54AD-8723-4481-9FF0-46624F4C8096/Library/Saved Application State/local.witch.autonomous.r1.completion.r445.savedState/5F21554A-B60B-4443-AAE5-44EA0F7EE051/data.data",
+      "bytes": 1028,
+      "modeOctal": "0o644",
+      "birthTimeJST": "2026-10-15T04:44:10.758054+09:00",
+      "mtimeJST": "2026-10-15T04:44:10.758118+09:00",
+      "ctimeJST": "2026-10-15T04:44:10.758245+09:00",
+      "sha256": "a80b0708ebbd025a0c436a68a93e99cb42cad2bec007cf0799639e352382d144",
+      "format": "XML plist",
+      "plistKeys": [
+        "CanvasRestorationUserActivityTypeKey",
+        "CanvasRestorationUserActivityUserInfoDataKey"
+      ],
+      "symlink": false
+    },
+    {
+      "relativePath": "Library/Saved Application State/local.witch.autonomous.r1.completion.r445.savedState/5F21554A-B60B-4443-AAE5-44EA0F7EE051/userInfo.data",
+      "absolutePath": "/Users/PUBLIC_USER/Library/Developer/CoreSimulator/Devices/9A067715-7CF3-40D3-9064-38423223959B/data/Containers/Data/Application/61DD54AD-8723-4481-9FF0-46624F4C8096/Library/Saved Application State/local.witch.autonomous.r1.completion.r445.savedState/5F21554A-B60B-4443-AAE5-44EA0F7EE051/userInfo.data",
+      "bytes": 376,
+      "modeOctal": "0o644",
+      "birthTimeJST": "2026-10-15T04:44:10.756452+09:00",
+      "mtimeJST": "2026-10-15T04:44:10.756522+09:00",
+      "ctimeJST": "2026-10-15T04:44:10.756656+09:00",
+      "sha256": "5a58b7333aeab8c082fa451c1084a119f9847f83bc166bdb4308d159b4e820ba",
+      "format": "XML plist",
+      "plistKeys": [
+        "com.apple.SwiftUI.sceneID"
+      ],
+      "symlink": false
+    },
+    {
+      "relativePath": "Library/Saved Application State/local.witch.autonomous.r1.completion.r445.savedState/KnownSceneSessions/data.data",
+      "absolutePath": "/Users/PUBLIC_USER/Library/Developer/CoreSimulator/Devices/9A067715-7CF3-40D3-9064-38423223959B/data/Containers/Data/Application/61DD54AD-8723-4481-9FF0-46624F4C8096/Library/Saved Application State/local.witch.autonomous.r1.completion.r445.savedState/KnownSceneSessions/data.data",
+      "bytes": 1247,
+      "modeOctal": "0o644",
+      "birthTimeJST": "2026-10-15T04:44:11.063617+09:00",
+      "mtimeJST": "2026-10-15T04:44:11.063665+09:00",
+      "ctimeJST": "2026-10-15T04:44:11.063665+09:00",
+      "sha256": "fcceb7c4143342f9d9bc83662dee0774de45a87454953d8f9de717970c364d8c",
+      "format": "binary plist",
+      "plistKeys": [
+        "5F21554A-B60B-4443-AAE5-44EA0F7EE051"
+      ],
+      "symlink": false
+    }
+  ],
+  "totalUnexpectedNewBytes": 2651,
+  "otherClosureFindings": {
+    "dataUnexpectedChanged": [],
+    "dataUnexpectedMissing": [],
+    "supportUnexpectedMissing": [],
+    "supportAllowedChanged": [
+      "Library/Application Support/Witch03to05DevelopmentR169/last_standard_play_identity_r169.json",
+      "Library/Application Support/Witch03to05DevelopmentR169/save.json",
+      "Library/Application Support/Witch03to05DevelopmentR169/save.json.previous"
+    ],
+    "supportAllowedNew": [
+      "Library/Application Support/Witch03to05DevelopmentR169/save.json.lock"
+    ],
+    "archiveMismatches": [],
+    "screenshotMismatches": [],
+    "protectedTreesExact": true,
+    "installedAppExact": true,
+    "coldBeforeAfterSaveByteEqual": true,
+    "liveSaveMatchesColdAfter": true,
+    "appPIDsStillRunning": [],
+    "ownMetalCacheNew": [
+      "Library/Caches/local.witch.autonomous.r1.completion.r445/com.apple.metal/functions.data",
+      "Library/Caches/local.witch.autonomous.r1.completion.r445/com.apple.metal/functions.list"
+    ]
+  },
+  "interpretation": {
+    "supported": "All three additions are beneath the app-specific Library/Saved Application State tree, appeared shortly after session start and before the first checkpoint, and are small plist records whose keys refer to Canvas/SpriteKit restoration and SwiftUI scene identity/session bookkeeping. They are distinct from the DevelopmentR169 Application Support save files.",
+    "notEstablished": "The preservation helper did not whitelist or explicitly classify this OS lifecycle state, so the terminal result remains INCOMPLETE_RETAINED. This evidence does not authorize altering or deleting the records."
+  },
+  "formalAcceptance": false
+}

@@ -1,0 +1,57 @@
+{
+  "basedOn": {
+    "directory": "candidate_r001",
+    "manifestSha256": "314a991c1184e6fbf2cc550c5041668931586c7afaeea3e7eff9f06f94d53672"
+  },
+  "boundaries": {
+    "accountBinding": "explicit local fixture equality only; not authentication",
+    "appleJWSProductionIngest": "unchanged fail-closed",
+    "execution": "static syntax/manifest validation only; tests not run",
+    "grantAuthorized": false,
+    "network": "none",
+    "onlineRevocationChecked": false,
+    "productionAuthorization": "NOT_PROVIDED",
+    "receiptStatus": "NOT_AUTHORIZED_FOR_PRODUCTION"
+  },
+  "candidate": "R459 Sandbox-to-ledger candidate R002",
+  "candidateFiles": {
+    "README_R002.md": {
+      "bytes": 1786,
+      "sha256": "1bdc0d4789db582c216b964adf26a5126cae38ed64261ef67ad30ba0ee5b05d3"
+    },
+    "SOURCE_PATCH_R002.diff": {
+      "bytes": 37814,
+      "sha256": "e885431077f3808e2bee8eca0a0ea56f439a5dec77737a9cdfc5c36ce368fe0e"
+    },
+    "authority_r459.py": {
+      "bytes": 58322,
+      "sha256": "5687769ecc04e36a11ca6622243a7702c00d301e02030b5741c1ca2896227501"
+    },
+    "sandbox_ledger_adapter_r459.py": {
+      "bytes": 6081,
+      "sha256": "37c9f0218154d25cbd78b1bae77edab3c5f6da66e7dde83d23b302a45e126dbd"
+    },
+    "signed_transaction_audit_r459.py": {
+      "bytes": 13998,
+      "sha256": "d49f59e0db971fc517052729e875b1cd73f288398fbc0ea4ba513eb1402a1a0f"
+    },
+    "test_authority_compat_r459.py": {
+      "bytes": 15145,
+      "sha256": "9f513b0e91163d90340f3720da20da0452a06627c1317f96f14ec628dac6c09c"
+    },
+    "test_notifications_compat_r459.py": {
+      "bytes": 16204,
+      "sha256": "455636b6197422b6e85c053234c2549d25723ee65cf0ee8773bc8031a31e6cbe"
+    },
+    "test_sandbox_ledger_r459.py": {
+      "bytes": 24406,
+      "sha256": "3626bc9edbb7acb481515b2f832298f35e67216360323e3484b5c8067d9f666a"
+    }
+  },
+  "testPlan": [
+    "R001 copied mock authority and notification suites remain unchanged and should be run by Root",
+    "new R459 invalid notification UUID and signed-date/revocation ordering rejection cases",
+    "new R459 typed-record and factory-only adapter rejection cases",
+    "new R459 inbox replay/collision/rollback and refund-tombstone-before-purchase cases"
+  ]
+}

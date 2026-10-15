@@ -1,0 +1,139 @@
+{
+  "schema": "witch.enemy_resolve_pose_candidate.v1",
+  "actorId": "ACT_B_R01_A",
+  "revision": "resolve_r002",
+  "status": "UNAPPROVED_AUTHORED_RESOLVE_ONLY_CANDIDATE",
+  "referenceStill": "ActorStills/ACT_B_R01_A/ACT_B_R01_A__still__B_R01_A_base_v2.png",
+  "referenceStillSHA256": "c8d4d9a88b3db897bab69f13c13189d536eef62b31de451fd851d22adf972511",
+  "sourceRevision_r001_preserved": true,
+  "rejectedPriorAtlas": {
+    "path": "/Users/PUBLIC_USER/.codex/generated_images/01a12399-b8c7-76a0-adb6-39606fe83b65/exec-35eb8945-8529-47c0-97f4-cba1c1ab8a38.png",
+    "reason": "Two of three cells had alpha16 pixels touching the cell boundary; not packed or integrated."
+  },
+  "canvas_px": [
+    512,
+    512
+  ],
+  "anchor_px": [
+    256,
+    490
+  ],
+  "fps": 8,
+  "display_scale": 1.0,
+  "frames": [
+    {
+      "index": 0,
+      "source_path": "/Users/PUBLIC_USER/.codex/generated_images/01a12399-b8c7-76a0-adb6-39606fe83b65/exec-91798e23-a15c-451e-88e5-134281d9efb0.png",
+      "source_sha256": "23b9042288775d59c0643b6783aedece89f78b2eaeea2ddaaad7f0d3a79831f9",
+      "source_canvas_px": [
+        512,
+        512
+      ],
+      "source_alpha16_bbox_after_uniform_fit_px": [
+        26,
+        110,
+        496,
+        442
+      ],
+      "translation_px": [
+        -5,
+        48
+      ],
+      "packed_path": "GeneratedCandidates/ACT_B_R01_A/rest_hit_resolve_r002/frames/resolve_000.png",
+      "packed_sha256": "cfccdba37d1add2791f731fa1ade9f47d315c73b4fc4632a299982e4d21f1f8e",
+      "packed_canvas_px": [
+        512,
+        512
+      ],
+      "packed_alpha16_bbox_px": [
+        21,
+        158,
+        491,
+        490
+      ],
+      "anchor_px": [
+        256,
+        490
+      ]
+    },
+    {
+      "index": 1,
+      "source_path": "/Users/PUBLIC_USER/.codex/generated_images/01a12399-b8c7-76a0-adb6-39606fe83b65/exec-ffa0b1f2-02be-4dfc-bf83-086386646ea7.png",
+      "source_sha256": "0c5bb62bdab145b1a721bcf6fa70de8b0c741a805303a0ca2dd3cfafd552f213",
+      "source_canvas_px": [
+        512,
+        512
+      ],
+      "source_alpha16_bbox_after_uniform_fit_px": [
+        22,
+        134,
+        496,
+        397
+      ],
+      "translation_px": [
+        -3,
+        93
+      ],
+      "packed_path": "GeneratedCandidates/ACT_B_R01_A/rest_hit_resolve_r002/frames/resolve_001.png",
+      "packed_sha256": "e045ad3c5d70764e940acf6bd5b25ea56debb35a96aaae24e14d6326f0b4e05f",
+      "packed_canvas_px": [
+        512,
+        512
+      ],
+      "packed_alpha16_bbox_px": [
+        19,
+        227,
+        493,
+        490
+      ],
+      "anchor_px": [
+        256,
+        490
+      ]
+    },
+    {
+      "index": 2,
+      "source_path": "/Users/PUBLIC_USER/.codex/generated_images/01a12399-b8c7-76a0-adb6-39606fe83b65/exec-a8bed39b-42a4-40ff-83da-e2121a227d81.png",
+      "source_sha256": "fbf6fa35ff2f8f7c5fb5f42328a195e9a6fd1ce3a5542beef2a8d3714399847b",
+      "source_canvas_px": [
+        512,
+        512
+      ],
+      "source_alpha16_bbox_after_uniform_fit_px": [
+        15,
+        148,
+        503,
+        396
+      ],
+      "translation_px": [
+        -3,
+        94
+      ],
+      "packed_path": "GeneratedCandidates/ACT_B_R01_A/rest_hit_resolve_r002/frames/resolve_002.png",
+      "packed_sha256": "2af7ac1858394e4fb8813b5e681a2858929f2aaac0d7f2a50a008f76e9a13e0d",
+      "packed_canvas_px": [
+        512,
+        512
+      ],
+      "packed_alpha16_bbox_px": [
+        12,
+        242,
+        500,
+        490
+      ],
+      "anchor_px": [
+        256,
+        490
+      ]
+    }
+  ],
+  "qa_contact_dark": "GeneratedCandidates/ACT_B_R01_A/rest_hit_resolve_r002/qa_contact_dark_r002.jpg",
+  "runtime_overlay": "runtime_overlay_zzzzzzzz_act_b_r01_a_resolve_candidate_r002.json",
+  "human_adoption": false,
+  "natural_motion_complete": false,
+  "limitations": [
+    "Three authored poses are a sampled resolve candidate, not continuous animation completion.",
+    "Per-frame pose size and contact must be reviewed in the native scene; actor display scale is constant.",
+    "Visual review on a dark opaque composite did not show the red RGB fringes visible in the raw generator preview; original alpha remains unchanged."
+  ]
+}

@@ -1,0 +1,982 @@
+{
+  "outcome": "VICTORY",
+  "elapsed_ms": 16350,
+  "boss_remaining_hp": 0,
+  "party_remaining_hp": {
+    "C_WITCH": 233,
+    "C_FAMILIAR": 320
+  },
+  "metrics": {
+    "barrier_granted": 74,
+    "cast_SK_F_MARK": 2,
+    "damage_active": 930,
+    "crit_count": 2,
+    "cast_SK_W_SEED": 3,
+    "reaction_chase": 4,
+    "damage_chase": 84,
+    "cast_SK_F_DASH": 3,
+    "cast_SK_W_BURST": 3,
+    "damage_dot": 211,
+    "damage_basic": 1075,
+    "cast_C_FAMILIAR_BASIC": 11,
+    "cast_C_WITCH_BASIC": 8,
+    "received_hp": 590,
+    "barrier_absorbed": 74,
+    "guarded_hits": 0,
+    "cover_hits": 0
+  },
+  "per_actor": {
+    "C_WITCH": {
+      "barrier_granted": 74,
+      "damage_active": 633,
+      "cast_SK_W_SEED": 3,
+      "cast_SK_W_BURST": 3,
+      "damage_dot": 211,
+      "damage_basic": 552,
+      "cast_C_WITCH_BASIC": 8,
+      "barrier_absorbed": 74,
+      "received_hp": 370
+    },
+    "C_FAMILIAR": {
+      "cast_SK_F_MARK": 2,
+      "damage_chase": 84,
+      "damage_active": 297,
+      "cast_SK_F_DASH": 3,
+      "damage_basic": 523,
+      "cast_C_FAMILIAR_BASIC": 11,
+      "received_hp": 220
+    }
+  },
+  "event_iterations": 196,
+  "input_fingerprint": "3671c39f5a5650ae4549721068cf8d01cfbd573ae7e8deb7e0e0d117aaeab73d",
+  "timing_mode": "first_impact_at_interval",
+  "provenance": "R2 formulas + R4 local candidate encounter/timing overlay",
+  "log": [
+    {
+      "t_ms": 0,
+      "kind": "barrier",
+      "source": "C_WITCH",
+      "target": "C_WITCH",
+      "amount": 74,
+      "expiry": 6000
+    },
+    {
+      "t_ms": 0,
+      "kind": "cast_start",
+      "source": "C_WITCH",
+      "skill": "SK_W_SEED",
+      "target": "boss",
+      "commit_ms": 400,
+      "root": "C_WITCH:SK_W_SEED:1"
+    },
+    {
+      "t_ms": 0,
+      "kind": "cast_start",
+      "source": "C_FAMILIAR",
+      "skill": "SK_F_MARK",
+      "target": "boss",
+      "commit_ms": 200,
+      "root": "C_FAMILIAR:SK_F_MARK:1"
+    },
+    {
+      "t_ms": 200,
+      "kind": "mark",
+      "source": "C_FAMILIAR",
+      "expiry": 8200
+    },
+    {
+      "t_ms": 400,
+      "kind": "damage",
+      "source": "C_WITCH",
+      "target": "B_R01_A",
+      "skill": "SK_W_SEED",
+      "kind_damage": "active",
+      "raw": 22,
+      "hp_loss": 16,
+      "crit": false,
+      "boss_hp": 2284,
+      "root": "C_WITCH:SK_W_SEED:1"
+    },
+    {
+      "t_ms": 400,
+      "kind": "poison_apply",
+      "source": "C_WITCH",
+      "stacks": 2,
+      "expiry": 9400
+    },
+    {
+      "t_ms": 400,
+      "kind": "damage",
+      "source": "C_FAMILIAR",
+      "target": "B_R01_A",
+      "skill": "PS_chase",
+      "kind_damage": "chase",
+      "raw": 28,
+      "hp_loss": 21,
+      "crit": false,
+      "boss_hp": 2263,
+      "root": "C_WITCH:SK_W_SEED:1"
+    },
+    {
+      "t_ms": 400,
+      "kind": "cast_start",
+      "source": "C_FAMILIAR",
+      "skill": "SK_F_DASH",
+      "target": "boss",
+      "commit_ms": 600,
+      "root": "C_FAMILIAR:SK_F_DASH:1"
+    },
+    {
+      "t_ms": 600,
+      "kind": "damage",
+      "source": "C_FAMILIAR",
+      "target": "B_R01_A",
+      "skill": "SK_F_DASH",
+      "kind_damage": "active",
+      "raw": 129,
+      "hp_loss": 99,
+      "crit": false,
+      "boss_hp": 2164,
+      "root": "C_FAMILIAR:SK_F_DASH:1"
+    },
+    {
+      "t_ms": 700,
+      "kind": "cast_start",
+      "source": "C_WITCH",
+      "skill": "SK_W_BURST",
+      "target": "boss",
+      "commit_ms": 1150,
+      "root": "C_WITCH:SK_W_BURST:1"
+    },
+    {
+      "t_ms": 1150,
+      "kind": "damage",
+      "source": "C_WITCH",
+      "target": "B_R01_A",
+      "skill": "SK_W_BURST",
+      "kind_damage": "active",
+      "raw": 218,
+      "hp_loss": 167,
+      "crit": false,
+      "boss_hp": 1997,
+      "root": "C_WITCH:SK_W_BURST:1"
+    },
+    {
+      "t_ms": 1150,
+      "kind": "cast_start",
+      "source": "C_FAMILIAR",
+      "skill": "C_FAMILIAR_BASIC",
+      "target": "boss",
+      "commit_ms": 1400,
+      "root": "C_FAMILIAR:C_FAMILIAR_BASIC:1"
+    },
+    {
+      "t_ms": 1400,
+      "kind": "dot",
+      "source": "C_WITCH",
+      "hp_loss": 8,
+      "stacks": 2,
+      "boss_hp": 1989
+    },
+    {
+      "t_ms": 1400,
+      "kind": "telegraph",
+      "root": "enemy:0",
+      "action": "ROOT_BOAR_CHARGE",
+      "target": "C_WITCH",
+      "hits": [
+        3200
+      ],
+      "raw": 299
+    },
+    {
+      "t_ms": 1400,
+      "kind": "damage",
+      "source": "C_FAMILIAR",
+      "target": "B_R01_A",
+      "skill": "C_FAMILIAR_BASIC",
+      "kind_damage": "basic",
+      "raw": 64,
+      "hp_loss": 49,
+      "crit": false,
+      "boss_hp": 1940,
+      "root": "C_FAMILIAR:C_FAMILIAR_BASIC:1"
+    },
+    {
+      "t_ms": 1550,
+      "kind": "cast_start",
+      "source": "C_WITCH",
+      "skill": "C_WITCH_BASIC",
+      "target": "boss",
+      "commit_ms": 1800,
+      "root": "C_WITCH:C_WITCH_BASIC:1"
+    },
+    {
+      "t_ms": 1800,
+      "kind": "damage",
+      "source": "C_WITCH",
+      "target": "B_R01_A",
+      "skill": "C_WITCH_BASIC",
+      "kind_damage": "basic",
+      "raw": 90,
+      "hp_loss": 69,
+      "crit": false,
+      "boss_hp": 1871,
+      "root": "C_WITCH:C_WITCH_BASIC:1"
+    },
+    {
+      "t_ms": 2400,
+      "kind": "dot",
+      "source": "C_WITCH",
+      "hp_loss": 8,
+      "stacks": 2,
+      "boss_hp": 1863
+    },
+    {
+      "t_ms": 2550,
+      "kind": "cast_start",
+      "source": "C_FAMILIAR",
+      "skill": "C_FAMILIAR_BASIC",
+      "target": "boss",
+      "commit_ms": 2800,
+      "root": "C_FAMILIAR:C_FAMILIAR_BASIC:2"
+    },
+    {
+      "t_ms": 2800,
+      "kind": "damage",
+      "source": "C_FAMILIAR",
+      "target": "B_R01_A",
+      "skill": "C_FAMILIAR_BASIC",
+      "kind_damage": "basic",
+      "raw": 64,
+      "hp_loss": 49,
+      "crit": false,
+      "boss_hp": 1814,
+      "root": "C_FAMILIAR:C_FAMILIAR_BASIC:2"
+    },
+    {
+      "t_ms": 3200,
+      "kind": "enemy_hit",
+      "source": "B_R01_A",
+      "target": "C_WITCH",
+      "original_target": "C_WITCH",
+      "root": "enemy:0",
+      "hit_index": 0,
+      "action": "ROOT_BOAR_CHARGE",
+      "hp_loss": 148,
+      "absorbed": 74,
+      "guard": false,
+      "redirected": false,
+      "hp": 455
+    },
+    {
+      "t_ms": 3350,
+      "kind": "cast_start",
+      "source": "C_WITCH",
+      "skill": "C_WITCH_BASIC",
+      "target": "boss",
+      "commit_ms": 3600,
+      "root": "C_WITCH:C_WITCH_BASIC:2"
+    },
+    {
+      "t_ms": 3400,
+      "kind": "dot",
+      "source": "C_WITCH",
+      "hp_loss": 8,
+      "stacks": 2,
+      "boss_hp": 1806
+    },
+    {
+      "t_ms": 3600,
+      "kind": "damage",
+      "source": "C_WITCH",
+      "target": "B_R01_A",
+      "skill": "C_WITCH_BASIC",
+      "kind_damage": "basic",
+      "raw": 90,
+      "hp_loss": 69,
+      "crit": false,
+      "boss_hp": 1737,
+      "root": "C_WITCH:C_WITCH_BASIC:2"
+    },
+    {
+      "t_ms": 3950,
+      "kind": "cast_start",
+      "source": "C_FAMILIAR",
+      "skill": "C_FAMILIAR_BASIC",
+      "target": "boss",
+      "commit_ms": 4200,
+      "root": "C_FAMILIAR:C_FAMILIAR_BASIC:3"
+    },
+    {
+      "t_ms": 4200,
+      "kind": "damage",
+      "source": "C_FAMILIAR",
+      "target": "B_R01_A",
+      "skill": "C_FAMILIAR_BASIC",
+      "kind_damage": "basic",
+      "raw": 96,
+      "hp_loss": 73,
+      "crit": true,
+      "boss_hp": 1664,
+      "root": "C_FAMILIAR:C_FAMILIAR_BASIC:3"
+    },
+    {
+      "t_ms": 4400,
+      "kind": "dot",
+      "source": "C_WITCH",
+      "hp_loss": 8,
+      "stacks": 2,
+      "boss_hp": 1656
+    },
+    {
+      "t_ms": 5150,
+      "kind": "cast_start",
+      "source": "C_WITCH",
+      "skill": "C_WITCH_BASIC",
+      "target": "boss",
+      "commit_ms": 5400,
+      "root": "C_WITCH:C_WITCH_BASIC:3"
+    },
+    {
+      "t_ms": 5350,
+      "kind": "cast_start",
+      "source": "C_FAMILIAR",
+      "skill": "C_FAMILIAR_BASIC",
+      "target": "boss",
+      "commit_ms": 5600,
+      "root": "C_FAMILIAR:C_FAMILIAR_BASIC:4"
+    },
+    {
+      "t_ms": 5400,
+      "kind": "dot",
+      "source": "C_WITCH",
+      "hp_loss": 8,
+      "stacks": 2,
+      "boss_hp": 1648
+    },
+    {
+      "t_ms": 5400,
+      "kind": "damage",
+      "source": "C_WITCH",
+      "target": "B_R01_A",
+      "skill": "C_WITCH_BASIC",
+      "kind_damage": "basic",
+      "raw": 90,
+      "hp_loss": 69,
+      "crit": false,
+      "boss_hp": 1579,
+      "root": "C_WITCH:C_WITCH_BASIC:3"
+    },
+    {
+      "t_ms": 5600,
+      "kind": "damage",
+      "source": "C_FAMILIAR",
+      "target": "B_R01_A",
+      "skill": "C_FAMILIAR_BASIC",
+      "kind_damage": "basic",
+      "raw": 64,
+      "hp_loss": 49,
+      "crit": false,
+      "boss_hp": 1530,
+      "root": "C_FAMILIAR:C_FAMILIAR_BASIC:4"
+    },
+    {
+      "t_ms": 6400,
+      "kind": "dot",
+      "source": "C_WITCH",
+      "hp_loss": 8,
+      "stacks": 2,
+      "boss_hp": 1522
+    },
+    {
+      "t_ms": 6400,
+      "kind": "cast_start",
+      "source": "C_WITCH",
+      "skill": "SK_W_SEED",
+      "target": "boss",
+      "commit_ms": 6800,
+      "root": "C_WITCH:SK_W_SEED:2"
+    },
+    {
+      "t_ms": 6600,
+      "kind": "cast_start",
+      "source": "C_FAMILIAR",
+      "skill": "SK_F_DASH",
+      "target": "boss",
+      "commit_ms": 6800,
+      "root": "C_FAMILIAR:SK_F_DASH:2"
+    },
+    {
+      "t_ms": 6800,
+      "kind": "damage",
+      "source": "C_WITCH",
+      "target": "B_R01_A",
+      "skill": "SK_W_SEED",
+      "kind_damage": "active",
+      "raw": 22,
+      "hp_loss": 16,
+      "crit": false,
+      "boss_hp": 1506,
+      "root": "C_WITCH:SK_W_SEED:2"
+    },
+    {
+      "t_ms": 6800,
+      "kind": "poison_apply",
+      "source": "C_WITCH",
+      "stacks": 4,
+      "expiry": 15800
+    },
+    {
+      "t_ms": 6800,
+      "kind": "damage",
+      "source": "C_FAMILIAR",
+      "target": "B_R01_A",
+      "skill": "SK_F_DASH",
+      "kind_damage": "active",
+      "raw": 129,
+      "hp_loss": 99,
+      "crit": false,
+      "boss_hp": 1407,
+      "root": "C_FAMILIAR:SK_F_DASH:2"
+    },
+    {
+      "t_ms": 6800,
+      "kind": "damage",
+      "source": "C_FAMILIAR",
+      "target": "B_R01_A",
+      "skill": "PS_chase",
+      "kind_damage": "chase",
+      "raw": 28,
+      "hp_loss": 21,
+      "crit": false,
+      "boss_hp": 1386,
+      "root": "C_WITCH:SK_W_SEED:2"
+    },
+    {
+      "t_ms": 7100,
+      "kind": "cast_start",
+      "source": "C_WITCH",
+      "skill": "C_WITCH_BASIC",
+      "target": "boss",
+      "commit_ms": 7350,
+      "root": "C_WITCH:C_WITCH_BASIC:4"
+    },
+    {
+      "t_ms": 7100,
+      "kind": "cast_start",
+      "source": "C_FAMILIAR",
+      "skill": "C_FAMILIAR_BASIC",
+      "target": "boss",
+      "commit_ms": 7350,
+      "root": "C_FAMILIAR:C_FAMILIAR_BASIC:5"
+    },
+    {
+      "t_ms": 7350,
+      "kind": "damage",
+      "source": "C_WITCH",
+      "target": "B_R01_A",
+      "skill": "C_WITCH_BASIC",
+      "kind_damage": "basic",
+      "raw": 90,
+      "hp_loss": 69,
+      "crit": false,
+      "boss_hp": 1317,
+      "root": "C_WITCH:C_WITCH_BASIC:4"
+    },
+    {
+      "t_ms": 7350,
+      "kind": "damage",
+      "source": "C_FAMILIAR",
+      "target": "B_R01_A",
+      "skill": "C_FAMILIAR_BASIC",
+      "kind_damage": "basic",
+      "raw": 64,
+      "hp_loss": 49,
+      "crit": false,
+      "boss_hp": 1268,
+      "root": "C_FAMILIAR:C_FAMILIAR_BASIC:5"
+    },
+    {
+      "t_ms": 7400,
+      "kind": "dot",
+      "source": "C_WITCH",
+      "hp_loss": 17,
+      "stacks": 4,
+      "boss_hp": 1251
+    },
+    {
+      "t_ms": 7600,
+      "kind": "telegraph",
+      "root": "enemy:1",
+      "action": "ROOT_BOAR_CHARGE",
+      "target": "C_WITCH",
+      "hits": [
+        9400
+      ],
+      "raw": 299
+    },
+    {
+      "t_ms": 8150,
+      "kind": "cast_start",
+      "source": "C_WITCH",
+      "skill": "SK_W_BURST",
+      "target": "boss",
+      "commit_ms": 8600,
+      "root": "C_WITCH:SK_W_BURST:2"
+    },
+    {
+      "t_ms": 8200,
+      "kind": "cast_start",
+      "source": "C_FAMILIAR",
+      "skill": "SK_F_MARK",
+      "target": "boss",
+      "commit_ms": 8400,
+      "root": "C_FAMILIAR:SK_F_MARK:2"
+    },
+    {
+      "t_ms": 8400,
+      "kind": "dot",
+      "source": "C_WITCH",
+      "hp_loss": 17,
+      "stacks": 4,
+      "boss_hp": 1234
+    },
+    {
+      "t_ms": 8400,
+      "kind": "mark",
+      "source": "C_FAMILIAR",
+      "expiry": 16400
+    },
+    {
+      "t_ms": 8600,
+      "kind": "damage",
+      "source": "C_WITCH",
+      "target": "B_R01_A",
+      "skill": "SK_W_BURST",
+      "kind_damage": "active",
+      "raw": 327,
+      "hp_loss": 251,
+      "crit": true,
+      "boss_hp": 983,
+      "root": "C_WITCH:SK_W_BURST:2"
+    },
+    {
+      "t_ms": 8600,
+      "kind": "cast_start",
+      "source": "C_FAMILIAR",
+      "skill": "C_FAMILIAR_BASIC",
+      "target": "boss",
+      "commit_ms": 8850,
+      "root": "C_FAMILIAR:C_FAMILIAR_BASIC:6"
+    },
+    {
+      "t_ms": 8850,
+      "kind": "damage",
+      "source": "C_FAMILIAR",
+      "target": "B_R01_A",
+      "skill": "C_FAMILIAR_BASIC",
+      "kind_damage": "basic",
+      "raw": 64,
+      "hp_loss": 49,
+      "crit": false,
+      "boss_hp": 934,
+      "root": "C_FAMILIAR:C_FAMILIAR_BASIC:6"
+    },
+    {
+      "t_ms": 8900,
+      "kind": "cast_start",
+      "source": "C_WITCH",
+      "skill": "C_WITCH_BASIC",
+      "target": "boss",
+      "commit_ms": 9150,
+      "root": "C_WITCH:C_WITCH_BASIC:5"
+    },
+    {
+      "t_ms": 9150,
+      "kind": "damage",
+      "source": "C_WITCH",
+      "target": "B_R01_A",
+      "skill": "C_WITCH_BASIC",
+      "kind_damage": "basic",
+      "raw": 90,
+      "hp_loss": 69,
+      "crit": false,
+      "boss_hp": 865,
+      "root": "C_WITCH:C_WITCH_BASIC:5"
+    },
+    {
+      "t_ms": 9400,
+      "kind": "dot",
+      "source": "C_WITCH",
+      "hp_loss": 17,
+      "stacks": 4,
+      "boss_hp": 848
+    },
+    {
+      "t_ms": 9400,
+      "kind": "enemy_hit",
+      "source": "B_R01_A",
+      "target": "C_WITCH",
+      "original_target": "C_WITCH",
+      "root": "enemy:1",
+      "hit_index": 0,
+      "action": "ROOT_BOAR_CHARGE",
+      "hp_loss": 222,
+      "absorbed": 0,
+      "guard": false,
+      "redirected": false,
+      "hp": 233
+    },
+    {
+      "t_ms": 10000,
+      "kind": "cast_start",
+      "source": "C_FAMILIAR",
+      "skill": "C_FAMILIAR_BASIC",
+      "target": "boss",
+      "commit_ms": 10250,
+      "root": "C_FAMILIAR:C_FAMILIAR_BASIC:7"
+    },
+    {
+      "t_ms": 10250,
+      "kind": "damage",
+      "source": "C_FAMILIAR",
+      "target": "B_R01_A",
+      "skill": "C_FAMILIAR_BASIC",
+      "kind_damage": "basic",
+      "raw": 64,
+      "hp_loss": 49,
+      "crit": false,
+      "boss_hp": 799,
+      "root": "C_FAMILIAR:C_FAMILIAR_BASIC:7"
+    },
+    {
+      "t_ms": 10400,
+      "kind": "dot",
+      "source": "C_WITCH",
+      "hp_loss": 17,
+      "stacks": 4,
+      "boss_hp": 782
+    },
+    {
+      "t_ms": 10700,
+      "kind": "cast_start",
+      "source": "C_WITCH",
+      "skill": "C_WITCH_BASIC",
+      "target": "boss",
+      "commit_ms": 10950,
+      "root": "C_WITCH:C_WITCH_BASIC:6"
+    },
+    {
+      "t_ms": 10950,
+      "kind": "damage",
+      "source": "C_WITCH",
+      "target": "B_R01_A",
+      "skill": "C_WITCH_BASIC",
+      "kind_damage": "basic",
+      "raw": 90,
+      "hp_loss": 69,
+      "crit": false,
+      "boss_hp": 713,
+      "root": "C_WITCH:C_WITCH_BASIC:6"
+    },
+    {
+      "t_ms": 11400,
+      "kind": "dot",
+      "source": "C_WITCH",
+      "hp_loss": 17,
+      "stacks": 4,
+      "boss_hp": 696
+    },
+    {
+      "t_ms": 11400,
+      "kind": "cast_start",
+      "source": "C_FAMILIAR",
+      "skill": "C_FAMILIAR_BASIC",
+      "target": "boss",
+      "commit_ms": 11650,
+      "root": "C_FAMILIAR:C_FAMILIAR_BASIC:8"
+    },
+    {
+      "t_ms": 11650,
+      "kind": "damage",
+      "source": "C_FAMILIAR",
+      "target": "B_R01_A",
+      "skill": "C_FAMILIAR_BASIC",
+      "kind_damage": "basic",
+      "raw": 64,
+      "hp_loss": 49,
+      "crit": false,
+      "boss_hp": 647,
+      "root": "C_FAMILIAR:C_FAMILIAR_BASIC:8"
+    },
+    {
+      "t_ms": 12400,
+      "kind": "dot",
+      "source": "C_WITCH",
+      "hp_loss": 17,
+      "stacks": 4,
+      "boss_hp": 630
+    },
+    {
+      "t_ms": 12500,
+      "kind": "cast_start",
+      "source": "C_WITCH",
+      "skill": "C_WITCH_BASIC",
+      "target": "boss",
+      "commit_ms": 12750,
+      "root": "C_WITCH:C_WITCH_BASIC:7"
+    },
+    {
+      "t_ms": 12750,
+      "kind": "damage",
+      "source": "C_WITCH",
+      "target": "B_R01_A",
+      "skill": "C_WITCH_BASIC",
+      "kind_damage": "basic",
+      "raw": 90,
+      "hp_loss": 69,
+      "crit": false,
+      "boss_hp": 561,
+      "root": "C_WITCH:C_WITCH_BASIC:7"
+    },
+    {
+      "t_ms": 12800,
+      "kind": "cast_start",
+      "source": "C_FAMILIAR",
+      "skill": "SK_F_DASH",
+      "target": "boss",
+      "commit_ms": 13000,
+      "root": "C_FAMILIAR:SK_F_DASH:3"
+    },
+    {
+      "t_ms": 13000,
+      "kind": "damage",
+      "source": "C_FAMILIAR",
+      "target": "B_R01_A",
+      "skill": "SK_F_DASH",
+      "kind_damage": "active",
+      "raw": 129,
+      "hp_loss": 99,
+      "crit": false,
+      "boss_hp": 462,
+      "root": "C_FAMILIAR:SK_F_DASH:3"
+    },
+    {
+      "t_ms": 13000,
+      "kind": "cast_start",
+      "source": "C_WITCH",
+      "skill": "SK_W_SEED",
+      "target": "boss",
+      "commit_ms": 13400,
+      "root": "C_WITCH:SK_W_SEED:3"
+    },
+    {
+      "t_ms": 13300,
+      "kind": "cast_start",
+      "source": "C_FAMILIAR",
+      "skill": "C_FAMILIAR_BASIC",
+      "target": "boss",
+      "commit_ms": 13550,
+      "root": "C_FAMILIAR:C_FAMILIAR_BASIC:9"
+    },
+    {
+      "t_ms": 13400,
+      "kind": "dot",
+      "source": "C_WITCH",
+      "hp_loss": 17,
+      "stacks": 4,
+      "boss_hp": 445
+    },
+    {
+      "t_ms": 13400,
+      "kind": "damage",
+      "source": "C_WITCH",
+      "target": "B_R01_A",
+      "skill": "SK_W_SEED",
+      "kind_damage": "active",
+      "raw": 22,
+      "hp_loss": 16,
+      "crit": false,
+      "boss_hp": 429,
+      "root": "C_WITCH:SK_W_SEED:3"
+    },
+    {
+      "t_ms": 13400,
+      "kind": "poison_apply",
+      "source": "C_WITCH",
+      "stacks": 5,
+      "expiry": 22400
+    },
+    {
+      "t_ms": 13400,
+      "kind": "damage",
+      "source": "C_FAMILIAR",
+      "target": "B_R01_A",
+      "skill": "PS_chase",
+      "kind_damage": "chase",
+      "raw": 28,
+      "hp_loss": 21,
+      "crit": false,
+      "boss_hp": 408,
+      "root": "C_WITCH:SK_W_SEED:3"
+    },
+    {
+      "t_ms": 13550,
+      "kind": "damage",
+      "source": "C_FAMILIAR",
+      "target": "B_R01_A",
+      "skill": "C_FAMILIAR_BASIC",
+      "kind_damage": "basic",
+      "raw": 64,
+      "hp_loss": 49,
+      "crit": false,
+      "boss_hp": 359,
+      "root": "C_FAMILIAR:C_FAMILIAR_BASIC:9"
+    },
+    {
+      "t_ms": 13800,
+      "kind": "telegraph",
+      "root": "enemy:2",
+      "action": "ROOT_BOAR_CHARGE",
+      "target": "C_FAMILIAR",
+      "hits": [
+        15600
+      ],
+      "raw": 299
+    },
+    {
+      "t_ms": 14300,
+      "kind": "cast_start",
+      "source": "C_WITCH",
+      "skill": "C_WITCH_BASIC",
+      "target": "boss",
+      "commit_ms": 14550,
+      "root": "C_WITCH:C_WITCH_BASIC:8"
+    },
+    {
+      "t_ms": 14400,
+      "kind": "dot",
+      "source": "C_WITCH",
+      "hp_loss": 22,
+      "stacks": 5,
+      "boss_hp": 337
+    },
+    {
+      "t_ms": 14550,
+      "kind": "damage",
+      "source": "C_WITCH",
+      "target": "B_R01_A",
+      "skill": "C_WITCH_BASIC",
+      "kind_damage": "basic",
+      "raw": 90,
+      "hp_loss": 69,
+      "crit": false,
+      "boss_hp": 268,
+      "root": "C_WITCH:C_WITCH_BASIC:8"
+    },
+    {
+      "t_ms": 14700,
+      "kind": "cast_start",
+      "source": "C_FAMILIAR",
+      "skill": "C_FAMILIAR_BASIC",
+      "target": "boss",
+      "commit_ms": 14950,
+      "root": "C_FAMILIAR:C_FAMILIAR_BASIC:10"
+    },
+    {
+      "t_ms": 14950,
+      "kind": "damage",
+      "source": "C_FAMILIAR",
+      "target": "B_R01_A",
+      "skill": "C_FAMILIAR_BASIC",
+      "kind_damage": "basic",
+      "raw": 64,
+      "hp_loss": 49,
+      "crit": false,
+      "boss_hp": 219,
+      "root": "C_FAMILIAR:C_FAMILIAR_BASIC:10"
+    },
+    {
+      "t_ms": 15400,
+      "kind": "dot",
+      "source": "C_WITCH",
+      "hp_loss": 22,
+      "stacks": 5,
+      "boss_hp": 197
+    },
+    {
+      "t_ms": 15600,
+      "kind": "enemy_hit",
+      "source": "B_R01_A",
+      "target": "C_FAMILIAR",
+      "original_target": "C_FAMILIAR",
+      "root": "enemy:2",
+      "hit_index": 0,
+      "action": "ROOT_BOAR_CHARGE",
+      "hp_loss": 220,
+      "absorbed": 0,
+      "guard": false,
+      "redirected": false,
+      "hp": 320
+    },
+    {
+      "t_ms": 15600,
+      "kind": "cast_start",
+      "source": "C_WITCH",
+      "skill": "SK_W_BURST",
+      "target": "boss",
+      "commit_ms": 16050,
+      "root": "C_WITCH:SK_W_BURST:3"
+    },
+    {
+      "t_ms": 16050,
+      "kind": "damage",
+      "source": "C_WITCH",
+      "target": "B_R01_A",
+      "skill": "SK_W_BURST",
+      "kind_damage": "active",
+      "raw": 218,
+      "hp_loss": 167,
+      "crit": false,
+      "boss_hp": 30,
+      "root": "C_WITCH:SK_W_BURST:3"
+    },
+    {
+      "t_ms": 16050,
+      "kind": "damage",
+      "source": "C_FAMILIAR",
+      "target": "B_R01_A",
+      "skill": "PS_chase",
+      "kind_damage": "chase",
+      "raw": 28,
+      "hp_loss": 21,
+      "crit": false,
+      "boss_hp": 9,
+      "root": "C_WITCH:SK_W_BURST:3"
+    },
+    {
+      "t_ms": 16100,
+      "kind": "cast_start",
+      "source": "C_FAMILIAR",
+      "skill": "C_FAMILIAR_BASIC",
+      "target": "boss",
+      "commit_ms": 16350,
+      "root": "C_FAMILIAR:C_FAMILIAR_BASIC:11"
+    },
+    {
+      "t_ms": 16350,
+      "kind": "damage",
+      "source": "C_FAMILIAR",
+      "target": "B_R01_A",
+      "skill": "C_FAMILIAR_BASIC",
+      "kind_damage": "basic",
+      "raw": 64,
+      "hp_loss": 9,
+      "crit": false,
+      "boss_hp": 0,
+      "root": "C_FAMILIAR:C_FAMILIAR_BASIC:11"
+    }
+  ],
+  "log_sha256": "702eef0b43fd33388029960044be1eafe2ff2ebe65d62b26e1443fc73b5eb887"
+}

@@ -1,0 +1,535 @@
+{
+  "status": "UNAPPROVED_HAND03_SIZE_TRIAL_CANDIDATE",
+  "revision": "AIRA_EQ_HAND_03_HEIGHT_R001",
+  "humanApproval": false,
+  "runtimeConsumable": false,
+  "mergePriority": 100,
+  "scope": "AIRA EQ_HAND_03 height-only override for 27 existing exact body tuples. Proposed normalized height 0.06 instead of current 0.10. Does not change any workingHand coordinate, frame index, or any other gear override; off-glob candidate for parent integration after 3-frame review.",
+  "sourceLandmarkOverlay": "native/Art/runtime_overlay_aira_landmarks_r011.json",
+  "sourceOverlaySHA256": "af83ec49808d9e919df19650b5c4b560aa9244e8d46a0340148f6923b2aaa435",
+  "entries": {
+    "AIRA": {
+      "semanticFrameLandmarksCandidate": {
+        "status": "PARTIAL_EXACT_KEY_SIZE_OVERRIDE_ONLY",
+        "humanApproval": false,
+        "rows": [
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_00.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "source_path": "native/GeneratedArt/party_rest_r001/AIRA__rest_00.png",
+            "sourceSHA256": "0169baa14bf0dabb0a5a5ce9a9513649b41d0411af5a1eeac359d9fbe5d4de82",
+            "sourceRowState": "idle",
+            "gear_overrides_candidate": {
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_01.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "source_path": "native/GeneratedArt/party_rest_r001/AIRA__rest_01.png",
+            "sourceSHA256": "fc76df184341e3793eab4827ba3ef618e5c3cb4896497f987dcea89264adb19e",
+            "sourceRowState": "idle",
+            "gear_overrides_candidate": {
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_02.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "source_path": "native/GeneratedArt/party_rest_r001/AIRA__rest_02.png",
+            "sourceSHA256": "1f63421f2c86af9bce96aa89b24f7efeb996cb08fbc915852d5d680fde082894",
+            "sourceRowState": "idle",
+            "gear_overrides_candidate": {
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_03.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "source_path": "native/GeneratedArt/party_rest_r001/AIRA__rest_03.png",
+            "sourceSHA256": "e7dd10a55b4b6ad19d045a9885a0f4a614dc1d720f55dc55099e4bbb1eeadd00",
+            "sourceRowState": "hit",
+            "gear_overrides_candidate": {
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_04.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "source_path": "native/GeneratedArt/party_rest_r001/AIRA__rest_04.png",
+            "sourceSHA256": "a3d53259739e79f7af2b10e4d975d4762a4365cbc86c176cbf5a7fead5a983e3",
+            "sourceRowState": "hit",
+            "gear_overrides_candidate": {
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_05.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "source_path": "native/GeneratedArt/party_rest_r001/AIRA__rest_05.png",
+            "sourceSHA256": "f0a087417c4320a24aa9879974fbc4263cf6c2e195237639c88467c634da5e7c",
+            "sourceRowState": "hit",
+            "gear_overrides_candidate": {
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_06.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "source_path": "native/GeneratedArt/party_rest_r001/AIRA__rest_06.png",
+            "sourceSHA256": "2fa5371afc1a04d2f2c85ddb177852c52fc4f6c2414c25976c2426a03d5cc3ba",
+            "sourceRowState": "resolve",
+            "gear_overrides_candidate": {
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_07.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "source_path": "native/GeneratedArt/party_rest_r001/AIRA__rest_07.png",
+            "sourceSHA256": "09116d4094ffefbd11ff6fb7826884eff362b8f00457aefa0be9328236ad2bd8",
+            "sourceRowState": "resolve",
+            "gear_overrides_candidate": {
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_08.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "source_path": "native/GeneratedArt/party_rest_r001/AIRA__rest_08.png",
+            "sourceSHA256": "85fadc481cc8943d2999f8477a5a928d69520d418180c15eee2f3e0de9b4b36e",
+            "sourceRowState": "resolve",
+            "gear_overrides_candidate": {
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_00.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_00.png",
+            "sourceSHA256": "50cbd3a45a3aa5f3a9c938f77fd59dbd8c850328beeec8d47a0b8cfa41072044",
+            "sourceRowState": "anticipate",
+            "gear_overrides_candidate": {
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_01.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_01.png",
+            "sourceSHA256": "7a0dd13d7ba6e2222b4edfb0ad3b04a37f90249a04b34a0e7558095d7b9d51f8",
+            "sourceRowState": "anticipate",
+            "gear_overrides_candidate": {
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_02.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_02.png",
+            "sourceSHA256": "be07aa515ab14e82589e04a32053734b1c239cb4bc0589d3de3acfd022a38fe3",
+            "sourceRowState": "anticipate",
+            "gear_overrides_candidate": {
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_03.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_03.png",
+            "sourceSHA256": "681fd98de966891ac4f7b3ed6090c014372aa7c9a9219b1436049e9da1233958",
+            "sourceRowState": "execute",
+            "gear_overrides_candidate": {
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_04.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_04.png",
+            "sourceSHA256": "8b61676670a6a7b2fe47def150b4190230effc065ed0655f5d2ba7bf88ae7641",
+            "sourceRowState": "execute",
+            "gear_overrides_candidate": {
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_05.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_05.png",
+            "sourceSHA256": "973cb7f285dd545aea5178a4fd9af9e134ad96b8352d548453992add58199106",
+            "sourceRowState": "execute",
+            "gear_overrides_candidate": {
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_06.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_06.png",
+            "sourceSHA256": "c93e4788a2ab41f62ef8a9916bc064b186269a486951ed2f439edaf982d242de",
+            "sourceRowState": "recover",
+            "gear_overrides_candidate": {
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_07.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_07.png",
+            "sourceSHA256": "c9c926380275c17d6cd21de70b2fbd461351deb9dea95275184d54524764862d",
+            "sourceRowState": "recover",
+            "gear_overrides_candidate": {
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_08.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_08.png",
+            "sourceSHA256": "357aca385b1033d5e15d977fd01eae58263a0f3ea02e320ce79a109037342581",
+            "sourceRowState": "recover",
+            "gear_overrides_candidate": {
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_0.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "source_path": "native/GeneratedArt/party_walk_r001/AIRA__walk_0.png",
+            "sourceSHA256": "4d8e9b5eca47f5881a34b153f32c610bb1738f7f4e84754dc53269aa156504b6",
+            "sourceRowState": "walk",
+            "gear_overrides_candidate": {
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_1.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "source_path": "native/GeneratedArt/party_walk_r001/AIRA__walk_1.png",
+            "sourceSHA256": "55f44337652f718d2d3625ffcbef13cf10f3852e68a9a91ae38a4496ff8c73f4",
+            "sourceRowState": "walk",
+            "gear_overrides_candidate": {
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_2.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "source_path": "native/GeneratedArt/party_walk_r001/AIRA__walk_2.png",
+            "sourceSHA256": "edd703655de1420b46e5a24253aae99871e8d101b89ea935ca488bb53830e077",
+            "sourceRowState": "walk",
+            "gear_overrides_candidate": {
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_3.png",
+            "frameIndex": 3,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "source_path": "native/GeneratedArt/party_walk_r001/AIRA__walk_3.png",
+            "sourceSHA256": "c9bf20184a233fd50ffdd26f6820edbb1eb2566366739619790bb5bb4ea0d0c6",
+            "sourceRowState": "walk",
+            "gear_overrides_candidate": {
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_4.png",
+            "frameIndex": 4,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "source_path": "native/GeneratedArt/party_walk_r001/AIRA__walk_4.png",
+            "sourceSHA256": "6f4b8bae624a94a3a6acf0d226283ab7d1beaaaeb9f63128f58ddcc103272910",
+            "sourceRowState": "walk",
+            "gear_overrides_candidate": {
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_5.png",
+            "frameIndex": 5,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "source_path": "native/GeneratedArt/party_walk_r001/AIRA__walk_5.png",
+            "sourceSHA256": "18adee37bbce247e84dc48844c70f63464683d6f7e6bb48b1e1373b04c556a00",
+            "sourceRowState": "walk",
+            "gear_overrides_candidate": {
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_6.png",
+            "frameIndex": 6,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "source_path": "native/GeneratedArt/party_walk_r001/AIRA__walk_6.png",
+            "sourceSHA256": "9ac868e8dcc5c6e268b4cd2372bdcf8206fb778850b4ef5d461ca5cefcaad83c",
+            "sourceRowState": "walk",
+            "gear_overrides_candidate": {
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_7.png",
+            "frameIndex": 7,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "source_path": "native/GeneratedArt/party_walk_r001/AIRA__walk_7.png",
+            "sourceSHA256": "59edcd8212f9f5946daf6ef578c1e695fc4bcfba437572691a4806841678e0cd",
+            "sourceRowState": "walk",
+            "gear_overrides_candidate": {
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_8.png",
+            "frameIndex": 8,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "source_path": "native/GeneratedArt/party_walk_r001/AIRA__walk_8.png",
+            "sourceSHA256": "14195b5b08605dd7e4e2b4b9c7d8c0223cadba2cc3b037c33c0df1a3a17fad50",
+            "sourceRowState": "walk",
+            "gear_overrides_candidate": {
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "evidence": "docs/production/current/art/aira_underlay_trial_r004/HAND03_DETAIL_ZOOM_R004.jpg",
+  "note": "Exact-frame captures at idle:1, execute:1, walk:6 on app_20261010T233312 show 0.10 dominates the glove back. 0.06 is a bounded trial suggestion; runtime fit remains unverified."
+}

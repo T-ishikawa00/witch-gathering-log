@@ -1,0 +1,102 @@
+{
+  "schema": "native-completion-r456-preparation-v1",
+  "status": "PREPARED_NOT_ROOT_SEALED",
+  "executionAllowed": false,
+  "worktree": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg",
+  "source": {
+    "frozenDirectory": "native/qa_source_20261015T060856",
+    "frozenSourceMap": "native/qa_source_20261015T060856/SOURCE_SHA256.json",
+    "frozenSourceMapSHA256": "9785db0d3824d58ba91c46d12d756af91c4db68fbf0e9753580e07cb73abb386",
+    "r454SourceMap": "docs/production/current/qa_drafts/storekit_event_export_r454/build_tools_r001/NATIVE_SOURCE_MAP_R001.json",
+    "r454SourceMapSHA256": "f7e90c5caadce71ad72e1612ae2f06094092a90d4b43cd4840a16607be0e1efe",
+    "sourceCount": 238,
+    "sourceMapsComparedEqual": true
+  },
+  "project": {
+    "path": "native/WitchGatheringQA_20261015T060856.xcodeproj",
+    "projectPBXPath": "native/WitchGatheringQA_20261015T060856.xcodeproj/project.pbxproj",
+    "projectPBXSHA256": "0a4a1aa2ce2f46d75a9c6b24d39d971d699cffabdb48fc180b5fdd653563c825",
+    "protectedLivePBXPath": "native/WitchGathering.xcodeproj/project.pbxproj",
+    "protectedLivePBXSHA256": "b83573270f2e0fde46411aabe9a539343b0fd1301760b3de7fe672b796dc18e9",
+    "note": "Reuse the already-generated frozen R454 project; do not freeze, regenerate, edit its PBX, or copy the resource tree. Root must verify this project is closed and matches the final R454 receipt before sealing R456."
+  },
+  "resources": {
+    "count": 1922,
+    "frozenResourceMap": "native/qa_source_20261015T060856/RESOURCE_SHA256.json",
+    "frozenResourceMapSHA256": "90d213640ea8bf1ac0791ece0b2bfa01f68228e3eed3d56479b8c5628b3cc7de",
+    "frozenResourceCaptureSHA256": "4e36f1894122cb86e4e65dc2216bba4fafc723920258e6a5933af223a2c960ab",
+    "donorResourceMapSHA256": "90d213640ea8bf1ac0791ece0b2bfa01f68228e3eed3d56479b8c5628b3cc7de",
+    "donorReceipt": "docs/production/current/qa_drafts/sheet_navigation_integration_r373/build_tools_r001/build_attempt_001/RESULT.json",
+    "donorReceiptSHA256": "a67aebfdad75d5b05d1418ab9732c1ee2d5b67ff426739bec34a468c68b02da5",
+    "resourceMapsComparedEqual": true
+  },
+  "builds": [
+    {
+      "name": "simulator-release",
+      "configuration": "Release",
+      "destination": "generic/platform=iOS Simulator",
+      "sdk": "iphonesimulator",
+      "expectedProduct": "<DerivedData>/Build/Products/Release-iphonesimulator/WitchGathering.app"
+    },
+    {
+      "name": "iphoneos-unsigned-release-compile",
+      "configuration": "Release",
+      "destination": "generic/platform=iOS",
+      "sdk": "iphoneos",
+      "expectedProduct": "<DerivedData>/Build/Products/Release-iphoneos/WitchGathering.app",
+      "codeSigningAllowed": false,
+      "install": false,
+      "launch": false
+    }
+  ],
+  "buildSettings": {
+    "scheme": "WitchGathering",
+    "bundleIdentifier": "local.witch.autonomous.r1.completion.r456",
+    "activeCompilationConditions": [
+      "STANDARD_PLAY_R169",
+      "FIRST_CRAFT_AID_R179",
+      "EQUIPMENT_LOADOUTS_R342",
+      "NATURAL_GEAR_R350",
+      "NATURAL_GEAR_REFINEMENT_R352",
+      "GEAR_DISMANTLE_REFUND_R353"
+    ],
+    "debug": false,
+    "jobs": 2,
+    "onlyActiveArch": true,
+    "signing": false
+  },
+  "limits": {
+    "attempts": 1,
+    "aggregateSeconds": 600,
+    "perTargetSeconds": 600,
+    "maxAllocatedOutputBytes": 2000000000,
+    "safetyReserveBytes": 2000000000,
+    "minimumFreeBytes": 10000000000,
+    "requiredStartFreeBytes": 20000000000,
+    "install": false,
+    "launch": false,
+    "freeze": false,
+    "resourceCopy": false
+  },
+  "output": {
+    "derivedData": "native/build/ActiveIntegrationR456/<sealed-input-key>",
+    "receiptDirectory": "docs/production/current/qa_drafts/native_completion_r456/build_attempt_001",
+    "sourceAndProjectMustRemainUnchanged": true,
+    "protectedPriorBuilds": [
+      "R445 Release Simulator",
+      "R447 unsigned iPhoneOS compile",
+      "R454 Debug candidate/build artifacts"
+    ]
+  },
+  "evidenceBoundaries": [
+    "Build products prove compilation only; no StoreKit runtime integration, purchase, install, launch, or Apple authorization.",
+    "R454 source map and 1922-resource donor are pinned to their recorded snapshots; Root must compare them to the final closed R454 receipt before issuing a R456 seal.",
+    "No build was started while R454 R003 is active."
+  ],
+  "referencePins": {
+    "r454InputManifestSHA256": "c88abae2e41e7617b513932c7725be4597efd045ea4fb96e5ef6f446b1fdd1ef",
+    "r454RootContractSHA256": "f02cd5e6e18c7c69efc5279147b38a033fdbea954131d902ea493f99b91c4ec7",
+    "r445ReleaseDriver": "docs/production/current/qa_drafts/native_completion_r445/build_tools_r001/build_r001.py",
+    "r447IPhoneOSDriver": "docs/production/current/qa_drafts/native_completion_r447/build_tools_r001/run_iphoneos_r447.py"
+  }
+}

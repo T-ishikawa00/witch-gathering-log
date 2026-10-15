@@ -1,0 +1,151 @@
+{
+  "schema": "witch.boss_scene_layers_candidate_manifest.v1",
+  "revision": "r001",
+  "status": "UNAPPROVED_CANDIDATE_ONLY",
+  "scene_layer_contract": "keep selected full-frame candidate fixed at z=-20; additive transparent edge foreground at z=12; use common source-space 941x1672 canvas",
+  "candidate_records": [
+    {
+      "scene_id": "BG_R02_BOSS",
+      "source_fullframe_path": "BackgroundPreviews/BG_R02_BOSS/BG_R02_BOSS__fullframe_review_candidate__r001.png",
+      "source_fullframe_sha256": "a721badb04571f1a56319863c977a97569c133d085811cb1f45dee9aa99ab5fe",
+      "source_fullframe_canvas_px": [
+        941,
+        1672
+      ],
+      "generated_source_path": "/Users/PUBLIC_USER/.codex/generated_images/01a12399-b8c7-76a0-adb6-39606fe83b65/exec-8c22b7e3-35e8-4032-870b-d7097cd48bba.png",
+      "generated_source_sha256": "ec8adc8e67e49942d26c037e0a5a7af7000325d625a0098be4bd090b46690117",
+      "generated_source_canvas_px": [
+        941,
+        1672
+      ],
+      "packed_foreground_path": "GeneratedCandidates/BackgroundLayers/boss_foreground_r001/BG_R02_BOSS_foreground_candidate_r001.png",
+      "packed_foreground_sha256": "2592862b90182ea95b5e82db4595c32f4dbbafa3942741b441ee759d98c7495d",
+      "packed_foreground_canvas_px": [
+        941,
+        1672
+      ],
+      "alpha_zero_ratio": 0.81073784,
+      "central_70pct_upper_75pct_alpha_gt16_ratio": 0.00014664,
+      "composition_preview": "GeneratedCandidates/BackgroundLayers/boss_foreground_r001/qa/BG_R02_BOSS_composite_candidate_r001.jpg",
+      "base_z": -20,
+      "foreground_z": 12,
+      "source_depth_recovered": false,
+      "status": "UNAPPROVED_GENERATED_BOSS_FOREGROUND_CANDIDATE",
+      "known_limitations": [
+        "Generated edge framing only; it is not recovered source depth or an adopted art plate.",
+        "The full-frame base remains intact beneath this additive overlay.",
+        "Central alpha leakage ratio is a pixel diagnostic, not proof of actor visibility or good composition.",
+        "SpriteKit registration, enemy/party occlusion, and Human visual review are pending."
+      ],
+      "runtime_overlay": "runtime_overlay_bg_r02_boss_scene_layers_candidate_r001.json"
+    },
+    {
+      "scene_id": "BG_R03_BOSS",
+      "source_fullframe_path": "BackgroundPreviews/BG_R03_BOSS/BG_R03_BOSS__fullframe_review_candidate__r001.png",
+      "source_fullframe_sha256": "d641b8d724a7134e0bf292491931f309afffd358a4ad6b3ac15c7558d4c73ece",
+      "source_fullframe_canvas_px": [
+        941,
+        1672
+      ],
+      "generated_source_path": "/Users/PUBLIC_USER/.codex/generated_images/01a12399-b8c7-76a0-adb6-39606fe83b65/exec-abd565b4-b772-4bba-b031-bbac3c106e4d.png",
+      "generated_source_sha256": "12c65071eff23490c1c66071d1893d6908aaeb1b8e1d0d215fed856a175164dd",
+      "generated_source_canvas_px": [
+        941,
+        1671
+      ],
+      "packed_foreground_path": "GeneratedCandidates/BackgroundLayers/boss_foreground_r001/BG_R03_BOSS_foreground_candidate_r001.png",
+      "packed_foreground_sha256": "606449bb0aaddfae94350a4f754b16086da5f34bd95816c7a3be868eafd4e68c",
+      "packed_foreground_canvas_px": [
+        941,
+        1672
+      ],
+      "alpha_zero_ratio": 0.87053247,
+      "central_70pct_upper_75pct_alpha_gt16_ratio": 0.0,
+      "composition_preview": "GeneratedCandidates/BackgroundLayers/boss_foreground_r001/qa/BG_R03_BOSS_composite_candidate_r001.jpg",
+      "base_z": -20,
+      "foreground_z": 12,
+      "source_depth_recovered": false,
+      "status": "UNAPPROVED_GENERATED_BOSS_FOREGROUND_CANDIDATE",
+      "known_limitations": [
+        "Generated edge framing only; it is not recovered source depth or an adopted art plate.",
+        "The full-frame base remains intact beneath this additive overlay.",
+        "Central alpha leakage ratio is a pixel diagnostic, not proof of actor visibility or good composition.",
+        "SpriteKit registration, enemy/party occlusion, and Human visual review are pending."
+      ],
+      "runtime_overlay": "runtime_overlay_bg_r03_boss_scene_layers_candidate_r001.json"
+    },
+    {
+      "scene_id": "BG_R04_BOSS",
+      "source_fullframe_path": "BackgroundPreviews/BG_R04_BOSS/BG_R04_BOSS__fullframe_review_candidate__r001.png",
+      "source_fullframe_sha256": "30a1dac8fd30c20b3e28d29f1a34c4dcd1bd42b24afbb1fa226d2d8c74cadcb1",
+      "source_fullframe_canvas_px": [
+        941,
+        1672
+      ],
+      "generated_source_path": "/Users/PUBLIC_USER/.codex/generated_images/01a12399-b8c7-76a0-adb6-39606fe83b65/exec-d3b4098f-f197-47fa-8e43-6b46ef108c63.png",
+      "generated_source_sha256": "43acb70b4bd920ae4e4ec61b067f3dd20083877a2f4612cd82336aaee67c17d6",
+      "generated_source_canvas_px": [
+        941,
+        1672
+      ],
+      "packed_foreground_path": "GeneratedCandidates/BackgroundLayers/boss_foreground_r001/BG_R04_BOSS_foreground_candidate_r001.png",
+      "packed_foreground_sha256": "d6afd1fbef2c199af274afe7b742fb64f939f053b30f9ff522c642c6d97959c0",
+      "packed_foreground_canvas_px": [
+        941,
+        1672
+      ],
+      "alpha_zero_ratio": 0.83461489,
+      "central_70pct_upper_75pct_alpha_gt16_ratio": 0.0,
+      "composition_preview": "GeneratedCandidates/BackgroundLayers/boss_foreground_r001/qa/BG_R04_BOSS_composite_candidate_r001.jpg",
+      "base_z": -20,
+      "foreground_z": 12,
+      "source_depth_recovered": false,
+      "status": "UNAPPROVED_GENERATED_BOSS_FOREGROUND_CANDIDATE",
+      "known_limitations": [
+        "Generated edge framing only; it is not recovered source depth or an adopted art plate.",
+        "The full-frame base remains intact beneath this additive overlay.",
+        "Central alpha leakage ratio is a pixel diagnostic, not proof of actor visibility or good composition.",
+        "SpriteKit registration, enemy/party occlusion, and Human visual review are pending."
+      ],
+      "runtime_overlay": "runtime_overlay_bg_r04_boss_scene_layers_candidate_r001.json"
+    },
+    {
+      "scene_id": "BG_R05_BOSS",
+      "source_fullframe_path": "BackgroundPreviews/BG_R05_BOSS/BG_R05_BOSS__fullframe_review_candidate__r001.png",
+      "source_fullframe_sha256": "ea62b4306b9f17264d3089362fd9ad19eda9830b2e5d3586eb90a048f187e975",
+      "source_fullframe_canvas_px": [
+        941,
+        1672
+      ],
+      "generated_source_path": "/Users/PUBLIC_USER/.codex/generated_images/01a12399-b8c7-76a0-adb6-39606fe83b65/exec-8742cf1a-5d78-45bf-a352-e5cbdf9a218d.png",
+      "generated_source_sha256": "0679db17e78fcb41c5fd175ef70e00d2126be8e4acc346acb73595d2073baef9",
+      "generated_source_canvas_px": [
+        941,
+        1672
+      ],
+      "packed_foreground_path": "GeneratedCandidates/BackgroundLayers/boss_foreground_r001/BG_R05_BOSS_foreground_candidate_r001.png",
+      "packed_foreground_sha256": "88e980076de57556c1dfc79b84d95fa32606fdbcc7571c6710f42d413f140cef",
+      "packed_foreground_canvas_px": [
+        941,
+        1672
+      ],
+      "alpha_zero_ratio": 0.86447534,
+      "central_70pct_upper_75pct_alpha_gt16_ratio": 0.0,
+      "composition_preview": "GeneratedCandidates/BackgroundLayers/boss_foreground_r001/qa/BG_R05_BOSS_composite_candidate_r001.jpg",
+      "base_z": -20,
+      "foreground_z": 12,
+      "source_depth_recovered": false,
+      "status": "UNAPPROVED_GENERATED_BOSS_FOREGROUND_CANDIDATE",
+      "known_limitations": [
+        "Generated edge framing only; it is not recovered source depth or an adopted art plate.",
+        "The full-frame base remains intact beneath this additive overlay.",
+        "Central alpha leakage ratio is a pixel diagnostic, not proof of actor visibility or good composition.",
+        "SpriteKit registration, enemy/party occlusion, and Human visual review are pending."
+      ],
+      "runtime_overlay": "runtime_overlay_bg_r05_boss_scene_layers_candidate_r001.json"
+    }
+  ],
+  "source_assets_untouched": true,
+  "human_adoption": false,
+  "complete_layered_background": false
+}

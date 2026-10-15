@@ -1,0 +1,509 @@
+{
+  "status": "DESIGN_CANDIDATE",
+  "original_count": 15,
+  "baseline_reward_total": 3000,
+  "new_art_units_automatically_authorized": 0,
+  "challenges": [
+    {
+      "id": "CH_R01_01",
+      "id_status": "NEW_NAMESPACE_PROPOSED_MATCH_BY_EXISTING_TITLE_BEFORE_IMPORT",
+      "region": "R01",
+      "name": "根道の再観測",
+      "source_title_unchanged": true,
+      "enemy_ids": [
+        "B_R01_A"
+      ],
+      "mechanic": "単発heavyと長い後隙",
+      "telegraph": "大打撃の予告と命中時刻",
+      "alternative_solutions": [
+        "結界・heavy軽減で耐える",
+        "直接攻撃で被弾回数を減らす"
+      ],
+      "unlock_gate": "G_R05_B",
+      "first_clear_powder": 200,
+      "repeat_powder": 0,
+      "record_bonus_powder": 0,
+      "paid_entry": false,
+      "required_rarity": null,
+      "required_item_ids": [],
+      "first_clear_key": "stable_challenge_id_not_rules_version",
+      "records": [
+        "clear",
+        "best_time_ms",
+        "surviving_members",
+        "ending_hp_ratio"
+      ],
+      "record_rewards": "display_only_no_repeat_stat_reward",
+      "implementation_gap": "単体heavy、発生源付き結界、同予告の重複拒否",
+      "status": "DESIGN_ONLY_NOT_PLAYTESTED"
+    },
+    {
+      "id": "CH_R01_02",
+      "id_status": "NEW_NAMESPACE_PROPOSED_MATCH_BY_EXISTING_TITLE_BEFORE_IMPORT",
+      "region": "R01",
+      "name": "灯糸の群れ",
+      "source_title_unchanged": true,
+      "enemy_ids": [
+        "E_R01_02",
+        "E_R01_03"
+      ],
+      "mechanic": "小型2〜3体、支援・減速",
+      "telegraph": "減速源と支援の対象",
+      "alternative_solutions": [
+        "支援源を先に倒す",
+        "持続短縮と回復で維持する"
+      ],
+      "unlock_gate": "G_R05_B",
+      "first_clear_powder": 200,
+      "repeat_powder": 0,
+      "record_bonus_powder": 0,
+      "paid_entry": false,
+      "required_rarity": null,
+      "required_item_ids": [],
+      "first_clear_key": "stable_challenge_id_not_rules_version",
+      "records": [
+        "clear",
+        "best_time_ms",
+        "surviving_members",
+        "ending_hp_ratio"
+      ],
+      "record_rewards": "display_only_no_repeat_stat_reward",
+      "implementation_gap": "複数敵と共通の自動標的規則、slow解除",
+      "status": "DESIGN_ONLY_NOT_PLAYTESTED"
+    },
+    {
+      "id": "CH_R01_03",
+      "id_status": "NEW_NAMESPACE_PROPOSED_MATCH_BY_EXISTING_TITLE_BEFORE_IMPORT",
+      "region": "R01",
+      "name": "古樹の脈動",
+      "source_title_unchanged": true,
+      "enemy_ids": [
+        "B_R01_B"
+      ],
+      "mechanic": "根の連撃と枝の大振り",
+      "telegraph": "連撃を一つの主動作として予告",
+      "alternative_solutions": [
+        "反撃と防護",
+        "呪毒を維持しつつ耐久"
+      ],
+      "unlock_gate": "G_R05_B",
+      "first_clear_powder": 200,
+      "repeat_powder": 0,
+      "record_bonus_powder": 0,
+      "paid_entry": false,
+      "required_rarity": null,
+      "required_item_ids": [],
+      "first_clear_key": "stable_challenge_id_not_rules_version",
+      "records": [
+        "clear",
+        "best_time_ms",
+        "surviving_members",
+        "ending_hp_ratio"
+      ],
+      "record_rewards": "display_only_no_repeat_stat_reward",
+      "implementation_gap": "root_action単位の反撃上限と蓄圧",
+      "status": "DESIGN_ONLY_NOT_PLAYTESTED"
+    },
+    {
+      "id": "CH_R02_01",
+      "id_status": "NEW_NAMESPACE_PROPOSED_MATCH_BY_EXISTING_TITLE_BEFORE_IMPORT",
+      "region": "R02",
+      "name": "霧の重なり",
+      "source_title_unchanged": true,
+      "enemy_ids": [
+        "E_R02_01",
+        "E_R02_02"
+      ],
+      "mechanic": "持続ダメージと回復周期",
+      "telegraph": "胞子付着と次tick",
+      "alternative_solutions": [
+        "持続耐性と回復",
+        "支援源への攻撃集中"
+      ],
+      "unlock_gate": "G_R05_B",
+      "first_clear_powder": 200,
+      "repeat_powder": 0,
+      "record_bonus_powder": 0,
+      "paid_entry": false,
+      "required_rarity": null,
+      "required_item_ids": [],
+      "first_clear_key": "stable_challenge_id_not_rules_version",
+      "records": [
+        "clear",
+        "best_time_ms",
+        "surviving_members",
+        "ending_hp_ratio"
+      ],
+      "record_rewards": "display_only_no_repeat_stat_reward",
+      "implementation_gap": "味方DOT、耐性、解除、複数敵",
+      "status": "DESIGN_ONLY_NOT_PLAYTESTED"
+    },
+    {
+      "id": "CH_R02_02",
+      "id_status": "NEW_NAMESPACE_PROPOSED_MATCH_BY_EXISTING_TITLE_BEFORE_IMPORT",
+      "region": "R02",
+      "name": "水鏡のゆらぎ",
+      "source_title_unchanged": true,
+      "enemy_ids": [
+        "B_R02_B"
+      ],
+      "mechanic": "膜の防御期と解除期",
+      "telegraph": "膜の開閉を事前に公開",
+      "alternative_solutions": [
+        "呪毒の継続",
+        "開いた時間へ直接火力"
+      ],
+      "unlock_gate": "G_R05_B",
+      "first_clear_powder": 200,
+      "repeat_powder": 0,
+      "record_bonus_powder": 0,
+      "paid_entry": false,
+      "required_rarity": null,
+      "required_item_ids": [],
+      "first_clear_key": "stable_challenge_id_not_rules_version",
+      "records": [
+        "clear",
+        "best_time_ms",
+        "surviving_members",
+        "ending_hp_ratio"
+      ],
+      "record_rewards": "display_only_no_repeat_stat_reward",
+      "implementation_gap": "膜は暫定50%直接軽減・6秒、開放4秒。毒無効にしない",
+      "status": "DESIGN_ONLY_NOT_PLAYTESTED"
+    },
+    {
+      "id": "CH_R02_03",
+      "id_status": "NEW_NAMESPACE_PROPOSED_MATCH_BY_EXISTING_TITLE_BEFORE_IMPORT",
+      "region": "R02",
+      "name": "月灯の合唱",
+      "source_title_unchanged": true,
+      "enemy_ids": [
+        "E_R02_04",
+        "E_R02_02"
+      ],
+      "mechanic": "支援敵と主敵",
+      "telegraph": "どの敵が支援しているか",
+      "alternative_solutions": [
+        "支援源優先",
+        "耐久と短縮で長期戦"
+      ],
+      "unlock_gate": "G_R05_B",
+      "first_clear_powder": 200,
+      "repeat_powder": 0,
+      "record_bonus_powder": 0,
+      "paid_entry": false,
+      "required_rarity": null,
+      "required_item_ids": [],
+      "first_clear_key": "stable_challenge_id_not_rules_version",
+      "records": [
+        "clear",
+        "best_time_ms",
+        "surviving_members",
+        "ending_hp_ratio"
+      ],
+      "record_rewards": "display_only_no_repeat_stat_reward",
+      "implementation_gap": "複数敵、味方同士で一貫した自動標的",
+      "status": "DESIGN_ONLY_NOT_PLAYTESTED"
+    },
+    {
+      "id": "CH_R03_01",
+      "id_status": "NEW_NAMESPACE_PROPOSED_MATCH_BY_EXISTING_TITLE_BEFORE_IMPORT",
+      "region": "R03",
+      "name": "連槌の検分",
+      "source_title_unchanged": true,
+      "enemy_ids": [
+        "B_R03_A"
+      ],
+      "mechanic": "別主動作の連打・主動作内多段の区別",
+      "telegraph": "一撃ごとでなく主動作範囲",
+      "alternative_solutions": [
+        "かばう・反撃",
+        "防護・結界"
+      ],
+      "unlock_gate": "G_R05_B",
+      "first_clear_powder": 200,
+      "repeat_powder": 0,
+      "record_bonus_powder": 0,
+      "paid_entry": false,
+      "required_rarity": null,
+      "required_item_ids": [],
+      "first_clear_key": "stable_challenge_id_not_rules_version",
+      "records": [
+        "clear",
+        "best_time_ms",
+        "surviving_members",
+        "ending_hp_ratio"
+      ],
+      "record_rewards": "display_only_no_repeat_stat_reward",
+      "implementation_gap": "一root一反撃、ICD、蓄圧と次の槌",
+      "status": "DESIGN_ONLY_NOT_PLAYTESTED"
+    },
+    {
+      "id": "CH_R03_02",
+      "id_status": "NEW_NAMESPACE_PROPOSED_MATCH_BY_EXISTING_TITLE_BEFORE_IMPORT",
+      "region": "R03",
+      "name": "炉心の呼吸",
+      "source_title_unchanged": true,
+      "enemy_ids": [
+        "B_R03_B"
+      ],
+      "mechanic": "蓄熱・放熱の二局面",
+      "telegraph": "蓄熱段階と放熱予告",
+      "alternative_solutions": [
+        "放熱へ合わせて耐久",
+        "冷却中に高火力"
+      ],
+      "unlock_gate": "G_R05_B",
+      "first_clear_powder": 200,
+      "repeat_powder": 0,
+      "record_bonus_powder": 0,
+      "paid_entry": false,
+      "required_rarity": null,
+      "required_item_ids": [],
+      "first_clear_key": "stable_challenge_id_not_rules_version",
+      "records": [
+        "clear",
+        "best_time_ms",
+        "surviving_members",
+        "ending_hp_ratio"
+      ],
+      "record_rewards": "display_only_no_repeat_stat_reward",
+      "implementation_gap": "フェーズ時計、事前予告。所有品に応じて敵を強化しない",
+      "status": "DESIGN_ONLY_NOT_PLAYTESTED"
+    },
+    {
+      "id": "CH_R03_03",
+      "id_status": "NEW_NAMESPACE_PROPOSED_MATCH_BY_EXISTING_TITLE_BEFORE_IMPORT",
+      "region": "R03",
+      "name": "坑道の残響",
+      "source_title_unchanged": true,
+      "enemy_ids": [
+        "E_R03_02",
+        "E_R03_03"
+      ],
+      "mechanic": "詠唱妨害と小型追撃",
+      "telegraph": "妨害対象と適用時間",
+      "alternative_solutions": [
+        "弱体耐性",
+        "支援源優先で妨害回数を減らす"
+      ],
+      "unlock_gate": "G_R05_B",
+      "first_clear_powder": 200,
+      "repeat_powder": 0,
+      "record_bonus_powder": 0,
+      "paid_entry": false,
+      "required_rarity": null,
+      "required_item_ids": [],
+      "first_clear_key": "stable_challenge_id_not_rules_version",
+      "records": [
+        "clear",
+        "best_time_ms",
+        "surviving_members",
+        "ending_hp_ratio"
+      ],
+      "record_rewards": "display_only_no_repeat_stat_reward",
+      "implementation_gap": "中断・取消・予約支援の無効化",
+      "status": "DESIGN_ONLY_NOT_PLAYTESTED"
+    },
+    {
+      "id": "CH_R04_01",
+      "id_status": "NEW_NAMESPACE_PROPOSED_MATCH_BY_EXISTING_TITLE_BEFORE_IMPORT",
+      "region": "R04",
+      "name": "稜線の重圧",
+      "source_title_unchanged": true,
+      "enemy_ids": [
+        "B_R04_A"
+      ],
+      "mechanic": "heavy単体と通常攻撃",
+      "telegraph": "heavyタグと通常タグの区別",
+      "alternative_solutions": [
+        "白角の踏靴等の軽減",
+        "結界・回復"
+      ],
+      "unlock_gate": "G_R05_B",
+      "first_clear_powder": 200,
+      "repeat_powder": 0,
+      "record_bonus_powder": 0,
+      "paid_entry": false,
+      "required_rarity": null,
+      "required_item_ids": [],
+      "first_clear_key": "stable_challenge_id_not_rules_version",
+      "records": [
+        "clear",
+        "best_time_ms",
+        "surviving_members",
+        "ending_hp_ratio"
+      ],
+      "record_rewards": "display_only_no_repeat_stat_reward",
+      "implementation_gap": "heavy限定軽減、複数の非ガチャ解法",
+      "status": "DESIGN_ONLY_NOT_PLAYTESTED"
+    },
+    {
+      "id": "CH_R04_02",
+      "id_status": "NEW_NAMESPACE_PROPOSED_MATCH_BY_EXISTING_TITLE_BEFORE_IMPORT",
+      "region": "R04",
+      "name": "氷羽の追い風",
+      "source_title_unchanged": true,
+      "enemy_ids": [
+        "E_R04_02",
+        "E_R04_01"
+      ],
+      "mechanic": "敵強化・弱体化・連携",
+      "telegraph": "支援中の敵と持続",
+      "alternative_solutions": [
+        "狙印と集中攻撃",
+        "耐性と回復"
+      ],
+      "unlock_gate": "G_R05_B",
+      "first_clear_powder": 200,
+      "repeat_powder": 0,
+      "record_bonus_powder": 0,
+      "paid_entry": false,
+      "required_rarity": null,
+      "required_item_ids": [],
+      "first_clear_key": "stable_challenge_id_not_rules_version",
+      "records": [
+        "clear",
+        "best_time_ms",
+        "surviving_members",
+        "ending_hp_ratio"
+      ],
+      "record_rewards": "display_only_no_repeat_stat_reward",
+      "implementation_gap": "敵支援と自動標的、解除適格",
+      "status": "DESIGN_ONLY_NOT_PLAYTESTED"
+    },
+    {
+      "id": "CH_R04_03",
+      "id_status": "NEW_NAMESPACE_PROPOSED_MATCH_BY_EXISTING_TITLE_BEFORE_IMPORT",
+      "region": "R04",
+      "name": "山竜の薄翼",
+      "source_title_unchanged": true,
+      "enemy_ids": [
+        "B_R04_B"
+      ],
+      "mechanic": "単体と広域の予告を交互に扱う",
+      "telegraph": "対象範囲とブレス開始",
+      "alternative_solutions": [
+        "単体かばう＋全体の備え",
+        "短期火力"
+      ],
+      "unlock_gate": "G_R05_B",
+      "first_clear_powder": 200,
+      "repeat_powder": 0,
+      "record_bonus_powder": 0,
+      "paid_entry": false,
+      "required_rarity": null,
+      "required_item_ids": [],
+      "first_clear_key": "stable_challenge_id_not_rules_version",
+      "records": [
+        "clear",
+        "best_time_ms",
+        "surviving_members",
+        "ending_hp_ratio"
+      ],
+      "record_rewards": "display_only_no_repeat_stat_reward",
+      "implementation_gap": "広域ブレス、保護対象、画面を隠さないVFX",
+      "status": "DESIGN_ONLY_NOT_PLAYTESTED"
+    },
+    {
+      "id": "CH_R05_01",
+      "id_status": "NEW_NAMESPACE_PROPOSED_MATCH_BY_EXISTING_TITLE_BEFORE_IMPORT",
+      "region": "R05",
+      "name": "剪定の拍子",
+      "source_title_unchanged": true,
+      "enemy_ids": [
+        "B_R05_A"
+      ],
+      "mechanic": "準備・実行・後隙",
+      "telegraph": "次の実行範囲",
+      "alternative_solutions": [
+        "手数・再使用短縮",
+        "後隙への直接攻撃"
+      ],
+      "unlock_gate": "G_R05_B",
+      "first_clear_powder": 200,
+      "repeat_powder": 0,
+      "record_bonus_powder": 0,
+      "paid_entry": false,
+      "required_rarity": null,
+      "required_item_ids": [],
+      "first_clear_key": "stable_challenge_id_not_rules_version",
+      "records": [
+        "clear",
+        "best_time_ms",
+        "surviving_members",
+        "ending_hp_ratio"
+      ],
+      "record_rewards": "display_only_no_repeat_stat_reward",
+      "implementation_gap": "主動作中断と後隙、装備でタイムライン改竄しない",
+      "status": "DESIGN_ONLY_NOT_PLAYTESTED"
+    },
+    {
+      "id": "CH_R05_02",
+      "id_status": "NEW_NAMESPACE_PROPOSED_MATCH_BY_EXISTING_TITLE_BEFORE_IMPORT",
+      "region": "R05",
+      "name": "灯瓶の継承",
+      "source_title_unchanged": true,
+      "enemy_ids": [
+        "E_R05_02",
+        "E_R05_03"
+      ],
+      "mechanic": "守衛を支える灯瓶",
+      "telegraph": "支援の接続先",
+      "alternative_solutions": [
+        "補助源の優先",
+        "呪毒と維持"
+      ],
+      "unlock_gate": "G_R05_B",
+      "first_clear_powder": 200,
+      "repeat_powder": 0,
+      "record_bonus_powder": 0,
+      "paid_entry": false,
+      "required_rarity": null,
+      "required_item_ids": [],
+      "first_clear_key": "stable_challenge_id_not_rules_version",
+      "records": [
+        "clear",
+        "best_time_ms",
+        "surviving_members",
+        "ending_hp_ratio"
+      ],
+      "record_rewards": "display_only_no_repeat_stat_reward",
+      "implementation_gap": "複数敵、支援停止、中継の二重計算防止",
+      "status": "DESIGN_ONLY_NOT_PLAYTESTED"
+    },
+    {
+      "id": "CH_R05_03",
+      "id_status": "NEW_NAMESPACE_PROPOSED_MATCH_BY_EXISTING_TITLE_BEFORE_IMPORT",
+      "region": "R05",
+      "name": "月苑の巡環",
+      "source_title_unchanged": true,
+      "enemy_ids": [
+        "B_R05_B"
+      ],
+      "mechanic": "既存機構を二つずつ組み合わせる",
+      "telegraph": "切替前の公開予告",
+      "alternative_solutions": [
+        "複数の手持ち構成から選ぶ",
+        "汎用耐久で突破"
+      ],
+      "unlock_gate": "G_R05_B",
+      "first_clear_powder": 200,
+      "repeat_powder": 0,
+      "record_bonus_powder": 0,
+      "paid_entry": false,
+      "required_rarity": null,
+      "required_item_ids": [],
+      "first_clear_key": "stable_challenge_id_not_rules_version",
+      "records": [
+        "clear",
+        "best_time_ms",
+        "surviving_members",
+        "ending_hp_ratio"
+      ],
+      "record_rewards": "display_only_no_repeat_stat_reward",
+      "implementation_gap": "全無効・単一必須装備を使わない総合課題",
+      "status": "DESIGN_ONLY_NOT_PLAYTESTED"
+    }
+  ]
+}

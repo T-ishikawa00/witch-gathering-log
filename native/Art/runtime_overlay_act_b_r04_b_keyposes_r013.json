@@ -1,0 +1,612 @@
+{
+  "schema": "witch.generated_runtime_overlay.actor_candidate.v1",
+  "status": "UNAPPROVED_CANDIDATE_RUNTIME_POSE_TRIAL",
+  "approval": "HUMAN_ADOPTION_PENDING",
+  "mergePriority": 132,
+  "entries": {
+    "ACT_B_R04_B": {
+      "clips": {
+        "anticipate": {
+          "mode": "registered_keyposes_v1",
+          "fps": 24,
+          "loop": false,
+          "frames": [
+            "GeneratedCandidates/ACT_B_R04_B/ACT_B_R04_B__static_candidate__r004.png",
+            "GeneratedCandidates/ACT_B_R04_B/keypose_candidates_r002/ACT_B_R04_B_anticipate_mid__candidate_r002.png"
+          ],
+          "duration": 0.9,
+          "dissolveSeconds": 0.065,
+          "registeredPoses": [
+            {
+              "path": "GeneratedCandidates/ACT_B_R04_B/ACT_B_R04_B__static_candidate__r004.png",
+              "canvas_px": [
+                512,
+                341
+              ],
+              "anchor_px": [
+                256,
+                331
+              ],
+              "display_scale": 1.0,
+              "sha256": "10da5f1deffd9b95e4fb8a6126352ab57a16bde7112571c19a5069b80cf6c25f"
+            },
+            {
+              "path": "GeneratedCandidates/ACT_B_R04_B/keypose_candidates_r002/ACT_B_R04_B_anticipate_mid__candidate_r002.png",
+              "canvas_px": [
+                1536,
+                1024
+              ],
+              "anchor_px": [
+                768,
+                943
+              ],
+              "display_scale": 1.0,
+              "sha256": "d3054cf2c59d911d2aff8f557ae90b0718f5f1499ea0c1b3e1a7b1adba8bb905"
+            },
+            {
+              "path": "GeneratedCandidates/ACT_B_R04_B/keypose_candidates_r001/ACT_B_R04_B_attack_keypose__candidate_r001.png",
+              "canvas_px": [
+                1536,
+                1024
+              ],
+              "anchor_px": [
+                768,
+                906
+              ],
+              "display_scale": 1.05,
+              "sha256": "41c29ea07585200b397252a4310e6e4684c5d01a08a9db105aa3632663873b91"
+            },
+            {
+              "path": "GeneratedCandidates/ACT_B_R04_B/keypose_candidates_r002/ACT_B_R04_B_collapse_mid__candidate_r002.png",
+              "canvas_px": [
+                1536,
+                1024
+              ],
+              "anchor_px": [
+                768,
+                924
+              ],
+              "display_scale": 1.0,
+              "sha256": "fb406bbec8cdb0ebf403d1a05e1b05c3888cedb07095154e3e00226d60a6e3c4"
+            },
+            {
+              "path": "GeneratedCandidates/ACT_B_R04_B/keypose_candidates_r001/ACT_B_R04_B_resolve_keypose__candidate_r001.png",
+              "canvas_px": [
+                1536,
+                1024
+              ],
+              "anchor_px": [
+                768,
+                952
+              ],
+              "display_scale": 1.0,
+              "sha256": "5027654bbe134e4d72a963a9f66fae3885587e3a3ee820afbee3f475c4a030ad"
+            }
+          ],
+          "translationUnits": "reference canvas pixels (512 x 341), top-left signs",
+          "poseTimeline": [
+            {
+              "time": 0,
+              "pose": 0,
+              "translation_reference_px": [
+                0,
+                0
+              ],
+              "rotation_deg": 0
+            },
+            {
+              "time": 0.22,
+              "pose": 1,
+              "translation_reference_px": [
+                1,
+                0
+              ],
+              "rotation_deg": -1
+            },
+            {
+              "time": 0.7,
+              "pose": 1,
+              "translation_reference_px": [
+                2,
+                0
+              ],
+              "rotation_deg": -1.5
+            },
+            {
+              "time": 0.9,
+              "pose": 1,
+              "translation_reference_px": [
+                2,
+                0
+              ],
+              "rotation_deg": -1.5
+            }
+          ]
+        },
+        "execute": {
+          "mode": "registered_keyposes_v1",
+          "fps": 24,
+          "loop": false,
+          "frames": [
+            "GeneratedCandidates/ACT_B_R04_B/keypose_candidates_r002/ACT_B_R04_B_anticipate_mid__candidate_r002.png",
+            "GeneratedCandidates/ACT_B_R04_B/keypose_candidates_r001/ACT_B_R04_B_attack_keypose__candidate_r001.png"
+          ],
+          "duration": 0.7,
+          "dissolveSeconds": 0.065,
+          "registeredPoses": [
+            {
+              "path": "GeneratedCandidates/ACT_B_R04_B/ACT_B_R04_B__static_candidate__r004.png",
+              "canvas_px": [
+                512,
+                341
+              ],
+              "anchor_px": [
+                256,
+                331
+              ],
+              "display_scale": 1.0,
+              "sha256": "10da5f1deffd9b95e4fb8a6126352ab57a16bde7112571c19a5069b80cf6c25f"
+            },
+            {
+              "path": "GeneratedCandidates/ACT_B_R04_B/keypose_candidates_r002/ACT_B_R04_B_anticipate_mid__candidate_r002.png",
+              "canvas_px": [
+                1536,
+                1024
+              ],
+              "anchor_px": [
+                768,
+                943
+              ],
+              "display_scale": 1.0,
+              "sha256": "d3054cf2c59d911d2aff8f557ae90b0718f5f1499ea0c1b3e1a7b1adba8bb905"
+            },
+            {
+              "path": "GeneratedCandidates/ACT_B_R04_B/keypose_candidates_r001/ACT_B_R04_B_attack_keypose__candidate_r001.png",
+              "canvas_px": [
+                1536,
+                1024
+              ],
+              "anchor_px": [
+                768,
+                906
+              ],
+              "display_scale": 1.05,
+              "sha256": "41c29ea07585200b397252a4310e6e4684c5d01a08a9db105aa3632663873b91"
+            },
+            {
+              "path": "GeneratedCandidates/ACT_B_R04_B/keypose_candidates_r002/ACT_B_R04_B_collapse_mid__candidate_r002.png",
+              "canvas_px": [
+                1536,
+                1024
+              ],
+              "anchor_px": [
+                768,
+                924
+              ],
+              "display_scale": 1.0,
+              "sha256": "fb406bbec8cdb0ebf403d1a05e1b05c3888cedb07095154e3e00226d60a6e3c4"
+            },
+            {
+              "path": "GeneratedCandidates/ACT_B_R04_B/keypose_candidates_r001/ACT_B_R04_B_resolve_keypose__candidate_r001.png",
+              "canvas_px": [
+                1536,
+                1024
+              ],
+              "anchor_px": [
+                768,
+                952
+              ],
+              "display_scale": 1.0,
+              "sha256": "5027654bbe134e4d72a963a9f66fae3885587e3a3ee820afbee3f475c4a030ad"
+            }
+          ],
+          "translationUnits": "reference canvas pixels (512 x 341), top-left signs",
+          "poseTimeline": [
+            {
+              "time": 0,
+              "pose": 1,
+              "translation_reference_px": [
+                2,
+                0
+              ],
+              "rotation_deg": -1.5
+            },
+            {
+              "time": 0.15,
+              "pose": 2,
+              "translation_reference_px": [
+                -2,
+                0
+              ],
+              "rotation_deg": 0
+            },
+            {
+              "time": 0.35,
+              "pose": 2,
+              "translation_reference_px": [
+                -4,
+                0
+              ],
+              "rotation_deg": 0.7
+            },
+            {
+              "time": 0.7,
+              "pose": 2,
+              "translation_reference_px": [
+                -1,
+                0
+              ],
+              "rotation_deg": 0
+            }
+          ]
+        },
+        "recover": {
+          "mode": "registered_keyposes_v1",
+          "fps": 24,
+          "loop": false,
+          "frames": [
+            "GeneratedCandidates/ACT_B_R04_B/keypose_candidates_r001/ACT_B_R04_B_attack_keypose__candidate_r001.png",
+            "GeneratedCandidates/ACT_B_R04_B/keypose_candidates_r002/ACT_B_R04_B_anticipate_mid__candidate_r002.png",
+            "GeneratedCandidates/ACT_B_R04_B/ACT_B_R04_B__static_candidate__r004.png"
+          ],
+          "duration": 0.45,
+          "dissolveSeconds": 0.065,
+          "registeredPoses": [
+            {
+              "path": "GeneratedCandidates/ACT_B_R04_B/ACT_B_R04_B__static_candidate__r004.png",
+              "canvas_px": [
+                512,
+                341
+              ],
+              "anchor_px": [
+                256,
+                331
+              ],
+              "display_scale": 1.0,
+              "sha256": "10da5f1deffd9b95e4fb8a6126352ab57a16bde7112571c19a5069b80cf6c25f"
+            },
+            {
+              "path": "GeneratedCandidates/ACT_B_R04_B/keypose_candidates_r002/ACT_B_R04_B_anticipate_mid__candidate_r002.png",
+              "canvas_px": [
+                1536,
+                1024
+              ],
+              "anchor_px": [
+                768,
+                943
+              ],
+              "display_scale": 1.0,
+              "sha256": "d3054cf2c59d911d2aff8f557ae90b0718f5f1499ea0c1b3e1a7b1adba8bb905"
+            },
+            {
+              "path": "GeneratedCandidates/ACT_B_R04_B/keypose_candidates_r001/ACT_B_R04_B_attack_keypose__candidate_r001.png",
+              "canvas_px": [
+                1536,
+                1024
+              ],
+              "anchor_px": [
+                768,
+                906
+              ],
+              "display_scale": 1.05,
+              "sha256": "41c29ea07585200b397252a4310e6e4684c5d01a08a9db105aa3632663873b91"
+            },
+            {
+              "path": "GeneratedCandidates/ACT_B_R04_B/keypose_candidates_r002/ACT_B_R04_B_collapse_mid__candidate_r002.png",
+              "canvas_px": [
+                1536,
+                1024
+              ],
+              "anchor_px": [
+                768,
+                924
+              ],
+              "display_scale": 1.0,
+              "sha256": "fb406bbec8cdb0ebf403d1a05e1b05c3888cedb07095154e3e00226d60a6e3c4"
+            },
+            {
+              "path": "GeneratedCandidates/ACT_B_R04_B/keypose_candidates_r001/ACT_B_R04_B_resolve_keypose__candidate_r001.png",
+              "canvas_px": [
+                1536,
+                1024
+              ],
+              "anchor_px": [
+                768,
+                952
+              ],
+              "display_scale": 1.0,
+              "sha256": "5027654bbe134e4d72a963a9f66fae3885587e3a3ee820afbee3f475c4a030ad"
+            }
+          ],
+          "translationUnits": "reference canvas pixels (512 x 341), top-left signs",
+          "poseTimeline": [
+            {
+              "time": 0,
+              "pose": 2,
+              "translation_reference_px": [
+                -1,
+                0
+              ],
+              "rotation_deg": 0
+            },
+            {
+              "time": 0.17,
+              "pose": 1,
+              "translation_reference_px": [
+                0,
+                0
+              ],
+              "rotation_deg": 0
+            },
+            {
+              "time": 0.38,
+              "pose": 0,
+              "translation_reference_px": [
+                0,
+                0
+              ],
+              "rotation_deg": 0
+            },
+            {
+              "time": 0.45,
+              "pose": 0,
+              "translation_reference_px": [
+                0,
+                0
+              ],
+              "rotation_deg": 0
+            }
+          ]
+        },
+        "hit": {
+          "mode": "registered_keyposes_v1",
+          "fps": 24,
+          "loop": false,
+          "frames": [
+            "GeneratedCandidates/ACT_B_R04_B/ACT_B_R04_B__static_candidate__r004.png",
+            "GeneratedCandidates/ACT_B_R04_B/keypose_candidates_r002/ACT_B_R04_B_collapse_mid__candidate_r002.png"
+          ],
+          "duration": 0.42,
+          "dissolveSeconds": 0.065,
+          "registeredPoses": [
+            {
+              "path": "GeneratedCandidates/ACT_B_R04_B/ACT_B_R04_B__static_candidate__r004.png",
+              "canvas_px": [
+                512,
+                341
+              ],
+              "anchor_px": [
+                256,
+                331
+              ],
+              "display_scale": 1.0,
+              "sha256": "10da5f1deffd9b95e4fb8a6126352ab57a16bde7112571c19a5069b80cf6c25f"
+            },
+            {
+              "path": "GeneratedCandidates/ACT_B_R04_B/keypose_candidates_r002/ACT_B_R04_B_anticipate_mid__candidate_r002.png",
+              "canvas_px": [
+                1536,
+                1024
+              ],
+              "anchor_px": [
+                768,
+                943
+              ],
+              "display_scale": 1.0,
+              "sha256": "d3054cf2c59d911d2aff8f557ae90b0718f5f1499ea0c1b3e1a7b1adba8bb905"
+            },
+            {
+              "path": "GeneratedCandidates/ACT_B_R04_B/keypose_candidates_r001/ACT_B_R04_B_attack_keypose__candidate_r001.png",
+              "canvas_px": [
+                1536,
+                1024
+              ],
+              "anchor_px": [
+                768,
+                906
+              ],
+              "display_scale": 1.05,
+              "sha256": "41c29ea07585200b397252a4310e6e4684c5d01a08a9db105aa3632663873b91"
+            },
+            {
+              "path": "GeneratedCandidates/ACT_B_R04_B/keypose_candidates_r002/ACT_B_R04_B_collapse_mid__candidate_r002.png",
+              "canvas_px": [
+                1536,
+                1024
+              ],
+              "anchor_px": [
+                768,
+                924
+              ],
+              "display_scale": 1.0,
+              "sha256": "fb406bbec8cdb0ebf403d1a05e1b05c3888cedb07095154e3e00226d60a6e3c4"
+            },
+            {
+              "path": "GeneratedCandidates/ACT_B_R04_B/keypose_candidates_r001/ACT_B_R04_B_resolve_keypose__candidate_r001.png",
+              "canvas_px": [
+                1536,
+                1024
+              ],
+              "anchor_px": [
+                768,
+                952
+              ],
+              "display_scale": 1.0,
+              "sha256": "5027654bbe134e4d72a963a9f66fae3885587e3a3ee820afbee3f475c4a030ad"
+            }
+          ],
+          "translationUnits": "reference canvas pixels (512 x 341), top-left signs",
+          "poseTimeline": [
+            {
+              "time": 0,
+              "pose": 0,
+              "translation_reference_px": [
+                0,
+                0
+              ],
+              "rotation_deg": 0
+            },
+            {
+              "time": 0.13,
+              "pose": 3,
+              "translation_reference_px": [
+                3,
+                0
+              ],
+              "rotation_deg": -1
+            },
+            {
+              "time": 0.32,
+              "pose": 0,
+              "translation_reference_px": [
+                1,
+                0
+              ],
+              "rotation_deg": 0
+            },
+            {
+              "time": 0.42,
+              "pose": 0,
+              "translation_reference_px": [
+                0,
+                0
+              ],
+              "rotation_deg": 0
+            }
+          ]
+        },
+        "resolve": {
+          "mode": "registered_keyposes_v1",
+          "fps": 24,
+          "loop": false,
+          "frames": [
+            "GeneratedCandidates/ACT_B_R04_B/ACT_B_R04_B__static_candidate__r004.png",
+            "GeneratedCandidates/ACT_B_R04_B/keypose_candidates_r002/ACT_B_R04_B_collapse_mid__candidate_r002.png",
+            "GeneratedCandidates/ACT_B_R04_B/keypose_candidates_r001/ACT_B_R04_B_resolve_keypose__candidate_r001.png"
+          ],
+          "duration": 1.0,
+          "dissolveSeconds": 0.065,
+          "registeredPoses": [
+            {
+              "path": "GeneratedCandidates/ACT_B_R04_B/ACT_B_R04_B__static_candidate__r004.png",
+              "canvas_px": [
+                512,
+                341
+              ],
+              "anchor_px": [
+                256,
+                331
+              ],
+              "display_scale": 1.0,
+              "sha256": "10da5f1deffd9b95e4fb8a6126352ab57a16bde7112571c19a5069b80cf6c25f"
+            },
+            {
+              "path": "GeneratedCandidates/ACT_B_R04_B/keypose_candidates_r002/ACT_B_R04_B_anticipate_mid__candidate_r002.png",
+              "canvas_px": [
+                1536,
+                1024
+              ],
+              "anchor_px": [
+                768,
+                943
+              ],
+              "display_scale": 1.0,
+              "sha256": "d3054cf2c59d911d2aff8f557ae90b0718f5f1499ea0c1b3e1a7b1adba8bb905"
+            },
+            {
+              "path": "GeneratedCandidates/ACT_B_R04_B/keypose_candidates_r001/ACT_B_R04_B_attack_keypose__candidate_r001.png",
+              "canvas_px": [
+                1536,
+                1024
+              ],
+              "anchor_px": [
+                768,
+                906
+              ],
+              "display_scale": 1.05,
+              "sha256": "41c29ea07585200b397252a4310e6e4684c5d01a08a9db105aa3632663873b91"
+            },
+            {
+              "path": "GeneratedCandidates/ACT_B_R04_B/keypose_candidates_r002/ACT_B_R04_B_collapse_mid__candidate_r002.png",
+              "canvas_px": [
+                1536,
+                1024
+              ],
+              "anchor_px": [
+                768,
+                924
+              ],
+              "display_scale": 1.0,
+              "sha256": "fb406bbec8cdb0ebf403d1a05e1b05c3888cedb07095154e3e00226d60a6e3c4"
+            },
+            {
+              "path": "GeneratedCandidates/ACT_B_R04_B/keypose_candidates_r001/ACT_B_R04_B_resolve_keypose__candidate_r001.png",
+              "canvas_px": [
+                1536,
+                1024
+              ],
+              "anchor_px": [
+                768,
+                952
+              ],
+              "display_scale": 1.0,
+              "sha256": "5027654bbe134e4d72a963a9f66fae3885587e3a3ee820afbee3f475c4a030ad"
+            }
+          ],
+          "translationUnits": "reference canvas pixels (512 x 341), top-left signs",
+          "poseTimeline": [
+            {
+              "time": 0,
+              "pose": 0,
+              "translation_reference_px": [
+                0,
+                0
+              ],
+              "rotation_deg": 0
+            },
+            {
+              "time": 0.3,
+              "pose": 3,
+              "translation_reference_px": [
+                0,
+                0
+              ],
+              "rotation_deg": 0
+            },
+            {
+              "time": 0.68,
+              "pose": 4,
+              "translation_reference_px": [
+                0,
+                0
+              ],
+              "rotation_deg": 0
+            },
+            {
+              "time": 1.0,
+              "pose": 4,
+              "translation_reference_px": [
+                0,
+                0
+              ],
+              "rotation_deg": 0
+            }
+          ]
+        }
+      },
+      "animation_complete": false,
+      "humanApproval": false,
+      "status": "HYBRID_REGISTERED_POSES_R013_PARTIAL",
+      "motionQA": {
+        "mode": "rig idle/walk plus authored registered pose overrides",
+        "registration": "candidate visual estimate; original images unchanged",
+        "limitations": [
+          "style/proportion drift",
+          "no individually articulated legs/tail",
+          "short dissolves do not establish natural anatomy animation",
+          "physical device and Human quality acceptance untested"
+        ]
+      }
+    }
+  }
+}

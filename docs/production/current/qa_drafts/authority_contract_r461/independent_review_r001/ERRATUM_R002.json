@@ -1,0 +1,32 @@
+{
+  "supersedesOnly": ["REVIEW_R001.md: Python execution and fixture status"],
+  "originalReviewPreserved": true,
+  "pythonServiceSHA256": "564b0b2d4fb4c079345c36ced790507c1d722e1b1436dec7ba9e6ba967fb84fe",
+  "retainedInitialRun": {
+    "status": "119_PASS_1_ERROR",
+    "reason": "test-only synthetic refund stub lacked notice.status; Python service unchanged",
+    "repairTestSHA256": "d1c4db90f54bf27fb19ce3f1268de359d3efaee96f0c3256f1bc14b291b2bb50"
+  },
+  "focusedRerun": {
+    "resultPath": "docs/production/current/qa_drafts/authority_contract_r461/root_test_tools_r002/PYTHON_RESULT.json",
+    "resultSHA256": "e3849588a3dfaee6105ebbed7b7abb9d804e96650630bfc8c45f2c4d65b2befe",
+    "methods": 10,
+    "passed": 10,
+    "errors": 0,
+    "skips": 0,
+    "warnings": 0,
+    "exitCode": 0
+  },
+  "syntheticExchange": {
+    "resultPath": "docs/production/current/qa_drafts/authority_contract_r461/root_test_tools_r002/SIGNED_EXCHANGE_RESULT.json",
+    "resultSHA256": "e945550be31eb814cf54e1a719b2f18767e59f63921f6af4177a4fed49906dcc",
+    "fixtureSHA256": "0e68e855f2458ce679a6b8ec7e7018ffb84fbddd4244f461215235659380059d",
+    "realOfflineCryptographicVerifier": true,
+    "syntheticCertificate": true,
+    "draws": 2,
+    "refundDebt": 2,
+    "networkCalls": 0,
+    "productionEntitlementAuthorized": false
+  },
+  "remaining": ["Swift R002 execution", "Swift consumption of exported exact fixture", "Apple production authority and entitlement"]
+}

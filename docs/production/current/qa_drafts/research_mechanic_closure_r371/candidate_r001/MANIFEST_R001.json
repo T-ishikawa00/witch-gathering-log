@@ -1,0 +1,114 @@
+{
+  "schema": "r371-research-mechanic-closure-candidate-v1",
+  "status": "SOURCE_ONLY_NOT_RUN",
+  "formalAdoption": false,
+  "executionPerformed": false,
+  "buildPerformed": false,
+  "simulatorTouched": false,
+  "fixtureClass": "MECHANISM_ONLY",
+  "statement": "Canonical challenge catalog inputs with controlled stats maxHP=100000, attack=10, defense=0. These fixtures are not ordinary progression, loadouts, reward, victory-balance or player-experience claims. CH_R02_02 reuses the exact prior R359 pass receipt and is not resimulated.",
+  "newTestSource": {
+    "path": "docs/production/current/qa_drafts/research_mechanic_closure_r371/candidate_r001/ResearchMechanicClosureR371Tests.swift",
+    "sha256": "f1ed302959ab7591c82127fcdd438d0331f477a6cb876c47aeb3137edba1a8a3",
+    "sizeBytes": 16035
+  },
+  "testMethods": 15,
+  "challengeIDs": [
+    "CH_R01_01",
+    "CH_R01_02",
+    "CH_R01_03",
+    "CH_R02_01",
+    "CH_R02_02",
+    "CH_R02_03",
+    "CH_R03_01",
+    "CH_R03_02",
+    "CH_R03_03",
+    "CH_R04_01",
+    "CH_R04_02",
+    "CH_R04_03",
+    "CH_R05_01",
+    "CH_R05_02",
+    "CH_R05_03"
+  ],
+  "methodNames": [
+    "testCH_R01_01HeavyTellHitLifecycleAndLedger",
+    "testCH_R01_02ThreeEnemySupportAndSlow",
+    "testCH_R01_03AlternatingSingleHeavyAndMultihitTargets",
+    "testCH_R02_01DotAndHealCycleEventsAreRooted",
+    "testCH_R02_02ReusesPinnedR359MembranePassWithoutReplaying",
+    "testCH_R02_03SupportWaveHasFourActorsAndSupportEvent",
+    "testCH_R03_01AlternatesSingleHeavyAndThreeLinkedHits",
+    "testCH_R03_02HeatThresholdShiftAndPostShiftAOEAccounting",
+    "testCH_R03_03CastInterruptLinksToBossCast",
+    "testCH_R04_01HeavyAndOrdinarySingleTargetCycles",
+    "testCH_R04_02BuffWeakenAndDamageShareActionRoot",
+    "testCH_R04_03AlternatingSingleTargetAndPartyAOE",
+    "testCH_R05_01HeavyExecutionHasAuthoredRecoveryGap",
+    "testCH_R05_02LampSupportLinkedToLivingGuardian",
+    "testCH_R05_03ComboMultihitAndAOESequence"
+  ],
+  "inputs": {
+    "r368InputManifest": {
+      "path": "docs/production/current/qa_drafts/normal_onboarding_progression_r368/candidate_r001/runner_r001/INPUT_MANIFEST_R001.json",
+      "sha256": "47ba83bfa951eaac593cf1059492233caec1064c959cdea6afb928a67fcf8417",
+      "sizeBytes": 28966
+    },
+    "r368PackageSwift": {
+      "path": "docs/production/current/qa_drafts/normal_onboarding_progression_r368/candidate_r001/runner_r001/runs/36800000-0001-4001-8000-000000000001/package/Package.swift",
+      "sha256": "145fb387e527b5a765e2f95647e62afe147af44bcdd0a2302cf29151e5c95d31",
+      "sizeBytes": 352
+    },
+    "R6TimelineSimulator": {
+      "path": "docs/production/current/qa_drafts/normal_onboarding_progression_r368/candidate_r001/runner_r001/runs/36800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/R6TimelineSimulator.swift",
+      "sha256": "2385aa9b7fcec67e0b8c83299910560deff63fab3cb251281d545b87c813bc37",
+      "sizeBytes": 94188
+    },
+    "Domain": {
+      "path": "docs/production/current/qa_drafts/normal_onboarding_progression_r368/candidate_r001/runner_r001/runs/36800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/Domain.swift",
+      "sha256": "9e4df37260d5e39a8e6354121f9ccd5ad9a4202bf16b493f8878ce6480d92eda",
+      "sizeBytes": 67101
+    },
+    "CombatSimulator": {
+      "path": "docs/production/current/qa_drafts/normal_onboarding_progression_r368/candidate_r001/runner_r001/runs/36800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/CombatSimulator.swift",
+      "sha256": "9cd4896eb6b3de52831885c66c81b2d16bc5dea09f2001fb57b0f3b85a0eeb3e",
+      "sizeBytes": 23390
+    },
+    "R367CoverageMap": {
+      "path": "docs/production/current/qa_drafts/research_mechanic_coverage_r367/candidate_r001/COVERAGE_MAP_R001.md",
+      "sha256": "38b6e9f6792a161ff2b6baa8b7ec83f20e8e1dc5546d16c22751fdacb77a347a",
+      "sizeBytes": 3016
+    },
+    "R367R03FailureReview": {
+      "path": "docs/production/current/qa_drafts/research_mechanic_coverage_r367/independent_gap_review_r001/REVIEW_R001.md",
+      "sha256": "22db46893e99d637e7125ab90f7b5b555a815f4b42c5c9376629ad6344673f59",
+      "sizeBytes": 7026
+    },
+    "R359TestSource": {
+      "path": "docs/production/current/qa_drafts/research_completion_triage_r359/candidate_root_r004/ResearchMembraneR359Tests.swift",
+      "sha256": "d73313710f1ebb4ef1c56d0301769cc1a167be8619cea5b8aaea170132a6ec44",
+      "sizeBytes": 21748
+    },
+    "R359PassedRun": {
+      "path": "docs/production/current/qa_drafts/research_completion_triage_r359/diagnostic_root_r004/runs/5eb7eabe-9b4f-47da-a013-da8b862bd3d9/RUN.json",
+      "sha256": "3b25ecc1e2ec1b12a29ce6b05b75c14bd6eafb43d1468baf4a149c86610dd971",
+      "sizeBytes": 3324
+    }
+  },
+  "upstreamStaging": "R368 isolated Core package pinned by its INPUT_MANIFEST_R001 (68 staged files). No R368 files modified or recopied.",
+  "plannedExecution": {
+    "maxSwiftInvocations": 1,
+    "maxWallSeconds": 600,
+    "maxAllocatedBytes": 300000000,
+    "requiredOutput": "WITCH_R371_EVIDENCE_ROOT must name a pre-existing dedicated directory; 14 unique bounded JSON event traces are written with O_EXCL. R02_02 validates the pinned R359 receipt without another simulation.",
+    "requiredInputs": {
+      "WITCH_R371_EVIDENCE_ROOT": "pre-existing dedicated empty output directory",
+      "WITCH_R371_R359_RUN": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/research_completion_triage_r359/diagnostic_root_r004/runs/5eb7eabe-9b4f-47da-a013-da8b862bd3d9/RUN.json"
+    }
+  },
+  "limits": [
+    "New simulations use mechanism-only synthetic stats.",
+    "R03_02 post-shift area tell assertion remains an unrun test target; archived earned revision-155 trace did not observe it.",
+    "R359 membrane run is reused evidence, not rerun.",
+    "No all-15 formal research acceptance or ordinary victory quality is claimed."
+  ]
+}

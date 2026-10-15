@@ -29,7 +29,7 @@ struct EnemyLoopBoundaryMode: Codable {
     let actorID: String
     let startedAt: String
     let startUptime = ProcessInfo.processInfo.systemUptime
-    let descriptors: [EnemyLoopBoundaryMode]
+    private var descriptors: [EnemyLoopBoundaryMode]
 
     private let outputDirectory: URL
     private let marker = SKLabelNode(fontNamed: "Menlo-Bold")
@@ -125,7 +125,11 @@ struct EnemyLoopBoundaryMode: Codable {
         let overlayFrame = (rig["walkLegOverlayFrameIndex"] as? Int) ?? -1
         let overlayActive = rig["walkLegOverlayActive"] as? Bool == true
         let observedOverlayFrame = overlayActive ? overlayFrame : -1
-        let observedFrame = isRig ? (observedOverlayFrame >= 0 ? observedOverlayFrame : rigFrame) : spriteFrame
+        let jelly = presentation["qaJellyMeshR135"] as? [String: Any] ?? [:]
+        let jellyApplied = jelly["applied"] as? Bool == true
+        let jellyFrame = jelly["frameIndex"] as? Int ?? -1
+        let observedFrame = jellyApplied ? jellyFrame :
+            (isRig ? (observedOverlayFrame >= 0 ? observedOverlayFrame : rigFrame) : spriteFrame)
         let actualStateMatches = state == requestedState
         let viewOrigin = scene.view?.convert(CGPoint.zero, to: nil) ?? .zero
         let viewSize = scene.view?.bounds.size ?? .zero
@@ -151,9 +155,14 @@ struct EnemyLoopBoundaryMode: Codable {
                 "frameIdentityApplicable": !isRig || overlayActive,
                 "phaseIndex": isRig ? rigFrame : -1,
                 "actionRunning": isRig ? ((rig["actionRunning"] as? Bool) ?? false) : true,
-                "partRig": rig
+                "partRig": rig,
+                "candidatePhaseMetric": jellyApplied ? jelly : [:]
             ]
         ]
+        if jellyApplied, var observed = row["presentation"] as? [String: Any] {
+            observed["qaJellyMeshR135"] = jelly
+            row["presentation"] = observed
+        }
         // Preserve isolated R050 diagnostics from the exact didFinishUpdate
         // snapshot. The observer must not infer a logical step from identical
         // visual poses or resample the node after this frame was recorded.
@@ -196,7 +205,25 @@ struct EnemyLoopBoundaryMode: Codable {
             return .none
         }
 
-        if isRig && currentDescriptor!.presentationKind == "part_rig_leg_overlay" {
+        if currentDescriptor!.presentationKind == "jellyfish_weighted_mesh_candidate" {
+            let gridColumns = jelly["actualGridColumns"] as? Int ?? 0
+            let gridRows = jelly["actualGridRows"] as? Int ?? 0
+            let phase = jelly["phase"] as? Double ?? -1
+            let fingerprint = jelly["geometryFingerprint"] as? String ?? ""
+            guard jellyApplied, jelly["sourceTextureIdentityMatches"] as? Bool == true,
+                  jelly["geometryPresent"] as? Bool == true,
+                  gridColumns == 24, gridRows == 24,
+                  (0..<12).contains(jellyFrame), phase >= 0, phase < 1,
+                  fingerprint.count == 64,
+                  jelly["actualGridVertexCount"] as? Int == 625,
+                  jelly["actualGridFingerprint"] as? String == fingerprint,
+                  jelly["actualGridMatchesExpectedFingerprint"] as? Bool == true,
+                  jelly["subdivisionLevelsMatchesOriginal"] as? Bool == true,
+                  jelly["candidateActionRunning"] as? Bool == true else {
+                return timeoutIfNeeded(now: now)
+            }
+            wrapCount = max(wrapCount, jelly["observedWrapCount"] as? Int ?? 0)
+        } else if isRig && currentDescriptor!.presentationKind == "part_rig_leg_overlay" {
             guard overlayActive, overlayFrame >= 0 else { return timeoutIfNeeded(now: now) }
             if let previousSpriteFrame,
                previousSpriteFrame == currentDescriptor!.frameCount - 1, overlayFrame == 0 {
@@ -238,8 +265,9 @@ struct EnemyLoopBoundaryMode: Codable {
         }
 
         let modeElapsed = now - currentModeStart
-        let requiredDuration = currentDescriptor!.expectedPeriodSeconds * 2 + 0.3
-        if wrapCount >= 2 && modeElapsed >= requiredDuration {
+        let requiredWraps = currentDescriptor!.presentationKind == "jellyfish_weighted_mesh_candidate" ? 3 : 2
+        let requiredDuration = currentDescriptor!.expectedPeriodSeconds * Double(requiredWraps) + 0.3
+        if wrapCount >= requiredWraps && modeElapsed >= requiredDuration {
             let completedResult: [String: Any] = [
                 "state": currentDescriptor!.state,
                 "presentationKind": currentDescriptor!.presentationKind,
@@ -256,7 +284,8 @@ struct EnemyLoopBoundaryMode: Codable {
                 "windowEndElapsedSeconds": elapsed,
                 "observedDurationSeconds": modeElapsed,
                 "wrapCount": wrapCount,
-                "status": "OBSERVED_TWO_LOOP_BOUNDARIES"
+                "status": currentDescriptor!.presentationKind == "jellyfish_weighted_mesh_candidate"
+                    ? "OBSERVED_THREE_MESH_CYCLES" : "OBSERVED_TWO_LOOP_BOUNDARIES"
             ]
             modeResults.append(completedResult)
             return advance(to: descriptorIndex + 1)
@@ -311,6 +340,16 @@ struct EnemyLoopBoundaryMode: Codable {
     }
 
     func restoredIdleFrameObserved() -> Bool { restoreSawIdle }
+
+    /// The initial descriptor is the catalog clip. Once the requested walk
+    /// action actually installs the pinned mesh, the caller replaces it with
+    /// this observed candidate descriptor before sampling the frame.
+    func replaceCurrentDescriptor(_ descriptor: EnemyLoopBoundaryMode) {
+        guard descriptorIndex >= 0, descriptorIndex < descriptors.count,
+              currentDescriptor?.state == descriptor.state else { return }
+        descriptors[descriptorIndex] = descriptor
+        currentDescriptor = descriptor
+    }
 
     func abort(_ reason: String) {
         status = reason

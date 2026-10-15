@@ -1,0 +1,18 @@
+# R059 — 通常開発起動と衣装・家具のソース統合
+
+親チェックポイント: R058 5aafbd9a1007c401aa48702f0a9ab0567afc3ed4。ローカル保存のみ、Pushなし。
+
+R169は通常引数なしの開発起動・専用保存先・旧正常世代の回復判定を実装し、Core4件/21.448秒で限定合格。R170は明示的な開発機能で3人の既存衣装候補を利用可能にし、共有作業の共通生成処理をCoreへ移した。Core4件/22.464秒で13受理/2拒否操作、3人の選択/解除・机配置/収納・冷起動を検証し、独立監査を完了。元の通常版とQA条件、所有条件、ゲーム数値の保護を確認した。
+
+R169/R170合わせて14個のnativeソース/テストをチェックポイント対象とする。現行nativeの200入力とR170 reviewed source mapを固定する。既存pbxprojの未コミット変更は保存対象外のまま保護。App部分は構文確認のみで、iPhone向けビルド・通常画面確認はまだ実施していない。
+
+R171は比較表示追加を後順位に、R172は初回制作55分と短期native QAの条件矛盾を修正する診断、R173は敵共通動作に根拠のない変更を入れない照合、R174は未実行ビルド手順と容量保留、R175は15設計研究課題/15課題ID/5研究解放の区別を記録した。
+
+未完成は CURRENT_STATUS.md と BOUNDED_WORK_PLAN_R010.json の3分類で管理する。全体の完成・正式仕様採用・美術受入れ・正式課金は宣言しない。作業中のR176は含めず、チェックポイント後も独立した開発を継続する。
+
+参照:
+- qa_drafts/standard_play_integration_r169/ROOT_INDEPENDENT_REVIEW_ACK_R001.json
+- qa_drafts/wardrobe_furniture_standard_r170/ROOT_INDEPENDENT_REVIEW_ACK_R001.json
+- qa_drafts/wardrobe_furniture_standard_r170/REVIEWED_SOURCE_MAP_R001.json
+- qa_drafts/standard_native_integration_r174/NATIVE_CAPACITY_HOLD_R001.json
+- qa_drafts/research_scope_reconcile_r175/RECONCILIATION_R001.md

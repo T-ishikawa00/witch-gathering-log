@@ -1,0 +1,329 @@
+{
+  "schema": "r376-r368-item-provenance-review-r001",
+  "status": "READ_ONLY_PROVENANCE_REVIEW",
+  "r368": {
+    "candidateManifestSHA256": "a4d38d7eee4ff40aca49f0b8a0675fcb293874eb015e871a8934d147fd7c00f4",
+    "reportSHA256": "23266207d0a393a7782c6ad827e2cf771cae6879040f014223fe096efbb4d215",
+    "saveSHA256": "067c4e86733fe07eb5457381a30d140b285fbd2685ab18e5667f47577c74e655",
+    "initialInventory": "The cohort XCTest calls makeNewSnapshot(), sets only firstCraftAidEligibleR179 for the fresh save, and asserts initial.gear.count == 4. No initial gear grants are present in the setup. The R368 free/no-ad run recorded 155 free mock summon draws, 0 paid draws, 96 natural gear acquisition rows, and no synthetic product-ticket grants. This is simulated test progression, not ordinary human-access proof.",
+    "items": [
+      {
+        "uuid": "BC499DA8-3B80-5536-BAFB-5143888B392C",
+        "comparisonRole": "R376 barrier control",
+        "templateID": "EQ_W_01",
+        "qualityID": "Q0",
+        "enhancement": 0,
+        "refinement": 0,
+        "firstPresentDay": 1,
+        "naturalAcquisition": {
+          "attunementRank": 1,
+          "gearInstanceID": "BC499DA8-3B80-5536-BAFB-5143888B392C",
+          "naturalRollIndex": 4,
+          "operationID": "36810000-0001-4001-8000-000000000005",
+          "qualityID": "Q0",
+          "sourceRegionID": "R01",
+          "templateID": "EQ_W_01"
+        },
+        "sameDaySummonMatches": [],
+        "assessment": "natural_acquisition_uuid_join"
+      },
+      {
+        "uuid": "6CA40746-2A06-4374-A92D-F321927D48BE",
+        "comparisonRole": "R376 poison candidate",
+        "templateID": "EQ_W_P1",
+        "qualityID": "Q0",
+        "enhancement": 0,
+        "refinement": 0,
+        "firstPresentDay": 1,
+        "naturalAcquisition": null,
+        "sameDaySummonMatches": [
+          {
+            "operationID": "36810000-0001-4001-8000-000000000019",
+            "sequence": 25,
+            "templateInDrawResult": true,
+            "qualityInDrawResult": true
+          },
+          {
+            "operationID": "36810000-0001-4001-8000-00000000001a",
+            "sequence": 26,
+            "templateInDrawResult": true,
+            "qualityInDrawResult": true
+          }
+        ],
+        "assessment": "likely_mock_free_summon_day_template_match_uuid_unjoined"
+      },
+      {
+        "uuid": "68C84620-D911-48E4-983C-15E4EF8F202E",
+        "comparisonRole": "R377 barrier candidate",
+        "templateID": "EQ_W_G2",
+        "qualityID": "Q0",
+        "enhancement": 0,
+        "refinement": 0,
+        "firstPresentDay": 2,
+        "naturalAcquisition": null,
+        "sameDaySummonMatches": [
+          {
+            "operationID": "36810000-0001-4001-8000-00000000002f",
+            "sequence": 47,
+            "templateInDrawResult": true,
+            "qualityInDrawResult": true
+          }
+        ],
+        "assessment": "likely_mock_free_summon_day_template_match_uuid_unjoined"
+      },
+      {
+        "uuid": "31292F32-5F63-5F71-84D9-B69BB4FC303A",
+        "comparisonRole": "R377 counter candidate",
+        "templateID": "EQ_S_01",
+        "qualityID": "Q1",
+        "enhancement": 0,
+        "refinement": 0,
+        "firstPresentDay": 7,
+        "naturalAcquisition": {
+          "attunementRank": 3,
+          "gearInstanceID": "31292F32-5F63-5F71-84D9-B69BB4FC303A",
+          "naturalRollIndex": 326,
+          "operationID": "36810000-0001-4001-8000-000000000091",
+          "qualityID": "Q1",
+          "sourceRegionID": "R03",
+          "templateID": "EQ_S_01"
+        },
+        "sameDaySummonMatches": [],
+        "assessment": "natural_acquisition_uuid_join"
+      },
+      {
+        "uuid": "B72CE760-9884-5D4F-8111-8709C8369782",
+        "comparisonRole": "R377 counter control",
+        "templateID": "EQ_S_01",
+        "qualityID": "Q1",
+        "enhancement": 0,
+        "refinement": 0,
+        "firstPresentDay": 2,
+        "naturalAcquisition": {
+          "attunementRank": 1,
+          "gearInstanceID": "B72CE760-9884-5D4F-8111-8709C8369782",
+          "naturalRollIndex": 79,
+          "operationID": "36810000-0001-4001-8000-00000000001F",
+          "qualityID": "Q1",
+          "sourceRegionID": "R01",
+          "templateID": "EQ_S_01"
+        },
+        "sameDaySummonMatches": [],
+        "assessment": "natural_acquisition_uuid_join"
+      },
+      {
+        "uuid": "7058F310-16D8-5EE8-8F36-374C8FC1C128",
+        "comparisonRole": "R377 heal candidate",
+        "templateID": "EQ_AMU_01",
+        "qualityID": "Q1",
+        "enhancement": 0,
+        "refinement": 0,
+        "firstPresentDay": 2,
+        "naturalAcquisition": {
+          "attunementRank": 1,
+          "gearInstanceID": "7058F310-16D8-5EE8-8F36-374C8FC1C128",
+          "naturalRollIndex": 90,
+          "operationID": "36810000-0001-4001-8000-00000000001F",
+          "qualityID": "Q1",
+          "sourceRegionID": "R01",
+          "templateID": "EQ_AMU_01"
+        },
+        "sameDaySummonMatches": [],
+        "assessment": "natural_acquisition_uuid_join"
+      },
+      {
+        "uuid": "B2DDC107-838F-5593-9E6B-65288DA526DC",
+        "comparisonRole": "R377 heal control",
+        "templateID": "EQ_AMU_01",
+        "qualityID": "Q1",
+        "enhancement": 0,
+        "refinement": 0,
+        "firstPresentDay": 2,
+        "naturalAcquisition": {
+          "attunementRank": 1,
+          "gearInstanceID": "B2DDC107-838F-5593-9E6B-65288DA526DC",
+          "naturalRollIndex": 55,
+          "operationID": "36810000-0001-4001-8000-00000000001F",
+          "qualityID": "Q1",
+          "sourceRegionID": "R01",
+          "templateID": "EQ_AMU_01"
+        },
+        "sameDaySummonMatches": [],
+        "assessment": "natural_acquisition_uuid_join"
+      },
+      {
+        "uuid": "83F34619-8C4D-5FFA-8B4C-98EDDE4C9351",
+        "comparisonRole": "R377 chase candidate",
+        "templateID": "EQ_F_01",
+        "qualityID": "Q1",
+        "enhancement": 0,
+        "refinement": 0,
+        "firstPresentDay": 4,
+        "naturalAcquisition": {
+          "attunementRank": 2,
+          "gearInstanceID": "83F34619-8C4D-5FFA-8B4C-98EDDE4C9351",
+          "naturalRollIndex": 159,
+          "operationID": "36810000-0001-4001-8000-00000000004D",
+          "qualityID": "Q1",
+          "sourceRegionID": "R02",
+          "templateID": "EQ_F_01"
+        },
+        "sameDaySummonMatches": [],
+        "assessment": "natural_acquisition_uuid_join"
+      },
+      {
+        "uuid": "F37EC259-FF87-583E-AFA4-D4A32C9D25F3",
+        "comparisonRole": "R377 chase control",
+        "templateID": "EQ_F_01",
+        "qualityID": "Q1",
+        "enhancement": 0,
+        "refinement": 0,
+        "firstPresentDay": 1,
+        "naturalAcquisition": {
+          "attunementRank": 1,
+          "gearInstanceID": "F37EC259-FF87-583E-AFA4-D4A32C9D25F3",
+          "naturalRollIndex": 7,
+          "operationID": "36810000-0001-4001-8000-000000000005",
+          "qualityID": "Q1",
+          "sourceRegionID": "R01",
+          "templateID": "EQ_F_01"
+        },
+        "sameDaySummonMatches": [],
+        "assessment": "natural_acquisition_uuid_join"
+      }
+    ],
+    "additionalEquippedWitchG2OutsidePairLedger": {
+      "uuid": "2CADE21F-CFAF-4D0A-8D4B-945D4E57B119",
+      "templateID": "EQ_W_G2",
+      "qualityID": "Q0",
+      "firstPresentDay": 8,
+      "naturalAcquisition": null,
+      "sameDaySummonTemplateMatches": [
+        "36810000-0001-4001-8000-0000000000b7"
+      ],
+      "assessment": "likely free mock summon day/template match; exact UUID-to-draw join is not recorded"
+    },
+    "provenanceLimit": "For non-natural acquisitions the R368 report preserves the free summon result as template/quality text but does not include the created gear UUID in the summon receipt. First inventory appearance on a day with a matching mock-free-summon result supports the stated likely source, but the exact summon-to-UUID mapping remains unobserved. R376/R377 inputs do not appear to be gear-injected snapshots; they use gear from the R368 earned cohort save."
+  },
+  "r374": {
+    "runSHA256": "7e294ac6000836bb8334effdce011b1748e96c5ea50ee8c75db46dfb1786cd40",
+    "plannedCases": 16,
+    "recordedCases": 7,
+    "runStatus": "INCOMPLETE_RETAINED",
+    "passCasesRead": 6,
+    "runningCases": [
+      "R374-starter_ticket_candidate-90-seed100049"
+    ],
+    "completed": [
+      {
+        "index": 16,
+        "caseID": "R374-ticket200_candidate-90-seed100049",
+        "runID": "37400000-0010-4001-8000-000000000001",
+        "status": "PASS",
+        "reportSHA256": "0fa2f83f7a7e9946131baca4db502af3511b57c219aaf9fc1e2abd618afd9fa9",
+        "days": 90,
+        "seed": 100049,
+        "campaignWins": 30,
+        "challengeWins": 15,
+        "completedResearchCount": 5,
+        "freeSummonDraws": 455,
+        "paidSummonDraws": 200,
+        "craftedCount": 1,
+        "evolvedCount": 0,
+        "refinementActions": 0,
+        "adOpportunityCount": 6
+      },
+      {
+        "index": 1,
+        "caseID": "R374-rewarded_ad_simulated-30-seed100049",
+        "runID": "37400000-0001-4001-8000-000000000001",
+        "status": "PASS",
+        "reportSHA256": "02daa49998f45a6692079aeeebf4ace4ea2772534625be5e82c7267e921c7a18",
+        "days": 30,
+        "seed": 100049,
+        "campaignWins": 30,
+        "challengeWins": 15,
+        "completedResearchCount": 5,
+        "freeSummonDraws": 155,
+        "paidSummonDraws": 0,
+        "craftedCount": 1,
+        "evolvedCount": 3,
+        "refinementActions": 12,
+        "adOpportunityCount": 90
+      },
+      {
+        "index": 2,
+        "caseID": "R374-rewarded_ad_simulated-90-seed100049",
+        "runID": "37400000-0002-4001-8000-000000000001",
+        "status": "PASS",
+        "reportSHA256": "0a19108cb3b1e3753aaf5479e77f7b566c9daa328b53a5ae84ddf2a4fc418c5e",
+        "days": 90,
+        "seed": 100049,
+        "campaignWins": 30,
+        "challengeWins": 15,
+        "completedResearchCount": 5,
+        "freeSummonDraws": 455,
+        "paidSummonDraws": 0,
+        "craftedCount": 1,
+        "evolvedCount": 3,
+        "refinementActions": 20,
+        "adOpportunityCount": 270
+      },
+      {
+        "index": 3,
+        "caseID": "R374-free_no_ad-30-seed100049",
+        "runID": "37400000-0003-4001-8000-000000000001",
+        "status": "PASS",
+        "reportSHA256": "b2e8f1c2e9f25140f658dc56d2835e4453ecf83e3163933e20dc5a3371830f43",
+        "days": 30,
+        "seed": 100049,
+        "campaignWins": 30,
+        "challengeWins": 15,
+        "completedResearchCount": 5,
+        "freeSummonDraws": 155,
+        "paidSummonDraws": 0,
+        "craftedCount": 1,
+        "evolvedCount": 3,
+        "refinementActions": 10,
+        "adOpportunityCount": 6
+      },
+      {
+        "index": 4,
+        "caseID": "R374-free_no_ad-90-seed100049",
+        "runID": "37400000-0004-4001-8000-000000000001",
+        "status": "PASS",
+        "reportSHA256": "c5d6d66b081c7415eef9e34735721395ecfb3a8b192b5826cc145a57cc1fc543",
+        "days": 90,
+        "seed": 100049,
+        "campaignWins": 30,
+        "challengeWins": 15,
+        "completedResearchCount": 5,
+        "freeSummonDraws": 455,
+        "paidSummonDraws": 0,
+        "craftedCount": 1,
+        "evolvedCount": 3,
+        "refinementActions": 20,
+        "adOpportunityCount": 6
+      },
+      {
+        "index": 5,
+        "caseID": "R374-starter_ticket_candidate-30-seed100049",
+        "runID": "37400000-0005-4001-8000-000000000001",
+        "status": "PASS",
+        "reportSHA256": "05eeb6ed95597f9c7798bfef3d7a145b13f4969bd3fd12b0ba86ae79dd37adff",
+        "days": 30,
+        "seed": 100049,
+        "campaignWins": 30,
+        "challengeWins": 15,
+        "completedResearchCount": 5,
+        "freeSummonDraws": 155,
+        "paidSummonDraws": 10,
+        "craftedCount": 1,
+        "evolvedCount": 3,
+        "refinementActions": 10,
+        "adOpportunityCount": 6
+      }
+    ],
+    "scope": "At this readback, six of 16 planned cases were PASS and a seventh was RUNNING. Six completed reports all use seed 100049 and show 30 campaign wins, 15 challenge wins, and five research completions. This does not establish all cases, multiseed robustness, actual ad/purchase behavior, or causal product value."
+  }
+}

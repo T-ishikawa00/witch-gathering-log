@@ -1,0 +1,33 @@
+{
+  "changes": [
+    "R454 preserved-save validation uses the StoreKit authority save path under the pinned origin data container.",
+    "simctl get_app_container subprocess call has a 15-second timeout."
+  ],
+  "constraints": {
+    "R001": "preserved unchanged",
+    "build": "none",
+    "execution": "none",
+    "simulator": "none"
+  },
+  "executionPerformed": false,
+  "files": {
+    "README_R001.md": {
+      "sha256": "54503b34748b6e4e991bd6d7da1897851d9ea75f98aad75c39c41b802011abc8",
+      "sizeBytes": 2663
+    },
+    "RUNTIME_SEAL_R001.template.json": {
+      "sha256": "32c4a4a0da46f6d0263ad299b09f13791717840a7570e558f7f08394da1fc220",
+      "sizeBytes": 1738
+    },
+    "run_r456.py": {
+      "sha256": "2638c8b6fc5f1f80466c0058a6e93871b6e7f13e4f99cc42a505ad974d8921ad",
+      "sizeBytes": 23705
+    }
+  },
+  "schema": "native-completion-r456-runtime-tools-candidate-r002-v1",
+  "staticChecks": [
+    "Python ast.parse",
+    "runtime seal template JSON parse"
+  ],
+  "status": "PREPARED_NOT_ROOT_SEALED"
+}

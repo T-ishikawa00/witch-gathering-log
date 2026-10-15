@@ -1,0 +1,56 @@
+{
+  "schema": "r463-authority-persistence-inputs-v1",
+  "status": "PREPARED_NOT_RUN",
+  "scope": "isolated file-backed R461 pending-operation and authority-observation stores; no app wiring, production auth, network, or gameplay-save writes",
+  "candidateFiles": [
+    {
+      "path": "FileBackedAuthorityStoreR463.swift",
+      "sha256": "093d3055444a9dd5958c5bed737eac89d4a0c1009a7138dcb831581fe189e955"
+    },
+    {
+      "path": "tests/FileBackedAuthorityStoreR463Tests.swift",
+      "sha256": "59a1d0dd2e76a31abb7444c54c3cd057376fe879d727ce26eee1ab17c984aac2"
+    }
+  ],
+  "contractInputs": [
+    {
+      "path": "docs/production/current/qa_drafts/authority_contract_r461/swift_candidate_r002/AuthorityClientContractR461.swift",
+      "sha256": "03bad37f64f990d7b344a0c6a8b60a7cfefac19f0eb864abe6aa24fadc605f9d"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/authority_contract_r461/root_candidate_r005/swift/AuthorityClientContractR461Tests.swift",
+      "sha256": "a0beb5aaa4bb2eceb7268f7ffa20f45a4f3deb828a325e446c524118bd96dd47"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/authority_contract_r461/swift_candidate_r002/MANIFEST_R002.json",
+      "sha256": "008cd46dd0ca6dfd0e470502a2ce802307bbcd0ecbbe896dc0102be5a480c678"
+    }
+  ],
+  "plannedTestFilter": "FileBackedAuthorityStoreR463Tests",
+  "plannedTestMethods": [
+    "testPendingOperationSurvivesColdReopenAndRejectsUUIDCollision",
+    "testObservationCASIsMonotonicAcrossInstancesAndBindingNamespace",
+    "testCorruptFutureAndUnknownStoreSchemasFailClosedWithoutOverwrite",
+    "testInterruptedTemporaryWriteRecoversPreviousCommittedValue",
+    "testSymlinkedRootAndHardlinkedStoreFileAreRejected",
+    "testPendingOperationsAreIsolatedByTheStoresPinnedAccountNamespace"
+  ],
+  "execution": {
+    "swiftCompile": false,
+    "xctest": false,
+    "build": false,
+    "simulator": false,
+    "network": false,
+    "liveSourceModified": false,
+    "gameSaveModified": false
+  },
+  "authorityBoundary": {
+    "R459MarkerRequired": true,
+    "accountNamespaceRequired": true,
+    "productionAuthorization": false,
+    "gameplayEntitlementMutation": false
+  },
+  "scopeLimitations": [
+    "Cross-process flock behavior is implemented but not exercised by a subprocess test; concurrent XCTest coverage uses independent store instances in one process."
+  ]
+}

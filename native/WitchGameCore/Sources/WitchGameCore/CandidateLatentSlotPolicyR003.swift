@@ -1,3 +1,4 @@
+import CryptoKit
 import Foundation
 
 public struct CandidateLatentSlotR003: Codable, Sendable, Equatable {
@@ -226,12 +227,13 @@ public struct CandidateLatentStatProjectionR004: Equatable, Sendable {
 }
 
 public struct CandidateLatentSlotPolicyR003: Sendable {
+    public let sourceSHA256: String
     private let document: LatentPolicyDocumentR003
     private let affixesByID: [String: LatentAffixRuleR003]
     private let templatesByID: [String: LatentTemplateRuleR003]
     private let evolutionEdges: Set<LatentEvolutionEdgeR003>
 
-    private init(document: LatentPolicyDocumentR003) throws {
+    private init(document: LatentPolicyDocumentR003, sourceSHA256: String) throws {
         guard document.schemaVersion == 1, document.rawQRange == [0, 1000] else {
             throw CandidateLatentPolicyErrorR003.invalidRange
         }
@@ -240,6 +242,7 @@ public struct CandidateLatentSlotPolicyR003: Sendable {
             throw CandidateLatentPolicyErrorR003.invalidRange
         }
         self.document = document
+        self.sourceSHA256 = sourceSHA256
         self.affixesByID = Dictionary(uniqueKeysWithValues: document.affixes.map { ($0.id, $0) })
         self.templatesByID = Dictionary(uniqueKeysWithValues: document.templates.map { ($0.id, $0) })
         self.evolutionEdges = Set(document.evolutionEdges)
@@ -258,7 +261,10 @@ public struct CandidateLatentSlotPolicyR003: Sendable {
     }
 
     public static func load(data: Data) throws -> CandidateLatentSlotPolicyR003 {
-        try CandidateLatentSlotPolicyR003(document: JSONDecoder().decode(LatentPolicyDocumentR003.self, from: data))
+        let sourceSHA256 = SHA256.hash(data: data).map { String(format: "%02x", $0) }.joined()
+        return try CandidateLatentSlotPolicyR003(
+            document: JSONDecoder().decode(LatentPolicyDocumentR003.self, from: data),
+            sourceSHA256: sourceSHA256)
     }
 
     public var templateIDs: Set<String> { Set(templatesByID.keys) }

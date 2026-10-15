@@ -1,0 +1,50 @@
+{
+  "schema": "aira_attachment_fit_r007",
+  "status": "CANDIDATE_METADATA_CREATED_VISUAL_FIT_PENDING",
+  "humanApproval": false,
+  "sourceOverlayR006": "native/Art/runtime_overlay_zzzzzzzzzzzzzzzzzzzzzz_equipment_landmarks_aira_r006.json",
+  "sourceOverlaySHA256": "fa2c0b18bfcaee34127fb4aa1e6fa0dc6a0e0b5886f65ddd56a2b2a57d2780b5",
+  "outputs": [
+    {
+      "path": "native/Art/runtime_overlay_zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz_equipment_landmarks_aira_r007.json",
+      "sha256": "02fd4cb4976e46aae483a2799c9f3d4daf4073e9167931e06ea124202d936199",
+      "rows": 27,
+      "coverage": "27 AIRA body frames; EQ_FEET_01..03/RING_01..03/S_03 overrides"
+    },
+    {
+      "path": "native/Art/runtime_overlay_zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz_aira_body03_fit_candidate_r005.json",
+      "sha256": "7f50db156c14d036b0ebfa7347c01ac80f94d6c6fe0ec950f8220b6c759ac02a",
+      "rows": 27,
+      "coverage": "27 exact AIRA body frames; BODY_03 detail_scale 0.09"
+    }
+  ],
+  "candidateValues": {
+    "BODY_03.detail_scale": 0.09,
+    "FEET_01..03.height": 0.08,
+    "RING_01..03.height": 0.03,
+    "S_03.height": 0.09,
+    "S_03.angle_degrees_by_sourceFrameIndex": {
+      "0": 22,
+      "1": -18,
+      "2": -25,
+      "3": 18,
+      "4": 0,
+      "5": 0,
+      "6": 12,
+      "7": 8,
+      "8": 8
+    }
+  },
+  "evidenceBasis": [
+    "R018 exact-held source proof for all 27 source/body frame keys",
+    "16px coordinate grids in docs/production/current/art/aira_landmark_contacts_r005/individual/",
+    "R018 runtime crops in docs/production/current/art/aira_landmark_contacts_r006/runtime_crops/"
+  ],
+  "limitations": [
+    "No fresh native bundle or held-frame visual fit test has yet used R007.",
+    "FEET ankle points are candidate cuff/ankle centers and remain uncertain during crossed-leg walk phases.",
+    "S_03 frame angles are source-plane estimates; check against selected custom inlay geometry in all seven states.",
+    "Ring placements remain at measured workingHand center with reduced size; finger-level offsets have not been measured."
+  ],
+  "sourceArtMutated": false
+}

@@ -1,0 +1,104 @@
+{
+  "schema": "r452-root-scoped-result-v1",
+  "status": "SCOPED_TWO_SEED_CORE_PROGRESSION_PASS",
+  "time": "2026-10-15T05:30:25.375040+09:00",
+  "runner": {
+    "path": "docs/production/current/qa_drafts/zero_summon_seed_robustness_r452/candidate_r001/runner_r001/runs/R452_BATCH_001/RUN.json",
+    "bytes": 8497,
+    "sha256": "979cfd6fd62bb75ae14e79dae9a8129d11f182a8c7475630aa22cc0b14358845"
+  },
+  "independentReview": {
+    "path": "docs/production/current/qa_drafts/zero_summon_seed_robustness_r452/independent_result_review_r001/REVIEW_R001.json",
+    "bytes": 9071,
+    "sha256": "03a15762976fabe02e360ac47824995784f0e3918c2c62b61818dcdf9e7e040a"
+  },
+  "independentCorrection": {
+    "path": "docs/production/current/qa_drafts/zero_summon_seed_robustness_r452/independent_result_review_r001/ERRATUM_R002.json",
+    "bytes": 2684,
+    "sha256": "5981824c9987c3ca4a874c67d02ad6989b358664f68b358104d1ca550589bdc7"
+  },
+  "cases": [
+    {
+      "seed": 100069,
+      "xctestPassed": 1,
+      "xctestFailed": 0,
+      "xctestSkipped": 0,
+      "elapsedSeconds": 44.233,
+      "campaignWins": 30,
+      "challengeWins": 15,
+      "researchCompleted": 5,
+      "crafts": 1,
+      "evolutions": 11,
+      "freeSummons": 0,
+      "paidSummons": 0,
+      "syntheticGrants": 0,
+      "finalRevision": 228,
+      "finalGearCount": 1444,
+      "finalSave": {
+        "path": "docs/production/current/qa_drafts/zero_summon_seed_robustness_r452/candidate_r001/runner_r001/runs/R452_BATCH_001/cases/45200000-0001-4002-8000-000000000001/r452_45200000-0001-4002-8000-000000000001/save.json",
+        "bytes": 698681,
+        "sha256": "4fadf40146b22cb2952b279a62a3f66f496e64147845904298e49334dee0e866"
+      },
+      "finalUUIDsEqualOriginJoin": true,
+      "naturalOrigins": 1440,
+      "retainedNaturalLedgerEntries": 96,
+      "originJoin": {
+        "path": "docs/production/current/qa_drafts/zero_summon_seed_robustness_r452/candidate_r001/runner_r001/runs/R452_BATCH_001/cases/45200000-0001-4002-8000-000000000001/r452_45200000-0001-4002-8000-000000000001/GEAR_ORIGIN_JOIN_R002.json",
+        "bytes": 112755,
+        "sha256": "09159a030903a8d64419e672bcdd44b62cad09217caa0901b16159878af4f530"
+      },
+      "report": {
+        "path": "docs/production/current/qa_drafts/zero_summon_seed_robustness_r452/candidate_r001/runner_r001/runs/R452_BATCH_001/cases/45200000-0001-4002-8000-000000000001/r452_45200000-0001-4002-8000-000000000001/report.json",
+        "bytes": 10470607,
+        "sha256": "dfb0a27459c310f10eedcb0cfc2cddc7cdca41d29f5b72833b97ec35fc8dc052"
+      }
+    },
+    {
+      "seed": 200071,
+      "xctestPassed": 1,
+      "xctestFailed": 0,
+      "xctestSkipped": 0,
+      "elapsedSeconds": 45.557,
+      "campaignWins": 30,
+      "challengeWins": 15,
+      "researchCompleted": 5,
+      "crafts": 1,
+      "evolutions": 11,
+      "freeSummons": 0,
+      "paidSummons": 0,
+      "syntheticGrants": 0,
+      "finalRevision": 230,
+      "finalGearCount": 1444,
+      "finalSave": {
+        "path": "docs/production/current/qa_drafts/zero_summon_seed_robustness_r452/candidate_r001/runner_r001/runs/R452_BATCH_001/cases/45200000-0002-4002-8000-000000000001/r452_45200000-0002-4002-8000-000000000001/save.json",
+        "bytes": 699834,
+        "sha256": "dcb7ec871b8600b0344befeca6f59821786ec87c13104a18b50b8cd6a04c80b9"
+      },
+      "finalUUIDsEqualOriginJoin": true,
+      "naturalOrigins": 1440,
+      "retainedNaturalLedgerEntries": 96,
+      "originJoin": {
+        "path": "docs/production/current/qa_drafts/zero_summon_seed_robustness_r452/candidate_r001/runner_r001/runs/R452_BATCH_001/cases/45200000-0002-4002-8000-000000000001/r452_45200000-0002-4002-8000-000000000001/GEAR_ORIGIN_JOIN_R002.json",
+        "bytes": 112755,
+        "sha256": "2ea61a9cab283e919429ac177027b9d98634a55310d870d57048c82245776f5d"
+      },
+      "report": {
+        "path": "docs/production/current/qa_drafts/zero_summon_seed_robustness_r452/candidate_r001/runner_r001/runs/R452_BATCH_001/cases/45200000-0002-4002-8000-000000000001/r452_45200000-0002-4002-8000-000000000001/report.json",
+        "bytes": 10469894,
+        "sha256": "adb2517ba66b4023a6ea232defbff4f59d210ebbbab8b1b3ce7e427ff7831f6e"
+      }
+    }
+  ],
+  "aggregateXCTest": {
+    "passed": 2,
+    "failed": 0,
+    "skipped": 0
+  },
+  "wallSeconds": 119.389,
+  "scratchBytes": 229703680,
+  "evidenceBytes": 45142016,
+  "sourceAndProtectedInputsUnchanged": true,
+  "scopeLimit": "Two preregistered scripted virtual 30-day free_no_ad cases; no native UI/player-paced retention, causal purchase-value, formal design/art or release acceptance. Per-case natural history is 1440; retained ledger has only96. One post-day30 actual natural duplicate dismantle explains1445->1444 final gear. R448 prior raw incomplete wrapper unchanged.",
+  "productionAcceptance": false,
+  "noFurtherSameCaseRerun": true
+}

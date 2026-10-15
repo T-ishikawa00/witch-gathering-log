@@ -1,0 +1,31 @@
+{
+  "schema": "r460-fixed-sha-gameplay-save-audit-v1",
+  "commit": "45dc02f73f0bcb7c37ad1f01969c3d4b43ceef2e",
+  "scope": ["campaign", "challenges", "natural gear and evolution", "scripted economy", "SaveRepository", "cold reopen"],
+  "mode": "read-only",
+  "testsRun": false,
+  "buildsRun": false,
+  "simulatorActions": false,
+  "saveChanges": false,
+  "reproducibleGameblockingSaveOrProgressionDefect": false,
+  "findings": {
+    "campaign": "R443 records 30/30 campaign wins; history includes five earlier free mock draws, so it is not pristine no-mock progression.",
+    "challenges": "R449 records 15 new challenge wins with no historical mock UUID equipped; 7 clear markers/rewards predate that run.",
+    "zeroSummonVirtualCore": "R448 one case plus R452 two cases; each reports 30 campaign, 15 challenges, 5 studies, one craft, 11 evolutions, zero summons and zero synthetic grants under scripted virtual 30-day schedules.",
+    "economyMatrix": "R374 has 16 PASS candidate virtual cases at one seed; not product adoption or human pacing evidence.",
+    "save": "Staged verified write, previous generation, atomic primary replace, operation replay and recovery are implemented and tested. R362 covers exact child kill after primary replace; physical power loss remains untested.",
+    "unresolvedQuality": ["physical-device and all-OS recovery", "human-paced long-term play", "large-text inventory gesture acceptance inconclusive", "visual/art and release acceptance outside this audit"]
+  },
+  "evidence": {
+    "completionRegisterR012": "05b0e2d5e7d13585a180652bc429109d20859a57c6c09fc26a5b2db6789ec1bc",
+    "r443Review": "10f06fdf7db989f1e8dac485d8665bf727f5c21164a74b4622d1f2bd46254b4f",
+    "r449Closure": "76152d3e32f96a7f5ef51d1e99eda3fcd44e51c5c10a748e725c5317ac5723c2",
+    "r449Independent": "d7042c4343ee711927e8c6ae27b632b9c9f5c164a8a2fcaeec32e8f6a8581912",
+    "r448": "484d8b2287e437ec41c8934696ca79006815a6abda518cf04a624199dab6a4de",
+    "r452": "ceb1e6794d3281712226e56420e3b34692d4ac6194ea965761479d48d8abeca1",
+    "r374": "860273ae6557762adb657dd4a4eee9966fb51f124dd2bbf7c36e2800624aad07",
+    "r362": "64656be33d3275ce386169c0ae4ff9c718249c873b33d043c4b899ea09016249",
+    "r456": "3b98eee9c794c6b1af73ea6b398bbb7dbea988cceb05f23110722e9c29ef77f8"
+  },
+  "disposition": "No gameplay/save code patch justified by this fixed-SHA audit; overall release completion not asserted."
+}

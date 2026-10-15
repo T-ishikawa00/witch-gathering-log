@@ -1,0 +1,1655 @@
+{
+  "schema": "enemy-motion-residual-temporal-matrix-r407-v1",
+  "createdAtLocal": "2026-10-14",
+  "scope": "Read-only evidence reconciliation; no new capture, build, simulator interaction, source edits, or image derivations.",
+  "buildContext": {
+    "R407BundleID": "local.witch.autonomous.r1.enemyart.r407",
+    "R407ExecutableSHA256": "766d27ea64d4baef7ab247eb2f585ce301ea04309ba49d2be7e1ba2961f84d54",
+    "R407SourceMapSHA256": "65ad3216215ce029b0a95b4e245387f19abf13078f4d460804ae856ebc40dc74",
+    "R407SealedBindingSHA256": "bb4edd1b6073411c98c5322359317af6dd4293fd53e4a7fa719c1ef7c07e5f2d",
+    "plannedRemainingTargets": [
+      "B_R04_B",
+      "E_R05_01",
+      "E_R05_02",
+      "E_R05_03",
+      "E_R05_04",
+      "B_R05_A",
+      "B_R05_B"
+    ],
+    "captureStatus": "ROOT capture pending; no R407 visual evidence claimed here"
+  },
+  "rollup": {
+    "requiredEnemyStates": [
+      "idle",
+      "walk",
+      "anticipate",
+      "execute",
+      "recover",
+      "hit",
+      "resolve"
+    ],
+    "unitCount159": 159,
+    "currentR300MappingExactKeyMatches": 159,
+    "currentR300ExactKindMatches": 149,
+    "explicitEffectKindConsolidations": [
+      "ENV_R01",
+      "FX_R01",
+      "ENV_R02",
+      "FX_R02",
+      "ENV_R03",
+      "FX_R03",
+      "ENV_R04",
+      "FX_R04",
+      "ENV_R05",
+      "FX_R05"
+    ],
+    "enemyUnits": 30,
+    "forcedStateVisualReviewedActors": 27,
+    "actualBattleTraceActorsInR377OrR391": 24,
+    "actualTraceStatesMissingByActor": [
+      {
+        "actorID": "ACT_E_R01_02",
+        "encounterID": "E_R01_02",
+        "missingInObservedBattleTrace": [
+          "recover"
+        ]
+      },
+      {
+        "actorID": "ACT_E_R01_03",
+        "encounterID": "E_R01_03",
+        "missingInObservedBattleTrace": [
+          "recover"
+        ]
+      },
+      {
+        "actorID": "ACT_B_R01_A",
+        "encounterID": "B_R01_A",
+        "missingInObservedBattleTrace": [
+          "execute",
+          "recover"
+        ]
+      },
+      {
+        "actorID": "ACT_B_R01_B",
+        "encounterID": "B_R01_B",
+        "missingInObservedBattleTrace": [
+          "recover"
+        ]
+      },
+      {
+        "actorID": "ACT_E_R02_01",
+        "encounterID": "E_R02_01",
+        "missingInObservedBattleTrace": [
+          "execute",
+          "recover"
+        ]
+      },
+      {
+        "actorID": "ACT_E_R02_02",
+        "encounterID": "E_R02_02",
+        "missingInObservedBattleTrace": [
+          "execute",
+          "recover"
+        ]
+      },
+      {
+        "actorID": "ACT_E_R02_04",
+        "encounterID": "E_R02_04",
+        "missingInObservedBattleTrace": [
+          "execute",
+          "recover"
+        ]
+      },
+      {
+        "actorID": "ACT_E_R03_02",
+        "encounterID": "E_R03_02",
+        "missingInObservedBattleTrace": [
+          "execute",
+          "recover"
+        ]
+      },
+      {
+        "actorID": "ACT_E_R03_03",
+        "encounterID": "E_R03_03",
+        "missingInObservedBattleTrace": [
+          "recover"
+        ]
+      },
+      {
+        "actorID": "ACT_E_R03_04",
+        "encounterID": "E_R03_04",
+        "missingInObservedBattleTrace": [
+          "execute",
+          "recover"
+        ]
+      },
+      {
+        "actorID": "ACT_B_R03_A",
+        "encounterID": "B_R03_A",
+        "missingInObservedBattleTrace": [
+          "recover"
+        ]
+      },
+      {
+        "actorID": "ACT_B_R03_B",
+        "encounterID": "B_R03_B",
+        "missingInObservedBattleTrace": [
+          "execute",
+          "recover"
+        ]
+      },
+      {
+        "actorID": "ACT_E_R04_01",
+        "encounterID": "E_R04_01",
+        "missingInObservedBattleTrace": [
+          "recover"
+        ]
+      },
+      {
+        "actorID": "ACT_E_R04_02",
+        "encounterID": "E_R04_02",
+        "missingInObservedBattleTrace": [
+          "execute",
+          "recover"
+        ]
+      },
+      {
+        "actorID": "ACT_E_R04_04",
+        "encounterID": "E_R04_04",
+        "missingInObservedBattleTrace": [
+          "execute",
+          "recover"
+        ]
+      },
+      {
+        "actorID": "ACT_B_R04_A",
+        "encounterID": "B_R04_A",
+        "missingInObservedBattleTrace": [
+          "recover"
+        ]
+      },
+      {
+        "actorID": "ACT_E_R05_01",
+        "encounterID": "E_R05_01",
+        "missingInObservedBattleTrace": [
+          "idle",
+          "walk",
+          "anticipate",
+          "execute",
+          "recover",
+          "hit",
+          "resolve"
+        ]
+      },
+      {
+        "actorID": "ACT_E_R05_02",
+        "encounterID": "E_R05_02",
+        "missingInObservedBattleTrace": [
+          "idle",
+          "walk",
+          "anticipate",
+          "execute",
+          "recover",
+          "hit",
+          "resolve"
+        ]
+      },
+      {
+        "actorID": "ACT_E_R05_03",
+        "encounterID": "E_R05_03",
+        "missingInObservedBattleTrace": [
+          "idle",
+          "walk",
+          "anticipate",
+          "execute",
+          "recover",
+          "hit",
+          "resolve"
+        ]
+      },
+      {
+        "actorID": "ACT_E_R05_04",
+        "encounterID": "E_R05_04",
+        "missingInObservedBattleTrace": [
+          "idle",
+          "walk",
+          "anticipate",
+          "execute",
+          "recover",
+          "hit",
+          "resolve"
+        ]
+      },
+      {
+        "actorID": "ACT_B_R05_A",
+        "encounterID": "B_R05_A",
+        "missingInObservedBattleTrace": [
+          "idle",
+          "walk",
+          "anticipate",
+          "execute",
+          "recover",
+          "hit",
+          "resolve"
+        ]
+      },
+      {
+        "actorID": "ACT_B_R05_B",
+        "encounterID": "B_R05_B",
+        "missingInObservedBattleTrace": [
+          "idle",
+          "walk",
+          "anticipate",
+          "execute",
+          "recover",
+          "hit",
+          "resolve"
+        ]
+      }
+    ],
+    "R377Videos": {
+      "count": 5,
+      "bytes": 111448187,
+      "durationSeconds": [
+        7.891667,
+        7.996667,
+        7.991667,
+        8.035,
+        7.971667
+      ]
+    },
+    "R391Videos": {
+      "count": 20,
+      "bytes": 434640399,
+      "durationRangeSeconds": [
+        7.9,
+        8.065
+      ],
+      "videoJoin": "NOT_ESTABLISHED_OCR_REQUIRED"
+    },
+    "partyActors": 4,
+    "partyActorsWithActualDamageTargetsR391": 4,
+    "partyActorsWithVisualHitSampleR377": 1,
+    "environmentAndVFXEntries": 10
+  },
+  "enemies": [
+    {
+      "actorID": "ACT_E_R01_01",
+      "encounterID": "E_R01_01",
+      "runtimeMap": "R300 exact key present; mapping is not acceptance",
+      "expectedStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "actualBattleTrace": {
+        "kind": "R377 details-C_SMITH-03 fixture battle trace",
+        "encounterID": "E_R01_01",
+        "observedStates": [
+          "anticipate",
+          "execute",
+          "hit",
+          "idle",
+          "recover",
+          "resolve",
+          "walk"
+        ],
+        "traceRows": 560,
+        "videoDurationSeconds": 7.891667,
+        "videoJoin": "NOT_ESTABLISHED_FOR_ENEMY_VIDEO"
+      },
+      "forcedStateVisualReview": {
+        "status": "NO_R366_SEQUENCE_SHEET_REVIEW_FOUND; check available R377/R391 samples individually"
+      },
+      "currentVideoToEventJoin": "UNPROVEN unless explicitly noted above",
+      "completionJudgment": "PARTIAL_OR_UNVERIFIED"
+    },
+    {
+      "actorID": "ACT_E_R01_02",
+      "encounterID": "E_R01_02",
+      "runtimeMap": "R300 exact key present; mapping is not acceptance",
+      "expectedStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "actualBattleTrace": {
+        "kind": "R377 details-C_SMITH-03 fixture battle trace",
+        "encounterID": "E_R01_02",
+        "observedStates": [
+          "anticipate",
+          "execute",
+          "hit",
+          "idle",
+          "resolve",
+          "walk"
+        ],
+        "traceRows": 554,
+        "videoDurationSeconds": 7.996667,
+        "videoJoin": "NOT_ESTABLISHED_FOR_ENEMY_VIDEO"
+      },
+      "forcedStateVisualReview": {
+        "reviewPath": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r001/REVIEW_FIRST9_R001.md",
+        "judgment": "SAMPLED_NO_GROSS_RENDER_DEFECT; natural timing unverified",
+        "visualFinding": "丸い牙猪は画面内に保たれ、idle/walk/攻撃系からresolveで低く伏せた形への変化が読める。大きな欠け・重なりは見えない。"
+      },
+      "currentVideoToEventJoin": "UNPROVEN unless explicitly noted above",
+      "completionJudgment": "PARTIAL_OR_UNVERIFIED"
+    },
+    {
+      "actorID": "ACT_E_R01_03",
+      "encounterID": "E_R01_03",
+      "runtimeMap": "R300 exact key present; mapping is not acceptance",
+      "expectedStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "actualBattleTrace": {
+        "kind": "R377 details-C_SMITH-03 fixture battle trace",
+        "encounterID": "E_R01_03",
+        "observedStates": [
+          "anticipate",
+          "execute",
+          "hit",
+          "idle",
+          "resolve",
+          "walk"
+        ],
+        "traceRows": 560,
+        "videoDurationSeconds": 7.991667,
+        "videoJoin": "NOT_ESTABLISHED_FOR_ENEMY_VIDEO"
+      },
+      "forcedStateVisualReview": {
+        "reviewPath": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r001/REVIEW_FIRST9_R001.md",
+        "judgment": "PARTIAL; no gross clipping observed",
+        "visualFinding": "小型の緑色個体は画面内に見える。体・葉の姿勢差は小さく、サンプルだけでは移動や被弾の明瞭さを評価できない。"
+      },
+      "currentVideoToEventJoin": "UNPROVEN unless explicitly noted above",
+      "completionJudgment": "PARTIAL_OR_UNVERIFIED"
+    },
+    {
+      "actorID": "ACT_E_R01_04",
+      "encounterID": "E_R01_04",
+      "runtimeMap": "R300 exact key present; mapping is not acceptance",
+      "expectedStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "actualBattleTrace": {
+        "kind": "R377 details-C_SMITH-03 fixture battle trace",
+        "encounterID": "E_R01_04",
+        "observedStates": [
+          "anticipate",
+          "execute",
+          "hit",
+          "idle",
+          "recover",
+          "resolve",
+          "walk"
+        ],
+        "traceRows": 696,
+        "videoDurationSeconds": 8.035,
+        "videoJoin": "NOT_ESTABLISHED_FOR_ENEMY_VIDEO"
+      },
+      "forcedStateVisualReview": {
+        "reviewPath": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r001/REVIEW_FIRST9_R001.md",
+        "judgment": "PARTIAL; no gross clipping observed",
+        "visualFinding": "橙色の殻を持つ個体は全サンプルで視認可能。輪郭は保たれ、resolveで低くなるが接地・攻撃連続性は未評価。"
+      },
+      "currentVideoToEventJoin": "UNPROVEN unless explicitly noted above",
+      "completionJudgment": "PARTIAL_OR_UNVERIFIED"
+    },
+    {
+      "actorID": "ACT_B_R01_A",
+      "encounterID": "B_R01_A",
+      "runtimeMap": "R300 exact key present; mapping is not acceptance",
+      "expectedStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "actualBattleTrace": {
+        "kind": "R391 synthetic challenge actual battle trace",
+        "encounterID": "B_R01_A",
+        "observedStates": [
+          "anticipate",
+          "hit",
+          "idle",
+          "resolve",
+          "walk"
+        ],
+        "traceRows": 1254,
+        "partyHitTargets": [
+          "AIRA"
+        ],
+        "videoJoin": "NOT_ESTABLISHED_OCR_REQUIRED"
+      },
+      "forcedStateVisualReview": {
+        "reviewPath": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r001/REVIEW_FIRST9_R001.md",
+        "judgment": "PARTIAL; sampled silhouette readable",
+        "visualFinding": "大型の猪ボスは敵枠内で十分大きく、胴体・角の輪郭が明瞭。resolveで伏せ姿勢が見える。予告から命中の連続時間はこの抽出では判断できない。"
+      },
+      "currentVideoToEventJoin": "UNPROVEN unless explicitly noted above",
+      "completionJudgment": "PARTIAL_OR_UNVERIFIED"
+    },
+    {
+      "actorID": "ACT_B_R01_B",
+      "encounterID": "B_R01_B",
+      "runtimeMap": "R300 exact key present; mapping is not acceptance",
+      "expectedStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "actualBattleTrace": {
+        "kind": "R391 synthetic challenge actual battle trace",
+        "encounterID": "B_R01_B",
+        "observedStates": [
+          "anticipate",
+          "execute",
+          "hit",
+          "idle",
+          "resolve",
+          "walk"
+        ],
+        "traceRows": 1114,
+        "partyHitTargets": [
+          "AIRA",
+          "ERNA",
+          "LUNA",
+          "NOIR"
+        ],
+        "videoJoin": "NOT_ESTABLISHED_OCR_REQUIRED"
+      },
+      "forcedStateVisualReview": {
+        "reviewPath": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r001/REVIEW_FIRST9_R001.md",
+        "judgment": "PARTIAL; targeted visual concern, not yet confirmed runtime defect",
+        "visualFinding": "樹木状ボスは画面内に全体が見えるが、個別フレームで予告と被弾を比べても直立した幹・枝のシルエット差が非常に小さく、被弾反応が読み取りにくい。静止サンプル上の具体的な視認性懸念。実際のフレーム時刻/遷移対応が確定した通常戦闘の映像で再確認が必要。"
+      },
+      "currentVideoToEventJoin": "UNPROVEN unless explicitly noted above",
+      "completionJudgment": "PARTIAL_OR_UNVERIFIED"
+    },
+    {
+      "actorID": "ACT_E_R02_01",
+      "encounterID": "E_R02_01",
+      "runtimeMap": "R300 exact key present; mapping is not acceptance",
+      "expectedStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "actualBattleTrace": {
+        "kind": "R391 synthetic challenge actual battle trace",
+        "encounterID": "E_R02_01",
+        "observedStates": [
+          "anticipate",
+          "hit",
+          "idle",
+          "resolve",
+          "walk"
+        ],
+        "traceRows": 628,
+        "partyHitTargets": [
+          "AIRA",
+          "ERNA",
+          "LUNA",
+          "NOIR"
+        ],
+        "videoJoin": "NOT_ESTABLISHED_OCR_REQUIRED"
+      },
+      "forcedStateVisualReview": {
+        "reviewPath": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r001/REVIEW_FIRST9_R001.md",
+        "judgment": "PARTIAL; state distinctions sampled",
+        "visualFinding": "桃色の丸い個体は予告/実行時に縮み、resolve時には低い形へ変わる。画面内に収まり、顕著な切れはない。"
+      },
+      "currentVideoToEventJoin": "UNPROVEN unless explicitly noted above",
+      "completionJudgment": "PARTIAL_OR_UNVERIFIED"
+    },
+    {
+      "actorID": "ACT_E_R02_02",
+      "encounterID": "E_R02_02",
+      "runtimeMap": "R300 exact key present; mapping is not acceptance",
+      "expectedStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "actualBattleTrace": {
+        "kind": "R391 synthetic challenge actual battle trace",
+        "encounterID": "E_R02_02",
+        "observedStates": [
+          "anticipate",
+          "hit",
+          "idle",
+          "resolve",
+          "walk"
+        ],
+        "traceRows": 703,
+        "partyHitTargets": [
+          "AIRA",
+          "LUNA"
+        ],
+        "videoJoin": "NOT_ESTABLISHED_OCR_REQUIRED"
+      },
+      "forcedStateVisualReview": {
+        "reviewPath": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r001/REVIEW_FIRST9_R001.md",
+        "judgment": "PARTIAL; no gross clipping observed",
+        "visualFinding": "青緑の細長い個体は胴・尾とも見え、左右端での切れは見えない。hit/resolveの接触表現・自然なタイミングは判定できない。"
+      },
+      "currentVideoToEventJoin": "UNPROVEN unless explicitly noted above",
+      "completionJudgment": "PARTIAL_OR_UNVERIFIED"
+    },
+    {
+      "actorID": "ACT_E_R02_03",
+      "encounterID": "E_R02_03",
+      "runtimeMap": "R300 exact key present; mapping is not acceptance",
+      "expectedStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "actualBattleTrace": {
+        "kind": "R391 synthetic challenge actual battle trace",
+        "encounterID": "E_R02_03",
+        "observedStates": [
+          "anticipate",
+          "execute",
+          "hit",
+          "idle",
+          "recover",
+          "resolve",
+          "walk"
+        ],
+        "traceRows": 637,
+        "partyHitTargets": [
+          "AIRA",
+          "ERNA",
+          "LUNA",
+          "NOIR"
+        ],
+        "videoJoin": "NOT_ESTABLISHED_OCR_REQUIRED"
+      },
+      "forcedStateVisualReview": {
+        "reviewPath": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r001/REVIEW_FIRST9_R001.md",
+        "judgment": "PARTIAL; sampled pose contrast only",
+        "visualFinding": "青いクラゲは傘と触手を保ったまま表示され、resolveでは横に低く畳まれた形が見える。明白な画面外切れはない。今回の旧R083表示サンプルはR259/R294の比較試行を再開するものではない。"
+      },
+      "currentVideoToEventJoin": "UNPROVEN unless explicitly noted above",
+      "completionJudgment": "PARTIAL_OR_UNVERIFIED"
+    },
+    {
+      "actorID": "ACT_E_R02_04",
+      "encounterID": "E_R02_04",
+      "runtimeMap": "R300 exact key present; mapping is not acceptance",
+      "expectedStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "actualBattleTrace": {
+        "kind": "R391 synthetic challenge actual battle trace",
+        "encounterID": "E_R02_04",
+        "observedStates": [
+          "anticipate",
+          "hit",
+          "idle",
+          "resolve",
+          "walk"
+        ],
+        "traceRows": 640,
+        "partyHitTargets": [],
+        "videoJoin": "NOT_ESTABLISHED_OCR_REQUIRED"
+      },
+      "forcedStateVisualReview": {
+        "reviewPath": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r001/REVIEW_FIRST9_R001.md",
+        "judgment": "PARTIAL; sampled pose contrast only",
+        "visualFinding": "淡色の蛾は羽が開いた形と閉じた形の差が見え、resolveでは低い姿勢になる。羽・胴の大きな欠けや画面端切れは確認できない。"
+      },
+      "currentVideoToEventJoin": "UNPROVEN unless explicitly noted above",
+      "completionJudgment": "PARTIAL_OR_UNVERIFIED"
+    },
+    {
+      "actorID": "ACT_B_R02_A",
+      "encounterID": "B_R02_A",
+      "runtimeMap": "R300 exact key present; mapping is not acceptance",
+      "expectedStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "actualBattleTrace": {
+        "kind": "R391 synthetic challenge actual battle trace",
+        "encounterID": "B_R02_A",
+        "observedStates": [
+          "anticipate",
+          "execute",
+          "hit",
+          "idle",
+          "recover",
+          "resolve",
+          "walk"
+        ],
+        "traceRows": 1625,
+        "partyHitTargets": [
+          "AIRA",
+          "ERNA",
+          "LUNA",
+          "NOIR"
+        ],
+        "videoJoin": "NOT_ESTABLISHED_OCR_REQUIRED"
+      },
+      "forcedStateVisualReview": {
+        "status": "NO_R366_SEQUENCE_SHEET_REVIEW_FOUND; check available R377/R391 samples individually"
+      },
+      "currentVideoToEventJoin": "UNPROVEN unless explicitly noted above",
+      "completionJudgment": "PARTIAL_OR_UNVERIFIED"
+    },
+    {
+      "actorID": "ACT_B_R02_B",
+      "encounterID": "B_R02_B",
+      "runtimeMap": "R300 exact key present; mapping is not acceptance",
+      "expectedStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "actualBattleTrace": {
+        "kind": "R391 synthetic challenge actual battle trace",
+        "encounterID": "B_R02_B",
+        "observedStates": [
+          "anticipate",
+          "execute",
+          "hit",
+          "idle",
+          "recover",
+          "resolve",
+          "walk"
+        ],
+        "traceRows": 1378,
+        "partyHitTargets": [
+          "AIRA",
+          "ERNA",
+          "LUNA",
+          "NOIR"
+        ],
+        "videoJoin": "NOT_ESTABLISHED_OCR_REQUIRED"
+      },
+      "forcedStateVisualReview": {
+        "reviewPath": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r002_dense/REVIEW_REMAINING18_R001.md",
+        "classification": "PARTIAL_SAMPLED_RENDER; no gross cropping observed; natural event timing and full motion not accepted",
+        "visualFinding": "青緑の爬虫類型。胴・脚・尾に小さな姿勢差があり、画面端切れなし。攻撃と被弾の意味の読み取りは静止抽出からは確定できない。",
+        "observedStates": null
+      },
+      "currentVideoToEventJoin": "UNPROVEN unless explicitly noted above",
+      "completionJudgment": "PARTIAL_OR_UNVERIFIED"
+    },
+    {
+      "actorID": "ACT_E_R03_01",
+      "encounterID": "E_R03_01",
+      "runtimeMap": "R300 exact key present; mapping is not acceptance",
+      "expectedStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "actualBattleTrace": {
+        "kind": "R391 synthetic challenge actual battle trace",
+        "encounterID": "E_R03_01",
+        "observedStates": [
+          "anticipate",
+          "execute",
+          "hit",
+          "idle",
+          "recover",
+          "resolve",
+          "walk"
+        ],
+        "traceRows": 1054,
+        "partyHitTargets": [
+          "AIRA",
+          "LUNA"
+        ],
+        "videoJoin": "NOT_ESTABLISHED_OCR_REQUIRED"
+      },
+      "forcedStateVisualReview": {
+        "reviewPath": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r002_dense/REVIEW_REMAINING18_R001.md",
+        "classification": "PARTIAL_SAMPLED_RENDER; no gross cropping observed; natural event timing and full motion not accepted",
+        "visualFinding": "小型の褐色個体。全身は残り、目立つ欠けなし。表示サイズが小さく細部は見分けにくいが、今回の映像だけでは制作不良と断定しない。",
+        "observedStates": null
+      },
+      "currentVideoToEventJoin": "UNPROVEN unless explicitly noted above",
+      "completionJudgment": "PARTIAL_OR_UNVERIFIED"
+    },
+    {
+      "actorID": "ACT_E_R03_02",
+      "encounterID": "E_R03_02",
+      "runtimeMap": "R300 exact key present; mapping is not acceptance",
+      "expectedStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "actualBattleTrace": {
+        "kind": "R391 synthetic challenge actual battle trace",
+        "encounterID": "E_R03_02",
+        "observedStates": [
+          "anticipate",
+          "hit",
+          "idle",
+          "resolve",
+          "walk"
+        ],
+        "traceRows": 640,
+        "partyHitTargets": [
+          "AIRA"
+        ],
+        "videoJoin": "NOT_ESTABLISHED_OCR_REQUIRED"
+      },
+      "forcedStateVisualReview": {
+        "status": "NO_R366_SEQUENCE_SHEET_REVIEW_FOUND; check available R377/R391 samples individually"
+      },
+      "currentVideoToEventJoin": "UNPROVEN unless explicitly noted above",
+      "completionJudgment": "PARTIAL_OR_UNVERIFIED"
+    },
+    {
+      "actorID": "ACT_E_R03_03",
+      "encounterID": "E_R03_03",
+      "runtimeMap": "R300 exact key present; mapping is not acceptance",
+      "expectedStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "actualBattleTrace": {
+        "kind": "R391 synthetic challenge actual battle trace",
+        "encounterID": "E_R03_03",
+        "observedStates": [
+          "anticipate",
+          "execute",
+          "hit",
+          "idle",
+          "resolve",
+          "walk"
+        ],
+        "traceRows": 670,
+        "partyHitTargets": [
+          "ERNA",
+          "LUNA"
+        ],
+        "videoJoin": "NOT_ESTABLISHED_OCR_REQUIRED"
+      },
+      "forcedStateVisualReview": {
+        "reviewPath": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r002_dense/REVIEW_REMAINING18_R001.md",
+        "classification": "PARTIAL_SAMPLED_RENDER; no gross cropping observed; natural event timing and full motion not accepted",
+        "visualFinding": "岩状の低い個体。攻撃・復帰で体勢がわずかに変化。輪郭の大きな破綻や切れは見えない。",
+        "observedStates": null
+      },
+      "currentVideoToEventJoin": "UNPROVEN unless explicitly noted above",
+      "completionJudgment": "PARTIAL_OR_UNVERIFIED"
+    },
+    {
+      "actorID": "ACT_E_R03_04",
+      "encounterID": "E_R03_04",
+      "runtimeMap": "R300 exact key present; mapping is not acceptance",
+      "expectedStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "actualBattleTrace": {
+        "kind": "R391 synthetic challenge actual battle trace",
+        "encounterID": "E_R03_04",
+        "observedStates": [
+          "anticipate",
+          "hit",
+          "idle",
+          "resolve",
+          "walk"
+        ],
+        "traceRows": 679,
+        "partyHitTargets": [
+          "AIRA"
+        ],
+        "videoJoin": "NOT_ESTABLISHED_OCR_REQUIRED"
+      },
+      "forcedStateVisualReview": {
+        "reviewPath": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r002_dense/REVIEW_REMAINING18_R001.md",
+        "classification": "PARTIAL_SAMPLED_RENDER; no gross cropping observed; natural event timing and full motion not accepted",
+        "visualFinding": "小型四足。胴と脚の位置に小さな変化が見える。接地・被弾の因果はこの強制表示では評価できない。",
+        "observedStates": null
+      },
+      "currentVideoToEventJoin": "UNPROVEN unless explicitly noted above",
+      "completionJudgment": "PARTIAL_OR_UNVERIFIED"
+    },
+    {
+      "actorID": "ACT_B_R03_A",
+      "encounterID": "B_R03_A",
+      "runtimeMap": "R300 exact key present; mapping is not acceptance",
+      "expectedStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "actualBattleTrace": {
+        "kind": "R391 synthetic challenge actual battle trace",
+        "encounterID": "B_R03_A",
+        "observedStates": [
+          "anticipate",
+          "execute",
+          "hit",
+          "idle",
+          "resolve",
+          "walk"
+        ],
+        "traceRows": 1774,
+        "partyHitTargets": [
+          "AIRA",
+          "LUNA",
+          "NOIR"
+        ],
+        "videoJoin": "NOT_ESTABLISHED_OCR_REQUIRED"
+      },
+      "forcedStateVisualReview": {
+        "reviewPath": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r002_dense/REVIEW_REMAINING18_R001.md",
+        "classification": "PARTIAL_SAMPLED_RENDER; no gross cropping observed; natural event timing and full motion not accepted",
+        "visualFinding": "小型の機械型ボスは画面内に全体表示され、両腕の配置が区間で変化する。仲間より小さく見えるため読みやすさは注意対象だが、明白な欠損・切れはない。",
+        "observedStates": null
+      },
+      "currentVideoToEventJoin": "UNPROVEN unless explicitly noted above",
+      "completionJudgment": "PARTIAL_OR_UNVERIFIED"
+    },
+    {
+      "actorID": "ACT_B_R03_B",
+      "encounterID": "B_R03_B",
+      "runtimeMap": "R300 exact key present; mapping is not acceptance",
+      "expectedStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "actualBattleTrace": {
+        "kind": "R391 synthetic challenge actual battle trace",
+        "encounterID": "B_R03_B",
+        "observedStates": [
+          "anticipate",
+          "hit",
+          "idle",
+          "resolve",
+          "walk"
+        ],
+        "traceRows": 1771,
+        "partyHitTargets": [
+          "AIRA",
+          "ERNA",
+          "LUNA",
+          "NOIR"
+        ],
+        "videoJoin": "NOT_ESTABLISHED_OCR_REQUIRED"
+      },
+      "forcedStateVisualReview": {
+        "reviewPath": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r002_dense/REVIEW_REMAINING18_R001.md",
+        "classification": "PARTIAL_SAMPLED_RENDER; no gross cropping observed; natural event timing and full motion not accepted",
+        "visualFinding": "大型の青い尖塔状個体。上方の突起を含む輪郭が残り、胴・腕まわりに変化あり。接地/被弾から復帰する自然さは未判定。",
+        "observedStates": null
+      },
+      "currentVideoToEventJoin": "UNPROVEN unless explicitly noted above",
+      "completionJudgment": "PARTIAL_OR_UNVERIFIED"
+    },
+    {
+      "actorID": "ACT_E_R04_01",
+      "encounterID": "E_R04_01",
+      "runtimeMap": "R300 exact key present; mapping is not acceptance",
+      "expectedStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "actualBattleTrace": {
+        "kind": "R391 synthetic challenge actual battle trace",
+        "encounterID": "E_R04_01",
+        "observedStates": [
+          "anticipate",
+          "execute",
+          "hit",
+          "idle",
+          "resolve",
+          "walk"
+        ],
+        "traceRows": 886,
+        "partyHitTargets": [
+          "AIRA"
+        ],
+        "videoJoin": "NOT_ESTABLISHED_OCR_REQUIRED"
+      },
+      "forcedStateVisualReview": {
+        "reviewPath": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r002_dense/REVIEW_REMAINING18_R001.md",
+        "classification": "PARTIAL_SAMPLED_RENDER; no gross cropping observed; natural event timing and full motion not accepted",
+        "visualFinding": "狼型。頭・脚・尾が見え、区間で姿勢差あり。画面端切れなし。",
+        "observedStates": null
+      },
+      "currentVideoToEventJoin": "UNPROVEN unless explicitly noted above",
+      "completionJudgment": "PARTIAL_OR_UNVERIFIED"
+    },
+    {
+      "actorID": "ACT_E_R04_02",
+      "encounterID": "E_R04_02",
+      "runtimeMap": "R300 exact key present; mapping is not acceptance",
+      "expectedStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "actualBattleTrace": {
+        "kind": "R391 synthetic challenge actual battle trace",
+        "encounterID": "E_R04_02",
+        "observedStates": [
+          "anticipate",
+          "hit",
+          "idle",
+          "resolve",
+          "walk"
+        ],
+        "traceRows": 766,
+        "partyHitTargets": [
+          "AIRA"
+        ],
+        "videoJoin": "NOT_ESTABLISHED_OCR_REQUIRED"
+      },
+      "forcedStateVisualReview": {
+        "reviewPath": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r002_dense/REVIEW_REMAINING18_R001.md",
+        "classification": "PARTIAL_SAMPLED_RENDER; no gross cropping observed; natural event timing and full motion not accepted",
+        "visualFinding": "青い鳥/翼型。翼の開閉差がサンプル内で明瞭。大きな欠けなし。",
+        "observedStates": null
+      },
+      "currentVideoToEventJoin": "UNPROVEN unless explicitly noted above",
+      "completionJudgment": "PARTIAL_OR_UNVERIFIED"
+    },
+    {
+      "actorID": "ACT_E_R04_03",
+      "encounterID": "E_R04_03",
+      "runtimeMap": "R300 exact key present; mapping is not acceptance",
+      "expectedStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "actualBattleTrace": {
+        "kind": "R391 synthetic challenge actual battle trace",
+        "encounterID": "E_R04_03",
+        "observedStates": [
+          "anticipate",
+          "execute",
+          "hit",
+          "idle",
+          "recover",
+          "resolve",
+          "walk"
+        ],
+        "traceRows": 1118,
+        "partyHitTargets": [
+          "AIRA",
+          "ERNA"
+        ],
+        "videoJoin": "NOT_ESTABLISHED_OCR_REQUIRED"
+      },
+      "forcedStateVisualReview": {
+        "reviewPath": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r002_dense/REVIEW_REMAINING18_R001.md",
+        "classification": "PARTIAL_SAMPLED_RENDER; no gross cropping observed; natural event timing and full motion not accepted",
+        "visualFinding": "蜘蛛型。胴体と脚の外形を保ち、脚の姿勢差が見える。接地の自然さは連続実戦未評価。",
+        "observedStates": null
+      },
+      "currentVideoToEventJoin": "UNPROVEN unless explicitly noted above",
+      "completionJudgment": "PARTIAL_OR_UNVERIFIED"
+    },
+    {
+      "actorID": "ACT_E_R04_04",
+      "encounterID": "E_R04_04",
+      "runtimeMap": "R300 exact key present; mapping is not acceptance",
+      "expectedStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "actualBattleTrace": {
+        "kind": "R391 synthetic challenge actual battle trace",
+        "encounterID": "E_R04_04",
+        "observedStates": [
+          "anticipate",
+          "hit",
+          "idle",
+          "resolve",
+          "walk"
+        ],
+        "traceRows": 821,
+        "partyHitTargets": [
+          "AIRA"
+        ],
+        "videoJoin": "NOT_ESTABLISHED_OCR_REQUIRED"
+      },
+      "forcedStateVisualReview": {
+        "reviewPath": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r002_dense/REVIEW_REMAINING18_R001.md",
+        "classification": "PARTIAL_SAMPLED_RENDER; no gross cropping observed; natural event timing and full motion not accepted",
+        "visualFinding": "細身の淡色個体。全身が視認でき、姿勢はわずかに変わる。大きな破綻なし。",
+        "observedStates": null
+      },
+      "currentVideoToEventJoin": "UNPROVEN unless explicitly noted above",
+      "completionJudgment": "PARTIAL_OR_UNVERIFIED"
+    },
+    {
+      "actorID": "ACT_B_R04_A",
+      "encounterID": "B_R04_A",
+      "runtimeMap": "R300 exact key present; mapping is not acceptance",
+      "expectedStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "actualBattleTrace": {
+        "kind": "R391 synthetic challenge actual battle trace",
+        "encounterID": "B_R04_A",
+        "observedStates": [
+          "anticipate",
+          "execute",
+          "hit",
+          "idle",
+          "resolve",
+          "walk"
+        ],
+        "traceRows": 2138,
+        "partyHitTargets": [
+          "AIRA",
+          "NOIR"
+        ],
+        "videoJoin": "NOT_ESTABLISHED_OCR_REQUIRED"
+      },
+      "forcedStateVisualReview": {
+        "reviewPath": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r002_dense/REVIEW_REMAINING18_R001.md",
+        "classification": "PARTIAL_SAMPLED_RENDER; no gross cropping observed; natural event timing and full motion not accepted",
+        "visualFinding": "白い大型獣。両腕/胴の姿勢変化が読み取れ、全身は画面内。予告から命中への連続性は未評価。",
+        "observedStates": null
+      },
+      "currentVideoToEventJoin": "UNPROVEN unless explicitly noted above",
+      "completionJudgment": "PARTIAL_OR_UNVERIFIED"
+    },
+    {
+      "actorID": "ACT_B_R04_B",
+      "encounterID": "B_R04_B",
+      "runtimeMap": "R300 exact key present; mapping is not acceptance",
+      "expectedStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "actualBattleTrace": {
+        "kind": "R391 case20 raw trace (CAPTURED_BATTLE_FINISHED; runner rejected composite root texture check)",
+        "encounterID": "B_R04_B",
+        "observedStates": [
+          "anticipate",
+          "execute",
+          "hit",
+          "idle",
+          "recover",
+          "resolve",
+          "walk"
+        ],
+        "traceRows": 2823,
+        "videoJoin": "NOT_ESTABLISHED_OCR_REQUIRED",
+        "validatorStatus": "render_actor_detached false positive; all frameRows nodeAttached=true, root texturePresent=false"
+      },
+      "forcedStateVisualReview": {
+        "reviewPath": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r002_dense/REVIEW_REMAINING18_R001.md",
+        "classification": "PARTIAL_SAMPLED_RENDER; no gross cropping observed; natural event timing and full motion not accepted",
+        "visualFinding": "青い竜。大きな輪郭と尾が見え、区間中に姿勢変化あり。既存R209の通常ボス画面証拠は別途あり。自然な動作/タイミングの判定はこの強制区間に限る。",
+        "observedStates": null
+      },
+      "currentVideoToEventJoin": "UNPROVEN unless explicitly noted above",
+      "completionJudgment": "PARTIAL_OR_UNVERIFIED"
+    },
+    {
+      "actorID": "ACT_E_R05_01",
+      "encounterID": "E_R05_01",
+      "runtimeMap": "R300 exact key present; mapping is not acceptance",
+      "expectedStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "actualBattleTrace": {
+        "status": "NO_R391_OR_R377_TRACE_IN_REVIEWED_SET"
+      },
+      "forcedStateVisualReview": {
+        "reviewPath": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r002_dense/REVIEW_REMAINING18_R001.md",
+        "classification": "PARTIAL_SAMPLED_RENDER; no gross cropping observed; natural event timing and full motion not accepted",
+        "visualFinding": "金色の小型個体。全身は画面内だが画面上の占有が小さい。既存R337通常戦闘動画は別途レビュー済みで、今回の抽出を再試験とは扱わない。",
+        "observedStates": null
+      },
+      "currentVideoToEventJoin": "UNPROVEN unless explicitly noted above",
+      "completionJudgment": "PARTIAL_OR_UNVERIFIED"
+    },
+    {
+      "actorID": "ACT_E_R05_02",
+      "encounterID": "E_R05_02",
+      "runtimeMap": "R300 exact key present; mapping is not acceptance",
+      "expectedStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "actualBattleTrace": {
+        "status": "NO_R391_OR_R377_TRACE_IN_REVIEWED_SET"
+      },
+      "forcedStateVisualReview": {
+        "reviewPath": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r002_dense/REVIEW_REMAINING18_R001.md",
+        "classification": "PARTIAL_SAMPLED_RENDER; no gross cropping observed; natural event timing and full motion not accepted",
+        "visualFinding": "淡色の小型人型。姿勢差は小さく、画面内には収まる。実戦における被弾・復帰の因果は不明。",
+        "observedStates": null
+      },
+      "currentVideoToEventJoin": "UNPROVEN unless explicitly noted above",
+      "completionJudgment": "PARTIAL_OR_UNVERIFIED"
+    },
+    {
+      "actorID": "ACT_E_R05_03",
+      "encounterID": "E_R05_03",
+      "runtimeMap": "R300 exact key present; mapping is not acceptance",
+      "expectedStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "actualBattleTrace": {
+        "status": "NO_R391_OR_R377_TRACE_IN_REVIEWED_SET"
+      },
+      "forcedStateVisualReview": {
+        "reviewPath": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r002_dense/REVIEW_REMAINING18_R001.md",
+        "classification": "PARTIAL_SAMPLED_RENDER; no gross cropping observed; natural event timing and full motion not accepted",
+        "visualFinding": "金白色の小型発光個体。画面内に見えるが細部は小さい。今回確認した範囲で切れはない。",
+        "observedStates": null
+      },
+      "currentVideoToEventJoin": "UNPROVEN unless explicitly noted above",
+      "completionJudgment": "PARTIAL_OR_UNVERIFIED"
+    },
+    {
+      "actorID": "ACT_E_R05_04",
+      "encounterID": "E_R05_04",
+      "runtimeMap": "R300 exact key present; mapping is not acceptance",
+      "expectedStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "actualBattleTrace": {
+        "status": "NO_R391_OR_R377_TRACE_IN_REVIEWED_SET"
+      },
+      "forcedStateVisualReview": {
+        "reviewPath": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r002_dense/REVIEW_REMAINING18_R001.md",
+        "classification": "PARTIAL_SAMPLED_RENDER; no gross cropping observed; natural event timing and full motion not accepted",
+        "visualFinding": "緑色の小型四足/植物型。胴と脚の姿勢が少し変化し、全体は画面内。",
+        "observedStates": null
+      },
+      "currentVideoToEventJoin": "UNPROVEN unless explicitly noted above",
+      "completionJudgment": "PARTIAL_OR_UNVERIFIED"
+    },
+    {
+      "actorID": "ACT_B_R05_A",
+      "encounterID": "B_R05_A",
+      "runtimeMap": "R300 exact key present; mapping is not acceptance",
+      "expectedStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "actualBattleTrace": {
+        "status": "NO_R391_OR_R377_TRACE_IN_REVIEWED_SET"
+      },
+      "forcedStateVisualReview": {
+        "reviewPath": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r002_dense/REVIEW_REMAINING18_R001.md",
+        "classification": "PARTIAL_SAMPLED_RENDER; no gross cropping observed; natural event timing and full motion not accepted",
+        "visualFinding": "金色の輪状/機械的シルエット。全体は見えるが小さく、初見で敵の身体として読む明瞭さは通常戦闘画面で確認を要する。既存R244の通常ボス画面は別証拠。",
+        "observedStates": null
+      },
+      "currentVideoToEventJoin": "UNPROVEN unless explicitly noted above",
+      "completionJudgment": "PARTIAL_OR_UNVERIFIED"
+    },
+    {
+      "actorID": "ACT_B_R05_B",
+      "encounterID": "B_R05_B",
+      "runtimeMap": "R300 exact key present; mapping is not acceptance",
+      "expectedStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "actualBattleTrace": {
+        "status": "NO_R391_OR_R377_TRACE_IN_REVIEWED_SET"
+      },
+      "forcedStateVisualReview": {
+        "reviewPath": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r002_dense/REVIEW_REMAINING18_R001.md",
+        "classification": "PARTIAL_SAMPLED_RENDER; no gross cropping observed; natural event timing and full motion not accepted",
+        "visualFinding": "淡色の犬科大型個体。頭・脚・胴の配置変化が見え、全身は画面内。既存R334の挑戦再生は別途確認済み。",
+        "observedStates": null
+      },
+      "currentVideoToEventJoin": "UNPROVEN unless explicitly noted above",
+      "completionJudgment": "PARTIAL_OR_UNVERIFIED"
+    }
+  ],
+  "allies": [
+    {
+      "actorID": "AIRA",
+      "R377PartyTraceObservedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "R377MissingPoseStates": [],
+      "R377VideoFrameJoin": "S03 marker joins 7 sampled frames in one full-party battle; video itself ~7.97s, not complete high-cadence coverage",
+      "ActualDamageTargetInR391": true,
+      "R391DamageTargetSemantics": "passive post-action actor snapshots during actual damage window, not proof of visible hit animation",
+      "VisualHitState": "SAMPLED_FOR_AIRA_ONLY",
+      "judgment": "PARTIAL"
+    },
+    {
+      "actorID": "ERNA",
+      "R377PartyTraceObservedStates": [
+        "anticipate",
+        "execute",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "R377MissingPoseStates": [
+        "hit"
+      ],
+      "R377VideoFrameJoin": "S03 marker joins 7 sampled frames in one full-party battle; video itself ~7.97s, not complete high-cadence coverage",
+      "ActualDamageTargetInR391": true,
+      "R391DamageTargetSemantics": "passive post-action actor snapshots during actual damage window, not proof of visible hit animation",
+      "VisualHitState": "NOT_VISUALLY_CONFIRMED",
+      "judgment": "PARTIAL"
+    },
+    {
+      "actorID": "LUNA",
+      "R377PartyTraceObservedStates": [
+        "anticipate",
+        "execute",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "R377MissingPoseStates": [
+        "hit"
+      ],
+      "R377VideoFrameJoin": "S03 marker joins 7 sampled frames in one full-party battle; video itself ~7.97s, not complete high-cadence coverage",
+      "ActualDamageTargetInR391": true,
+      "R391DamageTargetSemantics": "passive post-action actor snapshots during actual damage window, not proof of visible hit animation",
+      "VisualHitState": "NOT_VISUALLY_CONFIRMED",
+      "judgment": "PARTIAL"
+    },
+    {
+      "actorID": "NOIR",
+      "R377PartyTraceObservedStates": [
+        "anticipate",
+        "execute",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "R377MissingPoseStates": [
+        "hit"
+      ],
+      "R377VideoFrameJoin": "S03 marker joins 7 sampled frames in one full-party battle; video itself ~7.97s, not complete high-cadence coverage",
+      "ActualDamageTargetInR391": true,
+      "R391DamageTargetSemantics": "passive post-action actor snapshots during actual damage window, not proof of visible hit animation",
+      "VisualHitState": "NOT_VISUALLY_CONFIRMED",
+      "judgment": "PARTIAL"
+    }
+  ],
+  "environmentAndVFX": [
+    {
+      "id": "ENV_R01",
+      "class": "ambient",
+      "runtimeEntry": "CANDIDATE_FRAME_SEQUENCES_NOT_FULL_GAME_INTEGRATED",
+      "bundleRefs": 24,
+      "bundleRefsExistAndHashMatch": true,
+      "priorReadiness": [
+        "PARTIAL"
+      ],
+      "currentTemporalVisualReview": "NOT_REVIEWED_IN_R377_R391_R366_REPORTS",
+      "currentBattleEventJoin": "NONE_FOR_THIS_ASSET_ID",
+      "judgment": "PARTIAL_MAPPING_ONLY"
+    },
+    {
+      "id": "FX_R01",
+      "class": "combat_vfx",
+      "runtimeEntry": "CANDIDATE_FRAME_SEQUENCES_NOT_FULL_GAME_INTEGRATED",
+      "bundleRefs": 56,
+      "bundleRefsExistAndHashMatch": true,
+      "priorReadiness": [
+        "PARTIAL"
+      ],
+      "currentTemporalVisualReview": "NOT_REVIEWED_IN_R377_R391_R366_REPORTS",
+      "currentBattleEventJoin": "NONE_FOR_THIS_ASSET_ID",
+      "judgment": "PARTIAL_MAPPING_ONLY"
+    },
+    {
+      "id": "ENV_R02",
+      "class": "ambient",
+      "runtimeEntry": "CANDIDATE_FRAME_SEQUENCES_NOT_FULL_GAME_INTEGRATED",
+      "bundleRefs": 24,
+      "bundleRefsExistAndHashMatch": true,
+      "priorReadiness": [
+        "PARTIAL"
+      ],
+      "currentTemporalVisualReview": "NOT_REVIEWED_IN_R377_R391_R366_REPORTS",
+      "currentBattleEventJoin": "NONE_FOR_THIS_ASSET_ID",
+      "judgment": "PARTIAL_MAPPING_ONLY"
+    },
+    {
+      "id": "FX_R02",
+      "class": "combat_vfx",
+      "runtimeEntry": "CANDIDATE_FRAME_SEQUENCES_NOT_FULL_GAME_INTEGRATED",
+      "bundleRefs": 48,
+      "bundleRefsExistAndHashMatch": true,
+      "priorReadiness": [
+        "PARTIAL"
+      ],
+      "currentTemporalVisualReview": "NOT_REVIEWED_IN_R377_R391_R366_REPORTS",
+      "currentBattleEventJoin": "NONE_FOR_THIS_ASSET_ID",
+      "judgment": "PARTIAL_MAPPING_ONLY"
+    },
+    {
+      "id": "ENV_R03",
+      "class": "ambient",
+      "runtimeEntry": "CANDIDATE_FRAME_SEQUENCES_NOT_FULL_GAME_INTEGRATED",
+      "bundleRefs": 24,
+      "bundleRefsExistAndHashMatch": true,
+      "priorReadiness": [
+        "PARTIAL"
+      ],
+      "currentTemporalVisualReview": "NOT_REVIEWED_IN_R377_R391_R366_REPORTS",
+      "currentBattleEventJoin": "NONE_FOR_THIS_ASSET_ID",
+      "judgment": "PARTIAL_MAPPING_ONLY"
+    },
+    {
+      "id": "FX_R03",
+      "class": "combat_vfx",
+      "runtimeEntry": "CANDIDATE_FRAME_SEQUENCES_NOT_FULL_GAME_INTEGRATED",
+      "bundleRefs": 48,
+      "bundleRefsExistAndHashMatch": true,
+      "priorReadiness": [
+        "PARTIAL"
+      ],
+      "currentTemporalVisualReview": "NOT_REVIEWED_IN_R377_R391_R366_REPORTS",
+      "currentBattleEventJoin": "NONE_FOR_THIS_ASSET_ID",
+      "judgment": "PARTIAL_MAPPING_ONLY"
+    },
+    {
+      "id": "ENV_R04",
+      "class": "ambient",
+      "runtimeEntry": "CANDIDATE_FRAME_SEQUENCES_NOT_FULL_GAME_INTEGRATED",
+      "bundleRefs": 24,
+      "bundleRefsExistAndHashMatch": true,
+      "priorReadiness": [
+        "PARTIAL"
+      ],
+      "currentTemporalVisualReview": "NOT_REVIEWED_IN_R377_R391_R366_REPORTS",
+      "currentBattleEventJoin": "NONE_FOR_THIS_ASSET_ID",
+      "judgment": "PARTIAL_MAPPING_ONLY"
+    },
+    {
+      "id": "FX_R04",
+      "class": "combat_vfx",
+      "runtimeEntry": "CANDIDATE_FRAME_SEQUENCES_NOT_FULL_GAME_INTEGRATED",
+      "bundleRefs": 48,
+      "bundleRefsExistAndHashMatch": true,
+      "priorReadiness": [
+        "PARTIAL"
+      ],
+      "currentTemporalVisualReview": "NOT_REVIEWED_IN_R377_R391_R366_REPORTS",
+      "currentBattleEventJoin": "NONE_FOR_THIS_ASSET_ID",
+      "judgment": "PARTIAL_MAPPING_ONLY"
+    },
+    {
+      "id": "ENV_R05",
+      "class": "ambient",
+      "runtimeEntry": "CANDIDATE_FRAME_SEQUENCES_NOT_FULL_GAME_INTEGRATED",
+      "bundleRefs": 24,
+      "bundleRefsExistAndHashMatch": true,
+      "priorReadiness": [
+        "PARTIAL"
+      ],
+      "currentTemporalVisualReview": "NOT_REVIEWED_IN_R377_R391_R366_REPORTS",
+      "currentBattleEventJoin": "NONE_FOR_THIS_ASSET_ID",
+      "judgment": "PARTIAL_MAPPING_ONLY"
+    },
+    {
+      "id": "FX_R05",
+      "class": "combat_vfx",
+      "runtimeEntry": "CANDIDATE_FRAME_SEQUENCES_NOT_FULL_GAME_INTEGRATED",
+      "bundleRefs": 48,
+      "bundleRefsExistAndHashMatch": true,
+      "priorReadiness": [
+        "PARTIAL"
+      ],
+      "currentTemporalVisualReview": "NOT_REVIEWED_IN_R377_R391_R366_REPORTS",
+      "currentBattleEventJoin": "NONE_FOR_THIS_ASSET_ID",
+      "judgment": "PARTIAL_MAPPING_ONLY"
+    }
+  ],
+  "visualFindings": {
+    "confirmedGrossDefects": "None established in reviewed samples.",
+    "specificUnconfirmedConcern": "ACT_B_R01_B forced pose samples retain a very similar upright tree silhouette between telegraph and hit; R366 marks this as an attention item, not confirmed runtime defect.",
+    "readabilityWatchOnly": [
+      "ACT_E_R03_01",
+      "ACT_E_R05_01",
+      "ACT_E_R05_02",
+      "ACT_E_R05_03",
+      "ACT_E_R05_04",
+      "ACT_B_R03_A",
+      "ACT_B_R05_A"
+    ],
+    "R366All30ForcedStateReview": "27 actors had R366 sample sheets; missing IDs ACT_E_R01_01, ACT_E_R03_02, ACT_B_R02_A have R377/R391 battle visual/trace evidence but no R366 forced-state sheet."
+  },
+  "capturePlan": [
+    {
+      "priority": 1,
+      "batch": "Complete the seven R407 cases already registered by Root",
+      "targets": [
+        "B_R04_B",
+        "E_R05_01",
+        "E_R05_02",
+        "E_R05_03",
+        "E_R05_04",
+        "B_R05_A",
+        "B_R05_B"
+      ],
+      "perCase": "Full battle video to actual resolution, up to 60 s/180 MB; keep actual trace, per-case battle_art receipt and video marker joined by pixels/OCR. Do not treat markerVisible node flag as pixel proof.",
+      "aggregateCapBytes": 2000000000,
+      "reason": "B_R04_B was the R391 composite-validator false positive with unreviewed raw visual sequence; all six R05 cases lacked R391 event traces and have only forced-state samples/selected older individual clips."
+    },
+    {
+      "priority": 2,
+      "batch": "If R407 closes the seven but residual trace gaps remain, use the same R407 app and exact existing challenge routes for only the 16 prior actors whose R377/R391 battle traces lack execute and/or recover.",
+      "targets": [
+        "ACT_E_R01_02",
+        "ACT_E_R01_03",
+        "ACT_B_R01_A",
+        "ACT_B_R01_B",
+        "ACT_E_R02_01",
+        "ACT_E_R02_02",
+        "ACT_E_R02_04",
+        "ACT_E_R03_02",
+        "ACT_E_R03_03",
+        "ACT_E_R03_04",
+        "ACT_B_R03_A",
+        "ACT_B_R03_B",
+        "ACT_E_R04_01",
+        "ACT_E_R04_02",
+        "ACT_E_R04_04",
+        "ACT_B_R04_A"
+      ],
+      "perCase": "Single naturally played battle, full to resolution, 60 s / 180 MB hard cap. Record states only when passive controller snapshot shows them; no forced poses. If encounter ends before execute/recover, label that state unobserved/conditional, not an asset defect.",
+      "estimatedAdditionalBytes": "~2.1 GB at measured R391 rate (20 clips/434,640,399 bytes/~8s each); hard cap ~2.88 GB for 16 clips. Re-check available capacity and split if required.",
+      "reason": "These are the trace gaps, not all30 recaptures. Old R391 videos are only 7.90–8.07s (20 clips, 434.6MB), covering the opening segment; exact pixel marker OCR/join was not established."
+    },
+    {
+      "priority": 3,
+      "batch": "Use the R407 B_R04_B area attack clip (already in priority 1) to check all four party hit reactions.",
+      "targets": [
+        "AIRA",
+        "ERNA",
+        "LUNA",
+        "NOIR"
+      ],
+      "acceptance": "A real area-damage event must be visible and marker-joined to the four actor hit poses; if fewer are actually targeted/visible, do not infer coverage from target-row counters. The existing R377 full-party trace renders all four across six states but its 8s video visibly samples AIRA hit only."
+    },
+    {
+      "priority": 4,
+      "batch": "Environment/VFX residual, after the enemy sequence: capture five region representative clips rather than one per ID.",
+      "targets": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05"
+      ],
+      "acceptance": "In each region, one continuous playable view with the corresponding ambient background and at least one actually triggered FX; preserve event/asset ID and actual pixel timing. This is only a first pass: three ENV subgroups per region (24 indexed refs) and 48/56 FX refs are not all proven by one sample. Current R407 seven-case battles cover R04/R05 only; existing R377/R391 videos include R01–R04 scenes but lack reviewed per-ID ENV/FX joins."
+    }
+  ],
+  "limitations": [
+    "R391 is explicitly SYNTHETIC_CHALLENGE_TECHNICAL_ONLY; R377 uses a QA fixture. Neither demonstrates ordinary campaign occurrence.",
+    "R377 enemy videos and all R391 videos have no verified event-to-video join. R377 one full-party clip has an S03 marker joining only seven sampled frames. R391 marker reports visible in scene rows but videoJoin requires OCR and remains unestablished.",
+    "R391 result is CAPTURE_FAILED_RAW_PRESERVED: 19 cases require visual review; case20 B_R04_B trace reached battle-finished but runner rejected composite root texture; R05 six were never launched.",
+    "R366 visual samples are forced state requests, not ordinary event-driven timing. They show no gross clipping in reviewed windows; they cannot establish transition, timing, hit causality, naturalness, or death/resolve duration.",
+    "All five ENV and five FX rows in R308 remain PARTIAL; runtime key/hash/reference presence is not current visual/event QA.",
+    "Source/app parity differs across R377, R391, R407 builds. Reuse prior visual conclusions only for the exact artifact/scale in those reports, not as current-R407 visual acceptance without renderer/resource fingerprint proof.",
+    "No formal Human art adoption or release acceptance is implied."
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "schema": "completion-register-r006-v1",
+  "status": "ROOT_ACCEPTED_WORK_REGISTER_NOT_RELEASE_ACCEPTANCE",
+  "createdAtLocal": "2026-10-14 Asia/Tokyo",
+  "purpose": "Current priority and finite local acceptance work; no formal design/art/SKU adoption.",
+  "authorityBoundary": "Does not formally adopt products, prices, assets, or quality decisions. No build, test, simulator, source, app, or save modification performed for this reconciliation.",
+  "supersedes": "R005 only after Root review; never overwrites R005.",
+  "sourceRegister": {
+    "path": "docs/production/current/qa_drafts/final_acceptance_r360/COMPLETION_REGISTER_R005.json",
+    "sha256": "3bdd7a7bf97a4c986498c07657f8c47590555406248a76647910f86eb4c3ee2b"
+  },
+  "reviewedEvidence": {
+    "completionRegisterR005": {
+      "path": "docs/production/current/qa_drafts/final_acceptance_r360/COMPLETION_REGISTER_R005.json",
+      "sha256": "3bdd7a7bf97a4c986498c07657f8c47590555406248a76647910f86eb4c3ee2b",
+      "bytes": 19121
+    },
+    "r374Run": {
+      "path": "docs/production/current/qa_drafts/economy_release_matrix_r374/candidate_r002/runner_r002/runs/R374_MATRIX_001/RUN.json",
+      "sha256": "860273ae6557762adb657dd4a4eee9966fb51f124dd2bbf7c36e2800624aad07",
+      "bytes": 105845
+    },
+    "r374IndependentReview": {
+      "path": "docs/production/current/qa_drafts/economy_release_matrix_r374/independent_qualitative_review_r001/REVIEW_R001.json",
+      "sha256": "8901f95afa1711a3585a6a900211f41163f4c392ab8784367d17f48b9a8bdfd9",
+      "bytes": 22045
+    },
+    "r388Review": {
+      "path": "docs/production/current/qa_drafts/completion_review_r388/REVIEW_R001.json",
+      "sha256": "c07c858c3b601f66281bc383d48d7fba79aebf0650dd1f43661daf807df9d3f5",
+      "bytes": 18220
+    },
+    "r375Review": {
+      "path": "docs/production/current/qa_drafts/natural_duplicate_ui_r375/independent_review_r002/REVIEW_R002.json",
+      "sha256": "7cafeda9569d82c2cdecdb2b3ea00165c958e63a73e5f6fa4efb97f427b01553",
+      "bytes": 3028
+    },
+    "r377Commerce": {
+      "path": "docs/production/current/qa_drafts/storekit_restore_route_r377/execution_r001/UI_COMPLETION_R001.json",
+      "sha256": "c7570f651eb869d9c80123dd1114e667c22b926cebcb8c5174aabca7f0ec3867",
+      "bytes": 3009
+    },
+    "r377Motion": {
+      "path": "docs/production/current/qa_drafts/enemy_motion_batch_r377/capture_candidate_r004/capture_r002/RUN.json",
+      "sha256": "7f8a335ab40bb13abb63648db0db05dc50ba28871294f67a9a7ca5a62c9676db",
+      "bytes": 34778
+    },
+    "r385Readback": {
+      "path": "docs/production/current/qa_drafts/native_completion_r385/build_tools_r004/postbuild_readback_r001/RESULT.json",
+      "sha256": "378f9f2f545dd877ec290c21ff0e036eda8668db84198a3b4fa33ec1acc9bdc3",
+      "bytes": 639582
+    },
+    "r390Preflight": {
+      "path": "docs/production/current/qa_drafts/ui_long_inventory_r390/execution_r001/PREFLIGHT_R001.json",
+      "sha256": "c1dfd73e8e57bcb7f22c1758b8537d66b286fcef8ed9a3c53f8e300cad0bd688",
+      "bytes": 1086
+    },
+    "r390FirstLaunch": {
+      "path": "docs/production/current/qa_drafts/ui_long_inventory_r390/execution_r001/FIRST_LAUNCH_R001.json",
+      "sha256": "c00c72f6c2ebf53032a3dfaaa9ade7424739da6e5c14c0a18b3481e5d5a74072",
+      "bytes": 393
+    },
+    "r391AssetReport": {
+      "path": "docs/production/current/qa_drafts/final_asset_gaps_r391/FINAL_ASSET_GAPS_R001.json",
+      "sha256": "e7b2f7b4fc3c9513f39f0a4742fc4d2aa2d1dcc8cad618d1983838c3d20c0de1",
+      "bytes": 18569
+    },
+    "r391Erratum": {
+      "path": "docs/production/current/qa_drafts/final_asset_gaps_r391/ERRATUM_R002.json",
+      "sha256": "97be20ce780443a401ed356eca5b697baf3b54c2b7534ebe3c868d4fea1e6b6c",
+      "bytes": 2314
+    },
+    "execution_r001_RESULT_CANDIDATE_R001.json": {
+      "path": "docs/production/current/qa_drafts/ui_long_inventory_r390/execution_r001/RESULT_CANDIDATE_R001.json",
+      "sha256": "c8a9f315ae70bbcc467be428a8fe21e3fe2ab30dde97d64ccfc7e398d6422997",
+      "bytes": 16670
+    },
+    "execution_r001_PROTECTED_READBACK_R001.json": {
+      "path": "docs/production/current/qa_drafts/ui_long_inventory_r390/execution_r001/PROTECTED_READBACK_R001.json",
+      "sha256": "3339e2b73b93667abbc40e0bcbd17ddecd6c276def62a92738ff213ad476530c",
+      "bytes": 331
+    },
+    "execution_r002_RUN.json": {
+      "path": "docs/production/current/qa_drafts/heal_build_validation_r394/execution_r002/RUN.json",
+      "sha256": "2b066af438b6587977074af95f07b16380e1d4b5ddce50b201385dab4c19dd43",
+      "bytes": 33863
+    },
+    "resume_r006_r001_RUN.json": {
+      "path": "docs/production/current/qa_drafts/combined_core_validation_r387/resume_r006_r001/RUN.json",
+      "sha256": "3586233cf1330c512d3dd711f3a8abccbc092a8b3b933a8d2ea3738f699d17e3",
+      "bytes": 22363
+    },
+    "root_recovery_001_RECOVERY.json": {
+      "path": "docs/production/current/qa_drafts/enemy_motion_batch_r377/capture_candidate_r004/capture_r002/root_recovery_001/RECOVERY.json",
+      "sha256": "529826e8f70961f87759bc249597c10143e5fdd1d9f4e4e4ec866bc138e91831",
+      "bytes": 8982
+    }
+  },
+  "corrections": [
+    "R377 motion raw RECOVERY_PENDING remains untouched. Root recovery_001 and independent_review_r004 establish protected-state closure and scoped partial visual review.",
+    "R390 has 21 captures, 3 cohorts and all 3 cold save readbacks. Independent review found search placeholder clipping at compact maximum text. No whole-list/VoiceOver/real-device acceptance.",
+    "R390 uses fresh natural UI only for revision1→9. Its long inventories are byte-exact R374 virtual90-day earned saves; their clocks lie in the future, so these views do not establish present-time claims/economic transactions.",
+    "R390 total preflight-to-last-capture interval exceeded the30-minute target by0.128s; retained as a budget miss, with no added capture after that boundary. 37.8MB unique evidence before closure, below120MB.",
+    "R387 R006 resume emitted 3methods2PASS1FAIL; R384 all8methods pass across exact source runs; R3766previewsPASS;R37724previews show3otherfamilies but not apprentice heal.",
+    "R394 R002 compiled6previews/failed; source slots expectation still wrong and no heal event observed. This is not proof of a game-runtime bug or a passing effect test.",
+    "R391+R395 source integrated locally; R398 native build and delta UI checks still pending."
+  ],
+  "items": [
+    {
+      "id": "SAVE-01",
+      "severity": "gameblocking",
+      "implementation": "Implemented: save generations, transaction receipts, and atomic equipment-set handling.",
+      "verified": "Scoped Core crash completion passed: exact owned-child SIGKILL after primary replacement, duplicate receipt replay and cold reload; R362 direct completion review is separate from the earlier incomplete wrapper run.",
+      "quality": "Scoped condition pass only; not full iOS power-loss or device interruption coverage.",
+      "remainingLocal": "Only regression-triggered checks for new persistence changes; do not repeat the same R362 crash route.",
+      "externalHuman": "No current external gate for the tested condition.",
+      "nextBoundedWork": {
+        "when": "only on a persistence change",
+        "attempts": 1,
+        "minutes": 3
+      }
+    },
+    {
+      "id": "GEAR-01",
+      "severity": "gameblocking",
+      "implementation": "Natural acquisition, refinement, dismantle refund and saved loadouts implemented in current development profile.",
+      "verified": "R390 current R385 Release: new-save two battles→real five-minute gather→craft→trial/equip→free5draws→revision9 cold byte-exact; 4779/4979 earned virtual90-day inventories, search, LR disclosure and region CTA, cold bytes exact on compact/large. Original1925app/1692data files unchanged.",
+      "quality": "SCOPED_OPERATIONAL_PASS; not complete inventory feature/real-device performance signoff.",
+      "remainingLocal": "No further mass-inventory replay absent a source change or reproducible defect. Batch-dismantle baseline evidence remains separate; current test covers search/LR navigation and cold storage.",
+      "externalHuman": null,
+      "nextBoundedWork": {
+        "when": "only after a relevant code change or reproducible defect",
+        "attempts": 1,
+        "minutes": 10
+      }
+    },
+    {
+      "id": "PROGRESS-01",
+      "severity": "gameblocking",
+      "implementation": "Current Core supports five regions, campaign/challenges, research, craft/evolution, natural gear and saves.",
+      "verified": "R244/R246/R253 ordinary play reached all 15 challenge IDs (R246 itself closed 13/15; R253 completed the final two); R322/328/291 ordinary research routes, plus R368 one seeded 30-day free/no-ad Core pilot. R374 ran 16/16 fixed-script cohort cases, but not an ordinary-user pacing study. R390 adds actual current native new-player craft/equip/gacha/cold journey with no QA args or injected gear/currency/clock; R390 policy parity verifies the Core profiles against the earned cohort inputs.",
+      "quality": "PARTIAL_JOINED_EVIDENCE: native onboarding and prior ordinary routes plus current Core simulation; not a single fresh human full campaign.",
+      "remainingLocal": "R398 first-craft guidance regression; reuse exact Core policy parity and prior earned5region/15challenge routes. Do not demand an artificial30-minute whole multi-day campaign or inject progress.",
+      "externalHuman": null,
+      "nextBoundedWork": {
+        "attempts": 1,
+        "minutes": 10,
+        "scope": "R398 current normal UI first-craft recipe order and copy only; Core unchanged"
+      }
+    },
+    {
+      "id": "MECHANICS-01",
+      "severity": "releasequality",
+      "implementation": "Fifteen challenge mechanics and their combat event/HP accounting are implemented; R267 single-target telegraph targeting and R256 DoT correction are included.",
+      "verified": "R246/R253 establish 15/15 ordinary challenge clears. R371 focused suite has 15 methods passing in bounded Core fixtures; R359 membrane comparison is separate. R374 simulated preview covers only CH_R01_03, CH_R03_02, CH_R05_03 for each cohort.",
+      "quality": "Mechanics pass is bounded; not all challenge behavior in one natural build, not a complete set of distinct multi-build choices.",
+      "remainingLocal": "One diagnosis-backed owned starter-weapon heal comparison (R394R003,one seed/two arms) only; then retain missing condition and proceed. Reuse other15mechanic tests.",
+      "externalHuman": null,
+      "nextBoundedWork": {
+        "attempts": 1,
+        "minutes": 5,
+        "maxAdditionalBytes": 300000000,
+        "scope": "Owned lower-attack gear via ordinary in-memory equip; no HP edits or grants"
+      }
+    },
+    {
+      "id": "ECONOMY-01",
+      "severity": "releasequality",
+      "implementation": "R3 candidate economy and eight explicit test-only cohort treatments are implemented.",
+      "verified": "R374 same binary: 16/16 cases, eight cohorts at virtual 30/90 days, one seed and one scripted planner; saves reopened byte-exact. R388 qualitative review found no proven economy defect. All arms reached the same planned 30 campaign/15 challenge/5 research, first enemy day 9 and final boss day 10. Ticket-200 90-day arm ended at 4,980 inventory rows vs free 4,780, 200 paid-mock draws and 210 peak pending trials; it performed zero evolutions versus three in free.",
+      "quality": "Execution passed; product value, player choice, consumer pacing and balance did not. One seed/script cannot establish causality.",
+      "remainingLocal": "No repeat16-case script. R390 loaded4779/4979gear, search andLRnavigation is readable; further causal spending/value studies await actual product decisions and broader human play evidence.",
+      "externalHuman": "Final SKU contents, prices, and purchase value are Human decisions; actual StoreKit/server/device acceptance is a separate external gate.",
+      "nextBoundedWork": {
+        "attempts": 1,
+        "minutes": 30,
+        "scope": "existing cohort inventory usability only"
+      }
+    },
+    {
+      "id": "GEAR-02",
+      "severity": "releasequality",
+      "implementation": "Craft/evolution, gear rarity, latent effects, rank refinement and dismantle investment records exist.",
+      "verified": "R3835inventory/2controlledLR-floor PASS; R3848projection/catalog methods PASS across R387runs; R3766owned direct/poison previewsPASS; R37724previews observed3effectfamilies while apprentice healing absent. R390 LRcollection seen on compact/large even when active search matches0.",
+      "quality": "LR distinctive value and multi-build value remain unaccepted; no effect-benefit conclusion from missing result artifacts.",
+      "remainingLocal": "Finish the one bounded R394R003 actual heal opportunity; identify any concrete unmet LR combat integration condition from savedfloor/effect traces, without promoting observational pairing to causal uplift.",
+      "externalHuman": "Formal LR design/quality adoption remains a Human gate; local implementation and evidence work remains delegated.",
+      "nextBoundedWork": {
+        "attempts": 1,
+        "minutes": 15,
+        "scope": "corrected R387 suite plus one event-backed LR comparison"
+      }
+    },
+    {
+      "id": "COMMERCE-01",
+      "severity": "releasequality",
+      "implementation": "StoreKit local bridge and save sink implemented; mock receipt path remains separate.",
+      "verified": "R377 Debug Simulator local StoreKit UI passed missing/cancel no-write, furniture/ticket delivery, fresh restore limited to non-consumable, duplicate restore and cold bytes; R365 synthetic sink adapter test is a distinct narrower result.",
+      "quality": "Local simulator QA only. No real charge occurred; no production authority established.",
+      "remainingLocal": "No duplicate local success-path rerun. Reconcile current sink pending/refund/failure source-pinned tests only if source changes; otherwise current blocker is external.",
+      "externalHuman": "Apple sandbox/real account, production server receipt authority, real-device/multi-device rights, and final product configuration require Human/external environment.",
+      "nextBoundedWork": {
+        "attempts": 1,
+        "minutes": 10,
+        "when": "only if commerce source changes"
+      }
+    },
+    {
+      "id": "UI-01",
+      "severity": "releasequality",
+      "implementation": "Primary screens and navigation are implemented; inventory indexing optimization is integrated.",
+      "verified": "R390 current R385 Release: new-save two battles→real five-minute gather→craft→trial/equip→free5draws→revision9 cold byte-exact; 4779/4979 earned virtual90-day inventories, search, LR disclosure and region CTA, cold bytes exact on compact/large. Original1925app/1692data files unchanged.",
+      "quality": "Partial Release UI journey, not device/VoiceOver/small-screen signoff.",
+      "remainingLocal": "R398 first-craft priority and future-clock message checks. One bounded remaining accessibility/gesture/compact-text check; clipping of search prompt recorded, no pixel tuning loop.",
+      "externalHuman": null,
+      "nextBoundedWork": {
+        "attempts": 1,
+        "minutes": 20,
+        "maxUniqueEvidenceBytes": 30000000
+      }
+    },
+    {
+      "id": "ART-01",
+      "severity": "releasequality",
+      "implementation": "Four-character movement/combat presentation paths are present.",
+      "verified": "R3775rawclips+rootrecovery preserved; independentR004 partial review: AIRA7states, other3hit states missing; NOIRdash2 linkage incomplete.",
+      "quality": "Not accepted for all four actors, hit reactions, equipment occlusion, or naturalness.",
+      "remainingLocal": "Use R391 passive actual-damage windows during remaining26enemy captures. Review missing actor states only; no forcedpose acceptance or repeats of covered AIRA.",
+      "externalHuman": "Formal visual adoption is Human-owned; technical coverage remains local.",
+      "nextBoundedWork": {
+        "attempts": 1,
+        "minutes": 15,
+        "scope": "existing clip review then missing states only"
+      }
+    },
+    {
+      "id": "ART-02",
+      "severity": "releasequality",
+      "implementation": "All 30 enemies are wired to rendered battle assets/motion routes.",
+      "verified": "R377 four actual R01 encounters independent visual review completedpartial: readable at phone size; two recover states unobserved. Root preservation recovery verified; rawstatus unchanged.",
+      "quality": "Not accepted across all 30 units or required states.",
+      "remainingLocal": "R391 remaining26 actual-render encounters in isolated syntheticchallenge variant, including exactregion corecommands. Distinguish static presence, state observation and naturalness. Stopafterboundedcase failure, fixconcretecause once, no massredo.",
+      "externalHuman": "Formal art adoption is Human-owned; local temporal QA remains open.",
+      "nextBoundedWork": {
+        "attempts": 1,
+        "minutes": 20,
+        "maxUniqueEvidenceBytes": 1250000000,
+        "scope": "26missing enemyunits, read-only reuse4R01"
+      }
+    },
+    {
+      "id": "ART-03",
+      "severity": "releasequality",
+      "implementation": "159 unit mappings and bundle resources exist.",
+      "verified": "149-item R374 static review was limited to static appearance. R391 identified 10 ambient/VFX units still at PARTIAL_VISUAL_SAMPLE; R377 motion videos may be reusable for selected R01 FX effects after exact frame/event join; no full ambient cycle is accepted. R385 build and R390 launch make a current app available, but do not accept those assets themselves.",
+      "quality": "149 static items: only their bounded static review. Remaining 10 temporal items are not accepted; adoption remains pending.",
+      "remainingLocal": "Preserve fresh per-case battle_art receipts as indirect-bound evidence during R391; joinavailable effectIDs/cuecounts with shortclips. Review ENV wholecycle evidence onlywhereobserved. Remainingmissingtime/effectbinding remains open.",
+      "externalHuman": "Final visual adoption remains Human-owned.",
+      "nextBoundedWork": {
+        "attempts": 1,
+        "minutes": 30,
+        "scope": "R01 clip attribution first; only remaining sequence gaps afterward"
+      }
+    },
+    {
+      "id": "IOS-01",
+      "severity": "releasequality",
+      "implementation": "Release app built and launched; save recovery and inventory optimization have scoped coverage.",
+      "verified": "R390 current R385 Release: new-save two battles→real five-minute gather→craft→trial/equip→free5draws→revision9 cold byte-exact; 4779/4979 earned virtual90-day inventories, search, LR disclosure and region CTA, cold bytes exact on compact/large. Original1925app/1692data files unchanged.",
+      "quality": "No full current Release route, performance/thermal profile, VoiceOver, device matrix, or all crash states accepted.",
+      "remainingLocal": "BuildR398 normalRelease and isolatedDebug with shared1922resources/freeze. DeltaUI/cold checks plusfinalindependentaudit; existingR390RSS/timings are Simulatorobservations, not realdevicebenchmarks.",
+      "externalHuman": "Physical device and broader device/performance signoff may require Human hardware/access.",
+      "nextBoundedWork": {
+        "attempts": 1,
+        "minutes": 30,
+        "scope": "R390 closure and one measured inventory route"
+      }
+    },
+    {
+      "id": "DETAIL-01",
+      "severity": "detail",
+      "implementation": "Many polishing adjustments are implemented.",
+      "verified": "No evidence-backed shared defect established.",
+      "quality": "Not a release blocker absent a user-visible functional issue.",
+      "remainingLocal": "Defer pixel-level iteration until higher severity gates close; only act on a measured visibility/usability defect.",
+      "externalHuman": null,
+      "nextBoundedWork": {
+        "attempts": 0,
+        "minutes": 0
+      }
+    }
+  ],
+  "summary": {
+    "gameblockingOpen": [
+      "PROGRESS-01 current first-craft guidance regression pendingR398; no new proven save/crash defect in completedR390scope"
+    ],
+    "releaseQualityOpen": [
+      "R394 actualheal opportunity/LR integratedvalue evidence",
+      "R398 current UI/a11y delta regression",
+      "Fourally/30enemy temporalreview",
+      "Tenambient/VFX timing attribution",
+      "Physicaldevice/Apple authentication/server purchase authority/HumanartdesignSKUapproval"
+    ],
+    "detailOpen": [
+      "DETAIL-01 only if measured user-facing issue arises"
+    ],
+    "notRepeated": [
+      "149 passed static review items",
+      "R362 same crash point",
+      "R377 same StoreKit local path",
+      "R374 same 16-case script",
+      "all15 challenge clear route"
+    ],
+    "currentBuildState": "R385 retained scopedUI complete; R391/R395 live candidates integrated, R398build pending",
+    "currentCommerceState": "R377 scoped local StoreKit UI pass; production commerce incomplete.",
+    "formalQualityCompletion": "NOT_ESTABLISHED"
+  },
+  "sourcePins": {
+    "completionRegisterR005": {
+      "path": "docs/production/current/qa_drafts/final_acceptance_r360/COMPLETION_REGISTER_R005.json",
+      "sha256": "3bdd7a7bf97a4c986498c07657f8c47590555406248a76647910f86eb4c3ee2b",
+      "bytes": 19121
+    },
+    "r374Run": {
+      "path": "docs/production/current/qa_drafts/economy_release_matrix_r374/candidate_r002/runner_r002/runs/R374_MATRIX_001/RUN.json",
+      "sha256": "860273ae6557762adb657dd4a4eee9966fb51f124dd2bbf7c36e2800624aad07",
+      "bytes": 105845
+    },
+    "r374IndependentReview": {
+      "path": "docs/production/current/qa_drafts/economy_release_matrix_r374/independent_qualitative_review_r001/REVIEW_R001.json",
+      "sha256": "8901f95afa1711a3585a6a900211f41163f4c392ab8784367d17f48b9a8bdfd9",
+      "bytes": 22045
+    },
+    "r388Review": {
+      "path": "docs/production/current/qa_drafts/completion_review_r388/REVIEW_R001.json",
+      "sha256": "c07c858c3b601f66281bc383d48d7fba79aebf0650dd1f43661daf807df9d3f5",
+      "bytes": 18220
+    },
+    "r375Review": {
+      "path": "docs/production/current/qa_drafts/natural_duplicate_ui_r375/independent_review_r002/REVIEW_R002.json",
+      "sha256": "7cafeda9569d82c2cdecdb2b3ea00165c958e63a73e5f6fa4efb97f427b01553",
+      "bytes": 3028
+    },
+    "r377Commerce": {
+      "path": "docs/production/current/qa_drafts/storekit_restore_route_r377/execution_r001/UI_COMPLETION_R001.json",
+      "sha256": "c7570f651eb869d9c80123dd1114e667c22b926cebcb8c5174aabca7f0ec3867",
+      "bytes": 3009
+    },
+    "r377Motion": {
+      "path": "docs/production/current/qa_drafts/enemy_motion_batch_r377/capture_candidate_r004/capture_r002/RUN.json",
+      "sha256": "7f8a335ab40bb13abb63648db0db05dc50ba28871294f67a9a7ca5a62c9676db",
+      "bytes": 34778
+    },
+    "r385Readback": {
+      "path": "docs/production/current/qa_drafts/native_completion_r385/build_tools_r004/postbuild_readback_r001/RESULT.json",
+      "sha256": "378f9f2f545dd877ec290c21ff0e036eda8668db84198a3b4fa33ec1acc9bdc3",
+      "bytes": 639582
+    },
+    "r390Preflight": {
+      "path": "docs/production/current/qa_drafts/ui_long_inventory_r390/execution_r001/PREFLIGHT_R001.json",
+      "sha256": "c1dfd73e8e57bcb7f22c1758b8537d66b286fcef8ed9a3c53f8e300cad0bd688",
+      "bytes": 1086
+    },
+    "r390FirstLaunch": {
+      "path": "docs/production/current/qa_drafts/ui_long_inventory_r390/execution_r001/FIRST_LAUNCH_R001.json",
+      "sha256": "c00c72f6c2ebf53032a3dfaaa9ade7424739da6e5c14c0a18b3481e5d5a74072",
+      "bytes": 393
+    },
+    "r391AssetReport": {
+      "path": "docs/production/current/qa_drafts/final_asset_gaps_r391/FINAL_ASSET_GAPS_R001.json",
+      "sha256": "e7b2f7b4fc3c9513f39f0a4742fc4d2aa2d1dcc8cad618d1983838c3d20c0de1",
+      "bytes": 18569
+    },
+    "r391Erratum": {
+      "path": "docs/production/current/qa_drafts/final_asset_gaps_r391/ERRATUM_R002.json",
+      "sha256": "97be20ce780443a401ed356eca5b697baf3b54c2b7534ebe3c868d4fea1e6b6c",
+      "bytes": 2314
+    }
+  },
+  "updatedAt": "2026-10-14T09:34:57.070518+09:00"
+}

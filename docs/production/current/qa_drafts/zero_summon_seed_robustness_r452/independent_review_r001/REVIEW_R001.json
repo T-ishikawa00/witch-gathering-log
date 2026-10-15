@@ -1,0 +1,70 @@
+{
+  "schema": "r452-independent-source-review-r001-v1",
+  "status": "NO_STATIC_BLOCKER_FOUND_PREPARED_NOT_EXECUTED",
+  "readOnly": true,
+  "execution": false,
+  "build": false,
+  "simulator": false,
+  "candidatePins": {
+    "manifest": {
+      "path": "docs/production/current/qa_drafts/zero_summon_seed_robustness_r452/candidate_r001/runner_r001/INPUT_MANIFEST_R001.json",
+      "sha256": "9ab1067d50b44dbbead236ae0a76ba07198af0c39032ab792b5160001f113d6c"
+    },
+    "runner": {
+      "path": "docs/production/current/qa_drafts/zero_summon_seed_robustness_r452/candidate_r001/runner_r001/run_r452.py",
+      "sha256": "e9d5ddcaf9d856959548592e66d1d587e713b5a1d0599c68aa388e407cb6c4c7"
+    },
+    "test": {
+      "path": "docs/production/current/qa_drafts/zero_summon_seed_robustness_r452/candidate_r001/source/EconomyCohortProgressionR355Tests.swift",
+      "sha256": "8637c6131c0a2bf3da84641adbd380a98b8e8796b28ac8d50a142b63486a3153"
+    },
+    "diff": {
+      "path": "docs/production/current/qa_drafts/zero_summon_seed_robustness_r452/candidate_r001/R448_TO_R452_SOURCE_DIFF_R001.patch",
+      "sha256": "ee6e7a5bfd6c5ae7b809f8f8a09cd2cc585cdd9986fc36eb683f9640b1833a04"
+    },
+    "r448BaseTest": {
+      "sha256": "c62c945b8f3c75f4ae3ed9b1706b01c34bcad7a656f5273bc50b6870bb964933",
+      "matchesManifestBase": true
+    },
+    "r448ScopedResult": {
+      "sha256": "484d8b2287e437ec41c8934696ca79006815a6abda518cf04a624199dab6a4de",
+      "status": "SCOPED_XCTEST_AND_PROVENANCE_PASS_WRAPPER_FAILURE_RETAINED"
+    },
+    "r448RawRun": {
+      "sha256": "7373da4753944a907f52c79bc6035b8bfe340e4032a08cffec7f6a19ba65c9a2",
+      "status": "INCOMPLETE_RETAINED"
+    }
+  },
+  "reviewedContract": {
+    "cases": [
+      {"seed": 100069, "runID": "45200000-0001-4002-8000-000000000001", "cohort": "free_no_ad", "virtualDays": 30, "attempt": 1},
+      {"seed": 200071, "runID": "45200000-0002-4002-8000-000000000001", "cohort": "free_no_ad", "virtualDays": 30, "attempt": 1}
+    ],
+    "priorR448Seed100049Rerun": false,
+    "compileInvocations": 1,
+    "testInvocations": 2,
+    "secondUsesSkipBuild": true,
+    "summonDispatches": 0,
+    "freePaidDrawAssertionsZero": true,
+    "syntheticGrantAssertionsZero": true,
+    "policyScheduleAssertionsUnchangedFromR448": true,
+    "testOutcomeParserUsesExactSelectedEventAndDuration": true,
+    "reportSeedRunIdentityAndOriginJoinsValidated": true,
+    "candidateUnapprovedAndVirtualClockLimitsPreserved": true
+  },
+  "configuredLimits": {
+    "maxWallSeconds": 600,
+    "maxSecondsPerCase": 90,
+    "maxBuildAllocatedBytes": 500000000,
+    "maxEvidenceAllocatedBytes": 60000000,
+    "minimumFreeBytes": 12000000000,
+    "oneAttemptPerSeed": true
+  },
+  "executionGate": "Root must seal current identity and regenerate runner/manifest pins before any execution; this review does not authorize execution.",
+  "limitations": [
+    "No compile or runtime validation was performed.",
+    "R448 XCTest PASS does not overwrite its raw INCOMPLETE_RETAINED runner result.",
+    "Two seeds would provide a small scripted robustness sample, not a cohort matrix, human-play, retention, StoreKit or release result.",
+    "Different operation-ID namespace may alter generated latent rolls; no policy-only causal claim."
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "actor": "ACT_B_R02_B",
+  "status": "UNAPPROVED_PARTIAL",
+  "natural_motion_complete": false,
+  "source_sha256": "57c78810d2e820154c6a6639f823d2b4afaa2e3bf2310628ab55f29700b48d2f",
+  "tool": "built-in image_gen",
+  "prompt": "Edit previous nine-frame lizard atlas: preserve identity and nine leg phases, shrink within cells 15 percent, 6 percent margin, connected tail, remove green/yellow fringes, true alpha, no text or grid.",
+  "operations": "3x3 crop and per-cell translation onto 512-square canvas only; alpha retained unchanged",
+  "rejection_correction": "Previous third atlas tail-detachment claim was not supported: alpha>16,64,128 each has connected main silhouette in all9cells. Real defects were cell-edge contact and coloured fringe. This revision has no alpha16 cell-edge contact.",
+  "frames": [
+    {
+      "frame": "walk_000.png",
+      "sha256": "eec3a0bda353b1267c48634203862b5ddf83750bca2cc380abb74ca5ea1eecc4",
+      "source_alpha16_bounds": [
+        44,
+        138,
+        403,
+        387
+      ],
+      "translation": [
+        32,
+        103
+      ],
+      "main_component_pixels": 46875,
+      "all_alpha16_pixels": 46876,
+      "edge_touch": false
+    },
+    {
+      "frame": "walk_001.png",
+      "sha256": "b164834b444c4008160df648decd540ce6f0890b4d0547ef5c96227cedf4033b",
+      "source_alpha16_bounds": [
+        40,
+        138,
+        397,
+        386
+      ],
+      "translation": [
+        38,
+        104
+      ],
+      "main_component_pixels": 46312,
+      "all_alpha16_pixels": 46312,
+      "edge_touch": false
+    },
+    {
+      "frame": "walk_002.png",
+      "sha256": "d26f3995a42af64e1a1ed1585b0612dfb171b764e68c4d7db73edbabf9e96b1e",
+      "source_alpha16_bounds": [
+        42,
+        137,
+        381,
+        387
+      ],
+      "translation": [
+        44,
+        103
+      ],
+      "main_component_pixels": 45720,
+      "all_alpha16_pixels": 45723,
+      "edge_touch": false
+    },
+    {
+      "frame": "walk_003.png",
+      "sha256": "e1d2e99e31b6c4e888e034349e6c804e334b7d269ce252e42f94cf27a369cc9d",
+      "source_alpha16_bounds": [
+        37,
+        95,
+        405,
+        349
+      ],
+      "translation": [
+        35,
+        141
+      ],
+      "main_component_pixels": 47920,
+      "all_alpha16_pixels": 47925,
+      "edge_touch": false
+    },
+    {
+      "frame": "walk_004.png",
+      "sha256": "8dd514f75fcde096ef8d9c4b9747d32397b2e6c6ddee07dbe54b0840af74f960",
+      "source_alpha16_bounds": [
+        46,
+        95,
+        400,
+        351
+      ],
+      "translation": [
+        33,
+        139
+      ],
+      "main_component_pixels": 46021,
+      "all_alpha16_pixels": 46024,
+      "edge_touch": false
+    },
+    {
+      "frame": "walk_005.png",
+      "sha256": "6ed4959efc805ed3f628fb5398afaa216c59731caef569aba798c1a59aac27e5",
+      "source_alpha16_bounds": [
+        36,
+        95,
+        385,
+        349
+      ],
+      "translation": [
+        46,
+        141
+      ],
+      "main_component_pixels": 46439,
+      "all_alpha16_pixels": 46441,
+      "edge_touch": false
+    },
+    {
+      "frame": "walk_006.png",
+      "sha256": "ffc7042a31e3f8ef3f02eff11b58839417640703931fd0fe31f1903e8b5875eb",
+      "source_alpha16_bounds": [
+        43,
+        60,
+        411,
+        312
+      ],
+      "translation": [
+        29,
+        178
+      ],
+      "main_component_pixels": 47324,
+      "all_alpha16_pixels": 47326,
+      "edge_touch": false
+    },
+    {
+      "frame": "walk_007.png",
+      "sha256": "da61eac30765295871ea51b7b96c5800aee46d0a2acf58a75ef2a1aef96ba7a9",
+      "source_alpha16_bounds": [
+        44,
+        61,
+        404,
+        311
+      ],
+      "translation": [
+        32,
+        179
+      ],
+      "main_component_pixels": 47419,
+      "all_alpha16_pixels": 47421,
+      "edge_touch": false
+    },
+    {
+      "frame": "walk_008.png",
+      "sha256": "680edfb980dc2576ce706bb2b75f8e013db1a20d79f8ade6b82573a0ce6450e3",
+      "source_alpha16_bounds": [
+        23,
+        61,
+        387,
+        312
+      ],
+      "translation": [
+        51,
+        178
+      ],
+      "main_component_pixels": 46954,
+      "all_alpha16_pixels": 46954,
+      "edge_touch": false
+    }
+  ],
+  "overlay": "runtime_overlay_act_b_r02_b_pose_candidate_r003_walk_cycle.json",
+  "native_qa": "PENDING"
+}

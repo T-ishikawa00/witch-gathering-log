@@ -1,0 +1,82 @@
+{
+  "receipt": {
+    "battle_id": "ced2e876fead3508c058537b4aa7621bdff0f0b81385eb678e0c2de55b5feed5",
+    "boss_id": "B_R01_B",
+    "outcome": "VICTORY",
+    "snapshot_hash": "6c8daa3951abc321f4cc7d8fcb35e6f3338f2d5da39f96a4ace1f0229c64269a",
+    "result_hash": "da68eeb0d332261ddb365412e65f199f59f5814ecf7c3299336cd25c59b1df43",
+    "elapsed_ms": 64400,
+    "combat_rules_version": "G2C_R5_FIXED10000_CANDIDATE"
+  },
+  "before": "6c8daa3951abc321f4cc7d8fcb35e6f3338f2d5da39f96a4ace1f0229c64269a",
+  "after": "22cc49dfdddfa517acc7644d019ce42ebcae28fe6fae4f38e60385bbd2febf7b",
+  "repeat_identical": true,
+  "materials": {
+    "M_R01_G1": 21,
+    "M_R01_G2": 9,
+    "M_R01_E1": 21,
+    "M_R01_E2": 9,
+    "M_R01_BA": 1,
+    "M_R01_G3": 9,
+    "M_R01_G4": 9,
+    "M_R01_E4": 9,
+    "M_R01_E3": 9,
+    "M_R01_BB": 1
+  },
+  "gates": [
+    "G_R01_A",
+    "G_R01_B",
+    "G_START"
+  ],
+  "spent_materials": {
+    "M_R01_E2": 32,
+    "M_R01_G3": 16,
+    "M_R01_G4": 32,
+    "M_R01_G2": 16
+  },
+  "spent_dust": 0,
+  "xp": {
+    "C_WITCH": 2648,
+    "C_FAMILIAR": 2648,
+    "C_APPRENTICE": 2648,
+    "C_SMITH": 2648
+  },
+  "history": [
+    {
+      "event": "R3_INTRO_TOTALS_FIXTURE",
+      "not_played": true,
+      "normal_intro_fights_not_simulated": true,
+      "xp": 920,
+      "dust": 30
+    },
+    {
+      "event": "boss_first_or_replay_commit",
+      "boss_id": "B_R01_A",
+      "battle_id": "d4dbba86f5bb2515254f0efffbe3daf01083566777414e2548c1916b3e2bf7fe",
+      "outcome": "VICTORY",
+      "time_ms": 0
+    },
+    {
+      "event": "join",
+      "actor": "C_APPRENTICE",
+      "xp": 920
+    },
+    {
+      "event": "EXPLICIT_UNSIMULATED_ROUTE_CLEARANCE_FIXTURE",
+      "area": "A_R01_03"
+    },
+    {
+      "event": "join",
+      "actor": "C_SMITH",
+      "xp": 920
+    },
+    {
+      "event": "boss_first_or_replay_commit",
+      "boss_id": "B_R01_B",
+      "battle_id": "ced2e876fead3508c058537b4aa7621bdff0f0b81385eb678e0c2de55b5feed5",
+      "outcome": "VICTORY",
+      "time_ms": 43200000
+    }
+  ],
+  "limits": "Onboarding totals/deep survey still fixtures, not normal-enemy fights; in-memory commit, not database or cryptographic trust."
+}

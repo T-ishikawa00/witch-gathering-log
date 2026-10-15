@@ -1,0 +1,501 @@
+test_apple_jws_fails_closed_and_mock_hook_must_be_enabled (test_authority.PurchaseAuthorityTests.test_apple_jws_fails_closed_and_mock_hook_must_be_enabled) ... ok
+test_balance_draw_failures_are_atomic_and_retryable (test_authority.PurchaseAuthorityTests.test_balance_draw_failures_are_atomic_and_retryable) ... ok
+test_balance_draw_numeric_inputs_are_strict_integers (test_authority.PurchaseAuthorityTests.test_balance_draw_numeric_inputs_are_strict_integers) ... ok
+test_balance_draw_rejects_refunded_ticket_provenance_on_idempotent_retry (test_authority.PurchaseAuthorityTests.test_balance_draw_rejects_refunded_ticket_provenance_on_idempotent_retry) ... ok
+test_candidate_rng_quality_distribution_and_pity_boundaries_are_explicit (test_authority.PurchaseAuthorityTests.test_candidate_rng_quality_distribution_and_pity_boundaries_are_explicit) ... ok
+test_concurrent_duplicate_callback_same_key_has_one_commit (test_authority.PurchaseAuthorityTests.test_concurrent_duplicate_callback_same_key_has_one_commit) ... ok
+test_concurrent_two_terminal_retries_cannot_double_consume_transaction (test_authority.PurchaseAuthorityTests.test_concurrent_two_terminal_retries_cannot_double_consume_transaction) ... ok
+test_draw_history_records_actual_source_ticket_lot_across_purchase_operations (test_authority.PurchaseAuthorityTests.test_draw_history_records_actual_source_ticket_lot_across_purchase_operations) ... ok
+test_every_injected_failure_rolls_back_then_same_event_retries (test_authority.PurchaseAuthorityTests.test_every_injected_failure_rolls_back_then_same_event_retries) ... ok
+test_idempotency_key_payload_collision_rejected (test_authority.PurchaseAuthorityTests.test_idempotency_key_payload_collision_rejected) ... ok
+test_idempotent_purchase_retry_after_refund_is_not_replayed_as_success (test_authority.PurchaseAuthorityTests.test_idempotent_purchase_retry_after_refund_is_not_replayed_as_success) ... ok
+test_old_schema_is_rejected_instead_of_silently_partially_used (test_authority.PurchaseAuthorityTests.test_old_schema_is_rejected_instead_of_silently_partially_used) ... ok
+test_purchase_draw_atomic_idempotency_and_persistent_history (test_authority.PurchaseAuthorityTests.test_purchase_draw_atomic_idempotency_and_persistent_history) ... ok
+test_quantity_draw_count_seed_and_product_spec_require_strict_bounded_ints (test_authority.PurchaseAuthorityTests.test_quantity_draw_count_seed_and_product_spec_require_strict_bounded_ints) ... ok
+test_refund_before_purchase_writes_tombstone_and_rejects_late_delivery (test_authority.PurchaseAuthorityTests.test_refund_before_purchase_writes_tombstone_and_rejects_late_delivery) ... ok
+test_refund_claws_unspent_and_blocks_spent_reuse (test_authority.PurchaseAuthorityTests.test_refund_claws_unspent_and_blocks_spent_reuse) ... ok
+test_refund_failure_rolls_back_and_can_retry (test_authority.PurchaseAuthorityTests.test_refund_failure_rolls_back_and_can_retry) ... ok
+test_refund_tombstone_fault_rolls_back_and_late_purchase_is_retryable (test_authority.PurchaseAuthorityTests.test_refund_tombstone_fault_rolls_back_and_late_purchase_is_retryable) ... ok
+test_same_transaction_different_key_cannot_regrant (test_authority.PurchaseAuthorityTests.test_same_transaction_different_key_cannot_regrant) ... ok
+test_ticket_only_purchase_can_be_drawn_later_under_operation_uuid (test_authority.PurchaseAuthorityTests.test_ticket_only_purchase_can_be_drawn_later_under_operation_uuid) ... ok
+test_user_token_binding_bundle_environment_product_and_quantity (test_authority.PurchaseAuthorityTests.test_user_token_binding_bundle_environment_product_and_quantity) ... ok
+test_apple_jws_entrypoint_remains_fail_closed (test_local_delivery_r453.LocalDeliveryR453Tests.test_apple_jws_entrypoint_remains_fail_closed) ... ok
+test_atomic_expected_fifo_lot_rejects_interleaved_spend_without_spilling (test_local_delivery_r453.LocalDeliveryR453Tests.test_atomic_expected_fifo_lot_rejects_interleaved_spend_without_spilling) ... ok
+test_bad_identity_envelopes_reject_without_authority_mutation (test_local_delivery_r453.LocalDeliveryR453Tests.test_bad_identity_envelopes_reject_without_authority_mutation) ... ok
+test_cli_output_collision_rejects_before_authority_mutation (test_local_delivery_r453.LocalDeliveryR453Tests.test_cli_output_collision_rejects_before_authority_mutation) ... ok
+test_draw_rejects_original_transaction_mismatch_against_current_purchase_row (test_local_delivery_r453.LocalDeliveryR453Tests.test_draw_rejects_original_transaction_mismatch_against_current_purchase_row) ... ok
+test_fifo_source_join_checks_environment_bundle_and_transaction (test_local_delivery_r453.LocalDeliveryR453Tests.test_fifo_source_join_checks_environment_bundle_and_transaction) ... ok
+test_hardlinked_cache_cannot_alias_authority_database (test_local_delivery_r453.LocalDeliveryR453Tests.test_hardlinked_cache_cannot_alias_authority_database) ... ok
+test_profile_payload_collision_is_rejected_before_second_draw (test_local_delivery_r453.LocalDeliveryR453Tests.test_profile_payload_collision_is_rejected_before_second_draw) ... ok
+test_profile_schema_version_and_template_identity_are_strict (test_local_delivery_r453.LocalDeliveryR453Tests.test_profile_schema_version_and_template_identity_are_strict) ... ok
+test_refund_tombstone_before_purchase_suppresses_late_ticket_grant (test_local_delivery_r453.LocalDeliveryR453Tests.test_refund_tombstone_before_purchase_suppresses_late_ticket_grant) ... ok
+test_refund_tombstone_is_current_state_and_blocks_later_delivery (test_local_delivery_r453.LocalDeliveryR453Tests.test_refund_tombstone_is_current_state_and_blocks_later_delivery) ... ok
+test_replay_is_byte_stable_and_payload_collision_is_rejected (test_local_delivery_r453.LocalDeliveryR453Tests.test_replay_is_byte_stable_and_payload_collision_is_rejected) ... /Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a31a80>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a313f0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a32980>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a31c60>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a32110>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a32020>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a327a0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x10635b880>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a323e0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a31990>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a316c0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a31210>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a32b60>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a32890>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a325c0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a322f0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a31e40>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a32200>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a31b70>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a318a0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a315d0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a31d50>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a324d0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a32a70>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a317b0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a32c50>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a32d40>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a32e30>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a33100>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a331f0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a332e0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a333d0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a334c0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a335b0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a336a0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a33790>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a33880>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a32f20>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a33010>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a33970>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a33a60>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a33b50>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a33c40>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a33d30>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a33e20>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a33f10>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a98040>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a98220>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a98130>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a98310>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a984f0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a986d0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a988b0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a989a0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a98a90>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a98b80>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a98c70>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a98d60>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a98f40>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a98e50>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a987c0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a99030>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a99120>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a99210>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a99300>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a993f0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a994e0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a995d0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a996c0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a997b0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a998a0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a99990>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a99a80>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a99b70>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a99c60>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a99d50>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a985e0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a98400>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a99f30>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a9a020>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a99e40>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a9a110>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a9a200>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a9a2f0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a9a3e0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a9a5c0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a9a4d0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a9a6b0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/authority.py:507: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a9a7a0>
+  old=db.execute("SELECT request_fingerprint,response_json FROM idempotency WHERE account_id=? AND idempotency_key=?",(account_id,idempotency_key)).fetchone()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_retry_reconstructs_payload_if_sidecar_write_fails_after_authority_commit (test_local_delivery_r453.LocalDeliveryR453Tests.test_retry_reconstructs_payload_if_sidecar_write_fails_after_authority_commit) ... ok
+test_source_identity_binding_changes_only_bound_operation_fingerprint (test_local_delivery_r453.LocalDeliveryR453Tests.test_source_identity_binding_changes_only_bound_operation_fingerprint) ... ok
+test_ticket_grant_then_separate_draw_emits_core_gear_payload (test_local_delivery_r453.LocalDeliveryR453Tests.test_ticket_grant_then_separate_draw_emits_core_gear_payload) ... ok
+test_cancel_unfinished_and_product_failure_are_audited_without_grant (test_notifications.NotificationAtomicityTests.test_cancel_unfinished_and_product_failure_are_audited_without_grant) ... ok
+test_duplicate_notification_race_commits_one_grant (test_notifications.NotificationAtomicityTests.test_duplicate_notification_race_commits_one_grant) ... ok
+test_existing_authority_rows_survive_inbox_schema_upgrade (test_notifications.NotificationAtomicityTests.test_existing_authority_rows_survive_inbox_schema_upgrade) ... ok
+test_faults_rollback_notification_and_economic_rows_then_retry (test_notifications.NotificationAtomicityTests.test_faults_rollback_notification_and_economic_rows_then_retry) ... ok
+test_mock_jws_path_remains_rejected (test_notifications.NotificationAtomicityTests.test_mock_jws_path_remains_rejected) ... ok
+test_notification_id_payload_collision_rejects_without_any_change (test_notifications.NotificationAtomicityTests.test_notification_id_payload_collision_rejects_without_any_change) ... ok
+test_purchase_notification_grant_and_ledger_commit_together_and_replay_once (test_notifications.NotificationAtomicityTests.test_purchase_notification_grant_and_ledger_commit_together_and_replay_once) ... ok
+test_purchase_replay_after_refund_separates_historical_grant_from_current_state (test_notifications.NotificationAtomicityTests.test_purchase_replay_after_refund_separates_historical_grant_from_current_state) ... ok
+test_purchase_replays_after_consumption_show_zero_current_value (test_notifications.NotificationAtomicityTests.test_purchase_replays_after_consumption_show_zero_current_value) ... ok
+test_purchase_then_refund_with_draw_spend_creates_debt_atomically (test_notifications.NotificationAtomicityTests.test_purchase_then_refund_with_draw_spend_creates_debt_atomically) ... ok
+test_refund_delivery_updates_grant_ledger_in_same_transaction (test_notifications.NotificationAtomicityTests.test_refund_delivery_updates_grant_ledger_in_same_transaction) ... ok
+test_refund_fault_points_rollback_inbox_refund_and_ticket_ledger_together (test_notifications.NotificationAtomicityTests.test_refund_fault_points_rollback_inbox_refund_and_ticket_ledger_together) ... ok
+test_refund_fault_rolls_back_tombstone_and_retry_can_suppress_purchase (test_notifications.NotificationAtomicityTests.test_refund_fault_rolls_back_tombstone_and_retry_can_suppress_purchase) ... ok
+test_refund_first_tombstone_suppresses_late_purchase (test_notifications.NotificationAtomicityTests.test_refund_first_tombstone_suppresses_late_purchase) ... ok
+test_tombstone_same_and_new_notification_replays_keep_current_state_separate (test_notifications.NotificationAtomicityTests.test_tombstone_same_and_new_notification_replays_keep_current_state_separate) ... ok
+test_wrong_account_product_and_unverified_inputs_fail_closed (test_notifications.NotificationAtomicityTests.test_wrong_account_product_and_unverified_inputs_fail_closed) ... ok
+test_audit_report_does_not_allow_constructor_or_replace_to_authorize (test_signed_transaction_audit.SignedTransactionAuditTests.test_audit_report_does_not_allow_constructor_or_replace_to_authorize) ... ok
+test_duplicate_json_keys_rejected_even_before_signature (test_signed_transaction_audit.SignedTransactionAuditTests.test_duplicate_json_keys_rejected_even_before_signature) ... ok
+test_future_invalid_or_out_of_order_dates (test_signed_transaction_audit.SignedTransactionAuditTests.test_future_invalid_or_out_of_order_dates) ... /Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a33f10>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a33e20>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x10635b880>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1064d9120>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1064d8b80>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a33d30>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a33b50>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a33c40>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a33a60>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a33970>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a33010>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a32f20>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a33880>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a33790>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a336a0>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a335b0>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a334c0>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a332e0>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a333d0>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a331f0>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a33100>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a32e30>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a32c50>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a317b0>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a32a70>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a324d0>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a31d50>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a31300>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a314e0>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a315d0>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a318a0>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a32200>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a31b70>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a31a80>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a31c60>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a32980>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a31210>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a316c0>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a322f0>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a327a0>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a31990>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a313f0>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a325c0>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a32890>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a32b60>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a32110>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a32020>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1064d8f40>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a9a890>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a9a2f0>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a99e40>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/lib/python3.13/site-packages/OpenSSL/crypto.py:797: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x107a99f30>
+  cert._x509 = _ffi.gc(x509, _lib.X509_free)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_header_downgrade_missing_chain_and_critical_header_rejected (test_signed_transaction_audit.SignedTransactionAuditTests.test_header_downgrade_missing_chain_and_critical_header_rejected) ... ok
+test_historical_restore_time_is_not_arbitrarily_expired (test_signed_transaction_audit.SignedTransactionAuditTests.test_historical_restore_time_is_not_arbitrarily_expired) ... ok
+test_invalid_configuration_and_unreviewed_version (test_signed_transaction_audit.SignedTransactionAuditTests.test_invalid_configuration_and_unreviewed_version) ... ok
+test_invalid_identifiers_are_rejected (test_signed_transaction_audit.SignedTransactionAuditTests.test_invalid_identifiers_are_rejected) ... ok
+test_malformed_and_oversized_tokens (test_signed_transaction_audit.SignedTransactionAuditTests.test_malformed_and_oversized_tokens) ... ok
+test_missing_or_different_account_binding_rejected (test_signed_transaction_audit.SignedTransactionAuditTests.test_missing_or_different_account_binding_rejected) ... ok
+test_nonconsumable_configuration_and_quantity (test_signed_transaction_audit.SignedTransactionAuditTests.test_nonconsumable_configuration_and_quantity) ... ok
+test_product_and_type_policy (test_signed_transaction_audit.SignedTransactionAuditTests.test_product_and_type_policy) ... ok
+test_quantity_types_and_bounds_rejected (test_signed_transaction_audit.SignedTransactionAuditTests.test_quantity_types_and_bounds_rejected) ... ok
+test_real_signed_chain_passes_strict_checks_but_cannot_authorize_grant (test_signed_transaction_audit.SignedTransactionAuditTests.test_real_signed_chain_passes_strict_checks_but_cannot_authorize_grant) ... ok
+test_required_leaf_oid_is_checked (test_signed_transaction_audit.SignedTransactionAuditTests.test_required_leaf_oid_is_checked) ... ok
+test_revoked_or_family_shared_transaction_is_not_purchase_candidate (test_signed_transaction_audit.SignedTransactionAuditTests.test_revoked_or_family_shared_transaction_is_not_purchase_candidate) ... ok
+test_signature_from_other_key_rejected (test_signed_transaction_audit.SignedTransactionAuditTests.test_signature_from_other_key_rejected) ... ok
+test_tampered_payload_rejected_without_raw_data_in_error (test_signed_transaction_audit.SignedTransactionAuditTests.test_tampered_payload_rejected_without_raw_data_in_error) ... ok
+test_untrusted_root_cannot_be_supplied_by_jws_chain (test_signed_transaction_audit.SignedTransactionAuditTests.test_untrusted_root_cannot_be_supplied_by_jws_chain) ... ok
+test_uuid_case_normalizes_without_losing_binding (test_signed_transaction_audit.SignedTransactionAuditTests.test_uuid_case_normalizes_without_losing_binding) ... ok
+test_wrong_bundle_and_environment_rejected (test_signed_transaction_audit.SignedTransactionAuditTests.test_wrong_bundle_and_environment_rejected) ... ok
+test_xcode_local_and_production_configuration_never_bypass_signature (test_signed_transaction_audit.SignedTransactionAuditTests.test_xcode_local_and_production_configuration_never_bypass_signature) ... ok
+
+----------------------------------------------------------------------
+Ran 73 tests in 0.568s
+
+OK

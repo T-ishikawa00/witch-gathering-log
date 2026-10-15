@@ -1,0 +1,28 @@
+{
+  "status": "EXACT_SCOPED_REHEARSAL_STORE_INTEGRATED",
+  "files": [
+    {
+      "candidate": "swift_candidate_r002/FileBackedAuthorityStoreR463.swift",
+      "live": "native/WitchGameCore/Sources/WitchGameCore/FileBackedAuthorityStoreR463.swift",
+      "sha256": "611c33072323ea6ec33c38813826d32d1b220c932af8430e8f3ee36c381d7f24"
+    },
+    {
+      "candidate": "root_candidate_r003/FileBackedAuthorityStoreR463Tests.swift",
+      "live": "native/WitchGameCore/Tests/WitchGameCoreTests/FileBackedAuthorityStoreR463Tests.swift",
+      "sha256": "e1e2038a8b8468bc2e61e76b95ec2800dfcb090c3bd597d873a03edd1dfb8af6"
+    }
+  ],
+  "swiftMethods": 45,
+  "passed": 45,
+  "failed": 0,
+  "skipped": 0,
+  "newStoreMethods": 8,
+  "processResultSHA256": "b8f4db463aeada0831ad20e1b1f362628e932ef3c89ff8db2141ea20f0f466c8",
+  "at": "2026-10-15T07:47:42.385935+09:00",
+  "limits": [
+    "256 cumulative operations per account; no productionretention lifecycle",
+    "No productionApp transport/account auth orgameplaygrant",
+    "No actualdevicepowerloss test"
+  ],
+  "retainedFailures": "R001 candidate rejectedprecompile;R002firstexecution44methods43pass1testwordingfailure;RootR003testonlyrepair+capacitycase"
+}

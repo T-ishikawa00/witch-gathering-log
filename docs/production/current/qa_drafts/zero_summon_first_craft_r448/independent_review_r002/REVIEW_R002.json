@@ -1,0 +1,42 @@
+{
+  "executionPerformed": false,
+  "findings": [
+    {
+      "finding": "Manifest appRuntimeIdentity is R446; runner only checks self-pinned path/hash/size and status, so current R447-compatible identity must be root-sealed before execution.",
+      "severity": "BLOCKER_BEFORE_EXECUTION"
+    },
+    {
+      "finding": "R002 corrects base-vs-integrated runtime identity comparison and adds natural gear UUID provenance observation around dispatch, direct work-target selection, and direct offline claim without relaxing final provenance/summon assertions.",
+      "severity": "NO_BLOCKER_IN_PATCHED_TEST_LOGIC"
+    }
+  ],
+  "reviewSHA256": "2b5c3f739fafc0793680210ba876ec0f2cf399556669913cd311d93bab8c8ba6",
+  "reviewed": {
+    "manifest": {
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r002/runner_r001/INPUT_MANIFEST_R001.json",
+      "sha256": "77bc0270e256429b1078eb1c7e0dc245f4355466dc254a99c9c280e805deccc9",
+      "sizeBytes": 31751
+    },
+    "patch": {
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r002/DIFF_R001_TO_R002.patch",
+      "sha256": "a83bbba37190d82422fec3219f39117f10b5c191ef18563a7c96bb65f4a7e035",
+      "sizeBytes": 8869
+    },
+    "rootPreparation": {
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r002/ROOT_PREPARATION.json",
+      "sha256": "5e9fd9e8e53085446b62a623e75b5bf46ddba6f2a41501cfa6c231ab6530c224",
+      "sizeBytes": 961
+    },
+    "runner": {
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r002/runner_r001/run_r448.py",
+      "sha256": "f447c23ce4051d867164c3f8772aa5d9d3b8319e123decd5439a1d4d0a2f7d6b",
+      "sizeBytes": 22589
+    },
+    "test": {
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r002/source/EconomyCohortProgressionR355Tests.swift",
+      "sha256": "c62c945b8f3c75f4ae3ed9b1706b01c34bcad7a656f5273bc50b6870bb964933",
+      "sizeBytes": 101656
+    }
+  },
+  "status": "CONDITIONALLY_ACCEPTABLE_STATIC_REVIEW_EXECUTION_BLOCKED_PENDING_ROOT_IDENTITY_SEAL"
+}

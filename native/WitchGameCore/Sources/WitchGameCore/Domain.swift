@@ -54,6 +54,9 @@ public struct AppearanceDefinition: Codable, Sendable, Equatable, Identifiable {
     public let kind: String
     public let actorIDs: [String]
     public let status: String
+    public init(id: String, kind: String, actorIDs: [String], status: String) {
+        self.id = id; self.kind = kind; self.actorIDs = actorIDs; self.status = status
+    }
 }
 /// Endgame proposals are kept distinct from the five R3 research ranks. Their rules remain design candidates.
 public struct ChallengeDefinition: Codable, Sendable, Equatable, Identifiable {
@@ -140,7 +143,9 @@ public struct GameCatalog: Codable, Sendable {
     /// Pure candidate stat projection shared by inventory previews and battle setup.
     /// Values remain UNAPPROVED_TEST_OVERLAY until their source rules are approved.
     public func projectCombatant(for actorID: String, with gearInstances: [GearInstance], completedResearchIDs: Set<String> = [],
-                                 totalXP: Int = 0, candidateGrowth: CandidateCharacterGrowth? = nil) -> Combatant {
+                                 totalXP: Int = 0, candidateGrowth: CandidateCharacterGrowth? = nil,
+                                 enhancementProjectionPolicyR230: EnhancementProjectionPolicyR230 = .legacy,
+                                 refinementRanksR352: [UUID: Int] = [:]) -> Combatant {
         let nativeBase: (hp: Int, attack: Int, defense: Int, guardChanceBP: Int) = switch actorID {
         case "C_WITCH": (80, 15, 3, 0)
         case "C_APPRENTICE": (90, 9, 4, 0)
@@ -157,23 +162,43 @@ public struct GameCatalog: Codable, Sendable {
         let base = (hp: projectedBase.hp, attack: projectedBase.attack, defense: projectedBase.defense,
                     guardChanceBP: nativeBase.guardChanceBP)
         let instances = gearInstances.filter { $0.ownerID == nil || $0.ownerID == actorID }
+        func rankedBase(_ value: Int, item: GearInstance) -> Int {
+            guard let rank = refinementRanksR352[item.id], rank > 1,
+                  let multiplier = NaturalGearRefinementPolicyR352.multiplierBasisPointsForPersistedRank(rank) else { return value }
+            return value + value * (multiplier - 10_000) / 10_000
+        }
         let attack = instances.reduce(base.attack) { total, item in
             let quality = ["Q0": 0, "Q1": 3, "Q2": 6, "Q3": 10, "Q4": 15][item.qualityID, default: 0]
             let affix = item.affixIDs.filter { $0 == "AFFIX_POWER_TEST" }.count * 2
             // LATENT_TEST_01 was written by older Q3→Q4 saves. Preserve its
             // existing positive latent slot as the first registered candidate.
             let latent = ["LATENT_POWER_TEST", "LATENT_TEST_01"].contains(item.latentEffectID ?? "") ? 5 : 0
-            return total + ((gearAttackBonuses[item.definitionID, default: 0] + affix + latent) * (100 + 3 * item.enhancement + quality + 2 * item.refinement) / 100)
+            let legacy = (rankedBase(gearAttackBonuses[item.definitionID, default: 0], item: item) + affix + latent) * (100 + 3 * item.enhancement + quality + 2 * item.refinement) / 100
+            guard enhancementProjectionPolicyR230 == .r2SlotBudgetCandidate else { return total + legacy }
+            let baseBonus = rankedBase(gearAttackBonuses[item.definitionID, default: 0], item: item)
+            let factorAtZero = 100 + quality + 2 * item.refinement
+            let baseEnhancementUplift = baseBonus * (factorAtZero + 3 * item.enhancement) / 100 - baseBonus * factorAtZero / 100
+            let slot = gear.first(where: { $0.id == item.definitionID })?.slot ?? ""
+            guard let growth = GearEnhancementGrowthR230.delta(slot: slot, enhancement: item.enhancement, refinement: item.refinement) else {
+                return total + legacy
+            }
+            return total + legacy - baseEnhancementUplift + growth.attack
         }
         let hp = instances.reduce(base.hp) { total, item in
             let quality = ["Q0": 0, "Q1": 3, "Q2": 6, "Q3": 10, "Q4": 15][item.qualityID, default: 0]
             let affix = item.affixIDs.filter { $0 == "AFFIX_VITALITY_TEST" }.count * 10 + (item.latentEffectID == "LATENT_VITALITY_TEST" ? 20 : 0)
-            return total + (gearHPBonuses[item.definitionID, default: 0] + affix) * (100 + quality + 2 * item.refinement) / 100
+            let legacy = (rankedBase(gearHPBonuses[item.definitionID, default: 0], item: item) + affix) * (100 + quality + 2 * item.refinement) / 100
+            guard enhancementProjectionPolicyR230 == .r2SlotBudgetCandidate else { return total + legacy }
+            let slot = gear.first(where: { $0.id == item.definitionID })?.slot ?? ""
+            return total + legacy + (GearEnhancementGrowthR230.delta(slot: slot, enhancement: item.enhancement, refinement: item.refinement)?.hp ?? 0)
         }
         let defense = instances.reduce(base.defense) { total, item in
             let quality = ["Q0": 0, "Q1": 3, "Q2": 6, "Q3": 10, "Q4": 15][item.qualityID, default: 0]
             let affix = item.affixIDs.filter { $0 == "AFFIX_GUARD_TEST" }.count + (item.latentEffectID == "LATENT_GUARD_TEST" ? 3 : 0)
-            return total + (gearDefenseBonuses[item.definitionID, default: 0] + affix) * (100 + quality + 2 * item.refinement) / 100
+            let legacy = (rankedBase(gearDefenseBonuses[item.definitionID, default: 0], item: item) + affix) * (100 + quality + 2 * item.refinement) / 100
+            guard enhancementProjectionPolicyR230 == .r2SlotBudgetCandidate else { return total + legacy }
+            let slot = gear.first(where: { $0.id == item.definitionID })?.slot ?? ""
+            return total + legacy + (GearEnhancementGrowthR230.delta(slot: slot, enhancement: item.enhancement, refinement: item.refinement)?.defense ?? 0)
         }
         let guardChance = instances.reduce(base.guardChanceBP) { total, item in
             total + (gear.first(where: { $0.id == item.definitionID })?.guardChanceBonusBP ?? 0)
@@ -200,13 +225,17 @@ public struct GameCatalog: Codable, Sendable {
     public func projectCandidateCombatantR005(for actorID: String, with gearInstances: [GearInstance],
                                                completedResearchIDs: Set<String> = [], totalXP: Int = 0,
                                                candidateGrowth: CandidateCharacterGrowth? = nil,
-                                               candidateLatentPolicy: CandidateLatentSlotPolicyR003) throws -> CandidateLatentCombatantProjectionR005 {
+                                               candidateLatentPolicy: CandidateLatentSlotPolicyR003,
+                                               enhancementProjectionPolicyR230: EnhancementProjectionPolicyR230 = .legacy,
+                                               refinementRanksR352: [UUID: Int] = [:]) throws -> CandidateLatentCombatantProjectionR005 {
         let instances = gearInstances.filter { $0.ownerID == nil || $0.ownerID == actorID }
         let legacyItems = instances.filter { $0.candidateLatentSlots == nil }
         let candidateItems = instances.filter { $0.candidateLatentSlots != nil }
         var combatant = projectCombatant(for: actorID, with: legacyItems,
                                          completedResearchIDs: completedResearchIDs,
-                                         totalXP: totalXP, candidateGrowth: candidateGrowth)
+                                         totalXP: totalXP, candidateGrowth: candidateGrowth,
+                                         enhancementProjectionPolicyR230: enhancementProjectionPolicyR230,
+                                         refinementRanksR352: refinementRanksR352)
         // Loading a policy must not move an all-legacy loadout onto the candidate
         // combat path. Preserve the exact historical projection and leave the
         // typed timeline modifier absent until at least one item has versioned data.
@@ -238,6 +267,13 @@ public struct GameCatalog: Codable, Sendable {
             return product / 10_000
         }
 
+        func rankedBase(_ value: Int, item: GearInstance) throws -> Int {
+            guard let rank = refinementRanksR352[item.id], rank > 1,
+                  let multiplier = NaturalGearRefinementPolicyR352.multiplierBasisPointsForPersistedRank(rank) else { return value }
+            let (product, overflow) = value.multipliedReportingOverflow(by: multiplier - 10_000)
+            guard !overflow else { throw CandidateLatentPolicyErrorR003.arithmeticOverflow }
+            return try add(value, product / 10_000, "R352 ranked gear base")
+        }
         var candidateGuardBase = combatant.guardChanceBP
         var effects = combatant.effectIDs
         var latentItems: [CandidateLatentEquippedItemR005] = []
@@ -250,12 +286,24 @@ public struct GameCatalog: Codable, Sendable {
             let attackRefinement = try multiplied(2, item.refinement)
             let hpDefensePercent = try add(100, try multiplied(2, item.refinement), "refinement factor")
             let attackPercent = try add(100, try add(attackEnhancement, attackRefinement, "attack factor"), "attack factor")
-            combatant.attack = try add(combatant.attack,
-                                       scaled(gearAttackBonuses[item.definitionID, default: 0], attackPercent, "attack"), "attack")
-            combatant.maxHP = try add(combatant.maxHP,
-                                      scaled(gearHPBonuses[item.definitionID, default: 0], hpDefensePercent, "hp"), "hp")
-            combatant.defense = try add(combatant.defense,
-                                        scaled(gearDefenseBonuses[item.definitionID, default: 0], hpDefensePercent, "defense"), "defense")
+            if enhancementProjectionPolicyR230 == .legacy {
+                combatant.attack = try add(combatant.attack,
+                    scaled(try rankedBase(gearAttackBonuses[item.definitionID, default: 0], item: item), attackPercent, "attack"), "attack")
+                combatant.maxHP = try add(combatant.maxHP,
+                    scaled(try rankedBase(gearHPBonuses[item.definitionID, default: 0], item: item), hpDefensePercent, "hp"), "hp")
+                combatant.defense = try add(combatant.defense,
+                    scaled(try rankedBase(gearDefenseBonuses[item.definitionID, default: 0], item: item), hpDefensePercent, "defense"), "defense")
+            } else {
+                guard let growth = GearEnhancementGrowthR230.delta(slot: definition.slot, enhancement: item.enhancement, refinement: item.refinement) else {
+                    throw CandidateLatentPolicyErrorR003.invalidRange
+                }
+                combatant.attack = try add(combatant.attack,
+                    try add(scaled(try rankedBase(gearAttackBonuses[item.definitionID, default: 0], item: item), hpDefensePercent, "attack"), growth.attack, "attack growth"), "attack")
+                combatant.maxHP = try add(combatant.maxHP,
+                    try add(scaled(try rankedBase(gearHPBonuses[item.definitionID, default: 0], item: item), hpDefensePercent, "hp"), growth.hp, "hp growth"), "hp")
+                combatant.defense = try add(combatant.defense,
+                    try add(scaled(try rankedBase(gearDefenseBonuses[item.definitionID, default: 0], item: item), hpDefensePercent, "defense"), growth.defense, "defense growth"), "defense")
+            }
             candidateGuardBase = try add(candidateGuardBase, definition.guardChanceBonusBP ?? 0, "guard chance")
             effects.formUnion(definition.effects)
             latentItems.append(CandidateLatentEquippedItemR005(id: item.id, templateID: item.definitionID,
@@ -276,11 +324,11 @@ public struct GameCatalog: Codable, Sendable {
         return CandidateLatentCombatantProjectionR005(combatant: combatant, latent: latent)
     }
 
-    public init(version: String, regions: [RegionDefinition], enemies: [EnemyDefinition], gear: [GearDefinition], research: [ResearchDefinition], materialIDs: [String] = [], materialAvailabilityGates: [String: String] = [:], recipes: [RecipeDefinition] = [], actorIDs: [String] = [], challenges: [ChallengeDefinition] = [], researchEffects: [String: ResearchStatEffect] = [:], appearances: [AppearanceDefinition] = [], furnitureIDs: [String] = [], dailyFreeTicketGrant: Int = 5) {
-        self.version = version; self.authority = .unapprovedTestOverlay
+    public init(version: String, regions: [RegionDefinition], enemies: [EnemyDefinition], gear: [GearDefinition], research: [ResearchDefinition], materialIDs: [String] = [], materialAvailabilityGates: [String: String] = [:], recipes: [RecipeDefinition] = [], actorIDs: [String] = [], challenges: [ChallengeDefinition] = [], researchEffects: [String: ResearchStatEffect] = [:], appearances: [AppearanceDefinition] = [], furnitureIDs: [String] = [], dailyFreeTicketGrant: Int = 5, authority: BalanceAuthority = .unapprovedTestOverlay, gearAttackBonuses: [String: Int] = [:], gearHPBonuses: [String: Int] = [:], gearDefenseBonuses: [String: Int] = [:], gachaOddsBasisPoints: [String: Int] = ["Q0": 3_500, "Q1": 4_000, "Q2": 2_000, "Q3": 400, "Q4": 100]) {
+        self.version = version; self.authority = authority
         self.regions = regions; self.enemies = enemies; self.gear = gear; self.research = research; self.materialIDs = materialIDs; self.materialAvailabilityGates = materialAvailabilityGates; self.recipes = recipes; self.actorIDs = actorIDs
-        self.gearAttackBonuses = [:]; self.gearHPBonuses = [:]; self.gearDefenseBonuses = [:]
-        self.gachaOddsBasisPoints = ["Q0": 3_500, "Q1": 4_000, "Q2": 2_000, "Q3": 400, "Q4": 100]
+        self.gearAttackBonuses = gearAttackBonuses; self.gearHPBonuses = gearHPBonuses; self.gearDefenseBonuses = gearDefenseBonuses
+        self.gachaOddsBasisPoints = gachaOddsBasisPoints
         self.challenges = challenges
         self.researchEffects = researchEffects
         self.appearances = appearances
@@ -297,13 +345,24 @@ public struct GameCatalog: Codable, Sendable {
         guard let challenge = challenges.first(where: { $0.id == challengeID }) else { throw CoreError.invalidCommand("unknown challenge") }
         let definitions = challenge.enemyIDs.compactMap { id in enemies.first(where: { $0.id == id }) }
         guard !definitions.isEmpty, definitions.count == challenge.enemyIDs.count else { throw CoreError.invalidCatalog("challenge references unresolved enemy IDs: \(challengeID)") }
-        var foes = definitions.map { Combatant(id: $0.id, maxHP: $0.hp * challenge.enemyHPScale, attack: $0.attack * challenge.enemyAttackScale, defense: $0.defense, actionPattern: $0.actionPattern ?? challenge.actionPattern) }
+        var foes = definitions.map { definition in
+            // CH_R02_01 explicitly requires the candidate DoT mechanic. Its first authored
+            // enemy's general-purpose drowse pattern otherwise overrides the challenge pattern.
+            let actionPattern = challengeID == "CH_R02_01" && definition.id == "E_R02_01"
+                ? challenge.actionPattern
+                : (definition.actionPattern ?? challenge.actionPattern)
+            return Combatant(id: definition.id, maxHP: definition.hp * challenge.enemyHPScale,
+                             attack: definition.attack * challenge.enemyAttackScale,
+                             defense: definition.defense, actionPattern: actionPattern)
+        }
         var presentation = Dictionary(uniqueKeysWithValues: definitions.map { enemy in
             (enemy.id, CombatEntityPresentation(entityID: enemy.id, kind: "enemy", catalogID: enemy.id, label: enemy.name, assetKey: enemy.id))
         })
         if ["CH_R01_02", "CH_R02_03", "CH_R03_03"].contains(challengeID) {
             let base = definitions[0]
-            for index in 1...2 {
+            // R220 candidate consistency: two authored enemies plus one support add.
+            let additionalCount = challengeID == "CH_R01_02" ? 1 : 2
+            for index in 1...additionalCount {
                 let addID = "\(challengeID)_ADD_\(index)"
                 foes.append(Combatant(id: addID, maxHP: max(1, base.hp * challenge.enemyHPScale / 4), attack: max(1, base.attack * challenge.enemyAttackScale / 2), defense: base.defense, actionPattern: index == 1 ? "support" : "multiHit"))
                 presentation[addID] = CombatEntityPresentation(entityID: addID, kind: "add", catalogID: base.id, label: index == 1 ? "小型支援個体" : "小型追撃個体", assetKey: base.id)
@@ -332,7 +391,7 @@ public struct GameCatalog: Codable, Sendable {
             return parts.count == 3 && parts[0] == "G" && enemies.contains(where: { $0.id == "B_\(parts[1])_\(parts[2])" })
         }) else { throw CoreError.invalidCatalog("material availability gate references are invalid") }
         guard materialAvailabilityGates.isEmpty || regions.flatMap(\.gatherMaterialIDs).allSatisfy(materialAvailabilityGates.keys.contains) else { throw CoreError.invalidCatalog("gatherable content is missing its source availability gate") }
-        guard appearances.allSatisfy({ ["costume", "weapon"].contains($0.kind) && !$0.actorIDs.isEmpty && $0.actorIDs.allSatisfy(Set(actorIDs).contains) }) else { throw CoreError.invalidCatalog("invalid appearance definition") }
+        guard appearances.allSatisfy({ ["costume", "weapon", "accessory"].contains($0.kind) && !$0.actorIDs.isEmpty && $0.actorIDs.allSatisfy(Set(actorIDs).contains) }) else { throw CoreError.invalidCatalog("invalid appearance definition") }
         guard researchEffects.keys.allSatisfy({ key in research.contains(where: { $0.effectID == key }) }), researchEffects.values.allSatisfy({ $0.partyAttack >= 0 && $0.partyMaxHP >= 0 && $0.partyDefense >= 0 }) else { throw CoreError.invalidCatalog("research effect references or values invalid") }
         guard Set(gachaOddsBasisPoints.keys) == Set(["Q0", "Q1", "Q2", "Q3", "Q4"]), gachaOddsBasisPoints.values.allSatisfy({ $0 >= 0 }), gachaOddsBasisPoints.values.reduce(0, +) == 10_000 else { throw CoreError.invalidCatalog("gacha quality profile must contain Q0...Q4 and sum to 10000 basis points") }
         guard gear.allSatisfy({ $0.actorIDs.allSatisfy(Set(actorIDs).contains) }) else { throw CoreError.invalidCatalog("gear references unknown actor") }
@@ -465,6 +524,125 @@ public struct LocalAdAttemptRecord: Codable, Sendable, Equatable, Identifiable {
         self.sessionID = sessionID; self.opportunityID = opportunityID; self.outcome = outcome; self.claimedByAdSkip = claimedByAdSkip; self.recordedAt = recordedAt; self.rewardXPByActor = rewardXPByActor; self.rewardDust = rewardDust
     }
 }
+/// Persisted, typed selector for the single R144 comparison-policy work slot.
+/// A missing value is a legacy save and falls back to gatherTargetMaterialID.
+public struct PartyWorkTargetR144: Codable, Sendable, Equatable {
+    /// Nested marker makes older readers reject candidate saves rather than
+    /// interpreting investigation as the legacy gather target.
+    public let futureVersion: Int
+    public enum Kind: String, Codable, Sendable { case gather, investigate }
+    public let kind: Kind
+    public let targetID: String
+    public init(kind: Kind, targetID: String) { self.futureVersion = 2; self.kind = kind; self.targetID = targetID }
+    public static func gather(_ materialID: String) -> Self { Self(kind: .gather, targetID: materialID) }
+    public static func investigate(_ enemyID: String) -> Self { Self(kind: .investigate, targetID: enemyID) }
+}
+
+/// Captures every JSON key, including fields unknown to the typed model.
+private struct GearLoadoutJSONKeyR342: CodingKey {
+    let stringValue: String
+    let intValue: Int? = nil
+    init?(stringValue: String) { self.stringValue = stringValue }
+    init?(intValue: Int) { return nil }
+}
+
+public enum GearLoadoutSlotR342: Int, Codable, Sendable, CaseIterable {
+    case first = 1
+    case second = 2
+}
+
+/// A saved loadout records only owned gear instance IDs and actor-slot assignments.
+/// It deliberately does not snapshot stats, enhancement, quality, or latent payloads.
+public struct GearLoadoutR342: Codable, Sendable, Equatable {
+    public let gearByActorSlot: [String: UUID]
+    public init(gearByActorSlot: [String: UUID]) { self.gearByActorSlot = gearByActorSlot }
+
+    private enum CodingKeys: String, CodingKey { case gearByActorSlot }
+    public init(from decoder: Decoder) throws {
+        let raw = try decoder.container(keyedBy: GearLoadoutJSONKeyR342.self)
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        guard Set(raw.allKeys.map(\.stringValue)) == Set(["gearByActorSlot"]) else {
+            throw DecodingError.dataCorrupted(.init(codingPath: decoder.codingPath,
+                debugDescription: "R342 loadout has unknown fields"))
+        }
+        let map = try c.decode([String: UUID].self, forKey: .gearByActorSlot)
+        let validKeys = map.keys.allSatisfy { key in
+            let parts = key.split(separator: "|", omittingEmptySubsequences: false)
+            return parts.count == 2 && !parts[0].isEmpty && !parts[1].isEmpty
+        }
+        guard !map.isEmpty, validKeys, Set(map.values).count == map.count else {
+            throw DecodingError.dataCorrupted(.init(codingPath: decoder.codingPath,
+                debugDescription: "R342 loadout assignments are malformed"))
+        }
+        self.gearByActorSlot = map
+    }
+}
+
+/// Opt-in, versioned R342 payload. The futureVersion marker makes older readers reject
+/// this save instead of silently ignoring the loadout while continuing to write it.
+public struct GearLoadoutsR342: Codable, Sendable, Equatable {
+    public let futureVersion: Int
+    public private(set) var first: GearLoadoutR342?
+    public private(set) var second: GearLoadoutR342?
+
+    init(first: GearLoadoutR342? = nil, second: GearLoadoutR342? = nil) {
+        self.futureVersion = 2
+        self.first = first
+        self.second = second
+    }
+
+    public func loadout(for slot: GearLoadoutSlotR342) -> GearLoadoutR342? {
+        switch slot { case .first: first; case .second: second }
+    }
+
+    mutating func set(_ loadout: GearLoadoutR342?, for slot: GearLoadoutSlotR342) {
+        switch slot { case .first: first = loadout; case .second: second = loadout }
+    }
+
+    enum CodingKeys: String, CodingKey { case futureVersion, first, second }
+    public init(from decoder: Decoder) throws {
+        let raw = try decoder.container(keyedBy: GearLoadoutJSONKeyR342.self)
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        let keys = Set(raw.allKeys.map(\.stringValue))
+        guard keys.isSubset(of: Set(["futureVersion", "first", "second"])), keys.contains("futureVersion") else {
+            throw DecodingError.dataCorrupted(.init(codingPath: decoder.codingPath,
+                debugDescription: "R342 payload has unknown fields or is missing its marker"))
+        }
+        let version = try c.decode(Int.self, forKey: .futureVersion)
+        guard version == 2 else {
+            throw DecodingError.dataCorruptedError(forKey: .futureVersion, in: c,
+                debugDescription: "Unsupported R342 gear-loadout payload version")
+        }
+        for key in [CodingKeys.first, .second] where c.contains(key) {
+            guard try !c.decodeNil(forKey: key) else {
+                throw DecodingError.dataCorruptedError(forKey: key, in: c,
+                    debugDescription: "An absent gear-loadout slot must be omitted, not null")
+            }
+        }
+        let first = try c.decodeIfPresent(GearLoadoutR342.self, forKey: .first)
+        let second = try c.decodeIfPresent(GearLoadoutR342.self, forKey: .second)
+        guard first != nil || second != nil else {
+            throw DecodingError.dataCorruptedError(forKey: .first, in: c,
+                debugDescription: "An empty gear-loadout payload must be omitted")
+        }
+        for loadout in [first, second].compactMap({ $0 }) {
+            let map = loadout.gearByActorSlot
+            guard !map.isEmpty,
+                  map.keys.allSatisfy({ key in
+                      let parts = key.split(separator: "|", omittingEmptySubsequences: false)
+                      return parts.count == 2 && !parts[0].isEmpty && !parts[1].isEmpty
+                  }),
+                  Set(map.values).count == map.count else {
+                throw DecodingError.dataCorruptedError(forKey: .first, in: c,
+                    debugDescription: "Malformed or duplicate gear assignment in R342 loadout")
+            }
+        }
+        self.futureVersion = version
+        self.first = first
+        self.second = second
+    }
+}
+
 public struct GameSnapshot: Codable, Sendable, Equatable {
     public var revision: Int64
     public var currency: [String: Int]
@@ -474,6 +652,8 @@ public struct GameSnapshot: Codable, Sendable, Equatable {
     public var unlockedRegionIDs: Set<String>
     public var completedResearchIDs: Set<String>
     public var equippedGearIDs: [String: UUID]
+    /// Missing in legacy saves; the opt-in R342 profile alone writes this future payload.
+    public var gearLoadoutsR342: GearLoadoutsR342?
     public var ownedCosmeticIDs: Set<String>
     public var selectedCosmeticIDs: [String: String]
     public var ownedFurnitureIDs: Set<String>
@@ -486,11 +666,19 @@ public struct GameSnapshot: Codable, Sendable, Equatable {
     public var partyActorIDs: [String]
     public var activeRegionID: String?
     public var gatherTargetMaterialID: String?
+    /// Optional R144 single-work-slot selector; absent in old saves uses legacy gather target.
+    public var partyWorkTargetR144: PartyWorkTargetR144?
+    /// Explicitly opted-in R350 natural discovery state; absent legacy saves stay unchanged.
+    public var naturalGearDiscoveryR350: NaturalGearDiscoveryLedgerR350?
+    /// R352 opt-in per-instance refinement rank; absent entries mean rank I.
+    public var naturalGearRefinementR352: NaturalGearRefinementLedgerR352?
     public var completedEncounterIDs: Set<String>
     public var lastCombatResult: CombatResult?
     public var lastEncounterID: String?
     /// Optional player-selected recipe goal; absent in legacy saves means no goal.
     public var trackedRecipeID: String?
+    /// R179 development-only first-craft eligibility; absent old saves decode safely to false.
+    public var firstCraftAidEligibleR179: Bool?
     public var craftedGearOnce: Bool
     public var gearComparisonSeen: Bool
     public var gachaUnlocked: Bool
@@ -508,10 +696,10 @@ public struct GameSnapshot: Codable, Sendable, Equatable {
     public var localAdNextOpportunitySequence: Int
     public var localAdRewardOpportunities: [String: LocalAdRewardOpportunity]
     public var localAdAttemptRecords: [String: LocalAdAttemptRecord]
-    public init(revision: Int64 = 0, currency: [String: Int] = ["coin": 0, "ticket_free": 0, "ticket_paid_mock": 0], materials: [String: Int] = [:], characterXP: [String: Int] = [:], gear: [GearInstance] = [], unlockedRegionIDs: Set<String> = [], completedResearchIDs: Set<String> = [], equippedGearIDs: [String: UUID] = [:], ownedCosmeticIDs: Set<String> = [], selectedCosmeticIDs: [String: String] = [:], selectedWeaponAppearanceIDs: [String: String] = [:], ownedFurnitureIDs: Set<String> = [], placedFurnitureIDs: Set<String> = [], lastClaimAt: Date? = nil, offlineRemainderSeconds: TimeInterval = 0, pendingPurchaseIDs: Set<String> = [], mockPurchaseRecords: [String: MockPurchaseRecord] = [:], lastDailyClaimKey: String? = nil, lastDailyClaimAt: Date? = nil, partyActorIDs: [String] = ["C_WITCH", "C_APPRENTICE", "C_SMITH", "C_FAMILIAR"], activeRegionID: String? = nil, gatherTargetMaterialID: String? = nil, completedEncounterIDs: Set<String> = [], lastCombatResult: CombatResult? = nil, lastEncounterID: String? = nil, trackedRecipeID: String? = nil, craftedGearOnce: Bool = false, gearComparisonSeen: Bool = false, gachaUnlocked: Bool = false, gachaPity: GachaPityState = GachaPityState(), localStoreKitQARecords: [String: LocalStoreKitQARecord] = [:], localStoreKitQAOwnedProductIDs: Set<String> = [], localAdSkipEntitledForQA: Bool = false, localAdWorkBlockSeconds: Int = 0, localAdWorkBlockXPByActor: [String: Int] = [:], localAdWorkBlockDust: Int = 0, localAdXPFractionalCarry: [String: Int] = [:], localAdDustFractionalCarry: Int = 0, localAdNextOpportunitySequence: Int = 1, localAdRewardOpportunities: [String: LocalAdRewardOpportunity] = [:], localAdAttemptRecords: [String: LocalAdAttemptRecord] = [:]) {
-        self.revision = revision; self.currency = currency; self.materials = materials; self.characterXP = characterXP; self.gear = gear; self.unlockedRegionIDs = unlockedRegionIDs; self.completedResearchIDs = completedResearchIDs; self.equippedGearIDs = equippedGearIDs; self.ownedCosmeticIDs = ownedCosmeticIDs; self.selectedCosmeticIDs = selectedCosmeticIDs; self.selectedWeaponAppearanceIDs = selectedWeaponAppearanceIDs; self.ownedFurnitureIDs = ownedFurnitureIDs; self.placedFurnitureIDs = placedFurnitureIDs; self.lastClaimAt = lastClaimAt; self.offlineRemainderSeconds = offlineRemainderSeconds; self.pendingPurchaseIDs = pendingPurchaseIDs; self.mockPurchaseRecords = mockPurchaseRecords; self.lastDailyClaimKey = lastDailyClaimKey; self.lastDailyClaimAt = lastDailyClaimAt; self.partyActorIDs = partyActorIDs; self.activeRegionID = activeRegionID; self.gatherTargetMaterialID = gatherTargetMaterialID; self.completedEncounterIDs = completedEncounterIDs; self.lastCombatResult = lastCombatResult; self.lastEncounterID = lastEncounterID; self.trackedRecipeID = trackedRecipeID; self.craftedGearOnce = craftedGearOnce; self.gearComparisonSeen = gearComparisonSeen; self.gachaUnlocked = gachaUnlocked; self.gachaPity = gachaPity; self.localStoreKitQARecords = localStoreKitQARecords; self.localStoreKitQAOwnedProductIDs = localStoreKitQAOwnedProductIDs; self.localAdSkipEntitledForQA = localAdSkipEntitledForQA; self.localAdWorkBlockSeconds = localAdWorkBlockSeconds; self.localAdWorkBlockXPByActor = localAdWorkBlockXPByActor; self.localAdWorkBlockDust = localAdWorkBlockDust; self.localAdXPFractionalCarry = localAdXPFractionalCarry; self.localAdDustFractionalCarry = localAdDustFractionalCarry; self.localAdNextOpportunitySequence = localAdNextOpportunitySequence; self.localAdRewardOpportunities = localAdRewardOpportunities; self.localAdAttemptRecords = localAdAttemptRecords
+    public init(revision: Int64 = 0, currency: [String: Int] = ["coin": 0, "ticket_free": 0, "ticket_paid_mock": 0], materials: [String: Int] = [:], characterXP: [String: Int] = [:], gear: [GearInstance] = [], unlockedRegionIDs: Set<String> = [], completedResearchIDs: Set<String> = [], equippedGearIDs: [String: UUID] = [:], gearLoadoutsR342: GearLoadoutsR342? = nil, ownedCosmeticIDs: Set<String> = [], selectedCosmeticIDs: [String: String] = [:], selectedWeaponAppearanceIDs: [String: String] = [:], ownedFurnitureIDs: Set<String> = [], placedFurnitureIDs: Set<String> = [], lastClaimAt: Date? = nil, offlineRemainderSeconds: TimeInterval = 0, pendingPurchaseIDs: Set<String> = [], mockPurchaseRecords: [String: MockPurchaseRecord] = [:], lastDailyClaimKey: String? = nil, lastDailyClaimAt: Date? = nil, partyActorIDs: [String] = ["C_WITCH", "C_APPRENTICE", "C_SMITH", "C_FAMILIAR"], activeRegionID: String? = nil, gatherTargetMaterialID: String? = nil, partyWorkTargetR144: PartyWorkTargetR144? = nil, naturalGearDiscoveryR350: NaturalGearDiscoveryLedgerR350? = nil, naturalGearRefinementR352: NaturalGearRefinementLedgerR352? = nil, completedEncounterIDs: Set<String> = [], lastCombatResult: CombatResult? = nil, lastEncounterID: String? = nil, trackedRecipeID: String? = nil, firstCraftAidEligibleR179: Bool? = nil, craftedGearOnce: Bool = false, gearComparisonSeen: Bool = false, gachaUnlocked: Bool = false, gachaPity: GachaPityState = GachaPityState(), localStoreKitQARecords: [String: LocalStoreKitQARecord] = [:], localStoreKitQAOwnedProductIDs: Set<String> = [], localAdSkipEntitledForQA: Bool = false, localAdWorkBlockSeconds: Int = 0, localAdWorkBlockXPByActor: [String: Int] = [:], localAdWorkBlockDust: Int = 0, localAdXPFractionalCarry: [String: Int] = [:], localAdDustFractionalCarry: Int = 0, localAdNextOpportunitySequence: Int = 1, localAdRewardOpportunities: [String: LocalAdRewardOpportunity] = [:], localAdAttemptRecords: [String: LocalAdAttemptRecord] = [:]) {
+        self.revision = revision; self.currency = currency; self.materials = materials; self.characterXP = characterXP; self.gear = gear; self.unlockedRegionIDs = unlockedRegionIDs; self.completedResearchIDs = completedResearchIDs; self.equippedGearIDs = equippedGearIDs; self.gearLoadoutsR342 = gearLoadoutsR342; self.ownedCosmeticIDs = ownedCosmeticIDs; self.selectedCosmeticIDs = selectedCosmeticIDs; self.selectedWeaponAppearanceIDs = selectedWeaponAppearanceIDs; self.ownedFurnitureIDs = ownedFurnitureIDs; self.placedFurnitureIDs = placedFurnitureIDs; self.lastClaimAt = lastClaimAt; self.offlineRemainderSeconds = offlineRemainderSeconds; self.pendingPurchaseIDs = pendingPurchaseIDs; self.mockPurchaseRecords = mockPurchaseRecords; self.lastDailyClaimKey = lastDailyClaimKey; self.lastDailyClaimAt = lastDailyClaimAt; self.partyActorIDs = partyActorIDs; self.activeRegionID = activeRegionID; self.gatherTargetMaterialID = gatherTargetMaterialID; self.partyWorkTargetR144 = partyWorkTargetR144; self.naturalGearDiscoveryR350 = naturalGearDiscoveryR350; self.naturalGearRefinementR352 = naturalGearRefinementR352; self.completedEncounterIDs = completedEncounterIDs; self.lastCombatResult = lastCombatResult; self.lastEncounterID = lastEncounterID; self.trackedRecipeID = trackedRecipeID; self.firstCraftAidEligibleR179 = firstCraftAidEligibleR179; self.craftedGearOnce = craftedGearOnce; self.gearComparisonSeen = gearComparisonSeen; self.gachaUnlocked = gachaUnlocked; self.gachaPity = gachaPity; self.localStoreKitQARecords = localStoreKitQARecords; self.localStoreKitQAOwnedProductIDs = localStoreKitQAOwnedProductIDs; self.localAdSkipEntitledForQA = localAdSkipEntitledForQA; self.localAdWorkBlockSeconds = localAdWorkBlockSeconds; self.localAdWorkBlockXPByActor = localAdWorkBlockXPByActor; self.localAdWorkBlockDust = localAdWorkBlockDust; self.localAdXPFractionalCarry = localAdXPFractionalCarry; self.localAdDustFractionalCarry = localAdDustFractionalCarry; self.localAdNextOpportunitySequence = localAdNextOpportunitySequence; self.localAdRewardOpportunities = localAdRewardOpportunities; self.localAdAttemptRecords = localAdAttemptRecords
     }
-    enum CodingKeys: String, CodingKey { case revision, currency, materials, characterXP, gear, unlockedRegionIDs, completedResearchIDs, equippedGearIDs, ownedCosmeticIDs, selectedCosmeticIDs, selectedWeaponAppearanceIDs, ownedFurnitureIDs, placedFurnitureIDs, lastClaimAt, offlineRemainderSeconds, pendingPurchaseIDs, mockPurchaseRecords, localStoreKitQARecords, localStoreKitQAOwnedProductIDs, localAdSkipEntitledForQA, localAdWorkBlockSeconds, localAdWorkBlockXPByActor, localAdWorkBlockDust, localAdXPFractionalCarry, localAdDustFractionalCarry, localAdNextOpportunitySequence, localAdRewardOpportunities, localAdAttemptRecords, lastDailyClaimKey, lastDailyClaimAt, partyActorIDs, activeRegionID, gatherTargetMaterialID, completedEncounterIDs, lastCombatResult, lastEncounterID, trackedRecipeID, craftedGearOnce, gearComparisonSeen, gachaUnlocked, gachaPity }
+    enum CodingKeys: String, CodingKey { case revision, currency, materials, characterXP, gear, unlockedRegionIDs, completedResearchIDs, equippedGearIDs, gearLoadoutsR342, ownedCosmeticIDs, selectedCosmeticIDs, selectedWeaponAppearanceIDs, ownedFurnitureIDs, placedFurnitureIDs, lastClaimAt, offlineRemainderSeconds, pendingPurchaseIDs, mockPurchaseRecords, localStoreKitQARecords, localStoreKitQAOwnedProductIDs, localAdSkipEntitledForQA, localAdWorkBlockSeconds, localAdWorkBlockXPByActor, localAdWorkBlockDust, localAdXPFractionalCarry, localAdDustFractionalCarry, localAdNextOpportunitySequence, localAdRewardOpportunities, localAdAttemptRecords, lastDailyClaimKey, lastDailyClaimAt, partyActorIDs, activeRegionID, gatherTargetMaterialID, partyWorkTargetR144, naturalGearDiscoveryR350, naturalGearRefinementR352, completedEncounterIDs, lastCombatResult, lastEncounterID, trackedRecipeID, firstCraftAidEligibleR179, craftedGearOnce, gearComparisonSeen, gachaUnlocked, gachaPity }
     public init(from decoder: Decoder) throws {
         let c = try decoder.container(keyedBy: CodingKeys.self)
         revision = try c.decodeIfPresent(Int64.self, forKey: .revision) ?? 0
@@ -522,6 +710,7 @@ public struct GameSnapshot: Codable, Sendable, Equatable {
         unlockedRegionIDs = try c.decodeIfPresent(Set<String>.self, forKey: .unlockedRegionIDs) ?? []
         completedResearchIDs = try c.decodeIfPresent(Set<String>.self, forKey: .completedResearchIDs) ?? []
         equippedGearIDs = try c.decodeIfPresent([String: UUID].self, forKey: .equippedGearIDs) ?? [:]
+        gearLoadoutsR342 = try c.decodeIfPresent(GearLoadoutsR342.self, forKey: .gearLoadoutsR342)
         ownedCosmeticIDs = try c.decodeIfPresent(Set<String>.self, forKey: .ownedCosmeticIDs) ?? []
         selectedCosmeticIDs = try c.decodeIfPresent([String: String].self, forKey: .selectedCosmeticIDs) ?? [:]
         selectedWeaponAppearanceIDs = try c.decodeIfPresent([String: String].self, forKey: .selectedWeaponAppearanceIDs) ?? [:]
@@ -547,10 +736,14 @@ public struct GameSnapshot: Codable, Sendable, Equatable {
         partyActorIDs = try c.decodeIfPresent([String].self, forKey: .partyActorIDs) ?? ["C_WITCH", "C_APPRENTICE", "C_SMITH", "C_FAMILIAR"]
         activeRegionID = try c.decodeIfPresent(String.self, forKey: .activeRegionID)
         gatherTargetMaterialID = try c.decodeIfPresent(String.self, forKey: .gatherTargetMaterialID)
+        partyWorkTargetR144 = try c.decodeIfPresent(PartyWorkTargetR144.self, forKey: .partyWorkTargetR144)
+        naturalGearDiscoveryR350 = try c.decodeIfPresent(NaturalGearDiscoveryLedgerR350.self, forKey: .naturalGearDiscoveryR350)
+        naturalGearRefinementR352 = try c.decodeIfPresent(NaturalGearRefinementLedgerR352.self, forKey: .naturalGearRefinementR352)
         completedEncounterIDs = try c.decodeIfPresent(Set<String>.self, forKey: .completedEncounterIDs) ?? []
         lastCombatResult = try c.decodeIfPresent(CombatResult.self, forKey: .lastCombatResult)
         lastEncounterID = try c.decodeIfPresent(String.self, forKey: .lastEncounterID)
         trackedRecipeID = try c.decodeIfPresent(String.self, forKey: .trackedRecipeID)
+        firstCraftAidEligibleR179 = try c.decodeIfPresent(Bool.self, forKey: .firstCraftAidEligibleR179)
         craftedGearOnce = try c.decodeIfPresent(Bool.self, forKey: .craftedGearOnce) ?? false
         gearComparisonSeen = try c.decodeIfPresent(Bool.self, forKey: .gearComparisonSeen) ?? false
         gachaUnlocked = try c.decodeIfPresent(Bool.self, forKey: .gachaUnlocked) ?? false
@@ -585,6 +778,7 @@ public struct GameSnapshot: Codable, Sendable, Equatable {
 }
 public enum GameCommand: Sendable {
     case equip(gearID: UUID, actorID: String), protect(gearID: UUID, protected: Bool)
+    case saveGearLoadoutR342(slot: GearLoadoutSlotR342), applyGearLoadoutR342(slot: GearLoadoutSlotR342), clearGearLoadoutR342(slot: GearLoadoutSlotR342)
     case enhance(gearID: UUID), refine(gearID: UUID), dismantle(gearID: UUID)
     case promoteQuality(gearID: UUID)
     case craftRecipe(String), evolveGear(gearID: UUID, recipeID: String), completeResearch(String)
@@ -611,6 +805,9 @@ public enum GameCommand: Sendable {
         let fields: [String]
         switch self {
         case .equip(let gearID, let actorID): tag = "equip"; fields = [gearID.uuidString, actorID]
+        case .saveGearLoadoutR342(let slot): tag = "saveGearLoadoutR342"; fields = [String(slot.rawValue)]
+        case .applyGearLoadoutR342(let slot): tag = "applyGearLoadoutR342"; fields = [String(slot.rawValue)]
+        case .clearGearLoadoutR342(let slot): tag = "clearGearLoadoutR342"; fields = [String(slot.rawValue)]
         case .protect(let gearID, let protected): tag = "protect"; fields = [gearID.uuidString, String(protected)]
         case .enhance(let gearID): tag = "enhance"; fields = [gearID.uuidString]
         case .refine(let gearID): tag = "refine"; fields = [gearID.uuidString]
@@ -673,12 +870,12 @@ public struct WardrobePreviewSelectionR094: Codable, Equatable, Sendable {
 
     public mutating func clear() { appearanceID = nil; kind = nil }
 
-    public func applying(to base: [String: String]) -> [String: String] {
+    public func applying(to base: [String: String], actorID: String = "C_WITCH") -> [String: String] {
         var result = base
         guard let appearanceID else { return result }
         switch kind {
-        case "costume": result["C_WITCH"] = appearanceID
-        case "weapon": result["WITCH_WEAPON"] = appearanceID
+        case "costume": result[actorID] = appearanceID
+        case "weapon" where actorID == "C_WITCH": result["WITCH_WEAPON"] = appearanceID
         default: break
         }
         return result

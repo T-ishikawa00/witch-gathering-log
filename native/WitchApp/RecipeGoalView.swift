@@ -8,13 +8,66 @@ struct RecipeGatherHandoffR039: Equatable {
 }
 
 extension GameModel {
+    func applyRecipeInvestigationHandoffR158(_ route: RecipeInvestigationHandoffR158) async throws {
+        guard !busy, !fighting, sharedPartyWorkR146Enabled,
+              let engine, let catalog else {
+            throw CoreError.invalidCommand("再調査先を切り替えられません。")
+        }
+        func currentGoal() -> RecipeGoalProjectionR035.Goal? {
+            var projected = state
+            projected.trackedRecipeID = route.recipeID
+            return RecipeGoalProjectionR035.trackedGoal(catalog: catalog, state: projected, firstCraftAidCapabilityR179: firstCraftAidCapabilityR179)
+        }
+        guard let goal = currentGoal(), goal.gateCleared,
+              RecipeInvestigationRouteR158.contains(route, goal: goal, catalog: catalog,
+                  state: state, sharedWorkEnabled: sharedPartyWorkR146Enabled) else {
+            throw CoreError.invalidCommand("材料の不足数、討伐状態、地域の解放状況が変わりました。目標を開き直してください。")
+        }
+        busy = true
+        defer { busy = false }
+        let commandTime = Date()
+        var regionDispatchCommitted = false
+        do {
+            if state.activeRegionID != route.regionID {
+                _ = try await engine.dispatch(.startExpeditionAt(regionID: route.regionID, now: commandTime),
+                    operationID: UUID(), expectedRevision: state.revision)
+                await refresh()
+                regionDispatchCommitted = state.activeRegionID == route.regionID
+            }
+            guard state.activeRegionID == route.regionID,
+                  let refreshedGoal = currentGoal(),
+                  refreshedGoal.gateCleared,
+                  RecipeInvestigationRouteR158.contains(route, goal: refreshedGoal,
+                      catalog: catalog, state: state, sharedWorkEnabled: true) else {
+                throw CoreError.invalidCommand("地域は切り替わりましたが、再調査条件が変わったため目標は設定していません。")
+            }
+            if state.partyWorkTargetR144 != .investigate(route.enemyID) {
+                _ = try await engine.setPartyWorkTargetR144(.investigate(route.enemyID), now: commandTime,
+                    operationID: UUID(), expectedRevision: state.revision)
+                await refresh()
+            }
+            guard state.partyWorkTargetR144 == .investigate(route.enemyID) else {
+                throw CoreError.invalidCommand("再調査目標を保存できませんでした。")
+            }
+            let enemyName = catalog.enemies.first { $0.id == route.enemyID }?.name ?? "討伐済みの魔物"
+            notice = "\(enemyName)を再調査目標に設定しました。成果は共同作業の成果を受け取る操作で受け取れます。"
+        } catch {
+            await refresh()
+            if regionDispatchCommitted && state.activeRegionID == route.regionID
+                && state.partyWorkTargetR144 != .investigate(route.enemyID) {
+                notice = "地域は切り替わりましたが、再調査目標は設定されていません。条件を確認して選び直してください。"
+            }
+            throw error
+        }
+    }
+
     func applyRecipeGatherHandoffR039(_ route: RecipeGatherHandoffR039) async throws {
         guard !busy, !fighting, let engine, let catalog else {
             throw CoreError.invalidCommand("採集先を切り替えられません。")
         }
         var projectedState = state
         projectedState.trackedRecipeID = route.recipeID
-        guard let goal = RecipeGoalProjectionR035.trackedGoal(catalog: catalog, state: projectedState),
+        guard let goal = RecipeGoalProjectionR035.trackedGoal(catalog: catalog, state: projectedState, firstCraftAidCapabilityR179: firstCraftAidCapabilityR179),
               let requirement = goal.requirements.first(where: { $0.materialID == route.materialID }),
               requirement.missing > 0,
               requirement.availableGatherRegions.contains(route.regionID) else {
@@ -34,39 +87,101 @@ extension GameModel {
             guard state.activeRegionID == route.regionID else {
                 throw CoreError.invalidCommand("指定した地域へ移動できませんでした。")
             }
-            if state.gatherTargetMaterialID != route.materialID {
-                _ = try await engine.dispatch(.setGatherTargetAt(resourceID: route.materialID, now: commandTime),
-                                              operationID: UUID(), expectedRevision: state.revision)
+            let selectionAlreadyCommitted = RecipeGatherHandoffTargetR157.isCommitted(
+                sharedWorkEnabled: sharedPartyWorkR146Enabled,
+                typedTarget: state.partyWorkTargetR144,
+                legacyGatherTargetID: state.gatherTargetMaterialID,
+                requestedMaterialID: route.materialID
+            )
+            if !selectionAlreadyCommitted {
+                if sharedPartyWorkR146Enabled {
+                    _ = try await engine.setPartyWorkTargetR144(.gather(route.materialID), now: commandTime,
+                                                                operationID: UUID(), expectedRevision: state.revision)
+                } else {
+                    _ = try await engine.dispatch(.setGatherTargetAt(resourceID: route.materialID, now: commandTime),
+                                                  operationID: UUID(), expectedRevision: state.revision)
+                }
                 await refresh()
             }
-            guard state.gatherTargetMaterialID == route.materialID else {
+            guard RecipeGatherHandoffTargetR157.isCommitted(
+                sharedWorkEnabled: sharedPartyWorkR146Enabled,
+                typedTarget: state.partyWorkTargetR144,
+                legacyGatherTargetID: state.gatherTargetMaterialID,
+                requestedMaterialID: route.materialID
+            ) else {
                 throw CoreError.invalidCommand("指定した素材を採集目標に設定できませんでした。")
             }
             // Switching a region or target settles elapsed work. Re-project the
             // shortage from the committed state instead of the old preview.
             var settledState = state
             settledState.trackedRecipeID = route.recipeID
-            let remaining = RecipeGoalProjectionR035.trackedGoal(catalog: catalog, state: settledState)?
+            let remaining = RecipeGoalProjectionR035.trackedGoal(catalog: catalog, state: settledState, firstCraftAidCapabilityR179: firstCraftAidCapabilityR179)?
                 .requirements.first(where: { $0.materialID == route.materialID })?.missing
             let progress = remaining.map { $0 == 0 ? "この材料は必要数が揃いました。" : "目標まであと\($0)個です。" } ?? "制作目標で所持数を確認できます。"
-            notice = "\(GameText.name(route.materialID))を採集します。" + progress + "成果は『成果を受け取る』から受け取れます。"
+            if sharedPartyWorkR146Enabled {
+                notice = "\(GameText.name(route.materialID))を共同作業の採集目標に設定しました。" + progress + "成果は『共同作業の成果を受け取る』から受け取れます。"
+            } else {
+                notice = "\(GameText.name(route.materialID))を採集します。" + progress + "成果は『成果を受け取る』から受け取れます。"
+            }
         } catch {
             // Region selection may have committed before target selection failed.
             await refresh()
-            if regionDispatchCommitted && state.activeRegionID == route.regionID && state.gatherTargetMaterialID != route.materialID {
-                notice = "地域は切り替わりましたが、素材目標は未設定です。採集・魔物から選び直してください。"
+            if state.activeRegionID == route.regionID {
+                let targetCommitted = RecipeGatherHandoffTargetR157.isCommitted(
+                    sharedWorkEnabled: sharedPartyWorkR146Enabled,
+                    typedTarget: state.partyWorkTargetR144,
+                    legacyGatherTargetID: state.gatherTargetMaterialID,
+                    requestedMaterialID: route.materialID
+                )
+                let failureContext = RecipeGatherHandoffTargetR157.failureContext(
+                    regionDispatchCommitted: regionDispatchCommitted,
+                    activeRegionID: state.activeRegionID,
+                    requestedRegionID: route.regionID,
+                    targetCommitted: targetCommitted
+                )
+                switch failureContext {
+                case .regionChangedTargetPending where sharedPartyWorkR146Enabled:
+                    notice = "地域は切り替わりましたが、共同作業の目標は切り替わっていません。採集先を選び直してください。"
+                case .targetUnchangedInSelectedRegion where sharedPartyWorkR146Enabled:
+                    notice = "共同作業の目標は変更されていません。採集先を選び直してください。"
+                case .regionChangedTargetPending:
+                    notice = "地域は切り替わりましたが、素材目標は未設定です。採集・魔物から選び直してください。"
+                case .noPartialRegionChange, .targetUnchangedInSelectedRegion:
+                    break
+                }
             }
             throw error
         }
     }
     var recipeGoals: [RecipeGoalProjectionR035.Goal] {
         guard let catalog else { return [] }
-        return RecipeGoalProjectionR035.goals(catalog: catalog, state: state)
+        return RecipeGoalProjectionR035.goals(catalog: catalog, state: state, firstCraftAidCapabilityR179: firstCraftAidCapabilityR179)
+    }
+
+    /// Existing craft rows only; put the first-aid recipe first only while the shared
+    /// projection says that its aid is actually applicable to this save/runtime.
+    var workshopCraftRecipesR395: [RecipeDefinition] {
+        let recipes = catalog?.recipes.filter { $0.kind == "craft_new" } ?? []
+        guard let priorityID = recipeGoals.first(where: { $0.firstCraftAidApplied })?.recipeID,
+              let priorityIndex = recipes.firstIndex(where: { $0.id == priorityID }) else {
+            return recipes
+        }
+        return [recipes[priorityIndex]] + recipes.enumerated().compactMap { index, recipe in
+            index == priorityIndex ? nil : recipe
+        }
+    }
+
+    func recipeCostDescriptionR179(_ recipeID: String) -> String {
+        let requirements = recipeGoals.first(where: { $0.recipeID == recipeID })?.requirements ?? []
+        let costs = requirements.map { "\(GameText.name($0.materialID)): \($0.owned)/\($0.required)" }
+            .joined(separator: " · ")
+        let firstAidVisible = recipeGoals.first(where: { $0.recipeID == recipeID })?.firstCraftAidApplied == true
+        return firstAidVisible ? costs + " · はじめての制作（各素材1個）" : costs
     }
 
     var trackedRecipeGoal: RecipeGoalProjectionR035.Goal? {
         guard let catalog else { return nil }
-        return RecipeGoalProjectionR035.trackedGoal(catalog: catalog, state: state)
+        return RecipeGoalProjectionR035.trackedGoal(catalog: catalog, state: state, firstCraftAidCapabilityR179: firstCraftAidCapabilityR179)
     }
 
     var previewRecipeGoal: RecipeGoalProjectionR035.Goal? {
@@ -76,7 +191,7 @@ extension GameModel {
         // Direct resolution keeps the preview visible after its parent evolves.
         var displayState = state
         displayState.trackedRecipeID = target
-        return RecipeGoalProjectionR035.trackedGoal(catalog: catalog, state: displayState)
+        return RecipeGoalProjectionR035.trackedGoal(catalog: catalog, state: displayState, firstCraftAidCapabilityR179: firstCraftAidCapabilityR179)
     }
 
     func showRecipeGoal(_ recipeID: String, gearID: UUID? = nil) {
@@ -99,8 +214,14 @@ extension GameModel {
         return catalog.enemies.filter { $0.dropMaterialID == materialID }.map { enemy in
             let available = state.unlockedRegionIDs.contains(enemy.regionID)
                 && (enemy.prerequisiteEncounterID.map(state.completedEncounterIDs.contains) ?? true)
-            return (available ? "討伐: " : "討伐の解放待ち: ") + enemy.name
-                + "（" + recipeRegionNames([enemy.regionID]) + "）"
+            if !available {
+                return "討伐の解放待ち: " + enemy.name + "（" + recipeRegionNames([enemy.regionID]) + "）"
+            }
+            if sharedPartyWorkR146Enabled && state.completedEncounterIDs.contains(enemy.id) {
+                return "再調査（時間に応じて素材を蓄積）: " + enemy.name
+                    + "（" + recipeRegionNames([enemy.regionID]) + "）"
+            }
+            return "討伐: " + enemy.name + "（" + recipeRegionNames([enemy.regionID]) + "）"
         }
     }
 
@@ -145,6 +266,7 @@ struct RecipeGoalSummaryView: View {
 struct RecipeGoalView: View {
     @ObservedObject var model: GameModel
     var onGatherSource: ((String, String, String, Int) -> Void)? = nil
+    var onInvestigationSource: ((RecipeInvestigationHandoffR158) -> Void)? = nil
 
     var body: some View {
         if let goal = model.previewRecipeGoal {
@@ -162,6 +284,11 @@ struct RecipeGoalView: View {
                     }.fixedSize(horizontal: false, vertical: true)
                 }
                 if let lock = model.recipeGateText(goal) { Text(lock).foregroundStyle(Palette.gold) }
+                if goal.firstCraftAidApplied {
+                    Label("初めての制作は、素材を1個ずつ使います。", systemImage: "sparkles")
+                        .font(.caption).foregroundStyle(Palette.gold)
+                        .accessibilityIdentifier("first_craft_aid_summary")
+                }
                 if goal.parentOwned == false {
                     Text(goal.outputOwned
                          ? "目標の型の装備を所持しています。目標は保存したままなので、解除するか別の目標を選べます。"
@@ -188,14 +315,15 @@ struct RecipeGoalView: View {
                 } else {
                     Button { model.act(.setTrackedRecipe(goal.recipeID), "制作目標を保存しました。") } label: {
                         actionLabel("この装備を目標にする")
-                    }.buttonStyle(.borderedProminent).foregroundStyle(Palette.ink)
+                    }.buttonStyle(.bordered)
                         .accessibilityIdentifier("track_recipe_goal")
                 }
                 if goal.kind == "craft_new" {
                     Button { model.act(.craftRecipe(goal.recipeID), "装備を制作しました。") } label: {
                         actionLabel("制作する")
-                    }.buttonStyle(.bordered).disabled(!goal.ready)
+                    }.buttonStyle(.borderedProminent).foregroundStyle(Palette.ink).disabled(!goal.ready)
                         .accessibilityIdentifier("goal_craft")
+                        .accessibilityHint(goal.ready ? "表示されている材料を使って、新しい装備を制作します" : "必要な材料と解放条件を確認してください")
                 } else if let itemID = model.previewRecipeGearID,
                           let item = model.state.gear.first(where: { $0.id == itemID }),
                           item.definitionID == goal.parentTemplateID {
@@ -203,12 +331,23 @@ struct RecipeGoalView: View {
                         .font(.caption).fixedSize(horizontal: false, vertical: true)
                         .accessibilityIdentifier("recipe_selected_parent")
                     GearLatentDetailsView(model: model, item: item)
+                    if let catalog = model.catalog,
+                       let outcome = try? RecipeEvolutionOutcomeProjectionR129.project(
+                        catalog: catalog, state: model.state, recipeID: goal.recipeID,
+                        selectedParentGearID: itemID) {
+                        evolutionOutcome(outcome)
+                    } else {
+                        Text("進化後の情報を確認できません。装備とレシピを読み直してください。")
+                            .font(.caption).foregroundStyle(Palette.gold)
+                            .accessibilityIdentifier("recipe_evolution_preview_unavailable")
+                    }
                     Button { model.previewRecipeGearID = nil } label: { actionLabel("育てる装備を選び直す") }
                         .buttonStyle(.bordered).accessibilityIdentifier("recipe_reselect_parent")
                     Button { model.act(.evolveGear(gearID: itemID, recipeID: goal.recipeID), "装備が進化しました。") } label: {
                         actionLabel("この装備を進化させる")
-                    }.buttonStyle(.bordered).disabled(!goal.ready || goal.parentOwned != true)
+                    }.buttonStyle(.borderedProminent).foregroundStyle(Palette.ink).disabled(!goal.ready || goal.parentOwned != true)
                         .accessibilityIdentifier("goal_evolve")
+                        .accessibilityHint("表示されている材料を使います。品質・強化・研成・潜在効果は引き継ぎます")
                 } else if goal.parentOwned == true {
                     Text("育てる装備を選ぶ").font(.headline)
                     ForEach(model.state.gear.filter { $0.definitionID == goal.parentTemplateID }) { item in
@@ -232,13 +371,68 @@ struct RecipeGoalView: View {
         }
     }
 
+    private func evolutionOutcome(_ outcome: RecipeEvolutionOutcomeProjectionR129.Outcome) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("進化で変わること").font(.headline)
+            Text("装備固有の攻撃補正 \(signedCatalogValue(outcome.catalogAttackBonusBefore))→\(signedCatalogValue(outcome.catalogAttackBonusAfter))" + (outcome.catalogAttackBonusBefore == outcome.catalogAttackBonusAfter ? "（変化なし）" : ""))
+            Text("品質・強化などの補正を含まない値です。").font(.caption)
+            effectChangeBlock(title: "加わる効果", ids: outcome.addedInherentEffectIDs)
+            effectChangeBlock(title: "外れる効果", ids: outcome.removedInherentEffectIDs)
+            Text("品質・強化・研成・潜在効果を引き継ぎます。")
+                .font(.caption).foregroundStyle(Palette.gold)
+        }
+        .fixedSize(horizontal: false, vertical: true)
+        .padding(12)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Palette.panel)
+        .clipShape(RoundedRectangle(cornerRadius: 12))
+        .accessibilityIdentifier("recipe_evolution_outcome")
+    }
+
+    private func signedCatalogValue(_ value: Int) -> String {
+        value >= 0 ? "+\(value)" : "\(value)"
+    }
+
+    private func effectChangeBlock(title: String, ids: [String]) -> some View {
+        let lines = localizedEffectLines(ids)
+        return VStack(alignment: .leading, spacing: 3) {
+            Text(title).font(.caption.weight(.semibold))
+            if lines.isEmpty { Text("なし").font(.caption) }
+            ForEach(Array(lines.enumerated()), id: \.offset) { _, line in
+                Text("・" + line).font(.caption)
+            }
+        }
+    }
+
+    private func localizedEffectLines(_ ids: [String]) -> [String] {
+        var remaining = ids
+        var lines: [String] = []
+        if remaining.contains("BARRIER_WARD"), remaining.contains("WARD_REPLACES_SEED") {
+            lines.append("毒の種スキルを使わず、脅威があるときに仲間へ結界を張る")
+            remaining.removeAll { $0 == "BARRIER_WARD" || $0 == "WARD_REPLACES_SEED" }
+        }
+        lines.append(contentsOf: remaining.map(GameText.effect))
+        return lines
+    }
+
     private func requirementCard(_ r: RecipeGoalProjectionR035.Requirement, recipeID: String) -> some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text(GameText.name(r.materialID)).font(.headline)
-            Text("所持 \(r.owned) / 必要 \(r.required)")
-            Text(r.missing == 0 ? "必要数を所持しています" : "あと\(r.missing)個")
-                .foregroundStyle(Palette.gold)
-            if !r.availableGatherRegions.isEmpty { Text("採集: " + model.recipeRegionNames(r.availableGatherRegions)) }
+            VStack(alignment: .leading, spacing: 4) {
+                Text(GameText.name(r.materialID)).font(.headline)
+                Text("所持 \(r.owned) / 必要 \(r.required)")
+                Text(r.missing == 0 ? "必要数を所持しています" : "あと\(r.missing)個")
+                    .foregroundStyle(Palette.gold)
+                if !r.availableGatherRegions.isEmpty { Text("採集: " + model.recipeRegionNames(r.availableGatherRegions)) }
+                ForEach(Array(model.recipeDropSourceLines(r.materialID).enumerated()), id: \.offset) { _, line in Text(line) }
+                if !r.lockedGatherRegions.isEmpty { Text("採集の解放待ち: " + model.recipeRegionNames(r.lockedGatherRegions)).foregroundStyle(Palette.gold) }
+                if r.availableGatherRegions.isEmpty && r.availableEnemyDropRegions.isEmpty && r.lockedGatherRegions.isEmpty && r.lockedEnemyDropRegions.isEmpty {
+                    Text("入手先の情報を確認できません。").foregroundStyle(Palette.gold)
+                }
+            }
+            .accessibilityElement(children: .ignore)
+            .accessibilityLabel(requirementAccessibilitySummary(r))
+            .accessibilityIdentifier("goal_material_summary_" + r.materialID)
+
             if r.missing > 0 {
                 ForEach(r.availableGatherRegions, id: \.self) { regionID in
                     if let onGatherSource {
@@ -254,16 +448,30 @@ struct RecipeGoalView: View {
                     }
                 }
             }
-            ForEach(Array(model.recipeDropSourceLines(r.materialID).enumerated()), id: \.offset) { _, line in Text(line) }
-            if !r.lockedGatherRegions.isEmpty { Text("採集の解放待ち: " + model.recipeRegionNames(r.lockedGatherRegions)).foregroundStyle(Palette.gold) }
-            if r.availableGatherRegions.isEmpty && r.availableEnemyDropRegions.isEmpty && r.lockedGatherRegions.isEmpty && r.lockedEnemyDropRegions.isEmpty {
-                Text("入手先の情報を確認できません。").foregroundStyle(Palette.gold)
+            if model.sharedPartyWorkR146Enabled, r.missing > 0,
+               let catalog = model.catalog,
+               let goal = model.previewRecipeGoal {
+                ForEach(RecipeInvestigationRouteR158.available(goal: goal, catalog: catalog,
+                    state: model.state, sharedWorkEnabled: true).filter { $0.materialID == r.materialID },
+                    id: \.enemyID) { route in
+                    if let enemy = catalog.enemies.first(where: { $0.id == route.enemyID }) {
+                        Button {
+                            onInvestigationSource?(route)
+                        } label: {
+                            Label("\(enemy.name)（\(model.recipeRegionNames([route.regionID]))）を再調査する", systemImage: "magnifyingglass")
+                                .frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
+                                .contentShape(Rectangle())
+                        }
+                        .buttonStyle(.bordered)
+                        .disabled(model.busy || model.fighting || onInvestigationSource == nil)
+                        .accessibilityIdentifier("goal_investigation_source_\(r.materialID)_\(route.enemyID)")
+                    }
+                }
             }
         }.font(.caption).fixedSize(horizontal: false, vertical: true)
             .padding(12).frame(maxWidth: .infinity, alignment: .leading)
             .background(Palette.panel).clipShape(RoundedRectangle(cornerRadius: 12))
             .accessibilityElement(children: .contain)
-            .accessibilityLabel(requirementAccessibilitySummary(r))
             .accessibilityIdentifier("goal_material_" + r.materialID)
     }
 

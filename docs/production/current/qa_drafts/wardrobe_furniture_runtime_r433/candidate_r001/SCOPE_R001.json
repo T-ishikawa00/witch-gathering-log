@@ -1,0 +1,43 @@
+{
+  "schema": "r433-wardrobe-furniture-bounded-ui-check-v1",
+  "status": "PREPARED_NOT_RUN",
+  "baseline": {
+    "appBuild": "R420 normal Release",
+    "ordinaryRun": "docs/production/current/qa_drafts/normal_progression_r421/runs/ce157294-34aa-4b44-8afa-3e77fbbd4b09",
+    "save": "docs/production/current/qa_drafts/normal_progression_r421/runs/ce157294-34aa-4b44-8afa-3e77fbbd4b09/checkpoints/close/files/save.json",
+    "revision": 13,
+    "saveSHA256": "07252129426c3d68b9617c2569f1a6c79c16f86968ed6a6841a1aa472150cab6",
+    "ownedCosmeticIDs": [],
+    "selectedCosmeticIDs": {},
+    "selectedWeaponAppearanceIDs": {},
+    "ownedFurnitureIDs": [],
+    "placedFurnitureIDs": []
+  },
+  "candidateStatus": "local unapproved candidate; no sale or release availability implied",
+  "previewOnlyItems": [
+    {"id":"ERNA_TRAVEL","actor":"C_WITCH","kind":"costume"},
+    {"id":"LUNA_MANTLE_CANDIDATE_R128","actor":"C_APPRENTICE","kind":"costume"},
+    {"id":"AIRA_HARVEST_APRON_GREEN_CANDIDATE_R130","actor":"C_SMITH","kind":"costume"},
+    {"id":"NOIR_NECKWEAR_MOSS_R001","actor":"C_FAMILIAR","kind":"accessory"},
+    {"id":"STAFF_BRANCH","actor":"C_WITCH","kind":"weapon"},
+    {"id":"STAFF_MOON","actor":"C_WITCH","kind":"weapon"}
+  ],
+  "furniture": {"id":"FURN_DESK_BOTANICAL","state":"unowned and unplaced in baseline","action":"observe preview/free-claim control only; do not claim or place"},
+  "forbiddenActions": ["apply appearance", "claim cosmetic ownership", "claim/own furniture", "place furniture", "direct command/grant", "clock change", "save replacement", "QA purchase"],
+  "acceptance": [
+    "All six appearance rows and labels are exposed under the R420 standard-play candidate catalog.",
+    "Each preview renders the intended actor/item; switching options changes preview only.",
+    "Wardrobe preview/cancel leaves primary save bytes, revision, ownership, selection, and inventory unchanged.",
+    "Furniture room identifies the desk as stored; unowned placement is disabled and free-claim control is visible.",
+    "No placed-desk, applied-appearance, cross-context, persistence, or product-approval claim is made."
+  ],
+  "sourcePins": {
+    "native/WitchApp/WorkflowViews.swift":"8bea8f0ac8eccd580236d9eea7703568b36ded1716d9e2b4f2b76e3bb860f72a",
+    "native/WitchApp/App.swift":"3ae262c5c3bae250b20e7c4971256ff1c3ec00043f4b607de34b2e683603594a",
+    "native/WitchApp/LivingScene.swift":"e4505b57d66f41b391831392edc23f25a4829bf9cd6301bd8127012cb1486038",
+    "native/WitchApp/FurnitureRoomPreviewR275.swift":"79a6512b9c9abffa6b53863b19ae14aaf70bb93ef51b9baffe3800e6884dec9d",
+    "native/qa_source_20261014T124430/WitchGameCore/Sources/WitchGameCore/Resources/catalog_overlay.json":"bb218f0fe6b4b1a6037faa75ddb301ded27d7b9de070747bebf99a3e72209337",
+    "R431Review":"docs/production/current/qa_drafts/wardrobe_furniture_source_audit_r431/REVIEW_R001.md"
+  },
+  "execution": {"build":false,"simulator":false,"appActions":false,"saveMutation":false}
+}

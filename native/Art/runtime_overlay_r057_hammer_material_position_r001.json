@@ -1,0 +1,3458 @@
+{
+  "schema": "runtime-overlay-r057-combined-hammer-r001",
+  "mergePriority": 142,
+  "status": "UNAPPROVED_LOCAL_PROVISIONAL_CANDIDATE",
+  "humanApproved": false,
+  "scope": "EQ_S_03 only, existing27individualpositionoffsets plus generatedwarmmaterialR003; canonicalbodyandoldmaterialpreserved",
+  "entries": {
+    "AIRA": {
+      "semanticFrameLandmarksCandidate": {
+        "schema": "equipment_semantic_frame_landmarks_r009",
+        "status": "UNAPPROVED_ATTACK04_05_06_BOOT_POINT_CORRECTION_R014",
+        "humanApproval": false,
+        "key": [
+          "actorID",
+          "bodyAssetID",
+          "frameIndex",
+          "canvas_px"
+        ],
+        "coordinate_origin": "top_left_canvas_pixels",
+        "measurementMethod": "All 27 original AIRA frames inspected individually at 3x nearest-neighbor with 16px source grid; screenshot-assisted error review R016. Values are candidates and require runtime fit recheck. Root cross-check supplied attack04 neck/chest/hand/ankle/hammer points. R008 adds metadata-only detail size/angle candidates; not a fit approval. R009 individually re-read all 27 3x source grids for visible screen-right boot cuff (leg/boot junction); workingPalm is explicitly null/occluded because fingers are covered by armored gloves.",
+        "sourceEvidence": [
+          "docs/production/current/art/aira_landmark_contacts_r002/individual/",
+          "docs/production/current/native/attachment_audit_r016_aira_semantic_pinned/",
+          "docs/production/current/art/aira_landmark_contacts_r002/individual/*_GRID.png",
+          "docs/production/current/art/aira_landmark_contacts_r003/AIRA_*_FOOTGRID_R003.jpg",
+          "docs/production/current/independent_review/party_equipment_next_r001/current_runtime_r001/point_review_r002/",
+          "docs/production/current/qa_drafts/aira_boot_cuff_r013/",
+          "docs/production/current/independent_review/party_equipment_next_r001/current_runtime_r002/source_audit_execute_recover_r001/"
+        ],
+        "rows": [
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_00.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                153,
+                112
+              ],
+              "neck": [
+                158,
+                136
+              ],
+              "chest": [
+                159,
+                145
+              ],
+              "waist": [
+                147,
+                173
+              ],
+              "workingHand": [
+                137,
+                174
+              ],
+              "visibleRightAnkle": [
+                180,
+                220
+              ],
+              "hammerHead": [
+                212,
+                199
+              ],
+              "screenRightBootCuff": [
+                180,
+                220
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  153,
+                  112
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_rest_r001/AIRA__rest_00.png",
+            "sourceSHA256": "0169baa14bf0dabb0a5a5ce9a9513649b41d0411af5a1eeac359d9fbe5d4de82",
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 3,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "idle",
+            "sourceFrameIndex": 0,
+            "measurementNotes": "R011 is a new off-glob candidate after R010 was rejected by direct visual review. Point was reselected against the corresponding original full source PNG and 3x nearest-neighbor coordinate grid; top-left origin, source-pixel units. Target is the center of the gold folded boot-cuff band, not toe, ankle shaft, trouser edge, hammer or shadow. Marker/crop evidence is under docs/production/current/art/aira_landmark_audit_r011/. Candidate only; parent/reviewer visual inspection pending; no runtime fit claim.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 22,
+                "fitStatus": "UNAPPROVED_R057_POSITION_CANDIDATE_R013",
+                "sourceFrameIndex": 0,
+                "reason": "Native held frame moved the bright inlay off the handle/head seam onto the upper hammer face.",
+                "offset_px": [
+                  16,
+                  -5
+                ]
+              },
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_01.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                150,
+                113
+              ],
+              "neck": [
+                156,
+                136
+              ],
+              "chest": [
+                158,
+                145
+              ],
+              "waist": [
+                147,
+                174
+              ],
+              "workingHand": [
+                132,
+                175
+              ],
+              "visibleRightAnkle": [
+                160,
+                220
+              ],
+              "hammerHead": [
+                211,
+                200
+              ],
+              "screenRightBootCuff": [
+                160,
+                220
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  150,
+                  113
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_rest_r001/AIRA__rest_01.png",
+            "sourceSHA256": "fc76df184341e3793eab4827ba3ef618e5c3cb4896497f987dcea89264adb19e",
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 3,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "idle",
+            "sourceFrameIndex": 1,
+            "measurementNotes": "R011 is a new off-glob candidate after R010 was rejected by direct visual review. Point was reselected against the corresponding original full source PNG and 3x nearest-neighbor coordinate grid; top-left origin, source-pixel units. Target is the center of the gold folded boot-cuff band, not toe, ankle shaft, trouser edge, hammer or shadow. Marker/crop evidence is under docs/production/current/art/aira_landmark_audit_r011/. Candidate only; parent/reviewer visual inspection pending; no runtime fit claim.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": -18,
+                "fitStatus": "UNAPPROVED_R057_POSITION_CANDIDATE_R013",
+                "sourceFrameIndex": 1,
+                "reason": "Source point is near upper/handle-side edge; modest move into face interior, not held natively.",
+                "offset_px": [
+                  8,
+                  -4
+                ]
+              },
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_02.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                157,
+                113
+              ],
+              "neck": [
+                160,
+                136
+              ],
+              "chest": [
+                160,
+                145
+              ],
+              "waist": [
+                147,
+                174
+              ],
+              "workingHand": [
+                135,
+                175
+              ],
+              "visibleRightAnkle": [
+                150,
+                219
+              ],
+              "hammerHead": [
+                209,
+                197
+              ],
+              "screenRightBootCuff": [
+                150,
+                219
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  157,
+                  113
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_rest_r001/AIRA__rest_02.png",
+            "sourceSHA256": "1f63421f2c86af9bce96aa89b24f7efeb996cb08fbc915852d5d680fde082894",
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 3,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "idle",
+            "sourceFrameIndex": 2,
+            "measurementNotes": "R011 is a new off-glob candidate after R010 was rejected by direct visual review. Point was reselected against the corresponding original full source PNG and 3x nearest-neighbor coordinate grid; top-left origin, source-pixel units. Target is the center of the gold folded boot-cuff band, not toe, ankle shaft, trouser edge, hammer or shadow. Marker/crop evidence is under docs/production/current/art/aira_landmark_audit_r011/. Candidate only; parent/reviewer visual inspection pending; no runtime fit claim.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": -25,
+                "fitStatus": "UNAPPROVED_R057_POSITION_CANDIDATE_R013",
+                "sourceFrameIndex": 2,
+                "reason": "Source contact places anchor in broad dark face; no shift justified.",
+                "offset_px": [
+                  0,
+                  0
+                ]
+              },
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_03.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                167,
+                130
+              ],
+              "neck": [
+                156,
+                149
+              ],
+              "chest": [
+                160,
+                156
+              ],
+              "waist": [
+                163,
+                179
+              ],
+              "workingHand": [
+                141,
+                156
+              ],
+              "visibleRightAnkle": [
+                187,
+                220
+              ],
+              "hammerHead": [
+                218,
+                190
+              ],
+              "screenRightBootCuff": [
+                187,
+                220
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  167,
+                  130
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              },
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  152,
+                  153
+                ],
+                "radius_px": [
+                  19,
+                  11
+                ],
+                "name": "arm_foreground_candidate",
+                "reason": "folded forearm overlaps chest/neck edge"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_rest_r001/AIRA__rest_03.png",
+            "sourceSHA256": "e7dd10a55b4b6ad19d045a9885a0f4a614dc1d720f55dc55099e4bbb1eeadd00",
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 3,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "hit",
+            "sourceFrameIndex": 3,
+            "measurementNotes": "R011 is a new off-glob candidate after R010 was rejected by direct visual review. Point was reselected against the corresponding original full source PNG and 3x nearest-neighbor coordinate grid; top-left origin, source-pixel units. Target is the center of the gold folded boot-cuff band, not toe, ankle shaft, trouser edge, hammer or shadow. Marker/crop evidence is under docs/production/current/art/aira_landmark_audit_r011/. Candidate only; parent/reviewer visual inspection pending; no runtime fit claim.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 18,
+                "fitStatus": "UNAPPROVED_R057_POSITION_CANDIDATE_R013",
+                "sourceFrameIndex": 3,
+                "reason": "Source point is toward handle-side face boundary; small individually estimated inward move.",
+                "offset_px": [
+                  8,
+                  -5
+                ]
+              },
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_04.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                174,
+                132
+              ],
+              "neck": [
+                160,
+                150
+              ],
+              "chest": [
+                158,
+                156
+              ],
+              "waist": [
+                165,
+                180
+              ],
+              "workingHand": [
+                145,
+                170
+              ],
+              "visibleRightAnkle": [
+                170,
+                221
+              ],
+              "hammerHead": [
+                224,
+                195
+              ],
+              "screenRightBootCuff": [
+                170,
+                221
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  174,
+                  132
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              },
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  152,
+                  153
+                ],
+                "radius_px": [
+                  19,
+                  11
+                ],
+                "name": "arm_foreground_candidate",
+                "reason": "folded forearm overlaps chest/neck edge"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_rest_r001/AIRA__rest_04.png",
+            "sourceSHA256": "a3d53259739e79f7af2b10e4d975d4762a4365cbc86c176cbf5a7fead5a983e3",
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 3,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "hit",
+            "sourceFrameIndex": 4,
+            "measurementNotes": "R011 is a new off-glob candidate after R010 was rejected by direct visual review. Point was reselected against the corresponding original full source PNG and 3x nearest-neighbor coordinate grid; top-left origin, source-pixel units. Target is the center of the gold folded boot-cuff band, not toe, ankle shaft, trouser edge, hammer or shadow. Marker/crop evidence is under docs/production/current/art/aira_landmark_audit_r011/. Candidate only; parent/reviewer visual inspection pending; no runtime fit claim.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 0,
+                "fitStatus": "UNAPPROVED_R057_POSITION_CANDIDATE_R013",
+                "sourceFrameIndex": 4,
+                "reason": "Anchor is dark face near upper outer edge; small upward move, native not verified.",
+                "offset_px": [
+                  0,
+                  -3
+                ]
+              },
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_05.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                147,
+                126
+              ],
+              "neck": [
+                154,
+                145
+              ],
+              "chest": [
+                157,
+                154
+              ],
+              "waist": [
+                162,
+                180
+              ],
+              "workingHand": [
+                151,
+                171
+              ],
+              "visibleRightAnkle": [
+                155,
+                218
+              ],
+              "hammerHead": [
+                224,
+                195
+              ],
+              "screenRightBootCuff": [
+                155,
+                218
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  147,
+                  126
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              },
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  152,
+                  153
+                ],
+                "radius_px": [
+                  19,
+                  11
+                ],
+                "name": "arm_foreground_candidate",
+                "reason": "folded forearm overlaps chest/neck edge"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_rest_r001/AIRA__rest_05.png",
+            "sourceSHA256": "f0a087417c4320a24aa9879974fbc4263cf6c2e195237639c88467c634da5e7c",
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 3,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "hit",
+            "sourceFrameIndex": 5,
+            "measurementNotes": "R011 is a new off-glob candidate after R010 was rejected by direct visual review. Point was reselected against the corresponding original full source PNG and 3x nearest-neighbor coordinate grid; top-left origin, source-pixel units. Target is the center of the gold folded boot-cuff band, not toe, ankle shaft, trouser edge, hammer or shadow. Marker/crop evidence is under docs/production/current/art/aira_landmark_audit_r011/. Candidate only; parent/reviewer visual inspection pending; no runtime fit claim.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 0,
+                "fitStatus": "UNAPPROVED_R057_POSITION_CANDIDATE_R013",
+                "sourceFrameIndex": 5,
+                "reason": "Exact point alpha=0 and only 3/25 neighborhood pixels alpha>128. Visible top face center estimated from unmodified source crop; ±5px.",
+                "offset_px": [
+                  -20,
+                  -2
+                ]
+              },
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_06.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                181,
+                111
+              ],
+              "neck": [
+                174,
+                134
+              ],
+              "chest": [
+                170,
+                148
+              ],
+              "waist": [
+                166,
+                173
+              ],
+              "workingHand": [
+                152,
+                170
+              ],
+              "visibleRightAnkle": [
+                173,
+                217
+              ],
+              "hammerHead": [
+                98,
+                207
+              ],
+              "screenRightBootCuff": [
+                173,
+                217
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  181,
+                  111
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              },
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  196,
+                  111
+                ],
+                "radius_px": [
+                  18,
+                  22
+                ],
+                "name": "arm_foreground_candidate",
+                "reason": "raised gauntlet crosses temple/neck edge"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_rest_r001/AIRA__rest_06.png",
+            "sourceSHA256": "2fa5371afc1a04d2f2c85ddb177852c52fc4f6c2414c25976c2426a03d5cc3ba",
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 3,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "resolve",
+            "sourceFrameIndex": 6,
+            "measurementNotes": "R011 is a new off-glob candidate after R010 was rejected by direct visual review. Point was reselected against the corresponding original full source PNG and 3x nearest-neighbor coordinate grid; top-left origin, source-pixel units. Target is the center of the gold folded boot-cuff band, not toe, ankle shaft, trouser edge, hammer or shadow. Marker/crop evidence is under docs/production/current/art/aira_landmark_audit_r011/. Candidate only; parent/reviewer visual inspection pending; no runtime fit claim.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 12,
+                "fitStatus": "UNAPPROVED_R057_POSITION_CANDIDATE_R013",
+                "sourceFrameIndex": 6,
+                "reason": "Exact point and 5x5 neighborhood alpha=0. Visible upper face center estimated from unmodified source crop; ±5px.",
+                "offset_px": [
+                  25,
+                  0
+                ]
+              },
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_07.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                167,
+                111
+              ],
+              "neck": [
+                166,
+                133
+              ],
+              "chest": [
+                169,
+                145
+              ],
+              "waist": [
+                165,
+                173
+              ],
+              "workingHand": [
+                139,
+                171
+              ],
+              "visibleRightAnkle": [
+                190,
+                217
+              ],
+              "hammerHead": [
+                85,
+                207
+              ],
+              "screenRightBootCuff": [
+                190,
+                217
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  167,
+                  111
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              },
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  196,
+                  111
+                ],
+                "radius_px": [
+                  18,
+                  22
+                ],
+                "name": "arm_foreground_candidate",
+                "reason": "raised gauntlet crosses temple/neck edge"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_rest_r001/AIRA__rest_07.png",
+            "sourceSHA256": "09116d4094ffefbd11ff6fb7826884eff362b8f00457aefa0be9328236ad2bd8",
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 3,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "resolve",
+            "sourceFrameIndex": 7,
+            "measurementNotes": "R011 is a new off-glob candidate after R010 was rejected by direct visual review. Point was reselected against the corresponding original full source PNG and 3x nearest-neighbor coordinate grid; top-left origin, source-pixel units. Target is the center of the gold folded boot-cuff band, not toe, ankle shaft, trouser edge, hammer or shadow. Marker/crop evidence is under docs/production/current/art/aira_landmark_audit_r011/. Candidate only; parent/reviewer visual inspection pending; no runtime fit claim.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 8,
+                "fitStatus": "UNAPPROVED_R057_POSITION_CANDIDATE_R013",
+                "sourceFrameIndex": 7,
+                "reason": "Anchor is on dark face near left silhouette; small inward move.",
+                "offset_px": [
+                  8,
+                  -2
+                ]
+              },
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_08.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                171,
+                111
+              ],
+              "neck": [
+                170,
+                134
+              ],
+              "chest": [
+                169,
+                145
+              ],
+              "waist": [
+                166,
+                173
+              ],
+              "workingHand": [
+                135,
+                171
+              ],
+              "visibleRightAnkle": [
+                178,
+                216
+              ],
+              "hammerHead": [
+                86,
+                207
+              ],
+              "screenRightBootCuff": [
+                178,
+                216
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  171,
+                  111
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              },
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  196,
+                  111
+                ],
+                "radius_px": [
+                  18,
+                  22
+                ],
+                "name": "arm_foreground_candidate",
+                "reason": "raised gauntlet crosses temple/neck edge"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_rest_r001/AIRA__rest_08.png",
+            "sourceSHA256": "85fadc481cc8943d2999f8477a5a928d69520d418180c15eee2f3e0de9b4b36e",
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 3,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "resolve",
+            "sourceFrameIndex": 8,
+            "measurementNotes": "R011 is a new off-glob candidate after R010 was rejected by direct visual review. Point was reselected against the corresponding original full source PNG and 3x nearest-neighbor coordinate grid; top-left origin, source-pixel units. Target is the center of the gold folded boot-cuff band, not toe, ankle shaft, trouser edge, hammer or shadow. Marker/crop evidence is under docs/production/current/art/aira_landmark_audit_r011/. Candidate only; parent/reviewer visual inspection pending; no runtime fit claim.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 8,
+                "fitStatus": "UNAPPROVED_R057_POSITION_CANDIDATE_R013",
+                "sourceFrameIndex": 8,
+                "reason": "Anchor is on dark face near left boundary; small inward move.",
+                "offset_px": [
+                  8,
+                  -2
+                ]
+              },
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_00.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                171,
+                112
+              ],
+              "neck": [
+                164,
+                134
+              ],
+              "chest": [
+                161,
+                143
+              ],
+              "waist": [
+                151,
+                169
+              ],
+              "workingHand": [
+                167,
+                175
+              ],
+              "visibleRightAnkle": [
+                160,
+                215
+              ],
+              "hammerHead": [
+                212,
+                199
+              ],
+              "screenRightBootCuff": [
+                160,
+                215
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  171,
+                  112
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_00.png",
+            "sourceSHA256": "50cbd3a45a3aa5f3a9c938f77fd59dbd8c850328beeec8d47a0b8cfa41072044",
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 3,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "anticipate",
+            "sourceFrameIndex": 0,
+            "measurementNotes": "R011 is a new off-glob candidate after R010 was rejected by direct visual review. Point was reselected against the corresponding original full source PNG and 3x nearest-neighbor coordinate grid; top-left origin, source-pixel units. Target is the center of the gold folded boot-cuff band, not toe, ankle shaft, trouser edge, hammer or shadow. Marker/crop evidence is under docs/production/current/art/aira_landmark_audit_r011/. Candidate only; parent/reviewer visual inspection pending; no runtime fit claim.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 22,
+                "fitStatus": "UNAPPROVED_R057_POSITION_CANDIDATE_R013",
+                "sourceFrameIndex": 0,
+                "reason": "Attack frame 0 places the point at same source coordinates and near-identical hammer-face geometry as idle 0; source-only extrapolation, not held QA.",
+                "offset_px": [
+                  16,
+                  -5
+                ]
+              },
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_01.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                190,
+                114
+              ],
+              "neck": [
+                178,
+                141
+              ],
+              "chest": [
+                185,
+                148
+              ],
+              "waist": [
+                159,
+                177
+              ],
+              "workingHand": [
+                164,
+                117
+              ],
+              "visibleRightAnkle": [
+                198,
+                220
+              ],
+              "hammerHead": [
+                80,
+                86
+              ],
+              "screenRightBootCuff": [
+                198,
+                220
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  190,
+                  114
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              },
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  156,
+                  132
+                ],
+                "radius_px": [
+                  25,
+                  12
+                ],
+                "name": "arm_foreground_candidate",
+                "reason": "raised gauntlet crosses neck/upper chest"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_01.png",
+            "sourceSHA256": "7a0dd13d7ba6e2222b4edfb0ad3b04a37f90249a04b34a0e7558095d7b9d51f8",
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 3,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "anticipate",
+            "sourceFrameIndex": 1,
+            "measurementNotes": "R011 is a new off-glob candidate after R010 was rejected by direct visual review. Point was reselected against the corresponding original full source PNG and 3x nearest-neighbor coordinate grid; top-left origin, source-pixel units. Target is the center of the gold folded boot-cuff band, not toe, ankle shaft, trouser edge, hammer or shadow. Marker/crop evidence is under docs/production/current/art/aira_landmark_audit_r011/. Candidate only; parent/reviewer visual inspection pending; no runtime fit claim.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": -18,
+                "fitStatus": "UNAPPROVED_R057_POSITION_CANDIDATE_R013",
+                "sourceFrameIndex": 1,
+                "reason": "Source contact shows anchor in broad dark face; preserve.",
+                "offset_px": [
+                  0,
+                  0
+                ]
+              },
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_02.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                174,
+                115
+              ],
+              "neck": [
+                174,
+                138
+              ],
+              "chest": [
+                175,
+                146
+              ],
+              "waist": [
+                152,
+                173
+              ],
+              "workingHand": [
+                179,
+                79
+              ],
+              "visibleRightAnkle": [
+                199,
+                220
+              ],
+              "hammerHead": [
+                78,
+                80
+              ],
+              "screenRightBootCuff": [
+                199,
+                220
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  174,
+                  115
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              },
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  181,
+                  109
+                ],
+                "radius_px": [
+                  17,
+                  28
+                ],
+                "name": "arm_foreground_candidate",
+                "reason": "vertical gauntlet crosses face/neck"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_02.png",
+            "sourceSHA256": "be07aa515ab14e82589e04a32053734b1c239cb4bc0589d3de3acfd022a38fe3",
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 3,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "anticipate",
+            "sourceFrameIndex": 2,
+            "measurementNotes": "R011 is a new off-glob candidate after R010 was rejected by direct visual review. Point was reselected against the corresponding original full source PNG and 3x nearest-neighbor coordinate grid; top-left origin, source-pixel units. Target is the center of the gold folded boot-cuff band, not toe, ankle shaft, trouser edge, hammer or shadow. Marker/crop evidence is under docs/production/current/art/aira_landmark_audit_r011/. Candidate only; parent/reviewer visual inspection pending; no runtime fit claim.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": -25,
+                "fitStatus": "UNAPPROVED_R057_POSITION_CANDIDATE_R013",
+                "sourceFrameIndex": 2,
+                "reason": "Source contact shows anchor in broad face with clearance; preserve.",
+                "offset_px": [
+                  0,
+                  0
+                ]
+              },
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_03.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                195,
+                125
+              ],
+              "neck": [
+                180,
+                149
+              ],
+              "chest": [
+                181,
+                155
+              ],
+              "waist": [
+                167,
+                180
+              ],
+              "workingHand": [
+                155,
+                117
+              ],
+              "visibleRightAnkle": [
+                223,
+                215
+              ],
+              "hammerHead": [
+                119,
+                70
+              ],
+              "screenRightBootCuff": [
+                223,
+                215
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  195,
+                  125
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              },
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  157,
+                  123
+                ],
+                "radius_px": [
+                  24,
+                  24
+                ],
+                "name": "arm_foreground_candidate",
+                "reason": "crossed arms overlap face/neck edge"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_03.png",
+            "sourceSHA256": "681fd98de966891ac4f7b3ed6090c014372aa7c9a9219b1436049e9da1233958",
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 3,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "execute",
+            "sourceFrameIndex": 3,
+            "measurementNotes": "R011 is a new off-glob candidate after R010 was rejected by direct visual review. Point was reselected against the corresponding original full source PNG and 3x nearest-neighbor coordinate grid; top-left origin, source-pixel units. Target is the center of the gold folded boot-cuff band, not toe, ankle shaft, trouser edge, hammer or shadow. Marker/crop evidence is under docs/production/current/art/aira_landmark_audit_r011/. Candidate only; parent/reviewer visual inspection pending; no runtime fit claim.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 18,
+                "fitStatus": "UNAPPROVED_R057_POSITION_CANDIDATE_R013",
+                "sourceFrameIndex": 3,
+                "reason": "Source contact shows point inside the visible panel; no measured native defect.",
+                "offset_px": [
+                  0,
+                  0
+                ]
+              },
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_04.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                145,
+                116
+              ],
+              "neck": [
+                145,
+                141
+              ],
+              "chest": null,
+              "waist": [
+                159,
+                177
+              ],
+              "workingHand": [
+                173,
+                174
+              ],
+              "visibleRightAnkle": [
+                155,
+                223
+              ],
+              "hammerHead": [
+                227,
+                207
+              ],
+              "screenRightBootCuff": [
+                155,
+                223
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  145,
+                  116
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              },
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  151,
+                  150
+                ],
+                "radius_px": [
+                  25,
+                  12
+                ],
+                "name": "arm_foreground_candidate",
+                "reason": "forward forearm occludes upper chest"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_04.png",
+            "sourceSHA256": "8b61676670a6a7b2fe47def150b4190230effc065ed0655f5d2ba7bf88ae7641",
+            "measurementStatus": "R014_ATTACK04_06_UPPER_BOOT_REMEASURE_CANDIDATE",
+            "estimatedUncertaintyPx": 4,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "execute",
+            "sourceFrameIndex": 4,
+            "measurementNotes": "R014 source and exact app133505 held-frame review identify the old point on the gold shorts/trouser cuff above the black boot. Root and independent reviewer selected the visible black upper boot shaft below that cuff, source pixel coordinate, confidence MEDIUM. Legacy screenRightBootCuff/visibleRightAnkle aliases retained. Original PNG, gear scale and otherlandmarks unchanged. Runtime fit, nearby-state continuity and Humanadoption remain pending.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 0,
+                "fitStatus": "UNAPPROVED_R057_POSITION_CANDIDATE_R013",
+                "sourceFrameIndex": 4,
+                "reason": "Native held frame moved from gold band/handle crossing to upper front face.",
+                "offset_px": [
+                  11,
+                  -13
+                ]
+              },
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "occluded"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_05.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                147,
+                127
+              ],
+              "neck": [
+                146,
+                143
+              ],
+              "chest": null,
+              "waist": [
+                164,
+                180
+              ],
+              "workingHand": [
+                173,
+                176
+              ],
+              "visibleRightAnkle": [
+                155,
+                223
+              ],
+              "hammerHead": [
+                227,
+                207
+              ],
+              "screenRightBootCuff": [
+                155,
+                223
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  147,
+                  127
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              },
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  151,
+                  151
+                ],
+                "radius_px": [
+                  25,
+                  12
+                ],
+                "name": "arm_foreground_candidate",
+                "reason": "forward forearm occludes upper chest"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_05.png",
+            "sourceSHA256": "973cb7f285dd545aea5178a4fd9af9e134ad96b8352d548453992add58199106",
+            "measurementStatus": "R013_ATTACK05_UPPER_BOOT_REMEASURE_CANDIDATE",
+            "estimatedUncertaintyPx": 4,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "execute",
+            "sourceFrameIndex": 5,
+            "measurementNotes": "R013 exact held execute2 comparison identified the old [143,210] ornament on the trouser/thigh. Root and independent reviewer inspected the original PNG and unmarked 12x crop. [155,223] is a candidate on the upper boot/ankle below the gold trouser cuff; the dark boundaries are ambiguous, confidence LOW_TO_MEDIUM. Legacy screenRightBootCuff/visibleRightAnkle both point to this same boot attachment. This is not a claim that the gold band on the trousers is a boot cuff. Same-frame runtime fit and adjacent-frame consistency remain pending. All other landmarks and all other26 frame rows unchanged.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 0,
+                "fitStatus": "UNAPPROVED_R057_POSITION_CANDIDATE_R013",
+                "sourceFrameIndex": 5,
+                "reason": "Separate execute frame still anchors on cross-band/handle junction; target estimated inside exposed face from its own source crop.",
+                "offset_px": [
+                  -13,
+                  -13
+                ]
+              },
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "occluded"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_06.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                131,
+                124
+              ],
+              "neck": [
+                145,
+                145
+              ],
+              "chest": [
+                144,
+                152
+              ],
+              "waist": [
+                148,
+                174
+              ],
+              "workingHand": [
+                151,
+                163
+              ],
+              "visibleRightAnkle": [
+                154,
+                222
+              ],
+              "hammerHead": [
+                211,
+                196
+              ],
+              "screenRightBootCuff": [
+                154,
+                222
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  131,
+                  124
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              },
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  149,
+                  145
+                ],
+                "radius_px": [
+                  21,
+                  14
+                ],
+                "name": "arm_foreground_candidate",
+                "reason": "lowered glove passes in front of collar"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_06.png",
+            "sourceSHA256": "c93e4788a2ab41f62ef8a9916bc064b186269a486951ed2f439edaf982d242de",
+            "measurementStatus": "R014_ATTACK04_06_UPPER_BOOT_REMEASURE_CANDIDATE",
+            "estimatedUncertaintyPx": 4,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "recover",
+            "sourceFrameIndex": 6,
+            "measurementNotes": "R014 source and exact app133505 held-frame review identify the old point on the gold shorts/trouser cuff above the black boot. Root and independent reviewer selected the visible black upper boot shaft below that cuff, source pixel coordinate, confidence MEDIUM. Legacy screenRightBootCuff/visibleRightAnkle aliases retained. Original PNG, gear scale and otherlandmarks unchanged. Runtime fit, nearby-state continuity and Humanadoption remain pending.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 12,
+                "fitStatus": "UNAPPROVED_R057_POSITION_CANDIDATE_R013",
+                "sourceFrameIndex": 6,
+                "reason": "Warm joint pixels may be metal or hand overlap; conservative candidate only. Held verification required.",
+                "offset_px": [
+                  4,
+                  -4
+                ]
+              },
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_07.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                175,
+                112
+              ],
+              "neck": [
+                171,
+                137
+              ],
+              "chest": [
+                169,
+                145
+              ],
+              "waist": [
+                166,
+                171
+              ],
+              "workingHand": [
+                185,
+                174
+              ],
+              "visibleRightAnkle": [
+                128,
+                212
+              ],
+              "hammerHead": [
+                206,
+                200
+              ],
+              "screenRightBootCuff": [
+                128,
+                212
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  175,
+                  112
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              },
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  148,
+                  145
+                ],
+                "radius_px": [
+                  17,
+                  11
+                ],
+                "name": "arm_foreground_candidate",
+                "reason": "forearms meet across upper chest"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_07.png",
+            "sourceSHA256": "c9c926380275c17d6cd21de70b2fbd461351deb9dea95275184d54524764862d",
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 3,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "recover",
+            "sourceFrameIndex": 7,
+            "measurementNotes": "R011 is a new off-glob candidate after R010 was rejected by direct visual review. Point was reselected against the corresponding original full source PNG and 3x nearest-neighbor coordinate grid; top-left origin, source-pixel units. Target is the center of the gold folded boot-cuff band, not toe, ankle shaft, trouser edge, hammer or shadow. Marker/crop evidence is under docs/production/current/art/aira_landmark_audit_r011/. Candidate only; parent/reviewer visual inspection pending; no runtime fit claim.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 8,
+                "fitStatus": "UNAPPROVED_R057_POSITION_CANDIDATE_R013",
+                "sourceFrameIndex": 7,
+                "reason": "Point lies at bright outer face edge; small inward/upward shift.",
+                "offset_px": [
+                  -4,
+                  -4
+                ]
+              },
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_08.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                172,
+                112
+              ],
+              "neck": [
+                173,
+                139
+              ],
+              "chest": [
+                169,
+                145
+              ],
+              "waist": [
+                166,
+                171
+              ],
+              "workingHand": [
+                185,
+                174
+              ],
+              "visibleRightAnkle": [
+                144,
+                212
+              ],
+              "hammerHead": [
+                205,
+                200
+              ],
+              "screenRightBootCuff": [
+                144,
+                212
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  172,
+                  112
+                ],
+                "radius_px": [
+                  22,
+                  24
+                ],
+                "name": "face_foreground_candidate"
+              },
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  148,
+                  145
+                ],
+                "radius_px": [
+                  17,
+                  11
+                ],
+                "name": "arm_foreground_candidate",
+                "reason": "forearms meet across upper chest"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_08.png",
+            "sourceSHA256": "357aca385b1033d5e15d977fd01eae58263a0f3ea02e320ce79a109037342581",
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 3,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "recover",
+            "sourceFrameIndex": 8,
+            "measurementNotes": "R011 is a new off-glob candidate after R010 was rejected by direct visual review. Point was reselected against the corresponding original full source PNG and 3x nearest-neighbor coordinate grid; top-left origin, source-pixel units. Target is the center of the gold folded boot-cuff band, not toe, ankle shaft, trouser edge, hammer or shadow. Marker/crop evidence is under docs/production/current/art/aira_landmark_audit_r011/. Candidate only; parent/reviewer visual inspection pending; no runtime fit claim.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 8,
+                "fitStatus": "UNAPPROVED_R057_POSITION_CANDIDATE_R013",
+                "sourceFrameIndex": 8,
+                "reason": "Point lies on dark exposed face; preserve pending more evidence.",
+                "offset_px": [
+                  0,
+                  0
+                ]
+              },
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_0.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                126,
+                112
+              ],
+              "neck": [
+                126,
+                136
+              ],
+              "chest": [
+                127,
+                145
+              ],
+              "waist": [
+                128,
+                171
+              ],
+              "workingHand": [
+                88,
+                173
+              ],
+              "visibleRightAnkle": [
+                111,
+                217
+              ],
+              "hammerHead": [
+                193,
+                208
+              ],
+              "screenRightBootCuff": [
+                111,
+                217
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  126,
+                  112
+                ],
+                "radius_px": [
+                  17,
+                  19
+                ],
+                "name": "face_foreground_candidate"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_walk_r001/AIRA__walk_0.png",
+            "sourceSHA256": "4d8e9b5eca47f5881a34b153f32c610bb1738f7f4e84754dc53269aa156504b6",
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 3,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 0,
+            "measurementNotes": "R011 is a new off-glob candidate after R010 was rejected by direct visual review. Point was reselected against the corresponding original full source PNG and 3x nearest-neighbor coordinate grid; top-left origin, source-pixel units. Target is the center of the gold folded boot-cuff band, not toe, ankle shaft, trouser edge, hammer or shadow. Marker/crop evidence is under docs/production/current/art/aira_landmark_audit_r011/. Candidate only; parent/reviewer visual inspection pending; no runtime fit claim.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 22,
+                "fitStatus": "UNAPPROVED_R057_POSITION_CANDIDATE_R013",
+                "sourceFrameIndex": 0,
+                "reason": "Walk frame has same face placement family as held walk3 and low-face point; row-specific point is retained in x and shifted upward by the proven walk3 delta.",
+                "offset_px": [
+                  0,
+                  -8
+                ]
+              },
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_1.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                130,
+                116
+              ],
+              "neck": [
+                129,
+                137
+              ],
+              "chest": [
+                128,
+                145
+              ],
+              "waist": [
+                128,
+                171
+              ],
+              "workingHand": [
+                89,
+                174
+              ],
+              "visibleRightAnkle": [
+                111,
+                217
+              ],
+              "hammerHead": [
+                193,
+                208
+              ],
+              "screenRightBootCuff": [
+                111,
+                217
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  130,
+                  116
+                ],
+                "radius_px": [
+                  17,
+                  19
+                ],
+                "name": "face_foreground_candidate"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_walk_r001/AIRA__walk_1.png",
+            "sourceSHA256": "55f44337652f718d2d3625ffcbef13cf10f3852e68a9a91ae38a4496ff8c73f4",
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 3,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 1,
+            "measurementNotes": "R011 is a new off-glob candidate after R010 was rejected by direct visual review. Point was reselected against the corresponding original full source PNG and 3x nearest-neighbor coordinate grid; top-left origin, source-pixel units. Target is the center of the gold folded boot-cuff band, not toe, ankle shaft, trouser edge, hammer or shadow. Marker/crop evidence is under docs/production/current/art/aira_landmark_audit_r011/. Candidate only; parent/reviewer visual inspection pending; no runtime fit claim.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": -18,
+                "fitStatus": "UNAPPROVED_R057_POSITION_CANDIDATE_R013",
+                "sourceFrameIndex": 1,
+                "reason": "Individually inspected lower-face anchor; shift up into upper face, no x change.",
+                "offset_px": [
+                  0,
+                  -8
+                ]
+              },
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_2.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                134,
+                117
+              ],
+              "neck": [
+                133,
+                138
+              ],
+              "chest": [
+                128,
+                145
+              ],
+              "waist": [
+                128,
+                171
+              ],
+              "workingHand": [
+                84,
+                174
+              ],
+              "visibleRightAnkle": [
+                125,
+                214
+              ],
+              "hammerHead": [
+                190,
+                208
+              ],
+              "screenRightBootCuff": [
+                125,
+                214
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  134,
+                  117
+                ],
+                "radius_px": [
+                  17,
+                  19
+                ],
+                "name": "face_foreground_candidate"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_walk_r001/AIRA__walk_2.png",
+            "sourceSHA256": "edd703655de1420b46e5a24253aae99871e8d101b89ea935ca488bb53830e077",
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 3,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 2,
+            "measurementNotes": "R011 is a new off-glob candidate after R010 was rejected by direct visual review. Point was reselected against the corresponding original full source PNG and 3x nearest-neighbor coordinate grid; top-left origin, source-pixel units. Target is the center of the gold folded boot-cuff band, not toe, ankle shaft, trouser edge, hammer or shadow. Marker/crop evidence is under docs/production/current/art/aira_landmark_audit_r011/. Candidate only; parent/reviewer visual inspection pending; no runtime fit claim.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": -25,
+                "fitStatus": "UNAPPROVED_R057_POSITION_CANDIDATE_R013",
+                "sourceFrameIndex": 2,
+                "reason": "Individually inspected lower-face anchor; small x compensation for this frame’s leftward point plus upward move.",
+                "offset_px": [
+                  2,
+                  -8
+                ]
+              },
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_3.png",
+            "frameIndex": 3,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                138,
+                114
+              ],
+              "neck": [
+                136,
+                137
+              ],
+              "chest": [
+                128,
+                145
+              ],
+              "waist": [
+                128,
+                171
+              ],
+              "workingHand": [
+                87,
+                177
+              ],
+              "visibleRightAnkle": [
+                130,
+                220
+              ],
+              "hammerHead": [
+                193,
+                207
+              ],
+              "screenRightBootCuff": [
+                130,
+                220
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  138,
+                  114
+                ],
+                "radius_px": [
+                  17,
+                  19
+                ],
+                "name": "face_foreground_candidate"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_walk_r001/AIRA__walk_3.png",
+            "sourceSHA256": "c9bf20184a233fd50ffdd26f6820edbb1eb2566366739619790bb5bb4ea0d0c6",
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 3,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 3,
+            "measurementNotes": "R011 is a new off-glob candidate after R010 was rejected by direct visual review. Point was reselected against the corresponding original full source PNG and 3x nearest-neighbor coordinate grid; top-left origin, source-pixel units. Target is the center of the gold folded boot-cuff band, not toe, ankle shaft, trouser edge, hammer or shadow. Marker/crop evidence is under docs/production/current/art/aira_landmark_audit_r011/. Candidate only; parent/reviewer visual inspection pending; no runtime fit claim.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 18,
+                "fitStatus": "UNAPPROVED_R057_POSITION_CANDIDATE_R013",
+                "sourceFrameIndex": 3,
+                "reason": "Native held walk frame improved by moving anchor upward into face.",
+                "offset_px": [
+                  0,
+                  -8
+                ]
+              },
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_4.png",
+            "frameIndex": 4,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                139,
+                115
+              ],
+              "neck": [
+                137,
+                138
+              ],
+              "chest": [
+                128,
+                145
+              ],
+              "waist": [
+                128,
+                171
+              ],
+              "workingHand": [
+                95,
+                177
+              ],
+              "visibleRightAnkle": [
+                116,
+                218
+              ],
+              "hammerHead": [
+                193,
+                208
+              ],
+              "screenRightBootCuff": [
+                116,
+                218
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  139,
+                  115
+                ],
+                "radius_px": [
+                  17,
+                  19
+                ],
+                "name": "face_foreground_candidate"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_walk_r001/AIRA__walk_4.png",
+            "sourceSHA256": "6f4b8bae624a94a3a6acf0d226283ab7d1beaaaeb9f63128f58ddcc103272910",
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 3,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 4,
+            "measurementNotes": "R011 is a new off-glob candidate after R010 was rejected by direct visual review. Point was reselected against the corresponding original full source PNG and 3x nearest-neighbor coordinate grid; top-left origin, source-pixel units. Target is the center of the gold folded boot-cuff band, not toe, ankle shaft, trouser edge, hammer or shadow. Marker/crop evidence is under docs/production/current/art/aira_landmark_audit_r011/. Candidate only; parent/reviewer visual inspection pending; no runtime fit claim.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 0,
+                "fitStatus": "UNAPPROVED_R057_POSITION_CANDIDATE_R013",
+                "sourceFrameIndex": 4,
+                "reason": "Individually inspected low-face point; move up within same visible face.",
+                "offset_px": [
+                  0,
+                  -8
+                ]
+              },
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_5.png",
+            "frameIndex": 5,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                147,
+                114
+              ],
+              "neck": [
+                144,
+                137
+              ],
+              "chest": [
+                128,
+                145
+              ],
+              "waist": [
+                128,
+                171
+              ],
+              "workingHand": [
+                102,
+                172
+              ],
+              "visibleRightAnkle": [
+                143,
+                212
+              ],
+              "hammerHead": [
+                202,
+                203
+              ],
+              "screenRightBootCuff": [
+                143,
+                212
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  147,
+                  114
+                ],
+                "radius_px": [
+                  17,
+                  19
+                ],
+                "name": "face_foreground_candidate"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_walk_r001/AIRA__walk_5.png",
+            "sourceSHA256": "18adee37bbce247e84dc48844c70f63464683d6f7e6bb48b1e1373b04c556a00",
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 3,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 5,
+            "measurementNotes": "R011 is a new off-glob candidate after R010 was rejected by direct visual review. Point was reselected against the corresponding original full source PNG and 3x nearest-neighbor coordinate grid; top-left origin, source-pixel units. Target is the center of the gold folded boot-cuff band, not toe, ankle shaft, trouser edge, hammer or shadow. Marker/crop evidence is under docs/production/current/art/aira_landmark_audit_r011/. Candidate only; parent/reviewer visual inspection pending; no runtime fit claim.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 0,
+                "fitStatus": "UNAPPROVED_R057_POSITION_CANDIDATE_R013",
+                "sourceFrameIndex": 5,
+                "reason": "Point is near right-side rim; small left/up shift into face.",
+                "offset_px": [
+                  -5,
+                  -7
+                ]
+              },
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_6.png",
+            "frameIndex": 6,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                135,
+                114
+              ],
+              "neck": [
+                133,
+                137
+              ],
+              "chest": [
+                128,
+                145
+              ],
+              "waist": [
+                128,
+                171
+              ],
+              "workingHand": [
+                87,
+                177
+              ],
+              "visibleRightAnkle": [
+                130,
+                216
+              ],
+              "hammerHead": [
+                193,
+                208
+              ],
+              "screenRightBootCuff": [
+                130,
+                216
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  135,
+                  114
+                ],
+                "radius_px": [
+                  17,
+                  19
+                ],
+                "name": "face_foreground_candidate"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_walk_r001/AIRA__walk_6.png",
+            "sourceSHA256": "9ac868e8dcc5c6e268b4cd2372bdcf8206fb778850b4ef5d461ca5cefcaad83c",
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 3,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 6,
+            "measurementNotes": "R011 is a new off-glob candidate after R010 was rejected by direct visual review. Point was reselected against the corresponding original full source PNG and 3x nearest-neighbor coordinate grid; top-left origin, source-pixel units. Target is the center of the gold folded boot-cuff band, not toe, ankle shaft, trouser edge, hammer or shadow. Marker/crop evidence is under docs/production/current/art/aira_landmark_audit_r011/. Candidate only; parent/reviewer visual inspection pending; no runtime fit claim.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 12,
+                "fitStatus": "UNAPPROVED_R057_POSITION_CANDIDATE_R013",
+                "sourceFrameIndex": 6,
+                "reason": "Individually inspected low-face point; move up within same visible face.",
+                "offset_px": [
+                  0,
+                  -8
+                ]
+              },
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_7.png",
+            "frameIndex": 7,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                137,
+                112
+              ],
+              "neck": [
+                136,
+                136
+              ],
+              "chest": [
+                128,
+                145
+              ],
+              "waist": [
+                128,
+                171
+              ],
+              "workingHand": [
+                90,
+                170
+              ],
+              "visibleRightAnkle": [
+                116,
+                217
+              ],
+              "hammerHead": [
+                193,
+                208
+              ],
+              "screenRightBootCuff": [
+                116,
+                217
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  137,
+                  112
+                ],
+                "radius_px": [
+                  17,
+                  19
+                ],
+                "name": "face_foreground_candidate"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_walk_r001/AIRA__walk_7.png",
+            "sourceSHA256": "59edcd8212f9f5946daf6ef578c1e695fc4bcfba437572691a4806841678e0cd",
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 3,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 7,
+            "measurementNotes": "R011 is a new off-glob candidate after R010 was rejected by direct visual review. Point was reselected against the corresponding original full source PNG and 3x nearest-neighbor coordinate grid; top-left origin, source-pixel units. Target is the center of the gold folded boot-cuff band, not toe, ankle shaft, trouser edge, hammer or shadow. Marker/crop evidence is under docs/production/current/art/aira_landmark_audit_r011/. Candidate only; parent/reviewer visual inspection pending; no runtime fit claim.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 8,
+                "fitStatus": "UNAPPROVED_R057_POSITION_CANDIDATE_R013",
+                "sourceFrameIndex": 7,
+                "reason": "Individually inspected low-face point; move up within same visible face.",
+                "offset_px": [
+                  0,
+                  -8
+                ]
+              },
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_8.png",
+            "frameIndex": 8,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "face": [
+                141,
+                113
+              ],
+              "neck": [
+                139,
+                137
+              ],
+              "chest": [
+                128,
+                145
+              ],
+              "waist": [
+                128,
+                171
+              ],
+              "workingHand": [
+                94,
+                168
+              ],
+              "visibleRightAnkle": [
+                127,
+                216
+              ],
+              "hammerHead": [
+                193,
+                208
+              ],
+              "screenRightBootCuff": [
+                127,
+                216
+              ],
+              "workingPalm": null
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  141,
+                  113
+                ],
+                "radius_px": [
+                  17,
+                  19
+                ],
+                "name": "face_foreground_candidate"
+              }
+            ],
+            "source_path": "native/GeneratedArt/party_walk_r001/AIRA__walk_8.png",
+            "sourceSHA256": "14195b5b08605dd7e4e2b4b9c7d8c0223cadba2cc3b037c33c0df1a3a17fad50",
+            "measurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 3,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 8,
+            "measurementNotes": "R011 is a new off-glob candidate after R010 was rejected by direct visual review. Point was reselected against the corresponding original full source PNG and 3x nearest-neighbor coordinate grid; top-left origin, source-pixel units. Target is the center of the gold folded boot-cuff band, not toe, ankle shaft, trouser edge, hammer or shadow. Marker/crop evidence is under docs/production/current/art/aira_landmark_audit_r011/. Candidate only; parent/reviewer visual inspection pending; no runtime fit claim.",
+            "gear_overrides_candidate": {
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small boot-cuff ornament; reduced from renderer default 0.13 pending visual fit."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Small finger ornament distinct from larger hand detail; anchor remains measured workingHand pending point fit."
+              },
+              "EQ_S_03": {
+                "height": 0.09,
+                "angle_degrees": 8,
+                "fitStatus": "UNAPPROVED_R057_POSITION_CANDIDATE_R013",
+                "sourceFrameIndex": 8,
+                "reason": "Individually inspected low-face point; move up within same visible face.",
+                "offset_px": [
+                  0,
+                  -8
+                ]
+              },
+              "EQ_HAND_03": {
+                "height": 0.06,
+                "fitStatus": "UNAPPROVED_SIZE_TRIAL",
+                "reason": "R004 isolated idle1/execute1/walk6 shows the current 0.10 part reads as a large wrist buckler. Test 0.06 only; do not change workingHand or other gear keys."
+              }
+            },
+            "landmarkVisibility": {
+              "workingPalm": "occluded",
+              "screenRightBootCuff": "visible",
+              "chest": "visible"
+            }
+          }
+        ]
+      }
+    },
+    "DETAIL_EQ_S_03": {
+      "kind": "equipment_small_detail",
+      "assetID": "DETAIL_EQ_S_03",
+      "equipmentID": "EQ_S_03",
+      "selectedPNG": "GeneratedCandidates/EquipmentDetails/material_r057_r003/DETAIL_EQ_S_03__material_candidate_r003.png",
+      "pixelSize": [
+        1254,
+        1254
+      ],
+      "canvas_px": [
+        1254,
+        1254
+      ],
+      "part_anchor_px": [
+        627,
+        627
+      ],
+      "attachmentSlotCandidate": "HAMMER_HEAD_NARROW_REINFORCEMENT",
+      "status": "UNAPPROVED_HAMMER_DETAIL_MATERIAL_R057_R003",
+      "scope": "EXISTING_EQUIPMENT_ATTACHMENT_DETAIL",
+      "humanAdoption": "PENDING_INDIVIDUAL",
+      "sourceIcon": "GearIcons/ICO_EQ_S_03/ICO_EQ_S_03__128__r001.png",
+      "description": "warm dark-metal reinforcement with restrained antique-brass edges; original hammer body unchanged",
+      "preserveActorOrWeaponBase": true,
+      "runtimeIntegrationStatus": "LOCAL_PROVISIONAL_INTEGRATION_NOT_RELEASED",
+      "visualFitStatus": "PARTIAL_27_POSITION_HELD_AND_3_MATERIAL_HELD_REVIEW_COMBINED_PENDING",
+      "sourceIconSHA256": "ca6ee378ea14cd6e46a2957c1fede15365c13f8504722de15cf5c99147787bcb",
+      "source_path": "native/Art/GearIcons/ICO_EQ_S_03/ICO_EQ_S_03__128__r001.png",
+      "sourceArtReferenceSHA256": "ca6ee378ea14cd6e46a2957c1fede15365c13f8504722de15cf5c99147787bcb",
+      "sourceArtReferenceProvenance": "SHA-256 of existing bundled 128px sourceIcon; legacy 256px provenance corrected",
+      "generatedCandidateSHA256": "b5bb74f0eed14254d166c995abc397c05bf0cf1cd1d7a0bc921e0227fcbf7dd9",
+      "previousMaterialSHA256": "eb699bad7b082fa462137b72d6b246bb18003dc0b9ae26e66c83d46c254d062c",
+      "materialNativeEvidence": "qa_drafts/equipment_detail_r057/native_capture_r013/native_run_r001_material_9A/RUN.json"
+    }
+  }
+}

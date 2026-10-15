@@ -1,0 +1,1694 @@
+{
+  "schema": "luna_book_motion_candidates_r001",
+  "status": "UNAPPROVED_TEST_OVERLAY",
+  "actorID": "C_APPRENTICE",
+  "spriteActorID": "LUNA",
+  "canvasPx": [
+    256,
+    256
+  ],
+  "footBaselineCanvasY": 244,
+  "sourceAtlases": [
+    {
+      "atlasPath": "native/GeneratedArt/luna_book_motion_candidates_r001/sources/WALK_BOOKLESS_ATLAS_RAW.png",
+      "atlasSHA256": "b18c718358506834ebe37c2094d4f028a5d40c625ab5fcfa8dc9f86e73d44b69",
+      "canvasPx": [
+        1536,
+        1024
+      ],
+      "componentBBoxesAlpha16Px": [
+        [
+          175,
+          14,
+          445,
+          339
+        ],
+        [
+          636,
+          15,
+          902,
+          339
+        ],
+        [
+          1096,
+          16,
+          1353,
+          345
+        ],
+        [
+          166,
+          353,
+          441,
+          678
+        ],
+        [
+          1093,
+          353,
+          1361,
+          677
+        ],
+        [
+          628,
+          357,
+          905,
+          675
+        ],
+        [
+          167,
+          688,
+          429,
+          1007
+        ],
+        [
+          638,
+          688,
+          898,
+          1010
+        ],
+        [
+          1109,
+          692,
+          1376,
+          1008
+        ]
+      ]
+    },
+    {
+      "atlasPath": "native/GeneratedArt/luna_book_motion_candidates_r001/sources/ATTACK_BOOKLESS_ATLAS_RAW.png",
+      "atlasSHA256": "46f474e91681212eb859dffedb70580abb306cc4f363f4f85ed7ee81749e1462",
+      "canvasPx": [
+        1536,
+        1024
+      ],
+      "componentBBoxesAlpha16Px": [
+        [
+          1095,
+          7,
+          1361,
+          339
+        ],
+        [
+          143,
+          8,
+          406,
+          339
+        ],
+        [
+          622,
+          8,
+          886,
+          339
+        ],
+        [
+          611,
+          346,
+          922,
+          675
+        ],
+        [
+          125,
+          348,
+          424,
+          675
+        ],
+        [
+          1089,
+          351,
+          1421,
+          675
+        ],
+        [
+          138,
+          678,
+          422,
+          1010
+        ],
+        [
+          617,
+          679,
+          891,
+          1010
+        ],
+        [
+          1096,
+          682,
+          1373,
+          1010
+        ]
+      ]
+    },
+    {
+      "atlasPath": "native/GeneratedArt/luna_book_motion_candidates_r001/sources/REST_BOOKLESS_ATLAS_RAW.png",
+      "atlasSHA256": "4f6772a6a69ae64d7685a16a4fa624d97ce2c48403eb056e1e0d2f2e578f9c86",
+      "canvasPx": [
+        1536,
+        1024
+      ],
+      "componentBBoxesAlpha16Px": [
+        [
+          166,
+          8,
+          444,
+          338
+        ],
+        [
+          622,
+          8,
+          896,
+          338
+        ],
+        [
+          1094,
+          8,
+          1372,
+          338
+        ],
+        [
+          156,
+          347,
+          446,
+          672
+        ],
+        [
+          1096,
+          350,
+          1377,
+          672
+        ],
+        [
+          609,
+          352,
+          892,
+          672
+        ],
+        [
+          156,
+          676,
+          436,
+          1009
+        ],
+        [
+          614,
+          676,
+          896,
+          1010
+        ],
+        [
+          1093,
+          677,
+          1392,
+          1010
+        ]
+      ]
+    }
+  ],
+  "frames": [
+    {
+      "state": "walk",
+      "frameIndex": 0,
+      "sourceAtlasPath": "native/GeneratedArt/luna_book_motion_candidates_r001/sources/WALK_BOOKLESS_ATLAS_RAW.png",
+      "sourceComponentIndex": 0,
+      "assetID": "LUNA_BOOK_MOTION_WALK_F01_CANDIDATE_R001",
+      "packedPath": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_WALK_F01_CANDIDATE_R001.png",
+      "packedSHA256": "66bc43b8e57e0cf19387bbc66641e85935f874bcf410a49c33856c00dcca6680",
+      "canvasPx": [
+        256,
+        256
+      ],
+      "alpha16BBoxPx": [
+        48,
+        52,
+        208,
+        244
+      ],
+      "cropBoxPx": [
+        175,
+        14,
+        445,
+        339
+      ],
+      "fit": "nearest-neighbor, alpha-preserving, max 166x192, bottom baseline y=244",
+      "book": {
+        "centerNormalized": [
+          0.7421875,
+          0.5234375
+        ],
+        "rotationDegrees": -3,
+        "scale": 1.0,
+        "layerAssetByGearID": {
+          "EQ_A_01": "BOOK_EQ_A_01",
+          "EQ_A_02": "BOOK_EQ_A_02",
+          "EQ_A_03": "BOOK_EQ_A_03"
+        },
+        "handOcclusionMask": {
+          "shape": "ellipse",
+          "centerNormalized": [
+            0.75390625,
+            0.6015625
+          ],
+          "radiiNormalized": [
+            0.0390625,
+            0.02734375
+          ],
+          "purpose": "foreground holding palm; runtime selectively masks face and casting forearm, never the full body; candidate registration R003"
+        }
+      },
+      "durationMs": 100,
+      "status": "UNAPPROVED_TEST_OVERLAY_CANDIDATE"
+    },
+    {
+      "state": "walk",
+      "frameIndex": 1,
+      "sourceAtlasPath": "native/GeneratedArt/luna_book_motion_candidates_r001/sources/WALK_BOOKLESS_ATLAS_RAW.png",
+      "sourceComponentIndex": 1,
+      "assetID": "LUNA_BOOK_MOTION_WALK_F02_CANDIDATE_R001",
+      "packedPath": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_WALK_F02_CANDIDATE_R001.png",
+      "packedSHA256": "25340bd415f639897eb61f3bd73a7e4e635db0403bc6cce56e3a0f42fa0294a1",
+      "canvasPx": [
+        256,
+        256
+      ],
+      "alpha16BBoxPx": [
+        49,
+        52,
+        207,
+        244
+      ],
+      "cropBoxPx": [
+        636,
+        15,
+        902,
+        339
+      ],
+      "fit": "nearest-neighbor, alpha-preserving, max 166x192, bottom baseline y=244",
+      "book": {
+        "centerNormalized": [
+          0.7421875,
+          0.53125
+        ],
+        "rotationDegrees": 0,
+        "scale": 1.0,
+        "layerAssetByGearID": {
+          "EQ_A_01": "BOOK_EQ_A_01",
+          "EQ_A_02": "BOOK_EQ_A_02",
+          "EQ_A_03": "BOOK_EQ_A_03"
+        },
+        "handOcclusionMask": {
+          "shape": "ellipse",
+          "centerNormalized": [
+            0.75390625,
+            0.609375
+          ],
+          "radiiNormalized": [
+            0.0390625,
+            0.02734375
+          ],
+          "purpose": "foreground holding palm; runtime selectively masks face and casting forearm, never the full body; candidate registration R003"
+        }
+      },
+      "durationMs": 100,
+      "status": "UNAPPROVED_TEST_OVERLAY_CANDIDATE"
+    },
+    {
+      "state": "walk",
+      "frameIndex": 2,
+      "sourceAtlasPath": "native/GeneratedArt/luna_book_motion_candidates_r001/sources/WALK_BOOKLESS_ATLAS_RAW.png",
+      "sourceComponentIndex": 2,
+      "assetID": "LUNA_BOOK_MOTION_WALK_F03_CANDIDATE_R001",
+      "packedPath": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_WALK_F03_CANDIDATE_R001.png",
+      "packedSHA256": "9aee712586181844ca0d80dfdf4198e52c9ab5419bc23096b6ab2dd034860b0e",
+      "canvasPx": [
+        256,
+        256
+      ],
+      "alpha16BBoxPx": [
+        53,
+        52,
+        203,
+        244
+      ],
+      "cropBoxPx": [
+        1096,
+        16,
+        1353,
+        345
+      ],
+      "fit": "nearest-neighbor, alpha-preserving, max 166x192, bottom baseline y=244",
+      "book": {
+        "centerNormalized": [
+          0.734375,
+          0.5234375
+        ],
+        "rotationDegrees": 3,
+        "scale": 1.0,
+        "layerAssetByGearID": {
+          "EQ_A_01": "BOOK_EQ_A_01",
+          "EQ_A_02": "BOOK_EQ_A_02",
+          "EQ_A_03": "BOOK_EQ_A_03"
+        },
+        "handOcclusionMask": {
+          "shape": "ellipse",
+          "centerNormalized": [
+            0.74609375,
+            0.6015625
+          ],
+          "radiiNormalized": [
+            0.0390625,
+            0.02734375
+          ],
+          "purpose": "foreground holding palm; runtime selectively masks face and casting forearm, never the full body; candidate registration R003"
+        }
+      },
+      "durationMs": 100,
+      "status": "UNAPPROVED_TEST_OVERLAY_CANDIDATE"
+    },
+    {
+      "state": "walk",
+      "frameIndex": 3,
+      "sourceAtlasPath": "native/GeneratedArt/luna_book_motion_candidates_r001/sources/WALK_BOOKLESS_ATLAS_RAW.png",
+      "sourceComponentIndex": 3,
+      "assetID": "LUNA_BOOK_MOTION_WALK_F04_CANDIDATE_R001",
+      "packedPath": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_WALK_F04_CANDIDATE_R001.png",
+      "packedSHA256": "b294119f332e8779ae58412881909d60a8433542fa3a0dd15f1a7e3abab62798",
+      "canvasPx": [
+        256,
+        256
+      ],
+      "alpha16BBoxPx": [
+        47,
+        52,
+        209,
+        244
+      ],
+      "cropBoxPx": [
+        166,
+        353,
+        441,
+        678
+      ],
+      "fit": "nearest-neighbor, alpha-preserving, max 166x192, bottom baseline y=244",
+      "book": {
+        "centerNormalized": [
+          0.7578125,
+          0.53125
+        ],
+        "rotationDegrees": -2,
+        "scale": 1.0,
+        "layerAssetByGearID": {
+          "EQ_A_01": "BOOK_EQ_A_01",
+          "EQ_A_02": "BOOK_EQ_A_02",
+          "EQ_A_03": "BOOK_EQ_A_03"
+        },
+        "handOcclusionMask": {
+          "shape": "ellipse",
+          "centerNormalized": [
+            0.76953125,
+            0.609375
+          ],
+          "radiiNormalized": [
+            0.0390625,
+            0.02734375
+          ],
+          "purpose": "foreground holding palm; runtime selectively masks face and casting forearm, never the full body; candidate registration R003"
+        }
+      },
+      "durationMs": 100,
+      "status": "UNAPPROVED_TEST_OVERLAY_CANDIDATE"
+    },
+    {
+      "state": "walk",
+      "frameIndex": 4,
+      "sourceAtlasPath": "native/GeneratedArt/luna_book_motion_candidates_r001/sources/WALK_BOOKLESS_ATLAS_RAW.png",
+      "sourceComponentIndex": 4,
+      "assetID": "LUNA_BOOK_MOTION_WALK_F05_CANDIDATE_R001",
+      "packedPath": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_WALK_F05_CANDIDATE_R001.png",
+      "packedSHA256": "2f1b83d28f9f9ba99d1c130044ec410ccabed220934ebe04d9c2ff287cafb13a",
+      "canvasPx": [
+        256,
+        256
+      ],
+      "alpha16BBoxPx": [
+        49,
+        52,
+        208,
+        244
+      ],
+      "cropBoxPx": [
+        1093,
+        353,
+        1361,
+        677
+      ],
+      "fit": "nearest-neighbor, alpha-preserving, max 166x192, bottom baseline y=244",
+      "book": {
+        "centerNormalized": [
+          0.74609375,
+          0.515625
+        ],
+        "rotationDegrees": 1,
+        "scale": 1.0,
+        "layerAssetByGearID": {
+          "EQ_A_01": "BOOK_EQ_A_01",
+          "EQ_A_02": "BOOK_EQ_A_02",
+          "EQ_A_03": "BOOK_EQ_A_03"
+        },
+        "handOcclusionMask": {
+          "shape": "ellipse",
+          "centerNormalized": [
+            0.7578125,
+            0.59375
+          ],
+          "radiiNormalized": [
+            0.0390625,
+            0.02734375
+          ],
+          "purpose": "foreground holding palm; runtime selectively masks face and casting forearm, never the full body; candidate registration R003"
+        }
+      },
+      "durationMs": 100,
+      "status": "UNAPPROVED_TEST_OVERLAY_CANDIDATE"
+    },
+    {
+      "state": "walk",
+      "frameIndex": 5,
+      "sourceAtlasPath": "native/GeneratedArt/luna_book_motion_candidates_r001/sources/WALK_BOOKLESS_ATLAS_RAW.png",
+      "sourceComponentIndex": 5,
+      "assetID": "LUNA_BOOK_MOTION_WALK_F06_CANDIDATE_R001",
+      "packedPath": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_WALK_F06_CANDIDATE_R001.png",
+      "packedSHA256": "26ac0f0207e60dd8e3422c012ec7ebdd345af95921e86a29f2ae4be26b34da61",
+      "canvasPx": [
+        256,
+        256
+      ],
+      "alpha16BBoxPx": [
+        45,
+        53,
+        211,
+        244
+      ],
+      "cropBoxPx": [
+        628,
+        357,
+        905,
+        675
+      ],
+      "fit": "nearest-neighbor, alpha-preserving, max 166x192, bottom baseline y=244",
+      "book": {
+        "centerNormalized": [
+          0.74609375,
+          0.5234375
+        ],
+        "rotationDegrees": 3,
+        "scale": 1.0,
+        "layerAssetByGearID": {
+          "EQ_A_01": "BOOK_EQ_A_01",
+          "EQ_A_02": "BOOK_EQ_A_02",
+          "EQ_A_03": "BOOK_EQ_A_03"
+        },
+        "handOcclusionMask": {
+          "shape": "ellipse",
+          "centerNormalized": [
+            0.7578125,
+            0.6015625
+          ],
+          "radiiNormalized": [
+            0.0390625,
+            0.02734375
+          ],
+          "purpose": "foreground holding palm; runtime selectively masks face and casting forearm, never the full body; candidate registration R003"
+        }
+      },
+      "durationMs": 100,
+      "status": "UNAPPROVED_TEST_OVERLAY_CANDIDATE"
+    },
+    {
+      "state": "walk",
+      "frameIndex": 6,
+      "sourceAtlasPath": "native/GeneratedArt/luna_book_motion_candidates_r001/sources/WALK_BOOKLESS_ATLAS_RAW.png",
+      "sourceComponentIndex": 6,
+      "assetID": "LUNA_BOOK_MOTION_WALK_F07_CANDIDATE_R001",
+      "packedPath": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_WALK_F07_CANDIDATE_R001.png",
+      "packedSHA256": "5612bf4598c5984054699d0e241873476efa1785300fb9ae8563000cb08f7212",
+      "canvasPx": [
+        256,
+        256
+      ],
+      "alpha16BBoxPx": [
+        49,
+        52,
+        207,
+        244
+      ],
+      "cropBoxPx": [
+        167,
+        688,
+        429,
+        1007
+      ],
+      "fit": "nearest-neighbor, alpha-preserving, max 166x192, bottom baseline y=244",
+      "book": {
+        "centerNormalized": [
+          0.74609375,
+          0.5234375
+        ],
+        "rotationDegrees": -3,
+        "scale": 1.0,
+        "layerAssetByGearID": {
+          "EQ_A_01": "BOOK_EQ_A_01",
+          "EQ_A_02": "BOOK_EQ_A_02",
+          "EQ_A_03": "BOOK_EQ_A_03"
+        },
+        "handOcclusionMask": {
+          "shape": "ellipse",
+          "centerNormalized": [
+            0.7578125,
+            0.6015625
+          ],
+          "radiiNormalized": [
+            0.0390625,
+            0.02734375
+          ],
+          "purpose": "foreground holding palm; runtime selectively masks face and casting forearm, never the full body; candidate registration R003"
+        }
+      },
+      "durationMs": 100,
+      "status": "UNAPPROVED_TEST_OVERLAY_CANDIDATE"
+    },
+    {
+      "state": "walk",
+      "frameIndex": 7,
+      "sourceAtlasPath": "native/GeneratedArt/luna_book_motion_candidates_r001/sources/WALK_BOOKLESS_ATLAS_RAW.png",
+      "sourceComponentIndex": 7,
+      "assetID": "LUNA_BOOK_MOTION_WALK_F08_CANDIDATE_R001",
+      "packedPath": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_WALK_F08_CANDIDATE_R001.png",
+      "packedSHA256": "bc7e8939ad92da41e814467f0a81a5ddebe5c0b46714b62e1d7353ba8337fd69",
+      "canvasPx": [
+        256,
+        256
+      ],
+      "alpha16BBoxPx": [
+        51,
+        52,
+        206,
+        244
+      ],
+      "cropBoxPx": [
+        638,
+        688,
+        898,
+        1010
+      ],
+      "fit": "nearest-neighbor, alpha-preserving, max 166x192, bottom baseline y=244",
+      "book": {
+        "centerNormalized": [
+          0.73828125,
+          0.5234375
+        ],
+        "rotationDegrees": 0,
+        "scale": 1.0,
+        "layerAssetByGearID": {
+          "EQ_A_01": "BOOK_EQ_A_01",
+          "EQ_A_02": "BOOK_EQ_A_02",
+          "EQ_A_03": "BOOK_EQ_A_03"
+        },
+        "handOcclusionMask": {
+          "shape": "ellipse",
+          "centerNormalized": [
+            0.75,
+            0.6015625
+          ],
+          "radiiNormalized": [
+            0.0390625,
+            0.02734375
+          ],
+          "purpose": "foreground holding palm; runtime selectively masks face and casting forearm, never the full body; candidate registration R003"
+        }
+      },
+      "durationMs": 100,
+      "status": "UNAPPROVED_TEST_OVERLAY_CANDIDATE"
+    },
+    {
+      "state": "walk",
+      "frameIndex": 8,
+      "sourceAtlasPath": "native/GeneratedArt/luna_book_motion_candidates_r001/sources/WALK_BOOKLESS_ATLAS_RAW.png",
+      "sourceComponentIndex": 8,
+      "assetID": "LUNA_BOOK_MOTION_WALK_F09_CANDIDATE_R001",
+      "packedPath": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_WALK_F09_CANDIDATE_R001.png",
+      "packedSHA256": "38f0cb8c895058df71424afdc950c24a4622bfc5f3a4175e57628a810e7d2b38",
+      "canvasPx": [
+        256,
+        256
+      ],
+      "alpha16BBoxPx": [
+        47,
+        52,
+        209,
+        244
+      ],
+      "cropBoxPx": [
+        1109,
+        692,
+        1376,
+        1008
+      ],
+      "fit": "nearest-neighbor, alpha-preserving, max 166x192, bottom baseline y=244",
+      "book": {
+        "centerNormalized": [
+          0.7421875,
+          0.53125
+        ],
+        "rotationDegrees": 2,
+        "scale": 1.0,
+        "layerAssetByGearID": {
+          "EQ_A_01": "BOOK_EQ_A_01",
+          "EQ_A_02": "BOOK_EQ_A_02",
+          "EQ_A_03": "BOOK_EQ_A_03"
+        },
+        "handOcclusionMask": {
+          "shape": "ellipse",
+          "centerNormalized": [
+            0.75390625,
+            0.609375
+          ],
+          "radiiNormalized": [
+            0.0390625,
+            0.02734375
+          ],
+          "purpose": "foreground holding palm; runtime selectively masks face and casting forearm, never the full body; candidate registration R003"
+        }
+      },
+      "durationMs": 100,
+      "status": "UNAPPROVED_TEST_OVERLAY_CANDIDATE"
+    },
+    {
+      "state": "anticipate",
+      "frameIndex": 0,
+      "sourceAtlasPath": "native/GeneratedArt/luna_book_motion_candidates_r001/sources/ATTACK_BOOKLESS_ATLAS_RAW.png",
+      "sourceComponentIndex": 0,
+      "assetID": "LUNA_BOOK_MOTION_ANTICIPATE_F01_CANDIDATE_R001",
+      "packedPath": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_ANTICIPATE_F01_CANDIDATE_R001.png",
+      "packedSHA256": "7d8969b1b144e1a6d0fb763690287fa8e74689189f14f47b52c834c02d43ba8e",
+      "canvasPx": [
+        256,
+        256
+      ],
+      "alpha16BBoxPx": [
+        51,
+        52,
+        205,
+        244
+      ],
+      "cropBoxPx": [
+        1095,
+        7,
+        1361,
+        339
+      ],
+      "fit": "nearest-neighbor, alpha-preserving, max 166x192, bottom baseline y=244",
+      "book": {
+        "centerNormalized": [
+          0.73828125,
+          0.51953125
+        ],
+        "rotationDegrees": -5,
+        "scale": 1.0,
+        "layerAssetByGearID": {
+          "EQ_A_01": "BOOK_EQ_A_01",
+          "EQ_A_02": "BOOK_EQ_A_02",
+          "EQ_A_03": "BOOK_EQ_A_03"
+        },
+        "handOcclusionMask": {
+          "shape": "ellipse",
+          "centerNormalized": [
+            0.75,
+            0.59765625
+          ],
+          "radiiNormalized": [
+            0.0390625,
+            0.02734375
+          ],
+          "purpose": "foreground holding palm; runtime selectively masks face and casting forearm, never the full body; candidate registration R003"
+        }
+      },
+      "durationMs": 100,
+      "status": "UNAPPROVED_TEST_OVERLAY_CANDIDATE"
+    },
+    {
+      "state": "anticipate",
+      "frameIndex": 1,
+      "sourceAtlasPath": "native/GeneratedArt/luna_book_motion_candidates_r001/sources/ATTACK_BOOKLESS_ATLAS_RAW.png",
+      "sourceComponentIndex": 1,
+      "assetID": "LUNA_BOOK_MOTION_ANTICIPATE_F02_CANDIDATE_R001",
+      "packedPath": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_ANTICIPATE_F02_CANDIDATE_R001.png",
+      "packedSHA256": "9448769dd8eee397ae367b27a8351e121c7b0acd3b990547bb15f7b2fb835b47",
+      "canvasPx": [
+        256,
+        256
+      ],
+      "alpha16BBoxPx": [
+        52,
+        52,
+        205,
+        244
+      ],
+      "cropBoxPx": [
+        143,
+        8,
+        406,
+        339
+      ],
+      "fit": "nearest-neighbor, alpha-preserving, max 166x192, bottom baseline y=244",
+      "book": {
+        "centerNormalized": [
+          0.734375,
+          0.5234375
+        ],
+        "rotationDegrees": -2,
+        "scale": 1.0,
+        "layerAssetByGearID": {
+          "EQ_A_01": "BOOK_EQ_A_01",
+          "EQ_A_02": "BOOK_EQ_A_02",
+          "EQ_A_03": "BOOK_EQ_A_03"
+        },
+        "handOcclusionMask": {
+          "shape": "ellipse",
+          "centerNormalized": [
+            0.74609375,
+            0.6015625
+          ],
+          "radiiNormalized": [
+            0.0390625,
+            0.02734375
+          ],
+          "purpose": "foreground holding palm; runtime selectively masks face and casting forearm, never the full body; candidate registration R003"
+        }
+      },
+      "durationMs": 100,
+      "status": "UNAPPROVED_TEST_OVERLAY_CANDIDATE"
+    },
+    {
+      "state": "anticipate",
+      "frameIndex": 2,
+      "sourceAtlasPath": "native/GeneratedArt/luna_book_motion_candidates_r001/sources/ATTACK_BOOKLESS_ATLAS_RAW.png",
+      "sourceComponentIndex": 2,
+      "assetID": "LUNA_BOOK_MOTION_ANTICIPATE_F03_CANDIDATE_R001",
+      "packedPath": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_ANTICIPATE_F03_CANDIDATE_R001.png",
+      "packedSHA256": "628b3acc42873d27f8b9eec634d93ea47431eb8dbbd89bebe9b182030e398101",
+      "canvasPx": [
+        256,
+        256
+      ],
+      "alpha16BBoxPx": [
+        52,
+        52,
+        205,
+        244
+      ],
+      "cropBoxPx": [
+        622,
+        8,
+        886,
+        339
+      ],
+      "fit": "nearest-neighbor, alpha-preserving, max 166x192, bottom baseline y=244",
+      "book": {
+        "centerNormalized": [
+          0.74609375,
+          0.53125
+        ],
+        "rotationDegrees": 0,
+        "scale": 1.0,
+        "layerAssetByGearID": {
+          "EQ_A_01": "BOOK_EQ_A_01",
+          "EQ_A_02": "BOOK_EQ_A_02",
+          "EQ_A_03": "BOOK_EQ_A_03"
+        },
+        "handOcclusionMask": {
+          "shape": "ellipse",
+          "centerNormalized": [
+            0.7578125,
+            0.609375
+          ],
+          "radiiNormalized": [
+            0.0390625,
+            0.02734375
+          ],
+          "purpose": "foreground holding palm; runtime selectively masks face and casting forearm, never the full body; candidate registration R003"
+        }
+      },
+      "durationMs": 100,
+      "status": "UNAPPROVED_TEST_OVERLAY_CANDIDATE"
+    },
+    {
+      "state": "execute",
+      "frameIndex": 0,
+      "sourceAtlasPath": "native/GeneratedArt/luna_book_motion_candidates_r001/sources/ATTACK_BOOKLESS_ATLAS_RAW.png",
+      "sourceComponentIndex": 3,
+      "assetID": "LUNA_BOOK_MOTION_EXECUTE_F01_CANDIDATE_R001",
+      "packedPath": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_EXECUTE_F01_CANDIDATE_R001.png",
+      "packedSHA256": "312402efd809efb42c112870932028db46c1d151b85c3c3d8c4d6f06ab68db83",
+      "canvasPx": [
+        256,
+        256
+      ],
+      "alpha16BBoxPx": [
+        45,
+        68,
+        211,
+        244
+      ],
+      "cropBoxPx": [
+        611,
+        346,
+        922,
+        675
+      ],
+      "fit": "nearest-neighbor, alpha-preserving, max 166x192, bottom baseline y=244",
+      "book": {
+        "centerNormalized": [
+          0.69140625,
+          0.58203125
+        ],
+        "rotationDegrees": 2,
+        "scale": 1.0,
+        "layerAssetByGearID": {
+          "EQ_A_01": "BOOK_EQ_A_01",
+          "EQ_A_02": "BOOK_EQ_A_02",
+          "EQ_A_03": "BOOK_EQ_A_03"
+        },
+        "handOcclusionMask": {
+          "shape": "ellipse",
+          "centerNormalized": [
+            0.703125,
+            0.66015625
+          ],
+          "radiiNormalized": [
+            0.0390625,
+            0.02734375
+          ],
+          "purpose": "foreground holding palm; runtime selectively masks face and casting forearm, never the full body; candidate registration R003"
+        }
+      },
+      "durationMs": 100,
+      "status": "UNAPPROVED_TEST_OVERLAY_CANDIDATE"
+    },
+    {
+      "state": "execute",
+      "frameIndex": 1,
+      "sourceAtlasPath": "native/GeneratedArt/luna_book_motion_candidates_r001/sources/ATTACK_BOOKLESS_ATLAS_RAW.png",
+      "sourceComponentIndex": 4,
+      "assetID": "LUNA_BOOK_MOTION_EXECUTE_F02_CANDIDATE_R001",
+      "packedPath": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_EXECUTE_F02_CANDIDATE_R001.png",
+      "packedSHA256": "7d3d0011c4fba0c27c8f81e5d701e3b413af40cfdc08f204ad4c8a4998a70c8a",
+      "canvasPx": [
+        256,
+        256
+      ],
+      "alpha16BBoxPx": [
+        45,
+        62,
+        211,
+        244
+      ],
+      "cropBoxPx": [
+        125,
+        348,
+        424,
+        675
+      ],
+      "fit": "nearest-neighbor, alpha-preserving, max 166x192, bottom baseline y=244",
+      "book": {
+        "centerNormalized": [
+          0.7109375,
+          0.5703125
+        ],
+        "rotationDegrees": 7,
+        "scale": 1.0,
+        "layerAssetByGearID": {
+          "EQ_A_01": "BOOK_EQ_A_01",
+          "EQ_A_02": "BOOK_EQ_A_02",
+          "EQ_A_03": "BOOK_EQ_A_03"
+        },
+        "handOcclusionMask": {
+          "shape": "ellipse",
+          "centerNormalized": [
+            0.72265625,
+            0.6484375
+          ],
+          "radiiNormalized": [
+            0.0390625,
+            0.02734375
+          ],
+          "purpose": "foreground holding palm; runtime selectively masks face and casting forearm, never the full body; candidate registration R003"
+        }
+      },
+      "durationMs": 100,
+      "status": "UNAPPROVED_TEST_OVERLAY_CANDIDATE"
+    },
+    {
+      "state": "execute",
+      "frameIndex": 2,
+      "sourceAtlasPath": "native/GeneratedArt/luna_book_motion_candidates_r001/sources/ATTACK_BOOKLESS_ATLAS_RAW.png",
+      "sourceComponentIndex": 5,
+      "assetID": "LUNA_BOOK_MOTION_EXECUTE_F03_CANDIDATE_R001",
+      "packedPath": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_EXECUTE_F03_CANDIDATE_R001.png",
+      "packedSHA256": "e431bf3fc7c0a9bcc21c817207840c2e1fa47969bb1609884e8fe9e4a96ebe13",
+      "canvasPx": [
+        256,
+        256
+      ],
+      "alpha16BBoxPx": [
+        45,
+        82,
+        211,
+        244
+      ],
+      "cropBoxPx": [
+        1089,
+        351,
+        1421,
+        675
+      ],
+      "fit": "nearest-neighbor, alpha-preserving, max 166x192, bottom baseline y=244",
+      "book": {
+        "centerNormalized": [
+          0.58203125,
+          0.59375
+        ],
+        "rotationDegrees": 4,
+        "scale": 1.0,
+        "layerAssetByGearID": {
+          "EQ_A_01": "BOOK_EQ_A_01",
+          "EQ_A_02": "BOOK_EQ_A_02",
+          "EQ_A_03": "BOOK_EQ_A_03"
+        },
+        "handOcclusionMask": {
+          "shape": "ellipse",
+          "centerNormalized": [
+            0.59375,
+            0.671875
+          ],
+          "radiiNormalized": [
+            0.0390625,
+            0.02734375
+          ],
+          "purpose": "foreground holding palm; runtime selectively masks face and casting forearm, never the full body; candidate registration R003"
+        }
+      },
+      "durationMs": 100,
+      "status": "UNAPPROVED_TEST_OVERLAY_CANDIDATE"
+    },
+    {
+      "state": "recover",
+      "frameIndex": 0,
+      "sourceAtlasPath": "native/GeneratedArt/luna_book_motion_candidates_r001/sources/ATTACK_BOOKLESS_ATLAS_RAW.png",
+      "sourceComponentIndex": 6,
+      "assetID": "LUNA_BOOK_MOTION_RECOVER_F01_CANDIDATE_R001",
+      "packedPath": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_RECOVER_F01_CANDIDATE_R001.png",
+      "packedSHA256": "b1a065af0cbbdeac565bbec4825e8c9a8d3fde5fe407330fe5c9170673579a64",
+      "canvasPx": [
+        256,
+        256
+      ],
+      "alpha16BBoxPx": [
+        46,
+        52,
+        210,
+        244
+      ],
+      "cropBoxPx": [
+        138,
+        678,
+        422,
+        1010
+      ],
+      "fit": "nearest-neighbor, alpha-preserving, max 166x192, bottom baseline y=244",
+      "book": {
+        "centerNormalized": [
+          0.7578125,
+          0.515625
+        ],
+        "rotationDegrees": 1,
+        "scale": 1.0,
+        "layerAssetByGearID": {
+          "EQ_A_01": "BOOK_EQ_A_01",
+          "EQ_A_02": "BOOK_EQ_A_02",
+          "EQ_A_03": "BOOK_EQ_A_03"
+        },
+        "handOcclusionMask": {
+          "shape": "ellipse",
+          "centerNormalized": [
+            0.76953125,
+            0.59375
+          ],
+          "radiiNormalized": [
+            0.0390625,
+            0.02734375
+          ],
+          "purpose": "foreground holding palm; runtime selectively masks face and casting forearm, never the full body; candidate registration R003"
+        }
+      },
+      "durationMs": 100,
+      "status": "UNAPPROVED_TEST_OVERLAY_CANDIDATE"
+    },
+    {
+      "state": "recover",
+      "frameIndex": 1,
+      "sourceAtlasPath": "native/GeneratedArt/luna_book_motion_candidates_r001/sources/ATTACK_BOOKLESS_ATLAS_RAW.png",
+      "sourceComponentIndex": 7,
+      "assetID": "LUNA_BOOK_MOTION_RECOVER_F02_CANDIDATE_R001",
+      "packedPath": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_RECOVER_F02_CANDIDATE_R001.png",
+      "packedSHA256": "36b46cf3fc3ce7bd78eaa0a120be2e9ee6234b6f68bfcc041b721dff05ade683",
+      "canvasPx": [
+        256,
+        256
+      ],
+      "alpha16BBoxPx": [
+        49,
+        52,
+        208,
+        244
+      ],
+      "cropBoxPx": [
+        617,
+        679,
+        891,
+        1010
+      ],
+      "fit": "nearest-neighbor, alpha-preserving, max 166x192, bottom baseline y=244",
+      "book": {
+        "centerNormalized": [
+          0.75390625,
+          0.51953125
+        ],
+        "rotationDegrees": -2,
+        "scale": 1.0,
+        "layerAssetByGearID": {
+          "EQ_A_01": "BOOK_EQ_A_01",
+          "EQ_A_02": "BOOK_EQ_A_02",
+          "EQ_A_03": "BOOK_EQ_A_03"
+        },
+        "handOcclusionMask": {
+          "shape": "ellipse",
+          "centerNormalized": [
+            0.765625,
+            0.59765625
+          ],
+          "radiiNormalized": [
+            0.0390625,
+            0.02734375
+          ],
+          "purpose": "foreground holding palm; runtime selectively masks face and casting forearm, never the full body; candidate registration R003"
+        }
+      },
+      "durationMs": 100,
+      "status": "UNAPPROVED_TEST_OVERLAY_CANDIDATE"
+    },
+    {
+      "state": "recover",
+      "frameIndex": 2,
+      "sourceAtlasPath": "native/GeneratedArt/luna_book_motion_candidates_r001/sources/ATTACK_BOOKLESS_ATLAS_RAW.png",
+      "sourceComponentIndex": 8,
+      "assetID": "LUNA_BOOK_MOTION_RECOVER_F03_CANDIDATE_R001",
+      "packedPath": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_RECOVER_F03_CANDIDATE_R001.png",
+      "packedSHA256": "d2d04a9f5ab29aa0cd5d2a37b3a8b0b44946cbba61d9f2be51a9a0eb7197fee5",
+      "canvasPx": [
+        256,
+        256
+      ],
+      "alpha16BBoxPx": [
+        47,
+        52,
+        209,
+        244
+      ],
+      "cropBoxPx": [
+        1096,
+        682,
+        1373,
+        1010
+      ],
+      "fit": "nearest-neighbor, alpha-preserving, max 166x192, bottom baseline y=244",
+      "book": {
+        "centerNormalized": [
+          0.75,
+          0.51953125
+        ],
+        "rotationDegrees": -1,
+        "scale": 1.0,
+        "layerAssetByGearID": {
+          "EQ_A_01": "BOOK_EQ_A_01",
+          "EQ_A_02": "BOOK_EQ_A_02",
+          "EQ_A_03": "BOOK_EQ_A_03"
+        },
+        "handOcclusionMask": {
+          "shape": "ellipse",
+          "centerNormalized": [
+            0.76171875,
+            0.59765625
+          ],
+          "radiiNormalized": [
+            0.0390625,
+            0.02734375
+          ],
+          "purpose": "foreground holding palm; runtime selectively masks face and casting forearm, never the full body; candidate registration R003"
+        }
+      },
+      "durationMs": 100,
+      "status": "UNAPPROVED_TEST_OVERLAY_CANDIDATE"
+    },
+    {
+      "state": "idle",
+      "frameIndex": 0,
+      "sourceAtlasPath": "native/GeneratedArt/luna_book_motion_candidates_r001/sources/REST_BOOKLESS_ATLAS_RAW.png",
+      "sourceComponentIndex": 0,
+      "assetID": "LUNA_BOOK_MOTION_IDLE_F01_CANDIDATE_R001",
+      "packedPath": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_IDLE_F01_CANDIDATE_R001.png",
+      "packedSHA256": "8b1952ef2cfc3b785c9bb8d9c88a059f86692afb9cdf93155bdcb2b52697662b",
+      "canvasPx": [
+        256,
+        256
+      ],
+      "alpha16BBoxPx": [
+        47,
+        52,
+        209,
+        244
+      ],
+      "cropBoxPx": [
+        166,
+        8,
+        444,
+        338
+      ],
+      "fit": "nearest-neighbor, alpha-preserving, max 166x192, bottom baseline y=244",
+      "book": {
+        "centerNormalized": [
+          0.75390625,
+          0.52734375
+        ],
+        "rotationDegrees": -1,
+        "scale": 1.0,
+        "layerAssetByGearID": {
+          "EQ_A_01": "BOOK_EQ_A_01",
+          "EQ_A_02": "BOOK_EQ_A_02",
+          "EQ_A_03": "BOOK_EQ_A_03"
+        },
+        "handOcclusionMask": {
+          "shape": "ellipse",
+          "centerNormalized": [
+            0.765625,
+            0.60546875
+          ],
+          "radiiNormalized": [
+            0.0390625,
+            0.02734375
+          ],
+          "purpose": "foreground holding palm; runtime selectively masks face and casting forearm, never the full body; candidate registration R003"
+        }
+      },
+      "durationMs": 450,
+      "status": "UNAPPROVED_TEST_OVERLAY_CANDIDATE"
+    },
+    {
+      "state": "idle",
+      "frameIndex": 1,
+      "sourceAtlasPath": "native/GeneratedArt/luna_book_motion_candidates_r001/sources/REST_BOOKLESS_ATLAS_RAW.png",
+      "sourceComponentIndex": 1,
+      "assetID": "LUNA_BOOK_MOTION_IDLE_F02_CANDIDATE_R001",
+      "packedPath": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_IDLE_F02_CANDIDATE_R001.png",
+      "packedSHA256": "71aca07cacdde418d8333fe596b2bbca104d96f4be9c6291c5955978d380025e",
+      "canvasPx": [
+        256,
+        256
+      ],
+      "alpha16BBoxPx": [
+        49,
+        52,
+        208,
+        244
+      ],
+      "cropBoxPx": [
+        622,
+        8,
+        896,
+        338
+      ],
+      "fit": "nearest-neighbor, alpha-preserving, max 166x192, bottom baseline y=244",
+      "book": {
+        "centerNormalized": [
+          0.75390625,
+          0.5234375
+        ],
+        "rotationDegrees": 0,
+        "scale": 1.0,
+        "layerAssetByGearID": {
+          "EQ_A_01": "BOOK_EQ_A_01",
+          "EQ_A_02": "BOOK_EQ_A_02",
+          "EQ_A_03": "BOOK_EQ_A_03"
+        },
+        "handOcclusionMask": {
+          "shape": "ellipse",
+          "centerNormalized": [
+            0.765625,
+            0.6015625
+          ],
+          "radiiNormalized": [
+            0.0390625,
+            0.02734375
+          ],
+          "purpose": "foreground holding palm; runtime selectively masks face and casting forearm, never the full body; candidate registration R003"
+        }
+      },
+      "durationMs": 180,
+      "status": "UNAPPROVED_TEST_OVERLAY_CANDIDATE"
+    },
+    {
+      "state": "idle",
+      "frameIndex": 2,
+      "sourceAtlasPath": "native/GeneratedArt/luna_book_motion_candidates_r001/sources/REST_BOOKLESS_ATLAS_RAW.png",
+      "sourceComponentIndex": 2,
+      "assetID": "LUNA_BOOK_MOTION_IDLE_F03_CANDIDATE_R001",
+      "packedPath": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_IDLE_F03_CANDIDATE_R001.png",
+      "packedSHA256": "6ac7075d0d6d0a331f93377687c4379aa9ea3395acc9255bfe2b503c14f68250",
+      "canvasPx": [
+        256,
+        256
+      ],
+      "alpha16BBoxPx": [
+        47,
+        52,
+        209,
+        244
+      ],
+      "cropBoxPx": [
+        1094,
+        8,
+        1372,
+        338
+      ],
+      "fit": "nearest-neighbor, alpha-preserving, max 166x192, bottom baseline y=244",
+      "book": {
+        "centerNormalized": [
+          0.75,
+          0.52734375
+        ],
+        "rotationDegrees": 1,
+        "scale": 1.0,
+        "layerAssetByGearID": {
+          "EQ_A_01": "BOOK_EQ_A_01",
+          "EQ_A_02": "BOOK_EQ_A_02",
+          "EQ_A_03": "BOOK_EQ_A_03"
+        },
+        "handOcclusionMask": {
+          "shape": "ellipse",
+          "centerNormalized": [
+            0.76171875,
+            0.60546875
+          ],
+          "radiiNormalized": [
+            0.0390625,
+            0.02734375
+          ],
+          "purpose": "foreground holding palm; runtime selectively masks face and casting forearm, never the full body; candidate registration R003"
+        }
+      },
+      "durationMs": 450,
+      "status": "UNAPPROVED_TEST_OVERLAY_CANDIDATE"
+    },
+    {
+      "state": "hit",
+      "frameIndex": 0,
+      "sourceAtlasPath": "native/GeneratedArt/luna_book_motion_candidates_r001/sources/REST_BOOKLESS_ATLAS_RAW.png",
+      "sourceComponentIndex": 3,
+      "assetID": "LUNA_BOOK_MOTION_HIT_F01_CANDIDATE_R001",
+      "packedPath": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_HIT_F01_CANDIDATE_R001.png",
+      "packedSHA256": "86d31984923b247c9ce41d5b1368f2347abf487eb77d4dc7df21734ea753676f",
+      "canvasPx": [
+        256,
+        256
+      ],
+      "alpha16BBoxPx": [
+        45,
+        58,
+        211,
+        244
+      ],
+      "cropBoxPx": [
+        156,
+        347,
+        446,
+        672
+      ],
+      "fit": "nearest-neighbor, alpha-preserving, max 166x192, bottom baseline y=244",
+      "book": {
+        "centerNormalized": [
+          0.765625,
+          0.50390625
+        ],
+        "rotationDegrees": 0,
+        "scale": 1.0,
+        "layerAssetByGearID": {
+          "EQ_A_01": "BOOK_EQ_A_01",
+          "EQ_A_02": "BOOK_EQ_A_02",
+          "EQ_A_03": "BOOK_EQ_A_03"
+        },
+        "handOcclusionMask": {
+          "shape": "ellipse",
+          "centerNormalized": [
+            0.77734375,
+            0.58203125
+          ],
+          "radiiNormalized": [
+            0.0390625,
+            0.02734375
+          ],
+          "purpose": "foreground holding palm; runtime selectively masks face and casting forearm, never the full body; candidate registration R003"
+        }
+      },
+      "durationMs": 100,
+      "status": "UNAPPROVED_TEST_OVERLAY_CANDIDATE"
+    },
+    {
+      "state": "hit",
+      "frameIndex": 1,
+      "sourceAtlasPath": "native/GeneratedArt/luna_book_motion_candidates_r001/sources/REST_BOOKLESS_ATLAS_RAW.png",
+      "sourceComponentIndex": 4,
+      "assetID": "LUNA_BOOK_MOTION_HIT_F02_CANDIDATE_R001",
+      "packedPath": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_HIT_F02_CANDIDATE_R001.png",
+      "packedSHA256": "a56adbd7b5c8b278d161b34c6d06c7bdf164fc26e178dbffd0533f397aa7add9",
+      "canvasPx": [
+        256,
+        256
+      ],
+      "alpha16BBoxPx": [
+        45,
+        54,
+        211,
+        244
+      ],
+      "cropBoxPx": [
+        1096,
+        350,
+        1377,
+        672
+      ],
+      "fit": "nearest-neighbor, alpha-preserving, max 166x192, bottom baseline y=244",
+      "book": {
+        "centerNormalized": [
+          0.7578125,
+          0.5078125
+        ],
+        "rotationDegrees": -5,
+        "scale": 1.0,
+        "layerAssetByGearID": {
+          "EQ_A_01": "BOOK_EQ_A_01",
+          "EQ_A_02": "BOOK_EQ_A_02",
+          "EQ_A_03": "BOOK_EQ_A_03"
+        },
+        "handOcclusionMask": {
+          "shape": "ellipse",
+          "centerNormalized": [
+            0.76953125,
+            0.5859375
+          ],
+          "radiiNormalized": [
+            0.0390625,
+            0.02734375
+          ],
+          "purpose": "foreground holding palm; runtime selectively masks face and casting forearm, never the full body; candidate registration R003"
+        }
+      },
+      "durationMs": 100,
+      "status": "UNAPPROVED_TEST_OVERLAY_CANDIDATE"
+    },
+    {
+      "state": "hit",
+      "frameIndex": 2,
+      "sourceAtlasPath": "native/GeneratedArt/luna_book_motion_candidates_r001/sources/REST_BOOKLESS_ATLAS_RAW.png",
+      "sourceComponentIndex": 5,
+      "assetID": "LUNA_BOOK_MOTION_HIT_F03_CANDIDATE_R001",
+      "packedPath": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_HIT_F03_CANDIDATE_R001.png",
+      "packedSHA256": "f247be9098a1bebd81eb149da352ec206d81716214dc2bbab8b241521a3685db",
+      "canvasPx": [
+        256,
+        256
+      ],
+      "alpha16BBoxPx": [
+        45,
+        56,
+        211,
+        244
+      ],
+      "cropBoxPx": [
+        609,
+        352,
+        892,
+        672
+      ],
+      "fit": "nearest-neighbor, alpha-preserving, max 166x192, bottom baseline y=244",
+      "book": {
+        "centerNormalized": [
+          0.76171875,
+          0.5234375
+        ],
+        "rotationDegrees": 1,
+        "scale": 1.0,
+        "layerAssetByGearID": {
+          "EQ_A_01": "BOOK_EQ_A_01",
+          "EQ_A_02": "BOOK_EQ_A_02",
+          "EQ_A_03": "BOOK_EQ_A_03"
+        },
+        "handOcclusionMask": {
+          "shape": "ellipse",
+          "centerNormalized": [
+            0.7734375,
+            0.6015625
+          ],
+          "radiiNormalized": [
+            0.0390625,
+            0.02734375
+          ],
+          "purpose": "foreground holding palm; runtime selectively masks face and casting forearm, never the full body; candidate registration R003"
+        }
+      },
+      "durationMs": 100,
+      "status": "UNAPPROVED_TEST_OVERLAY_CANDIDATE"
+    },
+    {
+      "state": "resolve",
+      "frameIndex": 0,
+      "sourceAtlasPath": "native/GeneratedArt/luna_book_motion_candidates_r001/sources/REST_BOOKLESS_ATLAS_RAW.png",
+      "sourceComponentIndex": 6,
+      "assetID": "LUNA_BOOK_MOTION_RESOLVE_F01_CANDIDATE_R001",
+      "packedPath": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_RESOLVE_F01_CANDIDATE_R001.png",
+      "packedSHA256": "347b3c33f4fb0ba1aa06850c088ddd39ee1c6a0a64dc72a1e01881e4c725ec43",
+      "canvasPx": [
+        256,
+        256
+      ],
+      "alpha16BBoxPx": [
+        48,
+        52,
+        209,
+        244
+      ],
+      "cropBoxPx": [
+        156,
+        676,
+        436,
+        1009
+      ],
+      "fit": "nearest-neighbor, alpha-preserving, max 166x192, bottom baseline y=244",
+      "book": {
+        "centerNormalized": [
+          0.7578125,
+          0.515625
+        ],
+        "rotationDegrees": -2,
+        "scale": 1.0,
+        "layerAssetByGearID": {
+          "EQ_A_01": "BOOK_EQ_A_01",
+          "EQ_A_02": "BOOK_EQ_A_02",
+          "EQ_A_03": "BOOK_EQ_A_03"
+        },
+        "handOcclusionMask": {
+          "shape": "ellipse",
+          "centerNormalized": [
+            0.76953125,
+            0.59375
+          ],
+          "radiiNormalized": [
+            0.0390625,
+            0.02734375
+          ],
+          "purpose": "foreground holding palm; runtime selectively masks face and casting forearm, never the full body; candidate registration R003"
+        }
+      },
+      "durationMs": 100,
+      "status": "UNAPPROVED_TEST_OVERLAY_CANDIDATE"
+    },
+    {
+      "state": "resolve",
+      "frameIndex": 1,
+      "sourceAtlasPath": "native/GeneratedArt/luna_book_motion_candidates_r001/sources/REST_BOOKLESS_ATLAS_RAW.png",
+      "sourceComponentIndex": 7,
+      "assetID": "LUNA_BOOK_MOTION_RESOLVE_F02_CANDIDATE_R001",
+      "packedPath": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_RESOLVE_F02_CANDIDATE_R001.png",
+      "packedSHA256": "c671d9556a19e3cb5df0965361b5c76b3e47c7dc805d615017993ba1d539ad5e",
+      "canvasPx": [
+        256,
+        256
+      ],
+      "alpha16BBoxPx": [
+        47,
+        52,
+        209,
+        244
+      ],
+      "cropBoxPx": [
+        614,
+        676,
+        896,
+        1010
+      ],
+      "fit": "nearest-neighbor, alpha-preserving, max 166x192, bottom baseline y=244",
+      "book": {
+        "centerNormalized": [
+          0.75,
+          0.51953125
+        ],
+        "rotationDegrees": 0,
+        "scale": 1.0,
+        "layerAssetByGearID": {
+          "EQ_A_01": "BOOK_EQ_A_01",
+          "EQ_A_02": "BOOK_EQ_A_02",
+          "EQ_A_03": "BOOK_EQ_A_03"
+        },
+        "handOcclusionMask": {
+          "shape": "ellipse",
+          "centerNormalized": [
+            0.76171875,
+            0.59765625
+          ],
+          "radiiNormalized": [
+            0.0390625,
+            0.02734375
+          ],
+          "purpose": "foreground holding palm; runtime selectively masks face and casting forearm, never the full body; candidate registration R003"
+        }
+      },
+      "durationMs": 100,
+      "status": "UNAPPROVED_TEST_OVERLAY_CANDIDATE"
+    },
+    {
+      "state": "resolve",
+      "frameIndex": 2,
+      "sourceAtlasPath": "native/GeneratedArt/luna_book_motion_candidates_r001/sources/REST_BOOKLESS_ATLAS_RAW.png",
+      "sourceComponentIndex": 8,
+      "assetID": "LUNA_BOOK_MOTION_RESOLVE_F03_CANDIDATE_R001",
+      "packedPath": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_RESOLVE_F03_CANDIDATE_R001.png",
+      "packedSHA256": "607ec7c00c36e076599d79424631e80e8d6ebacaea87129c4449cbcabe97c097",
+      "canvasPx": [
+        256,
+        256
+      ],
+      "alpha16BBoxPx": [
+        45,
+        59,
+        211,
+        244
+      ],
+      "cropBoxPx": [
+        1093,
+        677,
+        1392,
+        1010
+      ],
+      "fit": "nearest-neighbor, alpha-preserving, max 166x192, bottom baseline y=244",
+      "book": {
+        "centerNormalized": [
+          0.76171875,
+          0.5234375
+        ],
+        "rotationDegrees": 2,
+        "scale": 1.0,
+        "layerAssetByGearID": {
+          "EQ_A_01": "BOOK_EQ_A_01",
+          "EQ_A_02": "BOOK_EQ_A_02",
+          "EQ_A_03": "BOOK_EQ_A_03"
+        },
+        "handOcclusionMask": {
+          "shape": "ellipse",
+          "centerNormalized": [
+            0.7734375,
+            0.6015625
+          ],
+          "radiiNormalized": [
+            0.0390625,
+            0.02734375
+          ],
+          "purpose": "foreground holding palm; runtime selectively masks face and casting forearm, never the full body; candidate registration R003"
+        }
+      },
+      "durationMs": 100,
+      "status": "UNAPPROVED_TEST_OVERLAY_CANDIDATE"
+    }
+  ],
+  "gearLayerSources": {
+    "EQ_A_01": {
+      "assetID": "BOOK_EQ_A_01",
+      "path": "native/GeneratedArt/r001/BOOK_EQ_A_01.png"
+    },
+    "EQ_A_02": {
+      "assetID": "BOOK_EQ_A_02",
+      "path": "native/GeneratedArt/r001/BOOK_EQ_A_02.png"
+    },
+    "EQ_A_03": {
+      "assetID": "BOOK_EQ_A_03",
+      "path": "native/GeneratedArt/r001/BOOK_EQ_A_03.png"
+    }
+  },
+  "contactSheet": "docs/production/current/core/LUNA_BOOK_MOTION_CONTACT_R001.jpg",
+  "runtimeContract": {
+    "playStates": [
+      "walk",
+      "attack",
+      "anticipate",
+      "execute",
+      "recover",
+      "idle",
+      "hit",
+      "resolve"
+    ],
+    "framesPerState": {
+      "walk": 9,
+      "attack": 9,
+      "anticipate": 3,
+      "execute": 3,
+      "recover": 3,
+      "idle": 3,
+      "hit": 3,
+      "resolve": 3
+    },
+    "bodyCanvasSameForAll": true,
+    "perFrameBookTransform": true,
+    "perFrameHandMask": true,
+    "layerOrder": [
+      "body",
+      "book",
+      "foreground_palm_face_casting_forearm"
+    ],
+    "normalizedOrigin": "top-left; x right, y down",
+    "duration": "100 ms/frame candidate; not Human-approved",
+    "nativeReviewEvidence": "docs/production/current/native/book_motion_audit_r004/RUN.json",
+    "contactBoundary": "Historical contact-sheet compositing is not the native selective occlusion result; use native review evidence."
+  },
+  "notApproved": [
+    "Generated art style and motion are not Human-approved",
+    "R003 palm/face/forearm registration has sampled native review; complete naturalness and Human approval remain pending",
+    "Book position/rotation/scale and palm ellipses require close-up adjustment",
+    "No canonical animation acceptance",
+    "Original staff sprites/icons remain unchanged"
+  ]
+}

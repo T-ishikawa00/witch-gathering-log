@@ -1,0 +1,22 @@
+{
+  "files": {
+    "authority_r459.py": {
+      "sha256": "207f1b3ab73e468e48a8098b352e92e82dcec5e5f51915b0c96ae69bacea1001",
+      "bytes": 59756
+    },
+    "signed_transaction_audit_r459.py": {
+      "sha256": "d49f59e0db971fc517052729e875b1cd73f288398fbc0ea4ba513eb1402a1a0f",
+      "bytes": 13998
+    },
+    "sandbox_ledger_adapter_r459.py": {
+      "sha256": "c1ec6a189479610e1022c9991f5003608dce6c032e37347b20b7e176b7c1009a",
+      "bytes": 6474
+    },
+    "test_sandbox_ledger_r459.py": {
+      "sha256": "e49d128ff8d96ae7d5e5a924a71d13068392f0fd3e484a774b1bb7895d79706d",
+      "bytes": 29570
+    }
+  },
+  "scope": "Preserve mock-only API gates and cover signed draw rollback/spent refund; no native changes",
+  "base": "R004 66 tests passed;2 additional tests not run"
+}

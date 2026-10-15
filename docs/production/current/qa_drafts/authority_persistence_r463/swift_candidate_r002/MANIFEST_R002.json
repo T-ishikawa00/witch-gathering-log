@@ -1,0 +1,71 @@
+{
+  "schema": "r463-authority-persistence-inputs-v2",
+  "status": "PREPARED_NOT_RUN_R002",
+  "scope": "isolated file-backed R461 pending-operation and authority-observation stores; no app wiring, production auth, network, or gameplay-save writes",
+  "candidateFiles": [
+    {
+      "path": "FileBackedAuthorityStoreR463.swift",
+      "sha256": "611c33072323ea6ec33c38813826d32d1b220c932af8430e8f3ee36c381d7f24"
+    },
+    {
+      "path": "tests/FileBackedAuthorityStoreR463Tests.swift",
+      "sha256": "61e29ce3698f4c5143dca37bbfcb83ba48a464f6a57df51183a1c3549cdbfed5"
+    },
+    {
+      "path": "README_R002.md",
+      "sha256": "19ec92478e8f261ac7e9681c4d8094f908f4e3f8a8a2daebcfc8468f892bdf26"
+    },
+    {
+      "path": "SOURCE_R001_TO_R002.diff",
+      "sha256": "4664aa448d4a1c7729b2a437cfb18f263ce55c296062048c3c155e87dddceb22"
+    }
+  ],
+  "contractInputs": [
+    {
+      "path": "docs/production/current/qa_drafts/authority_contract_r461/swift_candidate_r002/AuthorityClientContractR461.swift",
+      "sha256": "03bad37f64f990d7b344a0c6a8b60a7cfefac19f0eb864abe6aa24fadc605f9d"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/authority_contract_r461/root_candidate_r005/swift/AuthorityClientContractR461Tests.swift",
+      "sha256": "a0beb5aaa4bb2eceb7268f7ffa20f45a4f3deb828a325e446c524118bd96dd47"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/authority_contract_r461/swift_candidate_r002/MANIFEST_R002.json",
+      "sha256": "008cd46dd0ca6dfd0e470502a2ce802307bbcd0ecbbe896dc0102be5a480c678"
+    }
+  ],
+  "plannedTestFilter": "FileBackedAuthorityStoreR463Tests",
+  "plannedTestMethods": [
+    "testPendingOperationSurvivesColdReopenAndRejectsUUIDCollision",
+    "testObservationCASIsMonotonicAcrossInstancesAndBindingNamespace",
+    "testCorruptFutureAndUnknownStoreSchemasFailClosedWithoutOverwrite",
+    "testInterruptedTemporaryWriteRecoversPreviousCommittedValue",
+    "testSymlinkedRootAndHardlinkedStoreFileAreRejected",
+    "testPendingOperationsAreIsolatedByTheStoresPinnedAccountNamespace",
+    "testReplacingLockPathInvalidatesExistingStoreInstance",
+    "testPendingOperationsAreIsolatedByTheStoresPinnedAccountNamespace"
+  ],
+  "execution": {
+    "swiftCompile": false,
+    "xctest": false,
+    "build": false,
+    "simulator": false,
+    "network": false,
+    "liveSourceModified": false,
+    "gameSaveModified": false
+  },
+  "authorityBoundary": {
+    "R459MarkerRequired": true,
+    "accountNamespaceRequired": true,
+    "productionAuthorization": false,
+    "gameplayEntitlementMutation": false
+  },
+  "scopeLimitations": [
+    "Cross-process flock behavior is implemented but not exercised by a subprocess test; concurrent XCTest coverage uses independent store instances in one process."
+  ],
+  "supersedes": "swift_candidate_r001/INPUT_MANIFEST_R001.json",
+  "sourceChanges": [
+    "PendingEnvelope.operations is mutable for atomic append/sort.",
+    "Store pins lock-file device/inode and validates both descriptor and path before and after flock; replaced lock paths fail closed."
+  ]
+}

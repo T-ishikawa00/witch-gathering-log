@@ -1,0 +1,11 @@
+{
+  "schema": "r377-runner-preflight-readback-r001",
+  "execution": "NOT_RUN",
+  "swiftOrSimulatorLaunched": false,
+  "runnerPath": "docs/production/current/qa_drafts/effect_build_comparison_r376/execution_r003_r377/run_r377.py",
+  "runnerSHA256": "87cea5a6c9ab030358c2688fb7c57d2da65bea51600272d855d23ee09299c10d",
+  "inputManifestSHA256": "b4f1448e89a4d588e8a3ce644ddcb7272f4c7d5702c2dea44621cc2d9bc004bb",
+  "preflightExitCode": 1,
+  "stdout": "",
+  "stderrTail": "Traceback (most recent call last):\n  File \"/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/effect_build_comparison_r376/execution_r003_r377/run_r377.py\", line 168, in <module>\n    raise SystemExit(main())\n  File \"/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/effect_build_comparison_r376/execution_r003_r377/run_r377.py\", line 99, in main\n    h=load_helper(); m=json.loads(INPUT.read_text()); staged,test,r368m,cman,cinput=verify_inputs(h,m)\n  File \"/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/effect_build_comparison_r376/execution_r003_r377/run_r377.py\", line 53, in verify_inputs\n    p=pinned(ROOT,m[key])\nTypeError: pinned() missing 1 required positional argument: 'h'"
+}

@@ -1,0 +1,49 @@
+{
+  "at": "2026-10-15T08:21:15.036997+09:00",
+  "auditedSourceCommit": "28d3d0b92c840f215a945f47e574fcb30ef2253b",
+  "baseCommit": "45dc02f73f0bcb7c37ad1f01969c3d4b43ceef2e",
+  "status": "SCOPED_FIXED_SHA_AUDIT_CLOSED_RELEASE_NOT_ACCEPTED",
+  "reviews": {
+    "gameplay": {
+      "path": "docs/production/current/qa_drafts/final_fixed_audit_r466/gameplay/REVIEW_R001.md",
+      "sha256": "0971294b10ee5fdddda801c449dd0c7af73df1181e69c2146f2dfb020f4fc3ee",
+      "jsonPath": "docs/production/current/qa_drafts/final_fixed_audit_r466/gameplay/REVIEW_R001.json",
+      "jsonSHA256": "0a3f596567b47eca8c9a6b1d72f4bfc618f4248fbe9f4f71f2b5c992dd366c28"
+    },
+    "ui_art": {
+      "path": "docs/production/current/qa_drafts/final_fixed_audit_r466/ui_art/REVIEW_R001.md",
+      "sha256": "34f7f20f03507fe1ab43bc0b6393114964f809fb4d0df36037287061b33d0a93",
+      "jsonPath": "docs/production/current/qa_drafts/final_fixed_audit_r466/ui_art/REVIEW_R001.json",
+      "jsonSHA256": "c578701153433e873520f60437b12fb3f61703fcb7024d5302d9a5ffa056f462"
+    },
+    "commerce": {
+      "path": "docs/production/current/qa_drafts/final_fixed_audit_r466/commerce/REVIEW_R001.md",
+      "sha256": "98c3a8dd050d34e40eb9aa03abe3f2e74bb6e3451818939dc7364513766dd6cc",
+      "jsonPath": "docs/production/current/qa_drafts/final_fixed_audit_r466/commerce/REVIEW_R001.json",
+      "jsonSHA256": "1348c11d34d7224471f0fed26da8d9241510e3f544c6bb582ee98473493a8533"
+    }
+  },
+  "p0p1": "No reproducible P0/P1 identified within reviewed source/evidence scope; not universal absence proof",
+  "p2Resolved": [
+    {
+      "issue": "Protected product count15300 arithmetic error",
+      "corrected": 15400,
+      "evidence": "qa_drafts/native_completion_r465/PROTECTION_COUNT_ERRATUM_R002.json",
+      "sourceOrBinaryChange": false
+    },
+    {
+      "issue": "Core SDK inclusion could imply productionpurchase appwiring",
+      "correction": "Core/test integration only; normalApp purchase transport andproductionservice remain absent",
+      "sourceOrBinaryChange": false
+    }
+  ],
+  "remaining": [
+    "real trustedservice/auth/account/productcontract andnativeproductionpurchase wiring",
+    "realAppleSandbox andphysicaldeviceacceptance",
+    "fullnatural-motion/assettechnicalacceptance andformalHumanadoption",
+    "longtermhumanpace/productvalue"
+  ],
+  "sourceChangesAfterAudit": false,
+  "push": false,
+  "newDeletion": false
+}

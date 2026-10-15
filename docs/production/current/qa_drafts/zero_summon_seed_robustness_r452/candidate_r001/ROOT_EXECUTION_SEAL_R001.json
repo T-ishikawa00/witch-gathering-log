@@ -1,0 +1,39 @@
+{
+  "schema": "r452-root-execution-seal-v1",
+  "status": "ROOT_SEALED_TWO_NEW_SEED_CASES",
+  "timestamp": "2026-10-15T05:23:13.545897+09:00",
+  "runner": {
+    "path": "docs/production/current/qa_drafts/zero_summon_seed_robustness_r452/candidate_r001/runner_r001/run_r452.py",
+    "sha256": "e9d5ddcaf9d856959548592e66d1d587e713b5a1d0599c68aa388e407cb6c4c7",
+    "bytes": 34098
+  },
+  "manifest": {
+    "path": "docs/production/current/qa_drafts/zero_summon_seed_robustness_r452/candidate_r001/runner_r001/INPUT_MANIFEST_R001.json",
+    "sha256": "9ab1067d50b44dbbead236ae0a76ba07198af0c39032ab792b5160001f113d6c",
+    "bytes": 37996
+  },
+  "independentReview": {
+    "path": "docs/production/current/qa_drafts/zero_summon_seed_robustness_r452/independent_review_r001/REVIEW_R001.json",
+    "sha256": "d38f76e61d301a1ab8dd16d03c5ad87422aece2fec8f033ca879b9d6d6f18a6f",
+    "bytes": 3258
+  },
+  "seeds": [
+    100069,
+    200071
+  ],
+  "maxAttemptsPerSeed": 1,
+  "maxWallSeconds": 600,
+  "maxXCTestSecondsPerSeed": 90,
+  "maxScratchBytes": 500000000,
+  "maxEvidenceBytes": 60000000,
+  "minimumFreeBytes": 12000000000,
+  "freeBytesAtSeal": 137357840384,
+  "rootReview": "Reviewed source diff, input identity, staged source/resource hashes, execution/cleanup, report and origin validation; read-only preflight passed. No policy/schedule change. R448 seed100049 not rerun.",
+  "evidenceLimitations": [
+    "Two scripted virtual 30-day Core cases, not player-paced UI or causal purchase value.",
+    "Per-case operation IDs share a namespace but each case has an isolated store and output path.",
+    "Runner ownedProcesses list remains empty; ownedProcessesAbsent is computed from internal process closeout; Root will separately verify no processes using this scratch path.",
+    "R448 raw wrapper INCOMPLETE_RETAINED is retained; R445 actual runtime identity is the source-equivalent baseline; R447 was compile only."
+  ],
+  "productionOrHumanAcceptance": false
+}

@@ -1,0 +1,104 @@
+{
+  "actorID": "ACT_B_R04_B",
+  "revision": "keypose_candidates_r001",
+  "status": "UNAPPROVED_CANDIDATE",
+  "source_art_modified": false,
+  "runtime_overlay_created": false,
+  "intended_use": "Two isolated full-body pose candidates for Root-owned rig integration; not approved final frames and not evidence of animation completion.",
+  "native_reference_canvas_px": [
+    512,
+    341
+  ],
+  "candidate_canvas_px": [
+    1536,
+    1024
+  ],
+  "suggested_uniform_pack_scale": 0.3333333333333333,
+  "source_fullbody_reference": "native/Art/GeneratedCandidates/ACT_B_R04_B/ACT_B_R04_B__static_candidate__r004.png",
+  "source_fullbody_reference_sha256": "10da5f1deffd9b95e4fb8a6126352ab57a16bde7112571c19a5069b80cf6c25f",
+  "generation_tool": "built-in image_gen",
+  "background": "transparent RGBA requested and alpha checked on dark/light compositing",
+  "candidate_reviews": {
+    "attack": "Open jaw and extended neck toward screen-left read as an attack pose; blue iris, crescent ornament, four legs, tail, wings retained and no alpha>16 crop. However linework/scale size and wing spread differ from source art; icy breath visual effect intentionally absent. Keep candidate-only.",
+    "resolve": "Head lowered, eyes closed, jaw shut, body low; near wing droops. Far wing remains more open/upright than desired, and legs overlap visually. No alpha>16 crop. Style/scale drift from source remains. Keep partial candidate, not finished resolve.",
+    "rejected_intermediate": "Initial attack output with amber iris and first resolve output with both wings raised were not copied into project candidates."
+  },
+  "assets": [
+    {
+      "pose": "attack",
+      "path": "ACT_B_R04_B_attack_keypose__candidate_r001.png",
+      "sha256": "41c29ea07585200b397252a4310e6e4684c5d01a08a9db105aa3632663873b91",
+      "dimensions_px": [
+        1536,
+        1024
+      ],
+      "alpha_bbox_threshold_1": [
+        79,
+        9,
+        1522,
+        1008
+      ],
+      "alpha_bbox_threshold_16": [
+        141,
+        119,
+        1374,
+        907
+      ],
+      "alpha_bbox_threshold_64": [
+        141,
+        119,
+        1373,
+        907
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_corners": true,
+      "original_reference": "native/Art/GeneratedCandidates/ACT_B_R04_B/ACT_B_R04_B__static_candidate__r004.png",
+      "original_reference_sha256": "10da5f1deffd9b95e4fb8a6126352ab57a16bde7112571c19a5069b80cf6c25f",
+      "generated_file_original": "/Users/PUBLIC_USER/.codex/generated_images/01a12399-b8c7-76a0-adb6-39606fe83b65/exec-ca7f2e4b-6e39-4483-a8ef-d4e617e967cc.png",
+      "prompt_id": "attack_openjaw_extendedneck_identityrefine_margin_v1",
+      "engineering_status": "UNAPPROVED_CANDIDATE_PENDING_RIG_AND_VISUAL_REVIEW",
+      "active_runtime": false
+    },
+    {
+      "pose": "resolve",
+      "path": "ACT_B_R04_B_resolve_keypose__candidate_r001.png",
+      "sha256": "5027654bbe134e4d72a963a9f66fae3885587e3a3ee820afbee3f475c4a030ad",
+      "dimensions_px": [
+        1536,
+        1024
+      ],
+      "alpha_bbox_threshold_1": [
+        41,
+        39,
+        1520,
+        992
+      ],
+      "alpha_bbox_threshold_16": [
+        68,
+        292,
+        1517,
+        952
+      ],
+      "alpha_bbox_threshold_64": [
+        69,
+        293,
+        1517,
+        952
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_corners": true,
+      "original_reference": "native/Art/GeneratedCandidates/ACT_B_R04_B/ACT_B_R04_B__static_candidate__r004.png",
+      "original_reference_sha256": "10da5f1deffd9b95e4fb8a6126352ab57a16bde7112571c19a5069b80cf6c25f",
+      "generated_file_original": "/Users/PUBLIC_USER/.codex/generated_images/01a12399-b8c7-76a0-adb6-39606fe83b65/exec-80d9fd32-0388-4e61-8b99-185c9dfc5022.png",
+      "prompt_id": "resolve_headlower_eyesclosed_wingsdroop_r2",
+      "engineering_status": "UNAPPROVED_CANDIDATE_PENDING_RIG_AND_VISUAL_REVIEW",
+      "active_runtime": false
+    }
+  ]
+}

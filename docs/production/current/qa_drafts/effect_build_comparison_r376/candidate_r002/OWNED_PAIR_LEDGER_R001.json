@@ -1,0 +1,380 @@
+{
+  "catalogOverlaySHA256": "bb218f0fe6b4b1a6037faa75ddb301ded27d7b9de070747bebf99a3e72209337",
+  "limits": [
+    "R368 is a simulated free/no-ad cohort. Inventory presence does not establish human accessibility.",
+    "Latent slot rolls differ between paired items. Neither outcome should be represented as isolated causal effect value.",
+    "R6 previews are no-reward and do not mutate the save."
+  ],
+  "pairs": [
+    {
+      "actorID": "C_WITCH",
+      "actorSlot": "C_WITCH|weapon",
+      "candidate": {
+        "affixIDs": [],
+        "candidateLatentSlots": {
+          "slots": [
+            {
+              "affixID": "AF_CRIT_DMG",
+              "rawQ": 677
+            },
+            {
+              "affixID": "AF_DIRECT",
+              "rawQ": 98
+            },
+            {
+              "affixID": "AF_CDR",
+              "rawQ": 640
+            }
+          ],
+          "version": 1
+        },
+        "definitionID": "EQ_W_G2",
+        "enhancement": 0,
+        "id": "68C84620-D911-48E4-983C-15E4EF8F202E",
+        "investmentDust": 0,
+        "protected": true,
+        "qualityID": "Q0",
+        "refinement": 0
+      },
+      "catalogCandidate": {
+        "actorIDs": [
+          "C_WITCH"
+        ],
+        "effects": [
+          "BARRIER_WARD",
+          "BARRIER_REFLECT",
+          "WARD_REPLACES_SEED"
+        ],
+        "id": "EQ_W_G2",
+        "name": "\u6708\u74b0\u306e\u7d50\u754c\u6756",
+        "rarity": "C",
+        "slot": "weapon"
+      },
+      "catalogControl": {
+        "actorIDs": [
+          "C_WITCH"
+        ],
+        "effects": [],
+        "id": "EQ_W_01",
+        "name": "\u82e5\u679d\u306e\u63a1\u96c6\u6756",
+        "rarity": "C",
+        "slot": "weapon"
+      },
+      "challengeID": "CH_R02_02",
+      "control": {
+        "affixIDs": [],
+        "candidateLatentSlots": {
+          "slots": [
+            {
+              "affixID": "AF_DEF",
+              "rawQ": 925
+            },
+            {
+              "affixID": "AF_STATUS_RESIST",
+              "rawQ": 699
+            },
+            {
+              "affixID": "AF_DOT_RESIST",
+              "rawQ": 673
+            }
+          ],
+          "version": 1
+        },
+        "definitionID": "EQ_W_01",
+        "enhancement": 0,
+        "id": "BC499DA8-3B80-5536-BAFB-5143888B392C",
+        "investmentDust": 0,
+        "protected": false,
+        "qualityID": "Q0",
+        "refinement": 0
+      },
+      "family": "barrier_ward",
+      "matchingFields": [
+        "qualityID",
+        "enhancement",
+        "refinement",
+        "investmentDust"
+      ],
+      "naturalLatentConfound": true
+    },
+    {
+      "actorID": "C_SMITH",
+      "actorSlot": "C_SMITH|weapon",
+      "candidate": {
+        "affixIDs": [],
+        "candidateLatentSlots": {
+          "slots": [
+            {
+              "affixID": "AF_COUNTER",
+              "rawQ": 805
+            },
+            {
+              "affixID": "AF_DEF",
+              "rawQ": 635
+            },
+            {
+              "affixID": "AF_POWER",
+              "rawQ": 350
+            }
+          ],
+          "version": 1
+        },
+        "definitionID": "EQ_S_01",
+        "enhancement": 0,
+        "id": "31292F32-5F63-5F71-84D9-B69BB4FC303A",
+        "investmentDust": 0,
+        "protected": false,
+        "qualityID": "Q1",
+        "refinement": 0
+      },
+      "catalogCandidate": {
+        "actorIDs": [
+          "C_SMITH"
+        ],
+        "effects": [],
+        "guardChanceBonusBP": 500,
+        "id": "EQ_S_01",
+        "name": "\u5c71\u6b69\u304d\u306e\u6728\u69cc",
+        "rarity": "C",
+        "slot": "weapon"
+      },
+      "catalogControl": {
+        "actorIDs": [
+          "C_SMITH"
+        ],
+        "effects": [],
+        "guardChanceBonusBP": 500,
+        "id": "EQ_S_01",
+        "name": "\u5c71\u6b69\u304d\u306e\u6728\u69cc",
+        "rarity": "C",
+        "slot": "weapon"
+      },
+      "challengeID": "CH_R04_02",
+      "control": {
+        "affixIDs": [],
+        "candidateLatentSlots": {
+          "slots": [
+            {
+              "affixID": "AF_CRIT",
+              "rawQ": 673
+            },
+            {
+              "affixID": "AF_CRIT_DMG",
+              "rawQ": 784
+            },
+            {
+              "affixID": "AF_HP",
+              "rawQ": 749
+            }
+          ],
+          "version": 1
+        },
+        "definitionID": "EQ_S_01",
+        "enhancement": 0,
+        "id": "B72CE760-9884-5D4F-8111-8709C8369782",
+        "investmentDust": 0,
+        "protected": false,
+        "qualityID": "Q1",
+        "refinement": 0
+      },
+      "family": "smith_counter_latent",
+      "matchingFields": [
+        "qualityID",
+        "enhancement",
+        "refinement",
+        "investmentDust"
+      ],
+      "naturalLatentConfound": true
+    },
+    {
+      "actorID": "C_APPRENTICE",
+      "actorSlot": "C_APPRENTICE|amulet",
+      "candidate": {
+        "affixIDs": [],
+        "candidateLatentSlots": {
+          "slots": [
+            {
+              "affixID": "AF_HEAL",
+              "rawQ": 920
+            },
+            {
+              "affixID": "AF_DIRECT",
+              "rawQ": 814
+            },
+            {
+              "affixID": "AF_STATUS_RESIST",
+              "rawQ": 685
+            }
+          ],
+          "version": 1
+        },
+        "definitionID": "EQ_AMU_01",
+        "enhancement": 0,
+        "id": "7058F310-16D8-5EE8-8F36-374C8FC1C128",
+        "investmentDust": 0,
+        "protected": false,
+        "qualityID": "Q1",
+        "refinement": 0
+      },
+      "catalogCandidate": {
+        "actorIDs": [
+          "C_WITCH",
+          "C_APPRENTICE",
+          "C_SMITH",
+          "C_FAMILIAR"
+        ],
+        "effects": [],
+        "id": "EQ_AMU_01",
+        "name": "\u9732\u82d4\u306e\u304a\u5b88\u308a",
+        "rarity": "C",
+        "slot": "amulet"
+      },
+      "catalogControl": {
+        "actorIDs": [
+          "C_WITCH",
+          "C_APPRENTICE",
+          "C_SMITH",
+          "C_FAMILIAR"
+        ],
+        "effects": [],
+        "id": "EQ_AMU_01",
+        "name": "\u9732\u82d4\u306e\u304a\u5b88\u308a",
+        "rarity": "C",
+        "slot": "amulet"
+      },
+      "challengeID": "CH_R02_01",
+      "control": {
+        "affixIDs": [],
+        "candidateLatentSlots": {
+          "slots": [
+            {
+              "affixID": "AF_WARD",
+              "rawQ": 793
+            },
+            {
+              "affixID": "AF_DOT",
+              "rawQ": 732
+            },
+            {
+              "affixID": "AF_HP",
+              "rawQ": 723
+            }
+          ],
+          "version": 1
+        },
+        "definitionID": "EQ_AMU_01",
+        "enhancement": 0,
+        "id": "B2DDC107-838F-5593-9E6B-65288DA526DC",
+        "investmentDust": 0,
+        "protected": true,
+        "qualityID": "Q1",
+        "refinement": 0
+      },
+      "family": "apprentice_heal_latent",
+      "matchingFields": [
+        "qualityID",
+        "enhancement",
+        "refinement",
+        "investmentDust"
+      ],
+      "naturalLatentConfound": true
+    },
+    {
+      "actorID": "C_FAMILIAR",
+      "actorSlot": "C_FAMILIAR|weapon",
+      "candidate": {
+        "affixIDs": [],
+        "candidateLatentSlots": {
+          "slots": [
+            {
+              "affixID": "AF_CHASE",
+              "rawQ": 306
+            },
+            {
+              "affixID": "AF_CDR",
+              "rawQ": 508
+            },
+            {
+              "affixID": "AF_STATUS_RESIST",
+              "rawQ": 31
+            }
+          ],
+          "version": 1
+        },
+        "definitionID": "EQ_F_01",
+        "enhancement": 0,
+        "id": "83F34619-8C4D-5FFA-8B4C-98EDDE4C9351",
+        "investmentDust": 0,
+        "protected": false,
+        "qualityID": "Q1",
+        "refinement": 0
+      },
+      "catalogCandidate": {
+        "actorIDs": [
+          "C_FAMILIAR"
+        ],
+        "effects": [],
+        "id": "EQ_F_01",
+        "name": "\u706f\u722a\u306e\u89e6\u5a92",
+        "rarity": "C",
+        "slot": "weapon"
+      },
+      "catalogControl": {
+        "actorIDs": [
+          "C_FAMILIAR"
+        ],
+        "effects": [],
+        "id": "EQ_F_01",
+        "name": "\u706f\u722a\u306e\u89e6\u5a92",
+        "rarity": "C",
+        "slot": "weapon"
+      },
+      "challengeID": "CH_R05_03",
+      "control": {
+        "affixIDs": [],
+        "candidateLatentSlots": {
+          "slots": [
+            {
+              "affixID": "AF_CRIT",
+              "rawQ": 840
+            },
+            {
+              "affixID": "AF_CRIT_DMG",
+              "rawQ": 545
+            },
+            {
+              "affixID": "AF_GUARD",
+              "rawQ": 449
+            }
+          ],
+          "version": 1
+        },
+        "definitionID": "EQ_F_01",
+        "enhancement": 0,
+        "id": "F37EC259-FF87-583E-AFA4-D4A32C9D25F3",
+        "investmentDust": 0,
+        "protected": false,
+        "qualityID": "Q1",
+        "refinement": 0
+      },
+      "family": "familiar_chase_latent",
+      "matchingFields": [
+        "qualityID",
+        "enhancement",
+        "refinement",
+        "investmentDust"
+      ],
+      "naturalLatentConfound": true
+    }
+  ],
+  "r368ReportSHA256": "23266207d0a393a7782c6ad827e2cf771cae6879040f014223fe096efbb4d215",
+  "r368SaveSHA256": "067c4e86733fe07eb5457381a30d140b285fbd2685ab18e5667f47577c74e655",
+  "schema": "r377-owned-effect-pair-ledger-r001",
+  "sourceReportFacts": {
+    "freeSummonDrawCount": 155,
+    "naturalGearAcquisitionRecords": 96,
+    "paidSummonDrawCount": 0,
+    "syntheticGrantReceipts": 0
+  },
+  "status": "READ_ONLY_INVENTORY_FACTS"
+}

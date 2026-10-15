@@ -1,0 +1,5 @@
+# R374 runner correction R002
+
+R001 is preserved byte-for-byte. This additive runner revision fixes the report-processing order: it decodes and validates `report.json` before iterating its `daily` array and validating the linked gear sidecars. It also records when the Release test executable was hashed. If observed while SwiftPM is still running, timing is `DURING_RUNNING_PROCESS_AFTER_BUILD_COMPLETE_LOG`; if the process exits before the poll loop sees that log marker, it attempts to pin the executable after process exit but before reading the test verdict and records `AFTER_PROCESS_EXIT_BEFORE_VERDICT_READ`. A missing binary after a failing build is recorded without masking the original nonzero exit.
+
+This R374 calibration is a separately authorized corrected candidate following R369’s retained incomplete wall-cap result, not a continuation or same-run retry. R369 remains unchanged. R374 uses new exclusive IDs and paths. All budget and candidate-scope values are inherited unchanged from R374 R001, including the authoritative 6000-second aggregate stop. No compile, test, Simulator, save, or live-source operation was performed.

@@ -1,0 +1,2794 @@
+{
+  "meta": {
+    "title": "魔女の採集帳 — 放置遠征・素材経済・長期目標 R3",
+    "date": "2026-10-09",
+    "schema": "witch_economy_r3.0",
+    "status": "DESIGN_PROPOSAL_NOT_RUNTIME_APPROVAL",
+    "parent_growth": "R2",
+    "world": "R1",
+    "art": "R4_UNCHANGED",
+    "design_author": "ChatGPT"
+  },
+  "confirmed_constraints": {
+    "party_count_max": 4,
+    "combat_ai_settings": false,
+    "manual_skill_inputs": false,
+    "one_expedition_party": true,
+    "world_material_ids_preserved": true,
+    "art_production_not_restarted": true
+  },
+  "expedition": {
+    "work_seconds": 300,
+    "unattended_cap_seconds": 172800,
+    "cap_paid_upgrade": false,
+    "gear_period_work_units": 6,
+    "normal_source_yield": 1,
+    "boss_source_period_units": 24,
+    "boss_source_yield": 1,
+    "first_boss_clear_yield": 1,
+    "first_clear_repeat_reward": 0,
+    "max_normal_survey_pool": 8,
+    "default_mode": "BAG_SURVEY",
+    "focus_mode": "ONE_MATERIAL_OR_RECIPE_GOAL",
+    "auto_spend": false,
+    "auto_new_boss_clear": false,
+    "offline_failure_after_clearance": false,
+    "gear_salvage_auto_default": false,
+    "presentation_speed_affects_rewards": false,
+    "unfinished_source_progress": "per_source_id_persisted",
+    "unfinished_work": "complete_old_snapshot_then_switch",
+    "new_area": "explicit_first_survey_clearance; no real-time wait; enemy balance pending",
+    "cap_reset_condition": "real_foreground_return_or_user_interaction_after_settlement; render/timer callbacks do not reset"
+  },
+  "rates": [
+    {
+      "region_id": "R01",
+      "xp_per_work": 12,
+      "dust_per_work": 1,
+      "work_seconds": 300,
+      "xp_per_hour": 144,
+      "dust_per_hour": 12,
+      "gear_every_n_work": 6,
+      "gear_per_hour": 2,
+      "base_material_per_source_cycle": 1,
+      "status": "PROPOSED_TUNING"
+    },
+    {
+      "region_id": "R02",
+      "xp_per_work": 30,
+      "dust_per_work": 3,
+      "work_seconds": 300,
+      "xp_per_hour": 360,
+      "dust_per_hour": 36,
+      "gear_every_n_work": 6,
+      "gear_per_hour": 2,
+      "base_material_per_source_cycle": 1,
+      "status": "PROPOSED_TUNING"
+    },
+    {
+      "region_id": "R03",
+      "xp_per_work": 54,
+      "dust_per_work": 5,
+      "work_seconds": 300,
+      "xp_per_hour": 648,
+      "dust_per_hour": 60,
+      "gear_every_n_work": 6,
+      "gear_per_hour": 2,
+      "base_material_per_source_cycle": 1,
+      "status": "PROPOSED_TUNING"
+    },
+    {
+      "region_id": "R04",
+      "xp_per_work": 81,
+      "dust_per_work": 8,
+      "work_seconds": 300,
+      "xp_per_hour": 972,
+      "dust_per_hour": 96,
+      "gear_every_n_work": 6,
+      "gear_per_hour": 2,
+      "base_material_per_source_cycle": 1,
+      "status": "PROPOSED_TUNING"
+    },
+    {
+      "region_id": "R05",
+      "xp_per_work": 108,
+      "dust_per_work": 12,
+      "work_seconds": 300,
+      "xp_per_hour": 1296,
+      "dust_per_hour": 144,
+      "gear_every_n_work": 6,
+      "gear_per_hour": 2,
+      "base_material_per_source_cycle": 1,
+      "status": "PROPOSED_TUNING"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S_R01_G1",
+      "source_type": "gather",
+      "region_id": "R01",
+      "area_id": "A_R01_01",
+      "enemy_id": null,
+      "material_id": "M_R01_G1",
+      "available_gate": "G_START",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_START",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "しなり霊枝"
+    },
+    {
+      "id": "S_R01_G2",
+      "source_type": "gather",
+      "region_id": "R01",
+      "area_id": "A_R01_01",
+      "enemy_id": null,
+      "material_id": "M_R01_G2",
+      "available_gate": "G_START",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_START",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "露灯草"
+    },
+    {
+      "id": "S_R01_G3",
+      "source_type": "gather",
+      "region_id": "R01",
+      "area_id": "A_R01_03",
+      "enemy_id": null,
+      "material_id": "M_R01_G3",
+      "available_gate": "G_R01_A",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R01_A",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "琥珀樹脂"
+    },
+    {
+      "id": "S_R01_G4",
+      "source_type": "gather",
+      "region_id": "R01",
+      "area_id": "A_R01_03",
+      "enemy_id": null,
+      "material_id": "M_R01_G4",
+      "available_gate": "G_R01_A",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R01_A",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "月白苔"
+    },
+    {
+      "id": "S_R02_G1",
+      "source_type": "gather",
+      "region_id": "R02",
+      "area_id": "A_R02_01",
+      "enemy_id": null,
+      "material_id": "M_R02_G1",
+      "available_gate": "G_R01_B",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R01_B",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "葦綿"
+    },
+    {
+      "id": "S_R02_G2",
+      "source_type": "gather",
+      "region_id": "R02",
+      "area_id": "A_R02_01",
+      "enemy_id": null,
+      "material_id": "M_R02_G2",
+      "available_gate": "G_R01_B",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R01_B",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "月光花"
+    },
+    {
+      "id": "S_R02_G3",
+      "source_type": "gather",
+      "region_id": "R02",
+      "area_id": "A_R02_03",
+      "enemy_id": null,
+      "material_id": "M_R02_G3",
+      "available_gate": "G_R02_A",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R02_A",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "澄み雫"
+    },
+    {
+      "id": "S_R02_G4",
+      "source_type": "gather",
+      "region_id": "R02",
+      "area_id": "A_R02_03",
+      "enemy_id": null,
+      "material_id": "M_R02_G4",
+      "available_gate": "G_R02_A",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R02_A",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "霧結晶"
+    },
+    {
+      "id": "S_R03_G1",
+      "source_type": "gather",
+      "region_id": "R03",
+      "area_id": "A_R03_01",
+      "enemy_id": null,
+      "material_id": "M_R03_G1",
+      "available_gate": "G_R02_B",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R02_B",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "響晶石"
+    },
+    {
+      "id": "S_R03_G2",
+      "source_type": "gather",
+      "region_id": "R03",
+      "area_id": "A_R03_01",
+      "enemy_id": null,
+      "material_id": "M_R03_G2",
+      "available_gate": "G_R02_B",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R02_B",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "灰銀鉱"
+    },
+    {
+      "id": "S_R03_G3",
+      "source_type": "gather",
+      "region_id": "R03",
+      "area_id": "A_R03_03",
+      "enemy_id": null,
+      "material_id": "M_R03_G3",
+      "available_gate": "G_R03_A",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R03_A",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "耐熱粘土"
+    },
+    {
+      "id": "S_R03_G4",
+      "source_type": "gather",
+      "region_id": "R03",
+      "area_id": "A_R03_03",
+      "enemy_id": null,
+      "material_id": "M_R03_G4",
+      "available_gate": "G_R03_A",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R03_A",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "透光雲母"
+    },
+    {
+      "id": "S_R04_G1",
+      "source_type": "gather",
+      "region_id": "R04",
+      "area_id": "A_R04_01",
+      "enemy_id": null,
+      "material_id": "M_R04_G1",
+      "available_gate": "G_R03_B",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R03_B",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "雪灯草"
+    },
+    {
+      "id": "S_R04_G2",
+      "source_type": "gather",
+      "region_id": "R04",
+      "area_id": "A_R04_01",
+      "enemy_id": null,
+      "material_id": "M_R04_G2",
+      "available_gate": "G_R03_B",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R03_B",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "凍結晶"
+    },
+    {
+      "id": "S_R04_G3",
+      "source_type": "gather",
+      "region_id": "R04",
+      "area_id": "A_R04_03",
+      "enemy_id": null,
+      "material_id": "M_R04_G3",
+      "available_gate": "G_R04_A",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R04_A",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "風編み麻"
+    },
+    {
+      "id": "S_R04_G4",
+      "source_type": "gather",
+      "region_id": "R04",
+      "area_id": "A_R04_03",
+      "enemy_id": null,
+      "material_id": "M_R04_G4",
+      "available_gate": "G_R04_A",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R04_A",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "白陶石"
+    },
+    {
+      "id": "S_R05_G1",
+      "source_type": "gather",
+      "region_id": "R05",
+      "area_id": "A_R05_01",
+      "enemy_id": null,
+      "material_id": "M_R05_G1",
+      "available_gate": "G_R04_B",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R04_B",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "古庭霊枝"
+    },
+    {
+      "id": "S_R05_G2",
+      "source_type": "gather",
+      "region_id": "R05",
+      "area_id": "A_R05_01",
+      "enemy_id": null,
+      "material_id": "M_R05_G2",
+      "available_gate": "G_R04_B",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R04_B",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "月白糸"
+    },
+    {
+      "id": "S_R05_G3",
+      "source_type": "gather",
+      "region_id": "R05",
+      "area_id": "A_R05_03",
+      "enemy_id": null,
+      "material_id": "M_R05_G3",
+      "available_gate": "G_R05_A",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R05_A",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "眠り種"
+    },
+    {
+      "id": "S_R05_G4",
+      "source_type": "gather",
+      "region_id": "R05",
+      "area_id": "A_R05_03",
+      "enemy_id": null,
+      "material_id": "M_R05_G4",
+      "available_gate": "G_R05_A",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R05_A",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "月露晶"
+    },
+    {
+      "id": "S_R01_E1",
+      "source_type": "normal_enemy",
+      "region_id": "R01",
+      "area_id": "A_R01_01",
+      "enemy_id": "E_R01_01",
+      "material_id": "M_R01_E1",
+      "available_gate": "G_START",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_START",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "苔角片"
+    },
+    {
+      "id": "S_R01_E2",
+      "source_type": "normal_enemy",
+      "region_id": "R01",
+      "area_id": "A_R01_01",
+      "enemy_id": "E_R01_02",
+      "material_id": "M_R01_E2",
+      "available_gate": "G_START",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_START",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "灯糸"
+    },
+    {
+      "id": "S_R01_E3",
+      "source_type": "normal_enemy",
+      "region_id": "R01",
+      "area_id": "A_R01_03",
+      "enemy_id": "E_R01_03",
+      "material_id": "M_R01_E3",
+      "available_gate": "G_R01_A",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R01_A",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "葉刃殻"
+    },
+    {
+      "id": "S_R01_E4",
+      "source_type": "normal_enemy",
+      "region_id": "R01",
+      "area_id": "A_R01_03",
+      "enemy_id": "E_R01_04",
+      "material_id": "M_R01_E4",
+      "available_gate": "G_R01_A",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R01_A",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "琥珀の甲片"
+    },
+    {
+      "id": "S_R01_BA",
+      "source_type": "boss",
+      "region_id": "R01",
+      "area_id": "A_R01_02",
+      "enemy_id": "B_R01_A",
+      "material_id": "M_R01_BA",
+      "available_gate": "G_R01_A",
+      "guarantee": "初回勝利で1個以上を確定。以後は撃破済みボスの調査周回で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "再戦ボタンの即結果は報酬なし。報酬付き周回は探索時間枠を共有。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 24,
+      "work_seconds": 300,
+      "requires_clearance": "G_R01_A",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "根絡みの牙"
+    },
+    {
+      "id": "S_R01_BB",
+      "source_type": "boss",
+      "region_id": "R01",
+      "area_id": "A_R01_04",
+      "enemy_id": "B_R01_B",
+      "material_id": "M_R01_BB",
+      "available_gate": "G_R01_B",
+      "guarantee": "初回勝利で1個以上を確定。以後は撃破済みボスの調査周回で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "再戦ボタンの即結果は報酬なし。報酬付き周回は探索時間枠を共有。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 24,
+      "work_seconds": 300,
+      "requires_clearance": "G_R01_B",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "苔冠の生木核"
+    },
+    {
+      "id": "S_R02_E1",
+      "source_type": "normal_enemy",
+      "region_id": "R02",
+      "area_id": "A_R02_01",
+      "enemy_id": "E_R02_01",
+      "material_id": "M_R02_E1",
+      "available_gate": "G_R01_B",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R01_B",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "眠り胞子"
+    },
+    {
+      "id": "S_R02_E2",
+      "source_type": "normal_enemy",
+      "region_id": "R02",
+      "area_id": "A_R02_01",
+      "enemy_id": "E_R02_02",
+      "material_id": "M_R02_E2",
+      "available_gate": "G_R01_B",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R01_B",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "湿霧鱗"
+    },
+    {
+      "id": "S_R02_E3",
+      "source_type": "normal_enemy",
+      "region_id": "R02",
+      "area_id": "A_R02_03",
+      "enemy_id": "E_R02_03",
+      "material_id": "M_R02_E3",
+      "available_gate": "G_R02_A",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R02_A",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "水鏡膜"
+    },
+    {
+      "id": "S_R02_E4",
+      "source_type": "normal_enemy",
+      "region_id": "R02",
+      "area_id": "A_R02_03",
+      "enemy_id": "E_R02_04",
+      "material_id": "M_R02_E4",
+      "available_gate": "G_R02_A",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R02_A",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "月燐粉"
+    },
+    {
+      "id": "S_R02_BA",
+      "source_type": "boss",
+      "region_id": "R02",
+      "area_id": "A_R02_02",
+      "enemy_id": "B_R02_A",
+      "material_id": "M_R02_BA",
+      "available_gate": "G_R02_A",
+      "guarantee": "初回勝利で1個以上を確定。以後は撃破済みボスの調査周回で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "再戦ボタンの即結果は報酬なし。報酬付き周回は探索時間枠を共有。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 24,
+      "work_seconds": 300,
+      "requires_clearance": "G_R02_A",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "夢茸の菌核"
+    },
+    {
+      "id": "S_R02_BB",
+      "source_type": "boss",
+      "region_id": "R02",
+      "area_id": "A_R02_04",
+      "enemy_id": "B_R02_B",
+      "material_id": "M_R02_BB",
+      "available_gate": "G_R02_B",
+      "guarantee": "初回勝利で1個以上を確定。以後は撃破済みボスの調査周回で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "再戦ボタンの即結果は報酬なし。報酬付き周回は探索時間枠を共有。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 24,
+      "work_seconds": 300,
+      "requires_clearance": "G_R02_B",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "水鏡の冠鱗"
+    },
+    {
+      "id": "S_R03_E1",
+      "source_type": "normal_enemy",
+      "region_id": "R03",
+      "area_id": "A_R03_01",
+      "enemy_id": "E_R03_01",
+      "material_id": "M_R03_E1",
+      "available_gate": "G_R02_B",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R02_B",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "銅殻片"
+    },
+    {
+      "id": "S_R03_E2",
+      "source_type": "normal_enemy",
+      "region_id": "R03",
+      "area_id": "A_R03_01",
+      "enemy_id": "E_R03_02",
+      "material_id": "M_R03_E2",
+      "available_gate": "G_R02_B",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R02_B",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "鳴晶片"
+    },
+    {
+      "id": "S_R03_E3",
+      "source_type": "normal_enemy",
+      "region_id": "R03",
+      "area_id": "A_R03_03",
+      "enemy_id": "E_R03_03",
+      "material_id": "M_R03_E3",
+      "available_gate": "G_R03_A",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R03_A",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "古合金の歯"
+    },
+    {
+      "id": "S_R03_E4",
+      "source_type": "normal_enemy",
+      "region_id": "R03",
+      "area_id": "A_R03_03",
+      "enemy_id": "E_R03_04",
+      "material_id": "M_R03_E4",
+      "available_gate": "G_R03_A",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R03_A",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "磁紋鱗"
+    },
+    {
+      "id": "S_R03_BA",
+      "source_type": "boss",
+      "region_id": "R03",
+      "area_id": "A_R03_02",
+      "enemy_id": "B_R03_A",
+      "material_id": "M_R03_BA",
+      "available_gate": "G_R03_A",
+      "guarantee": "初回勝利で1個以上を確定。以後は撃破済みボスの調査周回で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "再戦ボタンの即結果は報酬なし。報酬付き周回は探索時間枠を共有。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 24,
+      "work_seconds": 300,
+      "requires_clearance": "G_R03_A",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "連槌の駆動環"
+    },
+    {
+      "id": "S_R03_BB",
+      "source_type": "boss",
+      "region_id": "R03",
+      "area_id": "A_R03_04",
+      "enemy_id": "B_R03_B",
+      "material_id": "M_R03_BB",
+      "available_gate": "G_R03_B",
+      "guarantee": "初回勝利で1個以上を確定。以後は撃破済みボスの調査周回で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "再戦ボタンの即結果は報酬なし。報酬付き周回は探索時間枠を共有。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 24,
+      "work_seconds": 300,
+      "requires_clearance": "G_R03_B",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "炉心晶"
+    },
+    {
+      "id": "S_R04_E1",
+      "source_type": "normal_enemy",
+      "region_id": "R04",
+      "area_id": "A_R04_01",
+      "enemy_id": "E_R04_01",
+      "material_id": "M_R04_E1",
+      "available_gate": "G_R03_B",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R03_B",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "霜毛束"
+    },
+    {
+      "id": "S_R04_E2",
+      "source_type": "normal_enemy",
+      "region_id": "R04",
+      "area_id": "A_R04_01",
+      "enemy_id": "E_R04_02",
+      "material_id": "M_R04_E2",
+      "available_gate": "G_R03_B",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R03_B",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "氷羽根"
+    },
+    {
+      "id": "S_R04_E3",
+      "source_type": "normal_enemy",
+      "region_id": "R04",
+      "area_id": "A_R04_03",
+      "enemy_id": "E_R04_03",
+      "material_id": "M_R04_E3",
+      "available_gate": "G_R04_A",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R04_A",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "雪甲殻"
+    },
+    {
+      "id": "S_R04_E4",
+      "source_type": "normal_enemy",
+      "region_id": "R04",
+      "area_id": "A_R04_03",
+      "enemy_id": "E_R04_04",
+      "material_id": "M_R04_E4",
+      "available_gate": "G_R04_A",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R04_A",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "霜晶歯輪"
+    },
+    {
+      "id": "S_R04_BA",
+      "source_type": "boss",
+      "region_id": "R04",
+      "area_id": "A_R04_02",
+      "enemy_id": "B_R04_A",
+      "material_id": "M_R04_BA",
+      "available_gate": "G_R04_A",
+      "guarantee": "初回勝利で1個以上を確定。以後は撃破済みボスの調査周回で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "再戦ボタンの即結果は報酬なし。報酬付き周回は探索時間枠を共有。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 24,
+      "work_seconds": 300,
+      "requires_clearance": "G_R04_A",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "白角片"
+    },
+    {
+      "id": "S_R04_BB",
+      "source_type": "boss",
+      "region_id": "R04",
+      "area_id": "A_R04_04",
+      "enemy_id": "B_R04_B",
+      "material_id": "M_R04_BB",
+      "available_gate": "G_R04_B",
+      "guarantee": "初回勝利で1個以上を確定。以後は撃破済みボスの調査周回で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "再戦ボタンの即結果は報酬なし。報酬付き周回は探索時間枠を共有。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 24,
+      "work_seconds": 300,
+      "requires_clearance": "G_R04_B",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "月氷の竜鱗"
+    },
+    {
+      "id": "S_R05_E1",
+      "source_type": "normal_enemy",
+      "region_id": "R05",
+      "area_id": "A_R05_01",
+      "enemy_id": "E_R05_01",
+      "material_id": "M_R05_E1",
+      "available_gate": "G_R04_B",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R04_B",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "綴じ蔓"
+    },
+    {
+      "id": "S_R05_E2",
+      "source_type": "normal_enemy",
+      "region_id": "R05",
+      "area_id": "A_R05_01",
+      "enemy_id": "E_R05_02",
+      "material_id": "M_R05_E2",
+      "available_gate": "G_R04_B",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R04_B",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "月銀片"
+    },
+    {
+      "id": "S_R05_E3",
+      "source_type": "normal_enemy",
+      "region_id": "R05",
+      "area_id": "A_R05_03",
+      "enemy_id": "E_R05_03",
+      "material_id": "M_R05_E3",
+      "available_gate": "G_R05_A",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R05_A",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "封灯硝子"
+    },
+    {
+      "id": "S_R05_E4",
+      "source_type": "normal_enemy",
+      "region_id": "R05",
+      "area_id": "A_R05_03",
+      "enemy_id": "E_R05_04",
+      "material_id": "M_R05_E4",
+      "available_gate": "G_R05_A",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 1,
+      "work_seconds": 300,
+      "requires_clearance": "G_R05_A",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "夜花蜜"
+    },
+    {
+      "id": "S_R05_BA",
+      "source_type": "boss",
+      "region_id": "R05",
+      "area_id": "A_R05_02",
+      "enemy_id": "B_R05_A",
+      "material_id": "M_R05_BA",
+      "available_gate": "G_R05_A",
+      "guarantee": "初回勝利で1個以上を確定。以後は撃破済みボスの調査周回で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "再戦ボタンの即結果は報酬なし。報酬付き周回は探索時間枠を共有。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 24,
+      "work_seconds": 300,
+      "requires_clearance": "G_R05_A",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "剪定輪の欠片"
+    },
+    {
+      "id": "S_R05_BB",
+      "source_type": "boss",
+      "region_id": "R05",
+      "area_id": "A_R05_04",
+      "enemy_id": "B_R05_B",
+      "material_id": "M_R05_BB",
+      "available_gate": "G_R05_B",
+      "guarantee": "初回勝利で1個以上を確定。以後は撃破済みボスの調査周回で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": 1,
+      "probability": null,
+      "numeric_status": "R3_PROPOSAL_OVERLAY",
+      "repetition": "再戦ボタンの即結果は報酬なし。報酬付き周回は探索時間枠を共有。",
+      "world_quantity_preserved": null,
+      "probability_bp": 10000,
+      "work_units_per_yield": 24,
+      "work_seconds": 300,
+      "requires_clearance": "G_R05_B",
+      "clock_channel": "ONE_PARTY_WORK_LEDGER",
+      "display_name": "月庭の種核"
+    }
+  ],
+  "regional_gear_theme_pools": {
+    "R01": [
+      "EQ_W_01",
+      "EQ_F_01",
+      "EQ_A_01",
+      "EQ_S_01",
+      "EQ_BODY_01",
+      "EQ_HAND_01",
+      "EQ_FEET_01",
+      "EQ_AMU_01",
+      "EQ_RING_01",
+      "EQ_W_G1",
+      "EQ_F_BODY_01",
+      "EQ_F_HAND_01",
+      "EQ_F_FEET_01",
+      "EQ_F_RING_01"
+    ],
+    "R02": [
+      "EQ_W_P1",
+      "EQ_A_02",
+      "EQ_F_02",
+      "EQ_BODY_02",
+      "EQ_AMU_02"
+    ],
+    "R03": [
+      "EQ_S_02",
+      "EQ_HAND_02",
+      "EQ_FEET_02",
+      "EQ_RING_02"
+    ],
+    "R04": [
+      "EQ_BODY_03",
+      "EQ_FEET_03",
+      "EQ_RING_03"
+    ],
+    "R05": [
+      "EQ_W_P2",
+      "EQ_W_G2",
+      "EQ_A_03",
+      "EQ_S_03",
+      "EQ_F_03",
+      "EQ_HAND_03",
+      "EQ_AMU_03"
+    ]
+  },
+  "loot": {
+    "base_weights": {
+      "Q0": 4500,
+      "Q1": 3000,
+      "Q2": 1800,
+      "Q3": 600,
+      "Q4": 100
+    },
+    "legend_pity_natural_rolls": 100,
+    "legend_pity_scope": "save_global_not_per_region",
+    "legend_counter_reset_on_natural_Q4": true,
+    "legend_counter_no_reset_on": "craft/quality_upgrade/grant/claim/route_switch",
+    "desired_template_every_n_natural_drops": 6,
+    "desired_template_flag": "discovered_and_gate_and_joined_and_route_eligible",
+    "wish_required": false,
+    "local_pool_bp": 6000,
+    "global_pool_bp": 4000,
+    "empty_local_fallback": "global",
+    "evolved_form_first_discovery": "evolve_by_recipe_before_relic_drop",
+    "base_form_first_discovery": "gate_and_actor_only",
+    "drop_attunement_rank": "min(source_region_rank, gate_unlocked_rank)",
+    "drop_enhancement": 0,
+    "native_rank_investment_refund": 0,
+    "rng": "SHA256_V1_DOMAIN_SEPARATED_COUNTER",
+    "craft_count_affects_natural_rng": false,
+    "natural_gear_roll_persists_on_accrual": true,
+    "all_chest_rewards_auto_collect": true,
+    "natural_gear_snapshot": "first_5min_work_unit_of_each_30min_relic_period; no retroactive region or gate substitution"
+  },
+  "ads": {
+    "status": "PROPOSAL_SDK_NOT_INCLUDED",
+    "earned_per_work_units": 96,
+    "stored_offer_cap": 6,
+    "reward_xp_divisor": 16,
+    "reward_dust_divisor": 16,
+    "offers_on_ad_reward": 0,
+    "normal_materials": 0,
+    "boss_materials": 0,
+    "equipment": 0,
+    "free_successful_view_vs_premium_skip_same_reward": true,
+    "no_cooldown_on_base_claim": true,
+    "min_credit_work_for_offer": 96,
+    "reward_snapshot": "xp_and_dust_sum_for_earned_8h_block_not_current_region",
+    "probability_boost": false,
+    "payment_price_not_revised": true,
+    "offer_roster": "per-actor XP contributions during earned block; no retroactive new-member bonus"
+  },
+  "onboarding": {
+    "status": "PROPOSED_AUTHORED_REWARDS_NOT_MEASURED_DURATION",
+    "target_session_minutes": [
+      20,
+      30
+    ],
+    "xp_total": 920,
+    "dust_total": 30,
+    "materials": {
+      "M_R01_G1": 12,
+      "M_R01_G2": 12,
+      "M_R01_E1": 12,
+      "M_R01_E2": 12
+    },
+    "guaranteed_relic": {
+      "template_id": "EQ_W_01",
+      "quality": "Q2",
+      "raw_q": [
+        350,
+        350,
+        350
+      ],
+      "source": "A_R01_01_OLD_WORKBENCH",
+      "not_counted_as_natural": true
+    },
+    "requires": [
+      "first_boar_defeat",
+      "first_spider_defeat",
+      "first_gather",
+      "first_old_workbench_discovery"
+    ],
+    "replay_grants": false,
+    "post_intro_comparison_fixture_level": 6
+  },
+  "costs": [
+    {
+      "operation_id": "RC_EQ_W_01",
+      "kind": "craft_new",
+      "gate": "G_START",
+      "ingredients": [
+        {
+          "material_id": "M_R01_G1",
+          "quantity": 6
+        },
+        {
+          "material_id": "M_R01_G2",
+          "quantity": 6
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_W_01",
+      "parent_template_id": null,
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_W_P1",
+      "kind": "evolve_in_place",
+      "gate": "G_R02_A",
+      "ingredients": [
+        {
+          "material_id": "M_R02_E1",
+          "quantity": 16
+        },
+        {
+          "material_id": "M_R02_G4",
+          "quantity": 16
+        },
+        {
+          "material_id": "M_R02_BA",
+          "quantity": 1
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_W_P1",
+      "parent_template_id": "EQ_W_01",
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_W_P2",
+      "kind": "evolve_in_place",
+      "gate": "G_R05_A",
+      "ingredients": [
+        {
+          "material_id": "M_R05_G1",
+          "quantity": 28
+        },
+        {
+          "material_id": "M_R05_E4",
+          "quantity": 28
+        },
+        {
+          "material_id": "M_R05_BA",
+          "quantity": 2
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_W_P2",
+      "parent_template_id": "EQ_W_P1",
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_W_G1",
+      "kind": "evolve_in_place",
+      "gate": "G_R01_B",
+      "ingredients": [
+        {
+          "material_id": "M_R01_BA",
+          "quantity": 1
+        },
+        {
+          "material_id": "M_R01_BB",
+          "quantity": 1
+        },
+        {
+          "material_id": "M_R01_G3",
+          "quantity": 16
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_W_G1",
+      "parent_template_id": "EQ_W_01",
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_W_G2",
+      "kind": "evolve_in_place",
+      "gate": "G_R05_A",
+      "ingredients": [
+        {
+          "material_id": "M_R04_BB",
+          "quantity": 2
+        },
+        {
+          "material_id": "M_R05_E3",
+          "quantity": 28
+        },
+        {
+          "material_id": "M_R05_BA",
+          "quantity": 2
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_W_G2",
+      "parent_template_id": "EQ_W_G1",
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_A_01",
+      "kind": "craft_new",
+      "gate": "G_R01_A",
+      "ingredients": [
+        {
+          "material_id": "M_R01_G1",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G2",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_E2",
+          "quantity": 8
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_A_01",
+      "parent_template_id": null,
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_A_02",
+      "kind": "evolve_in_place",
+      "gate": "G_R02_B",
+      "ingredients": [
+        {
+          "material_id": "M_R02_G1",
+          "quantity": 20
+        },
+        {
+          "material_id": "M_R02_E3",
+          "quantity": 20
+        },
+        {
+          "material_id": "M_R02_BB",
+          "quantity": 1
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_A_02",
+      "parent_template_id": "EQ_A_01",
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_A_03",
+      "kind": "evolve_in_place",
+      "gate": "G_R05_A",
+      "ingredients": [
+        {
+          "material_id": "M_R05_G2",
+          "quantity": 28
+        },
+        {
+          "material_id": "M_R05_E1",
+          "quantity": 28
+        },
+        {
+          "material_id": "M_R05_G4",
+          "quantity": 28
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_A_03",
+      "parent_template_id": "EQ_A_02",
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_S_01",
+      "kind": "craft_new",
+      "gate": "G_R01_A",
+      "ingredients": [
+        {
+          "material_id": "M_R01_G1",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G3",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_E4",
+          "quantity": 8
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_S_01",
+      "parent_template_id": null,
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_S_02",
+      "kind": "evolve_in_place",
+      "gate": "G_R03_B",
+      "ingredients": [
+        {
+          "material_id": "M_R03_G1",
+          "quantity": 24
+        },
+        {
+          "material_id": "M_R03_G2",
+          "quantity": 24
+        },
+        {
+          "material_id": "M_R03_G3",
+          "quantity": 24
+        },
+        {
+          "material_id": "M_R03_BB",
+          "quantity": 1
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_S_02",
+      "parent_template_id": "EQ_S_01",
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_S_03",
+      "kind": "evolve_in_place",
+      "gate": "G_R05_A",
+      "ingredients": [
+        {
+          "material_id": "M_R05_E2",
+          "quantity": 28
+        },
+        {
+          "material_id": "M_R05_BA",
+          "quantity": 2
+        },
+        {
+          "material_id": "M_R04_G4",
+          "quantity": 28
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_S_03",
+      "parent_template_id": "EQ_S_02",
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_F_01",
+      "kind": "craft_new",
+      "gate": "G_START",
+      "ingredients": [
+        {
+          "material_id": "M_R01_G1",
+          "quantity": 6
+        },
+        {
+          "material_id": "M_R01_E2",
+          "quantity": 6
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_F_01",
+      "parent_template_id": null,
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_F_02",
+      "kind": "evolve_in_place",
+      "gate": "G_R02_A",
+      "ingredients": [
+        {
+          "material_id": "M_R02_E1",
+          "quantity": 16
+        },
+        {
+          "material_id": "M_R02_E4",
+          "quantity": 16
+        },
+        {
+          "material_id": "M_R02_G4",
+          "quantity": 16
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_F_02",
+      "parent_template_id": "EQ_F_01",
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_F_03",
+      "kind": "evolve_in_place",
+      "gate": "G_R05_A",
+      "ingredients": [
+        {
+          "material_id": "M_R05_E3",
+          "quantity": 28
+        },
+        {
+          "material_id": "M_R05_E4",
+          "quantity": 28
+        },
+        {
+          "material_id": "M_R04_E2",
+          "quantity": 28
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_F_03",
+      "parent_template_id": "EQ_F_02",
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_BODY_01",
+      "kind": "craft_new",
+      "gate": "G_R01_A",
+      "ingredients": [
+        {
+          "material_id": "M_R01_E2",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G3",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G4",
+          "quantity": 8
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_BODY_01",
+      "parent_template_id": null,
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_BODY_02",
+      "kind": "evolve_in_place",
+      "gate": "G_R02_A",
+      "ingredients": [
+        {
+          "material_id": "M_R02_G1",
+          "quantity": 16
+        },
+        {
+          "material_id": "M_R02_E2",
+          "quantity": 16
+        },
+        {
+          "material_id": "M_R02_G3",
+          "quantity": 16
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_BODY_02",
+      "parent_template_id": "EQ_BODY_01",
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_BODY_03",
+      "kind": "evolve_in_place",
+      "gate": "G_R04_A",
+      "ingredients": [
+        {
+          "material_id": "M_R04_E1",
+          "quantity": 24
+        },
+        {
+          "material_id": "M_R04_G3",
+          "quantity": 24
+        },
+        {
+          "material_id": "M_R04_E3",
+          "quantity": 24
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_BODY_03",
+      "parent_template_id": "EQ_BODY_02",
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_HAND_01",
+      "kind": "craft_new",
+      "gate": "G_R01_A",
+      "ingredients": [
+        {
+          "material_id": "M_R01_E2",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_E3",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G3",
+          "quantity": 8
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_HAND_01",
+      "parent_template_id": null,
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_HAND_02",
+      "kind": "evolve_in_place",
+      "gate": "G_R03_A",
+      "ingredients": [
+        {
+          "material_id": "M_R03_G4",
+          "quantity": 20
+        },
+        {
+          "material_id": "M_R03_E1",
+          "quantity": 20
+        },
+        {
+          "material_id": "M_R03_E3",
+          "quantity": 20
+        },
+        {
+          "material_id": "M_R03_BA",
+          "quantity": 1
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_HAND_02",
+      "parent_template_id": "EQ_HAND_01",
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_HAND_03",
+      "kind": "evolve_in_place",
+      "gate": "G_R05_A",
+      "ingredients": [
+        {
+          "material_id": "M_R05_E2",
+          "quantity": 28
+        },
+        {
+          "material_id": "M_R05_G2",
+          "quantity": 28
+        },
+        {
+          "material_id": "M_R04_E4",
+          "quantity": 28
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_HAND_03",
+      "parent_template_id": "EQ_HAND_02",
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_FEET_01",
+      "kind": "craft_new",
+      "gate": "G_R01_A",
+      "ingredients": [
+        {
+          "material_id": "M_R01_G1",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_E1",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G3",
+          "quantity": 8
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_FEET_01",
+      "parent_template_id": null,
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_FEET_02",
+      "kind": "evolve_in_place",
+      "gate": "G_R03_A",
+      "ingredients": [
+        {
+          "material_id": "M_R03_E4",
+          "quantity": 20
+        },
+        {
+          "material_id": "M_R03_G2",
+          "quantity": 20
+        },
+        {
+          "material_id": "M_R03_G4",
+          "quantity": 20
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_FEET_02",
+      "parent_template_id": "EQ_FEET_01",
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_FEET_03",
+      "kind": "evolve_in_place",
+      "gate": "G_R04_A",
+      "ingredients": [
+        {
+          "material_id": "M_R04_BA",
+          "quantity": 1
+        },
+        {
+          "material_id": "M_R04_G3",
+          "quantity": 24
+        },
+        {
+          "material_id": "M_R04_G4",
+          "quantity": 24
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_FEET_03",
+      "parent_template_id": "EQ_FEET_02",
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_AMU_01",
+      "kind": "craft_new",
+      "gate": "G_R01_A",
+      "ingredients": [
+        {
+          "material_id": "M_R01_G2",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G4",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_E2",
+          "quantity": 8
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_AMU_01",
+      "parent_template_id": null,
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_AMU_02",
+      "kind": "evolve_in_place",
+      "gate": "G_R02_A",
+      "ingredients": [
+        {
+          "material_id": "M_R02_G2",
+          "quantity": 16
+        },
+        {
+          "material_id": "M_R02_G4",
+          "quantity": 16
+        },
+        {
+          "material_id": "M_R02_E3",
+          "quantity": 16
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_AMU_02",
+      "parent_template_id": "EQ_AMU_01",
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_AMU_03",
+      "kind": "evolve_in_place",
+      "gate": "G_R05_B",
+      "ingredients": [
+        {
+          "material_id": "M_R05_BB",
+          "quantity": 2
+        },
+        {
+          "material_id": "M_R05_G3",
+          "quantity": 28
+        },
+        {
+          "material_id": "M_R05_G4",
+          "quantity": 28
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_AMU_03",
+      "parent_template_id": "EQ_AMU_02",
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_RING_01",
+      "kind": "craft_new",
+      "gate": "G_R01_A",
+      "ingredients": [
+        {
+          "material_id": "M_R01_G1",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_E3",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G3",
+          "quantity": 8
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_RING_01",
+      "parent_template_id": null,
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_RING_02",
+      "kind": "evolve_in_place",
+      "gate": "G_R03_A",
+      "ingredients": [
+        {
+          "material_id": "M_R03_G2",
+          "quantity": 20
+        },
+        {
+          "material_id": "M_R03_E2",
+          "quantity": 20
+        },
+        {
+          "material_id": "M_R03_G1",
+          "quantity": 20
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_RING_02",
+      "parent_template_id": "EQ_RING_01",
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_RING_03",
+      "kind": "evolve_in_place",
+      "gate": "G_R04_A",
+      "ingredients": [
+        {
+          "material_id": "M_R04_G1",
+          "quantity": 24
+        },
+        {
+          "material_id": "M_R04_G2",
+          "quantity": 24
+        },
+        {
+          "material_id": "M_R04_E4",
+          "quantity": 24
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_RING_03",
+      "parent_template_id": "EQ_RING_02",
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_F_BODY_01",
+      "kind": "craft_new",
+      "gate": "G_R01_A",
+      "ingredients": [
+        {
+          "material_id": "M_R01_E2",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G3",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G4",
+          "quantity": 8
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_F_BODY_01",
+      "parent_template_id": null,
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_F_HAND_01",
+      "kind": "craft_new",
+      "gate": "G_R01_A",
+      "ingredients": [
+        {
+          "material_id": "M_R01_E2",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_E3",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G3",
+          "quantity": 8
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_F_HAND_01",
+      "parent_template_id": null,
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_F_FEET_01",
+      "kind": "craft_new",
+      "gate": "G_R01_A",
+      "ingredients": [
+        {
+          "material_id": "M_R01_G1",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_E1",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G3",
+          "quantity": 8
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_F_FEET_01",
+      "parent_template_id": null,
+      "source": "R2"
+    },
+    {
+      "operation_id": "RC_EQ_F_RING_01",
+      "kind": "craft_new",
+      "gate": "G_R01_A",
+      "ingredients": [
+        {
+          "material_id": "M_R01_G1",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_E3",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G3",
+          "quantity": 8
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "output_gear_id": "EQ_F_RING_01",
+      "parent_template_id": null,
+      "source": "R2"
+    },
+    {
+      "operation_id": "ATTUNE_1_2",
+      "kind": "attune",
+      "gate": "G_R01_B",
+      "ingredients": [
+        {
+          "material_id": "M_R02_G1",
+          "quantity": 6
+        },
+        {
+          "material_id": "M_R02_G2",
+          "quantity": 6
+        }
+      ],
+      "dust": 60,
+      "status": "INHERITED_R2_TUNING",
+      "rank_from": 1,
+      "rank_to": 2,
+      "source": "R2"
+    },
+    {
+      "operation_id": "ATTUNE_2_3",
+      "kind": "attune",
+      "gate": "G_R02_B",
+      "ingredients": [
+        {
+          "material_id": "M_R03_G1",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R03_G2",
+          "quantity": 8
+        }
+      ],
+      "dust": 120,
+      "status": "INHERITED_R2_TUNING",
+      "rank_from": 2,
+      "rank_to": 3,
+      "source": "R2"
+    },
+    {
+      "operation_id": "ATTUNE_3_4",
+      "kind": "attune",
+      "gate": "G_R03_B",
+      "ingredients": [
+        {
+          "material_id": "M_R04_G1",
+          "quantity": 10
+        },
+        {
+          "material_id": "M_R04_G2",
+          "quantity": 10
+        }
+      ],
+      "dust": 200,
+      "status": "INHERITED_R2_TUNING",
+      "rank_from": 3,
+      "rank_to": 4,
+      "source": "R2"
+    },
+    {
+      "operation_id": "ATTUNE_4_5",
+      "kind": "attune",
+      "gate": "G_R04_B",
+      "ingredients": [
+        {
+          "material_id": "M_R05_G1",
+          "quantity": 12
+        },
+        {
+          "material_id": "M_R05_G2",
+          "quantity": 12
+        }
+      ],
+      "dust": 300,
+      "status": "INHERITED_R2_TUNING",
+      "rank_from": 4,
+      "rank_to": 5,
+      "source": "R2"
+    },
+    {
+      "operation_id": "ENHANCE_1",
+      "kind": "enhance",
+      "gate": "G_START",
+      "ingredients": [],
+      "dust": 5,
+      "status": "INHERITED_R2_TUNING",
+      "enhance_to": 1,
+      "source": "R2"
+    },
+    {
+      "operation_id": "ENHANCE_2",
+      "kind": "enhance",
+      "gate": "G_START",
+      "ingredients": [],
+      "dust": 10,
+      "status": "INHERITED_R2_TUNING",
+      "enhance_to": 2,
+      "source": "R2"
+    },
+    {
+      "operation_id": "ENHANCE_3",
+      "kind": "enhance",
+      "gate": "G_START",
+      "ingredients": [],
+      "dust": 15,
+      "status": "INHERITED_R2_TUNING",
+      "enhance_to": 3,
+      "source": "R2"
+    },
+    {
+      "operation_id": "ENHANCE_4",
+      "kind": "enhance",
+      "gate": "G_R01_B",
+      "ingredients": [],
+      "dust": 20,
+      "status": "INHERITED_R2_TUNING",
+      "enhance_to": 4,
+      "source": "R2"
+    },
+    {
+      "operation_id": "ENHANCE_5",
+      "kind": "enhance",
+      "gate": "G_R01_B",
+      "ingredients": [],
+      "dust": 25,
+      "status": "INHERITED_R2_TUNING",
+      "enhance_to": 5,
+      "source": "R2"
+    },
+    {
+      "operation_id": "ENHANCE_6",
+      "kind": "enhance",
+      "gate": "G_R02_B",
+      "ingredients": [],
+      "dust": 30,
+      "status": "INHERITED_R2_TUNING",
+      "enhance_to": 6,
+      "source": "R2"
+    },
+    {
+      "operation_id": "ENHANCE_7",
+      "kind": "enhance",
+      "gate": "G_R02_B",
+      "ingredients": [],
+      "dust": 35,
+      "status": "INHERITED_R2_TUNING",
+      "enhance_to": 7,
+      "source": "R2"
+    },
+    {
+      "operation_id": "ENHANCE_8",
+      "kind": "enhance",
+      "gate": "G_R03_B",
+      "ingredients": [],
+      "dust": 40,
+      "status": "INHERITED_R2_TUNING",
+      "enhance_to": 8,
+      "source": "R2"
+    },
+    {
+      "operation_id": "ENHANCE_9",
+      "kind": "enhance",
+      "gate": "G_R03_B",
+      "ingredients": [],
+      "dust": 45,
+      "status": "INHERITED_R2_TUNING",
+      "enhance_to": 9,
+      "source": "R2"
+    },
+    {
+      "operation_id": "ENHANCE_10",
+      "kind": "enhance",
+      "gate": "G_R04_B",
+      "ingredients": [],
+      "dust": 50,
+      "status": "INHERITED_R2_TUNING",
+      "enhance_to": 10,
+      "source": "R2"
+    },
+    {
+      "operation_id": "AW_C_WITCH_1",
+      "kind": "awaken",
+      "gate": "G_R01_B",
+      "ingredients": [
+        {
+          "material_id": "M_R01_BB",
+          "quantity": 1
+        },
+        {
+          "material_id": "M_R01_G2",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G4",
+          "quantity": 8
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "actor_id": "C_WITCH",
+      "tier": 1,
+      "min_level": 12,
+      "source": "R2"
+    },
+    {
+      "operation_id": "AW_C_WITCH_2",
+      "kind": "awaken",
+      "gate": "G_R03_B",
+      "ingredients": [
+        {
+          "material_id": "M_R03_BB",
+          "quantity": 1
+        },
+        {
+          "material_id": "M_R03_G1",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R03_G2",
+          "quantity": 8
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "actor_id": "C_WITCH",
+      "tier": 2,
+      "min_level": 32,
+      "source": "R2"
+    },
+    {
+      "operation_id": "AW_C_WITCH_3",
+      "kind": "awaken",
+      "gate": "G_R05_B",
+      "ingredients": [
+        {
+          "material_id": "M_R05_BB",
+          "quantity": 1
+        },
+        {
+          "material_id": "M_R05_G3",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R05_G4",
+          "quantity": 8
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "actor_id": "C_WITCH",
+      "tier": 3,
+      "min_level": 55,
+      "source": "R2"
+    },
+    {
+      "operation_id": "AW_C_APPRENTICE_1",
+      "kind": "awaken",
+      "gate": "G_R01_B",
+      "ingredients": [
+        {
+          "material_id": "M_R01_BB",
+          "quantity": 1
+        },
+        {
+          "material_id": "M_R01_G2",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G4",
+          "quantity": 8
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "actor_id": "C_APPRENTICE",
+      "tier": 1,
+      "min_level": 12,
+      "source": "R2"
+    },
+    {
+      "operation_id": "AW_C_APPRENTICE_2",
+      "kind": "awaken",
+      "gate": "G_R03_B",
+      "ingredients": [
+        {
+          "material_id": "M_R03_BB",
+          "quantity": 1
+        },
+        {
+          "material_id": "M_R03_G1",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R03_G2",
+          "quantity": 8
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "actor_id": "C_APPRENTICE",
+      "tier": 2,
+      "min_level": 32,
+      "source": "R2"
+    },
+    {
+      "operation_id": "AW_C_APPRENTICE_3",
+      "kind": "awaken",
+      "gate": "G_R05_B",
+      "ingredients": [
+        {
+          "material_id": "M_R05_BB",
+          "quantity": 1
+        },
+        {
+          "material_id": "M_R05_G3",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R05_G4",
+          "quantity": 8
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "actor_id": "C_APPRENTICE",
+      "tier": 3,
+      "min_level": 55,
+      "source": "R2"
+    },
+    {
+      "operation_id": "AW_C_SMITH_1",
+      "kind": "awaken",
+      "gate": "G_R01_B",
+      "ingredients": [
+        {
+          "material_id": "M_R01_BB",
+          "quantity": 1
+        },
+        {
+          "material_id": "M_R01_G2",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G4",
+          "quantity": 8
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "actor_id": "C_SMITH",
+      "tier": 1,
+      "min_level": 12,
+      "source": "R2"
+    },
+    {
+      "operation_id": "AW_C_SMITH_2",
+      "kind": "awaken",
+      "gate": "G_R03_B",
+      "ingredients": [
+        {
+          "material_id": "M_R03_BB",
+          "quantity": 1
+        },
+        {
+          "material_id": "M_R03_G1",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R03_G2",
+          "quantity": 8
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "actor_id": "C_SMITH",
+      "tier": 2,
+      "min_level": 32,
+      "source": "R2"
+    },
+    {
+      "operation_id": "AW_C_SMITH_3",
+      "kind": "awaken",
+      "gate": "G_R05_B",
+      "ingredients": [
+        {
+          "material_id": "M_R05_BB",
+          "quantity": 1
+        },
+        {
+          "material_id": "M_R05_G3",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R05_G4",
+          "quantity": 8
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "actor_id": "C_SMITH",
+      "tier": 3,
+      "min_level": 55,
+      "source": "R2"
+    },
+    {
+      "operation_id": "AW_C_FAMILIAR_1",
+      "kind": "awaken",
+      "gate": "G_R01_B",
+      "ingredients": [
+        {
+          "material_id": "M_R01_BB",
+          "quantity": 1
+        },
+        {
+          "material_id": "M_R01_G2",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G4",
+          "quantity": 8
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "actor_id": "C_FAMILIAR",
+      "tier": 1,
+      "min_level": 12,
+      "source": "R2"
+    },
+    {
+      "operation_id": "AW_C_FAMILIAR_2",
+      "kind": "awaken",
+      "gate": "G_R03_B",
+      "ingredients": [
+        {
+          "material_id": "M_R03_BB",
+          "quantity": 1
+        },
+        {
+          "material_id": "M_R03_G1",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R03_G2",
+          "quantity": 8
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "actor_id": "C_FAMILIAR",
+      "tier": 2,
+      "min_level": 32,
+      "source": "R2"
+    },
+    {
+      "operation_id": "AW_C_FAMILIAR_3",
+      "kind": "awaken",
+      "gate": "G_R05_B",
+      "ingredients": [
+        {
+          "material_id": "M_R05_BB",
+          "quantity": 1
+        },
+        {
+          "material_id": "M_R05_G3",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R05_G4",
+          "quantity": 8
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "actor_id": "C_FAMILIAR",
+      "tier": 3,
+      "min_level": 55,
+      "source": "R2"
+    },
+    {
+      "operation_id": "RS_THEORY_1",
+      "kind": "research",
+      "gate": "G_START",
+      "ingredients": [],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "research_rank": 1,
+      "source": "R2"
+    },
+    {
+      "operation_id": "RS_THEORY_2",
+      "kind": "research",
+      "gate": "G_R01_B",
+      "ingredients": [
+        {
+          "material_id": "M_R01_G2",
+          "quantity": 10
+        },
+        {
+          "material_id": "M_R01_G4",
+          "quantity": 10
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "research_rank": 2,
+      "source": "R2"
+    },
+    {
+      "operation_id": "RS_THEORY_3",
+      "kind": "research",
+      "gate": "G_R02_B",
+      "ingredients": [
+        {
+          "material_id": "M_R02_G2",
+          "quantity": 12
+        },
+        {
+          "material_id": "M_R02_G3",
+          "quantity": 12
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "research_rank": 3,
+      "source": "R2"
+    },
+    {
+      "operation_id": "RS_THEORY_4",
+      "kind": "research",
+      "gate": "G_R03_B",
+      "ingredients": [
+        {
+          "material_id": "M_R03_G1",
+          "quantity": 14
+        },
+        {
+          "material_id": "M_R03_G4",
+          "quantity": 14
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "research_rank": 4,
+      "source": "R2"
+    },
+    {
+      "operation_id": "RS_THEORY_5",
+      "kind": "research",
+      "gate": "G_R04_B",
+      "ingredients": [
+        {
+          "material_id": "M_R04_G1",
+          "quantity": 16
+        },
+        {
+          "material_id": "M_R04_G2",
+          "quantity": 16
+        }
+      ],
+      "dust": 0,
+      "status": "INHERITED_R2_TUNING",
+      "research_rank": 5,
+      "source": "R2"
+    },
+    {
+      "operation_id": "QUALITY_Q0_Q1",
+      "kind": "quality",
+      "gate": "G_R01_A",
+      "ingredients": [],
+      "dust": 10,
+      "status": "INHERITED_R2_TUNING",
+      "quality_from": "Q0",
+      "quality_to": "Q1",
+      "source": "R2"
+    },
+    {
+      "operation_id": "QUALITY_Q1_Q2",
+      "kind": "quality",
+      "gate": "G_R01_B",
+      "ingredients": [],
+      "dust": 30,
+      "status": "INHERITED_R2_TUNING",
+      "quality_from": "Q1",
+      "quality_to": "Q2",
+      "source": "R2"
+    },
+    {
+      "operation_id": "QUALITY_Q2_Q3",
+      "kind": "quality",
+      "gate": "G_R02_B",
+      "ingredients": [],
+      "dust": 100,
+      "status": "INHERITED_R2_TUNING",
+      "quality_from": "Q2",
+      "quality_to": "Q3",
+      "source": "R2"
+    },
+    {
+      "operation_id": "QUALITY_Q3_Q4",
+      "kind": "quality",
+      "gate": "G_R04_B",
+      "ingredients": [],
+      "dust": 300,
+      "status": "INHERITED_R2_TUNING",
+      "quality_from": "Q3",
+      "quality_to": "Q4",
+      "source": "R2"
+    },
+    {
+      "operation_id": "REFORGE_ONE",
+      "kind": "reforge",
+      "gate": "G_R03_B",
+      "ingredients": [],
+      "dust": 40,
+      "status": "INHERITED_R2_TUNING",
+      "source": "R2"
+    }
+  ],
+  "inventory": {
+    "automatic_material_salvage": false,
+    "gear_page_size": 50,
+    "infinite_storage_claim": false,
+    "runtime_safety_ceiling_instances": 50000,
+    "safety_behavior": "do_not_discard; preserve pending reward journal and prior save; explicit STORAGE_BLOCKED; require export/recovery before new credit commit",
+    "normal_design_has_paid_capacity": false,
+    "default_protection": [
+      "equipped",
+      "locked",
+      "saved_loadout",
+      "first_seen",
+      "last_of_family",
+      "Q4"
+    ],
+    "suggested_review_count": 3,
+    "runtime_mobile_storage_unmeasured": true
+  },
+  "endgame": {
+    "status": "CONTENT_PROPOSAL_COMBAT_UNTESTED",
+    "required_gate": "G_R05_B",
+    "new_level_cap": null,
+    "new_power_multiplier": null,
+    "new_material_ids": [],
+    "permanent_challenges": 15,
+    "daily_expiry": false,
+    "pvp": false,
+    "first_clear_progress_reward": "notebook_seal_no_combat_stats",
+    "replay_resource_rule": "use_one_shared_expedition_ledger_no_per_click_farm",
+    "goals": [
+      "4人の覚醒III",
+      "既存33型の分岐完成と保有",
+      "各装備の理想副効果",
+      "各地域3題の常設研究課題"
+    ],
+    "full_game_volume_not_decided": true,
+    "challenge_first_clear_dust": 200,
+    "challenge_dust_total_once": 3000
+  },
+  "simulation_boundary": {
+    "combat_engine": false,
+    "actual_enemy_victory": false,
+    "market_retention": false,
+    "monetary_revenue": false,
+    "device": false,
+    "numeric_economy": true,
+    "meaning": "原本コストを満たすまでの資源準備比較。レベルアンカーとボス突破は仮定であり、クリア日数予測ではない。"
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "schema": "final-asset-temporal-gap-r391-v1",
+  "status": "10_TEMPORAL_ASSET_UNACCEPTED; NO_CONFIRMED_SOURCE_DEFECT",
+  "scope": "Read-only reconciliation of the existing 159-unit readiness ledger, 149-item static review, ten-item sequence review, R377 UI evidence, and R385 build preparation. No assets generated; no app/device/build action performed.",
+  "reviewedInputs": [
+    {
+      "path": "docs/production/current/qa_drafts/asset_readiness_r308/ASSET_READINESS_R001.json",
+      "sha256": "02b76b68239cdaf0af7934dfc7bbcdb4eef1592dff2cff99aec896b6f8d29a25"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/static_159_visual_r374/REVIEW_R001.json",
+      "sha256": "0b0eeedd6e9d7ba87adf9df228e9612712b377e6eff61da549cf202d4308c555"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/static_159_visual_r374/SEQUENCE_REVIEW_R002.json",
+      "sha256": "63a3c7bb0e1f6ff0841d6507777ff64cf6146a9ba4d1e2ec9f7a5a9086e5234c"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/storekit_restore_route_r377/execution_r001/UI_COMPLETION_R001.json",
+      "sha256": "c7570f651eb869d9c80123dd1114e667c22b926cebcb8c5174aabca7f0ec3867"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/native_completion_r385/build_tools_r004/build_attempt_001/RESULT.json",
+      "sha256": "233307cbd8a3a3199ffd4156878cb8faa55dcd5d4aaac60cd34c6ed224a51b28"
+    }
+  ],
+  "summary": {
+    "totalLedgerRows": 159,
+    "staticReviewAcceptedForItsLimitedScope": 149,
+    "temporalUnitsRemaining": 10,
+    "temporalStatus": "PARTIAL_VISUAL_SAMPLE; not integration/adoption acceptance",
+    "r377CaptureCoverage": 0,
+    "r385CurrentVisualCaptureFound": false,
+    "r385BuildState": "FAILED_RETAINED (no install/launch); no runtime visual proof",
+    "r385MayBeReused": "Only if the sealed build completes and its exact binary/source/resource map is pinned; then collect new ordinary iOS capture/trace. Build receipt alone proves no temporal render.",
+    "formalAdoption": "NONE"
+  },
+  "units": [
+    {
+      "id": "ENV_R01",
+      "kind": "ambient_kit",
+      "relatedEffectIDs": [
+        "ENV_R01_01",
+        "ENV_R01_02",
+        "ENV_R01_03"
+      ],
+      "bundlePathPattern": "Art/Effects/{group}/{frame}.png",
+      "firstResource": {
+        "path": "native/qa_source_20261014T000207/PreparedResources/Art/Effects/ENV_R01_01/ENV_R01_01__frame_00__r001.png",
+        "sha256": "f6411607914d90accbe95d5652f41dc5abf3983fe6185c997a7a357ce80812a6",
+        "bytes": 259
+      },
+      "referencedFrames": 24,
+      "baseSourceLedger": "NO_SOURCE_DECLARED_IN_BASE_LEDGER_SNAPSHOT",
+      "runtimeIndexStatus": "CANDIDATE_FRAME_SEQUENCES_NOT_FULL_GAME_INTEGRATED",
+      "existingObservation": "ENV_R01 source sample is sparse warm glints on transparency; native terminal screen shows a forest scene with small floral/edge details, but no direct emitter-to-frame join. R145 six real battle traces exist, but terminal screen is post-battle, not VFX proof.",
+      "smallestIOSVerification": "Open an ordinary R01 encounter in the current installed build, keep the scene visible through one full natural ambient cycle, and retain a short clip plus renderer/emitter-to-frame trace keyed to these three ENV groups. A still frame or a battle receipt alone cannot show loop timing.",
+      "r377Reusable": false,
+      "r385Reusable": "Potential build only; no R385 battle/ambient capture is in the reviewed evidence. Requires successful pinned build/install and new on-device capture."
+    },
+    {
+      "id": "FX_R01",
+      "kind": "combat_vfx_kit",
+      "relatedEffectIDs": [
+        "ACT_B_R01_A_heavy_charge",
+        "ACT_B_R01_B_branch",
+        "ACT_B_R01_B_root_floor",
+        "ACT_E_R01_01_charge",
+        "ACT_E_R01_02_silk",
+        "ACT_E_R01_03_double_leaf",
+        "ACT_E_R01_04_shell"
+      ],
+      "bundlePathPattern": "Art/Effects/{group}/{frame}.png",
+      "firstResource": {
+        "path": "native/qa_source_20261014T000207/PreparedResources/Art/Effects/ACT_B_R01_A/ACT_B_R01_A_heavy_charge__frame_00__r001.png",
+        "sha256": "d2d4e6a89f54e04bb9ba8088ff464ed8326a1f3d2ac7b5434d43fb2e65bdb194",
+        "bytes": 251
+      },
+      "referencedFrames": 56,
+      "baseSourceLedger": "NO_SOURCE_DECLARED_IN_BASE_LEDGER_SNAPSHOT",
+      "runtimeIndexStatus": "CANDIDATE_FRAME_SEQUENCES_NOT_FULL_GAME_INTEGRATED",
+      "existingObservation": "FX_R01 not visually tied to a specific effect: R145 event traces are real but the inspected battle sample has no visible FX; cannot accept the 56-frame region pack from a final screen.",
+      "smallestIOSVerification": "In an ordinary R01 battle, allow each listed ACT effect to trigger naturally; retain the action/event timeline and continuous clip from cue through impact/recovery, with the exact ACT ID joined to emitted frame/resource. Use additional encounters only for listed actions not naturally triggered in the first encounter.",
+      "r377Reusable": false,
+      "r385Reusable": "Potential build only; no R385 battle/ambient capture is in the reviewed evidence. Requires successful pinned build/install and new on-device capture."
+    },
+    {
+      "id": "ENV_R02",
+      "kind": "ambient_kit",
+      "relatedEffectIDs": [
+        "ENV_R02_01",
+        "ENV_R02_02",
+        "ENV_R02_03"
+      ],
+      "bundlePathPattern": "Art/Effects/{group}/{frame}.png",
+      "firstResource": {
+        "path": "native/qa_source_20261014T000207/PreparedResources/Art/Effects/ENV_R02_01/ENV_R02_01__frame_00__r002.png",
+        "sha256": "4c56888d11a7a9ee028791fd3d4fdb8233ef3b949c2b37b853d0f6e1eb67772c",
+        "bytes": 213
+      },
+      "referencedFrames": 24,
+      "baseSourceLedger": "NO_SOURCE_DECLARED_IN_BASE_LEDGER_SNAPSHOT",
+      "runtimeIndexStatus": "CANDIDATE_FRAME_SEQUENCES_NOT_FULL_GAME_INTEGRATED",
+      "existingObservation": "ENV_R02 sample is a faint horizontal cool glint; existing R02 scene contact sheet has bright water/flowers and ambient detail. Static/runtime presence only.",
+      "smallestIOSVerification": "Open an ordinary R02 encounter in the current installed build, keep the scene visible through one full natural ambient cycle, and retain a short clip plus renderer/emitter-to-frame trace keyed to these three ENV groups. A still frame or a battle receipt alone cannot show loop timing.",
+      "r377Reusable": false,
+      "r385Reusable": "Potential build only; no R385 battle/ambient capture is in the reviewed evidence. Requires successful pinned build/install and new on-device capture."
+    },
+    {
+      "id": "FX_R02",
+      "kind": "combat_vfx_kit",
+      "relatedEffectIDs": [
+        "ACT_B_R02_A_drowse_spore",
+        "ACT_B_R02_B_mirror_bolt",
+        "ACT_E_R02_01_spore",
+        "ACT_E_R02_02_mist_guard",
+        "ACT_E_R02_03_return_mote",
+        "ACT_E_R02_04_support_arc"
+      ],
+      "bundlePathPattern": "Art/Effects/{group}/{frame}.png",
+      "firstResource": {
+        "path": "native/qa_source_20261014T000207/PreparedResources/Art/Effects/ACT_B_R02_A/ACT_B_R02_A_drowse_spore__frame_00__r002.png",
+        "sha256": "26156bd6b9bf6207c17da1bc9a45786f41f1e72758e97027dcc5c72b5fe3c1a4",
+        "bytes": 263
+      },
+      "referencedFrames": 48,
+      "baseSourceLedger": "NO_SOURCE_DECLARED_IN_BASE_LEDGER_SNAPSHOT",
+      "runtimeIndexStatus": "CANDIDATE_FRAME_SEQUENCES_NOT_FULL_GAME_INTEGRATED",
+      "existingObservation": "R02 challenge contact sheet shows readable yellow target ring around an enemy and impact/damage sequence. This is actual runtime imagery, not proof every one of the 48 refs plays or is authored correctly.",
+      "smallestIOSVerification": "In an ordinary R02 battle, allow each listed ACT effect to trigger naturally; retain the action/event timeline and continuous clip from cue through impact/recovery, with the exact ACT ID joined to emitted frame/resource. Use additional encounters only for listed actions not naturally triggered in the first encounter.",
+      "r377Reusable": false,
+      "r385Reusable": "Potential build only; no R385 battle/ambient capture is in the reviewed evidence. Requires successful pinned build/install and new on-device capture."
+    },
+    {
+      "id": "ENV_R03",
+      "kind": "ambient_kit",
+      "relatedEffectIDs": [
+        "ENV_R03_01",
+        "ENV_R03_02",
+        "ENV_R03_03"
+      ],
+      "bundlePathPattern": "Art/Effects/{group}/{frame}.png",
+      "firstResource": {
+        "path": "native/qa_source_20261014T000207/PreparedResources/Art/Effects/ENV_R03_01/ENV_R03_01__frame_00__r002.png",
+        "sha256": "71635458c7dd4c3d8c66b589bb34a146a424f8546ecd600dcabca90811e00ee9",
+        "bytes": 172
+      },
+      "referencedFrames": 24,
+      "baseSourceLedger": "NO_SOURCE_DECLARED_IN_BASE_LEDGER_SNAPSHOT",
+      "runtimeIndexStatus": "CANDIDATE_FRAME_SEQUENCES_NOT_FULL_GAME_INTEGRATED",
+      "existingObservation": "ENV_R03 sample is very small warm/violet particle marks; cave scene screenshot shows the crystal-lit environment. No obvious clipping; particle sequence timing is not established.",
+      "smallestIOSVerification": "Open an ordinary R03 encounter in the current installed build, keep the scene visible through one full natural ambient cycle, and retain a short clip plus renderer/emitter-to-frame trace keyed to these three ENV groups. A still frame or a battle receipt alone cannot show loop timing.",
+      "r377Reusable": false,
+      "r385Reusable": "Potential build only; no R385 battle/ambient capture is in the reviewed evidence. Requires successful pinned build/install and new on-device capture."
+    },
+    {
+      "id": "FX_R03",
+      "kind": "combat_vfx_kit",
+      "relatedEffectIDs": [
+        "ACT_B_R03_A_three_hammer",
+        "ACT_B_R03_B_heat_floor",
+        "ACT_E_R03_01_pincer_guard",
+        "ACT_E_R03_02_resonance",
+        "ACT_E_R03_03_tool_combo",
+        "ACT_E_R03_04_magnet_pullcue"
+      ],
+      "bundlePathPattern": "Art/Effects/{group}/{frame}.png",
+      "firstResource": {
+        "path": "native/qa_source_20261014T000207/PreparedResources/Art/Effects/ACT_B_R03_A/ACT_B_R03_A_three_hammer__frame_00__r002.png",
+        "sha256": "89f13ea6e6c2ddb13c1d16cdd58e09b9479a391848084659fe4880bd4056ec4e",
+        "bytes": 282
+      },
+      "referencedFrames": 48,
+      "baseSourceLedger": "NO_SOURCE_DECLARED_IN_BASE_LEDGER_SNAPSHOT",
+      "runtimeIndexStatus": "CANDIDATE_FRAME_SEQUENCES_NOT_FULL_GAME_INTEGRATED",
+      "existingObservation": "R03 battle screenshot shows blue glint near familiar and a yellow enemy marker; exact FX_R03 actor/effect attribution is not joined, so visual inspection is provisional.",
+      "smallestIOSVerification": "In an ordinary R03 battle, allow each listed ACT effect to trigger naturally; retain the action/event timeline and continuous clip from cue through impact/recovery, with the exact ACT ID joined to emitted frame/resource. Use additional encounters only for listed actions not naturally triggered in the first encounter.",
+      "r377Reusable": false,
+      "r385Reusable": "Potential build only; no R385 battle/ambient capture is in the reviewed evidence. Requires successful pinned build/install and new on-device capture."
+    },
+    {
+      "id": "ENV_R04",
+      "kind": "ambient_kit",
+      "relatedEffectIDs": [
+        "ENV_R04_01",
+        "ENV_R04_02",
+        "ENV_R04_03"
+      ],
+      "bundlePathPattern": "Art/Effects/{group}/{frame}.png",
+      "firstResource": {
+        "path": "native/qa_source_20261014T000207/PreparedResources/Art/Effects/ENV_R04_01/ENV_R04_01__frame_00__r002.png",
+        "sha256": "12db9e702f528c418d146fd85c8dbd06f6e55ae726703dab0f846f73ea389706",
+        "bytes": 158
+      },
+      "referencedFrames": 24,
+      "baseSourceLedger": "NO_SOURCE_DECLARED_IN_BASE_LEDGER_SNAPSHOT",
+      "runtimeIndexStatus": "CANDIDATE_FRAME_SEQUENCES_NOT_FULL_GAME_INTEGRATED",
+      "existingObservation": "ENV_R04 source sample is nearly invisible blue/white spark points; R04 snowy battle contact sheet shows the snow scene clearly. No definite defect, but ambient legibility at phone size is subtle.",
+      "smallestIOSVerification": "Open an ordinary R04 encounter in the current installed build, keep the scene visible through one full natural ambient cycle, and retain a short clip plus renderer/emitter-to-frame trace keyed to these three ENV groups. A still frame or a battle receipt alone cannot show loop timing.",
+      "r377Reusable": false,
+      "r385Reusable": "Potential build only; no R385 battle/ambient capture is in the reviewed evidence. Requires successful pinned build/install and new on-device capture."
+    },
+    {
+      "id": "FX_R04",
+      "kind": "combat_vfx_kit",
+      "relatedEffectIDs": [
+        "ACT_B_R04_A_snow_charge",
+        "ACT_B_R04_B_breath_fan",
+        "ACT_E_R04_01_pursuit",
+        "ACT_E_R04_02_wing_gust",
+        "ACT_E_R04_03_hex_guard",
+        "ACT_E_R04_04_tool_arcs"
+      ],
+      "bundlePathPattern": "Art/Effects/{group}/{frame}.png",
+      "firstResource": {
+        "path": "native/qa_source_20261014T000207/PreparedResources/Art/Effects/ACT_B_R04_A/ACT_B_R04_A_snow_charge__frame_00__r002.png",
+        "sha256": "287cf2810baf783c89d67b6d2eb750eb16d5250d86782f5a89f8f480784e5f1d",
+        "bytes": 309
+      },
+      "referencedFrames": 48,
+      "baseSourceLedger": "NO_SOURCE_DECLARED_IN_BASE_LEDGER_SNAPSHOT",
+      "runtimeIndexStatus": "CANDIDATE_FRAME_SEQUENCES_NOT_FULL_GAME_INTEGRATED",
+      "existingObservation": "R04 contact sheet shows repeated yellow rings on the wolf/enemy and combat context. No obvious bounds/occlusion defect in the viewed sheet; full temporal/naturalness acceptance remains open.",
+      "smallestIOSVerification": "In an ordinary R04 battle, allow each listed ACT effect to trigger naturally; retain the action/event timeline and continuous clip from cue through impact/recovery, with the exact ACT ID joined to emitted frame/resource. Use additional encounters only for listed actions not naturally triggered in the first encounter.",
+      "r377Reusable": false,
+      "r385Reusable": "Potential build only; no R385 battle/ambient capture is in the reviewed evidence. Requires successful pinned build/install and new on-device capture."
+    },
+    {
+      "id": "ENV_R05",
+      "kind": "ambient_kit",
+      "relatedEffectIDs": [
+        "ENV_R05_01",
+        "ENV_R05_02",
+        "ENV_R05_03"
+      ],
+      "bundlePathPattern": "Art/Effects/{group}/{frame}.png",
+      "firstResource": {
+        "path": "native/qa_source_20261014T000207/PreparedResources/Art/Effects/ENV_R05_01/ENV_R05_01__frame_00__r002.png",
+        "sha256": "5a9db504a2efe7eb62d0cd119cc9045308df5525bf4fc35956bf0c6a1f14c326",
+        "bytes": 212
+      },
+      "referencedFrames": 24,
+      "baseSourceLedger": "NO_SOURCE_DECLARED_IN_BASE_LEDGER_SNAPSHOT",
+      "runtimeIndexStatus": "CANDIDATE_FRAME_SEQUENCES_NOT_FULL_GAME_INTEGRATED",
+      "existingObservation": "ENV_R05 sample is sparse warm gold glints; R05 lantern-garden battle contact sheet renders the scene and lanterns distinctly. No concrete defect found.",
+      "smallestIOSVerification": "Open an ordinary R05 encounter in the current installed build, keep the scene visible through one full natural ambient cycle, and retain a short clip plus renderer/emitter-to-frame trace keyed to these three ENV groups. A still frame or a battle receipt alone cannot show loop timing.",
+      "r377Reusable": false,
+      "r385Reusable": "Potential build only; no R385 battle/ambient capture is in the reviewed evidence. Requires successful pinned build/install and new on-device capture."
+    },
+    {
+      "id": "FX_R05",
+      "kind": "combat_vfx_kit",
+      "relatedEffectIDs": [
+        "ACT_B_R05_A_pruning_ring",
+        "ACT_B_R05_B_seed_wave",
+        "ACT_E_R05_01_unbind",
+        "ACT_E_R05_02_guard_attack",
+        "ACT_E_R05_03_light_transfer",
+        "ACT_E_R05_04_heal_toxin"
+      ],
+      "bundlePathPattern": "Art/Effects/{group}/{frame}.png",
+      "firstResource": {
+        "path": "native/qa_source_20261014T000207/PreparedResources/Art/Effects/ACT_B_R05_A/ACT_B_R05_A_pruning_ring__frame_00__r002.png",
+        "sha256": "9824aa30a7d3f81b3b94292528666a636df1193ef90eb731d2ea188e39983cdd",
+        "bytes": 218
+      },
+      "referencedFrames": 48,
+      "baseSourceLedger": "NO_SOURCE_DECLARED_IN_BASE_LEDGER_SNAPSHOT",
+      "runtimeIndexStatus": "CANDIDATE_FRAME_SEQUENCES_NOT_FULL_GAME_INTEGRATED",
+      "existingObservation": "R05 contact sheet shows gold targeting/impact rings around lantern-like enemies; individual pack actions are not all separated or verified.",
+      "smallestIOSVerification": "In an ordinary R05 battle, allow each listed ACT effect to trigger naturally; retain the action/event timeline and continuous clip from cue through impact/recovery, with the exact ACT ID joined to emitted frame/resource. Use additional encounters only for listed actions not naturally triggered in the first encounter.",
+      "r377Reusable": false,
+      "r385Reusable": "Potential build only; no R385 battle/ambient capture is in the reviewed evidence. Requires successful pinned build/install and new on-device capture."
+    }
+  ],
+  "commonLimitations": [
+    "The R308 base ledger declares no editable/source files for these ten units; the R093 runtime index does map candidate frame sequences into bundle refs. Current frozen resource mapping can identify candidate bytes, but the historic base-source provenance gap remains.",
+    "All five FX packs have runtime screenshots/contact sheets, but no complete ACT-ID → rendered frame/time → visible-screen join.",
+    "Existing ENV visuals are representative stills/contact sheets, not a timed ambient loop; transparent frames may be intended cadence and are not a proven defect.",
+    "R377 screenshots cover local StoreKit restore/purchase states and do not cover these assets.",
+    "R385 is only a prospective current build input; no battle or ambient visual acceptance is evidenced here."
+  ],
+  "priorityDefects": [],
+  "nextAction": "Use one ordinary encounter per region where possible; capture a bounded continuous clip and a renderer trace with exact group/effect IDs. If an effect does not naturally trigger, mark that ID unobserved rather than infer acceptance from a neighboring effect.",
+  "notClaimed": [
+    "Any defect or visibility failure",
+    "Complete integration of all 159 units",
+    "All 120 ambient frames or all FX frames visually accepted",
+    "Human/formal asset adoption",
+    "R377/R385 proof of temporal asset acceptance"
+  ]
+}

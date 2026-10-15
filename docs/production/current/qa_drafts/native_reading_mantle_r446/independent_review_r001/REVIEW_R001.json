@@ -1,0 +1,68 @@
+{
+  "schema": "r446-independent-visual-review-v1",
+  "scope": "Read-only pixel review of the saved selected/reset paired screens and focused inspection crops. No app, save, device, build, or artwork mutation.",
+  "source": {
+    "path": "native/WitchApp/LivingScene.swift",
+    "sha256": "3358f91ddd4133d097a03ab1a65c8e5eb079ca888e28b3f8fdff004336f225d2",
+    "relevantBehavior": "The reading-hands crop contains a mirror of the selected R097 mantle layer; screenshot behavior is consistent with the mirror being visible within the crop."
+  },
+  "screens": [
+    {
+      "state": "mantle_desk_selected",
+      "path": "docs/production/current/qa_drafts/native_reading_mantle_r446/execution_r001/checkpoints/mantle_desk_selected/screen.png",
+      "sha256": "bfac29aa885e4eb71773dc03cc28298793ac1ce95add66a31fbc268bb00f2ffb",
+      "saveRevision": 115,
+      "selectedCosmeticIDs": {
+        "C_APPRENTICE": "LUNA_MANTLE_CANDIDATE_R128"
+      },
+      "deskPlaced": true,
+      "observed": "A narrow olive/green shoulder-to-upper-chest piece is visible on reading Luna. At full-screen phone scale it is subtle; in the focused crop it is clearly distinct from the reset state."
+    },
+    {
+      "state": "reading_reset",
+      "path": "docs/production/current/qa_drafts/native_reading_mantle_r446/execution_r001/checkpoints/reading_reset/screen.png",
+      "sha256": "128a2b1772e8d6b16f663e5265fa1d2a376fa770c6fbca21559d0686eadea019",
+      "saveRevision": 116,
+      "selectedCosmeticIDs": {},
+      "deskPlaced": true,
+      "observed": "The selected green shoulder band is absent. Other small green pixels near Luna’s hands/accessories remain in both states and are not evidence of a residual mantle."
+    }
+  ],
+  "visualJudgment": {
+    "selectedAppearanceDifference": "PASS_SCOPED: matched save metadata and pixels show selected-only green shoulder/chest detail; the R441 indistinguishable result is improved.",
+    "handsAndBook": "PASS_SCOPED: both hands remain visible over the open book; no visible obstruction of page text/art or hand silhouettes by the mirrored layer.",
+    "deskAndRoom": "PASS_SCOPED: desk placement and room composition are unchanged between these captures.",
+    "resetCleanup": "PASS_SCOPED: no selected mantle band remains after the UI reset.",
+    "readabilityLimit": "The overlay reads as a small green shoulder accent in the full screen, not a broad cape silhouette. This review establishes the selected-vs-reset visual delta, not complete garment quality or formal art acceptance."
+  },
+  "captureLimits": {
+    "sameObservedAppPID": 13339,
+    "selectedAt": "2026-10-15T04:45:28.321320+09:00",
+    "resetAt": "2026-10-15T04:46:06.555102+09:00",
+    "coldReopen": "NOT_REVIEWED_YET; root was still completing desk storage/cold restart at review time",
+    "preservation": "This is not a final preservation or release PASS."
+  },
+  "inspectionDerivatives": [
+    {
+      "path": "docs/production/current/qa_drafts/native_reading_mantle_r446/independent_review_r001/mantle_desk_selected_luna_crop.png",
+      "sha256": "00edb53a6d56d7dcf490495d8c536ee83cf8b82979c3110cfc029f947772c7a5",
+      "purpose": "same-size crop around Luna, hands, book and desk"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/native_reading_mantle_r446/independent_review_r001/reading_reset_luna_crop.png",
+      "sha256": "cfb67e3a852fce87636cf8ad8b1b158b8321038fb86504c28c610a4fc6b70d41",
+      "purpose": "same-size crop around Luna, hands, book and desk"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/native_reading_mantle_r446/independent_review_r001/mantle_desk_selected_upper_body_zoom.png",
+      "sha256": "96549e5b58f05f32037e54847fecefd61ab17e036cb33d0857ffb3bd70a2981f",
+      "purpose": "nearest-neighbor inspection zoom only"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/native_reading_mantle_r446/independent_review_r001/reading_reset_upper_body_zoom.png",
+      "sha256": "77b057d8b359e59178c2f80f93cbd6a701f7b09e7e51bb2c984bdf755a6ab25b",
+      "purpose": "nearest-neighbor inspection zoom only"
+    }
+  ],
+  "formalArtApproval": false
+}

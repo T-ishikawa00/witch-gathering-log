@@ -1,0 +1,429 @@
+{
+  "schema": "witch.attack_cycle_candidate.v1",
+  "asset_id": "ACT_E_R01_02",
+  "revision": "spider_attack_cycle_r001",
+  "approval": "UNAPPROVED_CANDIDATE_PENDING_ROOT_NATIVE_SCREEN_REVIEW",
+  "natural_motion_complete": false,
+  "source_still": "ActorStills/ACT_E_R01_02/ACT_E_R01_02__still__E_R01_02_base_v2.png",
+  "source_still_sha256": "576d65caf7459a2dfeb207cbfd54fc741ba7b552a141d677e0bf516901a22864",
+  "atlas": "GeneratedCandidates/ACT_E_R01_02/spider_attack_cycle_r001/imagegen_atlas_source.png",
+  "atlas_sha256": "dadb2d281242a5317d53c56420409127ab54f26519a5a341b51884b69c92f417",
+  "atlas_px": [
+    1536,
+    1024
+  ],
+  "source_grid_cell_bounds_px": {
+    "x": [
+      0,
+      512,
+      1024,
+      1536
+    ],
+    "y": [
+      0,
+      341,
+      683,
+      1024
+    ]
+  },
+  "source_runtime_canvas_px": [
+    512,
+    341
+  ],
+  "source_runtime_anchor_px": [
+    256,
+    330
+  ],
+  "runtime_canvas_px": [
+    512,
+    400
+  ],
+  "display_scale_candidate": 1.1143695014662756,
+  "anchor_candidate_px": [
+    256,
+    344
+  ],
+  "phase_order": [
+    "anticipate_000..002",
+    "execute_000..002",
+    "recover_000..002"
+  ],
+  "movement_semantics": "spider_crouch_then_connected_foreleg_jab_then_absorbing_recovery_no_external_web",
+  "packing": "Exact alpha-preserving per-cell crop and translation only; no resize, recolor, alpha cleanup, or drawing.",
+  "frames": [
+    {
+      "frame": "anticipate_000.png",
+      "phase": "anticipate",
+      "source_cell_px": [
+        0,
+        0,
+        512,
+        341
+      ],
+      "source_alpha16_bbox_xyxy": [
+        71,
+        44,
+        465,
+        324
+      ],
+      "source_alpha16_margins_ltrb": [
+        71,
+        44,
+        47,
+        17
+      ],
+      "source_alpha16_edge_pixels": 0,
+      "translation_px": [
+        -30,
+        21
+      ],
+      "anchor_correction_px": [
+        0
+      ],
+      "packed_alpha16_bbox_xyxy": [
+        41,
+        65,
+        435,
+        345
+      ],
+      "packed_alpha16_pixels": 74613,
+      "source_nonzero_alpha_pixels": 74613,
+      "alpha_preserved_exactly": true,
+      "sha256": "30c43274134307c3c5dd00b5f11231d6ea298c321d418ddda4be27908bbc77ca"
+    },
+    {
+      "frame": "anticipate_001.png",
+      "phase": "anticipate",
+      "source_cell_px": [
+        512,
+        0,
+        512,
+        341
+      ],
+      "source_alpha16_bbox_xyxy": [
+        54,
+        48,
+        451,
+        324
+      ],
+      "source_alpha16_margins_ltrb": [
+        54,
+        48,
+        61,
+        17
+      ],
+      "source_alpha16_edge_pixels": 0,
+      "translation_px": [
+        -14,
+        21
+      ],
+      "anchor_correction_px": [
+        0
+      ],
+      "packed_alpha16_bbox_xyxy": [
+        40,
+        69,
+        437,
+        345
+      ],
+      "packed_alpha16_pixels": 74915,
+      "source_nonzero_alpha_pixels": 74915,
+      "alpha_preserved_exactly": true,
+      "sha256": "b512c1b80c57f882d7f37f0a2678d8745f94e55fd26cbcea9644aa0d3046a48b"
+    },
+    {
+      "frame": "anticipate_002.png",
+      "phase": "anticipate",
+      "source_cell_px": [
+        1024,
+        0,
+        512,
+        341
+      ],
+      "source_alpha16_bbox_xyxy": [
+        51,
+        46,
+        437,
+        324
+      ],
+      "source_alpha16_margins_ltrb": [
+        51,
+        46,
+        75,
+        17
+      ],
+      "source_alpha16_edge_pixels": 0,
+      "translation_px": [
+        20,
+        21
+      ],
+      "anchor_correction_px": [
+        0
+      ],
+      "packed_alpha16_bbox_xyxy": [
+        71,
+        67,
+        457,
+        345
+      ],
+      "packed_alpha16_pixels": 73937,
+      "source_nonzero_alpha_pixels": 73937,
+      "alpha_preserved_exactly": true,
+      "sha256": "54d2e9b45461d3bcd2bc5e2cff55e4f499dcd27ec35fbcc3b7bb1133ab9b8158"
+    },
+    {
+      "frame": "execute_000.png",
+      "phase": "execute",
+      "source_cell_px": [
+        0,
+        341,
+        512,
+        342
+      ],
+      "source_alpha16_bbox_xyxy": [
+        72,
+        26,
+        480,
+        313
+      ],
+      "source_alpha16_margins_ltrb": [
+        72,
+        26,
+        32,
+        29
+      ],
+      "source_alpha16_edge_pixels": 0,
+      "translation_px": [
+        1,
+        32
+      ],
+      "anchor_correction_px": [
+        0
+      ],
+      "packed_alpha16_bbox_xyxy": [
+        73,
+        58,
+        481,
+        345
+      ],
+      "packed_alpha16_pixels": 78323,
+      "source_nonzero_alpha_pixels": 78323,
+      "alpha_preserved_exactly": true,
+      "sha256": "cef424db3dfb25a9737dfd1138cf2241c45c13c689f16feb466695e54ee1f237"
+    },
+    {
+      "frame": "execute_001.png",
+      "phase": "execute",
+      "source_cell_px": [
+        512,
+        341,
+        512,
+        342
+      ],
+      "source_alpha16_bbox_xyxy": [
+        48,
+        26,
+        491,
+        306
+      ],
+      "source_alpha16_margins_ltrb": [
+        48,
+        26,
+        21,
+        36
+      ],
+      "source_alpha16_edge_pixels": 0,
+      "translation_px": [
+        2,
+        39
+      ],
+      "anchor_correction_px": [
+        0
+      ],
+      "packed_alpha16_bbox_xyxy": [
+        50,
+        65,
+        493,
+        345
+      ],
+      "packed_alpha16_pixels": 73112,
+      "source_nonzero_alpha_pixels": 73112,
+      "alpha_preserved_exactly": true,
+      "sha256": "2375ff361f9ac4565855b1348a04080f042d9d1570ba31d18945afec4355cbdf"
+    },
+    {
+      "frame": "execute_002.png",
+      "phase": "execute",
+      "source_cell_px": [
+        1024,
+        341,
+        512,
+        342
+      ],
+      "source_alpha16_bbox_xyxy": [
+        45,
+        26,
+        437,
+        313
+      ],
+      "source_alpha16_margins_ltrb": [
+        45,
+        26,
+        75,
+        29
+      ],
+      "source_alpha16_edge_pixels": 0,
+      "translation_px": [
+        -12,
+        32
+      ],
+      "anchor_correction_px": [
+        0
+      ],
+      "packed_alpha16_bbox_xyxy": [
+        33,
+        58,
+        425,
+        345
+      ],
+      "packed_alpha16_pixels": 78411,
+      "source_nonzero_alpha_pixels": 78411,
+      "alpha_preserved_exactly": true,
+      "sha256": "cd61267fcff6caa80fdf8664e6a1b63cad79d1c0ad636c28ea4197331dfe94e7"
+    },
+    {
+      "frame": "recover_000.png",
+      "phase": "recover",
+      "source_cell_px": [
+        0,
+        683,
+        512,
+        341
+      ],
+      "source_alpha16_bbox_xyxy": [
+        70,
+        12,
+        463,
+        293
+      ],
+      "source_alpha16_margins_ltrb": [
+        70,
+        12,
+        49,
+        48
+      ],
+      "source_alpha16_edge_pixels": 0,
+      "translation_px": [
+        -10,
+        52
+      ],
+      "anchor_correction_px": [
+        0
+      ],
+      "packed_alpha16_bbox_xyxy": [
+        60,
+        64,
+        453,
+        345
+      ],
+      "packed_alpha16_pixels": 76844,
+      "source_nonzero_alpha_pixels": 76844,
+      "alpha_preserved_exactly": true,
+      "sha256": "e5082acb0371fb394b941d9a2446538181b624be4450367d9bbc15596137ac05"
+    },
+    {
+      "frame": "recover_001.png",
+      "phase": "recover",
+      "source_cell_px": [
+        512,
+        683,
+        512,
+        341
+      ],
+      "source_alpha16_bbox_xyxy": [
+        50,
+        12,
+        451,
+        294
+      ],
+      "source_alpha16_margins_ltrb": [
+        50,
+        12,
+        61,
+        47
+      ],
+      "source_alpha16_edge_pixels": 0,
+      "translation_px": [
+        -4,
+        51
+      ],
+      "anchor_correction_px": [
+        0
+      ],
+      "packed_alpha16_bbox_xyxy": [
+        46,
+        63,
+        447,
+        345
+      ],
+      "packed_alpha16_pixels": 77790,
+      "source_nonzero_alpha_pixels": 77790,
+      "alpha_preserved_exactly": true,
+      "sha256": "e00d1fd4c650c6ea5c6a6c3cde077382a9d85b546c0954d6e9409a972b3ca7ef"
+    },
+    {
+      "frame": "recover_002.png",
+      "phase": "recover",
+      "source_cell_px": [
+        1024,
+        683,
+        512,
+        341
+      ],
+      "source_alpha16_bbox_xyxy": [
+        47,
+        13,
+        445,
+        295
+      ],
+      "source_alpha16_margins_ltrb": [
+        47,
+        13,
+        67,
+        46
+      ],
+      "source_alpha16_edge_pixels": 0,
+      "translation_px": [
+        14,
+        50
+      ],
+      "anchor_correction_px": [
+        0
+      ],
+      "packed_alpha16_bbox_xyxy": [
+        61,
+        63,
+        459,
+        345
+      ],
+      "packed_alpha16_pixels": 78150,
+      "source_nonzero_alpha_pixels": 78150,
+      "alpha_preserved_exactly": true,
+      "sha256": "59e1b944bb4dd3e45a0b91b086edae1caa895afdf74d64c239b4573de6613b0d"
+    }
+  ],
+  "retained_clip_sha256": {
+    "idle": "7ea32ed3fb3ad4ad6f8931ecdb4832270cd526d1b202da37c681cd5c16c8fda8",
+    "walk": "2095864e7e1e07f27a84b38f092b21eee3f9582be9f486058cd4ba39e37a4d70",
+    "hit": "f49b462d3b8b4508c7fb9e91a627ef681eaddd5d817eae4de928883a528a62cf",
+    "resolve": "f070435bec54b541a9c47c3cb8534d212238759e7a6b1f3a12d1ab2c47e52d94"
+  },
+  "qa_contact_sheet": "GeneratedCandidates/ACT_E_R01_02/spider_attack_cycle_r001/qa_contact_sheet.jpg",
+  "runtime_overlay": "runtime_overlay_act_e_r01_02_attack_cycle_candidate_r001.json",
+  "technical_status": "PACKED_ALPHA_EXACT_SOURCE_CELLS_NO_EDGE_CONTACT",
+  "visual_status": "CANDIDATE_ONLY_PENDING_NATIVE_SCREEN_REVIEW",
+  "limitations": [
+    "Only three candidate frames for each phase; no continuous natural-motion completion claim.",
+    "Human adoption remains pending."
+  ]
+}

@@ -1,0 +1,460 @@
+{
+  "schema": "witch.enemy_attack_cycle_candidate.v1",
+  "actorId": "ACT_E_R02_04",
+  "revision": "attack_cycle_packed_r003",
+  "status": "UNAPPROVED_PARTIAL_ATTACK_MOTION_CANDIDATE",
+  "sourceApprovedStill": "ActorStills/ACT_E_R02_04/ACT_E_R02_04__still__r001.png",
+  "sourceApprovedStillSHA256": "632bab3766840d25d1ccd2d7d9f357aeb30132766f0b941952a3508332b8db7c",
+  "imagegenAtlas": "GeneratedCandidates/ACT_E_R02_04/attack_cycle_r001/imagegen_atlas_corrected_r002.png",
+  "imagegenAtlasSHA256": "455896bbc7b36ddcaaa4d35d632c093c542a7b3ddc018c565f9afc6e5a4bbb1c",
+  "atlasPx": [
+    1254,
+    1254
+  ],
+  "gridXEdgesPx": [
+    0,
+    418,
+    836,
+    1254
+  ],
+  "gridYEdgesPx": [
+    0,
+    418,
+    836,
+    1254
+  ],
+  "grid": "3x3 row-major: anticipate, execute, recover",
+  "runtimeCanvasPx": [
+    512,
+    512
+  ],
+  "candidateAnchorPx": [
+    256,
+    300
+  ],
+  "candidateDisplayScale": 1.25,
+  "baseWalkAlpha16HeightsPx": [
+    371,
+    337,
+    290,
+    266,
+    251,
+    236,
+    301,
+    339,
+    288
+  ],
+  "baseWalkDisplayScale": 1.0,
+  "targetVisibleAlpha16HeightPx": 290.0,
+  "attackVisibleAlpha16HeightsPx": [
+    232,
+    232,
+    221,
+    288,
+    334,
+    293,
+    224,
+    232,
+    239
+  ],
+  "movementSemantics": "Frontal hover moth folds its wings, flares them to release a compact pollen puff, then returns to hover; wingbeat and pollen release, not legged walk.",
+  "packing": "Cell RGBA bytes copied unchanged onto transparent registered canvas; no resizing/recolor/alpha edits. PNGs atomically published.",
+  "frameRecords": [
+    {
+      "frame": "anticipate_000.png",
+      "state": "anticipate",
+      "atlasCell": [
+        0,
+        0
+      ],
+      "sourceCellBoundsPx": [
+        0,
+        0,
+        418,
+        418
+      ],
+      "sourceAlpha16BBox": [
+        108,
+        133,
+        312,
+        365
+      ],
+      "sourceAlpha16MarginsLTRB": [
+        108,
+        133,
+        106,
+        53
+      ],
+      "sourceAlpha16EdgePixels": 0,
+      "canvasPx": [
+        512,
+        512
+      ],
+      "packingOffsetPx": [
+        47,
+        47
+      ],
+      "packedAlpha16BBox": [
+        155,
+        180,
+        359,
+        412
+      ],
+      "sourceCellRgbaPreserved": true,
+      "sha256": "d7c081fdb756e8c7f2c4349b53a7869435764d180b3aea88d1c85b7629d4744d"
+    },
+    {
+      "frame": "anticipate_001.png",
+      "state": "anticipate",
+      "atlasCell": [
+        1,
+        0
+      ],
+      "sourceCellBoundsPx": [
+        418,
+        0,
+        836,
+        418
+      ],
+      "sourceAlpha16BBox": [
+        101,
+        132,
+        318,
+        364
+      ],
+      "sourceAlpha16MarginsLTRB": [
+        101,
+        132,
+        100,
+        54
+      ],
+      "sourceAlpha16EdgePixels": 0,
+      "canvasPx": [
+        512,
+        512
+      ],
+      "packingOffsetPx": [
+        47,
+        47
+      ],
+      "packedAlpha16BBox": [
+        148,
+        179,
+        365,
+        411
+      ],
+      "sourceCellRgbaPreserved": true,
+      "sha256": "ce6965f6fd35c30322d039e144a8f7541acdc353617131f54f43f62e5983d160"
+    },
+    {
+      "frame": "anticipate_002.png",
+      "state": "anticipate",
+      "atlasCell": [
+        2,
+        0
+      ],
+      "sourceCellBoundsPx": [
+        836,
+        0,
+        1254,
+        418
+      ],
+      "sourceAlpha16BBox": [
+        78,
+        141,
+        327,
+        362
+      ],
+      "sourceAlpha16MarginsLTRB": [
+        78,
+        141,
+        91,
+        56
+      ],
+      "sourceAlpha16EdgePixels": 0,
+      "canvasPx": [
+        512,
+        512
+      ],
+      "packingOffsetPx": [
+        47,
+        47
+      ],
+      "packedAlpha16BBox": [
+        125,
+        188,
+        374,
+        409
+      ],
+      "sourceCellRgbaPreserved": true,
+      "sha256": "e87c0f602c13a267d034b1129df03561813a9edeee362426f872a9416962b8a2"
+    },
+    {
+      "frame": "execute_000.png",
+      "state": "execute",
+      "atlasCell": [
+        0,
+        1
+      ],
+      "sourceCellBoundsPx": [
+        0,
+        418,
+        418,
+        836
+      ],
+      "sourceAlpha16BBox": [
+        57,
+        98,
+        368,
+        386
+      ],
+      "sourceAlpha16MarginsLTRB": [
+        57,
+        98,
+        50,
+        32
+      ],
+      "sourceAlpha16EdgePixels": 0,
+      "canvasPx": [
+        512,
+        512
+      ],
+      "packingOffsetPx": [
+        47,
+        47
+      ],
+      "packedAlpha16BBox": [
+        104,
+        145,
+        415,
+        433
+      ],
+      "sourceCellRgbaPreserved": true,
+      "sha256": "d384a43f4df9cd04f69cf8d4c4a27d36b230887f5089bd11ae09254c0e228eea"
+    },
+    {
+      "frame": "execute_001.png",
+      "state": "execute",
+      "atlasCell": [
+        1,
+        1
+      ],
+      "sourceCellBoundsPx": [
+        418,
+        418,
+        836,
+        836
+      ],
+      "sourceAlpha16BBox": [
+        49,
+        66,
+        371,
+        400
+      ],
+      "sourceAlpha16MarginsLTRB": [
+        49,
+        66,
+        47,
+        18
+      ],
+      "sourceAlpha16EdgePixels": 0,
+      "canvasPx": [
+        512,
+        512
+      ],
+      "packingOffsetPx": [
+        47,
+        47
+      ],
+      "packedAlpha16BBox": [
+        96,
+        113,
+        418,
+        447
+      ],
+      "sourceCellRgbaPreserved": true,
+      "sha256": "527c4dacec35aa91d5c4d030ac6abfd959f6a395dfba3f94df937642cc33d4eb"
+    },
+    {
+      "frame": "execute_002.png",
+      "state": "execute",
+      "atlasCell": [
+        2,
+        1
+      ],
+      "sourceCellBoundsPx": [
+        836,
+        418,
+        1254,
+        836
+      ],
+      "sourceAlpha16BBox": [
+        47,
+        99,
+        366,
+        392
+      ],
+      "sourceAlpha16MarginsLTRB": [
+        47,
+        99,
+        52,
+        26
+      ],
+      "sourceAlpha16EdgePixels": 0,
+      "canvasPx": [
+        512,
+        512
+      ],
+      "packingOffsetPx": [
+        47,
+        47
+      ],
+      "packedAlpha16BBox": [
+        94,
+        146,
+        413,
+        439
+      ],
+      "sourceCellRgbaPreserved": true,
+      "sha256": "5c9350dedc33cab0396f36846d81b7e22f0ce2cf9b0961c5acc0ddca5c717336"
+    },
+    {
+      "frame": "recover_000.png",
+      "state": "recover",
+      "atlasCell": [
+        0,
+        2
+      ],
+      "sourceCellBoundsPx": [
+        0,
+        836,
+        418,
+        1254
+      ],
+      "sourceAlpha16BBox": [
+        51,
+        78,
+        370,
+        302
+      ],
+      "sourceAlpha16MarginsLTRB": [
+        51,
+        78,
+        48,
+        116
+      ],
+      "sourceAlpha16EdgePixels": 0,
+      "canvasPx": [
+        512,
+        512
+      ],
+      "packingOffsetPx": [
+        47,
+        47
+      ],
+      "packedAlpha16BBox": [
+        98,
+        125,
+        417,
+        349
+      ],
+      "sourceCellRgbaPreserved": true,
+      "sha256": "f54519dbd501264e98c73acbbd2fa31ee71f8f1878894db1d60411481692b2b7"
+    },
+    {
+      "frame": "recover_001.png",
+      "state": "recover",
+      "atlasCell": [
+        1,
+        2
+      ],
+      "sourceCellBoundsPx": [
+        418,
+        836,
+        836,
+        1254
+      ],
+      "sourceAlpha16BBox": [
+        49,
+        70,
+        371,
+        302
+      ],
+      "sourceAlpha16MarginsLTRB": [
+        49,
+        70,
+        47,
+        116
+      ],
+      "sourceAlpha16EdgePixels": 0,
+      "canvasPx": [
+        512,
+        512
+      ],
+      "packingOffsetPx": [
+        47,
+        47
+      ],
+      "packedAlpha16BBox": [
+        96,
+        117,
+        418,
+        349
+      ],
+      "sourceCellRgbaPreserved": true,
+      "sha256": "3457aef081b29b4ebccdbab94c4054397fa16047a2a304f2b2c5e54fc0dd770a"
+    },
+    {
+      "frame": "recover_002.png",
+      "state": "recover",
+      "atlasCell": [
+        2,
+        2
+      ],
+      "sourceCellBoundsPx": [
+        836,
+        836,
+        1254,
+        1254
+      ],
+      "sourceAlpha16BBox": [
+        32,
+        63,
+        377,
+        302
+      ],
+      "sourceAlpha16MarginsLTRB": [
+        32,
+        63,
+        41,
+        116
+      ],
+      "sourceAlpha16EdgePixels": 0,
+      "canvasPx": [
+        512,
+        512
+      ],
+      "packingOffsetPx": [
+        47,
+        47
+      ],
+      "packedAlpha16BBox": [
+        79,
+        110,
+        424,
+        349
+      ],
+      "sourceCellRgbaPreserved": true,
+      "sha256": "0ffe204c3c3e05de8397d84088e1ab7ecc9d295d5cd78a3b7a239b4d3d29d915"
+    }
+  ],
+  "qaContactDark": "qa_contact_dark.jpg",
+  "runtimeOverlay": "runtime_overlay_act_e_r02_04_attack_cycle_candidate_r003.json",
+  "visualQA": "Dark-composited contact reviewed for identity, margins, severed parts and phase readability. Native SpriteKit audit pending.",
+  "naturalMotionComplete": false,
+  "humanApproved": false,
+  "limitations": [
+    "Only 3 frames per phase; transition quality and timing require native review.",
+    "Tree branch attack differences are subtle; do not treat as complete motion."
+  ]
+}

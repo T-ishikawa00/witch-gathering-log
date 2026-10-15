@@ -1,0 +1,48 @@
+{
+  "driverSHA256": "2857567a9b83125ace7e06f26e2313f27313b529f0fd04573288505792d87d7e",
+  "inputManifestSHA256": "fa6df3e4d8e0e28bac50faf2d2df14d0bbc016fe6e906a42f259f16bba5a95d4",
+  "launchArguments": [
+    "--qa-isolated",
+    "--qa-save-key=storekit-authority-r454",
+    "--xcode-local-storekit-qa",
+    "--screen=購入検証",
+    "--r454-local-authority-qa",
+    "--r454-test-token",
+    "45400000-0000-4000-8000-000000000001",
+    "--r454-profile-fingerprint",
+    "62ce1ce493d34a7864cd7c7c1a5ee17aebdc8891b2b7b8dcb4eb7e6534c06e99"
+  ],
+  "limits": {
+    "attempts": 1,
+    "debugBuildSeconds": 600,
+    "freezeAndDebugAggregateSeconds": 600,
+    "install": false,
+    "launch": false,
+    "maxAllocatedBytes": 2000000000,
+    "minimumFreeBytes": 20000000000,
+    "requiredStartFreeBytes": 20000000000,
+    "safetyBytes": 2000000000
+  },
+  "notes": [
+    "R002 corrected the donor pin to the normalized R445 BUILD_PASS receipt and frozen 1,922-resource maps.",
+    "Template only. Root must verify all current source and protection pins, then seal before invoking the single freeze/build attempt."
+  ],
+  "profileFingerprint": "62ce1ce493d34a7864cd7c7c1a5ee17aebdc8891b2b7b8dcb4eb7e6534c06e99",
+  "protectedPBXSHA256": "b83573270f2e0fde46411aabe9a539343b0fd1301760b3de7fe672b796dc18e9",
+  "resourceCount": 1922,
+  "schema": "storekit-event-export-r454-build-contract-r002-v1",
+  "sealedAt": "2026-10-15T06:05:31.710419+09:00",
+  "sourceCount": 238,
+  "sourceMapSHA256": "f7e90c5caadce71ad72e1612ae2f06094092a90d4b43cd4840a16607be0e1efe",
+  "status": "ROOT_REVIEW_REQUIRED",
+  "variants": {
+    "debug": {
+      "bundleIdentifier": "local.witch.autonomous.r1.storekit.r454",
+      "configuration": "Debug",
+      "flags": [
+        "DEBUG"
+      ]
+    }
+  },
+  "worktree": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg"
+}

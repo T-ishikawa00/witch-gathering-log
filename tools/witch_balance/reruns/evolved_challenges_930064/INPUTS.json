@@ -1,0 +1,154 @@
+{
+  "seed_start": 930064,
+  "seed_count": 64,
+  "builds": {
+    "DIRECT": {
+      "base": "BURST",
+      "items": {}
+    },
+    "TOXIN_CHASE": {
+      "base": "BALANCED",
+      "items": {
+        "C_WITCH": "EQ_W_P2",
+        "C_FAMILIAR": "EQ_F_03"
+      }
+    },
+    "WARD_HEAL_COUNTER": {
+      "base": "BALANCED",
+      "items": {
+        "C_WITCH": "EQ_W_G2",
+        "C_APPRENTICE": "EQ_A_03",
+        "C_SMITH": "EQ_S_03"
+      }
+    },
+    "COUNTER_ONLY": {
+      "base": "BALANCED",
+      "items": {
+        "C_SMITH": "EQ_S_02"
+      }
+    },
+    "HEAL_ONLY": {
+      "base": "BALANCED",
+      "items": {
+        "C_APPRENTICE": "EQ_A_03"
+      }
+    },
+    "CHASE_ONLY": {
+      "base": "BALANCED",
+      "items": {
+        "C_FAMILIAR": "EQ_F_03"
+      }
+    }
+  },
+  "challenges": [
+    {
+      "level": 60,
+      "hp": 135000,
+      "power": 1450,
+      "defense": 500,
+      "dot_resist_bp": 0,
+      "first_telegraph_ms": 1200,
+      "time_limit_ms": 150000,
+      "id": "B_R01_B",
+      "name": "古樹の脈動・固定候補",
+      "actions": [
+        {
+          "id": "ROOT_COMBO",
+          "coefficient_bp": 18000,
+          "windup_ms": 1400,
+          "hit_offsets_ms": [
+            0,
+            400,
+            800
+          ],
+          "recovery_ms": 900,
+          "rest_ms": 900,
+          "aoe": false,
+          "heavy": true
+        },
+        {
+          "id": "BRANCH_SWEEP",
+          "coefficient_bp": 8000,
+          "windup_ms": 1700,
+          "hit_offsets_ms": [
+            0
+          ],
+          "recovery_ms": 1200,
+          "rest_ms": 2200,
+          "aoe": true,
+          "heavy": false
+        }
+      ]
+    },
+    {
+      "level": 60,
+      "hp": 165000,
+      "power": 1050,
+      "defense": 550,
+      "dot_resist_bp": 0,
+      "first_telegraph_ms": 1200,
+      "time_limit_ms": 150000,
+      "id": "B_R02_B",
+      "name": "水鏡のゆらぎ・固定候補",
+      "overlay_phase": true,
+      "actions": [
+        {
+          "id": "MIRROR_PULSE",
+          "coefficient_bp": 8500,
+          "windup_ms": 1300,
+          "hit_offsets_ms": [
+            0
+          ],
+          "recovery_ms": 900,
+          "rest_ms": 1800,
+          "aoe": true,
+          "heavy": false
+        }
+      ]
+    },
+    {
+      "level": 60,
+      "hp": 135000,
+      "power": 1250,
+      "defense": 500,
+      "dot_resist_bp": 0,
+      "first_telegraph_ms": 1200,
+      "time_limit_ms": 150000,
+      "id": "B_R03_A",
+      "name": "連槌の検分・固定候補",
+      "actions": [
+        {
+          "id": "HAMMER_MULTI",
+          "coefficient_bp": 5200,
+          "windup_ms": 1200,
+          "hit_offsets_ms": [
+            0,
+            350,
+            700
+          ],
+          "recovery_ms": 800,
+          "rest_ms": 1700,
+          "aoe": false,
+          "heavy": true
+        },
+        {
+          "id": "HAMMER_NEW_ROOT",
+          "coefficient_bp": 9500,
+          "windup_ms": 900,
+          "hit_offsets_ms": [
+            0
+          ],
+          "recovery_ms": 700,
+          "rest_ms": 2500,
+          "aoe": false,
+          "heavy": true
+        }
+      ]
+    }
+  ],
+  "rarity_model": "H1_RECOMMENDED test candidate",
+  "combat_fixed_point_scale": 10000,
+  "unlock_gate": "G_R05_B test fixture; no progression or research reward applied",
+  "overlay": "EVOLVED_RULES_TRIAL_R1",
+  "official_status": "UNAPPROVED"
+}

@@ -1,0 +1,292 @@
+{
+  "schema": "enemy_motion_remaining_acceptance_r372_v1",
+  "reviewScope": "Existing saved visual evidence and current renderer source only; no source, save, simulator, or app changes.",
+  "judgment": "No shared gross renderer defect proven in this sample. Natural motion acceptance remains incomplete.",
+  "R370Review": {
+    "path": "docs/production/current/qa_drafts/large_text_navigation_r370/independent_review_r001/REVIEW_R001.md",
+    "sha256": "8b5379b0ba1fcfe80f9c8273a57dc4edb57174f25f1c2cdcd2ec24437832d3b5",
+    "result": "SCOPED_LARGE_TEXT_NAVIGATION_PASS; no game commands; inventory only startup identity changed."
+  },
+  "sources": {
+    "R366Ledger": {
+      "path": "docs/production/current/qa_drafts/enemy_completion_batch_r366/ENEMY_COVERAGE_LEDGER_R001.json",
+      "sha256": "0b7963a968411f8ff618f2f39beea7abc6ddcbc6704d6cdd42b914bc5bdd8306",
+      "enemyRows": 30
+    },
+    "R083": {
+      "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/RUN.json",
+      "sha256": "f9c922bc2a98361369dfb30f33703471df121a5aa0e48a71522072170afbd06e",
+      "actors": 30,
+      "stateRequestsPerActor": 7,
+      "captureStatus": {
+        "added": [],
+        "afterCount": 1054,
+        "allowedAdded": [],
+        "allowedAddedFixed": [],
+        "beforeCount": 1054,
+        "changed": [],
+        "fixedChangesAllowed": false,
+        "fixedMissingAllowed": false,
+        "missing": [],
+        "pass": true,
+        "unexpectedAdded": [],
+        "unexpectedChanged": [],
+        "unexpectedMissing": []
+      },
+      "meaning": "QA-isolated state request/capture, not natural event flow."
+    },
+    "R145": {
+      "path": "docs/production/current/qa_drafts/enemy_event_render_r145/root_capture_candidate_r002/capture_r001/RUN.json",
+      "sha256": "bbff4bc5d167f1209579978cfeae1634dbf4e5ba16a9f637aa42690ef0ba6770",
+      "cases": 6,
+      "frameRows": 5024,
+      "eventRows": 254,
+      "visualJoin": "All six per-case trace receipts say NOT_ESTABLISHED_OCR_REQUIRED."
+    },
+    "R366VisualFirst9": {
+      "path": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r001/REVIEW_FIRST9_R001.json",
+      "sha256": "19ef770a7e0d371ba732472cc685734121902b0d38db9016e4b752f48782ecee",
+      "reviewedActors": 9
+    },
+    "R366DenseRemaining18": {
+      "path": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r002_dense/REVIEW_REMAINING18_R001.json",
+      "sha256": "872026b314f75790f8df3d1f4fe310e96816cda7bcf87dc1e94cab90f32d0a52",
+      "reviewedActors": 18,
+      "grossClippingDefects": 0
+    },
+    "R368": {
+      "path": "docs/production/current/qa_drafts/ordinary_event_render_r368/REVIEW_R001.json",
+      "sha256": "d64234d250640076933cc901fa693b895191082fc0f4ebe0c6ec6dc0ff5af4ce",
+      "laterEvidenceRows": 10,
+      "ordinaryEncounterVideoRows": 1,
+      "ordinaryResultScreens": 8,
+      "challengeReplayRows": 1
+    }
+  },
+  "evidenceSummary": {
+    "runtimeMappedActors": 30,
+    "completeAnimationTrue": 0,
+    "R083Clips": 30,
+    "R083VisualReviews": 30,
+    "R145QAEncounterActors": [
+      "ACT_E_R01_01",
+      "ACT_E_R01_02",
+      "ACT_E_R01_03",
+      "ACT_E_R01_04",
+      "ACT_B_R01_A",
+      "ACT_B_R01_B"
+    ],
+    "laterOrdinaryEvidenceRows": 10,
+    "actorsWithNoNewerOrdinaryEvidence": [
+      "ACT_E_R01_01",
+      "ACT_E_R01_02",
+      "ACT_E_R01_03",
+      "ACT_E_R01_04",
+      "ACT_B_R01_A",
+      "ACT_B_R01_B",
+      "ACT_E_R02_01",
+      "ACT_E_R02_03",
+      "ACT_E_R02_04",
+      "ACT_B_R02_A",
+      "ACT_B_R02_B",
+      "ACT_E_R03_02",
+      "ACT_E_R03_03",
+      "ACT_E_R03_04",
+      "ACT_B_R03_A",
+      "ACT_B_R03_B",
+      "ACT_E_R04_02",
+      "ACT_E_R04_03",
+      "ACT_E_R04_04",
+      "ACT_B_R04_A"
+    ],
+    "importantClarification": "R368 ten rows = one ordinary encounter video, eight result stills, one challenge replay; not ten videos."
+  },
+  "R145StateObservationsByActor": {
+    "ACT_E_R01_01": {
+      "encounterID": "E_R01_01",
+      "observedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "unobservedAuthoredStates": [],
+      "frameRows": 563,
+      "eventRows": 22,
+      "videoSHA256": "e71ccbf8ba10678e09658a42c9e19777d901433ec577d35c81119c36930ac6db",
+      "videoJoin": "NOT_ESTABLISHED_OCR_REQUIRED"
+    },
+    "ACT_E_R01_02": {
+      "encounterID": "E_R01_02",
+      "observedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "resolve",
+        "walk"
+      ],
+      "unobservedAuthoredStates": [
+        "recover"
+      ],
+      "frameRows": 555,
+      "eventRows": 24,
+      "videoSHA256": "a6044fb1d863a1b630a60b058f3a1fdfe88fd5bcc7bbff774842fe0e36ff3da6",
+      "videoJoin": "NOT_ESTABLISHED_OCR_REQUIRED"
+    },
+    "ACT_E_R01_03": {
+      "encounterID": "E_R01_03",
+      "observedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "resolve",
+        "walk"
+      ],
+      "unobservedAuthoredStates": [
+        "recover"
+      ],
+      "frameRows": 559,
+      "eventRows": 23,
+      "videoSHA256": "75bf4f52c421446a220ab5f66b3a471f52707a5b059796b3424e4755cc788674",
+      "videoJoin": "NOT_ESTABLISHED_OCR_REQUIRED"
+    },
+    "ACT_E_R01_04": {
+      "encounterID": "E_R01_04",
+      "observedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "unobservedAuthoredStates": [],
+      "frameRows": 694,
+      "eventRows": 47,
+      "videoSHA256": "cc063de0a4903e54d977329ec5527d16cfaab076c570f67f2b31334601fd25b6",
+      "videoJoin": "NOT_ESTABLISHED_OCR_REQUIRED"
+    },
+    "ACT_B_R01_A": {
+      "encounterID": "B_R01_A",
+      "observedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "resolve",
+        "walk"
+      ],
+      "unobservedAuthoredStates": [
+        "recover"
+      ],
+      "frameRows": 1362,
+      "eventRows": 67,
+      "videoSHA256": "35949de84ad20f4d8dfb082f00994aca71275bf0a9b13d40ab2a01c60c4cae80",
+      "videoJoin": "NOT_ESTABLISHED_OCR_REQUIRED"
+    },
+    "ACT_B_R01_B": {
+      "encounterID": "B_R01_B",
+      "observedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "resolve",
+        "walk"
+      ],
+      "unobservedAuthoredStates": [
+        "recover"
+      ],
+      "frameRows": 1291,
+      "eventRows": 71,
+      "videoSHA256": "3e613522b8cbe97344870b7928a283a2a0687e12a6663d98f3f1a0533479c6c4",
+      "videoJoin": "NOT_ESTABLISHED_OCR_REQUIRED"
+    }
+  },
+  "ordinaryMotionByState": {
+    "idle": "mapped30; sampled R083; six R145 battle baselines; no full 30 ordinary dwell acceptance",
+    "walk": "mapped30; six R145 arrival requests; continuous loop/exit remains unproven per 30",
+    "anticipate_execute": "six R145 event/state traces and R337 approximate three ordinary E_R05_01 cycles; other eight rows are event/cue logs only",
+    "hit": "six R145 traces plus R337 windows; eight still rows are not visual trajectories",
+    "recover": "R145 actual observed only E_R01_01 and E_R01_04; unobserved in other four due resolve-first; unproven elsewhere",
+    "resolve": "six R145 terminal traces; R337 approximate result fade; eight terminal still snapshots; configured duration not per-unit measured"
+  },
+  "specificVisualAttention": {
+    "ACT_B_R01_B": "R366 sparse pose sample flags low anticipate/hit silhouette contrast; targeted concern only, not a proven ordinary runtime defect.",
+    "ACT_E_R03_01_and_ACT_E_R05_01_to_04": "small details noted as less readable at phone scale, no confirmed readability failure."
+  },
+  "derivedVisuals": [
+    {
+      "path": "docs/production/current/qa_drafts/enemy_motion_acceptance_r372/derived_r001/PAIR_1_R145.jpg",
+      "sha256": "21505d2506856ec4084ca10fbac2b391fe96a9cc629ae55a21ab0903ed7b05f3",
+      "bytes": 296574,
+      "samplePTS": [
+        2,
+        6,
+        10
+      ]
+    },
+    {
+      "path": "docs/production/current/qa_drafts/enemy_motion_acceptance_r372/derived_r001/PAIR_2_R145.jpg",
+      "sha256": "cf315fddee667bb1d528cf93901b8e8e6bd18224fb38b3939bd0fd66395bed0d",
+      "bytes": 294263,
+      "samplePTS": [
+        2,
+        6,
+        10
+      ]
+    },
+    {
+      "path": "docs/production/current/qa_drafts/enemy_motion_acceptance_r372/derived_r001/PAIR_3_R145.jpg",
+      "sha256": "5a27b56bf7429bdd30a7e9b9d7fb78ceddaeef0669e9624aab54c98c018431b6",
+      "bytes": 288203,
+      "samplePTS": [
+        3,
+        12,
+        21
+      ]
+    }
+  ],
+  "acceptanceConditions": {
+    "idle": "visible wait interval; stable anchor/ground or flight envelope; no unexpected frame jump",
+    "walk": "continuous natural arrival/locomotion and return to idle; do not require translation if stage staging is intentionally fixed",
+    "anticipate_execute": "same actor/root event linked to visible anticipation before execute/impact; readable at phone scale",
+    "hit": "nonlethal received-damage event linked to hit frame; survives and remains visible; no overwrite/dropout",
+    "recover": "if actor survives long enough, finite recover returns to idle; otherwise UNOBSERVED rather than failed",
+    "resolve": "lethal event starts correct resolve; actor persists for actual duration then clears at result; inspect interval, not only final metadata"
+  },
+  "nextCapturePlan": {
+    "priority": "First close B_R01_B hit-contrast concern and four R145 recover gaps using preserved R145 media/trace offline when possible; otherwise one naturally reached ordinary encounter per uncovered actor/state without forcing poses.",
+    "bindings": [
+      "runID",
+      "app/resource hash",
+      "PID",
+      "saveKey",
+      "encounterID",
+      "actorID",
+      "eventSequence/rootActionID",
+      "sceneGeneration/frame/time"
+    ],
+    "timing": "Join host video to app monotonic samples with both monotonic and wall-clock start anchors. Sample 1fps overview and 10fps around actual telegraph through hit/recovery and lethal resolve.",
+    "classification": "State is accepted only when the real event occurred and its visible actor frame is joined; never infer from state mapping, callback queue, or terminal snapshot.",
+    "scope": "Batch by real encounters/rosters, reusing existing allies/equipment/furniture evidence only in their own scopes. Formal art adoption stays separate."
+  },
+  "sourcePins": {
+    "native/WitchApp/EnemyMotion.swift": "d2491abb24d0fdefee34c8c375266787ec83de34c43603be9535e9eed12baa48",
+    "native/WitchApp/LivingScene.swift": "3520f93057a3434be001e3b343e8aa895c399a9b1522e379689b6ec4a37cfd86",
+    "native/WitchApp/BattlePlayback.swift": "112dcff156070e83e15d346d2f48e5b13ea89e94d9ecf01e48121fff9ccbbf45",
+    "native/WitchApp/BattleTimingTraceR319.swift": "a8e8cc1b18613ca4c5bfec40544d535b6d4f6a8835f621db0595bf2bc09e1774"
+  },
+  "limits": [
+    "Six R145 videos are QA-isolated combat captures, not standard-play runs.",
+    "R145 trace-to-video time join is explicitly not established; our sparse contact sheets are visual samples only.",
+    "No broad naturalness or 30-unit completion pass is asserted.",
+    "No source/runtime changes or new gameplay captures were made."
+  ]
+}

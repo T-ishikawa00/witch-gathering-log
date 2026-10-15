@@ -1,0 +1,155 @@
+{
+  "schema": "r461-local-authority-contract-v1",
+  "status": "UNAPPROVED_LOCAL_CANDIDATE_NOT_PRODUCTION_AUTHORITY",
+  "request": {
+    "exactKeys": [
+      "schemaVersion",
+      "operationID",
+      "action",
+      "signedTransactionJWS"
+    ],
+    "schemaVersion": {
+      "type": "integer",
+      "value": 1,
+      "booleansRejected": true
+    },
+    "operationID": {
+      "type": "string",
+      "format": "canonical-lowercase-UUID",
+      "retry": "same UUID for the same semantic transaction operation"
+    },
+    "action": {
+      "type": "string",
+      "value": "purchaseAndDraw"
+    },
+    "signedTransactionJWS": {
+      "type": "string",
+      "utf8Bytes": {
+        "min": 1,
+        "max": 65536
+      },
+      "format": "ASCII compact JWS with exactly three dot-separated base64url segments; CR/LF rejected",
+      "logging": "never store or echo raw JWS"
+    },
+    "maximumRequestBytes": 70000,
+    "callerControlledAuthorityFields": "none: account, appAccountToken, environment, bundle, product, quantity, draw count, catalog, seed, pity, and result are not request fields",
+    "duplicateKeys": "reject",
+    "unknownKeys": "reject"
+  },
+  "principal": {
+    "source": "out-of-band injected VerifiedPrincipalProvider; request body cannot assert identity",
+    "fields": [
+      "accountID",
+      "appAccountToken",
+      "stableBindingID"
+    ],
+    "default": "deny before JWS processing or ledger lookup",
+    "fixtureOnly": true
+  },
+  "serverPolicy": {
+    "profile": "fixed explicit Sandbox rehearsal profile; product allowlist, draw count, test seed, pool and candidate rules are server-side immutable configuration",
+    "formalProductAdoption": false,
+    "randomness": "R459 deterministic test RNG only; never production RNG"
+  },
+  "response": {
+    "exactKeys": [
+      "schemaVersion",
+      "status",
+      "operationID",
+      "requestSHA256",
+      "accountBindingSHA256",
+      "authorizationStatus",
+      "historicalDelivery",
+      "currentState",
+      "errorCode"
+    ],
+    "status": [
+      "DELIVERED",
+      "REJECTED"
+    ],
+    "authorizationStatus": "NOT_AUTHORIZED_FOR_PRODUCTION",
+    "historicalDelivery": {
+      "nullable": true,
+      "fields": [
+        "profileID",
+        "profileFingerprint",
+        "transactionIdentity",
+        "operationID",
+        "drawReceipt",
+        "deliveredItems",
+        "deliveryFingerprint"
+      ],
+      "transactionIdentityFields": [
+        "environment",
+        "bundleID",
+        "transactionID",
+        "originalTransactionID",
+        "productID",
+        "quantity"
+      ],
+      "drawReceipt": "immutable R459 draw receipt projection",
+      "drawReceiptAccountBinding": "drawReceipt.accountIDSHA256 remains the R459 SHA-256 of accountID; it is distinct from response.accountBindingSHA256",
+      "deliveredItems": {
+        "description": "immutable candidate payload; stable gear UUIDs derived from operation UUID and ordered draw rows",
+        "itemExactFields": ["gearID", "definitionID", "qualityID", "affixIDs", "latentEffectID", "drawIndex", "drawRowFingerprint"],
+        "drawRowFingerprint": "SHA-256 of canonical JSON for the corresponding immutable R459 draw row"
+      },
+      "deliveryFingerprint": "SHA-256 of canonical JSON {profileID,profileFingerprint,transactionIdentity,operationID,drawReceipt,deliveredItems}; excludes deliveryFingerprint itself"
+    },
+    "currentState": {
+      "nullable": true,
+      "fields": [
+        "revision",
+        "status",
+        "ticketBalance",
+        "ticketDebt",
+        "operationStatus"
+      ],
+      "status": [
+        "active",
+        "refunded",
+        "unknown"
+      ],
+      "operationStatus": [
+        "delivered",
+        "not_delivered",
+        "unknown"
+      ],
+      "freshness": "read in one read-only SQLite transaction on each response; never copied from cached historical receipt",
+      "operationStatusMeaning": "delivered means this operation was historically committed; status refunded still blocks current redelivery"
+    },
+    "accountBindingSHA256": "SHA-256 of UTF-8 stableBindingID from the out-of-band verified principal; opaque correlation only, not authentication",
+    "requestSHA256": "hash of exact request bytes; not authentication",
+    "errorCode": {
+      "nullable": true,
+      "allowed": ["REQUEST_INVALID", "AUTHENTICATION_PROVIDER_ERROR", "AUTHENTICATION_REQUIRED", "TRANSACTION_REFUNDED", "OPERATION_ID_COLLISION", "INSUFFICIENT_TICKETS", "TRANSACTION_REJECTED", "AUTHORITY_REJECTED", "REQUEST_FAILED", "CURRENT_STATE_UNAVAILABLE", "CURRENT_STATE_NOT_DELIVERABLE", "DELIVERY_PROJECTION_FAILED"],
+      "sensitiveData": "never includes token, JWS, raw payload, private key or filesystem path"
+    },
+    "authDenied": "status REJECTED, binding/delivery/currentState null, AUTHENTICATION_REQUIRED",
+    "encoding": "Canonical UTF-8 JSON: sorted keys, compact separators, no NaN, exactly one trailing LF; exact request hash is over received request bytes.",
+    "businessRejectionCorrelation": "after successful principal binding, a business rejection may include matching operationID/accountBindingSHA256 and the fresh currentState; auth/request rejects include null binding/currentState",
+    "transactionIdentityEncoding": "R459 full six-field transaction identity; internal ledger key remains environment/bundleID/transactionID",
+    "crossLanguageFixture": {
+      "exactKeys": ["schemaVersion", "requestBase64", "requestSHA256", "operationID", "expectedStoreKit", "responses", "status", "productionEntitlementAuthorized", "privateKeyExported"],
+      "responses": ["delivered", "replay", "postRefund"],
+      "encoding": "request/response Base64 fields contain exact raw bytes; hashes cover exact bytes; synthetic signing key is never exported"
+    }
+  },
+  "sideEffects": {
+    "transport": "no HTTP listener or network",
+    "ledger": "existing R459 capability-bound rehearsal authority only; no duplicate purchase/draw SQL",
+    "save": "no game-save write in Python service",
+    "productionEntitlementAuthorized": false,
+    "AppleProductionVerification": false,
+    "onlineRevocationChecked": false
+  },
+  "acceptance": [
+    "default provider rejects before JWS verification or ledger lookup",
+    "principal/account/token mismatch rejects before ledger mutation",
+    "strict request schema and canonical UUID validation",
+    "same operation retry returns same historical delivery and a fresh current-state snapshot",
+    "changed transaction under the same operation UUID is rejected by ledger idempotency collision",
+    "refund/debt state is freshly reflected and cannot be replaced by an old successful delivery",
+    "successful and rejected responses never claim production authorization"
+  ]
+}

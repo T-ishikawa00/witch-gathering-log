@@ -1,0 +1,76 @@
+{
+  "correctedTest": {
+    "path": "docs/production/current/qa_drafts/effect_build_comparison_r376/candidate_r003/EffectBuildComparisonR377Tests.swift",
+    "sha256": "1be80fd52d8e324d24e12119af280ec0441a539dffad9313cc269d051971f0b2"
+  },
+  "corrections": [
+    "Compare R368 runtimeProfileID/configurationFingerprint/runtimeManifestSHA256 to GameRuntimeIntegratedEquipmentProfileR355, not R230 base profile.",
+    "Use integrated profile ID/fingerprint in the output report."
+  ],
+  "execution": "No Swift/build/Simulator execution performed.",
+  "inputTest": {
+    "path": "docs/production/current/qa_drafts/effect_build_comparison_r376/candidate_r002/EffectBuildComparisonR377Tests.swift",
+    "sha256": "d4ea2a62af9e8b5c600c07b071c3a01adf6bc4ffd010ae0b88b736f1d2d6d05a"
+  },
+  "preserves": [
+    "candidate_r002 original test and manifest unchanged",
+    "strict base-profile, policy fingerprint, acquisition, source-save and no-write assertions"
+  ],
+  "r368ReportRuntime": {
+    "configurationFingerprint": "2ba901274a3b0f90a536b6cf57bd90a9025fc4d0b19ce1dd07b4841d11a8aeec",
+    "profileID": "app-candidate-r098-v1-growth-500bp-enhancement-r230-v1-r350-r352-r353-test-v1",
+    "runtimeManifestSHA256": "2ba901274a3b0f90a536b6cf57bd90a9025fc4d0b19ce1dd07b4841d11a8aeec"
+  },
+  "r374Readback": {
+    "campaignFirstClearDayRange": [
+      1,
+      10
+    ],
+    "challengeFirstClearDays": {
+      "11": [
+        "CH_R01_01",
+        "CH_R01_02",
+        "CH_R01_03"
+      ],
+      "12": [
+        "CH_R02_01",
+        "CH_R02_02",
+        "CH_R02_03"
+      ],
+      "13": [
+        "CH_R03_01",
+        "CH_R03_02",
+        "CH_R03_03"
+      ],
+      "14": [
+        "CH_R04_01",
+        "CH_R04_02",
+        "CH_R04_03"
+      ],
+      "15": [
+        "CH_R05_01",
+        "CH_R05_02",
+        "CH_R05_03"
+      ]
+    },
+    "interpretation": "descriptive scripted schedule only; no human pacing or causal product comparison claim",
+    "plannedCases": 16,
+    "reportsRead": 16,
+    "runPath": "docs/production/current/qa_drafts/economy_release_matrix_r374/candidate_r002/runner_r002/runs/R374_MATRIX_001/RUN.json",
+    "seedCountPerCase": 1,
+    "uniqueCampaignClearMaps": 1,
+    "uniqueChallengeClearMaps": 1
+  },
+  "readbackNote": {
+    "path": "docs/production/current/qa_drafts/effect_build_comparison_r376/candidate_r003/READBACK_R001.md",
+    "sha256": "92edc94daeca78b99605d26608633ecdd4fcfc5ff4d96bbdda115eaaa275e144"
+  },
+  "runnerEnvironmentContract": {
+    "WITCH_R377_INPUT_MANIFEST": "absolute path to pinned candidate_r002/INPUT_MANIFEST_R001.json",
+    "WITCH_R377_INPUT_MANIFEST_SHA256": "13fae7625ac99615c8a4756966ec1fa0ebd9906e6a8941c4a3e5842bad5af33b",
+    "WITCH_R377_OUTPUT": "new absolute in-worktree path with basename report.json; parent directory prepared; destination absent before run",
+    "WITCH_R377_WORKTREE": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg"
+  },
+  "schema": "r377-integrated-profile-correction-r003",
+  "status": "SOURCE_ONLY_NOT_RUN"
+}

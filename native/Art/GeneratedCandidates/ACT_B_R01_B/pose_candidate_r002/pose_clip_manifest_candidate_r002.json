@@ -1,0 +1,239 @@
+{
+  "actor_id": "ACT_B_R01_B",
+  "revision": "r002",
+  "status": "CANDIDATE_UNAPPROVED",
+  "source_reference_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/regions/region01_forest/imports/20261009_R01_delivery/R01_PACKAGE/bosses/B_R01_B/B_R01_B_ANCIENT_TREE_base_v1.png",
+  "source_reference_sha256": "ba61464c40c8cacc8217e58db56f17bbd8f5b9f3fd38e6e3b3d1749b99e5a8c1",
+  "imagegen_atlas_path": "native/Art/GeneratedCandidates/ACT_B_R01_B/pose_candidate_r002/imagegen_atlas_r002.png",
+  "imagegen_atlas_sha256": "7d0504732959f07b205fa68f4e102517a87c42d6dc2264aa4ed40642f800b6ee",
+  "pose_order": [
+    "idle_a",
+    "idle_b",
+    "walk_a",
+    "walk_b",
+    "anticipate",
+    "execute",
+    "recover",
+    "hit",
+    "resolve"
+  ],
+  "state_frames": {
+    "idle": [
+      "native/Art/GeneratedCandidates/ACT_B_R01_B/pose_candidate_r002/frames/idle_a.png",
+      "native/Art/GeneratedCandidates/ACT_B_R01_B/pose_candidate_r002/frames/idle_b.png"
+    ],
+    "walk": [
+      "native/Art/GeneratedCandidates/ACT_B_R01_B/pose_candidate_r002/frames/walk_a.png",
+      "native/Art/GeneratedCandidates/ACT_B_R01_B/pose_candidate_r002/frames/walk_b.png"
+    ],
+    "anticipate": [
+      "native/Art/GeneratedCandidates/ACT_B_R01_B/pose_candidate_r002/frames/anticipate.png"
+    ],
+    "execute": [
+      "native/Art/GeneratedCandidates/ACT_B_R01_B/pose_candidate_r002/frames/execute.png"
+    ],
+    "recover": [
+      "native/Art/GeneratedCandidates/ACT_B_R01_B/pose_candidate_r002/frames/recover.png"
+    ],
+    "hit": [
+      "native/Art/GeneratedCandidates/ACT_B_R01_B/pose_candidate_r002/frames/hit.png"
+    ],
+    "resolve": [
+      "native/Art/GeneratedCandidates/ACT_B_R01_B/pose_candidate_r002/frames/resolve.png"
+    ]
+  },
+  "frames": [
+    {
+      "pose": "idle_a",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_B_R01_B/pose_candidate_r002/frames/idle_a.png",
+      "sha256": "26e976d028681b6800dad1abb1db10207f7258cc6e934dceded2b7ae0a60dd2e",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        0,
+        0,
+        418,
+        418
+      ]
+    },
+    {
+      "pose": "idle_b",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_B_R01_B/pose_candidate_r002/frames/idle_b.png",
+      "sha256": "dc8431e948f1ef2ee2568a1590fb5bd440a36606c862775478d0de5a45dcccc3",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        418,
+        0,
+        836,
+        418
+      ]
+    },
+    {
+      "pose": "walk_a",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_B_R01_B/pose_candidate_r002/frames/walk_a.png",
+      "sha256": "c627f88bc50977e67f10dd997b727e1c083c5c7940ae294366841f53c613d012",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        836,
+        0,
+        1254,
+        418
+      ]
+    },
+    {
+      "pose": "walk_b",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_B_R01_B/pose_candidate_r002/frames/walk_b.png",
+      "sha256": "985467b9d982c9ecb13632cd6d099c5927009b20e914af223d62e084bb3c63ac",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        0,
+        418,
+        418,
+        836
+      ]
+    },
+    {
+      "pose": "anticipate",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_B_R01_B/pose_candidate_r002/frames/anticipate.png",
+      "sha256": "4ef0f22ab5759c4851f57742c32b71ea3997a81fc22e3ff5c3dfd80eea29220b",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        418,
+        418,
+        836,
+        836
+      ]
+    },
+    {
+      "pose": "execute",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_B_R01_B/pose_candidate_r002/frames/execute.png",
+      "sha256": "01bf35e84dcf1d4ea931482e9aa154c9674a3b5bf00309ed6a0cec91587e6691",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        836,
+        418,
+        1254,
+        836
+      ]
+    },
+    {
+      "pose": "recover",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_B_R01_B/pose_candidate_r002/frames/recover.png",
+      "sha256": "03023903c226ae0d7a38b1351bd076102a37ebea588959521a374b2616fd35a0",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        0,
+        836,
+        418,
+        1254
+      ]
+    },
+    {
+      "pose": "hit",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_B_R01_B/pose_candidate_r002/frames/hit.png",
+      "sha256": "382c903da793f195f5b98b06fe08e7203f3b5e52fcb35985fa4cc72f661b7224",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        418,
+        836,
+        836,
+        1254
+      ]
+    },
+    {
+      "pose": "resolve",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_B_R01_B/pose_candidate_r002/frames/resolve.png",
+      "sha256": "1ad155450ddc7ddf103d50fbe92820913e95c7b1524f367d7c1cc8ab089ef5c1",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        836,
+        836,
+        1254,
+        1254
+      ]
+    }
+  ],
+  "fps": 6,
+  "canvas_px": [
+    512,
+    512
+  ],
+  "anchor_px": [
+    256.0,
+    490
+  ],
+  "review": "Compared against original tree: canopy, trunk, major roots and glowing knots retained, all fixed grid crops remain inside frame. Source has one static tree; pose atlas redraw changes canopy and root detail and root strike/walk remain broad stylized poses. Candidate only, not continuous motion.",
+  "qa_contact_sheet_path": "native/Art/GeneratedCandidates/ACT_B_R01_B/pose_candidate_r002/qa_contact_sheet_r002.png",
+  "qa_contact_sheet_sha256": "268828fc921a12f33f9fc2b3e18e99537dfb6d5dd7bffbe8380d8eed659e48ef",
+  "runtime_integration": "NOT_DONE",
+  "runtime_visual_qa": "PENDING_ROOT_REVIEW",
+  "human_adoption": "PENDING",
+  "limitations": [
+    "Each action state currently has only one authored pose; idle and walk each have two poses.",
+    "This is a corrected composition/identity candidate, not evidence of natural continuous animation.",
+    "All frames derive from a generated atlas and remain unapproved pending visual/runtime review.",
+    "Source reference was not modified."
+  ]
+}

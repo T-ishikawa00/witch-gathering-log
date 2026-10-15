@@ -1,0 +1,28 @@
+{
+  "receipt": {
+    "battle_id": "5b9fc64e0347e77ad5a9285acf9bc30641d0be8d6b4d3419dbca43b904eab746",
+    "boss_id": "B_R01_B",
+    "outcome": "VICTORY",
+    "snapshot_hash": "6c8daa3951abc321f4cc7d8fcb35e6f3338f2d5da39f96a4ace1f0229c64269a",
+    "result_hash": "c51b2dd6bd122d4672e42ab76e16774d68dc65b4c55279e01e9ee13f58c8c4cb",
+    "elapsed_ms": 61750
+  },
+  "before_hash": "6c8daa3951abc321f4cc7d8fcb35e6f3338f2d5da39f96a4ace1f0229c64269a",
+  "after_hash": "22cc49dfdddfa517acc7644d019ce42ebcae28fe6fae4f38e60385bbd2febf7b",
+  "repeat_commit_same_hash": true,
+  "gates_after": [
+    "G_R01_A",
+    "G_R01_B",
+    "G_START"
+  ],
+  "boss_materials": {
+    "M_R01_BA": 1,
+    "M_R01_BB": 1
+  },
+  "implicit_unlocks_not_granted": [
+    "awake1_requires_level12_and_cost",
+    "research2_requires_cost",
+    "attune2_requires_cost"
+  ],
+  "note": "R3 credited time/materials + R2 paid crafting + actual R4 battle receipt. UI/intro/deep-area surveys remain explicit fixtures."
+}

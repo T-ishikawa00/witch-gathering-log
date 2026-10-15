@@ -3,6 +3,17 @@ import Foundation
 /// Explicit isolated test setup, never used by the normal save. Time is simulated only here.
 enum QAScenarios {
     static func initial(catalog:GameCatalog,scenario:String?) async throws -> GameSnapshot {
+        if scenario == "luna-empty-book-slot-r126" {
+            // Isolated rendering fixture: retain the owned, protected starter book.
+            // Only its equipped pointer is absent; no grant or production save edit.
+            var initial = GameSnapshot.newGame(catalog: catalog)
+            initial.lastClaimAt = Date()
+            guard initial.gear.contains(where: { $0.definitionID == "EQ_A_01" && $0.ownerID == "C_APPRENTICE" }) else {
+                throw CoreError.invalidCommand("LUNA bookless fixture requires the owned starter book")
+            }
+            initial.equippedGearIDs.removeValue(forKey: "C_APPRENTICE|weapon")
+            return initial
+        }
         if scenario == "area-routing" {
             // Isolated render-flow fixture only: opens the two tested regions and
             // synthetic boss gate markers; it does not grant combat rewards.

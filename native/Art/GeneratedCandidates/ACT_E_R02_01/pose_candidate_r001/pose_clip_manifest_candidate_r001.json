@@ -1,0 +1,239 @@
+{
+  "actor_id": "ACT_E_R02_01",
+  "revision": "r001",
+  "status": "CANDIDATE_UNAPPROVED",
+  "source_reference_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/actors/ACT_E_R02_01/candidate_r002/ACT_E_R02_01__runtime_candidate__r002.png",
+  "source_reference_sha256": "08da7c81c66b7d69eff4da92bee4d3cbb35fac0afcfecebd1b2aafdb294e7b31",
+  "imagegen_atlas_path": "native/Art/GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/imagegen_atlas_r001.png",
+  "imagegen_atlas_sha256": "1cd5a0a5c7cc0d06e069a708b17431879d2d4f5525cbe64d86ed3cf3aec2b0dd",
+  "pose_order": [
+    "idle_a",
+    "idle_b",
+    "walk_a",
+    "walk_b",
+    "anticipate",
+    "execute",
+    "recover",
+    "hit",
+    "resolve"
+  ],
+  "state_frames": {
+    "idle": [
+      "native/Art/GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/idle_a.png",
+      "native/Art/GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/idle_b.png"
+    ],
+    "walk": [
+      "native/Art/GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/walk_a.png",
+      "native/Art/GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/walk_b.png"
+    ],
+    "anticipate": [
+      "native/Art/GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/anticipate.png"
+    ],
+    "execute": [
+      "native/Art/GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/execute.png"
+    ],
+    "recover": [
+      "native/Art/GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/recover.png"
+    ],
+    "hit": [
+      "native/Art/GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/hit.png"
+    ],
+    "resolve": [
+      "native/Art/GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/resolve.png"
+    ]
+  },
+  "frames": [
+    {
+      "pose": "idle_a",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/idle_a.png",
+      "sha256": "3926ccd4158b837dae7d979eb6d01c0779034f1da2e83cb779a49daa16960e8d",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        14,
+        61,
+        415,
+        406
+      ]
+    },
+    {
+      "pose": "idle_b",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/idle_b.png",
+      "sha256": "30fa622e8aad785416de6342876d8e14f14c357d1ef2a2280fa1a54ce3a6561f",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        418,
+        34,
+        834,
+        410
+      ]
+    },
+    {
+      "pose": "walk_a",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/walk_a.png",
+      "sha256": "274498da4156ecb78334f542f7667b0a58eac6ebe4cc1f6deac840ae245c8861",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        846,
+        61,
+        1245,
+        405
+      ]
+    },
+    {
+      "pose": "walk_b",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/walk_b.png",
+      "sha256": "ced985b998f7fb081f57b555962fa95a41bc7c24040f5fc608cc93b4c487d95e",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        9,
+        453,
+        417,
+        802
+      ]
+    },
+    {
+      "pose": "anticipate",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/anticipate.png",
+      "sha256": "3337ad949528959a6c9988bb538122226f261f36e671ce05fc011ac1680988f8",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        432,
+        507,
+        825,
+        803
+      ]
+    },
+    {
+      "pose": "execute",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/execute.png",
+      "sha256": "f51c72860cd7bb4bd3f67d9aa6fa94b2d51591c0a9cc66ecdca5deaea7932a8a",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        818,
+        453,
+        1246,
+        812
+      ]
+    },
+    {
+      "pose": "recover",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/recover.png",
+      "sha256": "0d43a4630799ac1e8157f1b1047726c2f0d7052837e5f239a26da56bbc041db0",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        9,
+        851,
+        417,
+        1199
+      ]
+    },
+    {
+      "pose": "hit",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/hit.png",
+      "sha256": "bb75b7225fa2af128dd3b0190e6a0190fde3e6dc7f9138a5689023cbb7067f07",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        426,
+        912,
+        837,
+        1205
+      ]
+    },
+    {
+      "pose": "resolve",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/frames/resolve.png",
+      "sha256": "7b10b796a02d68b781756e655fcb56f2f931ad03fcec07f5e8ae9ee9582fb2ea",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        844,
+        877,
+        1242,
+        1211
+      ]
+    }
+  ],
+  "fps": 6,
+  "canvas_px": [
+    512,
+    512
+  ],
+  "anchor_px": [
+    256.0,
+    490
+  ],
+  "review": "Round spore body, mauve markings, surface shelf mushrooms and root feet retained. Squash/inhale/deflate differences are subtle, walking states barely differ; do not call natural motion complete. Red fringe and detail redraw remain.",
+  "qa_contact_sheet_path": "native/Art/GeneratedCandidates/ACT_E_R02_01/pose_candidate_r001/qa_contact_sheet_r001.png",
+  "qa_contact_sheet_sha256": "e8a9f5fd6dc868c3415f89292723025dd841aa92a2db8b36c3b793bd9a6dcb29",
+  "runtime_integration": "NOT_DONE",
+  "runtime_visual_qa": "PENDING_ROOT_REVIEW",
+  "human_adoption": "PENDING",
+  "limitations": [
+    "Each action state currently has only one authored pose; idle and walk each have two poses.",
+    "This is a corrected composition/identity candidate, not evidence of natural continuous animation.",
+    "All frames derive from a generated atlas and remain unapproved pending visual/runtime review.",
+    "Source reference was not modified."
+  ]
+}

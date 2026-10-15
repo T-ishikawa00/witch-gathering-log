@@ -1,0 +1,178 @@
+{
+  "status": "UNAPPROVED_PARTIAL_MOTION_CANDIDATE_OVERLAY",
+  "complete_animation": false,
+  "candidate_manifest": "GeneratedCandidates/ACT_E_R05_02/moon_sentinel_planted_walk_cycle_r001/manifest.json",
+  "entries": {
+    "ACT_E_R05_02": {
+      "kind": "enemy_actor_kit",
+      "selectedPNG": "GeneratedCandidates/ACT_E_R05_02/pose_candidate_r001/frames/idle_a.png",
+      "sequenceFrames": {
+        "idle": [
+          "GeneratedCandidates/ACT_E_R05_02/pose_candidate_r001/frames/idle_a.png",
+          "GeneratedCandidates/ACT_E_R05_02/pose_candidate_r001/frames/idle_b.png"
+        ],
+        "walk": [
+          "GeneratedCandidates/ACT_E_R05_02/moon_sentinel_planted_walk_cycle_r001/frames/walk_000.png",
+          "GeneratedCandidates/ACT_E_R05_02/moon_sentinel_planted_walk_cycle_r001/frames/walk_001.png",
+          "GeneratedCandidates/ACT_E_R05_02/moon_sentinel_planted_walk_cycle_r001/frames/walk_002.png",
+          "GeneratedCandidates/ACT_E_R05_02/moon_sentinel_planted_walk_cycle_r001/frames/walk_003.png",
+          "GeneratedCandidates/ACT_E_R05_02/moon_sentinel_planted_walk_cycle_r001/frames/walk_004.png",
+          "GeneratedCandidates/ACT_E_R05_02/moon_sentinel_planted_walk_cycle_r001/frames/walk_005.png",
+          "GeneratedCandidates/ACT_E_R05_02/moon_sentinel_planted_walk_cycle_r001/frames/walk_006.png",
+          "GeneratedCandidates/ACT_E_R05_02/moon_sentinel_planted_walk_cycle_r001/frames/walk_007.png",
+          "GeneratedCandidates/ACT_E_R05_02/moon_sentinel_planted_walk_cycle_r001/frames/walk_008.png"
+        ],
+        "anticipate": [
+          "GeneratedCandidates/ACT_E_R05_02/pose_candidate_r001/frames/idle_b.png",
+          "GeneratedCandidates/ACT_E_R05_02/pose_candidate_r001/frames/anticipate.png"
+        ],
+        "execute": [
+          "GeneratedCandidates/ACT_E_R05_02/pose_candidate_r001/frames/anticipate.png",
+          "GeneratedCandidates/ACT_E_R05_02/pose_candidate_r001/frames/execute.png"
+        ],
+        "recover": [
+          "GeneratedCandidates/ACT_E_R05_02/pose_candidate_r001/frames/execute.png",
+          "GeneratedCandidates/ACT_E_R05_02/pose_candidate_r001/frames/recover.png",
+          "GeneratedCandidates/ACT_E_R05_02/pose_candidate_r001/frames/idle_a.png"
+        ],
+        "hit": [
+          "GeneratedCandidates/ACT_E_R05_02/pose_candidate_r001/frames/hit.png",
+          "GeneratedCandidates/ACT_E_R05_02/pose_candidate_r001/frames/recover.png"
+        ],
+        "resolve": [
+          "GeneratedCandidates/ACT_E_R05_02/pose_candidate_r001/frames/hit.png",
+          "GeneratedCandidates/ACT_E_R05_02/pose_candidate_r001/frames/resolve.png"
+        ]
+      },
+      "states_present": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "status": "UNAPPROVED_PARTIAL_MOTION_CANDIDATE",
+      "fps": null,
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor": [
+        256,
+        490
+      ],
+      "anchor_status": "VISUAL_ESTIMATE_UNAPPROVED",
+      "anchor_type": "foot_registration_candidate",
+      "partsAtlasExcluded": true,
+      "clips": {
+        "idle": {
+          "frames": [
+            "GeneratedCandidates/ACT_E_R05_02/pose_candidate_r001/frames/idle_a.png",
+            "GeneratedCandidates/ACT_E_R05_02/pose_candidate_r001/frames/idle_b.png"
+          ],
+          "frame_count": 2,
+          "fps": 3,
+          "duration_seconds": 0.6666666666666666,
+          "loop": true,
+          "status": "DISCRETE_POSE_CANDIDATE_INBETWEENS_PENDING"
+        },
+        "walk": {
+          "frames": [
+            "GeneratedCandidates/ACT_E_R05_02/moon_sentinel_planted_walk_cycle_r001/frames/walk_000.png",
+            "GeneratedCandidates/ACT_E_R05_02/moon_sentinel_planted_walk_cycle_r001/frames/walk_001.png",
+            "GeneratedCandidates/ACT_E_R05_02/moon_sentinel_planted_walk_cycle_r001/frames/walk_002.png",
+            "GeneratedCandidates/ACT_E_R05_02/moon_sentinel_planted_walk_cycle_r001/frames/walk_003.png",
+            "GeneratedCandidates/ACT_E_R05_02/moon_sentinel_planted_walk_cycle_r001/frames/walk_004.png",
+            "GeneratedCandidates/ACT_E_R05_02/moon_sentinel_planted_walk_cycle_r001/frames/walk_005.png",
+            "GeneratedCandidates/ACT_E_R05_02/moon_sentinel_planted_walk_cycle_r001/frames/walk_006.png",
+            "GeneratedCandidates/ACT_E_R05_02/moon_sentinel_planted_walk_cycle_r001/frames/walk_007.png",
+            "GeneratedCandidates/ACT_E_R05_02/moon_sentinel_planted_walk_cycle_r001/frames/walk_008.png"
+          ],
+          "frame_count": 9,
+          "fps": 8,
+          "duration_seconds": 1.125,
+          "loop": true,
+          "complete_animation": false,
+          "status": "UNAPPROVED_NINE_FRAME_MOTION_CANDIDATE_NOT_NATURAL_MOTION_COMPLETE",
+          "canvas_px": [
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            490
+          ],
+          "anchor_status": "VISUAL_ESTIMATE_UNAPPROVED",
+          "movement_semantics": "ivory_guardian_grounded_alternating_step_and_counterbalance",
+          "display_scale": 1.0,
+          "quality_limit": "Full-body gait candidate with alternating knees/feet; exact contact timing and native screen scale remain pending."
+        },
+        "anticipate": {
+          "frames": [
+            "GeneratedCandidates/ACT_E_R05_02/pose_candidate_r001/frames/idle_b.png",
+            "GeneratedCandidates/ACT_E_R05_02/pose_candidate_r001/frames/anticipate.png"
+          ],
+          "frame_count": 2,
+          "fps": 6,
+          "duration_seconds": 0.3333333333333333,
+          "loop": false,
+          "status": "DISCRETE_POSE_CANDIDATE_INBETWEENS_PENDING"
+        },
+        "execute": {
+          "frames": [
+            "GeneratedCandidates/ACT_E_R05_02/pose_candidate_r001/frames/anticipate.png",
+            "GeneratedCandidates/ACT_E_R05_02/pose_candidate_r001/frames/execute.png"
+          ],
+          "frame_count": 2,
+          "fps": 8,
+          "duration_seconds": 0.25,
+          "loop": false,
+          "status": "DISCRETE_POSE_CANDIDATE_INBETWEENS_PENDING"
+        },
+        "recover": {
+          "frames": [
+            "GeneratedCandidates/ACT_E_R05_02/pose_candidate_r001/frames/execute.png",
+            "GeneratedCandidates/ACT_E_R05_02/pose_candidate_r001/frames/recover.png",
+            "GeneratedCandidates/ACT_E_R05_02/pose_candidate_r001/frames/idle_a.png"
+          ],
+          "frame_count": 3,
+          "fps": 8,
+          "duration_seconds": 0.375,
+          "loop": false,
+          "status": "DISCRETE_POSE_CANDIDATE_INBETWEENS_PENDING"
+        },
+        "hit": {
+          "frames": [
+            "GeneratedCandidates/ACT_E_R05_02/pose_candidate_r001/frames/hit.png",
+            "GeneratedCandidates/ACT_E_R05_02/pose_candidate_r001/frames/recover.png"
+          ],
+          "frame_count": 2,
+          "fps": 8,
+          "duration_seconds": 0.25,
+          "loop": false,
+          "status": "DISCRETE_POSE_CANDIDATE_INBETWEENS_PENDING"
+        },
+        "resolve": {
+          "frames": [
+            "GeneratedCandidates/ACT_E_R05_02/pose_candidate_r001/frames/hit.png",
+            "GeneratedCandidates/ACT_E_R05_02/pose_candidate_r001/frames/resolve.png"
+          ],
+          "frame_count": 2,
+          "fps": 3,
+          "duration_seconds": 0.6666666666666666,
+          "loop": false,
+          "status": "DISCRETE_POSE_CANDIDATE_INBETWEENS_PENDING"
+        }
+      },
+      "motion_family": "armored_humanoid",
+      "walk_semantics": "biped_step",
+      "art_acceptance": "PENDING_ROOT_AND_HUMAN_REVIEW",
+      "runtime_integration": "OVERLAY_CANDIDATE_ONLY",
+      "continuous_animation_complete": false,
+      "pose_manifest": "native/Art/GeneratedCandidates/ACT_E_R05_02/pose_candidate_r001/pose_clip_manifest_candidate_r001.json",
+      "complete_animation": false
+    }
+  }
+}

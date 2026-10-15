@@ -1,0 +1,44 @@
+{
+  "status": "UNAPPROVED_ADDITIVE_RESOLVE_MOTION_CANDIDATE_OVERLAY",
+  "mergePriority": 100,
+  "complete_animation": false,
+  "entries": {
+    "ACT_B_R03_A": {
+      "status": "SOURCE_CLIPS_AND_WALK_PRESERVED_RESOLVE_CANDIDATE_PARTIAL",
+      "sequenceFrames": {
+        "resolve": [
+          "GeneratedCandidates/ACT_B_R03_A/resolve_cycle_candidate_r002/frames/resolve_000_settle.png",
+          "GeneratedCandidates/ACT_B_R03_A/resolve_cycle_candidate_r002/frames/resolve_001_low_transition.png",
+          "GeneratedCandidates/ACT_B_R03_A/resolve_cycle_candidate_r002/frames/resolve_002_hold.png"
+        ]
+      },
+      "clips": {
+        "resolve": {
+          "mode": "sprite_sequence",
+          "frames": [
+            "GeneratedCandidates/ACT_B_R03_A/resolve_cycle_candidate_r002/frames/resolve_000_settle.png",
+            "GeneratedCandidates/ACT_B_R03_A/resolve_cycle_candidate_r002/frames/resolve_001_low_transition.png",
+            "GeneratedCandidates/ACT_B_R03_A/resolve_cycle_candidate_r002/frames/resolve_002_hold.png"
+          ],
+          "frame_count": 3,
+          "fps": 6,
+          "duration_seconds": 0.5,
+          "loop": false,
+          "canvas_px": [
+            1400,
+            1024
+          ],
+          "anchor": [
+            700,
+            880
+          ],
+          "anchor_type": "foot_anchor_px",
+          "display_scale": 1.0,
+          "status": "UNAPPROVED_THREE_FRAME_SETTLE_TO_LOW_HOLD_CANDIDATE",
+          "motion_semantics": "non_gory_heavy_mechanical_settle_then_low_inactive_crouch_hold",
+          "continuous_animation_complete": false
+        }
+      }
+    }
+  }
+}

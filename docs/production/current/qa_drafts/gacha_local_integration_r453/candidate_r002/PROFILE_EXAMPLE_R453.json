@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "status": "UNAPPROVED_TEST_OVERLAY",
+  "profileID": "r098-local-candidate-r453",
+  "bundleID": "local.witch.r453.fixture",
+  "productSpecs": {
+    "local.witch.candidate.ticket-pack": {
+      "ticketsPerUnit": 4,
+      "maxQuantity": 2
+    }
+  },
+  "summonPool": [
+    "EQ_A_01",
+    "EQ_W_01"
+  ],
+  "templates": {
+    "EQ_A_01": {
+      "definitionID": "EQ_A_01",
+      "slotID": "body",
+      "compatibleActorIDs": ["AIRA", "ELNA"]
+    },
+    "EQ_W_01": {
+      "definitionID": "EQ_W_01",
+      "slotID": "weapon",
+      "compatibleActorIDs": ["AIRA", "ELNA"]
+    }
+  },
+  "qualityPayloads": {
+    "Q0": {"affixIDs": [], "latentEffectID": null},
+    "Q1": {"affixIDs": ["AFFIX_POWER_TEST"], "latentEffectID": null},
+    "Q2": {"affixIDs": ["AFFIX_POWER_TEST", "AFFIX_GUARD_TEST"], "latentEffectID": null},
+    "Q3": {"affixIDs": ["AFFIX_POWER_TEST", "AFFIX_GUARD_TEST", "AFFIX_FOCUS_TEST"], "latentEffectID": null},
+    "Q4": {"affixIDs": ["AFFIX_POWER_TEST", "AFFIX_GUARD_TEST", "AFFIX_FOCUS_TEST"], "latentEffectID": "LATENT_FOCUS_TEST"}
+  }
+}

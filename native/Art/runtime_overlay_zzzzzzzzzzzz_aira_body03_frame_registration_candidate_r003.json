@@ -1,0 +1,1121 @@
+{
+  "status": "CANDIDATE_PREVIEW_ONLY",
+  "scope": "Supersedes previous AIRA/EQ_BODY_03 frame registration candidate only; source sprites untouched.",
+  "humanApproval": false,
+  "entries": {
+    "DETAIL_EQ_BODY_03": {
+      "frameRegistrationCandidate": {
+        "status": "UNAPPROVED_FRAME_KEYED_ATTACHMENT_CANDIDATE_R003",
+        "scope": "AIRA/EQ_BODY_03 only; source-grid update of attack_01 through attack_08 anchors and their face mask footprints; 11 r001 and 8 r002 source-grid edits remain, all 27 rows preserved.",
+        "key": [
+          "actorID",
+          "bodyAssetID",
+          "frameIndex"
+        ],
+        "coordinate_origin": "top_left_canvas_pixels",
+        "mask_method": "draw an exact current body-frame texture copy above the detail, clipped to foreground_occlusion_px ellipses; this is geometry metadata only and remains subject to visual fit review",
+        "rows": [
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_00.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              154,
+              138
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  153,
+                  100
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_01.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              145,
+              137
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  146,
+                  101
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_02.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              149,
+              138
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  147,
+                  99
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_03.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              151,
+              151
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  170,
+                  121
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  151,
+                  151
+                ],
+                "radius_px": [
+                  25,
+                  12
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_04.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              149,
+              151
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  153,
+                  124
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  151,
+                  151
+                ],
+                "radius_px": [
+                  25,
+                  12
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_05.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              151,
+              151
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  152,
+                  125
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  151,
+                  151
+                ],
+                "radius_px": [
+                  25,
+                  12
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_06.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              171,
+              151
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  181,
+                  97
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  204,
+                  105
+                ],
+                "radius_px": [
+                  18,
+                  29
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_REMEASURED_SOURCE_GRID_CANDIDATE"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_07.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              169,
+              151
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  178,
+                  95
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  204,
+                  105
+                ],
+                "radius_px": [
+                  18,
+                  29
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_REMEASURED_SOURCE_GRID_CANDIDATE"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_08.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              171,
+              151
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  181,
+                  95
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  204,
+                  105
+                ],
+                "radius_px": [
+                  18,
+                  29
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_REMEASURED_SOURCE_GRID_CANDIDATE"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_00.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              146,
+              138
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  150,
+                  116
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  121,
+                  151
+                ],
+                "radius_px": [
+                  18,
+                  13
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_01.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              184,
+              151
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  185,
+                  119
+                ],
+                "radius_px": [
+                  22,
+                  25
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  190,
+                  98
+                ],
+                "radius_px": [
+                  20,
+                  14
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_REMEASURED_SOURCE_GRID_CANDIDATE_R003"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_02.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              197,
+              149
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  208,
+                  124
+                ],
+                "radius_px": [
+                  22,
+                  21
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  181,
+                  93
+                ],
+                "radius_px": [
+                  20,
+                  16
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_REMEASURED_SOURCE_GRID_CANDIDATE_R003"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_03.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              197,
+              151
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  213,
+                  132
+                ],
+                "radius_px": [
+                  22,
+                  20
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  140,
+                  102
+                ],
+                "radius_px": [
+                  22,
+                  12
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_REMEASURED_SOURCE_GRID_CANDIDATE_R003"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_04.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              180,
+              145
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  205,
+                  132
+                ],
+                "radius_px": [
+                  22,
+                  20
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  186,
+                  163
+                ],
+                "radius_px": [
+                  20,
+                  9
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_REMEASURED_SOURCE_GRID_CANDIDATE_R003"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_05.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              184,
+              145
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  205,
+                  132
+                ],
+                "radius_px": [
+                  22,
+                  20
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  186,
+                  163
+                ],
+                "radius_px": [
+                  20,
+                  9
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_REMEASURED_SOURCE_GRID_CANDIDATE_R003"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_06.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              158,
+              151
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  150,
+                  132
+                ],
+                "radius_px": [
+                  21,
+                  22
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  140,
+                  151
+                ],
+                "radius_px": [
+                  24,
+                  12
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_REMEASURED_SOURCE_GRID_CANDIDATE_R003"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_07.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              176,
+              148
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  181,
+                  122
+                ],
+                "radius_px": [
+                  22,
+                  23
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  141,
+                  140
+                ],
+                "radius_px": [
+                  20,
+                  11
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_REMEASURED_SOURCE_GRID_CANDIDATE_R003"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_08.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              176,
+              148
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  181,
+                  122
+                ],
+                "radius_px": [
+                  22,
+                  23
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  141,
+                  140
+                ],
+                "radius_px": [
+                  20,
+                  11
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_REMEASURED_SOURCE_GRID_CANDIDATE_R003"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_0.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "anchor_px_top_left": [
+              123,
+              140
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  129,
+                  102
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  111,
+                  153
+                ],
+                "radius_px": [
+                  17,
+                  13
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_1.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "anchor_px_top_left": [
+              124,
+              140
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  129,
+                  102
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  111,
+                  153
+                ],
+                "radius_px": [
+                  17,
+                  13
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_2.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "anchor_px_top_left": [
+              124,
+              140
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  129,
+                  102
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  111,
+                  153
+                ],
+                "radius_px": [
+                  17,
+                  13
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_3.png",
+            "frameIndex": 3,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "anchor_px_top_left": [
+              124,
+              139
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  128,
+                  102
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  111,
+                  153
+                ],
+                "radius_px": [
+                  17,
+                  13
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_4.png",
+            "frameIndex": 4,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "anchor_px_top_left": [
+              124,
+              139
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  128,
+                  102
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  111,
+                  153
+                ],
+                "radius_px": [
+                  17,
+                  13
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_5.png",
+            "frameIndex": 5,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "anchor_px_top_left": [
+              124,
+              138
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  128,
+                  100
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  111,
+                  153
+                ],
+                "radius_px": [
+                  17,
+                  13
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_6.png",
+            "frameIndex": 6,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "anchor_px_top_left": [
+              123,
+              139
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  127,
+                  101
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  111,
+                  153
+                ],
+                "radius_px": [
+                  17,
+                  13
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_7.png",
+            "frameIndex": 7,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "anchor_px_top_left": [
+              123,
+              139
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  128,
+                  99
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  111,
+                  153
+                ],
+                "radius_px": [
+                  17,
+                  13
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_8.png",
+            "frameIndex": 8,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "anchor_px_top_left": [
+              124,
+              138
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  129,
+                  101
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  111,
+                  153
+                ],
+                "radius_px": [
+                  17,
+                  13
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          }
+        ],
+        "measurement_note": "attack_01 neck anchor [184,151] cross-checked against independent root review; remaining updated points are source-grid provisional measurements. The r002 attack placements exposed rightward/arm drift in composite preview and were superseded. Runtime replay, full frame naturalness, and Human review remain pending."
+      }
+    }
+  }
+}

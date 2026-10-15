@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "checks": {
+    "firstSave": true,
+    "newProcessColdRead": true,
+    "exactlyOneProcessCASWinner": true,
+    "winningRevisionDurable": true,
+    "refundSaved": true,
+    "staleSuccessRejectedAfterProcessRestart": true,
+    "withinTimeAndSpace": true
+  },
+  "binarySHA256": "6a6e9ba159341ec3a30ce8ad61f5fb762b33495b6a0dd8b0f2353b5bb095efd3",
+  "sourceSHA256": "5c3d677ea64deae90bd0f15bc89608d1512731f0702125f814f736b384eb71c2",
+  "rows": [
+    {
+      "arguments": [
+        "write"
+      ],
+      "pid": 60524,
+      "exitCode": 0,
+      "stdout": "{\"mode\":\"write\",\"pid\":60524,\"saved\":true}\n",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "read"
+      ],
+      "pid": 60525,
+      "exitCode": 0,
+      "stdout": "{\"mode\":\"read\",\"pendingEqual\":true,\"pid\":60525,\"revision\":5}\n",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "race",
+        "6",
+        "1792018045.2193248"
+      ],
+      "pid": 60526,
+      "exitCode": 0,
+      "stdout": "{\"mode\":\"race\",\"pid\":60526,\"proposedRevision\":6,\"saved\":true}\n",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "race",
+        "7",
+        "1792018045.2193248"
+      ],
+      "pid": 60527,
+      "exitCode": 0,
+      "stdout": "{\"mode\":\"race\",\"pid\":60527,\"proposedRevision\":7,\"saved\":false}\n",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "read"
+      ],
+      "pid": 60528,
+      "exitCode": 0,
+      "stdout": "{\"mode\":\"read\",\"pendingEqual\":true,\"pid\":60528,\"revision\":6}\n",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "refund"
+      ],
+      "pid": 60529,
+      "exitCode": 0,
+      "stdout": "{\"mode\":\"refund\",\"pid\":60529,\"saved\":true}\n",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "stale"
+      ],
+      "pid": 60530,
+      "exitCode": 0,
+      "stdout": "{\"acceptedStale\":false,\"debt\":2,\"mode\":\"stale\",\"pid\":60530,\"revision\":10}\n",
+      "stderr": ""
+    }
+  ],
+  "elapsedSeconds": 2.413274459,
+  "scope": "Synthetic isolated local persistence across independent executable processes and competing writers; no game save, actualpayment or powerloss test",
+  "output": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/ActiveIntegrationR463/process_rehearsal_r001",
+  "freeBytesAfter": 133186121728
+}

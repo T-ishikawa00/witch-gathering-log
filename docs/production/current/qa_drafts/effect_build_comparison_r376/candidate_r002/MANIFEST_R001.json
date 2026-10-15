@@ -1,0 +1,56 @@
+{
+  "boundInputs": {
+    "pairLedgerSHA256": "bee23409dbd3e6bc81a6b1d93f196b6fc4bb602068874000908b6e7161d7c4d7",
+    "r368AppIdentitySHA256": "cbad08d96127f4f1bd93ac6b6bc1b3a8b9ac5a3ab4919ae316c5a7d4dc0ff8a1",
+    "r368EarnedSaveSHA256": "067c4e86733fe07eb5457381a30d140b285fbd2685ab18e5667f47577c74e655",
+    "r368FreeRunReportSHA256": "23266207d0a393a7782c6ad827e2cf771cae6879040f014223fe096efbb4d215",
+    "r368InputManifestSHA256": "47ba83bfa951eaac593cf1059492233caec1064c959cdea6afb928a67fcf8417",
+    "r368ReportSHA256": "23266207d0a393a7782c6ad827e2cf771cae6879040f014223fe096efbb4d215",
+    "r368SaveSHA256": "067c4e86733fe07eb5457381a30d140b285fbd2685ab18e5667f47577c74e655"
+  },
+  "contract": {
+    "challengeIDs": [
+      "CH_R02_02",
+      "CH_R04_02",
+      "CH_R02_01",
+      "CH_R05_03"
+    ],
+    "execution": "not run; root review required",
+    "families": [
+      "barrier_ward",
+      "smith_counter_latent",
+      "apprentice_heal_latent",
+      "familiar_chase_latent"
+    ],
+    "previewCount": 24,
+    "seeds": [
+      37701,
+      37702,
+      37703
+    ]
+  },
+  "files": [
+    {
+      "path": "docs/production/current/qa_drafts/effect_build_comparison_r376/candidate_r002/INPUT_MANIFEST_R001.json",
+      "sha256": "13fae7625ac99615c8a4756966ec1fa0ebd9906e6a8941c4a3e5842bad5af33b",
+      "sizeBytes": 5013
+    },
+    {
+      "path": "docs/production/current/qa_drafts/effect_build_comparison_r376/candidate_r002/OWNED_PAIR_LEDGER_R001.json",
+      "sha256": "bee23409dbd3e6bc81a6b1d93f196b6fc4bb602068874000908b6e7161d7c4d7",
+      "sizeBytes": 9603
+    },
+    {
+      "path": "docs/production/current/qa_drafts/effect_build_comparison_r376/candidate_r002/EffectBuildComparisonR377Tests.swift",
+      "sha256": "d4ea2a62af9e8b5c600c07b071c3a01adf6bc4ffd010ae0b88b736f1d2d6d05a",
+      "sizeBytes": 13164
+    },
+    {
+      "path": "docs/production/current/qa_drafts/effect_build_comparison_r376/candidate_r002/README_R001.md",
+      "sha256": "a4238e3649cc0a2e84b0d3287af24e48f5ef9bc0eb19f78cad26bc5f1c83c9d9",
+      "sizeBytes": 1196
+    }
+  ],
+  "schema": "effect-build-comparison-r377-candidate-manifest-r001",
+  "status": "SOURCE_ONLY_NOT_COMPILED_OR_RUN"
+}

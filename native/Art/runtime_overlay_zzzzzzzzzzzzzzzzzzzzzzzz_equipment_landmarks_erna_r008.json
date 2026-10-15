@@ -1,0 +1,4435 @@
+{
+  "status": "UNAPPROVED_ERNA_SEMANTIC_LANDMARK_CANDIDATE_R008",
+  "scope": "ERNA/C_WITCH only: R007 semantic rows rechecked for ankle/boot-cuff attachment and two standard hit freehands. No AIRA/LUNA/NOIR; no source art or renderer edits. Candidate only.",
+  "humanApproval": false,
+  "sourceEvidence": [
+    "native/Art/GeneratedCandidates/EquipmentDetails/erna_standard_travel_landmarks_r003.json",
+    "native/Art/GeneratedCandidates/EquipmentDetails/body01_hem_body02_lining_landmarks_r001.json",
+    "native/GeneratedArt/layered_motion_r001/MANIFEST.json",
+    "docs/production/current/art/erna_landmark_audit_r003/ERNA_LANDMARK_AUDIT_R003.md",
+    "docs/production/current/art/erna_landmark_audit_r003/ankle_review_r008/"
+  ],
+  "entries": {
+    "ERNA": {
+      "semanticFrameLandmarksCandidate": {
+        "schema": "equipment_semantic_frame_landmarks_erna_r008",
+        "status": "UNAPPROVED_INDIVIDUAL_GRID_MEASURED_CANDIDATE",
+        "humanApproval": false,
+        "key": [
+          "actorID",
+          "bodyAssetID",
+          "frameIndex",
+          "canvas_px"
+        ],
+        "coordinate_origin": "top_left_canvas_pixels",
+        "measurementMethod": "54 source frames SHA-verified and reviewed individually with 16px grid. freeHand is glove/wrist center; freePalm is a separate knuckle/finger center and is populated only where visually distinguishable. Visibility values distinguish visible, occluded, and unknown; no alpha-only semantic inference. Candidate points are approximate and not fit-verified. R008 rechecks footwear attachment points at the visible screen-right boot cuff/leg-to-boot join in all 54 source frames; standard hit0/1 free hands are resolved using authored staff-grip pivots.",
+        "sourceEvidence": [
+          "native/Art/GeneratedCandidates/EquipmentDetails/erna_standard_travel_landmarks_r003.json",
+          "docs/production/current/art/erna_landmark_audit_r003/individual/",
+          "docs/production/current/art/erna_landmark_audit_r003/corrected_points/"
+        ],
+        "rows": [
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_0.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 0,
+            "sourceSHA256": "ee5c86b4b5d7686f29c04a2ed4ed2795ed9143258337dad84cef716474f56b1d",
+            "landmarks_px_top_left": {
+              "neck": [
+                122,
+                133
+              ],
+              "chest": [
+                128,
+                150
+              ],
+              "waist": [
+                128,
+                186
+              ],
+              "freeHand": [
+                99,
+                171
+              ],
+              "freePalm": [
+                96,
+                176
+              ],
+              "visibleRightAnkle": [
+                147,
+                218
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "visible",
+              "freePalm": "visible"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                189,
+                207
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 186
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "R003 individual 16px-grid source review; visible non-staff glove/wrist center.",
+              "freePalm": "Distinct exposed finger/knuckle center visually read from this individual source frame with 16px grid; separate from freeHand wrist/glove center. Approximate candidate; not fit-verified."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_1.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 1,
+            "sourceSHA256": "37a9bba2a7c40968c396b7b40c378d9b2a9460f97f363b4b167df05eda6fa306",
+            "landmarks_px_top_left": {
+              "neck": [
+                122,
+                133
+              ],
+              "chest": [
+                128,
+                151
+              ],
+              "waist": [
+                128,
+                186
+              ],
+              "freeHand": [
+                99,
+                170
+              ],
+              "freePalm": [
+                96,
+                175
+              ],
+              "visibleRightAnkle": [
+                149,
+                218
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "visible",
+              "freePalm": "visible"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                191,
+                208
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 253
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "R003 individual 16px-grid source review; visible non-staff glove/wrist center.",
+              "freePalm": "Distinct exposed finger/knuckle center visually read from this individual source frame with 16px grid; separate from freeHand wrist/glove center. Approximate candidate; not fit-verified."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_2.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 2,
+            "sourceSHA256": "8a712cc80291e54b2fad35d04dab926b556fe3d8c2f58a84e42f8ce5d2ea4713",
+            "landmarks_px_top_left": {
+              "neck": [
+                123,
+                132
+              ],
+              "chest": [
+                129,
+                151
+              ],
+              "waist": [
+                128,
+                186
+              ],
+              "freeHand": [
+                100,
+                169
+              ],
+              "freePalm": [
+                96,
+                174
+              ],
+              "visibleRightAnkle": [
+                150,
+                218
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "visible",
+              "freePalm": "visible"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                191,
+                206
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 251
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "R003 individual 16px-grid source review; visible non-staff glove/wrist center.",
+              "freePalm": "Distinct exposed finger/knuckle center visually read from this individual source frame with 16px grid; separate from freeHand wrist/glove center. Approximate candidate; not fit-verified."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_3.png",
+            "frameIndex": 3,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 3,
+            "sourceSHA256": "d16ba038973e08c5706103a2895f0ea979873206a6c66f9328f9f5d9f9fe1010",
+            "landmarks_px_top_left": {
+              "neck": [
+                122,
+                133
+              ],
+              "chest": [
+                129,
+                153
+              ],
+              "waist": [
+                128,
+                186
+              ],
+              "freeHand": [
+                100,
+                174
+              ],
+              "freePalm": [
+                96,
+                179
+              ],
+              "visibleRightAnkle": [
+                151,
+                217
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "visible",
+              "freePalm": "visible"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                190,
+                206
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 253
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "R003 individual 16px-grid source review; visible non-staff glove/wrist center.",
+              "freePalm": "Distinct exposed finger/knuckle center visually read from this individual source frame with 16px grid; separate from freeHand wrist/glove center. Approximate candidate; not fit-verified."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_4.png",
+            "frameIndex": 4,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 4,
+            "sourceSHA256": "c3946c5c85042b0e71445a6784f0e821a13a5d16447a77143d5639dca242b03e",
+            "landmarks_px_top_left": {
+              "neck": [
+                122,
+                132
+              ],
+              "chest": [
+                128,
+                150
+              ],
+              "waist": [
+                128,
+                186
+              ],
+              "freeHand": [
+                101,
+                172
+              ],
+              "freePalm": [
+                96,
+                177
+              ],
+              "visibleRightAnkle": [
+                150,
+                217
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "visible",
+              "freePalm": "visible"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                190,
+                206
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 131
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "R003 individual 16px-grid source review; visible non-staff glove/wrist center.",
+              "freePalm": "Distinct exposed finger/knuckle center visually read from this individual source frame with 16px grid; separate from freeHand wrist/glove center. Approximate candidate; not fit-verified."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_5.png",
+            "frameIndex": 5,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 5,
+            "sourceSHA256": "dfc1eb29ed4418a8ccb8525f604c9bca11d9a7269f347db676bc0daefa17d19b",
+            "landmarks_px_top_left": {
+              "neck": [
+                122,
+                132
+              ],
+              "chest": [
+                129,
+                151
+              ],
+              "waist": [
+                128,
+                186
+              ],
+              "freeHand": [
+                100,
+                175
+              ],
+              "freePalm": [
+                95,
+                180
+              ],
+              "visibleRightAnkle": [
+                149,
+                218
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "visible",
+              "freePalm": "visible"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                191,
+                206
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 250
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "R003 individual 16px-grid source review; visible non-staff glove/wrist center.",
+              "freePalm": "Distinct exposed finger/knuckle center visually read from this individual source frame with 16px grid; separate from freeHand wrist/glove center. Approximate candidate; not fit-verified."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_6.png",
+            "frameIndex": 6,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 6,
+            "sourceSHA256": "e7c58d91b31ac683f64c1e9826dff86a0f532271e880cabb3ddfcc9614946d71",
+            "landmarks_px_top_left": {
+              "neck": [
+                122,
+                133
+              ],
+              "chest": [
+                129,
+                151
+              ],
+              "waist": [
+                128,
+                186
+              ],
+              "freeHand": [
+                99,
+                176
+              ],
+              "freePalm": [
+                94,
+                181
+              ],
+              "visibleRightAnkle": [
+                144,
+                215
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "visible",
+              "freePalm": "visible"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                190,
+                207
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 165
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "R003 individual 16px-grid source review; visible non-staff glove/wrist center.",
+              "freePalm": "Distinct exposed finger/knuckle center visually read from this individual source frame with 16px grid; separate from freeHand wrist/glove center. Approximate candidate; not fit-verified."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_7.png",
+            "frameIndex": 7,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 7,
+            "sourceSHA256": "b777e7db61a315f957b444a9374e59242324e9fe7dbfa81844964eb36127b98e",
+            "landmarks_px_top_left": {
+              "neck": [
+                123,
+                132
+              ],
+              "chest": [
+                128,
+                150
+              ],
+              "waist": [
+                128,
+                186
+              ],
+              "freeHand": [
+                99,
+                173
+              ],
+              "freePalm": [
+                94,
+                178
+              ],
+              "visibleRightAnkle": [
+                146,
+                215
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "visible",
+              "freePalm": "visible"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                191,
+                207
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 246
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "R003 individual 16px-grid source review; visible non-staff glove/wrist center.",
+              "freePalm": "Distinct exposed finger/knuckle center visually read from this individual source frame with 16px grid; separate from freeHand wrist/glove center. Approximate candidate; not fit-verified."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_8.png",
+            "frameIndex": 8,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 8,
+            "sourceSHA256": "b048230b0745ef7bdcfd7426ee26af3c5debed9a17acfe71eba60c06725fbc34",
+            "landmarks_px_top_left": {
+              "neck": [
+                123,
+                132
+              ],
+              "chest": [
+                128,
+                151
+              ],
+              "waist": [
+                128,
+                186
+              ],
+              "freeHand": [
+                99,
+                172
+              ],
+              "freePalm": [
+                94,
+                177
+              ],
+              "visibleRightAnkle": [
+                151,
+                216
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "visible",
+              "freePalm": "visible"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                191,
+                206
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 253
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "R003 individual 16px-grid source review; visible non-staff glove/wrist center.",
+              "freePalm": "Distinct exposed finger/knuckle center visually read from this individual source frame with 16px grid; separate from freeHand wrist/glove center. Approximate candidate; not fit-verified."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_0.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "anticipate",
+            "sourceFrameIndex": 0,
+            "sourceSHA256": "574441442b3c2dfad2285fa133febea703dadbf675eeeafc2c1e6126a39728c8",
+            "landmarks_px_top_left": {
+              "neck": [
+                122,
+                132
+              ],
+              "chest": [
+                128,
+                151
+              ],
+              "waist": [
+                128,
+                186
+              ],
+              "freeHand": [
+                101,
+                169
+              ],
+              "freePalm": [
+                96,
+                174
+              ],
+              "visibleRightAnkle": [
+                154,
+                216
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "visible",
+              "freePalm": "visible"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                191,
+                204
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 253
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "R003 individual 16px-grid source review; visible non-staff glove/wrist center.",
+              "freePalm": "Distinct exposed finger/knuckle center visually read from this individual source frame with 16px grid; separate from freeHand wrist/glove center. Approximate candidate; not fit-verified."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_1.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "anticipate",
+            "sourceFrameIndex": 1,
+            "sourceSHA256": "72d454a32a23f5a23f31c5257e3e66af9100eaa2c8580013ca498460cd006bec",
+            "landmarks_px_top_left": {
+              "neck": [
+                123,
+                132
+              ],
+              "chest": [
+                128,
+                153
+              ],
+              "waist": [
+                128,
+                186
+              ],
+              "freeHand": [
+                84,
+                128
+              ],
+              "freePalm": [
+                84,
+                122
+              ],
+              "visibleRightAnkle": [
+                154,
+                216
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "visible",
+              "freePalm": "visible"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                192,
+                204
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 253
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "R003 individual 16px-grid source review; visible non-staff glove/wrist center.",
+              "freePalm": "Distinct exposed finger/knuckle center visually read from this individual source frame with 16px grid; separate from freeHand wrist/glove center. Approximate candidate; not fit-verified."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_2.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "anticipate",
+            "sourceFrameIndex": 2,
+            "sourceSHA256": "02c1ddbe1390fd19dc6f0a0be3680131e2c8e05121c57ac2688d700933a3c0d3",
+            "landmarks_px_top_left": {
+              "neck": [
+                124,
+                132
+              ],
+              "chest": [
+                129,
+                154
+              ],
+              "waist": [
+                128,
+                186
+              ],
+              "freeHand": [
+                86,
+                101
+              ],
+              "freePalm": [
+                86,
+                86
+              ],
+              "visibleRightAnkle": [
+                154,
+                216
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "visible",
+              "freePalm": "visible"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                192,
+                203
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 253
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "R003 individual 16px-grid source review; visible non-staff glove/wrist center.",
+              "freePalm": "Distinct exposed finger/knuckle center visually read from this individual source frame with 16px grid; separate from freeHand wrist/glove center. Approximate candidate; not fit-verified."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_3.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "execute",
+            "sourceFrameIndex": 0,
+            "sourceSHA256": "416d953b150d02de8695c355387dadd4277c61ab3fd4c0d76efa59dcf3bf35a6",
+            "landmarks_px_top_left": {
+              "neck": [
+                124,
+                138
+              ],
+              "chest": [
+                128,
+                154
+              ],
+              "waist": [
+                128,
+                186
+              ],
+              "freeHand": [
+                92,
+                174
+              ],
+              "freePalm": [
+                92,
+                161
+              ],
+              "visibleRightAnkle": [
+                157,
+                216
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "visible",
+              "freePalm": "visible"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                194,
+                201
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 249
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "R003 individual 16px-grid source review; visible non-staff glove/wrist center.",
+              "freePalm": "Distinct exposed finger/knuckle center visually read from this individual source frame with 16px grid; separate from freeHand wrist/glove center. Approximate candidate; not fit-verified."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_4.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "execute",
+            "sourceFrameIndex": 1,
+            "sourceSHA256": "51422c4e6a5f359d9fe0250f0894ae6493145a324100cbfe7c70b151ae57da9e",
+            "landmarks_px_top_left": {
+              "neck": [
+                124,
+                138
+              ],
+              "chest": [
+                129,
+                155
+              ],
+              "waist": [
+                128,
+                186
+              ],
+              "freeHand": [
+                91,
+                171
+              ],
+              "freePalm": [
+                91,
+                154
+              ],
+              "visibleRightAnkle": [
+                160,
+                216
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "visible",
+              "freePalm": "visible"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                195,
+                204
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 252
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "R003 individual 16px-grid source review; visible non-staff glove/wrist center.",
+              "freePalm": "Distinct exposed finger/knuckle center visually read from this individual source frame with 16px grid; separate from freeHand wrist/glove center. Approximate candidate; not fit-verified."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_5.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "execute",
+            "sourceFrameIndex": 2,
+            "sourceSHA256": "944d659675544d5674987020f1b7fae3dff6f6ba21f9d141aeb35aa5029eaee1",
+            "landmarks_px_top_left": {
+              "neck": [
+                125,
+                138
+              ],
+              "chest": [
+                130,
+                155
+              ],
+              "waist": [
+                128,
+                186
+              ],
+              "freeHand": [
+                91,
+                169
+              ],
+              "freePalm": [
+                91,
+                153
+              ],
+              "visibleRightAnkle": [
+                161,
+                216
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "visible",
+              "freePalm": "visible"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                195,
+                204
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 252
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "R003 individual 16px-grid source review; visible non-staff glove/wrist center.",
+              "freePalm": "Distinct exposed finger/knuckle center visually read from this individual source frame with 16px grid; separate from freeHand wrist/glove center. Approximate candidate; not fit-verified."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_6.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "recover",
+            "sourceFrameIndex": 0,
+            "sourceSHA256": "3950bca15103c5dd253abc211996d0e078865553c4eeb2b7c152c0b84b9fb77a",
+            "landmarks_px_top_left": {
+              "neck": [
+                123,
+                135
+              ],
+              "chest": [
+                128,
+                154
+              ],
+              "waist": [
+                128,
+                186
+              ],
+              "freeHand": [
+                92,
+                178
+              ],
+              "freePalm": [
+                90,
+                174
+              ],
+              "visibleRightAnkle": [
+                160,
+                216
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "visible",
+              "freePalm": "visible"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                193,
+                205
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 251
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "R003 individual 16px-grid source review; visible non-staff glove/wrist center.",
+              "freePalm": "Distinct exposed finger/knuckle center visually read from this individual source frame with 16px grid; separate from freeHand wrist/glove center. Approximate candidate; not fit-verified."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_7.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "recover",
+            "sourceFrameIndex": 1,
+            "sourceSHA256": "42604bb6d1e56853c4e391edaed580fa203020d167ad88797bc28210911c5c80",
+            "landmarks_px_top_left": {
+              "neck": [
+                123,
+                134
+              ],
+              "chest": [
+                128,
+                152
+              ],
+              "waist": [
+                128,
+                186
+              ],
+              "freeHand": [
+                82,
+                120
+              ],
+              "freePalm": [
+                82,
+                109
+              ],
+              "visibleRightAnkle": [
+                154,
+                217
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "visible",
+              "freePalm": "visible"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                193,
+                204
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 252
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "R003 individual 16px-grid source review; visible non-staff glove/wrist center.",
+              "freePalm": "Distinct exposed finger/knuckle center visually read from this individual source frame with 16px grid; separate from freeHand wrist/glove center. Approximate candidate; not fit-verified."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_8.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "recover",
+            "sourceFrameIndex": 2,
+            "sourceSHA256": "bcfb121127809ad5499af465f47d813c2574425ec19b340ce6545503f093b128",
+            "landmarks_px_top_left": {
+              "neck": [
+                122,
+                132
+              ],
+              "chest": [
+                128,
+                151
+              ],
+              "waist": [
+                128,
+                186
+              ],
+              "freeHand": [
+                97,
+                170
+              ],
+              "freePalm": [
+                94,
+                168
+              ],
+              "visibleRightAnkle": [
+                153,
+                217
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "visible",
+              "freePalm": "visible"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                192,
+                205
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 253
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "R003 individual 16px-grid source review; visible non-staff glove/wrist center.",
+              "freePalm": "Distinct exposed finger/knuckle center visually read from this individual source frame with 16px grid; separate from freeHand wrist/glove center. Approximate candidate; not fit-verified."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_0.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "idle",
+            "sourceFrameIndex": 0,
+            "sourceSHA256": "7575ce7ef6c88d85e9dc26c61fc0e91b0dfe09638117df2a6b4588b62b2efa6d",
+            "landmarks_px_top_left": {
+              "neck": [
+                122,
+                131
+              ],
+              "chest": [
+                128,
+                150
+              ],
+              "waist": [
+                128,
+                186
+              ],
+              "freeHand": [
+                97,
+                169
+              ],
+              "freePalm": [
+                92,
+                171
+              ],
+              "visibleRightAnkle": [
+                153,
+                217
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "visible",
+              "freePalm": "visible"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                190,
+                204
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 252
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "R003 individual 16px-grid source review; visible non-staff glove/wrist center.",
+              "freePalm": "Distinct exposed finger/knuckle center visually read from this individual source frame with 16px grid; separate from freeHand wrist/glove center. Approximate candidate; not fit-verified."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_1.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "idle",
+            "sourceFrameIndex": 1,
+            "sourceSHA256": "892d6346310c101880552911aa1306a4ee7800c78b08cb8c7d938de46f26bfa3",
+            "landmarks_px_top_left": {
+              "neck": [
+                122,
+                132
+              ],
+              "chest": [
+                128,
+                151
+              ],
+              "waist": [
+                128,
+                186
+              ],
+              "freeHand": [
+                97,
+                170
+              ],
+              "freePalm": [
+                92,
+                172
+              ],
+              "visibleRightAnkle": [
+                153,
+                217
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "visible",
+              "freePalm": "visible"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                191,
+                204
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 252
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "R003 individual 16px-grid source review; visible non-staff glove/wrist center.",
+              "freePalm": "Distinct exposed finger/knuckle center visually read from this individual source frame with 16px grid; separate from freeHand wrist/glove center. Approximate candidate; not fit-verified."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_2.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "idle",
+            "sourceFrameIndex": 2,
+            "sourceSHA256": "be4e8e75891e002d9ee7970c51f9eb4285834bc06b3d84531c6a4e85292833bf",
+            "landmarks_px_top_left": {
+              "neck": [
+                122,
+                132
+              ],
+              "chest": [
+                128,
+                151
+              ],
+              "waist": [
+                128,
+                186
+              ],
+              "freeHand": [
+                96,
+                171
+              ],
+              "freePalm": [
+                92,
+                173
+              ],
+              "visibleRightAnkle": [
+                153,
+                217
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "visible",
+              "freePalm": "visible"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                190,
+                204
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 253
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "R003 individual 16px-grid source review; visible non-staff glove/wrist center.",
+              "freePalm": "Distinct exposed finger/knuckle center visually read from this individual source frame with 16px grid; separate from freeHand wrist/glove center. Approximate candidate; not fit-verified."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_3.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "hit",
+            "sourceFrameIndex": 0,
+            "sourceSHA256": "38794859d5ab1468e9d388189e531abe1cac48fa05d7d43a72689906656d83fb",
+            "landmarks_px_top_left": {
+              "neck": [
+                123,
+                135
+              ],
+              "chest": [
+                128,
+                155
+              ],
+              "waist": [
+                128,
+                186
+              ],
+              "freeHand": [
+                94,
+                177
+              ],
+              "freePalm": [
+                95,
+                162
+              ],
+              "visibleRightAnkle": [
+                161,
+                219
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "visible",
+              "freePalm": "visible"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                191,
+                204
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 253
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved. Hit frame 0 free hand/palm classified visible by manifest staff-pivot separation.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "Visible screen-left glove separated from staff grip; authored pivot (140.136,155.127) identifies screen-right staff hand.",
+              "freePalm": "Exposed knuckle/finger center on screen-left hand; separately measured from wrist/glove center."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_4.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "hit",
+            "sourceFrameIndex": 1,
+            "sourceSHA256": "3ec449bc60c41f7f93d765396d8c1d1ab932320152753026791c1076a1520dfa",
+            "landmarks_px_top_left": {
+              "neck": [
+                123,
+                136
+              ],
+              "chest": [
+                128,
+                156
+              ],
+              "waist": [
+                128,
+                186
+              ],
+              "freeHand": [
+                108,
+                177
+              ],
+              "freePalm": [
+                111,
+                160
+              ],
+              "visibleRightAnkle": [
+                161,
+                219
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "visible",
+              "freePalm": "visible"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                191,
+                204
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 252
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved. Hit frame 1 free hand/palm classified visible by manifest staff-pivot separation.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "Visible screen-left glove separated from staff grip; authored pivot (143.254,153.127) identifies screen-right staff hand.",
+              "freePalm": "Exposed knuckle/finger center on screen-left hand; separately measured from wrist/glove center."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_5.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "hit",
+            "sourceFrameIndex": 2,
+            "sourceSHA256": "49c890c0afae1927d5a5b6138cf9edc2d30b96571b8126691acfaec0419ee60d",
+            "landmarks_px_top_left": {
+              "neck": [
+                122,
+                135
+              ],
+              "chest": [
+                128,
+                153
+              ],
+              "waist": [
+                128,
+                186
+              ],
+              "freeHand": [
+                99,
+                172
+              ],
+              "freePalm": [
+                94,
+                172
+              ],
+              "visibleRightAnkle": [
+                154,
+                217
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "visible",
+              "freePalm": "visible"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                191,
+                204
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 253
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "R003 individual 16px-grid source review; visible non-staff glove/wrist center.",
+              "freePalm": "Distinct exposed finger/knuckle center visually read from this individual source frame with 16px grid; separate from freeHand wrist/glove center. Approximate candidate; not fit-verified."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_6.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "resolve",
+            "sourceFrameIndex": 0,
+            "sourceSHA256": "674ea3d1fb7d4c4caf1085b25c9a91275ef3f313d804af842013fabc66bf8474",
+            "landmarks_px_top_left": {
+              "neck": [
+                122,
+                132
+              ],
+              "chest": [
+                128,
+                151
+              ],
+              "waist": [
+                128,
+                186
+              ],
+              "freeHand": [
+                99,
+                174
+              ],
+              "freePalm": [
+                94,
+                174
+              ],
+              "visibleRightAnkle": [
+                154,
+                217
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "visible",
+              "freePalm": "visible"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                190,
+                204
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 253
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "R003 individual 16px-grid source review; visible non-staff glove/wrist center.",
+              "freePalm": "Distinct exposed finger/knuckle center visually read from this individual source frame with 16px grid; separate from freeHand wrist/glove center. Approximate candidate; not fit-verified."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_7.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "resolve",
+            "sourceFrameIndex": 1,
+            "sourceSHA256": "db4ffc38aaa57a9e1dec45717f1762c2701c82991145b5d9286519b17f828856",
+            "landmarks_px_top_left": {
+              "neck": [
+                122,
+                130
+              ],
+              "chest": [
+                128,
+                150
+              ],
+              "waist": [
+                128,
+                186
+              ],
+              "freeHand": [
+                99,
+                171
+              ],
+              "freePalm": [
+                94,
+                171
+              ],
+              "visibleRightAnkle": [
+                154,
+                217
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "visible",
+              "freePalm": "visible"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                191,
+                204
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 252
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "R003 individual 16px-grid source review; visible non-staff glove/wrist center.",
+              "freePalm": "Distinct exposed finger/knuckle center visually read from this individual source frame with 16px grid; separate from freeHand wrist/glove center. Approximate candidate; not fit-verified."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_8.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "resolve",
+            "sourceFrameIndex": 2,
+            "sourceSHA256": "99a7ec62f798fa86c73c7697e3fed6882ed9cfb3d9c877b306d501309702d91b",
+            "landmarks_px_top_left": {
+              "neck": [
+                122,
+                132
+              ],
+              "chest": [
+                128,
+                151
+              ],
+              "waist": [
+                128,
+                186
+              ],
+              "freeHand": [
+                98,
+                173
+              ],
+              "freePalm": [
+                93,
+                173
+              ],
+              "visibleRightAnkle": [
+                154,
+                217
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "visible",
+              "freePalm": "visible"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                190,
+                204
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 252
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "R003 individual 16px-grid source review; visible non-staff glove/wrist center.",
+              "freePalm": "Distinct exposed finger/knuckle center visually read from this individual source frame with 16px grid; separate from freeHand wrist/glove center. Approximate candidate; not fit-verified."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_0.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 0,
+            "sourceSHA256": "a8461e071f8c10eecf6e42fe595ff9f68bceb67819709a7a1890d8a1715820c1",
+            "landmarks_px_top_left": {
+              "neck": [
+                126,
+                135
+              ],
+              "chest": [
+                127,
+                155
+              ],
+              "waist": [
+                124,
+                186
+              ],
+              "freeHand": null,
+              "freePalm": null,
+              "visibleRightAnkle": [
+                153,
+                218
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "occluded",
+              "freePalm": "occluded"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                188,
+                207
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 252
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred.",
+              "freePalm": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_1.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 1,
+            "sourceSHA256": "7241025579552eb4f15efd6d1974b18ebd9cfca033b520e04631cdd48b6b3618",
+            "landmarks_px_top_left": {
+              "neck": [
+                126,
+                135
+              ],
+              "chest": [
+                127,
+                155
+              ],
+              "waist": [
+                124,
+                186
+              ],
+              "freeHand": null,
+              "freePalm": null,
+              "visibleRightAnkle": [
+                147,
+                218
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "occluded",
+              "freePalm": "occluded"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                189,
+                208
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 252
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred.",
+              "freePalm": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_2.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 2,
+            "sourceSHA256": "9721b79fe68d2786baa9ec2ba607ceaa707654d4ace8f2ef4860e88e8b026702",
+            "landmarks_px_top_left": {
+              "neck": [
+                127,
+                135
+              ],
+              "chest": [
+                127,
+                155
+              ],
+              "waist": [
+                124,
+                186
+              ],
+              "freeHand": null,
+              "freePalm": null,
+              "visibleRightAnkle": [
+                151,
+                215
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "occluded",
+              "freePalm": "occluded"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                189,
+                206
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 252
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred.",
+              "freePalm": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_3.png",
+            "frameIndex": 3,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 3,
+            "sourceSHA256": "2ef4e8564f0d0893926e649e486346f6cda235a70b6023f25e131933abeb7edf",
+            "landmarks_px_top_left": {
+              "neck": [
+                127,
+                136
+              ],
+              "chest": [
+                128,
+                156
+              ],
+              "waist": [
+                124,
+                186
+              ],
+              "freeHand": null,
+              "freePalm": null,
+              "visibleRightAnkle": [
+                146,
+                218
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "occluded",
+              "freePalm": "occluded"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                189,
+                207
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 249
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred.",
+              "freePalm": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_4.png",
+            "frameIndex": 4,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 4,
+            "sourceSHA256": "11ec631b06a72ada7e2567c08b080bb6421db28933953582138409b77473a1de",
+            "landmarks_px_top_left": {
+              "neck": [
+                127,
+                136
+              ],
+              "chest": [
+                128,
+                156
+              ],
+              "waist": [
+                124,
+                186
+              ],
+              "freeHand": null,
+              "freePalm": null,
+              "visibleRightAnkle": [
+                147,
+                218
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "occluded",
+              "freePalm": "occluded"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                190,
+                207
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 244
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred.",
+              "freePalm": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_5.png",
+            "frameIndex": 5,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 5,
+            "sourceSHA256": "0fd49f8b45bef2bd83d13666bbf0ba55b0d6e1fb926500c1df56fe9b1c8d4fee",
+            "landmarks_px_top_left": {
+              "neck": [
+                127,
+                136
+              ],
+              "chest": [
+                128,
+                156
+              ],
+              "waist": [
+                124,
+                186
+              ],
+              "freeHand": null,
+              "freePalm": null,
+              "visibleRightAnkle": [
+                146,
+                218
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "occluded",
+              "freePalm": "occluded"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                189,
+                206
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 253
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred.",
+              "freePalm": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_6.png",
+            "frameIndex": 6,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 6,
+            "sourceSHA256": "3671a95aceee0cca0554e4742ea11ae98de881e1895305460c05f36a1af3b3d1",
+            "landmarks_px_top_left": {
+              "neck": [
+                127,
+                136
+              ],
+              "chest": [
+                127,
+                156
+              ],
+              "waist": [
+                124,
+                186
+              ],
+              "freeHand": null,
+              "freePalm": null,
+              "visibleRightAnkle": [
+                145,
+                215
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "occluded",
+              "freePalm": "occluded"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                188,
+                208
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 253
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred.",
+              "freePalm": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_7.png",
+            "frameIndex": 7,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 7,
+            "sourceSHA256": "276aef3b8f72a12e865213238c9058c2ff22a66b22fb9b62640ae25bd352c3f6",
+            "landmarks_px_top_left": {
+              "neck": [
+                127,
+                136
+              ],
+              "chest": [
+                127,
+                156
+              ],
+              "waist": [
+                124,
+                186
+              ],
+              "freeHand": null,
+              "freePalm": null,
+              "visibleRightAnkle": [
+                147,
+                216
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "occluded",
+              "freePalm": "occluded"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                189,
+                207
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 252
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred.",
+              "freePalm": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_8.png",
+            "frameIndex": 8,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "walk",
+            "sourceFrameIndex": 8,
+            "sourceSHA256": "4f9f3b41d7158a45b1c6e881305ebc58ed77961f0af839d47710380f00c864cd",
+            "landmarks_px_top_left": {
+              "neck": [
+                127,
+                136
+              ],
+              "chest": [
+                127,
+                156
+              ],
+              "waist": [
+                124,
+                186
+              ],
+              "freeHand": null,
+              "freePalm": null,
+              "visibleRightAnkle": [
+                148,
+                216
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "occluded",
+              "freePalm": "occluded"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                189,
+                207
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 253
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred.",
+              "freePalm": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_0.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "anticipate",
+            "sourceFrameIndex": 0,
+            "sourceSHA256": "956a61aa45138cf3e3833550cf2905170c1e947f134c8028b6c3dc8205820d85",
+            "landmarks_px_top_left": {
+              "neck": [
+                126,
+                135
+              ],
+              "chest": [
+                127,
+                155
+              ],
+              "waist": [
+                124,
+                186
+              ],
+              "freeHand": null,
+              "freePalm": null,
+              "visibleRightAnkle": [
+                153,
+                216
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "occluded",
+              "freePalm": "occluded"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                190,
+                204
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 252
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred.",
+              "freePalm": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_1.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "anticipate",
+            "sourceFrameIndex": 1,
+            "sourceSHA256": "7e48ab790b8f899946f3eb961bc1c6d5940b9c31013ccf38eca64148e2805169",
+            "landmarks_px_top_left": {
+              "neck": [
+                127,
+                135
+              ],
+              "chest": [
+                128,
+                156
+              ],
+              "waist": [
+                124,
+                186
+              ],
+              "freeHand": [
+                146,
+                173
+              ],
+              "freePalm": [
+                146,
+                171
+              ],
+              "visibleRightAnkle": [
+                155,
+                215
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "visible",
+              "freePalm": "visible"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                191,
+                204
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 251
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "R003 individual 16px-grid source review; visible non-staff glove/wrist center.",
+              "freePalm": "Distinct exposed finger/knuckle center visually read from this individual source frame with 16px grid; separate from freeHand wrist/glove center. Approximate candidate; not fit-verified."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_2.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "anticipate",
+            "sourceFrameIndex": 2,
+            "sourceSHA256": "90eefdf698caad44b691d0e67956d055e6f4582fa16b06afeb504a6590c81ee5",
+            "landmarks_px_top_left": {
+              "neck": [
+                127,
+                136
+              ],
+              "chest": [
+                128,
+                157
+              ],
+              "waist": [
+                124,
+                186
+              ],
+              "freeHand": [
+                145,
+                169
+              ],
+              "freePalm": [
+                145,
+                167
+              ],
+              "visibleRightAnkle": [
+                159,
+                215
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "visible",
+              "freePalm": "visible"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                191,
+                203
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 252
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "R003 individual 16px-grid source review; visible non-staff glove/wrist center.",
+              "freePalm": "Distinct exposed finger/knuckle center visually read from this individual source frame with 16px grid; separate from freeHand wrist/glove center. Approximate candidate; not fit-verified."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_3.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "execute",
+            "sourceFrameIndex": 0,
+            "sourceSHA256": "ce690bceb86530c404bf2df60567466e18fde290d12b2d2dbff53b8b63432fde",
+            "landmarks_px_top_left": {
+              "neck": [
+                128,
+                137
+              ],
+              "chest": [
+                128,
+                157
+              ],
+              "waist": [
+                124,
+                186
+              ],
+              "freeHand": null,
+              "freePalm": null,
+              "visibleRightAnkle": [
+                158,
+                216
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "occluded",
+              "freePalm": "occluded"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                192,
+                201
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 235
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred.",
+              "freePalm": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_4.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "execute",
+            "sourceFrameIndex": 1,
+            "sourceSHA256": "859472321d091a3e3851a4f757652fe5ddaac7de70f441c49773ffa87fb060b6",
+            "landmarks_px_top_left": {
+              "neck": [
+                128,
+                137
+              ],
+              "chest": [
+                129,
+                157
+              ],
+              "waist": [
+                124,
+                186
+              ],
+              "freeHand": null,
+              "freePalm": null,
+              "visibleRightAnkle": [
+                159,
+                216
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "occluded",
+              "freePalm": "occluded"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                194,
+                204
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 251
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred.",
+              "freePalm": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_5.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "execute",
+            "sourceFrameIndex": 2,
+            "sourceSHA256": "b4cc1c0422a73c73fc95e104e87c1b5bbc959900bc2b2a1ae4b5ebcef41c6272",
+            "landmarks_px_top_left": {
+              "neck": [
+                129,
+                138
+              ],
+              "chest": [
+                130,
+                157
+              ],
+              "waist": [
+                124,
+                186
+              ],
+              "freeHand": null,
+              "freePalm": null,
+              "visibleRightAnkle": [
+                160,
+                216
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "occluded",
+              "freePalm": "occluded"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                194,
+                204
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 250
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred.",
+              "freePalm": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_6.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "recover",
+            "sourceFrameIndex": 0,
+            "sourceSHA256": "05b4f8b22ef0835636daee2d29626676d096f0a0adf5440e578c130ff2952600",
+            "landmarks_px_top_left": {
+              "neck": [
+                127,
+                137
+              ],
+              "chest": [
+                128,
+                157
+              ],
+              "waist": [
+                124,
+                186
+              ],
+              "freeHand": null,
+              "freePalm": null,
+              "visibleRightAnkle": [
+                160,
+                216
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "occluded",
+              "freePalm": "occluded"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                192,
+                204
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 147
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred.",
+              "freePalm": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_7.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "recover",
+            "sourceFrameIndex": 1,
+            "sourceSHA256": "07076326209c6568ff7dbf33713650e21e4a6e36170cfcd992d7875b940fb8c7",
+            "landmarks_px_top_left": {
+              "neck": [
+                127,
+                136
+              ],
+              "chest": [
+                128,
+                156
+              ],
+              "waist": [
+                124,
+                186
+              ],
+              "freeHand": null,
+              "freePalm": null,
+              "visibleRightAnkle": [
+                154,
+                217
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "occluded",
+              "freePalm": "occluded"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                192,
+                204
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 251
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred.",
+              "freePalm": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_8.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "recover",
+            "sourceFrameIndex": 2,
+            "sourceSHA256": "54ecaf3712437c4ac63735a128dac5d900ce35731b34630664e457d86ae8d80d",
+            "landmarks_px_top_left": {
+              "neck": [
+                126,
+                135
+              ],
+              "chest": [
+                127,
+                155
+              ],
+              "waist": [
+                124,
+                186
+              ],
+              "freeHand": null,
+              "freePalm": null,
+              "visibleRightAnkle": [
+                154,
+                217
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "occluded",
+              "freePalm": "occluded"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                191,
+                205
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 253
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred.",
+              "freePalm": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_0.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "idle",
+            "sourceFrameIndex": 0,
+            "sourceSHA256": "ffdc5e4218d2431a88f57cdce7296e6a1b24f6c0b6ee7ea547d16bbd47625714",
+            "landmarks_px_top_left": {
+              "neck": [
+                126,
+                135
+              ],
+              "chest": [
+                127,
+                155
+              ],
+              "waist": [
+                124,
+                186
+              ],
+              "freeHand": null,
+              "freePalm": null,
+              "visibleRightAnkle": [
+                153,
+                217
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "occluded",
+              "freePalm": "occluded"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                189,
+                204
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 252
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred.",
+              "freePalm": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_1.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "idle",
+            "sourceFrameIndex": 1,
+            "sourceSHA256": "eca214927d3dbb572fc897d9fc1643a657c5eaacade741b7e8b03df756157f0a",
+            "landmarks_px_top_left": {
+              "neck": [
+                126,
+                135
+              ],
+              "chest": [
+                127,
+                155
+              ],
+              "waist": [
+                124,
+                186
+              ],
+              "freeHand": null,
+              "freePalm": null,
+              "visibleRightAnkle": [
+                153,
+                217
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "occluded",
+              "freePalm": "occluded"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                190,
+                204
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 251
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred.",
+              "freePalm": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_2.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "idle",
+            "sourceFrameIndex": 2,
+            "sourceSHA256": "76d3909dc7edc53cfcf5492e08170efcd43d9e5a1219f6bff233040885936558",
+            "landmarks_px_top_left": {
+              "neck": [
+                127,
+                135
+              ],
+              "chest": [
+                128,
+                156
+              ],
+              "waist": [
+                124,
+                186
+              ],
+              "freeHand": null,
+              "freePalm": null,
+              "visibleRightAnkle": [
+                153,
+                217
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "occluded",
+              "freePalm": "occluded"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                189,
+                204
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 252
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred.",
+              "freePalm": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_3.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "hit",
+            "sourceFrameIndex": 0,
+            "sourceSHA256": "5c612f8f88d1f714ea0f70c2bf2482c996de5027cea1dc7aa12ed91f199152bf",
+            "landmarks_px_top_left": {
+              "neck": [
+                127,
+                138
+              ],
+              "chest": [
+                128,
+                158
+              ],
+              "waist": [
+                124,
+                186
+              ],
+              "freeHand": null,
+              "freePalm": null,
+              "visibleRightAnkle": [
+                153,
+                217
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "occluded",
+              "freePalm": "occluded"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                189,
+                204
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 252
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred.",
+              "freePalm": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_4.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "hit",
+            "sourceFrameIndex": 1,
+            "sourceSHA256": "4e0b298c1a51629a4fe62683e9ad9faaf1a2f5e6e8cf66335ef6f5b3d6e0402e",
+            "landmarks_px_top_left": {
+              "neck": [
+                127,
+                139
+              ],
+              "chest": [
+                128,
+                159
+              ],
+              "waist": [
+                124,
+                186
+              ],
+              "freeHand": null,
+              "freePalm": null,
+              "visibleRightAnkle": [
+                153,
+                217
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "occluded",
+              "freePalm": "occluded"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                189,
+                204
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 253
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred.",
+              "freePalm": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_5.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "hit",
+            "sourceFrameIndex": 2,
+            "sourceSHA256": "47c30f61cdc11ece328903d82740ddaccc78fa94c5ab5f588ed277186e696271",
+            "landmarks_px_top_left": {
+              "neck": [
+                127,
+                138
+              ],
+              "chest": [
+                128,
+                158
+              ],
+              "waist": [
+                124,
+                186
+              ],
+              "freeHand": null,
+              "freePalm": null,
+              "visibleRightAnkle": [
+                153,
+                217
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "occluded",
+              "freePalm": "occluded"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                189,
+                204
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 253
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred.",
+              "freePalm": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_6.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "resolve",
+            "sourceFrameIndex": 0,
+            "sourceSHA256": "4cf27a11fd352549e60bdee9fa04d7c6206067815cc3599ca8c9db0f8a9f5dd2",
+            "landmarks_px_top_left": {
+              "neck": [
+                126,
+                135
+              ],
+              "chest": [
+                127,
+                156
+              ],
+              "waist": [
+                124,
+                186
+              ],
+              "freeHand": null,
+              "freePalm": null,
+              "visibleRightAnkle": [
+                153,
+                217
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "occluded",
+              "freePalm": "occluded"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                189,
+                204
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 250
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred.",
+              "freePalm": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_7.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "resolve",
+            "sourceFrameIndex": 1,
+            "sourceSHA256": "056fd4711c1992a21b7f7a88c2bdcf319f76f3b34702abcf091dd61854c3c950",
+            "landmarks_px_top_left": {
+              "neck": [
+                126,
+                135
+              ],
+              "chest": [
+                128,
+                156
+              ],
+              "waist": [
+                124,
+                186
+              ],
+              "freeHand": null,
+              "freePalm": null,
+              "visibleRightAnkle": [
+                153,
+                217
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "occluded",
+              "freePalm": "occluded"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                190,
+                204
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 252
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred.",
+              "freePalm": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred."
+            },
+            "sourceActorID": "C_WITCH"
+          },
+          {
+            "actorID": "ERNA",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_8.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "sourceRowState": "resolve",
+            "sourceFrameIndex": 2,
+            "sourceSHA256": "6aacb3cbf8833b599f1cd0fcb0f14a7c3630888b0e68b62074c52a32b849b7ec",
+            "landmarks_px_top_left": {
+              "neck": [
+                127,
+                136
+              ],
+              "chest": [
+                128,
+                156
+              ],
+              "waist": [
+                124,
+                186
+              ],
+              "freeHand": null,
+              "freePalm": null,
+              "visibleRightAnkle": [
+                156,
+                212
+              ]
+            },
+            "landmarkVisibility": {
+              "neck": "visible",
+              "chest": "visible",
+              "waist": "visible",
+              "visibleRightAnkle": "visible",
+              "freeHand": "occluded",
+              "freePalm": "occluded"
+            },
+            "BODY01_hemTabCandidate": {
+              "status": "measured_candidate",
+              "point": [
+                189,
+                204
+              ],
+              "confidence": "visual_grid_approx_6px",
+              "notes": "候補点。画面右側の外套/上着の下裾端に沿う。正面中央の白布・肌・脚を避ける小さな内布タブ用の基準点。原画に素材を追加した状態や遮蔽は未検証。",
+              "sourcePixelAlpha": 247
+            },
+            "BODY02_cloakLining": {
+              "status": "unknown_occluded",
+              "point": null,
+              "notes": "この焼き込みフレームでは裾の内側面を外側の縁/刺繍から確実に分離できない。裏地を推測で表面へ置かず、接続点は未測定。"
+            },
+            "measurementStatus": "UNAPPROVED_SOURCE_GRID_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "measurementNotes": "Derived from ERNA landmark R003 plus separately classified hand visibility. No renderer integration. Obsolete landmarkCoverage text omitted; source row state and clip-local index are preserved.",
+            "landmarkVisibilityEvidence": {
+              "neck": "R003 individual image review; source art itself visibly supports the landmark.",
+              "chest": "R003 individual image review; source art itself visibly supports the landmark.",
+              "waist": "R003 individual image review; source art itself visibly supports the landmark.",
+              "visibleRightAnkle": "Individual source frame review: screen-right boot cuff/leg-to-boot join selected for footwear attachment; not toe center, inter-boot gap, or alpha-bound midpoint. Approximate candidate pending fit.",
+              "freeHand": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred.",
+              "freePalm": "Individual source frame: visible hand matches authored staff pivot; non-staff hand is behind cape/sleeve or outside visible contour. No coordinate inferred."
+            },
+            "sourceActorID": "C_WITCH"
+          }
+        ]
+      }
+    }
+  },
+  "supersedesCandidate": "runtime_overlay_zzzzzzzzzzzzzzzzzzzzzzz_equipment_landmarks_erna_r007.json",
+  "auditRevision": {
+    "schema": "erna_semantic_overlay_audit_r008",
+    "rowsReviewed": 54,
+    "anklePointsIndividuallyRechecked": 54,
+    "ankleMeaning": "screen-right visible boot cuff / leg-to-boot join, selected for footwear attachment; never toe center/gap",
+    "hitFreeHandResolved": 2,
+    "coordinateChanges": 54,
+    "coordinateDeltas": [
+      {
+        "tuple": "standard/walk/0",
+        "from": [
+          143,
+          229
+        ],
+        "to": [
+          147,
+          218
+        ]
+      },
+      {
+        "tuple": "standard/walk/1",
+        "from": [
+          142,
+          229
+        ],
+        "to": [
+          149,
+          218
+        ]
+      },
+      {
+        "tuple": "standard/walk/2",
+        "from": [
+          143,
+          229
+        ],
+        "to": [
+          150,
+          218
+        ]
+      },
+      {
+        "tuple": "standard/walk/3",
+        "from": [
+          145,
+          229
+        ],
+        "to": [
+          151,
+          217
+        ]
+      },
+      {
+        "tuple": "standard/walk/4",
+        "from": [
+          143,
+          229
+        ],
+        "to": [
+          150,
+          217
+        ]
+      },
+      {
+        "tuple": "standard/walk/5",
+        "from": [
+          142,
+          229
+        ],
+        "to": [
+          149,
+          218
+        ]
+      },
+      {
+        "tuple": "standard/walk/6",
+        "from": [
+          143,
+          229
+        ],
+        "to": [
+          144,
+          215
+        ]
+      },
+      {
+        "tuple": "standard/walk/7",
+        "from": [
+          144,
+          229
+        ],
+        "to": [
+          146,
+          215
+        ]
+      },
+      {
+        "tuple": "standard/walk/8",
+        "from": [
+          143,
+          229
+        ],
+        "to": [
+          151,
+          216
+        ]
+      },
+      {
+        "tuple": "standard/anticipate/0",
+        "from": [
+          143,
+          230
+        ],
+        "to": [
+          154,
+          216
+        ]
+      },
+      {
+        "tuple": "standard/anticipate/1",
+        "from": [
+          143,
+          230
+        ],
+        "to": [
+          154,
+          216
+        ]
+      },
+      {
+        "tuple": "standard/anticipate/2",
+        "from": [
+          143,
+          230
+        ],
+        "to": [
+          154,
+          216
+        ]
+      },
+      {
+        "tuple": "standard/execute/0",
+        "from": [
+          153,
+          231
+        ],
+        "to": [
+          157,
+          216
+        ]
+      },
+      {
+        "tuple": "standard/execute/1",
+        "from": [
+          153,
+          231
+        ],
+        "to": [
+          160,
+          216
+        ]
+      },
+      {
+        "tuple": "standard/execute/2",
+        "from": [
+          153,
+          231
+        ],
+        "to": [
+          161,
+          216
+        ]
+      },
+      {
+        "tuple": "standard/recover/0",
+        "from": [
+          144,
+          230
+        ],
+        "to": [
+          160,
+          216
+        ]
+      },
+      {
+        "tuple": "standard/recover/1",
+        "from": [
+          144,
+          230
+        ],
+        "to": [
+          154,
+          217
+        ]
+      },
+      {
+        "tuple": "standard/recover/2",
+        "from": [
+          144,
+          230
+        ],
+        "to": [
+          153,
+          217
+        ]
+      },
+      {
+        "tuple": "standard/idle/0",
+        "from": [
+          143,
+          230
+        ],
+        "to": [
+          153,
+          217
+        ]
+      },
+      {
+        "tuple": "standard/idle/1",
+        "from": [
+          143,
+          230
+        ],
+        "to": [
+          153,
+          217
+        ]
+      },
+      {
+        "tuple": "standard/idle/2",
+        "from": [
+          143,
+          230
+        ],
+        "to": [
+          153,
+          217
+        ]
+      },
+      {
+        "tuple": "standard/hit/0",
+        "from": [
+          144,
+          231
+        ],
+        "to": [
+          161,
+          219
+        ]
+      },
+      {
+        "tuple": "standard/hit/1",
+        "from": [
+          144,
+          231
+        ],
+        "to": [
+          161,
+          219
+        ]
+      },
+      {
+        "tuple": "standard/hit/2",
+        "from": [
+          144,
+          231
+        ],
+        "to": [
+          154,
+          217
+        ]
+      },
+      {
+        "tuple": "standard/resolve/0",
+        "from": [
+          143,
+          230
+        ],
+        "to": [
+          154,
+          217
+        ]
+      },
+      {
+        "tuple": "standard/resolve/1",
+        "from": [
+          143,
+          230
+        ],
+        "to": [
+          154,
+          217
+        ]
+      },
+      {
+        "tuple": "standard/resolve/2",
+        "from": [
+          143,
+          230
+        ],
+        "to": [
+          154,
+          217
+        ]
+      },
+      {
+        "tuple": "travel/walk/0",
+        "from": [
+          124,
+          230
+        ],
+        "to": [
+          153,
+          218
+        ]
+      },
+      {
+        "tuple": "travel/walk/1",
+        "from": [
+          124,
+          230
+        ],
+        "to": [
+          147,
+          218
+        ]
+      },
+      {
+        "tuple": "travel/walk/2",
+        "from": [
+          124,
+          230
+        ],
+        "to": [
+          151,
+          215
+        ]
+      },
+      {
+        "tuple": "travel/walk/3",
+        "from": [
+          124,
+          230
+        ],
+        "to": [
+          146,
+          218
+        ]
+      },
+      {
+        "tuple": "travel/walk/4",
+        "from": [
+          124,
+          230
+        ],
+        "to": [
+          147,
+          218
+        ]
+      },
+      {
+        "tuple": "travel/walk/5",
+        "from": [
+          124,
+          230
+        ],
+        "to": [
+          146,
+          218
+        ]
+      },
+      {
+        "tuple": "travel/walk/6",
+        "from": [
+          124,
+          230
+        ],
+        "to": [
+          145,
+          215
+        ]
+      },
+      {
+        "tuple": "travel/walk/7",
+        "from": [
+          124,
+          230
+        ],
+        "to": [
+          147,
+          216
+        ]
+      },
+      {
+        "tuple": "travel/walk/8",
+        "from": [
+          124,
+          230
+        ],
+        "to": [
+          148,
+          216
+        ]
+      },
+      {
+        "tuple": "travel/anticipate/0",
+        "from": [
+          124,
+          230
+        ],
+        "to": [
+          153,
+          216
+        ]
+      },
+      {
+        "tuple": "travel/anticipate/1",
+        "from": [
+          124,
+          230
+        ],
+        "to": [
+          155,
+          215
+        ]
+      },
+      {
+        "tuple": "travel/anticipate/2",
+        "from": [
+          124,
+          230
+        ],
+        "to": [
+          159,
+          215
+        ]
+      },
+      {
+        "tuple": "travel/execute/0",
+        "from": [
+          155,
+          231
+        ],
+        "to": [
+          158,
+          216
+        ]
+      },
+      {
+        "tuple": "travel/execute/1",
+        "from": [
+          155,
+          231
+        ],
+        "to": [
+          159,
+          216
+        ]
+      },
+      {
+        "tuple": "travel/execute/2",
+        "from": [
+          155,
+          231
+        ],
+        "to": [
+          160,
+          216
+        ]
+      },
+      {
+        "tuple": "travel/recover/0",
+        "from": [
+          124,
+          230
+        ],
+        "to": [
+          160,
+          216
+        ]
+      },
+      {
+        "tuple": "travel/recover/1",
+        "from": [
+          124,
+          230
+        ],
+        "to": [
+          154,
+          217
+        ]
+      },
+      {
+        "tuple": "travel/recover/2",
+        "from": [
+          124,
+          230
+        ],
+        "to": [
+          154,
+          217
+        ]
+      },
+      {
+        "tuple": "travel/idle/0",
+        "from": [
+          124,
+          230
+        ],
+        "to": [
+          153,
+          217
+        ]
+      },
+      {
+        "tuple": "travel/idle/1",
+        "from": [
+          124,
+          230
+        ],
+        "to": [
+          153,
+          217
+        ]
+      },
+      {
+        "tuple": "travel/idle/2",
+        "from": [
+          124,
+          230
+        ],
+        "to": [
+          153,
+          217
+        ]
+      },
+      {
+        "tuple": "travel/hit/0",
+        "from": [
+          124,
+          230
+        ],
+        "to": [
+          153,
+          217
+        ]
+      },
+      {
+        "tuple": "travel/hit/1",
+        "from": [
+          124,
+          230
+        ],
+        "to": [
+          153,
+          217
+        ]
+      },
+      {
+        "tuple": "travel/hit/2",
+        "from": [
+          124,
+          230
+        ],
+        "to": [
+          153,
+          217
+        ]
+      },
+      {
+        "tuple": "travel/resolve/0",
+        "from": [
+          124,
+          230
+        ],
+        "to": [
+          153,
+          217
+        ]
+      },
+      {
+        "tuple": "travel/resolve/1",
+        "from": [
+          124,
+          230
+        ],
+        "to": [
+          153,
+          217
+        ]
+      },
+      {
+        "tuple": "travel/resolve/2",
+        "from": [
+          124,
+          230
+        ],
+        "to": [
+          156,
+          212
+        ]
+      }
+    ],
+    "sourceArtChanged": false,
+    "runtimeFitVerified": false
+  }
+}

@@ -1,0 +1,9 @@
+# R454 R002 Debug builder correction
+
+R002 is an additive, unexecuted correction. R001 and its preflight failure remain unchanged. Root's R001 preflight reached the resource-donor assertion and stopped before writing build outputs. The R001 manifest pointed at the older R373 receipt whose normalized record lacks the expected R445 `BUILD_PASS` identity fields. R002 instead pins the normalized R445 `release_BUILD_PASS.json`, R445 `RESOURCE_CAPTURE.json`, and R445 frozen `RESOURCE_SHA256.json`/`SOURCE_SHA256.json`.
+
+The native output slot is `native/build/ActiveIntegrationR454/native_r002/<input-key>`; existing `core_r001` and R001's reserved `native_r001` are not reused. The R445 Debug product layout was checked from its retained build readback: the app bundle has 1,925 files total (1,922 resources plus Info.plist, PkgInfo, executable) and no `.debug.dylib` entry, matching the normalizer's explicit layout check. This is static readback, not an R454 build result.
+
+All limits, launch arguments, relative StoreKit configuration identifier, external-tree pins, source-map inputs, and R445/inherited preservation fences remain as R001 unless Root reseals them. The R454 current source map is copied from R001 and still provisional. One freeze plus one Debug build, combined 600 seconds, 2 GB allocated output plus 2 GB reserve, 20 GB free floor/start, install=false, launch=false. No build, freeze, install, or launch has been performed for R002.
+
+After Root review/seal, the normalizer verifies the exact built app/product/source/resource maps and writes only a build receipt. Xcode Run Without Building must use the generated project, `WitchGathering` scheme, 9A destination, and the exact `workspace`/Derived Data path recorded in R002 `BUILD_STATE_R002.json`; it must not copy or rebuild the app. Launch/install remain a separate action.

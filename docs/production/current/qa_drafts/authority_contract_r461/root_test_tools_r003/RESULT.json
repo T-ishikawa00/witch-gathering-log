@@ -1,0 +1,198 @@
+{
+  "status": "PASS",
+  "exitCode": 0,
+  "hold": null,
+  "elapsedSeconds": 18.140619166,
+  "testCases": [
+    {
+      "suite": "AuthorityClientContractR461Tests",
+      "test": "testDeliveredRetryRefundAndOldSuccessAfterRefund",
+      "result": "passed"
+    },
+    {
+      "suite": "AuthorityClientContractR461Tests",
+      "test": "testEqualRevisionConflictingStateIsRejectedWithoutOverwrite",
+      "result": "passed"
+    },
+    {
+      "suite": "AuthorityClientContractR461Tests",
+      "test": "testEqualRevisionSuccessCannotRacePastNewerConcurrentRefund",
+      "result": "passed"
+    },
+    {
+      "suite": "AuthorityClientContractR461Tests",
+      "test": "testMalformedUnknownAndNoncanonicalResponsesFailClosed",
+      "result": "passed"
+    },
+    {
+      "suite": "AuthorityClientContractR461Tests",
+      "test": "testObservationCASRejectsOlderConcurrentWriter",
+      "result": "passed"
+    },
+    {
+      "suite": "AuthorityClientContractR461Tests",
+      "test": "testPersistedObservationReloadBlocksOlderAuthoritySnapshot",
+      "result": "passed"
+    },
+    {
+      "suite": "AuthorityClientContractR461Tests",
+      "test": "testPythonExchangeFixtureThroughSubmitWhenRequired",
+      "result": "passed"
+    },
+    {
+      "suite": "AuthorityClientContractR461Tests",
+      "test": "testRequestIsClosedAndPendingRoundTripsForRetry",
+      "result": "passed"
+    },
+    {
+      "suite": "AuthorityClientContractR461Tests",
+      "test": "testTamperedHistoricalDeliveryFingerprintCannotAdvanceObservation",
+      "result": "passed"
+    },
+    {
+      "suite": "AuthorityClientContractR461Tests",
+      "test": "testTimeoutAfterPossibleServerCommitRetriesSamePersistedOperation",
+      "result": "passed"
+    },
+    {
+      "suite": "AuthorityClientContractR461Tests",
+      "test": "testUnauthenticatedRejectionCannotPoisonObservation",
+      "result": "passed"
+    },
+    {
+      "suite": "AuthorityClientContractR461Tests",
+      "test": "testWrongOperationOrAccountCannotPoisonObservation",
+      "result": "passed"
+    },
+    {
+      "suite": "LocalPurchaseDeliveryQAImporterR453Tests",
+      "test": "testAfterPrimaryReplaceAmbiguityColdReopenAndRetryDoNotDoubleApply",
+      "result": "passed"
+    },
+    {
+      "suite": "LocalPurchaseDeliveryQAImporterR453Tests",
+      "test": "testBeforePrimaryReplaceFailureLeavesNoReceiptAndRetryCommitsOnce",
+      "result": "passed"
+    },
+    {
+      "suite": "LocalPurchaseDeliveryQAImporterR453Tests",
+      "test": "testCurrentRefundProviderIsRecheckedEvenForSavedOperationReplay",
+      "result": "passed"
+    },
+    {
+      "suite": "LocalPurchaseDeliveryQAImporterR453Tests",
+      "test": "testOutOfOrderPityRejectsWithoutSaveOrReceiptMutation",
+      "result": "passed"
+    },
+    {
+      "suite": "LocalPurchaseDeliveryQAImporterR453Tests",
+      "test": "testPinnedFixtureImportsExactGearAndPityOnceAcrossColdReplay",
+      "result": "passed"
+    },
+    {
+      "suite": "LocalPurchaseDeliveryQAImporterR453Tests",
+      "test": "testTamperedPayloadsAndSameUUIDChangedPayloadRejectWithoutSaveMutation",
+      "result": "passed"
+    },
+    {
+      "suite": "LocalPurchaseDeliveryQAImporterR453Tests",
+      "test": "testUnknownPityTargetsRejectAcrossDrawSequenceWithoutMutation",
+      "result": "passed"
+    },
+    {
+      "suite": "LocalPurchaseTransactionIdentityR454Tests",
+      "test": "testExactPinnedReceiptIdentityAcceptsAndEveryBoundFieldMismatchRejects",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testCorruptPrimaryAndPreviousRefuseWithoutOverwritingEitherGeneration",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testCorruptPrimaryReportsRollbackAndArchivesExactBytesOnSuccessfulRecoveryWrite",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testFutureEnvelopeSchemaNeverFallsBackToPreviousGeneration",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testFutureKnownPayloadVersionIsDetectedBeforeTypedDecodeOrBackupFallback",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testInvalidReceiptIdentityOrFutureRevisionTriggersProtectedBackupRecovery",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testLegacyMissingEnvelopeMetadataMigratesOnlyOnSuccessfulWrite",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testLegacyPartialSnapshotStillUsesSchemaZeroDefaults",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testMalformedDeclaredSchemaVersionFailsClosedWithoutChangingPrimary",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testMalformedKnownNestedVersionMarkerRefusesBackupFallback",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testNestedFutureVersionMarkerRefusesWithoutUsingValidBackupOrChangingBytes",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testReceiptDictionaryKeyMustMatchReceiptOperationID",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testSchemaOneRequiresAllNonoptionalSnapshotFieldsAndDoesNotRewritePartialJSON",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testSchemaZeroNegativeRevisionIsRejectedAtLoadWithoutRewritingInput",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testUnkeyedArrayWithOpaqueElementsFailsClosedOnPossibleReassociation",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testUnknownFieldsStayWithStableGearIDsAcrossReorderAndKnownMutation",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testValidJSONBitChangeFailsChecksumAndRecoversFromPreviousGeneration",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testWriteFailureBeforeReplacePreservesBytesAndAfterReplaceIsDeduplicated",
+      "result": "passed"
+    }
+  ],
+  "inputFilesUnchanged": true,
+  "allocatedBuildBytes": 222560256,
+  "freeBytesAfter": 133680275456,
+  "logSHA256": "31128960f9438a6c723111627dc42f62a99fceb52d691fab351629cd71068835",
+  "scope": "Candidate protocol plus existing isolated purchase/save regressions; synthetic cross-language fixture; no app, network, Apple authorization or production grant"
+}

@@ -1,0 +1,250 @@
+{
+  "asset_id": "ACT_E_R02_02",
+  "revision": "ground_walk_cycle_r001",
+  "movement_semantics": "low_quadruped_alternating_contact_compression_passing_and_push_off",
+  "quality_limit": "Pose-only generated gait candidate; foot contact quality and natural cadence require native screen review.",
+  "source_still_path": "ActorStills/ACT_E_R02_02/ACT_E_R02_02__still__r001.png",
+  "source_still_sha256": "2cd12825d97b615632e34b1f123bf9ad3c4c0f7c1911228f476543d42a9f8ff4",
+  "atlas_path": "GeneratedCandidates/ACT_E_R02_02/ground_walk_cycle_r001/imagegen_atlas_source.png",
+  "atlas_sha256": "f015407de65b32fda7434eb0c363ac04f24cf42cfd45cf3004f6ef8b57c53708",
+  "atlas_px": [
+    1254,
+    1254
+  ],
+  "grid_x": [
+    0,
+    418,
+    836,
+    1254
+  ],
+  "grid_y": [
+    0,
+    418,
+    836,
+    1254
+  ],
+  "frame_canvas_px": [
+    512,
+    512
+  ],
+  "anchor_candidate_px": [
+    256,
+    490
+  ],
+  "registration": "alpha16 centroid centered on x; grounded poses align alpha16 bottom to visual-estimate anchor; hover frames center to canvas. Translation only, no resize/recolor. Disconnected generated alpha outside a 2px fringe of the largest alpha16 component is zeroed.",
+  "fps_candidate": 10,
+  "frames": [
+    {
+      "frame": "walk_000.png",
+      "source_cell_px": [
+        0,
+        0,
+        418,
+        418
+      ],
+      "translation_px": [
+        44,
+        113
+      ],
+      "alpha16_bounds_px": [
+        55,
+        242,
+        456,
+        490
+      ],
+      "alpha16_pixels": 50458,
+      "disconnected_alpha_pixels_zeroed": 6740,
+      "source_alpha16_component_count": 1,
+      "sha256": "f7a79cef86b992d614086781b3d3c1ff25db383997aa6b30f66460f1710c0e0b"
+    },
+    {
+      "frame": "walk_001.png",
+      "source_cell_px": [
+        418,
+        0,
+        418,
+        418
+      ],
+      "translation_px": [
+        50,
+        121
+      ],
+      "alpha16_bounds_px": [
+        62,
+        266,
+        451,
+        490
+      ],
+      "alpha16_pixels": 46620,
+      "disconnected_alpha_pixels_zeroed": 6204,
+      "source_alpha16_component_count": 3,
+      "sha256": "23a71ccac450a27896176dd51b75dc46f2a06e78999027bf9b656df75472f7b5"
+    },
+    {
+      "frame": "walk_002.png",
+      "source_cell_px": [
+        836,
+        0,
+        418,
+        418
+      ],
+      "translation_px": [
+        52,
+        124
+      ],
+      "alpha16_bounds_px": [
+        54,
+        264,
+        457,
+        490
+      ],
+      "alpha16_pixels": 45826,
+      "disconnected_alpha_pixels_zeroed": 5144,
+      "source_alpha16_component_count": 5,
+      "sha256": "2be93252e5464f5eb03aa2346dbc6e12253f9170fec78e29cbba6b8578102de4"
+    },
+    {
+      "frame": "walk_003.png",
+      "source_cell_px": [
+        0,
+        418,
+        418,
+        418
+      ],
+      "translation_px": [
+        50,
+        145
+      ],
+      "alpha16_bounds_px": [
+        58,
+        237,
+        455,
+        490
+      ],
+      "alpha16_pixels": 49539,
+      "disconnected_alpha_pixels_zeroed": 7012,
+      "source_alpha16_component_count": 1,
+      "sha256": "ad48d5d6967f3f0eb6fc5cc64f3ca418ee3d586d935c716e5491d0dbb0d3fc0c"
+    },
+    {
+      "frame": "walk_004.png",
+      "source_cell_px": [
+        418,
+        418,
+        418,
+        418
+      ],
+      "translation_px": [
+        47,
+        139
+      ],
+      "alpha16_bounds_px": [
+        51,
+        239,
+        461,
+        490
+      ],
+      "alpha16_pixels": 49299,
+      "disconnected_alpha_pixels_zeroed": 6633,
+      "source_alpha16_component_count": 2,
+      "sha256": "9764fd49c52744a76f900daa4440e9f3b7ffda6d22c8fbf8de27c6df8e5f32c1"
+    },
+    {
+      "frame": "walk_005.png",
+      "source_cell_px": [
+        836,
+        418,
+        418,
+        418
+      ],
+      "translation_px": [
+        50,
+        143
+      ],
+      "alpha16_bounds_px": [
+        59,
+        263,
+        453,
+        490
+      ],
+      "alpha16_pixels": 45818,
+      "disconnected_alpha_pixels_zeroed": 6143,
+      "source_alpha16_component_count": 2,
+      "sha256": "1372b7fc8b427224d19a961a816b347b49956fce6f80e5e29dcec628791cdc7a"
+    },
+    {
+      "frame": "walk_006.png",
+      "source_cell_px": [
+        0,
+        836,
+        418,
+        418
+      ],
+      "translation_px": [
+        46,
+        182
+      ],
+      "alpha16_bounds_px": [
+        56,
+        264,
+        455,
+        490
+      ],
+      "alpha16_pixels": 46519,
+      "disconnected_alpha_pixels_zeroed": 7081,
+      "source_alpha16_component_count": 1,
+      "sha256": "fd690ca431e904361fe1701844df232a1cc2a2c33a22466ba524635dd453c6fd"
+    },
+    {
+      "frame": "walk_007.png",
+      "source_cell_px": [
+        418,
+        836,
+        418,
+        418
+      ],
+      "translation_px": [
+        52,
+        182
+      ],
+      "alpha16_bounds_px": [
+        55,
+        240,
+        457,
+        490
+      ],
+      "alpha16_pixels": 48442,
+      "disconnected_alpha_pixels_zeroed": 7154,
+      "source_alpha16_component_count": 3,
+      "sha256": "835ec8f24829a74b493f5fcbcd2529370e43b633916d02250594bacfa31e505e"
+    },
+    {
+      "frame": "walk_008.png",
+      "source_cell_px": [
+        836,
+        836,
+        418,
+        418
+      ],
+      "translation_px": [
+        52,
+        169
+      ],
+      "alpha16_bounds_px": [
+        52,
+        238,
+        459,
+        490
+      ],
+      "alpha16_pixels": 51076,
+      "disconnected_alpha_pixels_zeroed": 6941,
+      "source_alpha16_component_count": 3,
+      "sha256": "5bad5114e87ef2aaa96d808f4a231fc8b4daa93c205a61db9c0741c5459ffb4a"
+    }
+  ],
+  "qa_contact_sheet": "GeneratedCandidates/ACT_E_R02_02/ground_walk_cycle_r001/qa_contact_sheet.jpg",
+  "runtime_overlay": "runtime_overlay_act_e_r02_02_pose_candidate_r002_walk_cycle.json",
+  "visual_status": "UNAPPROVED_CANDIDATE_PENDING_ROOT_NATIVE_SCREEN_REVIEW",
+  "approval_status": "HUMAN_ADOPTION_PENDING",
+  "natural_motion_complete": false
+}

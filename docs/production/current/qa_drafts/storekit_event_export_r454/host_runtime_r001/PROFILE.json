@@ -1,0 +1,348 @@
+{
+  "bundleID": "local.witch.autonomous.r1.storekit.r454",
+  "productSpecs": {
+    "local.witch.test.ticket": {
+      "maxQuantity": 1,
+      "ticketsPerUnit": 1
+    }
+  },
+  "profileID": "r454-xcode-local-authority-qa",
+  "qualityPayloads": {
+    "Q0": {
+      "affixIDs": [],
+      "latentEffectID": null
+    },
+    "Q1": {
+      "affixIDs": [
+        "AFFIX_POWER_TEST"
+      ],
+      "latentEffectID": null
+    },
+    "Q2": {
+      "affixIDs": [
+        "AFFIX_POWER_TEST",
+        "AFFIX_GUARD_TEST"
+      ],
+      "latentEffectID": null
+    },
+    "Q3": {
+      "affixIDs": [
+        "AFFIX_POWER_TEST",
+        "AFFIX_VITALITY_TEST",
+        "AFFIX_GUARD_TEST"
+      ],
+      "latentEffectID": null
+    },
+    "Q4": {
+      "affixIDs": [
+        "AFFIX_POWER_TEST",
+        "AFFIX_VITALITY_TEST",
+        "AFFIX_GUARD_TEST"
+      ],
+      "latentEffectID": "LATENT_VITALITY_TEST"
+    }
+  },
+  "schemaVersion": 1,
+  "status": "UNAPPROVED_TEST_OVERLAY",
+  "summonPool": [
+    "EQ_W_01",
+    "EQ_W_P1",
+    "EQ_W_P2",
+    "EQ_W_G1",
+    "EQ_W_G2",
+    "EQ_A_01",
+    "EQ_A_02",
+    "EQ_A_03",
+    "EQ_S_01",
+    "EQ_S_02",
+    "EQ_S_03",
+    "EQ_F_01",
+    "EQ_F_02",
+    "EQ_F_03",
+    "EQ_BODY_01",
+    "EQ_BODY_02",
+    "EQ_BODY_03",
+    "EQ_HAND_01",
+    "EQ_HAND_02",
+    "EQ_HAND_03",
+    "EQ_FEET_01",
+    "EQ_FEET_02",
+    "EQ_FEET_03",
+    "EQ_AMU_01",
+    "EQ_AMU_02",
+    "EQ_AMU_03",
+    "EQ_RING_01",
+    "EQ_RING_02",
+    "EQ_RING_03",
+    "EQ_F_BODY_01",
+    "EQ_F_HAND_01",
+    "EQ_F_FEET_01",
+    "EQ_F_RING_01"
+  ],
+  "templates": {
+    "EQ_AMU_01": {
+      "compatibleActorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH",
+        "C_FAMILIAR"
+      ],
+      "definitionID": "EQ_AMU_01",
+      "slotID": "amulet"
+    },
+    "EQ_AMU_02": {
+      "compatibleActorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH",
+        "C_FAMILIAR"
+      ],
+      "definitionID": "EQ_AMU_02",
+      "slotID": "amulet"
+    },
+    "EQ_AMU_03": {
+      "compatibleActorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH",
+        "C_FAMILIAR"
+      ],
+      "definitionID": "EQ_AMU_03",
+      "slotID": "amulet"
+    },
+    "EQ_A_01": {
+      "compatibleActorIDs": [
+        "C_APPRENTICE"
+      ],
+      "definitionID": "EQ_A_01",
+      "slotID": "weapon"
+    },
+    "EQ_A_02": {
+      "compatibleActorIDs": [
+        "C_APPRENTICE"
+      ],
+      "definitionID": "EQ_A_02",
+      "slotID": "weapon"
+    },
+    "EQ_A_03": {
+      "compatibleActorIDs": [
+        "C_APPRENTICE"
+      ],
+      "definitionID": "EQ_A_03",
+      "slotID": "weapon"
+    },
+    "EQ_BODY_01": {
+      "compatibleActorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "definitionID": "EQ_BODY_01",
+      "slotID": "body"
+    },
+    "EQ_BODY_02": {
+      "compatibleActorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "definitionID": "EQ_BODY_02",
+      "slotID": "body"
+    },
+    "EQ_BODY_03": {
+      "compatibleActorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "definitionID": "EQ_BODY_03",
+      "slotID": "body"
+    },
+    "EQ_FEET_01": {
+      "compatibleActorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "definitionID": "EQ_FEET_01",
+      "slotID": "feet"
+    },
+    "EQ_FEET_02": {
+      "compatibleActorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "definitionID": "EQ_FEET_02",
+      "slotID": "feet"
+    },
+    "EQ_FEET_03": {
+      "compatibleActorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "definitionID": "EQ_FEET_03",
+      "slotID": "feet"
+    },
+    "EQ_F_01": {
+      "compatibleActorIDs": [
+        "C_FAMILIAR"
+      ],
+      "definitionID": "EQ_F_01",
+      "slotID": "weapon"
+    },
+    "EQ_F_02": {
+      "compatibleActorIDs": [
+        "C_FAMILIAR"
+      ],
+      "definitionID": "EQ_F_02",
+      "slotID": "weapon"
+    },
+    "EQ_F_03": {
+      "compatibleActorIDs": [
+        "C_FAMILIAR"
+      ],
+      "definitionID": "EQ_F_03",
+      "slotID": "weapon"
+    },
+    "EQ_F_BODY_01": {
+      "compatibleActorIDs": [
+        "C_FAMILIAR"
+      ],
+      "definitionID": "EQ_F_BODY_01",
+      "slotID": "body"
+    },
+    "EQ_F_FEET_01": {
+      "compatibleActorIDs": [
+        "C_FAMILIAR"
+      ],
+      "definitionID": "EQ_F_FEET_01",
+      "slotID": "feet"
+    },
+    "EQ_F_HAND_01": {
+      "compatibleActorIDs": [
+        "C_FAMILIAR"
+      ],
+      "definitionID": "EQ_F_HAND_01",
+      "slotID": "hand"
+    },
+    "EQ_F_RING_01": {
+      "compatibleActorIDs": [
+        "C_FAMILIAR"
+      ],
+      "definitionID": "EQ_F_RING_01",
+      "slotID": "ring"
+    },
+    "EQ_HAND_01": {
+      "compatibleActorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "definitionID": "EQ_HAND_01",
+      "slotID": "hands"
+    },
+    "EQ_HAND_02": {
+      "compatibleActorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "definitionID": "EQ_HAND_02",
+      "slotID": "hands"
+    },
+    "EQ_HAND_03": {
+      "compatibleActorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "definitionID": "EQ_HAND_03",
+      "slotID": "hands"
+    },
+    "EQ_RING_01": {
+      "compatibleActorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "definitionID": "EQ_RING_01",
+      "slotID": "ring"
+    },
+    "EQ_RING_02": {
+      "compatibleActorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "definitionID": "EQ_RING_02",
+      "slotID": "ring"
+    },
+    "EQ_RING_03": {
+      "compatibleActorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "definitionID": "EQ_RING_03",
+      "slotID": "ring"
+    },
+    "EQ_S_01": {
+      "compatibleActorIDs": [
+        "C_SMITH"
+      ],
+      "definitionID": "EQ_S_01",
+      "slotID": "weapon"
+    },
+    "EQ_S_02": {
+      "compatibleActorIDs": [
+        "C_SMITH"
+      ],
+      "definitionID": "EQ_S_02",
+      "slotID": "weapon"
+    },
+    "EQ_S_03": {
+      "compatibleActorIDs": [
+        "C_SMITH"
+      ],
+      "definitionID": "EQ_S_03",
+      "slotID": "weapon"
+    },
+    "EQ_W_01": {
+      "compatibleActorIDs": [
+        "C_WITCH"
+      ],
+      "definitionID": "EQ_W_01",
+      "slotID": "weapon"
+    },
+    "EQ_W_G1": {
+      "compatibleActorIDs": [
+        "C_WITCH"
+      ],
+      "definitionID": "EQ_W_G1",
+      "slotID": "weapon"
+    },
+    "EQ_W_G2": {
+      "compatibleActorIDs": [
+        "C_WITCH"
+      ],
+      "definitionID": "EQ_W_G2",
+      "slotID": "weapon"
+    },
+    "EQ_W_P1": {
+      "compatibleActorIDs": [
+        "C_WITCH"
+      ],
+      "definitionID": "EQ_W_P1",
+      "slotID": "weapon"
+    },
+    "EQ_W_P2": {
+      "compatibleActorIDs": [
+        "C_WITCH"
+      ],
+      "definitionID": "EQ_W_P2",
+      "slotID": "weapon"
+    }
+  }
+}

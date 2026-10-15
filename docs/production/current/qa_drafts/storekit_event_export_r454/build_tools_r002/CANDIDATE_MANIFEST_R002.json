@@ -1,0 +1,67 @@
+{
+  "buildExecuted": false,
+  "bundleIdentifier": "local.witch.autonomous.r1.storekit.r454",
+  "correctionFromR001": [
+    "Use normalized R445 BUILD_PASS and its frozen resource/source maps as the donor, not R373 receipt.",
+    "Dedicated native_r002 output slot.",
+    "Normalizer refuses optimized Python so assertions stay active."
+  ],
+  "expectedResourceCount": 1922,
+  "files": {
+    "INPUT_MANIFEST_R002.json": {
+      "sha256": "fa6df3e4d8e0e28bac50faf2d2df14d0bbc016fe6e906a42f259f16bba5a95d4",
+      "sizeBytes": 300271
+    },
+    "NATIVE_SOURCE_MAP_R002.json": {
+      "sha256": "f7e90c5caadce71ad72e1612ae2f06094092a90d4b43cd4840a16607be0e1efe",
+      "sizeBytes": 28802
+    },
+    "README_R002.md": {
+      "sha256": "a30b85559a21d50cc73ccc0c8755a0ac8dc603b40f4a55eb436fbe8480acb760",
+      "sizeBytes": 1850
+    },
+    "ROOT_SEALED_CONTRACT_R002.template.json": {
+      "sha256": "35d2ab63edc7555d8a86a9cab807f2a6560797489adfe1fee79b8c383f67ef52",
+      "sizeBytes": 1843
+    },
+    "build_r002.py": {
+      "sha256": "2857567a9b83125ace7e06f26e2313f27313b529f0fd04573288505792d87d7e",
+      "sizeBytes": 34518
+    },
+    "normalize_r002.py": {
+      "sha256": "9bf2b1bef511f13e34b026c2a133df459cceeee8c7340da7389eb80caaf96e65",
+      "sizeBytes": 3546
+    }
+  },
+  "freezeExecuted": false,
+  "installOrLaunch": false,
+  "launchToken": "45400000-0000-4000-8000-000000000001",
+  "limits": {
+    "attempts": 1,
+    "debugBuildSeconds": 600,
+    "freezeAndDebugAggregateSeconds": 600,
+    "install": false,
+    "launch": false,
+    "maxAllocatedBytes": 2000000000,
+    "minimumFreeBytes": 20000000000,
+    "requiredStartFreeBytes": 20000000000,
+    "safetyBytes": 2000000000
+  },
+  "notes": [
+    "Root must review/seal source map, R445 donor, and protected trees before any invocation.",
+    "R001 and its preflight failure are preserved."
+  ],
+  "profileFingerprint": "62ce1ce493d34a7864cd7c7c1a5ee17aebdc8891b2b7b8dcb4eb7e6534c06e99",
+  "schema": "storekit-event-export-r454-build-candidate-manifest-r002-v1",
+  "sourceCount": 238,
+  "sourceMapProvisional": true,
+  "sourceMapSHA256": "f7e90c5caadce71ad72e1612ae2f06094092a90d4b43cd4840a16607be0e1efe",
+  "staticValidation": {
+    "JSON": "PASS",
+    "build": "NOT_RUN",
+    "buildAST": "PASS",
+    "internalDriverInputContractPins": "PASS",
+    "normalizerAST": "PASS"
+  },
+  "status": "CANDIDATE_UNSEALED"
+}

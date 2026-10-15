@@ -1,0 +1,427 @@
+{
+  "asset_id": "ACT_E_R04_04",
+  "revision": "ice_sentinel_staff_walk_cycle_r001",
+  "movement_semantics": "upright_ice_sentinel_walk_with_staff_carried_in_hand",
+  "quality_limit": "Staff remains present; biped steps are discrete candidate poses pending runtime contact/silhouette review.",
+  "source_still_path": "ActorStills/ACT_E_R04_04/ACT_E_R04_04__still__r001.png",
+  "source_still_sha256": "e6676ce9c6e9ebaa78ba47e7c0a7abbcb215f73200b5a25822af55630b19b63d",
+  "atlas_path": "GeneratedCandidates/ACT_E_R04_04/ice_sentinel_staff_walk_cycle_r001/imagegen_atlas_source.png",
+  "atlas_sha256": "4979cf366562bcf5afb9eb3fe4d59d56196f1a87b399bd13cea1e44d5bd26bbf",
+  "atlas_px": [
+    1254,
+    1254
+  ],
+  "grid_x": [
+    0,
+    418,
+    836,
+    1254
+  ],
+  "grid_y": [
+    0,
+    418,
+    836,
+    1254
+  ],
+  "frame_canvas_px": [
+    512,
+    512
+  ],
+  "anchor_candidate_px": [
+    256,
+    490
+  ],
+  "registration": "alpha16 x-centering and foot baseline to visual anchor or alpha16 bbox centering for hover. Translation only, no resize/recolor; frame RGBA preserved byte-for-byte from source cell, with no alpha cleanup. Constant clip display_scale from config. Alpha16 occupancy and connected-component sizes are measured only.",
+  "idle_alpha16_bounds_px": [
+    [
+      121,
+      93,
+      388,
+      489
+    ],
+    [
+      118,
+      97,
+      392,
+      489
+    ]
+  ],
+  "idle_alpha16_size_px": [
+    [
+      268,
+      397
+    ],
+    [
+      275,
+      393
+    ]
+  ],
+  "candidate_walk_alpha16_bounds_px": [
+    [
+      126,
+      122,
+      386,
+      490
+    ],
+    [
+      128,
+      124,
+      384,
+      490
+    ],
+    [
+      128,
+      127,
+      385,
+      490
+    ],
+    [
+      128,
+      125,
+      384,
+      490
+    ],
+    [
+      119,
+      124,
+      393,
+      490
+    ],
+    [
+      123,
+      126,
+      389,
+      490
+    ],
+    [
+      124,
+      123,
+      388,
+      490
+    ],
+    [
+      132,
+      123,
+      380,
+      490
+    ],
+    [
+      124,
+      118,
+      387,
+      490
+    ]
+  ],
+  "candidate_walk_alpha16_size_px": [
+    [
+      261,
+      369
+    ],
+    [
+      257,
+      367
+    ],
+    [
+      258,
+      364
+    ],
+    [
+      257,
+      366
+    ],
+    [
+      275,
+      367
+    ],
+    [
+      267,
+      365
+    ],
+    [
+      265,
+      368
+    ],
+    [
+      249,
+      368
+    ],
+    [
+      264,
+      373
+    ]
+  ],
+  "clip_display_scale": 1.0,
+  "fps_candidate": 8,
+  "frames": [
+    {
+      "frame": "walk_000.png",
+      "source_cell_px": [
+        0,
+        0,
+        418,
+        418
+      ],
+      "translation_px": [
+        26,
+        112
+      ],
+      "alpha16_bounds_px": [
+        126,
+        122,
+        386,
+        490
+      ],
+      "alpha16_size_px": [
+        261,
+        369
+      ],
+      "alpha16_pixels": 50572,
+      "source_alpha16_component_count": 1,
+      "largest_alpha16_component_pixels": 50572,
+      "other_alpha16_component_pixels": [],
+      "alpha_preserved_from_source_cell": true,
+      "sha256": "05122607952f2adca837721b199b413ab7e4fdb9b35873556de528e1af3aa084"
+    },
+    {
+      "frame": "walk_001.png",
+      "source_cell_px": [
+        418,
+        0,
+        418,
+        418
+      ],
+      "translation_px": [
+        38,
+        111
+      ],
+      "alpha16_bounds_px": [
+        128,
+        124,
+        384,
+        490
+      ],
+      "alpha16_size_px": [
+        257,
+        367
+      ],
+      "alpha16_pixels": 47577,
+      "source_alpha16_component_count": 1,
+      "largest_alpha16_component_pixels": 47577,
+      "other_alpha16_component_pixels": [],
+      "alpha_preserved_from_source_cell": true,
+      "sha256": "72c919d42596c1e15376fb45a20b174ad4b68f40bb90fa365dfb5fdb730b0996"
+    },
+    {
+      "frame": "walk_002.png",
+      "source_cell_px": [
+        836,
+        0,
+        418,
+        418
+      ],
+      "translation_px": [
+        44,
+        112
+      ],
+      "alpha16_bounds_px": [
+        128,
+        127,
+        385,
+        490
+      ],
+      "alpha16_size_px": [
+        258,
+        364
+      ],
+      "alpha16_pixels": 47556,
+      "source_alpha16_component_count": 2,
+      "largest_alpha16_component_pixels": 47555,
+      "other_alpha16_component_pixels": [
+        1
+      ],
+      "alpha_preserved_from_source_cell": true,
+      "sha256": "bc5201e54cc48125ac57a4f2f6ff8be279d49f232bfb6404dab714daea12e26c"
+    },
+    {
+      "frame": "walk_003.png",
+      "source_cell_px": [
+        0,
+        418,
+        418,
+        418
+      ],
+      "translation_px": [
+        28,
+        116
+      ],
+      "alpha16_bounds_px": [
+        128,
+        125,
+        384,
+        490
+      ],
+      "alpha16_size_px": [
+        257,
+        366
+      ],
+      "alpha16_pixels": 48684,
+      "source_alpha16_component_count": 1,
+      "largest_alpha16_component_pixels": 48684,
+      "other_alpha16_component_pixels": [],
+      "alpha_preserved_from_source_cell": true,
+      "sha256": "01162cbb55d8eb82c9e136451500b9ea76f6ed625998106c5c858adeffaf0c44"
+    },
+    {
+      "frame": "walk_004.png",
+      "source_cell_px": [
+        418,
+        418,
+        418,
+        418
+      ],
+      "translation_px": [
+        40,
+        113
+      ],
+      "alpha16_bounds_px": [
+        119,
+        124,
+        393,
+        490
+      ],
+      "alpha16_size_px": [
+        275,
+        367
+      ],
+      "alpha16_pixels": 46405,
+      "source_alpha16_component_count": 1,
+      "largest_alpha16_component_pixels": 46405,
+      "other_alpha16_component_pixels": [],
+      "alpha_preserved_from_source_cell": true,
+      "sha256": "dd592d98655aeaa8f227ffa0e49b753fad8854de10123d2303c6f28e3642a7a4"
+    },
+    {
+      "frame": "walk_005.png",
+      "source_cell_px": [
+        836,
+        418,
+        418,
+        418
+      ],
+      "translation_px": [
+        38,
+        113
+      ],
+      "alpha16_bounds_px": [
+        123,
+        126,
+        389,
+        490
+      ],
+      "alpha16_size_px": [
+        267,
+        365
+      ],
+      "alpha16_pixels": 49048,
+      "source_alpha16_component_count": 1,
+      "largest_alpha16_component_pixels": 49048,
+      "other_alpha16_component_pixels": [],
+      "alpha_preserved_from_source_cell": true,
+      "sha256": "545057bbd83a989cc59d496d75a17e35538b3b9dda1a160113cd21418b3943a5"
+    },
+    {
+      "frame": "walk_006.png",
+      "source_cell_px": [
+        0,
+        836,
+        418,
+        418
+      ],
+      "translation_px": [
+        24,
+        115
+      ],
+      "alpha16_bounds_px": [
+        124,
+        123,
+        388,
+        490
+      ],
+      "alpha16_size_px": [
+        265,
+        368
+      ],
+      "alpha16_pixels": 49945,
+      "source_alpha16_component_count": 1,
+      "largest_alpha16_component_pixels": 49945,
+      "other_alpha16_component_pixels": [],
+      "alpha_preserved_from_source_cell": true,
+      "sha256": "e729b58cdcfdb92e00475676de4715ba17d42d03f627d1efed3bcea23d4c021b"
+    },
+    {
+      "frame": "walk_007.png",
+      "source_cell_px": [
+        418,
+        836,
+        418,
+        418
+      ],
+      "translation_px": [
+        42,
+        115
+      ],
+      "alpha16_bounds_px": [
+        132,
+        123,
+        380,
+        490
+      ],
+      "alpha16_size_px": [
+        249,
+        368
+      ],
+      "alpha16_pixels": 49003,
+      "source_alpha16_component_count": 2,
+      "largest_alpha16_component_pixels": 49002,
+      "other_alpha16_component_pixels": [
+        1
+      ],
+      "alpha_preserved_from_source_cell": true,
+      "sha256": "a346ed4108ea1ff586284816d58161b019bc9f00da3ff378a672e33a168ea0a5"
+    },
+    {
+      "frame": "walk_008.png",
+      "source_cell_px": [
+        836,
+        836,
+        418,
+        418
+      ],
+      "translation_px": [
+        28,
+        110
+      ],
+      "alpha16_bounds_px": [
+        124,
+        118,
+        387,
+        490
+      ],
+      "alpha16_size_px": [
+        264,
+        373
+      ],
+      "alpha16_pixels": 51656,
+      "source_alpha16_component_count": 1,
+      "largest_alpha16_component_pixels": 51656,
+      "other_alpha16_component_pixels": [],
+      "alpha_preserved_from_source_cell": true,
+      "sha256": "c4a21b427af02f7f5391db6e6b57470d1cfccb037c7ddeece88de1f575015f4f"
+    }
+  ],
+  "qa_contact_sheet": "GeneratedCandidates/ACT_E_R04_04/ice_sentinel_staff_walk_cycle_r001/qa_contact_sheet.jpg",
+  "runtime_overlay": "runtime_overlay_act_e_r04_04_pose_candidate_r002_walk_cycle.json",
+  "visual_status": "UNAPPROVED_CANDIDATE_PENDING_ROOT_NATIVE_SCREEN_REVIEW",
+  "approval_status": "HUMAN_ADOPTION_PENDING",
+  "natural_motion_complete": false
+}

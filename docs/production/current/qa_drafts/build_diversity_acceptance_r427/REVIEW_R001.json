@@ -1,0 +1,59 @@
+{
+  "basis": {
+    "acceptance_path": "docs/production/mission_20261010_r1/Witch_Codex_Autonomous_03to05_20261010/03_ACCEPTANCE_AND_BLOCKERS.md",
+    "acceptance_sha256": "5c26036ca41f3a45a870c3e5590481c97321ae01e54aa52a26a74c12d674012c",
+    "engine_path": "native/WitchGameCore/Sources/WitchGameCore/GameEngine.swift",
+    "engine_sha256": "c50d7418a1442c7f8b5a5ecd1b0a76f937877fc90267cb0b2460fb6645347b65",
+    "timeline_path": "native/WitchGameCore/Sources/WitchGameCore/R6TimelineSimulator.swift",
+    "timeline_sha256": "2385aa9b7fcec67e0b8c83299910560deff63fab3cb251281d545b87c813bc37"
+  },
+  "boundary": "No change to Core or balance values recommended from these records. Candidate preview evidence is not Human balance approval, fun validation, monetization approval, or full release acceptance.",
+  "findings": [
+    {
+      "area": "membrane / defensive tradeoff",
+      "evidence": "docs/production/current/qa_drafts/research_completion_triage_r359/diagnostic_extraction_r001/R359_RESULT_R001.json",
+      "sha256": "5e5e2adc502b40588664b785e6520dbecf5f3c56227bdafce9a547b8af9024e2",
+      "summary": "Three fixed seeds; active and control both win. Active armor reduces 249–267 damage across 23–26 paired hits (one terminal HP-clamped hit excluded); active run takes 18–19 ticks vs control 13–14. This is a measurable safety/time tradeoff, but a bounded Core preview."
+    },
+    {
+      "area": "direct vs poison",
+      "evidence": "docs/production/current/qa_drafts/combined_core_validation_r387/resume_r006_r001/reports/r376/report.json",
+      "sha256": "b48eb94093e4fd72ff28300fdde73a93bf7979fe72eea23dfd1b86cff3fd6a9f",
+      "summary": "CH_R02_01, three seeds, both arms 3/3 wins. Direct ticks 9/9/12; poison ticks 9/9/9. Party HP loss 20/22/29 direct vs 20/22/25 poison. Both Q0, enhancement/refinement/investment zero and catalog attack +3. Natural latent slots differ; poison is faster in one seed and tied in two. This is the strongest local evidence that direct is not the only successful solution, but the save is a scripted 30-day R368 virtual cohort, not a human playthrough."
+    },
+    {
+      "area": "barrier, counter, heal, follow-up",
+      "evidence": "docs/production/current/qa_drafts/combined_core_validation_r387/resume_r006_r001/reports/r377/report.json",
+      "sha256": "207cac15c56841778587a4007c6bc0411483e94c48c76fc1d22b4d23e9286c5a",
+      "summary": "24 previews, all 24 report wins. Barrier adds barrier/absorb/reflect events and saves 1 aggregate party HP in each of three paired seeds, with identical ticks. Counter build produces 12 vs 8 counter damage in one seed; no counter event in the other two; it is 1 tick faster in two seeds. Chase build produces amount 2 vs 1 on four chase events per seed; one seed is 1 tick faster. Apprentice AF_HEAL is not observed on CH_R02_01 in any candidate seed, and the R387 test fails that assertion."
+    },
+    {
+      "area": "heal follow-up proof",
+      "evidence": "docs/production/current/qa_drafts/heal_build_validation_r394/execution_r003/report.json",
+      "sha256": "5f8eefdb06ecbd1ffd71f5fa865148ef55b6d7560e61dc7db4456887a8797d69",
+      "summary": "One CH_R05_03 seed; candidate AF_HEAL emits 42 heal vs AF_WARD control 39 at the same root/time/target. Both win in 29 ticks. This proves a bounded heal amount difference, not improved win rate or broad safety."
+    },
+    {
+      "area": "quality / poison value",
+      "evidence": "docs/production/current/qa_drafts/lr_owned_value_r402/execution_r003_schema_repair/report.json",
+      "sha256": "cc21fcdf902ec97b2da0dbad387fc5a2c8c3354bf23c307fbdfd0f6846cd82b0",
+      "summary": "Six Q3/Q4 previews over three seeds; both quality arms win every preview in 9 ticks. Projected Witch poison bonus differs (656 vs 916 bp), but each seed kills the two 348-HP enemies in the same ticks, with the same party HP loss. The tested scenario does not show a quality-driven outcome improvement."
+    },
+    {
+      "area": "15 challenge mechanics",
+      "evidence": "docs/production/current/qa_drafts/research_mechanic_closure_r371/execution_r002/runs/37100000-0002-4001-8000-000000000001/RUN.json",
+      "sha256": "65f0e11aa1c2bb677bd8489435543fc71da88ab610ccac3794e8a80cd5f4cfbe",
+      "summary": "15/15 authored mechanic fixture tests passed with no save mutation. Fixture class is MECHANISM_ONLY; this verifies event/target/root mechanics, not earned-build viability across all challenges."
+    },
+    {
+      "area": "R387 combined-run boundary",
+      "evidence": "docs/production/current/qa_drafts/combined_core_validation_r387/resume_r006_r001/swift_test.log",
+      "sha256": "f2168ed011db198c324ffbfad8df85d568b01283d8274354b2dbe4ac0e73151f",
+      "summary": "The actual selected-test log shows R376 pass, R377 fail (candidate heal not observed), and one R384 catalog projection test pass. Its adjacent resume RUN.json says no tests started, so the aggregate receipt and log disagree. Earlier candidate_r004 RUN records 7 pass / 3 fail. Do not label R387 as a clean combined pass."
+    }
+  ],
+  "local_gap": "The current artifact set demonstrates distinct effects and multiple successful preview solutions, but does not provide one reconciled build matrix joining each UUID to its legitimate acquisition/material route and then to outcome metrics. Most combat comparisons are read-only R181 previews over the virtual R368 save; no paired ordinary challenge transaction is recorded with the alternate build and persisted lastCombatResult. This is an evidence gap, not a demonstrated production-code failure.",
+  "schema": "build-diversity-acceptance-review-r427-v1",
+  "smallest_next_local_acceptance": "Create one read-only reconciliation for two existing pairs only: R376 direct/poison on CH_R02_01 and R377 barrier/control on CH_R02_02. Join exact UUIDs to the archived acquisition or recipe receipt, list required materials/dust and any gate, and retain the already-recorded per-seed win/ticks/final party HP/effect events. If an actual command-path check is needed, run one bounded .resolveChallenge per arm against separate copies of the same pinned save and seed, asserting persisted CombatResult and only the expected combat result fields/revision changes; label this as a synthetic-copy transaction check because rewards are already cleared in the source snapshot. Do not rerun R359/R371/R376/R377/R394/R402 merely to recreate existing outcomes.",
+  "status": "LOCAL_EVIDENCE_PARTIAL_NO_CODE_DEFECT_ESTABLISHED"
+}

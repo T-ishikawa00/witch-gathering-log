@@ -1,0 +1,11 @@
+{
+  "schema": "run_r377-preflight-r001",
+  "execution": "NOT_RUN",
+  "swiftOrSimulatorLaunched": false,
+  "runnerPath": "docs/production/current/qa_drafts/effect_build_comparison_r376/execution_r004_r377/run_r377.py",
+  "runnerSHA256": "67d36c3c9654bd4177a7e3316926f968828101259eb1f1e0b0630b241a7bd8c2",
+  "inputManifestSHA256": "d31f59550b76af2a42f35f64fb9a957086d3c7ba735b6f4d0ffdf181d5fe5b45",
+  "preflightExitCode": 1,
+  "stdout": "",
+  "stderrTail": "Traceback (most recent call last):\n  File \"/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/effect_build_comparison_r376/execution_r004_r377/run_r377.py\", line 168, in <module>\n    raise SystemExit(main())\n  File \"/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/effect_build_comparison_r376/execution_r004_r377/run_r377.py\", line 99, in main\n    h=load_helper(); m=json.loads(INPUT.read_text()); staged,test,r368m,cman,cinput=verify_inputs(h,m)\n  File \"/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/effect_build_comparison_r376/execution_r004_r377/run_r377.py\", line 62, in verify_inputs\n    if version!=tool['version']: raise RuntimeError('Swift toolchain drift')\nRuntimeError: Swift toolchain drift"
+}

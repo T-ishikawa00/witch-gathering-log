@@ -1,0 +1,86 @@
+{
+  "status": "SCOPED_PROVENANCE_REVIEW_NOT_CAMPAIGN_REJECTION",
+  "question": "Was the rev13 five-draw gear a QA-injected grant, or an explicit in-app local free-candidate mock draw; can rev91 30-clear be described as no-test-gear progression?",
+  "evidence": {
+    "releaseCandidateBuild": {
+      "bundleID": "local.witch.autonomous.r1.completion.r420",
+      "configuration": "Release",
+      "flags": [
+        "STANDARD_PLAY_R169",
+        "FIRST_CRAFT_AID_R179",
+        "EQUIPMENT_LOADOUTS_R342",
+        "NATURAL_GEAR_R350",
+        "NATURAL_GEAR_REFINEMENT_R352",
+        "GEAR_DISMANTLE_REFUND_R353"
+      ],
+      "launch": false,
+      "receiptSHA256": "79013d5b03fc10b9a86955ce18761b3ec541d1333d95a3c1add26fdda32b51c3",
+      "sourceMapSHA256": "cee0238900cbd8bade40a52d0aac98e880770064e02b5130366b32c2b6acc355"
+    },
+    "sourcePins": {
+      "App.swift": "3ae262c5c3bae250b20e7c4971256ff1c3ec00043f4b607de34b2e683603594a",
+      "GachaViews.swift": "e46becb5f1e68b2b15e2a485d46d31c95b158de29eb0599b6af18aa370ec26a9",
+      "GameEngine.swift": "c50d7418a1442c7f8b5a5ecd1b0a76f937877fc90267cb0b2460fb6645347b65",
+      "catalog_overlay.json": "bb218f0fe6b4b1a6037faa75ddb301ded27d7b9de070747bebf99a3e72209337"
+    },
+    "ordinaryUIPath": {
+      "App.swift": "1311-1327 summon(_:) dispatches .mockSummon using runtime pool, ticket_free, count, current revision seed; the view opens from Home/expedition buttons at lines1547-1549/1622/1627 and routes to GachaView at2182.",
+      "GachaViews.swift": "9-18 labels free ticket use; buttons summon5/50 at18 and require gacha unlock/tickets.",
+      "rev12": "comparison tutorial receipt unlocks five initial tickets and explicitly labels the unlock [UNAPPROVED_TEST_OVERLAY].",
+      "rev13": {
+        "operationID": "C385C74B-86AC-4EE7-8DF7-84EBDF76F208",
+        "requestFingerprint": "summon|9:EQ_AMU_01|9:EQ_AMU_02|9:EQ_AMU_03|7:EQ_A_01|7:EQ_A_02|7:EQ_A_03|10:EQ_BODY_01|10:EQ_BODY_02|10:EQ_BODY_03|10:EQ_FEET_01|10:EQ_FEET_02|10:EQ_FEET_03|7:EQ_F_01|7:EQ_F_02|7:EQ_F_03|12:EQ_F_BODY_01|12:EQ_F_FEET_01|12:EQ_F_HAND_01|12:EQ_F_RING_01|10:EQ_HAND_01|10:EQ_HAND_02|10:EQ_HAND_03|10:EQ_RING_01|10:EQ_RING_02|10:EQ_RING_03|7:EQ_S_01|7:EQ_S_02|7:EQ_S_03|7:EQ_W_01|7:EQ_W_G1|7:EQ_W_G2|7:EQ_W_P1|7:EQ_W_P2|1:5|11:ticket_free|2:29|R144|9ebe47982f5703847a596b0e93df75a093ed46fdbbd14b1de2a14029db8347a4|R350|9888f5f0e7918ac0ea9de07e01ecb96d430cecb397b444d7f3863897f33c0f6a|R352|5279e04574f7091c5b34b7aa8fec92a6b95d3464123bd4c67527c26d784b8d22|R353|33056eb7d447c06ddaf1e565b0b5d6646e53707500a86d9a14c318bb46a1a0d1",
+        "result": "MOCK_ONLY R3 test draw x5: Q0:EQ_HAND_02,Q1:EQ_RING_03,Q1:EQ_W_P2,Q0:EQ_S_03,Q1:EQ_S_02; base quality odds before pity Q0=3500bp/Q1=4000bp/Q2=2000bp/Q3=400bp/Q4=100bp; Q4 pity at 100 rolls; Q3 minimum on 20th consecutive Q0-Q2 roll; target top guarantee is 50/50 then guarantee after a miss; candidate only",
+        "revision": 13
+      }
+    },
+    "generator": "GameEngine.swift:1203-1242 command is literally mockSummon; it consumes ticket_free, chooses catalog templates, and synthesizes AFFIX_POWER_TEST/AFFIX_VITALITY_TEST/AFFIX_GUARD_TEST (and Q4 LATENT_*_TEST), then returns MOCK_ONLY R3 test draw / candidate only.",
+    "draws": "Q0:EQ_HAND_02; Q1:EQ_RING_03; Q1:EQ_W_P2; Q0:EQ_S_03; Q1:EQ_S_02.",
+    "activeDrawGearAtRev91": [
+      {
+        "uuid": "E56F7BB6-D8A6-4611-8B5D-94DB13508979",
+        "definitionID": "EQ_RING_03",
+        "qualityID": "Q1",
+        "enhancement": 0,
+        "ownerID": "C_WITCH",
+        "affixIDs": [
+          "AFFIX_POWER_TEST"
+        ],
+        "stillEquippedAtRev91": true
+      },
+      {
+        "uuid": "45135D4D-CECB-4896-80B6-2D1894782322",
+        "definitionID": "EQ_W_P2",
+        "qualityID": "Q1",
+        "enhancement": 0,
+        "ownerID": "C_WITCH",
+        "affixIDs": [
+          "AFFIX_GUARD_TEST"
+        ],
+        "stillEquippedAtRev91": true
+      },
+      {
+        "uuid": "C71D598A-C628-4B98-967D-0F3FF551E1E6",
+        "definitionID": "EQ_S_02",
+        "qualityID": "Q1",
+        "enhancement": 0,
+        "ownerID": "C_SMITH",
+        "affixIDs": [
+          "AFFIX_GUARD_TEST"
+        ],
+        "stillEquippedAtRev91": true
+      }
+    ],
+    "clearReceiptStatus": "The campaign clears are persisted encounter receipts in the save; this audit does not identify a direct QAScenarios/fixture mutation on this run. The prior local summon path is nevertheless a test-overlay route."
+  },
+  "judgment": {
+    "accurateDescription": "30/30 is real local UI-dispatched campaign progression on the R420 candidate Release profile, with five free tickets spent through the visible in-app mock summon route. It is not a direct save/QA-scenario grant.",
+    "boundary": "It is not evidence of a no-test-overlay/no-mock-gacha ordinary gear progression. Three items produced by rev13 mock draw remain equipped at rev91, including EQ_W_P2 (whose catalog entry has poison effects). Their precise marginal contribution to these wins is not isolated; do not assert they changed a win or quantify strength without combat comparison.",
+    "recommendation": "If the acceptance claim requires no mock/test affix assistance, describe the existing 30 clears as candidate/mock-assisted, then perform only the needed replay evidence with owned non-mock alternatives (the rev91 inventory includes starter EQ_W_01 and EQ_S_01); do not erase or invalidate the original history."
+  },
+  "limitations": [
+    "This answers route/provenance, not whether mock affix IDs materially change combat stats.",
+    "The in-app route is local candidate functionality, not Apple StoreKit, production gacha, or approved monetization.",
+    "R443 remains interim; later challenge operations/final closure are outside this review."
+  ]
+}

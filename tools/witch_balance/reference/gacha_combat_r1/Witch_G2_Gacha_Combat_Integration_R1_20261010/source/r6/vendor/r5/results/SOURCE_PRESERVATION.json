@@ -1,0 +1,205 @@
+{
+  "prior_originals": [
+    {
+      "name": "Witch_G2C_AutoBattle_Design_R1_20261009.md",
+      "path": "history/Witch_G2C_AutoBattle_Design_R1_20261009.md",
+      "bytes": 16015,
+      "sha256": "b2cb7cd759985556186a045a6f346761e08339150f497d76085a14202a77ad29",
+      "copy_readback_matches": true,
+      "original_source_unchanged": true
+    },
+    {
+      "name": "Witch_G2C_Growth_Equipment_Skills_R2_20261009.zip",
+      "path": "history/Witch_G2C_Growth_Equipment_Skills_R2_20261009.zip",
+      "bytes": 105902,
+      "sha256": "ce6aeb3065faac5afc019c140af4d84f0a5e318f55419b6bc8ef1b16dfbf1870",
+      "copy_readback_matches": true,
+      "original_source_unchanged": true
+    },
+    {
+      "name": "Witch_G2C_Idle_Economy_R3_20261009.zip",
+      "path": "history/Witch_G2C_Idle_Economy_R3_20261009.zip",
+      "bytes": 175317,
+      "sha256": "c89c7c02d4119d90ff1721b274cb7c74e515d716fa27f05a87fe022a49d28340",
+      "copy_readback_matches": true,
+      "original_source_unchanged": true
+    },
+    {
+      "name": "Witch_G2C_R01_EndToEnd_R4_20261009.zip",
+      "path": "history/Witch_G2C_R01_EndToEnd_R4_20261009.zip",
+      "bytes": 238881,
+      "sha256": "72892830f33c8412fe676a5312d20b86090add984816cce959d45cb3d24820ff",
+      "copy_readback_matches": true,
+      "original_source_unchanged": true
+    }
+  ],
+  "r4_vendor_member_count": 41,
+  "r4_vendor_members_unchanged": true,
+  "member_checks": [
+    {
+      "path": "00_READ_FIRST.md",
+      "same": true
+    },
+    {
+      "path": "PACKAGE_MANIFEST.json",
+      "same": true
+    },
+    {
+      "path": "READABLE_REPORT.html",
+      "same": true
+    },
+    {
+      "path": "REPORT_R4.md",
+      "same": true
+    },
+    {
+      "path": "data/FINDINGS_R4.json",
+      "same": true
+    },
+    {
+      "path": "data/LOCAL_CANDIDATES.json",
+      "same": true
+    },
+    {
+      "path": "data/SOURCE_HASHES.json",
+      "same": true
+    },
+    {
+      "path": "docs/ASSUMPTIONS_AND_COVERAGE.md",
+      "same": true
+    },
+    {
+      "path": "handoff/CODEX_SAVE_AND_REPRODUCE_R4.md",
+      "same": true
+    },
+    {
+      "path": "results/BASELINE_ECONOMY_TESTS.txt",
+      "same": true
+    },
+    {
+      "path": "results/BASELINE_GROWTH_TESTS.txt",
+      "same": true
+    },
+    {
+      "path": "results/BATTLE_ROWS.csv",
+      "same": true
+    },
+    {
+      "path": "results/ENVIRONMENT.json",
+      "same": true
+    },
+    {
+      "path": "results/EXPERIMENT_CONSOLE.txt",
+      "same": true
+    },
+    {
+      "path": "results/EXPERIMENT_RESULTS.json",
+      "same": true
+    },
+    {
+      "path": "results/FINAL_VERIFICATION.txt",
+      "same": true
+    },
+    {
+      "path": "results/GOLDEN_BOAR_LOG.json",
+      "same": true
+    },
+    {
+      "path": "results/GOLDEN_TREE_LOG.json",
+      "same": true
+    },
+    {
+      "path": "results/HTML_LAYOUT_QA.json",
+      "same": true
+    },
+    {
+      "path": "results/INTEGRATION_TESTS.txt",
+      "same": true
+    },
+    {
+      "path": "results/PRIMARY_CHECKPOINT.json",
+      "same": true
+    },
+    {
+      "path": "results/PROGRESSION_RECEIPT.json",
+      "same": true
+    },
+    {
+      "path": "results/SCENARIOS.json",
+      "same": true
+    },
+    {
+      "path": "results/VALIDATION_SUMMARY.json",
+      "same": true
+    },
+    {
+      "path": "source/economy_r3/DESIGN_R3.md",
+      "same": true
+    },
+    {
+      "path": "source/economy_r3/data/economy_R3.json",
+      "same": true
+    },
+    {
+      "path": "source/economy_r3/reference/growth_gear_skills_R2_UNCHANGED.json",
+      "same": true
+    },
+    {
+      "path": "source/economy_r3/reference/world_catalog_R1_UNCHANGED.json",
+      "same": true
+    },
+    {
+      "path": "source/economy_r3/tools/economy_model.py",
+      "same": true
+    },
+    {
+      "path": "source/economy_r3/tools/test_economy.py",
+      "same": true
+    },
+    {
+      "path": "source/growth_r2/GROWTH_EQUIPMENT_SKILLS_R2.md",
+      "same": true
+    },
+    {
+      "path": "source/growth_r2/data/growth_gear_skills_R2.json",
+      "same": true
+    },
+    {
+      "path": "source/growth_r2/reference/world_catalog_R1_UNCHANGED.json",
+      "same": true
+    },
+    {
+      "path": "source/growth_r2/validation/reference_model.py",
+      "same": true
+    },
+    {
+      "path": "source/growth_r2/validation/test_reference.py",
+      "same": true
+    },
+    {
+      "path": "tools/battle_model.py",
+      "same": true
+    },
+    {
+      "path": "tools/build_report.py",
+      "same": true
+    },
+    {
+      "path": "tools/progression_bridge.py",
+      "same": true
+    },
+    {
+      "path": "tools/run_experiments.py",
+      "same": true
+    },
+    {
+      "path": "tools/test_integration.py",
+      "same": true
+    },
+    {
+      "path": "tools/verify_bundle.py",
+      "same": true
+    }
+  ],
+  "mac_and_github_writes_performed": false
+}

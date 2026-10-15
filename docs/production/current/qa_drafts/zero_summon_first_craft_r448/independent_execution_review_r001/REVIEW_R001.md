@@ -1,0 +1,11 @@
+# R448 R002 independent execution readback
+
+This is a read-only review of the single sealed R448 R002 Core case. No build, test, Simulator, or source changes were made.
+
+The selected XCTest actually passed: `EconomyCohortProgressionR355Tests/testR448FreeNoAdZeroSummonFirstCraftProgression`, 1 test, 0 failures, 0 skips, 44.413 seconds. The runner's `INCOMPLETE_RETAINED` result is a host-parser false negative: its elapsed-time regex expects `Executed 1 test, with 0 failures in ...`, while the XCTest log inserts `(0 unexpected)` before `in`. The log also contains the passing suite summary at 44.414 seconds. Thus the Core case completed successfully within its 90-second cap, but the runner did not certify acceptance; preserve the runner status as written and record the discrepancy separately.
+
+The case report records 30 campaign wins, 15 challenge wins, five completed research IDs, one first craft, 11 evolutions, 16 enhancements, 14 refinements, zero free/paid summon draws, and no synthetic grant receipts. These are one deterministic 30-virtual-day `free_no_ad` Core scenario, not natural-player or multi-seed evidence.
+
+The UUID origin join is internally consistent. `GEAR_ORIGIN_JOIN_R002.json` has 4 starter IDs, 1 crafted ID, 1,440 natural-acquisition IDs, zero unclassified IDs, and 1,444 final gear IDs. The 30 daily snapshots' acquisition-record union contains exactly the same 1,440 natural UUIDs; the final snapshot's 96 records are a bounded retained ledger, not the run's total. One eligible natural duplicate (`08603449-c220-506a-84c3-7f0053452b1e`) was dismantled; it is in the natural set and absent from final inventory. Every final gear UUID joins to a starter, craft, or natural origin; the single difference between all origin UUIDs (1,445) and final inventory (1,444) is that recorded dismantle.
+
+The run receipt reports return code 0, the exact selected test event, no skipped/failed test events, unchanged staged inputs/R445 map/build state/R368 manifest, no live save or Simulator, and no surviving owned process. Its only closure error is the exact-test acceptance parser described above. This review supports the scoped test result but does not convert the original runner receipt to a pass.

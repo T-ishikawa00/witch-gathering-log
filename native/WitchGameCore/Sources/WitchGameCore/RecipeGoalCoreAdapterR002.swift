@@ -1,16 +1,21 @@
 import Foundation
 
 public extension RecipeGoalProjectionR035 {
-    static func goals(catalog: GameCatalog, state: GameSnapshot) -> [Goal] {
+    static func goals(catalog: GameCatalog, state: GameSnapshot,
+                      firstCraftAidCapabilityR179: FirstCraftAidCapabilityR179 = .disabled) -> [Goal] {
         goals(catalog: catalog, materialCounts: state.materials,
               ownedGearTemplateIDs: Set(state.gear.map(\.definitionID)),
               unlockedRegionIDs: state.unlockedRegionIDs,
-              completedEncounterIDs: state.completedEncounterIDs)
+              completedEncounterIDs: state.completedEncounterIDs,
+              firstCraftAidEligibleR179: state.firstCraftAidEligibleR179 == true,
+              craftedGearOnce: state.craftedGearOnce,
+              firstCraftAidCapabilityR179: firstCraftAidCapabilityR179)
     }
 
     /// Resolves the saved goal directly even if its parent gear was later evolved
     /// or dismantled. Ownership is surfaced as status; it never clears the goal.
-    static func trackedGoal(catalog: GameCatalog, state: GameSnapshot) -> Goal? {
+    static func trackedGoal(catalog: GameCatalog, state: GameSnapshot,
+                            firstCraftAidCapabilityR179: FirstCraftAidCapabilityR179 = .disabled) -> Goal? {
         guard let trackedID = state.trackedRecipeID,
               let recipe = catalog.recipes.first(where: { $0.id == trackedID }),
               recipe.kind == "craft_new" || recipe.kind == "evolve_in_place" else { return nil }
@@ -19,7 +24,10 @@ public extension RecipeGoalProjectionR035 {
         guard let projected = goals(catalog: catalog, materialCounts: state.materials,
                                     ownedGearTemplateIDs: projectionParents,
                                     unlockedRegionIDs: state.unlockedRegionIDs,
-                                    completedEncounterIDs: state.completedEncounterIDs)
+                                    completedEncounterIDs: state.completedEncounterIDs,
+                                    firstCraftAidEligibleR179: state.firstCraftAidEligibleR179 == true,
+                                    craftedGearOnce: state.craftedGearOnce,
+                                    firstCraftAidCapabilityR179: firstCraftAidCapabilityR179)
             .first(where: { $0.recipeID == trackedID }) else { return nil }
         let parentOwned = recipe.parentTemplateID.map(owned.contains)
         // The projection is seeded with a synthetic parent so it can still report
@@ -34,6 +42,8 @@ public extension RecipeGoalProjectionR035 {
                     dustMissing: projected.dustMissing, requirements: projected.requirements,
                     ready: projected.ready && parentRequirementSatisfied,
                     parentOwned: parentOwned,
-                    outputOwned: owned.contains(projected.outputGearID))
+                    outputOwned: owned.contains(projected.outputGearID),
+                    dispatchCompatible: projected.dispatchCompatible,
+                    firstCraftAidApplied: projected.firstCraftAidApplied)
     }
 }

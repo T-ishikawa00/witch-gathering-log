@@ -1,0 +1,80 @@
+{
+  "schema": "native-completion-r456-input-v1",
+  "status": "PREPARED_NOT_ROOT_SEALED",
+  "worktree": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg",
+  "driverSHA256": "<seal build_r456.py after review>",
+  "sourceMapPath": "<Root fills exact final R454 R004 source map path>",
+  "sourceMapSHA256": "<Root fills after R454 R004 closure>",
+  "frozenSourceRoot": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/qa_source_20261015T062300",
+  "frozenSourceMapPath": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/qa_source_20261015T062300/SOURCE_SHA256.json",
+  "frozenSourceMapSHA256": "<Root fills after R454 R004 closure>",
+  "sourceCount": 238,
+  "projectPath": "<Root fills exact R004 generated .xcodeproj path>",
+  "projectPBXPath": "<absolute path to generated project.pbxproj>",
+  "projectPBXSHA256": "<Root fills after StoreKit file reference is sealed>",
+  "protectedLivePBXPath": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/WitchGathering.xcodeproj/project.pbxproj",
+  "protectedLivePBXSHA256": "b83573270f2e0fde46411aabe9a539343b0fd1301760b3de7fe672b796dc18e9",
+  "infoPlistTemplatePath": "<absolute R004 frozen GameInfo.plist template>",
+  "infoPlistTemplateSHA256": "<Root pins exact source template>",
+  "resourceCount": 1922,
+  "resourceMapPath": "<R004 frozen resource map path>",
+  "resourceMapSHA256": "<Root pins exact R004 resource map>",
+  "donorResourceMapPath": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/qa_source_20261014T071314/RESOURCE_SHA256.json",
+  "donorResourceMapSHA256": "90d213640ea8bf1ac0791ece0b2bfa01f68228e3eed3d56479b8c5628b3cc7de",
+  "bundleIdentifier": "local.witch.autonomous.r1.completion.r456",
+  "flags": [
+    "STANDARD_PLAY_R169",
+    "FIRST_CRAFT_AID_R179",
+    "EQUIPMENT_LOADOUTS_R342",
+    "NATURAL_GEAR_R350",
+    "NATURAL_GEAR_REFINEMENT_R352",
+    "GEAR_DISMANTLE_REFUND_R353"
+  ],
+  "outputPath": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/ActiveIntegrationR456/<sealed-input-key>",
+  "protectedPriorProducts": [
+    {
+      "path": "<Root fills each R445/R447/R454 prior product path>",
+      "sha256": "<sha256>"
+    }
+  ],
+  "limits": {
+    "attempts": 1,
+    "aggregateSeconds": 600,
+    "perTargetSeconds": 600,
+    "maxAllocatedOutputBytes": 2000000000,
+    "safetyReserveBytes": 2000000000,
+    "minimumFreeBytes": 20000000000,
+    "requiredStartFreeBytes": 22000000000,
+    "install": false,
+    "launch": false,
+    "freeze": false,
+    "resourceCopy": false
+  },
+  "packagedResourcePolicy": {
+    "compareSDKResourceInventory": true,
+    "excludeOnly": [
+      "Info.plist",
+      "PkgInfo",
+      "<CFBundleExecutable>"
+    ],
+    "sourceResourceCount": 1922,
+    "sourceResourcesMustMatchPinnedPreparedResources": true
+  },
+  "verificationContract": {
+    "sourceFiles": 238,
+    "preparedResources": 1922,
+    "postBuildFrozenSourceAndProjectRehash": true,
+    "bothSDKPackagedResourceMapsMustExactlyEqualPinnedMap": true,
+    "resourceMetadataExclusions": [
+      "Info.plist",
+      "PkgInfo",
+      "<CFBundleExecutable>"
+    ],
+    "duplicateJSONKeysRejected": true,
+    "outputDirectories": [
+      "<sealed-output>/DerivedData/Build",
+      "<sealed-output>/logs",
+      "build_tools_r003/prepared_inputs"
+    ]
+  }
+}

@@ -1,15 +1,20 @@
-# Current state R110
+# 現在の開発状況 R088
 
-Stages III–V ACTIVE/PARTIAL. Development continues. R046 is being frozen for the one authorized private GitHub audit/checkpoint share; no push yet. Target T-ishikawa00/witch-gathering-log, separate audit snapshot branch parented on existing remote main497549e9. No force push/history rewrite/privacy change. Later development remains local unless separately authorized.
+③〜⑤の既存成果を継続。正本は[完成条件台帳R014](qa_drafts/final_acceptance_r360/COMPLETION_REGISTER_R014.json)。実装・検証・完成品質・Human正式採用を分離する。発売完成の判定ではない。
 
-Current Simulator runtime: R093 compile2, 140 Swift / 1,914 resources; Core212 tests/6skipped/0fail. Installed on both Root devices. Unsigned device R093 manual compile/link R004 PASS, Mach-O iOS17/SDK26.5,1,915 resources; not signed, no new Xcode packaging/physical run.
+| 工程 | 実装・検証済みの範囲 | 未完成・検証不足 |
+|---|---|---|
+| ③ 戦闘・育成 | 4人自動戦闘、全5地域30戦、15課題、採集、制作、強化、進化、装備比較・セットを実装。R443/R449通常画面、R448/R452の新規無ガチャ3seedで到達を確認 | 人間の進行速度、長期継続率、全ビルドの優劣。通常UI系譜には過去5回の無料QAガチャ履歴があり、新規無ガチャCore試験とは別 |
+| ③ 経済・課金 | 30/90日16条件の経済候補試験。Xcode購入・キャンセル・取得失敗・復元・重複・返金拒否。R461契約とR463永続保存を追加し45 Swiftメソッド、別7プロセス試験が合格 | 本番課金経路は未実装。認証サービス、アカウント/商品契約、Apple環境が未構成。仮想購入条件は実購入価値の証明ではない |
+| ④ UI・2D | A案の家、探索、仲間、工房、採集帳、鑑定、衣装、家具を統合。味方4人、敵30単位、159制作単位を台帳管理。R465で検索解除時の日本語入力残りを修正・実画面確認 | 159単位はPARTIAL_OR_NOT_ACCEPTED。149静的+10時間変化系の限定審査。敵17単位の中断なしrecoverが未観測。欠陥17件という意味ではなく、全自然動作/全美術の完成品質は未合格 |
+| ⑤ iOS | R465同一240入力・1922資源からSimulator/iPhoneOS Release成功。通常ホーム、検索/品質解除、再入力、冷起動を確認。セーブrevision138の本体/previousが一致 | iPhoneOSは無署名コンパイルのみ。実機操作、端末性能、電源断、Apple Sandbox、署名配布は未検証 |
 
-All159 baseline IDs map to current R093 index/payloads; 1,557 unique reference paths SHA-exact. Old111 source/48 empty-source-field is historical provenance, NOT current missing-art count. All111 declared source units remain hash-exact. Current editable-source provenance of the old48 remains UNKNOWN. All30 enemy natural-motion acceptance remains PARTIAL;29 indexed seven-state sets, R04B dragon uses PartRig/Simulator walk candidate and device flight fallback. Four party animations remain PARTIAL. Individual mapping and detailed progress are in qa_drafts/progress_checkpoint_r046/.
+R465は274.385秒、割当1.442GB。既存資源をAPFSコピーで再利用し、完全コピーへのフォールバック0。旧製品15,400ファイルを保護。実画面試験222.780秒・4画像約4.2MB、旧8アプリ/データツリー7,776ファイルを照合。空き約131.7GB。旧307アプリの変更・削除やPushはしていない。
 
-R094 wardrobe is integrated but six-flow native acceptance is not complete. R005 picker.value and R007 inherited accessibility ID failures are test-query issues. R009 installed new bundle but executed old source assertion; cause UNKNOWN. R010 unique class/binary identity candidate was reviewed before execution; Root found split-attachment verification mismatch, R011 correction is being prepared. R010 has NOT run. Preserve all raw failures. F843 idle1,099 prior/current JSON;9A idle770. All prior data/restoration from R009 exact. Protected A8/1D processes untouched.
+R462で検索条件を消してもIME文字だけ残る不具合を発見し、その失敗記録を保存。R465は新しいソースで修正した別の結果であり、R462の失敗を書き換えていない。初期の試験・事前検査失敗も保全した。
 
-Equipment53consumers×630 rows=33,390 forced observations pass resource/geometry checks, yet gameplay-scale readability and natural full-speed acceptance remain PARTIAL. R09291 native same-buffer joins: technical trace passes, recipient position remains visually ambiguous. R095R002 dynamic layout candidate is host-only, not integrated. Compact-grounding candidate is also off-live. LUNA3control+3fault semantic/restart PASS; independent visualPARTIAL on book grip. R0962px offset is preserved but deferred because it does not solve finger wrap.
+StoreKitのProbe nilクラッシュは空の商品配列への`first!`が原因として切り分け済み。`SKInternalErrorDomain Code 3 / notEntitled`は別件で原因未確定。両者の因果関係は立証されていない。SIPやセキュリティ設定は変更していない。
 
-R045 a63ab3a5 preserves562paths; independentR002561payload+163media exact. OriginalR05324,420/24,420 files exact. User recovery point2c4b3c20 is an ancestor. No restart from scratch. Payment remains INCOMPLETE; local Xcode paths are QA only, Code3/notEntitled unresolved separately from fixed Probe nil trap. Disk around1.9GiB; APFS clones/no deletion.
+R087固定SHAの3分野独立監査は完了し、確認範囲で再現P0/P1なし。保護製品数の集計誤りを15,400へ訂正した。ソース/バイナリは監査後に変更していない。本番認証・商品/アカウント条件・実機・全体美術審査が残る。原画・編集元・セーブ・Git・固有QA証拠を保護し、実行前の予想容量と余裕の確認、20GB警告/10GB大容量保留を維持する。
 
-Priority: reliable full wardrobe flow; actual missing long-term/launch-scope features after respecting prior recipe/gathering passes; meaningful missing art/initial selection expansion; bounded notice/grounding correction; real-device/performance/commerce gates. Tiny polish must not displace whole-game completion.
+R461/R463の両SDK統合はCoreのコンパイル対象への追加である。通常アプリの本番課金経路への接続を意味しない。[最終ローカル報告](FINAL_LOCAL_REPORT_R088.md)を参照。

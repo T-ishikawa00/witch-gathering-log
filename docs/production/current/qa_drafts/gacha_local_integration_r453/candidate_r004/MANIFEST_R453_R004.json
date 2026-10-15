@@ -1,0 +1,108 @@
+{
+  "candidate": "R453 local receipt delivery adapter",
+  "revision": "R004",
+  "status": "PREPARED_NOT_RUN",
+  "scope": "host-side explicit Xcode mock fixture exporter; no StoreKit/Core/App wiring",
+  "rulesStatus": "UNAPPROVED_R3_CANDIDATE",
+  "execution": {
+    "testsRun": false,
+    "cliRun": false,
+    "authorityDatabaseOpened": false,
+    "swiftBuildOrRun": false,
+    "note": "R004 source/test edits only; no tests, CLI, database, Swift, or Simulator were run. Prior R002 syntax-check history remains in preserved manifests."
+  },
+  "changeSummary": [
+    "Optional expected FIFO source identity is fingerprinted only when supplied; unbound request fingerprints are unchanged.",
+    "Inside BEGIN IMMEDIATE, expected source tuple and remaining lot quantity are checked before RNG or ticket spend.",
+    "Adapter validates balance_draw source columns and preserves the schema-defined NULL purchase columns.",
+    "Added an interleaved-spend regression and a legacy-unbound-replay fingerprint regression.",
+    "CLI profile digest and parsing use one read-once byte buffer, preventing a path replacement between hash verification and JSON interpretation."
+  ],
+  "sourceAndTestPins": [
+    {
+      "path": "tools/witch_purchase_authority/authority.py",
+      "sha256": "3967d70f3bb4f5d90e1afec789114503250e3df41d9bb6efb6972531f5d06a98"
+    },
+    {
+      "path": "tools/witch_purchase_authority/local_delivery_r453.py",
+      "sha256": "d0c254bfcbf682c31dbd82cbe87c298e0207410509bfb0e139dafe1093beb8a4"
+    },
+    {
+      "path": "tools/witch_purchase_authority/tests/test_local_delivery_r453.py",
+      "sha256": "64704510ff33141bac1eccf9361ff88db97340680764b5b6767181648afb7cae"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/gacha_local_integration_r453/candidate_r004/snapshot_r004/authority.py",
+      "sha256": "3967d70f3bb4f5d90e1afec789114503250e3df41d9bb6efb6972531f5d06a98",
+      "role": "final owned source snapshot"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/gacha_local_integration_r453/candidate_r004/snapshot_r004/local_delivery_r453.py",
+      "sha256": "d0c254bfcbf682c31dbd82cbe87c298e0207410509bfb0e139dafe1093beb8a4",
+      "role": "final owned source snapshot"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/gacha_local_integration_r453/candidate_r004/snapshot_r004/test_local_delivery_r453.py",
+      "sha256": "64704510ff33141bac1eccf9361ff88db97340680764b5b6767181648afb7cae",
+      "role": "final owned source snapshot"
+    }
+  ],
+  "candidateDocuments": [
+    {
+      "path": "docs/production/current/qa_drafts/gacha_local_integration_r453/candidate_r004/CONTRACT_R453.md",
+      "sha256": "019674cc48467b0259b5264442eeb11d35c3da00c68dd3e68aa70eaab0e76860"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/gacha_local_integration_r453/candidate_r004/PROFILE_EXAMPLE_R453.json",
+      "sha256": "a035a79504b70ab766135f754dfca19b48ebe763b401b262892ecbcc365e3151"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/gacha_local_integration_r453/candidate_r004/EVENT_ENVELOPE_EXAMPLE_R453.json",
+      "sha256": "d9910f0d11b5e5ad948535b3733b27d0414427ab943ec3fe9d9548596a4030d1"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/gacha_local_integration_r453/candidate_r004/CHANGELOG_R004.md",
+      "sha256": "ce7858e944a1ec1bfe58d42b61cf19884b5c57ef77d2b1dd22671848ef51f429"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/gacha_local_integration_r453/candidate_r004/PATCH_R004.diff",
+      "sha256": "1b5b297ab4b7af4f10e17b2a88f1af4fc32c99ad8d3cb604796e1c7b4d29c168"
+    }
+  ],
+  "patchSHA256": "1b5b297ab4b7af4f10e17b2a88f1af4fc32c99ad8d3cb604796e1c7b4d29c168",
+  "testMethodCount": 15,
+  "preservedR003": {
+    "manifestPath": "docs/production/current/qa_drafts/gacha_local_integration_r453/candidate_r004/MANIFEST_R453_R003.json",
+    "manifestSHA256": "c8f5d677fdfbe87d0e8345d229c92c1c047c7bb0da50ba05d864f9080f77b8f1",
+    "authoritySHA256": "ba1ce9e581de66f4f28b7fc0de903700f5505e19832c8fdc4901c656ebc0b02c",
+    "adapterSHA256": "a7dcca1b6fe12d137f3a8cdbfa1b23641ffeb69250114477d9b844117955860f",
+    "testSHA256": "1ec97c15c0fdc5587f4febd4b534174abc87c5aba7d78ddc967006aff79005c9"
+  },
+  "readOnlyPins": [
+    {
+      "path": "tools/witch_purchase_authority/authority.py",
+      "sha256": "1997a536915cf3b590035a13741304dc0be3ab030a63d654b40aa41853d4e1b7",
+      "role": "R004 bounded authority change; no DB schema change"
+    },
+    {
+      "path": "native/qa_source_20261015T041901/WitchGameCore/Sources/WitchGameCore/Resources/catalog_overlay.json",
+      "sha256": "bb218f0fe6b4b1a6037faa75ddb301ded27d7b9de070747bebf99a3e72209337",
+      "role": "33-catalog example profile basis"
+    },
+    {
+      "path": "native/qa_source_20261015T041901/WitchGameCore/Sources/WitchGameCore/Domain.swift",
+      "sha256": "9e4df37260d5e39a8e6354121f9ccd5ad9a4202bf16b493f8878ce6480d92eda",
+      "role": "Core gear and pity payload shape"
+    },
+    {
+      "path": "native/qa_source_20261015T041901/WitchGameCore/Sources/WitchGameCore/SaveRepository.swift",
+      "sha256": "e072b14bf922f90d5840a6031a7bb0cc0f9b8197342b94f41045b88a346341ce",
+      "role": "future test-only importer idempotency boundary"
+    }
+  ],
+  "acceptancePending": [
+    "Root static review of atomicity and preserved legacy request hashes.",
+    "Root-owned bounded Python suite run after review; not executed here.",
+    "Separate Swift test-only importer and cold replay; no StoreKit-to-authority or authority-to-Core integration is claimed."
+  ]
+}

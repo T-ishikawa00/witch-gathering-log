@@ -1,11 +1,16 @@
 #!/usr/bin/env python3
 """Reproducible project generation using only source paths in this worktree."""
 from pathlib import Path
-import hashlib,json,sys,time,shutil,plistlib,argparse
+import hashlib,json,sys,time,shutil,plistlib,argparse,subprocess
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--freeze',action='store_true',help='Create a new project with frozen source and resources')
+parser.add_argument('--reuse-resources-from',type=Path,help='Reuse unchanged verified resources from a preserved frozen source via APFS clones')
 arguments=parser.parse_args()
-ROOT=Path(__file__).resolve().parents[2];NATIVE=ROOT/'native';project=NATIVE/'WitchGathering.xcodeproj';project.mkdir(exist_ok=True)
+if arguments.reuse_resources_from and not arguments.freeze:parser.error('Resource reuse requires --freeze')
+ROOT=Path(__file__).resolve().parents[2];NATIVE=ROOT/'native'
+from storage_guard import check_capacity
+check_capacity(ROOT, 'xcode-project-before', heavy=True, expected_bytes=1_000_000_000 if arguments.freeze else 100_000_000)
+project=NATIVE/'WitchGathering.xcodeproj';project.mkdir(exist_ok=True)
 frozen=None
 if arguments.freeze:
     stamp=time.strftime('%Y%m%dT%H%M%S');frozen=NATIVE/('qa_source_'+stamp);frozen.mkdir()
@@ -15,7 +20,81 @@ if arguments.freeze:
         target=frozen/p.relative_to(NATIVE);target.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(p,target)
     (frozen/'SOURCE_SHA256.json').write_text(json.dumps({str(p.relative_to(NATIVE)):hashlib.sha256((frozen/p.relative_to(NATIVE)).read_bytes()).hexdigest() for p in files},indent=2))
     from prepare_resources import prepare
-    resources=prepare(frozen/'PreparedResources',frozen/'WitchGameCore/Sources/WitchGameCore/Resources')
+    from resource_inventory import capture_resource_inventory, inventory_sha256, require_reusable_inventory
+    inventory_before=capture_resource_inventory(NATIVE)
+    inventory_before_sha=inventory_sha256(inventory_before)
+    if arguments.reuse_resources_from:
+        from prepare_resources import resource_hashes, copy_frozen
+        prior=arguments.reuse_resources_from.resolve()
+        if prior.parent != NATIVE or not prior.name.startswith('qa_source_'):
+            raise RuntimeError('Resource reuse requires a frozen directory in this worktree')
+        expected=json.loads((prior/'RESOURCE_SHA256.json').read_text())
+        capture=json.loads((prior/'RESOURCE_CAPTURE.json').read_text())
+        # A legacy frozen resource tree without a producer-membership receipt is
+        # intentionally not reusable: output hashes cannot reveal omitted new inputs.
+        require_reusable_inventory(capture,inventory_before)
+        if resource_hashes(prior/'PreparedResources') != expected:
+            raise RuntimeError('Prior frozen resource manifest differs from bytes')
+        if (prior/'prepare_resources.py').read_bytes() != (ROOT/'tools/witch_native/prepare_resources.py').read_bytes():
+            raise RuntimeError('Resource assembler changed; a fresh capture is required')
+        for raw,digest in capture['source_sha256'].items():
+            if hashlib.sha256(Path(raw).read_bytes()).hexdigest() != digest:
+                raise RuntimeError('Original resource input changed: '+raw)
+        # The earlier capture includes earlier frozen catalog paths. Bind current
+        # live catalog bytes too, so reusing that capture cannot hide a data edit.
+        for item in (NATIVE/'WitchGameCore/Sources/WitchGameCore/Resources').glob('*.json'):
+            if hashlib.sha256(item.read_bytes()).hexdigest() != expected.get(item.name):
+                raise RuntimeError('Current catalog differs; fresh capture required: '+item.name)
+        reuse_receipt=copy_frozen(frozen/'PreparedResources',prior/'PreparedResources',prior/'RESOURCE_SHA256.json')
+        if resource_hashes(frozen/'PreparedResources') != expected:
+            raise RuntimeError('Cloned resource readback failed; partial output preserved')
+        inventory_after=capture_resource_inventory(NATIVE)
+        try:
+            require_reusable_inventory({
+                'resourceInputInventoryBefore':inventory_before,
+                'resourceInputInventoryAfter':inventory_before,
+                'resourceInputInventoryBeforeSHA256':inventory_before_sha,
+                'resourceInputInventoryAfterSHA256':inventory_before_sha,
+            },inventory_after)
+        except ValueError as error:
+            raise RuntimeError('Resource producer inventory changed during reuse; partial output preserved: '+str(error)) from error
+        # Detect same-name content edits that membership alone cannot observe.
+        # A clone is still immutable evidence, but it must not be mislabeled as
+        # captured from unchanged current inputs when another producer changed them.
+        for raw,digest in capture['source_sha256'].items():
+            if hashlib.sha256(Path(raw).read_bytes()).hexdigest() != digest:
+                raise RuntimeError('Original resource input changed during reuse; partial output preserved: '+raw)
+        for item in (NATIVE/'WitchGameCore/Sources/WitchGameCore/Resources').glob('*.json'):
+            if hashlib.sha256(item.read_bytes()).hexdigest() != expected.get(item.name):
+                raise RuntimeError('Live catalog content changed during reuse; partial output preserved: '+item.name)
+        resources={**capture,'resource_sha256':expected,'reusedFrozenResources':str(prior),
+                   'resourceInputInventoryBefore':inventory_before,
+                   'resourceInputInventoryAfter':inventory_after,
+                   'resourceInputInventoryBeforeSHA256':inventory_before_sha,
+                   'resourceInputInventoryAfterSHA256':inventory_sha256(inventory_after),
+                   'reuseMethod':'COPYFILE_CLONE_FORCE; original input hashes and assembler identical',
+                   'reuseCopyMethodSummary':reuse_receipt['copy_method_summary'],
+                   'reuseFullCopyFallbackBytes':reuse_receipt['full_copy_fallback_used_bytes'],
+                   'source_stability':'REUSE_VERIFIED'}
+    else:
+        resources=prepare(frozen/'PreparedResources',frozen/'WitchGameCore/Sources/WitchGameCore/Resources')
+        inventory_after=capture_resource_inventory(NATIVE)
+        try:
+            require_reusable_inventory({
+                'resourceInputInventoryBefore':inventory_before,
+                'resourceInputInventoryAfter':inventory_before,
+                'resourceInputInventoryBeforeSHA256':inventory_before_sha,
+                'resourceInputInventoryAfterSHA256':inventory_before_sha,
+            },inventory_after)
+        except ValueError as error:
+            raise RuntimeError('Resource producer inventory changed during capture; partial output preserved: '+str(error)) from error
+        resources.update({
+            'resourceInputInventoryBefore':inventory_before,
+            'resourceInputInventoryAfter':inventory_after,
+            'resourceInputInventoryBeforeSHA256':inventory_before_sha,
+            'resourceInputInventoryAfterSHA256':inventory_sha256(inventory_after),
+            'resourceInputInventoryStatus':'PASS',
+        })
     (frozen/'RESOURCE_CAPTURE.json').write_text(json.dumps(resources,ensure_ascii=False,indent=2))
     (frozen/'RESOURCE_SHA256.json').write_text(json.dumps(resources['resource_sha256'],indent=2))
     # Freeze the assembler as well as the inputs used by the QA project.
@@ -80,3 +159,4 @@ for value in ['--qa-isolated','--qa-save-key=storekit-integration-r001','--xcode
     ET.SubElement(args,'CommandLineArgument',argument=value,isEnabled='YES')
 ET.SubElement(launch,'StoreKitConfigurationFileReference',identifier='../../StoreKitLocalQA/iOSRunner/AppProbe/Products.storekit')
 qa.write(scheme/'WitchStoreKitQA.xcscheme',encoding='utf-8',xml_declaration=True)
+check_capacity(ROOT, 'xcode-project-after', artifact_paths=[project,*([frozen] if frozen else [])])

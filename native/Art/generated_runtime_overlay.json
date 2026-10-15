@@ -1,0 +1,86 @@
+{
+  "entries": {
+    "ACT_E_R01_02": {
+      "selectedPNG": "GeneratedCandidates/ACT_E_R01_02/idle_1.png",
+      "kind": "enemy_actor_kit",
+      "status": "GENERATED_POSE_CLIP_TEST_OVERLAY_NOT_ART_ACCEPTED",
+      "canvas_px": [
+        512,
+        341
+      ],
+      "anchor": [
+        256,
+        330
+      ],
+      "clips": {
+        "idle": {
+          "frames": [
+            "GeneratedCandidates/ACT_E_R01_02/idle_1.png",
+            "GeneratedCandidates/ACT_E_R01_02/idle_2.png"
+          ],
+          "fps": 3,
+          "loop": true,
+          "status": "DISCRETE_POSE_CANDIDATE_INBETWEENS_PENDING"
+        },
+        "walk": {
+          "frames": [
+            "GeneratedCandidates/ACT_E_R01_02/walk_1.png",
+            "GeneratedCandidates/ACT_E_R01_02/walk_2.png"
+          ],
+          "fps": 6,
+          "loop": true,
+          "status": "DISCRETE_POSE_CANDIDATE_INBETWEENS_PENDING"
+        },
+        "anticipate": {
+          "frames": [
+            "GeneratedCandidates/ACT_E_R01_02/idle_1.png",
+            "GeneratedCandidates/ACT_E_R01_02/anticipate.png"
+          ],
+          "fps": 6,
+          "loop": false,
+          "status": "DISCRETE_POSE_CANDIDATE_INBETWEENS_PENDING"
+        },
+        "execute": {
+          "frames": [
+            "GeneratedCandidates/ACT_E_R01_02/anticipate.png",
+            "GeneratedCandidates/ACT_E_R01_02/execute.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "status": "DISCRETE_POSE_CANDIDATE_INBETWEENS_PENDING"
+        },
+        "recover": {
+          "frames": [
+            "GeneratedCandidates/ACT_E_R01_02/execute.png",
+            "GeneratedCandidates/ACT_E_R01_02/recover.png",
+            "GeneratedCandidates/ACT_E_R01_02/idle_1.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "status": "DISCRETE_POSE_CANDIDATE_INBETWEENS_PENDING"
+        },
+        "hit": {
+          "frames": [
+            "GeneratedCandidates/ACT_E_R01_02/hit.png",
+            "GeneratedCandidates/ACT_E_R01_02/recover.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "status": "DISCRETE_POSE_CANDIDATE_INBETWEENS_PENDING"
+        },
+        "resolve": {
+          "frames": [
+            "GeneratedCandidates/ACT_E_R01_02/hit.png",
+            "GeneratedCandidates/ACT_E_R01_02/resolve.png"
+          ],
+          "fps": 3,
+          "loop": false,
+          "status": "DISCRETE_POSE_CANDIDATE_INBETWEENS_PENDING"
+        }
+      }
+    }
+  },
+  "status": "UNAPPROVED_TEST_OVERLAY",
+  "generated_source": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/GeneratedArt/enemy_r001",
+  "complete_animation": false
+}

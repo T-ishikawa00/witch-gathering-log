@@ -1,0 +1,49 @@
+{
+  "schema": "enemy-lifecycle-r423-reuse-review-v1",
+  "status": "READ_ONLY_REVIEW_NO_ADDITIONAL_BUILD_RECOMMENDED",
+  "reviewScope": "R214/R217/R239 retained lifecycle evidence and R418 current source delta; no tests/build/device action",
+  "sourcePins": {
+    "worktreeHead": "2db6290519d8c6a871c42161fd8595cd9d279d0e",
+    "currentEnemyMotion": "native/WitchApp/EnemyMotion.swift",
+    "currentEnemyMotionSHA256": "f9a0d0ffb203c799f432e14c8384c6c3989e7452a350365c86ca2660bc20b6d8",
+    "currentLivingScene": "native/WitchApp/LivingScene.swift",
+    "currentLivingSceneSHA256": "e4505b57d66f41b391831392edc23f25a4829bf9cd6301bd8127012cb1486038",
+    "R418CandidateR003ManifestSHA256": "397b181cb8360906a29275ce4f1dc8bf64e5d86c305d9f4e765a766ff1ef2ac8",
+    "R418CandidateR004ManifestSHA256": "c9e5d6a6fada5ae9044ee89634cc8b51cf384a2e8017c902144f80fb9c7f1bab",
+    "R418RootIntegrationR002SHA256": "4be1ad36ff97a7d57e315819fdc3723c887d4dc287777cd7d8d267e7440128d2"
+  },
+  "retainedTraceEvidence": [
+    {
+      "path": "docs/production/current/qa_drafts/sheet_navigation_integration_r373/install_001/development_before/last_r214_causal_trace_r239_AC851C27-0E75-4A56-A334-21593AADA47B.json",
+      "sha256": "8498adf7fee67fec7108da186f2e4ba63c6bd1c3e2d5cabe50d4179b11ec98b1",
+      "rows": 5,
+      "observed": "execute_started(seq 97, root enemy:B_R05_B:3) -> hit_visual_deferred(seq 106, execute seq 97, same root) -> execute_completed -> hit_visual_started_after_execute -> hit_visual_completed.",
+      "scope": "One saved-combat diagnostic replay chain; not production/no-diagnostics proof."
+    },
+    {
+      "path": "docs/production/current/qa_drafts/sheet_navigation_integration_r373/install_001/development_before/last_r214_causal_trace_r239_023FB60C-FDB5-4FAA-9490-054ACF01FB67.json",
+      "sha256": "1f77fb46c59011e7e091ff275a9e9a43590fce0c62a32fbfbb4958493277248c",
+      "rows": 5,
+      "observed": "execute_started(seq 27, root enemy:B_R05_A:1) -> deferred hit(seq 29, same execute/root) -> execute_completed -> hit started -> hit_visual_cancelled(stage after_start_before_completion, reason superseded_by_execute).",
+      "scope": "Cancellation by a later execute, not lethal resolve or controller teardown."
+    }
+  ],
+  "coverageJoin": {
+    "R214": "R214 independent source review R003 checks generation tokens, completion ordering, state supersession, resolve/stop clear paths. It states no build or runtime test was performed; rebuild cancellation rows are cleared immediately, so teardown cancellation evidence is absent.",
+    "R217": "Saved-combat replay route provides the exact persisted battle playback path used by R239; it is not an independent controller lifecycle XCTest.",
+    "R239": "Two retained diagnostic traces cover successful deferred completion and cancellation by superseding execute. R239 filters/join fields bind actor, root, execute sequence and scene generation. No standalone XCTest source was found in the scoped R214/R217/R239 folders.",
+    "R418": "R003 changes effective policy outside the DEBUG+STANDARD_PLAY_R169 instrumentation gate: deferral becomes enabled for simulator non-profile/release and device paths; bookkeeping and generation protection no longer depend on diagnostics; finite positive non-loop execute clips are required; lethal clear runs outside diagnostic gating. R004 changes diagnostic serialization only. The old R239 traces exercise the earlier gated diagnostic route, not these newly enabled production branches."
+  },
+  "changedUntestedBranches": [
+    "Default-on deferral/coalescing with R214 diagnostics off (Release/device); current code path compiles but retained R239 traces do not observe this mode.",
+    "Lethal resolve while a hit is pending or active: current LivingScene explicitly clears before resolve, but retained R239 cancellation is superseded_by_execute, not lethal_resolve.",
+    "Invalid, missing, non-finite, non-positive, or looping execute duration/clip fallback to immediate hit; R418 R003 added eligibility check, absent from retained trace cases.",
+    "Controller stop/rebuild/reset invalidates pending callback; R214 review notes rebuild clears lifecycle rows, so no retained teardown-chain proof."
+  ],
+  "recommendation": "Do not spend a separate build on the R423 trace validator now. R239 already reuses the exact existing saved-combat replay route and its successful/supersede traces. Prioritize R424 real execute coverage as Root requested. Reopen one narrowly targeted lifecycle check only if R424 or subsequent R418 runtime evidence exercises lethal/reset/fallback in diagnostics-off behavior; keep compile evidence distinct from runtime proof.",
+  "limits": [
+    "No build/test/device action performed.",
+    "No claim that release/device lifecycle branches are runtime-verified.",
+    "R239 evidence is limited to two saved-combat diagnostic chains and does not establish all controller lifecycle states or animation quality."
+  ]
+}

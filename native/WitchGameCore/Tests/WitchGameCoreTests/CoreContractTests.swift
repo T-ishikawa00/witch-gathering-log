@@ -1957,30 +1957,33 @@ final class CoreContractTests: XCTestCase {
     }
 
     func testExhaustedOrNegativeSaveRevisionFailsClosedWithoutRunningMutation() async throws {
-        for revision in [Int64.max, -1] {
-            let url = FileManager.default.temporaryDirectory.appendingPathComponent("witch-invalid-revision-\(UUID().uuidString).json")
-            defer { try? FileManager.default.removeItem(at: url); try? FileManager.default.removeItem(at: url.appendingPathExtension("lock")) }
-            let source = "{\"snapshot\":{\"revision\":\(revision),\"materials\":{\"moss\":4}}}"
-            try Data(source.utf8).write(to: url)
-            let store = try SaveRepository(fileURL: url)
-            let initial = await store.snapshot()
-            do {
-                _ = try await store.transact(expectedRevision: revision, operationID: UUID()) { state in
-                    XCTFail("invalid revision must be rejected before command mutation")
-                    state.materials["moss"] = 999
-                    return "unexpected"
-                }
-                XCTFail("invalid revision \(revision) unexpectedly accepted")
-            } catch let error as CoreError {
-                guard case .invalidCommand(let message) = error else { return XCTFail("unexpected error: \(error)") }
-                XCTAssertTrue(message.contains("revision"))
+        let negativeURL = FileManager.default.temporaryDirectory.appendingPathComponent("witch-invalid-revision-\(UUID().uuidString).json")
+        defer { try? FileManager.default.removeItem(at: negativeURL); try? FileManager.default.removeItem(at: negativeURL.appendingPathExtension("lock")) }
+        let negativeBytes = Data("{\"snapshot\":{\"revision\":-1,\"materials\":{\"moss\":4}}}".utf8)
+        try negativeBytes.write(to: negativeURL)
+        XCTAssertThrowsError(try SaveRepository(fileURL: negativeURL), "negative legacy revision is rejected while loading")
+        XCTAssertEqual(try Data(contentsOf: negativeURL), negativeBytes)
+
+        let exhaustedURL = FileManager.default.temporaryDirectory.appendingPathComponent("witch-exhausted-revision-\(UUID().uuidString).json")
+        defer { try? FileManager.default.removeItem(at: exhaustedURL); try? FileManager.default.removeItem(at: exhaustedURL.appendingPathExtension("lock")) }
+        let exhaustedBytes = Data("{\"snapshot\":{\"revision\":\(Int64.max),\"materials\":{\"moss\":4}}}".utf8)
+        try exhaustedBytes.write(to: exhaustedURL)
+        let store = try SaveRepository(fileURL: exhaustedURL)
+        let initial = await store.snapshot()
+        do {
+            _ = try await store.transact(expectedRevision: Int64.max, operationID: UUID()) { state in
+                XCTFail("exhausted revision must be rejected before command mutation")
+                state.materials["moss"] = 999
+                return "unexpected"
             }
-            let after = await store.snapshot()
-            XCTAssertEqual(after, initial, "failed revision guard must preserve state")
-            let reopened = try SaveRepository(fileURL: url)
-            let diskState = await reopened.snapshot()
-            XCTAssertEqual(diskState, initial, "rejected write must preserve original disk JSON state")
+            XCTFail("Int64.max revision unexpectedly accepted a mutation")
+        } catch let error as CoreError {
+            guard case .invalidCommand(let message) = error else { return XCTFail("unexpected error: \(error)") }
+            XCTAssertTrue(message.contains("revision"))
         }
+        let after = await store.snapshot()
+        XCTAssertEqual(after, initial, "failed revision guard must preserve state")
+        XCTAssertEqual(try Data(contentsOf: exhaustedURL), exhaustedBytes, "rejected write must preserve original disk bytes")
     }
 
     func testCorruptSaveIsRejectedWithoutResettingPlayerData() throws {

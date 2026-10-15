@@ -1,0 +1,36 @@
+{
+  "status": "ROOT_RUNTIME_SCOPE_READY_AFTER_BUILD_PASS",
+  "at": "2026-10-15T06:07:18.996179+09:00",
+  "bundleID": "local.witch.autonomous.r1.storekit.r454",
+  "device": "9A067715-7CF3-40D3-9064-38423223959B",
+  "limits": {
+    "setupSeconds": 900,
+    "runtimeSeconds": 1200,
+    "evidenceBytes": 30000000,
+    "screenshotCount": 6,
+    "hostRequests": 12,
+    "nativeAttemptCount": 2
+  },
+  "capacity": {
+    "forecastInstallBytes": 600000000,
+    "evidenceBytes": 30000000,
+    "safetyBytes": 2000000000,
+    "minimumFreeBytes": 20000000000
+  },
+  "acceptance": [
+    "Current local Xcode StoreKit ticket produces exact token/bundle/product/transaction event",
+    "Host authority grant and one draw yield one exact saved gear and pity change",
+    "Fresh request with same operation returns identical receipt and no duplicate save mutation",
+    "Cold relaunch preserves exact primary save",
+    "Current host refund rejects retry without modifying save",
+    "Missing product and cancelled purchase do not change save; restore does not duplicate consumables"
+  ],
+  "reuse": [
+    "R377 native fresh non-consumable restore and duplicate restore evidence; only rerun if current bridge diff invalidates it",
+    "R453 Core write-fault and operation-dedup tests",
+    "R454 Core identity mismatch and host request failure tests"
+  ],
+  "protection": "R454 builder full prior app/data/source/evidence pins before and after. No old app uninstall or data modification.",
+  "productionEntitlementAuthorized": false,
+  "remainingBoundary": "Local host fixture uses EXPLICIT_TEST_MOCK; no Apple signature authority or server. Durable StoreKit QA ticket purchase is separate from later ticket-spend gear operation; transaction finish follows the first durable QA receipt. Cross-store refund/save race is not atomic."
+}

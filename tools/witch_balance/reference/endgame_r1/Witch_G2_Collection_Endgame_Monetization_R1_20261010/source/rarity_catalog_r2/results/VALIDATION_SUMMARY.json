@@ -1,0 +1,40 @@
+{
+  "status": "DESIGN_CANDIDATE_TESTED_NOT_APPROVED",
+  "date": "2026-10-10",
+  "original_files_preserved": 26,
+  "rarity_static_cases": 6435,
+  "rarity_sensitivity_battles": 576,
+  "per_case_loot_seeds": 8,
+  "per_case_combat_seeds": 8,
+  "rarity_candidates": 3,
+  "new_contract_tests": 43,
+  "original_growth_tests": 55,
+  "original_economy_tests": 61,
+  "all_test_suites_pass": true,
+  "H0_exact_log_replay_examples": 1,
+  "purchasing_scenarios": 13,
+  "quantity_horizons_days": [
+    30,
+    90
+  ],
+  "catalog_candidate_ids": 21,
+  "full_30_90_day_gameplay_simulation": false,
+  "new_rarity_or_products_approved": false,
+  "not_validated": [
+    "R02-R05 combat",
+    "all-template core effects",
+    "R6 upgrade reversals globally",
+    "optimal loadout for each rarity model",
+    "living bonus combat",
+    "purchase willingness/revenue",
+    "actual StoreKit receipt/restore/refund",
+    "multiple device consistency",
+    "iPhone",
+    "ad-removal commercial viability"
+  ],
+  "Mac_or_GitHub_changed": false,
+  "test_environment": {
+    "python": "3.13.5",
+    "system": "Linux"
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "actor_id": "ACT_E_R05_04",
+  "revision": "r001",
+  "status": "CANDIDATE_UNAPPROVED",
+  "source_reference_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/actors/ACT_E_R05_04/candidate_r001/ACT_E_R05_04__runtime_candidate__r001.png",
+  "source_reference_sha256": "2b2884a16adc51c1d87348b42c19e5e60544006b49a427c88cc7b8ce6054126a",
+  "imagegen_atlas_path": "native/Art/GeneratedCandidates/ACT_E_R05_04/pose_candidate_r001/imagegen_atlas_r001.png",
+  "imagegen_atlas_sha256": "8ac8e6cb0a9515795aaf7b2aef371f75c762d90b59ccbddef74baede59b46e91",
+  "pose_order": [
+    "idle_a",
+    "idle_b",
+    "walk_a",
+    "walk_b",
+    "anticipate",
+    "execute",
+    "recover",
+    "hit",
+    "resolve"
+  ],
+  "state_frames": {
+    "idle": [
+      "native/Art/GeneratedCandidates/ACT_E_R05_04/pose_candidate_r001/frames/idle_a.png",
+      "native/Art/GeneratedCandidates/ACT_E_R05_04/pose_candidate_r001/frames/idle_b.png"
+    ],
+    "walk": [
+      "native/Art/GeneratedCandidates/ACT_E_R05_04/pose_candidate_r001/frames/walk_a.png",
+      "native/Art/GeneratedCandidates/ACT_E_R05_04/pose_candidate_r001/frames/walk_b.png"
+    ],
+    "anticipate": [
+      "native/Art/GeneratedCandidates/ACT_E_R05_04/pose_candidate_r001/frames/anticipate.png"
+    ],
+    "execute": [
+      "native/Art/GeneratedCandidates/ACT_E_R05_04/pose_candidate_r001/frames/execute.png"
+    ],
+    "recover": [
+      "native/Art/GeneratedCandidates/ACT_E_R05_04/pose_candidate_r001/frames/recover.png"
+    ],
+    "hit": [
+      "native/Art/GeneratedCandidates/ACT_E_R05_04/pose_candidate_r001/frames/hit.png"
+    ],
+    "resolve": [
+      "native/Art/GeneratedCandidates/ACT_E_R05_04/pose_candidate_r001/frames/resolve.png"
+    ]
+  },
+  "frames": [
+    {
+      "pose": "idle_a",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R05_04/pose_candidate_r001/frames/idle_a.png",
+      "sha256": "37cdceaddb2d1296113617d7ebac6579e86b9eb4fb8be5c5acaee73d99976a70",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        12,
+        68,
+        427,
+        406
+      ]
+    },
+    {
+      "pose": "idle_b",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R05_04/pose_candidate_r001/frames/idle_b.png",
+      "sha256": "b20c8b274fff49d795d7b81257456f0ae5d2c2cdec40aa37d09c6660f2e0ac70",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        428,
+        64,
+        828,
+        406
+      ]
+    },
+    {
+      "pose": "walk_a",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R05_04/pose_candidate_r001/frames/walk_a.png",
+      "sha256": "ada6f1dbaa74cf4b1aa6424ab8915771b7242fa29844eeb57d2da244bb50cfb9",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        839,
+        99,
+        1248,
+        405
+      ]
+    },
+    {
+      "pose": "walk_b",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R05_04/pose_candidate_r001/frames/walk_b.png",
+      "sha256": "15567049dec8426f14a51b5456a400b22489607bca92e0c9a82fc5979fd2b9f0",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        13,
+        487,
+        416,
+        785
+      ]
+    },
+    {
+      "pose": "anticipate",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R05_04/pose_candidate_r001/frames/anticipate.png",
+      "sha256": "c9ed48b83e2ef7fc918bd80210128713684d39fe02e98bfe4be4489e83c6a170",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        423,
+        525,
+        817,
+        781
+      ]
+    },
+    {
+      "pose": "execute",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R05_04/pose_candidate_r001/frames/execute.png",
+      "sha256": "cbda09518b6bb5327ad6d021c8ec2b514cfd4109710716ae38c7034bee3f2706",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        818,
+        447,
+        1240,
+        783
+      ]
+    },
+    {
+      "pose": "recover",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R05_04/pose_candidate_r001/frames/recover.png",
+      "sha256": "ba59d6a1634a598e2aa12c589fbec30698c3a4b9a42da5f723b23015788dfd4d",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        11,
+        819,
+        415,
+        1189
+      ]
+    },
+    {
+      "pose": "hit",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R05_04/pose_candidate_r001/frames/hit.png",
+      "sha256": "8edde02e5f10c1206999a74ae61a111e74133001d8aadbf7ce4d5a4b34b1be8f",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        428,
+        880,
+        814,
+        1182
+      ]
+    },
+    {
+      "pose": "resolve",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R05_04/pose_candidate_r001/frames/resolve.png",
+      "sha256": "c0e40138a1042520575733a90d21903774b85e793e232843bc597e384def1c65",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        821,
+        923,
+        1245,
+        1182
+      ]
+    }
+  ],
+  "fps": 6,
+  "canvas_px": [
+    512,
+    512
+  ],
+  "anchor_px": [
+    256.0,
+    490
+  ],
+  "review": "Vine-woven quadruped, leaf mane, prominent pink-red flower and curled tail retained. Flower strike/defeat crouch poses differ, but face/leaf arrangement shows generated redraw drift and detached petal specks may be filtered; no inbetweens.",
+  "qa_contact_sheet_path": "native/Art/GeneratedCandidates/ACT_E_R05_04/pose_candidate_r001/qa_contact_sheet_r001.png",
+  "qa_contact_sheet_sha256": "fbd704f4b941779b9baccad2a2ce602f50543cde6066316caaecb0d3a59dc9f0",
+  "runtime_integration": "NOT_DONE",
+  "runtime_visual_qa": "PENDING_ROOT_REVIEW",
+  "human_adoption": "PENDING",
+  "limitations": [
+    "Each action state currently has only one authored pose; idle and walk each have two poses.",
+    "This is a corrected composition/identity candidate, not evidence of natural continuous animation.",
+    "All frames derive from a generated atlas and remain unapproved pending visual/runtime review.",
+    "Source reference was not modified."
+  ]
+}

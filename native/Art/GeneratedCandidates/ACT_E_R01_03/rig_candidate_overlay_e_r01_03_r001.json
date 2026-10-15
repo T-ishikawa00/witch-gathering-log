@@ -1,0 +1,33 @@
+{
+  "actor_id": "ACT_E_R01_03",
+  "manifestKey": "ACT_E_R01_03",
+  "overlay_id": "ACT_E_R01_03_RIG_CANDIDATE_R001",
+  "status": "GENERATED_TECHNICAL_CANDIDATE_UNAPPROVED",
+  "human_adoption": "PENDING",
+  "rig_manifest_path": "native/Art/GeneratedCandidates/ACT_E_R01_03/rig_candidate_r001/rig_manifest_candidate_r001.json",
+  "rig_manifest_sha256": "f6ce1ef34259e7d4fd4a3d7cecc1c45a9bf2f4a062ac651c4e7181b6a38b3b7d",
+  "preview_path": "native/Art/GeneratedCandidates/ACT_E_R01_03/rig_candidate_r001/qa_state_contact_sheet_r001.png",
+  "preview_sha256": "5e96bebf2adf1b2f6077c5d227a0a8b88d5e5b876c1edfd367f84dba73804f85",
+  "atlas_path": "native/Art/GeneratedCandidates/ACT_E_R01_03/rig_candidate_r001/generated_parts_atlas_source_r001.png",
+  "atlas_sha256": "64dc0779ce8456beb060163c3ba467b5c4e727e86c3acc76b79178a4aa73fb2d",
+  "states": [
+    "idle",
+    "walk",
+    "flight",
+    "anticipate",
+    "execute",
+    "recover",
+    "hit",
+    "resolve"
+  ],
+  "fps": 24,
+  "frame_count_per_state": 24,
+  "part_count": 8,
+  "known_limits": [
+    "Generated parts alter composition and do not match reference pose exactly.",
+    "Pivots/placement visually estimated.",
+    "No runtime SpriteKit play test; not accepted."
+  ],
+  "replaces_global_runtime_index": false,
+  "source_untouched": true
+}

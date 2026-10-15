@@ -1,0 +1,515 @@
+{
+  "schema": "witch_research_bundle_manifest_v1",
+  "excludes": [
+    "PACKAGE_MANIFEST.json"
+  ],
+  "files": [
+    {
+      "path": "00_READ_FIRST.md",
+      "size_bytes": 1474,
+      "sha256": "e37e19fa622f0ac0c3cb51ce0bfc34adacf3758b0a0c24c317fc2f526f987a8b"
+    },
+    {
+      "path": "DESIGN_AND_VALIDATION.md",
+      "size_bytes": 20330,
+      "sha256": "046edd50bf739170e66b12ba328c73a8bd18e0f85d9a988fa137c9fee3f9c714"
+    },
+    {
+      "path": "READABLE_REPORT.html",
+      "size_bytes": 25839,
+      "sha256": "d48571ca52ee5d00bb2c6f34cffa74c27937b64ec01c67681f82fc8faeafb413"
+    },
+    {
+      "path": "data/BASELINE_AND_DELTA.md",
+      "size_bytes": 1353,
+      "sha256": "350c43eb180883dd98a9b212fb490df592fac4c08ee29a6bb0118b9a532a3f7a"
+    },
+    {
+      "path": "data/BUILD_CONCEPTS.json",
+      "size_bytes": 2644,
+      "sha256": "7f9277e5de5dfb5e8a4ce658d9451a9f41827048bbd4624a877c7fa6df5c4340"
+    },
+    {
+      "path": "data/CHALLENGE_CATALOG.json",
+      "size_bytes": 16402,
+      "sha256": "68f98289a5e86be62679191556505002f1312d7981d6abfe6eeaffcdc300a230"
+    },
+    {
+      "path": "data/EXTERNAL_REFERENCES.json",
+      "size_bytes": 633,
+      "sha256": "a8c4eaf4ac1d7e6d20d9e7e6fa8920c515ea64d870d5bec2f479a385ba026131"
+    },
+    {
+      "path": "data/PRODUCT_VALUE_MATRIX.json",
+      "size_bytes": 2985,
+      "sha256": "86ac5189196a050461ef909e77e1bd36d54cea774b89b2298ecf73f2ddaf54f3"
+    },
+    {
+      "path": "data/RELEASE_GATES.json",
+      "size_bytes": 1405,
+      "sha256": "25baee2dccf3751c77bb0c1dd7b1cb0f1e3137624e4b64b491d7b504e62265b0"
+    },
+    {
+      "path": "data/SOURCE_LOCK.json",
+      "size_bytes": 11842,
+      "sha256": "06343e65e51a1602a4ca1d3fef30a797c38613191355ee05a2d7de7713c19878"
+    },
+    {
+      "path": "docs/CURRENT_POSITION.md",
+      "size_bytes": 1075,
+      "sha256": "e33fd808017edc0020b2d306e36244143b18b764934c499c1daaf032c86b64dc"
+    },
+    {
+      "path": "docs/SOURCE_COVERAGE.md",
+      "size_bytes": 1009,
+      "sha256": "4d911b2c3aa29ce227c10ee30c824c21734a9ebada4403b89e7ca190c238cf76"
+    },
+    {
+      "path": "handoff/CODEX_NEXT_TRIAL_SCOPE_DRAFT.md",
+      "size_bytes": 1891,
+      "sha256": "298a82d979804e406e11b9ae116303e919c523561f4d722ab7c3413231d3259e"
+    },
+    {
+      "path": "history/Witch_G2_Promotion_Onboarding_Economy_R1_20261010.zip",
+      "size_bytes": 2383417,
+      "sha256": "1fb68a93d23c76c032f22cec0bf46d00455bf8d04b633606fc2f0c508775856e"
+    },
+    {
+      "path": "qa/LAYOUT_FIX_NOTE.md",
+      "size_bytes": 697,
+      "sha256": "c26d26fe11e3ab31df6eb7ce103d67c598753b5094ae233e9f36b916f87fbdbd"
+    },
+    {
+      "path": "qa/LOCAL_REPORT_LINKS.json",
+      "size_bytes": 233,
+      "sha256": "2d08fe125f86a12b2c97a4055985f95db7233064b050fdcb94571e032f3d9a5d"
+    },
+    {
+      "path": "qa/REPORT_LAYOUT_QA.json",
+      "size_bytes": 737,
+      "sha256": "6ea8b8a7e73a8c653a27b00808adca186834aae5b4eb53030b91addf2355c6c6"
+    },
+    {
+      "path": "qa/report_desktop_body.png",
+      "size_bytes": 272649,
+      "sha256": "53cbfdb73752c17decd563e68975ffd01034c1ec38b53e8e8d96395cf882abf3"
+    },
+    {
+      "path": "qa/report_desktop_top.png",
+      "size_bytes": 192583,
+      "sha256": "6e6d5b02246d1aab44c67255816af450c4694a964242bb7c5331db042f11e945"
+    },
+    {
+      "path": "qa/report_mobile_body.png",
+      "size_bytes": 130812,
+      "sha256": "5216cd8e2aa377ab19139922db63cb327105e26e03f7d3a263823d09823211cf"
+    },
+    {
+      "path": "qa/report_mobile_top.png",
+      "size_bytes": 75895,
+      "sha256": "3f27d06d5c5d3cae68bdd17cbfdee7ce6789a239e2f9fcd58d50316ee1e79120"
+    },
+    {
+      "path": "requirements-research.txt",
+      "size_bytes": 175,
+      "sha256": "c20255967456ec67db1a51d89b0fa52bdb32388efab7e87ad151200ec14d9648"
+    },
+    {
+      "path": "results/BASELINE_ECONOMY_TESTS.txt",
+      "size_bytes": 4629,
+      "sha256": "5da34420b0060d08b4b38c47b8c8c82076c8622ea88231fac7eaa8824f7c61c5"
+    },
+    {
+      "path": "results/BASELINE_GROWTH_TESTS.txt",
+      "size_bytes": 5047,
+      "sha256": "0e6282f31551f4d2c05d3f5714a0a0f42b02c26251fd1641d96f280de35e2dbe"
+    },
+    {
+      "path": "results/BASELINE_PRODUCT_TESTS.txt",
+      "size_bytes": 4138,
+      "sha256": "f14b5dd774c2eb3aca3d21568e6d0e9a0099a2771cae2e9c08c8c373bb5070be"
+    },
+    {
+      "path": "results/CONTRACT_TESTS.txt",
+      "size_bytes": 3841,
+      "sha256": "32e3583c2b47be8eedac88f7e80e705c55a62aa8d1ac59ac1961fccbd47ec79e"
+    },
+    {
+      "path": "results/LAB_PRESSURE_DIAGNOSTIC.json",
+      "size_bytes": 3759,
+      "sha256": "808140fc4bd14ad3fbe1ff8c60eb5d3d2d1774e9c968413ae32cecdd48ddc74b"
+    },
+    {
+      "path": "results/VALIDATION_SUMMARY.json",
+      "size_bytes": 1939,
+      "sha256": "8d0c4971dba3b135392c7865b290c6c09bab67f86fed4370b691699c30c9d951"
+    },
+    {
+      "path": "results/collection/COLLECTION_RESULTS.json",
+      "size_bytes": 139405,
+      "sha256": "00ce1b8062aba60fec46438ae08a0df6402a49d26b46d62e828240cc62a73ca4"
+    },
+    {
+      "path": "results/lab/BATTLE_ROWS.json",
+      "size_bytes": 859389,
+      "sha256": "501f7b46114a01d2bb669c55975c5bcc12fc1403a104eb5da6402df92ae54fdb"
+    },
+    {
+      "path": "results/lab/GOLDEN_ARMORED_TOXIN.json",
+      "size_bytes": 191471,
+      "sha256": "785c90c80a3b8fa6c926baee967aba7e75cccdb1546d36ea456f730421eecf4a"
+    },
+    {
+      "path": "results/lab/GOLDEN_COUNTERS_FORTRESS.json",
+      "size_bytes": 112285,
+      "sha256": "b5e287d5b8cbe5a8c1d0c38d0d1a1b19065a8ed3f23fe7f7601c6a0d000b97da"
+    },
+    {
+      "path": "results/lab/GOLDEN_OPENINGS_BURST.json",
+      "size_bytes": 109450,
+      "sha256": "badbae4bc7c956714cbb22273e2cb7303babefd9c42e7707ccb3899e450c4871"
+    },
+    {
+      "path": "results/lab/INPUTS.json",
+      "size_bytes": 79337,
+      "sha256": "9e20080ba72e4cf99cde02e985f793fdf70a7f521127fdeb863ed8c7823aa2a6"
+    },
+    {
+      "path": "results/lab/SUMMARY.json",
+      "size_bytes": 4080,
+      "sha256": "ba560f4c2490a2170a3099361c178e1f8b5e694a96ba5edd5a109d8da39266cf"
+    },
+    {
+      "path": "results/starter/INPUTS.json",
+      "size_bytes": 860844,
+      "sha256": "b8523c761e268704ad00f3bcd6d815076af2c7368bd35aeb6980442c24feac46"
+    },
+    {
+      "path": "results/starter/ROWS.json",
+      "size_bytes": 38594,
+      "sha256": "cfe83c3608567c2989e15a7696f4cefe35b721ab3bdb38c86835c7c84054b78c"
+    },
+    {
+      "path": "results/starter/SUMMARY.json",
+      "size_bytes": 295,
+      "sha256": "e08d55c0ae147df33be8b4a6d731e68944d44d335d8a8e2187f2a5c88e0ec117"
+    },
+    {
+      "path": "source/economy_original/DESIGN_R3.md",
+      "size_bytes": 29472,
+      "sha256": "b3e238057ac79d00812d29e55ca4b0744c1aef6f2e22dcf4c7f2a8d7f8baef1b"
+    },
+    {
+      "path": "source/economy_original/data/PREPARATION_FIXTURE_NOT_BATTLE.json",
+      "size_bytes": 8671,
+      "sha256": "d5a3e0f78c275ffd293232b9ec08a341cc203a6ca4a1904c398f8c6d65d74518"
+    },
+    {
+      "path": "source/economy_original/validation/SIMULATION_RESULTS.json",
+      "size_bytes": 31413,
+      "sha256": "f2f3534af07d5800de8eb082cc7452bacaf9ba5aae3eb28b969156ddd3e18c44"
+    },
+    {
+      "path": "source/rarity_catalog_r2/00_READ_FIRST.md",
+      "size_bytes": 858,
+      "sha256": "8ecf7b2ff59f715b89f97d0bc44cdccaea9a31f1c887794551a67259a27c20a0"
+    },
+    {
+      "path": "source/rarity_catalog_r2/DESIGN_REPORT.md",
+      "size_bytes": 20958,
+      "sha256": "0ad348eda2a12cafc008a88488f5f70c49326a355e8170ed02af415cf39e3375"
+    },
+    {
+      "path": "source/rarity_catalog_r2/PACKAGE_MANIFEST.json",
+      "size_bytes": 9781,
+      "sha256": "27cd3521c3db28e5bec5921f0b349f04942309e51ef175e7a8f12d13c18251aa"
+    },
+    {
+      "path": "source/rarity_catalog_r2/READABLE_DESIGN.html",
+      "size_bytes": 26127,
+      "sha256": "517c2f49d02573d59ca8d8d1d779e83421e6fad6d6b56bfc85e667443f5f6563"
+    },
+    {
+      "path": "source/rarity_catalog_r2/data/PRODUCT_CATALOG.json",
+      "size_bytes": 13122,
+      "sha256": "11a4fa5a9984a32683f0770bd2cf228c51f3c28530abf01abecf8fe9b82e795e"
+    },
+    {
+      "path": "source/rarity_catalog_r2/data/RARITY_CANDIDATES.json",
+      "size_bytes": 1352,
+      "sha256": "973d52bb0381956a77076a97b119fa5c1735c8abedb611390ae9eeae0d3cfc0d"
+    },
+    {
+      "path": "source/rarity_catalog_r2/data/SOURCE_MANIFEST.json",
+      "size_bytes": 10700,
+      "sha256": "d2ebc088a3e68584271a33c90cc5fa1d896c1f004616f44089dbc3a47f51b345"
+    },
+    {
+      "path": "source/rarity_catalog_r2/docs/DECISION_REGISTER.md",
+      "size_bytes": 1339,
+      "sha256": "f3ec8377a68e83f32c434bc77ee1cf3bf39ed8c869fc234f9ae210f083333b4a"
+    },
+    {
+      "path": "source/rarity_catalog_r2/handoff/CODEX_REFERENCE_ONLY.md",
+      "size_bytes": 1250,
+      "sha256": "c17772ed82c6c46fa45edb61565f5f1c50b34f2704a79af322721ad36afcd563"
+    },
+    {
+      "path": "source/rarity_catalog_r2/results/CONTRACT_TESTS.txt",
+      "size_bytes": 4138,
+      "sha256": "3e7ab27fb40bd9744f5c666885f0d65bf4031e4a6c61fd14cdb7fcb99ef9a089"
+    },
+    {
+      "path": "source/rarity_catalog_r2/results/ORIGINAL_ECONOMY_TESTS.txt",
+      "size_bytes": 4629,
+      "sha256": "c54d3468b941f92f63ca7a6a2820d48841032b1903e2a1cb8a8b7b3bbc794eb9"
+    },
+    {
+      "path": "source/rarity_catalog_r2/results/ORIGINAL_GROWTH_TESTS.txt",
+      "size_bytes": 5047,
+      "sha256": "51e23ab4e33a924636f1bc3a9fd60f5e891f34786812b9d58d6523026933b2c2"
+    },
+    {
+      "path": "source/rarity_catalog_r2/results/VALIDATION_SUMMARY.json",
+      "size_bytes": 1095,
+      "sha256": "d00560781bd27bb998b8d07eb54a56fde4fa8d085bc07aa7809209daa884971a"
+    },
+    {
+      "path": "source/rarity_catalog_r2/results/analysis/BATTLE_INPUTS.json",
+      "size_bytes": 447022,
+      "sha256": "49edd49101250e21ef737e5e4c88c9d55572233bde8242ebdb7083126194b76b"
+    },
+    {
+      "path": "source/rarity_catalog_r2/results/analysis/BATTLE_ROWS.csv",
+      "size_bytes": 71520,
+      "sha256": "005e9fb54fb45eb423039f1ae3bebfbe387cfcbf58093aa964add0965239871a"
+    },
+    {
+      "path": "source/rarity_catalog_r2/results/analysis/CATALOG_PROJECTIONS.json",
+      "size_bytes": 33632,
+      "sha256": "2f9e2b11702c7e7a8831269f16d4031390081a58bf6879b1832e177e1b7d0e0b"
+    },
+    {
+      "path": "source/rarity_catalog_r2/results/analysis/H0_REPLAY_CHECK.json",
+      "size_bytes": 276,
+      "sha256": "915bb071bfd2b704a392e48b071c76b6370dce786994d8c302c1f33213a2f09d"
+    },
+    {
+      "path": "source/rarity_catalog_r2/results/analysis/OPEN_BALANCE_WARNINGS.json",
+      "size_bytes": 909,
+      "sha256": "a4677987ebdbfb3b5211f5d9ea3d3915ae89453fcd9d9fa8b7f46b4ef95b36d7"
+    },
+    {
+      "path": "source/rarity_catalog_r2/results/analysis/RARITY_RESULTS.json",
+      "size_bytes": 14584,
+      "sha256": "e99fffab5b93ca7fbe0c4de1c115321edc147862fdcc1649a43882883994147a"
+    },
+    {
+      "path": "source/rarity_catalog_r2/results/layout/QA.json",
+      "size_bytes": 394,
+      "sha256": "eedb38d6416299cf081671dcb5a5bfcb3f5839b17254fae70077f62aafe31c32"
+    },
+    {
+      "path": "source/rarity_catalog_r2/results/layout/desktop.png",
+      "size_bytes": 168698,
+      "sha256": "f9f2a76d6ce0b041f0b25a2d7f12a41954c2258244ce3ffea5edeaaf80806d11"
+    },
+    {
+      "path": "source/rarity_catalog_r2/results/layout/mobile.png",
+      "size_bytes": 73748,
+      "sha256": "ef3e617a531d67cd2945adaf19158f34b312ad0a0fd65e3cbe6dadec98782b32"
+    },
+    {
+      "path": "source/rarity_catalog_r2/source/ALIGNMENT_R1_ORIGINAL.md",
+      "size_bytes": 5399,
+      "sha256": "010cba294613a3dbc5e2642071091785cc75331a55ffe0f0988c4a25bf808c21"
+    },
+    {
+      "path": "source/rarity_catalog_r2/source/integration_r1/source/after_draw_r4/source/commerce_r2/data/GEAR_METADATA_AND_NEW_AFFIX_PROPOSAL.json",
+      "size_bytes": 12837,
+      "sha256": "859863b6b14f4323fa9d9d78b90a14bda37e4e28c27d884a47c025a24a2f3b6b"
+    },
+    {
+      "path": "source/rarity_catalog_r2/source/integration_r1/source/after_draw_r4/source/commerce_r2/data/PRODUCT_AND_LIVING_CANDIDATE.json",
+      "size_bytes": 4498,
+      "sha256": "6dfc96794ab43b6b8fb5f53b255c34dd5d53f3524b503cf5f38b73209bd475d8"
+    },
+    {
+      "path": "source/rarity_catalog_r2/source/integration_r1/source/after_draw_r4/source/research_r3/data/CANDIDATES_R3.json",
+      "size_bytes": 2799,
+      "sha256": "4f321ad0c2b7a8036e4d43416120fc37f2386d189b370935de821f61bdb54413"
+    },
+    {
+      "path": "source/rarity_catalog_r2/source/integration_r1/source/after_draw_r4/source/research_r3/tools/compare_gacha.py",
+      "size_bytes": 11342,
+      "sha256": "ccc044721015c8de7745fb81f4aca02b385f9c5a9d435798f8743e70858e8cbe"
+    },
+    {
+      "path": "source/rarity_catalog_r2/source/integration_r1/source/r6/tools/bootstrap.py",
+      "size_bytes": 451,
+      "sha256": "7cadbe853de322bb13396a5142be581b7be83a548a697b7cd16d557cae33dc16"
+    },
+    {
+      "path": "source/rarity_catalog_r2/source/integration_r1/source/r6/tools/selected_final.py",
+      "size_bytes": 403,
+      "sha256": "b4705733697049316464428d999fcb57b7bf04617bb5a661d6e19961dbb57080"
+    },
+    {
+      "path": "source/rarity_catalog_r2/source/integration_r1/source/r6/tools/support_ai.py",
+      "size_bytes": 13191,
+      "sha256": "4bb6c1492ecc0328ed797347339e5c56f66c77445def41845b7488823a9eec7d"
+    },
+    {
+      "path": "source/rarity_catalog_r2/source/integration_r1/source/r6/tools/support_ai_b.py",
+      "size_bytes": 1555,
+      "sha256": "125710985854b0b381466c6ae42fc2c74d89b2d49c5e32505dd3ebb350e0aeb3"
+    },
+    {
+      "path": "source/rarity_catalog_r2/source/integration_r1/source/r6/vendor/r5/tools/battle_r5.py",
+      "size_bytes": 33174,
+      "sha256": "af22c1ee4bdababae2ac6d3262ca8bb938a788600c008c6557335e27885675db"
+    },
+    {
+      "path": "source/rarity_catalog_r2/source/integration_r1/source/r6/vendor/r5/tools/compare_candidates.py",
+      "size_bytes": 3447,
+      "sha256": "ffbcdfa6c8936f97ffc81c313dd54a1924b10dce4b862e6cd82e43aca80e8632"
+    },
+    {
+      "path": "source/rarity_catalog_r2/source/integration_r1/source/r6/vendor/r5/tools/precision_rules.py",
+      "size_bytes": 2276,
+      "sha256": "4c9411519da6f41e36953f055ff44b553015bfba5633a6391dbfe07d984f41a8"
+    },
+    {
+      "path": "source/rarity_catalog_r2/source/integration_r1/source/r6/vendor/r5/vendor/r01_r4/data/LOCAL_CANDIDATES.json",
+      "size_bytes": 3045,
+      "sha256": "250917f013457df558ec90d84cc52efdac862f38eb4016fdd72ed14f6aaa35b9"
+    },
+    {
+      "path": "source/rarity_catalog_r2/source/integration_r1/source/r6/vendor/r5/vendor/r01_r4/source/economy_r3/data/economy_R3.json",
+      "size_bytes": 79094,
+      "sha256": "b8ae30f04cf3077f4e8dabe0c575f6d02e43502642c36015201d750e41c03476"
+    },
+    {
+      "path": "source/rarity_catalog_r2/source/integration_r1/source/r6/vendor/r5/vendor/r01_r4/source/economy_r3/reference/growth_gear_skills_R2_UNCHANGED.json",
+      "size_bytes": 87436,
+      "sha256": "70d36d335e69899f4232567d80e2dc17457d6baec1688590cf3757d8b0b4d874"
+    },
+    {
+      "path": "source/rarity_catalog_r2/source/integration_r1/source/r6/vendor/r5/vendor/r01_r4/source/economy_r3/reference/world_catalog_R1_UNCHANGED.json",
+      "size_bytes": 144485,
+      "sha256": "8452568dc72091de455521b5fe9e9fcca96237d4ba791bdfca712c9beb82bec5"
+    },
+    {
+      "path": "source/rarity_catalog_r2/source/integration_r1/source/r6/vendor/r5/vendor/r01_r4/source/economy_r3/tools/economy_model.py",
+      "size_bytes": 15559,
+      "sha256": "601bad6cf9cee09ec6101bf8b9531880f7233ca911b80520325f93b03abaa636"
+    },
+    {
+      "path": "source/rarity_catalog_r2/source/integration_r1/source/r6/vendor/r5/vendor/r01_r4/source/economy_r3/tools/test_economy.py",
+      "size_bytes": 11694,
+      "sha256": "8c4fed4a74c9641ca14db36f5527b92319793e449e39f86109930ec8cf8e9fea"
+    },
+    {
+      "path": "source/rarity_catalog_r2/source/integration_r1/source/r6/vendor/r5/vendor/r01_r4/source/growth_r2/GROWTH_EQUIPMENT_SKILLS_R2.md",
+      "size_bytes": 42737,
+      "sha256": "849e1d92a0d54694f8ee1ac650d45cc04441557b4b54ffb2f5da6c6c43046b44"
+    },
+    {
+      "path": "source/rarity_catalog_r2/source/integration_r1/source/r6/vendor/r5/vendor/r01_r4/source/growth_r2/data/growth_gear_skills_R2.json",
+      "size_bytes": 87436,
+      "sha256": "70d36d335e69899f4232567d80e2dc17457d6baec1688590cf3757d8b0b4d874"
+    },
+    {
+      "path": "source/rarity_catalog_r2/source/integration_r1/source/r6/vendor/r5/vendor/r01_r4/source/growth_r2/reference/world_catalog_R1_UNCHANGED.json",
+      "size_bytes": 144485,
+      "sha256": "8452568dc72091de455521b5fe9e9fcca96237d4ba791bdfca712c9beb82bec5"
+    },
+    {
+      "path": "source/rarity_catalog_r2/source/integration_r1/source/r6/vendor/r5/vendor/r01_r4/source/growth_r2/validation/reference_model.py",
+      "size_bytes": 17538,
+      "sha256": "2dd2a0510151a84a85135d94cf85a09a721dc853d896a7b57dca0befb2d07875"
+    },
+    {
+      "path": "source/rarity_catalog_r2/source/integration_r1/source/r6/vendor/r5/vendor/r01_r4/source/growth_r2/validation/test_reference.py",
+      "size_bytes": 11087,
+      "sha256": "f304d5a7ca33a8c689aaf7b9fe99ce872b1e9a9508d4b41e464c111d8e392146"
+    },
+    {
+      "path": "source/rarity_catalog_r2/source/integration_r1/source/r6/vendor/r5/vendor/r01_r4/tools/battle_model.py",
+      "size_bytes": 26974,
+      "sha256": "ab901031e4dbfb36ccf51e63c9a21ad0935dfe87f4c0904d308ceda1b2856b72"
+    },
+    {
+      "path": "source/rarity_catalog_r2/source/integration_r1/source/r6/vendor/r5/vendor/r01_r4/tools/progression_bridge.py",
+      "size_bytes": 11688,
+      "sha256": "fca7bdab2134dcc85286204d666650aff76e00abda67100a6a7f229d454e305a"
+    },
+    {
+      "path": "source/rarity_catalog_r2/source/integration_r1/tools/bridge.py",
+      "size_bytes": 13873,
+      "sha256": "8f29cbe99f44ef92594c499ee0ebfbbdb8b97c419e5f87257f710d55d278975c"
+    },
+    {
+      "path": "source/rarity_catalog_r2/tools/model.py",
+      "size_bytes": 6325,
+      "sha256": "f028a2463e1531a53fa1c3b64e199798a728780887cea0574a60b912acd34af9"
+    },
+    {
+      "path": "source/rarity_catalog_r2/tools/run_analysis.py",
+      "size_bytes": 7631,
+      "sha256": "ef8da1720be9362a25a97e71e33563fa9957f30e130d6ae513aa8d72ae6b0489"
+    },
+    {
+      "path": "source/rarity_catalog_r2/tools/test_model.py",
+      "size_bytes": 7185,
+      "sha256": "ff5f5586e8dab8c7161c45491949d900bfa087d7e5b347e0b17bd28f9a4c0da8"
+    },
+    {
+      "path": "source/rarity_catalog_r2/tools/verify_bundle.py",
+      "size_bytes": 975,
+      "sha256": "2b0c5895cd988bdd080676e4b02eeb5788c814c9d14cfc2efa32197c35e6e632"
+    },
+    {
+      "path": "tools/collection.py",
+      "size_bytes": 6327,
+      "sha256": "c1e083b5af0ac6e791755b1f718d031c5b4ce2c374eec4a6ca566dd042e62d79"
+    },
+    {
+      "path": "tools/contracts.py",
+      "size_bytes": 4870,
+      "sha256": "b8e459e6e57e057eaefc9822d3745868cdf6f1710ad777dea964d0f0072b5446"
+    },
+    {
+      "path": "tools/lab.py",
+      "size_bytes": 4571,
+      "sha256": "ed933c017ec62d1ef07cc65898cfc6e6f9fe7967598a636a5ed7484b93f7a28d"
+    },
+    {
+      "path": "tools/run_lab.py",
+      "size_bytes": 2033,
+      "sha256": "cc0ea9f1ad4a40ec9abfe6997c083eb4dda9df0e9795b9fbb6faad68f92123a5"
+    },
+    {
+      "path": "tools/run_pressure_diagnostic.py",
+      "size_bytes": 858,
+      "sha256": "b58f860bdd36b61259bca4c9c010df3f7c215c15c95c729ab4eef9bbc99f5a2f"
+    },
+    {
+      "path": "tools/run_starter.py",
+      "size_bytes": 2284,
+      "sha256": "3ca140099b5659c540cbf1c43fe7fc510e7245fc6a845c76a631419b04f64244"
+    },
+    {
+      "path": "tools/test_contracts.py",
+      "size_bytes": 9306,
+      "sha256": "e0ffc86a0a475c2f205a14a9ff03964d4bf59d10dbd96ea4bce51995fa87b4bf"
+    },
+    {
+      "path": "tools/verify_bundle.py",
+      "size_bytes": 1924,
+      "sha256": "7bfbbb5708a1dde59803576d8c451cc7acdde38d0fcf2bae9dc2589bb6493de2"
+    }
+  ],
+  "record_count": 101,
+  "notice": "file integrity only, not authenticity or product acceptance"
+}

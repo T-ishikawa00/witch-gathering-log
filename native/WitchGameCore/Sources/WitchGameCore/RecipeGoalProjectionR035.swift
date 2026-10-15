@@ -28,6 +28,8 @@ public enum RecipeGoalProjectionR035 {
         public let ready: Bool
         public let parentOwned: Bool?
         public let outputOwned: Bool
+        public let dispatchCompatible: Bool
+        public let firstCraftAidApplied: Bool
     }
 
     /// Lists new-craft recipes and only the next evolution steps for parent gear the
@@ -37,7 +39,9 @@ public enum RecipeGoalProjectionR035 {
                              materialCounts: [String: Int],
                              ownedGearTemplateIDs: Set<String>,
                              unlockedRegionIDs: Set<String>,
-                             completedEncounterIDs: Set<String>) -> [Goal] {
+                             completedEncounterIDs: Set<String>,
+                             firstCraftAidEligibleR179: Bool = false, craftedGearOnce: Bool = false,
+                             firstCraftAidCapabilityR179: FirstCraftAidCapabilityR179 = .disabled) -> [Goal] {
         catalog.recipes.compactMap { recipe in
             guard recipe.kind == "craft_new" || recipe.kind == "evolve_in_place",
                   let output = recipe.outputGearID else { return nil }
@@ -48,7 +52,11 @@ public enum RecipeGoalProjectionR035 {
             let gateCleared = recipe.gateID.map {
                 $0 == "G_START" || completedEncounterIDs.contains(encounterID(for: $0))
             } ?? true
-            let requirements = recipe.costs.sorted { $0.key < $1.key }.map { materialID, required in
+            let costResolution = FirstCraftCostProjectionR179.resolve(
+                recipeID: recipe.id, declaredCosts: recipe.costs,
+                firstCraftAidEligible: firstCraftAidEligibleR179, craftedGearOnce: craftedGearOnce,
+                capability: firstCraftAidCapabilityR179)
+            let requirements = costResolution.costs.sorted { $0.key < $1.key }.map { materialID, required in
                 let owned = max(0, materialCounts[materialID, default: 0])
                 let available = catalog.regions.compactMap { region -> String? in
                     guard unlockedRegionIDs.contains(region.id),
@@ -84,9 +92,11 @@ public enum RecipeGoalProjectionR035 {
                         gateID: recipe.gateID, gateCleared: gateCleared,
                         dustRequired: recipe.dustCost, dustOwned: dustOwned, dustMissing: dustMissing,
                         requirements: requirements,
-                        ready: gateCleared && dustMissing == 0 && requirements.allSatisfy { $0.missing == 0 },
+                        ready: costResolution.dispatchCompatible && gateCleared && dustMissing == 0 && requirements.allSatisfy { $0.missing == 0 },
                         parentOwned: recipe.parentTemplateID.map(ownedGearTemplateIDs.contains),
-                        outputOwned: ownedGearTemplateIDs.contains(output))
+                        outputOwned: ownedGearTemplateIDs.contains(output),
+                        dispatchCompatible: costResolution.dispatchCompatible,
+                        firstCraftAidApplied: costResolution.aidApplied)
         }
     }
 

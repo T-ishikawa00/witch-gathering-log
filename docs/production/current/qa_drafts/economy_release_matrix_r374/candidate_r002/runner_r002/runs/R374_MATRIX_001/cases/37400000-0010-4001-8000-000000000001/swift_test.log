@@ -1,0 +1,46 @@
+warning: 'package': found 3 file(s) which are unhandled; explicitly declare them as resources or exclude from the target
+    /Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/economy_release_matrix_r374/candidate_r002/runner_r002/runs/R374_MATRIX_001/package/Tests/WitchGameCoreTests/Fixtures/R6B_KNOWN_100049_TRACE_R1.json
+    /Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/economy_release_matrix_r374/candidate_r002/runner_r002/runs/R374_MATRIX_001/package/Tests/WitchGameCoreTests/R159_DAY30_SAVE_AFTER_REOPEN.json
+    /Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/economy_release_matrix_r374/candidate_r002/runner_r002/runs/R374_MATRIX_001/package/Tests/WitchGameCoreTests/Fixtures/R6B_KNOWN_100069_TRACE_R1.json
+Building for production...
+[0/9] /Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/economy_release_matrix_r374/candidate_r002/runner_r002/runs/R374_MATRIX_001/scratch/build/arm64-apple-macosx/release/WitchGameCorePackageTests.derived/runner.swift
+[1/9] Copying catalog_overlay.json
+[2/9] Copying candidate_latent_policy_r004.json
+[3/9] Write sources
+[6/9] Write swift-version--58304C5D6DBC2206.txt
+[8/10] Compiling WitchGameCore BattleTargetWarningR299.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/economy_release_matrix_r374/candidate_r002/runner_r002/runs/R374_MATRIX_001/package/Sources/WitchGameCore/GameRuntimeIntegratedEquipmentProfileR355.swift:3:18: warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 1 | import CryptoKit
+ 2 | import Foundation
+ 3 | @testable import WitchGameCore
+   |                  `- warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 4 | 
+ 5 | /// Explicit test-only combination of the current R230 base and R350/R352/R353 policies.
+
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/economy_release_matrix_r374/candidate_r002/runner_r002/runs/R374_MATRIX_001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[9/11] Compiling WitchGameCoreTests EconomyCohortProgressionR374Tests.swift
+[10/12] Compiling WitchGameCorePackageTests runner.swift
+[10/12] Write Objects.LinkFileList
+[11/12] Linking WitchGameCorePackageTests
+Build complete! (44.64s)
+Test Suite 'Selected tests' started at 2026-10-14 07:26:35.758.
+Test Suite 'WitchGameCorePackageTests.xctest' started at 2026-10-14 07:26:35.759.
+Test Suite 'EconomyCohortProgressionR374Tests' started at 2026-10-14 07:26:35.759.
+Test Case '-[WitchGameCoreTests.EconomyCohortProgressionR374Tests testR374CurrentCoreEconomyCohortWithR230AndChallengeOutcomes]' started.
+Test Case '-[WitchGameCoreTests.EconomyCohortProgressionR374Tests testR374CurrentCoreEconomyCohortWithR230AndChallengeOutcomes]' passed (269.496 seconds).
+Test Suite 'EconomyCohortProgressionR374Tests' passed at 2026-10-14 07:31:05.255.
+	 Executed 1 test, with 0 failures (0 unexpected) in 269.496 (269.496) seconds
+Test Suite 'WitchGameCorePackageTests.xctest' passed at 2026-10-14 07:31:05.255.
+	 Executed 1 test, with 0 failures (0 unexpected) in 269.496 (269.496) seconds
+Test Suite 'Selected tests' passed at 2026-10-14 07:31:05.255.
+	 Executed 1 test, with 0 failures (0 unexpected) in 269.496 (269.497) seconds
+◇ Test run started.
+↳ Testing Library Version: 1902
+↳ Target Platform: arm64e-apple-macos14.0
+✔ Test run with 0 tests in 0 suites passed after 0.001 seconds.

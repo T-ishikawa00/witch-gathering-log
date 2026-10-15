@@ -1,6 +1,6 @@
 # 署名付き取引のローカル監査
 
-`signed_transaction_audit.py` は、Apple公式ライブラリ3.1.2でES256署名と証明書チェーンを検証する、独立したオフライン監査モジュールです。ゲームや購入台帳への接続はありません。既存の `PurchaseAuthority.ingest_apple_jws()` は引き続き拒否します。
+`signed_transaction_audit.py` は、Apple公式ライブラリ3.1.2でES256署名と証明書チェーンを検証する、オフライン監査モジュールです。R459で、新規の隔離リハーサル台帳へ型とインスタンスを照合して接続する試験経路を追加しました。ゲームの本番課金へは接続せず、既存の `PurchaseAuthority.ingest_apple_jws()` は引き続き拒否します。
 
 対象はSandbox形式だけです。公式ライブラリが署名検証を省略するXcode/LocalTestingと、本番環境を設定時に拒否します。信頼するルートは監査者が設定し、取引の `x5c` に含まれるルートを自動的に信頼しません。公式の厳格なX.509検証を無効にしていません。
 
@@ -13,13 +13,15 @@
 再実行は、このフォルダを作業ディレクトリにして専用環境で行います。
 
 ```sh
-.venv_signed_audit_r001/bin/python -m unittest discover -s tests -v
+PYTHONPATH=../.. .venv_signed_audit_r001/bin/python -B -m unittest discover -s tests -v
 ```
 
 依存関係は `signed_audit_requirements.lock` に固定しています。専用環境のない既存stdlib試験では暗号監査モジュールだけが明示的にSKIPされます。暗号監査を実施済みと記録するには、専用環境で21件・SKIPなしが必要です。
 
 初回のヘッダー試験は、PyJWTが `b64=true` を削除したため意図した入力になっていませんでした。元の失敗と修正を保存しています。別の試行は作業ディレクトリ誤りでimportに失敗しました。記録は `docs/production/current/purchases/signed_transaction_audit_r001/` にあります。
 
-本番には、Appleの信頼ルート管理と失効確認、実Sandbox署名取引、認証済みアカウントとの対応、通知と返金の照合、課金台帳・乱数・永続履歴への接続、運用・セキュリティ検証が残ります。
+R459の追加経路では、署名付き購入・返金通知の日時とUUIDを検査し、同じ台帳の原子的な付与・抽選・返金・重複防止を検証します。試験用のアカウント対応と乱数を使い、本番の権限付与フラグは有効にしません。
+
+本番には、Appleの信頼ルート管理と失効確認、実Sandbox署名取引、認証済みアカウントとの対応、実通知の照合、課金サービス・安全な乱数・運用バックアップ・セキュリティ検証が残ります。ローカルの署名合格を実Apple購入の合格とは扱いません。
 
 参照: [Apple公式ライブラリv3.1.2](https://github.com/apple/app-store-server-library-python/tree/v3.1.2)、[3.1.2で修正された失効確認の問題](https://github.com/apple/app-store-server-library-python/security/advisories/GHSA-8f6j-263m-g72x)、[Apple PKI](https://www.apple.com/certificateauthority/)。

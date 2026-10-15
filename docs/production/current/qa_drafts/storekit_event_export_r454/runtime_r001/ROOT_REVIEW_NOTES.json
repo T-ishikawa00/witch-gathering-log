@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-15T06:09:18.293465+09:00",
+  "status": "REVIEWED_PENDING_BUILD_AND_INSTALL",
+  "helperSHA256": "c2aebca8fabcd82fe1b687f23e4551db0c4cabace7069033e17e222ebcb2ec93",
+  "independentReview": "core_runtime read-only confirmed no save mutation; install origin required before capture/serve; limits are per invocation.",
+  "rootControls": [
+    "Create INSTALLED_ORIGIN exclusively after unique R454 install and exact build-executable readback.",
+    "Start one runtime session receipt with time and total request count; enforce aggregate1200sec/12requests and6screens/30MB.",
+    "Do not run helper before origin receipt exists.",
+    "StoreKit purchase transaction ends after durable QA ticket receipt; later authority ticket spend and gear delivery are a separate operation. This is not production paid entitlement integration."
+  ]
+}

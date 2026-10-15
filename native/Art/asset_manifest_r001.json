@@ -1,0 +1,420 @@
+{
+  "schema": "witch-ios-art-candidate-manifest-r001",
+  "status": "CANDIDATE_STATIC_POSES_ONLY_NOT_FULL_ANIMATION_NOT_APPROVED",
+  "purpose": "iOS Bundle integration input for prototype work; not a release or Human-adopted asset set",
+  "authority_reference": {
+    "path": "docs/design/visual/witch_characters_R1.png",
+    "sha256": "c20e010feec532d3fba9bc33a2a9e4bc54fae67aa4b5ffc7554e6ab884537601",
+    "role": "top-level approved character appearance reference; opaque contact sheet, do not crop to runtime sprites"
+  },
+  "identity_mapping": {
+    "ERNA": "魔女 (main character)",
+    "LUNA": "弟子",
+    "AIRA": "鍛冶師",
+    "NOIR": "黒猫",
+    "basis": "R008 source bundle and R1 canonical visual reviewed together; pose-image adoption remains pending"
+  },
+  "animation_contract": {
+    "states_present_as_single_pngs": [
+      "idle",
+      "anticipate",
+      "execute",
+      "recover",
+      "hit",
+      "resolve"
+    ],
+    "states_are_independent_stills": true,
+    "full_animation_integrated": false,
+    "requires": "continuous animated state clips in actual iOS scene; validate silhouettes and transitions"
+  },
+  "adoption": "PENDING_INDIVIDUAL",
+  "physical_iphone": "NOT_TESTED",
+  "runtime_inclusion_authorized": "prototype integration only; no production/release selection implied",
+  "rights_status": "UNKNOWN",
+  "files": [
+    {
+      "asset_id": "ERNA",
+      "variant": "idle",
+      "revision": "r001",
+      "source_app_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/game/native_r008/WitchG2Refinement.app/Assets/Characters/ERNA/ERNA__idle__256__r001.png",
+      "bundle_relative_path": "Characters/ERNA/ERNA__idle__256__r001.png",
+      "source_sha256": "9d2532504fec9818fe0e1b28ec8f8f4e4ed0f1c1baf6c6c96dd0b0408d585e20",
+      "copied_sha256": "9d2532504fec9818fe0e1b28ec8f8f4e4ed0f1c1baf6c6c96dd0b0408d585e20",
+      "bytes": 59270,
+      "image_metadata_sips": [
+        "  pixelWidth: 256",
+        "  pixelHeight: 256",
+        "  format: png",
+        "  hasAlpha: yes"
+      ]
+    },
+    {
+      "asset_id": "ERNA",
+      "variant": "anticipate",
+      "revision": "r001",
+      "source_app_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/game/native_r008/WitchG2Refinement.app/Assets/Characters/ERNA/ERNA__anticipate__256__r001.png",
+      "bundle_relative_path": "Characters/ERNA/ERNA__anticipate__256__r001.png",
+      "source_sha256": "4e908caaee468585cc78de1020765b57f604ed1541c0483867841e1f55c195c8",
+      "copied_sha256": "4e908caaee468585cc78de1020765b57f604ed1541c0483867841e1f55c195c8",
+      "bytes": 64707,
+      "image_metadata_sips": [
+        "  pixelWidth: 256",
+        "  pixelHeight: 256",
+        "  format: png",
+        "  hasAlpha: yes"
+      ]
+    },
+    {
+      "asset_id": "ERNA",
+      "variant": "execute",
+      "revision": "r001",
+      "source_app_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/game/native_r008/WitchG2Refinement.app/Assets/Characters/ERNA/ERNA__execute__256__r001.png",
+      "bundle_relative_path": "Characters/ERNA/ERNA__execute__256__r001.png",
+      "source_sha256": "b62118da4f411191a4ab838abd26ed55823877f4004c7f1b4d61d6a211cd48b9",
+      "copied_sha256": "b62118da4f411191a4ab838abd26ed55823877f4004c7f1b4d61d6a211cd48b9",
+      "bytes": 58612,
+      "image_metadata_sips": [
+        "  pixelWidth: 256",
+        "  pixelHeight: 256",
+        "  format: png",
+        "  hasAlpha: yes"
+      ]
+    },
+    {
+      "asset_id": "ERNA",
+      "variant": "recover",
+      "revision": "r001",
+      "source_app_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/game/native_r008/WitchG2Refinement.app/Assets/Characters/ERNA/ERNA__recover__256__r001.png",
+      "bundle_relative_path": "Characters/ERNA/ERNA__recover__256__r001.png",
+      "source_sha256": "32b6b3762a13ae02d1773f96d38b66d3afca1560f3d24180f92514c33c64e6a3",
+      "copied_sha256": "32b6b3762a13ae02d1773f96d38b66d3afca1560f3d24180f92514c33c64e6a3",
+      "bytes": 55971,
+      "image_metadata_sips": [
+        "  pixelWidth: 256",
+        "  pixelHeight: 256",
+        "  format: png",
+        "  hasAlpha: yes"
+      ]
+    },
+    {
+      "asset_id": "ERNA",
+      "variant": "hit",
+      "revision": "r001",
+      "source_app_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/game/native_r008/WitchG2Refinement.app/Assets/Characters/ERNA/ERNA__hit__256__r001.png",
+      "bundle_relative_path": "Characters/ERNA/ERNA__hit__256__r001.png",
+      "source_sha256": "8bd25d13102a23b9e4d4aceb326aa340938bdd07d44a92abdd945003fc546035",
+      "copied_sha256": "8bd25d13102a23b9e4d4aceb326aa340938bdd07d44a92abdd945003fc546035",
+      "bytes": 57291,
+      "image_metadata_sips": [
+        "  pixelWidth: 256",
+        "  pixelHeight: 256",
+        "  format: png",
+        "  hasAlpha: yes"
+      ]
+    },
+    {
+      "asset_id": "ERNA",
+      "variant": "resolve",
+      "revision": "r001",
+      "source_app_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/game/native_r008/WitchG2Refinement.app/Assets/Characters/ERNA/ERNA__resolve__256__r001.png",
+      "bundle_relative_path": "Characters/ERNA/ERNA__resolve__256__r001.png",
+      "source_sha256": "c2acfef34d2412794e1100864ba360db424019300020ec0cb2892b47431a721a",
+      "copied_sha256": "c2acfef34d2412794e1100864ba360db424019300020ec0cb2892b47431a721a",
+      "bytes": 59121,
+      "image_metadata_sips": [
+        "  pixelWidth: 256",
+        "  pixelHeight: 256",
+        "  format: png",
+        "  hasAlpha: yes"
+      ]
+    },
+    {
+      "asset_id": "LUNA",
+      "variant": "idle",
+      "revision": "r001",
+      "source_app_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/game/native_r008/WitchG2Refinement.app/Assets/Characters/LUNA/LUNA__idle__256__r001.png",
+      "bundle_relative_path": "Characters/LUNA/LUNA__idle__256__r001.png",
+      "source_sha256": "aa3e9ab84b4158faee6faaddb39fd5aa52c03bbb96fab6e1ef5f092ddd3b524f",
+      "copied_sha256": "aa3e9ab84b4158faee6faaddb39fd5aa52c03bbb96fab6e1ef5f092ddd3b524f",
+      "bytes": 50308,
+      "image_metadata_sips": [
+        "  pixelWidth: 256",
+        "  pixelHeight: 256",
+        "  format: png",
+        "  hasAlpha: yes"
+      ]
+    },
+    {
+      "asset_id": "LUNA",
+      "variant": "anticipate",
+      "revision": "r001",
+      "source_app_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/game/native_r008/WitchG2Refinement.app/Assets/Characters/LUNA/LUNA__anticipate__256__r001.png",
+      "bundle_relative_path": "Characters/LUNA/LUNA__anticipate__256__r001.png",
+      "source_sha256": "2d1bd8e064e213e6cea25202b7eb09f8aa691a4bd9258413cf77390f29e38fe6",
+      "copied_sha256": "2d1bd8e064e213e6cea25202b7eb09f8aa691a4bd9258413cf77390f29e38fe6",
+      "bytes": 52716,
+      "image_metadata_sips": [
+        "  pixelWidth: 256",
+        "  pixelHeight: 256",
+        "  format: png",
+        "  hasAlpha: yes"
+      ]
+    },
+    {
+      "asset_id": "LUNA",
+      "variant": "execute",
+      "revision": "r001",
+      "source_app_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/game/native_r008/WitchG2Refinement.app/Assets/Characters/LUNA/LUNA__execute__256__r001.png",
+      "bundle_relative_path": "Characters/LUNA/LUNA__execute__256__r001.png",
+      "source_sha256": "7b5e9a2a2a7bcd5aa82411a21d2b477decacd15d382d289cabb15f9903f2b629",
+      "copied_sha256": "7b5e9a2a2a7bcd5aa82411a21d2b477decacd15d382d289cabb15f9903f2b629",
+      "bytes": 48424,
+      "image_metadata_sips": [
+        "  pixelWidth: 256",
+        "  pixelHeight: 256",
+        "  format: png",
+        "  hasAlpha: yes"
+      ]
+    },
+    {
+      "asset_id": "LUNA",
+      "variant": "recover",
+      "revision": "r001",
+      "source_app_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/game/native_r008/WitchG2Refinement.app/Assets/Characters/LUNA/LUNA__recover__256__r001.png",
+      "bundle_relative_path": "Characters/LUNA/LUNA__recover__256__r001.png",
+      "source_sha256": "e9b588f4dd9de4309d87a56678f4e7c3cdb2ff1e31637ad4758632c6eec86ebb",
+      "copied_sha256": "e9b588f4dd9de4309d87a56678f4e7c3cdb2ff1e31637ad4758632c6eec86ebb",
+      "bytes": 47864,
+      "image_metadata_sips": [
+        "  pixelWidth: 256",
+        "  pixelHeight: 256",
+        "  format: png",
+        "  hasAlpha: yes"
+      ]
+    },
+    {
+      "asset_id": "LUNA",
+      "variant": "hit",
+      "revision": "r001",
+      "source_app_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/game/native_r008/WitchG2Refinement.app/Assets/Characters/LUNA/LUNA__hit__256__r001.png",
+      "bundle_relative_path": "Characters/LUNA/LUNA__hit__256__r001.png",
+      "source_sha256": "851efddda6ac44f875e912838ed48dc6659445d99aa841e352f4a106659cf7d2",
+      "copied_sha256": "851efddda6ac44f875e912838ed48dc6659445d99aa841e352f4a106659cf7d2",
+      "bytes": 48904,
+      "image_metadata_sips": [
+        "  pixelWidth: 256",
+        "  pixelHeight: 256",
+        "  format: png",
+        "  hasAlpha: yes"
+      ]
+    },
+    {
+      "asset_id": "LUNA",
+      "variant": "resolve",
+      "revision": "r001",
+      "source_app_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/game/native_r008/WitchG2Refinement.app/Assets/Characters/LUNA/LUNA__resolve__256__r001.png",
+      "bundle_relative_path": "Characters/LUNA/LUNA__resolve__256__r001.png",
+      "source_sha256": "d14511800146ab193f829ea82b33c4c8ce0ab0a6b57b83baedd0d6e63716768d",
+      "copied_sha256": "d14511800146ab193f829ea82b33c4c8ce0ab0a6b57b83baedd0d6e63716768d",
+      "bytes": 51571,
+      "image_metadata_sips": [
+        "  pixelWidth: 256",
+        "  pixelHeight: 256",
+        "  format: png",
+        "  hasAlpha: yes"
+      ]
+    },
+    {
+      "asset_id": "AIRA",
+      "variant": "idle",
+      "revision": "r001",
+      "source_app_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/game/native_r008/WitchG2Refinement.app/Assets/Characters/AIRA/AIRA__idle__256__r001.png",
+      "bundle_relative_path": "Characters/AIRA/AIRA__idle__256__r001.png",
+      "source_sha256": "4220305153b79ed184b8a3884c948f2b8313c71ff3ecba5bd3d806dbaca92e55",
+      "copied_sha256": "4220305153b79ed184b8a3884c948f2b8313c71ff3ecba5bd3d806dbaca92e55",
+      "bytes": 38545,
+      "image_metadata_sips": [
+        "  pixelWidth: 256",
+        "  pixelHeight: 256",
+        "  format: png",
+        "  hasAlpha: yes"
+      ]
+    },
+    {
+      "asset_id": "AIRA",
+      "variant": "anticipate",
+      "revision": "r001",
+      "source_app_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/game/native_r008/WitchG2Refinement.app/Assets/Characters/AIRA/AIRA__anticipate__256__r001.png",
+      "bundle_relative_path": "Characters/AIRA/AIRA__anticipate__256__r001.png",
+      "source_sha256": "73add1242b6e26f2c6c998f140185f7f27281b6722fb8a9616117a22de8b0f34",
+      "copied_sha256": "73add1242b6e26f2c6c998f140185f7f27281b6722fb8a9616117a22de8b0f34",
+      "bytes": 39790,
+      "image_metadata_sips": [
+        "  pixelWidth: 256",
+        "  pixelHeight: 256",
+        "  format: png",
+        "  hasAlpha: yes"
+      ]
+    },
+    {
+      "asset_id": "AIRA",
+      "variant": "execute",
+      "revision": "r001",
+      "source_app_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/game/native_r008/WitchG2Refinement.app/Assets/Characters/AIRA/AIRA__execute__256__r001.png",
+      "bundle_relative_path": "Characters/AIRA/AIRA__execute__256__r001.png",
+      "source_sha256": "40e01672afb1678f2eaf605a95ace24e3e378ae78befc97ad26cf92a66f199d3",
+      "copied_sha256": "40e01672afb1678f2eaf605a95ace24e3e378ae78befc97ad26cf92a66f199d3",
+      "bytes": 44845,
+      "image_metadata_sips": [
+        "  pixelWidth: 256",
+        "  pixelHeight: 256",
+        "  format: png",
+        "  hasAlpha: yes"
+      ]
+    },
+    {
+      "asset_id": "AIRA",
+      "variant": "recover",
+      "revision": "r001",
+      "source_app_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/game/native_r008/WitchG2Refinement.app/Assets/Characters/AIRA/AIRA__recover__256__r001.png",
+      "bundle_relative_path": "Characters/AIRA/AIRA__recover__256__r001.png",
+      "source_sha256": "aa3f286ef0ff9b209e0f7b3d037d3d6dcd929b534dc5d57e1f5f4967d6058e12",
+      "copied_sha256": "aa3f286ef0ff9b209e0f7b3d037d3d6dcd929b534dc5d57e1f5f4967d6058e12",
+      "bytes": 40629,
+      "image_metadata_sips": [
+        "  pixelWidth: 256",
+        "  pixelHeight: 256",
+        "  format: png",
+        "  hasAlpha: yes"
+      ]
+    },
+    {
+      "asset_id": "AIRA",
+      "variant": "hit",
+      "revision": "r001",
+      "source_app_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/game/native_r008/WitchG2Refinement.app/Assets/Characters/AIRA/AIRA__hit__256__r001.png",
+      "bundle_relative_path": "Characters/AIRA/AIRA__hit__256__r001.png",
+      "source_sha256": "bd3a99d5e8723092c3786859be8782d06a03254531bf20d62178c4d3a2d707b7",
+      "copied_sha256": "bd3a99d5e8723092c3786859be8782d06a03254531bf20d62178c4d3a2d707b7",
+      "bytes": 39027,
+      "image_metadata_sips": [
+        "  pixelWidth: 256",
+        "  pixelHeight: 256",
+        "  format: png",
+        "  hasAlpha: yes"
+      ]
+    },
+    {
+      "asset_id": "AIRA",
+      "variant": "resolve",
+      "revision": "r001",
+      "source_app_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/game/native_r008/WitchG2Refinement.app/Assets/Characters/AIRA/AIRA__resolve__256__r001.png",
+      "bundle_relative_path": "Characters/AIRA/AIRA__resolve__256__r001.png",
+      "source_sha256": "8110bcdd84f350fe135c67301b3351c314b4d0d690515968c1c4038f976be375",
+      "copied_sha256": "8110bcdd84f350fe135c67301b3351c314b4d0d690515968c1c4038f976be375",
+      "bytes": 40844,
+      "image_metadata_sips": [
+        "  pixelWidth: 256",
+        "  pixelHeight: 256",
+        "  format: png",
+        "  hasAlpha: yes"
+      ]
+    },
+    {
+      "asset_id": "NOIR",
+      "variant": "idle",
+      "revision": "r001",
+      "source_app_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/game/native_r008/WitchG2Refinement.app/Assets/Characters/NOIR/NOIR__idle__256__r001.png",
+      "bundle_relative_path": "Characters/NOIR/NOIR__idle__256__r001.png",
+      "source_sha256": "9ea08a087b2d56c9bb56287dfd88540180548eb95b83bcdf88c28d46cfbd2577",
+      "copied_sha256": "9ea08a087b2d56c9bb56287dfd88540180548eb95b83bcdf88c28d46cfbd2577",
+      "bytes": 34663,
+      "image_metadata_sips": [
+        "  pixelWidth: 256",
+        "  pixelHeight: 256",
+        "  format: png",
+        "  hasAlpha: yes"
+      ]
+    },
+    {
+      "asset_id": "NOIR",
+      "variant": "anticipate",
+      "revision": "r001",
+      "source_app_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/game/native_r008/WitchG2Refinement.app/Assets/Characters/NOIR/NOIR__anticipate__256__r001.png",
+      "bundle_relative_path": "Characters/NOIR/NOIR__anticipate__256__r001.png",
+      "source_sha256": "f410a37678c713fb167e4b9c4de15fc4be7229bf283640c9caafda59a025684d",
+      "copied_sha256": "f410a37678c713fb167e4b9c4de15fc4be7229bf283640c9caafda59a025684d",
+      "bytes": 37697,
+      "image_metadata_sips": [
+        "  pixelWidth: 256",
+        "  pixelHeight: 256",
+        "  format: png",
+        "  hasAlpha: yes"
+      ]
+    },
+    {
+      "asset_id": "NOIR",
+      "variant": "execute",
+      "revision": "r001",
+      "source_app_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/game/native_r008/WitchG2Refinement.app/Assets/Characters/NOIR/NOIR__execute__256__r001.png",
+      "bundle_relative_path": "Characters/NOIR/NOIR__execute__256__r001.png",
+      "source_sha256": "a121fbc5adc4d3ae26624836a2c7a95482fa48ad1576e31247c7496a3d472e88",
+      "copied_sha256": "a121fbc5adc4d3ae26624836a2c7a95482fa48ad1576e31247c7496a3d472e88",
+      "bytes": 35348,
+      "image_metadata_sips": [
+        "  pixelWidth: 256",
+        "  pixelHeight: 256",
+        "  format: png",
+        "  hasAlpha: yes"
+      ]
+    },
+    {
+      "asset_id": "NOIR",
+      "variant": "recover",
+      "revision": "r001",
+      "source_app_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/game/native_r008/WitchG2Refinement.app/Assets/Characters/NOIR/NOIR__recover__256__r001.png",
+      "bundle_relative_path": "Characters/NOIR/NOIR__recover__256__r001.png",
+      "source_sha256": "c42863fe7ec0f6717ba77c3889fe82281c0f1b3fc3ddcd9820bf703fa766cc37",
+      "copied_sha256": "c42863fe7ec0f6717ba77c3889fe82281c0f1b3fc3ddcd9820bf703fa766cc37",
+      "bytes": 33317,
+      "image_metadata_sips": [
+        "  pixelWidth: 256",
+        "  pixelHeight: 256",
+        "  format: png",
+        "  hasAlpha: yes"
+      ]
+    },
+    {
+      "asset_id": "NOIR",
+      "variant": "hit",
+      "revision": "r001",
+      "source_app_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/game/native_r008/WitchG2Refinement.app/Assets/Characters/NOIR/NOIR__hit__256__r001.png",
+      "bundle_relative_path": "Characters/NOIR/NOIR__hit__256__r001.png",
+      "source_sha256": "0aed2f597cd99a8056c65abd387358a922db98d0cc500621f93951be41df7731",
+      "copied_sha256": "0aed2f597cd99a8056c65abd387358a922db98d0cc500621f93951be41df7731",
+      "bytes": 32481,
+      "image_metadata_sips": [
+        "  pixelWidth: 256",
+        "  pixelHeight: 256",
+        "  format: png",
+        "  hasAlpha: yes"
+      ]
+    },
+    {
+      "asset_id": "NOIR",
+      "variant": "resolve",
+      "revision": "r001",
+      "source_app_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/game/native_r008/WitchG2Refinement.app/Assets/Characters/NOIR/NOIR__resolve__256__r001.png",
+      "bundle_relative_path": "Characters/NOIR/NOIR__resolve__256__r001.png",
+      "source_sha256": "2c275a235b5a225ff272e17d10bd61b9874bd02410b2235ff9f92b49fc88f5b3",
+      "copied_sha256": "2c275a235b5a225ff272e17d10bd61b9874bd02410b2235ff9f92b49fc88f5b3",
+      "bytes": 38004,
+      "image_metadata_sips": [
+        "  pixelWidth: 256",
+        "  pixelHeight: 256",
+        "  format: png",
+        "  hasAlpha: yes"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+Building for debugging...
+[0/9] /Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/ActiveIntegrationR461/core_r001/scratch/build/arm64-apple-macosx/debug/WitchGameCorePackageTests.derived/runner.swift
+[1/9] Copying catalog_overlay.json
+[2/9] Copying candidate_latent_policy_r004.json
+[3/9] Write sources
+[6/9] Write swift-version--58304C5D6DBC2206.txt
+[8/30] Emitting module WitchGameCore
+[9/30] Compiling WitchGameCore AuthorityClientContractR461.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/ActiveIntegrationR461/core_r001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[10/30] Compiling WitchGameCore BattleTargetWarningR299.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/ActiveIntegrationR461/core_r001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[11/30] Compiling WitchGameCore CandidateCharacterGrowth.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/ActiveIntegrationR461/core_r001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[12/30] Compiling WitchGameCore CandidateCombatOverlay.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/ActiveIntegrationR461/core_r001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[13/30] Compiling WitchGameCore CandidateLatentCombatModifiersR005.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/ActiveIntegrationR461/core_r001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[14/30] Compiling WitchGameCore CandidateLatentSlotPolicyR003.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/ActiveIntegrationR461/core_r001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[15/30] Compiling WitchGameCore CombatSimulator.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/ActiveIntegrationR461/core_r001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[16/30] Compiling WitchGameCore Domain.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/ActiveIntegrationR461/core_r001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[17/30] Compiling WitchGameCore EnemyActionPreviewFixture.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/ActiveIntegrationR461/core_r001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[18/30] Compiling WitchGameCore EnemyExecuteCoalescerR154.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/ActiveIntegrationR461/core_r001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[19/30] Compiling WitchGameCore EquippedVisualCandidates.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/ActiveIntegrationR461/core_r001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[20/30] Compiling WitchGameCore FirstCraftCostR179.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/ActiveIntegrationR461/core_r001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[21/30] Compiling WitchGameCore GameEngine.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/ActiveIntegrationR461/core_r001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[22/30] Compiling WitchGameCore GameRuntimeConfigurationR098.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/ActiveIntegrationR461/core_r001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[23/30] Compiling WitchGameCore GameRuntimeDismantleProfileR353.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/ActiveIntegrationR461/core_r001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[24/30] Compiling WitchGameCore GameRuntimeEnhancementProfileR230.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/ActiveIntegrationR461/core_r001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[25/30] Compiling WitchGameCore GameRuntimeNaturalGearProfileR350.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/ActiveIntegrationR461/core_r001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[26/30] Compiling WitchGameCore GameRuntimeRefinementProfileR352.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/ActiveIntegrationR461/core_r001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[27/30] Compiling WitchGameCore GatheringProgressProjectionR041.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/ActiveIntegrationR461/core_r001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[28/30] Compiling WitchGameCore GearAppearanceProjection.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/ActiveIntegrationR461/core_r001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[29/70] Compiling WitchGameCore GearComparisonPartnerSelectionR210.swift
+[30/70] Compiling WitchGameCore GearDismantleRefundR353.swift
+[31/70] Compiling WitchGameCore GearEnhancementGrowthR230.swift
+[32/70] Compiling WitchGameCore GearInventoryIndexR374.swift
+[33/70] Compiling WitchGameCore GearLegendaryCollectionProjectionR384.swift
+[34/70] Compiling WitchGameCore GearSwapCampaignPreviewR136.swift
+[35/70] Compiling WitchGameCore GearSwapCombatPreviewR131.swift
+[36/70] Compiling WitchGameCore GearSwapCombatSummaryR131.swift
+[37/70] Compiling WitchGameCore LocalPurchaseDeliveryQAImporterR453.swift
+[38/70] Compiling WitchGameCore LocalPurchaseTransactionIdentityR454.swift
+[39/70] Compiling WitchGameCore LunaBookAppearanceCandidate.swift
+[40/70] Compiling WitchGameCore LunaBookMotion.swift
+[41/70] Compiling WitchGameCore LunaBookMotionDataR001.swift
+[42/70] Compiling WitchGameCore LunaBookMotionDataR050Candidate.swift
+[43/70] Compiling WitchGameCore LunaBookMotionDataR088Candidate.swift
+[44/70] Compiling WitchGameCore MothIdleAnchorRegistrationR050.swift
+[45/70] Compiling WitchGameCore NaturalGearDiscoveryR350.swift
+[46/70] Compiling WitchGameCore NaturalGearRefinementR352.swift
+[47/70] Compiling WitchGameCore OwnedPartyLoadoutPreviewR181.swift
+[48/70] Compiling WitchGameCore PartyWorkPolicyR144.swift
+[49/70] Compiling WitchGameCore PostClearGoalProjectionR122.swift
+[50/70] Compiling WitchGameCore R6CampaignQA.swift
+[51/70] Compiling WitchGameCore R6CanonicalProfile.swift
+[52/70] Compiling WitchGameCore R6CombatPresentationSemantics.swift
+[53/70] Compiling WitchGameCore R6TimelineSimulator.swift
+[54/70] Compiling WitchGameCore RecipeEvolutionOutcomeProjectionR129.swift
+[55/70] Compiling WitchGameCore RecipeGatherHandoffTargetR157.swift
+[56/70] Compiling WitchGameCore RecipeGoalCoreAdapterR002.swift
+[57/70] Compiling WitchGameCore RecipeGoalProjectionR035.swift
+[58/70] Compiling WitchGameCore RecipeInvestigationRouteR158.swift
+[59/70] Compiling WitchGameCore ResearchGatherRouteR310.swift
+[60/70] Compiling WitchGameCore ResearchMaterialGuidanceR280.swift
+[61/70] Compiling WitchGameCore SaveRepository.swift
+[62/70] Compiling WitchGameCore SharedPartyWorkRuntimeR170.swift
+[63/70] Compiling WitchGameCore StandardPlayStartupSelectionR169.swift
+[64/70] Compiling WitchGameCore SyntheticDash2VisualTailR047.swift
+[65/70] Compiling WitchGameCore SyntheticPartyDash2PreviewR043.swift
+[66/70] Compiling WitchGameCore WardrobeCandidateCatalogR130.swift
+[67/70] Compiling WitchGameCore WardrobeCandidateR128.swift
+[68/70] Compiling WitchGameCore resource_bundle_accessor.swift
+[69/73] Emitting module WitchGameCoreTests
+[70/73] Compiling WitchGameCoreTests AuthorityClientContractR461Tests.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/ActiveIntegrationR461/core_r001/package/Tests/WitchGameCoreTests/LocalPurchaseDeliveryQAImporterR453Tests.swift:383:13: warning: variable 'rows' was never mutated; consider changing to 'let' constant
+381 |     private static func refreshDrawProvenanceFingerprints(root: inout [String: Any]) {
+382 |         var draw = root["drawReceipt"] as! [String: Any]
+383 |         var rows = draw["draws"] as! [[String: Any]]
+    |             `- warning: variable 'rows' was never mutated; consider changing to 'let' constant
+384 |         var source = root["gearProvenance"] as! [[String: Any]]
+385 |         guard rows.count == source.count else { return }
+
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/ActiveIntegrationR461/core_r001/package/Tests/WitchGameCoreTests/AuthorityClientContractR461Tests.swift:182:48: error: sending 'self' risks causing data races [#SendingRisksDataRace]
+180 |     func testObservationCASRejectsOlderConcurrentWriter() async throws {
+181 |         let store = Store()
+182 |         async let first = store.compareAndSave(observation(revision: 10, status: .active, balance: 2, debt: 0), expectedPreviousRevision: nil)
+    |                                                |- error: sending 'self' risks causing data races [#SendingRisksDataRace]
+    |                                                `- note: sending task-isolated 'self' into async let risks causing data races between nonisolated and task-isolated uses
+183 |         async let second = store.compareAndSave(observation(revision: 11, status: .active, balance: 1, debt: 0), expectedPreviousRevision: nil)
+184 |         let outcomes = try await [first, second]
+
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/ActiveIntegrationR461/core_r001/package/Tests/WitchGameCoreTests/AuthorityClientContractR461Tests.swift:183:49: error: sending 'self' risks causing data races [#SendingRisksDataRace]
+181 |         let store = Store()
+182 |         async let first = store.compareAndSave(observation(revision: 10, status: .active, balance: 2, debt: 0), expectedPreviousRevision: nil)
+183 |         async let second = store.compareAndSave(observation(revision: 11, status: .active, balance: 1, debt: 0), expectedPreviousRevision: nil)
+    |                                                 |- error: sending 'self' risks causing data races [#SendingRisksDataRace]
+    |                                                 `- note: sending task-isolated 'self' into async let risks causing data races between nonisolated and task-isolated uses
+184 |         let outcomes = try await [first, second]
+185 |         XCTAssertEqual(outcomes.filter { $0 }.count, 1)
+
+[#SendingRisksDataRace]: <https://docs.swift.org/compiler/documentation/diagnostics/sending-risks-data-race>
+[71/73] Compiling WitchGameCoreTests LocalPurchaseDeliveryQAImporterR453Tests.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/ActiveIntegrationR461/core_r001/package/Tests/WitchGameCoreTests/LocalPurchaseDeliveryQAImporterR453Tests.swift:383:13: warning: variable 'rows' was never mutated; consider changing to 'let' constant
+381 |     private static func refreshDrawProvenanceFingerprints(root: inout [String: Any]) {
+382 |         var draw = root["drawReceipt"] as! [String: Any]
+383 |         var rows = draw["draws"] as! [[String: Any]]
+    |             `- warning: variable 'rows' was never mutated; consider changing to 'let' constant
+384 |         var source = root["gearProvenance"] as! [[String: Any]]
+385 |         guard rows.count == source.count else { return }
+
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/ActiveIntegrationR461/core_r001/package/Tests/WitchGameCoreTests/AuthorityClientContractR461Tests.swift:182:48: error: sending 'self' risks causing data races [#SendingRisksDataRace]
+180 |     func testObservationCASRejectsOlderConcurrentWriter() async throws {
+181 |         let store = Store()
+182 |         async let first = store.compareAndSave(observation(revision: 10, status: .active, balance: 2, debt: 0), expectedPreviousRevision: nil)
+    |                                                |- error: sending 'self' risks causing data races [#SendingRisksDataRace]
+    |                                                `- note: sending task-isolated 'self' into async let risks causing data races between nonisolated and task-isolated uses
+183 |         async let second = store.compareAndSave(observation(revision: 11, status: .active, balance: 1, debt: 0), expectedPreviousRevision: nil)
+184 |         let outcomes = try await [first, second]
+
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/ActiveIntegrationR461/core_r001/package/Tests/WitchGameCoreTests/AuthorityClientContractR461Tests.swift:183:49: error: sending 'self' risks causing data races [#SendingRisksDataRace]
+181 |         let store = Store()
+182 |         async let first = store.compareAndSave(observation(revision: 10, status: .active, balance: 2, debt: 0), expectedPreviousRevision: nil)
+183 |         async let second = store.compareAndSave(observation(revision: 11, status: .active, balance: 1, debt: 0), expectedPreviousRevision: nil)
+    |                                                 |- error: sending 'self' risks causing data races [#SendingRisksDataRace]
+    |                                                 `- note: sending task-isolated 'self' into async let risks causing data races between nonisolated and task-isolated uses
+184 |         let outcomes = try await [first, second]
+185 |         XCTAssertEqual(outcomes.filter { $0 }.count, 1)
+
+[#SendingRisksDataRace]: <https://docs.swift.org/compiler/documentation/diagnostics/sending-risks-data-race>
+[72/75] Compiling WitchGameCoreTests LocalPurchaseTransactionIdentityR454Tests.swift
+[73/75] Compiling WitchGameCoreTests SaveRepositoryRecoveryR001Tests.swift
+error: fatalError

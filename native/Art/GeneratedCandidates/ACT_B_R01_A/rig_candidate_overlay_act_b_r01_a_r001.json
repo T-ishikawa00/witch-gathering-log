@@ -1,0 +1,35 @@
+{
+  "actor_id": "ACT_B_R01_A",
+  "manifestKey": "ACT_B_R01_A",
+  "overlay_id": "ACT_B_R01_A_RIG_CANDIDATE_R001",
+  "status": "GENERATED_TECHNICAL_CANDIDATE_UNAPPROVED",
+  "human_adoption": "PENDING",
+  "rig_manifest_path": "native/Art/GeneratedCandidates/ACT_B_R01_A/rig_candidate_r001/rig_manifest_candidate_r001.json",
+  "rig_manifest_sha256": "93c646b10758d60971bc9e60b473cc47551e50d2767cf669d805acaedb3a8979",
+  "preview_path": "native/Art/GeneratedCandidates/ACT_B_R01_A/rig_candidate_r001/qa_state_contact_sheet_r001.png",
+  "preview_sha256": "8798085f48af5d13e4232314de392d8bf922a2ee3653eba9fc4f720306dd1b03",
+  "atlas_path": "native/Art/GeneratedCandidates/ACT_B_R01_A/rig_candidate_r001/generated_parts_atlas_source_r001.png",
+  "atlas_sha256": "0584fe12638d6e4459ec6d722dbd0ac49a1712cfcdf08e198c75bd9705f4a485",
+  "fps": 24,
+  "state_keys": [
+    "idle",
+    "walk",
+    "anticipate",
+    "execute",
+    "recover",
+    "hit",
+    "resolve"
+  ],
+  "keyframe_count": 168,
+  "part_count": 8,
+  "pivot_status": "VISUAL_ESTIMATE_UNAPPROVED",
+  "runtime_integration": "NOT_DONE",
+  "runtime_visual_qa": "NOT_DONE",
+  "limitations": [
+    "Legs/body part decomposition and pivots are generated/estimated, not source-authored.",
+    "No visual playback QA; all states remain candidates.",
+    "No independent tail or tusk movement."
+  ],
+  "source_art_untouched": true,
+  "global_runtime_index_changed": false
+}

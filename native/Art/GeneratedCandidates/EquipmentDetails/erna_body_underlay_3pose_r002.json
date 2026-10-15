@@ -1,0 +1,165 @@
+{
+  "schema": "erna_underlay_3pose_proposal_r002",
+  "status": "UNAPPROVED_PROPOSED_CENTERS_REVIEW_REQUIRED",
+  "humanApproval": false,
+  "runtimeEnabled": false,
+  "scope": "C_WITCH ERNA standard idle1, execute1, walk6 only; BODY01 hem tab and BODY02 lining trim center proposals. Not a complete 54-frame overlay.",
+  "method": "Root visually confirmed coat-edge boundary points directly on original 256x256 RGBA sources: idle1 [201,204], execute1 [216,205], walk6 [190,207]. Fresh R002 source grid is rendered from originals only. Alpha is used only as edge-support and to measure actual candidate alpha protrusion after compositing behind body; it does not determine garment semantics. Renderer center placement and 0.12*256=30.72px rendered detail size are used.",
+  "rendererContract": "EquipmentDetailRenderer positions SKSpriteNode by its center at normalized point; `placement_px_top_left` is a misleading legacy key. Preview composites place the candidate texture behind original body, with size 0.12 * 256 = 30.72px.",
+  "detailAssets": {
+    "EQ_BODY_01": {
+      "path": "native/Art/GeneratedCandidates/EquipmentDetails/details_r002/DETAIL_EQ_EQ_BODY_01__candidate_r002.png",
+      "sha256": "1e697896d4710e8f395f02258b04b4b8d1e6451f9e5a1a492c00557ac5f59f4f",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "alpha16BBox": [
+        40,
+        56,
+        216,
+        199
+      ],
+      "alphaHalfWidthAtRenderSize_px": 10.56
+    },
+    "EQ_BODY_02": {
+      "path": "native/Art/GeneratedCandidates/EquipmentDetails/details_r002/DETAIL_EQ_EQ_BODY_02__candidate_r002.png",
+      "sha256": "43c19b51469d998f5a8025e1eb304e34fa4b8bde169222cb92a9dc084f0094da",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "alpha16BBox": [
+        55,
+        40,
+        200,
+        216
+      ],
+      "alphaHalfWidthAtRenderSize_px": 8.7
+    }
+  },
+  "contactEvidence": "docs/production/current/art/erna_body_hem_fit_r001/ERNA_BODY_UNDERLAY_3POSE_PROPOSAL_R002.jpg",
+  "sourceGridEvidence": "docs/production/current/art/erna_body_hem_fit_r001/ERNA_SOURCE_HEM_3POSE_GRID_R002.jpg",
+  "frames": [
+    {
+      "state": "idle",
+      "runtimeFrameIndex": 1,
+      "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_1.png",
+      "source_path": "native/GeneratedArt/layered_motion_r001/standard__rest_1.png",
+      "sourceSHA256": "892d6346310c101880552911aa1306a4ee7800c78b08cb8c7d938de46f26bfa3",
+      "hemBoundary_px": [
+        201,
+        204
+      ],
+      "outwardNormal": [
+        1.0,
+        0.0
+      ],
+      "desiredProtrusion_px": 3,
+      "centers": {
+        "EQ_BODY_01": [
+          193,
+          201
+        ],
+        "EQ_BODY_02": [
+          196,
+          196
+        ]
+      },
+      "measurementBasis": "Root visually confirmed the boundary at this pixel on original source. Alpha confirms boundary-edge occupancy only; not used to infer clothing.",
+      "compositeMeasurement": {
+        "BODY01": {
+          "maxProtrusionOutsideBody_px": 3,
+          "visibleCandidatePixels": 19,
+          "method": "actual candidate alpha composited behind source body at renderer size; source alpha<16 treated as outside for count"
+        },
+        "BODY02": {
+          "maxProtrusionOutsideBody_px": 3,
+          "visibleCandidatePixels": 17,
+          "method": "actual candidate alpha composited behind source body at renderer size; source alpha<16 treated as outside for count"
+        }
+      }
+    },
+    {
+      "state": "execute",
+      "runtimeFrameIndex": 1,
+      "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_4.png",
+      "source_path": "native/GeneratedArt/layered_motion_r001/standard__cast_4.png",
+      "sourceSHA256": "51422c4e6a5f359d9fe0250f0894ae6493145a324100cbfe7c70b151ae57da9e",
+      "hemBoundary_px": [
+        216,
+        205
+      ],
+      "outwardNormal": [
+        1.0,
+        0.0
+      ],
+      "desiredProtrusion_px": 3,
+      "centers": {
+        "EQ_BODY_01": [
+          208,
+          203
+        ],
+        "EQ_BODY_02": [
+          210,
+          200
+        ]
+      },
+      "measurementBasis": "Root visually confirmed the boundary at this pixel on original source. Alpha confirms boundary-edge occupancy only; not used to infer clothing.",
+      "compositeMeasurement": {
+        "BODY01": {
+          "maxProtrusionOutsideBody_px": 3,
+          "visibleCandidatePixels": 20,
+          "method": "actual candidate alpha composited behind source body at renderer size; source alpha<16 treated as outside for count"
+        },
+        "BODY02": {
+          "maxProtrusionOutsideBody_px": 3,
+          "visibleCandidatePixels": 20,
+          "method": "actual candidate alpha composited behind source body at renderer size; source alpha<16 treated as outside for count"
+        }
+      }
+    },
+    {
+      "state": "walk",
+      "runtimeFrameIndex": 6,
+      "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_6.png",
+      "source_path": "native/GeneratedArt/layered_motion_r001/standard__walk_6.png",
+      "sourceSHA256": "e7c58d91b31ac683f64c1e9826dff86a0f532271e880cabb3ddfcc9614946d71",
+      "hemBoundary_px": [
+        190,
+        207
+      ],
+      "outwardNormal": [
+        1.0,
+        0.0
+      ],
+      "desiredProtrusion_px": 3,
+      "centers": {
+        "EQ_BODY_01": [
+          182,
+          203
+        ],
+        "EQ_BODY_02": [
+          183,
+          201
+        ]
+      },
+      "measurementBasis": "Root visually confirmed the boundary at this pixel on original source. Alpha confirms boundary-edge occupancy only; not used to infer clothing.",
+      "compositeMeasurement": {
+        "BODY01": {
+          "maxProtrusionOutsideBody_px": 3,
+          "visibleCandidatePixels": 20,
+          "method": "actual candidate alpha composited behind source body at renderer size; source alpha<16 treated as outside for count"
+        },
+        "BODY02": {
+          "maxProtrusionOutsideBody_px": 3,
+          "visibleCandidatePixels": 17,
+          "method": "actual candidate alpha composited behind source body at renderer size; source alpha<16 treated as outside for count"
+        }
+      }
+    }
+  ],
+  "supersedes": "erna_body_underlay_3pose_r001; R001 hem points were outside cloth and are rejected.",
+  "sourceGridSHA256": "889f37ceb69f7911bb3800db82f3de130257bfa1b195f9f617ec597b07e42ee9",
+  "contactSHA256": "390ee431a1f4d5f3a06f4259c30da95fe924fe4047b15ab393aeb45e85e28dc1"
+}

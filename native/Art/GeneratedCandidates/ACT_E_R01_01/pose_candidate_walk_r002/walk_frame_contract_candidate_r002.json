@@ -1,0 +1,304 @@
+{
+  "actor_id": "ACT_E_R01_01",
+  "revision": "walk_r002",
+  "status": "ADDITIVE_WALK_CANDIDATE_UNAPPROVED",
+  "source_bundle_canvas_px": [
+    768,
+    512
+  ],
+  "source_bundle_anchor_px": [
+    415,
+    450
+  ],
+  "source_frame_texture_px": [
+    384,
+    256
+  ],
+  "walk_texture_canvas_px": [
+    384,
+    256
+  ],
+  "walk_anchor_px_top_left": [
+    207.5,
+    225.0
+  ],
+  "walk_anchor_normalized": [
+    0.5403645833333334,
+    0.12109375
+  ],
+  "fps": 12,
+  "loop": true,
+  "frame_count": 9,
+  "alpha_composited_qa_background_rgb": [
+    29,
+    31,
+    37
+  ],
+  "normalization": "Each generated pose alpha-bounds cropped, nearest-neighbor resized to 259x197 to match the existing R01 boar frame occupied dimensions, centered at x=195.5 and ground baseline y=226. No source art changed. Nonuniform resize is a candidate fit for runtime comparison, not art approval.",
+  "frames": [
+    {
+      "frame": "walk_000.png",
+      "source_frame": "frames/idle_a.png",
+      "source_bounds_xyxy": [
+        25,
+        181,
+        486,
+        490
+      ],
+      "output_canvas_px": [
+        384,
+        256
+      ],
+      "visible_bounds_xyxy": [
+        66,
+        29,
+        325,
+        226
+      ],
+      "resize_px_nearest": [
+        259,
+        197
+      ],
+      "anchor_px_top_left": [
+        207.5,
+        225.0
+      ],
+      "sha256": "979780814b9289dae9ff403460862985e8d7d12506c9432c95d0d7ab845b2066"
+    },
+    {
+      "frame": "walk_001.png",
+      "source_frame": "frames/idle_b.png",
+      "source_bounds_xyxy": [
+        38,
+        180,
+        473,
+        490
+      ],
+      "output_canvas_px": [
+        384,
+        256
+      ],
+      "visible_bounds_xyxy": [
+        66,
+        29,
+        325,
+        226
+      ],
+      "resize_px_nearest": [
+        259,
+        197
+      ],
+      "anchor_px_top_left": [
+        207.5,
+        225.0
+      ],
+      "sha256": "14c6008eb0ba1e6c9b6de7e6a3f1a709dd423c3199daae5a3fb628cf9efa7303"
+    },
+    {
+      "frame": "walk_002.png",
+      "source_frame": "frames/walk_a.png",
+      "source_bounds_xyxy": [
+        42,
+        208,
+        469,
+        490
+      ],
+      "output_canvas_px": [
+        384,
+        256
+      ],
+      "visible_bounds_xyxy": [
+        66,
+        29,
+        325,
+        226
+      ],
+      "resize_px_nearest": [
+        259,
+        197
+      ],
+      "anchor_px_top_left": [
+        207.5,
+        225.0
+      ],
+      "sha256": "c615270282a7d6f3490202b3dfc70f41692d9f3e6281c96c8f47d961712455ad"
+    },
+    {
+      "frame": "walk_003.png",
+      "source_frame": "frames/walk_b.png",
+      "source_bounds_xyxy": [
+        22,
+        203,
+        490,
+        490
+      ],
+      "output_canvas_px": [
+        384,
+        256
+      ],
+      "visible_bounds_xyxy": [
+        66,
+        29,
+        325,
+        226
+      ],
+      "resize_px_nearest": [
+        259,
+        197
+      ],
+      "anchor_px_top_left": [
+        207.5,
+        225.0
+      ],
+      "sha256": "8431e808c6f345814a6ec29e34efc02819396fdfdfe14556a94f2d70a2627b79"
+    },
+    {
+      "frame": "walk_004.png",
+      "source_frame": "frames/anticipate.png",
+      "source_bounds_xyxy": [
+        31,
+        208,
+        481,
+        490
+      ],
+      "output_canvas_px": [
+        384,
+        256
+      ],
+      "visible_bounds_xyxy": [
+        66,
+        29,
+        325,
+        226
+      ],
+      "resize_px_nearest": [
+        259,
+        197
+      ],
+      "anchor_px_top_left": [
+        207.5,
+        225.0
+      ],
+      "sha256": "a0248cdcb875668f51f8a2bae8282e6857991d1f9b02f54b113ce56aafefc4d9"
+    },
+    {
+      "frame": "walk_005.png",
+      "source_frame": "frames/execute.png",
+      "source_bounds_xyxy": [
+        31,
+        178,
+        480,
+        490
+      ],
+      "output_canvas_px": [
+        384,
+        256
+      ],
+      "visible_bounds_xyxy": [
+        66,
+        29,
+        325,
+        226
+      ],
+      "resize_px_nearest": [
+        259,
+        197
+      ],
+      "anchor_px_top_left": [
+        207.5,
+        225.0
+      ],
+      "sha256": "b3fe30ec8612d38a5a695e4e749f807da54a95324243129b82dec42660e4aa1c"
+    },
+    {
+      "frame": "walk_006.png",
+      "source_frame": "frames/recover.png",
+      "source_bounds_xyxy": [
+        33,
+        181,
+        478,
+        490
+      ],
+      "output_canvas_px": [
+        384,
+        256
+      ],
+      "visible_bounds_xyxy": [
+        66,
+        29,
+        325,
+        226
+      ],
+      "resize_px_nearest": [
+        259,
+        197
+      ],
+      "anchor_px_top_left": [
+        207.5,
+        225.0
+      ],
+      "sha256": "4dcc59b53bc0635537bf748b3460429683660842ce8b068a103c8b6d033e63e1"
+    },
+    {
+      "frame": "walk_007.png",
+      "source_frame": "frames/hit.png",
+      "source_bounds_xyxy": [
+        48,
+        186,
+        463,
+        490
+      ],
+      "output_canvas_px": [
+        384,
+        256
+      ],
+      "visible_bounds_xyxy": [
+        66,
+        29,
+        325,
+        226
+      ],
+      "resize_px_nearest": [
+        259,
+        197
+      ],
+      "anchor_px_top_left": [
+        207.5,
+        225.0
+      ],
+      "sha256": "e8aef2d55ee20b4dab449b228c00e7aaa2a52c2c5ea9305b72024236c39bdb73"
+    },
+    {
+      "frame": "walk_008.png",
+      "source_frame": "frames/resolve.png",
+      "source_bounds_xyxy": [
+        23,
+        183,
+        489,
+        490
+      ],
+      "output_canvas_px": [
+        384,
+        256
+      ],
+      "visible_bounds_xyxy": [
+        66,
+        29,
+        325,
+        226
+      ],
+      "resize_px_nearest": [
+        259,
+        197
+      ],
+      "anchor_px_top_left": [
+        207.5,
+        225.0
+      ],
+      "sha256": "e169f4a01c50c6df927130f42e1de30d40d27e5031d19597b3fc23c786e706e0"
+    }
+  ],
+  "preview": "qa_walk_normalized_contact_r002.jpg",
+  "continuous_motion_complete": false,
+  "other_states_preserved_from_runtime_index": true
+}

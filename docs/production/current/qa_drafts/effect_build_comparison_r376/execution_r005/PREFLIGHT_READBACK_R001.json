@@ -1,0 +1,12 @@
+{
+  "schema": "r376-runner-preflight-readback-r002",
+  "execution": "NOT_RUN",
+  "swiftOrSimulatorLaunched": false,
+  "runnerPath": "docs/production/current/qa_drafts/effect_build_comparison_r376/execution_r005/run_r376.py",
+  "runnerSHA256": "4d9f6516f2dd843fe51950dc66e4b4d3a71c50b83b6fd21e32d911ea20aee8a0",
+  "inputManifestSHA256": "081ff480002f764ea025f1f274f0f22dade93862629fb2df3a987a67fed75389",
+  "measuredSwiftVersion": "Apple Swift version 6.3.3 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)\nTarget: arm64-apple-macosx26.0",
+  "preflightExitCode": 1,
+  "stdout": "",
+  "stderrTail": "Traceback (most recent call last):\n  File \"/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/effect_build_comparison_r376/execution_r005/run_r376.py\", line 174, in <module>\n    raise SystemExit(main())\n  File \"/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/effect_build_comparison_r376/execution_r005/run_r376.py\", line 105, in main\n    h=load_helper(); m=json.loads(INPUT.read_text()); staged,test,r368m,cman,cinput=verify_inputs(h,m)\n  File \"/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/effect_build_comparison_r376/execution_r005/run_r376.py\", line 43, in verify_inputs\n    if cr is None: raise RuntimeError('candidate file is absent from R376 manifest: '+row['path'])\nRuntimeError: candidate file is absent from R376 manifest: docs/production/current/qa_drafts/effect_build_comparison_r376/candidate_r001/EffectBuildComparisonR376Tests.swift"
+}

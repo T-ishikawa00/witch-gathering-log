@@ -1,0 +1,11 @@
+# R456 Release builder candidate R003
+
+Preparation only: this runner has not been invoked, and no build, freeze, install, launch, or Simulator action was performed. It refuses execution until Root seals the exact final R454 R004 source map, frozen 238-source tree, generated project/PBX, Info.plist template, 1,922-resource map, and prior-product hashes. R002 and its independent review are preserved.
+
+R003 addresses the review findings with fail-closed checks. It rejects duplicate JSON keys in both sealed contracts; rehashes the complete frozen source set, project tree/PBX, resource map and prepared resources after both builds; and compares each produced app's complete resource inventory after excluding only root `Info.plist`, `PkgInfo`, and the declared executable. Each SDK inventory must equal the pinned 1,922-entry resource map and the two SDK inventories must be identical. The receipt includes the full per-SDK resource maps for independent readback.
+
+The xcodebuild commands keep all derived, intermediate, and product outputs beneath the new R456 output root using explicit `SYMROOT`, `BUILD_DIR`, `OBJROOT`, and per-SDK `CONFIGURATION_BUILD_DIR` settings. The generated R454 project and its build settings remain untouched. The R456-owned Info.plist is derived from the pinned template, changes only the bundle identifier, and removes the StoreKit consumable-history QA key.
+
+The run remains one sequential Simulator Release plus unsigned iPhoneOS Release attempt, capped at 600 seconds total and 2 GB allocated output, with a 2 GB safety reserve, 22 GB required free at start, and a 20 GB floor. Before success, the runner verifies the final time/storage bounds and all sealed pins again. On interruption it tracks exact process PID/start identities, sends bounded TERM then KILL only to those tracked processes, and records the identities and cleanup result; it never kills a process group or uses broad process names as kill targets. Install and launch remain disabled.
+
+Root must fill both R003 templates from the closed R454 R004 receipt, compute the final driver hash, and seal the exact input contract. Do not use this draft against R004 while it is active. Even a later successful build would establish compilation only; it would not establish StoreKit runtime behavior, Apple authorization, or production payment readiness.

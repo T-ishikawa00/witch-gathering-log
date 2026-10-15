@@ -47,6 +47,10 @@ public enum StoreKitLocalQAProductKind: String, Sendable, Equatable {
 public struct StoreKitLocalQAEvent: Sendable, Equatable {
     public let kind: StoreKitLocalQAEventKind
     public let transactionID: UInt64
+    public let originalTransactionID: UInt64?
+    public let quantity: Int?
+    public let appAccountToken: UUID?
+    public let transactionBundleID: String?
     public let idempotencyKey: String
     public let productID: String
     public let productKind: StoreKitLocalQAProductKind
@@ -61,10 +65,18 @@ public struct StoreKitLocalQAEvent: Sendable, Equatable {
         productKind: StoreKitLocalQAProductKind,
         environment: String,
         purchaseDate: Date,
-        revocationDate: Date?
+        revocationDate: Date?,
+        originalTransactionID: UInt64? = nil,
+        quantity: Int? = nil,
+        appAccountToken: UUID? = nil,
+        transactionBundleID: String? = nil
     ) {
         self.kind = kind
         self.transactionID = transactionID
+        self.originalTransactionID = originalTransactionID
+        self.quantity = quantity
+        self.appAccountToken = appAccountToken
+        self.transactionBundleID = transactionBundleID
         let deliveryKind = kind == .revocation ? "revocation" : "entitlement"
         self.idempotencyKey = "storekit-xcode:\(transactionID):\(deliveryKind)"
         self.productID = productID
@@ -95,6 +107,9 @@ public enum StoreKitLocalQAError: Error, Sendable, Equatable {
     case productUnavailable(String)
     case unverifiedTransaction
     case nonXcodeEnvironment(String)
+    case transactionNotFound(UInt64)
+    case transactionRevoked(UInt64)
+    case transactionIdentityMismatch(UInt64)
 }
 
 /// StoreKit 2 adapter intended only for the dedicated Xcode local StoreKit
@@ -142,6 +157,61 @@ public actor StoreKitLocalQABridge {
         try requireLocalRun()
     }
 
+    /// Re-reads StoreKit's verified transaction history for a local QA import.
+    /// The caller must still revalidate the host authority separately.
+    public func currentVerifiedXcodeTransaction(matching expected: StoreKitLocalQAEvent) async throws -> StoreKitLocalQAEvent {
+        try requireLocalRun()
+        for await result in Transaction.all {
+            switch result {
+            case .verified(let transaction) where transaction.id == expected.transactionID:
+                try requireXcodeEnvironment(transaction)
+                guard transaction.revocationDate == nil else {
+                    throw StoreKitLocalQAError.transactionRevoked(transaction.id)
+                }
+                let actual = makeEvent(transaction, eventKind: .purchase)
+                guard actual == expected,
+                      actual.transactionBundleID == Bundle.main.bundleIdentifier else {
+                    throw StoreKitLocalQAError.transactionIdentityMismatch(transaction.id)
+                }
+                return actual
+            case .unverified(let transaction, _) where transaction.id == expected.transactionID:
+                throw StoreKitLocalQAError.unverifiedTransaction
+            default:
+                continue
+            }
+        }
+        throw StoreKitLocalQAError.transactionNotFound(expected.transactionID)
+    }
+
+    /// Looks up StoreKit's current verified transaction without constructing an
+    /// expected event from saved data. The caller must still revalidate the
+    /// host authority separately.
+    public func currentVerifiedXcodeTransaction(
+        transactionID: UInt64,
+        expectedAppAccountToken: UUID
+    ) async throws -> StoreKitLocalQAEvent {
+        try requireLocalRun()
+        for await result in Transaction.all {
+            switch result {
+            case .verified(let transaction) where transaction.id == transactionID:
+                try requireXcodeEnvironment(transaction)
+                guard transaction.revocationDate == nil else {
+                    throw StoreKitLocalQAError.transactionRevoked(transaction.id)
+                }
+                guard transaction.appBundleID == Bundle.main.bundleIdentifier,
+                      transaction.appAccountToken == expectedAppAccountToken else {
+                    throw StoreKitLocalQAError.transactionIdentityMismatch(transaction.id)
+                }
+                return makeEvent(transaction, eventKind: .purchase)
+            case .unverified(let transaction, _) where transaction.id == transactionID:
+                throw StoreKitLocalQAError.unverifiedTransaction
+            default:
+                continue
+            }
+        }
+        throw StoreKitLocalQAError.transactionNotFound(transactionID)
+    }
+
     public func stopObserving() {
         updatesTask?.cancel()
         unfinishedTask?.cancel()
@@ -155,14 +225,20 @@ public actor StoreKitLocalQABridge {
     }
 
     @discardableResult
-    public func purchase(productID: String) async throws -> StoreKitLocalQAPurchaseResult {
+    public func purchase(productID: String, appAccountToken: UUID? = nil) async throws -> StoreKitLocalQAPurchaseResult {
         try requireLocalRun()
         let products = try await Product.products(for: [productID])
         guard let product = products.first(where: { $0.id == productID }) else {
             throw StoreKitLocalQAError.productUnavailable(productID)
         }
 
-        switch try await product.purchase() {
+        let purchaseResult: Product.PurchaseResult
+        if let appAccountToken {
+            purchaseResult = try await product.purchase(options: [.appAccountToken(appAccountToken)])
+        } else {
+            purchaseResult = try await product.purchase()
+        }
+        switch purchaseResult {
         case .pending:
             return .pending
         case .userCancelled:
@@ -243,7 +319,11 @@ public actor StoreKitLocalQABridge {
             productKind: productKind(transaction.productType),
             environment: transaction.environment.rawValue,
             purchaseDate: transaction.purchaseDate,
-            revocationDate: transaction.revocationDate
+            revocationDate: transaction.revocationDate,
+            originalTransactionID: transaction.originalID,
+            quantity: transaction.purchasedQuantity,
+            appAccountToken: transaction.appAccountToken,
+            transactionBundleID: transaction.appBundleID
         )
     }
 

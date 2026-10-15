@@ -1,0 +1,187 @@
+{
+  "schema": "r452-independent-result-review-v1",
+  "reviewedAt": "2026-10-15",
+  "run": {
+    "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_seed_robustness_r452/candidate_r001/runner_r001/runs/R452_BATCH_001/RUN.json",
+    "sha256": "979cfd6fd62bb75ae14e79dae9a8129d11f182a8c7475630aa22cc0b14358845",
+    "status": "TWO_CASES_PASSED_REVIEW_REQUIRED",
+    "sha256Seal": "5d878bda0d5922b4f20d37a95c2e07b39183539194a9a79368224d478cd55704",
+    "rootSealPath": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_seed_robustness_r452/candidate_r001/ROOT_EXECUTION_SEAL_R001.json",
+    "rootSealSHA256": "5d878bda0d5922b4f20d37a95c2e07b39183539194a9a79368224d478cd55704",
+    "manifestSHA256": "9ab1067d50b44dbbead236ae0a76ba07198af0c39032ab792b5160001f113d6c",
+    "runnerSHA256": "e9d5ddcaf9d856959548592e66d1d587e713b5a1d0599c68aa388e407cb6c4c7",
+    "finishedElapsedSeconds": 119.389,
+    "compileInvocations": 1,
+    "minimumFreeBytes": 12000000000,
+    "freeBytesAfter": 137070559232,
+    "scratchAllocatedBytes": 229703680,
+    "evidenceAllocatedBytes": 45142016,
+    "outputAllocatedBytes": 274845696,
+    "protectedInputsUnchanged": true,
+    "sourceInputsUnchanged": true,
+    "ownedProcessesList": [],
+    "runnerOwnedProcessesAbsentClaim": true,
+    "independentProcessNameCheck": {
+      "swiftOrXCTestProcesses": [
+        "47160 47107 /Applications/Xc /Applications/Xcode.app/Contents/SharedFrameworks/SwiftBuild.framework/Versions/A/PlugIns/SWBBuildService.bundle/Contents/MacOS/SWBBuildService"
+      ],
+      "noMatchingProcess": false
+    }
+  },
+  "cases": [
+    {
+      "caseID": "R452-free_no_ad-30-seed100069",
+      "seed": 100069,
+      "runID": "45200000-0001-4002-8000-000000000001",
+      "status": "PASS",
+      "returnCode": 0,
+      "testFilter": "EconomyCohortProgressionR355Tests/testR452FreeNoAdZeroSummonFirstCraftProgression",
+      "xctestEventCount": 1,
+      "selectedTestElapsedSeconds": 44.233,
+      "logSha256": "0243dbc0f6fe712d1a63588e0aa3d7210a5d924ff0005d2e261855d2f5c0163c",
+      "reportSha256": "dfb0a27459c310f10eedcb0cfc2cddc7cdca41d29f5b72833b97ec35fc8dc052",
+      "reportBytes": 10470607,
+      "gearOriginJoinSha256": "09159a030903a8d64419e672bcdd44b62cad09217caa0901b16159878af4f530",
+      "gearOriginCounts": {
+        "starterIDs": 4,
+        "craftedIDs": 1,
+        "naturalIDs": 1440,
+        "finalGearIDs": 1444,
+        "unclassifiedIDs": 0
+      },
+      "dailyPointCount": 30,
+      "dailyNaturalLedgerCountLastDay": 96,
+      "dailyNaturalUUIDUnionCount": 1440,
+      "dailyUnionEqualsOriginNaturalIDs": true,
+      "day30OwnedGearCount": 1445,
+      "originJoinFinalGearCount": 1444,
+      "day30OwnedVsOriginFinalOnlyIDs": [
+        "036d0113-4efe-54af-8b7d-de645b956f58"
+      ],
+      "finalSaveSHA256": "4fadf40146b22cb2952b279a62a3f66f496e64147845904298e49334dee0e866",
+      "runtimeProfileID": "app-candidate-r098-v1-growth-500bp-enhancement-r230-v1-r350-r352-r353-test-v1",
+      "baseRuntimeProfileID": "app-candidate-r098-v1-growth-500bp",
+      "runtimeConfigurationFingerprint": "2ba901274a3b0f90a536b6cf57bd90a9025fc4d0b19ce1dd07b4841d11a8aeec",
+      "baseRuntimeConfigurationFingerprint": "4b556e250948bd35ff31a7bdc9dbbc01a671e358565182f556ab1d8d3bf4efb0",
+      "appRuntimeIdentitySHA256": "c5b1bdecd61b3b49b17c02b38283f681236d2d3ce34cdf92cc3acbbb01ebc3b2",
+      "executableSHA256": "b18ca2d6e038024f2e7c2c01d9de637ba6033ec098ff728b9e271ea830d2a8a5",
+      "campaignWins": 30,
+      "campaignLosses": 0,
+      "challengeWins": 15,
+      "challengeLosses": 0,
+      "craftedRecipeIDs": [
+        "RC_EQ_F_01"
+      ],
+      "evolvedRecipeCount": 11,
+      "enhancementActionCount": 17,
+      "refinementActionCount": 13,
+      "completedResearchIDs": [
+        "RS_THEORY_1",
+        "RS_THEORY_2",
+        "RS_THEORY_3",
+        "RS_THEORY_4",
+        "RS_THEORY_5"
+      ],
+      "unresolvedCampaignEnemyIDs": [],
+      "unresolvedChallengeIDs": [],
+      "unresolvedResearchIDs": [],
+      "freeSummonDrawCount": 0,
+      "paidSummonDrawCount": 0,
+      "dailyColdSaveHashesMatch": true,
+      "syntheticGrantCount": 0,
+      "logHasOnePassedMethod": true,
+      "logSummaryOneTestNoFailures": true,
+      "runReportValidationErrors": []
+    },
+    {
+      "caseID": "R452-free_no_ad-30-seed200071",
+      "seed": 200071,
+      "runID": "45200000-0002-4002-8000-000000000001",
+      "status": "PASS",
+      "returnCode": 0,
+      "testFilter": "EconomyCohortProgressionR355Tests/testR452FreeNoAdZeroSummonFirstCraftProgression",
+      "xctestEventCount": 1,
+      "selectedTestElapsedSeconds": 45.557,
+      "logSha256": "7eb6b0740df56f4162fa81d2d87970ffe57dab5c88d08234f3cba598caf9ab90",
+      "reportSha256": "adb2517ba66b4023a6ea232defbff4f59d210ebbbab8b1b3ce7e427ff7831f6e",
+      "reportBytes": 10469894,
+      "gearOriginJoinSha256": "2ea61a9cab283e919429ac177027b9d98634a55310d870d57048c82245776f5d",
+      "gearOriginCounts": {
+        "starterIDs": 4,
+        "craftedIDs": 1,
+        "naturalIDs": 1440,
+        "finalGearIDs": 1444,
+        "unclassifiedIDs": 0
+      },
+      "dailyPointCount": 30,
+      "dailyNaturalLedgerCountLastDay": 96,
+      "dailyNaturalUUIDUnionCount": 1440,
+      "dailyUnionEqualsOriginNaturalIDs": true,
+      "day30OwnedGearCount": 1445,
+      "originJoinFinalGearCount": 1444,
+      "day30OwnedVsOriginFinalOnlyIDs": [
+        "036d0113-4efe-54af-8b7d-de645b956f58"
+      ],
+      "finalSaveSHA256": "dcb7ec871b8600b0344befeca6f59821786ec87c13104a18b50b8cd6a04c80b9",
+      "runtimeProfileID": "app-candidate-r098-v1-growth-500bp-enhancement-r230-v1-r350-r352-r353-test-v1",
+      "baseRuntimeProfileID": "app-candidate-r098-v1-growth-500bp",
+      "runtimeConfigurationFingerprint": "2ba901274a3b0f90a536b6cf57bd90a9025fc4d0b19ce1dd07b4841d11a8aeec",
+      "baseRuntimeConfigurationFingerprint": "4b556e250948bd35ff31a7bdc9dbbc01a671e358565182f556ab1d8d3bf4efb0",
+      "appRuntimeIdentitySHA256": "c5b1bdecd61b3b49b17c02b38283f681236d2d3ce34cdf92cc3acbbb01ebc3b2",
+      "executableSHA256": "b18ca2d6e038024f2e7c2c01d9de637ba6033ec098ff728b9e271ea830d2a8a5",
+      "campaignWins": 30,
+      "campaignLosses": 0,
+      "challengeWins": 15,
+      "challengeLosses": 0,
+      "craftedRecipeIDs": [
+        "RC_EQ_F_01"
+      ],
+      "evolvedRecipeCount": 11,
+      "enhancementActionCount": 19,
+      "refinementActionCount": 11,
+      "completedResearchIDs": [
+        "RS_THEORY_1",
+        "RS_THEORY_2",
+        "RS_THEORY_3",
+        "RS_THEORY_4",
+        "RS_THEORY_5"
+      ],
+      "unresolvedCampaignEnemyIDs": [],
+      "unresolvedChallengeIDs": [],
+      "unresolvedResearchIDs": [],
+      "freeSummonDrawCount": 0,
+      "paidSummonDrawCount": 0,
+      "dailyColdSaveHashesMatch": true,
+      "syntheticGrantCount": 0,
+      "logHasOnePassedMethod": true,
+      "logSummaryOneTestNoFailures": true,
+      "runReportValidationErrors": []
+    }
+  ],
+  "aggregate": {
+    "cases": 2,
+    "passedSelectedTests": 2,
+    "failures": 0,
+    "skips": 0,
+    "campaignWins": 60,
+    "challengeWins": 30,
+    "crafts": 2,
+    "evolutionOperations": 22,
+    "researchCompletions": 10,
+    "summons": 0,
+    "syntheticGrants": 0
+  },
+  "findings": [
+    "Two separately stored Core runs each execute exactly one selected XCTest method and pass with no failures or skips; tests use two fresh seeds under the same profile/configuration and app identity.",
+    "Each case reports 30 campaign wins, 15 challenge wins, zero defeats, one RC_EQ_F_01 craft, 11 evolved recipe operations, five completed research IDs, zero free/paid summon draws, zero synthetic grants, and no unresolved campaign/challenge/research targets.",
+    "Per-case final natural acquisition ledger is bounded to 96 UUID records; the union of daily snapshots and origin join each contain 1,440 natural UUIDs. These are different aggregations, not conflicting totals.",
+    "The daily snapshot gear set has one additional UUID beyond GEAR_ORIGIN_JOIN_R002.finalGearIDs in both runs (036d0113-4efe-54af-8b7d-de645b956f58, natural EQ_FEET_02). Therefore the full final-owned gear UUID join is not exact; this caveat does not change the independently checked zero-summon/zero-grant result.",
+    "The run receipt has an empty ownedProcesses array and claims internal closeout. A separate process-name read found no swift/XCTest process. This is a point-in-time check, not proof against unrelated future processes.",
+    "This is scripted virtual 30-day Core evidence only. It does not prove player-paced UI, product balance, ordinary-device behavior, StoreKit, formal adoption, or commercial readiness."
+  ],
+  "limits": [
+    "R448 original failed/incomplete run remains untouched and is not upgraded by R452.",
+    "R452 two-seed sample does not establish population-level robustness or causal value of zero summons.",
+    "Origin join discrepancy above remains open for accounting clarification; do not describe the final owned-ID join as exact."
+  ]
+}

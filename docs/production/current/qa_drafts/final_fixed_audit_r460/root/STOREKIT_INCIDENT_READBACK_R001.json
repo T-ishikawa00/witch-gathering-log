@@ -1,0 +1,40 @@
+{
+  "at": "2026-10-15T07:11:15.058098+09:00",
+  "scope": "Readback of existing incident evidence; no new platform or purchase test",
+  "separateIncidents": [
+    {
+      "id": "PROBE_NIL",
+      "cause": "Product.products(for:).first! on emptyarray atProbeApp.swift36; guardlet fix and emptyproduct UI regression alreadyrecorded",
+      "status": "SCOPED_FIXED"
+    },
+    {
+      "id": "SKTESTSESSION_NOT_ENTITLED",
+      "error": "SKInternalErrorDomain Code3 / StoreKitError.notEntitled beforetransaction",
+      "cause": "UNKNOWN; simulatorruntime hypothesis notproven",
+      "status": "UNRESOLVED_PLATFORM_PATH_LOCAL_DIRECT_XCODE_PATH_WORKS"
+    },
+    {
+      "id": "XCODE_CONFIGURATION",
+      "cause": "missing executable/configpath and oldbundleID in dedicated projects",
+      "status": "DIRECT_XCODE_ROUTE_CORRECTED"
+    },
+    {
+      "id": "R454_FINISHED_CONSUMABLE_LOOKUP",
+      "cause": "Transaction.all default excludes finishedconsumable; QA historyoptin needed",
+      "status": "SCOPED_FIXED_SAME_EXISTING_TX"
+    }
+  ],
+  "causalLinkNilToCode3": "NOT_ESTABLISHED",
+  "SIPOrSecurityChanged": false,
+  "realAppleAccountAuthentication": false,
+  "sources": [
+    {
+      "path": "docs/production/current/purchases/STOREKIT_INCIDENT_CURRENT.md",
+      "sha256": "a43da9ac873b697a09d350baec84a309d1ac72e0cf6813bf75297d33d5ee2cc3"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/storekit_event_export_r454/RESULT_README_R001.md",
+      "sha256": "53e6f45c34cb8cbdc4374e868ba3773d7ebb4c33fdd4412727e05f436f04c11f"
+    }
+  ]
+}

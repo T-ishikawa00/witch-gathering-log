@@ -1,0 +1,38 @@
+{
+  "at": "2026-10-15T07:04:23.383612+09:00",
+  "baseCheckpoint": "ea476c98c3281420b11b5596714126ee8a352909",
+  "files": [
+    {
+      "path": "tools/witch_purchase_authority/authority.py",
+      "beforeSHA256": "3967d70f3bb4f5d90e1afec789114503250e3df41d9bb6efb6972531f5d06a98",
+      "afterSHA256": "207f1b3ab73e468e48a8098b352e92e82dcec5e5f51915b0c96ae69bacea1001",
+      "candidateSHA256": "207f1b3ab73e468e48a8098b352e92e82dcec5e5f51915b0c96ae69bacea1001",
+      "transform": "Only normalize candidate module imports to live module names"
+    },
+    {
+      "path": "tools/witch_purchase_authority/signed_transaction_audit.py",
+      "beforeSHA256": "dd69d282986d222473d38780c5430614231de3a7e2b53d740c98dd4e310a4351",
+      "afterSHA256": "d49f59e0db971fc517052729e875b1cd73f288398fbc0ea4ba513eb1402a1a0f",
+      "candidateSHA256": "d49f59e0db971fc517052729e875b1cd73f288398fbc0ea4ba513eb1402a1a0f",
+      "transform": "Only normalize candidate module imports to live module names"
+    },
+    {
+      "path": "tools/witch_purchase_authority/sandbox_ledger_adapter_r459.py",
+      "beforeSHA256": null,
+      "afterSHA256": "ec7f71d46a35b4d9e4cc3478d117ec8a30b263549ecb523c3720311e6809bd68",
+      "candidateSHA256": "c1ec6a189479610e1022c9991f5003608dce6c032e37347b20b7e176b7c1009a",
+      "transform": "Only normalize candidate module imports to live module names"
+    },
+    {
+      "path": "tools/witch_purchase_authority/tests/test_sandbox_ledger_r459.py",
+      "beforeSHA256": null,
+      "afterSHA256": "5489b277227077f73fb44d7195cdd975be88d5e8db72d3470475d59aa565577c",
+      "candidateSHA256": "e49d128ff8d96ae7d5e5a924a71d13068392f0fd3e484a774b1bb7895d79706d",
+      "transform": "Only normalize candidate module imports to live module names"
+    }
+  ],
+  "nativeChanged": false,
+  "candidateTests": "R00568PASS0FAIL0SKIP",
+  "liveTests": "PENDING",
+  "productionEnabled": false
+}

@@ -1,0 +1,95 @@
+{
+  "baseInputs": {
+    "authority.py": {
+      "bytes": 51903,
+      "path": "tools/witch_purchase_authority/authority.py",
+      "sha256": "3967d70f3bb4f5d90e1afec789114503250e3df41d9bb6efb6972531f5d06a98"
+    },
+    "local_delivery_r453.py": {
+      "bytes": 38010,
+      "path": "tools/witch_purchase_authority/local_delivery_r453.py",
+      "sha256": "81e1906df738a7bd9fb69d423a4c42d10eab2ad452bd45442e69cb59cfa5f837"
+    },
+    "signed_audit_requirements.lock": {
+      "bytes": 287,
+      "path": "tools/witch_purchase_authority/signed_audit_requirements.lock",
+      "sha256": "640983de283095a924e83d23de146a817bb27537379eddbb65df260c06dee59f"
+    },
+    "signed_transaction_audit.py": {
+      "bytes": 9097,
+      "path": "tools/witch_purchase_authority/signed_transaction_audit.py",
+      "sha256": "dd69d282986d222473d38780c5430614231de3a7e2b53d740c98dd4e310a4351"
+    },
+    "test_authority.py": {
+      "bytes": 15140,
+      "path": "tools/witch_purchase_authority/tests/test_authority.py",
+      "sha256": "94ecca7044d8d89eba87d0531a4b0e4a363f2c19c3be0fe264ce5eb7432bb081"
+    },
+    "test_notifications.py": {
+      "bytes": 16287,
+      "path": "tools/witch_purchase_authority/tests/test_notifications.py",
+      "sha256": "5dfc9df8cf66d27d2184392e89dc869c91fc1583afbbfb08f2a7319665fb8c41"
+    },
+    "test_signed_transaction_audit.py": {
+      "bytes": 13267,
+      "path": "tools/witch_purchase_authority/tests/test_signed_transaction_audit.py",
+      "sha256": "7db17e3f5bb0857eb141bf8bb8754554bb7dc1b87d759b7620e08a7ea74d8634"
+    }
+  },
+  "boundaries": {
+    "accountBinding": "fixture equality only; not user authentication",
+    "auditGrantAuthorized": false,
+    "auditRevocationChecked": false,
+    "productionAuthorization": "NOT_PROVIDED",
+    "purchaseAuthorityIngestAppleJWS": "unchanged fail-closed",
+    "realAppleEvidence": "NOT_PROVEN",
+    "receiptStatus": "NOT_AUTHORIZED_FOR_PRODUCTION"
+  },
+  "candidateFiles": {
+    "README_R001.md": {
+      "bytes": 3109,
+      "sha256": "329dd918018cf7f7585353186837c1b5c8e9586734686c395ac3a9fdb420b22b"
+    },
+    "SOURCE_PATCH_R001.diff": {
+      "bytes": 9981,
+      "sha256": "eb0d6dcfc2144178a17527b648ec894efcb352308e4aab8f00f339b9076ef56f"
+    },
+    "authority_r459.py": {
+      "bytes": 53344,
+      "sha256": "938857fe7f6e1e4cb8e80547bcff00f82831f97b0f5deb9967009faaa46ba994"
+    },
+    "sandbox_ledger_adapter_r459.py": {
+      "bytes": 6365,
+      "sha256": "95dfb0278e6c608ceb3faeed06688eaaadc859d94d80d6872ae3f752b106b6c8"
+    },
+    "signed_transaction_audit_r459.py": {
+      "bytes": 13834,
+      "sha256": "60a0e66de94605ae1ace5cd5d9bd8691b29f058d1dacbaa61aec1fbf300c487b"
+    },
+    "test_authority_compat_r459.py": {
+      "bytes": 15145,
+      "sha256": "9f513b0e91163d90340f3720da20da0452a06627c1317f96f14ec628dac6c09c"
+    },
+    "test_notifications_compat_r459.py": {
+      "bytes": 16204,
+      "sha256": "455636b6197422b6e85c053234c2549d25723ee65cf0ee8773bc8031a31e6cbe"
+    },
+    "test_sandbox_ledger_r459.py": {
+      "bytes": 18413,
+      "sha256": "f5b7d6bf8d89aa6f931d778b3a3fe28690ed27172eacf7230f41d3f7d2b7f40e"
+    }
+  },
+  "runtime": {
+    "database": "new explicit r459-sandbox-rehearsal path only",
+    "environment": "Sandbox only",
+    "verifierLibrary": "app-store-server-library==3.1.2"
+  },
+  "schema": "r459-sandbox-ledger-adapter-candidate-v1",
+  "staticChecks": {
+    "liveSourceChanged": false,
+    "network": "NOT_USED",
+    "pythonCompile": "PASS",
+    "unittest": "NOT_RUN"
+  },
+  "status": "SOURCE_ONLY_UNRUN_NOT_PRODUCTION"
+}

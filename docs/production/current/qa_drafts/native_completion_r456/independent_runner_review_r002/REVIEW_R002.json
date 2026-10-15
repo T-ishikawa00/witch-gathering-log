@@ -1,0 +1,45 @@
+{
+  "schema": "native-completion-r456-independent-runner-review-r002-v1",
+  "status": "SOURCE_REVIEW_NO_BLOCKER_BUILD_NOT_RUN",
+  "reviewed": {
+    "driver": {
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/native_completion_r456/build_tools_r003/build_r456.py",
+      "sha256": "64955e92d4fc40dff4cf579d5338f811d7e2a165ea20d277bf57164f08a70dca"
+    },
+    "candidateManifest": {
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/native_completion_r456/build_tools_r003/CANDIDATE_MANIFEST_R003.json",
+      "sha256": "940930afebaf0479f796974366ab66162b7a3fb0893eaf7340c4204b7d940c05"
+    },
+    "inputManifest": {
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/native_completion_r456/build_tools_r003/INPUT_MANIFEST_R003.json",
+      "sha256": "1c371a5725e01bf98950a1cb7a32ce9f2543106dd383e7690ac951b8d4af4e5b"
+    },
+    "rootSeal": {
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/native_completion_r456/build_tools_r003/ROOT_SEAL_R003.json",
+      "sha256": "92084bafb482b80524dffc9225a0f133f7397f589c41a72b9841ff3744e94748"
+    }
+  },
+  "checks": {
+    "r004WorkspaceIsInputOnly": true,
+    "allBuildAndProductOutputsRedirectedToR456OwnedPaths": true,
+    "postBuildRehashOf238SourcesProjectPBXResourceMapAnd1922PreparedResources": true,
+    "eachSDKAppResourceMapComparedAgainstPinned1922ResourceMap": true,
+    "sdkResourceParityChecked": true,
+    "finalTimeAllocatedOutputAndFreeSpaceBoundsCheckedBeforeAndAfterReceipt": true,
+    "priorProductsRechecked": true,
+    "candidateManifestDeclaredFileHashesMatch": true,
+    "installLaunchFreezeResourceCopyDisabled": true,
+    "pythonAstAndJsonStaticParse": "PASS"
+  },
+  "findings": [
+    {
+      "severity": "P2",
+      "title": "Process cleanup remains statically, not empirically, validated",
+      "detail": "PID/start-identity cleanup is scoped, but no runtime evidence exists for detached or reparented Xcode descendants. Do not claim proven orphan-free cleanup from this review alone."
+    }
+  ],
+  "limitations": [
+    "No runner invocation, build, install, launch, or Simulator action.",
+    "A later successful build would prove compilation only, not StoreKit runtime behavior or production purchase readiness."
+  ]
+}

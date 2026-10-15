@@ -1,0 +1,388 @@
+{
+  "schema": "completion-register-r012-v1",
+  "status": "ACTIVE_FIXED_SHA_AUDIT_AND_REMAINING_LOCAL_ASSESSMENT",
+  "updatedAt": "2026-10-15T07:06:50.410001+09:00",
+  "baseCheckpoint": "ea476c98c3281420b11b5596714126ee8a352909",
+  "sourceMap": {
+    "scope": "238 native inputs",
+    "buildReceipt": {
+      "path": "docs/production/current/qa_drafts/native_completion_r456/build_tools_r003/BUILD_RESULT_R003.json",
+      "sha256": "1c3d3074e9d867e4c1cf478da8cc91e9e7ca13022cfda25a9aa67e95222efb71",
+      "bytes": 562602,
+      "scope": "Both Release SDK builds; live/frozen/resource readback"
+    }
+  },
+  "priorityOrder": [
+    "gameblocking",
+    "releasequality",
+    "detail"
+  ],
+  "authorityBoundary": "ローカル候補の実装/検証とHumanの仕様・美術・商品採用を分離。本番公開、実課金、第三者連絡、無断pushは実施しない。",
+  "items": [
+    {
+      "id": "SAVE-01",
+      "severity": "gameblocking",
+      "implementation": "実装済み：世代保存、復旧、取引の重複防止、装備セット保存",
+      "verification": "R362復旧、R443/R446/R449通常操作、R453/R454取引保存・中断・重複・冷起動、R456通常rev138の本体/previous保存一致",
+      "completionQuality": "検証した条件では合格。実機電源断・全OS条件は未検証",
+      "remainingLocal": "新たな保存処理変更時のみ回帰試験",
+      "acceptance": "同一操作の再送で装備・残高が増えず、保存失敗前後に復旧できる",
+      "limit": {
+        "attempts": 1,
+        "minutes": 10
+      },
+      "formalHumanAdoption": false
+    },
+    {
+      "id": "PROGRESS-01",
+      "severity": "releasequality",
+      "implementation": "全5地域・通常戦闘30戦・15研究課題・採集・制作・強化・進化を実装",
+      "verification": "R443通常UIで30戦。R449現在装備のまま15課題を新たに勝利、rev137冷起動一致。R448/R452計3seedのガチャなし仮想30日Core試験",
+      "completionQuality": "範囲付き合格。自然な人間のプレイ速度・長期継続率は未検証",
+      "remainingLocal": "同条件の反復を終了。新たな進行不能が再現した場合のみ修正",
+      "acceptance": "保存済みの30/30・15/15結果と入手元・消費・解放条件の照合が維持される",
+      "limit": {
+        "attempts": 0,
+        "minutes": 0
+      },
+      "formalHumanAdoption": false
+    },
+    {
+      "id": "GEAR-01",
+      "severity": "gameblocking",
+      "implementation": "装備入手・比較・着脱・検索・制作・進化・強化・錬成・分解・セット保存を実装",
+      "verification": "既存装備試験、R443実進化、R452全装備UUID照合、R453単一受取/不一致拒否、R454実Xcode取引からQA装備1点、R456装備19UUID維持",
+      "completionQuality": "範囲付き合格。全所持数での実機性能は未検証",
+      "remainingLocal": "R453/R454/R459 regression passed; final fixedSHA integration review. No gear recreation needed.",
+      "acceptance": "受取前後・重複再送・再起動で既存装備を保全",
+      "limit": {
+        "attempts": 2,
+        "minutes": 30
+      },
+      "formalHumanAdoption": false
+    },
+    {
+      "id": "MECHANICS-01",
+      "severity": "releasequality",
+      "implementation": "15課題の戦闘機構・ダメージ/回復/状態異常を実装",
+      "verification": "R371機構試験、R449正常UIの15課題勝利、R448/R452通常育成Core",
+      "completionQuality": "機構と到達性は範囲付き合格。すべてのビルドの優劣を保証しない",
+      "remainingLocal": "既に合格した機構の再制作は行わない",
+      "acceptance": "再現性のある戦闘・収支不整合が見つかった場合に限定して回帰",
+      "limit": {
+        "attempts": 0,
+        "minutes": 0
+      },
+      "formalHumanAdoption": false
+    },
+    {
+      "id": "ECONOMY-01",
+      "severity": "releasequality",
+      "implementation": "候補R3経済と無課金/少額/高額相当のテスト条件を実装",
+      "verification": "R374仮想30/90日16条件、R448/R452ガチャなし計3seed。R452各30戦/15課題/5研究/制作1/進化11/追加付与0",
+      "completionQuality": "設計候補の計算検証。実購入価値・市場性・人間の進行速度は未合格",
+      "remainingLocal": "同一条件の再試験を終了。商品内容/価格の正式採用はHuman判断",
+      "acceptance": "候補数値・仮想時計・購入ではない入力を明記し、正式販売と混同しない",
+      "limit": {
+        "attempts": 0,
+        "minutes": 0
+      },
+      "formalHumanAdoption": false
+    },
+    {
+      "id": "GEAR-02",
+      "severity": "releasequality",
+      "implementation": "レアリティ、装備進化、潜在効果、複数ビルドを実装",
+      "verification": "自然入手/進化/比較試験と限定ビルド観測を保全",
+      "completionQuality": "範囲付き合格。組合せ全体の最適性や購入効果の因果は未検証",
+      "remainingLocal": "新しい具体的なバランス破綻が確認された場合のみ調整",
+      "acceptance": "装備を変えた計算結果と実戦結果の一致を保つ",
+      "limit": {
+        "attempts": 0,
+        "minutes": 0
+      },
+      "formalHumanAdoption": false
+    },
+    {
+      "id": "COMMERCE-01",
+      "severity": "releasequality",
+      "implementation": "R453 localledger->Swift atomic delivery;R454 actualXcode->mockhost;R459 signedSandbox-format audit->isolated ledger implemented. Production remains disabled.",
+      "verification": "R454 actual Xcode purchase/cancel/productfailure/replay/mockrefund/restore/cold. R459 integrated110 methodexecutions PASS0FAIL0SKIP0warnings; includes21crypto methods repeated in existing/new suite. Synthetic cryptographic fixtures only.",
+      "completionQuality": "Scoped local integration passed. Production purchases and actualAppleSandbox remain incomplete.",
+      "remainingLocal": "Final fixedSHA independent audit; architecture assessment separates further implementable localcode from realApple/auth/service/product approval gates.",
+      "acceptance": "既存mockゲートと本番fail-closedを維持。隔離条件/型を偽装して任意DBへ付与できず、同じ取引/通知の重複・返金・遅延・不一致を原子的に処理。実Apple受入とは区別",
+      "limit": {
+        "attempts": 2,
+        "minutes": 30
+      },
+      "formalHumanAdoption": false
+    },
+    {
+      "id": "UI-01",
+      "severity": "releasequality",
+      "implementation": "A案の家・探索・仲間・工房・採集帳・鑑定/商店・衣装・家具画面を実装",
+      "verification": "R370/R372/R390/R433/R440/R443/R446/R449通常操作、文字拡大・比較到達・冷起動。R456ホーム・仲間・装備比較・最終地域戦闘・冷起動",
+      "completionQuality": "範囲付き合格。全端末/全アクセシビリティの完成品質は未検証",
+      "remainingLocal": "同じ画面の再制作を避け、具体的な操作不能/読めない表示のみ修正",
+      "acceptance": "主要操作が行え、画面遷移・起動/復帰で操作不能や保存消失がない",
+      "limit": {
+        "attempts": 0,
+        "minutes": 0
+      },
+      "formalHumanAdoption": false
+    },
+    {
+      "id": "ART-01",
+      "severity": "releasequality",
+      "implementation": "味方4人の動作、装備外観、衣装の描画を統合",
+      "verification": "既存動作レビュー、R433衣装4人/杖2種、R435/R444読書衣装修正、R446選択/解除視覚差と冷起動",
+      "completionQuality": "部分品質合格。24ポーズ存在だけを合格とはしていない。全自然動作と正式採用は別",
+      "remainingLocal": "既に合格した動作は維持。再現する破綻がなければ局所修正を終了",
+      "acceptance": "選択衣装が対応姿勢で表示され、手・本を不正に隠さず、解除で元に戻る",
+      "limit": {
+        "attempts": 0,
+        "minutes": 0
+      },
+      "formalHumanAdoption": false
+    },
+    {
+      "id": "ART-02",
+      "severity": "releasequality",
+      "implementation": "敵・ボス30制作単位の状態別動作をゲームへ統合",
+      "verification": "既存30単位の強制状態/通常戦闘、R424/R425/R450を保全。R457残17件のうち16件は被弾/決着で回復前に中断、B_R01_Aはexecute未観測。既存痕跡に未確認の適格recover区間なし",
+      "completionQuality": "部分品質合格。攻撃17単位の中断なし回復を自然戦闘で観測していない。被弾/決着による中断自体は不具合ではない",
+      "remainingLocal": "現時点の証拠で再現する重大描画欠落は特定されず。未観測17件を自然さ合格と置き換えない。技術検証とHuman美術採用を別管理",
+      "acceptance": "各個体の実装と検証範囲を分け、静止画のみで完成としない",
+      "limit": {
+        "attempts": 0,
+        "minutes": 0
+      },
+      "formalHumanAdoption": false
+    },
+    {
+      "id": "ART-03",
+      "severity": "releasequality",
+      "implementation": "背景・アイコン・効果・必要な衣装/家具の候補を統合",
+      "verification": "159単位=149静的/10時間変化系の限定レビュー。R457全159台帳行を照合",
+      "completionQuality": "全159行はPARTIAL_OR_NOT_ACCEPTED。限定技術検証と正式美術採用は別。全件発売品質合格ではない",
+      "remainingLocal": "不必要な商品追加や大量再制作をしない。必要範囲外の商品は別計画",
+      "acceptance": "原画/編集元を維持し、各単位の部分合格/未観測条件を台帳に残す",
+      "limit": {
+        "attempts": 0,
+        "minutes": 0
+      },
+      "formalHumanAdoption": false
+    },
+    {
+      "id": "IOS-01",
+      "severity": "releasequality",
+      "implementation": "R456通常ReleaseをSimulator/iPhoneOS双方同一238入力からビルド。通常Simulator統合済み",
+      "verification": "238入力/1922資源を照合。旧7700アプリファイル保全。実ホーム/比較/最終ボス勝利/冷起動rev138保存一致。既存全体進行証拠は範囲内再利用",
+      "completionQuality": "Simulator条件付き合格。実機操作/署名配布/Apple認証は未検証",
+      "remainingLocal": "Final fixedSHA audit; no native change since R456. Physical device operation remains external/Human gated.",
+      "acceptance": "ソース238件、両SDK実行ファイル、実際のセーブ、検証範囲を照合する",
+      "limit": {
+        "attempts": 1,
+        "minutes": 15
+      },
+      "formalHumanAdoption": false
+    },
+    {
+      "id": "DETAIL-01",
+      "severity": "detail",
+      "implementation": "細部調整を主要機能より低優先に設定",
+      "verification": "既存結果を維持",
+      "completionQuality": "終了条件を設定済み",
+      "remainingLocal": "具体的な視認性障害がない限り数ピクセルの反復調整をしない",
+      "acceptance": "1件あたり最大2試行/15分で記録し次の重要作業へ移る",
+      "limit": {
+        "attempts": 2,
+        "minutes": 15
+      },
+      "formalHumanAdoption": false
+    },
+    {
+      "id": "FINAL-AUDIT-01",
+      "severity": "releasequality",
+      "implementation": "最終成果の固定SHA独立監査は未完了",
+      "verification": "Individual R453/R454/R456/R459 source/result reviews complete. Final fixedSHA audit pending",
+      "completionQuality": "未完了",
+      "remainingLocal": "Audit next R086 checkpoint with explicit native QA test sources and complete R459 evidence.",
+      "acceptance": "重大機能欠落・保存破損・クラッシュの未解決指摘がなく、外部/Humanゲートを正確に分離",
+      "limit": {
+        "attempts": 1,
+        "minutes": 20
+      },
+      "formalHumanAdoption": false
+    }
+  ],
+  "latestEvidence": {
+    "R435Core": {
+      "path": "docs/production/current/qa_drafts/luna_reading_mantle_r435/core_test_r001/runs/f4ae10c7-04a7-4078-92d5-35b8c503b75e/RUN.json",
+      "sha256": "ac44cb4cdafae4db9092e3124dc24632e6e1d865ef2540702687f723462ac03e",
+      "bytes": 6343,
+      "scope": "10 wardrobe tests"
+    },
+    "R443": {
+      "path": "docs/production/current/qa_drafts/normal_progression_continuation_r443/independent_review_r001/FINAL_R003.json",
+      "sha256": "10f06fdf7db989f1e8dac485d8665bf727f5c21164a74b4622d1f2bd46254b4f",
+      "bytes": 10754,
+      "scope": "30 campaign; prior mock history disclosed"
+    },
+    "R445Release": {
+      "path": "docs/production/current/qa_drafts/native_completion_r445/build_tools_r001/postbuild_readback_r001/release_BUILD_PASS.json",
+      "sha256": "f6482cdd910d30e633af9a78068e751a85074bcdfa744a9ccffa0bde2f2d123c",
+      "bytes": 871945,
+      "scope": "Release simulator build"
+    },
+    "R445Install": {
+      "path": "docs/production/current/qa_drafts/native_completion_r445/install_release_r001/RESULT.json",
+      "sha256": "8990781fbbff10c073ee8e6085e0edc9e71f8eeff6f2d3ec55c6d6fd4f3113ee",
+      "bytes": 2813123,
+      "scope": "install receipt launch=false; subsequent R446/R449 launched"
+    },
+    "R446Closure": {
+      "path": "docs/production/current/qa_drafts/native_reading_mantle_r446/execution_r001/CLOSURE.json",
+      "sha256": "01b33e7a5d35a52b25769e3df67a72657dfeab8fc6b41656c67ec50782be1518",
+      "bytes": 11929,
+      "scope": "raw INCOMPLETE_RETAINED"
+    },
+    "R446Preservation": {
+      "path": "docs/production/current/qa_drafts/native_reading_mantle_r446/independent_review_r001/PRESERVATION_READBACK_R002.json",
+      "sha256": "0f919c74cdf64f582b1cba2845eae88b925e9075e9833060090565cd9612d573",
+      "bytes": 5847,
+      "scope": "3 SavedApplicationState files2651B caused mismatch;2Metal files permitted"
+    },
+    "R446Visual": {
+      "path": "docs/production/current/qa_drafts/native_reading_mantle_r446/independent_review_r001/REVIEW_R001.json",
+      "sha256": "d7388f92521f94bdc9d0143c372ef6427432febcbbb12d57540d9d0a4732c153",
+      "bytes": 4118,
+      "scope": "scoped selected/reset visual delta"
+    },
+    "R447": {
+      "path": "docs/production/current/qa_drafts/native_completion_r447/build_tools_r001/postbuild_readback_r001/RUN.json",
+      "sha256": "151e293555ab813a4eb267e7214e954b77f3a5d21fe6babf593ee1c4c4904dbc",
+      "bytes": 603859,
+      "scope": "unsigned iPhoneOS compile only"
+    },
+    "R448": {
+      "path": "docs/production/current/qa_drafts/zero_summon_first_craft_r448/ROOT_SCOPED_RESULT_R001.json",
+      "sha256": "484d8b2287e437ec41c8934696ca79006815a6abda518cf04a624199dab6a4de",
+      "bytes": 1956,
+      "scope": "1XCTest pass; raw wrapper remains incomplete parser error"
+    },
+    "R449": {
+      "path": "docs/production/current/qa_drafts/native_challenge_completion_r449/candidate_r001/execution_r001/CLOSURE.json",
+      "sha256": "76152d3e32f96a7f5ef51d1e99eda3fcd44e51c5c10a748e725c5317ac5723c2",
+      "bytes": 11336,
+      "scope": "15new native wins fixed current earned loadout; historicalmock5 retained"
+    },
+    "R450": {
+      "path": "docs/production/current/qa_drafts/art_completion_acceptance_r450/recover_path_r004/REVIEW_R004.json",
+      "sha256": "084634725e9c7d366b8c6bd69357b105e8b1427b87541601711e4c6c97ac3e7c",
+      "bytes": 3428,
+      "scope": "one recover/idle visual join"
+    },
+    "R451": {
+      "path": "docs/production/current/qa_drafts/gacha_completion_acceptance_r451/AUDIT_R002.json",
+      "sha256": "3721c822bdb890138911b878db719116df1668e59ff9077dcf1d06466284190a",
+      "bytes": 3314,
+      "scope": "local integration gap"
+    },
+    "R452": {
+      "path": "docs/production/current/qa_drafts/zero_summon_seed_robustness_r452/ROOT_SCOPED_RESULT_R001.json",
+      "sha256": "ceb1e6794d3281712226e56420e3b34692d4ac6194ea965761479d48d8abeca1",
+      "bytes": 4862,
+      "scope": "two additional seeds passed + finalsave UUID join; scripted only"
+    },
+    "R452Independent": {
+      "path": "docs/production/current/qa_drafts/zero_summon_seed_robustness_r452/independent_result_review_r001/ERRATUM_R002.json",
+      "sha256": "5981824c9987c3ca4a874c67d02ad6989b358664f68b358104d1ca550589bdc7",
+      "bytes": 2684,
+      "scope": "postday30 real dismantle explains one UUID delta"
+    },
+    "R449Independent": {
+      "path": "docs/production/current/qa_drafts/native_challenge_completion_r449/independent_review_r001/REVIEW_R001.json",
+      "bytes": 15860,
+      "sha256": "d7042c4343ee711927e8c6ae27b632b9c9f5c164a8a2fcaeec32e8f6a8581912",
+      "scope": "15new receipts/result/sidecar joins; currentloadout and coldbyteexact; priorhistory retained"
+    },
+    "R453": {
+      "path": "docs/production/current/qa_drafts/gacha_local_integration_r453/ROOT_SCOPED_RESULT_R001.json",
+      "sha256": "d5bfe53011c962b9721b618fb84eb4a1e2a75463abccba4992dea7a131dff49f",
+      "bytes": 3364,
+      "scope": "mock authority -> Swift save; scoped tests"
+    },
+    "R454": {
+      "path": "docs/production/current/qa_drafts/storekit_event_export_r454/ROOT_SCOPED_RESULT_R002.json",
+      "sha256": "efe76202f162970a4e0ccf0fb60c8ab6cb6f1355069e215e62153e83d6c6c33c",
+      "bytes": 2911,
+      "scope": "Xcode transaction -> explicit mock; not production"
+    },
+    "R456Build": {
+      "path": "docs/production/current/qa_drafts/native_completion_r456/ROOT_BUILD_RESULT_R001.json",
+      "sha256": "8fc6b8d9145c5164bbdfc5977492e92a242baf4e7a9e54021527ed438e262a54",
+      "bytes": 2038,
+      "scope": "both ReleaseSDK238/1922; no device"
+    },
+    "R456Runtime": {
+      "path": "docs/production/current/qa_drafts/native_completion_r456/ROOT_RUNTIME_RESULT_R001.json",
+      "sha256": "3b98eee9c794c6b1af73ea6b398bbb7dbea988cceb05f23110722e9c29ef77f8",
+      "bytes": 4358,
+      "scope": "new finalboss;19equip exact;rev138cold; timererratum"
+    },
+    "R457": {
+      "path": "docs/production/current/qa_drafts/completion_priority_r457/FINAL_LOCAL_REMAINDERS_R001.json",
+      "sha256": "b2b62201f2824c04131e6228968eb825c741241813aef0843bef7b25b4045cde",
+      "bytes": 7852,
+      "scope": "159 bounded scope"
+    },
+    "R457Recover": {
+      "path": "docs/production/current/qa_drafts/completion_priority_r457/RECOVERY_ELIGIBILITY_R002.json",
+      "sha256": "fd095cf16dbf160c26fda63444cbd49b37004d35cb410bad0387ef39f1abaab1",
+      "bytes": 5754,
+      "scope": "17unobserved:16preempted1noexecute"
+    },
+    "R459": {
+      "path": "docs/production/current/qa_drafts/sandbox_ledger_adapter_r459/ROOT_SCOPED_RESULT_R001.json",
+      "sha256": "771e6cb6fd39bbb30181de4594d7c9c49da1e360e5c83cbe9f8e52ae33455813",
+      "bytes": 3990,
+      "scope": "Offline synthetic signature->isolated ledger; no production authorization"
+    },
+    "R459Independent": {
+      "path": "docs/production/current/qa_drafts/sandbox_ledger_adapter_r459/independent_live_result_r001/REVIEW_R001.md",
+      "sha256": "83ba5135675ae41687d6cbae86b9e48ce5fed39e9ec50ae7624cf750281be47c",
+      "scope": "Root live integration/evidence independently readback; no rerun"
+    }
+  },
+  "priorMockHistory": "R443 rev13 free5 mock draw; four items used earlier; seven challenge clears/rewards before removal. R449 startsrev117 with zero of those five UUIDs equipped and preserves that earned19UUID loadout. This is not clean zero-draw native history. R448/R452 are separate fresh Core zero-summon cases.",
+  "retainedFailures": [
+    "R448 R001 failed5 assertions; R002 test1pass44.413s but wrapperINCOMPLETE dueelapsedparser; no rawreceipt rewrite.",
+    "R446 rawINCOMPLETE only3new ownSavedApplicationStatefiles2651B;2Metal cachefiles wereallowed,notcause.",
+    "Other prior failed harness receipts remain in their original evidence folders.",
+    "R454 R003 finished consumable lookup transactionNotFound2; R004 QA-only history opt-in fixes lookup of same transaction. Separate from previous nil/permissions/IDE errors.",
+    "R456 R002 cross-process monotonic elapsed invalid; raw retained. Root conservative immutable-directory bound425.958s<600; future R003 clock tests3PASS.",
+    "R459 candidateR001 rejected before execution. R002 temporarily edited by author then restored exact recordedhash; R003/R004/R005 preserved.",
+    "R459 live_regression_r001 had2setupimporterrors and56warninglines. R002 corrects PYTHONPATH and closes9legacytestSQLite connections;110executions pass0warnings."
+  ],
+  "buildBoundary": {
+    "currentSimulator": "R456 bothSDKRelease238input; normalcold138 verified",
+    "iphoneOS": "R456 unsigned compile only",
+    "physicalDevice": "Human authorization/operation required; not performed"
+  },
+  "externalHumanGates": [
+    "仕様・美術・販売商品/価格の正式採用",
+    "実機への導入と操作・端末固有の性能/中断/復元試験",
+    "Appleアカウント認証、正式Sandbox/本番の署名取引検証、購入権限サーバーと複数端末の復元",
+    "署名・配布・審査・本番公開は未実施"
+  ],
+  "storage": {
+    "freeBytesAtWrite": 134150688768,
+    "warningBytes": 20000000000,
+    "holdBytes": 10000000000,
+    "perTaskForecastAndMarginRequired": true,
+    "newDeletionAuthorized": false
+  },
+  "formalReleaseAcceptance": false,
+  "remainingTimeEstimate": "R459 repair/regression bounded30min, then fixedSHA audit20min. Total release completion not reliably estimated until formalart/device/Apple/service architecture gates resolved. These are attempt bounds, not completion promises."
+}

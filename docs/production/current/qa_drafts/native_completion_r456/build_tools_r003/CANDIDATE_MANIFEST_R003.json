@@ -1,0 +1,54 @@
+{
+  "schema": "native-completion-r456-builder-candidate-r003-v1",
+  "status": "PREPARED_NOT_ROOT_SEALED",
+  "executionPerformed": false,
+  "staticChecks": [
+    "Python ast.parse only",
+    "duplicate-free JSON template parse"
+  ],
+  "parentCandidatePreserved": {
+    "path": "../build_tools_r002/CANDIDATE_MANIFEST_R002.json",
+    "sha256": "adcabdfd2837ca373abf8d0d012827b8dec7460beb2c1f00db7cfdc656a83dff"
+  },
+  "files": {
+    "build_r456.py": {
+      "sha256": "64955e92d4fc40dff4cf579d5338f811d7e2a165ea20d277bf57164f08a70dca",
+      "sizeBytes": 27853
+    },
+    "INPUT_MANIFEST_R003.template.json": {
+      "sha256": "1319c8b0ceb4c5016a7aec23006301ff3f246cd435a3ec4c426ee4d32bcb16b6",
+      "sizeBytes": 3327
+    },
+    "ROOT_SEAL_R003.template.json": {
+      "sha256": "3f9681e6edd6f3b93d4c9ce6d622ad8bbf76830d575fcbefcf2faebb1b2d353a",
+      "sizeBytes": 1055
+    },
+    "README_R003.md": {
+      "sha256": "62002036d51d3c01362206ed89a0e0dd1b69f571e3b437a0bbc042a13ec81225",
+      "sizeBytes": 2351
+    }
+  },
+  "limits": {
+    "attempts": 1,
+    "aggregateSeconds": 600,
+    "perTargetSeconds": 600,
+    "maxAllocatedOutputBytes": 2000000000,
+    "safetyReserveBytes": 2000000000,
+    "requiredStartFreeBytes": 22000000000,
+    "minimumFreeBytes": 20000000000,
+    "install": false,
+    "launch": false,
+    "freeze": false,
+    "resourceCopy": false
+  },
+  "gates": {
+    "duplicateJSONKeysRejected": true,
+    "fullFrozenSourceProjectAndResourceRehashAfterBuild": true,
+    "packagedResourceMapsExactlyMatchPinned1922FilesForBothSDKs": true,
+    "processCleanupUsesObservedPIDAndStartIdentityOnly": true,
+    "explicitOwnedXcodeOutputRoots": true,
+    "successReceiptOnlyAfterFinalBoundsAndProtectionChecks": true
+  },
+  "notExecuted": true,
+  "note": "R454 final closure and exact ROOT_SEAL_R003/INPUT_MANIFEST_R003 are prerequisites; templates are not sealed inputs."
+}

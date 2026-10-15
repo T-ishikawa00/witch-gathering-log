@@ -1,0 +1,50 @@
+{
+  "contract": {
+    "crashChildAcceptance": "Exact Popen PID equals marker PID; parent, token, live start identity, command, process group, operation fingerprint and primary bytes match; direct SIGKILL only; wait return code is -9; owned process identity is absent.",
+    "directXCTestInvocations": [
+      "seed",
+      "crash-child",
+      "verify"
+    ],
+    "isolatedHomeWithinRun": true,
+    "logicalOutputCapBytes": 2000000,
+    "noBuild": true,
+    "noProcessGroupSignals": true,
+    "noSwiftPackageWrapper": true,
+    "perPhaseSeconds": {
+      "crash-child": 45,
+      "seed": 20,
+      "verify": 20
+    },
+    "totalSeconds": 90
+  },
+  "inputManifestPath": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/save_crash_completion_r362/runner_r001/INPUT_MANIFEST_R001.json",
+  "inputManifestSHA256": "388616de0070128dea2190713f804bd21645b989615cd46adda7d1fec94aa7f8",
+  "limitations": [
+    "R362 initial runner remains failed/incomplete and preserved.",
+    "Direct invocation path avoids the prior symlink spelling mismatch but has not been executed; runtime/argv behavior remains unverified.",
+    "The test bundle is reused; this is not a fresh compile or build result."
+  ],
+  "notRun": true,
+  "priorAttemptRUNPath": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/save_crash_completion_r362/runner_root_r003/execution_r002/trial_001/RUN.json",
+  "priorAttemptRUNSHA256": "5ec550585547419c240bfad85cdd350213c93be961540a26ba6d8fee27be60a9",
+  "protectedInputs": {
+    "executeArgsPath": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/save_crash_completion_r362/runner_root_r003/EXECUTE_ARGS_R001.json",
+    "pbxSHA256": "b83573270f2e0fde46411aabe9a539343b0fd1301760b3de7fe672b796dc18e9",
+    "protectedManifestSHA256": "73c34049eb91357f3c4a4200258477389b3ac58f1ce5c215469f4bc415746ea6",
+    "protectedSaveSHA256": "b6028f7a922a73c56db743ab8e55c4633eef2cc9dca8cf329d6d4b6ca5389d09"
+  },
+  "runnerPath": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/save_crash_completion_r362/direct_completion_r001/run_direct_r362.py",
+  "runnerSHA256": "d384c5fbb2ebed79e3d6070142fd054a0c7127a5ad34e456c0e4d74cce0fb01b",
+  "schema": "r362-direct-completion-inputs-v1",
+  "stagedPackagePath": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/save_crash_completion_r362/runner_root_r003/execution_r002/prepared/package",
+  "status": "PREPARED_NOT_EXECUTED",
+  "testBundlePath": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/save_crash_completion_r362/runner_root_r003/execution_r002/scratch/arm64-apple-macosx/debug/WitchGameCorePackageTests.xctest",
+  "testExecutablePath": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/save_crash_completion_r362/runner_root_r003/execution_r002/scratch/arm64-apple-macosx/debug/WitchGameCorePackageTests.xctest/Contents/MacOS/WitchGameCorePackageTests",
+  "testExecutableSHA256": "92540006504035e70d103eef5610ca000bc952dacfeb5645590bee51b0a0aacf",
+  "xctestCanonicalPath": "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Xcode/Agents/xctest",
+  "xctestDevice": 16777232,
+  "xctestInode": 671162,
+  "xctestInvocationAlias": "/Applications/Xcode.app/Contents/Developer/usr/bin/xctest",
+  "xctestSHA256": "947f17b5df53b2871ed5d542bc53d49059c73a51bb610e2be9bc5bc0d0b2dc16"
+}

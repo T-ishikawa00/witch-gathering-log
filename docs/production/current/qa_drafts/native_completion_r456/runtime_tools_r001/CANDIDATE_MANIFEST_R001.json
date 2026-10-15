@@ -1,0 +1,38 @@
+{
+  "schema": "native-completion-r456-runtime-tools-candidate-r001-v1",
+  "status": "PREPARED_NOT_ROOT_SEALED",
+  "executionPerformed": false,
+  "staticChecks": [
+    "Python ast.parse",
+    "runtime seal template JSON parse"
+  ],
+  "files": {
+    "run_r456.py": {
+      "sha256": "20e6a1c5e30325358aa0748ee74c8adf5d610370b03676e9536c5cb1897ba27f",
+      "sizeBytes": 23637
+    },
+    "RUNTIME_SEAL_R001.template.json": {
+      "sha256": "32c4a4a0da46f6d0263ad299b09f13791717840a7570e558f7f08394da1fc220",
+      "sizeBytes": 1738
+    },
+    "README_R001.md": {
+      "sha256": "899627fe82bf62f9882a95969738b922a9ef814987e5ff01f96b608dafe8c541",
+      "sizeBytes": 2309
+    }
+  },
+  "constraints": {
+    "bundleID": "local.witch.autonomous.r1.completion.r456",
+    "device": "9A067715-7CF3-40D3-9064-38423223959B",
+    "seedSource": "R445 actual installed app-support revision 137",
+    "protected": "R445 and R454 full app/data tree hash maps",
+    "autoLaunch": false,
+    "UIActions": false,
+    "delete": false,
+    "maxSeconds": 600,
+    "maxAdditionalBytes": 500000000,
+    "reserveBytes": 2000000000,
+    "minimumFreeBytes": 20000000000,
+    "maxScreenshots": 4,
+    "maxScreenshotBytes": 15000000
+  }
+}

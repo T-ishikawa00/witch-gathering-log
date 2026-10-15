@@ -1,0 +1,32 @@
+{
+  "schema": "native-completion-r456-runtime-seal-v1",
+  "status": "PREPARED_NOT_ROOT_SEALED",
+  "driverSHA256": "<Root fills after source review>",
+  "device": "9A067715-7CF3-40D3-9064-38423223959B",
+  "bundleID": "local.witch.autonomous.r1.completion.r456",
+  "buildReceiptPath": "<absolute final BUILD_RESULT_R003.json path>",
+  "buildReceiptSHA256": "<Root fills from closed R456 build receipt>",
+  "r454OriginPath": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/storekit_event_export_r454/runtime_r001/INSTALLED_ORIGIN_R004.json",
+  "r454OriginSHA256": "<Root fills after R454 closure>",
+  "r454OriginBuildReceiptSHA256": "<must equal buildReceiptSHA256 in R454 origin record>",
+  "r445BundleID": "local.witch.autonomous.r1.completion.r445",
+  "r445AppContainerPath": "<Root pins current R445 app container from simctl>",
+  "r445DataContainerPath": "<Root pins current R445 data container from simctl>",
+  "r445SeedRevision": 137,
+  "r445PrimarySaveSHA256": "<Root pins current R445 support save.json; expected revision 137>",
+  "seedFiles": [
+    {"name":"save.json","path":"<exact R445 Application Support source>","sha256":"<sha256>","sizeBytes":0},
+    {"name":"save.json.previous","path":"<exact R445 Application Support source>","sha256":"<sha256>","sizeBytes":0},
+    {"name":"last_standard_play_identity_r169.json","path":"<exact R445 Application Support source>","sha256":"<sha256>","sizeBytes":0}
+  ],
+  "limits": {
+    "maxSeconds": 600,
+    "maxAdditionalBytes": 500000000,
+    "requiredStartFreeBytes": 22000000000,
+    "minimumFreeBytes": 20000000000,
+    "maxScreenshots": 4,
+    "maxScreenshotBytes": 15000000,
+    "automaticLaunch": false,
+    "delete": false
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "schema": "final-acceptance-core-remaining-r360-v1",
+  "status": "EVIDENCE_RECONCILIATION_NOT_FINAL_ACCEPTANCE",
+  "asOf": "2026-10-14",
+  "scope": "Core gameplay, ordinary progression, research/challenge acceptance, long-term economy, save compatibility, commerce. No test/build/simulator/live mutation was performed for this reconciliation.",
+  "authoritativeAcceptanceSource": {
+    "requested": "original ZIP03_ACCEPTANCE_AND_BLOCKERS",
+    "status": "NOT_LOCATED_IN_CURRENT_REPOSITORY_READ",
+    "note": "A bounded repository file listing did not locate a file with ZIP03_ACCEPTANCE_AND_BLOCKERS naming. This report therefore reconciles the explicitly pinned/current evidence below and must be checked against the original archive before treating the archive checklist as exhausted."
+  },
+  "summary": {
+    "P0_gameplay": "Substantial bounded ordinary-flow evidence exists: all 30 campaign encounters and all 15 challenge IDs were cleared through ordinary UI across R244/R246/R253 evidence; this establishes clears, not every canonical mechanic or full quality acceptance.",
+    "P1_research": "Research progression is implemented and ordinary UI routes/research transactions have bounded evidence for studies 1, 2, 3, and 5. Research 4 completion remains pending in the current evidence read; R338 procedure was prepared against earlier state, while current R358 procedure is explicitly not executed.",
+    "P1_long_term_economy": "R346 passed a 9-case, 30-day synthetic Core cohort matrix under the earlier R098/R144/R230 profile. R355 attempted to validate the integrated R350/R352/R353 profile but both attempts closed before any XCTest; the corrected R004 test source was not actually staged. No current-profile long-term economy result can be claimed.",
+    "P1_save_compatibility": "R356 passed six focused Core tests for R350 work-activation receipts, legacy migration/replay, fractional remainder handling, and R350-off compatibility. This is a focused Core result, not a full app-level migration/release proof.",
+    "P1_gear_progression": "R350 natural gear discovery and R352 refinement/R353 dismantle code are integrated in current Core; focused tests cover contracts. An earned ordinary R358 refinement transaction is still not evidenced by the inspected procedure, which is marked PROCEDURE_ONLY_NOT_EXECUTED.",
+    "P1_commerce": "R346 purchase-like cohorts are test-only simulated grant arms, not StoreKit transactions, adopted products/prices, or causal purchase-value evidence. Store purchase authority, receipt validation, platform configuration, and external purchase QA remain unverified.",
+    "P2_final_quality": "No aggregate release-quality, full accessibility/device, or Human playability acceptance is implied by these Core/UI slices. Challenge completion totals and the 15 canonical mechanic requirements are distinct."
+  },
+  "evidence": [
+    {
+      "topic": "R346 prior-policy long-term cohort experiment",
+      "status": "SCOPED_PASS",
+      "resultPath": "docs/production/current/qa_drafts/current_economy_outcomes_r346/runner_root_r002/runs/run_001/RUN_RESULT_R001.json",
+      "resultSHA256": "36ac26bca0edd73aa711b83a091113401ec20984910872e6b64d4c1142d08058",
+      "independentReviewPath": "docs/production/current/qa_drafts/current_economy_outcomes_r346/independent_execution_review_r001/REVIEW_R001.json",
+      "independentReviewSHA256": "b9bcb4547b8bba942eaa36a0f61474521baa90446b10a12a2588ba4cff4813fd",
+      "observed": "9 cases = 3 hypothetical cohort arms × 3 seeds, each 30 virtual days; each reported 30 campaign wins and 15 challenge wins. The test cohort injects explicit test-only grants; it is not actual monetization or a free-vs-paid causal study.",
+      "limit": "Earlier profile/configuration, one 30-day horizon; no 90-day outcome or current integrated R350/R352/R353 profile result."
+    },
+    {
+      "topic": "R355 integrated current-profile economy attempt",
+      "status": "CLOSED_COMPILE_FAILED_2_OF_2_NO_XCTEST",
+      "closeoutPath": "docs/production/current/qa_drafts/integrated_equipment_progression_r355/runner_r003/runs/run_002/ROOT_CLOSEOUT_R001.json",
+      "closeoutSHA256": "de8b85ab51b7561c423e4049ff64acc9b873f39a46e931404321161b47005cb4",
+      "observed": "Two compile attempts, zero XCTest. The prepared package was bound to the prior test path although corrected candidate R004 existed; the root explicitly closed the batch. Do not treat this as a gameplay failure or silently convert R346 into current-profile validation.",
+      "limit": "No third attempt or same-batch retry. Any later validation must be a new, explicitly scoped batch with exact candidate-to-package path and hash cross-binding."
+    },
+    {
+      "topic": "R356 save/work receipt regression suite",
+      "status": "SCOPED_CORE_TESTS_PASS",
+      "reviewPath": "docs/production/current/qa_drafts/migration_receipt_reconciliation_r356/independent_execution_review_r001/REVIEW_R001.json",
+      "reviewSHA256": "cb9c71a6cc9fe0eac50af6a64bbdf0e134d474bb55bb63534340840b9e9f09ca",
+      "observed": "6/6 Core methods passed against the pinned R350 engine: migration receipt settlement, no retroactive natural gear, fractional legacy remainder boundary, duplicate replay, and R350-off legacy receipt behavior.",
+      "limit": "In-memory repository/Core scope; not a complete app-container recovery, UI migration, or release save-compatibility certification."
+    },
+    {
+      "topic": "R358 ordinary refinement transaction",
+      "status": "PROCEDURE_ONLY_NOT_EXECUTED",
+      "procedurePath": "docs/production/current/qa_drafts/refinement_value_r357/ordinary_ui_acceptance_r358/PROCEDURE_R001.json",
+      "procedureSHA256": "ff4be7c9076cb6a92487291ec24ecd204f339a110852b7d332d865cf58125422",
+      "observed": "Procedure specifies an earned rank I→II transaction on an owned EQ_FEET_01 with exact material/dust costs and save/cold-reopen checks.",
+      "limit": "The inspected artifact explicitly says not executed. A root status message reports collection progression, but no closed execution artifact was available in this read, so it is not counted as completed."
+    },
+    {
+      "topic": "R359 membrane challenge candidate",
+      "status": "SOURCE_ONLY_NOT_RUN",
+      "manifestPath": "docs/production/current/qa_drafts/research_completion_triage_r359/candidate_r001/INPUT_MANIFEST_R001.json",
+      "manifestSHA256": "96f999b5ee9ff160b35eeb1f928f42985129aeae1163391234ba52ae578c1d9f",
+      "observed": "One proposed earned-snapshot test, three fixed seeds, active-vs-inactive membrane comparison; execution/build/simulator all explicitly false.",
+      "limit": "No result for CH_R02_02 membrane mechanism. R346 paired gear previews covered only three challenge IDs and do not fill this gap."
+    }
+  ],
+  "remainingWork": [
+    {
+      "priority": "P0",
+      "area": "Current-profile progression/economy validation",
+      "nextAction": "Prepare a fresh, bounded current-profile Core validation batch that correctly stages and hashes the actual R350/R352/R353 test source, then run a single representative ordinary/free 30-day case first. Expand to additional arms/horizons only after the first case validates and a separate budget is authorized.",
+      "acceptance": "Exact R358/current profile identity and source hashes match the tested package; fresh factory/save; no resource injection except explicitly marked test adapter arms; day-by-day primary save/reopen hashes and command ledger reconcile; record natural acquisition, refinement, salvage, campaign/challenge results and unresolved goals; no missing or substituted XCTest path; all input hashes rechecked after run.",
+      "boundedBudget": "One pilot ≤600 seconds and ≤750 MB; stop on any source-map mismatch, compile error, missing method count, or preservation discrepancy. A later expansion is a distinct run with its own cap.",
+      "authority": "Local QA can perform this after owner review. Human must decide whether any resulting economy/product proposal is adopted."
+    },
+    {
+      "priority": "P1",
+      "area": "Canonical 15-mechanic challenge acceptance",
+      "nextAction": "Map the remaining unverified canonical mechanics to specific ordinary reachable challenge encounters and capture the actual expected event/outcome conditions; execute only the highest-priority unresolved mechanic in a bounded earned-snapshot test/UI case.",
+      "acceptance": "For each selected case, prove the actual event and state change (not only challenge ID or clear): active-window damage mitigation, target selection/AoE, DoT, transfer/heal, support effects, and persistence as required by that scenario. Preserve clear totals separately from mechanic coverage.",
+      "boundedBudget": "One mechanic/candidate per batch, ≤3 fixed seeds and ≤120 seconds Core test where practical; no seed search, QA overpowered gear, or award injection.",
+      "authority": "Local implementation/QA is possible for specified accepted mechanics; new design intent or balance changes require Human adoption."
+    },
+    {
+      "priority": "P1",
+      "area": "Earned equipment refinement and economy loop",
+      "nextAction": "Complete R358 using the exact earned-save path and current build/profile; verify actual G1/G2 accrual, costs, rank/cap, unchanged stats where expected, transaction receipt, save bytes and cold reopen.",
+      "acceptance": "One earned owned UUID changes rank once; exact authored resource/dust deduction and investment ledger; no other gear/economy change; same UUID/rank after cold reopen. Record unchanged-stat result honestly and do not call that a combat benefit.",
+      "boundedBudget": "One native journey ≤600 seconds and ≤25 MB as already specified in the procedure; stop if actual material/gate state does not satisfy preview rather than substituting inputs.",
+      "authority": "Local UI verification is possible; accepting the progression/balance value is a Human product decision."
+    },
+    {
+      "priority": "P1",
+      "area": "Real commerce/platform acceptance",
+      "nextAction": "After Human adopts product catalog/prices and platform policy, implement/verify genuine platform receipt validation and restore/refund/entitlement paths in the approved environment.",
+      "acceptance": "No test-grant adapter interpreted as a purchase; signed platform receipts and server/product authority verified, failure/replay/refund tested, and privacy/legal/store requirements reviewed.",
+      "boundedBudget": "Not estimable until catalog, platform environment, and authority are supplied.",
+      "authority": "Human and platform/account actions required; current evidence does not authorize real charge or product release."
+    },
+    {
+      "priority": "P2",
+      "area": "Final user/device quality",
+      "nextAction": "Run a human-led device/accessibility/playability review after core and product scope stabilize.",
+      "acceptance": "Readable large text, keyboard/VoiceOver/touch navigation, ordinary gameplay clarity, crash/recovery behavior, and user acceptance documented on target hardware.",
+      "boundedBudget": "Requires named device/user session; not satisfied by Core tests or simulator snapshots.",
+      "authority": "Human review required."
+    }
+  ],
+  "explicitNonclaims": [
+    "No overall game-complete, release-ready, or fun/adoption conclusion.",
+    "15 challenge clears are not proof that all 15 canonical research/mechanic requirements have been implemented and accepted.",
+    "R346 test-only cohort grants are not real purchases, monetization efficacy, or adopted SKU/pricing.",
+    "R355 produced no XCTest result; it is a closed preparation/compile failure, not a gameplay failure or PASS.",
+    "R356 Core tests do not certify the full native save-container recovery path.",
+    "No new tests, build, simulator run, or live-source change was performed for this reconciliation."
+  ]
+}

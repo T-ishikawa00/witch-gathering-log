@@ -1,0 +1,27 @@
+{
+  "status": "ROOT_R003_FROZEN_NOT_EXECUTED",
+  "basisR002": {
+    "local_service_r461.py": "4aeb26423cfc5eb5aff171419f0673e46cd677bc4ec83147afec25fe50b6c734",
+    "tests/test_local_service_r461.py": "06454d412ae2e881d47627de3f24025f6282a75c1e258d5870e618442b5cb318"
+  },
+  "files": [
+    {
+      "path": "root_candidate_r003/python/local_service_r461.py",
+      "bytes": 33787,
+      "sha256": "564b0b2d4fb4c079345c36ced790507c1d722e1b1436dec7ba9e6ba967fb84fe"
+    },
+    {
+      "path": "root_candidate_r003/python/tests/test_local_service_r461.py",
+      "bytes": 16661,
+      "sha256": "84f1b3b418ae0c1d2988e82bfeb3cc4d321479e7e071dfdfa623309f88265e3b"
+    }
+  ],
+  "wireContractSHA256": "24e88a2e2c197e7be36a8ff6d226cd55478fed007560d398f848c35d0052830d",
+  "changes": [
+    "Unauthenticated responses have null operation/account correlation",
+    "Resolve principal before pinned-policy rejection; authenticated policy rejection retains binding",
+    "Metadata pin requires original database path and exact R459 marker",
+    "Three focused regressions"
+  ],
+  "liveChanges": false
+}

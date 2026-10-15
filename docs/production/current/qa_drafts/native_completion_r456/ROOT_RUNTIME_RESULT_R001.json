@@ -1,0 +1,86 @@
+{
+  "schema": "r456-root-runtime-scoped-result-v1",
+  "at": "2026-10-15T06:55:06.863800+09:00",
+  "status": "SCOPED_NORMAL_RUNTIME_PASS_WITH_TIMER_ERRATUM",
+  "rawReceipt": {
+    "path": "docs/production/current/qa_drafts/native_completion_r456/runtime_tools_r002/runs/1605ec80-407f-4736-a077-1be866dac17a/RUN.json",
+    "sha256": "ea11dedb64844a89002fe3ea1412f921058a6a64ee704502f39f69d6f6f48252"
+  },
+  "executableSHA256": "2c4e48e8be951691bb2a589656b9524226bfb03386a40ac8f294389fd8cfbcab",
+  "sourceCount": 238,
+  "resourceCount": 1922,
+  "normalRuntimeNoQAArguments": true,
+  "uiObserved": [
+    "A home with4 actors",
+    "party and gear comparison",
+    "R05 final boss actual victory",
+    "cold launched home"
+  ],
+  "newBattleReceipt": {
+    "operationID": "B8A90D37-8017-4CA5-BAEB-B586749FAFDD",
+    "requestFingerprint": "encounter|7:B_R05_B|4:1138|R144|9ebe47982f5703847a596b0e93df75a093ed46fdbbd14b1de2a14029db8347a4|R350|9888f5f0e7918ac0ea9de07e01ecb96d430cecb397b444d7f3863897f33c0f6a|R352|5279e04574f7091c5b34b7aa8fec92a6b95d3464123bd4c67527c26d784b8d22|R353|33056eb7d447c06ddaf1e565b0b5d6646e53707500a86d9a14c318bb46a1a0d1",
+    "result": "VICTORY: B_R05_B, repeat battle; immediate rewards=0 under R144 candidate; ticks=37",
+    "revision": 138
+  },
+  "priorCampaignAndChallengesRetained": {
+    "campaign": 30,
+    "challenge": 15,
+    "regions": 5
+  },
+  "current19EquippedUUIDsExact": true,
+  "currencyAndPityUnchanged": true,
+  "newPurchaseOrQAGrants": false,
+  "gearBefore": 41,
+  "gearAfter": 43,
+  "gearDeltaReason": "17 accumulated ordinary work units settled with encounter;2natural drops; no immediate repeat boss rewards",
+  "revisionBefore": 137,
+  "revisionAfter": 138,
+  "coldPrimaryAndPreviousSaveBytesExact": true,
+  "finalSaveSHA256": "3725e9c13d0e514804d5941d23b7847e12d7c13eb04aac0b3e676b190ae3a3c1",
+  "runtimeIdentityFileExpectedDateRevisionChange": true,
+  "oldAppAndDataTreesUnchanged": true,
+  "protectedTrees": 4,
+  "protectedFiles": 3901,
+  "appStopped": true,
+  "screenshots": [
+    {
+      "path": "docs/production/current/qa_drafts/native_completion_r456/runtime_tools_r002/runs/1605ec80-407f-4736-a077-1be866dac17a/checkpoints/launch/screen.png",
+      "bytes": 3287674,
+      "sha256": "633bf619e35c7e89ddf9718fff0efbe5520d72f0a9376c71604ff8bee965680e"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/native_completion_r456/runtime_tools_r002/runs/1605ec80-407f-4736-a077-1be866dac17a/checkpoints/gear/screen.png",
+      "bytes": 370315,
+      "sha256": "f1d6fc6ad24641fd7af3d931da7a05ff5d2cec088a8a3aeba279e44fc4663aeb"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/native_completion_r456/runtime_tools_r002/runs/1605ec80-407f-4736-a077-1be866dac17a/checkpoints/battle/screen.png",
+      "bytes": 4179551,
+      "sha256": "2e68e5787e64c7d56ddc29df96521b90664ae35e55f9e536d50ce33a4dc53569"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/native_completion_r456/runtime_tools_r002/runs/1605ec80-407f-4736-a077-1be866dac17a/checkpoints/cold/screen.png",
+      "bytes": 3285674,
+      "sha256": "c868956439aca8b7754b8a0253fa9c60acc5f1b4e4e39e6776c3247493700504"
+    }
+  ],
+  "timingErratum": {
+    "rawMonotonicCrossProcessElapsedValid": false,
+    "cause": "Python3.9 macOS monotonic origin differs across invocations. Persisted startedMonotonicNS cannot bound whole session. RUN.json birthtime also replaced by atomic_json and is not session start.",
+    "immutableRunDirectoryBirthEpoch": 1792014373.3201466,
+    "initialInstallWithinProcessElapsed": 6.549201291,
+    "conservativeSessionStartLowerEpoch": 1792014366.7709453,
+    "rawFinishEpoch": 1792014792.7287319,
+    "conservativeWallElapsedUpperSeconds": 425.9577865600586,
+    "boundSeconds": 600,
+    "scope": "Conservative filesystem birthtime plus valid initial same-process elapsed; no claim of exact elapsed. No observed clock adjustment. Correct future helper separately; retain raw receipt."
+  },
+  "allocatedRuntimeEvidenceBytes": 13201408,
+  "freeBytes": 134215540736,
+  "limitations": [
+    "R445 lineage contains historical5 free QA draws; current equipped19earned/starter unchanged",
+    "Reuses prior fullcampaign15challenge evidence; this session new finalboss only",
+    "No physicaldevice, AppStoreSandbox, realpayment or releaseapproval",
+    "Full naturalart acceptance not inferred"
+  ]
+}

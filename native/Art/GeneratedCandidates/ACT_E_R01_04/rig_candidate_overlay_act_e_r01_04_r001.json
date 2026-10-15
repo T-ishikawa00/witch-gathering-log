@@ -1,0 +1,37 @@
+{
+  "actor_id": "ACT_E_R01_04",
+  "manifestKey": "ACT_E_R01_04",
+  "overlay_id": "ACT_E_R01_04_RIG_CANDIDATE_R001",
+  "status": "GENERATED_TECHNICAL_CANDIDATE_UNAPPROVED",
+  "human_adoption": "PENDING",
+  "rig_manifest_path": "native/Art/GeneratedCandidates/ACT_E_R01_04/rig_candidate_r001/rig_manifest_candidate_r001.json",
+  "rig_manifest_sha256": "57eb30da9babcca4ec4653115ae9a3a1404037b64f4b275900aced29e62ab0e7",
+  "preview_path": "native/Art/GeneratedCandidates/ACT_E_R01_04/rig_candidate_r001/qa_state_contact_sheet_r001.png",
+  "preview_sha256": "adcd96985c8f0b8addaf069997117e07c31417da468c738d16694297fec79fde",
+  "atlas_path": "native/Art/GeneratedCandidates/ACT_E_R01_04/rig_candidate_r001/generated_parts_atlas_source_r001.png",
+  "atlas_sha256": "772f97b1806cab1d7947e598079ab6fcbe93d899ddf9b46310f6b230ce15bc7a",
+  "fps": 24,
+  "state_keys": [
+    "idle",
+    "walk",
+    "anticipate",
+    "execute",
+    "recover",
+    "hit",
+    "resolve",
+    "roll"
+  ],
+  "keyframe_count": 192,
+  "part_count": 8,
+  "pivot_status": "VISUAL_ESTIMATE_UNAPPROVED",
+  "runtime_integration": "NOT_DONE",
+  "runtime_visual_qa": "NOT_DONE",
+  "limitations": [
+    "All leg/body joints are generated technical cutouts, not source-authored.",
+    "roll is a 2D shell rotation test, not a validated full ball-roll pose.",
+    "style and registration require SpriteKit/Human review.",
+    "No global runtime-index change; no Human adoption."
+  ],
+  "source_art_untouched": true,
+  "global_runtime_index_changed": false
+}

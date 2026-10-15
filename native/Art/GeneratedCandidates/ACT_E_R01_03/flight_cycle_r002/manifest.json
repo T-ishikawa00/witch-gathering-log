@@ -1,0 +1,254 @@
+{
+  "asset_id": "ACT_E_R01_03",
+  "revision": "flight_cycle_r002",
+  "movement_semantics": "in_place_hover_leaf_blade_wingbeat_not_foot_walk",
+  "source_still_path": "ActorStills/ACT_E_R01_03/ACT_E_R01_03__still__E_R01_03_base_v1.png",
+  "source_still_sha256": "de6df63b4a472fae0ab5385aeffd66038414c3087aa19368b13be8b5ecb42bf3",
+  "atlas_path": "GeneratedCandidates/ACT_E_R01_03/flight_cycle_r002/imagegen_atlas.png",
+  "atlas_sha256": "cbd8bced77ad430b31cb97febce5874c2bbede466b876c3f1cde44263456ad21",
+  "atlas_px": [
+    1536,
+    1024
+  ],
+  "grid_crop_x": [
+    0,
+    512,
+    1024,
+    1536
+  ],
+  "grid_crop_y": [
+    0,
+    341,
+    683,
+    1024
+  ],
+  "frame_canvas_px": [
+    512,
+    512
+  ],
+  "anchor_candidate_px": [
+    256,
+    300
+  ],
+  "registration": "center x to canvas midpoint; lower alpha16 bound to candidate anchor for grounded motion; alpha-bbox center for hover; translation only, no rescale or recolor. Disconnected generated cell debris with alpha>0 outside the 2px fringe of largest alpha>16 component is zeroed; core RGBA retained.",
+  "fps_candidate": 12,
+  "frames": [
+    {
+      "frame": "walk_000.png",
+      "source_cell_px": [
+        0,
+        0,
+        512,
+        341
+      ],
+      "translation_px": [
+        -3,
+        81
+      ],
+      "packed_alpha16_bounds": [
+        43,
+        97,
+        469,
+        415
+      ],
+      "alpha16_pixels": 54403,
+      "removed_disconnected_alpha_pixels": 16353,
+      "source_alpha16_component_count": 4,
+      "sha256": "d46433c42d84f9870756da6331a8b0e5e8948bb7216acbd51fa229eaf524a08b"
+    },
+    {
+      "frame": "walk_001.png",
+      "source_cell_px": [
+        512,
+        0,
+        512,
+        341
+      ],
+      "translation_px": [
+        1,
+        58
+      ],
+      "packed_alpha16_bounds": [
+        29,
+        116,
+        483,
+        397
+      ],
+      "alpha16_pixels": 52093,
+      "removed_disconnected_alpha_pixels": 14824,
+      "source_alpha16_component_count": 2,
+      "sha256": "16c7303f820a958fce89bac9d17abb587caf6157b9d9e2170ee3d2f8d487fa60"
+    },
+    {
+      "frame": "walk_002.png",
+      "source_cell_px": [
+        1024,
+        0,
+        512,
+        341
+      ],
+      "translation_px": [
+        4,
+        26
+      ],
+      "packed_alpha16_bounds": [
+        17,
+        148,
+        494,
+        365
+      ],
+      "alpha16_pixels": 47098,
+      "removed_disconnected_alpha_pixels": 14469,
+      "source_alpha16_component_count": 2,
+      "sha256": "c0c90e5d9833f35579fc9a9fb616eb1943412597425a06bff56a34630565d550"
+    },
+    {
+      "frame": "walk_003.png",
+      "source_cell_px": [
+        0,
+        341,
+        512,
+        342
+      ],
+      "translation_px": [
+        -5,
+        68
+      ],
+      "packed_alpha16_bounds": [
+        22,
+        147,
+        490,
+        365
+      ],
+      "alpha16_pixels": 47347,
+      "removed_disconnected_alpha_pixels": 13768,
+      "source_alpha16_component_count": 3,
+      "sha256": "ac0ca4700fbe6c60505e1e0e13511f4a97e9c2c91ef1cc3e6e7f3efad11e3a69"
+    },
+    {
+      "frame": "walk_004.png",
+      "source_cell_px": [
+        512,
+        341,
+        512,
+        342
+      ],
+      "translation_px": [
+        0,
+        51
+      ],
+      "packed_alpha16_bounds": [
+        23,
+        164,
+        488,
+        348
+      ],
+      "alpha16_pixels": 43401,
+      "removed_disconnected_alpha_pixels": 13533,
+      "source_alpha16_component_count": 1,
+      "sha256": "2b9b12cff62792194a636a8caa7130283f06f001df53ea45c5c1ac96bb8ac78b"
+    },
+    {
+      "frame": "walk_005.png",
+      "source_cell_px": [
+        1024,
+        341,
+        512,
+        342
+      ],
+      "translation_px": [
+        5,
+        54
+      ],
+      "packed_alpha16_bounds": [
+        17,
+        164,
+        495,
+        347
+      ],
+      "alpha16_pixels": 45825,
+      "removed_disconnected_alpha_pixels": 14876,
+      "source_alpha16_component_count": 2,
+      "sha256": "d979627a0724644fa3572f164c8d23f3b742509c807a866eca1895be8ae6d59b"
+    },
+    {
+      "frame": "walk_006.png",
+      "source_cell_px": [
+        0,
+        683,
+        512,
+        341
+      ],
+      "translation_px": [
+        -5,
+        64
+      ],
+      "packed_alpha16_bounds": [
+        22,
+        149,
+        490,
+        363
+      ],
+      "alpha16_pixels": 46598,
+      "removed_disconnected_alpha_pixels": 13989,
+      "source_alpha16_component_count": 3,
+      "sha256": "05d609df3e9328235eadb23483bf98225366e1876bb3118ebab61c10bf5e3dba"
+    },
+    {
+      "frame": "walk_007.png",
+      "source_cell_px": [
+        512,
+        683,
+        512,
+        341
+      ],
+      "translation_px": [
+        -1,
+        84
+      ],
+      "packed_alpha16_bounds": [
+        27,
+        125,
+        485,
+        387
+      ],
+      "alpha16_pixels": 51179,
+      "removed_disconnected_alpha_pixels": 14778,
+      "source_alpha16_component_count": 1,
+      "sha256": "66a473399a0d51e8648ba3658de35af284deb7e863daa442bd012a1a1c0a6e9a"
+    },
+    {
+      "frame": "walk_008.png",
+      "source_cell_px": [
+        1024,
+        683,
+        512,
+        341
+      ],
+      "translation_px": [
+        -2,
+        106
+      ],
+      "packed_alpha16_bounds": [
+        36,
+        106,
+        477,
+        407
+      ],
+      "alpha16_pixels": 54390,
+      "removed_disconnected_alpha_pixels": 16724,
+      "source_alpha16_component_count": 2,
+      "sha256": "a773af5b54588b85e760ff06114524cc1504bdcf849ebed14dc5e804eeadf833"
+    }
+  ],
+  "qa_contact_sheet": "GeneratedCandidates/ACT_E_R01_03/flight_cycle_r002/qa_contact_sheet.jpg",
+  "runtime_overlay": "runtime_overlay_act_e_r01_03_pose_candidate_r003_flight_cycle.json",
+  "visual_status": "CANDIDATE_PENDING_ROOT_SCREEN_REVIEW",
+  "approval_status": "HUMAN_ADOPTION_PENDING",
+  "natural_motion_complete": false,
+  "rejected_prior": {
+    "revision": "flight_cycle_r001",
+    "atlas": "/Users/PUBLIC_USER/.codex/generated_images/01a12399-b8c7-76a0-adb6-39606fe83b65/exec-f314088e-8312-445f-9139-164d194bb50d.png",
+    "reason": "Only about three repeated wing phases across the 3x3 atlas; insufficient 9-frame cadence."
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "files": {
+    "CANDIDATE_MANIFEST_R002.json": {
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/native_completion_r456/build_tools_r002/CANDIDATE_MANIFEST_R002.json",
+      "sha256": "adcabdfd2837ca373abf8d0d012827b8dec7460beb2c1f00db7cfdc656a83dff",
+      "sizeBytes": 1499
+    },
+    "INPUT_MANIFEST_R001.template.json": {
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/native_completion_r456/build_tools_r002/INPUT_MANIFEST_R001.template.json",
+      "sha256": "b23523d8cca1dacda0147b827c63703a9489d71f2447b9abb805d022fb19d3a1",
+      "sizeBytes": 2526
+    },
+    "README_R001.md": {
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/native_completion_r456/build_tools_r002/README_R001.md",
+      "sha256": "42fc1340bc065d1cbf91739920647f6a6af05237542022a5da767bc9b06e6e40",
+      "sizeBytes": 1634
+    },
+    "ROOT_SEAL_R001.template.json": {
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/native_completion_r456/build_tools_r002/ROOT_SEAL_R001.template.json",
+      "sha256": "dc481fc998424fa23c7c70d87d8d4d9eaabcd5a42cda0dace52cccf66b08faa2",
+      "sizeBytes": 981
+    },
+    "build_r456.py": {
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/native_completion_r456/build_tools_r002/build_r456.py",
+      "sha256": "b5f18b91864a73142e8206faf786ed56ec1c23bbb3acd87dd8a107ef4d56b99e",
+      "sizeBytes": 17137
+    }
+  },
+  "findings": [
+    {
+      "detail": "Elapsed/output/free bounds are polled only while xcodebuild runs; final product validation and success receipt do not reject over-cap values.",
+      "lines": "build_r456.py:219-224, 278-313",
+      "severity": "P1",
+      "title": "Final caps not enforced"
+    },
+    {
+      "detail": "Post-build compares map JSONs only; does not rehash sealed frozen source files, maps, project PBX, or resource files.",
+      "lines": "build_r456.py:153-168, 300-303",
+      "severity": "P1",
+      "title": "Frozen input drift not rechecked"
+    },
+    {
+      "detail": "Both app products are checked for Info.plist/executable identity only; no packaged resource inventory/hash equality against 1,922 pinned files.",
+      "lines": "build_r456.py:278-299, 306-313",
+      "severity": "P1",
+      "title": "Packaged resources not checked"
+    },
+    {
+      "detail": "Descendant scan is ancestry-based; timeout cleanup kills only the process group. No runtime evidence; verify process ownership/cleanup before claiming.",
+      "lines": "build_r456.py:76-94, 211-237",
+      "severity": "P2",
+      "title": "Escaped compiler cleanup not proven"
+    },
+    {
+      "detail": "Duplicate key values are equal today; remove before sealing for strict parsing.",
+      "lines": "INPUT_MANIFEST_R001.template.json:4-6",
+      "severity": "P3",
+      "title": "Duplicate worktree key in input template"
+    }
+  ],
+  "limitations": [
+    "Template is unsealed; no execution performed.",
+    "R454 StoreKit runtime or product behavior not reviewed here.",
+    "No candidate files modified."
+  ],
+  "positiveControls": [
+    "one attempt / 600s intended bounds",
+    "2GB output + 2GB reserve and start/floor checks",
+    "R456 unique bundle; no signing/install/launch",
+    "exact prior-product pins rechecked before/after xcodebuild",
+    "R454 frozen source/project/resource pins required at preflight",
+    "output path must be new"
+  ],
+  "reviewMode": "read-only source/templates; no runner/build/install/launch/Simulator",
+  "schema": "native-completion-r456-independent-runner-review-r001-v1",
+  "status": "HOLD_BEFORE_INVOCATION"
+}

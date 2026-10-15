@@ -1,0 +1,3795 @@
+{
+  "status": "UNAPPROVED_WRIST_ANCHOR_CANDIDATE_ONLY",
+  "humanApproval": false,
+  "mergePriority": 100,
+  "scope": "LUNA_ONLY_27_ROWS_R006_FREEHAND_WRIST_REMEASURE; PRESERVE_R005_SOURCE_KEYS_HASHES_FREEPALM_ANKLE_BODY_AND_ALL_OTHER_FIELDS",
+  "sourceEvidence": [
+    "native/Art/runtime_overlay_luna_landmarks_r005.json",
+    "docs/production/current/independent_review/source_landmark_preflight_r001/luna_r006_hand_remeasure/"
+  ],
+  "entries": {
+    "LUNA": {
+      "semanticFrameLandmarksCandidate": {
+        "schema": "equipment_semantic_frame_landmarks_luna_r005",
+        "status": "UNAPPROVED_VISUALLY_RECHECKED_CANDIDATE",
+        "humanApproval": false,
+        "key": [
+          "actorID",
+          "bodyAssetID",
+          "frameIndex",
+          "canvas_px"
+        ],
+        "coordinate_origin": "top_left_canvas_pixels",
+        "rows": [
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_WALK_F01_CANDIDATE_R001",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                148,
+                141
+              ],
+              "chest": [
+                145,
+                159
+              ],
+              "waist": [
+                143,
+                173
+              ],
+              "freeHand": [
+                116,
+                176
+              ],
+              "visibleRightAnkle": [
+                151,
+                218
+              ],
+              "face": [
+                145,
+                116
+              ],
+              "bookPalm": [
+                193,
+                154
+              ],
+              "freePalm": [
+                197,
+                156
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  145,
+                  116
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_WALK_F01_CANDIDATE_R001.png",
+            "sourceSHA256": "66bc43b8e57e0cf19387bbc66641e85935f874bcf410a49c33856c00dcca6680",
+            "measurementStatus": "R006_SOURCE_WRIST_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk",
+            "sourceEvidenceRevision": "R002",
+            "sourceFrameIndex": 0,
+            "landmarkVisibility": {
+              "visibleRightAnkle": "visible",
+              "freePalm": "visible",
+              "freeHand": "visible"
+            },
+            "gear_overrides_candidate": {
+              "EQ_BODY_03": {
+                "height": 0.09,
+                "offset_px": [
+                  0,
+                  3
+                ],
+                "fitStatus": "UNAPPROVED_SIZE_AND_OFFSET_CANDIDATE",
+                "reason": "R002 held-frame review found default body detail height reaches toward mouth; preserve measured neck anchor and reduce height, then lower 3 px."
+              },
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              }
+            },
+            "candidateMeasurementNotes": {
+              "visibleRightAnkle": "R005 rechecked against this exact 256x256 source frame on 8px coordinate grid; point placed on the character-right boot cuff/ankle transition (visual anatomy review, alpha used only as support check).",
+              "freePalm": "R005 rechecked against this exact source frame; point is the visible palm/knuckle center of the free/casting hand, distinct from the preserved book-holding glove freeHand anchor. Raised-hand anticipate poses follow the raised palm.",
+              "freeHand": "R006 off-glob candidate: point moved from palm/finger center to the sleeve-to-hand wrist/cuff junction on this exact source frame. Independently inspect anatomy and held-frame fit; no runtime approval. R005 source path/hash/body ID and all other landmarks are preserved."
+            },
+            "candidatePointAlphaQA": {
+              "visibleRightAnkle": 251,
+              "freePalm": 251,
+              "scope": "source alpha support only; not anatomy proof"
+            },
+            "r004PreviousLandmarksCandidate": {
+              "visibleRightAnkle": [
+                151,
+                214
+              ],
+              "freePalm": [
+                116,
+                190
+              ]
+            },
+            "landmarkCandidateRevision": "R005",
+            "landmarkMeasurementUncertaintyPxCandidate": {
+              "visibleRightAnkle": 3,
+              "freePalm": 3
+            },
+            "previousFreeHandR005": [
+              116,
+              185
+            ]
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_WALK_F02_CANDIDATE_R001",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                150,
+                140
+              ],
+              "chest": [
+                145,
+                154
+              ],
+              "waist": [
+                141,
+                171
+              ],
+              "freeHand": [
+                143,
+                162
+              ],
+              "visibleRightAnkle": [
+                155,
+                219
+              ],
+              "face": [
+                147,
+                117
+              ],
+              "bookPalm": [
+                193,
+                156
+              ],
+              "freePalm": [
+                197,
+                156
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  147,
+                  117
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_WALK_F02_CANDIDATE_R001.png",
+            "sourceSHA256": "25340bd415f639897eb61f3bd73a7e4e635db0403bc6cce56e3a0f42fa0294a1",
+            "measurementStatus": "R006_SOURCE_WRIST_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk",
+            "sourceEvidenceRevision": "R002",
+            "sourceFrameIndex": 1,
+            "landmarkVisibility": {
+              "visibleRightAnkle": "visible",
+              "freePalm": "visible",
+              "freeHand": "visible"
+            },
+            "gear_overrides_candidate": {
+              "EQ_BODY_03": {
+                "height": 0.09,
+                "offset_px": [
+                  0,
+                  3
+                ],
+                "fitStatus": "UNAPPROVED_SIZE_AND_OFFSET_CANDIDATE",
+                "reason": "R002 held-frame review found default body detail height reaches toward mouth; preserve measured neck anchor and reduce height, then lower 3 px."
+              },
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              }
+            },
+            "candidateMeasurementNotes": {
+              "visibleRightAnkle": "R005 rechecked against this exact 256x256 source frame on 8px coordinate grid; point placed on the character-right boot cuff/ankle transition (visual anatomy review, alpha used only as support check).",
+              "freePalm": "R005 rechecked against this exact source frame; point is the visible palm/knuckle center of the free/casting hand, distinct from the preserved book-holding glove freeHand anchor. Raised-hand anticipate poses follow the raised palm.",
+              "freeHand": "R006 off-glob candidate: point moved from palm/finger center to the sleeve-to-hand wrist/cuff junction on this exact source frame. Independently inspect anatomy and held-frame fit; no runtime approval. R005 source path/hash/body ID and all other landmarks are preserved."
+            },
+            "candidatePointAlphaQA": {
+              "visibleRightAnkle": 191,
+              "freePalm": 251,
+              "scope": "source alpha support only; not anatomy proof"
+            },
+            "r004PreviousLandmarksCandidate": {
+              "visibleRightAnkle": [
+                151,
+                214
+              ],
+              "freePalm": [
+                141,
+                177
+              ]
+            },
+            "landmarkCandidateRevision": "R005",
+            "landmarkMeasurementUncertaintyPxCandidate": {
+              "visibleRightAnkle": 3,
+              "freePalm": 3
+            },
+            "previousFreeHandR005": [
+              143,
+              171
+            ]
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_WALK_F03_CANDIDATE_R001",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                143,
+                141
+              ],
+              "chest": [
+                143,
+                157
+              ],
+              "waist": [
+                143,
+                171
+              ],
+              "freeHand": [
+                103,
+                169
+              ],
+              "visibleRightAnkle": [
+                169,
+                218
+              ],
+              "face": [
+                143,
+                116
+              ],
+              "bookPalm": [
+                191,
+                154
+              ],
+              "freePalm": [
+                195,
+                154
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  143,
+                  116
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_WALK_F03_CANDIDATE_R001.png",
+            "sourceSHA256": "9aee712586181844ca0d80dfdf4198e52c9ab5419bc23096b6ab2dd034860b0e",
+            "measurementStatus": "R006_SOURCE_WRIST_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk",
+            "sourceEvidenceRevision": "R002",
+            "sourceFrameIndex": 2,
+            "landmarkVisibility": {
+              "visibleRightAnkle": "visible",
+              "freePalm": "visible",
+              "freeHand": "visible"
+            },
+            "gear_overrides_candidate": {
+              "EQ_BODY_03": {
+                "height": 0.09,
+                "offset_px": [
+                  0,
+                  3
+                ],
+                "fitStatus": "UNAPPROVED_SIZE_AND_OFFSET_CANDIDATE",
+                "reason": "R002 held-frame review found default body detail height reaches toward mouth; preserve measured neck anchor and reduce height, then lower 3 px."
+              },
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              }
+            },
+            "candidateMeasurementNotes": {
+              "visibleRightAnkle": "R005 rechecked against this exact 256x256 source frame on 8px coordinate grid; point placed on the character-right boot cuff/ankle transition (visual anatomy review, alpha used only as support check).",
+              "freePalm": "R005 rechecked against this exact source frame; point is the visible palm/knuckle center of the free/casting hand, distinct from the preserved book-holding glove freeHand anchor. Raised-hand anticipate poses follow the raised palm.",
+              "freeHand": "R006 off-glob candidate: point moved from palm/finger center to the sleeve-to-hand wrist/cuff junction on this exact source frame. Independently inspect anatomy and held-frame fit; no runtime approval. R005 source path/hash/body ID and all other landmarks are preserved."
+            },
+            "candidatePointAlphaQA": {
+              "visibleRightAnkle": 228,
+              "freePalm": 251,
+              "scope": "source alpha support only; not anatomy proof"
+            },
+            "r004PreviousLandmarksCandidate": {
+              "visibleRightAnkle": [
+                168,
+                207
+              ],
+              "freePalm": [
+                103,
+                185
+              ]
+            },
+            "landmarkCandidateRevision": "R005",
+            "landmarkMeasurementUncertaintyPxCandidate": {
+              "visibleRightAnkle": 3,
+              "freePalm": 3
+            },
+            "previousFreeHandR005": [
+              103,
+              179
+            ]
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_WALK_F04_CANDIDATE_R001",
+            "frameIndex": 3,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                147,
+                137
+              ],
+              "chest": [
+                144,
+                151
+              ],
+              "waist": [
+                143,
+                169
+              ],
+              "freeHand": [
+                146,
+                157
+              ],
+              "visibleRightAnkle": [
+                151,
+                218
+              ],
+              "face": [
+                146,
+                115
+              ],
+              "bookPalm": [
+                197,
+                156
+              ],
+              "freePalm": [
+                197,
+                156
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  146,
+                  115
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_WALK_F04_CANDIDATE_R001.png",
+            "sourceSHA256": "b294119f332e8779ae58412881909d60a8433542fa3a0dd15f1a7e3abab62798",
+            "measurementStatus": "R006_SOURCE_WRIST_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk",
+            "sourceEvidenceRevision": "R002",
+            "sourceFrameIndex": 3,
+            "landmarkVisibility": {
+              "visibleRightAnkle": "visible",
+              "freePalm": "visible",
+              "freeHand": "visible"
+            },
+            "gear_overrides_candidate": {
+              "EQ_BODY_03": {
+                "height": 0.09,
+                "offset_px": [
+                  0,
+                  3
+                ],
+                "fitStatus": "UNAPPROVED_SIZE_AND_OFFSET_CANDIDATE",
+                "reason": "R002 held-frame review found default body detail height reaches toward mouth; preserve measured neck anchor and reduce height, then lower 3 px."
+              },
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              }
+            },
+            "candidateMeasurementNotes": {
+              "visibleRightAnkle": "R005 rechecked against this exact 256x256 source frame on 8px coordinate grid; point placed on the character-right boot cuff/ankle transition (visual anatomy review, alpha used only as support check).",
+              "freePalm": "R005 rechecked against this exact source frame; point is the visible palm/knuckle center of the free/casting hand, distinct from the preserved book-holding glove freeHand anchor. Raised-hand anticipate poses follow the raised palm.",
+              "freeHand": "R006 off-glob candidate: point moved from palm/finger center to the sleeve-to-hand wrist/cuff junction on this exact source frame. Independently inspect anatomy and held-frame fit; no runtime approval. R005 source path/hash/body ID and all other landmarks are preserved."
+            },
+            "candidatePointAlphaQA": {
+              "visibleRightAnkle": 247,
+              "freePalm": 251,
+              "scope": "source alpha support only; not anatomy proof"
+            },
+            "r004PreviousLandmarksCandidate": {
+              "visibleRightAnkle": [
+                165,
+                210
+              ],
+              "freePalm": [
+                146,
+                170
+              ]
+            },
+            "landmarkCandidateRevision": "R005",
+            "landmarkMeasurementUncertaintyPxCandidate": {
+              "visibleRightAnkle": 3,
+              "freePalm": 3
+            },
+            "previousFreeHandR005": [
+              146,
+              165
+            ]
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_WALK_F05_CANDIDATE_R001",
+            "frameIndex": 4,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                146,
+                137
+              ],
+              "chest": [
+                141,
+                151
+              ],
+              "waist": [
+                140,
+                169
+              ],
+              "freeHand": [
+                158,
+                157
+              ],
+              "visibleRightAnkle": [
+                158,
+                218
+              ],
+              "face": [
+                146,
+                115
+              ],
+              "bookPalm": [
+                194,
+                152
+              ],
+              "freePalm": [
+                197,
+                156
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  146,
+                  115
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_WALK_F05_CANDIDATE_R001.png",
+            "sourceSHA256": "2f1b83d28f9f9ba99d1c130044ec410ccabed220934ebe04d9c2ff287cafb13a",
+            "measurementStatus": "R006_SOURCE_WRIST_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk",
+            "sourceEvidenceRevision": "R002",
+            "sourceFrameIndex": 4,
+            "landmarkVisibility": {
+              "visibleRightAnkle": "visible",
+              "freePalm": "visible",
+              "freeHand": "visible"
+            },
+            "gear_overrides_candidate": {
+              "EQ_BODY_03": {
+                "height": 0.09,
+                "offset_px": [
+                  0,
+                  3
+                ],
+                "fitStatus": "UNAPPROVED_SIZE_AND_OFFSET_CANDIDATE",
+                "reason": "R002 held-frame review found default body detail height reaches toward mouth; preserve measured neck anchor and reduce height, then lower 3 px."
+              },
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              }
+            },
+            "candidateMeasurementNotes": {
+              "visibleRightAnkle": "R005 rechecked against this exact 256x256 source frame on 8px coordinate grid; point placed on the character-right boot cuff/ankle transition (visual anatomy review, alpha used only as support check).",
+              "freePalm": "R005 rechecked against this exact source frame; point is the visible palm/knuckle center of the free/casting hand, distinct from the preserved book-holding glove freeHand anchor. Raised-hand anticipate poses follow the raised palm.",
+              "freeHand": "R006 off-glob candidate: point moved from palm/finger center to the sleeve-to-hand wrist/cuff junction on this exact source frame. Independently inspect anatomy and held-frame fit; no runtime approval. R005 source path/hash/body ID and all other landmarks are preserved."
+            },
+            "candidatePointAlphaQA": {
+              "visibleRightAnkle": 247,
+              "freePalm": 252,
+              "scope": "source alpha support only; not anatomy proof"
+            },
+            "r004PreviousLandmarksCandidate": {
+              "visibleRightAnkle": [
+                170,
+                209
+              ],
+              "freePalm": [
+                158,
+                171
+              ]
+            },
+            "landmarkCandidateRevision": "R005",
+            "landmarkMeasurementUncertaintyPxCandidate": {
+              "visibleRightAnkle": 3,
+              "freePalm": 3
+            },
+            "previousFreeHandR005": [
+              158,
+              166
+            ]
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_WALK_F06_CANDIDATE_R001",
+            "frameIndex": 5,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                146,
+                141
+              ],
+              "chest": [
+                143,
+                155
+              ],
+              "waist": [
+                144,
+                174
+              ],
+              "freeHand": [
+                123,
+                174
+              ],
+              "visibleRightAnkle": [
+                155,
+                218
+              ],
+              "face": [
+                145,
+                118
+              ],
+              "bookPalm": [
+                194,
+                154
+              ],
+              "freePalm": [
+                197,
+                156
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  145,
+                  118
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_WALK_F06_CANDIDATE_R001.png",
+            "sourceSHA256": "26ac0f0207e60dd8e3422c012ec7ebdd345af95921e86a29f2ae4be26b34da61",
+            "measurementStatus": "R006_SOURCE_WRIST_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk",
+            "sourceEvidenceRevision": "R002",
+            "sourceFrameIndex": 5,
+            "landmarkVisibility": {
+              "visibleRightAnkle": "visible",
+              "freePalm": "visible",
+              "freeHand": "visible"
+            },
+            "gear_overrides_candidate": {
+              "EQ_BODY_03": {
+                "height": 0.09,
+                "offset_px": [
+                  0,
+                  3
+                ],
+                "fitStatus": "UNAPPROVED_SIZE_AND_OFFSET_CANDIDATE",
+                "reason": "R002 held-frame review found default body detail height reaches toward mouth; preserve measured neck anchor and reduce height, then lower 3 px."
+              },
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              }
+            },
+            "candidateMeasurementNotes": {
+              "visibleRightAnkle": "R005 rechecked against this exact 256x256 source frame on 8px coordinate grid; point placed on the character-right boot cuff/ankle transition (visual anatomy review, alpha used only as support check).",
+              "freePalm": "R005 rechecked against this exact source frame; point is the visible palm/knuckle center of the free/casting hand, distinct from the preserved book-holding glove freeHand anchor. Raised-hand anticipate poses follow the raised palm.",
+              "freeHand": "R006 off-glob candidate: point moved from palm/finger center to the sleeve-to-hand wrist/cuff junction on this exact source frame. Independently inspect anatomy and held-frame fit; no runtime approval. R005 source path/hash/body ID and all other landmarks are preserved."
+            },
+            "candidatePointAlphaQA": {
+              "visibleRightAnkle": 116,
+              "freePalm": 253,
+              "scope": "source alpha support only; not anatomy proof"
+            },
+            "r004PreviousLandmarksCandidate": {
+              "visibleRightAnkle": [
+                155,
+                214
+              ],
+              "freePalm": [
+                123,
+                190
+              ]
+            },
+            "landmarkCandidateRevision": "R005",
+            "landmarkMeasurementUncertaintyPxCandidate": {
+              "visibleRightAnkle": 3,
+              "freePalm": 3
+            },
+            "previousFreeHandR005": [
+              123,
+              184
+            ]
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_WALK_F07_CANDIDATE_R001",
+            "frameIndex": 6,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                141,
+                136
+              ],
+              "chest": [
+                138,
+                149
+              ],
+              "waist": [
+                133,
+                170
+              ],
+              "freeHand": [
+                94,
+                170
+              ],
+              "visibleRightAnkle": [
+                150,
+                207
+              ],
+              "face": [
+                140,
+                115
+              ],
+              "bookPalm": [
+                194,
+                154
+              ],
+              "freePalm": [
+                197,
+                155
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  140,
+                  115
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_WALK_F07_CANDIDATE_R001.png",
+            "sourceSHA256": "5612bf4598c5984054699d0e241873476efa1785300fb9ae8563000cb08f7212",
+            "measurementStatus": "R006_SOURCE_WRIST_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk",
+            "sourceEvidenceRevision": "R002",
+            "sourceFrameIndex": 6,
+            "landmarkVisibility": {
+              "visibleRightAnkle": "visible",
+              "freePalm": "visible",
+              "freeHand": "visible"
+            },
+            "gear_overrides_candidate": {
+              "EQ_BODY_03": {
+                "height": 0.09,
+                "offset_px": [
+                  0,
+                  3
+                ],
+                "fitStatus": "UNAPPROVED_SIZE_AND_OFFSET_CANDIDATE",
+                "reason": "R002 held-frame review found default body detail height reaches toward mouth; preserve measured neck anchor and reduce height, then lower 3 px."
+              },
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              }
+            },
+            "candidateMeasurementNotes": {
+              "visibleRightAnkle": "R005 rechecked against this exact 256x256 source frame on 8px coordinate grid; point placed on the character-right boot cuff/ankle transition (visual anatomy review, alpha used only as support check).",
+              "freePalm": "R005 rechecked against this exact source frame; point is the visible palm/knuckle center of the free/casting hand, distinct from the preserved book-holding glove freeHand anchor. Raised-hand anticipate poses follow the raised palm.",
+              "freeHand": "R006 off-glob candidate: point moved from palm/finger center to the sleeve-to-hand wrist/cuff junction on this exact source frame. Independently inspect anatomy and held-frame fit; no runtime approval. R005 source path/hash/body ID and all other landmarks are preserved."
+            },
+            "candidatePointAlphaQA": {
+              "visibleRightAnkle": 253,
+              "freePalm": 252,
+              "scope": "source alpha support only; not anatomy proof"
+            },
+            "r004PreviousLandmarksCandidate": {
+              "visibleRightAnkle": [
+                145,
+                202
+              ],
+              "freePalm": [
+                94,
+                186
+              ]
+            },
+            "landmarkCandidateRevision": "R005",
+            "landmarkMeasurementUncertaintyPxCandidate": {
+              "visibleRightAnkle": 3,
+              "freePalm": 3
+            },
+            "previousFreeHandR005": [
+              94,
+              180
+            ]
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_WALK_F08_CANDIDATE_R001",
+            "frameIndex": 7,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                144,
+                140
+              ],
+              "chest": [
+                140,
+                154
+              ],
+              "waist": [
+                140,
+                171
+              ],
+              "freeHand": [
+                147,
+                157
+              ],
+              "visibleRightAnkle": [
+                164,
+                219
+              ],
+              "face": [
+                143,
+                118
+              ],
+              "bookPalm": [
+                192,
+                154
+              ],
+              "freePalm": [
+                197,
+                155
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  143,
+                  118
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_WALK_F08_CANDIDATE_R001.png",
+            "sourceSHA256": "bc7e8939ad92da41e814467f0a81a5ddebe5c0b46714b62e1d7353ba8337fd69",
+            "measurementStatus": "R006_SOURCE_WRIST_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk",
+            "sourceEvidenceRevision": "R002",
+            "sourceFrameIndex": 7,
+            "landmarkVisibility": {
+              "visibleRightAnkle": "visible",
+              "freePalm": "visible",
+              "freeHand": "visible"
+            },
+            "gear_overrides_candidate": {
+              "EQ_BODY_03": {
+                "height": 0.09,
+                "offset_px": [
+                  0,
+                  3
+                ],
+                "fitStatus": "UNAPPROVED_SIZE_AND_OFFSET_CANDIDATE",
+                "reason": "R002 held-frame review found default body detail height reaches toward mouth; preserve measured neck anchor and reduce height, then lower 3 px."
+              },
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              }
+            },
+            "candidateMeasurementNotes": {
+              "visibleRightAnkle": "R005 rechecked against this exact 256x256 source frame on 8px coordinate grid; point placed on the character-right boot cuff/ankle transition (visual anatomy review, alpha used only as support check).",
+              "freePalm": "R005 rechecked against this exact source frame; point is the visible palm/knuckle center of the free/casting hand, distinct from the preserved book-holding glove freeHand anchor. Raised-hand anticipate poses follow the raised palm.",
+              "freeHand": "R006 off-glob candidate: point moved from palm/finger center to the sleeve-to-hand wrist/cuff junction on this exact source frame. Independently inspect anatomy and held-frame fit; no runtime approval. R005 source path/hash/body ID and all other landmarks are preserved."
+            },
+            "candidatePointAlphaQA": {
+              "visibleRightAnkle": 253,
+              "freePalm": 252,
+              "scope": "source alpha support only; not anatomy proof"
+            },
+            "r004PreviousLandmarksCandidate": {
+              "visibleRightAnkle": [
+                163,
+                215
+              ],
+              "freePalm": [
+                147,
+                169
+              ]
+            },
+            "landmarkCandidateRevision": "R005",
+            "landmarkMeasurementUncertaintyPxCandidate": {
+              "visibleRightAnkle": 3,
+              "freePalm": 3
+            },
+            "previousFreeHandR005": [
+              147,
+              164
+            ]
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_WALK_F09_CANDIDATE_R001",
+            "frameIndex": 8,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                144,
+                141
+              ],
+              "chest": [
+                139,
+                156
+              ],
+              "waist": [
+                139,
+                171
+              ],
+              "freeHand": [
+                115,
+                168
+              ],
+              "visibleRightAnkle": [
+                154,
+                219
+              ],
+              "face": [
+                142,
+                118
+              ],
+              "bookPalm": [
+                193,
+                156
+              ],
+              "freePalm": [
+                195,
+                154
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  142,
+                  118
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_WALK_F09_CANDIDATE_R001.png",
+            "sourceSHA256": "38f0cb8c895058df71424afdc950c24a4622bfc5f3a4175e57628a810e7d2b38",
+            "measurementStatus": "R006_SOURCE_WRIST_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk",
+            "sourceEvidenceRevision": "R002",
+            "sourceFrameIndex": 8,
+            "landmarkVisibility": {
+              "visibleRightAnkle": "visible",
+              "freePalm": "visible",
+              "freeHand": "visible"
+            },
+            "gear_overrides_candidate": {
+              "EQ_BODY_03": {
+                "height": 0.09,
+                "offset_px": [
+                  0,
+                  3
+                ],
+                "fitStatus": "UNAPPROVED_SIZE_AND_OFFSET_CANDIDATE",
+                "reason": "R002 held-frame review found default body detail height reaches toward mouth; preserve measured neck anchor and reduce height, then lower 3 px."
+              },
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              }
+            },
+            "candidateMeasurementNotes": {
+              "visibleRightAnkle": "R005 rechecked against this exact 256x256 source frame on 8px coordinate grid; point placed on the character-right boot cuff/ankle transition (visual anatomy review, alpha used only as support check).",
+              "freePalm": "R005 rechecked against this exact source frame; point is the visible palm/knuckle center of the free/casting hand, distinct from the preserved book-holding glove freeHand anchor. Raised-hand anticipate poses follow the raised palm.",
+              "freeHand": "R006 off-glob candidate: point moved from palm/finger center to the sleeve-to-hand wrist/cuff junction on this exact source frame. Independently inspect anatomy and held-frame fit; no runtime approval. R005 source path/hash/body ID and all other landmarks are preserved."
+            },
+            "candidatePointAlphaQA": {
+              "visibleRightAnkle": 253,
+              "freePalm": 242,
+              "scope": "source alpha support only; not anatomy proof"
+            },
+            "r004PreviousLandmarksCandidate": {
+              "visibleRightAnkle": [
+                155,
+                215
+              ],
+              "freePalm": [
+                115,
+                185
+              ]
+            },
+            "landmarkCandidateRevision": "R005",
+            "landmarkMeasurementUncertaintyPxCandidate": {
+              "visibleRightAnkle": 3,
+              "freePalm": 3
+            },
+            "previousFreeHandR005": [
+              115,
+              180
+            ]
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_ANTICIPATE_F01_CANDIDATE_R001",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                145,
+                137
+              ],
+              "chest": [
+                145,
+                155
+              ],
+              "waist": [
+                141,
+                174
+              ],
+              "freeHand": [
+                119,
+                127
+              ],
+              "visibleRightAnkle": [
+                154,
+                217
+              ],
+              "face": [
+                147,
+                115
+              ],
+              "bookPalm": [
+                192,
+                153
+              ],
+              "freePalm": [
+                119,
+                104
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  147,
+                  115
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_ANTICIPATE_F01_CANDIDATE_R001.png",
+            "sourceSHA256": "7d8969b1b144e1a6d0fb763690287fa8e74689189f14f47b52c834c02d43ba8e",
+            "measurementStatus": "R006_SOURCE_WRIST_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "anticipate",
+            "sourceEvidenceRevision": "R002",
+            "sourceFrameIndex": 0,
+            "landmarkVisibility": {
+              "visibleRightAnkle": "visible",
+              "freePalm": "visible",
+              "freeHand": "visible"
+            },
+            "gear_overrides_candidate": {
+              "EQ_BODY_03": {
+                "height": 0.09,
+                "offset_px": [
+                  0,
+                  3
+                ],
+                "fitStatus": "UNAPPROVED_SIZE_AND_OFFSET_CANDIDATE",
+                "reason": "R002 held-frame review found default body detail height reaches toward mouth; preserve measured neck anchor and reduce height, then lower 3 px."
+              },
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              }
+            },
+            "candidateMeasurementNotes": {
+              "visibleRightAnkle": "R005 rechecked against this exact 256x256 source frame on 8px coordinate grid; point placed on the character-right boot cuff/ankle transition (visual anatomy review, alpha used only as support check).",
+              "freePalm": "R005 rechecked against this exact source frame; point is the visible palm/knuckle center of the free/casting hand, distinct from the preserved book-holding glove freeHand anchor. Raised-hand anticipate poses follow the raised palm.",
+              "freeHand": "R006 off-glob candidate: point moved from palm/finger center to the sleeve-to-hand wrist/cuff junction on this exact source frame. Independently inspect anatomy and held-frame fit; no runtime approval. R005 source path/hash/body ID and all other landmarks are preserved."
+            },
+            "candidatePointAlphaQA": {
+              "visibleRightAnkle": 250,
+              "freePalm": 253,
+              "scope": "source alpha support only; not anatomy proof"
+            },
+            "r004PreviousLandmarksCandidate": {
+              "visibleRightAnkle": [
+                154,
+                214
+              ],
+              "freePalm": [
+                119,
+                104
+              ]
+            },
+            "landmarkCandidateRevision": "R005",
+            "landmarkMeasurementUncertaintyPxCandidate": {
+              "visibleRightAnkle": 3,
+              "freePalm": 3
+            },
+            "previousFreeHandR005": [
+              119,
+              110
+            ]
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_ANTICIPATE_F02_CANDIDATE_R001",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                145,
+                139
+              ],
+              "chest": [
+                143,
+                153
+              ],
+              "waist": [
+                140,
+                173
+              ],
+              "freeHand": [
+                143,
+                162
+              ],
+              "visibleRightAnkle": [
+                154,
+                217
+              ],
+              "face": [
+                147,
+                115
+              ],
+              "bookPalm": [
+                191,
+                154
+              ],
+              "freePalm": [
+                197,
+                156
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  147,
+                  115
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_ANTICIPATE_F02_CANDIDATE_R001.png",
+            "sourceSHA256": "9448769dd8eee397ae367b27a8351e121c7b0acd3b990547bb15f7b2fb835b47",
+            "measurementStatus": "R006_SOURCE_WRIST_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "anticipate",
+            "sourceEvidenceRevision": "R002",
+            "sourceFrameIndex": 1,
+            "landmarkVisibility": {
+              "visibleRightAnkle": "visible",
+              "freePalm": "visible",
+              "freeHand": "visible"
+            },
+            "gear_overrides_candidate": {
+              "EQ_BODY_03": {
+                "height": 0.09,
+                "offset_px": [
+                  0,
+                  3
+                ],
+                "fitStatus": "UNAPPROVED_SIZE_AND_OFFSET_CANDIDATE",
+                "reason": "R002 held-frame review found default body detail height reaches toward mouth; preserve measured neck anchor and reduce height, then lower 3 px."
+              },
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              }
+            },
+            "candidateMeasurementNotes": {
+              "visibleRightAnkle": "R005 rechecked against this exact 256x256 source frame on 8px coordinate grid; point placed on the character-right boot cuff/ankle transition (visual anatomy review, alpha used only as support check).",
+              "freePalm": "R005 rechecked against this exact source frame; point is the visible palm/knuckle center of the free/casting hand, distinct from the preserved book-holding glove freeHand anchor. Raised-hand anticipate poses follow the raised palm.",
+              "freeHand": "R006 off-glob candidate: point moved from palm/finger center to the sleeve-to-hand wrist/cuff junction on this exact source frame. Independently inspect anatomy and held-frame fit; no runtime approval. R005 source path/hash/body ID and all other landmarks are preserved."
+            },
+            "candidatePointAlphaQA": {
+              "visibleRightAnkle": 252,
+              "freePalm": 251,
+              "scope": "source alpha support only; not anatomy proof"
+            },
+            "r004PreviousLandmarksCandidate": {
+              "visibleRightAnkle": [
+                153,
+                214
+              ],
+              "freePalm": [
+                143,
+                170
+              ]
+            },
+            "landmarkCandidateRevision": "R005",
+            "landmarkMeasurementUncertaintyPxCandidate": {
+              "visibleRightAnkle": 3,
+              "freePalm": 3
+            },
+            "previousFreeHandR005": [
+              143,
+              165
+            ]
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_ANTICIPATE_F03_CANDIDATE_R001",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                145,
+                140
+              ],
+              "chest": [
+                143,
+                158
+              ],
+              "waist": [
+                141,
+                176
+              ],
+              "freeHand": [
+                119,
+                151
+              ],
+              "visibleRightAnkle": [
+                158,
+                218
+              ],
+              "face": [
+                145,
+                117
+              ],
+              "bookPalm": [
+                194,
+                156
+              ],
+              "freePalm": [
+                119,
+                136
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  145,
+                  117
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_ANTICIPATE_F03_CANDIDATE_R001.png",
+            "sourceSHA256": "628b3acc42873d27f8b9eec634d93ea47431eb8dbbd89bebe9b182030e398101",
+            "measurementStatus": "R006_SOURCE_WRIST_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "anticipate",
+            "sourceEvidenceRevision": "R002",
+            "sourceFrameIndex": 2,
+            "landmarkVisibility": {
+              "visibleRightAnkle": "visible",
+              "freePalm": "visible",
+              "freeHand": "visible"
+            },
+            "gear_overrides_candidate": {
+              "EQ_BODY_03": {
+                "height": 0.09,
+                "offset_px": [
+                  0,
+                  3
+                ],
+                "fitStatus": "UNAPPROVED_SIZE_AND_OFFSET_CANDIDATE",
+                "reason": "R002 held-frame review found default body detail height reaches toward mouth; preserve measured neck anchor and reduce height, then lower 3 px."
+              },
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              }
+            },
+            "candidateMeasurementNotes": {
+              "visibleRightAnkle": "R005 rechecked against this exact 256x256 source frame on 8px coordinate grid; point placed on the character-right boot cuff/ankle transition (visual anatomy review, alpha used only as support check).",
+              "freePalm": "R005 rechecked against this exact source frame; point is the visible palm/knuckle center of the free/casting hand, distinct from the preserved book-holding glove freeHand anchor. Raised-hand anticipate poses follow the raised palm.",
+              "freeHand": "R006 off-glob candidate: point moved from palm/finger center to the sleeve-to-hand wrist/cuff junction on this exact source frame. Independently inspect anatomy and held-frame fit; no runtime approval. R005 source path/hash/body ID and all other landmarks are preserved."
+            },
+            "candidatePointAlphaQA": {
+              "visibleRightAnkle": 253,
+              "freePalm": 253,
+              "scope": "source alpha support only; not anatomy proof"
+            },
+            "r004PreviousLandmarksCandidate": {
+              "visibleRightAnkle": [
+                155,
+                215
+              ],
+              "freePalm": [
+                119,
+                136
+              ]
+            },
+            "landmarkCandidateRevision": "R005",
+            "landmarkMeasurementUncertaintyPxCandidate": {
+              "visibleRightAnkle": 3,
+              "freePalm": 3
+            },
+            "previousFreeHandR005": [
+              119,
+              141
+            ]
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_EXECUTE_F01_CANDIDATE_R001",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                142,
+                147
+              ],
+              "chest": [
+                143,
+                162
+              ],
+              "waist": [
+                141,
+                177
+              ],
+              "freeHand": [
+                186,
+                150
+              ],
+              "visibleRightAnkle": [
+                164,
+                217
+              ],
+              "face": [
+                141,
+                124
+              ],
+              "bookPalm": [
+                180,
+                169
+              ],
+              "freePalm": [
+                198,
+                148
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  141,
+                  124
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_EXECUTE_F01_CANDIDATE_R001.png",
+            "sourceSHA256": "312402efd809efb42c112870932028db46c1d151b85c3c3d8c4d6f06ab68db83",
+            "measurementStatus": "R006_SOURCE_WRIST_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "execute",
+            "sourceEvidenceRevision": "R002",
+            "sourceFrameIndex": 0,
+            "landmarkVisibility": {
+              "visibleRightAnkle": "visible",
+              "freePalm": "visible",
+              "freeHand": "visible"
+            },
+            "gear_overrides_candidate": {
+              "EQ_BODY_03": {
+                "height": 0.09,
+                "offset_px": [
+                  0,
+                  3
+                ],
+                "fitStatus": "UNAPPROVED_SIZE_AND_OFFSET_CANDIDATE",
+                "reason": "R002 held-frame review found default body detail height reaches toward mouth; preserve measured neck anchor and reduce height, then lower 3 px."
+              },
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              }
+            },
+            "candidateMeasurementNotes": {
+              "visibleRightAnkle": "R005 rechecked against this exact 256x256 source frame on 8px coordinate grid; point placed on the character-right boot cuff/ankle transition (visual anatomy review, alpha used only as support check).",
+              "freePalm": "R005 rechecked against this exact source frame; point is the visible palm/knuckle center of the free/casting hand, distinct from the preserved book-holding glove freeHand anchor. Raised-hand anticipate poses follow the raised palm.",
+              "freeHand": "R006 off-glob candidate: point moved from palm/finger center to the sleeve-to-hand wrist/cuff junction on this exact source frame. Independently inspect anatomy and held-frame fit; no runtime approval. R005 source path/hash/body ID and all other landmarks are preserved."
+            },
+            "candidatePointAlphaQA": {
+              "visibleRightAnkle": 247,
+              "freePalm": 250,
+              "scope": "source alpha support only; not anatomy proof"
+            },
+            "r004PreviousLandmarksCandidate": {
+              "visibleRightAnkle": [
+                161,
+                211
+              ],
+              "freePalm": [
+                208,
+                145
+              ]
+            },
+            "landmarkCandidateRevision": "R005",
+            "landmarkMeasurementUncertaintyPxCandidate": {
+              "visibleRightAnkle": 3,
+              "freePalm": 3
+            },
+            "previousFreeHandR005": [
+              202,
+              145
+            ]
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_EXECUTE_F02_CANDIDATE_R001",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                144,
+                147
+              ],
+              "chest": [
+                142,
+                160
+              ],
+              "waist": [
+                137,
+                173
+              ],
+              "freeHand": [
+                187,
+                146
+              ],
+              "visibleRightAnkle": [
+                166,
+                219
+              ],
+              "face": [
+                143,
+                124
+              ],
+              "bookPalm": [
+                185,
+                166
+              ],
+              "freePalm": [
+                197,
+                144
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  143,
+                  124
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_EXECUTE_F02_CANDIDATE_R001.png",
+            "sourceSHA256": "7d3d0011c4fba0c27c8f81e5d701e3b413af40cfdc08f204ad4c8a4998a70c8a",
+            "measurementStatus": "R006_SOURCE_WRIST_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "execute",
+            "sourceEvidenceRevision": "R002",
+            "sourceFrameIndex": 1,
+            "landmarkVisibility": {
+              "visibleRightAnkle": "visible",
+              "freePalm": "visible",
+              "freeHand": "visible"
+            },
+            "gear_overrides_candidate": {
+              "EQ_BODY_03": {
+                "height": 0.09,
+                "offset_px": [
+                  0,
+                  3
+                ],
+                "fitStatus": "UNAPPROVED_SIZE_AND_OFFSET_CANDIDATE",
+                "reason": "R002 held-frame review found default body detail height reaches toward mouth; preserve measured neck anchor and reduce height, then lower 3 px."
+              },
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              }
+            },
+            "candidateMeasurementNotes": {
+              "visibleRightAnkle": "R005 rechecked against this exact 256x256 source frame on 8px coordinate grid; point placed on the character-right boot cuff/ankle transition (visual anatomy review, alpha used only as support check).",
+              "freePalm": "R005 rechecked against this exact source frame; point is the visible palm/knuckle center of the free/casting hand, distinct from the preserved book-holding glove freeHand anchor. Raised-hand anticipate poses follow the raised palm.",
+              "freeHand": "R006 off-glob candidate: point moved from palm/finger center to the sleeve-to-hand wrist/cuff junction on this exact source frame. Independently inspect anatomy and held-frame fit; no runtime approval. R005 source path/hash/body ID and all other landmarks are preserved."
+            },
+            "candidatePointAlphaQA": {
+              "visibleRightAnkle": 253,
+              "freePalm": 252,
+              "scope": "source alpha support only; not anatomy proof"
+            },
+            "r004PreviousLandmarksCandidate": {
+              "visibleRightAnkle": [
+                162,
+                214
+              ],
+              "freePalm": [
+                207,
+                141
+              ]
+            },
+            "landmarkCandidateRevision": "R005",
+            "landmarkMeasurementUncertaintyPxCandidate": {
+              "visibleRightAnkle": 3,
+              "freePalm": 3
+            },
+            "previousFreeHandR005": [
+              200,
+              140
+            ]
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_EXECUTE_F03_CANDIDATE_R001",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                145,
+                150
+              ],
+              "chest": [
+                143,
+                167
+              ],
+              "waist": [
+                137,
+                182
+              ],
+              "freeHand": [
+                186,
+                150
+              ],
+              "visibleRightAnkle": [
+                164,
+                222
+              ],
+              "face": [
+                144,
+                130
+              ],
+              "bookPalm": [
+                152,
+                172
+              ],
+              "freePalm": [
+                198,
+                148
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  144,
+                  130
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_EXECUTE_F03_CANDIDATE_R001.png",
+            "sourceSHA256": "e431bf3fc7c0a9bcc21c817207840c2e1fa47969bb1609884e8fe9e4a96ebe13",
+            "measurementStatus": "R006_SOURCE_WRIST_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "execute",
+            "sourceEvidenceRevision": "R002",
+            "sourceFrameIndex": 2,
+            "landmarkVisibility": {
+              "visibleRightAnkle": "visible",
+              "freePalm": "visible",
+              "freeHand": "visible"
+            },
+            "gear_overrides_candidate": {
+              "EQ_BODY_03": {
+                "height": 0.09,
+                "offset_px": [
+                  0,
+                  3
+                ],
+                "fitStatus": "UNAPPROVED_SIZE_AND_OFFSET_CANDIDATE",
+                "reason": "R002 held-frame review found default body detail height reaches toward mouth; preserve measured neck anchor and reduce height, then lower 3 px."
+              },
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              }
+            },
+            "candidateMeasurementNotes": {
+              "visibleRightAnkle": "R005 rechecked against this exact 256x256 source frame on 8px coordinate grid; point placed on the character-right boot cuff/ankle transition (visual anatomy review, alpha used only as support check).",
+              "freePalm": "R005 rechecked against this exact source frame; point is the visible palm/knuckle center of the free/casting hand, distinct from the preserved book-holding glove freeHand anchor. Raised-hand anticipate poses follow the raised palm.",
+              "freeHand": "R006 off-glob candidate: point moved from palm/finger center to the sleeve-to-hand wrist/cuff junction on this exact source frame. Independently inspect anatomy and held-frame fit; no runtime approval. R005 source path/hash/body ID and all other landmarks are preserved."
+            },
+            "candidatePointAlphaQA": {
+              "visibleRightAnkle": 227,
+              "freePalm": 252,
+              "scope": "source alpha support only; not anatomy proof"
+            },
+            "r004PreviousLandmarksCandidate": {
+              "visibleRightAnkle": [
+                169,
+                214
+              ],
+              "freePalm": [
+                210,
+                145
+              ]
+            },
+            "landmarkCandidateRevision": "R005",
+            "landmarkMeasurementUncertaintyPxCandidate": {
+              "visibleRightAnkle": 3,
+              "freePalm": 3
+            },
+            "previousFreeHandR005": [
+              204,
+              145
+            ]
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_RECOVER_F01_CANDIDATE_R001",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                145,
+                142
+              ],
+              "chest": [
+                142,
+                157
+              ],
+              "waist": [
+                140,
+                173
+              ],
+              "freeHand": [
+                143,
+                151
+              ],
+              "visibleRightAnkle": [
+                165,
+                217
+              ],
+              "face": [
+                143,
+                119
+              ],
+              "bookPalm": [
+                197,
+                152
+              ],
+              "freePalm": [
+                197,
+                156
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  143,
+                  119
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_RECOVER_F01_CANDIDATE_R001.png",
+            "sourceSHA256": "b1a065af0cbbdeac565bbec4825e8c9a8d3fde5fe407330fe5c9170673579a64",
+            "measurementStatus": "R006_SOURCE_WRIST_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "recover",
+            "sourceEvidenceRevision": "R002",
+            "sourceFrameIndex": 0,
+            "landmarkVisibility": {
+              "visibleRightAnkle": "visible",
+              "freePalm": "visible",
+              "freeHand": "visible"
+            },
+            "gear_overrides_candidate": {
+              "EQ_BODY_03": {
+                "height": 0.09,
+                "offset_px": [
+                  0,
+                  3
+                ],
+                "fitStatus": "UNAPPROVED_SIZE_AND_OFFSET_CANDIDATE",
+                "reason": "R002 held-frame review found default body detail height reaches toward mouth; preserve measured neck anchor and reduce height, then lower 3 px."
+              },
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              }
+            },
+            "candidateMeasurementNotes": {
+              "visibleRightAnkle": "R005 rechecked against this exact 256x256 source frame on 8px coordinate grid; point placed on the character-right boot cuff/ankle transition (visual anatomy review, alpha used only as support check).",
+              "freePalm": "R005 rechecked against this exact source frame; point is the visible palm/knuckle center of the free/casting hand, distinct from the preserved book-holding glove freeHand anchor. Raised-hand anticipate poses follow the raised palm.",
+              "freeHand": "R006 off-glob candidate: point moved from palm/finger center to the sleeve-to-hand wrist/cuff junction on this exact source frame. Independently inspect anatomy and held-frame fit; no runtime approval. R005 source path/hash/body ID and all other landmarks are preserved."
+            },
+            "candidatePointAlphaQA": {
+              "visibleRightAnkle": 253,
+              "freePalm": 252,
+              "scope": "source alpha support only; not anatomy proof"
+            },
+            "r004PreviousLandmarksCandidate": {
+              "visibleRightAnkle": [
+                165,
+                214
+              ],
+              "freePalm": [
+                145,
+                162
+              ]
+            },
+            "landmarkCandidateRevision": "R005",
+            "landmarkMeasurementUncertaintyPxCandidate": {
+              "visibleRightAnkle": 3,
+              "freePalm": 3
+            },
+            "previousFreeHandR005": [
+              145,
+              157
+            ]
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_RECOVER_F02_CANDIDATE_R001",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                145,
+                141
+              ],
+              "chest": [
+                142,
+                157
+              ],
+              "waist": [
+                140,
+                174
+              ],
+              "freeHand": [
+                139,
+                152
+              ],
+              "visibleRightAnkle": [
+                164,
+                217
+              ],
+              "face": [
+                142,
+                119
+              ],
+              "bookPalm": [
+                196,
+                153
+              ],
+              "freePalm": [
+                197,
+                155
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  142,
+                  119
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_RECOVER_F02_CANDIDATE_R001.png",
+            "sourceSHA256": "36b46cf3fc3ce7bd78eaa0a120be2e9ee6234b6f68bfcc041b721dff05ade683",
+            "measurementStatus": "R006_SOURCE_WRIST_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "recover",
+            "sourceEvidenceRevision": "R002",
+            "sourceFrameIndex": 1,
+            "landmarkVisibility": {
+              "visibleRightAnkle": "visible",
+              "freePalm": "visible",
+              "freeHand": "visible"
+            },
+            "gear_overrides_candidate": {
+              "EQ_BODY_03": {
+                "height": 0.09,
+                "offset_px": [
+                  0,
+                  3
+                ],
+                "fitStatus": "UNAPPROVED_SIZE_AND_OFFSET_CANDIDATE",
+                "reason": "R002 held-frame review found default body detail height reaches toward mouth; preserve measured neck anchor and reduce height, then lower 3 px."
+              },
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              }
+            },
+            "candidateMeasurementNotes": {
+              "visibleRightAnkle": "R005 rechecked against this exact 256x256 source frame on 8px coordinate grid; point placed on the character-right boot cuff/ankle transition (visual anatomy review, alpha used only as support check).",
+              "freePalm": "R005 rechecked against this exact source frame; point is the visible palm/knuckle center of the free/casting hand, distinct from the preserved book-holding glove freeHand anchor. Raised-hand anticipate poses follow the raised palm.",
+              "freeHand": "R006 off-glob candidate: point moved from palm/finger center to the sleeve-to-hand wrist/cuff junction on this exact source frame. Independently inspect anatomy and held-frame fit; no runtime approval. R005 source path/hash/body ID and all other landmarks are preserved."
+            },
+            "candidatePointAlphaQA": {
+              "visibleRightAnkle": 253,
+              "freePalm": 252,
+              "scope": "source alpha support only; not anatomy proof"
+            },
+            "r004PreviousLandmarksCandidate": {
+              "visibleRightAnkle": [
+                164,
+                214
+              ],
+              "freePalm": [
+                142,
+                163
+              ]
+            },
+            "landmarkCandidateRevision": "R005",
+            "landmarkMeasurementUncertaintyPxCandidate": {
+              "visibleRightAnkle": 3,
+              "freePalm": 3
+            },
+            "previousFreeHandR005": [
+              142,
+              158
+            ]
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_RECOVER_F03_CANDIDATE_R001",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                146,
+                143
+              ],
+              "chest": [
+                142,
+                159
+              ],
+              "waist": [
+                141,
+                175
+              ],
+              "freeHand": [
+                144,
+                172
+              ],
+              "visibleRightAnkle": [
+                165,
+                217
+              ],
+              "face": [
+                144,
+                120
+              ],
+              "bookPalm": [
+                195,
+                153
+              ],
+              "freePalm": [
+                197,
+                154
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  144,
+                  120
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_RECOVER_F03_CANDIDATE_R001.png",
+            "sourceSHA256": "d2d04a9f5ab29aa0cd5d2a37b3a8b0b44946cbba61d9f2be51a9a0eb7197fee5",
+            "measurementStatus": "R006_SOURCE_WRIST_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "recover",
+            "sourceEvidenceRevision": "R002",
+            "sourceFrameIndex": 2,
+            "landmarkVisibility": {
+              "visibleRightAnkle": "visible",
+              "freePalm": "visible",
+              "freeHand": "visible"
+            },
+            "gear_overrides_candidate": {
+              "EQ_BODY_03": {
+                "height": 0.09,
+                "offset_px": [
+                  0,
+                  3
+                ],
+                "fitStatus": "UNAPPROVED_SIZE_AND_OFFSET_CANDIDATE",
+                "reason": "R002 held-frame review found default body detail height reaches toward mouth; preserve measured neck anchor and reduce height, then lower 3 px."
+              },
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              }
+            },
+            "candidateMeasurementNotes": {
+              "visibleRightAnkle": "R005 rechecked against this exact 256x256 source frame on 8px coordinate grid; point placed on the character-right boot cuff/ankle transition (visual anatomy review, alpha used only as support check).",
+              "freePalm": "R005 rechecked against this exact source frame; point is the visible palm/knuckle center of the free/casting hand, distinct from the preserved book-holding glove freeHand anchor. Raised-hand anticipate poses follow the raised palm.",
+              "freeHand": "R006 off-glob candidate: point moved from palm/finger center to the sleeve-to-hand wrist/cuff junction on this exact source frame. Independently inspect anatomy and held-frame fit; no runtime approval. R005 source path/hash/body ID and all other landmarks are preserved."
+            },
+            "candidatePointAlphaQA": {
+              "visibleRightAnkle": 252,
+              "freePalm": 251,
+              "scope": "source alpha support only; not anatomy proof"
+            },
+            "r004PreviousLandmarksCandidate": {
+              "visibleRightAnkle": [
+                162,
+                214
+              ],
+              "freePalm": [
+                155,
+                178
+              ]
+            },
+            "landmarkCandidateRevision": "R005",
+            "landmarkMeasurementUncertaintyPxCandidate": {
+              "visibleRightAnkle": 3,
+              "freePalm": 3
+            },
+            "previousFreeHandR005": [
+              155,
+              173
+            ]
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_IDLE_F01_CANDIDATE_R001",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                144,
+                140
+              ],
+              "chest": [
+                141,
+                156
+              ],
+              "waist": [
+                142,
+                175
+              ],
+              "freeHand": [
+                109,
+                176
+              ],
+              "visibleRightAnkle": [
+                153,
+                217
+              ],
+              "face": [
+                143,
+                116
+              ],
+              "bookPalm": [
+                196,
+                155
+              ],
+              "freePalm": [
+                197,
+                156
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  143,
+                  116
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_IDLE_F01_CANDIDATE_R001.png",
+            "sourceSHA256": "8b1952ef2cfc3b785c9bb8d9c88a059f86692afb9cdf93155bdcb2b52697662b",
+            "measurementStatus": "R006_SOURCE_WRIST_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "idle",
+            "sourceEvidenceRevision": "R002",
+            "sourceFrameIndex": 0,
+            "landmarkVisibility": {
+              "visibleRightAnkle": "visible",
+              "freePalm": "visible",
+              "freeHand": "visible"
+            },
+            "gear_overrides_candidate": {
+              "EQ_BODY_03": {
+                "height": 0.09,
+                "offset_px": [
+                  0,
+                  3
+                ],
+                "fitStatus": "UNAPPROVED_SIZE_AND_OFFSET_CANDIDATE",
+                "reason": "R002 held-frame review found default body detail height reaches toward mouth; preserve measured neck anchor and reduce height, then lower 3 px."
+              },
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              }
+            },
+            "candidateMeasurementNotes": {
+              "visibleRightAnkle": "R005 rechecked against this exact 256x256 source frame on 8px coordinate grid; point placed on the character-right boot cuff/ankle transition (visual anatomy review, alpha used only as support check).",
+              "freePalm": "R005 rechecked against this exact source frame; point is the visible palm/knuckle center of the free/casting hand, distinct from the preserved book-holding glove freeHand anchor. Raised-hand anticipate poses follow the raised palm.",
+              "freeHand": "R006 off-glob candidate: point moved from palm/finger center to the sleeve-to-hand wrist/cuff junction on this exact source frame. Independently inspect anatomy and held-frame fit; no runtime approval. R005 source path/hash/body ID and all other landmarks are preserved."
+            },
+            "candidatePointAlphaQA": {
+              "visibleRightAnkle": 253,
+              "freePalm": 251,
+              "scope": "source alpha support only; not anatomy proof"
+            },
+            "r004PreviousLandmarksCandidate": {
+              "visibleRightAnkle": [
+                153,
+                217
+              ],
+              "freePalm": [
+                109,
+                190
+              ]
+            },
+            "landmarkCandidateRevision": "R005",
+            "landmarkMeasurementUncertaintyPxCandidate": {
+              "visibleRightAnkle": 3,
+              "freePalm": 3
+            },
+            "previousFreeHandR005": [
+              109,
+              185
+            ]
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_IDLE_F02_CANDIDATE_R001",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                144,
+                140
+              ],
+              "chest": [
+                142,
+                156
+              ],
+              "waist": [
+                141,
+                174
+              ],
+              "freeHand": [
+                143,
+                157
+              ],
+              "visibleRightAnkle": [
+                153,
+                217
+              ],
+              "face": [
+                143,
+                116
+              ],
+              "bookPalm": [
+                196,
+                154
+              ],
+              "freePalm": [
+                197,
+                156
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  143,
+                  116
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_IDLE_F02_CANDIDATE_R001.png",
+            "sourceSHA256": "71aca07cacdde418d8333fe596b2bbca104d96f4be9c6291c5955978d380025e",
+            "measurementStatus": "R006_SOURCE_WRIST_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "idle",
+            "sourceEvidenceRevision": "R002",
+            "sourceFrameIndex": 1,
+            "landmarkVisibility": {
+              "visibleRightAnkle": "visible",
+              "freePalm": "visible",
+              "freeHand": "visible"
+            },
+            "gear_overrides_candidate": {
+              "EQ_BODY_03": {
+                "height": 0.09,
+                "offset_px": [
+                  0,
+                  3
+                ],
+                "fitStatus": "UNAPPROVED_SIZE_AND_OFFSET_CANDIDATE",
+                "reason": "R002 held-frame review found default body detail height reaches toward mouth; preserve measured neck anchor and reduce height, then lower 3 px."
+              },
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              }
+            },
+            "candidateMeasurementNotes": {
+              "visibleRightAnkle": "R005 rechecked against this exact 256x256 source frame on 8px coordinate grid; point placed on the character-right boot cuff/ankle transition (visual anatomy review, alpha used only as support check).",
+              "freePalm": "R005 rechecked against this exact source frame; point is the visible palm/knuckle center of the free/casting hand, distinct from the preserved book-holding glove freeHand anchor. Raised-hand anticipate poses follow the raised palm.",
+              "freeHand": "R006 off-glob candidate: point moved from palm/finger center to the sleeve-to-hand wrist/cuff junction on this exact source frame. Independently inspect anatomy and held-frame fit; no runtime approval. R005 source path/hash/body ID and all other landmarks are preserved."
+            },
+            "candidatePointAlphaQA": {
+              "visibleRightAnkle": 253,
+              "freePalm": 252,
+              "scope": "source alpha support only; not anatomy proof"
+            },
+            "r004PreviousLandmarksCandidate": {
+              "visibleRightAnkle": [
+                153,
+                217
+              ],
+              "freePalm": [
+                143,
+                170
+              ]
+            },
+            "landmarkCandidateRevision": "R005",
+            "landmarkMeasurementUncertaintyPxCandidate": {
+              "visibleRightAnkle": 3,
+              "freePalm": 3
+            },
+            "previousFreeHandR005": [
+              143,
+              165
+            ]
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_IDLE_F03_CANDIDATE_R001",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                146,
+                140
+              ],
+              "chest": [
+                144,
+                156
+              ],
+              "waist": [
+                143,
+                173
+              ],
+              "freeHand": [
+                107,
+                172
+              ],
+              "visibleRightAnkle": [
+                154,
+                216
+              ],
+              "face": [
+                144,
+                116
+              ],
+              "bookPalm": [
+                195,
+                155
+              ],
+              "freePalm": [
+                197,
+                156
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  144,
+                  116
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_IDLE_F03_CANDIDATE_R001.png",
+            "sourceSHA256": "6ac7075d0d6d0a331f93377687c4379aa9ea3395acc9255bfe2b503c14f68250",
+            "measurementStatus": "R006_SOURCE_WRIST_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "idle",
+            "sourceEvidenceRevision": "R002",
+            "sourceFrameIndex": 2,
+            "landmarkVisibility": {
+              "visibleRightAnkle": "visible",
+              "freePalm": "visible",
+              "freeHand": "visible"
+            },
+            "gear_overrides_candidate": {
+              "EQ_BODY_03": {
+                "height": 0.09,
+                "offset_px": [
+                  0,
+                  3
+                ],
+                "fitStatus": "UNAPPROVED_SIZE_AND_OFFSET_CANDIDATE",
+                "reason": "R002 held-frame review found default body detail height reaches toward mouth; preserve measured neck anchor and reduce height, then lower 3 px."
+              },
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              }
+            },
+            "candidateMeasurementNotes": {
+              "visibleRightAnkle": "R005 rechecked against this exact 256x256 source frame on 8px coordinate grid; point placed on the character-right boot cuff/ankle transition (visual anatomy review, alpha used only as support check).",
+              "freePalm": "R005 rechecked against this exact source frame; point is the visible palm/knuckle center of the free/casting hand, distinct from the preserved book-holding glove freeHand anchor. Raised-hand anticipate poses follow the raised palm.",
+              "freeHand": "R006 off-glob candidate: point moved from palm/finger center to the sleeve-to-hand wrist/cuff junction on this exact source frame. Independently inspect anatomy and held-frame fit; no runtime approval. R005 source path/hash/body ID and all other landmarks are preserved."
+            },
+            "candidatePointAlphaQA": {
+              "visibleRightAnkle": 252,
+              "freePalm": 250,
+              "scope": "source alpha support only; not anatomy proof"
+            },
+            "r004PreviousLandmarksCandidate": {
+              "visibleRightAnkle": [
+                154,
+                216
+              ],
+              "freePalm": [
+                107,
+                186
+              ]
+            },
+            "landmarkCandidateRevision": "R005",
+            "landmarkMeasurementUncertaintyPxCandidate": {
+              "visibleRightAnkle": 3,
+              "freePalm": 3
+            },
+            "previousFreeHandR005": [
+              107,
+              181
+            ]
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_HIT_F01_CANDIDATE_R001",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                143,
+                140
+              ],
+              "chest": [
+                140,
+                156
+              ],
+              "waist": [
+                137,
+                174
+              ],
+              "freeHand": [
+                139,
+                152
+              ],
+              "visibleRightAnkle": [
+                157,
+                216
+              ],
+              "face": [
+                141,
+                118
+              ],
+              "bookPalm": [
+                199,
+                149
+              ],
+              "freePalm": [
+                197,
+                156
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  141,
+                  118
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_HIT_F01_CANDIDATE_R001.png",
+            "sourceSHA256": "86d31984923b247c9ce41d5b1368f2347abf487eb77d4dc7df21734ea753676f",
+            "measurementStatus": "R006_SOURCE_WRIST_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "hit",
+            "sourceEvidenceRevision": "R002",
+            "sourceFrameIndex": 0,
+            "landmarkVisibility": {
+              "visibleRightAnkle": "visible",
+              "freePalm": "visible",
+              "freeHand": "visible"
+            },
+            "gear_overrides_candidate": {
+              "EQ_BODY_03": {
+                "height": 0.09,
+                "offset_px": [
+                  0,
+                  3
+                ],
+                "fitStatus": "UNAPPROVED_SIZE_AND_OFFSET_CANDIDATE",
+                "reason": "R002 held-frame review found default body detail height reaches toward mouth; preserve measured neck anchor and reduce height, then lower 3 px."
+              },
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              }
+            },
+            "candidateMeasurementNotes": {
+              "visibleRightAnkle": "R005 rechecked against this exact 256x256 source frame on 8px coordinate grid; point placed on the character-right boot cuff/ankle transition (visual anatomy review, alpha used only as support check).",
+              "freePalm": "R005 rechecked against this exact source frame; point is the visible palm/knuckle center of the free/casting hand, distinct from the preserved book-holding glove freeHand anchor. Raised-hand anticipate poses follow the raised palm.",
+              "freeHand": "R006 off-glob candidate: point moved from palm/finger center to the sleeve-to-hand wrist/cuff junction on this exact source frame. Independently inspect anatomy and held-frame fit; no runtime approval. R005 source path/hash/body ID and all other landmarks are preserved."
+            },
+            "candidatePointAlphaQA": {
+              "visibleRightAnkle": 250,
+              "freePalm": 114,
+              "scope": "source alpha support only; not anatomy proof"
+            },
+            "r004PreviousLandmarksCandidate": {
+              "visibleRightAnkle": [
+                153,
+                216
+              ],
+              "freePalm": [
+                141,
+                165
+              ]
+            },
+            "landmarkCandidateRevision": "R005",
+            "landmarkMeasurementUncertaintyPxCandidate": {
+              "visibleRightAnkle": 3,
+              "freePalm": 3
+            },
+            "previousFreeHandR005": [
+              141,
+              160
+            ]
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_HIT_F02_CANDIDATE_R001",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                141,
+                140
+              ],
+              "chest": [
+                139,
+                157
+              ],
+              "waist": [
+                139,
+                174
+              ],
+              "freeHand": [
+                142,
+                148
+              ],
+              "visibleRightAnkle": [
+                158,
+                216
+              ],
+              "face": [
+                140,
+                118
+              ],
+              "bookPalm": [
+                197,
+                150
+              ],
+              "freePalm": [
+                197,
+                156
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  140,
+                  118
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_HIT_F02_CANDIDATE_R001.png",
+            "sourceSHA256": "a56adbd7b5c8b278d161b34c6d06c7bdf164fc26e178dbffd0533f397aa7add9",
+            "measurementStatus": "R006_SOURCE_WRIST_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "hit",
+            "sourceEvidenceRevision": "R002",
+            "sourceFrameIndex": 1,
+            "landmarkVisibility": {
+              "visibleRightAnkle": "visible",
+              "freePalm": "visible",
+              "freeHand": "visible"
+            },
+            "gear_overrides_candidate": {
+              "EQ_BODY_03": {
+                "height": 0.09,
+                "offset_px": [
+                  0,
+                  3
+                ],
+                "fitStatus": "UNAPPROVED_SIZE_AND_OFFSET_CANDIDATE",
+                "reason": "R002 held-frame review found default body detail height reaches toward mouth; preserve measured neck anchor and reduce height, then lower 3 px."
+              },
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              }
+            },
+            "candidateMeasurementNotes": {
+              "visibleRightAnkle": "R005 rechecked against this exact 256x256 source frame on 8px coordinate grid; point placed on the character-right boot cuff/ankle transition (visual anatomy review, alpha used only as support check).",
+              "freePalm": "R005 rechecked against this exact source frame; point is the visible palm/knuckle center of the free/casting hand, distinct from the preserved book-holding glove freeHand anchor. Raised-hand anticipate poses follow the raised palm.",
+              "freeHand": "R006 off-glob candidate: point moved from palm/finger center to the sleeve-to-hand wrist/cuff junction on this exact source frame. Independently inspect anatomy and held-frame fit; no runtime approval. R005 source path/hash/body ID and all other landmarks are preserved."
+            },
+            "candidatePointAlphaQA": {
+              "visibleRightAnkle": 239,
+              "freePalm": 252,
+              "scope": "source alpha support only; not anatomy proof"
+            },
+            "r004PreviousLandmarksCandidate": {
+              "visibleRightAnkle": [
+                153,
+                216
+              ],
+              "freePalm": [
+                142,
+                156
+              ]
+            },
+            "landmarkCandidateRevision": "R005",
+            "landmarkMeasurementUncertaintyPxCandidate": {
+              "visibleRightAnkle": 3,
+              "freePalm": 3
+            },
+            "previousFreeHandR005": [
+              142,
+              151
+            ]
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_HIT_F03_CANDIDATE_R001",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                149,
+                143
+              ],
+              "chest": [
+                147,
+                159
+              ],
+              "waist": [
+                148,
+                175
+              ],
+              "freeHand": [
+                130,
+                146
+              ],
+              "visibleRightAnkle": [
+                160,
+                216
+              ],
+              "face": [
+                147,
+                120
+              ],
+              "bookPalm": [
+                198,
+                154
+              ],
+              "freePalm": [
+                197,
+                156
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  147,
+                  120
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_HIT_F03_CANDIDATE_R001.png",
+            "sourceSHA256": "f247be9098a1bebd81eb149da352ec206d81716214dc2bbab8b241521a3685db",
+            "measurementStatus": "R006_SOURCE_WRIST_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "hit",
+            "sourceEvidenceRevision": "R002",
+            "sourceFrameIndex": 2,
+            "landmarkVisibility": {
+              "visibleRightAnkle": "visible",
+              "freePalm": "visible",
+              "freeHand": "visible"
+            },
+            "gear_overrides_candidate": {
+              "EQ_BODY_03": {
+                "height": 0.09,
+                "offset_px": [
+                  0,
+                  3
+                ],
+                "fitStatus": "UNAPPROVED_SIZE_AND_OFFSET_CANDIDATE",
+                "reason": "R002 held-frame review found default body detail height reaches toward mouth; preserve measured neck anchor and reduce height, then lower 3 px."
+              },
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              }
+            },
+            "candidateMeasurementNotes": {
+              "visibleRightAnkle": "R005 rechecked against this exact 256x256 source frame on 8px coordinate grid; point placed on the character-right boot cuff/ankle transition (visual anatomy review, alpha used only as support check).",
+              "freePalm": "R005 rechecked against this exact source frame; point is the visible palm/knuckle center of the free/casting hand, distinct from the preserved book-holding glove freeHand anchor. Raised-hand anticipate poses follow the raised palm.",
+              "freeHand": "R006 off-glob candidate: point moved from palm/finger center to the sleeve-to-hand wrist/cuff junction on this exact source frame. Independently inspect anatomy and held-frame fit; no runtime approval. R005 source path/hash/body ID and all other landmarks are preserved."
+            },
+            "candidatePointAlphaQA": {
+              "visibleRightAnkle": 249,
+              "freePalm": 251,
+              "scope": "source alpha support only; not anatomy proof"
+            },
+            "r004PreviousLandmarksCandidate": {
+              "visibleRightAnkle": [
+                160,
+                216
+              ],
+              "freePalm": [
+                130,
+                151
+              ]
+            },
+            "landmarkCandidateRevision": "R005",
+            "landmarkMeasurementUncertaintyPxCandidate": {
+              "visibleRightAnkle": 3,
+              "freePalm": 3
+            },
+            "previousFreeHandR005": [
+              132,
+              153
+            ]
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_RESOLVE_F01_CANDIDATE_R001",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                145,
+                140
+              ],
+              "chest": [
+                143,
+                156
+              ],
+              "waist": [
+                141,
+                174
+              ],
+              "freeHand": [
+                128,
+                150
+              ],
+              "visibleRightAnkle": [
+                153,
+                216
+              ],
+              "face": [
+                143,
+                116
+              ],
+              "bookPalm": [
+                197,
+                152
+              ],
+              "freePalm": [
+                197,
+                156
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  143,
+                  116
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_RESOLVE_F01_CANDIDATE_R001.png",
+            "sourceSHA256": "347b3c33f4fb0ba1aa06850c088ddd39ee1c6a0a64dc72a1e01881e4c725ec43",
+            "measurementStatus": "R006_SOURCE_WRIST_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "resolve",
+            "sourceEvidenceRevision": "R002",
+            "sourceFrameIndex": 0,
+            "landmarkVisibility": {
+              "visibleRightAnkle": "visible",
+              "freePalm": "visible",
+              "freeHand": "visible"
+            },
+            "gear_overrides_candidate": {
+              "EQ_BODY_03": {
+                "height": 0.09,
+                "offset_px": [
+                  0,
+                  3
+                ],
+                "fitStatus": "UNAPPROVED_SIZE_AND_OFFSET_CANDIDATE",
+                "reason": "R002 held-frame review found default body detail height reaches toward mouth; preserve measured neck anchor and reduce height, then lower 3 px."
+              },
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              }
+            },
+            "candidateMeasurementNotes": {
+              "visibleRightAnkle": "R005 rechecked against this exact 256x256 source frame on 8px coordinate grid; point placed on the character-right boot cuff/ankle transition (visual anatomy review, alpha used only as support check).",
+              "freePalm": "R005 rechecked against this exact source frame; point is the visible palm/knuckle center of the free/casting hand, distinct from the preserved book-holding glove freeHand anchor. Raised-hand anticipate poses follow the raised palm.",
+              "freeHand": "R006 off-glob candidate: point moved from palm/finger center to the sleeve-to-hand wrist/cuff junction on this exact source frame. Independently inspect anatomy and held-frame fit; no runtime approval. R005 source path/hash/body ID and all other landmarks are preserved."
+            },
+            "candidatePointAlphaQA": {
+              "visibleRightAnkle": 253,
+              "freePalm": 253,
+              "scope": "source alpha support only; not anatomy proof"
+            },
+            "r004PreviousLandmarksCandidate": {
+              "visibleRightAnkle": [
+                153,
+                216
+              ],
+              "freePalm": [
+                128,
+                153
+              ]
+            },
+            "landmarkCandidateRevision": "R005",
+            "landmarkMeasurementUncertaintyPxCandidate": {
+              "visibleRightAnkle": 3,
+              "freePalm": 3
+            },
+            "previousFreeHandR005": [
+              129,
+              156
+            ]
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_RESOLVE_F02_CANDIDATE_R001",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                145,
+                140
+              ],
+              "chest": [
+                143,
+                156
+              ],
+              "waist": [
+                141,
+                174
+              ],
+              "freeHand": [
+                130,
+                149
+              ],
+              "visibleRightAnkle": [
+                153,
+                216
+              ],
+              "face": [
+                143,
+                116
+              ],
+              "bookPalm": [
+                195,
+                153
+              ],
+              "freePalm": [
+                197,
+                156
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  143,
+                  116
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_RESOLVE_F02_CANDIDATE_R001.png",
+            "sourceSHA256": "c671d9556a19e3cb5df0965361b5c76b3e47c7dc805d615017993ba1d539ad5e",
+            "measurementStatus": "R006_SOURCE_WRIST_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "resolve",
+            "sourceEvidenceRevision": "R002",
+            "sourceFrameIndex": 1,
+            "landmarkVisibility": {
+              "visibleRightAnkle": "visible",
+              "freePalm": "visible",
+              "freeHand": "visible"
+            },
+            "gear_overrides_candidate": {
+              "EQ_BODY_03": {
+                "height": 0.09,
+                "offset_px": [
+                  0,
+                  3
+                ],
+                "fitStatus": "UNAPPROVED_SIZE_AND_OFFSET_CANDIDATE",
+                "reason": "R002 held-frame review found default body detail height reaches toward mouth; preserve measured neck anchor and reduce height, then lower 3 px."
+              },
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              }
+            },
+            "candidateMeasurementNotes": {
+              "visibleRightAnkle": "R005 rechecked against this exact 256x256 source frame on 8px coordinate grid; point placed on the character-right boot cuff/ankle transition (visual anatomy review, alpha used only as support check).",
+              "freePalm": "R005 rechecked against this exact source frame; point is the visible palm/knuckle center of the free/casting hand, distinct from the preserved book-holding glove freeHand anchor. Raised-hand anticipate poses follow the raised palm.",
+              "freeHand": "R006 off-glob candidate: point moved from palm/finger center to the sleeve-to-hand wrist/cuff junction on this exact source frame. Independently inspect anatomy and held-frame fit; no runtime approval. R005 source path/hash/body ID and all other landmarks are preserved."
+            },
+            "candidatePointAlphaQA": {
+              "visibleRightAnkle": 253,
+              "freePalm": 252,
+              "scope": "source alpha support only; not anatomy proof"
+            },
+            "r004PreviousLandmarksCandidate": {
+              "visibleRightAnkle": [
+                153,
+                216
+              ],
+              "freePalm": [
+                132,
+                162
+              ]
+            },
+            "landmarkCandidateRevision": "R005",
+            "landmarkMeasurementUncertaintyPxCandidate": {
+              "visibleRightAnkle": 3,
+              "freePalm": 3
+            },
+            "previousFreeHandR005": [
+              132,
+              156
+            ]
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_RESOLVE_F03_CANDIDATE_R001",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                145,
+                143
+              ],
+              "chest": [
+                143,
+                158
+              ],
+              "waist": [
+                142,
+                175
+              ],
+              "freeHand": [
+                118,
+                164
+              ],
+              "visibleRightAnkle": [
+                153,
+                216
+              ],
+              "face": [
+                143,
+                120
+              ],
+              "bookPalm": [
+                198,
+                154
+              ],
+              "freePalm": [
+                197,
+                156
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  143,
+                  120
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_RESOLVE_F03_CANDIDATE_R001.png",
+            "sourceSHA256": "607ec7c00c36e076599d79424631e80e8d6ebacaea87129c4449cbcabe97c097",
+            "measurementStatus": "R006_SOURCE_WRIST_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "resolve",
+            "sourceEvidenceRevision": "R002",
+            "sourceFrameIndex": 2,
+            "landmarkVisibility": {
+              "visibleRightAnkle": "visible",
+              "freePalm": "visible",
+              "freeHand": "visible"
+            },
+            "gear_overrides_candidate": {
+              "EQ_BODY_03": {
+                "height": 0.09,
+                "offset_px": [
+                  0,
+                  3
+                ],
+                "fitStatus": "UNAPPROVED_SIZE_AND_OFFSET_CANDIDATE",
+                "reason": "R002 held-frame review found default body detail height reaches toward mouth; preserve measured neck anchor and reduce height, then lower 3 px."
+              },
+              "EQ_FEET_01": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_02": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_FEET_03": {
+                "height": 0.08,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Reduce ankle detail from renderer default 0.13; source review found old point at toe/instep."
+              },
+              "EQ_RING_01": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_02": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              },
+              "EQ_RING_03": {
+                "height": 0.03,
+                "fitStatus": "UNAPPROVED_SIZE_CANDIDATE",
+                "reason": "Ring detail must be smaller than hand-cover and attach to distinct freePalm point."
+              }
+            },
+            "candidateMeasurementNotes": {
+              "visibleRightAnkle": "R005 rechecked against this exact 256x256 source frame on 8px coordinate grid; point placed on the character-right boot cuff/ankle transition (visual anatomy review, alpha used only as support check).",
+              "freePalm": "R005 rechecked against this exact source frame; point is the visible palm/knuckle center of the free/casting hand, distinct from the preserved book-holding glove freeHand anchor. Raised-hand anticipate poses follow the raised palm.",
+              "freeHand": "R006 off-glob candidate: point moved from palm/finger center to the sleeve-to-hand wrist/cuff junction on this exact source frame. Independently inspect anatomy and held-frame fit; no runtime approval. R005 source path/hash/body ID and all other landmarks are preserved."
+            },
+            "candidatePointAlphaQA": {
+              "visibleRightAnkle": 250,
+              "freePalm": 251,
+              "scope": "source alpha support only; not anatomy proof"
+            },
+            "r004PreviousLandmarksCandidate": {
+              "visibleRightAnkle": [
+                153,
+                216
+              ],
+              "freePalm": [
+                106,
+                161
+              ]
+            },
+            "landmarkCandidateRevision": "R005",
+            "landmarkMeasurementUncertaintyPxCandidate": {
+              "visibleRightAnkle": 3,
+              "freePalm": 3
+            },
+            "previousFreeHandR005": [
+              108,
+              165
+            ]
+          }
+        ],
+        "measurementMethod": "Individual source-frame review at native 256x256 using coordinate-grid contacts; ankle follows the actual character-right boot cuff and freePalm follows the visible free/casting palm. Source alpha is a support-only cross-check and never used as anatomical proof.",
+        "sourceEvidence": [
+          "native/GeneratedArt/luna_book_motion_candidates_r001/LUNA_BOOK_MOTION_CANDIDATES_R001.json",
+          "native/Art/runtime_overlay_zzzzzzzz_equipment_frame_landmarks_candidate_r003.json",
+          "docs/production/current/art/luna_ankle_r001_review/luna_source_grid_contact_01_r001.png",
+          "docs/production/current/art/luna_ankle_r001_review/luna_source_grid_contact_02_r001.png",
+          "docs/production/current/art/luna_ankle_r001_review/luna_source_grid_contact_03_r001.png",
+          "docs/production/current/art/luna_ankle_r001_review/luna_hands_zoom_contact_01_r001.png",
+          "docs/production/current/art/luna_ankle_r001_review/luna_hands_zoom_contact_02_r001.png",
+          "docs/production/current/art/luna_ankle_r001_review/luna_hands_zoom_contact_03_r001.png"
+        ]
+      }
+    }
+  },
+  "supersedesCandidate": null,
+  "auditRevision": "R006_FREEHAND_WRIST_ONLY_OFF_GLOB",
+  "previousOverlaySHA256": "7bd7817163a746ec20609f302ab42a30e7ce45a0d4e7172cdc35765a9825cb1e"
+}

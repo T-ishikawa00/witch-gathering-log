@@ -1,0 +1,86 @@
+{
+  "status": "SCOPED_MOCK_AUTHORITY_TO_CORE_SAVE_PASS",
+  "checkpointBase": "83f5be4a86f62de0e0175336a005415e1156acb6",
+  "facts": {
+    "pythonInitial": {
+      "ran": 73,
+      "passed": 58,
+      "setupErrors": 15,
+      "cause": "macOS temp symlink ancestor; rejected before adapter use"
+    },
+    "pythonR002": {
+      "passed": 73,
+      "failed": 0,
+      "skipped": 0
+    },
+    "pythonR003AfterConnectionCloseRepair": {
+      "passed": 15,
+      "failed": 0,
+      "skipped": 0,
+      "resourceWarnings": 0
+    },
+    "swift": {
+      "passed": 24,
+      "failed": 0,
+      "skipped": 0,
+      "newImporterCases": 7,
+      "existingSaveRecoveryCases": 17
+    },
+    "crossLanguageFixture": {
+      "poolEntries": 33,
+      "draws": 3,
+      "ticketsRemaining": 1,
+      "seed": 37,
+      "qualityCoverage": [
+        "Q4",
+        "Q2",
+        "Q1"
+      ],
+      "selectionPurpose": "serialization test; not RNG distribution or progression evidence"
+    }
+  },
+  "evidence": [
+    {
+      "path": "docs/production/current/qa_drafts/gacha_local_integration_r453/root_execution_r001/PYTHON_RESULT.json",
+      "sha256": "9ab4ac383d4b787f6ac50eca4fc26533ed260b6b2e2e9d79bcbcf5dd8d73c487"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/gacha_local_integration_r453/root_execution_r001/PYTHON_R001_ERRATUM.json",
+      "sha256": "b5b675b628a0bf1cc6a7827002bc4e26a10602ad94356fc7da14f3a0dae027de"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/gacha_local_integration_r453/root_execution_r001/PYTHON_RESULT_R002.json",
+      "sha256": "5e4cc63c7246675b9c6e1e4a132a2b137978527f9357a60a7ae642b064beeafe"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/gacha_local_integration_r453/root_execution_r001/PYTHON_RESULT_R003.json",
+      "sha256": "fa96be5e467b39e966c4e6cb5d9e0946ccfb6c1c232fb0da3f6e0be29cd8c721"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/gacha_local_integration_r453/root_execution_r001/SWIFT_RESULT.json",
+      "sha256": "45544534451a4a26386e910e0781da6082bf3b106c56d570d4e34f56158455d1"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/gacha_local_integration_r453/root_execution_r001/SWIFT_INPUTS.json",
+      "sha256": "8b521d2cacddd9933090338ea522fe0a209d30f2da0388afec6b4449dc0974e7"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/gacha_local_integration_r453/root_execution_r001/authority_fixture/RESULT.json",
+      "sha256": "f31a99a12c48b72d2d1106a28d6d9aa510a7e4b3336d9430b1fd6692b8b1e1bd"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/gacha_local_integration_r453/root_execution_r001/authority_fixture/delivery.json",
+      "sha256": "eb6600a352123c88b167eaeedc892b1a9d72cc0c2bf2c40351413061f7c2c75a"
+    }
+  ],
+  "scopeLimits": [
+    "Actual StoreKit transaction not used in R453; R454 integration remains active",
+    "Current-provider refund rejection is a test seam; host authority and game save are separate transactions",
+    "No production entitlement, official product/price/rate approval, real payment, Sandbox or physical device acceptance",
+    "First failed run and unmodified R003/R004/R005 snapshots retained"
+  ],
+  "source": {
+    "importerSHA256": "0e595275da5035eb9831878147e3e3ec84deb8565a6d1d18bfdc62367b96d890",
+    "testSHA256": "716f1a77be05d8f059196b0fa3037ccfdd3e5a0be34187c9c2927777177405eb"
+  }
+}

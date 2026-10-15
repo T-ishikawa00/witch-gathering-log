@@ -1,0 +1,437 @@
+{
+  "status": "PROPOSED_CATALOG_NOT_APPROVED",
+  "date": "2026-10-10",
+  "audience_axis": "no_spend/occasional_small/recurring_small/high_budget_scenario; NOT customer VIP",
+  "purpose_axis": [
+    "comfort",
+    "equipment",
+    "outfit",
+    "home",
+    "value"
+  ],
+  "products": [
+    {
+      "id": "AD_SKIP",
+      "name": "任意広告の永久省略",
+      "price_jpy": 980,
+      "price_status": "HYPOTHETICAL_NOT_APP_STORE_REGISTERED",
+      "tickets": 0,
+      "type_candidate": "non_consumable",
+      "purchase_limit": "once",
+      "cadence_days": 0,
+      "purposes": [
+        "comfort"
+      ],
+      "phase": "core_candidate",
+      "odds_modifier_bp": 0,
+      "stat_modifier_bp": 0,
+      "vip_requirement": false,
+      "scope": "same stored eligible R3 offer; same amount/count as verified ad; no extra tickets; manual claim; no repeat after same offer claimed"
+    },
+    {
+      "id": "STARTER",
+      "name": "初回お試し鑑定券",
+      "price_jpy": 160,
+      "price_status": "HYPOTHETICAL_NOT_APP_STORE_REGISTERED",
+      "tickets": 10,
+      "type_candidate": "consumable",
+      "purchase_limit": "once",
+      "cadence_days": 0,
+      "purposes": [
+        "equipment",
+        "value"
+      ],
+      "phase": "core_candidate",
+      "odds_modifier_bp": 0,
+      "stat_modifier_bp": 0,
+      "vip_requirement": false,
+      "available_after": "four joined + first normal forge craft + odds/guarantee preview",
+      "sale_deadline": null
+    },
+    {
+      "id": "VALUE30",
+      "name": "30日枠・鑑定券小包",
+      "price_jpy": 480,
+      "price_status": "HYPOTHETICAL_NOT_APP_STORE_REGISTERED",
+      "tickets": 20,
+      "type_candidate": "consumable",
+      "purchase_limit": "cooldown",
+      "cadence_days": 30,
+      "purposes": [
+        "equipment",
+        "value"
+      ],
+      "phase": "core_candidate",
+      "odds_modifier_bp": 0,
+      "stat_modifier_bp": 0,
+      "vip_requirement": false,
+      "available_after": "same as gacha",
+      "reset": "30*24h since last verified purchase, not timezone change"
+    },
+    {
+      "id": "DELIVERY30",
+      "name": "30日分の鑑定便",
+      "price_jpy": 650,
+      "price_status": "HYPOTHETICAL_NOT_APP_STORE_REGISTERED",
+      "tickets": 30,
+      "type_candidate": "type_to_confirm_before_submission",
+      "purchase_limit": "no_overlap",
+      "cadence_days": 30,
+      "purposes": [
+        "equipment",
+        "planned_spend"
+      ],
+      "phase": "later_candidate",
+      "odds_modifier_bp": 0,
+      "stat_modifier_bp": 0,
+      "vip_requirement": false,
+      "delivery": "first unit after 24h, then daily; all 30 earned after 720h independent of login; unclaimed earned balance never expires; no automatic renewal"
+    },
+    {
+      "id": "TICKET10",
+      "name": "10枚の鑑定券",
+      "price_jpy": 300,
+      "price_status": "HYPOTHETICAL_NOT_APP_STORE_REGISTERED",
+      "tickets": 10,
+      "type_candidate": "consumable",
+      "purchase_limit": "unlimited",
+      "cadence_days": 0,
+      "purposes": [
+        "equipment"
+      ],
+      "phase": "core_candidate",
+      "odds_modifier_bp": 0,
+      "stat_modifier_bp": 0,
+      "vip_requirement": false,
+      "no_volume_discount": true
+    },
+    {
+      "id": "TICKET50",
+      "name": "50枚の鑑定券",
+      "price_jpy": 1500,
+      "price_status": "HYPOTHETICAL_NOT_APP_STORE_REGISTERED",
+      "tickets": 50,
+      "type_candidate": "consumable",
+      "purchase_limit": "unlimited",
+      "cadence_days": 0,
+      "purposes": [
+        "equipment"
+      ],
+      "phase": "core_candidate",
+      "odds_modifier_bp": 0,
+      "stat_modifier_bp": 0,
+      "vip_requirement": false,
+      "no_volume_discount": true
+    },
+    {
+      "id": "TICKET200",
+      "name": "200枚の鑑定券",
+      "price_jpy": 6000,
+      "price_status": "HYPOTHETICAL_NOT_APP_STORE_REGISTERED",
+      "tickets": 200,
+      "type_candidate": "consumable",
+      "purchase_limit": "unlimited",
+      "cadence_days": 0,
+      "purposes": [
+        "equipment"
+      ],
+      "phase": "core_candidate",
+      "odds_modifier_bp": 0,
+      "stat_modifier_bp": 0,
+      "vip_requirement": false,
+      "no_volume_discount": true
+    },
+    {
+      "id": "OUT_C_WITCH_MOON_01",
+      "name": "月灯りの採集服",
+      "price_jpy": 1480,
+      "price_status": "HYPOTHETICAL_NOT_APP_STORE_REGISTERED",
+      "tickets": 0,
+      "type_candidate": "non_consumable",
+      "purchase_limit": "once",
+      "cadence_days": 0,
+      "purposes": [
+        "outfit"
+      ],
+      "phase": "core_candidate",
+      "odds_modifier_bp": 0,
+      "stat_modifier_bp": 0,
+      "vip_requirement": false,
+      "requires": "approved home/detail/combat assets; try-on before purchase",
+      "power_score_if_separately_approved": 20
+    },
+    {
+      "id": "OUT_C_APPRENTICE_MOON_01",
+      "name": "星綴じの弟子服",
+      "price_jpy": 1480,
+      "price_status": "HYPOTHETICAL_NOT_APP_STORE_REGISTERED",
+      "tickets": 0,
+      "type_candidate": "non_consumable",
+      "purchase_limit": "once",
+      "cadence_days": 0,
+      "purposes": [
+        "outfit"
+      ],
+      "phase": "core_candidate",
+      "odds_modifier_bp": 0,
+      "stat_modifier_bp": 0,
+      "vip_requirement": false,
+      "requires": "approved home/detail/combat assets; try-on before purchase",
+      "power_score_if_separately_approved": 20
+    },
+    {
+      "id": "OUT_C_SMITH_MOON_01",
+      "name": "夜番の工房着",
+      "price_jpy": 1480,
+      "price_status": "HYPOTHETICAL_NOT_APP_STORE_REGISTERED",
+      "tickets": 0,
+      "type_candidate": "non_consumable",
+      "purchase_limit": "once",
+      "cadence_days": 0,
+      "purposes": [
+        "outfit"
+      ],
+      "phase": "core_candidate",
+      "odds_modifier_bp": 0,
+      "stat_modifier_bp": 0,
+      "vip_requirement": false,
+      "requires": "approved home/detail/combat assets; try-on before purchase",
+      "power_score_if_separately_approved": 20
+    },
+    {
+      "id": "OUT_C_FAMILIAR_MOON_01",
+      "name": "月結びのスカーフ装具",
+      "price_jpy": 980,
+      "price_status": "HYPOTHETICAL_NOT_APP_STORE_REGISTERED",
+      "tickets": 0,
+      "type_candidate": "non_consumable",
+      "purchase_limit": "once",
+      "cadence_days": 0,
+      "purposes": [
+        "outfit"
+      ],
+      "phase": "core_candidate",
+      "odds_modifier_bp": 0,
+      "stat_modifier_bp": 0,
+      "vip_requirement": false,
+      "requires": "approved home/detail/combat assets; try-on before purchase",
+      "power_score_if_separately_approved": 20
+    },
+    {
+      "id": "FUR_MOON_DESK",
+      "name": "作業机",
+      "price_jpy": 480,
+      "price_status": "HYPOTHETICAL_NOT_APP_STORE_REGISTERED",
+      "tickets": 0,
+      "type_candidate": "non_consumable",
+      "purchase_limit": "once",
+      "cadence_days": 0,
+      "purposes": [
+        "home"
+      ],
+      "phase": "core_candidate",
+      "odds_modifier_bp": 0,
+      "stat_modifier_bp": 0,
+      "vip_requirement": false,
+      "requires": "approved layered asset, slot/anchor/occlusion/interaction",
+      "power_score_if_separately_approved": 2
+    },
+    {
+      "id": "FUR_MOON_DESK_SEAT",
+      "name": "机の椅子",
+      "price_jpy": 320,
+      "price_status": "HYPOTHETICAL_NOT_APP_STORE_REGISTERED",
+      "tickets": 0,
+      "type_candidate": "non_consumable",
+      "purchase_limit": "once",
+      "cadence_days": 0,
+      "purposes": [
+        "home"
+      ],
+      "phase": "core_candidate",
+      "odds_modifier_bp": 0,
+      "stat_modifier_bp": 0,
+      "vip_requirement": false,
+      "requires": "approved layered asset, slot/anchor/occlusion/interaction",
+      "power_score_if_separately_approved": 2
+    },
+    {
+      "id": "FUR_MOON_HEARTH",
+      "name": "暖炉まわり",
+      "price_jpy": 480,
+      "price_status": "HYPOTHETICAL_NOT_APP_STORE_REGISTERED",
+      "tickets": 0,
+      "type_candidate": "non_consumable",
+      "purchase_limit": "once",
+      "cadence_days": 0,
+      "purposes": [
+        "home"
+      ],
+      "phase": "core_candidate",
+      "odds_modifier_bp": 0,
+      "stat_modifier_bp": 0,
+      "vip_requirement": false,
+      "requires": "approved layered asset, slot/anchor/occlusion/interaction",
+      "power_score_if_separately_approved": 2
+    },
+    {
+      "id": "FUR_MOON_SOFA",
+      "name": "長椅子",
+      "price_jpy": 480,
+      "price_status": "HYPOTHETICAL_NOT_APP_STORE_REGISTERED",
+      "tickets": 0,
+      "type_candidate": "non_consumable",
+      "purchase_limit": "once",
+      "cadence_days": 0,
+      "purposes": [
+        "home"
+      ],
+      "phase": "core_candidate",
+      "odds_modifier_bp": 0,
+      "stat_modifier_bp": 0,
+      "vip_requirement": false,
+      "requires": "approved layered asset, slot/anchor/occlusion/interaction",
+      "power_score_if_separately_approved": 2
+    },
+    {
+      "id": "FUR_MOON_BOOKCASE",
+      "name": "本棚",
+      "price_jpy": 480,
+      "price_status": "HYPOTHETICAL_NOT_APP_STORE_REGISTERED",
+      "tickets": 0,
+      "type_candidate": "non_consumable",
+      "purchase_limit": "once",
+      "cadence_days": 0,
+      "purposes": [
+        "home"
+      ],
+      "phase": "core_candidate",
+      "odds_modifier_bp": 0,
+      "stat_modifier_bp": 0,
+      "vip_requirement": false,
+      "requires": "approved layered asset, slot/anchor/occlusion/interaction",
+      "power_score_if_separately_approved": 2
+    },
+    {
+      "id": "FUR_MOON_CURTAIN",
+      "name": "窓まわり",
+      "price_jpy": 320,
+      "price_status": "HYPOTHETICAL_NOT_APP_STORE_REGISTERED",
+      "tickets": 0,
+      "type_candidate": "non_consumable",
+      "purchase_limit": "once",
+      "cadence_days": 0,
+      "purposes": [
+        "home"
+      ],
+      "phase": "core_candidate",
+      "odds_modifier_bp": 0,
+      "stat_modifier_bp": 0,
+      "vip_requirement": false,
+      "requires": "approved layered asset, slot/anchor/occlusion/interaction",
+      "power_score_if_separately_approved": 2
+    },
+    {
+      "id": "FUR_MOON_RUG",
+      "name": "絨毯",
+      "price_jpy": 320,
+      "price_status": "HYPOTHETICAL_NOT_APP_STORE_REGISTERED",
+      "tickets": 0,
+      "type_candidate": "non_consumable",
+      "purchase_limit": "once",
+      "cadence_days": 0,
+      "purposes": [
+        "home"
+      ],
+      "phase": "core_candidate",
+      "odds_modifier_bp": 0,
+      "stat_modifier_bp": 0,
+      "vip_requirement": false,
+      "requires": "approved layered asset, slot/anchor/occlusion/interaction",
+      "power_score_if_separately_approved": 2
+    },
+    {
+      "id": "FUR_MOON_LIGHT",
+      "name": "照明",
+      "price_jpy": 320,
+      "price_status": "HYPOTHETICAL_NOT_APP_STORE_REGISTERED",
+      "tickets": 0,
+      "type_candidate": "non_consumable",
+      "purchase_limit": "once",
+      "cadence_days": 0,
+      "purposes": [
+        "home"
+      ],
+      "phase": "core_candidate",
+      "odds_modifier_bp": 0,
+      "stat_modifier_bp": 0,
+      "vip_requirement": false,
+      "requires": "approved layered asset, slot/anchor/occlusion/interaction",
+      "power_score_if_separately_approved": 2
+    },
+    {
+      "id": "FUR_MOON_PLANT",
+      "name": "植物・小飾り",
+      "price_jpy": 160,
+      "price_status": "HYPOTHETICAL_NOT_APP_STORE_REGISTERED",
+      "tickets": 0,
+      "type_candidate": "non_consumable",
+      "purchase_limit": "once",
+      "cadence_days": 0,
+      "purposes": [
+        "home"
+      ],
+      "phase": "core_candidate",
+      "odds_modifier_bp": 0,
+      "stat_modifier_bp": 0,
+      "vip_requirement": false,
+      "requires": "approved layered asset, slot/anchor/occlusion/interaction",
+      "power_score_if_separately_approved": 2
+    },
+    {
+      "id": "FUR_MOON_CAT_BED",
+      "name": "猫の寝床",
+      "price_jpy": 320,
+      "price_status": "HYPOTHETICAL_NOT_APP_STORE_REGISTERED",
+      "tickets": 0,
+      "type_candidate": "non_consumable",
+      "purchase_limit": "once",
+      "cadence_days": 0,
+      "purposes": [
+        "home"
+      ],
+      "phase": "core_candidate",
+      "odds_modifier_bp": 0,
+      "stat_modifier_bp": 0,
+      "vip_requirement": false,
+      "requires": "approved layered asset, slot/anchor/occlusion/interaction",
+      "power_score_if_separately_approved": 2
+    }
+  ],
+  "unchanged_for_comparison": {
+    "gacha_quality_bp": [
+      3500,
+      4000,
+      2000,
+      400,
+      100
+    ],
+    "free_daily": 5,
+    "top_pity": 100,
+    "mid_pity": 20,
+    "target_probability_bp": 5000,
+    "offtarget_LR_next_LR_target": true,
+    "natural_gear_per_24h": 48
+  },
+  "purchase_power": "No new purchase bonuses. Optional existing living score proposal separate from primary/ads: score cap100,3bp per score,each main-boss20. Not automatically approved.",
+  "hard_exclusions": [
+    "hidden spend-dependent odds",
+    "VIP-only combat stats",
+    "random cosmetics in equipment pool",
+    "expiring purchased vouchers",
+    "paid safety protections",
+    "forced ad to claim base rewards",
+    "auto-renew or stock countdown without explicit design"
+  ],
+  "local_database_or_StoreKit_implementation": false
+}

@@ -1,8 +1,8 @@
 """Local-only reference authority for Witch paid-draw consistency tests.
 
 This module intentionally has no HTTP server, Apple JWS verifier, production RNG,
-StoreKit wiring, or production product catalog. Every successful purchase path is
-an explicitly test-only mock path.
+StoreKit production wiring, or production product catalog. Successful purchase
+paths are explicitly test-only mocks or an isolated signed Sandbox rehearsal.
 """
 from __future__ import annotations
 
@@ -80,6 +80,91 @@ class MockVerifiedPurchase:
     app_account_token: str
     purchase_time: int
     verified_by: str = "EXPLICIT_TEST_MOCK"
+
+
+_SANDBOX_FACTORY_KEY = object()
+
+@dataclass(frozen=True, init=False)
+class SandboxVerifiedPurchaseR459:
+    environment: str
+    bundle_id: str
+    transaction_id: str
+    original_transaction_id: str
+    product_id: str
+    quantity: int
+    app_account_token: str
+    purchase_time: int
+    _capability: object
+
+    def __init__(self, environment, bundle_id, transaction_id, original_transaction_id, product_id,
+                 quantity, app_account_token, purchase_time, capability, *, _factory_key):
+        if _factory_key is not _SANDBOX_FACTORY_KEY:
+            raise TypeError("Sandbox verification records are issued only by the rehearsal adapter")
+        for name, value in locals().copy().items():
+            if name in {"self", "_factory_key"}: continue
+            object.__setattr__(self, "_capability" if name == "capability" else name, value)
+
+@dataclass(frozen=True, init=False)
+class SandboxVerifiedNotificationR459:
+    notification_id: str
+    event_kind: str
+    environment: str
+    bundle_id: str
+    transaction_id: str
+    original_transaction_id: str
+    product_id: str
+    quantity: int
+    app_account_token: str
+    purchase_time: int
+    _capability: object
+
+    def __init__(self, notification_id, event_kind, environment, bundle_id, transaction_id,
+                 original_transaction_id, product_id, quantity, app_account_token, purchase_time,
+                 capability, *, _factory_key):
+        if _factory_key is not _SANDBOX_FACTORY_KEY:
+            raise TypeError("Sandbox notification records are issued only by the rehearsal adapter")
+        values = locals().copy()
+        for name, value in values.items():
+            if name in {"self", "_factory_key"}: continue
+            object.__setattr__(self, "_capability" if name == "capability" else name, value)
+
+    def payload(self) -> dict[str, Any]:
+        return {
+            "notification_id": self.notification_id, "event_kind": self.event_kind,
+            "environment": self.environment, "bundle_id": self.bundle_id,
+            "transaction_id": self.transaction_id, "original_transaction_id": self.original_transaction_id,
+            "product_id": self.product_id, "quantity": self.quantity,
+            "app_account_token": self.app_account_token, "purchase_time": self.purchase_time,
+        }
+
+@dataclass(frozen=True)
+class MockNotificationDelivery:
+    """Only local fixtures; never an Apple signature-verification result."""
+    notification_id: str
+    event_kind: str
+    environment: str
+    bundle_id: str
+    transaction_id: str
+    original_transaction_id: str
+    product_id: str
+    quantity: int
+    app_account_token: str
+    purchase_time: int
+    fixture_marker: str = "EXPLICIT_TEST_MOCK_NOTIFICATION"
+
+    def payload(self) -> dict[str, Any]:
+        if self.fixture_marker != "EXPLICIT_TEST_MOCK_NOTIFICATION":
+            raise InvalidPurchase("notification fixture marker is required")
+        for field in ("notification_id", "environment", "bundle_id", "transaction_id",
+                      "original_transaction_id", "product_id", "app_account_token"):
+            value = getattr(self, field)
+            if not isinstance(value, str) or not value.strip():
+                raise InvalidPurchase(f"{field} must be a nonempty string")
+        if self.event_kind not in {"PURCHASE", "REFUND", "UNFINISHED", "CANCELLED", "PRODUCT_FAILURE"}:
+            raise InvalidPurchase("unsupported mock notification kind")
+        _bounded_int(self.quantity, minimum=1, maximum=2**31-1, label="notification quantity")
+        _bounded_int(self.purchase_time, minimum=0, maximum=2**63-1, label="notification purchase time")
+        return asdict(self)
 
 
 @dataclass(frozen=True)
@@ -168,6 +253,8 @@ def _identity(tx: MockVerifiedPurchase) -> str:
 
 
 def _validate_mock_transaction(tx: MockVerifiedPurchase) -> None:
+    if type(tx) is not MockVerifiedPurchase or tx.verified_by != "EXPLICIT_TEST_MOCK":
+        raise VerificationUnavailable("explicit test-only mock record is required")
     for field in ("environment","bundle_id","transaction_id","original_transaction_id","product_id","app_account_token"):
         value=getattr(tx,field)
         if not isinstance(value,str) or not value:
@@ -201,8 +288,26 @@ class PurchaseAuthority:
         self.product_specs = dict(product_specs)
         self.summon_pool = tuple(sorted(summon_pool))
         self.allow_test_mock_verifier = allow_test_mock_verifier
+        self._sandbox_capability = None
         self.clock = clock
         self._initialize()
+
+    def _bind_sandbox_rehearsal(self, factory_key: object) -> object:
+        db_path = Path(self.db_path)
+        root = db_path.parent
+        marker = root / "R459_LOCAL_REHEARSAL_ONLY"
+        try:
+            marker_ok = (root.name == "r459-sandbox-rehearsal" and not root.is_symlink()
+                and not db_path.is_symlink() and db_path.name == "authority.sqlite"
+                and marker.is_file() and not marker.is_symlink()
+                and marker.read_text(encoding="utf-8") == "NOT_AUTHORIZED_FOR_PRODUCTION\n"
+                and db_path.is_file() and root.resolve(strict=True) == root)
+        except (OSError, RuntimeError):
+            marker_ok = False
+        if factory_key is not _SANDBOX_FACTORY_KEY or self._sandbox_capability is not None or not marker_ok:
+            raise VerificationUnavailable("Sandbox authority must bind once to a marked, isolated rehearsal database")
+        self._sandbox_capability = object()
+        return self._sandbox_capability
 
     def _connect(self) -> sqlite3.Connection:
         con = sqlite3.connect(self.db_path, timeout=15.0, isolation_level=None)
@@ -216,7 +321,7 @@ class PurchaseAuthority:
         with closing(self._connect()) as db:
             version=db.execute("PRAGMA user_version").fetchone()[0]
             existing={r[0] for r in db.execute("SELECT name FROM sqlite_master WHERE type='table'") if r[0] != 'sqlite_sequence'}
-            if version not in (0,2) or (version == 0 and existing):
+            if version not in (0,2,3) or (version == 0 and existing):
                 raise AuthorityError("reference database schema mismatch; use a fresh isolated test database")
             db.execute("PRAGMA journal_mode=WAL")
             db.executescript("""
@@ -298,8 +403,17 @@ class PurchaseAuthority:
                 created_at INTEGER NOT NULL,
                 PRIMARY KEY(environment,bundle_id,transaction_id)
               );
+              CREATE TABLE IF NOT EXISTS notification_inbox(
+                notification_id TEXT PRIMARY KEY,
+                payload_sha256 TEXT NOT NULL,
+                payload_json TEXT NOT NULL,
+                account_id TEXT NOT NULL REFERENCES accounts(account_id),
+                outcome TEXT NOT NULL,
+                result_json TEXT NOT NULL,
+                received_at INTEGER NOT NULL
+              );
             """)
-            db.execute("PRAGMA user_version=2")
+            db.execute("PRAGMA user_version=3")
 
     def register_account(self, account_id: str, app_account_token: str) -> None:
         if not account_id or not app_account_token:
@@ -319,18 +433,43 @@ class PurchaseAuthority:
         raise VerificationUnavailable("Apple JWS verification adapter is not connected; transaction rejected")
 
     def purchase_and_draw_mock(
+        self, account_id: str, idempotency_key: str, tx: MockVerifiedPurchase, draw_count: int,
+        *, test_seed: int, fail_at: str | None = None,
+    ) -> DrawReceipt:
+        if type(tx) is not MockVerifiedPurchase or not self.allow_test_mock_verifier:
+            raise VerificationUnavailable("mock purchase ingestion is disabled")
+        return self._purchase_and_draw_verified(account_id, idempotency_key, tx, draw_count,
+            test_seed=test_seed, fail_at=fail_at)
+
+    def _purchase_and_draw_sandbox(self, account_id: str, idempotency_key: str,
+                                   tx: SandboxVerifiedPurchaseR459, draw_count: int, *,
+                                   test_seed: int, fail_at: str | None = None) -> DrawReceipt:
+        if type(tx) is not SandboxVerifiedPurchaseR459 or self._sandbox_capability is None or tx._capability is not self._sandbox_capability:
+            raise VerificationUnavailable("Sandbox verification record is not bound to this isolated authority")
+        return self._purchase_and_draw_verified(account_id, idempotency_key, tx, draw_count,
+                                                test_seed=test_seed, fail_at=fail_at)
+
+    def _purchase_and_draw_verified(
         self,
         account_id: str,
         idempotency_key: str,
-        tx: MockVerifiedPurchase,
+        tx: MockVerifiedPurchase | SandboxVerifiedPurchaseR459,
         draw_count: int,
         *,
         test_seed: int,
         fail_at: str | None = None,
     ) -> DrawReceipt:
-        if not self.allow_test_mock_verifier or tx.verified_by != "EXPLICIT_TEST_MOCK":
-            raise VerificationUnavailable("explicit test-only verifier injection is disabled")
-        _validate_mock_transaction(tx)
+        if type(tx) is MockVerifiedPurchase:
+            if not self.allow_test_mock_verifier:
+                raise VerificationUnavailable("explicit test-only verifier injection is disabled")
+            _validate_mock_transaction(tx)
+            allowed_environment = "Xcode"
+            verification_kind = "EXPLICIT_TEST_MOCK"
+        elif type(tx) is SandboxVerifiedPurchaseR459 and self._sandbox_capability is not None and tx._capability is self._sandbox_capability:
+            allowed_environment = "Sandbox"
+            verification_kind = "SANDBOX_SIGNATURE_CHECKED_NOT_AUTHORIZATION"
+        else:
+            raise VerificationUnavailable("unsupported verified transaction record")
         if not isinstance(idempotency_key,str) or not idempotency_key or len(idempotency_key) > 200:
             raise InvalidPurchase("idempotency key required")
         spec = self.product_specs.get(tx.product_id)
@@ -341,7 +480,7 @@ class PurchaseAuthority:
         identity = _identity(tx)
         if spec is None:
             raise InvalidPurchase("product is not in server whitelist")
-        if tx.bundle_id != self.bundle_id or tx.environment != "Xcode":
+        if tx.bundle_id != self.bundle_id or tx.environment != allowed_environment:
             raise InvalidPurchase("bundle/environment is not allowed by the test profile")
         if draw_count > tx.quantity * spec.tickets_per_unit:
             raise InvalidPurchase("draw count exceeds this verified purchase grant")
@@ -351,6 +490,8 @@ class PurchaseAuthority:
             "purchase_time": tx.purchase_time, "draw_count": draw_count,
             "pool": list(self.summon_pool), "rules": "UNAPPROVED_R3_CANDIDATE", "test_seed": test_seed,
         }
+        if verification_kind != "EXPLICIT_TEST_MOCK":
+            request["verification"] = verification_kind
         fingerprint = _digest(request)
         db = self._connect()
         try:
@@ -437,6 +578,7 @@ class PurchaseAuthority:
         count: int,
         *,
         test_seed: int,
+        expected_source_identity: tuple[str, str, str] | None = None,
         fail_at: str | None = None,
     ) -> DrawReceipt:
         """Spend already stored paid tickets; an operation UUID, not a purchase ID, owns the draw."""
@@ -448,6 +590,16 @@ class PurchaseAuthority:
         _bounded_int(test_seed, minimum=0, maximum=2**63-1, label="test seed")
         request = {"account_id":account_id,"operation":"balance_draw","count":count,
                    "pool":list(self.summon_pool),"rules":"UNAPPROVED_R3_CANDIDATE","test_seed":test_seed}
+        if expected_source_identity is not None:
+            if (not isinstance(expected_source_identity, tuple) or len(expected_source_identity) != 3
+                or any(not isinstance(value, str) or not value.strip() or value != value.strip()
+                       for value in expected_source_identity)):
+                raise InvalidPurchase("expected source identity must be a tuple of nonempty environment, bundle, and transaction strings")
+            if expected_source_identity[0] != "Xcode" or expected_source_identity[1] != self.bundle_id:
+                raise InvalidPurchase("expected source identity environment/bundle does not match this test authority")
+            # Keep legacy operation fingerprints byte-for-byte stable for callers
+            # that do not bind an expected source lot.
+            request["expected_source_identity"] = list(expected_source_identity)
         fingerprint=_digest(request)
         db=self._connect()
         try:
@@ -466,6 +618,17 @@ class PurchaseAuthority:
                 raise InsufficientPaidTickets("paid draws are blocked while refund debt remains")
             if account["ticket_balance"] < count:
                 raise InsufficientPaidTickets("insufficient paid ticket balance")
+            if expected_source_identity is not None:
+                first_lot = db.execute(
+                    "SELECT environment,bundle_id,transaction_id,tickets_remaining FROM purchases "
+                    "WHERE account_id=? AND status='verified' AND tickets_remaining>0 "
+                    "ORDER BY purchase_time,environment,bundle_id,transaction_id LIMIT 1",
+                    (account_id,),
+                ).fetchone()
+                actual_source = None if first_lot is None else (
+                    first_lot["environment"], first_lot["bundle_id"], first_lot["transaction_id"])
+                if actual_source != expected_source_identity or first_lot["tickets_remaining"] < count:
+                    raise InsufficientPaidTickets("expected FIFO source lot does not have enough remaining tickets")
             pity_before=json.loads(account["pity_json"])
             generated,pity_after=CandidateDrawEngine(self.summon_pool,test_seed).draw(count,pity_before)
             if fail_at == "after_rng": raise InjectedFailure(fail_at)
@@ -497,14 +660,30 @@ class PurchaseAuthority:
         finally: db.close()
 
     def refund_mock(self, account_id: str, tx: MockVerifiedPurchase, *, fail_at: str | None = None) -> dict[str, int]:
-        if not self.allow_test_mock_verifier or tx.verified_by != "EXPLICIT_TEST_MOCK":
-            raise VerificationUnavailable("explicit test-only verifier injection is disabled")
-        _validate_mock_transaction(tx)
+        if type(tx) is not MockVerifiedPurchase or not self.allow_test_mock_verifier:
+            raise VerificationUnavailable("mock refund ingestion is disabled")
+        return self._refund_verified(account_id, tx, fail_at=fail_at)
+
+    def _refund_sandbox(self, account_id: str, tx: SandboxVerifiedPurchaseR459, *, fail_at: str | None = None) -> dict[str, int]:
+        if type(tx) is not SandboxVerifiedPurchaseR459 or self._sandbox_capability is None or tx._capability is not self._sandbox_capability:
+            raise VerificationUnavailable("Sandbox verification record is not bound to this isolated authority")
+        return self._refund_verified(account_id, tx, fail_at=fail_at)
+
+    def _refund_verified(self, account_id: str, tx: MockVerifiedPurchase | SandboxVerifiedPurchaseR459, *, fail_at: str | None = None) -> dict[str, int]:
+        if type(tx) is MockVerifiedPurchase:
+            if not self.allow_test_mock_verifier:
+                raise VerificationUnavailable("explicit test-only verifier injection is disabled")
+            _validate_mock_transaction(tx)
+            allowed_environment = "Xcode"
+        elif type(tx) is SandboxVerifiedPurchaseR459 and self._sandbox_capability is not None and tx._capability is self._sandbox_capability:
+            allowed_environment = "Sandbox"
+        else:
+            raise VerificationUnavailable("unsupported verified refund record")
         spec=self.product_specs.get(tx.product_id)
         if spec is None: raise InvalidPurchase("refund product is not in server whitelist")
         _bounded_int(tx.quantity,minimum=1,maximum=spec.max_quantity,label="refund quantity")
         _bounded_int(tx.purchase_time,minimum=0,maximum=2**63-1,label="refund transaction timestamp")
-        if tx.bundle_id != self.bundle_id or tx.environment != "Xcode":
+        if tx.bundle_id != self.bundle_id or tx.environment != allowed_environment:
             raise InvalidPurchase("refund bundle/environment is not allowed by test profile")
         ident = (tx.environment,tx.bundle_id,tx.transaction_id)
         db=self._connect()
@@ -559,6 +738,202 @@ class PurchaseAuthority:
             except sqlite3.Error: pass
             raise
         finally: db.close()
+
+    def _notification_current_state(self, db: sqlite3.Connection, account_id: str, ident: tuple[str, str, str]) -> dict[str, Any]:
+        account = db.execute("SELECT ticket_balance,ticket_debt,revision FROM accounts WHERE account_id=?", (account_id,)).fetchone()
+        purchase = db.execute("SELECT * FROM purchases WHERE environment=? AND bundle_id=? AND transaction_id=?", ident).fetchone()
+        refund = db.execute("SELECT * FROM refunds WHERE environment=? AND bundle_id=? AND transaction_id=?", ident).fetchone()
+        if account is None:
+            raise InvalidPurchase("authenticated account is not registered")
+        if purchase is None and refund is None:
+            status = "not_found"
+        elif purchase is None:
+            status = "refund_tombstone"
+        elif purchase["status"] == "refunded":
+            status = "refunded"
+        elif purchase["tickets_remaining"] == 0 and purchase["tickets_spent"] > 0:
+            status = "consumed"
+        else:
+            status = "verified"
+        return {
+            "transaction_id": ident[2],
+            "transaction_status": status,
+            "purchase_status": purchase["status"] if purchase is not None else None,
+            "tickets_granted": purchase["tickets_granted"] if purchase is not None else 0,
+            "tickets_remaining": purchase["tickets_remaining"] if purchase is not None else 0,
+            "tickets_spent": purchase["tickets_spent"] if purchase is not None else 0,
+            "tickets_debt_offset": purchase["tickets_debt_offset"] if purchase is not None else 0,
+            "account_ticket_balance": account["ticket_balance"],
+            "account_ticket_debt": account["ticket_debt"],
+            "account_revision": account["revision"],
+            "production_entitlement_authorized": False,
+        }
+
+    @staticmethod
+    def _notification_response(notification_id: str, duplicate: bool, receipt: dict[str, Any], current: dict[str, Any]) -> dict[str, Any]:
+        return {
+            "notification_id": notification_id,
+            "delivery_status": "REPLAYED" if duplicate else "RECORDED",
+            "duplicate_notification": duplicate,
+            "delivery_receipt": receipt,
+            "current_transaction": current,
+            "production_entitlement_authorized": False,
+            "fixture_mutation": not duplicate,
+        }
+
+    def apply_notification_mock(
+        self, account_id: str, delivery: MockNotificationDelivery, *, fail_at: str | None = None
+    ) -> dict[str, Any]:
+        if type(delivery) is not MockNotificationDelivery or not self.allow_test_mock_verifier:
+            raise VerificationUnavailable("mock notification ingestion is disabled")
+        return self._apply_notification_payload(account_id, delivery, fail_at=fail_at)
+
+    def apply_notification_sandbox(
+        self, account_id: str, delivery: SandboxVerifiedNotificationR459, *, fail_at: str | None = None
+    ) -> dict[str, Any]:
+        if type(delivery) is not SandboxVerifiedNotificationR459 or self._sandbox_capability is None or delivery._capability is not self._sandbox_capability:
+            raise VerificationUnavailable("Sandbox notification record is not bound to this isolated authority")
+        return self._apply_notification_payload(account_id, delivery, fail_at=fail_at)
+
+    def _apply_notification_payload(self, account_id: str, delivery: MockNotificationDelivery | SandboxVerifiedNotificationR459, *, fail_at: str | None) -> dict[str, Any]:
+        """Atomically record a local mock notification and return its receipt separately from current state.
+
+        This method is isolated test infrastructure. A delivery receipt records what that event
+        did at its original commit time; current_transaction is freshly read on every response.
+        Neither result is a production entitlement or Apple verification result.
+        """
+        if type(delivery) is MockNotificationDelivery and self.allow_test_mock_verifier:
+            environment = "Xcode"
+        elif (type(delivery) is SandboxVerifiedNotificationR459 and self._sandbox_capability is not None
+              and delivery._capability is self._sandbox_capability):
+            environment = "Sandbox"
+        else:
+            raise VerificationUnavailable("notification record is not authorized for this isolated authority")
+        payload = delivery.payload()
+        if payload["bundle_id"] != self.bundle_id or payload["environment"] != environment:
+            raise InvalidPurchase("bundle/environment is not allowed by the isolated profile")
+        spec = self.product_specs.get(payload["product_id"])
+        if spec is None:
+            raise InvalidPurchase("notification product is not in server whitelist")
+        _bounded_int(payload["quantity"], minimum=1, maximum=spec.max_quantity, label="notification quantity")
+        encoded = _canonical(payload)
+        digest = hashlib.sha256(encoded.encode("utf-8")).hexdigest()
+        ident = (payload["environment"], payload["bundle_id"], payload["transaction_id"])
+        now = int(self.clock())
+        db = self._connect()
+        try:
+            db.execute("BEGIN IMMEDIATE")
+            account = db.execute("SELECT * FROM accounts WHERE account_id=?", (account_id,)).fetchone()
+            if account is None:
+                raise InvalidPurchase("authenticated account is not registered")
+            if account["app_account_token"] != payload["app_account_token"]:
+                raise InvalidPurchase("notification account token is bound to another account")
+            old = db.execute("SELECT payload_sha256,result_json,account_id FROM notification_inbox WHERE notification_id=?",
+                             (payload["notification_id"],)).fetchone()
+            if old:
+                if old["payload_sha256"] != digest:
+                    raise IdempotencyCollision("notification ID reused with different payload")
+                if old["account_id"] != account_id:
+                    raise InvalidPurchase("notification receipt belongs to another account")
+                historical_receipt = json.loads(old["result_json"])
+                current = self._notification_current_state(db, account_id, ident)
+                response = self._notification_response(payload["notification_id"], True, historical_receipt, current)
+                db.execute("COMMIT")
+                return response
+
+            kind = payload["event_kind"]
+            receipt: dict[str, Any] = {
+                "notification_id": payload["notification_id"],
+                "event_kind": kind,
+                "payload_sha256": digest,
+                "received_at": now,
+                "outcome": "PENDING",
+                "production_entitlement_authorized": False,
+            }
+            # Inbox delivery receipt and all mock domain changes commit or roll back together.
+            db.execute("INSERT INTO notification_inbox VALUES(?,?,?,?,?,?,?)",
+                       (payload["notification_id"], digest, encoded, account_id, "PENDING", "{}", now))
+            if fail_at == "after_notification_insert": raise InjectedFailure(fail_at)
+            row = db.execute("SELECT * FROM purchases WHERE environment=? AND bundle_id=? AND transaction_id=?", ident).fetchone()
+            tombstone = db.execute("SELECT * FROM refunds WHERE environment=? AND bundle_id=? AND transaction_id=?", ident).fetchone()
+            if kind in {"UNFINISHED", "CANCELLED", "PRODUCT_FAILURE"}:
+                receipt["outcome"] = "OBSERVED_NO_GRANT"
+            elif kind == "PURCHASE":
+                if tombstone:
+                    if (tombstone["account_id"] != account_id or tombstone["product_id"] != payload["product_id"]
+                        or tombstone["quantity"] != payload["quantity"]
+                        or tombstone["app_account_token"] != payload["app_account_token"]
+                        or tombstone["original_transaction_id"] != payload["original_transaction_id"]):
+                        raise InvalidPurchase("purchase conflicts with prior refund tombstone")
+                    receipt["outcome"] = "SUPPRESSED_REFUNDED"
+                elif row:
+                    if (row["account_id"] != account_id or row["product_id"] != payload["product_id"]
+                        or row["quantity"] != payload["quantity"]
+                        or row["original_transaction_id"] != payload["original_transaction_id"]):
+                        raise InvalidPurchase("purchase identity conflicts with prior transaction")
+                    receipt["outcome"] = "DUPLICATE_TRANSACTION"
+                else:
+                    tickets = payload["quantity"] * spec.tickets_per_unit
+                    offset = min(tickets, account["ticket_debt"])
+                    usable = tickets - offset
+                    db.execute("INSERT INTO purchases(environment,bundle_id,transaction_id,original_transaction_id,account_id,product_id,quantity,tickets_granted,tickets_remaining,tickets_debt_offset,status,purchase_time,updated_at) VALUES(?,?,?,?,?,?,?,?,?,?,'verified',?,?)",
+                               (*ident, payload["original_transaction_id"], account_id, payload["product_id"], payload["quantity"], tickets, usable, offset, payload["purchase_time"], now))
+                    if fail_at == "after_purchase_insert": raise InjectedFailure(fail_at)
+                    db.execute("UPDATE accounts SET ticket_debt=ticket_debt-?,ticket_balance=ticket_balance+?,revision=revision+1 WHERE account_id=?",
+                               (offset, usable, account_id))
+                    if offset:
+                        db.execute("INSERT INTO ticket_ledger(account_id,environment,bundle_id,transaction_id,event_type,amount,created_at) VALUES(?,?,?,?,?,?,?)",
+                                   (account_id, *ident, "debt_offset", offset, now))
+                    if usable:
+                        db.execute("INSERT INTO ticket_ledger(account_id,environment,bundle_id,transaction_id,event_type,amount,created_at) VALUES(?,?,?,?,?,?,?)",
+                                   (account_id, *ident, "grant", usable, now))
+                    if fail_at == "after_domain_mutation": raise InjectedFailure(fail_at)
+                    receipt.update(outcome="GRANTED_TEST_ONLY", tickets_granted=tickets,
+                                   debt_offset=offset, tickets_usable=usable)
+            else:  # REFUND
+                if tombstone:
+                    if (tombstone["account_id"] != account_id or tombstone["product_id"] != payload["product_id"]
+                        or tombstone["quantity"] != payload["quantity"]
+                        or tombstone["app_account_token"] != payload["app_account_token"]
+                        or tombstone["original_transaction_id"] != payload["original_transaction_id"]):
+                        raise InvalidPurchase("refund notification conflicts with prior tombstone")
+                    receipt["outcome"] = "DUPLICATE_REFUND"
+                elif row is None:
+                    db.execute("INSERT INTO refunds(environment,bundle_id,transaction_id,original_transaction_id,product_id,quantity,app_account_token,account_id,created_at) VALUES(?,?,?,?,?,?,?,?,?)",
+                               (*ident, payload["original_transaction_id"], payload["product_id"], payload["quantity"], payload["app_account_token"], account_id, now))
+                    receipt["outcome"] = "REFUND_TOMBSTONE_TEST_ONLY"
+                else:
+                    if (row["account_id"] != account_id or row["product_id"] != payload["product_id"]
+                        or row["quantity"] != payload["quantity"]
+                        or row["original_transaction_id"] != payload["original_transaction_id"]):
+                        raise InvalidPurchase("refund user/product/transaction mismatch")
+                    unspent, spent, offset = row["tickets_remaining"], row["tickets_spent"], row["tickets_debt_offset"]
+                    db.execute("UPDATE accounts SET ticket_balance=ticket_balance-?,ticket_debt=ticket_debt+?+?,revision=revision+1 WHERE account_id=?",
+                               (unspent, spent, offset, account_id))
+                    for event_type, amount in (("refund_clawback", unspent), ("refund_debt", spent + offset)):
+                        if amount:
+                            db.execute("INSERT INTO ticket_ledger(account_id,environment,bundle_id,transaction_id,event_type,amount,created_at) VALUES(?,?,?,?,?,?,?)",
+                                       (account_id, *ident, event_type, amount, now))
+                    db.execute("UPDATE purchases SET tickets_remaining=0,status='refunded',updated_at=? WHERE environment=? AND bundle_id=? AND transaction_id=?",
+                               (now, *ident))
+                    db.execute("INSERT INTO refunds(environment,bundle_id,transaction_id,original_transaction_id,product_id,quantity,app_account_token,account_id,created_at) VALUES(?,?,?,?,?,?,?,?,?)",
+                               (*ident, payload["original_transaction_id"], payload["product_id"], payload["quantity"], payload["app_account_token"], account_id, now))
+                    if fail_at == "after_domain_mutation": raise InjectedFailure(fail_at)
+                    receipt.update(outcome="REFUNDED_TEST_ONLY", clawed_back=unspent, debt_added=spent + offset)
+            receipt["production_entitlement_authorized"] = False
+            db.execute("UPDATE notification_inbox SET outcome=?,result_json=? WHERE notification_id=?",
+                       (receipt["outcome"], _canonical(receipt), payload["notification_id"]))
+            if fail_at == "before_commit": raise InjectedFailure(fail_at)
+            current = self._notification_current_state(db, account_id, ident)
+            response = self._notification_response(payload["notification_id"], False, receipt, current)
+            db.execute("COMMIT")
+            return response
+        except Exception:
+            try: db.execute("ROLLBACK")
+            except sqlite3.Error: pass
+            raise
+        finally:
+            db.close()
 
     def snapshot(self, account_id: str) -> dict[str, Any]:
         with closing(self._connect()) as db:

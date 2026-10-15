@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "status": "PROPOSAL_NOT_IMPLEMENTED",
+  "scope": "Test-only StoreKit Xcode event to isolated Python PurchaseAuthority to idempotent QA-save receipt delivery",
+  "forbidden": ["real purchase", "Apple JWS verifier claims", "network service", "Release/device enablement", "formal SKU/rate/price/duplicate policy adoption", "regular .mockSummon change", "user save mutation"],
+  "current_gaps": [
+    "StoreKitLocalQAEvent omits originalTransactionID, quantity, and appAccountToken",
+    "StoreKitLocalQABridge purchase does not supply an appAccountToken",
+    "GameStoreKitQASink writes a separate storekit_qa_ticket and does not call PurchaseAuthority",
+    "Python DrawReceipt lacks complete GearInstance payload and app-save delivery marker",
+    "No replay-safe Python receipt to Swift SaveRepository apply path"
+  ],
+  "candidate_payload_fields": ["schemaVersion", "candidateProfileFingerprint", "verifiedBy=EXPLICIT_TEST_MOCK", "environment", "bundleID", "productID", "productKind", "transactionID", "originalTransactionID", "quantity", "purchaseDate", "revocationDate", "ephemeralAccountID", "appAccountToken", "storeKitDeliveryKey", "authorityDrawOperationID"],
+  "acceptance_groups": [
+    "strict event/account/product validation and zero mutation on rejection",
+    "purchase grant plus authority draw receipt and item payload",
+    "receipt apply exactly once with stable gear UUID and full snapshot persistence",
+    "fault/retry before save apply and after save apply before StoreKit finish",
+    "cold readback join of transaction, lot, draw, pity, and gear UUIDs",
+    "refund/tombstone current-state readback distinct from historical receipt",
+    "profile fingerprint mismatch fails closed"
+  ],
+  "sourcePins": {
+    "ReusableBridge.swift": "4c6582273ac9c19e775e89bf6b2cc9d75ac2d3abe99718be6fa66f6de60ea6b7",
+    "GameStoreKitQASink.swift": "7da7f638c8ac80803e10cce2069c9590f94f19539a3d03ab17f626f18630652f",
+    "GameStoreKitQA.swift": "e368e306df24a4045e7a0d7036e337de209cec40b4ad84e46d01f09ed97f070a",
+    "App.swift": "3ae262c5c3bae250b20e7c4971256ff1c3ec00043f4b607de34b2e683603594a",
+    "GameEngine.swift": "c50d7418a1442c7f8b5a5ecd1b0a76f937877fc90267cb0b2460fb6645347b65",
+    "Domain.swift": "9e4df37260d5e39a8e6354121f9ccd5ad9a4202bf16b493f8878ce6480d92eda",
+    "authority.py": "ba1ce9e581de66f4f28b7fc0de903700f5505e19832c8fdc4901c656ebc0b02c",
+    "test_authority.py": "94ecca7044d8d89eba87d0531a4b0e4a363f2c19c3be0fe264ce5eb7432bb081",
+    "test_notifications.py": "5dfc9df8cf66d27d2184392e89dc869c91fc1583afbbfb08f2a7319665fb8c41",
+    "signed_transaction_audit.py": "dd69d282986d222473d38780c5430614231de3a7e2b53d740c98dd4e310a4351"
+  },
+  "execution": {"tests": 0, "builds": 0, "simulator": false, "sourceEdits": 0}
+}

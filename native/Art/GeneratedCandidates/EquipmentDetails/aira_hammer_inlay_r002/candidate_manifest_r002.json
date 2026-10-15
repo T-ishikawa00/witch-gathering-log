@@ -1,0 +1,754 @@
+{
+  "schema": "equipment_surface_inlay_candidate_r002",
+  "status": "UNAPPROVED_CANDIDATE_PENDING_ROOT_SOURCE_AND_RUNTIME_REVIEW",
+  "humanApproval": false,
+  "scope": "existing EQ_S_02 appearance correction only; no new SKU and no stats change",
+  "equipment": {
+    "id": "EQ_S_02",
+    "name": "響炉の鍛鎚",
+    "source": "native/WitchGameCore/Sources/WitchGameCore/Resources/catalog_overlay.json",
+    "slot": "weapon",
+    "actorID": "C_SMITH",
+    "effects": [
+      "SMITH_PRESSURE"
+    ]
+  },
+  "visualProblem": "R013 held-frame contact shows the prior large square-face attachment reads like an inventory icon tile pasted onto AIRA’s already-authored hammer. This candidate keeps only the furnace-core gem concept as a small transparent inlay; it does not replace the hammer or add a backing plate.",
+  "candidateAsset": {
+    "assetID": "DETAIL_EQ_S_02_INLAY_R002",
+    "path": "native/Art/GeneratedCandidates/EquipmentDetails/aira_hammer_inlay_r002/DETAIL_EQ_S_02_inlay_candidate_r002.png",
+    "sha256": "9d1a20f3fedf5cda02845a769c5757cb5e97b925082727bc1ef770f71548d774",
+    "generatedSourcePath": "/Users/PUBLIC_USER/.codex/generated_images/01a12399-5c96-7aa2-805f-d7e75a6df478/exec-a33ba267-81ce-4ada-97bc-cd8066e22e83.png",
+    "generatedSourceSHA256": "63b22544ec507e163bfe31da1d8ce9bdacff940f5f6a1d767e2d648e510e1212",
+    "pixelSize": [
+      256,
+      256
+    ],
+    "alphaBBox16_px": [
+      84,
+      64,
+      172,
+      191
+    ],
+    "alphaExtrema": [
+      0,
+      255
+    ],
+    "processing": "alpha-bbox crop, nearest-neighbor scale to 88x127, centered on transparent 256x256 canvas; packing/resize only, no hand redraw or alpha painting",
+    "partAnchor_px": [
+      128,
+      128
+    ],
+    "proposedAnchor": "hammer face center; exact per-source-frame centers below",
+    "humanAdoption": "PENDING",
+    "runtimeIntegration": "OFF_GLOB_CANDIDATE_NOT_SELECTED_BY_DEFAULT",
+    "visualFit": "UNVERIFIED_PENDING_ROOT_REVIEW"
+  },
+  "referenceAssets": [
+    {
+      "path": "native/Art/GeneratedCandidates/EquipmentDetails/details_r003/DETAIL_EQ_S_02__candidate_r001.png",
+      "sha256": "1a1900e5a938f58363ce5a9877fae0395f3779a6ce7bc1e80bfe6b44f0337435",
+      "role": "prior square bezel candidate; preserved unchanged"
+    },
+    {
+      "path": "native/Art/GeneratedCandidates/EquipmentDetails/details_r003/DETAIL_EQ_S_03__candidate_r001.png",
+      "sha256": "eb699bad7b082fa462137b72d6b246bb18003dc0b9ae26e66c83d46c254d062c",
+      "role": "S03 control; no change proposed after R013 contact reads as narrow silver band"
+    },
+    {
+      "path": "native/Art/GearIcons/ICO_EQ_S_02/ICO_EQ_S_02__128__r001.png",
+      "sha256": "91cb796fd9ac004ed8b2672d2f96e07c75b414019949a783c181a0fd80e6a86e",
+      "role": "existing S02 item icon for warm furnace-core color/concept only"
+    }
+  ],
+  "styleQA": {
+    "transparentBackground": true,
+    "squareUIPlate": false,
+    "weaponBasePreserved": true,
+    "newProductCount": 0,
+    "statsChanged": false,
+    "fullMotionFit": "NOT_TESTED"
+  },
+  "anchorSource": "native/Art/runtime_overlay_aira_landmarks_r011.json, AIRA.semanticFrameLandmarksCandidate.rows hammerHead; source point table is itself candidate measurement and not Human-approved.",
+  "frameAnchors": [
+    {
+      "actorID": "AIRA",
+      "runtimeBodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_00.png",
+      "sourcePath": "native/GeneratedArt/party_rest_r001/AIRA__rest_00.png",
+      "sourceSHA256": "0169baa14bf0dabb0a5a5ce9a9513649b41d0411af5a1eeac359d9fbe5d4de82",
+      "sourceRowState": "idle",
+      "runtimeClip": "idle",
+      "runtimeClipLocalFrameIndex": 0,
+      "landmarkFrameIndex": 0,
+      "sourceCanvas_px": [
+        320,
+        256
+      ],
+      "hammerFaceCenter_px_top_left": [
+        212,
+        199
+      ],
+      "hammerFaceCenter_normalized_top_left": [
+        0.6625,
+        0.777344
+      ],
+      "sourceLandmarkKey": "hammerHead",
+      "sourceMeasurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+      "candidateUse": "center small EQ_S_02 furnace inlay on face; renderer fit remains unverified"
+    },
+    {
+      "actorID": "AIRA",
+      "runtimeBodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_01.png",
+      "sourcePath": "native/GeneratedArt/party_rest_r001/AIRA__rest_01.png",
+      "sourceSHA256": "fc76df184341e3793eab4827ba3ef618e5c3cb4896497f987dcea89264adb19e",
+      "sourceRowState": "idle",
+      "runtimeClip": "idle",
+      "runtimeClipLocalFrameIndex": 1,
+      "landmarkFrameIndex": 1,
+      "sourceCanvas_px": [
+        320,
+        256
+      ],
+      "hammerFaceCenter_px_top_left": [
+        211,
+        200
+      ],
+      "hammerFaceCenter_normalized_top_left": [
+        0.659375,
+        0.78125
+      ],
+      "sourceLandmarkKey": "hammerHead",
+      "sourceMeasurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+      "candidateUse": "center small EQ_S_02 furnace inlay on face; renderer fit remains unverified"
+    },
+    {
+      "actorID": "AIRA",
+      "runtimeBodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_02.png",
+      "sourcePath": "native/GeneratedArt/party_rest_r001/AIRA__rest_02.png",
+      "sourceSHA256": "1f63421f2c86af9bce96aa89b24f7efeb996cb08fbc915852d5d680fde082894",
+      "sourceRowState": "idle",
+      "runtimeClip": "idle",
+      "runtimeClipLocalFrameIndex": 2,
+      "landmarkFrameIndex": 2,
+      "sourceCanvas_px": [
+        320,
+        256
+      ],
+      "hammerFaceCenter_px_top_left": [
+        209,
+        197
+      ],
+      "hammerFaceCenter_normalized_top_left": [
+        0.653125,
+        0.769531
+      ],
+      "sourceLandmarkKey": "hammerHead",
+      "sourceMeasurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+      "candidateUse": "center small EQ_S_02 furnace inlay on face; renderer fit remains unverified"
+    },
+    {
+      "actorID": "AIRA",
+      "runtimeBodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_0.png",
+      "sourcePath": "native/GeneratedArt/party_walk_r001/AIRA__walk_0.png",
+      "sourceSHA256": "4d8e9b5eca47f5881a34b153f32c610bb1738f7f4e84754dc53269aa156504b6",
+      "sourceRowState": "walk",
+      "runtimeClip": "walk",
+      "runtimeClipLocalFrameIndex": 0,
+      "landmarkFrameIndex": 0,
+      "sourceCanvas_px": [
+        256,
+        256
+      ],
+      "hammerFaceCenter_px_top_left": [
+        193,
+        208
+      ],
+      "hammerFaceCenter_normalized_top_left": [
+        0.753906,
+        0.8125
+      ],
+      "sourceLandmarkKey": "hammerHead",
+      "sourceMeasurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+      "candidateUse": "center small EQ_S_02 furnace inlay on face; renderer fit remains unverified"
+    },
+    {
+      "actorID": "AIRA",
+      "runtimeBodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_1.png",
+      "sourcePath": "native/GeneratedArt/party_walk_r001/AIRA__walk_1.png",
+      "sourceSHA256": "55f44337652f718d2d3625ffcbef13cf10f3852e68a9a91ae38a4496ff8c73f4",
+      "sourceRowState": "walk",
+      "runtimeClip": "walk",
+      "runtimeClipLocalFrameIndex": 1,
+      "landmarkFrameIndex": 1,
+      "sourceCanvas_px": [
+        256,
+        256
+      ],
+      "hammerFaceCenter_px_top_left": [
+        193,
+        208
+      ],
+      "hammerFaceCenter_normalized_top_left": [
+        0.753906,
+        0.8125
+      ],
+      "sourceLandmarkKey": "hammerHead",
+      "sourceMeasurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+      "candidateUse": "center small EQ_S_02 furnace inlay on face; renderer fit remains unverified"
+    },
+    {
+      "actorID": "AIRA",
+      "runtimeBodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_2.png",
+      "sourcePath": "native/GeneratedArt/party_walk_r001/AIRA__walk_2.png",
+      "sourceSHA256": "edd703655de1420b46e5a24253aae99871e8d101b89ea935ca488bb53830e077",
+      "sourceRowState": "walk",
+      "runtimeClip": "walk",
+      "runtimeClipLocalFrameIndex": 2,
+      "landmarkFrameIndex": 2,
+      "sourceCanvas_px": [
+        256,
+        256
+      ],
+      "hammerFaceCenter_px_top_left": [
+        190,
+        208
+      ],
+      "hammerFaceCenter_normalized_top_left": [
+        0.742188,
+        0.8125
+      ],
+      "sourceLandmarkKey": "hammerHead",
+      "sourceMeasurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+      "candidateUse": "center small EQ_S_02 furnace inlay on face; renderer fit remains unverified"
+    },
+    {
+      "actorID": "AIRA",
+      "runtimeBodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_3.png",
+      "sourcePath": "native/GeneratedArt/party_walk_r001/AIRA__walk_3.png",
+      "sourceSHA256": "c9bf20184a233fd50ffdd26f6820edbb1eb2566366739619790bb5bb4ea0d0c6",
+      "sourceRowState": "walk",
+      "runtimeClip": "walk",
+      "runtimeClipLocalFrameIndex": 3,
+      "landmarkFrameIndex": 3,
+      "sourceCanvas_px": [
+        256,
+        256
+      ],
+      "hammerFaceCenter_px_top_left": [
+        193,
+        207
+      ],
+      "hammerFaceCenter_normalized_top_left": [
+        0.753906,
+        0.808594
+      ],
+      "sourceLandmarkKey": "hammerHead",
+      "sourceMeasurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+      "candidateUse": "center small EQ_S_02 furnace inlay on face; renderer fit remains unverified"
+    },
+    {
+      "actorID": "AIRA",
+      "runtimeBodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_4.png",
+      "sourcePath": "native/GeneratedArt/party_walk_r001/AIRA__walk_4.png",
+      "sourceSHA256": "6f4b8bae624a94a3a6acf0d226283ab7d1beaaaeb9f63128f58ddcc103272910",
+      "sourceRowState": "walk",
+      "runtimeClip": "walk",
+      "runtimeClipLocalFrameIndex": 4,
+      "landmarkFrameIndex": 4,
+      "sourceCanvas_px": [
+        256,
+        256
+      ],
+      "hammerFaceCenter_px_top_left": [
+        193,
+        208
+      ],
+      "hammerFaceCenter_normalized_top_left": [
+        0.753906,
+        0.8125
+      ],
+      "sourceLandmarkKey": "hammerHead",
+      "sourceMeasurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+      "candidateUse": "center small EQ_S_02 furnace inlay on face; renderer fit remains unverified"
+    },
+    {
+      "actorID": "AIRA",
+      "runtimeBodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_5.png",
+      "sourcePath": "native/GeneratedArt/party_walk_r001/AIRA__walk_5.png",
+      "sourceSHA256": "18adee37bbce247e84dc48844c70f63464683d6f7e6bb48b1e1373b04c556a00",
+      "sourceRowState": "walk",
+      "runtimeClip": "walk",
+      "runtimeClipLocalFrameIndex": 5,
+      "landmarkFrameIndex": 5,
+      "sourceCanvas_px": [
+        256,
+        256
+      ],
+      "hammerFaceCenter_px_top_left": [
+        202,
+        203
+      ],
+      "hammerFaceCenter_normalized_top_left": [
+        0.789062,
+        0.792969
+      ],
+      "sourceLandmarkKey": "hammerHead",
+      "sourceMeasurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+      "candidateUse": "center small EQ_S_02 furnace inlay on face; renderer fit remains unverified"
+    },
+    {
+      "actorID": "AIRA",
+      "runtimeBodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_6.png",
+      "sourcePath": "native/GeneratedArt/party_walk_r001/AIRA__walk_6.png",
+      "sourceSHA256": "9ac868e8dcc5c6e268b4cd2372bdcf8206fb778850b4ef5d461ca5cefcaad83c",
+      "sourceRowState": "walk",
+      "runtimeClip": "walk",
+      "runtimeClipLocalFrameIndex": 6,
+      "landmarkFrameIndex": 6,
+      "sourceCanvas_px": [
+        256,
+        256
+      ],
+      "hammerFaceCenter_px_top_left": [
+        193,
+        208
+      ],
+      "hammerFaceCenter_normalized_top_left": [
+        0.753906,
+        0.8125
+      ],
+      "sourceLandmarkKey": "hammerHead",
+      "sourceMeasurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+      "candidateUse": "center small EQ_S_02 furnace inlay on face; renderer fit remains unverified"
+    },
+    {
+      "actorID": "AIRA",
+      "runtimeBodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_7.png",
+      "sourcePath": "native/GeneratedArt/party_walk_r001/AIRA__walk_7.png",
+      "sourceSHA256": "59edcd8212f9f5946daf6ef578c1e695fc4bcfba437572691a4806841678e0cd",
+      "sourceRowState": "walk",
+      "runtimeClip": "walk",
+      "runtimeClipLocalFrameIndex": 7,
+      "landmarkFrameIndex": 7,
+      "sourceCanvas_px": [
+        256,
+        256
+      ],
+      "hammerFaceCenter_px_top_left": [
+        193,
+        208
+      ],
+      "hammerFaceCenter_normalized_top_left": [
+        0.753906,
+        0.8125
+      ],
+      "sourceLandmarkKey": "hammerHead",
+      "sourceMeasurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+      "candidateUse": "center small EQ_S_02 furnace inlay on face; renderer fit remains unverified"
+    },
+    {
+      "actorID": "AIRA",
+      "runtimeBodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_8.png",
+      "sourcePath": "native/GeneratedArt/party_walk_r001/AIRA__walk_8.png",
+      "sourceSHA256": "14195b5b08605dd7e4e2b4b9c7d8c0223cadba2cc3b037c33c0df1a3a17fad50",
+      "sourceRowState": "walk",
+      "runtimeClip": "walk",
+      "runtimeClipLocalFrameIndex": 8,
+      "landmarkFrameIndex": 8,
+      "sourceCanvas_px": [
+        256,
+        256
+      ],
+      "hammerFaceCenter_px_top_left": [
+        193,
+        208
+      ],
+      "hammerFaceCenter_normalized_top_left": [
+        0.753906,
+        0.8125
+      ],
+      "sourceLandmarkKey": "hammerHead",
+      "sourceMeasurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+      "candidateUse": "center small EQ_S_02 furnace inlay on face; renderer fit remains unverified"
+    },
+    {
+      "actorID": "AIRA",
+      "runtimeBodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_00.png",
+      "sourcePath": "native/GeneratedArt/party_attack_r001/AIRA__attack_00.png",
+      "sourceSHA256": "50cbd3a45a3aa5f3a9c938f77fd59dbd8c850328beeec8d47a0b8cfa41072044",
+      "sourceRowState": "anticipate",
+      "runtimeClip": "anticipate",
+      "runtimeClipLocalFrameIndex": 0,
+      "landmarkFrameIndex": 0,
+      "sourceCanvas_px": [
+        320,
+        256
+      ],
+      "hammerFaceCenter_px_top_left": [
+        212,
+        199
+      ],
+      "hammerFaceCenter_normalized_top_left": [
+        0.6625,
+        0.777344
+      ],
+      "sourceLandmarkKey": "hammerHead",
+      "sourceMeasurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+      "candidateUse": "center small EQ_S_02 furnace inlay on face; renderer fit remains unverified"
+    },
+    {
+      "actorID": "AIRA",
+      "runtimeBodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_01.png",
+      "sourcePath": "native/GeneratedArt/party_attack_r001/AIRA__attack_01.png",
+      "sourceSHA256": "7a0dd13d7ba6e2222b4edfb0ad3b04a37f90249a04b34a0e7558095d7b9d51f8",
+      "sourceRowState": "anticipate",
+      "runtimeClip": "anticipate",
+      "runtimeClipLocalFrameIndex": 1,
+      "landmarkFrameIndex": 1,
+      "sourceCanvas_px": [
+        320,
+        256
+      ],
+      "hammerFaceCenter_px_top_left": [
+        80,
+        86
+      ],
+      "hammerFaceCenter_normalized_top_left": [
+        0.25,
+        0.335938
+      ],
+      "sourceLandmarkKey": "hammerHead",
+      "sourceMeasurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+      "candidateUse": "center small EQ_S_02 furnace inlay on face; renderer fit remains unverified"
+    },
+    {
+      "actorID": "AIRA",
+      "runtimeBodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_02.png",
+      "sourcePath": "native/GeneratedArt/party_attack_r001/AIRA__attack_02.png",
+      "sourceSHA256": "be07aa515ab14e82589e04a32053734b1c239cb4bc0589d3de3acfd022a38fe3",
+      "sourceRowState": "anticipate",
+      "runtimeClip": "anticipate",
+      "runtimeClipLocalFrameIndex": 2,
+      "landmarkFrameIndex": 2,
+      "sourceCanvas_px": [
+        320,
+        256
+      ],
+      "hammerFaceCenter_px_top_left": [
+        78,
+        80
+      ],
+      "hammerFaceCenter_normalized_top_left": [
+        0.24375,
+        0.3125
+      ],
+      "sourceLandmarkKey": "hammerHead",
+      "sourceMeasurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+      "candidateUse": "center small EQ_S_02 furnace inlay on face; renderer fit remains unverified"
+    },
+    {
+      "actorID": "AIRA",
+      "runtimeBodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_03.png",
+      "sourcePath": "native/GeneratedArt/party_attack_r001/AIRA__attack_03.png",
+      "sourceSHA256": "681fd98de966891ac4f7b3ed6090c014372aa7c9a9219b1436049e9da1233958",
+      "sourceRowState": "execute",
+      "runtimeClip": "execute",
+      "runtimeClipLocalFrameIndex": 0,
+      "landmarkFrameIndex": 0,
+      "sourceCanvas_px": [
+        320,
+        256
+      ],
+      "hammerFaceCenter_px_top_left": [
+        119,
+        70
+      ],
+      "hammerFaceCenter_normalized_top_left": [
+        0.371875,
+        0.273438
+      ],
+      "sourceLandmarkKey": "hammerHead",
+      "sourceMeasurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+      "candidateUse": "center small EQ_S_02 furnace inlay on face; renderer fit remains unverified"
+    },
+    {
+      "actorID": "AIRA",
+      "runtimeBodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_04.png",
+      "sourcePath": "native/GeneratedArt/party_attack_r001/AIRA__attack_04.png",
+      "sourceSHA256": "8b61676670a6a7b2fe47def150b4190230effc065ed0655f5d2ba7bf88ae7641",
+      "sourceRowState": "execute",
+      "runtimeClip": "execute",
+      "runtimeClipLocalFrameIndex": 1,
+      "landmarkFrameIndex": 1,
+      "sourceCanvas_px": [
+        320,
+        256
+      ],
+      "hammerFaceCenter_px_top_left": [
+        227,
+        207
+      ],
+      "hammerFaceCenter_normalized_top_left": [
+        0.709375,
+        0.808594
+      ],
+      "sourceLandmarkKey": "hammerHead",
+      "sourceMeasurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+      "candidateUse": "center small EQ_S_02 furnace inlay on face; renderer fit remains unverified"
+    },
+    {
+      "actorID": "AIRA",
+      "runtimeBodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_05.png",
+      "sourcePath": "native/GeneratedArt/party_attack_r001/AIRA__attack_05.png",
+      "sourceSHA256": "973cb7f285dd545aea5178a4fd9af9e134ad96b8352d548453992add58199106",
+      "sourceRowState": "execute",
+      "runtimeClip": "execute",
+      "runtimeClipLocalFrameIndex": 2,
+      "landmarkFrameIndex": 2,
+      "sourceCanvas_px": [
+        320,
+        256
+      ],
+      "hammerFaceCenter_px_top_left": [
+        227,
+        207
+      ],
+      "hammerFaceCenter_normalized_top_left": [
+        0.709375,
+        0.808594
+      ],
+      "sourceLandmarkKey": "hammerHead",
+      "sourceMeasurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+      "candidateUse": "center small EQ_S_02 furnace inlay on face; renderer fit remains unverified"
+    },
+    {
+      "actorID": "AIRA",
+      "runtimeBodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_06.png",
+      "sourcePath": "native/GeneratedArt/party_attack_r001/AIRA__attack_06.png",
+      "sourceSHA256": "c93e4788a2ab41f62ef8a9916bc064b186269a486951ed2f439edaf982d242de",
+      "sourceRowState": "recover",
+      "runtimeClip": "recover",
+      "runtimeClipLocalFrameIndex": 0,
+      "landmarkFrameIndex": 0,
+      "sourceCanvas_px": [
+        320,
+        256
+      ],
+      "hammerFaceCenter_px_top_left": [
+        211,
+        196
+      ],
+      "hammerFaceCenter_normalized_top_left": [
+        0.659375,
+        0.765625
+      ],
+      "sourceLandmarkKey": "hammerHead",
+      "sourceMeasurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+      "candidateUse": "center small EQ_S_02 furnace inlay on face; renderer fit remains unverified"
+    },
+    {
+      "actorID": "AIRA",
+      "runtimeBodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_07.png",
+      "sourcePath": "native/GeneratedArt/party_attack_r001/AIRA__attack_07.png",
+      "sourceSHA256": "c9c926380275c17d6cd21de70b2fbd461351deb9dea95275184d54524764862d",
+      "sourceRowState": "recover",
+      "runtimeClip": "recover",
+      "runtimeClipLocalFrameIndex": 1,
+      "landmarkFrameIndex": 1,
+      "sourceCanvas_px": [
+        320,
+        256
+      ],
+      "hammerFaceCenter_px_top_left": [
+        206,
+        200
+      ],
+      "hammerFaceCenter_normalized_top_left": [
+        0.64375,
+        0.78125
+      ],
+      "sourceLandmarkKey": "hammerHead",
+      "sourceMeasurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+      "candidateUse": "center small EQ_S_02 furnace inlay on face; renderer fit remains unverified"
+    },
+    {
+      "actorID": "AIRA",
+      "runtimeBodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_08.png",
+      "sourcePath": "native/GeneratedArt/party_attack_r001/AIRA__attack_08.png",
+      "sourceSHA256": "357aca385b1033d5e15d977fd01eae58263a0f3ea02e320ce79a109037342581",
+      "sourceRowState": "recover",
+      "runtimeClip": "recover",
+      "runtimeClipLocalFrameIndex": 2,
+      "landmarkFrameIndex": 2,
+      "sourceCanvas_px": [
+        320,
+        256
+      ],
+      "hammerFaceCenter_px_top_left": [
+        205,
+        200
+      ],
+      "hammerFaceCenter_normalized_top_left": [
+        0.640625,
+        0.78125
+      ],
+      "sourceLandmarkKey": "hammerHead",
+      "sourceMeasurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+      "candidateUse": "center small EQ_S_02 furnace inlay on face; renderer fit remains unverified"
+    },
+    {
+      "actorID": "AIRA",
+      "runtimeBodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_03.png",
+      "sourcePath": "native/GeneratedArt/party_rest_r001/AIRA__rest_03.png",
+      "sourceSHA256": "e7dd10a55b4b6ad19d045a9885a0f4a614dc1d720f55dc55099e4bbb1eeadd00",
+      "sourceRowState": "hit",
+      "runtimeClip": "hit",
+      "runtimeClipLocalFrameIndex": 0,
+      "landmarkFrameIndex": 0,
+      "sourceCanvas_px": [
+        320,
+        256
+      ],
+      "hammerFaceCenter_px_top_left": [
+        218,
+        190
+      ],
+      "hammerFaceCenter_normalized_top_left": [
+        0.68125,
+        0.742188
+      ],
+      "sourceLandmarkKey": "hammerHead",
+      "sourceMeasurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+      "candidateUse": "center small EQ_S_02 furnace inlay on face; renderer fit remains unverified"
+    },
+    {
+      "actorID": "AIRA",
+      "runtimeBodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_04.png",
+      "sourcePath": "native/GeneratedArt/party_rest_r001/AIRA__rest_04.png",
+      "sourceSHA256": "a3d53259739e79f7af2b10e4d975d4762a4365cbc86c176cbf5a7fead5a983e3",
+      "sourceRowState": "hit",
+      "runtimeClip": "hit",
+      "runtimeClipLocalFrameIndex": 1,
+      "landmarkFrameIndex": 1,
+      "sourceCanvas_px": [
+        320,
+        256
+      ],
+      "hammerFaceCenter_px_top_left": [
+        224,
+        195
+      ],
+      "hammerFaceCenter_normalized_top_left": [
+        0.7,
+        0.761719
+      ],
+      "sourceLandmarkKey": "hammerHead",
+      "sourceMeasurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+      "candidateUse": "center small EQ_S_02 furnace inlay on face; renderer fit remains unverified"
+    },
+    {
+      "actorID": "AIRA",
+      "runtimeBodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_05.png",
+      "sourcePath": "native/GeneratedArt/party_rest_r001/AIRA__rest_05.png",
+      "sourceSHA256": "f0a087417c4320a24aa9879974fbc4263cf6c2e195237639c88467c634da5e7c",
+      "sourceRowState": "hit",
+      "runtimeClip": "hit",
+      "runtimeClipLocalFrameIndex": 2,
+      "landmarkFrameIndex": 2,
+      "sourceCanvas_px": [
+        320,
+        256
+      ],
+      "hammerFaceCenter_px_top_left": [
+        224,
+        195
+      ],
+      "hammerFaceCenter_normalized_top_left": [
+        0.7,
+        0.761719
+      ],
+      "sourceLandmarkKey": "hammerHead",
+      "sourceMeasurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+      "candidateUse": "center small EQ_S_02 furnace inlay on face; renderer fit remains unverified"
+    },
+    {
+      "actorID": "AIRA",
+      "runtimeBodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_06.png",
+      "sourcePath": "native/GeneratedArt/party_rest_r001/AIRA__rest_06.png",
+      "sourceSHA256": "2fa5371afc1a04d2f2c85ddb177852c52fc4f6c2414c25976c2426a03d5cc3ba",
+      "sourceRowState": "resolve",
+      "runtimeClip": "resolve",
+      "runtimeClipLocalFrameIndex": 0,
+      "landmarkFrameIndex": 0,
+      "sourceCanvas_px": [
+        320,
+        256
+      ],
+      "hammerFaceCenter_px_top_left": [
+        98,
+        207
+      ],
+      "hammerFaceCenter_normalized_top_left": [
+        0.30625,
+        0.808594
+      ],
+      "sourceLandmarkKey": "hammerHead",
+      "sourceMeasurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+      "candidateUse": "center small EQ_S_02 furnace inlay on face; renderer fit remains unverified"
+    },
+    {
+      "actorID": "AIRA",
+      "runtimeBodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_07.png",
+      "sourcePath": "native/GeneratedArt/party_rest_r001/AIRA__rest_07.png",
+      "sourceSHA256": "09116d4094ffefbd11ff6fb7826884eff362b8f00457aefa0be9328236ad2bd8",
+      "sourceRowState": "resolve",
+      "runtimeClip": "resolve",
+      "runtimeClipLocalFrameIndex": 1,
+      "landmarkFrameIndex": 1,
+      "sourceCanvas_px": [
+        320,
+        256
+      ],
+      "hammerFaceCenter_px_top_left": [
+        85,
+        207
+      ],
+      "hammerFaceCenter_normalized_top_left": [
+        0.265625,
+        0.808594
+      ],
+      "sourceLandmarkKey": "hammerHead",
+      "sourceMeasurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+      "candidateUse": "center small EQ_S_02 furnace inlay on face; renderer fit remains unverified"
+    },
+    {
+      "actorID": "AIRA",
+      "runtimeBodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_08.png",
+      "sourcePath": "native/GeneratedArt/party_rest_r001/AIRA__rest_08.png",
+      "sourceSHA256": "85fadc481cc8943d2999f8477a5a928d69520d418180c15eee2f3e0de9b4b36e",
+      "sourceRowState": "resolve",
+      "runtimeClip": "resolve",
+      "runtimeClipLocalFrameIndex": 2,
+      "landmarkFrameIndex": 2,
+      "sourceCanvas_px": [
+        320,
+        256
+      ],
+      "hammerFaceCenter_px_top_left": [
+        86,
+        207
+      ],
+      "hammerFaceCenter_normalized_top_left": [
+        0.26875,
+        0.808594
+      ],
+      "sourceLandmarkKey": "hammerHead",
+      "sourceMeasurementStatus": "R011_SOURCE_GRID_REMEASURED_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+      "candidateUse": "center small EQ_S_02 furnace inlay on face; renderer fit remains unverified"
+    }
+  ],
+  "imageGeneration": {
+    "tool": "built-in image_gen edit",
+    "prompt": "Create a tiny transparent pixel-art hammer inlay from the prior EQ_S_02 detail. Preserve the orange furnace ember color and faceted pixel shading, but make the silhouette a true vertical kite/diamond with pointed top and bottom and narrow sides, not a square or rectangle. Add only four tiny metal claws at its points, no plate or bezel. Center on a 256x256 transparent canvas with genuine alpha outside; no UI icon framing, background, text, shadow, or extra objects."
+  }
+}

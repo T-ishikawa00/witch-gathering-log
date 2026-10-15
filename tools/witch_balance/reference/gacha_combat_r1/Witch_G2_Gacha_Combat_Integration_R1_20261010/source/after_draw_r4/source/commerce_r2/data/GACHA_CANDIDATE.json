@@ -1,0 +1,69 @@
+{
+  "status": "PROPOSED_NOT_APPROVED",
+  "name": "魔導庫・遺物鑑定（仮称）",
+  "version": "COMMERCE_CANDIDATE_R2",
+  "base_probability_bp": {
+    "Q2": 8000,
+    "Q3": 1700,
+    "Q4": 300
+  },
+  "top_pity": 40,
+  "mid_pity": 10,
+  "target_base_bp": 5000,
+  "target_rule": "non-target Q4 makes next Q4 selected target; carry on target/pool change",
+  "guarantee_priority": [
+    "Q4_at_40",
+    "Q3_or_Q4_at_10",
+    "base"
+  ],
+  "batches": [
+    1,
+    10
+  ],
+  "ticket_price_jpy_proposal": 150,
+  "ticket_packs": [
+    {
+      "qty": 1,
+      "price_jpy_proposal": 150
+    },
+    {
+      "qty": 10,
+      "price_jpy_proposal": 1500
+    }
+  ],
+  "free_supply": {
+    "intro_once": 10,
+    "per_region_boss_once": 5,
+    "region_boss_ids": [
+      "G_R01_B",
+      "G_R02_B",
+      "G_R03_B",
+      "G_R04_B",
+      "G_R05_B"
+    ],
+    "per_24h": 1,
+    "unclaimed_accrual_cap_days": 7,
+    "claimed_tickets_expire": false
+  },
+  "unlock": {
+    "gate": "G_R01_A",
+    "all_four_joined": true,
+    "craft_tutorial_done": true,
+    "at_least_eligible_types": 2
+  },
+  "affixes": {
+    "first": "template useful core; not unconditional combat improvement",
+    "Q2_count": 2,
+    "Q3_count": 3,
+    "Q4_count": 3,
+    "floor_quantile_of_existing_quality_range_bp": 5000,
+    "cap_changed": false
+  },
+  "rank": "current legally available attunement ceiling; not just farthest viewed region",
+  "enhancement": 0,
+  "actual_investment_on_draw": 0,
+  "natural_pity_affected": false,
+  "ticket_source_affects_odds": false,
+  "paid_only_types": false,
+  "trade_or_cash_out": false
+}

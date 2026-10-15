@@ -1,0 +1,71 @@
+{
+  "schema": "enemy-motion-residual-matrix-r407-files-v1",
+  "inputs": [
+    {
+      "label": "R308 asset readiness",
+      "path": "docs/production/current/qa_drafts/asset_readiness_r308/ASSET_READINESS_R001.json",
+      "sha256": "02b76b68239cdaf0af7934dfc7bbcdb4eef1592dff2cff99aec896b6f8d29a25",
+      "bytes": 1587027
+    },
+    {
+      "label": "R377 capture RUN",
+      "path": "docs/production/current/qa_drafts/enemy_motion_batch_r377/capture_candidate_r004/capture_r002/RUN.json",
+      "sha256": "7f8a335ab40bb13abb63648db0db05dc50ba28871294f67a9a7ca5a62c9676db",
+      "bytes": 34778
+    },
+    {
+      "label": "R391 capture RUN",
+      "path": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/RUN.json",
+      "sha256": "b8c15bcf354324e188f1999c1fd6cee1ddf81814e0866a00b17275b1e446ba51",
+      "bytes": 116995
+    },
+    {
+      "label": "R391 independent review",
+      "path": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/offline_review_r006/REVIEW_R006.json",
+      "sha256": "7979892572ad4385983b06dbe5b7dda2e6c286a45e5b228576308a208e5398df",
+      "bytes": 9096
+    },
+    {
+      "label": "R366 first nine visual review",
+      "path": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r001/REVIEW_FIRST9_R001.json",
+      "sha256": "19ef770a7e0d371ba732472cc685734121902b0d38db9016e4b752f48782ecee",
+      "bytes": 12510
+    },
+    {
+      "label": "R366 remaining 18 dense review",
+      "path": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r002_dense/REVIEW_REMAINING18_R001.json",
+      "sha256": "872026b314f75790f8df3d1f4fe310e96816cda7bcf87dc1e94cab90f32d0a52",
+      "bytes": 32296
+    },
+    {
+      "label": "R407 build readback",
+      "path": "docs/production/current/qa_drafts/native_completion_r407/build_tools_r001/postbuild_readback_r001/qa-debug_BUILD_PASS.json",
+      "sha256": "11b4911c1da58d52c3d0384d8932fb5917c74a01e35b36a674a15fc8ffe67210",
+      "bytes": 867897
+    },
+    {
+      "label": "R407 sealed contract",
+      "path": "docs/production/current/qa_drafts/native_completion_r407/build_tools_r001/ROOT_SEALED_CONTRACT_R001.json",
+      "sha256": "31ca8c03442cdf2502ed94e7e039394e4ea00c84f14385039b8cf7bef4ba6101",
+      "bytes": 1252
+    },
+    {
+      "label": "R391 case20 raw trace",
+      "path": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/root_failure_triage_r001/enemy_event_render_r145_94354f1c-8f57-4610-9051-d3ae65dbc69b.json",
+      "sha256": "e171b43060abf51cf10645641d017304c700f7fc56c22774444fa4c1487f9bca",
+      "bytes": 3045809
+    }
+  ],
+  "outputs": [
+    {
+      "path": "RESIDUAL_TEMPORAL_MATRIX_R001.json",
+      "bytes": 57635,
+      "sha256": "e2e0eead2a0b2c1bcf203766634fce89f6508726e200a98c46c7044492164ca6"
+    },
+    {
+      "path": "RESIDUAL_TEMPORAL_MATRIX_R001.md",
+      "bytes": 4177,
+      "sha256": "6a405492853d5dedf2f68875ab6faf8abf87d2b19a48210a8e342a39abb816bb"
+    }
+  ]
+}

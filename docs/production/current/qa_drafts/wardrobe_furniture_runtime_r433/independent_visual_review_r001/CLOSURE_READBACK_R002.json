@@ -1,0 +1,38 @@
+{
+  "schema": "r433-closure-independent-readback-r002-v1",
+  "status": "PASS_SCOPED_CAPTURE_CLOSURE_AND_PRESERVATION",
+  "preserves": "REVIEW_R001.json and REVIEW_R001.md unchanged; this addendum supersedes only their then-pending run-closure limitation.",
+  "evidence": {
+    "closurePath": "docs/production/current/qa_drafts/wardrobe_furniture_runtime_r433/execution_r001/CLOSURE.json",
+    "closureSHA256": "1d46feb1b1ecca0767b2dde9e77be3ead9a62c55a38f7c98ba26c9bf3ce1ebbc",
+    "rootCloseoutPath": "docs/production/current/qa_drafts/wardrobe_furniture_runtime_r433/ROOT_CLOSEOUT_R001.json",
+    "rootCloseoutSHA256": "e3b3025eaa0ade471b83aab1922d22e64a01181160ae5ea3d99bf4f4b6079824"
+  },
+  "verified": {
+    "protectedTreeCount": 14,
+    "allProtectedTreesExact": true,
+    "protectedFileCounts": [1925, 1925, 1925, 1925, 1925, 1925, 1925, 1692, 14, 14, 66, 86, 15, 69],
+    "activeAppExact": true,
+    "other14TreesExact": true,
+    "ownedProcessesAbsent": true,
+    "deletion": false,
+    "realCharge": false,
+    "syntheticStateInjection": false,
+    "clockChanges": false,
+    "coldChecks": [
+      {"path": "docs/production/current/qa_drafts/wardrobe_furniture_runtime_r433/execution_r001/all_branch_COLD.json", "sha256": "f44c5e7c337b8fee3e00170ef812afa5bda84e1288085681110dbd7d070a7c40", "exact": true},
+      {"path": "docs/production/current/qa_drafts/wardrobe_furniture_runtime_r433/execution_r001/all_reset_COLD.json", "sha256": "e8d92a5154392c55c25e05c9ad613c9aa98e5f55fe3352fea81aa1d72ed435eb", "exact": true},
+      {"path": "docs/production/current/qa_drafts/wardrobe_furniture_runtime_r433/execution_r001/desk_placed_COLD.json", "sha256": "8cc90d0f44852f7457652204dbbbcb62fac697bcd2e510ec38b3cd39add62473", "exact": true},
+      {"path": "docs/production/current/qa_drafts/wardrobe_furniture_runtime_r433/execution_r001/moon_stored_COLD.json", "sha256": "037a5df37b974f7af2e01ccb95f0ade50a0b4ba7b54d5783aa7d034a1d121c54", "exact": true}
+    ],
+    "finalRevision": 35,
+    "finalSaveSHA256": "4a525bdfe4a1dbf9130ef5d064155be2e091185e5eb33470dcc3f9dc6c6f47b4",
+    "selectedCosmetics": {},
+    "selectedWeaponAppearances": {},
+    "placedFurniture": [],
+    "ownedCosmeticsRetained": 6,
+    "ownedFurnitureRetained": 1
+  },
+  "remainingKnownIssue": "R435: LUNA mantle is absent in the desk-reading pose. This remains tracked; the readback does not close or reinterpret that renderer issue.",
+  "qualityBoundary": "Capture closure and protected-tree preservation pass for this bounded run. This does not establish formal art adoption, accessibility, physical-device quality, or general release readiness."
+}

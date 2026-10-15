@@ -1,0 +1,85 @@
+{
+  "schema": "r460-fixed-commit-commerce-review-v1",
+  "commit": "45dc02f73f0bcb7c37ad1f01969c3d4b43ceef2e",
+  "reviewMode": "read-only; source and results read from git tree at fixed commit",
+  "status": "SCOPED_LOCAL_QA_PASS; PRODUCTION_COMMERCE_NOT_IMPLEMENTED",
+  "finding": {
+    "severity": "P1 release blocker for live paid draw path; no defect found in reviewed local atomic/replay boundaries",
+    "concreteGap": "There is no production authority connector or authenticated player-account binding. Apple JWS ingestion remains fail-closed; R454 is a DEBUG Simulator file exchange using explicit test identity and local QA products; R459 audits synthetic Sandbox signatures in an isolated non-authorizing ledger.",
+    "locallyExecutableWork": "A candidate production-facing authority client/service interface can still be implemented and contract-tested offline: explicit authenticated-principal input, verified transaction envelope, server-authoritative ticket/pity/draw result, current refund/revocation check, idempotent response and retry semantics. Keep it fail-closed and separate from StoreKit QA/mock paths. Test with a local fake transport and generated test keys; this proves protocol/client behavior only, not Apple authorization or account security.",
+    "externalBoundary": "Real account identity/session, Apple App Store Server API credentials/configuration and live current transaction/refund status, deployed authority/key management, final product/SKU/rate/price decisions, and real purchase/Sandbox acceptance remain unavailable or require external/Human authority. Do not turn the candidate test profile into a production entitlement."
+  },
+  "reviewedEvidence": [
+    {
+      "path": "docs/production/current/qa_drafts/gacha_local_integration_r453/ROOT_SCOPED_RESULT_R001.json",
+      "scope": "Core mock-receipt-to-save boundary: 7 importer cases plus 17 save-recovery cases passed; Python adapter 73 cases passed, followed by 15 focused warning-free adapter cases. 33-template fixture, 3 draws, one ticket remaining, Q4/Q2/Q1 are serialization coverage, not RNG or progression evidence."
+    },
+    {
+      "path": "docs/production/current/qa_drafts/storekit_event_export_r454/ROOT_SCOPED_RESULT_R001.json",
+      "scope": "Two actual Debug Xcode StoreKit builds; 25 Swift + 6 Python cases; one native local purchase and three host exchanges. Xcode-only mock ticket/furniture delivery, restore/cancel/failure/replay/cold behavior scoped; not production Apple authority."
+    },
+    {
+      "path": "docs/production/current/qa_drafts/storekit_restore_route_r377/execution_r001/UI_COMPLETION_R001.json",
+      "scope": "Local restore UI: protected app/data pins exact; fresh restore granted exactly one nonconsumable; duplicate and cold restore bytes identical. Local Xcode configuration only."
+    },
+    {
+      "path": "docs/production/current/qa_drafts/sandbox_ledger_adapter_r459/ROOT_SCOPED_RESULT_R001.json",
+      "scope": "110 method executions, 0 failed/skipped/warnings; includes 21 repeated crypto methods, so not 110 independent acceptance criteria. Synthetic certificates and explicit fixture accounts; no real Apple transaction, network, production grant, or live revocation."
+    }
+  ],
+  "codeBoundaries": [
+    {
+      "path": "tools/witch_purchase_authority/authority.py",
+      "facts": [
+        "ingest_apple_jws raises VerificationUnavailable",
+        "mock purchase/draw remains explicit test-only",
+        "SQLite BEGIN IMMEDIATE transactions bind purchase/draw/refund/tombstone and idempotency state"
+      ],
+      "gitBlobOID": "1fbea010ff57fdbd6fe9d23c727bd1f0397d53fd"
+    },
+    {
+      "path": "tools/witch_purchase_authority/signed_transaction_audit.py",
+      "facts": [
+        "strict offline Sandbox JWS chain/signature and payload checks",
+        "status is OFFLINE_CHAIN_CHECKED_NOT_AUTHORIZATION",
+        "revocation_checked is false; no online current-state query"
+      ],
+      "gitBlobOID": "285a6fc10bdfe57390b8a9afe900884ddaeac956"
+    },
+    {
+      "path": "tools/witch_purchase_authority/sandbox_ledger_adapter_r459.py",
+      "facts": [
+        "fixture account-token equality is explicit binding, not authenticated identity",
+        "adapter status NOT_AUTHORIZED_FOR_PRODUCTION"
+      ],
+      "gitBlobOID": "b4ec379f82d2f1c4cf7da6848e5e68de793cc9db65ec5ff88a3e5947704a4edd"
+    },
+    {
+      "path": "tools/witch_purchase_authority/local_exchange_r454.py",
+      "facts": [
+        "local request/response file exchange, not network",
+        "hashes correlate payloads but do not authenticate a host",
+        "source deliberately has no production listener"
+      ],
+      "gitBlobOID": "43061db6ae53442bdcbca9b4342f58a4040e42b4d59579a98456b7c5787ccd52"
+    },
+    {
+      "path": "native/WitchApp/GamePurchaseAuthorityQA_R454.swift",
+      "facts": [
+        "hard-coded r454-local-account",
+        "DEBUG Simulator + explicit local QA gates",
+        "revalidates current Xcode transaction and imports only QA delivery"
+      ],
+      "gitBlobOID": "776419def31fbdff4218143d3aa4dce39d1ba3a7"
+    }
+  ],
+  "notClaimed": [
+    "Production purchase completion",
+    "real Apple Sandbox acceptance",
+    "SKU/rate/price or paid-value approval",
+    "real-player authentication",
+    "deployed service security",
+    "all R459 methods as distinct requirements"
+  ],
+  "worktreeNote": "The reviewed worktree had only the pre-existing ACTIVE_WORK_R026.json and protected project.pbxproj dirty; neither was read as source evidence or changed."
+}

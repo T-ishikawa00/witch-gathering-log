@@ -1,0 +1,29 @@
+{
+  "status": "PREPARED_NOT_RUN",
+  "createdAtUnix": 1792010896.728735,
+  "baseCheckpoint": "83f5be4a86f62de0e0175336a005415e1156acb6",
+  "scope": "Python explicit mock authority -> exact receipt -> Swift isolated SaveRepository; not Apple authorization",
+  "limits": {
+    "maxBuildBytes": 700000000,
+    "maxEvidenceBytes": 10000000,
+    "maxUnitSeconds": 60,
+    "maxSwiftSeconds": 300,
+    "minimumFreeBytes": 20000000000,
+    "repairCycles": 2
+  },
+  "freeBytesBefore": 137026519040,
+  "protectedFiles": [
+    {
+      "path": "native/WitchGathering.xcodeproj/project.pbxproj",
+      "sha256": "b83573270f2e0fde46411aabe9a539343b0fd1301760b3de7fe672b796dc18e9"
+    },
+    {
+      "path": "native/WitchGameCore/Sources/WitchGameCore/SaveRepository.swift",
+      "sha256": "e072b14bf922f90d5840a6031a7bb0cc0f9b8197342b94f41045b88a346341ce"
+    },
+    {
+      "path": "native/WitchGameCore/Sources/WitchGameCore/Domain.swift",
+      "sha256": "9e4df37260d5e39a8e6354121f9ccd5ad9a4202bf16b493f8878ce6480d92eda"
+    }
+  ]
+}

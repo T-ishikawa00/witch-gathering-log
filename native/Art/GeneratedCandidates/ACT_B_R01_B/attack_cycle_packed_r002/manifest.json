@@ -1,0 +1,460 @@
+{
+  "schema": "witch.enemy_attack_cycle_candidate.v1",
+  "actorId": "ACT_B_R01_B",
+  "revision": "attack_cycle_packed_r002",
+  "status": "UNAPPROVED_PARTIAL_ATTACK_MOTION_CANDIDATE",
+  "sourceApprovedStill": "ActorStills/ACT_B_R01_B/ACT_B_R01_B__still__B_R01_B_ANCIENT_TREE_base_v1.png",
+  "sourceApprovedStillSHA256": "ba61464c40c8cacc8217e58db56f17bbd8f5b9f3fd38e6e3b3d1749b99e5a8c1",
+  "imagegenAtlas": "GeneratedCandidates/ACT_B_R01_B/attack_cycle_r001/imagegen_atlas_corrected.png",
+  "imagegenAtlasSHA256": "7eca162acd34986ecf128da3d3a17f104916ee3e03ac8b94f74490f4265b3683",
+  "atlasPx": [
+    1254,
+    1254
+  ],
+  "gridXEdgesPx": [
+    0,
+    418,
+    836,
+    1254
+  ],
+  "gridYEdgesPx": [
+    0,
+    418,
+    836,
+    1254
+  ],
+  "grid": "3x3 row-major: anticipate, execute, recover",
+  "runtimeCanvasPx": [
+    512,
+    600
+  ],
+  "candidateAnchorPx": [
+    256,
+    490
+  ],
+  "candidateDisplayScale": 1.327815,
+  "baseWalkAlpha16HeightsPx": [
+    398,
+    395,
+    395,
+    408,
+    401,
+    405,
+    401,
+    403,
+    401
+  ],
+  "baseWalkDisplayScale": 1.0,
+  "targetVisibleAlpha16HeightPx": 401.0,
+  "attackVisibleAlpha16HeightsPx": [
+    300,
+    301,
+    300,
+    302,
+    302,
+    303,
+    301,
+    305,
+    304
+  ],
+  "movementSemantics": "Rooted ancient tree boss raises/cocks branches, sweeps limbs forward, then settles canopy; rooted branch attack, not locomotion.",
+  "packing": "Cell RGBA bytes copied unchanged onto transparent registered canvas; no resizing/recolor/alpha edits. PNGs atomically published.",
+  "frameRecords": [
+    {
+      "frame": "anticipate_000.png",
+      "state": "anticipate",
+      "atlasCell": [
+        0,
+        0
+      ],
+      "sourceCellBoundsPx": [
+        0,
+        0,
+        418,
+        418
+      ],
+      "sourceAlpha16BBox": [
+        78,
+        88,
+        380,
+        388
+      ],
+      "sourceAlpha16MarginsLTRB": [
+        78,
+        88,
+        38,
+        30
+      ],
+      "sourceAlpha16EdgePixels": 0,
+      "canvasPx": [
+        512,
+        600
+      ],
+      "packingOffsetPx": [
+        47,
+        103
+      ],
+      "packedAlpha16BBox": [
+        125,
+        191,
+        427,
+        491
+      ],
+      "sourceCellRgbaPreserved": true,
+      "sha256": "8e5d9d95ea66a97577af71a45a7be79b0c8d095a97d5ff2cf7a3d2b35be977a5"
+    },
+    {
+      "frame": "anticipate_001.png",
+      "state": "anticipate",
+      "atlasCell": [
+        1,
+        0
+      ],
+      "sourceCellBoundsPx": [
+        418,
+        0,
+        836,
+        418
+      ],
+      "sourceAlpha16BBox": [
+        66,
+        88,
+        367,
+        389
+      ],
+      "sourceAlpha16MarginsLTRB": [
+        66,
+        88,
+        51,
+        29
+      ],
+      "sourceAlpha16EdgePixels": 0,
+      "canvasPx": [
+        512,
+        600
+      ],
+      "packingOffsetPx": [
+        47,
+        102
+      ],
+      "packedAlpha16BBox": [
+        113,
+        190,
+        414,
+        491
+      ],
+      "sourceCellRgbaPreserved": true,
+      "sha256": "56912109555bb757a1cc05ee0b00278f584ff3349ddf7a2ba179a6e5785c4751"
+    },
+    {
+      "frame": "anticipate_002.png",
+      "state": "anticipate",
+      "atlasCell": [
+        2,
+        0
+      ],
+      "sourceCellBoundsPx": [
+        836,
+        0,
+        1254,
+        418
+      ],
+      "sourceAlpha16BBox": [
+        43,
+        88,
+        352,
+        388
+      ],
+      "sourceAlpha16MarginsLTRB": [
+        43,
+        88,
+        66,
+        30
+      ],
+      "sourceAlpha16EdgePixels": 0,
+      "canvasPx": [
+        512,
+        600
+      ],
+      "packingOffsetPx": [
+        47,
+        103
+      ],
+      "packedAlpha16BBox": [
+        90,
+        191,
+        399,
+        491
+      ],
+      "sourceCellRgbaPreserved": true,
+      "sha256": "4605ef75cd4ebcd05145d8ab91fb3caf5d5990f4fff0f6b2607d5e4c44c838dd"
+    },
+    {
+      "frame": "execute_000.png",
+      "state": "execute",
+      "atlasCell": [
+        0,
+        1
+      ],
+      "sourceCellBoundsPx": [
+        0,
+        418,
+        418,
+        836
+      ],
+      "sourceAlpha16BBox": [
+        63,
+        63,
+        385,
+        365
+      ],
+      "sourceAlpha16MarginsLTRB": [
+        63,
+        63,
+        33,
+        53
+      ],
+      "sourceAlpha16EdgePixels": 0,
+      "canvasPx": [
+        512,
+        600
+      ],
+      "packingOffsetPx": [
+        47,
+        126
+      ],
+      "packedAlpha16BBox": [
+        110,
+        189,
+        432,
+        491
+      ],
+      "sourceCellRgbaPreserved": true,
+      "sha256": "aa79476360a3db2a22d72ff9df5f13dd5685db73acdbf7e145c01d7c5d0bd571"
+    },
+    {
+      "frame": "execute_001.png",
+      "state": "execute",
+      "atlasCell": [
+        1,
+        1
+      ],
+      "sourceCellBoundsPx": [
+        418,
+        418,
+        836,
+        836
+      ],
+      "sourceAlpha16BBox": [
+        56,
+        63,
+        374,
+        365
+      ],
+      "sourceAlpha16MarginsLTRB": [
+        56,
+        63,
+        44,
+        53
+      ],
+      "sourceAlpha16EdgePixels": 0,
+      "canvasPx": [
+        512,
+        600
+      ],
+      "packingOffsetPx": [
+        47,
+        126
+      ],
+      "packedAlpha16BBox": [
+        103,
+        189,
+        421,
+        491
+      ],
+      "sourceCellRgbaPreserved": true,
+      "sha256": "a4dd61d50b24a186ba217e4a1e0fd99edc748ef2eb60807cb97604dee5f22390"
+    },
+    {
+      "frame": "execute_002.png",
+      "state": "execute",
+      "atlasCell": [
+        2,
+        1
+      ],
+      "sourceCellBoundsPx": [
+        836,
+        418,
+        1254,
+        836
+      ],
+      "sourceAlpha16BBox": [
+        45,
+        61,
+        363,
+        364
+      ],
+      "sourceAlpha16MarginsLTRB": [
+        45,
+        61,
+        55,
+        54
+      ],
+      "sourceAlpha16EdgePixels": 0,
+      "canvasPx": [
+        512,
+        600
+      ],
+      "packingOffsetPx": [
+        47,
+        127
+      ],
+      "packedAlpha16BBox": [
+        92,
+        188,
+        410,
+        491
+      ],
+      "sourceCellRgbaPreserved": true,
+      "sha256": "aafde6558fbbd658330953e9b3dd37279b2151c92f03d92a1594dd19be70d785"
+    },
+    {
+      "frame": "recover_000.png",
+      "state": "recover",
+      "atlasCell": [
+        0,
+        2
+      ],
+      "sourceCellBoundsPx": [
+        0,
+        836,
+        418,
+        1254
+      ],
+      "sourceAlpha16BBox": [
+        64,
+        30,
+        382,
+        331
+      ],
+      "sourceAlpha16MarginsLTRB": [
+        64,
+        30,
+        36,
+        87
+      ],
+      "sourceAlpha16EdgePixels": 0,
+      "canvasPx": [
+        512,
+        600
+      ],
+      "packingOffsetPx": [
+        47,
+        160
+      ],
+      "packedAlpha16BBox": [
+        111,
+        190,
+        429,
+        491
+      ],
+      "sourceCellRgbaPreserved": true,
+      "sha256": "3a96dde9a01bf90fa72c7a556ba68ee7ed5de1813d7b0d26d8abcad3858008c3"
+    },
+    {
+      "frame": "recover_001.png",
+      "state": "recover",
+      "atlasCell": [
+        1,
+        2
+      ],
+      "sourceCellBoundsPx": [
+        418,
+        836,
+        836,
+        1254
+      ],
+      "sourceAlpha16BBox": [
+        54,
+        29,
+        373,
+        334
+      ],
+      "sourceAlpha16MarginsLTRB": [
+        54,
+        29,
+        45,
+        84
+      ],
+      "sourceAlpha16EdgePixels": 0,
+      "canvasPx": [
+        512,
+        600
+      ],
+      "packingOffsetPx": [
+        47,
+        157
+      ],
+      "packedAlpha16BBox": [
+        101,
+        186,
+        420,
+        491
+      ],
+      "sourceCellRgbaPreserved": true,
+      "sha256": "e71b6a328d9da0588935e8bc487fa29f2ce089c1914a56a4bf1b61651bb52b13"
+    },
+    {
+      "frame": "recover_002.png",
+      "state": "recover",
+      "atlasCell": [
+        2,
+        2
+      ],
+      "sourceCellBoundsPx": [
+        836,
+        836,
+        1254,
+        1254
+      ],
+      "sourceAlpha16BBox": [
+        52,
+        29,
+        359,
+        333
+      ],
+      "sourceAlpha16MarginsLTRB": [
+        52,
+        29,
+        59,
+        85
+      ],
+      "sourceAlpha16EdgePixels": 0,
+      "canvasPx": [
+        512,
+        600
+      ],
+      "packingOffsetPx": [
+        47,
+        158
+      ],
+      "packedAlpha16BBox": [
+        99,
+        187,
+        406,
+        491
+      ],
+      "sourceCellRgbaPreserved": true,
+      "sha256": "4278da4f51a269d070f2ec78cbb3c1b21faff4f8f17de329190c5037092a56ba"
+    }
+  ],
+  "qaContactDark": "qa_contact_dark.jpg",
+  "runtimeOverlay": "runtime_overlay_act_b_r01_b_attack_cycle_candidate_r002.json",
+  "visualQA": "Dark-composited contact reviewed for identity, margins, severed parts and phase readability. Native SpriteKit audit pending.",
+  "naturalMotionComplete": false,
+  "humanApproved": false,
+  "limitations": [
+    "Only 3 frames per phase; transition quality and timing require native review.",
+    "Tree branch attack differences are subtle; do not treat as complete motion."
+  ]
+}

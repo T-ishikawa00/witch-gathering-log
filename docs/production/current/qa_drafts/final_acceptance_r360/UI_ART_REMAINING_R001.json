@@ -1,0 +1,156 @@
+{
+  "schema": "ui_art_remaining_acceptance_r360_v1",
+  "asOf": "2026-10-14",
+  "scope": "UI and 2D acceptance only; read-only reconciliation. Does not certify release, balance, rights, purchase authority, device performance, or Human art adoption.",
+  "authority": {
+    "path": "docs/production/mission_20261010_r1/Witch_Codex_Autonomous_03to05_20261010/03_ACCEPTANCE_AND_BLOCKERS.md",
+    "sha256": "5c26036ca41f3a45a870c3e5590481c97321ae01e54aa52a26a74c12d674012c",
+    "applicableRequirement": "Section ④ requires actual iPhone UI for home/explore/party/workshop/gathering log and armory/try-on/makeover/shop/rewards/save/settings/error states; outfit/weapon/furniture ownership, combat stats, selected appearance, and placement must remain distinct and reflected in home/party/battle/details. It gives one furniture category × companion-use interaction as an initial slice. Section ⑤ requires actual combat state coverage and does not accept mappings or fixtures as full battle QA."
+  },
+  "statusSeparation": {
+    "implemented": [
+      "Current R354 dev app has ordinary home/explore/party/workshop/gacha/wardrobe/furniture routes; R340 exercised navigation, return, and cold reopen on the ordinary development save.",
+      "R128/R130 appearance candidates are available in the STANDARD_PLAY_R169 development flow; R340 showed wardrobe try-on and furniture preview. Candidate status and formal adoption remain separate.",
+      "Current R300 runtime index maps all 159 baseline IDs (149 same-kind entries plus 10 declared effect-kit consolidations). This is registration/resource coverage only.",
+      "R313 source review found idle/walk/anticipate/execute/recover/hit/resolve routes for all four party actors. This is source/resource coverage only."
+    ],
+    "technicallyVerified": [
+      "R340: six ordinary-navigation screenshots, zero gameplay/save transactions, unchanged revision 142 and cold resume; UI browsing works for the sampled routes.",
+      "R337: one ordinary E_R05_01 battle, 9 ticks and win; save receipts/cold primary reconciled. This does not establish visual quality or all-state motion.",
+      "R354: one earned ordinary R02 work-target change and cold reopen; blocked refinement requirements, old enhancement cap, refund preview/cancel, and save preservation shown. No successful refinement or dismantle occurred.",
+      "R354 independent screen review saw no significant legibility defect in its six captured screens; scope was limited to those screens."
+    ],
+    "finalQuality": {
+      "status": "NOT_ACCEPTED",
+      "facts": [
+        "No current 159-unit mapping, source count, still, or single battle is a final art-quality acceptance.",
+        "Four ally natural motion and all 30 enemy motion remain partial/unaccepted. R308 had 210 enemy-state review cells not performed; R337 adds a bounded E_R05_01 run only.",
+        "Wardrobe/furniture appearances remain unapproved candidates; visual adoption and commercial scope are not inferred."
+      ]
+    }
+  },
+  "remainingAcceptance": [
+    {
+      "priority": 1,
+      "area": "Equipment refinement: one successful earned transaction",
+      "classification": "Implemented and blocked-preview tested; positive application/cold persistence not yet verified. This is a verification gap, not a demonstrated UI defect.",
+      "evidence": [
+        {
+          "path": "docs/production/current/qa_drafts/native_equipment_integration_r354/independent_manual_review_r001/REVIEW_R001.json",
+          "sha256": "26d151629ee29e41d63a517a0bb53ed70df5cbdec9b1736fa0650fedde1d40f9"
+        },
+        {
+          "path": "docs/production/current/qa_drafts/refinement_value_r357/ordinary_ui_acceptance_r358/PROCEDURE_R001.json",
+          "sha256": "ff4be7c9076cb6a92487291ec24ecd204f339a110852b7d332d865cf58125422"
+        }
+      ],
+      "requiredAction": "After actual R02G1 and R02G2 counts reach six through ordinary gathering, use the R358-pinned development bundle and existing D4E05FD5 boots. Verify rank I→II, the displayed 60 dust and 6+6 materials, cancel leaves save unchanged, apply once produces one durable command with exact deductions and attached rank, then cold reopen preserves the same primary bytes and all prior gear/legacy +8 data.",
+      "acceptance": "Use the actual receipt/counters, not wall time alone; compare pre/post save and UUID sets; no fixtures, grants, time injection, substitution, or retry on uncertain apply.",
+      "limit": {
+        "nativeRuns": 1,
+        "transactionApplications": 1,
+        "interactiveWindowAfterRequirementsMet": "≤10 min",
+        "naturalPrerequisiteWait": "G1 about 30 min then G2 about 25 min at previously observed rate; verify actual counters before proceeding"
+      },
+      "ownership": "Technical run is local/root-owned; formal adoption of candidate refinement policy and balance remains Human review."
+    },
+    {
+      "priority": 2,
+      "area": "Furniture use interaction with a companion",
+      "classification": "Placement/preview/remove route exists; the required companion-use interaction is not demonstrated. This is a concrete acceptance gap against the initial slice in section ④, not evidence of a missing furniture asset or a layout defect.",
+      "evidence": [
+        {
+          "path": "docs/production/current/qa_drafts/release_navigation_lifecycle_r340/ROOT_UI_OBSERVATIONS_R001.json",
+          "sha256": "fc31d5c7a41fb75bc463adc62a75e09514d8abcc95f8c0872b12927b9caa4fef"
+        },
+        {
+          "path": "docs/production/current/qa_drafts/launch_asset_scope_r097/LAUNCH_ASSET_STATUS_R010.json",
+          "sha256": "fea659d814d77b74702fdd7bd359fbe183364e81ebd67f31ad3111aa8d45c554"
+        }
+      ],
+      "observedLimit": "R340 shows the existing desk/herb-table preview and LUNA in the reading pose; it does not show a distinct work/use action tied to the furniture. R275 preview work addressed room comparison only. Do not invent a new furniture SKU or alter A-style art.",
+      "requiredAction": "Use the existing placed furniture and existing companion. Add/verify one context-appropriate companion-use action tied to the table category; placing/removing furniture and returning home must still work. Check same-save persistence and cold reopen; change only the intended placement/interaction state.",
+      "acceptance": "On an ordinary native screen, the companion visibly performs the furniture-related action at the placed item, returns to ordinary home pose when the context ends, and the desk/prop remains replaceable. Existing save data and furniture ownership/economy remain unchanged except for the explicit player action.",
+      "limit": {
+        "candidateIterations": 2,
+        "authoringTime": "≤45 min total",
+        "nativeRuns": 1
+      },
+      "ownership": "A bounded implementation/test is local work; final visual/design adoption and any commercial furniture scope remain Human decisions."
+    },
+    {
+      "priority": 3,
+      "area": "Ordinary motion and 2D quality coverage",
+      "classification": "Broad acceptance gap; no new specific source defect established by the inspected evidence.",
+      "evidence": [
+        {
+          "path": "docs/production/current/qa_drafts/asset_readiness_r308/ASSET_READINESS_R001.json",
+          "sha256": "02b76b68239cdaf0af7934dfc7bbcdb4eef1592dff2cff99aec896b6f8d29a25"
+        },
+        {
+          "path": "docs/production/current/qa_drafts/party_motion_review_r313/REVIEW_R001.json",
+          "sha256": "a6386f6b070c726b4e73edea5237f7d3a8d2dc50f9fbec0a3e12843ec9514480"
+        },
+        {
+          "path": "docs/production/current/qa_drafts/enemy_release_review_r337/ACCEPTANCE_R001.md",
+          "sha256": "3154f215670453f719c3152aa956178a16087f84f1931879e34f531905f4f658"
+        },
+        {
+          "path": "docs/production/current/qa_drafts/enemy_release_review_r337/root_candidate_r003/manual_run_001/RUN.json",
+          "sha256": "27d7c9c8585de7e824e5f8c2d2446d85fa813bf25e1952587824f8d64aa04301"
+        }
+      ],
+      "scopeFacts": {
+        "baselineUnitsMapped": 159,
+        "enemyUnits": 30,
+        "enemyStateCells": 210,
+        "partyActors": 4,
+        "ordinaryEnemyUnitWithBoundedRun": "E_R05_01"
+      },
+      "requiredAction": "Review ordinary event-to-render continuity one bounded encounter at a time: idle/approach, telegraph, execute, hit, recovery and resolve where those events naturally occur. Record unseen states as unobserved; link actual event and rendered evidence. Select a concrete correction only after a visible defect is reproduced. Do not repeat R337 or reopen closed local motion experiments.",
+      "acceptance": "A unit is accepted only after its actual ordinary runtime states and transitions are visually reviewed at phone size with source/build identity pinned; mapping and held frames are insufficient. Project-level motion acceptance requires all required applicable units/states, not extrapolation from E_R05_01.",
+      "limit": {
+        "nextBatch": "one new ordinary encounter",
+        "attempts": 1,
+        "reviewTime": "≤15 min per encounter",
+        "newArt": "none unless a specific missing/defective source pose is evidenced"
+      },
+      "ownership": "Technical capture/review is local; naturalness, final art, rights and release-quality acceptance remain Human review."
+    }
+  ],
+  "closedOrCorrectedClaims": [
+    "R340 navigation success does not prove gameplay progression or furniture use.",
+    "R354 did not perform positive refinement, successful dismantle, or a last-copy-only refusal; do not claim these as verified.",
+    "R337 is a bounded single-enemy ordinary battle/save check, not a 30-enemy art pass.",
+    "The historical 111-source/48-empty split is not a current missing-asset count."
+  ],
+  "sourcePins": [
+    {
+      "path": "docs/production/current/CURRENT_STATUS.md",
+      "sha256": "1064d77afa81741db9c4c20455d6b85fcc7f43723fff5d29d7b62ddc551d1acc"
+    },
+    {
+      "path": "docs/production/current/NEXT_ACTIONS.md",
+      "sha256": "119ee269afa6ba02e56fe5cf25bac25707e59a5db4bf00be2fb6a19c8291ae87"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/progress_checkpoint_r046/ALL159_CURRENT_MAPPING_R001.json",
+      "sha256": "de256970041c3bb3b8ff9ec6f4d04eaa247f7d1844c5e37b154b481c21db0aac"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/launch_asset_scope_r097/LAUNCH_ASSET_STATUS_R010.json",
+      "sha256": "fea659d814d77b74702fdd7bd359fbe183364e81ebd67f31ad3111aa8d45c554"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/asset_readiness_r308/ASSET_READINESS_R001.json",
+      "sha256": "02b76b68239cdaf0af7934dfc7bbcdb4eef1592dff2cff99aec896b6f8d29a25"
+    }
+  ],
+  "auditLimits": {
+    "sourceWrites": 0,
+    "screenshotsCopied": 0,
+    "builds": 0,
+    "simulatorActions": 0,
+    "newArtifactsGenerated": 0
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "run_r376-preflight-r001",
+  "execution": "NOT_RUN",
+  "swiftOrSimulatorLaunched": false,
+  "runnerPath": "docs/production/current/qa_drafts/effect_build_comparison_r376/execution_r004/run_r376.py",
+  "runnerSHA256": "14d8134394cdf03b6e3eb25d8e6e40702b23dc1624e1db49dddb9f2f56fdd348",
+  "inputManifestSHA256": "eeff6d9c16760e70e43187690b6d6de3c4316b9532077dfc71267b77d9772fc8",
+  "preflightExitCode": 1,
+  "stdout": "",
+  "stderrTail": "Traceback (most recent call last):\n  File \"/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/effect_build_comparison_r376/execution_r004/run_r376.py\", line 167, in <module>\n    raise SystemExit(main())\n  File \"/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/effect_build_comparison_r376/execution_r004/run_r376.py\", line 98, in main\n    h=load_helper(); m=json.loads(INPUT.read_text()); staged,test,r368m,cman,cinput=verify_inputs(h,m)\n  File \"/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/effect_build_comparison_r376/execution_r004/run_r376.py\", line 43, in verify_inputs\n    if cr is None or cr.get('sha256')!=row['sha256'] or cr.get('sizeBytes')!=row.get('sizeBytes'): raise RuntimeError('candidate file is not cross-bound by R376 manifest: '+row['path'])\nRuntimeError: candidate file is not cross-bound by R376 manifest: docs/production/current/qa_drafts/effect_build_comparison_r376/candidate_r001/EffectBuildComparisonR376Tests.swift"
+}

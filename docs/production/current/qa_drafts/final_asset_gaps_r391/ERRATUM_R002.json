@@ -1,0 +1,31 @@
+{
+  "schema": "r391-asset-gap-erratum-r002-v1",
+  "corrects": "FINAL_ASSET_GAPS_R001.json statements about R377 capture coverage and R385 build state",
+  "originalPreserved": true,
+  "evidence": [
+    {
+      "path": "docs/production/current/qa_drafts/enemy_motion_batch_r377/capture_candidate_r004/capture_r002/RUN.json",
+      "sha256": "7f8a335ab40bb13abb63648db0db05dc50ba28871294f67a9a7ca5a62c9676db",
+      "finding": "R377 motion is separate from StoreKit UI: five retained videos (four ordinary R01 enemy encounters plus one party full-battle fixture), 232 sources/1922 resources. RUN status RECOVERY_PENDING; clips/raw traces still require offline and visual review."
+    },
+    {
+      "path": "docs/production/current/qa_drafts/storekit_restore_route_r377/execution_r001/UI_COMPLETION_R001.json",
+      "sha256": "c7570f651eb869d9c80123dd1114e667c22b926cebcb8c5174aabca7f0ec3867",
+      "finding": "This is the separate commerce UI run and has no ambient/VFX coverage."
+    },
+    {
+      "path": "docs/production/current/qa_drafts/native_completion_r385/build_tools_r004/postbuild_readback_r001/RESULT.json",
+      "sha256": "378f9f2f545dd877ec290c21ff0e036eda8668db84198a3b4fa33ec1acc9bdc3",
+      "finding": "R385 post-build readback is PASS (235 sources/1922 resources). Install/launch were false for that build step; subsequent R390 preflight and first-launch receipt used its bundle."
+    },
+    {
+      "path": "docs/production/current/qa_drafts/ui_long_inventory_r390/execution_r001/FIRST_LAUNCH_R001.json",
+      "sha256": "c00c72f6c2ebf53032a3dfaaa9ade7424739da6e5c14c0a18b3481e5d5a74072",
+      "finding": "R385-derived app launched; only fresh-home and first-battle-complete captures currently located for R390, not effect-specific temporal acceptance."
+    }
+  ],
+  "correctedAssessment": {
+    "r377Reusable": "Potentially yes for selected R01 ACT_E effects: four matching R01 encounters have video+trace IDs. Reuse only after exact effect-to-render-frame join and the pending visual review. They do not cover R01 ambient cycles or all FX_R01, and do not cover other regions.",
+    "r385Reusable": "Yes as a current pinned Release build path, subject to the existing source/resource map; R390 launched it. Build/install/first-battle alone do not prove any specific ambient/VFX kit."
+  }
+}

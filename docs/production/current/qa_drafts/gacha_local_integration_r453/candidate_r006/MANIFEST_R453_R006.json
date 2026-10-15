@@ -1,0 +1,22 @@
+{
+  "candidate": "R453 SQLite connection lifecycle warning fix",
+  "revision": "R006",
+  "status": "PREPARED_NOT_RUN",
+  "scope": "new R453 adapter and its focused test only; no authority policy/schema change",
+  "change": "Explicitly close sqlite3 connections with contextlib.closing. The test that mutates the authority row explicitly commits and closes. SQLite connection context managers commit/rollback but do not close the connection.",
+  "sourcePins": [
+    {
+      "path": "tools/witch_purchase_authority/local_delivery_r453.py",
+      "sha256": "81e1906df738a7bd9fb69d423a4c42d10eab2ad452bd45442e69cb59cfa5f837"
+    },
+    {
+      "path": "tools/witch_purchase_authority/tests/test_local_delivery_r453.py",
+      "sha256": "8b45d156d5dc957de202448f9f9dca5f18802960b5d5d04e588ed31729ccde4f"
+    }
+  ],
+  "baseR005TestSHA256": "3fb400f5d6b3f9f5ab8569af181dbbd0fb022d12f70623ee946cae4a76df0959",
+  "execution": {
+    "testsRunByAuthor": false,
+    "rootObservedPrior": "73 tests passed; Python 3.13 ResourceWarnings reported unclosed SQLite connections in the new adapter/test path."
+  }
+}

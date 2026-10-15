@@ -1,0 +1,1302 @@
+{
+  "standard": {
+    "status": "UNAPPROVED_PARTIAL_CANDIDATE",
+    "naturalMotionComplete": false,
+    "tool": "built-in image_gen",
+    "sourceSHA256": "97e4efe2218a41f3e505142cf8d4c636358f8bed63fc5f3a03369c66b22c4b17",
+    "canvas": [
+      256,
+      256
+    ],
+    "foot_anchor": [
+      128,
+      244
+    ],
+    "scale": 0.6226415094339622,
+    "registration": "Grid crop, uniform scale across entire clip, translation to foot baseline; no per-frame scale or pixel painting. Hand coordinates measured per frame.",
+    "prompt": "Nine distinct walk phases of exact identity/costume, no staff, closed fist held steady near torso, full margins, true alpha, no background/text.",
+    "walk": {
+      "fps": 12,
+      "loop": true,
+      "frames": [
+        {
+          "path": "standard__walk_0.png",
+          "hand_top_left_px": [
+            156.377,
+            137.208
+          ],
+          "angle": 0.08,
+          "source_box": [
+            0,
+            0,
+            418,
+            420
+          ],
+          "translation": [
+            -8,
+            -6
+          ],
+          "sha256": "ee5c86b4b5d7686f29c04a2ed4ed2795ed9143258337dad84cef716474f56b1d"
+        },
+        {
+          "path": "standard__walk_1.png",
+          "hand_top_left_px": [
+            155.019,
+            137.208
+          ],
+          "angle": 0.08,
+          "source_box": [
+            418,
+            0,
+            836,
+            420
+          ],
+          "translation": [
+            -5,
+            -6
+          ],
+          "sha256": "37a9bba2a7c40968c396b7b40c378d9b2a9460f97f363b4b167df05eda6fa306"
+        },
+        {
+          "path": "standard__walk_2.png",
+          "hand_top_left_px": [
+            156.0,
+            137.208
+          ],
+          "angle": 0.08,
+          "source_box": [
+            836,
+            0,
+            1254,
+            420
+          ],
+          "translation": [
+            -9,
+            -6
+          ],
+          "sha256": "8a712cc80291e54b2fad35d04dab926b556fe3d8c2f58a84e42f8ce5d2ea4713"
+        },
+        {
+          "path": "standard__walk_3.png",
+          "hand_top_left_px": [
+            157.132,
+            133.0
+          ],
+          "angle": 0.08,
+          "source_box": [
+            0,
+            420,
+            418,
+            830
+          ],
+          "translation": [
+            -6,
+            1
+          ],
+          "sha256": "d16ba038973e08c5706103a2895f0ea979873206a6c66f9328f9f5d9f9fe1010"
+        },
+        {
+          "path": "standard__walk_4.png",
+          "hand_top_left_px": [
+            160.377,
+            134.868
+          ],
+          "angle": 0.08,
+          "source_box": [
+            418,
+            420,
+            836,
+            830
+          ],
+          "translation": [
+            -4,
+            1
+          ],
+          "sha256": "c3946c5c85042b0e71445a6784f0e821a13a5d16447a77143d5639dca242b03e"
+        },
+        {
+          "path": "standard__walk_5.png",
+          "hand_top_left_px": [
+            156.491,
+            136.113
+          ],
+          "angle": 0.08,
+          "source_box": [
+            836,
+            420,
+            1254,
+            830
+          ],
+          "translation": [
+            -11,
+            1
+          ],
+          "sha256": "dfc1eb29ed4418a8ccb8525f604c9bca11d9a7269f347db676bc0daefa17d19b"
+        },
+        {
+          "path": "standard__walk_6.png",
+          "hand_top_left_px": [
+            154.755,
+            137.245
+          ],
+          "angle": 0.08,
+          "source_box": [
+            0,
+            830,
+            418,
+            1254
+          ],
+          "translation": [
+            -9,
+            4
+          ],
+          "sha256": "e7c58d91b31ac683f64c1e9826dff86a0f532271e880cabb3ddfcc9614946d71"
+        },
+        {
+          "path": "standard__walk_7.png",
+          "hand_top_left_px": [
+            158.377,
+            138.377
+          ],
+          "angle": 0.08,
+          "source_box": [
+            418,
+            830,
+            836,
+            1254
+          ],
+          "translation": [
+            -6,
+            7
+          ],
+          "sha256": "b777e7db61a315f957b444a9374e59242324e9fe7dbfa81844964eb36127b98e"
+        },
+        {
+          "path": "standard__walk_8.png",
+          "hand_top_left_px": [
+            161.113,
+            136.623
+          ],
+          "angle": 0.08,
+          "source_box": [
+            836,
+            830,
+            1254,
+            1254
+          ],
+          "translation": [
+            -7,
+            4
+          ],
+          "sha256": "b048230b0745ef7bdcfd7426ee26af3c5debed9a17acfe71eba60c06725fbc34"
+        }
+      ]
+    },
+    "runtimeQA": "PENDING",
+    "castSourceSHA256": "ca749b0193cc10ac7b5862154f09f088c5c01c586326b7f64cf299392b610d3c",
+    "castScale": 0.5968992248062015,
+    "castPrompt": "Nine sequential wind-up, extend and recovery poses preserving exact identity/costume and closed fist. No staff; full margins and true alpha.",
+    "anticipate": {
+      "fps": 10.714285714285714,
+      "loop": false,
+      "frames": [
+        {
+          "path": "standard__cast_0.png",
+          "hand_top_left_px": [
+            163.729,
+            138.287
+          ],
+          "angle": 0.08,
+          "source_box": [
+            0,
+            0,
+            418,
+            416
+          ],
+          "translation": [
+            -4,
+            1
+          ],
+          "sha256": "574441442b3c2dfad2285fa133febea703dadbf675eeeafc2c1e6126a39728c8"
+        },
+        {
+          "path": "standard__cast_1.png",
+          "hand_top_left_px": [
+            177.279,
+            160.372
+          ],
+          "angle": 0.05,
+          "source_box": [
+            418,
+            0,
+            836,
+            416
+          ],
+          "translation": [
+            0,
+            1
+          ],
+          "sha256": "72d454a32a23f5a23f31c5257e3e66af9100eaa2c8580013ca498460cd006bec"
+        },
+        {
+          "path": "standard__cast_2.png",
+          "hand_top_left_px": [
+            180.651,
+            160.372
+          ],
+          "angle": -0.1,
+          "source_box": [
+            836,
+            0,
+            1254,
+            416
+          ],
+          "translation": [
+            -2,
+            1
+          ],
+          "sha256": "02c1ddbe1390fd19dc6f0a0be3680131e2c8e05121c57ac2688d700933a3c0d3"
+        }
+      ]
+    },
+    "execute": {
+      "fps": 10.714285714285714,
+      "loop": false,
+      "frames": [
+        {
+          "path": "standard__cast_3.png",
+          "hand_top_left_px": [
+            193.364,
+            88.388
+          ],
+          "angle": -0.3,
+          "source_box": [
+            0,
+            416,
+            418,
+            820
+          ],
+          "translation": [
+            -6,
+            9
+          ],
+          "sha256": "416d953b150d02de8695c355387dadd4277c61ab3fd4c0d76efa59dcf3bf35a6"
+        },
+        {
+          "path": "standard__cast_4.png",
+          "hand_top_left_px": [
+            201.915,
+            96.147
+          ],
+          "angle": -0.45,
+          "source_box": [
+            418,
+            416,
+            836,
+            820
+          ],
+          "translation": [
+            -7,
+            9
+          ],
+          "sha256": "51422c4e6a5f359d9fe0250f0894ae6493145a324100cbfe7c70b151ae57da9e"
+        },
+        {
+          "path": "standard__cast_5.png",
+          "hand_top_left_px": [
+            214.853,
+            87.791
+          ],
+          "angle": -0.45,
+          "source_box": [
+            836,
+            416,
+            1254,
+            820
+          ],
+          "translation": [
+            -6,
+            9
+          ],
+          "sha256": "944d659675544d5674987020f1b7fae3dff6f6ba21f9d141aeb35aa5029eaee1"
+        }
+      ]
+    },
+    "recover": {
+      "fps": 10.714285714285714,
+      "loop": false,
+      "frames": [
+        {
+          "path": "standard__cast_6.png",
+          "hand_top_left_px": [
+            194.155,
+            90.372
+          ],
+          "angle": -0.3,
+          "source_box": [
+            0,
+            820,
+            418,
+            1254
+          ],
+          "translation": [
+            -7,
+            8
+          ],
+          "sha256": "3950bca15103c5dd253abc211996d0e078865553c4eeb2b7c152c0b84b9fb77a"
+        },
+        {
+          "path": "standard__cast_7.png",
+          "hand_top_left_px": [
+            178.682,
+            155.434
+          ],
+          "angle": -0.1,
+          "source_box": [
+            418,
+            820,
+            836,
+            1254
+          ],
+          "translation": [
+            2,
+            8
+          ],
+          "sha256": "42604bb6d1e56853c4e391edaed580fa203020d167ad88797bc28210911c5c80"
+        },
+        {
+          "path": "standard__cast_8.png",
+          "hand_top_left_px": [
+            158.163,
+            140.705
+          ],
+          "angle": 0.08,
+          "source_box": [
+            836,
+            820,
+            1254,
+            1254
+          ],
+          "translation": [
+            -3,
+            7
+          ],
+          "sha256": "bcfb121127809ad5499af465f47d813c2574425ec19b340ce6545503f093b128"
+        }
+      ]
+    },
+    "restSourceSHA256": "2e80d3c86ebe61a472307d4bd8f9778910d028f83a299dc35a2b67073fe59ec7",
+    "restSourcePath": "/Users/PUBLIC_USER/.codex/generated_images/01a12398-0ccb-7d03-aeac-75db9b0de178/exec-f9c0de4f-6c19-4773-8b96-90eb551762bb.png",
+    "restScale": 0.652542372881356,
+    "restStatus": "UNAPPROVED_BODY_AND_HAND_MOTION_CANDIDATE",
+    "restRegistration": "Measured alpha16 transparent gutters, RGBA crop/nearest scale/translation; manual per-frame grip coordinates, no painted alpha or colors.",
+    "idle": {
+      "fps": 10,
+      "loop": true,
+      "durations": [
+        1.6,
+        1.6,
+        0.14
+      ],
+      "frames": [
+        {
+          "path": "standard__rest_0.png",
+          "hand_top_left_px": [
+            166.237,
+            142.492
+          ],
+          "angle": 0.1,
+          "source_box": [
+            0,
+            0,
+            433,
+            448
+          ],
+          "export_alpha16_bounds": [
+            35,
+            16,
+            221,
+            243
+          ],
+          "translation": [
+            -23,
+            -35
+          ],
+          "sha256": "7575ce7ef6c88d85e9dc26c61fc0e91b0dfe09638117df2a6b4588b62b2efa6d"
+        },
+        {
+          "path": "standard__rest_1.png",
+          "hand_top_left_px": [
+            165.788,
+            144.449
+          ],
+          "angle": 0.1,
+          "source_box": [
+            433,
+            0,
+            832,
+            448
+          ],
+          "export_alpha16_bounds": [
+            37,
+            16,
+            219,
+            243
+          ],
+          "translation": [
+            2,
+            -35
+          ],
+          "sha256": "892d6346310c101880552911aa1306a4ee7800c78b08cb8c7d938de46f26bfa3"
+        },
+        {
+          "path": "standard__rest_2.png",
+          "hand_top_left_px": [
+            164.051,
+            144.449
+          ],
+          "angle": 0.1,
+          "source_box": [
+            832,
+            0,
+            1254,
+            448
+          ],
+          "export_alpha16_bounds": [
+            36,
+            18,
+            221,
+            244
+          ],
+          "translation": [
+            -3,
+            -35
+          ],
+          "sha256": "be4e8e75891e002d9ee7970c51f9eb4285834bc06b3d84531c6a4e85292833bf"
+        }
+      ]
+    },
+    "hit": {
+      "fps": 10,
+      "loop": false,
+      "durations": [
+        0.1,
+        0.12,
+        0.1
+      ],
+      "frames": [
+        {
+          "path": "standard__rest_3.png",
+          "hand_top_left_px": [
+            140.136,
+            155.127
+          ],
+          "angle": -0.25,
+          "source_box": [
+            0,
+            448,
+            433,
+            834
+          ],
+          "export_alpha16_bounds": [
+            29,
+            22,
+            229,
+            244
+          ],
+          "translation": [
+            -23,
+            7
+          ],
+          "sha256": "38794859d5ab1468e9d388189e531abe1cac48fa05d7d43a72689906656d83fb"
+        },
+        {
+          "path": "standard__rest_4.png",
+          "hand_top_left_px": [
+            143.254,
+            153.127
+          ],
+          "angle": -0.35,
+          "source_box": [
+            433,
+            448,
+            832,
+            834
+          ],
+          "export_alpha16_bounds": [
+            32,
+            24,
+            224,
+            244
+          ],
+          "translation": [
+            1,
+            5
+          ],
+          "sha256": "3ec449bc60c41f7f93d765396d8c1d1ab932320152753026791c1076a1520dfa"
+        },
+        {
+          "path": "standard__rest_5.png",
+          "hand_top_left_px": [
+            159.441,
+            138.814
+          ],
+          "angle": 0.1,
+          "source_box": [
+            832,
+            448,
+            1254,
+            834
+          ],
+          "export_alpha16_bounds": [
+            35,
+            21,
+            220,
+            244
+          ],
+          "translation": [
+            -5,
+            7
+          ],
+          "sha256": "49c890c0afae1927d5a5b6138cf9edc2d30b96571b8126691acfaec0419ee60d"
+        }
+      ]
+    },
+    "resolve": {
+      "fps": 10,
+      "loop": false,
+      "durations": [
+        0.16,
+        0.18,
+        0.24
+      ],
+      "frames": [
+        {
+          "path": "standard__rest_6.png",
+          "hand_top_left_px": [
+            153.229,
+            140.949
+          ],
+          "angle": 0.1,
+          "source_box": [
+            0,
+            834,
+            433,
+            1254
+          ],
+          "export_alpha16_bounds": [
+            35,
+            16,
+            222,
+            244
+          ],
+          "translation": [
+            -21,
+            0
+          ],
+          "sha256": "674ea3d1fb7d4c4caf1085b25c9a91275ef3f313d804af842013fabc66bf8474"
+        },
+        {
+          "path": "standard__rest_7.png",
+          "hand_top_left_px": [
+            137.297,
+            133.424
+          ],
+          "angle": 0.1,
+          "source_box": [
+            433,
+            834,
+            832,
+            1254
+          ],
+          "export_alpha16_bounds": [
+            38,
+            13,
+            219,
+            244
+          ],
+          "translation": [
+            -3,
+            -1
+          ],
+          "sha256": "db4ffc38aaa57a9e1dec45717f1762c2701c82991145b5d9286519b17f828856"
+        },
+        {
+          "path": "standard__rest_8.png",
+          "hand_top_left_px": [
+            149.39,
+            134.729
+          ],
+          "angle": 0.1,
+          "source_box": [
+            832,
+            834,
+            1254,
+            1254
+          ],
+          "export_alpha16_bounds": [
+            35,
+            13,
+            220,
+            244
+          ],
+          "translation": [
+            -2,
+            -1
+          ],
+          "sha256": "99a7ec62f798fa86c73c7697e3fed6882ed9cfb3d9c877b306d501309702d91b"
+        }
+      ]
+    }
+  },
+  "travel": {
+    "status": "UNAPPROVED_PARTIAL_CANDIDATE",
+    "naturalMotionComplete": false,
+    "tool": "built-in image_gen",
+    "sourceSHA256": "927646e7735326700f4202379abb2a2be0825740530780f95c503e6b1e7b948c",
+    "canvas": [
+      256,
+      256
+    ],
+    "foot_anchor": [
+      128,
+      244
+    ],
+    "scale": 0.5812807881773399,
+    "registration": "Grid crop, uniform scale across entire clip, translation to foot baseline; no per-frame scale or pixel painting. Hand coordinates measured per frame.",
+    "prompt": "Nine distinct walk phases of exact identity/costume, no staff, closed fist held steady near torso, full margins, true alpha, no background/text.",
+    "walk": {
+      "fps": 12,
+      "loop": true,
+      "frames": [
+        {
+          "path": "travel__walk_0.png",
+          "hand_top_left_px": [
+            96.911,
+            154.202
+          ],
+          "angle": 0.8,
+          "source_box": [
+            0,
+            0,
+            418,
+            423
+          ],
+          "translation": [
+            1,
+            -1
+          ],
+          "sha256": "a8461e071f8c10eecf6e42fe595ff9f68bceb67819709a7a1890d8a1715820c1"
+        },
+        {
+          "path": "travel__walk_1.png",
+          "hand_top_left_px": [
+            93.798,
+            155.621
+          ],
+          "angle": 0.8,
+          "source_box": [
+            418,
+            0,
+            836,
+            423
+          ],
+          "translation": [
+            13,
+            1
+          ],
+          "sha256": "7241025579552eb4f15efd6d1974b18ebd9cfca033b520e04631cdd48b6b3618"
+        },
+        {
+          "path": "travel__walk_2.png",
+          "hand_top_left_px": [
+            90.66,
+            154.202
+          ],
+          "angle": 0.8,
+          "source_box": [
+            836,
+            0,
+            1254,
+            423
+          ],
+          "translation": [
+            18,
+            -1
+          ],
+          "sha256": "9721b79fe68d2786baa9ec2ba607ceaa707654d4ace8f2ef4860e88e8b026702"
+        },
+        {
+          "path": "travel__walk_3.png",
+          "hand_top_left_px": [
+            91.074,
+            153.414
+          ],
+          "angle": 0.8,
+          "source_box": [
+            0,
+            423,
+            418,
+            829
+          ],
+          "translation": [
+            -6,
+            11
+          ],
+          "sha256": "2ef4e8564f0d0893926e649e486346f6cda235a70b6023f25e131933abeb7edf"
+        },
+        {
+          "path": "travel__walk_4.png",
+          "hand_top_left_px": [
+            84.798,
+            153.414
+          ],
+          "angle": 0.8,
+          "source_box": [
+            418,
+            423,
+            836,
+            829
+          ],
+          "translation": [
+            4,
+            11
+          ],
+          "sha256": "11ec631b06a72ada7e2567c08b080bb6421db28933953582138409b77473a1de"
+        },
+        {
+          "path": "travel__walk_5.png",
+          "hand_top_left_px": [
+            88.66,
+            153.576
+          ],
+          "angle": 0.8,
+          "source_box": [
+            836,
+            423,
+            1254,
+            829
+          ],
+          "translation": [
+            16,
+            10
+          ],
+          "sha256": "0fd49f8b45bef2bd83d13666bbf0ba55b0d6e1fb926500c1df56fe9b1c8d4fee"
+        },
+        {
+          "path": "travel__walk_6.png",
+          "hand_top_left_px": [
+            92.074,
+            153.995
+          ],
+          "angle": 0.8,
+          "source_box": [
+            0,
+            829,
+            418,
+            1254
+          ],
+          "translation": [
+            -5,
+            11
+          ],
+          "sha256": "3671a95aceee0cca0554e4742ea11ae98de881e1895305460c05f36a1af3b3d1"
+        },
+        {
+          "path": "travel__walk_7.png",
+          "hand_top_left_px": [
+            85.379,
+            152.995
+          ],
+          "angle": 0.8,
+          "source_box": [
+            418,
+            829,
+            836,
+            1254
+          ],
+          "translation": [
+            4,
+            10
+          ],
+          "sha256": "276aef3b8f72a12e865213238c9058c2ff22a66b22fb9b62640ae25bd352c3f6"
+        },
+        {
+          "path": "travel__walk_8.png",
+          "hand_top_left_px": [
+            87.66,
+            153.995
+          ],
+          "angle": 0.8,
+          "source_box": [
+            836,
+            829,
+            1254,
+            1254
+          ],
+          "translation": [
+            15,
+            11
+          ],
+          "sha256": "4f9f3b41d7158a45b1c6e881305ebc58ed77961f0af839d47710380f00c864cd"
+        }
+      ]
+    },
+    "runtimeQA": "PENDING",
+    "castSourceSHA256": "c3fc0f010956ef0ecb7f0c182c53b23401180c35f3d5cfebba21e593b2fb51e5",
+    "castScale": 0.5812807881773399,
+    "castPrompt": "Nine sequential wind-up, extend and recovery poses preserving exact identity/costume and closed fist. No staff; full margins and true alpha.",
+    "anticipate": {
+      "fps": 10.714285714285714,
+      "loop": false,
+      "frames": [
+        {
+          "path": "travel__cast_0.png",
+          "hand_top_left_px": [
+            96.542,
+            152.645
+          ],
+          "angle": 0.8,
+          "source_box": [
+            0,
+            0,
+            418,
+            417
+          ],
+          "translation": [
+            14,
+            5
+          ],
+          "sha256": "956a61aa45138cf3e3833550cf2905170c1e947f134c8028b6c3dc8205820d85"
+        },
+        {
+          "path": "travel__cast_1.png",
+          "hand_top_left_px": [
+            125.488,
+            129.394
+          ],
+          "angle": 0.85,
+          "source_box": [
+            418,
+            0,
+            836,
+            417
+          ],
+          "translation": [
+            4,
+            5
+          ],
+          "sha256": "7e48ab790b8f899946f3eb961bc1c6d5940b9c31013ccf38eca64148e2805169"
+        },
+        {
+          "path": "travel__cast_2.png",
+          "hand_top_left_px": [
+            100.399,
+            113.118
+          ],
+          "angle": 0.9,
+          "source_box": [
+            836,
+            0,
+            1254,
+            417
+          ],
+          "translation": [
+            1,
+            5
+          ],
+          "sha256": "90eefdf698caad44b691d0e67956d055e6f4582fa16b06afeb504a6590c81ee5"
+        }
+      ]
+    },
+    "execute": {
+      "fps": 10.714285714285714,
+      "loop": false,
+      "frames": [
+        {
+          "path": "travel__cast_3.png",
+          "hand_top_left_px": [
+            215.842,
+            131.813
+          ],
+          "angle": -0.3,
+          "source_box": [
+            0,
+            417,
+            418,
+            828
+          ],
+          "translation": [
+            6,
+            8
+          ],
+          "sha256": "ce690bceb86530c404bf2df60567466e18fde290d12b2d2dbff53b8b63432fde"
+        },
+        {
+          "path": "travel__cast_4.png",
+          "hand_top_left_px": [
+            221.33,
+            125.419
+          ],
+          "angle": -0.45,
+          "source_box": [
+            418,
+            417,
+            836,
+            828
+          ],
+          "translation": [
+            8,
+            8
+          ],
+          "sha256": "859472321d091a3e3851a4f757652fe5ddaac7de70f441c49773ffa87fb060b6"
+        },
+        {
+          "path": "travel__cast_5.png",
+          "hand_top_left_px": [
+            220.399,
+            128.325
+          ],
+          "angle": -0.45,
+          "source_box": [
+            836,
+            417,
+            1254,
+            828
+          ],
+          "translation": [
+            3,
+            8
+          ],
+          "sha256": "b4cc1c0422a73c73fc95e104e87c1b5bbc959900bc2b2a1ae4b5ebcef41c6272"
+        }
+      ]
+    },
+    "recover": {
+      "fps": 10.714285714285714,
+      "loop": false,
+      "frames": [
+        {
+          "path": "travel__cast_6.png",
+          "hand_top_left_px": [
+            196.522,
+            130.138
+          ],
+          "angle": -0.3,
+          "source_box": [
+            0,
+            828,
+            418,
+            1254
+          ],
+          "translation": [
+            14,
+            4
+          ],
+          "sha256": "05b4f8b22ef0835636daee2d29626676d096f0a0adf5440e578c130ff2952600"
+        },
+        {
+          "path": "travel__cast_7.png",
+          "hand_top_left_px": [
+            115.606,
+            132.463
+          ],
+          "angle": -0.6,
+          "source_box": [
+            418,
+            828,
+            836,
+            1254
+          ],
+          "translation": [
+            4,
+            4
+          ],
+          "sha256": "07076326209c6568ff7dbf33713650e21e4a6e36170cfcd992d7875b940fb8c7"
+        },
+        {
+          "path": "travel__cast_8.png",
+          "hand_top_left_px": [
+            96.749,
+            153.389
+          ],
+          "angle": 0.8,
+          "source_box": [
+            836,
+            828,
+            1254,
+            1254
+          ],
+          "translation": [
+            2,
+            4
+          ],
+          "sha256": "54ecaf3712437c4ac63735a128dac5d900ce35731b34630664e457d86ae8d80d"
+        }
+      ]
+    },
+    "restSourceSHA256": "5abe5e024e8d1401a01daddb0eb329a0c1d1e9a1dbeea60d8a9d24f516c6897f",
+    "restSourcePath": "/Users/PUBLIC_USER/.codex/generated_images/01a12398-0ccb-7d03-aeac-75db9b0de178/exec-671cb5d4-d47c-40ea-ad69-2280cfc9a9a3.png",
+    "restScale": 0.6344086021505376,
+    "restStatus": "UNAPPROVED_BODY_AND_HAND_MOTION_CANDIDATE",
+    "restRegistration": "Measured alpha16 transparent gutters, RGBA crop/nearest scale/translation; manual per-frame grip coordinates, no painted alpha or colors.",
+    "idle": {
+      "fps": 10,
+      "loop": true,
+      "durations": [
+        1.6,
+        0.14,
+        1.6
+      ],
+      "frames": [
+        {
+          "path": "travel__rest_0.png",
+          "hand_top_left_px": [
+            91.677,
+            151.366
+          ],
+          "angle": 0.8,
+          "source_box": [
+            0,
+            0,
+            410,
+            443
+          ],
+          "export_alpha16_bounds": [
+            41,
+            8,
+            215,
+            244
+          ],
+          "translation": [
+            -13,
+            -25
+          ],
+          "sha256": "ffdc5e4218d2431a88f57cdce7296e6a1b24f6c0b6ee7ea547d16bbd47625714"
+        },
+        {
+          "path": "travel__rest_1.png",
+          "hand_top_left_px": [
+            94.624,
+            150.731
+          ],
+          "angle": 0.8,
+          "source_box": [
+            410,
+            0,
+            818,
+            443
+          ],
+          "export_alpha16_bounds": [
+            39,
+            9,
+            217,
+            244
+          ],
+          "translation": [
+            2,
+            -25
+          ],
+          "sha256": "eca214927d3dbb572fc897d9fc1643a657c5eaacade741b7e8b03df756157f0a"
+        },
+        {
+          "path": "travel__rest_2.png",
+          "hand_top_left_px": [
+            97.452,
+            150.731
+          ],
+          "angle": 0.8,
+          "source_box": [
+            818,
+            0,
+            1219,
+            443
+          ],
+          "export_alpha16_bounds": [
+            39,
+            10,
+            216,
+            244
+          ],
+          "translation": [
+            8,
+            -25
+          ],
+          "sha256": "76d3909dc7edc53cfcf5492e08170efcd43d9e5a1219f6bff233040885936558"
+        }
+      ]
+    },
+    "hit": {
+      "fps": 10,
+      "loop": false,
+      "durations": [
+        0.1,
+        0.12,
+        0.1
+      ],
+      "frames": [
+        {
+          "path": "travel__rest_3.png",
+          "hand_top_left_px": [
+            98.387,
+            147.72
+          ],
+          "angle": 0.8,
+          "source_box": [
+            0,
+            443,
+            410,
+            846
+          ],
+          "export_alpha16_bounds": [
+            31,
+            11,
+            225,
+            244
+          ],
+          "translation": [
+            -12,
+            -2
+          ],
+          "sha256": "5c612f8f88d1f714ea0f70c2bf2482c996de5027cea1dc7aa12ed91f199152bf"
+        },
+        {
+          "path": "travel__rest_4.png",
+          "hand_top_left_px": [
+            99.333,
+            160.409
+          ],
+          "angle": 0.8,
+          "source_box": [
+            410,
+            443,
+            818,
+            846
+          ],
+          "export_alpha16_bounds": [
+            24,
+            18,
+            231,
+            244
+          ],
+          "translation": [
+            1,
+            -2
+          ],
+          "sha256": "4e0b298c1a51629a4fe62683e9ad9faaf1a2f5e6e8cf66335ef6f5b3d6e0402e"
+        },
+        {
+          "path": "travel__rest_5.png",
+          "hand_top_left_px": [
+            103.796,
+            147.086
+          ],
+          "angle": 0.8,
+          "source_box": [
+            818,
+            443,
+            1219,
+            846
+          ],
+          "export_alpha16_bounds": [
+            37,
+            12,
+            218,
+            244
+          ],
+          "translation": [
+            8,
+            -2
+          ],
+          "sha256": "47c30f61cdc11ece328903d82740ddaccc78fa94c5ab5f588ed277186e696271"
+        }
+      ]
+    },
+    "resolve": {
+      "fps": 10,
+      "loop": false,
+      "durations": [
+        0.16,
+        0.18,
+        0.24
+      ],
+      "frames": [
+        {
+          "path": "travel__rest_6.png",
+          "hand_top_left_px": [
+            90.946,
+            149.624
+          ],
+          "angle": 0.8,
+          "source_box": [
+            0,
+            846,
+            410,
+            1290
+          ],
+          "export_alpha16_bounds": [
+            37,
+            13,
+            220,
+            244
+          ],
+          "translation": [
+            -15,
+            -2
+          ],
+          "sha256": "4cf27a11fd352549e60bdee9fa04d7c6206067815cc3599ca8c9db0f8a9f5dd2"
+        },
+        {
+          "path": "travel__rest_7.png",
+          "hand_top_left_px": [
+            85.624,
+            150.892
+          ],
+          "angle": 0.8,
+          "source_box": [
+            410,
+            846,
+            818,
+            1290
+          ],
+          "export_alpha16_bounds": [
+            37,
+            11,
+            220,
+            244
+          ],
+          "translation": [
+            -7,
+            -2
+          ],
+          "sha256": "056fd4711c1992a21b7f7a88c2bdcf319f76f3b34702abcf091dd61854c3c950"
+        },
+        {
+          "path": "travel__rest_8.png",
+          "hand_top_left_px": [
+            92.699,
+            149.624
+          ],
+          "angle": 0.8,
+          "source_box": [
+            818,
+            846,
+            1219,
+            1290
+          ],
+          "export_alpha16_bounds": [
+            36,
+            9,
+            220,
+            244
+          ],
+          "translation": [
+            -5,
+            -2
+          ],
+          "sha256": "6aacb3cbf8833b599f1cd0fcb0f14a7c3630888b0e68b62074c52a32b849b7ec"
+        }
+      ]
+    }
+  }
+}

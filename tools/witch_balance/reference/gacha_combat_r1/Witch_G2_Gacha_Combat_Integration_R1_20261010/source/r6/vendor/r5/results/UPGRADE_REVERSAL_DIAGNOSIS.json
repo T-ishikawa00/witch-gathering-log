@@ -1,0 +1,64 @@
+{
+  "paired_count": 200,
+  "wins_before": 161,
+  "wins_after": 184,
+  "defeat_to_victory": 25,
+  "victory_to_defeat": 2,
+  "cases": [
+    {
+      "seed": 100049,
+      "before": {
+        "outcome": "VICTORY",
+        "elapsed_ms": 71250,
+        "boss_remaining_hp": 0
+      },
+      "after": {
+        "outcome": "DEFEAT",
+        "elapsed_ms": 68100,
+        "boss_remaining_hp": 1425389
+      },
+      "unit_scale": 10000,
+      "first_choice_difference_index": 44,
+      "first_choice_before": [
+        14300,
+        "C_SMITH",
+        "SK_S_GUARD",
+        "C_SMITH"
+      ],
+      "first_choice_after": [
+        14450,
+        "C_APPRENTICE",
+        "C_APPRENTICE_BASIC",
+        "boss"
+      ]
+    },
+    {
+      "seed": 100069,
+      "before": {
+        "outcome": "VICTORY",
+        "elapsed_ms": 73150,
+        "boss_remaining_hp": 0
+      },
+      "after": {
+        "outcome": "DEFEAT",
+        "elapsed_ms": 68100,
+        "boss_remaining_hp": 7810418
+      },
+      "unit_scale": 10000,
+      "first_choice_difference_index": 88,
+      "first_choice_before": [
+        28050,
+        "C_APPRENTICE",
+        "SK_A_WARD",
+        "C_SMITH"
+      ],
+      "first_choice_after": [
+        28050,
+        "C_APPRENTICE",
+        "C_APPRENTICE_BASIC",
+        "boss"
+      ]
+    }
+  ],
+  "status": "OPEN: action timings/targeting change; no claim of pointwise-monotone win probability"
+}

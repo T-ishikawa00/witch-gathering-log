@@ -1,0 +1,648 @@
+{
+  "status": "UNAPPROVED_RUNTIME_BINDING_CANDIDATE",
+  "sourceManifestsSHA256": {
+    "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/effects/R01/effect_manifest_r001.json": "1f6a21e7f485f4b475f3a0820f3c143dcfef306415d7369712f09aa235a829a4",
+    "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/effects/R02/effect_manifest_r001.json": "2f398e16b9c53f643ae34b6ffc82bf9bb319741edca5324fcba5801477926058",
+    "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/effects/R03/effect_manifest_r001.json": "51dfa024120e13413849e6963bf82384112ad779fc5b8e5802a6ba693462ec2b",
+    "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/effects/R04/effect_manifest_r001.json": "5d07b7d065f5bd7aa9adbcb74f77d786f3ef5bea6907a9a1e532dd3077e30ab5",
+    "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_integration_20261009T133015Z_ddbec58c/effects/R05/effect_manifest_r001.json": "2b43eb786760cd153f64b6625e664ac824b5ee190ffd9ce8706a791095e16339"
+  },
+  "limits": {
+    "environment": 2,
+    "combat": 2
+  },
+  "entries": {
+    "ENV_R01_01": {
+      "name": "few amber leaves drifting slowly",
+      "blend_mode": "alpha",
+      "opacity": 0.28,
+      "anchor": "viewport_low_density",
+      "loop": true
+    },
+    "ENV_R01_02": {
+      "name": "thin shallow-stream ripples",
+      "blend_mode": "additive",
+      "opacity": 0.18,
+      "anchor": "viewport_low_density",
+      "loop": true
+    },
+    "ENV_R01_03": {
+      "name": "soft slow canopy shadow",
+      "blend_mode": "additive",
+      "opacity": 0.18,
+      "anchor": "viewport_low_density",
+      "loop": true
+    },
+    "ACT_E_R01_01_charge": {
+      "name": "boar hoof scrape and direct charge dust",
+      "blend_mode": "alpha",
+      "opacity": 0.62,
+      "anchors": {
+        "source": "action_origin",
+        "target": "ground_path"
+      },
+      "loop": false,
+      "animation_duration_ms": 600,
+      "event_contract": {
+        "anticipation_start_frame": 0,
+        "cue_peak_frame": 2,
+        "impact_present_frame": 4,
+        "recover_end_frame": 7
+      }
+    },
+    "ACT_E_R01_02_silk": {
+      "name": "spider thread aim then fine silk shot",
+      "blend_mode": "alpha",
+      "opacity": 0.62,
+      "anchors": {
+        "source": "action_origin",
+        "target": "target_center"
+      },
+      "loop": false,
+      "animation_duration_ms": 600,
+      "event_contract": {
+        "anticipation_start_frame": 0,
+        "cue_peak_frame": 2,
+        "impact_present_frame": 4,
+        "recover_end_frame": 7
+      }
+    },
+    "ACT_E_R01_03_double_leaf": {
+      "name": "two independent leaf-blade crescents left then right",
+      "blend_mode": "alpha",
+      "opacity": 0.62,
+      "anchors": {
+        "source": "body_center",
+        "target": "target_center"
+      },
+      "loop": false,
+      "animation_duration_ms": 600,
+      "event_contract": {
+        "anticipation_start_frame": 0,
+        "cue_peak_frame": 2,
+        "impact_present_frame": 4,
+        "recover_end_frame": 7
+      }
+    },
+    "ACT_E_R01_04_shell": {
+      "name": "amber shell closes with a compact hard pulse",
+      "blend_mode": "additive",
+      "opacity": 0.62,
+      "anchors": {
+        "source": "body_center",
+        "target": "ground"
+      },
+      "loop": false,
+      "animation_duration_ms": 600,
+      "event_contract": {
+        "anticipation_start_frame": 0,
+        "cue_peak_frame": 2,
+        "impact_present_frame": 4,
+        "recover_end_frame": 7
+      }
+    },
+    "ACT_B_R01_A_heavy_charge": {
+      "name": "heavy root-boar ground scrape and low charge",
+      "blend_mode": "alpha",
+      "opacity": 0.72,
+      "anchors": {
+        "source": "action_origin",
+        "target": "ground_path"
+      },
+      "loop": false,
+      "animation_duration_ms": 720,
+      "event_contract": {
+        "anticipation_start_frame": 0,
+        "cue_peak_frame": 2,
+        "impact_present_frame": 4,
+        "recover_end_frame": 7
+      }
+    },
+    "ACT_B_R01_B_root_floor": {
+      "name": "ancient tree separate root-floor taps",
+      "blend_mode": "alpha",
+      "opacity": 0.72,
+      "anchors": {
+        "source": "root_anchor",
+        "target": "ground"
+      },
+      "loop": false,
+      "animation_duration_ms": 720,
+      "event_contract": {
+        "anticipation_start_frame": 0,
+        "cue_peak_frame": 2,
+        "impact_present_frame": 4,
+        "recover_end_frame": 7
+      }
+    },
+    "ACT_B_R01_B_branch": {
+      "name": "ancient tree separate branch impact",
+      "blend_mode": "alpha",
+      "opacity": 0.72,
+      "anchors": {
+        "source": "branch_anchor",
+        "target": "target_area"
+      },
+      "loop": false,
+      "animation_duration_ms": 720,
+      "event_contract": {
+        "anticipation_start_frame": 0,
+        "cue_peak_frame": 2,
+        "impact_present_frame": 4,
+        "recover_end_frame": 7
+      }
+    },
+    "ENV_R02_01": {
+      "name": "low separated blue-green fog bands",
+      "blend_mode": "alpha",
+      "opacity": 0.24,
+      "anchor": "viewport_low_density",
+      "loop": true
+    },
+    "ENV_R02_02": {
+      "name": "slow broad water rings",
+      "blend_mode": "alpha",
+      "opacity": 0.18,
+      "anchor": "viewport_low_density",
+      "loop": true
+    },
+    "ENV_R02_03": {
+      "name": "rare pale spores above floor",
+      "blend_mode": "additive",
+      "opacity": 0.18,
+      "anchor": "viewport_low_density",
+      "loop": true
+    },
+    "ACT_E_R02_01_spore": {
+      "name": "low expanding spore ring",
+      "blend_mode": "alpha",
+      "opacity": 0.62,
+      "anchors": {
+        "source": "action_origin",
+        "target": "ground_target_area"
+      },
+      "loop": false,
+      "animation_duration_ms": 600,
+      "event_contract": {
+        "anticipation_start_frame": 0,
+        "cue_peak_frame": 2,
+        "impact_present_frame": 5,
+        "recover_end_frame": 7
+      }
+    },
+    "ACT_E_R02_02_mist_guard": {
+      "name": "body-hugging defensive mist",
+      "blend_mode": "alpha",
+      "opacity": 0.62,
+      "anchors": {
+        "source": "body_center",
+        "target": "body_center"
+      },
+      "loop": false,
+      "animation_duration_ms": 600,
+      "event_contract": {
+        "anticipation_start_frame": 0,
+        "cue_peak_frame": 2,
+        "impact_present_frame": 4,
+        "recover_end_frame": 7
+      }
+    },
+    "ACT_E_R02_03_return_mote": {
+      "name": "inward blue vein gather and outward return mote",
+      "blend_mode": "additive",
+      "opacity": 0.62,
+      "anchors": {
+        "source": "body_center",
+        "target": "target_center"
+      },
+      "loop": false,
+      "animation_duration_ms": 600,
+      "event_contract": {
+        "anticipation_start_frame": 0,
+        "cue_peak_frame": 2,
+        "impact_present_frame": 4,
+        "recover_end_frame": 7
+      }
+    },
+    "ACT_E_R02_04_support_arc": {
+      "name": "short moonwing ally-transfer arc",
+      "blend_mode": "additive",
+      "opacity": 0.62,
+      "anchors": {
+        "source": "wing_anchor",
+        "target": "ally_center"
+      },
+      "loop": false,
+      "animation_duration_ms": 600,
+      "event_contract": {
+        "anticipation_start_frame": 0,
+        "cue_peak_frame": 2,
+        "impact_present_frame": 5,
+        "recover_end_frame": 7
+      }
+    },
+    "ACT_B_R02_A_drowse_spore": {
+      "name": "localized mushroom spore spread and drowsy mark",
+      "blend_mode": "alpha",
+      "opacity": 0.72,
+      "anchors": {
+        "source": "action_origin",
+        "target": "ground_target_area"
+      },
+      "loop": false,
+      "animation_duration_ms": 720,
+      "event_contract": {
+        "anticipation_start_frame": 0,
+        "cue_peak_frame": 2,
+        "impact_present_frame": 5,
+        "recover_end_frame": 7
+      }
+    },
+    "ACT_B_R02_B_mirror_bolt": {
+      "name": "mirror guard glint separate from water projectile",
+      "blend_mode": "alpha",
+      "opacity": 0.72,
+      "anchors": {
+        "source": "mirror_surface",
+        "target": "target_center"
+      },
+      "loop": false,
+      "animation_duration_ms": 720,
+      "event_contract": {
+        "anticipation_start_frame": 0,
+        "cue_peak_frame": 2,
+        "impact_present_frame": 5,
+        "recover_end_frame": 7
+      }
+    },
+    "ENV_R03_01": {
+      "name": "sparse deep cave dust motes",
+      "blend_mode": "alpha",
+      "opacity": 0.24,
+      "anchor": "viewport_low_density",
+      "loop": true
+    },
+    "ENV_R03_02": {
+      "name": "few water droplets",
+      "blend_mode": "alpha",
+      "opacity": 0.18,
+      "anchor": "viewport_low_density",
+      "loop": true
+    },
+    "ENV_R03_03": {
+      "name": "rare short crystal resonance glints",
+      "blend_mode": "additive",
+      "opacity": 0.18,
+      "anchor": "viewport_low_density",
+      "loop": true
+    },
+    "ACT_E_R03_01_pincer_guard": {
+      "name": "metal shell guard glint and pincer push",
+      "blend_mode": "alpha",
+      "opacity": 0.62,
+      "anchors": {
+        "source": "body_center",
+        "target": "action_origin"
+      },
+      "loop": false,
+      "animation_duration_ms": 600,
+      "event_contract": {
+        "anticipation_start_frame": 0,
+        "cue_peak_frame": 2,
+        "impact_present_frame": 4,
+        "recover_end_frame": 7
+      }
+    },
+    "ACT_E_R03_02_resonance": {
+      "name": "short concentric crystal sound rings",
+      "blend_mode": "additive",
+      "opacity": 0.62,
+      "anchors": {
+        "source": "head_anchor",
+        "target": "target_area"
+      },
+      "loop": false,
+      "animation_duration_ms": 600,
+      "event_contract": {
+        "anticipation_start_frame": 0,
+        "cue_peak_frame": 2,
+        "impact_present_frame": 4,
+        "recover_end_frame": 7
+      }
+    },
+    "ACT_E_R03_03_tool_combo": {
+      "name": "three compact tool strikes",
+      "blend_mode": "alpha",
+      "opacity": 0.62,
+      "anchors": {
+        "source": "tool_anchor",
+        "target": "target_center"
+      },
+      "loop": false,
+      "animation_duration_ms": 600,
+      "event_contract": {
+        "anticipation_start_frame": 0,
+        "cue_peak_frame": 2,
+        "impact_present_frame": 5,
+        "recover_end_frame": 7
+      }
+    },
+    "ACT_E_R03_04_magnet_pullcue": {
+      "name": "magnetic arc gather mark then impact cue",
+      "blend_mode": "additive",
+      "opacity": 0.62,
+      "anchors": {
+        "source": "body_center",
+        "target": "target_center"
+      },
+      "loop": false,
+      "animation_duration_ms": 600,
+      "event_contract": {
+        "anticipation_start_frame": 0,
+        "cue_peak_frame": 2,
+        "impact_present_frame": 4,
+        "recover_end_frame": 7
+      }
+    },
+    "ACT_B_R03_A_three_hammer": {
+      "name": "three small hammer beats into one heavy ring",
+      "blend_mode": "alpha",
+      "opacity": 0.72,
+      "anchors": {
+        "source": "three_hammer_anchors",
+        "target": "ground_target_area"
+      },
+      "loop": false,
+      "animation_duration_ms": 720,
+      "event_contract": {
+        "anticipation_start_frame": 0,
+        "cue_peak_frame": 1,
+        "impact_present_frame": 7,
+        "recover_end_frame": 7
+      }
+    },
+    "ACT_B_R03_B_heat_floor": {
+      "name": "localized heated floor pulse under heavy strike",
+      "blend_mode": "alpha",
+      "opacity": 0.72,
+      "anchors": {
+        "source": "action_origin",
+        "target": "ground_target_area"
+      },
+      "loop": false,
+      "animation_duration_ms": 720,
+      "event_contract": {
+        "anticipation_start_frame": 0,
+        "cue_peak_frame": 2,
+        "impact_present_frame": 4,
+        "recover_end_frame": 7
+      }
+    },
+    "ENV_R04_01": {
+      "name": "very sparse slow snow grains",
+      "blend_mode": "alpha",
+      "opacity": 0.24,
+      "anchor": "viewport_low_density",
+      "loop": true
+    },
+    "ENV_R04_02": {
+      "name": "low thin ground snow drift",
+      "blend_mode": "alpha",
+      "opacity": 0.18,
+      "anchor": "viewport_low_density",
+      "loop": true
+    },
+    "ENV_R04_03": {
+      "name": "rare ice dust glint",
+      "blend_mode": "additive",
+      "opacity": 0.18,
+      "anchor": "viewport_low_density",
+      "loop": true
+    },
+    "ACT_E_R04_01_pursuit": {
+      "name": "low forward pursuit streak",
+      "blend_mode": "alpha",
+      "opacity": 0.62,
+      "anchors": {
+        "source": "body_center",
+        "target": "target_center"
+      },
+      "loop": false,
+      "animation_duration_ms": 600,
+      "event_contract": {
+        "anticipation_start_frame": 0,
+        "cue_peak_frame": 2,
+        "impact_present_frame": 5,
+        "recover_end_frame": 7
+      }
+    },
+    "ACT_E_R04_02_wing_gust": {
+      "name": "short feather fan gust",
+      "blend_mode": "alpha",
+      "opacity": 0.62,
+      "anchors": {
+        "source": "wing_anchor",
+        "target": "target_area"
+      },
+      "loop": false,
+      "animation_duration_ms": 600,
+      "event_contract": {
+        "anticipation_start_frame": 0,
+        "cue_peak_frame": 2,
+        "impact_present_frame": 5,
+        "recover_end_frame": 7
+      }
+    },
+    "ACT_E_R04_03_hex_guard": {
+      "name": "stacked white hex guard plates",
+      "blend_mode": "alpha",
+      "opacity": 0.62,
+      "anchors": {
+        "source": "body_center",
+        "target": "body_center"
+      },
+      "loop": false,
+      "animation_duration_ms": 600,
+      "event_contract": {
+        "anticipation_start_frame": 0,
+        "cue_peak_frame": 2,
+        "impact_present_frame": 5,
+        "recover_end_frame": 7
+      }
+    },
+    "ACT_E_R04_04_tool_arcs": {
+      "name": "distinct short and long de-icing tool arcs",
+      "blend_mode": "alpha",
+      "opacity": 0.62,
+      "anchors": {
+        "source": "tool_anchor",
+        "target": "target_center"
+      },
+      "loop": false,
+      "animation_duration_ms": 600,
+      "event_contract": {
+        "anticipation_start_frame": 0,
+        "cue_peak_frame": 2,
+        "impact_present_frame": 4,
+        "recover_end_frame": 7
+      }
+    },
+    "ACT_B_R04_A_snow_charge": {
+      "name": "wide snow-floor charge wake",
+      "blend_mode": "alpha",
+      "opacity": 0.72,
+      "anchors": {
+        "source": "action_origin",
+        "target": "ground_path"
+      },
+      "loop": false,
+      "animation_duration_ms": 720,
+      "event_contract": {
+        "anticipation_start_frame": 0,
+        "cue_peak_frame": 2,
+        "impact_present_frame": 5,
+        "recover_end_frame": 7
+      }
+    },
+    "ACT_B_R04_B_breath_fan": {
+      "name": "readable cold-breath fan from mouth anchor",
+      "blend_mode": "alpha",
+      "opacity": 0.72,
+      "anchors": {
+        "source": "mouth_anchor",
+        "target": "target_fan_area"
+      },
+      "loop": false,
+      "animation_duration_ms": 720,
+      "event_contract": {
+        "anticipation_start_frame": 0,
+        "cue_peak_frame": 2,
+        "impact_present_frame": 5,
+        "recover_end_frame": 7
+      }
+    },
+    "ENV_R05_01": {
+      "name": "few quiet pale petals",
+      "blend_mode": "alpha",
+      "opacity": 0.24,
+      "anchor": "viewport_low_density",
+      "loop": true
+    },
+    "ENV_R05_02": {
+      "name": "sparse low moon dust",
+      "blend_mode": "alpha",
+      "opacity": 0.18,
+      "anchor": "viewport_low_density",
+      "loop": true
+    },
+    "ENV_R05_03": {
+      "name": "subtle stored-glass glint",
+      "blend_mode": "additive",
+      "opacity": 0.18,
+      "anchor": "viewport_low_density",
+      "loop": true
+    },
+    "ACT_E_R05_01_unbind": {
+      "name": "short vine thread unbind line",
+      "blend_mode": "alpha",
+      "opacity": 0.62,
+      "anchors": {
+        "source": "vine_tip",
+        "target": "target_status_anchor"
+      },
+      "loop": false,
+      "animation_duration_ms": 600,
+      "event_contract": {
+        "anticipation_start_frame": 0,
+        "cue_peak_frame": 2,
+        "impact_present_frame": 4,
+        "recover_end_frame": 7
+      }
+    },
+    "ACT_E_R05_02_guard_attack": {
+      "name": "compact guard-to-attack plane pulse",
+      "blend_mode": "alpha",
+      "opacity": 0.62,
+      "anchors": {
+        "source": "body_center",
+        "target": "target_center"
+      },
+      "loop": false,
+      "animation_duration_ms": 600,
+      "event_contract": {
+        "anticipation_start_frame": 0,
+        "cue_peak_frame": 2,
+        "impact_present_frame": 4,
+        "recover_end_frame": 7
+      }
+    },
+    "ACT_E_R05_03_light_transfer": {
+      "name": "thin light transfer between two anchors",
+      "blend_mode": "additive",
+      "opacity": 0.62,
+      "anchors": {
+        "source": "actor_core",
+        "target": "adjacent_enemy"
+      },
+      "loop": false,
+      "animation_duration_ms": 600,
+      "event_contract": {
+        "anticipation_start_frame": 0,
+        "cue_peak_frame": 2,
+        "impact_present_frame": 5,
+        "recover_end_frame": 7
+      }
+    },
+    "ACT_E_R05_04_heal_toxin": {
+      "name": "separate honeyed heal mote and rose toxin droplet",
+      "blend_mode": "additive",
+      "opacity": 0.62,
+      "anchors": {
+        "source": "flower_center",
+        "target": "target_ally_and_target_enemy"
+      },
+      "loop": false,
+      "animation_duration_ms": 600,
+      "event_contract": {
+        "anticipation_start_frame": 0,
+        "cue_peak_frame": 2,
+        "impact_present_frame": 5,
+        "recover_end_frame": 7
+      }
+    },
+    "ACT_B_R05_A_pruning_ring": {
+      "name": "pruning ring multi-hit then open-area pulse",
+      "blend_mode": "alpha",
+      "opacity": 0.72,
+      "anchors": {
+        "source": "ring_center",
+        "target": "ground_target_area"
+      },
+      "loop": false,
+      "animation_duration_ms": 720,
+      "event_contract": {
+        "anticipation_start_frame": 0,
+        "cue_peak_frame": 2,
+        "impact_present_frame": 5,
+        "recover_end_frame": 7
+      }
+    },
+    "ACT_B_R05_B_seed_wave": {
+      "name": "low seed-wave pressure then quiet bloom",
+      "blend_mode": "alpha",
+      "opacity": 0.72,
+      "anchors": {
+        "source": "antler_anchor",
+        "target": "ground_target_area"
+      },
+      "loop": false,
+      "animation_duration_ms": 720,
+      "event_contract": {
+        "anticipation_start_frame": 0,
+        "cue_peak_frame": 2,
+        "impact_present_frame": 6,
+        "recover_end_frame": 7
+      }
+    }
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "actor_id": "ACT_E_R03_03",
+  "revision": "r001",
+  "status": "CANDIDATE_UNAPPROVED",
+  "source_reference_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_refinement_20261010T013601JST_49a31ab7/actors/ACT_E_R03_03/candidate_r001/ACT_E_R03_03__runtime_candidate__r001.png",
+  "source_reference_sha256": "3429e7d905a0b929c2b6f15c747cb195ebe691dfb60ab11d65be9a3bcc8784f6",
+  "imagegen_atlas_path": "native/Art/GeneratedCandidates/ACT_E_R03_03/pose_candidate_r001/imagegen_atlas_r001.png",
+  "imagegen_atlas_sha256": "0ba29c7c9de25218d50e10e2081263c02a12a45b13aaa66f5c0951df43ee743c",
+  "pose_order": [
+    "idle_a",
+    "idle_b",
+    "walk_a",
+    "walk_b",
+    "anticipate",
+    "execute",
+    "recover",
+    "hit",
+    "resolve"
+  ],
+  "state_frames": {
+    "idle": [
+      "native/Art/GeneratedCandidates/ACT_E_R03_03/pose_candidate_r001/frames/idle_a.png",
+      "native/Art/GeneratedCandidates/ACT_E_R03_03/pose_candidate_r001/frames/idle_b.png"
+    ],
+    "walk": [
+      "native/Art/GeneratedCandidates/ACT_E_R03_03/pose_candidate_r001/frames/walk_a.png",
+      "native/Art/GeneratedCandidates/ACT_E_R03_03/pose_candidate_r001/frames/walk_b.png"
+    ],
+    "anticipate": [
+      "native/Art/GeneratedCandidates/ACT_E_R03_03/pose_candidate_r001/frames/anticipate.png"
+    ],
+    "execute": [
+      "native/Art/GeneratedCandidates/ACT_E_R03_03/pose_candidate_r001/frames/execute.png"
+    ],
+    "recover": [
+      "native/Art/GeneratedCandidates/ACT_E_R03_03/pose_candidate_r001/frames/recover.png"
+    ],
+    "hit": [
+      "native/Art/GeneratedCandidates/ACT_E_R03_03/pose_candidate_r001/frames/hit.png"
+    ],
+    "resolve": [
+      "native/Art/GeneratedCandidates/ACT_E_R03_03/pose_candidate_r001/frames/resolve.png"
+    ]
+  },
+  "frames": [
+    {
+      "pose": "idle_a",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R03_03/pose_candidate_r001/frames/idle_a.png",
+      "sha256": "0993b68ccd6cbd89040d129e0f7ce2ba354ac75bd13c8f80d64cd03c7152e99e",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        17,
+        46,
+        418,
+        408
+      ]
+    },
+    {
+      "pose": "idle_b",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R03_03/pose_candidate_r001/frames/idle_b.png",
+      "sha256": "2333b8c717bb37269d745d134102c5cd8a8e023bcbddef6fcfb4d979c1777c42",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        438,
+        45,
+        841,
+        410
+      ]
+    },
+    {
+      "pose": "walk_a",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R03_03/pose_candidate_r001/frames/walk_a.png",
+      "sha256": "32d649571596bc957598495bbfcbb7c127008ee5d039272856a12caff51a5113",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        864,
+        46,
+        1240,
+        413
+      ]
+    },
+    {
+      "pose": "walk_b",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R03_03/pose_candidate_r001/frames/walk_b.png",
+      "sha256": "e13336cac26f4a0772dab43239e5a0cacde4f22febbe0fd2f7a586127d48704a",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        8,
+        447,
+        457,
+        818
+      ]
+    },
+    {
+      "pose": "anticipate",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R03_03/pose_candidate_r001/frames/anticipate.png",
+      "sha256": "f773d80c899a7f7e7306e246e7c09ba9994ffc8f2c5abf8ccde88d1b57d88872",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        425,
+        449,
+        855,
+        814
+      ]
+    },
+    {
+      "pose": "execute",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R03_03/pose_candidate_r001/frames/execute.png",
+      "sha256": "697427087fc9cc5dd063f78c7d68940b2e2f95dbad5a46683c745a404f4f2ca7",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        853,
+        465,
+        1242,
+        822
+      ]
+    },
+    {
+      "pose": "recover",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R03_03/pose_candidate_r001/frames/recover.png",
+      "sha256": "75f157d7ff7cc3a7ac74ea9095230d8194c14c9785f69b47cd17ae56b685bfbe",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        13,
+        844,
+        441,
+        1211
+      ]
+    },
+    {
+      "pose": "hit",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R03_03/pose_candidate_r001/frames/hit.png",
+      "sha256": "f4891460b5dfbc00eb666b5ebb561bd41f74f653241c96ccb88a69a5ab40bd77",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        431,
+        844,
+        870,
+        1186
+      ]
+    },
+    {
+      "pose": "resolve",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R03_03/pose_candidate_r001/frames/resolve.png",
+      "sha256": "4e3be9c839cb4454e7c6f00cdddee34b92cafcfd5f9d0a768bba2db994e65974",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        858,
+        896,
+        1243,
+        1208
+      ]
+    }
+  ],
+  "fps": 6,
+  "canvas_px": [
+    512,
+    512
+  ],
+  "anchor_px": [
+    256.0,
+    490
+  ],
+  "review": "Stone construct identity, round chest hatch, twin eye slots, block fists and segmented limbs retained; distinct punch and recoil. Red fringe around silhouette and detail redraw remain, pose-only samples.",
+  "qa_contact_sheet_path": "native/Art/GeneratedCandidates/ACT_E_R03_03/pose_candidate_r001/qa_contact_sheet_r001.png",
+  "qa_contact_sheet_sha256": "d6f84377f35b50e2319d064b66018c6d3a2bd14e85a7745828eadb23d81d6cf9",
+  "runtime_integration": "NOT_DONE",
+  "runtime_visual_qa": "PENDING_ROOT_REVIEW",
+  "human_adoption": "PENDING",
+  "limitations": [
+    "Each action state currently has only one authored pose; idle and walk each have two poses.",
+    "This is a corrected composition/identity candidate, not evidence of natural continuous animation.",
+    "All frames derive from a generated atlas and remain unapproved pending visual/runtime review.",
+    "Source reference was not modified."
+  ]
+}

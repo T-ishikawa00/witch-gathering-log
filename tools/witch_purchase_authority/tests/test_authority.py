@@ -1,6 +1,7 @@
 import concurrent.futures
 import tempfile
 import unittest
+from contextlib import closing
 from pathlib import Path
 
 from authority import (
@@ -94,7 +95,7 @@ class PurchaseAuthorityTests(unittest.TestCase):
                 self.assertEqual(clean["revision"],0)
                 self.assertEqual(clean["pity"],{"drawsSinceTop":0,"drawsSinceMid":0,"targetTemplateID":None,"guaranteeTargetOnNextTop":False})
                 import sqlite3
-                with sqlite3.connect(db) as check:
+                with closing(sqlite3.connect(db)) as check, check:
                     self.assertEqual(check.execute("SELECT COUNT(*) FROM ticket_ledger").fetchone()[0],0)
                 committed=auth.purchase_and_draw_mock("account-a","op",tx(txid="tx-"+phase),2,test_seed=9)
                 self.assertEqual(len(committed.draws),2)
@@ -156,7 +157,7 @@ class PurchaseAuthorityTests(unittest.TestCase):
         purchase=tx(txid="refund-tombstone-fault")
         with self.assertRaises(InjectedFailure): self.auth.refund_mock("account-a",purchase,fail_at="after_refund_state")
         import sqlite3
-        with sqlite3.connect(self.db) as db:
+        with closing(sqlite3.connect(self.db)) as db, db:
             self.assertEqual(db.execute("SELECT COUNT(*) FROM refunds").fetchone()[0],0)
         committed=self.process(purchase=purchase,key="purchase-after-rolled-back-refund",count=1)
         self.assertEqual(len(committed.draws),1)
@@ -198,7 +199,7 @@ class PurchaseAuthorityTests(unittest.TestCase):
     def test_old_schema_is_rejected_instead_of_silently_partially_used(self):
         import sqlite3
         old=Path(self.tmp.name)/"old-schema.sqlite"
-        with sqlite3.connect(old) as db: db.execute("CREATE TABLE purchases(transaction_id TEXT)")
+        with closing(sqlite3.connect(old)) as db, db: db.execute("CREATE TABLE purchases(transaction_id TEXT)")
         with self.assertRaises(AuthorityError):
             PurchaseAuthority(old,bundle_id=BUNDLE,product_specs={PRODUCT:ProductSpec(PRODUCT,3)},summon_pool=POOL,allow_test_mock_verifier=True)
 

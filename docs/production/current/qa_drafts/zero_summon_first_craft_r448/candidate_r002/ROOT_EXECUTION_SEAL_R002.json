@@ -1,0 +1,31 @@
+{
+  "status": "ROOT_SEALED_ONE_CORRECTED_EXECUTION",
+  "at": "2026-10-15T04:58:32.643087+09:00",
+  "manifestSHA256": "77bc0270e256429b1078eb1c7e0dc245f4355466dc254a99c9c280e805deccc9",
+  "runnerSHA256": "f447c23ce4051d867164c3f8772aa5d9d3b8319e123decd5439a1d4d0a2f7d6b",
+  "priorFailureRetained": true,
+  "independentReviewSHA256": "2a196c311175dc7e5584afe5c9d63d4f0597696b2601930ee7f7b1eed8c89fef",
+  "identity": {
+    "path": "docs/production/current/qa_drafts/native_reading_mantle_r446/execution_r001/checkpoints/cold_after/support/last_standard_play_identity_r169.json",
+    "sha256": "c5b1bdecd61b3b49b17c02b38283f681236d2d3ce34cdf92cc3acbbb01ebc3b2",
+    "sizeBytes": 2711
+  },
+  "compatibilityEvidence": {
+    "r447ReceiptSHA256": "151e293555ab813a4eb267e7214e954b77f3a5d21fe6babf593ee1c4c4904dbc",
+    "sameR445R447SourceMapSHA256": "0202edfce1602c2937274c5e1c72fad8b75d1e654fba576ca8855df94d748fe0",
+    "r445ReleaseReceiptSHA256": "f6482cdd910d30e633af9a78068e751a85074bcdfa744a9ccffa0bde2f2d123c",
+    "r445InstallReceiptSHA256": "8990781fbbff10c073ee8e6085e0edc9e71f8eeff6f2d3ec55c6d6fd4f3113ee",
+    "r446InstalledAppExact": true,
+    "explanation": "R447 is unsigned compile only of the identical R445 frozen source; no R447 launched identity exists. R446 is the actual runtime identity of that exact R445 Release. Candidate R002 verifies the effective App profile chain and component fingerprints. No claim of device runtime is made."
+  },
+  "limits": {
+    "compileInvocations": 1,
+    "jobs": 2,
+    "maxAttempts": 1,
+    "maxBuildAllocatedBytes": 500000000,
+    "maxCaseSeconds": 90,
+    "maxEvidenceAllocatedBytes": 50000000,
+    "maxWallSeconds": 600,
+    "minimumFreeBytes": 12000000000
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PREBUILD_PREFLIGHT_FAILED_NO_FREEZE_NO_BUILD",
+  "at": "2026-10-15T06:06:26.089687+09:00",
+  "exception": "RuntimeError: R445 donor is not the pinned 1,922-file resource set",
+  "location": "build_r001.py:237 validate_inputs",
+  "cause": "INPUT_MANIFEST inherited R373 donor receipt, but validator expected normalized R445 donor receipt. Resource data was not changed.",
+  "buildStateExists": false,
+  "next": "Preserve sealed R001. Correct donor references in separate R002 candidate; one bounded repair."
+}

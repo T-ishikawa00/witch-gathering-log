@@ -1,0 +1,4817 @@
+{
+  "status": "CANDIDATE_PREVIEW_ONLY",
+  "scope": "Exact-frame semantic landmark measurements from existing LUNA, ERNA and NOIR candidate manifests; no source pixels or accepted artwork changed.",
+  "humanApproval": false,
+  "entries": {
+    "LUNA": {
+      "semanticFrameLandmarksCandidate": {
+        "schema": "equipment_semantic_frame_landmarks_r001",
+        "status": "UNAPPROVED_MEASURED_CANDIDATE",
+        "humanApproval": false,
+        "key": [
+          "actorID",
+          "bodyAssetID",
+          "frameIndex",
+          "canvas_px"
+        ],
+        "coordinate_origin": "top_left_canvas_pixels",
+        "rows": [
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_WALK_F01_CANDIDATE_R001",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                148,
+                141
+              ],
+              "chest": [
+                145,
+                159
+              ],
+              "waist": [
+                143,
+                173
+              ],
+              "freeHand": [
+                116,
+                185
+              ],
+              "visibleRightAnkle": [
+                160,
+                227
+              ],
+              "face": [
+                145,
+                116
+              ],
+              "bookPalm": [
+                193,
+                154
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  145,
+                  116
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_WALK_F01_CANDIDATE_R001.png",
+            "sourceSHA256": "66bc43b8e57e0cf19387bbc66641e85935f874bcf410a49c33856c00dcca6680",
+            "measurementStatus": "VISUALLY_MEASURED_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk"
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_WALK_F02_CANDIDATE_R001",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                150,
+                140
+              ],
+              "chest": [
+                145,
+                154
+              ],
+              "waist": [
+                141,
+                171
+              ],
+              "freeHand": [
+                143,
+                171
+              ],
+              "visibleRightAnkle": [
+                151,
+                228
+              ],
+              "face": [
+                147,
+                117
+              ],
+              "bookPalm": [
+                193,
+                156
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  147,
+                  117
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_WALK_F02_CANDIDATE_R001.png",
+            "sourceSHA256": "25340bd415f639897eb61f3bd73a7e4e635db0403bc6cce56e3a0f42fa0294a1",
+            "measurementStatus": "VISUALLY_MEASURED_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk"
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_WALK_F03_CANDIDATE_R001",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                143,
+                141
+              ],
+              "chest": [
+                143,
+                157
+              ],
+              "waist": [
+                143,
+                171
+              ],
+              "freeHand": [
+                103,
+                179
+              ],
+              "visibleRightAnkle": [
+                171,
+                216
+              ],
+              "face": [
+                143,
+                116
+              ],
+              "bookPalm": [
+                191,
+                154
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  143,
+                  116
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_WALK_F03_CANDIDATE_R001.png",
+            "sourceSHA256": "9aee712586181844ca0d80dfdf4198e52c9ab5419bc23096b6ab2dd034860b0e",
+            "measurementStatus": "VISUALLY_MEASURED_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk"
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_WALK_F04_CANDIDATE_R001",
+            "frameIndex": 3,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                147,
+                137
+              ],
+              "chest": [
+                144,
+                151
+              ],
+              "waist": [
+                143,
+                169
+              ],
+              "freeHand": [
+                146,
+                165
+              ],
+              "visibleRightAnkle": [
+                175,
+                216
+              ],
+              "face": [
+                146,
+                115
+              ],
+              "bookPalm": [
+                197,
+                156
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  146,
+                  115
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_WALK_F04_CANDIDATE_R001.png",
+            "sourceSHA256": "b294119f332e8779ae58412881909d60a8433542fa3a0dd15f1a7e3abab62798",
+            "measurementStatus": "VISUALLY_MEASURED_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk"
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_WALK_F05_CANDIDATE_R001",
+            "frameIndex": 4,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                146,
+                137
+              ],
+              "chest": [
+                141,
+                151
+              ],
+              "waist": [
+                140,
+                169
+              ],
+              "freeHand": [
+                158,
+                166
+              ],
+              "visibleRightAnkle": [
+                180,
+                215
+              ],
+              "face": [
+                146,
+                115
+              ],
+              "bookPalm": [
+                194,
+                152
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  146,
+                  115
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_WALK_F05_CANDIDATE_R001.png",
+            "sourceSHA256": "2f1b83d28f9f9ba99d1c130044ec410ccabed220934ebe04d9c2ff287cafb13a",
+            "measurementStatus": "VISUALLY_MEASURED_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk"
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_WALK_F06_CANDIDATE_R001",
+            "frameIndex": 5,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                146,
+                141
+              ],
+              "chest": [
+                143,
+                155
+              ],
+              "waist": [
+                144,
+                174
+              ],
+              "freeHand": [
+                123,
+                184
+              ],
+              "visibleRightAnkle": [
+                159,
+                228
+              ],
+              "face": [
+                145,
+                118
+              ],
+              "bookPalm": [
+                194,
+                154
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  145,
+                  118
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_WALK_F06_CANDIDATE_R001.png",
+            "sourceSHA256": "26ac0f0207e60dd8e3422c012ec7ebdd345af95921e86a29f2ae4be26b34da61",
+            "measurementStatus": "VISUALLY_MEASURED_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk"
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_WALK_F07_CANDIDATE_R001",
+            "frameIndex": 6,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                141,
+                136
+              ],
+              "chest": [
+                138,
+                149
+              ],
+              "waist": [
+                133,
+                170
+              ],
+              "freeHand": [
+                94,
+                180
+              ],
+              "visibleRightAnkle": [
+                145,
+                203
+              ],
+              "face": [
+                140,
+                115
+              ],
+              "bookPalm": [
+                194,
+                154
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  140,
+                  115
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_WALK_F07_CANDIDATE_R001.png",
+            "sourceSHA256": "5612bf4598c5984054699d0e241873476efa1785300fb9ae8563000cb08f7212",
+            "measurementStatus": "VISUALLY_MEASURED_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk"
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_WALK_F08_CANDIDATE_R001",
+            "frameIndex": 7,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                144,
+                140
+              ],
+              "chest": [
+                140,
+                154
+              ],
+              "waist": [
+                140,
+                171
+              ],
+              "freeHand": [
+                147,
+                164
+              ],
+              "visibleRightAnkle": [
+                172,
+                229
+              ],
+              "face": [
+                143,
+                118
+              ],
+              "bookPalm": [
+                192,
+                154
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  143,
+                  118
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_WALK_F08_CANDIDATE_R001.png",
+            "sourceSHA256": "bc7e8939ad92da41e814467f0a81a5ddebe5c0b46714b62e1d7353ba8337fd69",
+            "measurementStatus": "VISUALLY_MEASURED_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk"
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_WALK_F09_CANDIDATE_R001",
+            "frameIndex": 8,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                144,
+                141
+              ],
+              "chest": [
+                139,
+                156
+              ],
+              "waist": [
+                139,
+                171
+              ],
+              "freeHand": [
+                115,
+                180
+              ],
+              "visibleRightAnkle": [
+                166,
+                232
+              ],
+              "face": [
+                142,
+                118
+              ],
+              "bookPalm": [
+                193,
+                156
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  142,
+                  118
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_WALK_F09_CANDIDATE_R001.png",
+            "sourceSHA256": "38f0cb8c895058df71424afdc950c24a4622bfc5f3a4175e57628a810e7d2b38",
+            "measurementStatus": "VISUALLY_MEASURED_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "walk"
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_ANTICIPATE_F01_CANDIDATE_R001",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                145,
+                137
+              ],
+              "chest": [
+                145,
+                155
+              ],
+              "waist": [
+                141,
+                174
+              ],
+              "freeHand": [
+                119,
+                110
+              ],
+              "visibleRightAnkle": [
+                169,
+                225
+              ],
+              "face": [
+                147,
+                115
+              ],
+              "bookPalm": [
+                192,
+                153
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  147,
+                  115
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_ANTICIPATE_F01_CANDIDATE_R001.png",
+            "sourceSHA256": "7d8969b1b144e1a6d0fb763690287fa8e74689189f14f47b52c834c02d43ba8e",
+            "measurementStatus": "VISUALLY_MEASURED_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "anticipate"
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_ANTICIPATE_F02_CANDIDATE_R001",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                145,
+                139
+              ],
+              "chest": [
+                143,
+                153
+              ],
+              "waist": [
+                140,
+                173
+              ],
+              "freeHand": [
+                143,
+                165
+              ],
+              "visibleRightAnkle": [
+                167,
+                225
+              ],
+              "face": [
+                147,
+                115
+              ],
+              "bookPalm": [
+                191,
+                154
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  147,
+                  115
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_ANTICIPATE_F02_CANDIDATE_R001.png",
+            "sourceSHA256": "9448769dd8eee397ae367b27a8351e121c7b0acd3b990547bb15f7b2fb835b47",
+            "measurementStatus": "VISUALLY_MEASURED_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "anticipate"
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_ANTICIPATE_F03_CANDIDATE_R001",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                145,
+                140
+              ],
+              "chest": [
+                143,
+                158
+              ],
+              "waist": [
+                141,
+                176
+              ],
+              "freeHand": [
+                119,
+                141
+              ],
+              "visibleRightAnkle": [
+                172,
+                226
+              ],
+              "face": [
+                145,
+                117
+              ],
+              "bookPalm": [
+                194,
+                156
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  145,
+                  117
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_ANTICIPATE_F03_CANDIDATE_R001.png",
+            "sourceSHA256": "628b3acc42873d27f8b9eec634d93ea47431eb8dbbd89bebe9b182030e398101",
+            "measurementStatus": "VISUALLY_MEASURED_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "anticipate"
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_EXECUTE_F01_CANDIDATE_R001",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                142,
+                147
+              ],
+              "chest": [
+                143,
+                162
+              ],
+              "waist": [
+                141,
+                177
+              ],
+              "freeHand": [
+                202,
+                145
+              ],
+              "visibleRightAnkle": [
+                170,
+                225
+              ],
+              "face": [
+                141,
+                124
+              ],
+              "bookPalm": [
+                180,
+                169
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  141,
+                  124
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_EXECUTE_F01_CANDIDATE_R001.png",
+            "sourceSHA256": "312402efd809efb42c112870932028db46c1d151b85c3c3d8c4d6f06ab68db83",
+            "measurementStatus": "VISUALLY_MEASURED_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "execute"
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_EXECUTE_F02_CANDIDATE_R001",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                144,
+                147
+              ],
+              "chest": [
+                142,
+                160
+              ],
+              "waist": [
+                137,
+                173
+              ],
+              "freeHand": [
+                200,
+                140
+              ],
+              "visibleRightAnkle": [
+                170,
+                230
+              ],
+              "face": [
+                143,
+                124
+              ],
+              "bookPalm": [
+                185,
+                166
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  143,
+                  124
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_EXECUTE_F02_CANDIDATE_R001.png",
+            "sourceSHA256": "7d3d0011c4fba0c27c8f81e5d701e3b413af40cfdc08f204ad4c8a4998a70c8a",
+            "measurementStatus": "VISUALLY_MEASURED_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "execute"
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_EXECUTE_F03_CANDIDATE_R001",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                145,
+                150
+              ],
+              "chest": [
+                143,
+                167
+              ],
+              "waist": [
+                137,
+                182
+              ],
+              "freeHand": [
+                204,
+                145
+              ],
+              "visibleRightAnkle": [
+                177,
+                227
+              ],
+              "face": [
+                144,
+                130
+              ],
+              "bookPalm": [
+                152,
+                172
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  144,
+                  130
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_EXECUTE_F03_CANDIDATE_R001.png",
+            "sourceSHA256": "e431bf3fc7c0a9bcc21c817207840c2e1fa47969bb1609884e8fe9e4a96ebe13",
+            "measurementStatus": "VISUALLY_MEASURED_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "execute"
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_RECOVER_F01_CANDIDATE_R001",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                145,
+                142
+              ],
+              "chest": [
+                142,
+                157
+              ],
+              "waist": [
+                140,
+                173
+              ],
+              "freeHand": [
+                145,
+                157
+              ],
+              "visibleRightAnkle": [
+                174,
+                228
+              ],
+              "face": [
+                143,
+                119
+              ],
+              "bookPalm": [
+                197,
+                152
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  143,
+                  119
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_RECOVER_F01_CANDIDATE_R001.png",
+            "sourceSHA256": "b1a065af0cbbdeac565bbec4825e8c9a8d3fde5fe407330fe5c9170673579a64",
+            "measurementStatus": "VISUALLY_MEASURED_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "recover"
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_RECOVER_F02_CANDIDATE_R001",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                145,
+                141
+              ],
+              "chest": [
+                142,
+                157
+              ],
+              "waist": [
+                140,
+                174
+              ],
+              "freeHand": [
+                142,
+                158
+              ],
+              "visibleRightAnkle": [
+                172,
+                229
+              ],
+              "face": [
+                142,
+                119
+              ],
+              "bookPalm": [
+                196,
+                153
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  142,
+                  119
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_RECOVER_F02_CANDIDATE_R001.png",
+            "sourceSHA256": "36b46cf3fc3ce7bd78eaa0a120be2e9ee6234b6f68bfcc041b721dff05ade683",
+            "measurementStatus": "VISUALLY_MEASURED_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "recover"
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_RECOVER_F03_CANDIDATE_R001",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                146,
+                143
+              ],
+              "chest": [
+                142,
+                159
+              ],
+              "waist": [
+                141,
+                175
+              ],
+              "freeHand": [
+                155,
+                173
+              ],
+              "visibleRightAnkle": [
+                174,
+                229
+              ],
+              "face": [
+                144,
+                120
+              ],
+              "bookPalm": [
+                195,
+                153
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  144,
+                  120
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_RECOVER_F03_CANDIDATE_R001.png",
+            "sourceSHA256": "d2d04a9f5ab29aa0cd5d2a37b3a8b0b44946cbba61d9f2be51a9a0eb7197fee5",
+            "measurementStatus": "VISUALLY_MEASURED_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "recover"
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_IDLE_F01_CANDIDATE_R001",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                144,
+                140
+              ],
+              "chest": [
+                141,
+                156
+              ],
+              "waist": [
+                142,
+                175
+              ],
+              "freeHand": [
+                109,
+                185
+              ],
+              "visibleRightAnkle": [
+                164,
+                229
+              ],
+              "face": [
+                143,
+                116
+              ],
+              "bookPalm": [
+                196,
+                155
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  143,
+                  116
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_IDLE_F01_CANDIDATE_R001.png",
+            "sourceSHA256": "8b1952ef2cfc3b785c9bb8d9c88a059f86692afb9cdf93155bdcb2b52697662b",
+            "measurementStatus": "VISUALLY_MEASURED_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "idle"
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_IDLE_F02_CANDIDATE_R001",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                144,
+                140
+              ],
+              "chest": [
+                142,
+                156
+              ],
+              "waist": [
+                141,
+                174
+              ],
+              "freeHand": [
+                143,
+                165
+              ],
+              "visibleRightAnkle": [
+                165,
+                230
+              ],
+              "face": [
+                143,
+                116
+              ],
+              "bookPalm": [
+                196,
+                154
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  143,
+                  116
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_IDLE_F02_CANDIDATE_R001.png",
+            "sourceSHA256": "71aca07cacdde418d8333fe596b2bbca104d96f4be9c6291c5955978d380025e",
+            "measurementStatus": "VISUALLY_MEASURED_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "idle"
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_IDLE_F03_CANDIDATE_R001",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                146,
+                140
+              ],
+              "chest": [
+                144,
+                156
+              ],
+              "waist": [
+                143,
+                173
+              ],
+              "freeHand": [
+                107,
+                181
+              ],
+              "visibleRightAnkle": [
+                168,
+                228
+              ],
+              "face": [
+                144,
+                116
+              ],
+              "bookPalm": [
+                195,
+                155
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  144,
+                  116
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_IDLE_F03_CANDIDATE_R001.png",
+            "sourceSHA256": "6ac7075d0d6d0a331f93377687c4379aa9ea3395acc9255bfe2b503c14f68250",
+            "measurementStatus": "VISUALLY_MEASURED_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "idle"
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_HIT_F01_CANDIDATE_R001",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                143,
+                140
+              ],
+              "chest": [
+                140,
+                156
+              ],
+              "waist": [
+                137,
+                174
+              ],
+              "freeHand": [
+                141,
+                160
+              ],
+              "visibleRightAnkle": [
+                174,
+                229
+              ],
+              "face": [
+                141,
+                118
+              ],
+              "bookPalm": [
+                199,
+                149
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  141,
+                  118
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_HIT_F01_CANDIDATE_R001.png",
+            "sourceSHA256": "86d31984923b247c9ce41d5b1368f2347abf487eb77d4dc7df21734ea753676f",
+            "measurementStatus": "VISUALLY_MEASURED_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "hit"
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_HIT_F02_CANDIDATE_R001",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                141,
+                140
+              ],
+              "chest": [
+                139,
+                157
+              ],
+              "waist": [
+                139,
+                174
+              ],
+              "freeHand": [
+                142,
+                151
+              ],
+              "visibleRightAnkle": [
+                174,
+                229
+              ],
+              "face": [
+                140,
+                118
+              ],
+              "bookPalm": [
+                197,
+                150
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  140,
+                  118
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_HIT_F02_CANDIDATE_R001.png",
+            "sourceSHA256": "a56adbd7b5c8b278d161b34c6d06c7bdf164fc26e178dbffd0533f397aa7add9",
+            "measurementStatus": "VISUALLY_MEASURED_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "hit"
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_HIT_F03_CANDIDATE_R001",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                149,
+                143
+              ],
+              "chest": [
+                147,
+                159
+              ],
+              "waist": [
+                148,
+                175
+              ],
+              "freeHand": [
+                132,
+                153
+              ],
+              "visibleRightAnkle": [
+                184,
+                229
+              ],
+              "face": [
+                147,
+                120
+              ],
+              "bookPalm": [
+                198,
+                154
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  147,
+                  120
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_HIT_F03_CANDIDATE_R001.png",
+            "sourceSHA256": "f247be9098a1bebd81eb149da352ec206d81716214dc2bbab8b241521a3685db",
+            "measurementStatus": "VISUALLY_MEASURED_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "hit"
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_RESOLVE_F01_CANDIDATE_R001",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                145,
+                140
+              ],
+              "chest": [
+                143,
+                156
+              ],
+              "waist": [
+                141,
+                174
+              ],
+              "freeHand": [
+                129,
+                156
+              ],
+              "visibleRightAnkle": [
+                174,
+                229
+              ],
+              "face": [
+                143,
+                116
+              ],
+              "bookPalm": [
+                197,
+                152
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  143,
+                  116
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_RESOLVE_F01_CANDIDATE_R001.png",
+            "sourceSHA256": "347b3c33f4fb0ba1aa06850c088ddd39ee1c6a0a64dc72a1e01881e4c725ec43",
+            "measurementStatus": "VISUALLY_MEASURED_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "resolve"
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_RESOLVE_F02_CANDIDATE_R001",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                145,
+                140
+              ],
+              "chest": [
+                143,
+                156
+              ],
+              "waist": [
+                141,
+                174
+              ],
+              "freeHand": [
+                132,
+                156
+              ],
+              "visibleRightAnkle": [
+                174,
+                229
+              ],
+              "face": [
+                143,
+                116
+              ],
+              "bookPalm": [
+                195,
+                153
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  143,
+                  116
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_RESOLVE_F02_CANDIDATE_R001.png",
+            "sourceSHA256": "c671d9556a19e3cb5df0965361b5c76b3e47c7dc805d615017993ba1d539ad5e",
+            "measurementStatus": "VISUALLY_MEASURED_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "resolve"
+          },
+          {
+            "actorID": "LUNA",
+            "bodyAssetID": "LUNA_BOOK_MOTION_RESOLVE_F03_CANDIDATE_R001",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "neck": [
+                145,
+                143
+              ],
+              "chest": [
+                143,
+                158
+              ],
+              "waist": [
+                142,
+                175
+              ],
+              "freeHand": [
+                118,
+                174
+              ],
+              "visibleRightAnkle": [
+                174,
+                229
+              ],
+              "face": [
+                143,
+                120
+              ],
+              "bookPalm": [
+                198,
+                154
+              ]
+            },
+            "foreground_candidate": [
+              {
+                "shape": "ellipse",
+                "center_px": [
+                  143,
+                  120
+                ],
+                "radius_px": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "source_path": "native/GeneratedArt/r001/LUNA_BOOK_MOTION_RESOLVE_F03_CANDIDATE_R001.png",
+            "sourceSHA256": "607ec7c00c36e076599d79424631e80e8d6ebacaea87129c4449cbcabe97c097",
+            "measurementStatus": "VISUALLY_MEASURED_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false,
+            "sourceRowState": "resolve"
+          }
+        ],
+        "sourceManifest": "native/Art/GeneratedCandidates/EquipmentDetails/luna_book_frame_landmarks_r001.json",
+        "sourceManifestSHA256": "9f84c4fe6ecc93dfac1585a13706b6153ed23dc5a2cbad504cf1eb146038254f",
+        "notes": [
+          "Coordinate grids and all 27 source frames were visually inspected by root. Coordinates remain approximate candidate anchors, not fit approval.",
+          "One visible ankle is suitable only for a small trim detail; it is not a completed replacement for paired shoes. Do not center footwear between the feet.",
+          "Use bookPalm only for holding-hand details. The free hand moves independently and has separate coordinates.",
+          "Erna layered, Luna staff fallback and furniture-reading frames are outside this table.",
+          "Collar/amulet must stay below the chin and behind casting forearm/book; face ellipse alone is insufficient for all occlusion."
+        ],
+        "visualFit": "NOT_VERIFIED"
+      }
+    },
+    "ERNA": {
+      "semanticFrameLandmarksCandidate": {
+        "schema": "equipment_semantic_frame_landmarks_r001",
+        "status": "UNAPPROVED_MEASURED_CANDIDATE",
+        "humanApproval": false,
+        "key": [
+          "actorID",
+          "bodyAssetID",
+          "frameIndex",
+          "canvas_px"
+        ],
+        "coordinate_origin": "top_left_canvas_pixels",
+        "rows": [
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "standard",
+            "state": "walk",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_0.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 128,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 109,
+                "y": 229,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 143,
+                "y": 229,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 4,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 0,
+            "sourceSHA256": "ee5c86b4b5d7686f29c04a2ed4ed2795ed9143258337dad84cef716474f56b1d",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "standard",
+            "state": "walk",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_1.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 128,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 110,
+                "y": 229,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 142,
+                "y": 229,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 4,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 1,
+            "sourceSHA256": "37a9bba2a7c40968c396b7b40c378d9b2a9460f97f363b4b167df05eda6fa306",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "standard",
+            "state": "walk",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_2.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 128,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 109,
+                "y": 229,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 143,
+                "y": 229,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 4,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 2,
+            "sourceSHA256": "8a712cc80291e54b2fad35d04dab926b556fe3d8c2f58a84e42f8ce5d2ea4713",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "standard",
+            "state": "walk",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_3.png",
+            "frameIndex": 3,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 128,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 107,
+                "y": 229,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 145,
+                "y": 229,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 4,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 3,
+            "sourceSHA256": "d16ba038973e08c5706103a2895f0ea979873206a6c66f9328f9f5d9f9fe1010",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "standard",
+            "state": "walk",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_4.png",
+            "frameIndex": 4,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 128,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 109,
+                "y": 229,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 143,
+                "y": 229,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "neck": {
+                "x": 122,
+                "y": 132,
+                "confidence": "visual_approx_5px",
+                "measurement": "neck base/collar junction, separately measured from chest; sample only"
+              },
+              "chest": {
+                "x": 128,
+                "y": 150,
+                "confidence": "visual_approx_5px",
+                "measurement": "upper bodice/chest center, separately measured from neck; sample only"
+              }
+            },
+            "landmarkReferenceFrameIndex": 4,
+            "representativeOnlyLandmarks": [
+              "neck",
+              "chest"
+            ],
+            "sourceFrameIndex": 4,
+            "sourceSHA256": "c3946c5c85042b0e71445a6784f0e821a13a5d16447a77143d5639dca242b03e",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "standard",
+            "state": "walk",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_5.png",
+            "frameIndex": 5,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 128,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 109,
+                "y": 229,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 142,
+                "y": 229,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 4,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 5,
+            "sourceSHA256": "dfc1eb29ed4418a8ccb8525f604c9bca11d9a7269f347db676bc0daefa17d19b",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "standard",
+            "state": "walk",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_6.png",
+            "frameIndex": 6,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 128,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 109,
+                "y": 229,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 143,
+                "y": 229,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 4,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 6,
+            "sourceSHA256": "e7c58d91b31ac683f64c1e9826dff86a0f532271e880cabb3ddfcc9614946d71",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "standard",
+            "state": "walk",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_7.png",
+            "frameIndex": 7,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 128,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 108,
+                "y": 229,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 144,
+                "y": 229,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 4,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 7,
+            "sourceSHA256": "b777e7db61a315f957b444a9374e59242324e9fe7dbfa81844964eb36127b98e",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "standard",
+            "state": "walk",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__walk_8.png",
+            "frameIndex": 8,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 128,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 110,
+                "y": 229,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 143,
+                "y": 229,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 4,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 8,
+            "sourceSHA256": "b048230b0745ef7bdcfd7426ee26af3c5debed9a17acfe71eba60c06725fbc34",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "standard",
+            "state": "anticipate",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_0.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 128,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 109,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 143,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 0,
+            "sourceSHA256": "574441442b3c2dfad2285fa133febea703dadbf675eeeafc2c1e6126a39728c8",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "standard",
+            "state": "anticipate",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_1.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 128,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 109,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 143,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "neck": {
+                "x": 122,
+                "y": 132,
+                "confidence": "visual_approx_5px",
+                "measurement": "neck base/collar junction, separately measured from chest; sample only"
+              },
+              "chest": {
+                "x": 128,
+                "y": 151,
+                "confidence": "visual_approx_5px",
+                "measurement": "upper bodice/chest center, separately measured from neck; sample only"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [
+              "neck",
+              "chest"
+            ],
+            "sourceFrameIndex": 1,
+            "sourceSHA256": "72d454a32a23f5a23f31c5257e3e66af9100eaa2c8580013ca498460cd006bec",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "standard",
+            "state": "anticipate",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_2.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 128,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 109,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 143,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 2,
+            "sourceSHA256": "02c1ddbe1390fd19dc6f0a0be3680131e2c8e05121c57ac2688d700933a3c0d3",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "standard",
+            "state": "execute",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_3.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 128,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 102,
+                "y": 231,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 153,
+                "y": 231,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 0,
+            "sourceSHA256": "416d953b150d02de8695c355387dadd4277c61ab3fd4c0d76efa59dcf3bf35a6",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "standard",
+            "state": "execute",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_4.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 128,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 102,
+                "y": 231,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 153,
+                "y": 231,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "neck": {
+                "x": 123,
+                "y": 134,
+                "confidence": "visual_approx_5px",
+                "measurement": "neck base/collar junction, separately measured from chest; sample only"
+              },
+              "chest": {
+                "x": 128,
+                "y": 153,
+                "confidence": "visual_approx_5px",
+                "measurement": "upper bodice/chest center, separately measured from neck; sample only"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [
+              "neck",
+              "chest"
+            ],
+            "sourceFrameIndex": 1,
+            "sourceSHA256": "51422c4e6a5f359d9fe0250f0894ae6493145a324100cbfe7c70b151ae57da9e",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "standard",
+            "state": "execute",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_5.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 128,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 101,
+                "y": 231,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 153,
+                "y": 231,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 2,
+            "sourceSHA256": "944d659675544d5674987020f1b7fae3dff6f6ba21f9d141aeb35aa5029eaee1",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "standard",
+            "state": "recover",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_6.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 128,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 108,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 144,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 0,
+            "sourceSHA256": "3950bca15103c5dd253abc211996d0e078865553c4eeb2b7c152c0b84b9fb77a",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "standard",
+            "state": "recover",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_7.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 128,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 108,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 144,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "neck": {
+                "x": 123,
+                "y": 132,
+                "confidence": "visual_approx_5px",
+                "measurement": "neck base/collar junction, separately measured from chest; sample only"
+              },
+              "chest": {
+                "x": 128,
+                "y": 151,
+                "confidence": "visual_approx_5px",
+                "measurement": "upper bodice/chest center, separately measured from neck; sample only"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [
+              "neck",
+              "chest"
+            ],
+            "sourceFrameIndex": 1,
+            "sourceSHA256": "42604bb6d1e56853c4e391edaed580fa203020d167ad88797bc28210911c5c80",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "standard",
+            "state": "recover",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__cast_8.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 128,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 108,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 144,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 2,
+            "sourceSHA256": "bcfb121127809ad5499af465f47d813c2574425ec19b340ce6545503f093b128",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "standard",
+            "state": "idle",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_0.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 128,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 110,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 143,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 0,
+            "sourceSHA256": "7575ce7ef6c88d85e9dc26c61fc0e91b0dfe09638117df2a6b4588b62b2efa6d",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "standard",
+            "state": "idle",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_1.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 128,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 110,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 143,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "neck": {
+                "x": 122,
+                "y": 131,
+                "confidence": "visual_approx_5px",
+                "measurement": "neck base/collar junction, separately measured from chest; sample only"
+              },
+              "chest": {
+                "x": 128,
+                "y": 150,
+                "confidence": "visual_approx_5px",
+                "measurement": "upper bodice/chest center, separately measured from neck; sample only"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [
+              "neck",
+              "chest"
+            ],
+            "sourceFrameIndex": 1,
+            "sourceSHA256": "892d6346310c101880552911aa1306a4ee7800c78b08cb8c7d938de46f26bfa3",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "standard",
+            "state": "idle",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_2.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 128,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 110,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 143,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 2,
+            "sourceSHA256": "be4e8e75891e002d9ee7970c51f9eb4285834bc06b3d84531c6a4e85292833bf",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "standard",
+            "state": "hit",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_3.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 128,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 109,
+                "y": 231,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 144,
+                "y": 231,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 0,
+            "sourceSHA256": "38794859d5ab1468e9d388189e531abe1cac48fa05d7d43a72689906656d83fb",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "standard",
+            "state": "hit",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_4.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 128,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 109,
+                "y": 231,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 144,
+                "y": 231,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "neck": {
+                "x": 124,
+                "y": 136,
+                "confidence": "visual_approx_5px",
+                "measurement": "neck base/collar junction, separately measured from chest; sample only"
+              },
+              "chest": {
+                "x": 128,
+                "y": 154,
+                "confidence": "visual_approx_5px",
+                "measurement": "upper bodice/chest center, separately measured from neck; sample only"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [
+              "neck",
+              "chest"
+            ],
+            "sourceFrameIndex": 1,
+            "sourceSHA256": "3ec449bc60c41f7f93d765396d8c1d1ab932320152753026791c1076a1520dfa",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "standard",
+            "state": "hit",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_5.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 128,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 109,
+                "y": 231,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 144,
+                "y": 231,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 2,
+            "sourceSHA256": "49c890c0afae1927d5a5b6138cf9edc2d30b96571b8126691acfaec0419ee60d",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "standard",
+            "state": "resolve",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_6.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 128,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 110,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 143,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 0,
+            "sourceSHA256": "674ea3d1fb7d4c4caf1085b25c9a91275ef3f313d804af842013fabc66bf8474",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "standard",
+            "state": "resolve",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_7.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 128,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 110,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 143,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "neck": {
+                "x": 122,
+                "y": 132,
+                "confidence": "visual_approx_5px",
+                "measurement": "neck base/collar junction, separately measured from chest; sample only"
+              },
+              "chest": {
+                "x": 128,
+                "y": 150,
+                "confidence": "visual_approx_5px",
+                "measurement": "upper bodice/chest center, separately measured from neck; sample only"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [
+              "neck",
+              "chest"
+            ],
+            "sourceFrameIndex": 1,
+            "sourceSHA256": "db4ffc38aaa57a9e1dec45717f1762c2701c82991145b5d9286519b17f828856",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "standard",
+            "state": "resolve",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/standard__rest_8.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 128,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 110,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 143,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 2,
+            "sourceSHA256": "99a7ec62f798fa86c73c7697e3fed6882ed9cfb3d9c877b306d501309702d91b",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "travel",
+            "state": "walk",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_0.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 124,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 97,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 124,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 4,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 0,
+            "sourceSHA256": "a8461e071f8c10eecf6e42fe595ff9f68bceb67819709a7a1890d8a1715820c1",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "travel",
+            "state": "walk",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_1.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 124,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 97,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 124,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 4,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 1,
+            "sourceSHA256": "7241025579552eb4f15efd6d1974b18ebd9cfca033b520e04631cdd48b6b3618",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "travel",
+            "state": "walk",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_2.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 124,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 97,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 124,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 4,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 2,
+            "sourceSHA256": "9721b79fe68d2786baa9ec2ba607ceaa707654d4ace8f2ef4860e88e8b026702",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "travel",
+            "state": "walk",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_3.png",
+            "frameIndex": 3,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 124,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 96,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 124,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 4,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 3,
+            "sourceSHA256": "2ef4e8564f0d0893926e649e486346f6cda235a70b6023f25e131933abeb7edf",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "travel",
+            "state": "walk",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_4.png",
+            "frameIndex": 4,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 124,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 97,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 124,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "neck": {
+                "x": 126,
+                "y": 132,
+                "confidence": "visual_approx_5px",
+                "measurement": "neck base/collar junction, separately measured from chest; sample only"
+              },
+              "chest": {
+                "x": 126,
+                "y": 151,
+                "confidence": "visual_approx_5px",
+                "measurement": "upper bodice/chest center, separately measured from neck; sample only"
+              }
+            },
+            "landmarkReferenceFrameIndex": 4,
+            "representativeOnlyLandmarks": [
+              "neck",
+              "chest"
+            ],
+            "sourceFrameIndex": 4,
+            "sourceSHA256": "11ec631b06a72ada7e2567c08b080bb6421db28933953582138409b77473a1de",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "travel",
+            "state": "walk",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_5.png",
+            "frameIndex": 5,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 124,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 97,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 124,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 4,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 5,
+            "sourceSHA256": "0fd49f8b45bef2bd83d13666bbf0ba55b0d6e1fb926500c1df56fe9b1c8d4fee",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "travel",
+            "state": "walk",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_6.png",
+            "frameIndex": 6,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 124,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 96,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 124,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 4,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 6,
+            "sourceSHA256": "3671a95aceee0cca0554e4742ea11ae98de881e1895305460c05f36a1af3b3d1",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "travel",
+            "state": "walk",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_7.png",
+            "frameIndex": 7,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 124,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 97,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 124,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 4,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 7,
+            "sourceSHA256": "276aef3b8f72a12e865213238c9058c2ff22a66b22fb9b62640ae25bd352c3f6",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "travel",
+            "state": "walk",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__walk_8.png",
+            "frameIndex": 8,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 124,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 97,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 124,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 4,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 8,
+            "sourceSHA256": "4f9f3b41d7158a45b1c6e881305ebc58ed77961f0af839d47710380f00c864cd",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "travel",
+            "state": "anticipate",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_0.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 124,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 97,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 124,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 0,
+            "sourceSHA256": "956a61aa45138cf3e3833550cf2905170c1e947f134c8028b6c3dc8205820d85",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "travel",
+            "state": "anticipate",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_1.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 124,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 97,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 124,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "neck": {
+                "x": 126,
+                "y": 132,
+                "confidence": "visual_approx_5px",
+                "measurement": "neck base/collar junction, separately measured from chest; sample only"
+              },
+              "chest": {
+                "x": 126,
+                "y": 152,
+                "confidence": "visual_approx_5px",
+                "measurement": "upper bodice/chest center, separately measured from neck; sample only"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [
+              "neck",
+              "chest"
+            ],
+            "sourceFrameIndex": 1,
+            "sourceSHA256": "7e48ab790b8f899946f3eb961bc1c6d5940b9c31013ccf38eca64148e2805169",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "travel",
+            "state": "anticipate",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_2.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 124,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 97,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 124,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 2,
+            "sourceSHA256": "90eefdf698caad44b691d0e67956d055e6f4582fa16b06afeb504a6590c81ee5",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "travel",
+            "state": "execute",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_3.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 124,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 97,
+                "y": 231,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 155,
+                "y": 231,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 0,
+            "sourceSHA256": "ce690bceb86530c404bf2df60567466e18fde290d12b2d2dbff53b8b63432fde",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "travel",
+            "state": "execute",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_4.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 124,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 97,
+                "y": 231,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 155,
+                "y": 231,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "neck": {
+                "x": 127,
+                "y": 133,
+                "confidence": "visual_approx_5px",
+                "measurement": "neck base/collar junction, separately measured from chest; sample only"
+              },
+              "chest": {
+                "x": 126,
+                "y": 153,
+                "confidence": "visual_approx_5px",
+                "measurement": "upper bodice/chest center, separately measured from neck; sample only"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [
+              "neck",
+              "chest"
+            ],
+            "sourceFrameIndex": 1,
+            "sourceSHA256": "859472321d091a3e3851a4f757652fe5ddaac7de70f441c49773ffa87fb060b6",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "travel",
+            "state": "execute",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_5.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 124,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 97,
+                "y": 231,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 155,
+                "y": 231,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 2,
+            "sourceSHA256": "b4cc1c0422a73c73fc95e104e87c1b5bbc959900bc2b2a1ae4b5ebcef41c6272",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "travel",
+            "state": "recover",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_6.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 124,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 97,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 124,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 0,
+            "sourceSHA256": "05b4f8b22ef0835636daee2d29626676d096f0a0adf5440e578c130ff2952600",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "travel",
+            "state": "recover",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_7.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 124,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 97,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 124,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "neck": {
+                "x": 126,
+                "y": 132,
+                "confidence": "visual_approx_5px",
+                "measurement": "neck base/collar junction, separately measured from chest; sample only"
+              },
+              "chest": {
+                "x": 126,
+                "y": 152,
+                "confidence": "visual_approx_5px",
+                "measurement": "upper bodice/chest center, separately measured from neck; sample only"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [
+              "neck",
+              "chest"
+            ],
+            "sourceFrameIndex": 1,
+            "sourceSHA256": "07076326209c6568ff7dbf33713650e21e4a6e36170cfcd992d7875b940fb8c7",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "travel",
+            "state": "recover",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__cast_8.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 124,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 97,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 124,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 2,
+            "sourceSHA256": "54ecaf3712437c4ac63735a128dac5d900ce35731b34630664e457d86ae8d80d",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "travel",
+            "state": "idle",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_0.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 124,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 97,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 124,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 0,
+            "sourceSHA256": "ffdc5e4218d2431a88f57cdce7296e6a1b24f6c0b6ee7ea547d16bbd47625714",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "travel",
+            "state": "idle",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_1.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 124,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 97,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 124,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "neck": {
+                "x": 126,
+                "y": 131,
+                "confidence": "visual_approx_5px",
+                "measurement": "neck base/collar junction, separately measured from chest; sample only"
+              },
+              "chest": {
+                "x": 126,
+                "y": 151,
+                "confidence": "visual_approx_5px",
+                "measurement": "upper bodice/chest center, separately measured from neck; sample only"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [
+              "neck",
+              "chest"
+            ],
+            "sourceFrameIndex": 1,
+            "sourceSHA256": "eca214927d3dbb572fc897d9fc1643a657c5eaacade741b7e8b03df756157f0a",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "travel",
+            "state": "idle",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_2.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 124,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 97,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 124,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 2,
+            "sourceSHA256": "76d3909dc7edc53cfcf5492e08170efcd43d9e5a1219f6bff233040885936558",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "travel",
+            "state": "hit",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_3.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 124,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 97,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 124,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 0,
+            "sourceSHA256": "5c612f8f88d1f714ea0f70c2bf2482c996de5027cea1dc7aa12ed91f199152bf",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "travel",
+            "state": "hit",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_4.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 124,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 97,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 124,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "neck": {
+                "x": 126,
+                "y": 136,
+                "confidence": "visual_approx_5px",
+                "measurement": "neck base/collar junction, separately measured from chest; sample only"
+              },
+              "chest": {
+                "x": 126,
+                "y": 155,
+                "confidence": "visual_approx_5px",
+                "measurement": "upper bodice/chest center, separately measured from neck; sample only"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [
+              "neck",
+              "chest"
+            ],
+            "sourceFrameIndex": 1,
+            "sourceSHA256": "4e0b298c1a51629a4fe62683e9ad9faaf1a2f5e6e8cf66335ef6f5b3d6e0402e",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "travel",
+            "state": "hit",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_5.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 124,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 97,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 124,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 2,
+            "sourceSHA256": "47c30f61cdc11ece328903d82740ddaccc78fa94c5ab5f588ed277186e696271",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "travel",
+            "state": "resolve",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_6.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 124,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 97,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 124,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 0,
+            "sourceSHA256": "4cf27a11fd352549e60bdee9fa04d7c6206067815cc3599ca8c9db0f8a9f5dd2",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "travel",
+            "state": "resolve",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_7.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 124,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 97,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 124,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "neck": {
+                "x": 126,
+                "y": 132,
+                "confidence": "visual_approx_5px",
+                "measurement": "neck base/collar junction, separately measured from chest; sample only"
+              },
+              "chest": {
+                "x": 126,
+                "y": 152,
+                "confidence": "visual_approx_5px",
+                "measurement": "upper bodice/chest center, separately measured from neck; sample only"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [
+              "neck",
+              "chest"
+            ],
+            "sourceFrameIndex": 1,
+            "sourceSHA256": "056fd4711c1992a21b7f7a88c2bdcf319f76f3b34702abcf091dd61854c3c950",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          },
+          {
+            "actorID": "ERNA",
+            "sourceActorID": "C_WITCH",
+            "costume": "travel",
+            "state": "resolve",
+            "bodyAssetID": "GeneratedArt/LayeredMotion/travel__rest_8.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "waist": {
+                "x": 124,
+                "y": 186,
+                "confidence": "visual_approx_5px",
+                "measurement": "grid contact visual center of belt/waist seam; candidate overlay anchor only"
+              },
+              "visibleLeftAnkle": {
+                "x": 97,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              },
+              "visibleRightAnkle": {
+                "x": 124,
+                "y": 230,
+                "confidence": "visual_approx_5px",
+                "measurement": "center of visible boot/ankle silhouette"
+              }
+            },
+            "landmarkReferenceFrameIndex": 1,
+            "representativeOnlyLandmarks": [],
+            "sourceFrameIndex": 2,
+            "sourceSHA256": "6aacb3cbf8833b599f1cd0fcb0f14a7c3630888b0e68b62074c52a32b849b7ec",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "estimatedUncertaintyPx": 5,
+            "fitVerifiedInRuntime": false
+          }
+        ],
+        "sourceManifest": "native/Art/GeneratedCandidates/EquipmentDetails/erna_standard_travel_landmarks_r001.json",
+        "sourceManifestSHA256": "81bed835a217563e20aeabb82640e31b6705cac319c0b5d44c5f2fef804a5762",
+        "notes": [
+          "Per-frame waist/ankles are visual estimates. Neck/chest are present only on the cited representative frame for each state/costume; no interpolation or unrecorded fallback is implied."
+        ],
+        "visualFit": "NOT_VERIFIED"
+      }
+    },
+    "NOIR": {
+      "semanticFrameLandmarksCandidate": {
+        "schema": "equipment_semantic_frame_landmarks_r001",
+        "status": "UNAPPROVED_MEASURED_CANDIDATE",
+        "humanApproval": false,
+        "key": [
+          "actorID",
+          "bodyAssetID",
+          "frameIndex",
+          "canvas_px"
+        ],
+        "coordinate_origin": "top_left_canvas_pixels",
+        "rows": [
+          {
+            "actorID": "NOIR",
+            "state": "rest",
+            "bodyAssetID": "GeneratedArt/PartyRest/NOIR__rest_00.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "chest": [
+                166,
+                164
+              ],
+              "frontPaw": [
+                220,
+                233
+              ],
+              "catalystEffectOrigin": [
+                238,
+                209
+              ]
+            },
+            "sourceFrameIndex": 0,
+            "sourceSHA256": "0a7fcc791b417a5b151f4f5e669efe603432226d0709ea79aa01517d066f783d",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "occlusionNotes": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          {
+            "actorID": "NOIR",
+            "state": "rest",
+            "bodyAssetID": "GeneratedArt/PartyRest/NOIR__rest_01.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "chest": [
+                169,
+                164
+              ],
+              "frontPaw": [
+                218,
+                233
+              ],
+              "catalystEffectOrigin": [
+                236,
+                209
+              ]
+            },
+            "sourceFrameIndex": 1,
+            "sourceSHA256": "3dfc1060abe373d62b999415acf9d154b0d5bfb16a8f1ae34aab1a6999c8bdad",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "occlusionNotes": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          {
+            "actorID": "NOIR",
+            "state": "rest",
+            "bodyAssetID": "GeneratedArt/PartyRest/NOIR__rest_02.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "chest": [
+                188,
+                165
+              ],
+              "frontPaw": [
+                225,
+                232
+              ],
+              "catalystEffectOrigin": [
+                243,
+                208
+              ]
+            },
+            "sourceFrameIndex": 2,
+            "sourceSHA256": "828cb8d53c92642a85d1f687fd6af333fc874624f771606eb5ffb31aa1900ec1",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "occlusionNotes": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          {
+            "actorID": "NOIR",
+            "state": "rest",
+            "bodyAssetID": "GeneratedArt/PartyRest/NOIR__rest_03.png",
+            "frameIndex": 3,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "chest": [
+                160,
+                165
+              ],
+              "frontPaw": [
+                177,
+                230
+              ],
+              "catalystEffectOrigin": [
+                195,
+                206
+              ]
+            },
+            "sourceFrameIndex": 3,
+            "sourceSHA256": "fcdd43506856340887479ee405f7ac9cc7a98ade8043bd760171269f39cb8193",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "occlusionNotes": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          {
+            "actorID": "NOIR",
+            "state": "rest",
+            "bodyAssetID": "GeneratedArt/PartyRest/NOIR__rest_04.png",
+            "frameIndex": 4,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "chest": [
+                177,
+                168
+              ],
+              "frontPaw": [
+                188,
+                232
+              ],
+              "catalystEffectOrigin": [
+                206,
+                208
+              ]
+            },
+            "sourceFrameIndex": 4,
+            "sourceSHA256": "fb215f5f611382d7a6925403e13e3d5cb3f63528a4c551e3790e0fe90fa1eb6c",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "occlusionNotes": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          {
+            "actorID": "NOIR",
+            "state": "rest",
+            "bodyAssetID": "GeneratedArt/PartyRest/NOIR__rest_05.png",
+            "frameIndex": 5,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "chest": [
+                180,
+                166
+              ],
+              "frontPaw": [
+                217,
+                232
+              ],
+              "catalystEffectOrigin": [
+                235,
+                208
+              ]
+            },
+            "sourceFrameIndex": 5,
+            "sourceSHA256": "9646b93c53653f83856abd14cefdd7ac18ee3b488e61cf4831d1d61f09277e34",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "occlusionNotes": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          {
+            "actorID": "NOIR",
+            "state": "rest",
+            "bodyAssetID": "GeneratedArt/PartyRest/NOIR__rest_06.png",
+            "frameIndex": 6,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "chest": [
+                198,
+                229
+              ],
+              "frontPaw": [
+                190,
+                228
+              ],
+              "catalystEffectOrigin": [
+                208,
+                204
+              ]
+            },
+            "sourceFrameIndex": 6,
+            "sourceSHA256": "d4eba79af38b2d45eb4712b2ddede4f5c8ebe14e5dd42dab724f4049a16ad3b1",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "occlusionNotes": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          {
+            "actorID": "NOIR",
+            "state": "rest",
+            "bodyAssetID": "GeneratedArt/PartyRest/NOIR__rest_07.png",
+            "frameIndex": 7,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "chest": [
+                185,
+                187
+              ],
+              "frontPaw": [
+                197,
+                230
+              ],
+              "catalystEffectOrigin": [
+                215,
+                206
+              ]
+            },
+            "sourceFrameIndex": 7,
+            "sourceSHA256": "715ee4d2f7f5fbc816f862615a6681e511c2c24e37e1c159e7fc7a47885500eb",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "occlusionNotes": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          {
+            "actorID": "NOIR",
+            "state": "rest",
+            "bodyAssetID": "GeneratedArt/PartyRest/NOIR__rest_08.png",
+            "frameIndex": 8,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "chest": [
+                197,
+                187
+              ],
+              "frontPaw": [
+                216,
+                233
+              ],
+              "catalystEffectOrigin": [
+                234,
+                209
+              ]
+            },
+            "sourceFrameIndex": 8,
+            "sourceSHA256": "b6166468dd4fd09e0b3c5e775d83033696ba9b60e256d86ea7d9ef0a2ae627f8",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "occlusionNotes": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          {
+            "actorID": "NOIR",
+            "state": "attack",
+            "bodyAssetID": "GeneratedArt/PartyAttack/NOIR__attack_00.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "chest": [
+                190,
+                178
+              ],
+              "frontPaw": [
+                220,
+                232
+              ],
+              "catalystEffectOrigin": [
+                238,
+                208
+              ]
+            },
+            "sourceFrameIndex": 0,
+            "sourceSHA256": "c088713f72a243403d261a6b87e8356350ea77231a8f94c039c59e303dc6b825",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "occlusionNotes": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          {
+            "actorID": "NOIR",
+            "state": "attack",
+            "bodyAssetID": "GeneratedArt/PartyAttack/NOIR__attack_01.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "chest": [
+                171,
+                194
+              ],
+              "frontPaw": [
+                199,
+                234
+              ],
+              "catalystEffectOrigin": [
+                217,
+                210
+              ]
+            },
+            "sourceFrameIndex": 1,
+            "sourceSHA256": "51fa6ec463b8fdc152acdadc678f73eba89816c70fc7d69ade958fe138a8698f",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "occlusionNotes": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          {
+            "actorID": "NOIR",
+            "state": "attack",
+            "bodyAssetID": "GeneratedArt/PartyAttack/NOIR__attack_02.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "chest": [
+                194,
+                209
+              ],
+              "frontPaw": [
+                224,
+                231
+              ],
+              "catalystEffectOrigin": [
+                242,
+                207
+              ]
+            },
+            "sourceFrameIndex": 2,
+            "sourceSHA256": "26b22fe55522b07893d2c2de19c0d5a3daf039cf7fcbc5d1791ac95dd7d52645",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "occlusionNotes": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          {
+            "actorID": "NOIR",
+            "state": "attack",
+            "bodyAssetID": "GeneratedArt/PartyAttack/NOIR__attack_03.png",
+            "frameIndex": 3,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "chest": [
+                188,
+                211
+              ],
+              "frontPaw": [
+                200,
+                231
+              ],
+              "catalystEffectOrigin": [
+                218,
+                207
+              ]
+            },
+            "sourceFrameIndex": 3,
+            "sourceSHA256": "a16055b0d1b1f773a61ecb9d92fd6996885eea023ade4d19e865f0582b0e887e",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "occlusionNotes": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          {
+            "actorID": "NOIR",
+            "state": "attack",
+            "bodyAssetID": "GeneratedArt/PartyAttack/NOIR__attack_04.png",
+            "frameIndex": 4,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "chest": [
+                169,
+                198
+              ],
+              "frontPaw": [
+                232,
+                199
+              ],
+              "catalystEffectOrigin": [
+                250,
+                175
+              ]
+            },
+            "sourceFrameIndex": 4,
+            "sourceSHA256": "d5b8ed6a1d07770cc45de6ceea0dbba6aad0abaa0d4e6bf22a43275d958e8595",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "occlusionNotes": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          {
+            "actorID": "NOIR",
+            "state": "attack",
+            "bodyAssetID": "GeneratedArt/PartyAttack/NOIR__attack_05.png",
+            "frameIndex": 5,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "chest": [
+                165,
+                213
+              ],
+              "frontPaw": [
+                250,
+                214
+              ],
+              "catalystEffectOrigin": [
+                268,
+                190
+              ]
+            },
+            "sourceFrameIndex": 5,
+            "sourceSHA256": "22e4c2509d511fc46269c7db2b3771df7ff8866103528b178fc0c1d1ceda31b1",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "occlusionNotes": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          {
+            "actorID": "NOIR",
+            "state": "attack",
+            "bodyAssetID": "GeneratedArt/PartyAttack/NOIR__attack_06.png",
+            "frameIndex": 6,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "chest": [
+                168,
+                212
+              ],
+              "frontPaw": [
+                241,
+                215
+              ],
+              "catalystEffectOrigin": [
+                259,
+                191
+              ]
+            },
+            "sourceFrameIndex": 6,
+            "sourceSHA256": "4a9966a9a8b69863154d4791dae843f4cd60a6c95dbfe8445badef75ae2a788b",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "occlusionNotes": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          {
+            "actorID": "NOIR",
+            "state": "attack",
+            "bodyAssetID": "GeneratedArt/PartyAttack/NOIR__attack_07.png",
+            "frameIndex": 7,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "chest": [
+                190,
+                186
+              ],
+              "frontPaw": [
+                220,
+                234
+              ],
+              "catalystEffectOrigin": [
+                238,
+                210
+              ]
+            },
+            "sourceFrameIndex": 7,
+            "sourceSHA256": "aaf986d8900c58eda03cb6b8e03e9c54418c5652c941cb96671c9a10b2309a28",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "occlusionNotes": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          {
+            "actorID": "NOIR",
+            "state": "attack",
+            "bodyAssetID": "GeneratedArt/PartyAttack/NOIR__attack_08.png",
+            "frameIndex": 8,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "chest": [
+                199,
+                187
+              ],
+              "frontPaw": [
+                223,
+                234
+              ],
+              "catalystEffectOrigin": [
+                241,
+                210
+              ]
+            },
+            "sourceFrameIndex": 8,
+            "sourceSHA256": "d57801f6b087067b174cea3e9051f464d48ec5d627092835d1102065abc89703",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "occlusionNotes": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          {
+            "actorID": "NOIR",
+            "state": "walk",
+            "bodyAssetID": "GeneratedArt/PartyWalk/NOIR__walk_0.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "chest": [
+                169,
+                181
+              ],
+              "frontPaw": [
+                174,
+                229
+              ],
+              "catalystEffectOrigin": [
+                192,
+                205
+              ]
+            },
+            "sourceFrameIndex": 0,
+            "sourceSHA256": "9f705cb909742b80837a8a51cb9ecd44bb09df3925b6240f1be5aa99ab0fe2a9",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "occlusionNotes": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          {
+            "actorID": "NOIR",
+            "state": "walk",
+            "bodyAssetID": "GeneratedArt/PartyWalk/NOIR__walk_2.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "chest": [
+                171,
+                181
+              ],
+              "frontPaw": [
+                180,
+                228
+              ],
+              "catalystEffectOrigin": [
+                198,
+                204
+              ]
+            },
+            "sourceFrameIndex": 2,
+            "sourceSHA256": "a54d25444d05a2d647f73972cfa0a26293ee4bf5852b33f4cd9bbaa301860de5",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "occlusionNotes": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          {
+            "actorID": "NOIR",
+            "state": "walk",
+            "bodyAssetID": "GeneratedArt/PartyWalk/NOIR__walk_3.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "chest": [
+                175,
+                181
+              ],
+              "frontPaw": [
+                180,
+                230
+              ],
+              "catalystEffectOrigin": [
+                198,
+                206
+              ]
+            },
+            "sourceFrameIndex": 3,
+            "sourceSHA256": "d52ad1cdb3d19199913a58b422e569be9c92b94d6801ec200697437f90b7e26f",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "occlusionNotes": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          {
+            "actorID": "NOIR",
+            "state": "walk",
+            "bodyAssetID": "GeneratedArt/PartyWalk/NOIR__walk_4.png",
+            "frameIndex": 3,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "chest": [
+                168,
+                181
+              ],
+              "frontPaw": [
+                177,
+                230
+              ],
+              "catalystEffectOrigin": [
+                195,
+                206
+              ]
+            },
+            "sourceFrameIndex": 4,
+            "sourceSHA256": "01abaa2f71e39e0c7cc1da1368a3509f8158197e2e42bb4a1bb656bb351f0ab0",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "occlusionNotes": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          {
+            "actorID": "NOIR",
+            "state": "walk",
+            "bodyAssetID": "GeneratedArt/PartyWalk/NOIR__walk_5.png",
+            "frameIndex": 4,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "chest": [
+                170,
+                182
+              ],
+              "frontPaw": [
+                175,
+                229
+              ],
+              "catalystEffectOrigin": [
+                193,
+                205
+              ]
+            },
+            "sourceFrameIndex": 5,
+            "sourceSHA256": "0313d0e1b3dfc2463bfcedd4442d960f07697b17402025a492326ca7fa50912d",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "occlusionNotes": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          {
+            "actorID": "NOIR",
+            "state": "walk",
+            "bodyAssetID": "GeneratedArt/PartyWalk/NOIR__walk_6.png",
+            "frameIndex": 5,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "chest": [
+                173,
+                183
+              ],
+              "frontPaw": [
+                183,
+                229
+              ],
+              "catalystEffectOrigin": [
+                201,
+                205
+              ]
+            },
+            "sourceFrameIndex": 6,
+            "sourceSHA256": "c48e7c892dbd997cf6fd3052b4d2d25f4ac07d2a401e39a9ada92b02a83d0f92",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "occlusionNotes": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          {
+            "actorID": "NOIR",
+            "state": "walk",
+            "bodyAssetID": "GeneratedArt/PartyWalk/NOIR__walk_7.png",
+            "frameIndex": 6,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "chest": [
+                170,
+                182
+              ],
+              "frontPaw": [
+                177,
+                230
+              ],
+              "catalystEffectOrigin": [
+                195,
+                206
+              ]
+            },
+            "sourceFrameIndex": 7,
+            "sourceSHA256": "ed6158b332d21c62137447ab2972e9563b3fa9da7f2c3ffa0fd8bb0a889116f9",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "occlusionNotes": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          },
+          {
+            "actorID": "NOIR",
+            "state": "walk",
+            "bodyAssetID": "GeneratedArt/PartyWalk/NOIR__walk_8.png",
+            "frameIndex": 7,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "landmarks_px_top_left": {
+              "chest": [
+                173,
+                182
+              ],
+              "frontPaw": [
+                179,
+                230
+              ],
+              "catalystEffectOrigin": [
+                197,
+                206
+              ]
+            },
+            "sourceFrameIndex": 8,
+            "sourceSHA256": "bb248c70fba0b251abdc36b72d3dde8ed0ec17ac59519f3b0a8381afee215f87",
+            "measurementStatus": "UNAPPROVED_VISUAL_ESTIMATE_CANDIDATE",
+            "fitVerifiedInRuntime": false,
+            "occlusionNotes": {
+              "bodyGear": "scarf, pendant, torso and forelegs are baked into body frame; do not assume clean compositing slot",
+              "pawGear": "overlay should be in front of paw pixels; use mask cutout or accept overlap only after visual QA",
+              "effect": "render over body, preserve icon/projectile readability"
+            }
+          }
+        ],
+        "sourceManifest": "native/Art/GeneratedCandidates/EquipmentDetails/noir_frame_landmarks_r001.json",
+        "sourceManifestSHA256": "e092d15eb07f6a1efe363eaaf0e1d92eb8ec7c2d9e61a856d4353654c2993326",
+        "notes": [
+          "Frame indices use runtimeBodyAssetID and runtimeFrameIndex, not source filename suffix. Forepaw is not a measured hind-ankle."
+        ],
+        "visualFit": "NOT_VERIFIED"
+      }
+    }
+  }
+}

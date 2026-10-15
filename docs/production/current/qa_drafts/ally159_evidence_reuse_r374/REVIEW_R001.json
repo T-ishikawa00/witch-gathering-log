@@ -1,0 +1,193 @@
+{
+  "schema": "ally159_existing_render_evidence_r374_v1",
+  "reviewType": "read_only_reconciliation_and_visual_sample",
+  "result": "NO_REPRODUCIBLE_HIGH_IMPACT_DEFECT_IN_SAMPLED_EVIDENCE; acceptance remains partial",
+  "sources": {
+    "R308_asset_readiness": {
+      "path": "docs/production/current/qa_drafts/asset_readiness_r308/ASSET_READINESS_R001.json",
+      "sha256": "02b76b68239cdaf0af7934dfc7bbcdb4eef1592dff2cff99aec896b6f8d29a25"
+    },
+    "R360_UI_remaining": {
+      "path": "docs/production/current/qa_drafts/final_acceptance_r360/UI_ART_REMAINING_R001.json",
+      "sha256": "f8436677e369bf58b0240250a6467d3b8a115b72136f9170bc4531a2b9772321"
+    },
+    "R360_completion_register": {
+      "path": "docs/production/current/qa_drafts/final_acceptance_r360/COMPLETION_REGISTER_R003.json",
+      "sha256": "f9ac23921c104fad75d2b3fca101a8b1f7007241ecac13b27fa69e3a4ab199bd"
+    },
+    "R313_party_motion_review": {
+      "path": "docs/production/current/qa_drafts/party_motion_review_r313/REVIEW_R001.json",
+      "sha256": "a6386f6b070c726b4e73edea5237f7d3a8d2dc50f9fbec0a3e12843ec9514480"
+    },
+    "R337_run": {
+      "path": "docs/production/current/qa_drafts/enemy_release_review_r337/root_candidate_r003/manual_run_001/RUN.json",
+      "sha256": "27d7c9c8585de7e824e5f8c2d2446d85fa813bf25e1952587824f8d64aa04301"
+    },
+    "R337_battle_art": {
+      "path": "docs/production/current/qa_drafts/enemy_release_review_r337/root_candidate_r003/manual_run_001/development_after/last_battle_art.json",
+      "sha256": "0cae62371f04855404446f2df9c517be717db3fd7ccfb8cb8676dda842c72f5e"
+    },
+    "R337_video": {
+      "path": "docs/production/current/qa_drafts/enemy_release_review_r337/root_candidate_r003/manual_run_001/battle_e_r05_01.mp4",
+      "sha256": "3ea5288a467091f70611c4545a26c8b68623306fe1f6fd75c1a7a04f9914ef7f"
+    },
+    "R337_source_map": {
+      "path": "docs/production/current/qa_drafts/native_release_candidate_r333/build_tools_r001/NATIVE_SOURCE_MAP_R001.json",
+      "sha256": "08dd51c159af18b6367140b4853b37f343466cc5780d66f5c7662546d1471dbb"
+    },
+    "R370_home": {
+      "path": "docs/production/current/qa_drafts/large_text_navigation_r370/run_001/screens/home_axl.png",
+      "sha256": "22cfc4baec5e995f647c70b5be03a11bb41fba67400e674421ae421f72d6266d"
+    },
+    "R370_companions": {
+      "path": "docs/production/current/qa_drafts/large_text_navigation_r370/run_001/screens/companion_actions_axl.png",
+      "sha256": "edc887ab5f9fd29535bf53d075d2f3d9dfcf1062c91c79760d251f811e93f7d7"
+    },
+    "R370_inventory": {
+      "path": "docs/production/current/qa_drafts/large_text_navigation_r370/run_001/screens/inventory_axl.png",
+      "sha256": "b1131a61f75aa52ea2eeb4d2024549fcf6dbfdc90decc55685b72bfecc61988a"
+    },
+    "R314_material": {
+      "path": "docs/production/current/qa_drafts/ordinary_research_gather_r314/manual_run_001/phases/preview_new_target/screen.png",
+      "sha256": "662cbfefcb265e22e39f2fa8f3e98cbb4a61ebe3a982e8f224b9aba171166418"
+    },
+    "R314_four_party": {
+      "path": "docs/production/current/qa_drafts/ordinary_research_gather_r314/manual_run_001/phases/selected_new_target/screen.png",
+      "sha256": "aefa9a4c2204eea18e3cd377a165b3d524d053c98da6f4e4d165b52ca5b99aca"
+    },
+    "R244_battle_screen": {
+      "path": "docs/production/current/qa_drafts/ordinary_completion_r244/manual_run_001/phases/05_r05a_earned_victory_playing/screen.png",
+      "sha256": "f2ac770ffd6ed6be168daf47c06683df938d71a8fe005446515c1578dd013d3f"
+    },
+    "R366_first9_review": {
+      "path": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r001/REVIEW_FIRST9_R001.json",
+      "sha256": "19ef770a7e0d371ba732472cc685734121902b0d38db9016e4b752f48782ecee"
+    },
+    "R366_remaining18_review": {
+      "path": "docs/production/current/qa_drafts/enemy_completion_batch_r366/independent_visual_review_r002_dense/REVIEW_REMAINING18_R001.json",
+      "sha256": "872026b314f75790f8df3d1f4fe310e96816cda7bcf87dc1e94cab90f32d0a52"
+    }
+  },
+  "sourceParity": {
+    "scope": "R337 built source map vs current worktree animation-specific source files",
+    "matchedFiles": [
+      "native/WitchApp/PartyAuthoredMotion.swift",
+      "native/WitchApp/LivingScene.swift",
+      "native/WitchApp/BattlePlayback.swift",
+      "native/WitchApp/CharacterClips.swift",
+      "native/WitchApp/CharacterMotion.swift",
+      "native/WitchApp/CharacterLocomotion.swift"
+    ],
+    "sha256": {
+      "PartyAuthoredMotion.swift": "942e2b9df5140e7c27c316d88caedd9bf13d59248766b559529bf5b07dc6de81",
+      "LivingScene.swift": "3520f93057a3434be001e3b343e8aa895c399a9b1522e379689b6ec4a37cfd86",
+      "BattlePlayback.swift": "112dcff156070e83e15d346d2f48e5b13ea89e94d9ecf01e48121fff9ccbbf45",
+      "CharacterClips.swift": "427ea3ca58b064ffbf220a3edd8a6fbd8f23a78b37ccb7df175f137c5a89b79d",
+      "CharacterMotion.swift": "03b743428f10c91bd34b7044d699475a30f1f33218bcb72104d4bd5ade82721b",
+      "CharacterLocomotion.swift": "45640542ae0f7bff627ea3f1ef9444832893971cd4121f40c5890061d430fe97"
+    }
+  },
+  "party": {
+    "staticContextObserved": [
+      "R370 home shows all four actors grouped in the placed-desk room at AXXXL; R314 selected gather screen shows all four separated in the live world scene. No visible crop or actor-to-actor collision in these stills.",
+      "R337 ordinary E_R05_01 battle video sampled at 4s, 9s, 15s and 23s: all four sprites stay on screen and remain identifiable; visible actor silhouettes/equipment remain readable in the sampled action frames; 23s is already back to gathering/world UI. No gross clipping/overlap observed in these limited samples."
+    ],
+    "ordinaryRun": {
+      "encounter": "E_R05_01",
+      "ticks": 9,
+      "result": "win",
+      "eventsPresented": 383,
+      "renderFrames": 19867,
+      "videoDurationSeconds": 28.08,
+      "formalAdoption": false,
+      "status": "CLOSED_PENDING_SEMANTIC_REVIEW"
+    },
+    "routeFlagsFromSameRun": {
+      "AIRA": [
+        "idle",
+        "battle_entry_walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "ERNA": [
+        "idle",
+        "battle_entry_walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "resolve"
+      ],
+      "LUNA": [
+        "idle",
+        "battle_entry_walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve",
+        "book_idle",
+        "book_walk",
+        "book_anticipate",
+        "book_execute",
+        "book_recover",
+        "book_hit",
+        "book_resolve"
+      ],
+      "NOIR": [
+        "idle",
+        "battle_entry_walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "resolve"
+      ]
+    },
+    "classification": "State route/readback evidence, not event-ID-to-frame continuity or naturalness acceptance. ERNA and NOIR authored_hit were not exercised in the R337 current-source run. AIRA and LUNA hit were registered; LUNA book branch has seven registered states.",
+    "reusableAcceptance": [
+      "four-actor screen presence and scene composition in home/explore",
+      "idle/entry-walk/anticipate/execute/recover/resolve route-use flags for all four in one ordinary encounter",
+      "AIRA/LUNA hit route-use flags in that encounter",
+      "LUNA book vs authored path route flags in that encounter"
+    ],
+    "remaining": [
+      "Full 28.08s R337 clip still needs a continuous focused visual review if naturalness is being signed off; four sparse samples cannot validate timing/seams.",
+      "Capture only the missing ordinary ERNA/NOIR hit transitions if a current event->render join is required. Bind actorID/rootActionID/eventSequence/sceneGeneration/sceneFrame to rendered party state and inspect hit->return. Avoid replaying already-seen idle/attack routes as separate videos."
+    ],
+    "R244_note": "Earlier ordinary run sidecar lists all seven flags for all four, but its app executable differs and source parity was not proven in this review; retained as historical support only, not as current-build closure."
+  },
+  "units159": {
+    "ledgerRows": 159,
+    "rowClassifications": "159/159 PARTIAL_OR_NOT_ACCEPTED in R308; runtime mapping/resource hashes do not equal visual acceptance.",
+    "kindCounts": {
+      "material_icon": 50,
+      "enemy_actor_kit": 30,
+      "gear_icon": 29,
+      "gather_prop": 20,
+      "background_kit": 10,
+      "area_variant": 10,
+      "ambient_kit": 5,
+      "combat_vfx_kit": 5
+    },
+    "visuallySeenNativeExamples": {
+      "gearIcon": 1,
+      "materialIcons": 3,
+      "gatherProp": 1,
+      "fourPartyInWorldScene": 1
+    },
+    "reusable": [
+      "R370 actual inventory route at AXXXL shows the inventory renderer/item name/quality and one recognizable item icon; it is layout/sample evidence, not all 29 gear icons.",
+      "R314 native gathering previews show three distinct material icons and one placed gather node at actual screen scale; these are individual examples, not all 50 icons/20 node states.",
+      "R366 existing 9+18 rendered enemy review sheets can be reused for their limited crops/states; keep their per-unit PARTIAL judgments and event-join caveats."
+    ],
+    "remainingStaticReview": "No full 79-icon visual review was found in the checked native UI evidence; the checked screens show 1 of 29 gear icons and 3 of 50 material icons. For static items, a labelled visual sheet at runtime/UI scale can close appearance review without 79 separate Simulator visits, but must cover every canonical icon ID. Gather-prop 20 states, 10 backgrounds, 10 area variants, 5 ambient effects, 5 combat effects need per-ID reuse of existing actual renders or small reviewed views; exact remaining count cannot be safely claimed from mapping alone.",
+    "currentStatus": "No item was promoted to complete or formally adopted by this review."
+  },
+  "limits": [
+    "No source, save, build, simulator or media output was modified.",
+    "Only existing R370/R314/R337/R244 screens and the R337 ordinary video sampled at 4 timestamps were visually inspected.",
+    "Static route/source presence and art-audit booleans are not a visual-quality pass."
+  ]
+}

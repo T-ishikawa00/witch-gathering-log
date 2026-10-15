@@ -1,0 +1,411 @@
+{
+  "schema": "R449_INDEPENDENT_SEMANTIC_REVIEW_R001",
+  "worktree": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg",
+  "scope": "Read-only audit of retained R449 evidence; no app, Simulator, build, test, or save actions.",
+  "pins": {
+    "closure": {
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/native_challenge_completion_r449/candidate_r001/execution_r001/CLOSURE.json",
+      "sha256": "76152d3e32f96a7f5ef51d1e99eda3fcd44e51c5c10a748e725c5317ac5723c2"
+    },
+    "session": {
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/native_challenge_completion_r449/candidate_r001/execution_r001/SESSION.json",
+      "sha256": "07be80f90ca0316357bbd346d8d6a91cec7b0fa752c1ac769a28a093ca6a22f9"
+    },
+    "prepared": {
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/native_challenge_completion_r449/candidate_r001/execution_r001/PREPARED.json",
+      "sha256": "7c1f66b1f75b88cf72388163305054a0626b29d5af53edca0d75fc8a60b439f6"
+    },
+    "beforeSave": {
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/native_challenge_completion_r449/candidate_r001/execution_r001/checkpoints/before/support/save.json",
+      "sha256": "af864f432b2e16255e9fa050f0b1cf5189492c297260e64d1eae6ec465d03cc4",
+      "revision": 117
+    },
+    "coldBeforeSave": {
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/native_challenge_completion_r449/candidate_r001/execution_r001/checkpoints/cold_before/support/save.json",
+      "sha256": "27e965d92ab0d943541a075a599055d37ffd8e4bff501862b00f127846ca3a44",
+      "revision": 137
+    },
+    "coldAfterSave": {
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/native_challenge_completion_r449/candidate_r001/execution_r001/checkpoints/cold_after/support/save.json",
+      "sha256": "27e965d92ab0d943541a075a599055d37ffd8e4bff501862b00f127846ca3a44",
+      "revision": 137
+    },
+    "installReceipt": {
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/native_completion_r445/install_release_r001/RESULT.json",
+      "sha256": "8990781fbbff10c073ee8e6085e0edc9e71f8eeff6f2d3ec55c6d6fd4f3113ee",
+      "recordedSHA256": "8990781fbbff10c073ee8e6085e0edc9e71f8eeff6f2d3ec55c6d6fd4f3113ee"
+    },
+    "buildReceipt": {
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/native_completion_r445/build_tools_r001/postbuild_readback_r001/release_BUILD_PASS.json",
+      "sha256": "f6482cdd910d30e633af9a78068e751a85074bcdfa744a9ccffa0bde2f2d123c",
+      "recordedSHA256": "f6482cdd910d30e633af9a78068e751a85074bcdfa744a9ccffa0bde2f2d123c"
+    },
+    "bundleID": "local.witch.autonomous.r1.completion.r445",
+    "installedExecutableSHA256": "e85f9985813ccfca71d119515e5f90afb65eab5184017be81c57d106c45d4c14"
+  },
+  "outcome": {
+    "status": "CLOSED_CAPTURE_RECORDED",
+    "releaseAcceptance": false,
+    "revision": {
+      "before": 117,
+      "after": 137
+    },
+    "elapsedSeconds": 1590.7602789402008,
+    "evidenceBytes": 30082438,
+    "screenshots": 6,
+    "challengeCheckpointCount": 15,
+    "checkpoints": [
+      {
+        "challengeID": "CH_R01_01",
+        "outcome": "WIN",
+        "lastCombatResultWon": true,
+        "lastEncounterID": "CH_R01_01",
+        "saveRevision": 119,
+        "sidecarRevision": 119,
+        "challengeArtRevision": 119,
+        "clearMarkerPresent": true,
+        "resultConsistent": true
+      },
+      {
+        "challengeID": "CH_R01_02",
+        "outcome": "WIN",
+        "lastCombatResultWon": true,
+        "lastEncounterID": "CH_R01_02",
+        "saveRevision": 120,
+        "sidecarRevision": 120,
+        "challengeArtRevision": 120,
+        "clearMarkerPresent": true,
+        "resultConsistent": true
+      },
+      {
+        "challengeID": "CH_R01_03",
+        "outcome": "WIN",
+        "lastCombatResultWon": true,
+        "lastEncounterID": "CH_R01_03",
+        "saveRevision": 121,
+        "sidecarRevision": 121,
+        "challengeArtRevision": 121,
+        "clearMarkerPresent": true,
+        "resultConsistent": true
+      },
+      {
+        "challengeID": "CH_R02_01",
+        "outcome": "WIN",
+        "lastCombatResultWon": true,
+        "lastEncounterID": "CH_R02_01",
+        "saveRevision": 123,
+        "sidecarRevision": 123,
+        "challengeArtRevision": 123,
+        "clearMarkerPresent": true,
+        "resultConsistent": true
+      },
+      {
+        "challengeID": "CH_R02_02",
+        "outcome": "WIN",
+        "lastCombatResultWon": true,
+        "lastEncounterID": "CH_R02_02",
+        "saveRevision": 124,
+        "sidecarRevision": 124,
+        "challengeArtRevision": 124,
+        "clearMarkerPresent": true,
+        "resultConsistent": true
+      },
+      {
+        "challengeID": "CH_R02_03",
+        "outcome": "WIN",
+        "lastCombatResultWon": true,
+        "lastEncounterID": "CH_R02_03",
+        "saveRevision": 125,
+        "sidecarRevision": 125,
+        "challengeArtRevision": 125,
+        "clearMarkerPresent": true,
+        "resultConsistent": true
+      },
+      {
+        "challengeID": "CH_R03_01",
+        "outcome": "WIN",
+        "lastCombatResultWon": true,
+        "lastEncounterID": "CH_R03_01",
+        "saveRevision": 127,
+        "sidecarRevision": 127,
+        "challengeArtRevision": 127,
+        "clearMarkerPresent": true,
+        "resultConsistent": true
+      },
+      {
+        "challengeID": "CH_R03_02",
+        "outcome": "WIN",
+        "lastCombatResultWon": true,
+        "lastEncounterID": "CH_R03_02",
+        "saveRevision": 128,
+        "sidecarRevision": 128,
+        "challengeArtRevision": 128,
+        "clearMarkerPresent": true,
+        "resultConsistent": true
+      },
+      {
+        "challengeID": "CH_R03_03",
+        "outcome": "WIN",
+        "lastCombatResultWon": true,
+        "lastEncounterID": "CH_R03_03",
+        "saveRevision": 129,
+        "sidecarRevision": 129,
+        "challengeArtRevision": 129,
+        "clearMarkerPresent": true,
+        "resultConsistent": true
+      },
+      {
+        "challengeID": "CH_R04_01",
+        "outcome": "WIN",
+        "lastCombatResultWon": true,
+        "lastEncounterID": "CH_R04_01",
+        "saveRevision": 131,
+        "sidecarRevision": 131,
+        "challengeArtRevision": 131,
+        "clearMarkerPresent": true,
+        "resultConsistent": true
+      },
+      {
+        "challengeID": "CH_R04_02",
+        "outcome": "WIN",
+        "lastCombatResultWon": true,
+        "lastEncounterID": "CH_R04_02",
+        "saveRevision": 132,
+        "sidecarRevision": 132,
+        "challengeArtRevision": 132,
+        "clearMarkerPresent": true,
+        "resultConsistent": true
+      },
+      {
+        "challengeID": "CH_R04_03",
+        "outcome": "WIN",
+        "lastCombatResultWon": true,
+        "lastEncounterID": "CH_R04_03",
+        "saveRevision": 133,
+        "sidecarRevision": 133,
+        "challengeArtRevision": 133,
+        "clearMarkerPresent": true,
+        "resultConsistent": true
+      },
+      {
+        "challengeID": "CH_R05_01",
+        "outcome": "WIN",
+        "lastCombatResultWon": true,
+        "lastEncounterID": "CH_R05_01",
+        "saveRevision": 135,
+        "sidecarRevision": 135,
+        "challengeArtRevision": 135,
+        "clearMarkerPresent": true,
+        "resultConsistent": true
+      },
+      {
+        "challengeID": "CH_R05_02",
+        "outcome": "WIN",
+        "lastCombatResultWon": true,
+        "lastEncounterID": "CH_R05_02",
+        "saveRevision": 136,
+        "sidecarRevision": 136,
+        "challengeArtRevision": 136,
+        "clearMarkerPresent": true,
+        "resultConsistent": true
+      },
+      {
+        "challengeID": "CH_R05_03",
+        "outcome": "WIN",
+        "lastCombatResultWon": true,
+        "lastEncounterID": "CH_R05_03",
+        "saveRevision": 137,
+        "sidecarRevision": 137,
+        "challengeArtRevision": 137,
+        "clearMarkerPresent": true,
+        "resultConsistent": true
+      }
+    ],
+    "newChallengeReceiptCount": 15,
+    "newChallengeReceipts": [
+      {
+        "revision": 119,
+        "target": "CH_R01_01",
+        "result": "CHALLENGE SIMULATED_VICTORY: CH_R01_01, firstClearPowder=0, ticks=15; designStatus=DESIGN_ONLY_NOT_PLAYTESTED"
+      },
+      {
+        "revision": 120,
+        "target": "CH_R01_02",
+        "result": "CHALLENGE SIMULATED_VICTORY: CH_R01_02, firstClearPowder=0, ticks=12; designStatus=DESIGN_ONLY_NOT_PLAYTESTED"
+      },
+      {
+        "revision": 121,
+        "target": "CH_R01_03",
+        "result": "CHALLENGE SIMULATED_VICTORY: CH_R01_03, firstClearPowder=0, ticks=13; designStatus=DESIGN_ONLY_NOT_PLAYTESTED"
+      },
+      {
+        "revision": 123,
+        "target": "CH_R02_01",
+        "result": "CHALLENGE SIMULATED_VICTORY: CH_R02_01, firstClearPowder=0, ticks=16; designStatus=DESIGN_ONLY_NOT_PLAYTESTED"
+      },
+      {
+        "revision": 124,
+        "target": "CH_R02_02",
+        "result": "CHALLENGE SIMULATED_VICTORY: CH_R02_02, firstClearPowder=0, ticks=25; designStatus=DESIGN_ONLY_NOT_PLAYTESTED"
+      },
+      {
+        "revision": 125,
+        "target": "CH_R02_03",
+        "result": "CHALLENGE SIMULATED_VICTORY: CH_R02_03, firstClearPowder=0, ticks=19; designStatus=DESIGN_ONLY_NOT_PLAYTESTED"
+      },
+      {
+        "revision": 127,
+        "target": "CH_R03_01",
+        "result": "CHALLENGE SIMULATED_VICTORY: CH_R03_01, firstClearPowder=0, ticks=22; designStatus=DESIGN_ONLY_NOT_PLAYTESTED"
+      },
+      {
+        "revision": 128,
+        "target": "CH_R03_02",
+        "result": "CHALLENGE SIMULATED_VICTORY: CH_R03_02, firstClearPowder=200, ticks=20; designStatus=DESIGN_ONLY_NOT_PLAYTESTED"
+      },
+      {
+        "revision": 129,
+        "target": "CH_R03_03",
+        "result": "CHALLENGE SIMULATED_VICTORY: CH_R03_03, firstClearPowder=200, ticks=20; designStatus=DESIGN_ONLY_NOT_PLAYTESTED"
+      },
+      {
+        "revision": 131,
+        "target": "CH_R04_01",
+        "result": "CHALLENGE SIMULATED_VICTORY: CH_R04_01, firstClearPowder=200, ticks=25; designStatus=DESIGN_ONLY_NOT_PLAYTESTED"
+      },
+      {
+        "revision": 132,
+        "target": "CH_R04_02",
+        "result": "CHALLENGE SIMULATED_VICTORY: CH_R04_02, firstClearPowder=200, ticks=16; designStatus=DESIGN_ONLY_NOT_PLAYTESTED"
+      },
+      {
+        "revision": 133,
+        "target": "CH_R04_03",
+        "result": "CHALLENGE SIMULATED_VICTORY: CH_R04_03, firstClearPowder=200, ticks=28; designStatus=DESIGN_ONLY_NOT_PLAYTESTED"
+      },
+      {
+        "revision": 135,
+        "target": "CH_R05_01",
+        "result": "CHALLENGE SIMULATED_VICTORY: CH_R05_01, firstClearPowder=200, ticks=30; designStatus=DESIGN_ONLY_NOT_PLAYTESTED"
+      },
+      {
+        "revision": 136,
+        "target": "CH_R05_02",
+        "result": "CHALLENGE SIMULATED_VICTORY: CH_R05_02, firstClearPowder=200, ticks=39; designStatus=DESIGN_ONLY_NOT_PLAYTESTED"
+      },
+      {
+        "revision": 137,
+        "target": "CH_R05_03",
+        "result": "CHALLENGE SIMULATED_VICTORY: CH_R05_03, firstClearPowder=200, ticks=37; designStatus=DESIGN_ONLY_NOT_PLAYTESTED"
+      }
+    ],
+    "clearMarkers": {
+      "prior": 7,
+      "final": 15,
+      "new": [
+        "CHALLENGE_CLEAR|CH_R03_02",
+        "CHALLENGE_CLEAR|CH_R03_03",
+        "CHALLENGE_CLEAR|CH_R04_01",
+        "CHALLENGE_CLEAR|CH_R04_02",
+        "CHALLENGE_CLEAR|CH_R04_03",
+        "CHALLENGE_CLEAR|CH_R05_01",
+        "CHALLENGE_CLEAR|CH_R05_02",
+        "CHALLENGE_CLEAR|CH_R05_03"
+      ]
+    },
+    "equipment": {
+      "gearCountBefore": 40,
+      "gearCountAfter": 41,
+      "naturalRecordCountBefore": 30,
+      "naturalRecordCountAfter": 31,
+      "equippedUUIDsUnchanged": true,
+      "finalLoadoutOwned": true,
+      "knownMockUUIDsEquipped": []
+    },
+    "gachaHistory": {
+      "historicalMockDraws": 5,
+      "gachaPityUnchanged": true,
+      "mockPurchaseRecordsUnchanged": true,
+      "newSummonTransactions": 0
+    },
+    "observedProgressionDeltas": {
+      "currency": {},
+      "materials": {
+        "M_R04_G1": 1,
+        "M_R05_G1": 3,
+        "refine_dust": 1644
+      },
+      "characterXP": {
+        "C_APPRENTICE": 405,
+        "C_FAMILIAR": 405,
+        "C_SMITH": 405,
+        "C_WITCH": 405
+      },
+      "receiptTransactionsBefore": 117,
+      "receiptTransactionsAfter": 137,
+      "newTransactions": 20,
+      "newTransactionKinds": {
+        "expeditionAt": 5,
+        "challenge": 15
+      }
+    }
+  },
+  "preservation": {
+    "protectedTreesBeforeCount": 18,
+    "appFilesCount": 1925,
+    "closureChecks": {
+      "allFifteenChallengeClearsPresent": true,
+      "allFifteenChallengesWonDuringRun": true,
+      "challengeAttemptsConsistent": true,
+      "coldRestartDistinctProcess": true,
+      "coldSaveByteExact": true,
+      "historicalMockGachaStateUnchanged": true,
+      "historicalR420R437TreesExact": true,
+      "installedR445AppExact": true,
+      "liveSaveEqualsColdAfter": true,
+      "noUnownedAppProcess": true,
+      "nonMutableDataPreserved": true,
+      "regionCheckpointsMatchActiveRegion": true,
+      "screenshotSetValid": true,
+      "staticCheckpointsComplete": true,
+      "wallAndEvidenceCaps": true,
+      "zeroMockEquippedLoadoutPreserved": true
+    },
+    "unexpectedChanged": [],
+    "unexpectedMissing": [],
+    "unexpectedNew": [],
+    "allowedSupportChanged": [
+      "Library/Application Support/Witch03to05DevelopmentR169/last_standard_play_identity_r169.json",
+      "Library/Application Support/Witch03to05DevelopmentR169/save.json",
+      "Library/Application Support/Witch03to05DevelopmentR169/save.json.previous"
+    ],
+    "allowedSupportMissing": [],
+    "allowedSupportNew": [
+      "Library/Application Support/Witch03to05DevelopmentR169/last_challenge.json",
+      "Library/Application Support/Witch03to05DevelopmentR169/last_challenge_art.json",
+      "Library/Application Support/Witch03to05DevelopmentR169/last_shared_party_work_r146.json"
+    ],
+    "savedApplicationState": {
+      "afterCount": 3,
+      "beforeCount": 3,
+      "changed": [],
+      "missing": [],
+      "new": [],
+      "root": "Library/Saved Application State/local.witch.autonomous.r1.completion.r445.savedState"
+    },
+    "appPIDsStillRunning": []
+  },
+  "checks": {
+    "all_15_checkpoint_result_and_revision_joins": true,
+    "all_15_new_challenge_receipts": true,
+    "challenge_clear_delta_8": true,
+    "cold_snapshot_and_bytes_equal": true,
+    "equipped_uuid_set_unchanged": true,
+    "known_mock_draw_uuids_not_equipped": true,
+    "gacha_state_unchanged_and_no_new_summon": true,
+    "closure_reports_protection_checks_true": true,
+    "run_closed_not_release_acceptance": true
+  },
+  "scopeLimit": "Seven challenge clear markers and five historical mock draws predated this run. The 15 targets were attempted in this already-progressed profile. This does not establish pristine-profile first clears, formal design acceptance, or art quality. Root performed the UI actions; screenshots were not independently judged.",
+  "assessment": "All 15 checkpoint outcomes and new challenge receipts join to the matching challenge ID, saved result, sidecar revisions, and clear markers. The final cold save matches byte-for-byte. The save legitimately changed: revision +20, 8 new clear markers, materials and XP changed, and one natural gear record/item was added. The equipped UUID set and gacha history did not change; no historical mock UUID was equipped. Closure reports the protected app/data checks pass and no unexpected support-file changes. This is bounded local QA, not release acceptance."
+}

@@ -1,0 +1,15 @@
+{
+  "status": "NATIVE_REPRO_CONFIRMED_REPAIR_PENDING",
+  "error": "StoreKitLocalQAError.transactionNotFound(2)",
+  "callsite": "ReusableBridge.currentVerifiedXcodeTransaction(transactionID:expectedAppAccountToken:) / Transaction.all",
+  "reproduction": "Xcode purchase succeeded, QASink saved revision2 then finished consumable. R454 Receive lookup omitted finished consumable. No host request or gear mutation.",
+  "source": "https://developer.apple.com/documentation/bundleresources/information-property-list/skincludeconsumableinapppurchasehistory",
+  "fix": "Dedicated Debug QA app Info.plist flag true; R454 gate requires iOS18+ and flag. Production unchanged.",
+  "distinctions": [
+    "Not ProbeApp Optional force unwrap",
+    "Not SKInternalErrorDomain Code3",
+    "Not the separate Xcode project bundle mismatch producing0products"
+  ],
+  "saveSHA256": "553b869f4d974f5ed9d34698ffca8c1c6e03e09308b82dcd0c283cf6afeaedbf",
+  "actualBuildAttempt": 2
+}

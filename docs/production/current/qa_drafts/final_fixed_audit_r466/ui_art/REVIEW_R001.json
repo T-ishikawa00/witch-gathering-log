@@ -1,0 +1,57 @@
+{
+  "schema": "r466-fixed-ui-art-review-r001-v1",
+  "targetCommit": "28d3d0b92c840f215a945f47e574fcb30ef2253b",
+  "baseCommit": "45dc02f73f0bcb7c37ad1f01969c3d4b43ceef2e",
+  "scope": "Read-only fixed-SHA audit of R014 UI/art status, R462 failure preservation, R465 ordinary UI repair and saved screenshots.",
+  "result": "NO_P0_P1_UI_ART_REGRESSION; R462_UI_FAILURE_CORRECTED_IN_R465; SCOPED_ART_ACCEPTANCE_ONLY",
+  "ui": {
+    "R462FailurePreserved": true,
+    "R462Observed": "Clear restored 43/43 and all-quality selection, but Japanese IME query remained visibly in the field.",
+    "R465Observed": [
+      "Empty query match result shows owned 43 / shown 0, empty guidance and clear action.",
+      "After clear the field is visibly empty, quality is all, and owned 43 / shown 43.",
+      "Cold reopen shows inventory 43 / 43, empty field and all quality selected."
+    ],
+    "activeIMECompositionClear": "Root execution observation; no dedicated screenshot, not independently image-verified.",
+    "save": {
+      "revision": 138,
+      "primarySHA256": "3725e9c13d0e514804d5941d23b7847e12d7c13eb04aac0b3e676b190ae3a3c1",
+      "previousSHA256": "27e965d92ab0d943541a075a599055d37ffd8e4bff501862b00f127846ca3a44",
+      "coldBytesExact": true
+    },
+    "sourceBuildConsistency": {
+      "sourceCount": 240,
+      "resourceCount": 1922,
+      "bothReleaseSDKs": true,
+      "resourceMapsExact": true,
+      "resourceSDKParity": true,
+      "sourceMapSHA256": "6f50a2e250c99450d303e509946d9199fa14e95fac2718df7619947d8a1a268a",
+      "AppSwiftSHA256": "3ae262c5c3bae250b20e7c4971256ff1c3ec00043f4b607de34b2e683603594a",
+      "WorkflowViewsSwiftSHA256": "59aad7ee6c0476744f2e93b1d64f57c87509ba392375d1e968609d3bb793dfc8"
+    }
+  },
+  "art": {
+    "party4": "R014 ART-01 remains partial; no new reproducible high-impact defect found.",
+    "enemy30": {
+      "recoverUnobserved": 17,
+      "eligibleRetainedIntervalsUninspected": 0,
+      "confirmedRendererFault": false,
+      "disposition": "Maintain unobserved status; do not mark as failed or visually accepted."
+    },
+    "assets159": "Keep partial/unaccepted per row; no evidence here that all are defective/absent or fully accepted."
+  },
+  "evidencePins": {
+    "R014": "b6cae7083e9c266b5f9d20c657c4a2004b0ec0b66c34617dd6b4e16856fb2ee8",
+    "R462Run": "70f6aad69924dee2b1bab2d5e9f469ba35671b6b6e25328767b81ceec701e71a",
+    "R465Run": "4e07fe87f54f83066d4fdfa5cdbd42e5f7b3f961b2365ee3f12d164af75303b1",
+    "R465RootResult": "c5e2fe7c64d04b652533de32235e8899471c8670ad4b92334ebf5069c49b685f",
+    "R465Build": "66b45e87c0154446c58c71507cb7535dcd99cd11e9f414ddf87efd18b99fe38e",
+    "R457Recovery": "fd095cf16dbf160c26fda63444cbd49b37004d35cb410bad0387ef39f1abaab1",
+    "R460UIArt": "5d3fcfa5542dddbdcd3d134014c83a0b6708da91dff405e5160f1f873707a75d"
+  },
+  "limits": [
+    "Simulator-only; no physical-device conclusion.",
+    "Active-IME-clear interaction lacks a dedicated screenshot.",
+    "No blanket acceptance of 159 assets, all motion combinations, or formal art adoption."
+  ]
+}

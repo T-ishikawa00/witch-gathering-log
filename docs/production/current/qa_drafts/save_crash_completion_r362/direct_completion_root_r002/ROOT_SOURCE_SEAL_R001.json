@@ -1,0 +1,14 @@
+{
+  "runnerSHA256": "b91bd1e22e4af4e38bb29038b202bf9b86e83b77d21c1c1d0b21cc738c9f8bfa",
+  "priorPreparedRunnerSHA256": "d384c5fbb2ebed79e3d6070142fd054a0c7127a5ad34e456c0e4d74cce0fb01b",
+  "priorFailedReceiptSHA256": "5ec550585547419c240bfad85cdd350213c93be961540a26ba6d8fee27be60a9",
+  "correctionsBeforeAnyDirectExecution": [
+    "TEST mapping must include WitchGameCoreTests relative directory both before and after phases",
+    "Successful XCTest emits both started and passed, not only one matched line",
+    "Retain HOME environment; isolate only task TMPDIR/module path",
+    "Do not signal a reaped direct PID on error; only Popen stillrunning or observedexactchild",
+    "Bind livecurrentCore input to compiledstagedinputs and audit protectednamespace evenonfailure"
+  ],
+  "scope": "Reuse alreadybuilt exactXCTest binary, one freshseed+SIGKILL+verify,90sec2MB,noSwiftbuild; original partialrun unchanged",
+  "formalAdoption": false
+}

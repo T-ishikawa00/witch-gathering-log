@@ -1,0 +1,42 @@
+{
+  "schema": "effect-build-comparison-r376-manifest-r002",
+  "status": "SOURCE_ONLY_NOT_COMPILED_OR_RUN",
+  "candidateFiles": [
+    {
+      "path": "EffectBuildComparisonR376Tests.swift",
+      "sizeBytes": 13446,
+      "sha256": "90dc99bc596b2daff9fe2df81fea1140502dfbe835f09c12169e57c4d4db3bec"
+    },
+    {
+      "path": "INPUT_MANIFEST_R001.json",
+      "sizeBytes": 5434,
+      "sha256": "f63fec9863e964ece5a6e45e15b7ab7e91d98b25656bcc7238371bf24fc366cc"
+    },
+    {
+      "path": "README_R002.md",
+      "sizeBytes": 2071,
+      "sha256": "22e3a7a4dbb1218a918af28077f68097de21b8da38fcfc348bfdf42e8d990d16"
+    },
+    {
+      "path": "COVERAGE_LEDGER_R001.json",
+      "sizeBytes": 7687,
+      "sha256": "a1f7cd2e87a0c30bcbb5ada1e06d5e888dd940af90ba7f84cf4275493f86038b"
+    }
+  ],
+  "boundInputs": {
+    "R368InputManifestSHA256": "47ba83bfa951eaac593cf1059492233caec1064c959cdea6afb928a67fcf8417",
+    "R368ReportSHA256": "23266207d0a393a7782c6ad827e2cf771cae6879040f014223fe096efbb4d215",
+    "R368SaveSHA256": "067c4e86733fe07eb5457381a30d140b285fbd2685ab18e5667f47577c74e655",
+    "R371R002RunSHA256": "65f0e11aa1c2bb677bd8489435543fc71da88ab610ccac3794e8a80cd5f4cfbe",
+    "R371R003TestSHA256": "b78acbb5917d55782a8de904abb5a41145ce868b65fb5227dac8f71d457a93dc",
+    "R346RunSHA256": "36ac26bca0edd73aa711b83a091113401ec20984910872e6b64d4c1142d08058",
+    "R359EarnedMembraneRunSHA256": "3b25ecc1e2ec1b12a29ce6b05b75c14bd6eafb43d1468baf4a149c86610dd971"
+  },
+  "executionContract": {
+    "tests": 1,
+    "previews": 6,
+    "rewards": "NONE",
+    "saveMutation": "NONE",
+    "execution": "NOT_RUN"
+  }
+}

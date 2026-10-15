@@ -1,0 +1,92 @@
+{
+  "budgets": {
+    "evidenceBytes": 40000000,
+    "minimumFreeBytes": 10000000000,
+    "perCheckpointSupportArchiveBytes": 2000000,
+    "screenshots": 10,
+    "startRequiresFreeBytes": 10040000000,
+    "video": false,
+    "wallSeconds": 2400
+  },
+  "candidateFolder": "candidate_r002",
+  "candidateStatus": "PREPARED_NOT_RUN",
+  "commands": [
+    "start --r437-baseline <sealed-manifest> --r437-baseline-sha256 <64-hex> [--screenshot]",
+    "checkpoint <label> [--screenshot]",
+    "cold <label> --reference <checkpoint-label> [--screenshot]",
+    "close"
+  ],
+  "operationalLimits": {
+    "appLaunchStop": false,
+    "buildInstall": false,
+    "clockManipulation": false,
+    "delete": false,
+    "purchase": false,
+    "saveWriteRestoreCopy": false,
+    "simulatorUse": "read-only screenshots only when explicitly requested"
+  },
+  "pinnedInputs": {
+    "R420BundleID": "local.witch.autonomous.r1.completion.r420",
+    "R421ReadonlyHelperPath": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/normal_progression_r421/snapshot_r421_r002.py",
+    "R421ReadonlyHelperSHA256": "6fe314a33ce19de71af8b21cec035070ee0a3a54c54434a7d460dfd315d9b9bd",
+    "R436ClosurePath": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/normal_progression_continuation_r436/candidate_r001/execution_r001/CLOSURE.json",
+    "R436ClosureSHA256": "ed4aba8954483fbc78812d0026c376edcf2a054e3ad6a05fb59c7f2aa343b5de",
+    "R436FinalSavePath": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/normal_progression_continuation_r436/candidate_r001/execution_r001/checkpoints/final/files/save.json",
+    "R436FinalSaveSHA256": "51c07a8d8c262f930bda41728b2775ac1338187644ed3a60fda05fbf24786475",
+    "R436Revision": 75,
+    "R436StartPath": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/normal_progression_continuation_r436/candidate_r001/execution_r001/START.json",
+    "R436StartSHA256": "86399c79e03902ad4316be5b04590f9cab44e9a4a12d55be25c64f5d3c1ba627",
+    "R437BuildReceiptSHA256": "2db7cf6c2f50f28ce3e07aa8b0a621deccc7859e09eff6eda660f53c6026a138",
+    "R437InstallReceiptPath": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/native_completion_r437/install_release_r001/RESULT.json",
+    "R437InstallReceiptSHA256": "081ce8d4034f24364303ef3df34f30e48138fc8c3ae0ca926a5927f7808ed5a8",
+    "R441CaptureSourcePath": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/native_reading_mantle_r441/candidate_r002/capture_r441.py",
+    "R441CaptureSourceSHA256": "a83d840a7b6de5b8cce460fef50495707ef930d505deddf87dc903212e8dbc12"
+  },
+  "protection": {
+    "R420": "same R436 app/data paths, exact app inventory and installed executable; starting primary save must be rev75 / exact SHA.",
+    "R436": "The 14 historical protected trees remain exact, except if the exact R437 data-container path is present in that list; that one path is tracked exclusively by the fresh post-R441 R437 data baseline. The R420 app inventory remains pinned separately.",
+    "R437": "installed app compared to pinned build appFiles; data checked against Root-sealed post-R441 inventory every command; process must remain absent."
+  },
+  "r437Baseline": {
+    "path": "docs/production/current/qa_drafts/normal_progression_continuation_r443/ROOT_R437_BASELINE_AFTER_R441_R001.json",
+    "schema": "r443-r437-protection-baseline-v1",
+    "sha256": "6a8fc8b7e5d6fc1e266d56b03c43239d6d4de6b4c62411e4df0d60a50cdd4041",
+    "status": "ROOT_SEALED_AFTER_R441"
+  },
+  "r441Exception": {
+    "acceptedStatus": "INCOMPLETE_RETAINED only with exact two named Metal cache changes; all app/protected/cold/screenshots/budget checks remain exact",
+    "closeoutPath": "docs/production/current/qa_drafts/native_reading_mantle_r441/candidate_r002/execution_r002/CLOSURE.json",
+    "closeoutSHA256": "5e522b01960c016662181831eb83650f6d464df32704eb3fb6ec8d894e046153",
+    "scopedReadbackPath": "docs/production/current/qa_drafts/native_reading_mantle_r441/candidate_r002/ROOT_SCOPED_READBACK_R001.json",
+    "scopedReadbackSHA256": "e80457a375aaa209b60135574ea76c3bd9f10e32ad0f5f41fad6936a3f6228fc"
+  },
+  "requiredRootBaseline": {
+    "R441closeoutRequirements": {
+      "appPIDsStillRunning": [],
+      "fixedPath": "docs/production/current/qa_drafts/native_reading_mantle_r441/candidate_r002/execution_r002/CLOSURE.json",
+      "installedAppExact": true,
+      "protectedTreesExact": true,
+      "status": "CLOSED_CAPTURE_RECORDED"
+    },
+    "canonicalInventoryDigest": "SHA-256 over UTF-8 JSON with ensure_ascii=False, sort_keys=True, separators=(\",\",\":\"), then one LF; map keys are relative paths and each row contains sha256,sizeBytes,mode.",
+    "failureBehavior": "HOLD before execution_r001 creation if absent/stale/unsealed, if R437 is running, or if live data differs.",
+    "manifestSchema": "r443-r437-protection-baseline-v1",
+    "pathArgument": "--r437-baseline",
+    "requiredFields": {
+      "r437AppPath": "exact app path from pinned R437 install receipt",
+      "r437BundleID": "local.witch.autonomous.r1.completion.r437",
+      "r437DataInventory": "relative-path to {sha256,sizeBytes,mode} map after R441 closeout",
+      "r437DataInventorySHA256": "canonical JSON digest of inventory: UTF-8 sorted keys, compact separators, final LF",
+      "r437DataPath": "exact data path from pinned R437 install receipt",
+      "r441CloseoutPath": "absolute worktree path",
+      "r441CloseoutSHA256": "SHA-256 of the sealed R441 CLOSURE.json"
+    },
+    "shaArgument": "--r437-baseline-sha256",
+    "status": "ROOT_SEALED_AFTER_R441"
+  },
+  "resultBoundary": "Late closure allowed. Preservation status is independent of wall/evidence caps; fields record whether each cap was met. Unattempted bosses or research must remain NOT_REACHED; helper does not infer gameplay completion.",
+  "rootPin": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg",
+  "schema": "r443-run-contract-v2",
+  "scope": "Root-operated ordinary progression from exact R436 revision 75. Root alone performs game UI and app lifecycle. Helper only snapshots support files and takes optional screenshots.",
+  "status": "SOURCE_PREPARED_NOT_RUN"
+}

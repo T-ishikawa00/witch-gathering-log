@@ -1,0 +1,33 @@
+{
+  "buildPerformed": false,
+  "executionPerformed": false,
+  "fixtureClass": "MECHANISM_ONLY",
+  "formalAdoption": false,
+  "inputManifestPath": "docs/production/current/qa_drafts/research_mechanic_closure_r371/candidate_r002/INPUT_MANIFEST_R002.json",
+  "inputManifestSHA256": "975b1c9c0dbdf45f26148bb89896a5b03d962071fd670c1ca989df0b63cac1bc",
+  "limitations": [
+    "MECHANISM_ONLY fixture with controlled stats; no ordinary progression, victory balance, formal design adoption, or player experience claim.",
+    "R02_02 reuses pinned R359 evidence and is not rerun.",
+    "R03_02 phase-two AoE assertion remains to be executed; earlier earned save did not observe it."
+  ],
+  "newSimulations": 14,
+  "r368PayloadCounts": {
+    "CoreSources": 54,
+    "additionalCandidateHelperSources": 1,
+    "resources": 2,
+    "sourceRoles": [
+      "core",
+      "override",
+      "candidate_helper",
+      "resource"
+    ]
+  },
+  "reusedEvidenceCases": 1,
+  "rootRequestedCountingNote": "The staged R368 manifest has 53 rows role=core, one override, one candidate_helper, and two resources: 54 base/override Swift sources plus one required R355 helper and two resources. The exact package payload retains all rows.",
+  "schema": "r371-research-mechanic-closure-candidate-v2",
+  "simulatorTouched": false,
+  "status": "SOURCE_ONLY_NOT_RUN",
+  "testMethods": 15,
+  "testSourcePath": "docs/production/current/qa_drafts/research_mechanic_closure_r371/candidate_r002/ResearchMechanicClosureR371Tests.swift",
+  "testSourceSHA256": "8acb825012c2df7a5f5db617ba83d67387ca432ced93daa01980b9c449e3d674"
+}

@@ -153,12 +153,16 @@ class OfflineTransactionAuditor:
             # No untrusted JWT text or credential-bearing library traceback
             # escapes this boundary. Every library error remains fail-closed.
             raise SignedAuditError("SIGNATURE_OR_CHAIN_REJECTED") from None
-        # Validate exact raw JSON types after cryptographic verification. Model
-        # conversion can coerce booleans/numeric strings, so do not rely on it
-        # for purchase quantity, timestamps or optional revocation fields.
+        return self._audit_verified_transaction_payload(payload, signed_transaction,
+            expected_account_token=expected, allow_revocation=False)
+
+    def _audit_verified_transaction_payload(self, payload: dict, signed_transaction: str, *,
+                                            expected_account_token: UUID,
+                                            allow_revocation: bool) -> AuditedTransaction:
+        """Shared exact-type transaction policy after JWS signature verification."""
         if payload.get("environment") != "Sandbox" or payload.get("bundleId") != self.bundle_id:
             raise SignedAuditError("APP_OR_ENVIRONMENT_MISMATCH")
-        if _uuid(payload.get("appAccountToken")) != expected:
+        if _uuid(payload.get("appAccountToken")) != expected_account_token:
             raise SignedAuditError("ACCOUNT_BINDING_MISMATCH")
         product_id = _text(payload.get("productId"), "INVALID_PRODUCT")
         spec = self.products.get(product_id)
@@ -169,16 +173,97 @@ class OfflineTransactionAuditor:
             raise SignedAuditError("QUANTITY_POLICY_MISMATCH")
         if payload.get("inAppOwnershipType") != "PURCHASED":
             raise SignedAuditError("UNSUPPORTED_OWNERSHIP")
-        if any(payload.get(k) is not None for k in ("revocationDate", "revocationReason", "revocationType")):
+        revocation = payload.get("revocationDate")
+        if not allow_revocation and any(payload.get(k) is not None for k in ("revocationDate", "revocationReason", "revocationType")):
             raise SignedAuditError("REVOKED_TRANSACTION")
+        if allow_revocation:
+            if type(revocation) is not int or revocation <= 0:
+                raise SignedAuditError("REFUND_NOTICE_MISSING_REVOCATION")
+            reason = payload.get("revocationReason")
+            if reason is not None and (type(reason) is not int or reason not in (0, 1)):
+                raise SignedAuditError("INVALID_REVOCATION_FIELDS")
+            revocation_type = payload.get("revocationType")
+            if revocation_type is not None:
+                _text(revocation_type, "INVALID_REVOCATION_FIELDS", 64)
         now = self._clock()
         purchase, signed = payload.get("purchaseDate"), payload.get("signedDate")
         if (type(now) is not int or now <= 0 or type(purchase) is not int or type(signed) is not int
                 or not 0 < purchase <= signed <= now + 300_000):
             raise SignedAuditError("INVALID_TRANSACTION_DATES")
+        if allow_revocation and not purchase <= revocation <= signed:
+            raise SignedAuditError("INVALID_TRANSACTION_DATES")
         transaction_id = _text(payload.get("transactionId"), "INVALID_TRANSACTION_ID", 128)
         original_id = _text(payload.get("originalTransactionId"), "INVALID_ORIGINAL_TRANSACTION_ID", 128)
         return AuditedTransaction("Sandbox", self.bundle_id, transaction_id, original_id,
-                                  product_id, spec.product_type, quantity, purchase, signed,
-                                  hashlib.sha256(signed_transaction.encode("ascii")).hexdigest(),
-                                  self.root_sha256)
+            product_id, spec.product_type, quantity, purchase, signed,
+            hashlib.sha256(signed_transaction.encode("ascii")).hexdigest(), self.root_sha256)
+
+    def audit_refund_notification(self, signed_notification: str, *, expected_account_token: str):
+        return _audit_refund_notice(self, signed_notification, expected_account_token=expected_account_token)
+
+@dataclass(frozen=True)
+class AuditedRefundNoticeR459:
+    transaction: AuditedTransaction
+    notification_uuid: str
+    notification_jws_sha256: str
+    revocation_date_ms: int
+    status: str = field(default="OFFLINE_REFUND_NOTICE_CHECKED_NOT_AUTHORIZATION", init=False)
+    grant_authorized: bool = field(default=False, init=False)
+    revocation_checked: bool = field(default=False, init=False)
+
+
+def _strict_signed_envelope(signed: str) -> tuple[dict, dict]:
+    if (type(signed) is not str or not 1 <= len(signed) <= 65536
+            or not re.fullmatch(r"[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+", signed)):
+        raise SignedAuditError("MALFORMED_JWS")
+    header_part, payload_part, _ = signed.split(".")
+    header, payload = _json_segment(header_part), _json_segment(payload_part)
+    if header.get("alg") != "ES256" or "crit" in header or "b64" in header:
+        raise SignedAuditError("UNSUPPORTED_JWS_HEADER")
+    chain = header.get("x5c")
+    if type(chain) is not list or len(chain) != 3 or any(type(c) is not str or not 1 <= len(c) <= 16384 for c in chain):
+        raise SignedAuditError("INVALID_JWS_CHAIN_HEADER")
+    return header, payload
+
+
+def _audit_refund_notice(self: OfflineTransactionAuditor, signed_notification: str, *, expected_account_token: str) -> AuditedRefundNoticeR459:
+    expected = _uuid(expected_account_token)
+    _, notification = _strict_signed_envelope(signed_notification)
+    try:
+        decoded_notice = self._verifier.verify_and_decode_notification(signed_notification)
+    except Exception:
+        raise SignedAuditError("NOTIFICATION_SIGNATURE_OR_CHAIN_REJECTED") from None
+    if (notification.get("notificationType") != "REFUND"
+            or decoded_notice.rawNotificationType != "REFUND"
+            or decoded_notice.data is None):
+        raise SignedAuditError("NOT_A_REFUND_NOTIFICATION")
+    notification_uuid = notification.get("notificationUUID")
+    try:
+        parsed_notification_uuid = UUID(_text(notification_uuid, "INVALID_NOTIFICATION_UUID", 36))
+    except (ValueError, TypeError, AttributeError):
+        raise SignedAuditError("INVALID_NOTIFICATION_UUID") from None
+    if str(parsed_notification_uuid) != notification_uuid.lower() or parsed_notification_uuid.int == 0:
+        raise SignedAuditError("INVALID_NOTIFICATION_UUID")
+    outer_signed_date = notification.get("signedDate")
+    now = self._clock()
+    if type(now) is not int or now <= 0 or type(outer_signed_date) is not int or not 0 < outer_signed_date <= now + 300_000:
+        raise SignedAuditError("INVALID_NOTIFICATION_DATES")
+    data = notification.get("data")
+    if type(data) is not dict or data.get("environment") != "Sandbox" or data.get("bundleId") != self.bundle_id:
+        raise SignedAuditError("APP_OR_ENVIRONMENT_MISMATCH")
+    signed_transaction = data.get("signedTransactionInfo")
+    _, payload = _strict_signed_envelope(signed_transaction)
+    try:
+        decoded_tx = self._verifier.verify_and_decode_signed_transaction(signed_transaction)
+    except Exception:
+        raise SignedAuditError("REFUND_TRANSACTION_SIGNATURE_OR_CHAIN_REJECTED") from None
+    if decoded_tx.environment != Environment.SANDBOX or decoded_tx.bundleId != self.bundle_id:
+        raise SignedAuditError("APP_OR_ENVIRONMENT_MISMATCH")
+    tx = self._audit_verified_transaction_payload(payload, signed_transaction,
+        expected_account_token=expected, allow_revocation=True)
+    revocation = payload["revocationDate"]
+    if revocation > outer_signed_date:
+        raise SignedAuditError("INVALID_NOTIFICATION_DATES")
+    return AuditedRefundNoticeR459(tx, str(parsed_notification_uuid),
+        hashlib.sha256(signed_notification.encode("ascii")).hexdigest(), revocation)
+

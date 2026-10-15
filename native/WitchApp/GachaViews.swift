@@ -10,15 +10,48 @@ struct GachaView:View {
             Text("まだ見ぬ装備との出会い。無料券で鑑定できます。").font(.caption).foregroundStyle(Palette.gold)
             AssetIcon(id:"ICO_"+(model.state.gachaPity.targetTemplateID ?? "EQ_W_01"),size:140).frame(maxWidth:.infinity).accessibilityLabel("目標装備の見本: \(targetName)")
             Text("無料鑑定券  \(model.state.currency["ticket_free",default:0])").font(.title3)
+                .accessibilityIdentifier("gacha_ticket_balance")
             Menu {ForEach(model.catalog?.gear ?? []){g in Button(g.name){if model.state.gachaPity.targetTemplateID != g.id {if model.state.gachaPity.guaranteeTargetOnNextTop{pendingTarget=g.id}else{model.act(.setGachaTarget(templateID:g.id),"目標装備を保存しました。")}}}.accessibilityIdentifier("gacha_target_"+g.id)}} label:{Label("目標装備: "+targetName,systemImage:"scope").frame(minHeight:44)}.disabled(!model.state.gachaUnlocked).accessibilityLabel("鑑定の目標装備、\(targetName)").accessibilityHint(!model.state.gachaUnlocked ? "装備を制作し、同じ部位を比べると選べます":"目標にする装備を選びます。次のLR保証が有効な場合は変更を確認します").accessibilityIdentifier("gacha_target")
             Text("LR保証まで最大\(max(1,100-model.state.gachaPity.drawsSinceTop))回 ・ UR以上まで最大\(max(1,20-model.state.gachaPity.drawsSinceMid))回").font(.caption).foregroundStyle(Palette.gold).accessibilityLabel("LR保証まで最大\(max(1,100-model.state.gachaPity.drawsSinceTop))回、UR以上保証まで最大\(max(1,20-model.state.gachaPity.drawsSinceMid))回")
             if model.state.gachaPity.guaranteeTargetOnNextTop {Text("次のLRは選んだ目標装備を保証").font(.caption).accessibilityLabel("目標保証中。次のLRは選んだ目標装備です")}
             if !model.state.gachaUnlocked {Text("工房で装備を制作し、仲間画面で同じ部位の装備を比較すると鑑定できます。").font(.callout)}
             ForEach([5,50],id:\.self){count in Button{model.summon(count)}label:{HStack{Image(systemName:"sparkles").accessibilityHidden(true);Text("\(count)個をまとめて鑑定");Spacer();Text("券 \(count)")}.padding(14).background(Palette.panel).clipShape(RoundedRectangle(cornerRadius:10))}.disabled(!model.state.gachaUnlocked || model.state.currency["ticket_free",default:0]<count).accessibilityLabel("無料鑑定券を\(count)枚使ってまとめて鑑定").accessibilityHint(!model.state.gachaUnlocked ? "鑑定は工房制作と装備比較の後に解放されます":model.state.currency["ticket_free",default:0]<count ? "無料鑑定券が足りません":"確認画面を開かずに鑑定します").accessibilityIdentifier("summon\(count)")}
-            Button("今日の無料券を受け取る（\(model.catalog?.dailyFreeTicketGrant ?? 0)枚）"){model.daily()}.frame(minHeight:44).disabled(!model.state.gachaUnlocked).accessibilityIdentifier("daily_free_claim").accessibilityHint(model.state.gachaUnlocked ? "本日の無料分を受け取ります":"装備を制作し、同じ部位を比べると受け取れます")
+            TimelineView(.periodic(from: .now, by: 60)) { context in
+                let claim = dailyClaimPresentation(at: context.date)
+                Button(claim.label) { model.daily() }
+                    .frame(minHeight:44).disabled(!claim.available)
+                    .accessibilityIdentifier("daily_free_claim")
+                    .accessibilityHint(claim.hint)
+            }
             Button("確率と保証を見る"){model.sheet="確率"}.frame(minHeight:44)
         }.disabled(model.busy)
         .alert("目標装備を変更しますか？",isPresented:Binding(get:{pendingTarget != nil},set:{if !$0{pendingTarget=nil}})){Button("目標を変更する"){if let id=pendingTarget{model.act(.setGachaTarget(templateID:id),"目標装備を保存しました。")};pendingTarget=nil};Button("キャンセル",role:.cancel){pendingTarget=nil}}message:{Text("LR・UR保証までの回数は維持されます。現在の「次のLRで目標を保証」は解除されます。")}
+    }
+}
+
+extension GachaView {
+    private func dailyClaimPresentation(at now: Date) -> (label: String, hint: String, available: Bool) {
+        let readyLabel = "今日の無料券を受け取る（\(model.catalog?.dailyFreeTicketGrant ?? 0)枚）"
+        guard model.state.gachaUnlocked else {
+            return (readyLabel, "装備を制作し、同じ部位を比べると受け取れます", false)
+        }
+        guard now.timeIntervalSince1970.isFinite,
+              let zone = TimeZone(secondsFromGMT: 0) else {
+            return ("日時を確認してください", "端末の日時を確認してから開き直してください", false)
+        }
+        if let prior = model.state.lastDailyClaimAt {
+            guard prior.timeIntervalSince1970.isFinite, now >= prior else {
+                return ("日時を確認してください", "前回受け取った日時より前の時刻になっています", false)
+            }
+            // Match the engine's existing UTC-calendar rule. This display guard
+            // never grants tickets or replaces the transactional engine guard.
+            var calendar = Calendar(identifier: .gregorian)
+            calendar.timeZone = zone
+            if calendar.isDate(prior, inSameDayAs: now) {
+                return ("本日の無料券は受け取り済み", "次回は日本時間の午前9時以降に受け取れます", false)
+            }
+        }
+        return (readyLabel, "本日の無料分を受け取ります", true)
     }
 }
 

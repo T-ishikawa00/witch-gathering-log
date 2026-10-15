@@ -1,0 +1,36 @@
+{
+  "schema": "r423-r214-lifecycle-test-candidate-v1",
+  "status": "SOURCE_ONLY_UNRUN",
+  "currentSources": {
+    "native/WitchApp/EnemyMotion.swift": "f9a0d0ffb203c799f432e14c8384c6c3989e7452a350365c86ca2660bc20b6d8",
+    "native/WitchApp/LivingScene.swift": "e4505b57d66f41b391831392edc23f25a4829bf9cd6301bd8127012cb1486038",
+    "R418 candidate R004 manifest": "c9e5d6a6fada5ae9044ee89634cc8b51cf384a2e8017c902144f80fb9c7f1bab",
+    "R239 replay observer source": "native/WitchApp/App.swift:849-861, 1093-1144"
+  },
+  "validator": {
+    "path": "validate_r214_lifecycle_r423.py",
+    "sha256": "3733687529442b7dbff4b5d990cdda79ec6a99089f6884b5c7e17d903e989c57"
+  },
+  "feasibility": {
+    "successPath": "Feasible using existing R217/R239 saved-combat replay in a fresh isolated R169 save, DEBUG + STANDARD_PLAY_R169 Simulator build; it emits a unique R239 sidecar without dispatching rewards. The validator checks execute_started -> hit_visual_deferred -> execute_completed -> hit_visual_started_after_execute -> hit_visual_completed, joined by actor/root/generation/event sequence.",
+    "lethalCancelPath": "Conditionally feasible only if a deterministic saved replay produces a lethal_resolve while that same controller has a pending deferred hit; validator requires the exact cancellation reason and rejects later deferred-hit start. No such fixture is pinned here.",
+    "resetPath": "Not observable from the current single saved-replay lifecycle sidecar: the R239 observer captures one execute group and is detached after playback; controller reset/stop is not exported as a distinct replay receipt. Needs a narrow test seam or app-controller test target.",
+    "invalidClipFallback": "Not feasible with the existing fixed catalog unless a real execute clip is non-looping but has missing/invalid duration. A synthetic malformed clip requires explicit test-only art injection or a controller seam; no arbitrary asset mutation is proposed."
+  },
+  "boundedRunContract": {
+    "attempts": 2,
+    "aggregateSeconds": 1200,
+    "aggregateOutputBytes": 1000000000,
+    "oneDebugSimulatorBuild": "Compile one R418 R004 source map with existing R239 observer; no device signing or installation to the normal bundle.",
+    "fixture": "R411 R005 B_R05_B SaveEnvelope/report copied into a fresh isolated QA namespace; technical fixture, not ordinary progression.",
+    "gameSaveWrites": "Only fresh isolated QA save allowed; replay must produce zero gameplay dispatch/reward and exact saved-combat identity before/after.",
+    "limits": "One successful lifecycle capture; optional second only for an independently pinned lethal-cancel replay. Unknown/unobserved conditions report NOT_OBSERVED, never PASS by absence.",
+    "notIncluded": [
+      "Reset/stop direct-controller assertion",
+      "Malformed-clip fallback without a valid pinned asset/test seam",
+      "Release/device runtime acceptance",
+      "Art naturalness or all-enemy coverage"
+    ]
+  },
+  "actionsPerformed": []
+}

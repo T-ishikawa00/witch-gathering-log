@@ -1,0 +1,2046 @@
+{
+  "count": 6,
+  "entries": [
+    {
+      "job": "holdout_offense6",
+      "seed": 900188,
+      "upgrade": "paid90",
+      "before": {
+        "outcome": "VICTORY",
+        "elapsed_ms": 73994,
+        "boss_remaining_hp": 0
+      },
+      "after": {
+        "outcome": "DEFEAT",
+        "elapsed_ms": 68100,
+        "boss_remaining_hp": 2783702
+      },
+      "first_choice_divergence": {
+        "before": [
+          52850,
+          "C_WITCH",
+          "SK_W_BURST",
+          "boss"
+        ],
+        "after": [
+          52432,
+          "C_SMITH",
+          "C_SMITH_BASIC",
+          "boss"
+        ]
+      },
+      "context": [
+        {
+          "side": "before",
+          "nearby_events": [
+            {
+              "t_ms": 52250,
+              "kind": "support_decision",
+              "actor": "C_APPRENTICE",
+              "selected": [
+                "C_APPRENTICE_BASIC",
+                "boss"
+              ],
+              "ready": {
+                "SK_A_WARD": 59650,
+                "SK_A_HEAL": 54000
+              },
+              "hp": 615840,
+              "max_hp": 5810000,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2119362
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 951283
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 615840
+                }
+              }
+            },
+            {
+              "t_ms": 52250,
+              "kind": "cast_start",
+              "source": "C_APPRENTICE",
+              "skill": "C_APPRENTICE_BASIC",
+              "target": "boss",
+              "commit_ms": 52500,
+              "root": "C_APPRENTICE:C_APPRENTICE_BASIC:25"
+            },
+            {
+              "t_ms": 52750,
+              "kind": "support_decision",
+              "actor": "C_APPRENTICE",
+              "selected": null,
+              "ready": {
+                "SK_A_WARD": 59650,
+                "SK_A_HEAL": 54000
+              },
+              "hp": 615840,
+              "max_hp": 5810000,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2119362
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 951283
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 615840
+                }
+              }
+            }
+          ]
+        },
+        {
+          "side": "after",
+          "nearby_events": [
+            {
+              "t_ms": 52250,
+              "kind": "support_decision",
+              "actor": "C_APPRENTICE",
+              "selected": [
+                "C_APPRENTICE_BASIC",
+                "boss"
+              ],
+              "ready": {
+                "SK_A_WARD": 59650,
+                "SK_A_HEAL": 54000
+              },
+              "hp": 615840,
+              "max_hp": 5810000,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2166639
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 985704
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 615840
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 115448
+                }
+              }
+            },
+            {
+              "t_ms": 52250,
+              "kind": "cast_start",
+              "source": "C_APPRENTICE",
+              "skill": "C_APPRENTICE_BASIC",
+              "target": "boss",
+              "commit_ms": 52500,
+              "root": "C_APPRENTICE:C_APPRENTICE_BASIC:25"
+            },
+            {
+              "t_ms": 52400,
+              "kind": "support_decision",
+              "actor": "C_SMITH",
+              "selected": null,
+              "ready": {
+                "SK_S_HAMMER": 59500,
+                "SK_S_GUARD": 36550
+              },
+              "hp": 115448,
+              "max_hp": 9280000,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2166639
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 985704
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 615840
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 115448
+                }
+              }
+            },
+            {
+              "t_ms": 52432,
+              "kind": "support_decision",
+              "actor": "C_SMITH",
+              "selected": [
+                "C_SMITH_BASIC",
+                "boss"
+              ],
+              "ready": {
+                "SK_S_HAMMER": 59500,
+                "SK_S_GUARD": 36550
+              },
+              "hp": 115448,
+              "max_hp": 9280000,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2166639
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 985704
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 615840
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 115448
+                }
+              }
+            },
+            {
+              "t_ms": 52432,
+              "kind": "cast_start",
+              "source": "C_SMITH",
+              "skill": "C_SMITH_BASIC",
+              "target": "boss",
+              "commit_ms": 52682,
+              "root": "C_SMITH:C_SMITH_BASIC:24"
+            },
+            {
+              "t_ms": 52750,
+              "kind": "support_decision",
+              "actor": "C_APPRENTICE",
+              "selected": null,
+              "ready": {
+                "SK_A_WARD": 59650,
+                "SK_A_HEAL": 54000
+              },
+              "hp": 615840,
+              "max_hp": 5810000,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2166639
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 985704
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 615840
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 115448
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "diagnosis_status": "FIRST_OBSERVED_DIVERGENCE_ONLY_NOT_COMPLETE_CAUSAL_PROOF"
+    },
+    {
+      "job": "holdout_protect12_joint110",
+      "seed": 900072,
+      "upgrade": "paid90",
+      "before": {
+        "outcome": "VICTORY",
+        "elapsed_ms": 87400,
+        "boss_remaining_hp": 0
+      },
+      "after": {
+        "outcome": "DEFEAT",
+        "elapsed_ms": 75000,
+        "boss_remaining_hp": 820287
+      },
+      "first_choice_divergence": {
+        "before": [
+          49750,
+          "C_WITCH",
+          "C_WITCH_BASIC",
+          "boss"
+        ],
+        "after": [
+          49500,
+          "C_SMITH",
+          "SK_S_GUARD",
+          "C_SMITH"
+        ]
+      },
+      "context": [
+        {
+          "side": "before",
+          "nearby_events": [
+            {
+              "t_ms": 49250,
+              "kind": "support_decision",
+              "actor": "C_APPRENTICE",
+              "selected": null,
+              "ready": {
+                "SK_A_WARD": 48150,
+                "SK_A_HEAL": 53750
+              },
+              "hp": 1870744,
+              "max_hp": 7234500,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 1827269
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2753932
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 1870744
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 3592700
+                }
+              }
+            },
+            {
+              "t_ms": 49400,
+              "kind": "support_decision",
+              "actor": "C_APPRENTICE",
+              "selected": [
+                "SK_A_WARD",
+                "C_WITCH"
+              ],
+              "ready": {
+                "SK_A_WARD": 48150,
+                "SK_A_HEAL": 53750
+              },
+              "hp": 1870744,
+              "max_hp": 7234500,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": true,
+                  "loss": 4902354,
+                  "hp_after": -3075085
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2753932
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 1870744
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 3592700
+                }
+              }
+            },
+            {
+              "t_ms": 49400,
+              "kind": "cast_start",
+              "source": "C_APPRENTICE",
+              "skill": "SK_A_WARD",
+              "target": "C_WITCH",
+              "commit_ms": 49650,
+              "root": "C_APPRENTICE:SK_A_WARD:5"
+            },
+            {
+              "t_ms": 49500,
+              "kind": "support_decision",
+              "actor": "C_SMITH",
+              "selected": null,
+              "ready": {
+                "SK_S_HAMMER": 51400,
+                "SK_S_GUARD": 47650
+              },
+              "hp": 3592700,
+              "max_hp": 11046000,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": true,
+                  "loss": 3719973,
+                  "hp_after": -1892704
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2753932
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 1870744
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 3592700
+                }
+              }
+            },
+            {
+              "t_ms": 49650,
+              "kind": "barrier",
+              "source": "C_APPRENTICE",
+              "target": "C_WITCH",
+              "amount": 1182381,
+              "expiry": 55650
+            },
+            {
+              "t_ms": 49650,
+              "kind": "support_decision",
+              "actor": "C_SMITH",
+              "selected": null,
+              "ready": {
+                "SK_S_HAMMER": 51400,
+                "SK_S_GUARD": 47650
+              },
+              "hp": 3592700,
+              "max_hp": 11046000,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": true,
+                  "loss": 3719973,
+                  "hp_after": -1892704
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2753932
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 1870744
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 3592700
+                }
+              }
+            },
+            {
+              "t_ms": 49750,
+              "kind": "cast_start",
+              "source": "C_WITCH",
+              "skill": "C_WITCH_BASIC",
+              "target": "boss",
+              "commit_ms": 50000,
+              "root": "C_WITCH:C_WITCH_BASIC:27"
+            },
+            {
+              "t_ms": 49850,
+              "kind": "support_decision",
+              "actor": "C_APPRENTICE",
+              "selected": null,
+              "ready": {
+                "SK_A_WARD": 59650,
+                "SK_A_HEAL": 53750
+              },
+              "hp": 1870744,
+              "max_hp": 7234500,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": true,
+                  "loss": 3719973,
+                  "hp_after": -1892704
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2753932
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 1870744
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 3592700
+                }
+              }
+            }
+          ]
+        },
+        {
+          "side": "after",
+          "nearby_events": [
+            {
+              "t_ms": 49250,
+              "kind": "support_decision",
+              "actor": "C_APPRENTICE",
+              "selected": null,
+              "ready": {
+                "SK_A_WARD": 48150,
+                "SK_A_HEAL": 53750
+              },
+              "hp": 1905165,
+              "max_hp": 7234500,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 1861690
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2797963
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 1905165
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 3948313
+                }
+              }
+            },
+            {
+              "t_ms": 49400,
+              "kind": "support_decision",
+              "actor": "C_APPRENTICE",
+              "selected": [
+                "SK_A_WARD",
+                "C_WITCH"
+              ],
+              "ready": {
+                "SK_A_WARD": 48150,
+                "SK_A_HEAL": 53750
+              },
+              "hp": 1905165,
+              "max_hp": 7234500,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": true,
+                  "loss": 4902354,
+                  "hp_after": -3040664
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2797963
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 1905165
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 3948313
+                }
+              }
+            },
+            {
+              "t_ms": 49400,
+              "kind": "cast_start",
+              "source": "C_APPRENTICE",
+              "skill": "SK_A_WARD",
+              "target": "C_WITCH",
+              "commit_ms": 49650,
+              "root": "C_APPRENTICE:SK_A_WARD:5"
+            },
+            {
+              "t_ms": 49500,
+              "kind": "support_decision",
+              "actor": "C_SMITH",
+              "selected": [
+                "SK_S_GUARD",
+                "C_SMITH"
+              ],
+              "ready": {
+                "SK_S_HAMMER": 51400,
+                "SK_S_GUARD": 47650
+              },
+              "hp": 3948313,
+              "max_hp": 11121600,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": true,
+                  "loss": 3699566,
+                  "hp_after": -1837876
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2797963
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 1905165
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 3948313
+                }
+              }
+            },
+            {
+              "t_ms": 49500,
+              "kind": "cast_start",
+              "source": "C_SMITH",
+              "skill": "SK_S_GUARD",
+              "target": "C_SMITH",
+              "commit_ms": 49650,
+              "root": "C_SMITH:SK_S_GUARD:2"
+            },
+            {
+              "t_ms": 49650,
+              "kind": "barrier",
+              "source": "C_APPRENTICE",
+              "target": "C_WITCH",
+              "amount": 1202788,
+              "expiry": 55650
+            },
+            {
+              "t_ms": 49750,
+              "kind": "cast_start",
+              "source": "C_WITCH",
+              "skill": "C_WITCH_BASIC",
+              "target": "boss",
+              "commit_ms": 50000,
+              "root": "C_WITCH:C_WITCH_BASIC:27"
+            },
+            {
+              "t_ms": 49850,
+              "kind": "support_decision",
+              "actor": "C_APPRENTICE",
+              "selected": null,
+              "ready": {
+                "SK_A_WARD": 59650,
+                "SK_A_HEAL": 53750
+              },
+              "hp": 1905165,
+              "max_hp": 7234500,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 1861690
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2797963
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 1905165
+                },
+                "C_SMITH": {
+                  "danger": true,
+                  "loss": 3519714,
+                  "hp_after": 428599
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "diagnosis_status": "FIRST_OBSERVED_DIVERGENCE_ONLY_NOT_COMPLETE_CAUSAL_PROOF"
+    },
+    {
+      "job": "holdout_protect12_joint110",
+      "seed": 900158,
+      "upgrade": "paid90",
+      "before": {
+        "outcome": "VICTORY",
+        "elapsed_ms": 68750,
+        "boss_remaining_hp": 0
+      },
+      "after": {
+        "outcome": "DEFEAT",
+        "elapsed_ms": 74500,
+        "boss_remaining_hp": 3734398
+      },
+      "first_choice_divergence": {
+        "before": [
+          47450,
+          "C_APPRENTICE",
+          "SK_A_HEAL",
+          "C_SMITH"
+        ],
+        "after": [
+          47450,
+          "C_APPRENTICE",
+          "SK_A_HEAL",
+          "C_WITCH"
+        ]
+      },
+      "context": [
+        {
+          "side": "before",
+          "nearby_events": [
+            {
+              "t_ms": 47300,
+              "kind": "cast_start",
+              "source": "C_FAMILIAR",
+              "skill": "C_FAMILIAR_BASIC",
+              "target": "boss",
+              "commit_ms": 47550,
+              "root": "C_FAMILIAR:C_FAMILIAR_BASIC:33"
+            },
+            {
+              "t_ms": 47350,
+              "kind": "support_decision",
+              "actor": "C_APPRENTICE",
+              "selected": null,
+              "ready": {
+                "SK_A_WARD": 48150,
+                "SK_A_HEAL": 47450
+              },
+              "hp": 2105575,
+              "max_hp": 7234500,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2065384
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2994400
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2105575
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2934846
+                }
+              }
+            },
+            {
+              "t_ms": 47400,
+              "kind": "support_decision",
+              "actor": "C_APPRENTICE",
+              "selected": null,
+              "ready": {
+                "SK_A_WARD": 48150,
+                "SK_A_HEAL": 47450
+              },
+              "hp": 2105575,
+              "max_hp": 7234500,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2065384
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2994400
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2105575
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2934846
+                }
+              }
+            },
+            {
+              "t_ms": 47450,
+              "kind": "support_decision",
+              "actor": "C_APPRENTICE",
+              "selected": [
+                "SK_A_HEAL",
+                "C_SMITH"
+              ],
+              "ready": {
+                "SK_A_WARD": 48150,
+                "SK_A_HEAL": 47450
+              },
+              "hp": 2105575,
+              "max_hp": 7234500,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2065384
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2994400
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2105575
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2934846
+                }
+              }
+            },
+            {
+              "t_ms": 47450,
+              "kind": "cast_start",
+              "source": "C_APPRENTICE",
+              "skill": "SK_A_HEAL",
+              "target": "C_SMITH",
+              "commit_ms": 47750,
+              "root": "C_APPRENTICE:SK_A_HEAL:8"
+            },
+            {
+              "t_ms": 47600,
+              "kind": "support_decision",
+              "actor": "C_SMITH",
+              "selected": null,
+              "ready": {
+                "SK_S_HAMMER": 51700,
+                "SK_S_GUARD": 47650
+              },
+              "hp": 2934846,
+              "max_hp": 11046000,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2065384
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2994400
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2105575
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2934846
+                }
+              }
+            },
+            {
+              "t_ms": 47650,
+              "kind": "support_decision",
+              "actor": "C_SMITH",
+              "selected": null,
+              "ready": {
+                "SK_S_HAMMER": 51700,
+                "SK_S_GUARD": 47650
+              },
+              "hp": 2934846,
+              "max_hp": 11046000,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2065384
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2994400
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2105575
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2934846
+                }
+              }
+            },
+            {
+              "t_ms": 47750,
+              "kind": "heal",
+              "source": "C_APPRENTICE",
+              "target": "C_SMITH",
+              "effective": 1994282,
+              "waste": 0,
+              "hp_after": 4929128
+            },
+            {
+              "t_ms": 47750,
+              "kind": "support_decision",
+              "actor": "C_SMITH",
+              "selected": null,
+              "ready": {
+                "SK_S_HAMMER": 51700,
+                "SK_S_GUARD": 47650
+              },
+              "hp": 4929128,
+              "max_hp": 11046000,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2065384
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2994400
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2105575
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 4929128
+                }
+              }
+            }
+          ]
+        },
+        {
+          "side": "after",
+          "nearby_events": [
+            {
+              "t_ms": 47300,
+              "kind": "cast_start",
+              "source": "C_FAMILIAR",
+              "skill": "C_FAMILIAR_BASIC",
+              "target": "boss",
+              "commit_ms": 47550,
+              "root": "C_FAMILIAR:C_FAMILIAR_BASIC:33"
+            },
+            {
+              "t_ms": 47350,
+              "kind": "support_decision",
+              "actor": "C_APPRENTICE",
+              "selected": null,
+              "ready": {
+                "SK_A_WARD": 48150,
+                "SK_A_HEAL": 47450
+              },
+              "hp": 2139996,
+              "max_hp": 7234500,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2099805
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 3038431
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2139996
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 3252017
+                }
+              }
+            },
+            {
+              "t_ms": 47400,
+              "kind": "support_decision",
+              "actor": "C_APPRENTICE",
+              "selected": null,
+              "ready": {
+                "SK_A_WARD": 48150,
+                "SK_A_HEAL": 47450
+              },
+              "hp": 2139996,
+              "max_hp": 7234500,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2099805
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 3038431
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2139996
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 3252017
+                }
+              }
+            },
+            {
+              "t_ms": 47450,
+              "kind": "support_decision",
+              "actor": "C_APPRENTICE",
+              "selected": [
+                "SK_A_HEAL",
+                "C_WITCH"
+              ],
+              "ready": {
+                "SK_A_WARD": 48150,
+                "SK_A_HEAL": 47450
+              },
+              "hp": 2139996,
+              "max_hp": 7234500,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2099805
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 3038431
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2139996
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 3252017
+                }
+              }
+            },
+            {
+              "t_ms": 47450,
+              "kind": "cast_start",
+              "source": "C_APPRENTICE",
+              "skill": "SK_A_HEAL",
+              "target": "C_WITCH",
+              "commit_ms": 47750,
+              "root": "C_APPRENTICE:SK_A_HEAL:8"
+            },
+            {
+              "t_ms": 47600,
+              "kind": "support_decision",
+              "actor": "C_SMITH",
+              "selected": null,
+              "ready": {
+                "SK_S_HAMMER": 51700,
+                "SK_S_GUARD": 47650
+              },
+              "hp": 3252017,
+              "max_hp": 11121600,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2099805
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 3038431
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2139996
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 3252017
+                }
+              }
+            },
+            {
+              "t_ms": 47650,
+              "kind": "support_decision",
+              "actor": "C_SMITH",
+              "selected": null,
+              "ready": {
+                "SK_S_HAMMER": 51700,
+                "SK_S_GUARD": 47650
+              },
+              "hp": 3252017,
+              "max_hp": 11121600,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2099805
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 3038431
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2139996
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 3252017
+                }
+              }
+            },
+            {
+              "t_ms": 47750,
+              "kind": "heal",
+              "source": "C_APPRENTICE",
+              "target": "C_WITCH",
+              "effective": 2028703,
+              "waste": 0,
+              "hp_after": 4128508
+            },
+            {
+              "t_ms": 47750,
+              "kind": "support_decision",
+              "actor": "C_SMITH",
+              "selected": null,
+              "ready": {
+                "SK_S_HAMMER": 51700,
+                "SK_S_GUARD": 47650
+              },
+              "hp": 3252017,
+              "max_hp": 11121600,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 4128508
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 3038431
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2139996
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 3252017
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "diagnosis_status": "FIRST_OBSERVED_DIVERGENCE_ONLY_NOT_COMPLETE_CAUSAL_PROOF"
+    },
+    {
+      "job": "holdout_protect12_joint110",
+      "seed": 900256,
+      "upgrade": "paid90",
+      "before": {
+        "outcome": "VICTORY",
+        "elapsed_ms": 77400,
+        "boss_remaining_hp": 0
+      },
+      "after": {
+        "outcome": "DEFEAT",
+        "elapsed_ms": 75000,
+        "boss_remaining_hp": 4463534
+      },
+      "first_choice_divergence": {
+        "before": [
+          60050,
+          "C_APPRENTICE",
+          "SK_A_HEAL",
+          "C_APPRENTICE"
+        ],
+        "after": [
+          60050,
+          "C_APPRENTICE",
+          "SK_A_HEAL",
+          "C_FAMILIAR"
+        ]
+      },
+      "context": [
+        {
+          "side": "before",
+          "nearby_events": [
+            {
+              "t_ms": 60050,
+              "kind": "support_decision",
+              "actor": "C_APPRENTICE",
+              "selected": [
+                "SK_A_HEAL",
+                "C_APPRENTICE"
+              ],
+              "ready": {
+                "SK_A_WARD": 59650,
+                "SK_A_HEAL": 60050
+              },
+              "hp": 830179,
+              "max_hp": 7234500,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 1837264
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 750040
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 830179
+                }
+              }
+            },
+            {
+              "t_ms": 60050,
+              "kind": "cast_start",
+              "source": "C_APPRENTICE",
+              "skill": "SK_A_HEAL",
+              "target": "C_APPRENTICE",
+              "commit_ms": 60350,
+              "root": "C_APPRENTICE:SK_A_HEAL:10"
+            },
+            {
+              "t_ms": 60100,
+              "kind": "cast_start",
+              "source": "C_FAMILIAR",
+              "skill": "C_FAMILIAR_BASIC",
+              "target": "boss",
+              "commit_ms": 60350,
+              "root": "C_FAMILIAR:C_FAMILIAR_BASIC:42"
+            },
+            {
+              "t_ms": 60300,
+              "kind": "cast_start",
+              "source": "C_WITCH",
+              "skill": "SK_W_BURST",
+              "target": "boss",
+              "commit_ms": 60750,
+              "root": "C_WITCH:SK_W_BURST:9"
+            },
+            {
+              "t_ms": 60350,
+              "kind": "heal",
+              "source": "C_APPRENTICE",
+              "target": "C_APPRENTICE",
+              "effective": 1994282,
+              "waste": 0,
+              "hp_after": 2824461
+            }
+          ]
+        },
+        {
+          "side": "after",
+          "nearby_events": [
+            {
+              "t_ms": 60050,
+              "kind": "support_decision",
+              "actor": "C_APPRENTICE",
+              "selected": [
+                "SK_A_HEAL",
+                "C_FAMILIAR"
+              ],
+              "ready": {
+                "SK_A_WARD": 59650,
+                "SK_A_HEAL": 60050
+              },
+              "hp": 953849,
+              "max_hp": 7234500,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 1906106
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 818882
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 953849
+                }
+              }
+            },
+            {
+              "t_ms": 60050,
+              "kind": "cast_start",
+              "source": "C_APPRENTICE",
+              "skill": "SK_A_HEAL",
+              "target": "C_FAMILIAR",
+              "commit_ms": 60350,
+              "root": "C_APPRENTICE:SK_A_HEAL:10"
+            },
+            {
+              "t_ms": 60100,
+              "kind": "cast_start",
+              "source": "C_FAMILIAR",
+              "skill": "C_FAMILIAR_BASIC",
+              "target": "boss",
+              "commit_ms": 60350,
+              "root": "C_FAMILIAR:C_FAMILIAR_BASIC:42"
+            },
+            {
+              "t_ms": 60300,
+              "kind": "cast_start",
+              "source": "C_WITCH",
+              "skill": "SK_W_BURST",
+              "target": "boss",
+              "commit_ms": 60750,
+              "root": "C_WITCH:SK_W_BURST:9"
+            },
+            {
+              "t_ms": 60350,
+              "kind": "heal",
+              "source": "C_APPRENTICE",
+              "target": "C_FAMILIAR",
+              "effective": 2028703,
+              "waste": 0,
+              "hp_after": 2847585
+            }
+          ]
+        }
+      ],
+      "diagnosis_status": "FIRST_OBSERVED_DIVERGENCE_ONLY_NOT_COMPLETE_CAUSAL_PROOF"
+    },
+    {
+      "job": "holdout_protect12_joint110",
+      "seed": 900342,
+      "upgrade": "paid90",
+      "before": {
+        "outcome": "VICTORY",
+        "elapsed_ms": 78600,
+        "boss_remaining_hp": 0
+      },
+      "after": {
+        "outcome": "DEFEAT",
+        "elapsed_ms": 75000,
+        "boss_remaining_hp": 4976539
+      },
+      "first_choice_divergence": {
+        "before": [
+          53750,
+          "C_APPRENTICE",
+          "SK_A_HEAL",
+          "C_SMITH"
+        ],
+        "after": [
+          53750,
+          "C_APPRENTICE",
+          "SK_A_HEAL",
+          "C_FAMILIAR"
+        ]
+      },
+      "context": [
+        {
+          "side": "before",
+          "nearby_events": [
+            {
+              "t_ms": 53600,
+              "kind": "cast_start",
+              "source": "C_WITCH",
+              "skill": "C_WITCH_BASIC",
+              "target": "boss",
+              "commit_ms": 53850,
+              "root": "C_WITCH:C_WITCH_BASIC:29"
+            },
+            {
+              "t_ms": 53650,
+              "kind": "support_decision",
+              "actor": "C_APPRENTICE",
+              "selected": null,
+              "ready": {
+                "SK_A_WARD": 59650,
+                "SK_A_HEAL": 53750
+              },
+              "hp": 2787104,
+              "max_hp": 7234500,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 1827269
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 759650
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2787104
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 1114491
+                }
+              }
+            },
+            {
+              "t_ms": 53750,
+              "kind": "support_decision",
+              "actor": "C_APPRENTICE",
+              "selected": [
+                "SK_A_HEAL",
+                "C_SMITH"
+              ],
+              "ready": {
+                "SK_A_WARD": 59650,
+                "SK_A_HEAL": 53750
+              },
+              "hp": 2787104,
+              "max_hp": 7234500,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 1827269
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 759650
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2787104
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 1114491
+                }
+              }
+            },
+            {
+              "t_ms": 53750,
+              "kind": "cast_start",
+              "source": "C_APPRENTICE",
+              "skill": "SK_A_HEAL",
+              "target": "C_SMITH",
+              "commit_ms": 54050,
+              "root": "C_APPRENTICE:SK_A_HEAL:9"
+            },
+            {
+              "t_ms": 53900,
+              "kind": "support_decision",
+              "actor": "C_SMITH",
+              "selected": null,
+              "ready": {
+                "SK_S_HAMMER": 60200,
+                "SK_S_GUARD": 59650
+              },
+              "hp": 1114491,
+              "max_hp": 11046000,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 1827269
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 759650
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2787104
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 1114491
+                }
+              }
+            },
+            {
+              "t_ms": 54050,
+              "kind": "heal",
+              "source": "C_APPRENTICE",
+              "target": "C_SMITH",
+              "effective": 1994282,
+              "waste": 0,
+              "hp_after": 3108773
+            },
+            {
+              "t_ms": 54050,
+              "kind": "support_decision",
+              "actor": "C_SMITH",
+              "selected": null,
+              "ready": {
+                "SK_S_HAMMER": 60200,
+                "SK_S_GUARD": 59650
+              },
+              "hp": 3108773,
+              "max_hp": 11046000,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 1827269
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 759650
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2787104
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 3108773
+                }
+              }
+            }
+          ]
+        },
+        {
+          "side": "after",
+          "nearby_events": [
+            {
+              "t_ms": 53600,
+              "kind": "cast_start",
+              "source": "C_WITCH",
+              "skill": "C_WITCH_BASIC",
+              "target": "boss",
+              "commit_ms": 53850,
+              "root": "C_WITCH:C_WITCH_BASIC:29"
+            },
+            {
+              "t_ms": 53650,
+              "kind": "support_decision",
+              "actor": "C_APPRENTICE",
+              "selected": null,
+              "ready": {
+                "SK_A_WARD": 59650,
+                "SK_A_HEAL": 53750
+              },
+              "hp": 2910774,
+              "max_hp": 7234500,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 1861690
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 794071
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2910774
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 1413174
+                }
+              }
+            },
+            {
+              "t_ms": 53750,
+              "kind": "support_decision",
+              "actor": "C_APPRENTICE",
+              "selected": [
+                "SK_A_HEAL",
+                "C_FAMILIAR"
+              ],
+              "ready": {
+                "SK_A_WARD": 59650,
+                "SK_A_HEAL": 53750
+              },
+              "hp": 2910774,
+              "max_hp": 7234500,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 1861690
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 794071
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2910774
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 1413174
+                }
+              }
+            },
+            {
+              "t_ms": 53750,
+              "kind": "cast_start",
+              "source": "C_APPRENTICE",
+              "skill": "SK_A_HEAL",
+              "target": "C_FAMILIAR",
+              "commit_ms": 54050,
+              "root": "C_APPRENTICE:SK_A_HEAL:9"
+            },
+            {
+              "t_ms": 53900,
+              "kind": "support_decision",
+              "actor": "C_SMITH",
+              "selected": null,
+              "ready": {
+                "SK_S_HAMMER": 60200,
+                "SK_S_GUARD": 59650
+              },
+              "hp": 1413174,
+              "max_hp": 11121600,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 1861690
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 794071
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2910774
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 1413174
+                }
+              }
+            },
+            {
+              "t_ms": 54050,
+              "kind": "heal",
+              "source": "C_APPRENTICE",
+              "target": "C_FAMILIAR",
+              "effective": 2028703,
+              "waste": 0,
+              "hp_after": 2822774
+            },
+            {
+              "t_ms": 54050,
+              "kind": "support_decision",
+              "actor": "C_SMITH",
+              "selected": null,
+              "ready": {
+                "SK_S_HAMMER": 60200,
+                "SK_S_GUARD": 59650
+              },
+              "hp": 1413174,
+              "max_hp": 11121600,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 1861690
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2822774
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2910774
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 1413174
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "diagnosis_status": "FIRST_OBSERVED_DIVERGENCE_ONLY_NOT_COMPLETE_CAUSAL_PROOF"
+    },
+    {
+      "job": "holdout_protect6",
+      "seed": 900182,
+      "upgrade": "paid90",
+      "before": {
+        "outcome": "VICTORY",
+        "elapsed_ms": 70550,
+        "boss_remaining_hp": 0
+      },
+      "after": {
+        "outcome": "DEFEAT",
+        "elapsed_ms": 91900,
+        "boss_remaining_hp": 1585361
+      },
+      "first_choice_divergence": {
+        "before": [
+          41150,
+          "C_APPRENTICE",
+          "SK_A_HEAL",
+          "C_SMITH"
+        ],
+        "after": [
+          41150,
+          "C_APPRENTICE",
+          "SK_A_HEAL",
+          "C_WITCH"
+        ]
+      },
+      "context": [
+        {
+          "side": "before",
+          "nearby_events": [
+            {
+              "t_ms": 41150,
+              "kind": "support_decision",
+              "actor": "C_APPRENTICE",
+              "selected": [
+                "SK_A_HEAL",
+                "C_SMITH"
+              ],
+              "ready": {
+                "SK_A_WARD": 48150,
+                "SK_A_HEAL": 41150
+              },
+              "hp": 3647913,
+              "max_hp": 6940500,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2644383
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2519479
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 3647913
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 3977322
+                }
+              }
+            },
+            {
+              "t_ms": 41150,
+              "kind": "cast_start",
+              "source": "C_APPRENTICE",
+              "skill": "SK_A_HEAL",
+              "target": "C_SMITH",
+              "commit_ms": 41450,
+              "root": "C_APPRENTICE:SK_A_HEAL:7"
+            },
+            {
+              "t_ms": 41400,
+              "kind": "support_decision",
+              "actor": "C_SMITH",
+              "selected": null,
+              "ready": {
+                "SK_S_HAMMER": 42600,
+                "SK_S_GUARD": 47650
+              },
+              "hp": 3977322,
+              "max_hp": 10584000,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2644383
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2519479
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 3647913
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 3977322
+                }
+              }
+            },
+            {
+              "t_ms": 41450,
+              "kind": "heal",
+              "source": "C_APPRENTICE",
+              "target": "C_SMITH",
+              "effective": 1912325,
+              "waste": 0,
+              "hp_after": 5889647
+            },
+            {
+              "t_ms": 41450,
+              "kind": "support_decision",
+              "actor": "C_SMITH",
+              "selected": null,
+              "ready": {
+                "SK_S_HAMMER": 42600,
+                "SK_S_GUARD": 47650
+              },
+              "hp": 5889647,
+              "max_hp": 10584000,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2644383
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2519479
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 3647913
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 5889647
+                }
+              }
+            }
+          ]
+        },
+        {
+          "side": "after",
+          "nearby_events": [
+            {
+              "t_ms": 41150,
+              "kind": "support_decision",
+              "actor": "C_APPRENTICE",
+              "selected": [
+                "SK_A_HEAL",
+                "C_WITCH"
+              ],
+              "ready": {
+                "SK_A_WARD": 48150,
+                "SK_A_HEAL": 41150
+              },
+              "hp": 3682334,
+              "max_hp": 6940500,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2733632
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2519479
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 3682334
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 4225489
+                }
+              }
+            },
+            {
+              "t_ms": 41150,
+              "kind": "cast_start",
+              "source": "C_APPRENTICE",
+              "skill": "SK_A_HEAL",
+              "target": "C_WITCH",
+              "commit_ms": 41450,
+              "root": "C_APPRENTICE:SK_A_HEAL:7"
+            },
+            {
+              "t_ms": 41400,
+              "kind": "support_decision",
+              "actor": "C_SMITH",
+              "selected": null,
+              "ready": {
+                "SK_S_HAMMER": 42600,
+                "SK_S_GUARD": 47650
+              },
+              "hp": 4225489,
+              "max_hp": 10659600,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2733632
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2519479
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 3682334
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 4225489
+                }
+              }
+            },
+            {
+              "t_ms": 41450,
+              "kind": "heal",
+              "source": "C_APPRENTICE",
+              "target": "C_WITCH",
+              "effective": 1946746,
+              "waste": 0,
+              "hp_after": 4680378
+            },
+            {
+              "t_ms": 41450,
+              "kind": "support_decision",
+              "actor": "C_SMITH",
+              "selected": null,
+              "ready": {
+                "SK_S_HAMMER": 42600,
+                "SK_S_GUARD": 47650
+              },
+              "hp": 4225489,
+              "max_hp": 10659600,
+              "forecasts": {
+                "C_WITCH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 4680378
+                },
+                "C_FAMILIAR": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 2519479
+                },
+                "C_APPRENTICE": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 3682334
+                },
+                "C_SMITH": {
+                  "danger": false,
+                  "loss": 0,
+                  "hp_after": 4225489
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "diagnosis_status": "FIRST_OBSERVED_DIVERGENCE_ONLY_NOT_COMPLETE_CAUSAL_PROOF"
+    }
+  ],
+  "all_saved": true
+}

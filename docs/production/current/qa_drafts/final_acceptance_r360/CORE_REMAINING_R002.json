@@ -1,0 +1,197 @@
+{
+  "schema": "final-acceptance-core-remaining-r360-v1",
+  "status": "EVIDENCE_RECONCILIATION_NOT_FINAL_ACCEPTANCE",
+  "asOf": "2026-10-14",
+  "scope": "Core gameplay, ordinary progression, research/challenge acceptance, long-term economy, save compatibility, commerce. No test/build/simulator/live mutation was performed for this reconciliation.",
+  "authoritativeAcceptanceSource": {
+    "requested": "03_ACCEPTANCE_AND_BLOCKERS.md (ZIP03 acceptance source)",
+    "status": "LOCATED_AND_READ",
+    "path": "docs/production/mission_20261010_r1/Witch_Codex_Autonomous_03to05_20261010/03_ACCEPTANCE_AND_BLOCKERS.md",
+    "sha256": "5c26036ca41f3a45a870c3e5590481c97321ae01e54aa52a26a74c12d674012c",
+    "sizeBytes": 5867,
+    "meaning": "Sections ③–⑤ define integration/economy, UI/art, and iOS acceptance, including eight purchase/access cohorts over 30/90 days and separate Human/platform gates."
+  },
+  "summary": {
+    "P0_gameplay": "The ordinary route has evidence for all five regions/30 campaign encounters and all 15 challenge IDs being cleared. This proves encounter clears in the recorded flows, not every canonical mechanic, full progression completeness, or game quality.",
+    "P1_research": "Normal UI research routing and ordinary research transactions have evidence for research 1, 2, 3, and 5. Research 4 is not complete in the currently inspected evidence: R338 remains a procedure, and the R358 collection/current-target subrun is incomplete/active. Fifteen challenge IDs are separate from all 15 research-mechanic acceptance conditions.",
+    "P1_long_term_economy": "R346 is a scoped 9-case/30-day result for three proxy arms under the older R098/R144/R230 profile. It does not satisfy the required eight named conditions × both 30 and 90 days. R355 current-integrated-profile run is closed after two compile failures with zero XCTest; no current-profile long-term matrix result exists.",
+    "P1_save_compatibility": "R356 passed six focused Core migration/receipt tests. This does not establish complete native-container restore/recovery or all-version release compatibility.",
+    "P1_gear_progression": "R350/R352/R353 are integrated in current Core and R356 verifies key activation/legacy receipt boundaries. R358 build/install passed; ordinary G1 collection claim completed with one natural gear acquisition, but the run was marked incomplete because a Set-order comparison falsely tripped. A separate G2-target run is present as CUA_ACTIVE with no captured result at this read. No completed earned refinement transaction is verified.",
+    "P1_commerce": "No real StoreKit/platform purchase acceptance. R346 ticket-like arms are explicit test-only allocation proxies, not actual price/product choices or purchase-value causality. Receipt authority, restore/refund, duplicate, multi-device and server authority remain release blockers.",
+    "P2_final_quality": "R246/R253 challenge clears and individual UI/asset reviews do not meet full iPhone UI/art/accessibility/performance acceptance. Physical device, full VoiceOver/touch review, final art acceptance, Human fun/purchase-value review remain open."
+  },
+  "evidence": [
+    {
+      "topic": "R346 prior-policy long-term cohort experiment",
+      "status": "SCOPED_PASS",
+      "resultPath": "docs/production/current/qa_drafts/current_economy_outcomes_r346/runner_root_r002/runs/run_001/RUN_RESULT_R001.json",
+      "resultSHA256": "36ac26bca0edd73aa711b83a091113401ec20984910872e6b64d4c1142d08058",
+      "independentReviewPath": "docs/production/current/qa_drafts/current_economy_outcomes_r346/independent_execution_review_r001/REVIEW_R001.json",
+      "independentReviewSHA256": "b9bcb4547b8bba942eaa36a0f61474521baa90446b10a12a2588ba4cff4813fd",
+      "observed": "9 cases = 3 proxy arms × 3 seeds, each 30 virtual days: free_no_ad, value30_ticket_candidate, ticket200_candidate. Each report has 30 campaign wins and 15 challenge wins. These are test-only grants; the proxy arms do not map to all eight mission cohorts.",
+      "limit": "Earlier R098/R144/R230 profile, only 3 of 8 required cohort conditions, 30 days only (no 90-day horizon), and synthetic arm allocations. Does not establish current integrated R350/R352/R353 progression."
+    },
+    {
+      "topic": "R355 integrated current-profile economy attempt",
+      "status": "CLOSED_COMPILE_FAILED_2_OF_2_NO_XCTEST",
+      "closeoutPath": "docs/production/current/qa_drafts/integrated_equipment_progression_r355/runner_r003/runs/run_002/ROOT_CLOSEOUT_R001.json",
+      "closeoutSHA256": "de8b85ab51b7561c423e4049ff64acc9b873f39a46e931404321161b47005cb4",
+      "observed": "Two attempts closed with zero XCTest. The final closeout records the prepared package still mapped to the previous test source despite corrected candidate R004; this is a harness/input binding failure, not a game behavior failure or pass.",
+      "limit": "Batch is closed; do not retry it or count R346 as current-profile proof. Any future test must be a fresh bounded batch with exact test path+hash equality across manifest, staged package, and executed filter."
+    },
+    {
+      "topic": "R356 save/work receipt regression suite",
+      "status": "SCOPED_CORE_TESTS_PASS",
+      "reviewPath": "docs/production/current/qa_drafts/migration_receipt_reconciliation_r356/independent_execution_review_r001/REVIEW_R001.json",
+      "reviewSHA256": "cb9c71a6cc9fe0eac50af6a64bbdf0e134d474bb55bb63534340840b9e9f09ca",
+      "observed": "6/6 Core methods passed against the pinned R350 engine: migration receipt settlement, no retroactive natural gear, fractional legacy remainder boundary, duplicate replay, and R350-off legacy receipt behavior.",
+      "limit": "In-memory repository/Core scope; not a complete app-container recovery, UI migration, or release save-compatibility certification."
+    },
+    {
+      "topic": "R358 integrated native build/install and earned gear collection/refinement path",
+      "status": "BUILD_INSTALL_PASS_COLLECTION_PARTIAL_TARGET_RUN_ACTIVE_REFINEMENT_NOT_VERIFIED",
+      "installPath": "docs/production/current/qa_drafts/native_equipment_integration_r358/install_001/RECEIPT.json",
+      "installSHA256": "ad6e384b12baec833699071c437de43e10f884ff7f09fb05d3de41b13d563797",
+      "collectionRunPath": "docs/production/current/qa_drafts/native_equipment_integration_r358/manual_run_001/RUN.json",
+      "collectionRunSHA256": "2f24e606908ced3e10ad66672f32a6d193d963577b62d79d2a940b5f0975b89d",
+      "reconciliationPath": "docs/production/current/qa_drafts/native_equipment_integration_r358/COLLECTION_RECONCILIATION_R001.json",
+      "reconciliationSHA256": "2639b605eae948666f96a709e9cfcd3a7fbeb468e9f2951a60ab9bc7485b434d",
+      "targetRunPath": "docs/production/current/qa_drafts/native_equipment_integration_r358/target_run_001/RUN.json",
+      "targetRunSHA256": "64cd9aec9f4669962d0510b31e9860d7ff0e62405ee1069f253159a0e8409711",
+      "observed": "Install receipt PASS_INSTALLED_ALL_PRIOR_FILES_EXACT (app SHA 346f9e1b…a8e4). Normal G1 claim progressed save revision 155→156; reconciliation records +6 G1, +18 dust, +180 XP per actor and one natural gear acquisition. The original manual run remained INCOMPLETE_RETAINED because a Set serialized-array ordering difference was treated as mutation. Root then began a separate G2 target run; the inspected RUN was CUA_ACTIVE with zero captures, so no G2/target/cold-reopen acceptance is claimed.",
+      "limit": "No completed G2 target-switch result and no earned rank I→II refinement application/cold reopen in reviewed evidence. This is not complete full economy or research-4 proof."
+    },
+    {
+      "topic": "R359 membrane challenge candidate",
+      "status": "SOURCE_ONLY_NOT_RUN_PREPARATION_CORRECTION_PENDING",
+      "manifestPath": "docs/production/current/qa_drafts/research_completion_triage_r359/candidate_r001/INPUT_MANIFEST_R001.json",
+      "manifestSHA256": "96f999b5ee9ff160b35eeb1f928f42985129aeae1163391234ba52ae578c1d9f",
+      "observed": "One proposed earned-snapshot test, three fixed seeds, active-vs-inactive membrane comparison; execution/build/simulator all explicitly false.",
+      "limit": "No result for CH_R02_02 membrane mechanic. Execute only from a corrected, re-pinned candidate; three fixed seeds/12 previews are proposed only. R346 paired equipment previews do not fill this gap.",
+      "knownPreExecutionIssue": "The test source was reported to need a missing try correction; core_runtime is correcting it. No test or build was executed. The pinned candidate manifest remains evidence of the unrun source state and must not be treated as a passing test input."
+    }
+  ],
+  "remainingWork": [
+    {
+      "priority": "P0 immediate",
+      "area": "Close the already-started R358 earned collection and refinement acceptance",
+      "nextAction": "Complete only the currently authorized ordinary R358 target-switch/cold-reopen path, then apply the rank I→II operation once when exact material/dust gates are met. Use the current installed R358 build and same earned save; do not substitute grants.",
+      "acceptance": "Normal G1 claim receipts and +6/+18/+180-per-actor delta accounted; G2 target selection and cold-reopen exactness independently closed; refinement on the exact owned UUID records exact cost/rank/investment and cold-reopens. Explain unchanged combat stats where projection rounds to no change. Preserve original run as partial; additive closure only.",
+      "boundedBudget": "Follow existing one-run limits in R358 procedure/runner; no duplicate collection or extra seed runs.",
+      "authority": "Local QA is authorized/possible. Formal progression/balance adoption remains Human-owned."
+    },
+    {
+      "priority": "P1 core integration",
+      "area": "Current-profile 8-condition long-term economy acceptance",
+      "nextAction": "Prepare a fresh exact-source Core batch for all eight named conditions at 30 and 90 virtual days, with a 30-day pilot gate first; bind the integrated R350/R352/R353 profile and every test path/hash byte-for-byte. Preserve test-only grants as test-only inputs and do not infer wins for any unexecuted horizon.",
+      "acceptance": "Each completed case logs daily save/reopen bytes, actual engine commands/resources, campaign/challenge outcomes, crafted/evolved/refined/salvaged gear and unresolved goals. All 8×2 conditions appear in the plan; simulated arms are clearly labeled proxies until Human adopts SKU/pricing/ad rules. No case may report “攻略検証済み” if its later fights are assumed rather than resolved.",
+      "boundedBudget": "Start with one 30-day pilot ≤600 seconds/750 MB; only continue to the remaining cases if exact source/input/package binding and preservation pass. Batch budgets must be explicit; no retry after closed cap.",
+      "authority": "Local comparative simulation can proceed with unapproved labeled candidates. Product prices, bundles, ad policy, and formal monetization adoption require Human decisions."
+    },
+    {
+      "priority": "P1 design-mechanic proof",
+      "area": "Close the gap between 15 challenge clears and 15 canonical mechanic requirements",
+      "nextAction": "Resolve the R359 CH_R02_02 membrane test’s missing XCTest argument, independently verify the exact candidate, then execute one bounded earned-snapshot test; continue only for other specifically unmapped scenarios.",
+      "acceptance": "For CH_R02_02 prove matched active-window damage reduction vs inactive control using same earned snapshot/party/seeds, capture event HP deltas, and verify no save mutation. Report NOT_OBSERVED when the mechanic does not trigger. Do not claim all 15 until each required mechanic condition has evidence.",
+      "boundedBudget": "One named mechanic; 3 fixed seeds, ≤120 seconds/300 MB as candidate manifest specifies; no QA gear/time/reward injection.",
+      "authority": "Local implementation/test can proceed; any change to the approved scenario requirement requires Human design adoption."
+    },
+    {
+      "priority": "P1 platform commerce",
+      "area": "Store authority and purchase lifecycle",
+      "nextAction": "Only after approved catalog and platform setup, complete StoreKit/Test or Sandbox receipt authority, restore/refund, replay/duplicate, time tamper, multi-device and server-authoritative entitlement checks.",
+      "acceptance": "No client-only paid result; verified signed receipt/authority and full ledger recovery with platform evidence.",
+      "boundedBudget": "Not estimable absent approved product model and platform credentials/environment.",
+      "authority": "Human/account/platform action required; no real payment or external purchase operation is authorized here."
+    },
+    {
+      "priority": "P2 final release quality",
+      "area": "Full screen/art/accessibility/performance/device review",
+      "nextAction": "After functional scope stabilizes, run target-device and human review for all named screen/state coverage, VoiceOver/touch, safe areas, memory/rendering, lifecycle and app-store release conditions.",
+      "acceptance": "Evidence from actual target device and human reviewer; no simulator-only substitution.",
+      "boundedBudget": "Requires actual hardware/user review.",
+      "authority": "Human review/approval required."
+    }
+  ],
+  "explicitNonclaims": [
+    "This JSON is a reconciliation of the located 03_ACCEPTANCE_AND_BLOCKERS.md and current evidence, not a declaration that all of sections ③–⑤ are complete.",
+    "R346 is 9/9 bounded cases for only three test-proxy arms at 30 days under an earlier runtime configuration; it does not meet 8 conditions × 30/90 days.",
+    "R355 is two compile-failed attempts and zero XCTest; do not retry that closed batch or state game behavior failed/passed from it.",
+    "R358 build/install passed and one ordinary G1 claim is evidenced, but the manual flow has an ordering-comparator partial status; the G2 run was active without a result at inspection, and refinement application is not proven.",
+    "Fifteen challenge clears are not fifteen distinct mechanic validations, and neither is equivalent to completed 15 design/research challenges unless canonical acceptance specifies that exact predicate.",
+    "Test-only purchase allocations do not prove actual monetization value or real purchase/receipt authority.",
+    "Local source/test work on clearly labeled candidates need not wait for formal design adoption; Human decisions remain necessary for final art, product/pricing/adoption, real commerce, physical-device/release and human fun/value acceptance.",
+    "No tests, build, Simulator, live source or save mutation were performed for this R002 reconciliation."
+  ],
+  "revision": "R002",
+  "supersedes": "CORE_REMAINING_R001.json",
+  "priorRevisionSHA256": "61d6a48f4cb182b7c08c6078301c7cfec55fd68242c8ec88228332786074f68a",
+  "missionAcceptanceMap": {
+    "section3_integration_economy": {
+      "status": "PARTIAL",
+      "criteria": [
+        {
+          "id": "stable_schema_ids_four_auto_party_evolution_latents",
+          "status": "IMPLEMENTED_AND_PARTIALLY_CORE_TESTED",
+          "remaining": "Full end-to-end proof across earned equipment, evolution and all relevant actor/build contexts is incomplete."
+        },
+        {
+          "id": "LR_value_effects_appearance_build_objectives",
+          "status": "NOT_ACCEPTED",
+          "remaining": "No adopted LR values or complete multi-build strategy proof; technical candidate comparisons are not Human value acceptance."
+        },
+        {
+          "id": "multiple_builds_and_15_research_enemy_conditions",
+          "status": "PARTIAL",
+          "remaining": "15 challenge clears are recorded; per-scenario required-mechanic evidence is incomplete. R359 membrane active/inactive case is source-only/unrun."
+        },
+        {
+          "id": "gacha_probability_pity_target_duplicate_protection_free_grants_logs_restore",
+          "status": "PARTIAL_OR_UNAPPROVED",
+          "remaining": "Current candidate state/tests do not equal formal catalog/product adoption or platform-backed guarantees."
+        },
+        {
+          "id": "eight_cohorts_30_90_days",
+          "status": "NOT_MET",
+          "requiredCohorts": [
+            "free",
+            "no-ad-view",
+            "small-single-purchase",
+            "ad-skip-only",
+            "cosmetics-only",
+            "bundle",
+            "recurring-small",
+            "high-collection"
+          ],
+          "requiredHorizonsDays": [
+            30,
+            90
+          ],
+          "existingCoverage": "R346 has 3 explicit proxy arms × 3 seeds × 30 days only; proxies are not equal to the eight named conditions."
+        },
+        {
+          "id": "sales_legal_account_release_blockers",
+          "status": "NOT_VERIFIED",
+          "remaining": "Actual StoreKit/receipt/server/restore/refund/privacy/legal/account and external platform acceptance remain separate."
+        },
+        {
+          "id": "human_fun_and_purchase_value",
+          "status": "HUMAN_REQUIRED",
+          "remaining": "Cannot be automatically inferred from model output or deterministic simulation."
+        }
+      ]
+    },
+    "section4_ui_art": {
+      "status": "PARTIAL",
+      "criteria": [
+        "Actual native screen evidence exists for bounded workflows, but not all named screens/states, final art/assets, character/outfit/weapon/furniture interoperability, small/large layout, memory/rendering, or complete accessibility evaluation. Human final art direction remains separate."
+      ]
+    },
+    "section5_ios_integration_quality": {
+      "status": "PARTIAL",
+      "criteria": [
+        "Four-person battle, region progression, resources, crafting/refinement/dismantle, gacha and saves are implemented in parts; full end-to-end/version/recovery/security/performance/lifecycle coverage across all regions is incomplete. Simulator evidence is not physical-device PASS."
+      ]
+    }
+  }
+}

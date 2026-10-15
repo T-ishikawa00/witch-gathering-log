@@ -1,0 +1,262 @@
+{
+  "schema": "completion-register-r360-v5",
+  "at": "2026-10-14T08:15:10.789659+09:00",
+  "authority": "Latest user completion direction + original 03 acceptance; all scope retained",
+  "mission": {
+    "path": "docs/production/mission_20261010_r1/Witch_Codex_Autonomous_03to05_20261010/03_ACCEPTANCE_AND_BLOCKERS.md",
+    "sha256": "5c26036ca41f3a45a870c3e5590481c97321ae01e54aa52a26a74c12d674012c"
+  },
+  "currentCheckpoint": "1991e797e71e0d6c20b9c58af8b7332113d20a4f",
+  "currentBuild": "R373 Release,232sources/1922resources,modal destination scroll reset",
+  "currentSave": {
+    "revision": 161,
+    "sha256": "98c5b3023380e25bdaa48bf1f03ba7f95341fab4477f682217624dc799a684eb",
+    "normalPermanentResearchIDs": [
+      "RS_THEORY_1",
+      "RS_THEORY_2",
+      "RS_THEORY_3",
+      "RS_THEORY_4",
+      "RS_THEORY_5"
+    ]
+  },
+  "reviewCorrections": [
+    "CORE_REMAINING_R001/R002 wrongly say research4 incomplete: exact earned save157 has RS_THEORY_1..5; 15 battle challenge mechanisms remain separate.",
+    "UI_ART_REMAINING furniture-use gap was an oversight: R361 source+R340 evidence confirms table-driven Luna reading. Do not reimplement already-working interaction.",
+    "Candidate art adoption is Human-owned; this does not transfer delegated local natural-motion production/technicalQA back to Human.",
+    "R359 actually ran 1 XCTest, failed3 assertions; terminal-hit HP-clamp hypothesis not yet proven. Original results retained.",
+    "R359 corrected diagnostic R004 separately passed; HP-terminal clamp explains the original 3 failures, which remain retained.",
+    "R366 later 10 evidence rows are 8 post-battle stills, one ordinary E_R05_01 movie, and one CH_R05_03 boss replay; not 10 ordinary videos."
+  ],
+  "items": [
+    {
+      "id": "SAVE-01",
+      "category": "ゲームの成立を阻む問題",
+      "title": "保存途中の異常終了・取引重複の受入",
+      "implementation": "保存世代・取引台帳・装備セット実装済み",
+      "verification": "R362 isolated post-primary-replace SIGKILL + old/new generation/receipt/replay/cold verified; independent scoped pass",
+      "completionQuality": "この受入条件に限定して合格",
+      "remaining": "他の保存時点・実機電源断耐性は全体iOS受入と別。現在の具体的異常終了条件は合格",
+      "acceptance": "隔離した新規fixtureで保存後置換時SIGKILLを実施、再起動が完全な旧/新世代と整合、同一取引再送不変、実セーブ/全ownedprocess保全",
+      "nextAction": "既合格の同条件は繰り返さず、新規保存変更時の回帰へ",
+      "workLimit": {
+        "attempts": 1,
+        "minutes": 3,
+        "onLimit": "原結果を保持し、具体的原因と再開条件を記録。独立する次の重要作業へ。上限を番号替えで迂回しない。"
+      },
+      "externalDependency": null,
+      "evidence": "qa_drafts/save_crash_completion_r362/independent_direct_review_r001/REVIEW_R001.json"
+    },
+    {
+      "id": "GEAR-01",
+      "category": "ゲームの成立を阻む問題",
+      "title": "自然取得から研成・保存までの通常育成",
+      "implementation": "R350取得/R352研成/R353返却をR358へ統合",
+      "verification": "R358研成I→II/取消/冷起動に加え、R375通常採集14単位/自然2装備→新規C重複木槌1個分解。返却粉1と同時採集粉3を独立差分照合。旧18装備/既存装備枠維持。冷起動save161一致/0追加取引。元検証器の採集精算無視によるFAILは保持 R375joinedindependentreviewR002 scopedPASS.",
+      "completionQuality": "個別の通常研成・重複返却・冷起動保存経路に限定して合格",
+      "remaining": "全体iOS通し試験と長期在庫性能は別条件",
+      "acceptance": "既存UUID維持、費用60粉とG1/G2各6、rankI→II・investment+60、二重適用なし、冷起動主セーブ一致。返却は適格な自然重複がある場合だけ行う",
+      "nextAction": "同じ装備の再分解を避け、長期在庫UIと最終通しへ",
+      "workLimit": {
+        "attempts": 1,
+        "minutes": 10,
+        "onLimit": "原結果を保持し、具体的原因と再開条件を記録。独立する次の重要作業へ。上限を番号替えで迂回しない。"
+      },
+      "externalDependency": null,
+      "evidence": "qa_drafts/natural_duplicate_ui_r375/cold_readback_001/RUN.json"
+    },
+    {
+      "id": "PROGRESS-01",
+      "category": "ゲームの成立を阻む問題",
+      "title": "全5地域の現行構成での通常進行",
+      "implementation": "採集/4人戦闘/制作/強化/昇格/進化/研究/鑑定/装備セット実装",
+      "verification": "R368 one free_no_ad seed100049 30-virtual-day pilot: real initial craft→comparison→daily→155free draws; 30campaign/15challenge/5research, 96natural,19enhance/11refine/3evolve; all30 repository reopens exact; independent scoped PASS",
+      "completionQuality": "単一条件のCore通常進行に限定して合格",
+      "remaining": "8条件30/90日、全15個別機構・複数構成、同一iOS通しの品質は別。29レシピ未達は全収集完了ではない",
+      "acceptance": "付与装備に頼らず新規状態から5地域/全研究到達。収支・レシピ・進化・自然装備・保存を実計算。未実行戦闘を勝利と仮定しない",
+      "nextAction": "R374同一Release実行ファイルで8条件×30/90日を実行中",
+      "workLimit": {
+        "attempts": 1,
+        "minutes": 10,
+        "onLimit": "原結果を保持し、具体的原因と再開条件を記録。独立する次の重要作業へ。上限を番号替えで迂回しない。"
+      },
+      "externalDependency": null,
+      "evidence": "qa_drafts/normal_onboarding_progression_r368/independent_review_r001/REVIEW_R001.json"
+    },
+    {
+      "id": "MECHANICS-01",
+      "category": "発売品質を阻む問題",
+      "title": "15研究条件と複数構成の選択意義",
+      "implementation": "15研究戦闘/毒・結界・反撃・回復・追撃実装",
+      "verification": "R359膜の実取得装備3seed: active24/26/23比較+closed11/11/11、軽減267/265/249。1testPASS。原失敗はHP上限比較誤差として保持。R367現行取得save155ではheat7500ms/半HP移行7900ms/root/HP一致、第2段階全体予兆未観測で最終試験1FAIL。原trace保持。R371 corrected15 tests PASS/0failed/0skipped、14新規機構trace+R359膜receipt再利用。独立監査済み。高HP機構専用fixtureと通常進行を分離",
+      "completionQuality": "未合格",
+      "remaining": "全15機構は限定条件で検証済み。6系統の実取得ビルド比較・LR価値・複数解が残る",
+      "acceptance": "各条件のイベント・HP・発動時間と比較構成を記録。直接攻撃一択でない理由を実結果で確認。発動未観測は未検証",
+      "nextAction": "実取得EQ_W_01対EQ_W_P1の限定比較と、他系統の既存結果の構成一致を確認",
+      "workLimit": {
+        "attempts": 2,
+        "minutes": 15,
+        "onLimit": "原結果を保持し、具体的原因と再開条件を記録。独立する次の重要作業へ。上限を番号替えで迂回しない。"
+      },
+      "externalDependency": null
+    },
+    {
+      "id": "ECONOMY-01",
+      "category": "発売品質を阻む問題",
+      "title": "8条件・30/90日の長期経済",
+      "implementation": "候補経済/重複処理/費用/保護を実装",
+      "verification": "R374 sameReleasebinary16/16casesPASS,30/90virtualdays×8cohorts;noownedXCTest survivors. Independent balance/economic analysis pending.",
+      "completionQuality": "未合格",
+      "remaining": "無課金・広告なし・単発少額・広告免除のみ・外見のみ・パック・継続少額・高額収集の30/90日",
+      "acceptance": "全8条件を明示し素材/在庫/余剰/到達/周回価値/実戦を実計算。仮想券は商品承認や実購入効果と区別。90日を30日から外挿しない",
+      "nextAction": "独立監査で到達・余剰・購入差・周回価値を判定。実行通過だけでバランス合格とはしない",
+      "workLimit": {
+        "attempts": 2,
+        "minutes": 100,
+        "onLimit": "原結果を保持し、具体的原因と再開条件を記録。独立する次の重要作業へ。上限を番号替えで迂回しない。",
+        "basis": "R369実測によりRelease1回校正90日600秒/30日180秒、全16条件計6000秒、2GBへ事前改訂。高額90日317.93秒はcompile44.64秒を含み合格"
+      },
+      "externalDependency": "正式価格・商品内容・購入価値の最終判断はHuman。候補比較はローカルで継続可能",
+      "evidence": "qa_drafts/economy_release_matrix_r374/candidate_r002/runner_r002/runs/R374_MATRIX_001/RUN.json"
+    },
+    {
+      "id": "GEAR-02",
+      "category": "発売品質を阻む問題",
+      "title": "進化・レアリティ・LRの価値",
+      "implementation": "装備進化/潜在効果/品質/研成実装",
+      "verification": "通常進化使用と個別Core検証あり",
+      "completionQuality": "未合格",
+      "remaining": "LR固有効果/外観/ビルド/収集目標の統合価値・全適用先",
+      "acceptance": "同じID/データ契約で進化後潜在と装備外観・性能を照合。倍率だけで価値を完了扱いにしない",
+      "nextAction": "現行通し経済結果から未達の装備経路を特定し、独立した一経路ずつ解消",
+      "workLimit": {
+        "attempts": 2,
+        "minutes": 30,
+        "onLimit": "原結果を保持し、具体的原因と再開条件を記録。独立する次の重要作業へ。上限を番号替えで迂回しない。"
+      },
+      "externalDependency": "正式数値・価値採用はHuman。候補の設計・実装・比較は継続"
+    },
+    {
+      "id": "COMMERCE-01",
+      "category": "発売品質を阻む問題",
+      "title": "購入・復元・異常系・権利の安全性",
+      "implementation": "StoreKit局所QAと取引台帳実装。Probe nil/Code3/UIKit問題は別記録",
+      "verification": "現行橋渡し/保存ソース3件は既存R237とhash一致。成功/取消/商品失敗/返金/重複に限定証拠あり。R365現行sink+SaveRepositoryのactive synthetic復元は1testPASS/独立監査。rev0→1、重複後byte同一、無関係状態不変 R377現行232sourceDebug構成の実XcodeローカルUI:2商品取得、欠品・取消無書込、非消耗/消耗購入成功、空セーブ復元は非消耗1件のみ、重複復元とcoldbyte一致。独立限定合格。旧main1925app/1692data全件一致。",
+      "completionQuality": "未合格",
+      "remaining": "本番server権利/正式Sandbox商品/実機・複数端末は未検証。既存返金・pending・保存失敗証拠の現行source一致を最終監査へ結合",
+      "acceptance": "局所StoreKitとmock証拠を明記し、同じ取引の再処理無効果・復元整合を確認。正式課金はApple環境で別途合格",
+      "nextAction": "合格したローカル経路は繰り返さず、正式server/Sandbox/実機権利の外部条件を分離",
+      "workLimit": {
+        "attempts": 2,
+        "minutes": 20,
+        "onLimit": "原結果を保持し、具体的原因と再開条件を記録。独立する次の重要作業へ。上限を番号替えで迂回しない。"
+      },
+      "externalDependency": "Apple認証/実機/Sandbox設定/正式商品・server配備はHumanまたは外部環境。実課金は禁止",
+      "evidence": "qa_drafts/storekit_restore_route_r377/independent_review_r001/REVIEW_R001.json"
+    },
+    {
+      "id": "UI-01",
+      "category": "発売品質を阻む問題",
+      "title": "A案の全画面・通常操作",
+      "implementation": "家/探索/仲間/工房/採集帳/鑑定/衣装/家具/商店/設定実装",
+      "verification": "R370大文字8画面独立合格、R372追加8画面保存不変。R373 .id(name)により遷移先のスクロール先頭を復旧。native5screensで確率先頭/衣装同画面試着スクロール維持、0commands/save159exact",
+      "completionQuality": "未合格",
+      "remaining": "大小iPhone/VoiceOver/境界状態、最終通し。R373独立レビューは限定合格済み",
+      "acceptance": "通常入口と復帰、ボタン到達、セーフエリア、長文/エラー/所持0/上限、VoiceOver/大文字を実画面で確認",
+      "nextAction": "大量在庫処理改善と未確認の操作不能リスクを優先",
+      "workLimit": {
+        "attempts": 2,
+        "minutes": 20,
+        "onLimit": "原結果を保持し、具体的原因と再開条件を記録。独立する次の重要作業へ。上限を番号替えで迂回しない。"
+      },
+      "externalDependency": null
+    },
+    {
+      "id": "ART-01",
+      "category": "発売品質を阻む問題",
+      "title": "味方4人の自然な動作",
+      "implementation": "全4人の待機/移動/予備/攻撃/復帰/被弾/決着描画経路あり",
+      "verification": "キー姿勢・ソース経路・限定通常画面のみ",
+      "completionQuality": "未合格",
+      "remaining": "全4人の状態遷移・武器/衣装重なり・接地/遮蔽/自然さ",
+      "acceptance": "個別台帳に実ビルド・状態・画面/短動画・技術評点を記録し、見えていない動作を合格にしない",
+      "nextAction": "既存素材で通常描画をレビューし具体的欠落が見つかった部分だけ制作・再統合",
+      "workLimit": {
+        "attempts": 2,
+        "minutes": 30,
+        "onLimit": "原結果を保持し、具体的原因と再開条件を記録。独立する次の重要作業へ。上限を番号替えで迂回しない。"
+      },
+      "externalDependency": "最終美術の正式採用のみHuman。動作品質改善/全個体技術レビューはローカル責任"
+    },
+    {
+      "id": "ART-02",
+      "category": "発売品質を阻む問題",
+      "title": "敵・ボス30制作単位の動作",
+      "implementation": "全30単位を描画資源へ接続",
+      "verification": "R083全30既存QA映像と状態対応、追加first9/remaining18の連続サンプル確認。R337 E_R05_01のみ通常動画の3攻撃root/time照合。8件は静止画で連続性未確認",
+      "completionQuality": "未合格",
+      "remaining": "個体ごとの必要待機/移動/予兆/攻撃/被弾/復帰/決着",
+      "acceptance": "30単位×適用状態を個別判定。静止画やmappingだけで完成にしない。不要状態は仕様根拠付きN/A",
+      "nextAction": "全30必要状態の残りを状態単位で整理。時系列不足を静止画合格で置換しない",
+      "workLimit": {
+        "attempts": 2,
+        "minutes": 30,
+        "onLimit": "原結果を保持し、具体的原因と再開条件を記録。独立する次の重要作業へ。上限を番号替えで迂回しない。"
+      },
+      "externalDependency": "正式美術採用はHuman。全動作技術QAはローカルで完了させる"
+    },
+    {
+      "id": "ART-03",
+      "category": "発売品質を阻む問題",
+      "title": "159制作単位と必要な外観・背景・効果",
+      "implementation": "159対応=149直接+10明示集約。背景/装備外観/エフェクト接続",
+      "verification": "対応と限定runtime確認",
+      "completionQuality": "未合格",
+      "remaining": "全159個別品質、必要衣装/武器/家具の制作範囲と反映",
+      "acceptance": "権利/編集元/サイズ/レイヤー/遮蔽/実表示をID単位で記録。必要基本範囲へ展開、追加販売SKUは勝手に確定しない",
+      "nextAction": "R360家具利用不足の誤判定はR361で訂正。配置机とルナ読書既存実装を維持。未確認個体から実画面確認",
+      "workLimit": {
+        "attempts": 2,
+        "minutes": 30,
+        "onLimit": "原結果を保持し、具体的原因と再開条件を記録。独立する次の重要作業へ。上限を番号替えで迂回しない。"
+      },
+      "externalDependency": "正式美術/販売SKU/権利確認はHuman。必要基本素材と描画の制作はローカル"
+    },
+    {
+      "id": "IOS-01",
+      "category": "発売品質を阻む問題",
+      "title": "起動・復帰・クラッシュ・性能",
+      "implementation": "R373 Release実装/導入、1680 prior files exact、APFS資源共有",
+      "verification": "通常cold/nav限定。R340最大RSS422MiBは範囲限定。R375自然取得/分解/冷起動を同一R373で実施",
+      "completionQuality": "未合格",
+      "remaining": "現行通しiOS、UIクラッシュ回帰、FPS/メモリ/発熱/大小端末。4185装備の在庫一覧/一括分解計算に線形探索反復あり、処理改善候補準備中",
+      "acceptance": "同一ビルドの通常通しフローでクラッシュなし、保存維持、容量予測内。Simulatorと実機結果を分離",
+      "nextAction": "主要機能/保存修正の後、最終ビルドを固定して通し試験と独立監査",
+      "workLimit": {
+        "attempts": 2,
+        "minutes": 30,
+        "onLimit": "原結果を保持し、具体的原因と再開条件を記録。独立する次の重要作業へ。上限を番号替えで迂回しない。"
+      },
+      "externalDependency": "実機接続・Apple認証・実機熱/電池/性能測定はHuman環境待ち"
+    },
+    {
+      "id": "DETAIL-01",
+      "category": "細部の改善",
+      "title": "位置・微小な動作調整",
+      "implementation": "既存A案維持",
+      "verification": "局所修正は過去限定受入",
+      "completionQuality": "未合格",
+      "remaining": "機能を阻害しない小さな見栄え",
+      "acceptance": "具体的な表示欠陥と終了条件を事前に一つ定義し、技術品質を下げず最大2案で収束",
+      "nextAction": "P0/P1の独立作業を優先。比較基準のない数px反復は行わない",
+      "workLimit": {
+        "attempts": 2,
+        "minutes": 15,
+        "onLimit": "原結果を保持し、具体的原因と再開条件を記録。独立する次の重要作業へ。上限を番号替えで迂回しない。"
+      },
+      "externalDependency": null
+    }
+  ],
+  "finalExitCondition": "全ローカル実行可能条件の受入・同一iOS構成通し試験・独立監査を完了し、未実行の実機/Apple/正式採用のみ具体的な必要操作と証拠を添えて報告。実装/検証/品質合格を混同しない。",
+  "storage": "Each run forecasts bytes; warn20GB, hold10GB or stricter per-task reserve. No unapproved delete, old307 changes, push, publication or real payments.",
+  "currentQAOnlyBuild": "R377 Debug232samefrozenR373sources,1922resources,distinctbundle"
+}

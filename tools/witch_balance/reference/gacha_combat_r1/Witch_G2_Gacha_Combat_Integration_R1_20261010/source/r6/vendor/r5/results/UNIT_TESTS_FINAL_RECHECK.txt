@@ -1,0 +1,53 @@
+test_awakening_rejected_not_silently_ignored (__main__.ContractTests.test_awakening_rejected_not_silently_ignored) ... ok
+test_basic_first_and_subsequent_impact (__main__.ContractTests.test_basic_first_and_subsequent_impact) ... ok
+test_current_consumable_gate_is_post_first_tree (__main__.ContractTests.test_current_consumable_gate_is_post_first_tree) ... ok
+test_damage_conservation (__main__.ContractTests.test_damage_conservation) ... ok
+test_every_hp_and_shield_in_bounds (__main__.ContractTests.test_every_hp_and_shield_in_bounds) ... ok
+test_explicit_output_unit_scale (__main__.ContractTests.test_explicit_output_unit_scale) ... ok
+test_future_gear_rejected (__main__.ContractTests.test_future_gear_rejected) ... ok
+test_identical_replay (__main__.ContractTests.test_identical_replay) ... ok
+test_input_reorder_no_combat_bias (__main__.ContractTests.test_input_reorder_no_combat_bias) ... ok
+test_legacy_parity_when_all_changes_off (__main__.ContractTests.test_legacy_parity_when_all_changes_off) ... ok
+test_no_dead_actions (__main__.ContractTests.test_no_dead_actions) ... ok
+test_no_player_tactics_added (__main__.ContractTests.test_no_player_tactics_added) ... ok
+test_original_golden_reproduces (__main__.ContractTests.test_original_golden_reproduces) ... ok
+test_reaction_single_stage (__main__.ContractTests.test_reaction_single_stage) ... ok
+test_selected_boss_matches_data_lock (__main__.ContractTests.test_selected_boss_matches_data_lock) ... ok
+test_selected_profile_matches_data_lock (__main__.ContractTests.test_selected_profile_matches_data_lock) ... ok
+test_skill_cd_starts_on_commit (__main__.ContractTests.test_skill_cd_starts_on_commit) ... ok
+test_time_is_integer_nondecreasing (__main__.ContractTests.test_time_is_integer_nondecreasing) ... ok
+test_timeout_still_not_victory (__main__.ContractTests.test_timeout_still_not_victory) ... ok
+test_ally_cover_consumes_one_per_multihit (__main__.ForecastTests.test_ally_cover_consumes_one_per_multihit) ... ok
+test_aoe_no_redirect (__main__.ForecastTests.test_aoe_no_redirect) ... ok
+test_expired_before_hit_not_counted (__main__.ForecastTests.test_expired_before_hit_not_counted) ... ok
+test_expired_weakening_not_assumed (__main__.ForecastTests.test_expired_weakening_not_assumed) ... ok
+test_expiring_at_hit_not_counted (__main__.ForecastTests.test_expiring_at_hit_not_counted) ... ok
+test_forecast_does_not_mutate (__main__.ForecastTests.test_forecast_does_not_mutate) ... ok
+test_late_reserved_heal_not_counted (__main__.ForecastTests.test_late_reserved_heal_not_counted) ... ok
+test_live_shield_counts (__main__.ForecastTests.test_live_shield_counts) ... ok
+test_on_time_heal_is_counted (__main__.ForecastTests.test_on_time_heal_is_counted) ... ok
+test_own_target_does_not_consume_cover (__main__.ForecastTests.test_own_target_does_not_consume_cover) ... ok
+test_actor_fraction_preserved_after_pct (__main__.PrecisionTests.test_actor_fraction_preserved_after_pct) ... ok
+test_all_1122_legal_enhancement_transitions (__main__.PrecisionTests.test_all_1122_legal_enhancement_transitions) ... ok
+test_dead_heal_no_resurrection (__main__.PrecisionTests.test_dead_heal_no_resurrection) ... ok
+test_defense_scaled_oracle_and_cap (__main__.PrecisionTests.test_defense_scaled_oracle_and_cap) ... ok
+test_dust_and_uuid_not_changed (__main__.PrecisionTests.test_dust_and_uuid_not_changed) ... ok
+test_hands_and_ring_no_dead_steps (__main__.PrecisionTests.test_hands_and_ring_no_dead_steps) ... ok
+test_independent_rational_primary_oracle (__main__.PrecisionTests.test_independent_rational_primary_oracle) ... ok
+test_invalid_precision_rejected (__main__.PrecisionTests.test_invalid_precision_rejected) ... ok
+test_levels_do_not_regress (__main__.PrecisionTests.test_levels_do_not_regress) ... ok
+test_no_cost_or_recipe_patch (__main__.PrecisionTests.test_no_cost_or_recipe_patch) ... ok
+test_plus10_is_additive_30_percent (__main__.PrecisionTests.test_plus10_is_additive_30_percent) ... ok
+test_reduction_is_monotonic (__main__.PrecisionTests.test_reduction_is_monotonic) ... ok
+test_rounding_loss_under_one_micro_unit (__main__.PrecisionTests.test_rounding_loss_under_one_micro_unit) ... ok
+test_wand_gain_from_first_step (__main__.PrecisionTests.test_wand_gain_from_first_step) ... ok
+test_zero_damage_not_forced_to_one (__main__.PrecisionTests.test_zero_damage_not_forced_to_one) ... ok
+test_actual_victory_commit_idempotent (__main__.ProgressionR5Tests.test_actual_victory_commit_idempotent) ... ok
+test_new_rules_version_recorded (__main__.ProgressionR5Tests.test_new_rules_version_recorded) ... ok
+test_r5_before_commit_failure_preserves_state (__main__.ProgressionR5Tests.test_r5_before_commit_failure_preserves_state) ... ok
+test_r5_tampered_receipt_rejected (__main__.ProgressionR5Tests.test_r5_tampered_receipt_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 48 tests in 1.214s
+
+OK

@@ -1,0 +1,213 @@
+{
+  "schema": "r450-recover-path-classification-r002-v1",
+  "status": "READ_ONLY_CLASSIFICATION; NO_NEW_CAPTURE_OR_BUILD",
+  "scope": "Reconciles the R418 19-ID stale recover-unobserved list with retained R424, R418, R407, R377 traces and current EnemyMotion/BattlePlayback path.",
+  "baselineR418": {
+    "unobservedRecoverIDs": [
+      "B_R01_A",
+      "B_R01_B",
+      "B_R03_A",
+      "B_R03_B",
+      "B_R04_A",
+      "B_R04_B",
+      "B_R05_B",
+      "E_R01_02",
+      "E_R01_03",
+      "E_R02_02",
+      "E_R03_02",
+      "E_R03_03",
+      "E_R03_04",
+      "E_R04_01",
+      "E_R04_02",
+      "E_R04_04",
+      "E_R05_02",
+      "E_R02_01",
+      "E_R02_04"
+    ],
+    "count": 19,
+    "note": "R418 matrix predates R424 natural-recovery trace; its count is not current."
+  },
+  "laterReconciliation": {
+    "routeClosed": [
+      "E_R02_01"
+    ],
+    "routeEvidence": {
+      "path": "docs/production/current/qa_drafts/enemy_execute_regression_r424/candidate_r002/capture_r001/enemy_event_traces/case01_E_R02_01/enemy_event_render_r145_ade42a64-6979-4e85-a87c-d110b39e3b03.json",
+      "traceSHA256": "b3e8df6345db2691fa86d7b2f72fe955ff9573f351c58350ce6bea54e728d4dd",
+      "sequence": [
+        {
+          "state": "execute",
+          "frames": "433–451"
+        },
+        {
+          "state": "recover",
+          "frames": "452–470"
+        },
+        {
+          "state": "idle",
+          "frames": "471–508"
+        },
+        {
+          "state": "hit",
+          "starts": "509"
+        },
+        {
+          "state": "resolve",
+          "starts": "573"
+        }
+      ],
+      "scope": "One natural uninterrupted attack route proves the shared route is reachable for this actor. No full-art or all-ID pass."
+    },
+    "directAttackRecoverStillUnobserved": [
+      "B_R01_A",
+      "B_R01_B",
+      "B_R03_A",
+      "B_R03_B",
+      "B_R04_A",
+      "B_R04_B",
+      "B_R05_B",
+      "E_R01_02",
+      "E_R01_03",
+      "E_R02_02",
+      "E_R03_02",
+      "E_R03_03",
+      "E_R03_04",
+      "E_R04_01",
+      "E_R04_02",
+      "E_R04_04",
+      "E_R05_02"
+    ],
+    "executeRenderedButNoRecover": [
+      "B_R01_B",
+      "B_R03_A",
+      "B_R03_B",
+      "B_R04_A",
+      "B_R04_B",
+      "B_R05_B",
+      "E_R01_02",
+      "E_R01_03",
+      "E_R02_02",
+      "E_R03_02",
+      "E_R03_03",
+      "E_R03_04",
+      "E_R04_01",
+      "E_R04_02",
+      "E_R04_04",
+      "E_R05_02"
+    ],
+    "executeAndRecoverBothUnobserved": [
+      "B_R01_A"
+    ],
+    "roleException": {
+      "id": "E_R02_04",
+      "classification": "SUPPORT_ACTION; execute→recover expectation not applicable",
+      "evidence": "R391 event rows: enemy_telegraph seq11/20; enemy_magic_support seq13/24; no damage-execute request. Verify its support cue/effect under support-specific acceptance if needed."
+    },
+    "totalCurrentRawR418GapsNotYetClosed": 18,
+    "important": "B_R05_B execute visibility was repaired and observed in R418: three actual multi-frame executes, each followed by hit; that closes execute visibility for that run, not recover."
+  },
+  "perWindowEvidence": [
+    {
+      "ids": [
+        "B_R03_B",
+        "E_R02_02",
+        "E_R03_02",
+        "E_R03_04",
+        "E_R04_02",
+        "E_R04_04"
+      ],
+      "run": "R424",
+      "classification": "execute rendered; pending hit is replayed after execute completion, so recovery is intentionally bypassed in these observed attacks."
+    },
+    {
+      "ids": [
+        "B_R05_B"
+      ],
+      "run": "R418",
+      "classification": "three execute intervals rendered (18/16/17 frames in run summary); hit follows; no eligible no-hit recovery window."
+    },
+    {
+      "ids": [
+        "B_R01_B",
+        "B_R03_A",
+        "B_R04_A",
+        "B_R04_B",
+        "E_R01_02",
+        "E_R01_03",
+        "E_R03_03",
+        "E_R04_01",
+        "E_R05_02"
+      ],
+      "run": "R391/R377/R407",
+      "classification": "execute state appears in retained state sequence, then hit or resolve; no recover frame. These are interrupted/terminal windows, not evidence of a recover render failure."
+    },
+    {
+      "ids": [
+        "B_R01_A"
+      ],
+      "run": "R391/R377",
+      "classification": "anticipate/request appears but no rendered execute before hit/resolve; no recover-eligible window."
+    }
+  ],
+  "sourceBehavior": {
+    "EnemyMotion.swift": {
+      "path": "native/WitchApp/EnemyMotion.swift",
+      "sha256": "f9a0d0ffb203c799f432e14c8384c6c3989e7452a350365c86ca2660bc20b6d8",
+      "behavior": "finishFiniteActionR214 sends a pending hit to hit after execute; otherwise returnToRest(execute) attempts recover. Recover completion falls through returnToRest to idle."
+    },
+    "BattlePlayback.swift": {
+      "path": "native/WitchApp/BattlePlayback.swift",
+      "sha256": "112dcff156070e83e15d346d2f48e5b13ea89e94d9ecf01e48121fff9ccbbf45",
+      "behavior": "ordinary event playback is finite/sequenced; concurrent party hits can legitimately be pending at execute completion."
+    }
+  },
+  "minimalGapOnlyCaptureIfPerIDClosureRequired": {
+    "targets": [
+      "B_R01_A",
+      "B_R01_B",
+      "B_R03_A",
+      "B_R03_B",
+      "B_R04_A",
+      "B_R04_B",
+      "B_R05_B",
+      "E_R01_02",
+      "E_R01_03",
+      "E_R02_02",
+      "E_R03_02",
+      "E_R03_03",
+      "E_R03_04",
+      "E_R04_01",
+      "E_R04_02",
+      "E_R04_04",
+      "E_R05_02"
+    ],
+    "attempts": "One fresh isolated challenge encounter per target; no forced pose, HP/gear edits, clock changes, or ordinary-save mutation. B_R01_A only counts if a real execute is rendered. E_R02_04 excluded from attack cohort.",
+    "acceptance": [
+      "Same actor and scene generation show a completed execute with no pending hit at completion.",
+      "At least two rendered recover frames are joined to that execution; then an idle frame from the same actor appears before hit or resolve.",
+      "Marker/video and trace identify the same case; sample start/middle/end of recover at phone scale.",
+      "If a hit is pending or the encounter resolves first, record INTERRUPTED/NO_ELIGIBLE_WINDOW for that single attempt; this is not a renderer failure."
+    ],
+    "proposedBounds": "17 targets only, 1 attempt each, ≤20 min / ≤1.25 GB aggregate clips+traces; no recapture of the 11 already-covered IDs or the positive E_R02_01 route.",
+    "reuse": "Reuse existing R424 capture guard/video/trace pipeline and fixture, but do not reuse the sealed 8-target runner unchanged. Gap-only case manifest must bind each case UUID and actor, retain previous/final saves, and preserve all earlier support/prefs."
+  },
+  "binaryAndSourceBoundary": {
+    "R418": "R424 is the same R418 installed app executable 26e70a80fa64bb893492da934e1e774b12fe2ee7e7674fefb80f91f8975aa52e; resource manifest 90d213640ea8bf1ac0791ece0b2bfa01f68228e3eed3d56479b8c5628b3cc7de, 1922 resources.",
+    "R445": "Different app executable e85f9985813ccfca71d119515e5f90afb65eab5184017be81c57d106c45d4c14, but same 1922-resource manifest and exact EnemyMotion/BattlePlayback source hashes above. Reuse is component-path evidence only, not full-binary or visual identity."
+  },
+  "inputSHA256": {
+    "docs/production/current/qa_drafts/state_acceptance_reconciliation_r418/STATE_ACCEPTANCE_R001.json": "b2a7f6524bc67220ded7c3d5bed088f4f28ffa06410c70ac679d6e772c618cd7",
+    "docs/production/current/qa_drafts/enemy_execute_regression_r424/recovery_classification_r002/REVIEW_R002.md": "00081fba0e66ca2e4881ab107efc915d54ca61ce7109ac01c629cb09ae9e9c06",
+    "docs/production/current/qa_drafts/enemy_execute_regression_r424/candidate_r002/capture_r001/enemy_event_traces/case01_E_R02_01/enemy_event_render_r145_ade42a64-6979-4e85-a87c-d110b39e3b03.json": "b3e8df6345db2691fa86d7b2f72fe955ff9573f351c58350ce6bea54e728d4dd",
+    "docs/production/current/qa_drafts/enemy_attack_visibility_r418/capture_candidate_r002/capture_r001/enemy_event_traces/case01_B_R05_B/enemy_event_render_r145_ced2268c-e3d4-4716-99e5-74343987fb49.json": "b58eb4acf57c49529e50fb4422b7aaa5b55b54ea91f95f8296118cd5841c9065",
+    "docs/production/current/qa_drafts/native_completion_r445/build_tools_r001/NATIVE_SOURCE_MAP_R001.json": "0202edfce1602c2937274c5e1c72fad8b75d1e654fba576ca8855df94d748fe0",
+    "native/WitchApp/EnemyMotion.swift": "f9a0d0ffb203c799f432e14c8384c6c3989e7452a350365c86ca2660bc20b6d8",
+    "native/WitchApp/BattlePlayback.swift": "112dcff156070e83e15d346d2f48e5b13ea89e94d9ecf01e48121fff9ccbbf45"
+  },
+  "limits": [
+    "No source/art/build/Simulator change.",
+    "Trace transitions alone do not establish visual naturalness; the E_R02_01 video/marker samples establish only the scoped joined interval.",
+    "R418 matrix count is stale after R424; do not report it as current state coverage.",
+    "Formal art adoption remains separate from local technical review."
+  ]
+}

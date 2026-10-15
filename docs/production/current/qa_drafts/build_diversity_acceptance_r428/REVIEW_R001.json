@@ -1,0 +1,345 @@
+{
+  "schema": "build-diversity-resource-reconciliation-r428-v1",
+  "status": "READ_ONLY_COMPLETE",
+  "worktree": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg",
+  "scope": "R376 direct/poison and R377 barrier/control comparisons; no build, test, Simulator or save mutation performed.",
+  "pins": {
+    "acceptance": {
+      "path": "docs/production/mission_20261010_r1/Witch_Codex_Autonomous_03to05_20261010/03_ACCEPTANCE_AND_BLOCKERS.md",
+      "sha256": "5c26036ca41f3a45a870c3e5590481c97321ae01e54aa52a26a74c12d674012c",
+      "sizeBytes": 5867
+    },
+    "r368Save": {
+      "path": "docs/production/current/qa_drafts/normal_onboarding_progression_r368/candidate_r001/runner_r001/runs/36800000-0001-4001-8000-000000000001/r368_36800000-0001-4001-8000-000000000001/save.json",
+      "sha256": "067c4e86733fe07eb5457381a30d140b285fbd2685ab18e5667f47577c74e655",
+      "sizeBytes": 781251
+    },
+    "r368Report": {
+      "path": "docs/production/current/qa_drafts/normal_onboarding_progression_r368/candidate_r001/runner_r001/runs/36800000-0001-4001-8000-000000000001/r368_36800000-0001-4001-8000-000000000001/report.json",
+      "sha256": "23266207d0a393a7782c6ad827e2cf771cae6879040f014223fe096efbb4d215",
+      "sizeBytes": 11446971
+    },
+    "r368Input": {
+      "path": "docs/production/current/qa_drafts/normal_onboarding_progression_r368/candidate_r001/runner_r001/INPUT_MANIFEST_R001.json",
+      "sha256": "47ba83bfa951eaac593cf1059492233caec1064c959cdea6afb928a67fcf8417",
+      "sizeBytes": 28966
+    },
+    "r376Input": {
+      "path": "docs/production/current/qa_drafts/effect_build_comparison_r376/candidate_r002/INPUT_MANIFEST_R001.json",
+      "sha256": "13fae7625ac99615c8a4756966ec1fa0ebd9906e6a8941c4a3e5842bad5af33b",
+      "sizeBytes": 5013
+    },
+    "pairLedger": {
+      "path": "docs/production/current/qa_drafts/effect_build_comparison_r376/candidate_r002/OWNED_PAIR_LEDGER_R001.json",
+      "sha256": "bee23409dbd3e6bc81a6b1d93f196b6fc4bb602068874000908b6e7161d7c4d7",
+      "sizeBytes": 9603
+    },
+    "r376Report": {
+      "path": "docs/production/current/qa_drafts/combined_core_validation_r387/resume_r006_r001/reports/r376/report.json",
+      "sha256": "b48eb94093e4fd72ff28300fdde73a93bf7979fe72eea23dfd1b86cff3fd6a9f",
+      "sizeBytes": 79070
+    },
+    "r377Report": {
+      "path": "docs/production/current/qa_drafts/combined_core_validation_r387/resume_r006_r001/reports/r377/report.json",
+      "sha256": "207cac15c56841778587a4007c6bc0411483e94c48c76fc1d22b4d23e9286c5a",
+      "sizeBytes": 541220
+    },
+    "r387R004Run": {
+      "path": "docs/production/current/qa_drafts/combined_core_validation_r387/candidate_r004/runs/38700000-0004-4001-8000-000000000001/RUN.json",
+      "sha256": "a7791345e3231aee92ba5724cd06b1353ecc4c1f16d2000e1a8a24f28bb27eca",
+      "sizeBytes": 6264
+    },
+    "r387R004Log": {
+      "path": "docs/production/current/qa_drafts/combined_core_validation_r387/candidate_r004/runs/38700000-0004-4001-8000-000000000001/swift_test.log",
+      "sha256": "458e3e69219a9427f121a32b67044ca421af0ac53a373e634c5831f92512ef76",
+      "sizeBytes": 8066
+    },
+    "r387ResumeR006": {
+      "path": "docs/production/current/qa_drafts/combined_core_validation_r387/resume_r006_r001/RUN.json",
+      "sha256": "3586233cf1330c512d3dd711f3a8abccbc092a8b3b933a8d2ea3738f699d17e3",
+      "sizeBytes": 22363
+    },
+    "gameEngine": {
+      "path": "native/WitchGameCore/Sources/WitchGameCore/GameEngine.swift",
+      "sha256": "c50d7418a1442c7f8b5a5ecd1b0a76f937877fc90267cb0b2460fb6645347b65",
+      "sizeBytes": 112025
+    },
+    "gearSwapPersistenceTest": {
+      "path": "native/WitchGameCore/Tests/WitchGameCoreTests/GearSwapCombatPreviewR131Tests.swift",
+      "sha256": "929941e3cf292aab0ce338d0ff2b42eb297696ef887644b3893728d9f1473fd7",
+      "sizeBytes": 22147
+    },
+    "loadoutPersistenceTest": {
+      "path": "native/WitchGameCore/Tests/WitchGameCoreTests/EquipmentLoadoutsR342Tests.swift",
+      "sha256": "712670d13ba0ac6efd755a3aac0a16da48d9c7c380d98e6c0011b756b643b32d",
+      "sizeBytes": 22784
+    },
+    "e2ePersistedTest": {
+      "path": "native/WitchGameCore/Tests/WitchGameCoreTests/CurrentProfileProgressionE2ERunnerR120Tests.swift",
+      "sha256": "60cf2e103a944ef6c40e3d60c99353b3c7dcfbe14e0a109a04bf115be7f1edb8",
+      "sizeBytes": 56786
+    },
+    "r376ExecutedTest": {
+      "path": "docs/production/current/qa_drafts/combined_core_validation_r387/candidate_r004/runs/38700000-0004-4001-8000-000000000001/package/Tests/WitchGameCoreTests/EffectBuildComparisonR376Tests.swift",
+      "sha256": "90dc99bc596b2daff9fe2df81fea1140502dfbe835f09c12169e57c4d4db3bec",
+      "sizeBytes": 13446
+    },
+    "r377ExecutedTest": {
+      "path": "docs/production/current/qa_drafts/combined_core_validation_r387/candidate_r004/runs/38700000-0004-4001-8000-000000000001/package/Tests/WitchGameCoreTests/EffectBuildComparisonR377Tests.swift",
+      "sha256": "fe5818e83840af1343a90f0e73a6b9a64d42552975f2c02e08a30e70e4b9837c",
+      "sizeBytes": 13726
+    }
+  },
+  "sourceSave": {
+    "r368RunID": "36800000-0001-4001-8000-000000000001",
+    "revision": 226,
+    "sourceSaveSHA256": "067c4e86733fe07eb5457381a30d140b285fbd2685ab18e5667f47577c74e655",
+    "sourceReportSHA256": "23266207d0a393a7782c6ad827e2cf771cae6879040f014223fe096efbb4d215",
+    "cohort": "free_no_ad, 30 virtual days; 155 free summon draws, 0 paid draws, 96 bounded natural-acquisition records in final snapshot, 1 crafted recipe RC_EQ_F_01, 3 evolved recipes, 0 syntheticGrantReceipts.",
+    "boundary": "This is a simulated cohort save. It is not evidence of ordinary human acquisition or of the R376/R377 command sequences."
+  },
+  "pairedItems": [
+    {
+      "comparison": "R376 direct control",
+      "challenge": "CH_R02_01",
+      "actorSlot": "C_WITCH|weapon",
+      "uuid": "BC499DA8-3B80-5536-BAFB-5143888B392C",
+      "template": "EQ_W_01",
+      "quality": "Q0",
+      "enhancement": 0,
+      "refinement": 0,
+      "investmentDust": 0,
+      "latent": "AF_DEF rawQ 925",
+      "acquisition": "Exact report record: naturalRollIndex 4, sourceRegion R01, operationID 36810000-0001-4001-8000-000000000005. Present in Day-1 report snapshot; record is outside the final save’s 96-entry retention window."
+    },
+    {
+      "comparison": "R376 poison candidate",
+      "challenge": "CH_R02_01",
+      "actorSlot": "C_WITCH|weapon",
+      "uuid": "6CA40746-2A06-4374-A92D-F321927D48BE",
+      "template": "EQ_W_P1",
+      "quality": "Q0",
+      "enhancement": 0,
+      "refinement": 0,
+      "investmentDust": 0,
+      "latent": "AF_DOT_RESIST rawQ 695",
+      "acquisition": "UNKNOWN per-instance route. It appears in Day-1 save/report inventory and the same day has free-summon outputs EQ_W_P1; no UUID-to-draw receipt or natural-acquisition row joins this UUID. R368 craftedRecipeIDs contains only RC_EQ_F_01."
+    },
+    {
+      "comparison": "R377 barrier control",
+      "challenge": "CH_R02_02",
+      "actorSlot": "C_WITCH|weapon",
+      "uuid": "BC499DA8-3B80-5536-BAFB-5143888B392C",
+      "template": "EQ_W_01",
+      "quality": "Q0",
+      "enhancement": 0,
+      "refinement": 0,
+      "investmentDust": 0,
+      "latent": "AF_DEF rawQ 925",
+      "acquisition": "Same exact naturalRollIndex 4 record as above."
+    },
+    {
+      "comparison": "R377 barrier candidate",
+      "challenge": "CH_R02_02",
+      "actorSlot": "C_WITCH|weapon",
+      "uuid": "68C84620-D911-48E4-983C-15E4EF8F202E",
+      "template": "EQ_W_G2",
+      "quality": "Q0",
+      "enhancement": 0,
+      "refinement": 0,
+      "investmentDust": 0,
+      "latent": "AF_CRIT_DMG rawQ 677",
+      "acquisition": "UNKNOWN per-instance route. It first appears in Day-2 save/report inventory; a Day-2 free-summon result lists EQ_W_G2, but no UUID-to-draw join and no natural record for this UUID."
+    },
+    {
+      "comparison": "R377 smith counter candidate",
+      "challenge": "CH_R04_02",
+      "actorSlot": "C_SMITH|weapon",
+      "uuid": "31292F32-5F63-5F71-84D9-B69BB4FC303A",
+      "template": "EQ_S_01",
+      "quality": "Q1",
+      "enhancement": 0,
+      "refinement": 0,
+      "investmentDust": 0,
+      "latent": "AF_COUNTER rawQ 805",
+      "acquisition": "Exact R368 daily-report record: naturalRollIndex 326, sourceRegion R03, operationID 36810000-0001-4001-8000-000000000091; later dropped from final snapshot retention window."
+    },
+    {
+      "comparison": "R377 smith control",
+      "challenge": "CH_R04_02",
+      "actorSlot": "C_SMITH|weapon",
+      "uuid": "B72CE760-9884-5D4F-8111-8709C8369782",
+      "template": "EQ_S_01",
+      "quality": "Q1",
+      "enhancement": 0,
+      "refinement": 0,
+      "investmentDust": 0,
+      "latent": "AF_CRIT rawQ 673",
+      "acquisition": "Exact R368 daily-report record: naturalRollIndex 79, sourceRegion R01, operationID 36810000-0001-4001-8000-00000000001F; later dropped from final snapshot retention window."
+    }
+  ],
+  "recipeAlternatives": [
+    {
+      "recipe": "RC_EQ_W_P1",
+      "output": "EQ_W_P1",
+      "parent": "EQ_W_01",
+      "costs": {
+        "M_R02_E1": 16,
+        "M_R02_G4": 16,
+        "M_R02_BA": 1
+      },
+      "gate": "G_R02_A",
+      "result": "Not in R368 craftedRecipeIDs; final save materials M_R02_E1=1, M_R02_G4=272, M_R02_BA=1, so recipe could not be reconstructed from end inventory. This is an alternative route, not proven provenance for UUID 6CA..."
+    },
+    {
+      "recipe": "RC_EQ_W_G2",
+      "output": "EQ_W_G2",
+      "parent": "EQ_W_G1",
+      "costs": {
+        "M_R04_BB": 2,
+        "M_R05_E3": 28,
+        "M_R05_BA": 2
+      },
+      "gate": "G_R05_A",
+      "result": "Not in R368 craftedRecipeIDs or evolvedRecipeIDs; final save materials M_R04_BB=5, M_R05_E3=1, M_R05_BA=1, so this recipe is short E3 and BA. A day-2 free-summon row lists the template, but is not joined to UUID 68C..."
+    }
+  ],
+  "outcomes": {
+    "r376": {
+      "status": "OBSERVATIONAL_PAIRED_PREVIEWS_NOT_BALANCE_ACCEPTANCE",
+      "rows": 6,
+      "challenge": "CH_R02_01",
+      "seeds": [
+        37601,
+        37602,
+        37603
+      ],
+      "allWin": true,
+      "directTicks": [
+        9,
+        9,
+        12
+      ],
+      "poisonTicks": [
+        9,
+        9,
+        9
+      ],
+      "directPartyHPLoss": [
+        20,
+        22,
+        29
+      ],
+      "poisonPartyHPLoss": [
+        20,
+        22,
+        25
+      ],
+      "poisonEventsCandidatePerSeed": {
+        "poison_seed": 2,
+        "poison_stack": 2,
+        "poison_tick": [
+          5,
+          5,
+          6
+        ]
+      },
+      "limits": "Paired Q0, +0, refinement0, investment0 and equal catalog weapon attack +3. Natural latent distributions differ (candidate DOT_RESIST plus other rolls vs direct DEF etc.); outcomes are descriptive, not isolated causal value."
+    },
+    "r377Barrier": {
+      "rows": 6,
+      "challenge": "CH_R02_02",
+      "seeds": [
+        37701,
+        37702,
+        37703
+      ],
+      "allWinBothArms": true,
+      "candidateTicks": [
+        18,
+        17,
+        18
+      ],
+      "controlTicks": [
+        18,
+        17,
+        18
+      ],
+      "candidatePartyHPLoss": [
+        92,
+        72,
+        87
+      ],
+      "controlPartyHPLoss": [
+        93,
+        73,
+        88
+      ],
+      "candidateObservedPerSeed": {
+        "barrier": 1,
+        "barrier_absorb": 1,
+        "reflect": 1
+      },
+      "controlObservedPerSeed": {
+        "barrier": 0,
+        "barrier_absorb": 0,
+        "reflect": 0
+      },
+      "limits": "No-reward previews; Q0/+0/investment0 and same template attack, but different natural latent rolls. Not a pure effect magnitude estimate."
+    },
+    "r377CounterContext": {
+      "rows": 6,
+      "challenge": "CH_R04_02",
+      "seeds": [
+        37701,
+        37702,
+        37703
+      ],
+      "candidateCounterCounts": [
+        0,
+        1,
+        0
+      ],
+      "controlCounterCounts": [
+        0,
+        1,
+        0
+      ],
+      "limits": "The one counter event occurs in both arms for seed 37702, so these rows do not establish a candidate-specific counter uplift."
+    },
+    "r377HealingContext": {
+      "rows": 6,
+      "challenge": "CH_R02_01",
+      "seeds": [
+        37701,
+        37702,
+        37703
+      ],
+      "healingEventsCandidate": [
+        0,
+        0,
+        0
+      ],
+      "healingEventsControl": [
+        0,
+        0,
+        0
+      ],
+      "runnerTest": "R377 expected-heal assertion failed; no heal observed in these rows. This is unobserved for this fixture, not proof the feature is absent."
+    }
+  },
+  "receiptIntegrity": {
+    "candidateR004": {
+      "outerStatus": "INCOMPLETE_RETAINED",
+      "rawLog": "Executed 10 tests: 7 passed, 3 failed. R376 failed on runtime fingerprint assertion (expected f509… R230 fingerprint versus integrated 2ba…); R377 failed occupiedSlotSetMismatch; R384 catalog consistency fixture failed. Raw test log SHA 458e3e69219a9427f121a32b67044ca421af0ac53a373e634c5831f92512ef76."
+    },
+    "resumeR006": "Outer RUN says no tests had started, but carries testVerdict passed/failed entries and reports/r376 and reports/r377. Do not merge it into a clean pass or overwrite the candidateR004 raw test verdict.",
+    "reportBoundary": "The saved R376/R377 JSON reports contain 6 and 24 preview rows respectively, but the R387 receipts conflict. Treat rows as archived forecast output, not a fully accepted test batch."
+  },
+  "persistedCommandCoverage": {
+    "existing": "Core has generic persisted command-path evidence. GearSwapCombatPreviewR131Tests.testBothUnassignedCandidatesAndActualEquipResolveMatch compares preview to actual .equip then .resolveChallenge, but the test uses in-memory SaveRepository(initial:), not file-backed cold reopen. EquipmentLoadoutsR342Tests uses file-backed SaveRepository, dispatches equip/save/apply/clear, reopens and checks exact snapshot/receipt; it does not resolve a challenge in that sequence. CurrentProfileProgressionE2ERunnerR120Tests dispatches actual .resolveChallenge and reopens file-backed SaveRepository after every virtual day, asserting snapshot equality.",
+    "assessment": "No general SaveRepository or equip/resolve defect identified. What is missing is a persisted paired comparison of these exact R368 UUIDs, where each copy dispatches actual .equip + .resolveChallenge, stores lastCombatResult/receipt, and cold-reopens. That is a narrow evidence gap if R376/R377 are to substantiate persistent alternative-build outcomes; it is not evidence of a broken persistence implementation.",
+    "smallestOptionalReplay": "Two isolated file-backed copies of the pinned R368 snapshot: one C_WITCH weapon = BC499... control, the other = 6CA... or 68C... candidate. Dispatch equip and one matching challenge per pair with the same seed, assert receipt/revision, expected loadout UUID and lastCombatResult across reopen. Keep acquisition route UNKNOWN for 6CA/68C unless a UUID-to-draw record exists. No reward or balance claim."
+  },
+  "conclusion": "The pairs are owned in a free/no-ad simulated 30-day R368 cohort; direct EQ_W_01 and both EQ_S_01 records have daily-report natural UUID joins, while poison EQ_W_P1 and barrier EQ_W_G2 lack an exact per-instance origin join. Summon logs make gacha a plausible route for those templates, not proven provenance for the UUIDs. Existing results demonstrate descriptive preview behavior (poison events; barrier/absorb/reflect events), not causal effect magnitude, persisted paired resolution, or approved balance. No product-code defect established."
+}

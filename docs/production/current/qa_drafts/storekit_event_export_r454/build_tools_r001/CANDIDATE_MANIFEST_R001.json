@@ -1,0 +1,61 @@
+{
+  "buildExecuted": false,
+  "bundleIdentifier": "local.witch.autonomous.r1.storekit.r454",
+  "expectedResourceCount": 1922,
+  "files": {
+    "INPUT_MANIFEST_R001.json": {
+      "sha256": "c88abae2e41e7617b513932c7725be4597efd045ea4fb96e5ef6f446b1fdd1ef",
+      "sizeBytes": 300153
+    },
+    "NATIVE_SOURCE_MAP_R001.json": {
+      "sha256": "f7e90c5caadce71ad72e1612ae2f06094092a90d4b43cd4840a16607be0e1efe",
+      "sizeBytes": 28802
+    },
+    "README.md": {
+      "sha256": "3ac6cd3aa30a3fddb2bb01beec6d72963af68530d071f0241c9cf6749739544b",
+      "sizeBytes": 2600
+    },
+    "ROOT_SEALED_CONTRACT_R001.template.json": {
+      "sha256": "f51e15026f0ebfa6da4d0d00114936d8200affb4d78871d3eddf34bab58548eb",
+      "sizeBytes": 1722
+    },
+    "build_r001.py": {
+      "sha256": "a7fb2f6bb0119ec2a42d44700480c4afd06f6c3fe77c8fd738f3a27f9e5d7f3e",
+      "sizeBytes": 34498
+    },
+    "normalize_r001.py": {
+      "sha256": "fe6d17095d05a6754c4cfecb1e345e082081a64bf46115c8eb046a963ea5f0e9",
+      "sizeBytes": 3431
+    }
+  },
+  "freezeExecuted": false,
+  "installOrLaunch": false,
+  "launchToken": "45400000-0000-4000-8000-000000000001",
+  "limits": {
+    "allocatedOutputBytes": 2000000000,
+    "attempts": 1,
+    "freezePlusDebugAggregateSeconds": 600,
+    "install": false,
+    "launch": false,
+    "minimumFreeBytes": 20000000000,
+    "safetyReserveBytes": 2000000000
+  },
+  "notes": [
+    "Candidate preparation only; no freeze/build/install/launch or Simulator operation.",
+    "Runner preserves the completed R445 Release contract and keeps R454 Core test output under core_r001 isolated.",
+    "Root must review and seal exact source map, R445 receipt/tree pins and contract; this manifest is not execution authority."
+  ],
+  "profileFingerprint": "62ce1ce493d34a7864cd7c7c1a5ee17aebdc8891b2b7b8dcb4eb7e6534c06e99",
+  "schema": "storekit-event-export-r454-build-candidate-manifest-r001-v1",
+  "sourceCount": 238,
+  "sourceMapProvisional": true,
+  "status": "CANDIDATE_UNSEALED",
+  "validation": {
+    "execution": "NOT_RUN",
+    "jsonParse": "PASS",
+    "pythonAST": "PASS",
+    "sourceMap": "238 current files; Root must reseal exact map before use"
+  },
+  "workspace": "native/build/ActiveIntegrationR454/native_r001/<input-key>",
+  "xcodeRunWithoutBuilding": "Use generated project/scheme and same workspace/Derived Data path recorded in BUILD_STATE_R001; no copied app or rebuild."
+}

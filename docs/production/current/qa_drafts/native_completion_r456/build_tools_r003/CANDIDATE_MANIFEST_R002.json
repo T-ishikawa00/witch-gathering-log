@@ -1,0 +1,44 @@
+{
+  "schema": "native-completion-r456-builder-candidate-r002-v1",
+  "status": "PREPARED_NOT_ROOT_SEALED",
+  "executionPerformed": false,
+  "staticCheck": "Python AST parse only; no runner invocation",
+  "files": {
+    "build_r456.py": {
+      "sha256": "b5f18b91864a73142e8206faf786ed56ec1c23bbb3acd87dd8a107ef4d56b99e",
+      "sizeBytes": 17137
+    },
+    "INPUT_MANIFEST_R001.template.json": {
+      "sha256": "b23523d8cca1dacda0147b827c63703a9489d71f2447b9abb805d022fb19d3a1",
+      "sizeBytes": 2526
+    },
+    "ROOT_SEAL_R001.template.json": {
+      "sha256": "dc481fc998424fa23c7c70d87d8d4d9eaabcd5a42cda0dace52cccf66b08faa2",
+      "sizeBytes": 981
+    },
+    "README_R001.md": {
+      "sha256": "42fc1340bc065d1cbf91739920647f6a6af05237542022a5da767bc9b06e6e40",
+      "sizeBytes": 1634
+    }
+  },
+  "frozenInputs": {
+    "sourceCount": 238,
+    "sourceMapSHA256": "f7e90c5caadce71ad72e1612ae2f06094092a90d4b43cd4840a16607be0e1efe",
+    "resourceCount": 1922,
+    "resourceMapSHA256": "90d213640ea8bf1ac0791ece0b2bfa01f68228e3eed3d56479b8c5628b3cc7de",
+    "R454ProjectPBXSHA256": "<must be replaced by final R004 generated project SHA>"
+  },
+  "limits": {
+    "attempts": 1,
+    "aggregateSeconds": 600,
+    "perTargetSeconds": 600,
+    "maxAllocatedOutputBytes": 2000000000,
+    "safetyReserveBytes": 2000000000,
+    "requiredStartFreeBytes": 22000000000,
+    "minimumFreeBytes": 20000000000,
+    "install": false,
+    "launch": false,
+    "freeze": false,
+    "resourceCopy": false
+  }
+}

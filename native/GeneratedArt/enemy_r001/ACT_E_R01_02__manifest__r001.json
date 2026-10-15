@@ -1,0 +1,384 @@
+{
+  "schema": "witch_candidate_enemy_spritesheet_r001",
+  "status": "GENERATED_CANDIDATE_IDENTITY_REVIEWED_NOT_HUMAN_ADOPTED_NOT_RUNTIME_ACCEPTED",
+  "asset_id": "ACT_E_R01_02",
+  "display_name": "糸灯ぐも",
+  "created_with": "built-in image_gen; transparent_background=true; edit pass 2",
+  "source_image": "/Users/PUBLIC_USER/.codex/generated_images/01a12399-b8c7-76a0-adb6-39606fe83b65/exec-9ca18d28-2642-4c86-a405-c27e1dc4fa88.png",
+  "source_sha256": "1bbb3a9943faaa9ee9662dba405e05588a1ff3581ab0b8f98c023880d76040cf",
+  "sheet_path": "ACT_E_R01_02__sprite_sheet__r001.png",
+  "sha256": "1bbb3a9943faaa9ee9662dba405e05588a1ff3581ab0b8f98c023880d76040cf",
+  "bytes": 2602725,
+  "reference": {
+    "path": "native/Art/ActorStills/ACT_E_R01_02/ACT_E_R01_02__still__E_R01_02_base_v2.png",
+    "sha256": "576d65caf7459a2dfeb207cbfd54fc741ba7b552a141d677e0bf516901a22864",
+    "role": "existing full-body character design; preserve identity"
+  },
+  "canvas_px": [
+    1536,
+    1024
+  ],
+  "color_mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    254
+  ],
+  "transparency": {
+    "fully_transparent_pixels": 809216,
+    "fully_transparent_fraction": 0.5144856770833334,
+    "opaque_255_pixels": 0,
+    "per_cell_border_rule": "each cell border contains zero pixels with alpha >16; faint alpha 1-2/255 on a few borders retained unchanged"
+  },
+  "grid": {
+    "columns": 3,
+    "rows": 3,
+    "x_edges_px": [
+      0,
+      512,
+      1024,
+      1536
+    ],
+    "y_edges_px": [
+      0,
+      341,
+      683,
+      1024
+    ],
+    "row_heights_px": [
+      341,
+      342,
+      341
+    ],
+    "cells": [
+      {
+        "pose": "idle_1",
+        "cell_px": [
+          0,
+          0,
+          512,
+          341
+        ],
+        "bbox_alpha_ge_16_px": [
+          48,
+          16,
+          450,
+          336
+        ],
+        "border_alpha": {
+          "top": {
+            "max_alpha": 0,
+            "pixels_alpha_gt_16": 0
+          },
+          "bottom": {
+            "max_alpha": 0,
+            "pixels_alpha_gt_16": 0
+          },
+          "left": {
+            "max_alpha": 0,
+            "pixels_alpha_gt_16": 0
+          },
+          "right": {
+            "max_alpha": 0,
+            "pixels_alpha_gt_16": 0
+          }
+        }
+      },
+      {
+        "pose": "idle_2",
+        "cell_px": [
+          512,
+          0,
+          1024,
+          341
+        ],
+        "bbox_alpha_ge_16_px": [
+          553,
+          16,
+          966,
+          336
+        ],
+        "border_alpha": {
+          "top": {
+            "max_alpha": 0,
+            "pixels_alpha_gt_16": 0
+          },
+          "bottom": {
+            "max_alpha": 0,
+            "pixels_alpha_gt_16": 0
+          },
+          "left": {
+            "max_alpha": 0,
+            "pixels_alpha_gt_16": 0
+          },
+          "right": {
+            "max_alpha": 0,
+            "pixels_alpha_gt_16": 0
+          }
+        }
+      },
+      {
+        "pose": "walk_1",
+        "cell_px": [
+          1024,
+          0,
+          1536,
+          341
+        ],
+        "bbox_alpha_ge_16_px": [
+          1033,
+          16,
+          1488,
+          336
+        ],
+        "border_alpha": {
+          "top": {
+            "max_alpha": 0,
+            "pixels_alpha_gt_16": 0
+          },
+          "bottom": {
+            "max_alpha": 1,
+            "pixels_alpha_gt_16": 0
+          },
+          "left": {
+            "max_alpha": 0,
+            "pixels_alpha_gt_16": 0
+          },
+          "right": {
+            "max_alpha": 0,
+            "pixels_alpha_gt_16": 0
+          }
+        }
+      },
+      {
+        "pose": "walk_2",
+        "cell_px": [
+          0,
+          341,
+          512,
+          683
+        ],
+        "bbox_alpha_ge_16_px": [
+          49,
+          357,
+          490,
+          680
+        ],
+        "border_alpha": {
+          "top": {
+            "max_alpha": 0,
+            "pixels_alpha_gt_16": 0
+          },
+          "bottom": {
+            "max_alpha": 1,
+            "pixels_alpha_gt_16": 0
+          },
+          "left": {
+            "max_alpha": 0,
+            "pixels_alpha_gt_16": 0
+          },
+          "right": {
+            "max_alpha": 0,
+            "pixels_alpha_gt_16": 0
+          }
+        }
+      },
+      {
+        "pose": "anticipate",
+        "cell_px": [
+          512,
+          341,
+          1024,
+          683
+        ],
+        "bbox_alpha_ge_16_px": [
+          578,
+          357,
+          952,
+          664
+        ],
+        "border_alpha": {
+          "top": {
+            "max_alpha": 0,
+            "pixels_alpha_gt_16": 0
+          },
+          "bottom": {
+            "max_alpha": 0,
+            "pixels_alpha_gt_16": 0
+          },
+          "left": {
+            "max_alpha": 0,
+            "pixels_alpha_gt_16": 0
+          },
+          "right": {
+            "max_alpha": 0,
+            "pixels_alpha_gt_16": 0
+          }
+        }
+      },
+      {
+        "pose": "execute",
+        "cell_px": [
+          1024,
+          341,
+          1536,
+          683
+        ],
+        "bbox_alpha_ge_16_px": [
+          1039,
+          344,
+          1483,
+          666
+        ],
+        "border_alpha": {
+          "top": {
+            "max_alpha": 1,
+            "pixels_alpha_gt_16": 0
+          },
+          "bottom": {
+            "max_alpha": 0,
+            "pixels_alpha_gt_16": 0
+          },
+          "left": {
+            "max_alpha": 0,
+            "pixels_alpha_gt_16": 0
+          },
+          "right": {
+            "max_alpha": 0,
+            "pixels_alpha_gt_16": 0
+          }
+        }
+      },
+      {
+        "pose": "recover",
+        "cell_px": [
+          0,
+          683,
+          512,
+          1024
+        ],
+        "bbox_alpha_ge_16_px": [
+          47,
+          698,
+          476,
+          1022
+        ],
+        "border_alpha": {
+          "top": {
+            "max_alpha": 1,
+            "pixels_alpha_gt_16": 0
+          },
+          "bottom": {
+            "max_alpha": 2,
+            "pixels_alpha_gt_16": 0
+          },
+          "left": {
+            "max_alpha": 0,
+            "pixels_alpha_gt_16": 0
+          },
+          "right": {
+            "max_alpha": 0,
+            "pixels_alpha_gt_16": 0
+          }
+        }
+      },
+      {
+        "pose": "hit",
+        "cell_px": [
+          512,
+          683,
+          1024,
+          1024
+        ],
+        "bbox_alpha_ge_16_px": [
+          587,
+          694,
+          962,
+          997
+        ],
+        "border_alpha": {
+          "top": {
+            "max_alpha": 0,
+            "pixels_alpha_gt_16": 0
+          },
+          "bottom": {
+            "max_alpha": 0,
+            "pixels_alpha_gt_16": 0
+          },
+          "left": {
+            "max_alpha": 0,
+            "pixels_alpha_gt_16": 0
+          },
+          "right": {
+            "max_alpha": 0,
+            "pixels_alpha_gt_16": 0
+          }
+        }
+      },
+      {
+        "pose": "resolve",
+        "cell_px": [
+          1024,
+          683,
+          1536,
+          1024
+        ],
+        "bbox_alpha_ge_16_px": [
+          1054,
+          688,
+          1485,
+          1014
+        ],
+        "border_alpha": {
+          "top": {
+            "max_alpha": 0,
+            "pixels_alpha_gt_16": 0
+          },
+          "bottom": {
+            "max_alpha": 1,
+            "pixels_alpha_gt_16": 0
+          },
+          "left": {
+            "max_alpha": 0,
+            "pixels_alpha_gt_16": 0
+          },
+          "right": {
+            "max_alpha": 0,
+            "pixels_alpha_gt_16": 0
+          }
+        }
+      }
+    ]
+  },
+  "pose_order": [
+    "idle_1",
+    "idle_2",
+    "walk_1",
+    "walk_2",
+    "anticipate",
+    "execute",
+    "recover",
+    "hit",
+    "resolve"
+  ],
+  "fps": null,
+  "timing_status": "UNKNOWN_NOT_AUTHORED",
+  "anchor": null,
+  "anchor_status": "UNKNOWN_NOT_AUTHORED",
+  "visual_identity_review": {
+    "result": "RECOGNIZABLE_IDENTITY_MATCH_CANDIDATE_ONLY",
+    "observed_preserved": [
+      "leafy brown abdomen",
+      "golden glowing back markings",
+      "cream silk band",
+      "segmented orange-jointed legs",
+      "multi-eye face"
+    ],
+    "limitations": [
+      "generated texture/outline differs from source pixels",
+      "limb counts/attachment and each pose require frame-level review",
+      "no character adoption approval",
+      "not integrated into game or iPhone verified"
+    ]
+  },
+  "prompt": "Create nine distinct full-body frames for the same forest spider. Preserve warm brown striped furry abdomen, leafy green tufts, luminous golden back eggs/markings, cream woven silk band, eight segmented legs with orange joints, large central amber eyes and smaller surrounding eyes. 3x3 transparent-alpha sheet, fixed direction and scale; row1 idle1/idle2/walk1; row2 walk2/anticipate/execute; row3 recover/hit/resolve. Keep every pose within its own cell, no backgrounds, shadows, labels, borders, or extra objects."
+}

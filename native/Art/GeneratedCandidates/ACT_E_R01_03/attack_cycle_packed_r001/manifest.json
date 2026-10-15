@@ -1,0 +1,427 @@
+{
+  "schema": "witch.enemy_attack_cycle_candidate.v1",
+  "actorId": "ACT_E_R01_03",
+  "revision": "attack_cycle_packed_r001",
+  "status": "UNAPPROVED_PARTIAL_ATTACK_MOTION_CANDIDATE",
+  "sourceApprovedStill": "ActorStills/ACT_E_R01_03/ACT_E_R01_03__still__E_R01_03_base_v1.png",
+  "sourceApprovedStillSHA256": "de6df63b4a472fae0ab5385aeffd66038414c3087aa19368b13be8b5ecb42bf3",
+  "sourceAtlas": "GeneratedCandidates/ACT_E_R01_03/attack_cycle_r001/imagegen_atlas_corrected.png",
+  "sourceAtlasSHA256": "32b6cfdb7996b40fde3e9c48e947e4790f48076f5bc7aa11d2b06d69c60bed88",
+  "atlasPx": [
+    1536,
+    1024
+  ],
+  "gridXEdgesPx": [
+    0,
+    512,
+    1024,
+    1536
+  ],
+  "gridYEdgesPx": [
+    0,
+    341,
+    683,
+    1024
+  ],
+  "phaseOrder": [
+    "anticipate_000..002",
+    "execute_000..002",
+    "recover_000..002"
+  ],
+  "runtimeCanvasPx": [
+    512,
+    512
+  ],
+  "candidateAnchorPx": [
+    256,
+    300
+  ],
+  "candidateDisplayScale": 0.893878,
+  "candidateWalkAlpha16HeightsPx": [
+    319,
+    282,
+    218,
+    219,
+    185,
+    184,
+    215,
+    263,
+    302
+  ],
+  "targetDisplayAlpha16HeightPx": 219.0,
+  "newAttackAlpha16HeightsPx": [
+    225,
+    251,
+    253,
+    235,
+    234,
+    224,
+    245,
+    249,
+    255
+  ],
+  "movementSemantics": "airborne leaf-wing slash: brief wing draw-back, alternating blade-wing sweep, wings re-open for recovery",
+  "packing": "Exact source cell RGBA copied into runtime transparent canvas; no resize, recolor, alpha cleanup or drawing.",
+  "frameRecords": [
+    {
+      "frame": "anticipate_000.png",
+      "phase": "anticipate",
+      "sourceCellBoundsPx": [
+        0,
+        0,
+        512,
+        341
+      ],
+      "sourceCellPx": [
+        512,
+        341
+      ],
+      "sourceAlpha16BBox": [
+        95,
+        83,
+        415,
+        308
+      ],
+      "sourceAlpha16MarginsLTRB": [
+        95,
+        83,
+        97,
+        33
+      ],
+      "sourceAlpha16EdgePixels": 0,
+      "packingOffsetPx": [
+        0,
+        61
+      ],
+      "packedAlpha16BBox": [
+        95,
+        144,
+        415,
+        369
+      ],
+      "allSourceCellRGBABytesPreserved": true,
+      "sha256": "e6c5bae0fcf7bb4f79625cd7c4322dc989c1422ec0ef54f8a90bc9c744a5b76f"
+    },
+    {
+      "frame": "anticipate_001.png",
+      "phase": "anticipate",
+      "sourceCellBoundsPx": [
+        512,
+        0,
+        1024,
+        341
+      ],
+      "sourceCellPx": [
+        512,
+        341
+      ],
+      "sourceAlpha16BBox": [
+        95,
+        57,
+        401,
+        308
+      ],
+      "sourceAlpha16MarginsLTRB": [
+        95,
+        57,
+        111,
+        33
+      ],
+      "sourceAlpha16EdgePixels": 0,
+      "packingOffsetPx": [
+        0,
+        74
+      ],
+      "packedAlpha16BBox": [
+        95,
+        131,
+        401,
+        382
+      ],
+      "allSourceCellRGBABytesPreserved": true,
+      "sha256": "654f2ff6fb93956e3b7a3261f9eb065aa0d0a383dfaa648ce10b109a430ca948"
+    },
+    {
+      "frame": "anticipate_002.png",
+      "phase": "anticipate",
+      "sourceCellBoundsPx": [
+        1024,
+        0,
+        1536,
+        341
+      ],
+      "sourceCellPx": [
+        512,
+        341
+      ],
+      "sourceAlpha16BBox": [
+        80,
+        56,
+        419,
+        309
+      ],
+      "sourceAlpha16MarginsLTRB": [
+        80,
+        56,
+        93,
+        32
+      ],
+      "sourceAlpha16EdgePixels": 0,
+      "packingOffsetPx": [
+        0,
+        74
+      ],
+      "packedAlpha16BBox": [
+        80,
+        130,
+        419,
+        383
+      ],
+      "allSourceCellRGBABytesPreserved": true,
+      "sha256": "8044c78dbe7869d7370f8f124333ea89d403415e720523460d0530dfc84dd05f"
+    },
+    {
+      "frame": "execute_000.png",
+      "phase": "execute",
+      "sourceCellBoundsPx": [
+        0,
+        341,
+        512,
+        683
+      ],
+      "sourceCellPx": [
+        512,
+        342
+      ],
+      "sourceAlpha16BBox": [
+        96,
+        45,
+        424,
+        280
+      ],
+      "sourceAlpha16MarginsLTRB": [
+        96,
+        45,
+        88,
+        62
+      ],
+      "sourceAlpha16EdgePixels": 0,
+      "packingOffsetPx": [
+        0,
+        94
+      ],
+      "packedAlpha16BBox": [
+        96,
+        139,
+        424,
+        374
+      ],
+      "allSourceCellRGBABytesPreserved": true,
+      "sha256": "0914dfca4a2bafdadb6eeba6971f0ace651774230cdd02baa70f3172cca41c01"
+    },
+    {
+      "frame": "execute_001.png",
+      "phase": "execute",
+      "sourceCellBoundsPx": [
+        512,
+        341,
+        1024,
+        683
+      ],
+      "sourceCellPx": [
+        512,
+        342
+      ],
+      "sourceAlpha16BBox": [
+        81,
+        46,
+        420,
+        280
+      ],
+      "sourceAlpha16MarginsLTRB": [
+        81,
+        46,
+        92,
+        62
+      ],
+      "sourceAlpha16EdgePixels": 0,
+      "packingOffsetPx": [
+        0,
+        94
+      ],
+      "packedAlpha16BBox": [
+        81,
+        140,
+        420,
+        374
+      ],
+      "allSourceCellRGBABytesPreserved": true,
+      "sha256": "6701dc7c3d57d2a0de86112c5a792dfba0ceebb66c1a6c95a1c3cebd29ace9df"
+    },
+    {
+      "frame": "execute_002.png",
+      "phase": "execute",
+      "sourceCellBoundsPx": [
+        1024,
+        341,
+        1536,
+        683
+      ],
+      "sourceCellPx": [
+        512,
+        342
+      ],
+      "sourceAlpha16BBox": [
+        61,
+        57,
+        420,
+        281
+      ],
+      "sourceAlpha16MarginsLTRB": [
+        61,
+        57,
+        92,
+        61
+      ],
+      "sourceAlpha16EdgePixels": 0,
+      "packingOffsetPx": [
+        0,
+        88
+      ],
+      "packedAlpha16BBox": [
+        61,
+        145,
+        420,
+        369
+      ],
+      "allSourceCellRGBABytesPreserved": true,
+      "sha256": "fd973644337549a533c279f3905aa5ec140ee8eb57a2bc89cbe0a7e9553e59b2"
+    },
+    {
+      "frame": "recover_000.png",
+      "phase": "recover",
+      "sourceCellBoundsPx": [
+        0,
+        683,
+        512,
+        1024
+      ],
+      "sourceCellPx": [
+        512,
+        341
+      ],
+      "sourceAlpha16BBox": [
+        92,
+        31,
+        434,
+        276
+      ],
+      "sourceAlpha16MarginsLTRB": [
+        92,
+        31,
+        78,
+        65
+      ],
+      "sourceAlpha16EdgePixels": 0,
+      "packingOffsetPx": [
+        0,
+        103
+      ],
+      "packedAlpha16BBox": [
+        92,
+        134,
+        434,
+        379
+      ],
+      "allSourceCellRGBABytesPreserved": true,
+      "sha256": "a268c806d48784774faa98a3d3cba5c94fdd1f66ee25bfcb0513ae1530437123"
+    },
+    {
+      "frame": "recover_001.png",
+      "phase": "recover",
+      "sourceCellBoundsPx": [
+        512,
+        683,
+        1024,
+        1024
+      ],
+      "sourceCellPx": [
+        512,
+        341
+      ],
+      "sourceAlpha16BBox": [
+        95,
+        27,
+        431,
+        276
+      ],
+      "sourceAlpha16MarginsLTRB": [
+        95,
+        27,
+        81,
+        65
+      ],
+      "sourceAlpha16EdgePixels": 0,
+      "packingOffsetPx": [
+        0,
+        105
+      ],
+      "packedAlpha16BBox": [
+        95,
+        132,
+        431,
+        381
+      ],
+      "allSourceCellRGBABytesPreserved": true,
+      "sha256": "5767b7aaa8c05957bbd415d3a86f70893c4d422a1b5658867d809adcf121e0bb"
+    },
+    {
+      "frame": "recover_002.png",
+      "phase": "recover",
+      "sourceCellBoundsPx": [
+        1024,
+        683,
+        1536,
+        1024
+      ],
+      "sourceCellPx": [
+        512,
+        341
+      ],
+      "sourceAlpha16BBox": [
+        80,
+        21,
+        435,
+        276
+      ],
+      "sourceAlpha16MarginsLTRB": [
+        80,
+        21,
+        77,
+        65
+      ],
+      "sourceAlpha16EdgePixels": 0,
+      "packingOffsetPx": [
+        0,
+        108
+      ],
+      "packedAlpha16BBox": [
+        80,
+        129,
+        435,
+        384
+      ],
+      "allSourceCellRGBABytesPreserved": true,
+      "sha256": "793064e31b495ed2441799e0ac6cdba356ce17445f82c501141a110a140d5729"
+    }
+  ],
+  "qaContactDark": "qa_contact_dark.jpg",
+  "runtimeOverlay": "runtime_overlay_act_e_r01_03_attack_cycle_candidate_r001.json",
+  "visualQA": "Candidate reviewed after dark compositing; native SpriteKit screen review pending.",
+  "completeNaturalMotion": false,
+  "humanApproval": false,
+  "limitations": [
+    "3 frames per phase only; timing/transition quality needs native game review.",
+    "Do not treat as approved or naturally complete."
+  ]
+}

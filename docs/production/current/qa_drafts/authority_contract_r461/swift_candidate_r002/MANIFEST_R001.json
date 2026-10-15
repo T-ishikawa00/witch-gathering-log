@@ -1,0 +1,63 @@
+{
+  "candidate": "R461 Swift authority contract client; validation candidate only",
+  "status": "SOURCE_FROZEN_NO_SWIFT_EXECUTION",
+  "sourceFiles": [
+    {
+      "path": "docs/production/current/qa_drafts/authority_contract_r461/swift_candidate_r001/AuthorityClientContractR461.swift",
+      "bytes": 31519,
+      "sha256": "e65d5425363390ced6e0088c73ebb2259a98f3a3ef4c2590ce6370e8ee97cc78"
+    }
+  ],
+  "testFiles": [
+    {
+      "path": "docs/production/current/qa_drafts/authority_contract_r461/swift_candidate_r001/AuthorityClientContractR461Tests.swift",
+      "bytes": 23301,
+      "sha256": "58ed16e7d809c472c455edc90d14ee1e8afc607c66a42df7158efbc086dde939"
+    }
+  ],
+  "readme": {
+    "path": "docs/production/current/qa_drafts/authority_contract_r461/swift_candidate_r001/README_R001.md",
+    "bytes": 1775,
+    "sha256": "c0d973f6d29aae26a6193c9bf6a5460681c5dc70319be04fffe109101d2c94ea"
+  },
+  "sharedContract": {
+    "path": "docs/production/current/qa_drafts/authority_contract_r461/python_candidate_r001/CONTRACT_R002.json",
+    "bytes": 6736,
+    "sha256": "24e88a2e2c197e7be36a8ff6d226cd55478fed007560d398f848c35d0052830d"
+  },
+  "plannedTestMethodCount": 11,
+  "plannedTestMethods": [
+    "testRequestIsClosedAndPendingRoundTripsForRetry",
+    "testDeliveredRetryRefundAndOldSuccessAfterRefund",
+    "testTimeoutAfterPossibleServerCommitRetriesSamePersistedOperation",
+    "testPersistedObservationReloadBlocksOlderAuthoritySnapshot",
+    "testEqualRevisionConflictingStateIsRejectedWithoutOverwrite",
+    "testTamperedHistoricalDeliveryFingerprintCannotAdvanceObservation",
+    "testUnauthenticatedRejectionCannotPoisonObservation",
+    "testWrongOperationOrAccountCannotPoisonObservation",
+    "testMalformedUnknownAndNoncanonicalResponsesFailClosed",
+    "testObservationCASRejectsOlderConcurrentWriter",
+    "testPythonExchangeFixtureThroughSubmitWhenRequired"
+  ],
+  "crossLanguageFixture": {
+    "status": "PENDING_ROOT_GENERATION",
+    "requiredByTest": true,
+    "environment": [
+      "WITCH_R461_CROSS_LANGUAGE_FIXTURE_REQUIRED=1",
+      "WITCH_R461_EXCHANGE_FIXTURE_PATH",
+      "WITCH_R461_EXCHANGE_FIXTURE_SHA256"
+    ]
+  },
+  "execution": {
+    "swiftCompile": false,
+    "xctest": false,
+    "nativeBuild": false,
+    "simulator": false
+  },
+  "limits": {
+    "productionAuthorization": false,
+    "defaultTransport": false,
+    "gameSaveMutation": false,
+    "durableStorageProof": false
+  }
+}

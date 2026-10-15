@@ -1,0 +1,631 @@
+{
+  "appIdentity": {
+    "path": "docs/production/current/qa_drafts/loadouts_native_workflow_r344/root_candidate_r003/manual_run_001/development_after/last_standard_play_identity_r169.json",
+    "sha256": "cbad08d96127f4f1bd93ac6b6bc1b3a8b9ac5a3ab4919ae316c5a7d4dc0ff8a1",
+    "sizeBytes": 1682
+  },
+  "candidateInputManifest": {
+    "absolutePath": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/effect_build_comparison_r376/candidate_r002/INPUT_MANIFEST_R001.json",
+    "path": "docs/production/current/qa_drafts/effect_build_comparison_r376/candidate_r002/INPUT_MANIFEST_R001.json",
+    "sha256": "13fae7625ac99615c8a4756966ec1fa0ebd9906e6a8941c4a3e5842bad5af33b",
+    "sizeBytes": 5013
+  },
+  "candidateManifest": {
+    "path": "docs/production/current/qa_drafts/effect_build_comparison_r376/candidate_r002/MANIFEST_R001.json",
+    "sha256": "3e23afa7daf5ae78f16df3547eee27da7f12c413c900d9d99dd32ca096d2b4fa",
+    "sizeBytes": 2190
+  },
+  "execution": {
+    "expectedPreviewCount": 24,
+    "expectedTestCount": 1,
+    "rewardCommands": 0,
+    "run": "SOURCE_ONLY_NOT_RUN",
+    "saveWrites": "NONE",
+    "simulator": "NONE"
+  },
+  "fixedWorktree": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg",
+  "limits": {
+    "maxAllocatedBytes": 500000000,
+    "maxConcurrentJobs": 2,
+    "maxInvocations": 1,
+    "maxWallSeconds": 300,
+    "minimumFreeBytes": 12000000000
+  },
+  "ownedProcessHelper": {
+    "path": "docs/production/current/qa_drafts/migration_receipt_reconciliation_r356/runner_r003/run_core_r356.py",
+    "sha256": "5430a5f6b1cbdebddd2929648908a8b5cb9e052bfd54bc2daee9326ef49ba875"
+  },
+  "packageTemplate": "// swift-tools-version: 6.0\nimport PackageDescription\nlet package = Package(name: \"WitchGameCore\", platforms: [.macOS(.v14)], products: [.library(name: \"WitchGameCore\", targets: [\"WitchGameCore\"])], targets: [.target(name: \"WitchGameCore\", resources: [.process(\"Resources\")]), .testTarget(name: \"WitchGameCoreTests\", dependencies: [\"WitchGameCore\"])])\n",
+  "packageTemplateSHA256": "145fb387e527b5a765e2f95647e62afe147af44bcdd0a2302cf29151e5c95d31",
+  "pairLedger": {
+    "path": "docs/production/current/qa_drafts/effect_build_comparison_r376/candidate_r002/OWNED_PAIR_LEDGER_R001.json",
+    "sha256": "bee23409dbd3e6bc81a6b1d93f196b6fc4bb602068874000908b6e7161d7c4d7",
+    "sizeBytes": 9603
+  },
+  "pairs": [
+    {
+      "actorID": "C_WITCH",
+      "actorSlot": "C_WITCH|weapon",
+      "candidateDefinitionID": "EQ_W_G2",
+      "candidateID": "68C84620-D911-48E4-983C-15E4EF8F202E",
+      "candidateLatentAffix": "AF_CRIT_DMG",
+      "catalogAttack": 3,
+      "challengeID": "CH_R02_02",
+      "controlDefinitionID": "EQ_W_01",
+      "controlID": "BC499DA8-3B80-5536-BAFB-5143888B392C",
+      "controlLatentAffix": "AF_DEF",
+      "enhancement": 0,
+      "expectedEffectKinds": [
+        "barrier",
+        "barrier_absorb",
+        "reflect"
+      ],
+      "family": "barrier_ward",
+      "investmentDust": 0,
+      "qualityID": "Q0",
+      "refinement": 0
+    },
+    {
+      "actorID": "C_SMITH",
+      "actorSlot": "C_SMITH|weapon",
+      "candidateDefinitionID": "EQ_S_01",
+      "candidateID": "31292F32-5F63-5F71-84D9-B69BB4FC303A",
+      "candidateLatentAffix": "AF_COUNTER",
+      "catalogAttack": 3,
+      "challengeID": "CH_R04_02",
+      "controlDefinitionID": "EQ_S_01",
+      "controlID": "B72CE760-9884-5D4F-8111-8709C8369782",
+      "controlLatentAffix": "AF_CRIT",
+      "enhancement": 0,
+      "expectedEffectKinds": [
+        "counter"
+      ],
+      "family": "smith_counter_latent",
+      "investmentDust": 0,
+      "qualityID": "Q1",
+      "refinement": 0
+    },
+    {
+      "actorID": "C_APPRENTICE",
+      "actorSlot": "C_APPRENTICE|amulet",
+      "candidateDefinitionID": "EQ_AMU_01",
+      "candidateID": "7058F310-16D8-5EE8-8F36-374C8FC1C128",
+      "candidateLatentAffix": "AF_HEAL",
+      "catalogAttack": 0,
+      "challengeID": "CH_R02_01",
+      "controlDefinitionID": "EQ_AMU_01",
+      "controlID": "B2DDC107-838F-5593-9E6B-65288DA526DC",
+      "controlLatentAffix": "AF_WARD",
+      "enhancement": 0,
+      "expectedEffectKinds": [
+        "heal"
+      ],
+      "family": "apprentice_heal_latent",
+      "investmentDust": 0,
+      "qualityID": "Q1",
+      "refinement": 0
+    },
+    {
+      "actorID": "C_FAMILIAR",
+      "actorSlot": "C_FAMILIAR|weapon",
+      "candidateDefinitionID": "EQ_F_01",
+      "candidateID": "83F34619-8C4D-5FFA-8B4C-98EDDE4C9351",
+      "candidateLatentAffix": "AF_CHASE",
+      "catalogAttack": 3,
+      "challengeID": "CH_R05_03",
+      "controlDefinitionID": "EQ_F_01",
+      "controlID": "F37EC259-FF87-583E-AFA4-D4A32C9D25F3",
+      "controlLatentAffix": "AF_CRIT",
+      "enhancement": 0,
+      "expectedEffectKinds": [
+        "chase"
+      ],
+      "family": "familiar_chase_latent",
+      "investmentDust": 0,
+      "qualityID": "Q1",
+      "refinement": 0
+    }
+  ],
+  "r368InputManifest": {
+    "path": "docs/production/current/qa_drafts/normal_onboarding_progression_r368/candidate_r001/runner_r001/INPUT_MANIFEST_R001.json",
+    "sha256": "47ba83bfa951eaac593cf1059492233caec1064c959cdea6afb928a67fcf8417",
+    "sizeBytes": 28966
+  },
+  "r368PackagePath": "docs/production/current/qa_drafts/normal_onboarding_progression_r368/candidate_r001/runner_r001/runs/36800000-0001-4000-8000-000000000001/package",
+  "r368StagedRows": [
+    {
+      "destinationPath": "Sources/WitchGameCore/BattleTargetWarningR299.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "b0a845fa111201459954f1159c10871ff72265aed9c165a56c619e4d5347563a",
+      "sizeBytes": 4263,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/BattleTargetWarningR299.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/CandidateCharacterGrowth.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "936ea18d2be601dbcb2f929056939c0a44b64e5da236c320d4ef3d9f14f4fb29",
+      "sizeBytes": 3754,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/CandidateCharacterGrowth.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/CandidateCombatOverlay.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "8950b0b9eb7f3ee748f0fdcefc0d3404464c49386412fd6751b859925a25de7e",
+      "sizeBytes": 1203,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/CandidateCombatOverlay.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/CandidateLatentCombatModifiersR005.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "4dfd19f468d5141f1d3db7fdf370f79ea9894ceb3b8c28230b4515d33fb5df3d",
+      "sizeBytes": 10517,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/CandidateLatentCombatModifiersR005.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/CandidateLatentSlotPolicyR003.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "e0090faebb1cd0f4547afbee74f9d4af1e6b4b668ea7d3db97560cc63329f4eb",
+      "sizeBytes": 27961,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/CandidateLatentSlotPolicyR003.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/CombatSimulator.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "9cd4896eb6b3de52831885c66c81b2d16bc5dea09f2001fb57b0f3b85a0eeb3e",
+      "sizeBytes": 23390,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/CombatSimulator.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/Domain.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "9e4df37260d5e39a8e6354121f9ccd5ad9a4202bf16b493f8878ce6480d92eda",
+      "sizeBytes": 67101,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/Domain.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/EnemyActionPreviewFixture.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "81d85338bde9e018549c2ebc741fe85a79781c4a61245bf4fc130ba23bbee69d",
+      "sizeBytes": 12451,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/EnemyActionPreviewFixture.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/EnemyExecuteCoalescerR154.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "32d8dee344ef73327c34ab79818575cfb9f633ab85c041543e49995a260facc9",
+      "sizeBytes": 4666,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/EnemyExecuteCoalescerR154.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/EquippedVisualCandidates.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "3e42305d7a05d516d1948753e2f036570dc8b79c7bf10d0e5d2c4c5bb8f9ad20",
+      "sizeBytes": 2322,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/EquippedVisualCandidates.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/FirstCraftCostR179.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "c7dd81356dbaa94ba24abe9c43617bb636ab318e22f19be3ab77b152866e13e5",
+      "sizeBytes": 2977,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/FirstCraftCostR179.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/GameEngine.swift",
+      "mode": 420,
+      "role": "override",
+      "sha256": "c50d7418a1442c7f8b5a5ecd1b0a76f937877fc90267cb0b2460fb6645347b65",
+      "sizeBytes": 112025,
+      "sourcePath": "docs/production/current/qa_drafts/migration_receipt_reconciliation_r356/CoreR001/GameEngine.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/GameRuntimeConfigurationR098.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "a84170f54ba86e8a33268d179d5b5af2c1d84dada24c3991c2cd4e636c7424f8",
+      "sizeBytes": 14041,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/GameRuntimeConfigurationR098.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/GameRuntimeDismantleProfileR353.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "8c305e464cae72a5d04decd505a54ec8bac7e3f5b34db625ad4da9c6f847158d",
+      "sizeBytes": 1022,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/GameRuntimeDismantleProfileR353.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/GameRuntimeEnhancementProfileR230.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "d0d1734213cc8f2fd70c8932f934dc42a62f99dc6abfe4be6565ff71fc36ee0b",
+      "sizeBytes": 3720,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/GameRuntimeEnhancementProfileR230.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/GameRuntimeIntegratedEquipmentProfileR355.swift",
+      "mode": 420,
+      "role": "candidate_helper",
+      "sha256": "11de7ac1272be08ab071346d8c88982ebbb3761d06af8ba763c714ac04833f45",
+      "sizeBytes": 2157,
+      "sourcePath": "docs/production/current/qa_drafts/integrated_equipment_progression_r355/candidate_r004/GameRuntimeIntegratedEquipmentProfileR355.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/GameRuntimeNaturalGearProfileR350.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "525746883697ed54bf0d08c1b81635e8a50d37e564b2415559c0b394af35d8ef",
+      "sizeBytes": 1018,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/GameRuntimeNaturalGearProfileR350.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/GameRuntimeRefinementProfileR352.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "65be9d139a43f17ae52a5966273d9aa9830952bec88af34de2e78bbde6b8ac66",
+      "sizeBytes": 1022,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/GameRuntimeRefinementProfileR352.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/GatheringProgressProjectionR041.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "d74aebad17946cf726215a1fe7c4a0a794b7ddb8acaa9dbcaf67e669c1e2e7f7",
+      "sizeBytes": 2332,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/GatheringProgressProjectionR041.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/GearAppearanceProjection.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "dc22dda14c754d5b0dd9fd80f69b0f1debac581bb9354ae8907a047d1229b663",
+      "sizeBytes": 5229,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/GearAppearanceProjection.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/GearComparisonPartnerSelectionR210.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "2061d45445f75436857d3a940dfdf6134864dc9f9dc1f2f952f992d80fcdc491",
+      "sizeBytes": 2903,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/GearComparisonPartnerSelectionR210.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/GearDismantleRefundR353.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "4367cc457d28bf3ec6f2ddd7a20a91a19f7a5ac46752532cd682e74dbb5acf90",
+      "sizeBytes": 4775,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/GearDismantleRefundR353.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/GearEnhancementGrowthR230.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "ac70f667e1bf8c90d6d1cbdbf7029d469c87b52316faf0f0a5a4a9533a56ceb4",
+      "sizeBytes": 3866,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/GearEnhancementGrowthR230.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/GearSwapCampaignPreviewR136.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "a53871ba468f3671cfce4fb9a9f64a71346df410177e460e7e7ec79b96fbfe0a",
+      "sizeBytes": 1058,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/GearSwapCampaignPreviewR136.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/GearSwapCombatPreviewR131.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "f1ff84cef7b2bbaffe5a4bc0c91d46291b959876ddae600cabf117416a0d0404",
+      "sizeBytes": 1370,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/GearSwapCombatPreviewR131.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/GearSwapCombatSummaryR131.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "112decc30f79bd603a6744fc26ea368e15cf336e054ee789f2b1e6525b1824e5",
+      "sizeBytes": 2249,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/GearSwapCombatSummaryR131.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/LunaBookAppearanceCandidate.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "efbf961604ede3144ad255c814f6f154149ad6851c107c7066096b0bad12269d",
+      "sizeBytes": 2841,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/LunaBookAppearanceCandidate.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/LunaBookMotion.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "2f4139612b41ff72c0de3864d9903863475c7817ca9baf4648c62332a29da296",
+      "sizeBytes": 9136,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/LunaBookMotion.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/LunaBookMotionDataR001.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "d1b7a2fde23e4a7e3c39a08aa29488d5e61c4fd0a2a2dc36b6723bd8529994d7",
+      "sizeBytes": 9035,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/LunaBookMotionDataR001.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/LunaBookMotionDataR050Candidate.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "43639ff7c86092419ed3bb63dac1c5bf2e9054db6f6d99af207b3ad16e67fc2e",
+      "sizeBytes": 792,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/LunaBookMotionDataR050Candidate.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/LunaBookMotionDataR088Candidate.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "6511e22887d860af7c0118867568bd1c55f775a524a5a8283eb52f4a91feb733",
+      "sizeBytes": 678,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/LunaBookMotionDataR088Candidate.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/MothIdleAnchorRegistrationR050.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "abf832f2486c79bfc3e66f94e2f4054cac2c24f2578e387c546798d80b258184",
+      "sizeBytes": 11041,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/MothIdleAnchorRegistrationR050.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/NaturalGearDiscoveryR350.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "707318742a5adfe007b0215972424a9bd7f0d14ba7e19b14b791365707abd529",
+      "sizeBytes": 11060,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/NaturalGearDiscoveryR350.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/NaturalGearRefinementR352.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "8c1a170dec3423e89d39f97fdf32a2b0e027d041fa7e5266b77aa159b456e928",
+      "sizeBytes": 6802,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/NaturalGearRefinementR352.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/OwnedPartyLoadoutPreviewR181.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "aedf2476bcc8a933caf87e5cfafd211b3444e0c59180e27459ad54bbb003d26b",
+      "sizeBytes": 1127,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/OwnedPartyLoadoutPreviewR181.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/PartyWorkPolicyR144.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "3882ea8552ea1146f215b3b8dd35d2c9e24dd5d5433ee6554733bf40676cfa74",
+      "sizeBytes": 2799,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/PartyWorkPolicyR144.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/PostClearGoalProjectionR122.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "216e5163c76b4252109bb29138fcd42a513b112c50a08e76261fbbbfd7afcdac",
+      "sizeBytes": 2569,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/PostClearGoalProjectionR122.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/R6CampaignQA.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "331c2e0c9ee139a21a6205c20e3aa2ba168c4012e1a4f8ac6977b8e4c1982058",
+      "sizeBytes": 4898,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/R6CampaignQA.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/R6CanonicalProfile.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "974db0ce605b9be6efc35d0ad03e7f37da04d949f141301f1eb1559c4a6aa734",
+      "sizeBytes": 18331,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/R6CanonicalProfile.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/R6CombatPresentationSemantics.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "09a994ec0a3fcfdb872981b8b745f5892ed15c81ac6c710c274d7369a34d0b9a",
+      "sizeBytes": 2934,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/R6CombatPresentationSemantics.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/R6TimelineSimulator.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "2385aa9b7fcec67e0b8c83299910560deff63fab3cb251281d545b87c813bc37",
+      "sizeBytes": 94188,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/R6TimelineSimulator.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/RecipeEvolutionOutcomeProjectionR129.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "8516a361085bbd77f9a5f7ae9495947cb221a3688d7a17db1bde565e7d8043f5",
+      "sizeBytes": 4207,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/RecipeEvolutionOutcomeProjectionR129.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/RecipeGatherHandoffTargetR157.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "d357c19689ba470821e95416cce04124e1e8c766831e3634b6dc650f87471e2d",
+      "sizeBytes": 1906,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/RecipeGatherHandoffTargetR157.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/RecipeGoalCoreAdapterR002.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "f4d64654272ae153a293a05d1d08155ef14857dc8c18ea8031b24181991252e7",
+      "sizeBytes": 3351,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/RecipeGoalCoreAdapterR002.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/RecipeGoalProjectionR035.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "4443337298507f3e0bfcc821570f9bd13eaa836487a08475a2186d98203ef42a",
+      "sizeBytes": 6127,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/RecipeGoalProjectionR035.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/RecipeInvestigationRouteR158.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "27fc479da748b67f6c6546afa0e5b948c4ed86bd31167a03b28715569dbc5735",
+      "sizeBytes": 3192,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/RecipeInvestigationRouteR158.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/ResearchGatherRouteR310.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "2d9244561d5b829268f8466d6bbfa57554b4bb99bd794be4703e178d8b9d6958",
+      "sizeBytes": 2782,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/ResearchGatherRouteR310.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/ResearchMaterialGuidanceR280.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "1ba9eb3cbc508140e0153635967e837f9d50a24e5f137b4761659fa7220df58f",
+      "sizeBytes": 2822,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/ResearchMaterialGuidanceR280.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/Resources/candidate_latent_policy_r004.json",
+      "mode": 420,
+      "role": "resource",
+      "sha256": "59ae258fce8d2451b8dd3d3cdd78e494c069d040aa56146abb249398dbfb4109",
+      "sizeBytes": 26716,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/Resources/candidate_latent_policy_r004.json"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/Resources/catalog_overlay.json",
+      "mode": 384,
+      "role": "resource",
+      "sha256": "bb218f0fe6b4b1a6037faa75ddb301ded27d7b9de070747bebf99a3e72209337",
+      "sizeBytes": 53104,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/Resources/catalog_overlay.json"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/SaveRepository.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "e072b14bf922f90d5840a6031a7bb0cc0f9b8197342b94f41045b88a346341ce",
+      "sizeBytes": 43655,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/SaveRepository.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/SharedPartyWorkRuntimeR170.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "77735d0b1aefce50470be01386b748552352f2ed1e5d70bc62fa9eefc6d888cb",
+      "sizeBytes": 1338,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/SharedPartyWorkRuntimeR170.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/StandardPlayStartupSelectionR169.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "9e81c5f944061fe07e0e175ab2c6a57d851615ecc74140193e81d5e15fe15385",
+      "sizeBytes": 1494,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/StandardPlayStartupSelectionR169.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/SyntheticDash2VisualTailR047.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "80a63d778a5071f1d7a3249b9ac2f3dbbddecb37479d6150097f6a57a8039b36",
+      "sizeBytes": 4589,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/SyntheticDash2VisualTailR047.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/SyntheticPartyDash2PreviewR043.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "1ceaadb94a28654ff0de3e8520fdd72246ec117e4cbdbe5cade9552ed54ccd64",
+      "sizeBytes": 1952,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/SyntheticPartyDash2PreviewR043.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/WardrobeCandidateCatalogR130.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "b4d333afda145f69a223206374e9af1f8ba70f77711b880eee2cc23f38817659",
+      "sizeBytes": 3867,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/WardrobeCandidateCatalogR130.swift"
+    },
+    {
+      "destinationPath": "Sources/WitchGameCore/WardrobeCandidateR128.swift",
+      "mode": 420,
+      "role": "core",
+      "sha256": "f7a72552a93c590557ca970833991edd1f68b923031f3199dc64a08ea17c0ded",
+      "sizeBytes": 10133,
+      "sourcePath": "native/WitchGameCore/Sources/WitchGameCore/WardrobeCandidateR128.swift"
+    }
+  ],
+  "readme": {
+    "path": "docs/production/current/qa_drafts/effect_build_comparison_r376/candidate_r002/README_R001.md",
+    "sha256": "a4238e3649cc0a2e84b0d3287af24e48f5ef9bc0eb19f78cad26bc5f1c83c9d9",
+    "sizeBytes": 1196
+  },
+  "report": {
+    "path": "docs/production/current/qa_drafts/normal_onboarding_progression_r368/candidate_r001/runner_r001/runs/36800000-0001-4001-8000-000000000001/r368_36800000-0001-4001-8000-000000000001/report.json",
+    "sha256": "23266207d0a393a7782c6ad827e2cf771cae6879040f014223fe096efbb4d215",
+    "sizeBytes": 11446971
+  },
+  "runnerPath": "docs/production/current/qa_drafts/effect_build_comparison_r376/execution_r005_r377/run_r377.py",
+  "runnerSHA256": "0db0cfa8fddf389b851ad7258bb28621b24b9ff29bfb9fd0e2a2d9b8c9e748a2",
+  "save": {
+    "path": "docs/production/current/qa_drafts/normal_onboarding_progression_r368/candidate_r001/runner_r001/runs/36800000-0001-4001-8000-000000000001/r368_36800000-0001-4001-8000-000000000001/save.json",
+    "sha256": "067c4e86733fe07eb5457381a30d140b285fbd2685ab18e5667f47577c74e655",
+    "sizeBytes": 781251
+  },
+  "schema": "r377-core-run-input-r001",
+  "seeds": [
+    37701,
+    37702,
+    37703
+  ],
+  "status": "PREPARED_NOT_RUN_R001",
+  "swiftToolchain": {
+    "executable": "/usr/bin/swift",
+    "version": "Apple Swift version 6.3.3 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)\nTarget: arm64-apple-macosx26.0"
+  },
+  "test": {
+    "destinationPath": "Tests/WitchGameCoreTests/EffectBuildComparisonR377Tests.swift",
+    "mode": 420,
+    "path": "docs/production/current/qa_drafts/effect_build_comparison_r376/candidate_r002/EffectBuildComparisonR377Tests.swift",
+    "previewCount": 24,
+    "runtimeHelperPath": "docs/production/current/qa_drafts/integrated_equipment_progression_r355/candidate_r004/GameRuntimeIntegratedEquipmentProfileR355.swift",
+    "sha256": "d4ea2a62af9e8b5c600c07b071c3a01adf6bc4ffd010ae0b88b736f1d2d6d05a",
+    "sizeBytes": 13164,
+    "testIdentifier": "EffectBuildComparisonR377Tests/testFourEarnedEffectFamiliesAcrossThreeSeeds"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "changes": [
+    "Persist the run start as epoch nanoseconds so separately invoked helper actions compare against the same clock basis.",
+    "Fail closed when wall clock moves backward or the persisted epoch start is invalid.",
+    "Add focused unit cases for cross-invocation elapsed time and invalid/backward timestamps; tests were not executed."
+  ],
+  "constraints": {
+    "R001": "preserved unchanged",
+    "R002": "preserved unchanged",
+    "build": "none",
+    "execution": "none",
+    "maxAdditionalBytes": 500000000,
+    "maxSeconds": 600,
+    "minimumFreeBytes": 20000000000,
+    "simulator": "none"
+  },
+  "executionPerformed": false,
+  "files": {
+    "README_R003.md": {
+      "sha256": "813e38cc48119a26225eb563388e2d57fdd511b1a9606e1afabbe9bcb88ef07c",
+      "sizeBytes": 3035
+    },
+    "RUNTIME_SEAL_R001.template.json": {
+      "sha256": "32c4a4a0da46f6d0263ad299b09f13791717840a7570e558f7f08394da1fc220",
+      "sizeBytes": 1738
+    },
+    "run_r456.py": {
+      "sha256": "fab38424a827c86519b7425d31669e7407878c8163b601cf6ec26f878963cae8",
+      "sizeBytes": 24210
+    },
+    "test_runtime_clock_r456.py": {
+      "sha256": "53072aee7b1c7d8c47ead6453b3273598ae9d9665ba32342bacaaa68d54d602b",
+      "sizeBytes": 843
+    }
+  },
+  "schema": "native-completion-r456-runtime-tools-candidate-r003-v1",
+  "staticChecks": [
+    "Python AST parse for driver and clock tests",
+    "runtime seal template JSON parse"
+  ],
+  "status": "PREPARED_NOT_ROOT_SEALED"
+}

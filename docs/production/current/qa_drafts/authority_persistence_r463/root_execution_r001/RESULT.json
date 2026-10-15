@@ -1,0 +1,233 @@
+{
+  "status": "FAIL_OR_INCOMPLETE",
+  "exitCode": 1,
+  "hold": null,
+  "elapsedSeconds": 18.158030417,
+  "testCases": [
+    {
+      "suite": "AuthorityClientContractR461Tests",
+      "test": "testDeliveredRetryRefundAndOldSuccessAfterRefund",
+      "result": "passed"
+    },
+    {
+      "suite": "AuthorityClientContractR461Tests",
+      "test": "testEqualRevisionConflictingStateIsRejectedWithoutOverwrite",
+      "result": "passed"
+    },
+    {
+      "suite": "AuthorityClientContractR461Tests",
+      "test": "testEqualRevisionSuccessCannotRacePastNewerConcurrentRefund",
+      "result": "passed"
+    },
+    {
+      "suite": "AuthorityClientContractR461Tests",
+      "test": "testMalformedUnknownAndNoncanonicalResponsesFailClosed",
+      "result": "passed"
+    },
+    {
+      "suite": "AuthorityClientContractR461Tests",
+      "test": "testObservationCASRejectsOlderConcurrentWriter",
+      "result": "passed"
+    },
+    {
+      "suite": "AuthorityClientContractR461Tests",
+      "test": "testPersistedObservationReloadBlocksOlderAuthoritySnapshot",
+      "result": "passed"
+    },
+    {
+      "suite": "AuthorityClientContractR461Tests",
+      "test": "testPythonExchangeFixtureThroughSubmitWhenRequired",
+      "result": "passed"
+    },
+    {
+      "suite": "AuthorityClientContractR461Tests",
+      "test": "testRequestIsClosedAndPendingRoundTripsForRetry",
+      "result": "passed"
+    },
+    {
+      "suite": "AuthorityClientContractR461Tests",
+      "test": "testTamperedHistoricalDeliveryFingerprintCannotAdvanceObservation",
+      "result": "passed"
+    },
+    {
+      "suite": "AuthorityClientContractR461Tests",
+      "test": "testTimeoutAfterPossibleServerCommitRetriesSamePersistedOperation",
+      "result": "passed"
+    },
+    {
+      "suite": "AuthorityClientContractR461Tests",
+      "test": "testUnauthenticatedRejectionCannotPoisonObservation",
+      "result": "passed"
+    },
+    {
+      "suite": "AuthorityClientContractR461Tests",
+      "test": "testWrongOperationOrAccountCannotPoisonObservation",
+      "result": "passed"
+    },
+    {
+      "suite": "FileBackedAuthorityStoreR463Tests",
+      "test": "testCorruptFutureAndUnknownStoreSchemasFailClosedWithoutOverwrite",
+      "result": "failed"
+    },
+    {
+      "suite": "FileBackedAuthorityStoreR463Tests",
+      "test": "testInterruptedTemporaryWriteRecoversPreviousCommittedValue",
+      "result": "passed"
+    },
+    {
+      "suite": "FileBackedAuthorityStoreR463Tests",
+      "test": "testObservationCASIsMonotonicAcrossInstancesAndBindingNamespace",
+      "result": "passed"
+    },
+    {
+      "suite": "FileBackedAuthorityStoreR463Tests",
+      "test": "testPendingOperationsAreIsolatedByTheStoresPinnedAccountNamespace",
+      "result": "passed"
+    },
+    {
+      "suite": "FileBackedAuthorityStoreR463Tests",
+      "test": "testPendingOperationSurvivesColdReopenAndRejectsUUIDCollision",
+      "result": "passed"
+    },
+    {
+      "suite": "FileBackedAuthorityStoreR463Tests",
+      "test": "testReplacingLockPathInvalidatesExistingStoreInstance",
+      "result": "passed"
+    },
+    {
+      "suite": "FileBackedAuthorityStoreR463Tests",
+      "test": "testSymlinkedRootAndHardlinkedStoreFileAreRejected",
+      "result": "passed"
+    },
+    {
+      "suite": "LocalPurchaseDeliveryQAImporterR453Tests",
+      "test": "testAfterPrimaryReplaceAmbiguityColdReopenAndRetryDoNotDoubleApply",
+      "result": "passed"
+    },
+    {
+      "suite": "LocalPurchaseDeliveryQAImporterR453Tests",
+      "test": "testBeforePrimaryReplaceFailureLeavesNoReceiptAndRetryCommitsOnce",
+      "result": "passed"
+    },
+    {
+      "suite": "LocalPurchaseDeliveryQAImporterR453Tests",
+      "test": "testCurrentRefundProviderIsRecheckedEvenForSavedOperationReplay",
+      "result": "passed"
+    },
+    {
+      "suite": "LocalPurchaseDeliveryQAImporterR453Tests",
+      "test": "testOutOfOrderPityRejectsWithoutSaveOrReceiptMutation",
+      "result": "passed"
+    },
+    {
+      "suite": "LocalPurchaseDeliveryQAImporterR453Tests",
+      "test": "testPinnedFixtureImportsExactGearAndPityOnceAcrossColdReplay",
+      "result": "passed"
+    },
+    {
+      "suite": "LocalPurchaseDeliveryQAImporterR453Tests",
+      "test": "testTamperedPayloadsAndSameUUIDChangedPayloadRejectWithoutSaveMutation",
+      "result": "passed"
+    },
+    {
+      "suite": "LocalPurchaseDeliveryQAImporterR453Tests",
+      "test": "testUnknownPityTargetsRejectAcrossDrawSequenceWithoutMutation",
+      "result": "passed"
+    },
+    {
+      "suite": "LocalPurchaseTransactionIdentityR454Tests",
+      "test": "testExactPinnedReceiptIdentityAcceptsAndEveryBoundFieldMismatchRejects",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testCorruptPrimaryAndPreviousRefuseWithoutOverwritingEitherGeneration",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testCorruptPrimaryReportsRollbackAndArchivesExactBytesOnSuccessfulRecoveryWrite",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testFutureEnvelopeSchemaNeverFallsBackToPreviousGeneration",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testFutureKnownPayloadVersionIsDetectedBeforeTypedDecodeOrBackupFallback",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testInvalidReceiptIdentityOrFutureRevisionTriggersProtectedBackupRecovery",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testLegacyMissingEnvelopeMetadataMigratesOnlyOnSuccessfulWrite",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testLegacyPartialSnapshotStillUsesSchemaZeroDefaults",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testMalformedDeclaredSchemaVersionFailsClosedWithoutChangingPrimary",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testMalformedKnownNestedVersionMarkerRefusesBackupFallback",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testNestedFutureVersionMarkerRefusesWithoutUsingValidBackupOrChangingBytes",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testReceiptDictionaryKeyMustMatchReceiptOperationID",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testSchemaOneRequiresAllNonoptionalSnapshotFieldsAndDoesNotRewritePartialJSON",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testSchemaZeroNegativeRevisionIsRejectedAtLoadWithoutRewritingInput",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testUnkeyedArrayWithOpaqueElementsFailsClosedOnPossibleReassociation",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testUnknownFieldsStayWithStableGearIDsAcrossReorderAndKnownMutation",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testValidJSONBitChangeFailsChecksumAndRecoversFromPreviousGeneration",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testWriteFailureBeforeReplacePreservesBytesAndAfterReplaceIsDeduplicated",
+      "result": "passed"
+    }
+  ],
+  "inputFilesUnchanged": true,
+  "allocatedBuildBytes": 241188864,
+  "freeBytesAfter": 133430161408,
+  "logSHA256": "dbc2225f4bac4ebbc8b030bcd61c6cbdd4d7362ae0b1d9623746788ff68cba4e",
+  "scope": "Durable store and protocol plus existing purchase/save regressions; cross-language fixture; no app,network,Apple authorization or production grant"
+}

@@ -1,0 +1,87 @@
+{
+  "actor_id": "ACT_B_R04_B",
+  "overlay_id": "ACT_B_R04_B_RIG_CANDIDATE_R001",
+  "status": "TECHNICAL_CANDIDATE_UNAPPROVED",
+  "human_adoption": "PENDING",
+  "runtime_manifest": "native/Art/GeneratedCandidates/ACT_B_R04_B/rig_candidate_r001/rig_manifest_candidate_r001.json",
+  "runtime_manifest_sha256": "1a9a710d81c384aaf37969bc0ad5252f5ab02b6ee8bd0a7779f0d2830b8e988e",
+  "preview_path": "native/Art/GeneratedCandidates/ACT_B_R04_B/rig_candidate_r001/qa_representative_states_r001.png",
+  "preview_sha256": "e9a872b8e537d21b21bdc6d3fa0239ab4c9c37f507a7cf9e4b9030c01c7f5043",
+  "candidate_parts": [
+    {
+      "path": "native/Art/GeneratedCandidates/ACT_B_R04_B/rig_candidate_r001/parts/farwing_part_r001.png",
+      "sha256": "0774bc9af27a101237ea32df2484536fc97cd72c1d7fc59b51510084b4697459"
+    },
+    {
+      "path": "native/Art/GeneratedCandidates/ACT_B_R04_B/rig_candidate_r001/parts/body4legs_tail_part_r001.png",
+      "sha256": "66cb4bc19239fb91808e163a0bceb88cf2016bc52dbfcb3dd45045f28af83065"
+    },
+    {
+      "path": "native/Art/GeneratedCandidates/ACT_B_R04_B/rig_candidate_r001/parts/nearwing_part_r001.png",
+      "sha256": "f08fec33f80a0fe3f1264bf6a4dfda7832ea142ce6a5c15bd8673ee234d53cdc"
+    },
+    {
+      "path": "native/Art/GeneratedCandidates/ACT_B_R04_B/rig_candidate_r001/parts/neck_head_part_r001.png",
+      "sha256": "7d1cb6f10c51fd4b12854e73801111b621a202120478c0594ae8e81aa3c4722c"
+    }
+  ],
+  "canvas_px": [
+    512,
+    341
+  ],
+  "anchor_px": [
+    256,
+    331
+  ],
+  "fps": 24,
+  "states": {
+    "idle": {
+      "fps": 24,
+      "loop": true,
+      "frame_count": 24
+    },
+    "flight": {
+      "fps": 24,
+      "loop": true,
+      "frame_count": 24
+    },
+    "anticipate": {
+      "fps": 24,
+      "loop": false,
+      "frame_count": 24
+    },
+    "execute": {
+      "fps": 24,
+      "loop": false,
+      "frame_count": 24
+    },
+    "recover": {
+      "fps": 24,
+      "loop": false,
+      "frame_count": 24
+    },
+    "hit": {
+      "fps": 24,
+      "loop": false,
+      "frame_count": 24
+    },
+    "resolve": {
+      "fps": 24,
+      "loop": false,
+      "frame_count": 24
+    }
+  },
+  "pivot_basis": "VISUAL_ESTIMATE_UNAPPROVED",
+  "scope_limits": [
+    "walk absent: all four legs and tail are one source raster part",
+    "flight is wing/neck motion plus small torso float; no tucked-leg art exists",
+    "execute is a transform candidate only; no breath/projectile effect integrated",
+    "fused legs may shift with torso during hit/resolve; not a foot-contact qualification",
+    "candidate placements and pivots need SpriteKit visual review; adoption remains pending"
+  ],
+  "source_untouched": true,
+  "replaces_global_runtime_index": false,
+  "spritekit_runtime_integration": "NOT_DONE",
+  "in_game_visual_qa": "NOT_DONE",
+  "generated_fullbody_attempts": "Prior alpha-failed imagegen outputs rejected; no new fullbody accepted."
+}

@@ -1,0 +1,11 @@
+# Independent review — R362 direct XCTest
+
+**Result: scoped pass with limits.** The direct XCTest run completed its three intended phases in 1.122s. Seed and verification each report one passing test; the crash phase killed the exact test PID and returned `-9`. The runner reports protected save, PBX, and namespace unchanged, and no owned process remaining.
+
+The test source is pinned at `4c012727b15ad8b99e5c0096ce1f3f406e2fc64efd8129d2aba5ce1769d93ace`. Its verification phase asserts that the post-interruption primary decodes as revision 2, its first R342 loadout exactly matches the equipped-gear mapping, and its save receipt has the same operation/fingerprint. It then replays that same command and checks snapshot, receipt, primary bytes, and previous bytes remain unchanged, followed by a cold reopen check. The `save.json.previous` bytes equal the saved seed bytes (SHA-256 `475044023053c76c32f5e841a0f303ed42de17c674bc9145ee831499032bfd9b`), and the marker's primary SHA matches `save.json` (SHA-256 `f02dcb6489487a4aa3ccd415cee8bc647d780dcb34b972b25d823aa710118222`).
+
+The exact-PID kill is evidenced by PID 99148 returning `-9`, marker `pid` equality, matching phase token/command and process-group identity, and empty owned-process readback. Seed/verify logs each contain one XCTest pass; the crash log ends after the case starts, with no pass or skip.
+
+The earlier `runner_root_r003` receipt remains `INCOMPLETE_RETAINED`; this follow-up does not rewrite or upgrade it. This result reuses the already-built XCTest executable and covers a synthetic SaveRepository process interruption at the after-primary-replace hook. It does not constitute a fresh build, physical power-loss test, broad save-recovery acceptance, native UI acceptance, or release approval.
+
+Evidence SHA-256: RUN `64656be33d3275ce386169c0ae4ff9c718249c873b33d043c4b899ea09016249`; runner `b91bd1e22e4af4e38bb29038b202bf9b86e83b77d21c1c1d0b21cc738c9f8bfa`; test `4c012727b15ad8b99e5c0096ce1f3f406e2fc64efd8129d2aba5ce1769d93ace`; seed log `2673e22ad3a857edee2f2f9e630ba848eeba0b47cadd586568cd5f60445b789e`; crash log `3459fe308442bc6f58274343d47bfa58f9d0c1296c0e3b5e2ee7bbfb29ca1c4c`; verify log `9fd9179dcaf20e5cb0004055b02987f299a2f4a909d36eb5bf224d3a221b16bb`.

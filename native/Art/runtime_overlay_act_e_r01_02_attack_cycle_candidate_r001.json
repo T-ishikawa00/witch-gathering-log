@@ -1,0 +1,164 @@
+{
+  "status": "UNAPPROVED_PARTIAL_ATTACK_MOTION_CANDIDATE_OVERLAY",
+  "complete_animation": false,
+  "candidate_manifest": "GeneratedCandidates/ACT_E_R01_02/spider_attack_cycle_r001/manifest.json",
+  "entries": {
+    "ACT_E_R01_02": {
+      "selectedPNG": "GeneratedCandidates/ACT_E_R01_02/idle_1.png",
+      "kind": "enemy_actor_kit",
+      "status": "UNAPPROVED_PARTIAL_ATTACK_MOTION_CANDIDATE",
+      "canvas_px": [
+        512,
+        341
+      ],
+      "anchor": [
+        256,
+        330
+      ],
+      "clips": {
+        "idle": {
+          "frames": [
+            "GeneratedCandidates/ACT_E_R01_02/idle_1.png",
+            "GeneratedCandidates/ACT_E_R01_02/idle_2.png"
+          ],
+          "fps": 3,
+          "loop": true,
+          "status": "DISCRETE_POSE_CANDIDATE_INBETWEENS_PENDING"
+        },
+        "walk": {
+          "frames": [
+            "GeneratedCandidates/ACT_E_R01_02/walk_cycle_r001/frames/walk_000.png",
+            "GeneratedCandidates/ACT_E_R01_02/walk_cycle_r001/frames/walk_001.png",
+            "GeneratedCandidates/ACT_E_R01_02/walk_cycle_r001/frames/walk_002.png",
+            "GeneratedCandidates/ACT_E_R01_02/walk_cycle_r001/frames/walk_003.png",
+            "GeneratedCandidates/ACT_E_R01_02/walk_cycle_r001/frames/walk_004.png",
+            "GeneratedCandidates/ACT_E_R01_02/walk_cycle_r001/frames/walk_005.png",
+            "GeneratedCandidates/ACT_E_R01_02/walk_cycle_r001/frames/walk_006.png",
+            "GeneratedCandidates/ACT_E_R01_02/walk_cycle_r001/frames/walk_007.png",
+            "GeneratedCandidates/ACT_E_R01_02/walk_cycle_r001/frames/walk_008.png"
+          ],
+          "frame_count": 9,
+          "fps": 12,
+          "duration_seconds": 0.75,
+          "loop": true,
+          "status": "UNAPPROVED_NINE_FRAME_MOTION_CANDIDATE_NOT_NATURAL_MOTION_COMPLETE",
+          "canvas_px": [
+            512,
+            341
+          ],
+          "anchor": [
+            256,
+            330
+          ],
+          "anchor_status": "VISUAL_ESTIMATE_UNAPPROVED",
+          "movement_semantics": "low_spider_crawl_tripod_gait"
+        },
+        "anticipate": {
+          "frames": [
+            "GeneratedCandidates/ACT_E_R01_02/spider_attack_cycle_r001/frames/anticipate_000.png",
+            "GeneratedCandidates/ACT_E_R01_02/spider_attack_cycle_r001/frames/anticipate_001.png",
+            "GeneratedCandidates/ACT_E_R01_02/spider_attack_cycle_r001/frames/anticipate_002.png"
+          ],
+          "frame_count": 3,
+          "fps": 10,
+          "duration_seconds": 0.3,
+          "loop": false,
+          "complete_animation": false,
+          "status": "UNAPPROVED_THREE_FRAME_ATTACK_PHASE_CANDIDATE_NOT_NATURAL_MOTION_COMPLETE",
+          "canvas_px": [
+            512,
+            400
+          ],
+          "anchor": [
+            256,
+            344
+          ],
+          "display_scale": 1.1143695014662756,
+          "anchor_status": "INHERITED_VISUAL_ESTIMATE_UNAPPROVED"
+        },
+        "execute": {
+          "frames": [
+            "GeneratedCandidates/ACT_E_R01_02/spider_attack_cycle_r001/frames/execute_000.png",
+            "GeneratedCandidates/ACT_E_R01_02/spider_attack_cycle_r001/frames/execute_001.png",
+            "GeneratedCandidates/ACT_E_R01_02/spider_attack_cycle_r001/frames/execute_002.png"
+          ],
+          "frame_count": 3,
+          "fps": 10,
+          "duration_seconds": 0.3,
+          "loop": false,
+          "complete_animation": false,
+          "status": "UNAPPROVED_THREE_FRAME_ATTACK_PHASE_CANDIDATE_NOT_NATURAL_MOTION_COMPLETE",
+          "canvas_px": [
+            512,
+            400
+          ],
+          "anchor": [
+            256,
+            344
+          ],
+          "display_scale": 1.1143695014662756,
+          "anchor_status": "INHERITED_VISUAL_ESTIMATE_UNAPPROVED"
+        },
+        "recover": {
+          "frames": [
+            "GeneratedCandidates/ACT_E_R01_02/spider_attack_cycle_r001/frames/recover_000.png",
+            "GeneratedCandidates/ACT_E_R01_02/spider_attack_cycle_r001/frames/recover_001.png",
+            "GeneratedCandidates/ACT_E_R01_02/spider_attack_cycle_r001/frames/recover_002.png"
+          ],
+          "frame_count": 3,
+          "fps": 10,
+          "duration_seconds": 0.3,
+          "loop": false,
+          "complete_animation": false,
+          "status": "UNAPPROVED_THREE_FRAME_ATTACK_PHASE_CANDIDATE_NOT_NATURAL_MOTION_COMPLETE",
+          "canvas_px": [
+            512,
+            400
+          ],
+          "anchor": [
+            256,
+            344
+          ],
+          "display_scale": 1.1143695014662756,
+          "anchor_status": "INHERITED_VISUAL_ESTIMATE_UNAPPROVED"
+        },
+        "hit": {
+          "frames": [
+            "GeneratedCandidates/ACT_E_R01_02/hit.png",
+            "GeneratedCandidates/ACT_E_R01_02/recover.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "status": "DISCRETE_POSE_CANDIDATE_INBETWEENS_PENDING"
+        },
+        "resolve": {
+          "frames": [
+            "GeneratedCandidates/ACT_E_R01_02/hit.png",
+            "GeneratedCandidates/ACT_E_R01_02/resolve.png"
+          ],
+          "fps": 3,
+          "loop": false,
+          "status": "DISCRETE_POSE_CANDIDATE_INBETWEENS_PENDING"
+        }
+      },
+      "sequenceFrames": {
+        "walk": [
+          "GeneratedCandidates/ACT_E_R01_02/walk_cycle_r001/frames/walk_000.png",
+          "GeneratedCandidates/ACT_E_R01_02/walk_cycle_r001/frames/walk_001.png",
+          "GeneratedCandidates/ACT_E_R01_02/walk_cycle_r001/frames/walk_002.png",
+          "GeneratedCandidates/ACT_E_R01_02/walk_cycle_r001/frames/walk_003.png",
+          "GeneratedCandidates/ACT_E_R01_02/walk_cycle_r001/frames/walk_004.png",
+          "GeneratedCandidates/ACT_E_R01_02/walk_cycle_r001/frames/walk_005.png",
+          "GeneratedCandidates/ACT_E_R01_02/walk_cycle_r001/frames/walk_006.png",
+          "GeneratedCandidates/ACT_E_R01_02/walk_cycle_r001/frames/walk_007.png",
+          "GeneratedCandidates/ACT_E_R01_02/walk_cycle_r001/frames/walk_008.png"
+        ]
+      },
+      "anchor_status": "VISUAL_ESTIMATE_UNAPPROVED",
+      "states_present": [
+        "walk"
+      ],
+      "complete_animation": false
+    }
+  }
+}

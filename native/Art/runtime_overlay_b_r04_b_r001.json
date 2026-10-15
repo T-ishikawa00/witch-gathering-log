@@ -1,0 +1,62 @@
+{
+  "schema": "witch.generated_runtime_overlay.actor_candidate.v1",
+  "status": "UNAPPROVED_CANDIDATE",
+  "approval": "HUMAN_ADOPTION_PENDING",
+  "entries": {
+    "ACT_B_R04_B": {
+      "kind": "enemy_actor_kit",
+      "selectedPNG": "GeneratedCandidates/ACT_B_R04_B/ACT_B_R04_B__static_candidate__r004.png",
+      "sourcePNG": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/representatives/ACT_B_R04_B/qa/static_alpha_r004/ACT_B_R04_B__512x341__r004.png",
+      "sourceSHA256": "10da5f1deffd9b95e4fb8a6126352ab57a16bde7112571c19a5069b80cf6c25f",
+      "selectedSHA256": "10da5f1deffd9b95e4fb8a6126352ab57a16bde7112571c19a5069b80cf6c25f",
+      "canvas_px": [
+        512,
+        341
+      ],
+      "anchor": null,
+      "states_present": [],
+      "status": "PART_RIG_CANDIDATE_RENDER_QA_PENDING",
+      "animation_complete": false,
+      "sourceEvidence": {
+        "deliveryManifest": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/deliveries/ACT_B_R04_B/delivery_manifest_r001.json",
+        "qaReport": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/representatives/ACT_B_R04_B/qa/static_alpha_r004/QA_REPORT.json",
+        "partsQA": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/production/codex_unified_20261008T221040Z_fa70940c/representatives/ACT_B_R04_B/parts_pilot_r005/derived_r001/SOURCE_PARTS_QA_R005.json"
+      },
+      "qaFindings": [
+        "Static image only; no authored animation states.",
+        "Wing membrane alpha samples are partial transparency, not a validated translucency specification.",
+        "Prior screen fixture cropped 53px at right; full-screen composition/head readability remain unresolved.",
+        "Four separated parts are candidates for an articulated prototype; legs are fused into body4legs_tail and cannot independently walk."
+      ],
+      "parts": {
+        "canvas_px": [
+          1536,
+          1024
+        ],
+        "fps_target": 24,
+        "files": {
+          "neck_head": "GeneratedCandidates/ACT_B_R04_B/parts/neck_head_part_r001.png",
+          "nearwing": "GeneratedCandidates/ACT_B_R04_B/parts/nearwing_part_r001.png",
+          "farwing": "GeneratedCandidates/ACT_B_R04_B/parts/farwing_part_r001.png",
+          "body4legs_tail": "GeneratedCandidates/ACT_B_R04_B/parts/body4legs_tail_part_r001.png"
+        },
+        "jointMetadata": "not authored; pivots and alignment must be established and reviewed before scene use"
+      },
+      "partRig": "GeneratedCandidates/ACT_B_R04_B/rig_candidate_r001/rig_manifest_candidate_r001.json"
+    }
+  },
+  "generationAttempts": [
+    {
+      "path": "../../GeneratedArt/enemy_r002/ACT_B_R04_B/fullbody_generated_alpha_fail_r001.png",
+      "sha256": "a499dc6ba3ca97e8e77f32caad3c67e3cb196ee1e4609527256a18f027e7157d",
+      "result": "REJECTED_ALPHA_BACKGROUND",
+      "reason": "background contains 783013 semi-transparent pixels and no fully opaque pixels"
+    },
+    {
+      "path": "../../GeneratedArt/enemy_r002/ACT_B_R04_B/fullbody_generated_alpha_fail_r002.png",
+      "sha256": "5066f3bf7b5ba9407aaf7d422097d5736b88822622f466509cc76d7ad830443d",
+      "result": "REJECTED_ALPHA_BACKGROUND",
+      "reason": "transparency cleanup request retained broad semi-transparent background; no runtime use"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "status": "UI_LIFECYCLE_VERIFIED_READING_MANTLE_DEFECT_OPEN",
+  "at": "2026-10-14T14:35:40.584296+09:00",
+  "source": "R420 normal Release",
+  "startRevision": 13,
+  "finalRevision": 35,
+  "finalSaveSHA256": "4a525bdfe4a1dbf9130ef5d064155be2e091185e5eb33470dcc3f9dc6c6f47b4",
+  "normalUIActions": [
+    "4cosmeticpreview/apply",
+    "STAFF_BRANCHpreview/apply",
+    "eachactorcompanion",
+    "E_R02_01win",
+    "freedeskclaim/place",
+    "deskstore",
+    "STAFF_MOONpreview/apply",
+    "E_R02_02win",
+    "all4cosmeticresetandweaponreset"
+  ],
+  "completedEncounters": [
+    "E_R01_01",
+    "B_R01_A",
+    "E_R01_02",
+    "E_R02_02",
+    "E_R02_01",
+    "B_R01_B",
+    "E_R01_03",
+    "E_R01_04"
+  ],
+  "coldChecks": [
+    {
+      "path": "docs/production/current/qa_drafts/wardrobe_furniture_runtime_r433/execution_r001/all_branch_COLD.json",
+      "exact": true,
+      "sha256": "f44c5e7c337b8fee3e00170ef812afa5bda84e1288085681110dbd7d070a7c40"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/wardrobe_furniture_runtime_r433/execution_r001/all_reset_COLD.json",
+      "exact": true,
+      "sha256": "e8d92a5154392c55c25e05c9ad613c9aa98e5f55fe3352fea81aa1d72ed435eb"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/wardrobe_furniture_runtime_r433/execution_r001/desk_placed_COLD.json",
+      "exact": true,
+      "sha256": "8cc90d0f44852f7457652204dbbbcb62fac697bcd2e510ec38b3cd39add62473"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/wardrobe_furniture_runtime_r433/execution_r001/moon_stored_COLD.json",
+      "exact": true,
+      "sha256": "037a5df37b974f7af2e01ccb95f0ade50a0b4ba7b54d5783aa7d034a1d121c54"
+    }
+  ],
+  "ownedCosmetics": [
+    "STAFF_BRANCH",
+    "STAFF_MOON",
+    "NOIR_NECKWEAR_MOSS_R001",
+    "AIRA_HARVEST_APRON_GREEN_CANDIDATE_R130",
+    "ERNA_TRAVEL",
+    "LUNA_MANTLE_CANDIDATE_R128"
+  ],
+  "ownedFurniture": [
+    "FURN_DESK_BOTANICAL"
+  ],
+  "selectedCosmetics": {},
+  "selectedWeaponAppearanceIDs": {},
+  "placedFurnitureIDs": [],
+  "evidenceBytes": 51515981,
+  "elapsedSeconds": 900.2147340774536,
+  "appExact": true,
+  "other14treesExact": true,
+  "ownedProcessesAbsent": true,
+  "visualReview": "11framesindependentplusRootliveUI; all4contextscoveredscoped; nofullmotionnaturalnessclaim",
+  "defects": [
+    {
+      "id": "R435",
+      "severity": "releasequality",
+      "observed": "Selected LUNA mantle absent in desk reading pose; source rejects LUNA_READING frames; save selection persisted.",
+      "next": "Boundedrendererfix/nativefit/coldregression"
+    }
+  ],
+  "resolvedSuspect": "NOIR green neckband appears at neck; green paw item persists after ornament reset and is equipped gear.",
+  "humanArtApproval": false,
+  "purchase": false,
+  "syntheticStateInjection": false,
+  "clockChanges": false,
+  "deletion": false
+}

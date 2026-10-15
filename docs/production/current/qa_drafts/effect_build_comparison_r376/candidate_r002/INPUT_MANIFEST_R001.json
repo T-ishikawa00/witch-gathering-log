@@ -1,0 +1,126 @@
+{
+  "appIdentity": {
+    "path": "docs/production/current/qa_drafts/loadouts_native_workflow_r344/root_candidate_r003/manual_run_001/development_after/last_standard_play_identity_r169.json",
+    "sha256": "cbad08d96127f4f1bd93ac6b6bc1b3a8b9ac5a3ab4919ae316c5a7d4dc0ff8a1",
+    "sizeBytes": 1682
+  },
+  "fixedWorktree": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg",
+  "interpretationLimits": [
+    "R368 is one free/no-ad 30-virtual-day test cohort, not ordinary human play.",
+    "All preview gear UUIDs are present in that archived earned cohort save. No gear, material, XP, ticket, or currency is injected.",
+    "The selected item occupies one actor slot only. Same actor, party, runtime, challenge, and seed apply within each pair. Item tier and investment are matched; natural latent rolls remain a confound.",
+    "These previews do not prove acquisition accessibility, optimality, balance, fun, paid value, formal adoption, or completion of 15 design research goals.",
+    "The candidate-effect arm must emit a listed effect event at least once across three seeds. Missing activation remains a test failure/NOT_OBSERVED."
+  ],
+  "pairLedger": {
+    "path": "docs/production/current/qa_drafts/effect_build_comparison_r376/candidate_r002/OWNED_PAIR_LEDGER_R001.json",
+    "sha256": "bee23409dbd3e6bc81a6b1d93f196b6fc4bb602068874000908b6e7161d7c4d7",
+    "sizeBytes": 9603
+  },
+  "pairs": [
+    {
+      "actorID": "C_WITCH",
+      "actorSlot": "C_WITCH|weapon",
+      "candidateDefinitionID": "EQ_W_G2",
+      "candidateID": "68C84620-D911-48E4-983C-15E4EF8F202E",
+      "candidateLatentAffix": "AF_CRIT_DMG",
+      "catalogAttack": 3,
+      "challengeID": "CH_R02_02",
+      "controlDefinitionID": "EQ_W_01",
+      "controlID": "BC499DA8-3B80-5536-BAFB-5143888B392C",
+      "controlLatentAffix": "AF_DEF",
+      "enhancement": 0,
+      "expectedEffectKinds": [
+        "barrier",
+        "barrier_absorb",
+        "reflect"
+      ],
+      "family": "barrier_ward",
+      "investmentDust": 0,
+      "qualityID": "Q0",
+      "refinement": 0
+    },
+    {
+      "actorID": "C_SMITH",
+      "actorSlot": "C_SMITH|weapon",
+      "candidateDefinitionID": "EQ_S_01",
+      "candidateID": "31292F32-5F63-5F71-84D9-B69BB4FC303A",
+      "candidateLatentAffix": "AF_COUNTER",
+      "catalogAttack": 3,
+      "challengeID": "CH_R04_02",
+      "controlDefinitionID": "EQ_S_01",
+      "controlID": "B72CE760-9884-5D4F-8111-8709C8369782",
+      "controlLatentAffix": "AF_CRIT",
+      "enhancement": 0,
+      "expectedEffectKinds": [
+        "counter"
+      ],
+      "family": "smith_counter_latent",
+      "investmentDust": 0,
+      "qualityID": "Q1",
+      "refinement": 0
+    },
+    {
+      "actorID": "C_APPRENTICE",
+      "actorSlot": "C_APPRENTICE|amulet",
+      "candidateDefinitionID": "EQ_AMU_01",
+      "candidateID": "7058F310-16D8-5EE8-8F36-374C8FC1C128",
+      "candidateLatentAffix": "AF_HEAL",
+      "catalogAttack": 0,
+      "challengeID": "CH_R02_01",
+      "controlDefinitionID": "EQ_AMU_01",
+      "controlID": "B2DDC107-838F-5593-9E6B-65288DA526DC",
+      "controlLatentAffix": "AF_WARD",
+      "enhancement": 0,
+      "expectedEffectKinds": [
+        "heal"
+      ],
+      "family": "apprentice_heal_latent",
+      "investmentDust": 0,
+      "qualityID": "Q1",
+      "refinement": 0
+    },
+    {
+      "actorID": "C_FAMILIAR",
+      "actorSlot": "C_FAMILIAR|weapon",
+      "candidateDefinitionID": "EQ_F_01",
+      "candidateID": "83F34619-8C4D-5FFA-8B4C-98EDDE4C9351",
+      "candidateLatentAffix": "AF_CHASE",
+      "catalogAttack": 3,
+      "challengeID": "CH_R05_03",
+      "controlDefinitionID": "EQ_F_01",
+      "controlID": "F37EC259-FF87-583E-AFA4-D4A32C9D25F3",
+      "controlLatentAffix": "AF_CRIT",
+      "enhancement": 0,
+      "expectedEffectKinds": [
+        "chase"
+      ],
+      "family": "familiar_chase_latent",
+      "investmentDust": 0,
+      "qualityID": "Q1",
+      "refinement": 0
+    }
+  ],
+  "r368InputManifest": {
+    "path": "docs/production/current/qa_drafts/normal_onboarding_progression_r368/candidate_r001/runner_r001/INPUT_MANIFEST_R001.json",
+    "sha256": "47ba83bfa951eaac593cf1059492233caec1064c959cdea6afb928a67fcf8417",
+    "sizeBytes": 28966
+  },
+  "report": {
+    "path": "docs/production/current/qa_drafts/normal_onboarding_progression_r368/candidate_r001/runner_r001/runs/36800000-0001-4001-8000-000000000001/r368_36800000-0001-4001-8000-000000000001/report.json",
+    "sha256": "23266207d0a393a7782c6ad827e2cf771cae6879040f014223fe096efbb4d215",
+    "sizeBytes": 11446971
+  },
+  "save": {
+    "path": "docs/production/current/qa_drafts/normal_onboarding_progression_r368/candidate_r001/runner_r001/runs/36800000-0001-4001-8000-000000000001/r368_36800000-0001-4001-8000-000000000001/save.json",
+    "sha256": "067c4e86733fe07eb5457381a30d140b285fbd2685ab18e5667f47577c74e655",
+    "sizeBytes": 781251
+  },
+  "schema": "effect-build-comparison-r377-input-r001",
+  "seeds": [
+    37701,
+    37702,
+    37703
+  ],
+  "status": "PREPARED_NOT_RUN"
+}

@@ -1,0 +1,1724 @@
+{
+  "pinned_commit": "497549e9339431b5680eaa398fef16ff1b81f117",
+  "remote_blob_checks": [
+    {
+      "remote_path": "docs/design/shared/20261010_r1/sources/growth_r2/data/growth_gear_skills_R2.json",
+      "local": "source/r6/vendor/r5/vendor/r01_r4/source/growth_r2/data/growth_gear_skills_R2.json",
+      "git_blob_sha1": "d248a006df75d206ce5b3e21356f7b5117ba3a0e",
+      "sha256": "70d36d335e69899f4232567d80e2dc17457d6baec1688590cf3757d8b0b4d874",
+      "match": true
+    },
+    {
+      "remote_path": "docs/design/shared/20261010_r1/sources/growth_r2/validation/reference_model.py",
+      "local": "source/r6/vendor/r5/vendor/r01_r4/source/growth_r2/validation/reference_model.py",
+      "git_blob_sha1": "9f29688ef7b07b2f48bdf12d1ea1a25e489750af",
+      "sha256": "2dd2a0510151a84a85135d94cf85a09a721dc853d896a7b57dca0befb2d07875",
+      "match": true
+    },
+    {
+      "remote_path": "docs/design/shared/20261010_r1/sources/economy_r3/data/economy_R3.json",
+      "local": "source/r6/vendor/r5/vendor/r01_r4/source/economy_r3/data/economy_R3.json",
+      "git_blob_sha1": "fc28f5fe38cf8c897429a704d813fac55b976d9c",
+      "sha256": "b8ae30f04cf3077f4e8dabe0c575f6d02e43502642c36015201d750e41c03476",
+      "match": true
+    },
+    {
+      "remote_path": "docs/design/shared/20261010_r1/sources/support_ai_r6/tools/selected_final.py",
+      "local": "source/r6/tools/selected_final.py",
+      "git_blob_sha1": "c6e33e5e1271ec96ac54f5330051c666c55a27f5",
+      "sha256": "b4705733697049316464428d999fcb57b7bf04617bb5a661d6e19961dbb57080",
+      "match": true
+    },
+    {
+      "remote_path": "docs/design/shared/20261010_r1/sources/support_ai_r6/tools/support_ai.py",
+      "local": "source/r6/tools/support_ai.py",
+      "git_blob_sha1": "9a1cd161499848eb5b256ac2d3bef16a047707da",
+      "sha256": "4bb6c1492ecc0328ed797347339e5c56f66c77445def41845b7488823a9eec7d",
+      "match": true
+    },
+    {
+      "remote_path": "docs/design/shared/20261010_r1/sources/support_ai_r6/tools/support_ai_b.py",
+      "local": "source/r6/tools/support_ai_b.py",
+      "git_blob_sha1": "2081e1653a4ff602b0d133178420b92fdbe140b9",
+      "sha256": "125710985854b0b381466c6ae42fc2c74d89b2d49c5e32505dd3ebb350e0aeb3",
+      "match": true
+    },
+    {
+      "remote_path": "docs/design/shared/20261010_r1/sources/balance_r5/tools/battle_r5.py",
+      "local": "source/r6/vendor/r5/tools/battle_r5.py",
+      "git_blob_sha1": "a4072a1b789c75ba42a3615da2535b6ad4221c27",
+      "sha256": "af22c1ee4bdababae2ac6d3262ca8bb938a788600c008c6557335e27885675db",
+      "match": true
+    },
+    {
+      "remote_path": "docs/design/shared/20261010_r1/sources/commerce_r2/data/GEAR_METADATA_AND_NEW_AFFIX_PROPOSAL.json",
+      "local": "source/after_draw_r4/source/commerce_r2/data/GEAR_METADATA_AND_NEW_AFFIX_PROPOSAL.json",
+      "git_blob_sha1": "338926c3ad6f68d3a4d48ba412d845278d119d75",
+      "sha256": "859863b6b14f4323fa9d9d78b90a14bda37e4e28c27d884a47c025a24a2f3b6b",
+      "match": true
+    },
+    {
+      "remote_path": "docs/design/shared/20261010_r1/sources/gacha_research_r3/data/CANDIDATES_R3.json",
+      "local": "source/after_draw_r4/source/research_r3/data/CANDIDATES_R3.json",
+      "git_blob_sha1": "6dc86cac4e301559fa89a87db42076b7629382df",
+      "sha256": "4f321ad0c2b7a8036e4d43416120fc37f2386d189b370935de821f61bdb54413",
+      "match": true
+    }
+  ],
+  "local_source_files_preserved": 369,
+  "world_count": 29,
+  "growth_count": 33,
+  "commerce_count": 29,
+  "growth_extra": [
+    "EQ_F_BODY_01",
+    "EQ_F_FEET_01",
+    "EQ_F_HAND_01",
+    "EQ_F_RING_01"
+  ],
+  "lost_world_ids": [],
+  "relations": [
+    {
+      "id": "EQ_AMU_01",
+      "world_growth_commerce_name_match": true,
+      "actor_match": true,
+      "slot_match": true,
+      "gate_match": true,
+      "parent_match": true
+    },
+    {
+      "id": "EQ_AMU_02",
+      "world_growth_commerce_name_match": true,
+      "actor_match": true,
+      "slot_match": true,
+      "gate_match": true,
+      "parent_match": true
+    },
+    {
+      "id": "EQ_AMU_03",
+      "world_growth_commerce_name_match": true,
+      "actor_match": true,
+      "slot_match": true,
+      "gate_match": true,
+      "parent_match": true
+    },
+    {
+      "id": "EQ_A_01",
+      "world_growth_commerce_name_match": true,
+      "actor_match": true,
+      "slot_match": true,
+      "gate_match": true,
+      "parent_match": true
+    },
+    {
+      "id": "EQ_A_02",
+      "world_growth_commerce_name_match": true,
+      "actor_match": true,
+      "slot_match": true,
+      "gate_match": true,
+      "parent_match": true
+    },
+    {
+      "id": "EQ_A_03",
+      "world_growth_commerce_name_match": true,
+      "actor_match": true,
+      "slot_match": true,
+      "gate_match": true,
+      "parent_match": true
+    },
+    {
+      "id": "EQ_BODY_01",
+      "world_growth_commerce_name_match": true,
+      "actor_match": true,
+      "slot_match": true,
+      "gate_match": true,
+      "parent_match": true
+    },
+    {
+      "id": "EQ_BODY_02",
+      "world_growth_commerce_name_match": true,
+      "actor_match": true,
+      "slot_match": true,
+      "gate_match": true,
+      "parent_match": true
+    },
+    {
+      "id": "EQ_BODY_03",
+      "world_growth_commerce_name_match": true,
+      "actor_match": true,
+      "slot_match": true,
+      "gate_match": true,
+      "parent_match": true
+    },
+    {
+      "id": "EQ_FEET_01",
+      "world_growth_commerce_name_match": true,
+      "actor_match": true,
+      "slot_match": true,
+      "gate_match": true,
+      "parent_match": true
+    },
+    {
+      "id": "EQ_FEET_02",
+      "world_growth_commerce_name_match": true,
+      "actor_match": true,
+      "slot_match": true,
+      "gate_match": true,
+      "parent_match": true
+    },
+    {
+      "id": "EQ_FEET_03",
+      "world_growth_commerce_name_match": true,
+      "actor_match": true,
+      "slot_match": true,
+      "gate_match": true,
+      "parent_match": true
+    },
+    {
+      "id": "EQ_F_01",
+      "world_growth_commerce_name_match": true,
+      "actor_match": true,
+      "slot_match": true,
+      "gate_match": true,
+      "parent_match": true
+    },
+    {
+      "id": "EQ_F_02",
+      "world_growth_commerce_name_match": true,
+      "actor_match": true,
+      "slot_match": true,
+      "gate_match": true,
+      "parent_match": true
+    },
+    {
+      "id": "EQ_F_03",
+      "world_growth_commerce_name_match": true,
+      "actor_match": true,
+      "slot_match": true,
+      "gate_match": true,
+      "parent_match": true
+    },
+    {
+      "id": "EQ_HAND_01",
+      "world_growth_commerce_name_match": true,
+      "actor_match": true,
+      "slot_match": true,
+      "gate_match": true,
+      "parent_match": true
+    },
+    {
+      "id": "EQ_HAND_02",
+      "world_growth_commerce_name_match": true,
+      "actor_match": true,
+      "slot_match": true,
+      "gate_match": true,
+      "parent_match": true
+    },
+    {
+      "id": "EQ_HAND_03",
+      "world_growth_commerce_name_match": true,
+      "actor_match": true,
+      "slot_match": true,
+      "gate_match": true,
+      "parent_match": true
+    },
+    {
+      "id": "EQ_RING_01",
+      "world_growth_commerce_name_match": true,
+      "actor_match": true,
+      "slot_match": true,
+      "gate_match": true,
+      "parent_match": true
+    },
+    {
+      "id": "EQ_RING_02",
+      "world_growth_commerce_name_match": true,
+      "actor_match": true,
+      "slot_match": true,
+      "gate_match": true,
+      "parent_match": true
+    },
+    {
+      "id": "EQ_RING_03",
+      "world_growth_commerce_name_match": true,
+      "actor_match": true,
+      "slot_match": true,
+      "gate_match": true,
+      "parent_match": true
+    },
+    {
+      "id": "EQ_S_01",
+      "world_growth_commerce_name_match": true,
+      "actor_match": true,
+      "slot_match": true,
+      "gate_match": true,
+      "parent_match": true
+    },
+    {
+      "id": "EQ_S_02",
+      "world_growth_commerce_name_match": true,
+      "actor_match": true,
+      "slot_match": true,
+      "gate_match": true,
+      "parent_match": true
+    },
+    {
+      "id": "EQ_S_03",
+      "world_growth_commerce_name_match": true,
+      "actor_match": true,
+      "slot_match": true,
+      "gate_match": true,
+      "parent_match": true
+    },
+    {
+      "id": "EQ_W_01",
+      "world_growth_commerce_name_match": true,
+      "actor_match": true,
+      "slot_match": true,
+      "gate_match": true,
+      "parent_match": true
+    },
+    {
+      "id": "EQ_W_G1",
+      "world_growth_commerce_name_match": true,
+      "actor_match": true,
+      "slot_match": true,
+      "gate_match": true,
+      "parent_match": true
+    },
+    {
+      "id": "EQ_W_G2",
+      "world_growth_commerce_name_match": true,
+      "actor_match": true,
+      "slot_match": true,
+      "gate_match": true,
+      "parent_match": true
+    },
+    {
+      "id": "EQ_W_P1",
+      "world_growth_commerce_name_match": true,
+      "actor_match": true,
+      "slot_match": true,
+      "gate_match": true,
+      "parent_match": true
+    },
+    {
+      "id": "EQ_W_P2",
+      "world_growth_commerce_name_match": true,
+      "actor_match": true,
+      "slot_match": true,
+      "gate_match": true,
+      "parent_match": true
+    }
+  ],
+  "affix_mapping": [
+    {
+      "id": "EQ_W_01",
+      "origin": "COMMERCE_R2",
+      "core_in_source": "AF_POWER",
+      "core_runtime_candidate": "AF_POWER",
+      "core_stat": "power_pct",
+      "min_bp": 300,
+      "max_bp": 600,
+      "commerce_pool_mapped": [
+        "AF_POWER",
+        "AF_HP",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_WARD"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_WARD"
+      ]
+    },
+    {
+      "id": "EQ_W_P1",
+      "origin": "COMMERCE_R2",
+      "core_in_source": "AF_DOT",
+      "core_runtime_candidate": "AF_DOT",
+      "core_stat": "dot_bonus_bp",
+      "min_bp": 500,
+      "max_bp": 1000,
+      "commerce_pool_mapped": [
+        "AF_DOT",
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_WARD"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_WARD"
+      ]
+    },
+    {
+      "id": "EQ_W_P2",
+      "origin": "COMMERCE_R2",
+      "core_in_source": "AF_DOT",
+      "core_runtime_candidate": "AF_DOT",
+      "core_stat": "dot_bonus_bp",
+      "min_bp": 500,
+      "max_bp": 1000,
+      "commerce_pool_mapped": [
+        "AF_DOT",
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_WARD"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_WARD"
+      ]
+    },
+    {
+      "id": "EQ_W_G1",
+      "origin": "COMMERCE_R2",
+      "core_in_source": "AF_BARRIER",
+      "core_runtime_candidate": "AF_WARD",
+      "core_stat": "barrier_bonus_bp",
+      "min_bp": 500,
+      "max_bp": 1000,
+      "commerce_pool_mapped": [
+        "AF_WARD",
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_WARD"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_HASTE"
+      ]
+    },
+    {
+      "id": "EQ_W_G2",
+      "origin": "COMMERCE_R2",
+      "core_in_source": "AF_BARRIER",
+      "core_runtime_candidate": "AF_WARD",
+      "core_stat": "barrier_bonus_bp",
+      "min_bp": 500,
+      "max_bp": 1000,
+      "commerce_pool_mapped": [
+        "AF_WARD",
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_WARD"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_HASTE"
+      ]
+    },
+    {
+      "id": "EQ_A_01",
+      "origin": "COMMERCE_R2",
+      "core_in_source": "AF_HEAL",
+      "core_runtime_candidate": "AF_HEAL",
+      "core_stat": "heal_bonus_bp",
+      "min_bp": 500,
+      "max_bp": 1000,
+      "commerce_pool_mapped": [
+        "AF_HEAL",
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_WARD"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_WARD"
+      ]
+    },
+    {
+      "id": "EQ_A_02",
+      "origin": "COMMERCE_R2",
+      "core_in_source": "AF_HEAL",
+      "core_runtime_candidate": "AF_HEAL",
+      "core_stat": "heal_bonus_bp",
+      "min_bp": 500,
+      "max_bp": 1000,
+      "commerce_pool_mapped": [
+        "AF_HEAL",
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_WARD"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_WARD"
+      ]
+    },
+    {
+      "id": "EQ_A_03",
+      "origin": "COMMERCE_R2",
+      "core_in_source": "AF_HEAL",
+      "core_runtime_candidate": "AF_HEAL",
+      "core_stat": "heal_bonus_bp",
+      "min_bp": 500,
+      "max_bp": 1000,
+      "commerce_pool_mapped": [
+        "AF_HEAL",
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_WARD"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_WARD"
+      ]
+    },
+    {
+      "id": "EQ_S_01",
+      "origin": "COMMERCE_R2",
+      "core_in_source": "AF_DEF",
+      "core_runtime_candidate": "AF_DEF",
+      "core_stat": "defense_pct",
+      "min_bp": 400,
+      "max_bp": 800,
+      "commerce_pool_mapped": [
+        "AF_DEF",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_HASTE"
+      ]
+    },
+    {
+      "id": "EQ_S_02",
+      "origin": "COMMERCE_R2",
+      "core_in_source": "AF_COUNTER",
+      "core_runtime_candidate": "AF_COUNTER",
+      "core_stat": "counter_bonus_bp",
+      "min_bp": 500,
+      "max_bp": 1000,
+      "commerce_pool_mapped": [
+        "AF_COUNTER",
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_HASTE"
+      ]
+    },
+    {
+      "id": "EQ_S_03",
+      "origin": "COMMERCE_R2",
+      "core_in_source": "AF_COUNTER",
+      "core_runtime_candidate": "AF_COUNTER",
+      "core_stat": "counter_bonus_bp",
+      "min_bp": 500,
+      "max_bp": 1000,
+      "commerce_pool_mapped": [
+        "AF_COUNTER",
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_HASTE"
+      ]
+    },
+    {
+      "id": "EQ_F_01",
+      "origin": "COMMERCE_R2",
+      "core_in_source": "AF_POWER",
+      "core_runtime_candidate": "AF_POWER",
+      "core_stat": "power_pct",
+      "min_bp": 300,
+      "max_bp": 600,
+      "commerce_pool_mapped": [
+        "AF_POWER",
+        "AF_HP",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_CHASE",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_CHASE",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_HASTE"
+      ]
+    },
+    {
+      "id": "EQ_F_02",
+      "origin": "COMMERCE_R2",
+      "core_in_source": "AF_CHASE",
+      "core_runtime_candidate": "AF_CHASE",
+      "core_stat": "chase_bonus_bp",
+      "min_bp": 500,
+      "max_bp": 1000,
+      "commerce_pool_mapped": [
+        "AF_CHASE",
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_CHASE",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_HASTE"
+      ]
+    },
+    {
+      "id": "EQ_F_03",
+      "origin": "COMMERCE_R2",
+      "core_in_source": "AF_CHASE",
+      "core_runtime_candidate": "AF_CHASE",
+      "core_stat": "chase_bonus_bp",
+      "min_bp": 500,
+      "max_bp": 1000,
+      "commerce_pool_mapped": [
+        "AF_CHASE",
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_CHASE",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_HASTE"
+      ]
+    },
+    {
+      "id": "EQ_BODY_01",
+      "origin": "COMMERCE_R2",
+      "core_in_source": "AF_HP",
+      "core_runtime_candidate": "AF_HP",
+      "core_stat": "hp_pct",
+      "min_bp": 300,
+      "max_bp": 600,
+      "commerce_pool_mapped": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_WARD"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_WARD"
+      ]
+    },
+    {
+      "id": "EQ_BODY_02",
+      "origin": "COMMERCE_R2",
+      "core_in_source": "AF_HP",
+      "core_runtime_candidate": "AF_HP",
+      "core_stat": "hp_pct",
+      "min_bp": 300,
+      "max_bp": 600,
+      "commerce_pool_mapped": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_WARD"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_WARD"
+      ]
+    },
+    {
+      "id": "EQ_BODY_03",
+      "origin": "COMMERCE_R2",
+      "core_in_source": "AF_HP",
+      "core_runtime_candidate": "AF_HP",
+      "core_stat": "hp_pct",
+      "min_bp": 300,
+      "max_bp": 600,
+      "commerce_pool_mapped": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_WARD"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_WARD"
+      ]
+    },
+    {
+      "id": "EQ_HAND_01",
+      "origin": "COMMERCE_R2",
+      "core_in_source": "AF_POWER",
+      "core_runtime_candidate": "AF_POWER",
+      "core_stat": "power_pct",
+      "min_bp": 300,
+      "max_bp": 600,
+      "commerce_pool_mapped": [
+        "AF_POWER",
+        "AF_HP",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_WARD"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_WARD"
+      ]
+    },
+    {
+      "id": "EQ_HAND_02",
+      "origin": "COMMERCE_R2",
+      "core_in_source": "AF_DEF",
+      "core_runtime_candidate": "AF_DEF",
+      "core_stat": "defense_pct",
+      "min_bp": 400,
+      "max_bp": 800,
+      "commerce_pool_mapped": [
+        "AF_DEF",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_WARD"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_WARD"
+      ]
+    },
+    {
+      "id": "EQ_HAND_03",
+      "origin": "COMMERCE_R2",
+      "core_in_source": "AF_POWER",
+      "core_runtime_candidate": "AF_POWER",
+      "core_stat": "power_pct",
+      "min_bp": 300,
+      "max_bp": 600,
+      "commerce_pool_mapped": [
+        "AF_POWER",
+        "AF_HP",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_WARD"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_WARD"
+      ]
+    },
+    {
+      "id": "EQ_FEET_01",
+      "origin": "COMMERCE_R2",
+      "core_in_source": "AF_DEF",
+      "core_runtime_candidate": "AF_DEF",
+      "core_stat": "defense_pct",
+      "min_bp": 400,
+      "max_bp": 800,
+      "commerce_pool_mapped": [
+        "AF_DEF",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_WARD"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_WARD"
+      ]
+    },
+    {
+      "id": "EQ_FEET_02",
+      "origin": "COMMERCE_R2",
+      "core_in_source": "AF_DEF",
+      "core_runtime_candidate": "AF_DEF",
+      "core_stat": "defense_pct",
+      "min_bp": 400,
+      "max_bp": 800,
+      "commerce_pool_mapped": [
+        "AF_DEF",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_WARD"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_WARD"
+      ]
+    },
+    {
+      "id": "EQ_FEET_03",
+      "origin": "COMMERCE_R2",
+      "core_in_source": "AF_DEF",
+      "core_runtime_candidate": "AF_DEF",
+      "core_stat": "defense_pct",
+      "min_bp": 400,
+      "max_bp": 800,
+      "commerce_pool_mapped": [
+        "AF_DEF",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_WARD"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_WARD"
+      ]
+    },
+    {
+      "id": "EQ_AMU_01",
+      "origin": "COMMERCE_R2",
+      "core_in_source": "AF_HP",
+      "core_runtime_candidate": "AF_HP",
+      "core_stat": "hp_pct",
+      "min_bp": 300,
+      "max_bp": 600,
+      "commerce_pool_mapped": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_CHASE",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_WARD"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_CHASE",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_WARD"
+      ]
+    },
+    {
+      "id": "EQ_AMU_02",
+      "origin": "COMMERCE_R2",
+      "core_in_source": "AF_HP",
+      "core_runtime_candidate": "AF_HP",
+      "core_stat": "hp_pct",
+      "min_bp": 300,
+      "max_bp": 600,
+      "commerce_pool_mapped": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_CHASE",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_WARD"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_CHASE",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_WARD"
+      ]
+    },
+    {
+      "id": "EQ_AMU_03",
+      "origin": "COMMERCE_R2",
+      "core_in_source": "AF_HP",
+      "core_runtime_candidate": "AF_HP",
+      "core_stat": "hp_pct",
+      "min_bp": 300,
+      "max_bp": 600,
+      "commerce_pool_mapped": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_CHASE",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_WARD"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_CHASE",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_WARD"
+      ]
+    },
+    {
+      "id": "EQ_RING_01",
+      "origin": "COMMERCE_R2",
+      "core_in_source": "AF_POWER",
+      "core_runtime_candidate": "AF_POWER",
+      "core_stat": "power_pct",
+      "min_bp": 300,
+      "max_bp": 600,
+      "commerce_pool_mapped": [
+        "AF_POWER",
+        "AF_HP",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_WARD"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_WARD"
+      ]
+    },
+    {
+      "id": "EQ_RING_02",
+      "origin": "COMMERCE_R2",
+      "core_in_source": "AF_POWER",
+      "core_runtime_candidate": "AF_POWER",
+      "core_stat": "power_pct",
+      "min_bp": 300,
+      "max_bp": 600,
+      "commerce_pool_mapped": [
+        "AF_POWER",
+        "AF_HP",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_WARD"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_WARD"
+      ]
+    },
+    {
+      "id": "EQ_RING_03",
+      "origin": "COMMERCE_R2",
+      "core_in_source": "AF_POWER",
+      "core_runtime_candidate": "AF_POWER",
+      "core_stat": "power_pct",
+      "min_bp": 300,
+      "max_bp": 600,
+      "commerce_pool_mapped": [
+        "AF_POWER",
+        "AF_HP",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_WARD"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_COUNTER",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_DOT",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HEAL",
+        "AF_WARD"
+      ]
+    },
+    {
+      "id": "EQ_F_BODY_01",
+      "origin": "CAT_ANALOGUE_PROPOSAL",
+      "core_in_source": "AF_HP",
+      "core_runtime_candidate": "AF_HP",
+      "core_stat": "hp_pct",
+      "min_bp": 300,
+      "max_bp": 600,
+      "commerce_pool_mapped": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_CHASE",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_CHASE",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_HASTE"
+      ]
+    },
+    {
+      "id": "EQ_F_HAND_01",
+      "origin": "CAT_ANALOGUE_PROPOSAL",
+      "core_in_source": "AF_POWER",
+      "core_runtime_candidate": "AF_POWER",
+      "core_stat": "power_pct",
+      "min_bp": 300,
+      "max_bp": 600,
+      "commerce_pool_mapped": [
+        "AF_POWER",
+        "AF_HP",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_CHASE",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_CHASE",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_HASTE"
+      ]
+    },
+    {
+      "id": "EQ_F_FEET_01",
+      "origin": "CAT_ANALOGUE_PROPOSAL",
+      "core_in_source": "AF_DEF",
+      "core_runtime_candidate": "AF_DEF",
+      "core_stat": "defense_pct",
+      "min_bp": 400,
+      "max_bp": 800,
+      "commerce_pool_mapped": [
+        "AF_DEF",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_CHASE",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_CHASE",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_HASTE"
+      ]
+    },
+    {
+      "id": "EQ_F_RING_01",
+      "origin": "CAT_ANALOGUE_PROPOSAL",
+      "core_in_source": "AF_POWER",
+      "core_runtime_candidate": "AF_POWER",
+      "core_stat": "power_pct",
+      "min_bp": 300,
+      "max_bp": 600,
+      "commerce_pool_mapped": [
+        "AF_POWER",
+        "AF_HP",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "natural_legal_pool": [
+        "AF_CDR",
+        "AF_CHASE",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DEF",
+        "AF_DIRECT",
+        "AF_DOT_RESIST",
+        "AF_GUARD",
+        "AF_HASTE",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST"
+      ],
+      "not_in_gacha": [
+        "AF_CDR",
+        "AF_CHASE",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_HASTE"
+      ]
+    }
+  ],
+  "alias_proposal": {
+    "AF_BARRIER": {
+      "candidate_target": "AF_WARD",
+      "runtime_stat": "barrier_bonus_bp",
+      "range_bp": [
+        500,
+        1000
+      ],
+      "proof_boundary": "Commerce has no numeric implementation; use R2 numeric authority as explicit adapter proposal. This is not a previously approved synonym or in-place migration."
+    }
+  },
+  "remaining_scope": [
+    "All advanced equipment/core_rule/awakening combat is rejected by original R6 slice. Static catalog validity does not mean all33 tested in combat.",
+    "AfterDraw visible-affix representation has no immutable hidden slots; new integration creates all3 once, without treating old mock items as saved real items.",
+    "The source gacha pool omits haste/CDR/crit/direct damage groups; comparison kept that difference unless explicitly labelled growth-pool sensitivity."
+  ]
+}

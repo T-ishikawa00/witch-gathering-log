@@ -1,0 +1,25 @@
+{
+  "candidate": "R454 local host JSON exchange",
+  "revision": "R002",
+  "status": "PREPARED_NOT_RUN",
+  "sourceAndTestPins": [
+    {
+      "path": "tools/witch_purchase_authority/local_exchange_r454.py",
+      "sha256": "43061db6ae53442bdcbca9b4342f58a4040e42b4d59579a98456b7c5787ccd52",
+      "sizeBytes": 13047
+    },
+    {
+      "path": "tools/witch_purchase_authority/tests/test_local_exchange_r454.py",
+      "sha256": "01f5f45046fb0799ed0b40f37b394f305cf1a3eb64ca961b8537d704780560cd",
+      "sizeBytes": 10236
+    }
+  ],
+  "testMethodCount": 6,
+  "correctionNote": "The earlier test pin omitted one final assertion that checks embedded receipt bytes equal canonical R453 receipt JSON plus newline. This manifest records the exact current test file. No source edits were made for this pin correction.",
+  "execution": {
+    "testsRunByAuthor": false,
+    "cliRunByAuthor": false,
+    "databaseMutationByAuthor": false,
+    "swiftOrSimulatorByAuthor": false
+  }
+}

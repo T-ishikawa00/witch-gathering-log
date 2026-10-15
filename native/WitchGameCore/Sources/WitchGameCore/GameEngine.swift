@@ -28,16 +28,81 @@ public struct GameEngine: Sendable {
     public let candidateCombatOverlay: CandidateCombatOverlay?
     public let candidateCharacterGrowth: CandidateCharacterGrowth?
     public let candidateLatentPolicy: CandidateLatentSlotPolicyR003?
+    public let candidatePartyWorkPolicyR144: PartyWorkPolicyR144?
+    public let firstCraftAidCapabilityR179: FirstCraftAidCapabilityR179
+    public let enhancementProjectionPolicyR230: EnhancementProjectionPolicyR230
+    public let naturalGearDiscoveryPolicyR350: NaturalGearDiscoveryPolicyR350?
+    public let naturalGearRefinementPolicyR352: NaturalGearRefinementPolicyR352?
+    public let gearDismantleRefundPolicyR353: GearDismantleRefundPolicyR353?
     public init(catalog: GameCatalog, saves: SaveRepository,
                 candidateCombatOverlay: CandidateCombatOverlay? = nil,
                 candidateCharacterGrowth: CandidateCharacterGrowth? = nil,
-                candidateLatentPolicy: CandidateLatentSlotPolicyR003? = nil) throws {
+                candidateLatentPolicy: CandidateLatentSlotPolicyR003? = nil,
+                candidatePartyWorkPolicyR144: PartyWorkPolicyR144? = nil,
+                firstCraftAidCapabilityR179: FirstCraftAidCapabilityR179 = .disabled,
+                enhancementProjectionPolicyR230: EnhancementProjectionPolicyR230 = .legacy,
+                naturalGearDiscoveryPolicyR350: NaturalGearDiscoveryPolicyR350? = nil,
+                naturalGearRefinementPolicyR352: NaturalGearRefinementPolicyR352? = nil,
+                gearDismantleRefundPolicyR353: GearDismantleRefundPolicyR353? = nil) throws {
         try catalog.validate()
+        if naturalGearRefinementPolicyR352 != nil && naturalGearDiscoveryPolicyR350 == nil {
+            throw CoreError.invalidCatalog("R352 refinement requires the opt-in R350 runtime")
+        }
+        if gearDismantleRefundPolicyR353 != nil && naturalGearRefinementPolicyR352 == nil {
+            throw CoreError.invalidCatalog("R353 dismantle refund requires the opt-in R352 runtime")
+        }
+        if naturalGearDiscoveryPolicyR350 != nil {
+            guard candidatePartyWorkPolicyR144 != nil, candidateLatentPolicy != nil,
+                  catalog.regions.allSatisfy({ $0.workSeconds == NaturalGearDiscoveryPolicyR350.workSeconds }) else {
+                throw CoreError.invalidCatalog("R350 requires R144/R098/latent runtime and exact 300-second region work cadence")
+            }
+        }
+        if let policy = candidatePartyWorkPolicyR144 {
+            guard let growth = candidateCharacterGrowth,
+                  let overlay = candidateCombatOverlay,
+                  let latentPolicy = candidateLatentPolicy else {
+                throw CoreError.invalidCatalog("R144 requires the complete R098 runtime profile dependencies")
+            }
+            let profile = try GameRuntimeConfigurationR098.resolve(growthStrengthBP: growth.strengthBP)
+            guard policy.baseProfileID == profile.profileID,
+                  policy.baseConfigurationFingerprint == profile.configurationFingerprint,
+                  policy.baseProfileID == PartyWorkPolicyR144.expectedBaseProfileID,
+                  policy.baseConfigurationFingerprint == PartyWorkPolicyR144.expectedBaseConfigurationFingerprint,
+                  growth == profile.growth,
+                  overlay == profile.combatOverlay,
+                  latentPolicy.sourceSHA256 == profile.latentPolicySHA256,
+                  try Self.sameR098GameplayCatalog(catalog, expected: profile.catalog) else {
+                throw CoreError.invalidCatalog("R144 policy does not match the actual R098 500bp runtime dependencies")
+            }
+        }
         self.catalog = catalog
         self.saves = saves
         self.candidateCombatOverlay = candidateCombatOverlay
         self.candidateCharacterGrowth = candidateCharacterGrowth
         self.candidateLatentPolicy = candidateLatentPolicy
+        self.candidatePartyWorkPolicyR144 = candidatePartyWorkPolicyR144
+        self.firstCraftAidCapabilityR179 = firstCraftAidCapabilityR179
+        self.enhancementProjectionPolicyR230 = enhancementProjectionPolicyR230
+        self.naturalGearDiscoveryPolicyR350 = naturalGearDiscoveryPolicyR350
+        self.naturalGearRefinementPolicyR352 = naturalGearRefinementPolicyR352
+        self.gearDismantleRefundPolicyR353 = gearDismantleRefundPolicyR353
+    }
+
+    private static func sameR098GameplayCatalog(_ actual: GameCatalog, expected: GameCatalog) throws -> Bool {
+        guard actual.appearances.count >= expected.appearances.count,
+              Array(actual.appearances.prefix(expected.appearances.count)) == expected.appearances else { return false }
+        let encoder = JSONEncoder()
+        encoder.outputFormatting = [.sortedKeys, .withoutEscapingSlashes]
+        func gameplayBytes(_ value: GameCatalog) throws -> Data {
+            guard var object = try JSONSerialization.jsonObject(with: encoder.encode(value)) as? [String: Any] else {
+                throw CoreError.invalidCatalog("R144 runtime catalog could not be canonicalized")
+            }
+            object.removeValue(forKey: "version")
+            object.removeValue(forKey: "appearances")
+            return try JSONSerialization.data(withJSONObject: object,
+                                              options: [.sortedKeys, .withoutEscapingSlashes])
+        }
+        return try gameplayBytes(actual) == gameplayBytes(expected)
     }
     public func snapshot() async -> GameSnapshot { await saves.snapshot() }
 
@@ -81,6 +146,222 @@ public struct GameEngine: Sendable {
                                            candidateMagnetParameters: candidateParameters(for: enemy))
     }
 
+    /// No-reward preview using the actual challenge scenario and current R6 party
+    /// projection. It changes only a local snapshot copy and never saves or dispatches.
+    public func previewChallengeGearSwapR131(challengeID: String, actorID: String,
+                                              selectedGearID: UUID, seed: UInt64,
+                                              snapshot: GameSnapshot) throws -> GearSwapCombatPreviewR131 {
+        guard let challenge = catalog.challenges.first(where: { $0.id == challengeID }) else {
+            throw GearSwapCombatPreviewErrorR131.unknownChallenge
+        }
+        do { try requireGate(challenge.unlockGate, state: snapshot) }
+        catch { throw GearSwapCombatPreviewErrorR131.challengeLocked }
+        let projection = try gearSwapSnapshotR131(actorID: actorID, selectedGearID: selectedGearID, snapshot: snapshot)
+        let scenario = try catalog.challengeCombatScenario(challengeID)
+        let result = try R6TimelineSimulator.run(
+            party: makeCombatParty(state: projection.snapshot),
+            enemies: scenario.enemies,
+            seed: seed,
+            challengeID: challengeID,
+            entityPresentation: scenario.entityPresentation)
+        return GearSwapCombatPreviewR131(challengeID: challengeID, actorID: actorID,
+                                         currentGearID: projection.currentGearID, selectedGearID: selectedGearID,
+                                         slot: projection.slot,
+                                         seed: seed, result: result)
+    }
+
+
+    /// Runs two read-only full-party equipment projections through the existing
+    /// challenge simulator. The supplied maps must cover exactly the occupied
+    /// slots in the source snapshot and may reference only its existing items.
+    public func previewChallengeOwnedPartyLoadoutsR181(
+        challengeID: String, seed: UInt64, snapshot: GameSnapshot,
+        loadouts: [OwnedPartyLoadoutR181]
+    ) throws -> [OwnedPartyLoadoutPreviewR181] {
+        guard let challenge = catalog.challenges.first(where: { $0.id == challengeID }) else {
+            throw OwnedPartyLoadoutPreviewErrorR181.unknownChallenge
+        }
+        do { try requireGate(challenge.unlockGate, state: snapshot) }
+        catch { throw OwnedPartyLoadoutPreviewErrorR181.challengeLocked }
+        guard loadouts.count == 2 else {
+            throw OwnedPartyLoadoutPreviewErrorR181.exactlyTwoLoadoutsRequired
+        }
+        guard loadouts.allSatisfy({ !$0.id.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }),
+              Set(loadouts.map(\.id)).count == 2 else {
+            throw OwnedPartyLoadoutPreviewErrorR181.duplicateOrEmptyLoadoutID
+        }
+
+        let expectedSlots = Set(snapshot.equippedGearIDs.keys)
+        let expectedActors = Set(snapshot.partyActorIDs)
+        guard expectedActors.count == snapshot.partyActorIDs.count,
+              snapshot.partyActorIDs.allSatisfy({ expectedSlots.contains($0 + "|weapon") }) else {
+            throw OwnedPartyLoadoutPreviewErrorR181.occupiedSlotSetMismatch
+        }
+        let scenario = try catalog.challengeCombatScenario(challengeID)
+        return try loadouts.map { loadout in
+            guard Set(loadout.gearByActorSlot.keys) == expectedSlots else {
+                throw OwnedPartyLoadoutPreviewErrorR181.occupiedSlotSetMismatch
+            }
+            let assignedIDs = Array(loadout.gearByActorSlot.values)
+            if Set(assignedIDs).count != assignedIDs.count {
+                var counts: [UUID: Int] = [:]
+                for id in assignedIDs { counts[id, default: 0] += 1 }
+                guard let duplicate = counts.keys
+                    .filter({ counts[$0, default: 0] > 1 })
+                    .sorted(by: { $0.uuidString < $1.uuidString }).first else {
+                    throw OwnedPartyLoadoutPreviewErrorR181.occupiedSlotSetMismatch
+                }
+                throw OwnedPartyLoadoutPreviewErrorR181.duplicateGearAssignment(duplicate)
+            }
+
+            var projected = snapshot
+            for (slotKey, itemID) in loadout.gearByActorSlot {
+                let parts = slotKey.split(separator: "|", omittingEmptySubsequences: false)
+                guard parts.count == 2, !parts[0].isEmpty, !parts[1].isEmpty else {
+                    throw OwnedPartyLoadoutPreviewErrorR181.malformedSlotKey(slotKey)
+                }
+                let actorID = String(parts[0]), slot = String(parts[1])
+                guard expectedActors.contains(actorID) else {
+                    throw OwnedPartyLoadoutPreviewErrorR181.malformedSlotKey(slotKey)
+                }
+                let matches = snapshot.gear.filter { $0.id == itemID }
+                guard matches.count == 1, let item = matches.first else {
+                    throw OwnedPartyLoadoutPreviewErrorR181.missingOrDuplicateGear(itemID)
+                }
+                guard item.ownerID == nil || item.ownerID == actorID else {
+                    throw OwnedPartyLoadoutPreviewErrorR181.wrongGearOwner(itemID)
+                }
+                guard let definition = catalog.gear.first(where: { $0.id == item.definitionID }),
+                      definition.slot == slot else {
+                    throw OwnedPartyLoadoutPreviewErrorR181.wrongGearSlot(itemID)
+                }
+                guard GearSwapCombatPreviewR131.isUsableByActorR131(definition, actorID: actorID) else {
+                    throw OwnedPartyLoadoutPreviewErrorR181.gearNotUsableByActor(itemID)
+                }
+            }
+
+            let previouslyEquipped = Set(snapshot.equippedGearIDs.values)
+            projected.gear = projected.gear.map { item in
+                var copy = item
+                if previouslyEquipped.contains(item.id) { copy.ownerID = nil }
+                return copy
+            }
+            projected.equippedGearIDs = loadout.gearByActorSlot
+            for (slotKey, itemID) in loadout.gearByActorSlot {
+                let actorID = String(slotKey.split(separator: "|", maxSplits: 1)[0])
+                guard let index = projected.gear.firstIndex(where: { $0.id == itemID }) else {
+                    throw OwnedPartyLoadoutPreviewErrorR181.missingOrDuplicateGear(itemID)
+                }
+                projected.gear[index].ownerID = actorID
+            }
+            let result = try R6TimelineSimulator.run(
+                party: makeCombatParty(state: projected), enemies: scenario.enemies,
+                seed: seed, challengeID: challengeID,
+                entityPresentation: scenario.entityPresentation)
+            return OwnedPartyLoadoutPreviewR181(challengeID: challengeID,
+                loadoutID: loadout.id, seed: seed,
+                gearByActorSlot: loadout.gearByActorSlot, result: result)
+        }
+    }
+
+
+    /// Catalog-ordered campaign targets that are reachable from this exact snapshot.
+    /// The list and preview share the same target predicate.
+    public func availableCampaignGearTrialEnemiesR136(snapshot: GameSnapshot) -> [EnemyDefinition] {
+        guard let regionID = snapshot.activeRegionID,
+              snapshot.unlockedRegionIDs.contains(regionID),
+              let region = catalog.regions.first(where: { $0.id == regionID }) else { return [] }
+        return region.enemyIDs.compactMap { enemyID in
+            try? requireCampaignTargetR136(enemyID: enemyID, snapshot: snapshot)
+        }
+    }
+
+    /// No-reward campaign preview using the same party, enemy, overlay, and magnet
+    /// projections as `.resolveEncounter`. It edits only an in-memory snapshot copy.
+    public func previewCampaignGearSwapR136(enemyID: String, actorID: String,
+                                             selectedGearID: UUID, seed: UInt64,
+                                             snapshot: GameSnapshot) throws -> CampaignGearSwapPreviewR136 {
+        let enemy = try requireCampaignTargetR136(enemyID: enemyID, snapshot: snapshot)
+        let projection = try gearSwapSnapshotR131(actorID: actorID, selectedGearID: selectedGearID, snapshot: snapshot)
+        let presentation = [enemy.id: CombatEntityPresentation(entityID: enemy.id, kind: "enemy",
+            catalogID: enemy.id, label: enemy.name, assetKey: enemy.id)]
+        let result = try R6TimelineSimulator.run(
+            party: makeCombatParty(state: projection.snapshot),
+            enemies: [campaignCombatant(enemy)], seed: seed,
+            entityPresentation: presentation,
+            candidateMagnetParameters: candidateParameters(for: enemy))
+        return CampaignGearSwapPreviewR136(enemyID: enemy.id, actorID: actorID,
+            currentGearID: projection.currentGearID, selectedGearID: selectedGearID,
+            slot: projection.slot, seed: seed, result: result)
+    }
+
+    private func requireCampaignTargetR136(enemyID: String, snapshot: GameSnapshot) throws -> EnemyDefinition {
+        guard let enemy = catalog.enemies.first(where: { $0.id == enemyID }) else {
+            throw CampaignGearTrialErrorR136.unknownEnemy
+        }
+        guard let regionID = snapshot.activeRegionID,
+              let region = catalog.regions.first(where: { $0.id == regionID }) else {
+            throw CampaignGearTrialErrorR136.activeRegionUnavailable
+        }
+        guard snapshot.unlockedRegionIDs.contains(regionID) else {
+            throw CampaignGearTrialErrorR136.activeRegionLocked
+        }
+        guard enemy.regionID == regionID else { throw CampaignGearTrialErrorR136.enemyOutsideActiveRegion }
+        guard region.enemyIDs.contains(enemyID) else { throw CampaignGearTrialErrorR136.enemyNotListedInActiveRegion }
+        if let prerequisite = enemy.prerequisiteEncounterID,
+           !snapshot.completedEncounterIDs.contains(prerequisite) {
+            throw CampaignGearTrialErrorR136.prerequisiteNotCleared(prerequisite)
+        }
+        return enemy
+    }
+
+    private func gearSwapSnapshotR131(actorID: String, selectedGearID: UUID,
+                                      snapshot: GameSnapshot) throws -> (snapshot: GameSnapshot, currentGearID: UUID?, slot: String) {
+        guard snapshot.partyActorIDs.contains(actorID) else {
+            throw GearSwapCombatPreviewErrorR131.actorNotInParty
+        }
+        let matchingSelected = snapshot.gear.filter { $0.id == selectedGearID }
+        guard matchingSelected.count == 1, let selected = matchingSelected.first else {
+            throw GearSwapCombatPreviewErrorR131.missingOrDuplicateGear(selectedGearID)
+        }
+        guard selected.ownerID == nil || selected.ownerID == actorID else {
+            throw GearSwapCombatPreviewErrorR131.wrongGearOwner(selectedGearID)
+        }
+        guard let selectedDefinition = catalog.gear.first(where: { $0.id == selected.definitionID }),
+              GearSwapCombatPreviewR131.isUsableByActorR131(selectedDefinition, actorID: actorID) else {
+            throw GearSwapCombatPreviewErrorR131.gearNotUsableByActor(selectedGearID)
+        }
+        let slotKey = actorID + "|" + selectedDefinition.slot
+        let currentGearID = snapshot.equippedGearIDs[slotKey]
+        if let currentGearID {
+            let matchingCurrent = snapshot.gear.filter { $0.id == currentGearID }
+            guard matchingCurrent.count == 1, let current = matchingCurrent.first else {
+                throw GearSwapCombatPreviewErrorR131.missingOrDuplicateGear(currentGearID)
+            }
+            guard current.ownerID == nil || current.ownerID == actorID else {
+                throw GearSwapCombatPreviewErrorR131.wrongGearOwner(currentGearID)
+            }
+            guard let currentDefinition = catalog.gear.first(where: { $0.id == current.definitionID }),
+                  currentDefinition.slot == selectedDefinition.slot else {
+                throw GearSwapCombatPreviewErrorR131.wrongGearSlot
+            }
+            guard GearSwapCombatPreviewR131.isUsableByActorR131(currentDefinition, actorID: actorID) else {
+                throw GearSwapCombatPreviewErrorR131.gearNotUsableByActor(currentGearID)
+            }
+        }
+        if snapshot.equippedGearIDs.contains(where: { $0.key != slotKey && $0.value == selectedGearID }) {
+            throw GearSwapCombatPreviewErrorR131.selectedGearEquippedElsewhere(selectedGearID)
+        }
+        var copy = snapshot
+        if let currentGearID, let index = copy.gear.firstIndex(where: { $0.id == currentGearID }) {
+            copy.gear[index].ownerID = nil
+        }
+        copy.equippedGearIDs = copy.equippedGearIDs.filter { $0.key != slotKey && $0.value != selectedGearID }
+        copy.equippedGearIDs[slotKey] = selectedGearID
+        if let index = copy.gear.firstIndex(where: { $0.id == selectedGearID }) { copy.gear[index].ownerID = actorID }
+        return (copy, currentGearID, selectedDefinition.slot)
+    }
+
     private func candidateParameters(for enemy: EnemyDefinition) -> MagnetMechanicParameters? {
         guard let overlay = candidateCombatOverlay, overlay.applies(to: enemy.id) else { return nil }
         return overlay.magnetParameters
@@ -104,6 +385,72 @@ public struct GameEngine: Sendable {
         guard state.completedEncounterIDs.contains(encounterID) else { throw CoreError.invalidCommand("catalog gate not cleared: \(gateID)") }
     }
 
+    private func validateCurrentGearLoadoutR342(state: GameSnapshot) throws -> Set<UUID> {
+        guard !state.equippedGearIDs.isEmpty else {
+            throw CoreError.invalidCommand("R342 cannot save or apply an empty current loadout")
+        }
+        var assignedIDs = Set<UUID>()
+        for (slotKey, gearID) in state.equippedGearIDs {
+            let parts = slotKey.split(separator: "|", omittingEmptySubsequences: false)
+            guard parts.count == 2, !parts[0].isEmpty, !parts[1].isEmpty else {
+                throw CoreError.invalidCommand("R342 current loadout has a malformed actor-slot key")
+            }
+            let actorID = String(parts[0]), slot = String(parts[1])
+            guard state.partyActorIDs.contains(actorID), assignedIDs.insert(gearID).inserted else {
+                throw CoreError.invalidCommand("R342 current loadout has an unknown actor or duplicate gear")
+            }
+            let matches = state.gear.filter { $0.id == gearID }
+            guard matches.count == 1, let item = matches.first else {
+                throw CoreError.invalidCommand("R342 current loadout gear is missing or duplicated: \(gearID)")
+            }
+            guard item.ownerID == nil || item.ownerID == actorID else {
+                throw CoreError.invalidCommand("R342 current loadout owner does not match its equipped actor")
+            }
+            guard let definition = catalog.gear.first(where: { $0.id == item.definitionID }),
+                  definition.slot == slot, GearSwapCombatPreviewR131.isUsableByActorR131(definition, actorID: actorID) else {
+                throw CoreError.invalidCommand("R342 current loadout gear no longer matches its actor and slot")
+            }
+            try validateCandidatePayloadIfEnabled(item)
+        }
+        return assignedIDs
+    }
+
+    private func validateGearLoadoutR342(_ assignments: [String: UUID], state: GameSnapshot,
+                                         currentlyEquippedIDs: Set<UUID>) throws {
+        guard !assignments.isEmpty else { throw CoreError.invalidCommand("R342 cannot save or apply an empty loadout") }
+        var assignedIDs = Set<UUID>()
+        for (slotKey, gearID) in assignments {
+            let parts = slotKey.split(separator: "|", omittingEmptySubsequences: false)
+            guard parts.count == 2, !parts[0].isEmpty, !parts[1].isEmpty else {
+                throw CoreError.invalidCommand("R342 loadout has a malformed actor-slot key")
+            }
+            let actorID = String(parts[0]), slot = String(parts[1])
+            guard state.partyActorIDs.contains(actorID) else {
+                throw CoreError.invalidCommand("R342 loadout actor is not in the party: \(actorID)")
+            }
+            guard assignedIDs.insert(gearID).inserted else {
+                throw CoreError.invalidCommand("R342 loadout assigns one gear instance more than once")
+            }
+            let matches = state.gear.filter { $0.id == gearID }
+            guard matches.count == 1, let item = matches.first else {
+                throw CoreError.invalidCommand("R342 loadout gear is missing or duplicated: \(gearID)")
+            }
+            let movingEquippedItem = currentlyEquippedIDs.contains(gearID)
+            guard item.ownerID == nil || item.ownerID == actorID ||
+                  (movingEquippedItem && state.equippedGearIDs.contains(where: { $0.value == gearID && $0.key.hasPrefix((item.ownerID ?? "") + "|") })) else {
+                throw CoreError.invalidCommand("R342 loadout gear belongs to another, unequipped actor")
+            }
+            guard let definition = catalog.gear.first(where: { $0.id == item.definitionID }),
+                  definition.slot == slot, GearSwapCombatPreviewR131.isUsableByActorR131(definition, actorID: actorID) else {
+                throw CoreError.invalidCommand("R342 loadout gear no longer matches its current actor and slot")
+            }
+            try validateCandidatePayloadIfEnabled(item)
+            guard state.equippedGearIDs.allSatisfy({ $0.value != gearID || $0.key == slotKey || movingEquippedItem }) else {
+                throw CoreError.invalidCommand("R342 loadout gear is currently assigned to a different slot")
+            }
+        }
+    }
+
     private func validateCandidatePayloadIfEnabled(_ item: GearInstance) throws {
         guard let candidateLatentPolicy, let slots = item.candidateLatentSlots else { return }
         try candidateLatentPolicy.validateStoredPayload(templateID: item.definitionID, slots: slots)
@@ -112,15 +459,26 @@ public struct GameEngine: Sendable {
     private func makeCombatParty(state: GameSnapshot) throws -> [Combatant] {
         try state.partyActorIDs.map { actorID in
             let instances = state.equippedGearIDs.filter { $0.key.hasPrefix(actorID + "|") }.compactMap { _, instanceID in state.gear.first(where: { $0.id == instanceID }) }
+            if enhancementProjectionPolicyR230 == .r2SlotBudgetCandidate {
+                for item in instances { try GearEnhancementGrowthR230.validatePersistedEnhancement(item, in: catalog) }
+            }
+            let projectedRanks = naturalGearRefinementPolicyR352 == nil ? [:] : (state.naturalGearRefinementR352?.ranksByUUID ?? [:])
+            var projected: Combatant
             if let candidateLatentPolicy {
-                return try catalog.projectCandidateCombatantR005(for: actorID, with: instances,
+                projected = try catalog.projectCandidateCombatantR005(for: actorID, with: instances,
                     completedResearchIDs: state.completedResearchIDs,
                     totalXP: state.characterXP[actorID, default: 0], candidateGrowth: candidateCharacterGrowth,
-                    candidateLatentPolicy: candidateLatentPolicy).combatant
+                    candidateLatentPolicy: candidateLatentPolicy,
+                    enhancementProjectionPolicyR230: enhancementProjectionPolicyR230,
+                    refinementRanksR352: projectedRanks).combatant
+            } else {
+                projected = catalog.projectCombatant(for: actorID, with: instances, completedResearchIDs: state.completedResearchIDs,
+                                                     totalXP: state.characterXP[actorID, default: 0],
+                                                     candidateGrowth: candidateCharacterGrowth,
+                                                     enhancementProjectionPolicyR230: enhancementProjectionPolicyR230,
+                                                     refinementRanksR352: projectedRanks)
             }
-            return catalog.projectCombatant(for: actorID, with: instances, completedResearchIDs: state.completedResearchIDs,
-                                            totalXP: state.characterXP[actorID, default: 0],
-                                            candidateGrowth: candidateCharacterGrowth)
+            return projected
         }
     }
 
@@ -163,6 +521,306 @@ public struct GameEngine: Sendable {
         state.offlineRemainderSeconds = accrued.truncatingRemainder(dividingBy: interval)
         state.lastClaimAt = now
         return (units, materialID)
+    }
+
+    private func clearNaturalGearLegacyPartialMarkerR350(state: inout GameSnapshot) {
+        guard var ledger = state.naturalGearDiscoveryR350, ledger.skipLegacyPartialUnit else { return }
+        ledger.skipLegacyPartialUnit = false
+        state.naturalGearDiscoveryR350 = ledger
+    }
+
+    private func effectivePartyWorkTargetR144(state: GameSnapshot) -> PartyWorkTargetR144? {
+        state.partyWorkTargetR144 ?? state.gatherTargetMaterialID.map { .gather($0) }
+    }
+
+    private func validatePartyWorkTimestampR144(_ now: Date, state: GameSnapshot) throws {
+        guard now.timeIntervalSince1970.isFinite else {
+            throw CoreError.invalidCommand("R144 target timestamp must be finite")
+        }
+        if let lastClaimAt = state.lastClaimAt, now < lastClaimAt {
+            throw CoreError.invalidCommand("R144 work clock moved backward")
+        }
+    }
+
+    /// First candidate mutations turn a valid legacy gather selection into an explicit
+    /// opt-in target in the same transaction. Saves with no usable target fail closed.
+    private func requireOrPersistPartyWorkMarkerR144(state: inout GameSnapshot) throws {
+        guard candidatePartyWorkPolicyR144 != nil else { return }
+        if let target = state.partyWorkTargetR144 {
+            try validatePartyWorkTargetR144(target, state: state)
+            return
+        }
+        guard let target = state.gatherTargetMaterialID.map(PartyWorkTargetR144.gather) else {
+            throw CoreError.invalidCommand("R144 requires an explicit work target before mutating this save")
+        }
+        try validatePartyWorkTargetR144(target, state: state)
+        state.partyWorkTargetR144 = target
+    }
+
+    private func validatePartyWorkTargetR144(_ target: PartyWorkTargetR144, state: GameSnapshot) throws {
+        guard let regionID = state.activeRegionID,
+              state.unlockedRegionIDs.contains(regionID),
+              let region = catalog.regions.first(where: { $0.id == regionID }) else {
+            throw CoreError.invalidCommand("R144 work target requires an unlocked active region")
+        }
+        switch target.kind {
+        case .gather:
+            guard region.gatherMaterialIDs.contains(target.targetID),
+                  catalog.availableGatherMaterialIDs(in: regionID, unlockedRegionIDs: state.unlockedRegionIDs,
+                                                     completedEncounterIDs: state.completedEncounterIDs).contains(target.targetID) else {
+                throw CoreError.invalidCommand("R144 gather target is unavailable in the active region")
+            }
+        case .investigate:
+            guard let enemy = catalog.enemies.first(where: { $0.id == target.targetID }),
+                  enemy.regionID == regionID, region.enemyIDs.contains(enemy.id),
+                  state.completedEncounterIDs.contains(enemy.id),
+                  enemy.prerequisiteEncounterID.map(state.completedEncounterIDs.contains) ?? true else {
+                throw CoreError.invalidCommand("R144 investigation requires an already-cleared enemy in the active region")
+            }
+            _ = try PartyWorkR144Validation.declaredDropMaterialID(for: enemy, catalog: catalog)
+        }
+    }
+
+    private func r350GateIsCleared(_ gateID: String, state: GameSnapshot) -> Bool {
+        if gateID == "G_START" { return true }
+        let parts = gateID.split(separator: "_")
+        guard parts.count == 3, parts[0] == "G" else { return false }
+        return state.completedEncounterIDs.contains("B_\(parts[1])_\(parts[2])")
+    }
+
+    private func captureNaturalPoolR350(state: GameSnapshot, ledger: NaturalGearDiscoveryLedgerR350) throws -> NaturalGearPoolSnapshotR350 {
+        guard let policy = naturalGearDiscoveryPolicyR350,
+              let regionID = state.activeRegionID,
+              state.unlockedRegionIDs.contains(regionID),
+              let regionPool = NaturalGearDiscoveryPolicyR350.regionPools[regionID] else {
+            throw CoreError.invalidCommand("R350 natural gear requires a currently unlocked R3 region pool")
+        }
+        let allIDs = Array(Set(NaturalGearDiscoveryPolicyR350.regionPools.values.flatMap{$0})).sorted()
+        let evolvedIDs = Set(catalog.recipes.filter { $0.kind == "evolve_in_place" }.compactMap(\.outputGearID))
+        func eligible(_ templateID: String) -> Bool {
+            guard let definition = catalog.gear.first(where: { $0.id == templateID }),
+                  definition.actorIDs.isEmpty || definition.actorIDs.contains(where: state.partyActorIDs.contains) else { return false }
+            if evolvedIDs.contains(templateID), !ledger.discoveredCraftedTemplateIDs.contains(templateID) { return false }
+            let recipes = catalog.recipes.filter { $0.outputGearID == templateID }
+            if !recipes.isEmpty {
+                let routeRecipes = recipes.filter { $0.kind != "evolve_in_place" || ledger.discoveredCraftedTemplateIDs.contains(templateID) }
+                if !routeRecipes.isEmpty && !routeRecipes.contains(where: { $0.gateID.map { self.r350GateIsCleared($0, state: state) } ?? true }) { return false }
+            }
+            return true
+        }
+        let global = allIDs.filter(eligible)
+        let local = regionPool.filter(eligible)
+        guard !global.isEmpty else { throw CoreError.invalidCommand("R350 STORAGE_BLOCKED: no eligible natural gear template in the pinned global pool") }
+        let discovered = global.filter { !evolvedIDs.contains($0) || ledger.discoveredCraftedTemplateIDs.contains($0) }
+        let sourceRank = NaturalGearDiscoveryPolicyR350.regionRanks[regionID] ?? 1
+        let unlockedRank = state.unlockedRegionIDs.compactMap { NaturalGearDiscoveryPolicyR350.regionRanks[$0] }.max() ?? 1
+        let ranks = Dictionary(uniqueKeysWithValues: global.map { ($0, naturalAttunementRankR350(templateID: $0, regionID: regionID, highestUnlockedRank: unlockedRank, state: state)) })
+        let desired = state.trackedRecipeID.flatMap { id in catalog.recipes.first(where: { $0.id == id })?.outputGearID }
+        _ = policy
+        return NaturalGearPoolSnapshotR350(regionID: regionID, sourceRegionRank: sourceRank, highestUnlockedRegionRank: unlockedRank, local: local, global: global,
+            discovered: discovered, actors: state.partyActorIDs, attunementRanks: ranks, desiredTemplateID: desired)
+    }
+
+    private func naturalAttunementRankR350(templateID: String, regionID: String, highestUnlockedRank: Int, state: GameSnapshot) -> Int {
+        let sourceRank = NaturalGearDiscoveryPolicyR350.regionRanks[regionID] ?? 1
+        if naturalGearRefinementPolicyR352 == nil {
+            // Preserve existing R350-only behavior when the separate rank system is off.
+            let gates = catalog.recipes.filter { $0.outputGearID == templateID }.compactMap(\.gateID)
+            let unlockedGateRanks = gates.filter { r350GateIsCleared($0, state: state) }.compactMap { gate -> Int? in
+                if gate == "G_START" { return 1 }
+                let parts = gate.split(separator: "_")
+                guard parts.count == 3, parts[0] == "G", let rank = NaturalGearDiscoveryPolicyR350.regionRanks[String(parts[1])] else { return nil }
+                return rank
+            }
+            return min(sourceRank, highestUnlockedRank, unlockedGateRanks.max() ?? highestUnlockedRank)
+        }
+        // R352 birth rank follows global cleared-boss progression, not a template's recipe gate.
+        let globalRank = NaturalGearRefinementPolicyR352.globalRank(completedEncounterIDs: state.completedEncounterIDs)
+        return min(sourceRank, highestUnlockedRank, globalRank)
+    }
+
+    private func naturalQualityR350(ledger: inout NaturalGearDiscoveryLedgerR350, rollIndex: Int) throws -> String {
+        if ledger.missesSinceQ4 >= 99 { ledger.missesSinceQ4 = 0; return "Q4" }
+        let roll = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: rollIndex,
+                                                        domain: "quality", upperBound: 10_000)
+        var boundary = 0
+        for (quality, weight) in NaturalGearDiscoveryPolicyR350.baseQualityWeights {
+            boundary += weight
+            if roll < boundary {
+                if quality == "Q4" { ledger.missesSinceQ4 = 0 }
+                else { ledger.missesSinceQ4 = try checkedAdd(ledger.missesSinceQ4, 1, label: "R350 Q4 pity") }
+                return quality
+            }
+        }
+        throw CoreError.invalidCommand("R350 quality table does not cover 10,000 basis points")
+    }
+
+    private func settleNaturalGearR350(units: Int, operationID: UUID, state: inout GameSnapshot) throws {
+        guard naturalGearDiscoveryPolicyR350 != nil, units > 0,
+              var ledger = state.naturalGearDiscoveryR350 else { return }
+        for _ in 0..<units {
+            if ledger.skipLegacyPartialUnit {
+                // The shared R144 unit that finishes a legacy fractional remainder began
+                // before R350 activation; preserve its ordinary payout but do not count it.
+                ledger.skipLegacyPartialUnit = false
+                continue
+            }
+            if ledger.workUnitsIntoDrop == 0 {
+                ledger.pinnedPool = try captureNaturalPoolR350(state: state, ledger: ledger)
+            }
+            ledger.workUnitsIntoDrop += 1
+            guard ledger.workUnitsIntoDrop <= NaturalGearDiscoveryPolicyR350.workUnitsPerDrop,
+                  let pool = ledger.pinnedPool else {
+                throw CoreError.invalidCommand("R350 pinned period state is incomplete")
+            }
+            guard ledger.workUnitsIntoDrop == NaturalGearDiscoveryPolicyR350.workUnitsPerDrop else { continue }
+            guard state.gear.count < NaturalGearDiscoveryPolicyR350.inventorySafetyCeiling else {
+                throw CoreError.invalidCommand("STORAGE_BLOCKED: R350 natural gear inventory ceiling reached; transaction was not credited")
+            }
+            let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+            let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+            let desired = pool.desiredTemplateID
+            let chosenTemplate: String
+            let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+                domain: "pool-scope", upperBound: 10_000) < NaturalGearDiscoveryPolicyR350.localPoolBasisPoints
+            let choices = useLocal && !pool.localEligibleTemplateIDs.isEmpty ? pool.localEligibleTemplateIDs : pool.globalEligibleTemplateIDs
+            let templateIndex = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+                domain: "template", upperBound: choices.count)
+            chosenTemplate = choices[templateIndex]
+            guard let definition = catalog.gear.first(where: { $0.id == chosenTemplate }),
+                  let latent = candidateLatentPolicy else {
+                throw CoreError.invalidCommand("R350 selected a template without current catalog/latent support")
+            }
+            let gearID = NaturalGearCounterRandomR350.uuid(seed: ledger.seedHex, index: nextIndex,
+                                                           templateID: chosenTemplate)
+            guard !state.gear.contains(where: { $0.id == gearID }) else {
+                throw CoreError.invalidCommand("R350 deterministic gear UUID collides with an existing instance")
+            }
+            let rawFloor = quality == "Q4" ? 600 : 0
+            let slots = try latent.generateNewInstanceSlots(templateID: chosenTemplate,
+                joinedActorIDs: Set(pool.joinedActorIDs), operationID: gearID,
+                domainSalt: "natural-r350|\(nextIndex)|\(chosenTemplate)", minimumRawQ: rawFloor)
+            let protect = !state.gear.contains(where: { $0.definitionID == chosenTemplate }) || quality == "Q4"
+            state.gear.append(GearInstance(id: gearID, definitionID: definition.id, protected: protect,
+                                           candidateLatentSlots: slots, qualityID: quality))
+            guard let rank = pool.attunementRankByTemplateID[chosenTemplate] else {
+                throw CoreError.invalidCommand("R350 pinned attunement rank missing for chosen template")
+            }
+            if naturalGearRefinementPolicyR352 != nil, rank > 1 {
+                var ranks = state.naturalGearRefinementR352 ?? NaturalGearRefinementLedgerR352()
+                ranks.setRank(rank, for: gearID)
+                state.naturalGearRefinementR352 = ranks
+            }
+            ledger.naturalRollIndex = nextIndex
+            ledger.acquisitionRecords.append(NaturalGearAcquisitionRecordR350(
+                gearInstanceID: gearID, templateID: chosenTemplate, sourceRegionID: pool.regionID,
+                attunementRank: rank, naturalRollIndex: nextIndex, qualityID: quality, operationID: operationID))
+            if ledger.acquisitionRecords.count > NaturalGearDiscoveryPolicyR350.retainedAcquisitionRecords {
+                ledger.acquisitionRecords.removeFirst(ledger.acquisitionRecords.count - NaturalGearDiscoveryPolicyR350.retainedAcquisitionRecords)
+            }
+            ledger.workUnitsIntoDrop = 0
+            ledger.pinnedPool = nil
+        }
+        state.naturalGearDiscoveryR350 = ledger
+    }
+
+    /// A legacy save is settled under its existing R144 rules before the R350 seed is
+    /// initialized. This prevents old elapsed work from being credited as retroactive gear.
+    private typealias PartyWorkSettlementR144 = (units: Int, materialID: String?)
+
+    /// Returns any R144 units settled before the R350 ledger existed. The caller may
+    /// report these legacy units, but they are never replayed into the newly-created
+    /// natural-gear ledger.
+    @discardableResult
+    private func initializeNaturalGearLedgerR350IfNeeded(now: Date, cap: TimeInterval = PartyWorkPolicyR144.offlineCapSeconds, operationID: UUID, state: inout GameSnapshot) throws -> PartyWorkSettlementR144 {
+        guard naturalGearDiscoveryPolicyR350 != nil else { return (0, nil) }
+        guard state.naturalGearDiscoveryR350 == nil else { return (0, nil) }
+        let legacySettlement: PartyWorkSettlementR144
+        if state.activeRegionID != nil, effectivePartyWorkTargetR144(state: state) != nil, state.lastClaimAt != nil {
+            legacySettlement = try settlePartyWorkR144(now: now, secondsPerUnit: nil,
+                cap: cap, operationID: operationID, state: &state)
+        } else {
+            guard now.timeIntervalSince1970.isFinite else { throw CoreError.invalidCommand("R350 activation timestamp must be finite") }
+            state.lastClaimAt = now
+            legacySettlement = (0, nil)
+        }
+        state.naturalGearDiscoveryR350 = NaturalGearDiscoveryLedgerR350(
+            seedHex: NaturalGearCounterRandomR350.seed(operationID: operationID),
+            skipLegacyPartialUnit: state.offlineRemainderSeconds > 0)
+        return legacySettlement
+    }
+
+    /// Settles exactly one selected target from the one persisted party clock.
+    /// No battle, clear, unlock, or combat-result state is written here.
+    private func settlePartyWorkR144(now: Date, secondsPerUnit: TimeInterval?, cap: TimeInterval,
+                                     operationID: UUID, state: inout GameSnapshot) throws -> (units: Int, materialID: String?) {
+        guard candidatePartyWorkPolicyR144 != nil else {
+            throw CoreError.invalidCommand("R144 shared party work policy is not enabled")
+        }
+        guard now.timeIntervalSince1970.isFinite, cap.isFinite, secondsPerUnit?.isFinite ?? true else {
+            throw CoreError.invalidCommand("R144 work timestamp and limits must be finite")
+        }
+        guard let target = effectivePartyWorkTargetR144(state: state) else {
+            throw CoreError.invalidCommand("R144 work target is missing")
+        }
+        try validatePartyWorkTargetR144(target, state: state)
+        guard let regionID = state.activeRegionID,
+              let region = catalog.regions.first(where: { $0.id == regionID }) else {
+            throw CoreError.invalidCommand("R144 work requires a catalog region")
+        }
+        if let secondsPerUnit, secondsPerUnit != TimeInterval(max(1, region.workSeconds)) {
+            throw CoreError.invalidCommand("R144 work cadence is fixed by the active region catalog")
+        }
+        let effectiveCap = min(cap, PartyWorkPolicyR144.offlineCapSeconds)
+        guard effectiveCap > 0 else { throw CoreError.invalidCommand("R144 work cap must be positive") }
+        let interval = secondsPerUnit ?? TimeInterval(max(1, region.workSeconds))
+        guard interval.isFinite, interval > 0,
+              state.offlineRemainderSeconds.isFinite, state.offlineRemainderSeconds >= 0,
+              state.offlineRemainderSeconds <= interval else {
+            throw CoreError.invalidCommand("R144 work interval or saved remainder is invalid")
+        }
+        let rawElapsed = state.lastClaimAt.map { now.timeIntervalSince($0) } ?? 0
+        guard rawElapsed.isFinite, rawElapsed >= 0 else {
+            throw CoreError.invalidCommand("R144 work clock moved backward")
+        }
+        let elapsed = min(effectiveCap, rawElapsed)
+        let accrued = min(effectiveCap, elapsed + state.offlineRemainderSeconds)
+        let rawUnits = accrued / interval
+        guard rawUnits.isFinite, rawUnits >= 0, rawUnits < Double(Int.max) else {
+            throw CoreError.invalidCommand("R144 work unit count exceeds supported range")
+        }
+        let units = Int(rawUnits)
+        let materialID: String
+        switch target.kind {
+        case .gather:
+            materialID = target.targetID
+        case .investigate:
+            guard let enemy = catalog.enemies.first(where: { $0.id == target.targetID }) else {
+                throw CoreError.invalidCommand("R144 investigation material is unavailable")
+            }
+            materialID = try PartyWorkR144Validation.declaredDropMaterialID(for: enemy, catalog: catalog)
+        }
+        if units > 0 {
+            try settleNaturalGearR350(units: units, operationID: operationID, state: &state)
+            let amount = try checkedProduct(units, PartyWorkPolicyR144.materialPerCompletedUnit,
+                                            label: "R144 work material")
+            state.materials[materialID] = try checkedAdd(state.materials[materialID, default: 0], amount,
+                                                          label: materialID)
+            let xp = try checkedProduct(units, region.xpPerWork, label: "R144 work XP")
+            let dust = try checkedProduct(units, region.dustPerWork, label: "R144 work dust")
+            for actorID in state.partyActorIDs {
+                state.characterXP[actorID] = try checkedAdd(state.characterXP[actorID, default: 0], xp,
+                                                             label: "XP for \(actorID)")
+            }
+            state.materials["refine_dust"] = try checkedAdd(state.materials["refine_dust", default: 0], dust,
+                                                              label: "refine dust")
+            try accrueLocalAdWork(units: units, region: region, now: now, state: &state)
+            // R144 investigation coin yield is explicitly zero. Gathering's
+            // other work side-effects remain the existing party-work contract.
+        }
+        state.offlineRemainderSeconds = accrued.truncatingRemainder(dividingBy: interval)
+        state.lastClaimAt = now
+        return (units, units > 0 ? materialID : nil)
     }
 
     /// R3 candidate: actual settled work fills eight-hour blocks; the unclaimed queue is capped at six.
@@ -211,13 +869,35 @@ public struct GameEngine: Sendable {
         return skip ? "LOCAL_QA ad-skip reward claimed; XP=\(appliedXP.values.reduce(0, +)), dust=\(appliedDust)" : "LOCAL_QA ad attempt \(outcome.rawValue); rewards only on completed callback; XP=\(appliedXP.values.reduce(0, +)), dust=\(appliedDust)"
     }
 
-    private func selectExpedition(regionID: String, now: Date, state: inout GameSnapshot) throws -> String {
+    private func selectExpedition(regionID: String, now: Date, operationID: UUID, state: inout GameSnapshot) throws -> String {
         guard state.unlockedRegionIDs.contains(regionID) else { throw CoreError.invalidCommand("region is locked") }
         guard catalog.regions.contains(where: { $0.id == regionID }) else { throw CoreError.invalidCommand("unknown region") }
-        if state.lastClaimAt == nil { state.lastClaimAt = now }
         let available = catalog.availableGatherMaterialIDs(in: regionID, unlockedRegionIDs: state.unlockedRegionIDs, completedEncounterIDs: state.completedEncounterIDs)
         guard !available.isEmpty else { throw CoreError.invalidCommand("no gather material has been unlocked for region") }
         let target = available.contains(state.gatherTargetMaterialID ?? "") ? state.gatherTargetMaterialID : available.first
+        if candidatePartyWorkPolicyR144 != nil {
+            try validatePartyWorkTimestampR144(now, state: state)
+            guard let target else { throw CoreError.invalidCommand("R144 expedition has no gather target") }
+            let desired = PartyWorkTargetR144.gather(target)
+            let changed = state.activeRegionID != regionID || effectivePartyWorkTargetR144(state: state) != desired
+            if state.activeRegionID == nil || effectivePartyWorkTargetR144(state: state) == nil || state.lastClaimAt == nil {
+                state.lastClaimAt = now
+                state.offlineRemainderSeconds = 0
+                clearNaturalGearLegacyPartialMarkerR350(state: &state)
+            } else {
+                _ = try settlePartyWorkR144(now: now, secondsPerUnit: nil,
+                                             cap: PartyWorkPolicyR144.offlineCapSeconds, operationID: operationID, state: &state)
+                if changed {
+                    state.offlineRemainderSeconds = 0
+                    clearNaturalGearLegacyPartialMarkerR350(state: &state)
+                }
+            }
+            state.activeRegionID = regionID
+            state.gatherTargetMaterialID = target
+            state.partyWorkTargetR144 = desired
+            return "expedition started: \(regionID); R144 gathering selected"
+        }
+        if state.lastClaimAt == nil { state.lastClaimAt = now }
         let changed = state.activeRegionID != regionID || target != state.gatherTargetMaterialID
         if changed {
             _ = try settleGathering(now: now, state: &state)
@@ -228,9 +908,35 @@ public struct GameEngine: Sendable {
         return "expedition started: \(regionID)"
     }
 
-    private func selectGatherTarget(resourceID: String, now: Date, state: inout GameSnapshot) throws -> String {
+    private func selectGatherTarget(resourceID: String, now: Date, operationID: UUID, state: inout GameSnapshot) throws -> String {
         guard let regionID = state.activeRegionID, let region = catalog.regions.first(where: { $0.id == regionID }), region.gatherMaterialIDs.contains(resourceID),
               catalog.availableGatherMaterialIDs(in: regionID, unlockedRegionIDs: state.unlockedRegionIDs, completedEncounterIDs: state.completedEncounterIDs).contains(resourceID) else { throw CoreError.invalidCommand("gather target is unavailable in active region") }
+        if candidatePartyWorkPolicyR144 != nil {
+            try validatePartyWorkTimestampR144(now, state: state)
+            let target = PartyWorkTargetR144.gather(resourceID)
+            if effectivePartyWorkTargetR144(state: state) != target {
+                try validatePartyWorkTargetR144(target, state: state)
+                if effectivePartyWorkTargetR144(state: state) == nil || state.lastClaimAt == nil {
+                    guard now.timeIntervalSince1970.isFinite else { throw CoreError.invalidCommand("R144 target timestamp must be finite") }
+                    state.lastClaimAt = now
+                } else {
+                    _ = try settlePartyWorkR144(now: now, secondsPerUnit: nil,
+                                                 cap: PartyWorkPolicyR144.offlineCapSeconds, operationID: operationID, state: &state)
+                }
+                state.offlineRemainderSeconds = 0
+                clearNaturalGearLegacyPartialMarkerR350(state: &state)
+            } else if state.lastClaimAt != nil {
+                _ = try settlePartyWorkR144(now: now, secondsPerUnit: nil,
+                                             cap: PartyWorkPolicyR144.offlineCapSeconds, operationID: operationID, state: &state)
+            }
+            if state.lastClaimAt == nil {
+                guard now.timeIntervalSince1970.isFinite else { throw CoreError.invalidCommand("R144 target timestamp must be finite") }
+                state.lastClaimAt = now
+            }
+            state.gatherTargetMaterialID = resourceID
+            state.partyWorkTargetR144 = target
+            return "gather target set: \(resourceID); R144 shared work selected"
+        }
         if state.gatherTargetMaterialID != resourceID || state.lastClaimAt == nil {
             _ = try settleGathering(now: now, state: &state)
             state.gatherTargetMaterialID = resourceID
@@ -238,10 +944,144 @@ public struct GameEngine: Sendable {
         return "gather target set: \(resourceID)"
     }
 
+    /// Changes the single persisted work target under the opt-in R144 policy.
+    /// The old target is settled before switching; fractional work never crosses.
+    public func setPartyWorkTargetR144(_ target: PartyWorkTargetR144, now: Date,
+                                       operationID: UUID, expectedRevision: Int64) async throws -> CommandReceipt {
+        guard let policy = candidatePartyWorkPolicyR144 else {
+            throw CoreError.invalidCommand("R144 shared party work policy is not enabled")
+        }
+        var fingerprint = "\(PartyWorkPolicyR144.policyID)|\(target.kind.rawValue)|\(target.targetID)|\(now.timeIntervalSince1970)|\(policy.policyFingerprint)"
+        if let r350 = naturalGearDiscoveryPolicyR350 { fingerprint += "|R350|\(r350.policyFingerprint)" }
+        if let r352 = naturalGearRefinementPolicyR352 { fingerprint += "|R352|\(r352.policyFingerprint)" }
+        if let r353 = gearDismantleRefundPolicyR353 { fingerprint += "|R353|\(r353.policyFingerprint)" }
+        return try await saves.transact(expectedRevision: expectedRevision, operationID: operationID,
+                                        requestFingerprint: fingerprint) { state in
+            guard self.naturalGearDiscoveryPolicyR350 != nil || state.naturalGearDiscoveryR350 == nil else {
+                throw CoreError.invalidCommand("R350 natural-gear save requires the matching opt-in policy")
+            }
+            guard self.naturalGearRefinementPolicyR352 != nil || state.naturalGearRefinementR352 == nil else {
+                throw CoreError.invalidCommand("R352 refinement save requires the matching opt-in policy")
+            }
+            try self.validatePartyWorkTimestampR144(now, state: state)
+            try self.validatePartyWorkTargetR144(target, state: state)
+            if self.naturalGearDiscoveryPolicyR350 != nil {
+                try self.initializeNaturalGearLedgerR350IfNeeded(now: now, operationID: operationID, state: &state)
+            }
+            let oldTarget = self.effectivePartyWorkTargetR144(state: state)
+            if oldTarget != target {
+                if oldTarget == nil || state.lastClaimAt == nil {
+                    guard now.timeIntervalSince1970.isFinite else {
+                        throw CoreError.invalidCommand("R144 switch timestamp must be finite")
+                    }
+                    state.lastClaimAt = now
+                } else {
+                    _ = try self.settlePartyWorkR144(now: now, secondsPerUnit: nil,
+                                                     cap: PartyWorkPolicyR144.offlineCapSeconds, operationID: operationID, state: &state)
+                }
+                state.offlineRemainderSeconds = 0
+                clearNaturalGearLegacyPartialMarkerR350(state: &state)
+            } else if state.lastClaimAt != nil {
+                _ = try self.settlePartyWorkR144(now: now, secondsPerUnit: nil,
+                                                  cap: PartyWorkPolicyR144.offlineCapSeconds, operationID: operationID, state: &state)
+            }
+            if state.lastClaimAt == nil {
+                guard now.timeIntervalSince1970.isFinite else {
+                    throw CoreError.invalidCommand("R144 switch timestamp must be finite")
+                }
+                state.lastClaimAt = now
+            }
+            state.partyWorkTargetR144 = target
+            if target.kind == .gather { state.gatherTargetMaterialID = target.targetID }
+            return "R144 party work target selected: \(target.kind.rawValue) / \(target.targetID); candidate only"
+        }
+    }
+
+    private func transactionDateR350(for command: GameCommand) -> Date? {
+        switch command {
+        case .startExpeditionAt(_, let now), .setGatherTargetAt(_, let now), .gather(_, let now), .dailyClaim(let now): return now
+        default: return nil
+        }
+    }
+
     @discardableResult
-    public func dispatch(_ command: GameCommand, operationID: UUID, expectedRevision: Int64) async throws -> CommandReceipt {
-        try await saves.transact(expectedRevision: expectedRevision, operationID: operationID, requestFingerprint: command.requestFingerprint) { state in
+    public func dispatch(_ command: GameCommand, operationID: UUID, expectedRevision: Int64,
+                         transactionDate: Date? = nil) async throws -> CommandReceipt {
+        let embeddedDate = self.transactionDateR350(for: command)
+        if let transactionDate, let embeddedDate, transactionDate != embeddedDate {
+            throw CoreError.invalidCommand("R350 transactionDate conflicts with the command's embedded date")
+        }
+        let resolvedTransactionDate = embeddedDate ?? transactionDate ?? Date()
+        var requestFingerprint = command.requestFingerprint
+        if let r144 = candidatePartyWorkPolicyR144 { requestFingerprint += "|R144|\(r144.policyFingerprint)" }
+        if let r350 = naturalGearDiscoveryPolicyR350 { requestFingerprint += "|R350|\(r350.policyFingerprint)" }
+        if let r352 = naturalGearRefinementPolicyR352 { requestFingerprint += "|R352|\(r352.policyFingerprint)" }
+        if let r353 = gearDismantleRefundPolicyR353 { requestFingerprint += "|R353|\(r353.policyFingerprint)" }
+        // Embedded command timestamps are already part of command.requestFingerprint.
+        // An implicit wall clock must not make an idempotent retry look like a new request.
+        if naturalGearDiscoveryPolicyR350 != nil, embeddedDate == nil, let transactionDate {
+            requestFingerprint += "|R350-explicit-time|\(transactionDate.timeIntervalSince1970)"
+        }
+        return try await saves.transact(expectedRevision: expectedRevision, operationID: operationID, requestFingerprint: requestFingerprint) { state in
+            guard self.candidatePartyWorkPolicyR144 != nil || state.partyWorkTargetR144 == nil else {
+                throw CoreError.invalidCommand("R144 candidate save requires the matching opt-in policy")
+            }
+            guard self.naturalGearDiscoveryPolicyR350 != nil || state.naturalGearDiscoveryR350 == nil else {
+                throw CoreError.invalidCommand("R350 natural-gear save requires the matching opt-in policy")
+            }
+            guard self.naturalGearRefinementPolicyR352 != nil || state.naturalGearRefinementR352 == nil else {
+                throw CoreError.invalidCommand("R352 refinement save requires the matching opt-in policy")
+            }
+            if self.candidatePartyWorkPolicyR144 != nil {
+                switch command {
+                case .startExpedition(_), .startExpeditionAt(_, _), .setGatherTarget(_), .setGatherTargetAt(_, _):
+                    // These are the only legacy-save entry points that may establish the typed target.
+                    break
+                default:
+                    try self.requireOrPersistPartyWorkMarkerR144(state: &state)
+                }
+            }
+            if self.naturalGearDiscoveryPolicyR350 != nil {
+                try self.initializeNaturalGearLedgerR350IfNeeded(now: resolvedTransactionDate, operationID: operationID, state: &state)
+                if state.activeRegionID != nil, self.effectivePartyWorkTargetR144(state: state) != nil {
+                    _ = try self.settlePartyWorkR144(now: resolvedTransactionDate, secondsPerUnit: nil,
+                        cap: PartyWorkPolicyR144.offlineCapSeconds, operationID: operationID, state: &state)
+                }
+            }
             switch command {
+            case .saveGearLoadoutR342(let slot):
+                _ = try self.validateCurrentGearLoadoutR342(state: state)
+                var payload = state.gearLoadoutsR342 ?? GearLoadoutsR342()
+                payload.set(GearLoadoutR342(gearByActorSlot: state.equippedGearIDs), for: slot)
+                state.gearLoadoutsR342 = payload
+                return "R342 loadout saved: \(slot.rawValue)"
+            case .applyGearLoadoutR342(let slot):
+                guard let saved = state.gearLoadoutsR342?.loadout(for: slot) else {
+                    throw CoreError.invalidCommand("R342 loadout slot is empty")
+                }
+                let currentlyEquippedIDs = try self.validateCurrentGearLoadoutR342(state: state)
+                try self.validateGearLoadoutR342(saved.gearByActorSlot, state: state,
+                                                 currentlyEquippedIDs: currentlyEquippedIDs)
+                for index in state.gear.indices where state.equippedGearIDs.values.contains(state.gear[index].id) {
+                    state.gear[index].ownerID = nil
+                }
+                state.equippedGearIDs = saved.gearByActorSlot
+                for (slotKey, gearID) in saved.gearByActorSlot {
+                    let actorID = String(slotKey.split(separator: "|", maxSplits: 1)[0])
+                    guard let index = state.gear.firstIndex(where: { $0.id == gearID }) else {
+                        throw CoreError.invalidCommand("R342 loadout gear disappeared during apply")
+                    }
+                    state.gear[index].ownerID = actorID
+                }
+                return "R342 loadout applied: \(slot.rawValue)"
+            case .clearGearLoadoutR342(let slot):
+                guard var payload = state.gearLoadoutsR342,
+                      payload.loadout(for: slot) != nil else {
+                    throw CoreError.invalidCommand("R342 loadout slot is empty")
+                }
+                payload.set(nil, for: slot)
+                state.gearLoadoutsR342 = payload.first == nil && payload.second == nil ? nil : payload
+                return "R342 loadout cleared: \(slot.rawValue)"
             case .equip(let id, let actor):
                 guard let item = state.gear.first(where: { $0.id == id }), let definition = catalog.gear.first(where: { $0.id == item.definitionID }) else { throw CoreError.invalidCommand("unknown gear instance") }
                 try validateCandidatePayloadIfEnabled(item)
@@ -259,12 +1099,32 @@ public struct GameEngine: Sendable {
                 guard let index = state.gear.firstIndex(where: { $0.id == id }) else { throw CoreError.invalidCommand("unknown gear") }
                 try validateCandidatePayloadIfEnabled(state.gear[index])
                 let nextLevel = state.gear[index].enhancement + 1
+                if let policy = self.naturalGearRefinementPolicyR352 {
+                    let rank = state.naturalGearRefinementR352?.rank(for: id) ?? 1
+                    guard let rankCap = policy.maximumEnhancement(forRank: rank), nextLevel <= rankCap else {
+                        throw CoreError.invalidCommand("R352 rank \(rank) enhancement cap is +\(policy.maximumEnhancement(forRank: rank) ?? 0)")
+                    }
+                }
                 guard let recipe = catalog.recipes.first(where: { $0.id == "ENHANCE_\(nextLevel)" }), recipe.kind == "enhance" else { throw CoreError.invalidCommand("enhancement level is at catalog cap") }
                 if let gateID = recipe.gateID, gateID != "G_START" { try requireGate(gateID, state: state) }
                 try spend("refine_dust", recipe.dustCost, from: &state); state.gear[index].enhancement = nextLevel; state.gear[index].investmentDust = try checkedAdd(state.gear[index].investmentDust, recipe.dustCost, label: "gear investment"); return "enhanced to +\(nextLevel) for \(recipe.dustCost) dust [\(recipe.status)]"
             case .refine(let id):
                 guard let index = state.gear.firstIndex(where: { $0.id == id }) else { throw CoreError.invalidCommand("unknown gear") }
                 try validateCandidatePayloadIfEnabled(state.gear[index])
+                if let policy = self.naturalGearRefinementPolicyR352 {
+                    var ledger = state.naturalGearRefinementR352 ?? NaturalGearRefinementLedgerR352()
+                    let currentRank = ledger.rank(for: id)
+                    guard (1...5).contains(currentRank) else { throw CoreError.invalidCommand("R352 saved refinement rank is invalid") }
+                    guard let step = policy.transition(from: currentRank) else { throw CoreError.invalidCommand("R352 refinement is already at rank V") }
+                    try self.requireGate(step.gateID, state: state)
+                    try spend("refine_dust", step.dustCost, from: &state)
+                    for (materialID, amount) in step.materialCosts { try spend(materialID, amount, from: &state) }
+                    ledger.setRank(step.toRank, for: id)
+                    state.naturalGearRefinementR352 = ledger
+                    // Preserve cumulative investment accounting; current dismantle grants one dust only.
+                    state.gear[index].investmentDust = try checkedAdd(state.gear[index].investmentDust, step.dustCost, label: "R352 refinement investment")
+                    return "R352 rank \(step.fromRank)→\(step.toRank); spent \(step.dustCost) dust"
+                }
                 try spend("refine_dust", 5, from: &state); state.gear[index].refinement = try checkedAdd(state.gear[index].refinement, 1, label: "gear refinement"); state.gear[index].investmentDust = try checkedAdd(state.gear[index].investmentDust, 5, label: "gear investment"); return "refined to \(state.gear[index].refinement)"
             case .promoteQuality(let id):
                 guard let index = state.gear.firstIndex(where: { $0.id == id }) else { throw CoreError.invalidCommand("unknown gear") }
@@ -291,11 +1151,38 @@ public struct GameEngine: Sendable {
                 guard !item.protected else { throw CoreError.protectedGear }
                 guard !state.equippedGearIDs.values.contains(id) else { throw CoreError.gearInUse }
                 guard state.gear.filter({ $0.definitionID == item.definitionID }).count > 1 else { throw CoreError.protectedGear }
-                state.gear.removeAll { $0.id == id }; state.materials["refine_dust"] = try checkedAdd(state.materials["refine_dust", default: 0], 1, label: "refine dust"); return "gear dismantled"
+                let refundDust: Int
+                let resultMessage: String
+                if let refundPolicy = self.gearDismantleRefundPolicyR353 {
+                    refundDust = try refundPolicy.refundBreakdown(gearID: item.id, qualityID: item.qualityID,
+                                                                 investmentDust: item.investmentDust).totalDust
+                    resultMessage = "gear dismantled for \(refundDust) refine_dust"
+                } else {
+                    // Preserve the legacy payout and receipt text unless R353 is explicitly enabled.
+                    refundDust = 1
+                    resultMessage = "gear dismantled"
+                }
+                let updatedDust = try checkedAdd(state.materials["refine_dust", default: 0], refundDust, label: "dismantle refund")
+                state.gear.removeAll { $0.id == id }
+                if self.naturalGearRefinementPolicyR352 != nil, var ranks = state.naturalGearRefinementR352 {
+                    ranks.remove(id); state.naturalGearRefinementR352 = ranks.isEmpty ? nil : ranks
+                }
+                state.materials["refine_dust"] = updatedDust
+                return resultMessage
             case .craftRecipe(let recipeID):
-                return try applyRecipe(recipeID, gearID: nil, operationID: operationID, state: &state)
+                let result = try applyRecipe(recipeID, gearID: nil, operationID: operationID, state: &state)
+                if self.naturalGearDiscoveryPolicyR350 != nil, var ledger = state.naturalGearDiscoveryR350,
+                   let recipe = self.catalog.recipes.first(where: { $0.id == recipeID }), let output = recipe.outputGearID {
+                    ledger.discoveredCraftedTemplateIDs.insert(output); state.naturalGearDiscoveryR350 = ledger
+                }
+                return result
             case .evolveGear(let gearID, let recipeID):
-                return try applyRecipe(recipeID, gearID: gearID, operationID: operationID, state: &state)
+                let result = try applyRecipe(recipeID, gearID: gearID, operationID: operationID, state: &state)
+                if self.naturalGearDiscoveryPolicyR350 != nil, var ledger = state.naturalGearDiscoveryR350,
+                   let recipe = self.catalog.recipes.first(where: { $0.id == recipeID }), let output = recipe.outputGearID {
+                    ledger.discoveredCraftedTemplateIDs.insert(output); state.naturalGearDiscoveryR350 = ledger
+                }
+                return result
             case .setTrackedRecipe(let recipeID):
                 if let recipeID {
                     guard let recipe = catalog.recipes.first(where: { $0.id == recipeID }),
@@ -359,14 +1246,23 @@ public struct GameEngine: Sendable {
                 guard state.gachaPity.targetTemplateID != id else { return "test target unchanged: \(id)" }
                 state.gachaPity.targetTemplateID = id; state.gachaPity.guaranteeTargetOnNextTop = false; return "test target selected: \(id); next-top target guarantee reset; candidate only"
             case .startExpedition(let regionID):
-                return try selectExpedition(regionID: regionID, now: Date(), state: &state)
+                return try selectExpedition(regionID: regionID, now: resolvedTransactionDate, operationID: operationID, state: &state)
             case .startExpeditionAt(let regionID, let now):
-                return try selectExpedition(regionID: regionID, now: now, state: &state)
+                return try selectExpedition(regionID: regionID, now: now, operationID: operationID, state: &state)
             case .setGatherTarget(let resourceID):
-                return try selectGatherTarget(resourceID: resourceID, now: Date(), state: &state)
+                return try selectGatherTarget(resourceID: resourceID, now: resolvedTransactionDate, operationID: operationID, state: &state)
             case .setGatherTargetAt(let resourceID, let now):
-                return try selectGatherTarget(resourceID: resourceID, now: now, state: &state)
+                return try selectGatherTarget(resourceID: resourceID, now: now, operationID: operationID, state: &state)
             case .gather(let resourceID, let now):
+                if candidatePartyWorkPolicyR144 != nil {
+                    guard effectivePartyWorkTargetR144(state: state) == PartyWorkTargetR144.gather(resourceID) else {
+                        throw CoreError.invalidCommand("R144 gather command does not match selected party work target")
+                    }
+                    let settled = try settlePartyWorkR144(now: now, secondsPerUnit: nil,
+                                                          cap: PartyWorkPolicyR144.offlineCapSeconds, operationID: operationID, state: &state)
+                    guard settled.units > 0 else { throw CoreError.invalidCommand("no complete R144 work unit is ready") }
+                    return "R144 gathered \(resourceID) x\(settled.units); candidate only"
+                }
                 guard let regionID = state.activeRegionID, let region = catalog.regions.first(where: { $0.id == regionID }), region.gatherMaterialIDs.contains(resourceID), state.gatherTargetMaterialID == resourceID,
                       catalog.availableGatherMaterialIDs(in: regionID, unlockedRegionIDs: state.unlockedRegionIDs, completedEncounterIDs: state.completedEncounterIDs).contains(resourceID) else { throw CoreError.invalidCommand("select an available active-region resource") }
                 let settled = try settleGathering(now: now, state: &state)
@@ -381,10 +1277,16 @@ public struct GameEngine: Sendable {
                     entityPresentation: presentation, candidateMagnetParameters: candidateParameters(for: enemy))
                 state.lastCombatResult = result; state.lastEncounterID = enemyID
                 guard result.won else { return "DEFEAT: \(enemyID), ticks=\(result.ticks)" }
+                let isFirstClear = !state.completedEncounterIDs.contains(enemyID)
                 state.completedEncounterIDs.insert(enemyID)
-                if let dropID = enemy.dropMaterialID { state.materials[dropID] = try checkedAdd(state.materials[dropID, default: 0], enemy.boss ? 5 : 1, label: dropID) }
-                state.currency["coin"] = try checkedAdd(state.currency["coin", default: 0], enemy.boss ? 10 : 2, label: "coins")
+                if candidatePartyWorkPolicyR144 == nil || isFirstClear {
+                    if let dropID = enemy.dropMaterialID { state.materials[dropID] = try checkedAdd(state.materials[dropID, default: 0], enemy.boss ? 5 : 1, label: dropID) }
+                    state.currency["coin"] = try checkedAdd(state.currency["coin", default: 0], enemy.boss ? 10 : 2, label: "coins")
+                }
                 if enemyID.hasSuffix("_B"), let index = catalog.regions.firstIndex(where: { $0.id == regionID }), catalog.regions.indices.contains(index + 1) { state.unlockedRegionIDs.insert(catalog.regions[index + 1].id) }
+                if candidatePartyWorkPolicyR144 != nil && !isFirstClear {
+                    return "VICTORY: \(enemyID), repeat battle; immediate rewards=0 under R144 candidate; ticks=\(result.ticks)"
+                }
                 return "VICTORY: \(enemyID), rewards committed atomically; ticks=\(result.ticks)"
             case .resolveChallenge(let challengeID, let seed):
                 guard let challenge = catalog.challenges.first(where: { $0.id == challengeID }) else { throw CoreError.invalidCommand("unknown challenge") }
@@ -425,7 +1327,7 @@ public struct GameEngine: Sendable {
             case .selectCosmetic(let actorID, let cosmeticID):
                 guard state.partyActorIDs.contains(actorID) else { throw CoreError.invalidCommand("unknown party actor") }
                 if let cosmeticID {
-                    guard let appearance = catalog.appearances.first(where: { $0.id == cosmeticID && $0.kind == "costume" }), appearance.actorIDs.contains(actorID), state.ownedCosmeticIDs.contains(cosmeticID) else { throw CoreError.invalidCommand("costume is unavailable for this actor or not owned") }
+                    guard let appearance = catalog.appearances.first(where: { $0.id == cosmeticID && ($0.kind == "costume" || $0.kind == "accessory") }), appearance.actorIDs.contains(actorID), state.ownedCosmeticIDs.contains(cosmeticID) else { throw CoreError.invalidCommand("cosmetic appearance is unavailable for this actor or not owned") }
                     state.selectedCosmeticIDs[actorID] = cosmeticID
                 }
                 else { state.selectedCosmeticIDs.removeValue(forKey: actorID) }
@@ -465,19 +1367,51 @@ public struct GameEngine: Sendable {
                 return "LOCAL_QA ad-skip entitlement set to \(enabled); no purchase or production entitlement"
             case .recordMockRewardedAdAttempt(let opportunityID, let result):
                 guard result.validationSource == "LOCAL_QA_SIMULATOR" else { throw CoreError.invalidCommand("rewarded-ad result is not from the local QA adapter") }
-                return try settleLocalAdOpportunity(opportunityID: opportunityID, sessionID: result.sessionID, outcome: result.outcome, skip: false, now: Date(), state: &state)
+                return try settleLocalAdOpportunity(opportunityID: opportunityID, sessionID: result.sessionID, outcome: result.outcome, skip: false, now: resolvedTransactionDate, state: &state)
             case .claimMockAdSkip(let opportunityID):
-                return try settleLocalAdOpportunity(opportunityID: opportunityID, sessionID: "LOCAL_SKIP_\(opportunityID)", outcome: .completed, skip: true, now: Date(), state: &state)
+                return try settleLocalAdOpportunity(opportunityID: opportunityID, sessionID: "LOCAL_SKIP_\(opportunityID)", outcome: .completed, skip: true, now: resolvedTransactionDate, state: &state)
             }
         }
     }
 
     /// Offline collection is capped and produces resources only; it never fabricates battle victory.
     public func claimOffline(now: Date, secondsPerUnit: TimeInterval? = nil, cap: TimeInterval = 48 * 3600, operationID: UUID, expectedRevision: Int64) async throws -> CommandReceipt {
-        try await saves.transact(expectedRevision: expectedRevision, operationID: operationID, requestFingerprint: "offline|\(now.timeIntervalSince1970)|\(secondsPerUnit.map(String.init(describing:)) ?? "region")|\(cap)") { state in
+        let ordinaryFingerprint = "offline|\(now.timeIntervalSince1970)|\(secondsPerUnit.map(String.init(describing:)) ?? "region")|\(cap)"
+        var fingerprint = ordinaryFingerprint
+        if let r144 = candidatePartyWorkPolicyR144 { fingerprint += "|R144|\(r144.policyFingerprint)" }
+        if let r350 = naturalGearDiscoveryPolicyR350 { fingerprint += "|R350|\(r350.policyFingerprint)" }
+        if let r352 = naturalGearRefinementPolicyR352 { fingerprint += "|R352|\(r352.policyFingerprint)" }
+        return try await saves.transact(expectedRevision: expectedRevision, operationID: operationID, requestFingerprint: fingerprint) { state in
+            guard self.candidatePartyWorkPolicyR144 != nil || state.partyWorkTargetR144 == nil else {
+                throw CoreError.invalidCommand("R144 candidate save requires the matching opt-in policy")
+            }
+            guard self.naturalGearDiscoveryPolicyR350 != nil || state.naturalGearDiscoveryR350 == nil else {
+                throw CoreError.invalidCommand("R350 natural-gear save requires the matching opt-in policy")
+            }
+            guard self.naturalGearRefinementPolicyR352 != nil || state.naturalGearRefinementR352 == nil else {
+                throw CoreError.invalidCommand("R352 refinement save requires the matching opt-in policy")
+            }
+            if self.candidatePartyWorkPolicyR144 != nil {
+                try self.requireOrPersistPartyWorkMarkerR144(state: &state)
+            }
             guard now.timeIntervalSince1970.isFinite, cap.isFinite, secondsPerUnit?.isFinite ?? true else { throw CoreError.invalidCommand("offline timestamp and limits must be finite") }
             let effectiveCap = min(cap, 48 * 3600)
             guard effectiveCap > 0, let regionID = state.activeRegionID, let region = catalog.regions.first(where: { $0.id == regionID }) else { throw CoreError.invalidCommand("offline collection requires an active catalog region and positive cap") }
+            var legacyActivationSettlement: PartyWorkSettlementR144 = (0, nil)
+            if self.naturalGearDiscoveryPolicyR350 != nil {
+                legacyActivationSettlement = try self.initializeNaturalGearLedgerR350IfNeeded(now: now, cap: effectiveCap, operationID: operationID, state: &state)
+            }
+            if self.candidatePartyWorkPolicyR144 != nil {
+                let settled = try self.settlePartyWorkR144(now: now, secondsPerUnit: secondsPerUnit,
+                                                           cap: effectiveCap, operationID: operationID, state: &state)
+                let (totalUnits, overflow) = legacyActivationSettlement.units.addingReportingOverflow(settled.units)
+                guard !overflow else { throw CoreError.invalidCommand("R144 reported work unit count overflow") }
+                let materialID = settled.materialID ?? legacyActivationSettlement.materialID
+                let activationDetail = legacyActivationSettlement.units > 0
+                    ? "; legacyActivationUnits=\(legacyActivationSettlement.units); currentSettlementUnits=\(settled.units)"
+                    : ""
+                return "R144 offline work units=\(totalUnits); material=\(materialID ?? "none"); capSeconds=\(Int(effectiveCap)); remainingSeconds=\(Int(state.offlineRemainderSeconds)); no combat victory inferred; candidate only\(activationDetail)"
+            }
             let interval = secondsPerUnit ?? TimeInterval(max(1, region.workSeconds))
             guard interval.isFinite, interval > 0,
                   state.offlineRemainderSeconds.isFinite, state.offlineRemainderSeconds >= 0,
@@ -537,7 +1471,10 @@ public struct GameEngine: Sendable {
                                                                       candidateLatentSlots: existing.candidateLatentSlots))
             }
         }
-        for (id, amount) in recipe.costs.sorted(by: { $0.key < $1.key }) { try spend(id, amount, from: &state) }
+        let materialCosts = try FirstCraftCostProjectionR179.validateCatalog(
+            recipeID: recipe.id, declaredCosts: recipe.costs,
+            snapshot: state, capability: firstCraftAidCapabilityR179).costs
+        for (id, amount) in materialCosts.sorted(by: { $0.key < $1.key }) { try spend(id, amount, from: &state) }
         if recipe.dustCost > 0 { try spend("refine_dust", recipe.dustCost, from: &state) }
         if let itemIndex {
             state.gear[itemIndex].definitionID = outputID

@@ -1,0 +1,72 @@
+{
+  "candidate": "R461 Swift authority contract client",
+  "revision": "R002 additive correction; R001 preserved byte-for-byte",
+  "status": "SOURCE_FROZEN_NO_SWIFT_EXECUTION",
+  "baseManifestR001": {
+    "path": "docs/production/current/qa_drafts/authority_contract_r461/swift_candidate_r001/MANIFEST_R001.json",
+    "bytes": 2429,
+    "sha256": "d0f844f1c1d895edbec6fb5f4b40ca80ce775df56fdf01ece5cd076a703b80c1"
+  },
+  "source": {
+    "path": "docs/production/current/qa_drafts/authority_contract_r461/swift_candidate_r002/AuthorityClientContractR461.swift",
+    "bytes": 31730,
+    "sha256": "03bad37f64f990d7b344a0c6a8b60a7cfefac19f0eb864abe6aa24fadc605f9d"
+  },
+  "tests": {
+    "path": "docs/production/current/qa_drafts/authority_contract_r461/swift_candidate_r002/AuthorityClientContractR461Tests.swift",
+    "bytes": 25046,
+    "sha256": "9c8a3b4e2c96e46cf9d0eb9c3d5b7f8d042b1cea50fed30f171f5bed10c3e98a"
+  },
+  "readme": {
+    "path": "docs/production/current/qa_drafts/authority_contract_r461/swift_candidate_r002/README_R001.md",
+    "bytes": 1916,
+    "sha256": "6d55296d1b91b998a58fc1455857f4b469f2123a1eb47fad3de11824346a9137"
+  },
+  "sharedContract": {
+    "path": "docs/production/current/qa_drafts/authority_contract_r461/python_candidate_r001/CONTRACT_R002.json",
+    "bytes": 6736,
+    "sha256": "24e88a2e2c197e7be36a8ff6d226cd55478fed007560d398f848c35d0052830d"
+  },
+  "delta": [
+    "Equal-revision identical observation now goes through compare-and-save; a concurrent advance causes rejection.",
+    "Added deterministic test interleaving a revision-8 refund while revision-7 success is in flight.",
+    "Replaced undefined XCTFailure construction with CoreError.invalidCommand in exactInt test helper.",
+    "Removed unused local delivery binding."
+  ],
+  "plannedTestMethodCount": 12,
+  "plannedTestMethods": [
+    "testRequestIsClosedAndPendingRoundTripsForRetry",
+    "testDeliveredRetryRefundAndOldSuccessAfterRefund",
+    "testTimeoutAfterPossibleServerCommitRetriesSamePersistedOperation",
+    "testPersistedObservationReloadBlocksOlderAuthoritySnapshot",
+    "testEqualRevisionConflictingStateIsRejectedWithoutOverwrite",
+    "testEqualRevisionSuccessCannotRacePastNewerConcurrentRefund",
+    "testTamperedHistoricalDeliveryFingerprintCannotAdvanceObservation",
+    "testUnauthenticatedRejectionCannotPoisonObservation",
+    "testWrongOperationOrAccountCannotPoisonObservation",
+    "testMalformedUnknownAndNoncanonicalResponsesFailClosed",
+    "testObservationCASRejectsOlderConcurrentWriter",
+    "testPythonExchangeFixtureThroughSubmitWhenRequired"
+  ],
+  "crossLanguageFixture": {
+    "status": "PENDING_ROOT_GENERATION",
+    "requiredByTest": true,
+    "environment": [
+      "WITCH_R461_CROSS_LANGUAGE_FIXTURE_REQUIRED=1",
+      "WITCH_R461_EXCHANGE_FIXTURE_PATH",
+      "WITCH_R461_EXCHANGE_FIXTURE_SHA256"
+    ]
+  },
+  "execution": {
+    "swiftCompile": false,
+    "xctest": false,
+    "nativeBuild": false,
+    "simulator": false
+  },
+  "limits": {
+    "productionAuthorization": false,
+    "defaultTransport": false,
+    "gameSaveMutation": false,
+    "durableStorageProof": false
+  }
+}

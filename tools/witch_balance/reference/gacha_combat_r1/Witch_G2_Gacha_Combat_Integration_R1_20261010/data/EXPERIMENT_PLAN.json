@@ -1,0 +1,28 @@
+{
+  "status":"TEST_ONLY_PREDECLARED_MAPPING_AND_SCENARIOS",
+  "pinned_commit":"497549e9339431b5680eaa398fef16ff1b81f117",
+  "acquisition_seeds":24,
+  "combat_seeds_per_acquisition":8,
+  "acquisition_seed_prefix":"integration-heldout-economy-",
+  "gacha_seed_prefix":"integration-heldout-draw-",
+  "combat_seed_formula":"1700001 + acquisition_index*100 + local_combat_index; local_combat_index=0..7",
+  "case_definition":[
+    {"id":"FRESH4","kind":"fresh","hours":0,"boss_power":190,"boss_hp_bp":10000},
+    {"id":"FOREST6_PROTECT","kind":"protect","hours":6,"boss_power":190,"boss_hp_bp":10000},
+    {"id":"FOREST6_OFFENSE","kind":"offense","hours":6,"boss_power":190,"boss_hp_bp":10000},
+    {"id":"FOREST12_STRESS","kind":"protect","hours":12,"boss_power":209,"boss_hp_bp":11000}
+  ],
+  "arms":[
+    {"id":"A_ONE_FREE","candidate":"A_PREVIOUS_R2","draws":1,"budget_jpy_equivalent":0},
+    {"id":"C_FIVE_FREE","candidate":"C_COMMON_PLAYTEST_CANDIDATE","draws":5,"budget_jpy_equivalent":0},
+    {"id":"A_1500","candidate":"A_PREVIOUS_R2","draws":10,"budget_jpy_equivalent":1500},
+    {"id":"C_1500","candidate":"C_COMMON_PLAYTEST_CANDIDATE","draws":50,"budget_jpy_equivalent":1500}
+  ],
+  "protocol":"Use original R3 ledger + R2 crafting. Before every arm, use natural inventory and spend original powder with same deterministic stat-only policy. Compare equipment-only, then optional confirmed low-rarity cleanup and real R2 enhancement. No extra time/XP/materials; no hidden affixes or future combat RNG in selection. No reroll until winning.",
+  "selection":"Same-template or empty slot; all considered visible combat stats nondecreasing. Not optimal play nor win-monotonicity guarantee.",
+  "cleanup":"Preserve existing/first/locked/equipped/invested/loadout and enough matching instances. Explicit confirmation assumed in full arm. Hidden future-slot differences counted, not claimed safe across promotion.",
+  "main_catalog":"growth33 candidate, four cat gear types via explicit human-slot analogue metadata",
+  "diagnostics":"FOREST6_PROTECT + C_1500: legacy29 catalog and growth-wide optional affix pool separately; same seeds/stages; no change to primary.",
+  "limitations":["Not real purchases/players","Inherited intro/survey fixtures","Advanced gear/awakenings rejected by R6 slice","Free arm is one awarded batch, not calendar simulation","No reforge/quality promotion in selection","Not 30/90-day integrated economy"],
+  "planned_reference_battles":7680
+}

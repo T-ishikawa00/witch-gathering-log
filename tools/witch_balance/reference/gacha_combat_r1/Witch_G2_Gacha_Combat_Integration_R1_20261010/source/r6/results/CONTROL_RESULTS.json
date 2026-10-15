@@ -1,0 +1,571 @@
+{
+  "battle_count": 1200,
+  "parity_battles": 6,
+  "cases": [
+    {
+      "case": "intro_lv6",
+      "model": "r5",
+      "n": 100,
+      "wins": 100,
+      "outcomes": {
+        "VICTORY": 100
+      },
+      "disabled": [],
+      "boss": {
+        "id": "B_R01_A",
+        "name": "根絡みの大猪",
+        "level": 6,
+        "hp": 2300,
+        "power": 115,
+        "defense": 42,
+        "dot_resist_bp": 0,
+        "first_telegraph_ms": 1400,
+        "time_limit_ms": 120000,
+        "actions": [
+          {
+            "id": "ROOT_BOAR_CHARGE",
+            "coefficient_bp": 26000,
+            "windup_ms": 1800,
+            "hit_offsets_ms": [
+              0
+            ],
+            "recovery_ms": 3000,
+            "rest_ms": 1400,
+            "aoe": false,
+            "heavy": true
+          }
+        ]
+      }
+    },
+    {
+      "case": "intro_lv6",
+      "model": "r6b",
+      "n": 100,
+      "wins": 100,
+      "outcomes": {
+        "VICTORY": 100
+      },
+      "disabled": [],
+      "boss": {
+        "id": "B_R01_A",
+        "name": "根絡みの大猪",
+        "level": 6,
+        "hp": 2300,
+        "power": 115,
+        "defense": 42,
+        "dot_resist_bp": 0,
+        "first_telegraph_ms": 1400,
+        "time_limit_ms": 120000,
+        "actions": [
+          {
+            "id": "ROOT_BOAR_CHARGE",
+            "coefficient_bp": 26000,
+            "windup_ms": 1800,
+            "hit_offsets_ms": [
+              0
+            ],
+            "recovery_ms": 3000,
+            "rest_ms": 1400,
+            "aoe": false,
+            "heavy": true
+          }
+        ]
+      }
+    },
+    {
+      "case": "start_lv1",
+      "model": "r5",
+      "n": 100,
+      "wins": 0,
+      "outcomes": {
+        "DEFEAT": 100
+      },
+      "disabled": [],
+      "boss": {
+        "id": "B_R01_A",
+        "name": "根絡みの大猪",
+        "level": 6,
+        "hp": 2300,
+        "power": 115,
+        "defense": 42,
+        "dot_resist_bp": 0,
+        "first_telegraph_ms": 1400,
+        "time_limit_ms": 120000,
+        "actions": [
+          {
+            "id": "ROOT_BOAR_CHARGE",
+            "coefficient_bp": 26000,
+            "windup_ms": 1800,
+            "hit_offsets_ms": [
+              0
+            ],
+            "recovery_ms": 3000,
+            "rest_ms": 1400,
+            "aoe": false,
+            "heavy": true
+          }
+        ]
+      }
+    },
+    {
+      "case": "start_lv1",
+      "model": "r6b",
+      "n": 100,
+      "wins": 0,
+      "outcomes": {
+        "DEFEAT": 100
+      },
+      "disabled": [],
+      "boss": {
+        "id": "B_R01_A",
+        "name": "根絡みの大猪",
+        "level": 6,
+        "hp": 2300,
+        "power": 115,
+        "defense": 42,
+        "dot_resist_bp": 0,
+        "first_telegraph_ms": 1400,
+        "time_limit_ms": 120000,
+        "actions": [
+          {
+            "id": "ROOT_BOAR_CHARGE",
+            "coefficient_bp": 26000,
+            "windup_ms": 1800,
+            "hit_offsets_ms": [
+              0
+            ],
+            "recovery_ms": 3000,
+            "rest_ms": 1400,
+            "aoe": false,
+            "heavy": true
+          }
+        ]
+      }
+    },
+    {
+      "case": "joined_no_equipment",
+      "model": "r5",
+      "n": 100,
+      "wins": 0,
+      "outcomes": {
+        "DEFEAT": 100
+      },
+      "disabled": [],
+      "boss": {
+        "id": "B_R01_B",
+        "name": "苔冠の古樹",
+        "level": 12,
+        "hp": 12500,
+        "power": 190,
+        "defense": 105,
+        "dot_resist_bp": 0,
+        "first_telegraph_ms": 1800,
+        "time_limit_ms": 120000,
+        "actions": [
+          {
+            "id": "ROOT_VOLLEY",
+            "coefficient_bp": 10500,
+            "windup_ms": 1300,
+            "hit_offsets_ms": [
+              0,
+              250,
+              500
+            ],
+            "recovery_ms": 2000,
+            "rest_ms": 1000,
+            "aoe": false,
+            "heavy": false
+          },
+          {
+            "id": "BRANCH_SWEEP",
+            "coefficient_bp": 12750,
+            "windup_ms": 2000,
+            "hit_offsets_ms": [
+              0
+            ],
+            "recovery_ms": 2500,
+            "rest_ms": 2600,
+            "aoe": true,
+            "heavy": true
+          }
+        ]
+      }
+    },
+    {
+      "case": "joined_no_equipment",
+      "model": "r6b",
+      "n": 100,
+      "wins": 0,
+      "outcomes": {
+        "DEFEAT": 100
+      },
+      "disabled": [],
+      "boss": {
+        "id": "B_R01_B",
+        "name": "苔冠の古樹",
+        "level": 12,
+        "hp": 12500,
+        "power": 190,
+        "defense": 105,
+        "dot_resist_bp": 0,
+        "first_telegraph_ms": 1800,
+        "time_limit_ms": 120000,
+        "actions": [
+          {
+            "id": "ROOT_VOLLEY",
+            "coefficient_bp": 10500,
+            "windup_ms": 1300,
+            "hit_offsets_ms": [
+              0,
+              250,
+              500
+            ],
+            "recovery_ms": 2000,
+            "rest_ms": 1000,
+            "aoe": false,
+            "heavy": false
+          },
+          {
+            "id": "BRANCH_SWEEP",
+            "coefficient_bp": 12750,
+            "windup_ms": 2000,
+            "hit_offsets_ms": [
+              0
+            ],
+            "recovery_ms": 2500,
+            "rest_ms": 2600,
+            "aoe": true,
+            "heavy": true
+          }
+        ]
+      }
+    },
+    {
+      "case": "protect24",
+      "model": "r5",
+      "n": 100,
+      "wins": 100,
+      "outcomes": {
+        "VICTORY": 100
+      },
+      "disabled": [],
+      "boss": {
+        "id": "B_R01_B",
+        "name": "苔冠の古樹",
+        "level": 12,
+        "hp": 12500,
+        "power": 190,
+        "defense": 105,
+        "dot_resist_bp": 0,
+        "first_telegraph_ms": 1800,
+        "time_limit_ms": 120000,
+        "actions": [
+          {
+            "id": "ROOT_VOLLEY",
+            "coefficient_bp": 10500,
+            "windup_ms": 1300,
+            "hit_offsets_ms": [
+              0,
+              250,
+              500
+            ],
+            "recovery_ms": 2000,
+            "rest_ms": 1000,
+            "aoe": false,
+            "heavy": false
+          },
+          {
+            "id": "BRANCH_SWEEP",
+            "coefficient_bp": 12750,
+            "windup_ms": 2000,
+            "hit_offsets_ms": [
+              0
+            ],
+            "recovery_ms": 2500,
+            "rest_ms": 2600,
+            "aoe": true,
+            "heavy": true
+          }
+        ]
+      }
+    },
+    {
+      "case": "protect24",
+      "model": "r6b",
+      "n": 100,
+      "wins": 100,
+      "outcomes": {
+        "VICTORY": 100
+      },
+      "disabled": [],
+      "boss": {
+        "id": "B_R01_B",
+        "name": "苔冠の古樹",
+        "level": 12,
+        "hp": 12500,
+        "power": 190,
+        "defense": 105,
+        "dot_resist_bp": 0,
+        "first_telegraph_ms": 1800,
+        "time_limit_ms": 120000,
+        "actions": [
+          {
+            "id": "ROOT_VOLLEY",
+            "coefficient_bp": 10500,
+            "windup_ms": 1300,
+            "hit_offsets_ms": [
+              0,
+              250,
+              500
+            ],
+            "recovery_ms": 2000,
+            "rest_ms": 1000,
+            "aoe": false,
+            "heavy": false
+          },
+          {
+            "id": "BRANCH_SWEEP",
+            "coefficient_bp": 12750,
+            "windup_ms": 2000,
+            "hit_offsets_ms": [
+              0
+            ],
+            "recovery_ms": 2500,
+            "rest_ms": 2600,
+            "aoe": true,
+            "heavy": true
+          }
+        ]
+      }
+    },
+    {
+      "case": "offense24",
+      "model": "r5",
+      "n": 100,
+      "wins": 100,
+      "outcomes": {
+        "VICTORY": 100
+      },
+      "disabled": [],
+      "boss": {
+        "id": "B_R01_B",
+        "name": "苔冠の古樹",
+        "level": 12,
+        "hp": 12500,
+        "power": 190,
+        "defense": 105,
+        "dot_resist_bp": 0,
+        "first_telegraph_ms": 1800,
+        "time_limit_ms": 120000,
+        "actions": [
+          {
+            "id": "ROOT_VOLLEY",
+            "coefficient_bp": 10500,
+            "windup_ms": 1300,
+            "hit_offsets_ms": [
+              0,
+              250,
+              500
+            ],
+            "recovery_ms": 2000,
+            "rest_ms": 1000,
+            "aoe": false,
+            "heavy": false
+          },
+          {
+            "id": "BRANCH_SWEEP",
+            "coefficient_bp": 12750,
+            "windup_ms": 2000,
+            "hit_offsets_ms": [
+              0
+            ],
+            "recovery_ms": 2500,
+            "rest_ms": 2600,
+            "aoe": true,
+            "heavy": true
+          }
+        ]
+      }
+    },
+    {
+      "case": "offense24",
+      "model": "r6b",
+      "n": 100,
+      "wins": 100,
+      "outcomes": {
+        "VICTORY": 100
+      },
+      "disabled": [],
+      "boss": {
+        "id": "B_R01_B",
+        "name": "苔冠の古樹",
+        "level": 12,
+        "hp": 12500,
+        "power": 190,
+        "defense": 105,
+        "dot_resist_bp": 0,
+        "first_telegraph_ms": 1800,
+        "time_limit_ms": 120000,
+        "actions": [
+          {
+            "id": "ROOT_VOLLEY",
+            "coefficient_bp": 10500,
+            "windup_ms": 1300,
+            "hit_offsets_ms": [
+              0,
+              250,
+              500
+            ],
+            "recovery_ms": 2000,
+            "rest_ms": 1000,
+            "aoe": false,
+            "heavy": false
+          },
+          {
+            "id": "BRANCH_SWEEP",
+            "coefficient_bp": 12750,
+            "windup_ms": 2000,
+            "hit_offsets_ms": [
+              0
+            ],
+            "recovery_ms": 2500,
+            "rest_ms": 2600,
+            "aoe": true,
+            "heavy": true
+          }
+        ]
+      }
+    },
+    {
+      "case": "protect6_no_support",
+      "model": "r5",
+      "n": 100,
+      "wins": 0,
+      "outcomes": {
+        "DEFEAT": 100
+      },
+      "disabled": [
+        "counter",
+        "cover",
+        "echo",
+        "heal",
+        "ward"
+      ],
+      "boss": {
+        "id": "B_R01_B",
+        "name": "苔冠の古樹",
+        "level": 12,
+        "hp": 12500,
+        "power": 190,
+        "defense": 105,
+        "dot_resist_bp": 0,
+        "first_telegraph_ms": 1800,
+        "time_limit_ms": 120000,
+        "actions": [
+          {
+            "id": "ROOT_VOLLEY",
+            "coefficient_bp": 10500,
+            "windup_ms": 1300,
+            "hit_offsets_ms": [
+              0,
+              250,
+              500
+            ],
+            "recovery_ms": 2000,
+            "rest_ms": 1000,
+            "aoe": false,
+            "heavy": false
+          },
+          {
+            "id": "BRANCH_SWEEP",
+            "coefficient_bp": 12750,
+            "windup_ms": 2000,
+            "hit_offsets_ms": [
+              0
+            ],
+            "recovery_ms": 2500,
+            "rest_ms": 2600,
+            "aoe": true,
+            "heavy": true
+          }
+        ]
+      }
+    },
+    {
+      "case": "protect6_no_support",
+      "model": "r6b",
+      "n": 100,
+      "wins": 0,
+      "outcomes": {
+        "DEFEAT": 100
+      },
+      "disabled": [
+        "counter",
+        "cover",
+        "echo",
+        "heal",
+        "ward"
+      ],
+      "boss": {
+        "id": "B_R01_B",
+        "name": "苔冠の古樹",
+        "level": 12,
+        "hp": 12500,
+        "power": 190,
+        "defense": 105,
+        "dot_resist_bp": 0,
+        "first_telegraph_ms": 1800,
+        "time_limit_ms": 120000,
+        "actions": [
+          {
+            "id": "ROOT_VOLLEY",
+            "coefficient_bp": 10500,
+            "windup_ms": 1300,
+            "hit_offsets_ms": [
+              0,
+              250,
+              500
+            ],
+            "recovery_ms": 2000,
+            "rest_ms": 1000,
+            "aoe": false,
+            "heavy": false
+          },
+          {
+            "id": "BRANCH_SWEEP",
+            "coefficient_bp": 12750,
+            "windup_ms": 2000,
+            "hit_offsets_ms": [
+              0
+            ],
+            "recovery_ms": 2500,
+            "rest_ms": 2600,
+            "aoe": true,
+            "heavy": true
+          }
+        ]
+      }
+    }
+  ],
+  "intro_exact_log_parity": [
+    {
+      "seed": 970001,
+      "log_equal": true,
+      "hash_r5": "6e06afc8022d4f789cf2dbb108bd96fde36ba4098234b49980068a82040c9df6",
+      "hash_r6b": "6e06afc8022d4f789cf2dbb108bd96fde36ba4098234b49980068a82040c9df6"
+    },
+    {
+      "seed": 970002,
+      "log_equal": true,
+      "hash_r5": "f91a3f2ee9879421782a47d7e01ab0b642b3996ab6a7adc618373fe581b65ce9",
+      "hash_r6b": "f91a3f2ee9879421782a47d7e01ab0b642b3996ab6a7adc618373fe581b65ce9"
+    },
+    {
+      "seed": 970003,
+      "log_equal": true,
+      "hash_r5": "83d421a7a28b44cf7b4fbaa1c4eb2ff3f0c6a686938b12bdcd57035a905c3452",
+      "hash_r6b": "83d421a7a28b44cf7b4fbaa1c4eb2ff3f0c6a686938b12bdcd57035a905c3452"
+    }
+  ],
+  "wall_seconds": 11.459865093231201
+}

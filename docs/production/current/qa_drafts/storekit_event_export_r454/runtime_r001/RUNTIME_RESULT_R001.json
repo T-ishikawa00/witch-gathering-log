@@ -1,0 +1,136 @@
+{
+  "schema": "r454-runtime-scoped-result-v1",
+  "at": "2026-10-15T06:32:21.175949+09:00",
+  "status": "PASS_SCOPED_LOCAL_XCODE_TO_MOCK_AUTHORITY",
+  "elapsedSeconds": 1014.9071140289307,
+  "limits": {
+    "seconds": 1200,
+    "evidenceBytes": 30000000,
+    "screenshots": 6
+  },
+  "evidenceBytes": 2258731,
+  "freeBytes": 134935945216,
+  "actualStoreKitTransactionID": "2",
+  "actualPurchaseCount": 1,
+  "hostRequests": 3,
+  "realMoneyPurchases": 0,
+  "checks": {
+    "actualXcodePurchasePersisted": true,
+    "missingProductNoSaveMutation": true,
+    "cancelNoSaveMutation": true,
+    "finishedConsumableRecoveredWithoutRepurchase": true,
+    "exactlyOneGearAndPityReceiptPersisted": true,
+    "sameTransactionReplayByteExact": true,
+    "hostMockRefundReplayRejectedNoMutation": true,
+    "XcodeRestoreDoesNotRegrantConsumable": true,
+    "coldRelaunchByteExact": true,
+    "normalR445SaveUnchanged": true,
+    "preexistingPBXUnchanged": true
+  },
+  "finalSaveSHA256": "63936957bb1ac8c592ee485b17591d294856652c04c06afc2d1766bc70a38034",
+  "finalRevision": 3,
+  "installedOrigin": {
+    "at": "2026-10-15T06:31:32.284973+09:00",
+    "appContainer": "/Users/PUBLIC_USER/Library/Developer/CoreSimulator/Devices/9A067715-7CF3-40D3-9064-38423223959B/data/Containers/Bundle/Application/AC385BAE-8797-41D1-BE61-034E02172368/WitchGathering.app",
+    "dataContainer": "/Users/PUBLIC_USER/Library/Developer/CoreSimulator/Devices/9A067715-7CF3-40D3-9064-38423223959B/data/Containers/Data/Application/850C97A2-1407-47E5-969F-578007C089AD",
+    "executableSHA256": "d4629570f955590affebb909f95f66744eb3dae9a6170eecc23ddccbee824539",
+    "buildReceipt": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/storekit_event_export_r454/build_tools_r004/postbuild_readback_r001/debug_BUILD_PASS.json",
+    "buildReceiptSHA256": "733b12f9e71b651533be74a351047f9154c1c971232f60915df7cf6b07a6a679",
+    "allAppFilesMatch": true,
+    "preservedSaveSHA256": "63936957bb1ac8c592ee485b17591d294856652c04c06afc2d1766bc70a38034",
+    "coldRelaunch": true
+  },
+  "buildReceiptSHA256": "733b12f9e71b651533be74a351047f9154c1c971232f60915df7cf6b07a6a679",
+  "schemeSHA256": "4e3707d395c050492db994c4ccc5896973a20d994dadbc126d40a50b3eb070f9",
+  "generatedPBXSHA256": "accc209eee12491d354355c4af0d01676b04f8239f911890cfd0afc2db9a1e14",
+  "exchanges": [
+    {
+      "request": "/Users/PUBLIC_USER/Library/Developer/CoreSimulator/Devices/9A067715-7CF3-40D3-9064-38423223959B/data/Containers/Data/Application/25D3838D-5DE8-46DE-978C-5B3BE3EC6D5F/Library/Application Support/Witch03to05R1/r454-authority-qa/requests/37d01036-2dd6-4c54-87c0-56bc5539f854.json",
+      "requestSHA256": "95b1ceb3b909d95bc7c2c3b8bfbfbfc6e6acc5af680a1d33b7f98ec9db337a61",
+      "response": "/Users/PUBLIC_USER/Library/Developer/CoreSimulator/Devices/9A067715-7CF3-40D3-9064-38423223959B/data/Containers/Data/Application/25D3838D-5DE8-46DE-978C-5B3BE3EC6D5F/Library/Application Support/Witch03to05R1/r454-authority-qa/responses/37d01036-2dd6-4c54-87c0-56bc5539f854.json",
+      "responseSHA256": "8a84fa2b5db3f0fe5fe570d6db0abd32dfb892511c97b47d16d802c5e1dbd73d",
+      "status": "DELIVERY",
+      "returnCode": 0,
+      "elapsed": 4.457423334,
+      "requestEvidencePath": "docs/production/current/qa_drafts/storekit_event_export_r454/runtime_r001/mailbox_evidence_r001/request_37d01036-2dd6-4c54-87c0-56bc5539f854.json",
+      "responseEvidencePath": "docs/production/current/qa_drafts/storekit_event_export_r454/runtime_r001/mailbox_evidence_r001/response_37d01036-2dd6-4c54-87c0-56bc5539f854.json"
+    },
+    {
+      "request": "/Users/PUBLIC_USER/Library/Developer/CoreSimulator/Devices/9A067715-7CF3-40D3-9064-38423223959B/data/Containers/Data/Application/25D3838D-5DE8-46DE-978C-5B3BE3EC6D5F/Library/Application Support/Witch03to05R1/r454-authority-qa/requests/39c5c2fa-39d8-48c1-9eb5-4599f5bc1b51.json",
+      "requestSHA256": "82ca5a5ea102b3c0b42ba0d51f421e5e0fea1353941c33fcb8002d37bdc63654",
+      "response": "/Users/PUBLIC_USER/Library/Developer/CoreSimulator/Devices/9A067715-7CF3-40D3-9064-38423223959B/data/Containers/Data/Application/25D3838D-5DE8-46DE-978C-5B3BE3EC6D5F/Library/Application Support/Witch03to05R1/r454-authority-qa/responses/39c5c2fa-39d8-48c1-9eb5-4599f5bc1b51.json",
+      "responseSHA256": "e4600fdb75f00460362c9f543554b21e97963cf6c01bdc9c9e2744c047b2d578",
+      "status": "REJECTED",
+      "returnCode": 2,
+      "elapsed": 60.675642584,
+      "requestEvidencePath": "docs/production/current/qa_drafts/storekit_event_export_r454/runtime_r001/mailbox_evidence_r001/request_39c5c2fa-39d8-48c1-9eb5-4599f5bc1b51.json",
+      "responseEvidencePath": "docs/production/current/qa_drafts/storekit_event_export_r454/runtime_r001/mailbox_evidence_r001/response_39c5c2fa-39d8-48c1-9eb5-4599f5bc1b51.json"
+    },
+    {
+      "request": "/Users/PUBLIC_USER/Library/Developer/CoreSimulator/Devices/9A067715-7CF3-40D3-9064-38423223959B/data/Containers/Data/Application/25D3838D-5DE8-46DE-978C-5B3BE3EC6D5F/Library/Application Support/Witch03to05R1/r454-authority-qa/requests/520bee71-c45f-4cd5-839b-7e1805be2932.json",
+      "requestSHA256": "7aadacb4acb2c14ffece80edf7ebad0f3d72234ab68913e78f3b92f2e8168df1",
+      "response": "/Users/PUBLIC_USER/Library/Developer/CoreSimulator/Devices/9A067715-7CF3-40D3-9064-38423223959B/data/Containers/Data/Application/25D3838D-5DE8-46DE-978C-5B3BE3EC6D5F/Library/Application Support/Witch03to05R1/r454-authority-qa/responses/520bee71-c45f-4cd5-839b-7e1805be2932.json",
+      "responseSHA256": "b797a1d255190500a8d2b67311610676774db5a6f9e2cf7106d82bb228ce9351",
+      "status": "DELIVERY",
+      "returnCode": 0,
+      "elapsed": 23.255845875000002,
+      "requestEvidencePath": "docs/production/current/qa_drafts/storekit_event_export_r454/runtime_r001/mailbox_evidence_r001/request_520bee71-c45f-4cd5-839b-7e1805be2932.json",
+      "responseEvidencePath": "docs/production/current/qa_drafts/storekit_event_export_r454/runtime_r001/mailbox_evidence_r001/response_520bee71-c45f-4cd5-839b-7e1805be2932.json"
+    }
+  ],
+  "captures": {
+    "initial_zero_products": {
+      "stateSHA256": "200bd2db0e905f7569a162cc37090a8624ac02b55ed4549dee738495e065bf0e",
+      "saveSHA256": "110c3fe4c50246d9c2c594a8d2218305490a9fd840ea7361061dc6640f04b3b1"
+    },
+    "configured_products": {
+      "stateSHA256": "fe2e71bc6c2c55d63764b6571788caec5198c880969818c2bc9844bbf2c02c11",
+      "saveSHA256": "110c3fe4c50246d9c2c594a8d2218305490a9fd840ea7361061dc6640f04b3b1"
+    },
+    "missing_product": {
+      "stateSHA256": "7ffa234d977ff98ab576e15952aabac9fcc112886b5de7dacda73f2c20dbd4bb",
+      "saveSHA256": "110c3fe4c50246d9c2c594a8d2218305490a9fd840ea7361061dc6640f04b3b1"
+    },
+    "cancelled": {
+      "stateSHA256": "84795ed7f9d8b29612cf8a2de0e012b4005643d1c78de05b8d72e5d57cbfd3e3",
+      "saveSHA256": "110c3fe4c50246d9c2c594a8d2218305490a9fd840ea7361061dc6640f04b3b1"
+    },
+    "ticket_purchased": {
+      "stateSHA256": "2ec1f0c966a11da48d6eda18f48e62fb4cbff0af69b3c33d29eea871aa319a20",
+      "saveSHA256": "553b869f4d974f5ed9d34698ffca8c1c6e03e09308b82dcd0c283cf6afeaedbf"
+    },
+    "finished_consumable_unavailable": {
+      "stateSHA256": "4632ec345467baa0d48ba9c9be07df3928118ef993197faae3bc364543fb11a1",
+      "saveSHA256": "553b869f4d974f5ed9d34698ffca8c1c6e03e09308b82dcd0c283cf6afeaedbf"
+    },
+    "gear_received": {
+      "stateSHA256": "3dfaca27e50f8c772ff30f015c2da5dfdc65482ee6472231934945e647197ee3",
+      "saveSHA256": "63936957bb1ac8c592ee485b17591d294856652c04c06afc2d1766bc70a38034"
+    },
+    "duplicate_replay": {
+      "stateSHA256": "528678fe4bca86a0a56276789a4bbba687c8f549b68d98bb07061b6a238c0687",
+      "saveSHA256": "63936957bb1ac8c592ee485b17591d294856652c04c06afc2d1766bc70a38034"
+    },
+    "refunded_host_rejected": {
+      "stateSHA256": "5e6a52c6b9fa8aa9913f8dda452a0ae5eb55eaae882955bd83aefab7b0478255",
+      "saveSHA256": "63936957bb1ac8c592ee485b17591d294856652c04c06afc2d1766bc70a38034"
+    },
+    "restore_consumable_no_duplicate": {
+      "stateSHA256": "370747878ca2683e0d48462139492581dc225e19b5d55d6e415ee53e9ddf0704",
+      "saveSHA256": "63936957bb1ac8c592ee485b17591d294856652c04c06afc2d1766bc70a38034"
+    },
+    "cold_relaunch": {
+      "stateSHA256": "853d24b2195fb1156b2b33902032280b4c3bfec61b8ccaf917fe0f2f841ad76a",
+      "saveSHA256": "63936957bb1ac8c592ee485b17591d294856652c04c06afc2d1766bc70a38034"
+    }
+  },
+  "boundaries": [
+    "Only actual StoreKit local Xcode transaction export is verified. Python authority is explicitly mock; no Apple JWS or production backend authentication.",
+    "Host refund is simulated in the local authority only, not an Apple refund. Existing delivered gear remains; future replay/spend is rejected and debt=1.",
+    "Existing QASink persists its separate QA ticket and finishes the transaction before the separately initiated gear delivery. Not production atomic settlement.",
+    "iOS18+ finished-consumable history opt-in is enabled only for the dedicated QA app.",
+    "No native data save injection, production profile adoption, real payment, device install, remote push or release.",
+    "New runtime coverage inherits unchanged nonconsumable restore and permission/nil-unwrap incident boundaries from R377; it does not claim fresh nonconsumable coverage."
+  ],
+  "appStopped": true
+}

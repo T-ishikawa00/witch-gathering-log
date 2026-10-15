@@ -1,0 +1,111 @@
+{
+  "schema": "act-b-r04-b-keypose-candidates-r002",
+  "status": "CANDIDATE_UNAPPROVED",
+  "actor": "ACT_B_R04_B",
+  "source_images_immutable": true,
+  "sourceReferences": [
+    "native/Art/GeneratedCandidates/ACT_B_R04_B/ACT_B_R04_B__static_candidate__r004.png",
+    "native/Art/GeneratedCandidates/ACT_B_R04_B/keypose_candidates_r001/ACT_B_R04_B_attack_keypose__candidate_r001.png",
+    "native/Art/GeneratedCandidates/ACT_B_R04_B/keypose_candidates_r001/ACT_B_R04_B_resolve_keypose__candidate_r001.png"
+  ],
+  "registrationConvention": {
+    "imageOrigin": "top_left_pixels",
+    "referenceNativeCanvasPx": [
+      512,
+      341
+    ],
+    "candidateCanvasPx": [
+      1536,
+      1024
+    ],
+    "nominalPackScale": 0.3333333333,
+    "recommendedRuntimeAnchorPx": [
+      768,
+      990
+    ],
+    "note": "Per-pose translation ranges are visual estimates to align feet to the neutral baseline. Do not apply without renderer/simulator verification; no runtime overlay created."
+  },
+  "qaEvidence": "docs/production/current/art/act_b_r04_b_keyposes_r002/KEYPOSE_ALPHA_COMPOSITE_QA_R002.jpg",
+  "entries": [
+    {
+      "id": "ACT_B_R04_B_ANTICIPATE_MID_R002",
+      "file": "ACT_B_R04_B_anticipate_mid__candidate_r002.png",
+      "sha256": "d3054cf2c59d911d2aff8f557ae90b0718f5f1499ea0c1b3e1a7b1adba8bb905",
+      "canvas_px": [
+        1536,
+        1024
+      ],
+      "alpha_bbox_threshold16_top_left_px": [
+        56,
+        61,
+        1504,
+        954
+      ],
+      "pose_intent": "between neutral and attack: mouth closed, neck/head drawn back slightly, wings beginning to lift",
+      "qa_estimates": {
+        "visible_foot_contact_y_top_left_px": [
+          928,
+          940
+        ],
+        "torso_mass_center_top_left_px": [
+          790,
+          565
+        ],
+        "registration_to_neutral": {
+          "uniform_scale_relative_to_1536_canvas": 1.0,
+          "translate_x_px": [
+            -10,
+            10
+          ],
+          "translate_y_px": [
+            50,
+            65
+          ],
+          "anchor_semantics": "align visible foot-contact baseline; preserve crouch/neck pose changes",
+          "confidence": "visual estimate; verify on simulator"
+        }
+      },
+      "assessment": "Candidate intermediate is legible; wings are clearly lifted compared with neutral and jaw is closed. Head/neck pullback is subtle. Image-generation style/scale drift remains; not runtime accepted."
+    },
+    {
+      "id": "ACT_B_R04_B_COLLAPSE_MID_R002",
+      "file": "ACT_B_R04_B_collapse_mid__candidate_r002.png",
+      "sha256": "fb406bbec8cdb0ebf403d1a05e1b05c3888cedb07095154e3e00226d60a6e3c4",
+      "canvas_px": [
+        1536,
+        1024
+      ],
+      "alpha_bbox_threshold16_top_left_px": [
+        81,
+        206,
+        1499,
+        924
+      ],
+      "pose_intent": "between neutral and resolve: neck/head halfway lowered, wings partway dropped, eyes half-lidded, jaw closed",
+      "qa_estimates": {
+        "visible_foot_contact_y_top_left_px": [
+          910,
+          923
+        ],
+        "torso_mass_center_top_left_px": [
+          800,
+          610
+        ],
+        "registration_to_neutral": {
+          "uniform_scale_relative_to_1536_canvas": 1.0,
+          "translate_x_px": [
+            -10,
+            10
+          ],
+          "translate_y_px": [
+            65,
+            80
+          ],
+          "anchor_semantics": "align visible foot-contact baseline; preserve lowered torso/head as intended pose",
+          "confidence": "visual estimate; verify on simulator"
+        }
+      },
+      "assessment": "Head is lowered and wings are reduced relative to neutral and resolve endpoints. Four legs remain visible and tail remains attached/in canvas. Still an intermediate rather than final collapse. Style/scale drift and runtime fit remain unapproved."
+    }
+  ]
+}

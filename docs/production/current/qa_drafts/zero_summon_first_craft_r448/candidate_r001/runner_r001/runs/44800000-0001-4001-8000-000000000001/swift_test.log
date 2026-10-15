@@ -1,0 +1,410 @@
+warning: 'package': found 3 file(s) which are unhandled; explicitly declare them as resources or exclude from the target
+    /Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Tests/WitchGameCoreTests/R159_DAY30_SAVE_AFTER_REOPEN.json
+    /Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Tests/WitchGameCoreTests/Fixtures/R6B_KNOWN_100049_TRACE_R1.json
+    /Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Tests/WitchGameCoreTests/Fixtures/R6B_KNOWN_100069_TRACE_R1.json
+Building for debugging...
+[0/9] /Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/scratch/build/arm64-apple-macosx/debug/WitchGameCorePackageTests.derived/runner.swift
+[1/9] Copying catalog_overlay.json
+[2/9] Copying candidate_latent_policy_r004.json
+[3/9] Write sources
+[6/9] Write swift-version--58304C5D6DBC2206.txt
+[8/30] Emitting module WitchGameCore
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameRuntimeIntegratedEquipmentProfileR355.swift:3:18: warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 1 | import CryptoKit
+ 2 | import Foundation
+ 3 | @testable import WitchGameCore
+   |                  `- warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 4 | 
+ 5 | /// Explicit test-only combination of the current R230 base and R350/R352/R353 policies.
+[9/30] Compiling WitchGameCore BattleTargetWarningR299.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameRuntimeIntegratedEquipmentProfileR355.swift:3:18: warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 1 | import CryptoKit
+ 2 | import Foundation
+ 3 | @testable import WitchGameCore
+   |                  `- warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 4 | 
+ 5 | /// Explicit test-only combination of the current R230 base and R350/R352/R353 policies.
+
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[10/30] Compiling WitchGameCore CandidateCharacterGrowth.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameRuntimeIntegratedEquipmentProfileR355.swift:3:18: warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 1 | import CryptoKit
+ 2 | import Foundation
+ 3 | @testable import WitchGameCore
+   |                  `- warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 4 | 
+ 5 | /// Explicit test-only combination of the current R230 base and R350/R352/R353 policies.
+
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[11/30] Compiling WitchGameCore CandidateCombatOverlay.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameRuntimeIntegratedEquipmentProfileR355.swift:3:18: warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 1 | import CryptoKit
+ 2 | import Foundation
+ 3 | @testable import WitchGameCore
+   |                  `- warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 4 | 
+ 5 | /// Explicit test-only combination of the current R230 base and R350/R352/R353 policies.
+
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[12/30] Compiling WitchGameCore CandidateLatentCombatModifiersR005.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameRuntimeIntegratedEquipmentProfileR355.swift:3:18: warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 1 | import CryptoKit
+ 2 | import Foundation
+ 3 | @testable import WitchGameCore
+   |                  `- warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 4 | 
+ 5 | /// Explicit test-only combination of the current R230 base and R350/R352/R353 policies.
+
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[13/30] Compiling WitchGameCore CandidateLatentSlotPolicyR003.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameRuntimeIntegratedEquipmentProfileR355.swift:3:18: warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 1 | import CryptoKit
+ 2 | import Foundation
+ 3 | @testable import WitchGameCore
+   |                  `- warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 4 | 
+ 5 | /// Explicit test-only combination of the current R230 base and R350/R352/R353 policies.
+
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[14/30] Compiling WitchGameCore CombatSimulator.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameRuntimeIntegratedEquipmentProfileR355.swift:3:18: warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 1 | import CryptoKit
+ 2 | import Foundation
+ 3 | @testable import WitchGameCore
+   |                  `- warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 4 | 
+ 5 | /// Explicit test-only combination of the current R230 base and R350/R352/R353 policies.
+
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[15/30] Compiling WitchGameCore Domain.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameRuntimeIntegratedEquipmentProfileR355.swift:3:18: warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 1 | import CryptoKit
+ 2 | import Foundation
+ 3 | @testable import WitchGameCore
+   |                  `- warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 4 | 
+ 5 | /// Explicit test-only combination of the current R230 base and R350/R352/R353 policies.
+
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[16/30] Compiling WitchGameCore EnemyActionPreviewFixture.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameRuntimeIntegratedEquipmentProfileR355.swift:3:18: warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 1 | import CryptoKit
+ 2 | import Foundation
+ 3 | @testable import WitchGameCore
+   |                  `- warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 4 | 
+ 5 | /// Explicit test-only combination of the current R230 base and R350/R352/R353 policies.
+
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[17/30] Compiling WitchGameCore EnemyExecuteCoalescerR154.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameRuntimeIntegratedEquipmentProfileR355.swift:3:18: warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 1 | import CryptoKit
+ 2 | import Foundation
+ 3 | @testable import WitchGameCore
+   |                  `- warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 4 | 
+ 5 | /// Explicit test-only combination of the current R230 base and R350/R352/R353 policies.
+
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[18/30] Compiling WitchGameCore EquippedVisualCandidates.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameRuntimeIntegratedEquipmentProfileR355.swift:3:18: warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 1 | import CryptoKit
+ 2 | import Foundation
+ 3 | @testable import WitchGameCore
+   |                  `- warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 4 | 
+ 5 | /// Explicit test-only combination of the current R230 base and R350/R352/R353 policies.
+
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[19/30] Compiling WitchGameCore FirstCraftCostR179.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameRuntimeIntegratedEquipmentProfileR355.swift:3:18: warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 1 | import CryptoKit
+ 2 | import Foundation
+ 3 | @testable import WitchGameCore
+   |                  `- warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 4 | 
+ 5 | /// Explicit test-only combination of the current R230 base and R350/R352/R353 policies.
+
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[20/30] Compiling WitchGameCore GameEngine.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameRuntimeIntegratedEquipmentProfileR355.swift:3:18: warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 1 | import CryptoKit
+ 2 | import Foundation
+ 3 | @testable import WitchGameCore
+   |                  `- warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 4 | 
+ 5 | /// Explicit test-only combination of the current R230 base and R350/R352/R353 policies.
+
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[21/30] Compiling WitchGameCore GameRuntimeConfigurationR098.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameRuntimeIntegratedEquipmentProfileR355.swift:3:18: warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 1 | import CryptoKit
+ 2 | import Foundation
+ 3 | @testable import WitchGameCore
+   |                  `- warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 4 | 
+ 5 | /// Explicit test-only combination of the current R230 base and R350/R352/R353 policies.
+
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[22/30] Compiling WitchGameCore GameRuntimeDismantleProfileR353.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameRuntimeIntegratedEquipmentProfileR355.swift:3:18: warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 1 | import CryptoKit
+ 2 | import Foundation
+ 3 | @testable import WitchGameCore
+   |                  `- warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 4 | 
+ 5 | /// Explicit test-only combination of the current R230 base and R350/R352/R353 policies.
+
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[23/30] Compiling WitchGameCore GameRuntimeEnhancementProfileR230.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameRuntimeIntegratedEquipmentProfileR355.swift:3:18: warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 1 | import CryptoKit
+ 2 | import Foundation
+ 3 | @testable import WitchGameCore
+   |                  `- warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 4 | 
+ 5 | /// Explicit test-only combination of the current R230 base and R350/R352/R353 policies.
+
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[24/30] Compiling WitchGameCore GameRuntimeIntegratedEquipmentProfileR355.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameRuntimeIntegratedEquipmentProfileR355.swift:3:18: warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 1 | import CryptoKit
+ 2 | import Foundation
+ 3 | @testable import WitchGameCore
+   |                  `- warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 4 | 
+ 5 | /// Explicit test-only combination of the current R230 base and R350/R352/R353 policies.
+
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[25/30] Compiling WitchGameCore GameRuntimeNaturalGearProfileR350.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameRuntimeIntegratedEquipmentProfileR355.swift:3:18: warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 1 | import CryptoKit
+ 2 | import Foundation
+ 3 | @testable import WitchGameCore
+   |                  `- warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 4 | 
+ 5 | /// Explicit test-only combination of the current R230 base and R350/R352/R353 policies.
+
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[26/30] Compiling WitchGameCore GameRuntimeRefinementProfileR352.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameRuntimeIntegratedEquipmentProfileR355.swift:3:18: warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 1 | import CryptoKit
+ 2 | import Foundation
+ 3 | @testable import WitchGameCore
+   |                  `- warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 4 | 
+ 5 | /// Explicit test-only combination of the current R230 base and R350/R352/R353 policies.
+
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[27/30] Compiling WitchGameCore GatheringProgressProjectionR041.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameRuntimeIntegratedEquipmentProfileR355.swift:3:18: warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 1 | import CryptoKit
+ 2 | import Foundation
+ 3 | @testable import WitchGameCore
+   |                  `- warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 4 | 
+ 5 | /// Explicit test-only combination of the current R230 base and R350/R352/R353 policies.
+
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[28/30] Compiling WitchGameCore GearAppearanceProjection.swift
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameRuntimeIntegratedEquipmentProfileR355.swift:3:18: warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 1 | import CryptoKit
+ 2 | import Foundation
+ 3 | @testable import WitchGameCore
+   |                  `- warning: file 'GameRuntimeIntegratedEquipmentProfileR355.swift' is part of module 'WitchGameCore'; ignoring import
+ 4 | 
+ 5 | /// Explicit test-only combination of the current R230 base and R350/R352/R353 policies.
+
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Sources/WitchGameCore/GameEngine.swift:682:17: warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 680 |             let nextIndex = try checkedAdd(ledger.naturalRollIndex, 1, label: "R350 natural roll index")
+ 681 |             let quality = try naturalQualityR350(ledger: &ledger, rollIndex: nextIndex)
+ 682 |             let desired = pool.desiredTemplateID
+     |                 `- warning: initialization of immutable value 'desired' was never used; consider replacing with assignment to '_' or removing it [#no-usage]
+ 683 |             let chosenTemplate: String
+ 684 |             let useLocal = NaturalGearCounterRandomR350.bounded(seed: ledger.seedHex, index: nextIndex,
+[29/68] Compiling WitchGameCore GearComparisonPartnerSelectionR210.swift
+[30/68] Compiling WitchGameCore GearDismantleRefundR353.swift
+[31/68] Compiling WitchGameCore GearEnhancementGrowthR230.swift
+[32/68] Compiling WitchGameCore GearInventoryIndexR374.swift
+[33/68] Compiling WitchGameCore GearLegendaryCollectionProjectionR384.swift
+[34/68] Compiling WitchGameCore GearSwapCampaignPreviewR136.swift
+[35/68] Compiling WitchGameCore GearSwapCombatPreviewR131.swift
+[36/68] Compiling WitchGameCore GearSwapCombatSummaryR131.swift
+[37/68] Compiling WitchGameCore LunaBookAppearanceCandidate.swift
+[38/68] Compiling WitchGameCore LunaBookMotion.swift
+[39/68] Compiling WitchGameCore LunaBookMotionDataR001.swift
+[40/68] Compiling WitchGameCore LunaBookMotionDataR050Candidate.swift
+[41/68] Compiling WitchGameCore LunaBookMotionDataR088Candidate.swift
+[42/68] Compiling WitchGameCore MothIdleAnchorRegistrationR050.swift
+[43/68] Compiling WitchGameCore NaturalGearDiscoveryR350.swift
+[44/68] Compiling WitchGameCore NaturalGearRefinementR352.swift
+[45/68] Compiling WitchGameCore OwnedPartyLoadoutPreviewR181.swift
+[46/68] Compiling WitchGameCore PartyWorkPolicyR144.swift
+[47/68] Compiling WitchGameCore PostClearGoalProjectionR122.swift
+[48/68] Compiling WitchGameCore R6CampaignQA.swift
+[49/68] Compiling WitchGameCore R6CanonicalProfile.swift
+[50/68] Compiling WitchGameCore R6CombatPresentationSemantics.swift
+[51/68] Compiling WitchGameCore R6TimelineSimulator.swift
+[52/68] Compiling WitchGameCore RecipeEvolutionOutcomeProjectionR129.swift
+[53/68] Compiling WitchGameCore RecipeGatherHandoffTargetR157.swift
+[54/68] Compiling WitchGameCore RecipeGoalCoreAdapterR002.swift
+[55/68] Compiling WitchGameCore RecipeGoalProjectionR035.swift
+[56/68] Compiling WitchGameCore RecipeInvestigationRouteR158.swift
+[57/68] Compiling WitchGameCore ResearchGatherRouteR310.swift
+[58/68] Compiling WitchGameCore ResearchMaterialGuidanceR280.swift
+[59/68] Compiling WitchGameCore SaveRepository.swift
+[60/68] Compiling WitchGameCore SharedPartyWorkRuntimeR170.swift
+[61/68] Compiling WitchGameCore StandardPlayStartupSelectionR169.swift
+[62/68] Compiling WitchGameCore SyntheticDash2VisualTailR047.swift
+[63/68] Compiling WitchGameCore SyntheticPartyDash2PreviewR043.swift
+[64/68] Compiling WitchGameCore WardrobeCandidateCatalogR130.swift
+[65/68] Compiling WitchGameCore WardrobeCandidateR128.swift
+[66/68] Compiling WitchGameCore resource_bundle_accessor.swift
+[67/73] Compiling WitchGameCoreTests EconomyCohortProgressionR355Tests.swift
+[68/73] Compiling WitchGameCoreTests EconomyCohortTreatmentR195.swift
+[69/73] Compiling WitchGameCoreTests EconomyCohortTreatmentR195Tests.swift
+[70/73] Compiling WitchGameCoreTests FirstCraftAidPersistenceR179Tests.swift
+[71/73] Emitting module WitchGameCoreTests
+[72/77] Compiling WitchGameCoreTests FirstCraftCostR179Tests.swift
+[73/77] Compiling WitchGameCoreTests GearTrialPlannerR199.swift
+[74/77] Compiling WitchGameCoreTests GlobalRecipeGoalPlannerR159.swift
+[75/77] Compiling WitchGameCoreTests OwnedPartyLoadoutPreviewR181Tests.swift
+[76/79] Compiling WitchGameCorePackageTests runner.swift
+[77/79] Emitting module WitchGameCorePackageTests
+[77/79] Write Objects.LinkFileList
+[78/79] Linking WitchGameCorePackageTests
+Build complete! (23.73s)
+Test Suite 'Selected tests' started at 2026-10-15 04:51:21.935.
+Test Suite 'WitchGameCorePackageTests.xctest' started at 2026-10-15 04:51:21.937.
+Test Suite 'EconomyCohortProgressionR355Tests' started at 2026-10-15 04:51:21.937.
+Test Case '-[WitchGameCoreTests.EconomyCohortProgressionR355Tests testR448FreeNoAdZeroSummonFirstCraftProgression]' started.
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Tests/WitchGameCoreTests/EconomyCohortProgressionR355Tests.swift:306: error: -[WitchGameCoreTests.EconomyCohortProgressionR355Tests testR448FreeNoAdZeroSummonFirstCraftProgression] : XCTAssertEqual failed: ("f509e3f8c18bdc0bb59fe5d684256414e92ccae81e4cd706f4759417cc96e142") is not equal to ("936ec9843854c1f00410b9becd8808d55e24434433ad7aa5f15b99e42436f980") - The tested policy stack must bind to the exact App R230 base configuration
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Tests/WitchGameCoreTests/EconomyCohortProgressionR355Tests.swift:310: error: -[WitchGameCoreTests.EconomyCohortProgressionR355Tests testR448FreeNoAdZeroSummonFirstCraftProgression] : XCTAssertEqual failed: ("app-candidate-r098-v1-growth-500bp-enhancement-r230-v1") is not equal to ("app-candidate-r098-v1-growth-500bp-enhancement-r230-v1-natural-r350-v1-refinement-r352-v2-dismantle-r353-v2")
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Tests/WitchGameCoreTests/EconomyCohortProgressionR355Tests.swift:311: error: -[WitchGameCoreTests.EconomyCohortProgressionR355Tests testR448FreeNoAdZeroSummonFirstCraftProgression] : XCTAssertEqual failed: ("f509e3f8c18bdc0bb59fe5d684256414e92ccae81e4cd706f4759417cc96e142") is not equal to ("936ec9843854c1f00410b9becd8808d55e24434433ad7aa5f15b99e42436f980")
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Tests/WitchGameCoreTests/EconomyCohortProgressionR355Tests.swift:1120: error: -[WitchGameCoreTests.EconomyCohortProgressionR355Tests testR448FreeNoAdZeroSummonFirstCraftProgression] : XCTAssertGreaterThan failed: ("0") is not greater than ("0") - new natural items must be attributable to R350 acquisition records
+/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/runs/44800000-0001-4001-8000-000000000001/package/Tests/WitchGameCoreTests/EconomyCohortProgressionR355Tests.swift:1127: error: -[WitchGameCoreTests.EconomyCohortProgressionR355Tests testR448FreeNoAdZeroSummonFirstCraftProgression] : XCTAssertTrue failed - all final non-starter gear must have a command or natural-ledger origin
+Test Case '-[WitchGameCoreTests.EconomyCohortProgressionR355Tests testR448FreeNoAdZeroSummonFirstCraftProgression]' failed (45.618 seconds).
+Test Suite 'EconomyCohortProgressionR355Tests' failed at 2026-10-15 04:52:07.555.
+	 Executed 1 test, with 5 failures (0 unexpected) in 45.618 (45.618) seconds
+Test Suite 'WitchGameCorePackageTests.xctest' failed at 2026-10-15 04:52:07.555.
+	 Executed 1 test, with 5 failures (0 unexpected) in 45.618 (45.618) seconds
+Test Suite 'Selected tests' failed at 2026-10-15 04:52:07.555.
+	 Executed 1 test, with 5 failures (0 unexpected) in 45.618 (45.620) seconds
+◇ Test run started.
+↳ Testing Library Version: 1902
+↳ Target Platform: arm64e-apple-macos14.0
+✔ Test run with 0 tests in 0 suites passed after 0.001 seconds.

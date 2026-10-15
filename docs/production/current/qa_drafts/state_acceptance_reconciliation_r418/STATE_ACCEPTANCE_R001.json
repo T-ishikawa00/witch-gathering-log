@@ -1,0 +1,1781 @@
+{
+  "schema": "state-acceptance-reconciliation-r418-v1",
+  "status": "SCOPED_LOCAL_STATE_AUDIT; NO_ART_OR_SOURCE_CHANGE",
+  "createdLocalDate": "2026-10-14",
+  "scope": "Read-only reconciliation of canonical R008/R082 acceptance status with current R377/R391/R407/R411/R418 captures, per-ID forced-state clips, and four-party evidence. No new media extracted, no build, no Simulator, no source/save mutation.",
+  "authorityPins": {
+    "acceptance": {
+      "path": "docs/production/mission_20261010_r1/Witch_Codex_Autonomous_03to05_20261010/03_ACCEPTANCE_AND_BLOCKERS.md",
+      "sha256": "5c26036ca41f3a45a870c3e5590481c97321ae01e54aa52a26a74c12d674012c"
+    },
+    "registerR008": {
+      "path": "docs/production/current/qa_drafts/final_acceptance_r360/COMPLETION_REGISTER_R008.json",
+      "sha256": "de41a6fb1cf1650c9e7000156c19e48c1253a3742ab54de850a007d5897156bf"
+    },
+    "checkpointR082": {
+      "path": "docs/production/current/CHECKPOINT_R082_RECEIPT_R001.json",
+      "sha256": "97ccd5171652f372d889f4da1f97d7fc22b4b6e432ab9b9239d2920ae3545623"
+    },
+    "ledgerR308": {
+      "path": "docs/production/current/qa_drafts/asset_readiness_r308/ASSET_READINESS_R001.json",
+      "sha256": "02b76b68239cdaf0af7934dfc7bbcdb4eef1592dff2cff99aec896b6f8d29a25"
+    },
+    "ledgerR366": {
+      "path": "docs/production/current/qa_drafts/enemy_completion_batch_r366/ENEMY_COVERAGE_LEDGER_R001.json",
+      "sha256": "0b7963a968411f8ff618f2f39beea7abc6ddcbc6704d6cdd42b914bc5bdd8306"
+    },
+    "acceptanceR372": {
+      "path": "docs/production/current/qa_drafts/enemy_motion_acceptance_r372/REMAINING_ACCEPTANCE_R001.json",
+      "sha256": "d6b673253d3ea84bf5e14c122a23ce13f934793aed7c26d67c6839f0b0c0194d"
+    },
+    "runR377": {
+      "path": "docs/production/current/qa_drafts/enemy_motion_batch_r377/capture_candidate_r004/capture_r002/RUN.json",
+      "sha256": "7f8a335ab40bb13abb63648db0db05dc50ba28871294f67a9a7ca5a62c9676db"
+    },
+    "reviewR377": {
+      "path": "docs/production/current/qa_drafts/enemy_motion_batch_r377/capture_candidate_r004/independent_review_r004/REVIEW_R004.json",
+      "sha256": "bec0576ff6db3b5e522e69590a697abfaee9875c80d920d022cf32721f65ff53"
+    },
+    "runR391": {
+      "path": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/RUN.json",
+      "sha256": "b8c15bcf354324e188f1999c1fd6cee1ddf81814e0866a00b17275b1e446ba51"
+    },
+    "reviewR391": {
+      "path": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/offline_review_r006/REVIEW_R006.json",
+      "sha256": "7979892572ad4385983b06dbe5b7dda2e6c286a45e5b228576308a208e5398df"
+    },
+    "runR407": {
+      "path": "docs/production/current/qa_drafts/composite_render_probe_r405/root_runner_r407_r002/capture_r001/RUN.json",
+      "sha256": "21c81838a9147f2321df3824e0106012350ac129fa795a13d956c2475daf6c82"
+    },
+    "partyJoinR407": {
+      "path": "docs/production/current/qa_drafts/composite_render_probe_r405/root_visual_r407_r001/TWO_MARKER_JOIN_R001.json",
+      "sha256": "50f2d003266a041f52968e602e7a0702d40aaf08bf1679f0ea774a5ed4ed071a"
+    },
+    "runR411A": {
+      "path": "docs/production/current/qa_drafts/enemy_final_boss_render_r411/root_runner_r411_r004/capture_r001/RUN.json",
+      "sha256": "2cd7e7b34946f5e7fcdc981366c74fc2c22bc636ad0f81ad0339077b1945b132"
+    },
+    "runR411B": {
+      "path": "docs/production/current/qa_drafts/enemy_final_boss_render_r411/root_runner_r411_r005/capture_r001/RUN.json",
+      "sha256": "59e1b5ce4e0ff6b5847cab5e48ba75df0da3ba41d00865c23370edc258b0d8cf"
+    },
+    "runR418": {
+      "path": "docs/production/current/qa_drafts/enemy_attack_visibility_r418/capture_candidate_r002/capture_r001/RUN.json",
+      "sha256": "b4a540a99c82dba80a99d2a6d644f05befbcbcb164a27a013fd8d8a16afe9c0a"
+    },
+    "reviewR418": {
+      "path": "docs/production/current/qa_drafts/enemy_attack_visibility_r418/capture_candidate_r002/capture_r001/independent_visual_review_r001/REVIEW_R001.json",
+      "sha256": "7908abca841865a0bc47330c7e87d4102d9d5ae6a1365371b3f1b3d44d722e68"
+    }
+  },
+  "checkpointErratum": "R082 checkpoint records R418 attack visibility as remaining and R008 also has that stale item. R418 capture/review below is additive evidence after that checkpoint; the old checkpoint/register were not edited.",
+  "enemyStateCounts": {
+    "enemyIDs": 30,
+    "allSevenObservedInEncounterTrace": 11,
+    "missingExecuteAndRecover": 9,
+    "missingRecoverOnly": 10,
+    "missingOtherState": 0,
+    "allCurrentEventUnionHaveIdleWalkAnticipateHitResolve": true,
+    "interpretation": "These counts are unions of recorded event/render traces across source-pinned batches. They count state telemetry/frame observations, not independent full-video visual passes. R083 has seven explicitly requested isolated state clips per enemy; it does not prove natural transitions."
+  },
+  "enemyByID": [
+    {
+      "itemID": "ACT_B_R01_A",
+      "canonicalID": "B_R01_A",
+      "mappedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "forcedStateClip": {
+        "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/ACT_B_R01_A/full_screen_states.mp4",
+        "sha256": "2a0aa8bfeb693cf926c5e4dd02c8875020885c220ed48fd19e1b6f987e0a4f41",
+        "sevenStateRequestsRecorded": true,
+        "reviewStatus": "NOT_INDIVIDUALLY_REVIEWED"
+      },
+      "observedActualEncounterStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "hit",
+        "resolve"
+      ],
+      "unobservedActualEncounterStates": [
+        "execute",
+        "recover"
+      ],
+      "actualEncounterEvidence": [
+        {
+          "runTag": "R391",
+          "runManifest": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/RUN.json",
+          "encounterID": "B_R01_A",
+          "observedStates": [
+            "anticipate",
+            "hit",
+            "idle",
+            "resolve",
+            "walk"
+          ],
+          "missingInThisTrace": [
+            "execute",
+            "recover"
+          ],
+          "videoPath": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/enemy_event_traces/case01_B_R01_A/battle_first_8_seconds.mp4",
+          "videoSHA256": "12bb28dda779dc73dd476050129fc0d91b803f17b07740b3f7ca85f28f874665",
+          "traceSHA256": "cb45cd095bb8bfd86d009b30b28592784461dfa30157afc73c1e0518de47e840",
+          "fixtureClass": "SYNTHETIC_CHALLENGE_TECHNICAL_ONLY"
+        }
+      ]
+    },
+    {
+      "itemID": "ACT_B_R01_B",
+      "canonicalID": "B_R01_B",
+      "mappedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "forcedStateClip": {
+        "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/ACT_B_R01_B/full_screen_states.mp4",
+        "sha256": "79c8cf33c04c568fe8e9b928884e9cfed5052165e76503c7d7abe595c5cf44ef",
+        "sevenStateRequestsRecorded": true,
+        "reviewStatus": "NOT_INDIVIDUALLY_REVIEWED"
+      },
+      "observedActualEncounterStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "hit",
+        "resolve"
+      ],
+      "unobservedActualEncounterStates": [
+        "recover"
+      ],
+      "actualEncounterEvidence": [
+        {
+          "runTag": "R391",
+          "runManifest": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/RUN.json",
+          "encounterID": "B_R01_B",
+          "observedStates": [
+            "anticipate",
+            "execute",
+            "hit",
+            "idle",
+            "resolve",
+            "walk"
+          ],
+          "missingInThisTrace": [
+            "recover"
+          ],
+          "videoPath": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/enemy_event_traces/case02_B_R01_B/battle_first_8_seconds.mp4",
+          "videoSHA256": "c9b903fa8b9fed37bf37383d9fc6a20c04d4e256b923a9e2ebcca4b74dde929e",
+          "traceSHA256": "cd340be8ca3be2f8053b28a7dbb6aa996f6823cbb24f5302621ce6dda18964f3",
+          "fixtureClass": "SYNTHETIC_CHALLENGE_TECHNICAL_ONLY"
+        }
+      ]
+    },
+    {
+      "itemID": "ACT_B_R02_A",
+      "canonicalID": "B_R02_A",
+      "mappedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "forcedStateClip": {
+        "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/ACT_B_R02_A/full_screen_states.mp4",
+        "sha256": "f73db00c20662db6577cb168eaa2e17b9357678a0bae568b12baa464fee01db6",
+        "sevenStateRequestsRecorded": true,
+        "reviewStatus": "SAMPLED"
+      },
+      "observedActualEncounterStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "unobservedActualEncounterStates": [],
+      "actualEncounterEvidence": [
+        {
+          "runTag": "R391",
+          "runManifest": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/RUN.json",
+          "encounterID": "B_R02_A",
+          "observedStates": [
+            "anticipate",
+            "execute",
+            "hit",
+            "idle",
+            "recover",
+            "resolve",
+            "walk"
+          ],
+          "missingInThisTrace": [],
+          "videoPath": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/enemy_event_traces/case07_B_R02_A/battle_first_8_seconds.mp4",
+          "videoSHA256": "a594e5e594584676d08c3e72dea76a40c8390314962feb40a8fb89dcaf1a7f74",
+          "traceSHA256": "2069dc6ccefbc12273840a1a2a173def0254c71bacf47e5e4a718d7a9b38f9ff",
+          "fixtureClass": "SYNTHETIC_CHALLENGE_TECHNICAL_ONLY"
+        }
+      ]
+    },
+    {
+      "itemID": "ACT_B_R02_B",
+      "canonicalID": "B_R02_B",
+      "mappedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "forcedStateClip": {
+        "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/ACT_B_R02_B/full_screen_states.mp4",
+        "sha256": "68f92fbd96175b0fa6f24f8141dd25f4ae679b22d01d002f63e33bdb6394c9d2",
+        "sevenStateRequestsRecorded": true,
+        "reviewStatus": "NOT_INDIVIDUALLY_REVIEWED"
+      },
+      "observedActualEncounterStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "unobservedActualEncounterStates": [],
+      "actualEncounterEvidence": [
+        {
+          "runTag": "R391",
+          "runManifest": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/RUN.json",
+          "encounterID": "B_R02_B",
+          "observedStates": [
+            "anticipate",
+            "execute",
+            "hit",
+            "idle",
+            "recover",
+            "resolve",
+            "walk"
+          ],
+          "missingInThisTrace": [],
+          "videoPath": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/enemy_event_traces/case08_B_R02_B/battle_first_8_seconds.mp4",
+          "videoSHA256": "7209a2a1955421b9c804006b096920ff38e1768b5f7e31bb2cf94fec8e858be8",
+          "traceSHA256": "87f6e93c1206d4bb74feb21a1e4675e48dbcc04d00a5a0350f698e2d8be843f1",
+          "fixtureClass": "SYNTHETIC_CHALLENGE_TECHNICAL_ONLY"
+        }
+      ]
+    },
+    {
+      "itemID": "ACT_B_R03_A",
+      "canonicalID": "B_R03_A",
+      "mappedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "forcedStateClip": {
+        "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/ACT_B_R03_A/full_screen_states.mp4",
+        "sha256": "4f05a41204ac614f32015e09df222c9fe2b14677157262fc83400db7bde60d04",
+        "sevenStateRequestsRecorded": true,
+        "reviewStatus": "NOT_INDIVIDUALLY_REVIEWED"
+      },
+      "observedActualEncounterStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "hit",
+        "resolve"
+      ],
+      "unobservedActualEncounterStates": [
+        "recover"
+      ],
+      "actualEncounterEvidence": [
+        {
+          "runTag": "R391",
+          "runManifest": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/RUN.json",
+          "encounterID": "B_R03_A",
+          "observedStates": [
+            "anticipate",
+            "execute",
+            "hit",
+            "idle",
+            "resolve",
+            "walk"
+          ],
+          "missingInThisTrace": [
+            "recover"
+          ],
+          "videoPath": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/enemy_event_traces/case13_B_R03_A/battle_first_8_seconds.mp4",
+          "videoSHA256": "226f4ff37f24ede370d6ed7cae491a486cbccdad065a1d0343451c53963f408f",
+          "traceSHA256": "13363622f5a5f305a8b8c0f1a2cc60c4720391c29dba36ca8ddc413157e25824",
+          "fixtureClass": "SYNTHETIC_CHALLENGE_TECHNICAL_ONLY"
+        }
+      ]
+    },
+    {
+      "itemID": "ACT_B_R03_B",
+      "canonicalID": "B_R03_B",
+      "mappedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "forcedStateClip": {
+        "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/ACT_B_R03_B/full_screen_states.mp4",
+        "sha256": "cd2004cca882bc1b6a586fbacbdf5e20d159ffda6fa1f5791eb3d8c83550bbef",
+        "sevenStateRequestsRecorded": true,
+        "reviewStatus": "NOT_INDIVIDUALLY_REVIEWED"
+      },
+      "observedActualEncounterStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "hit",
+        "resolve"
+      ],
+      "unobservedActualEncounterStates": [
+        "execute",
+        "recover"
+      ],
+      "actualEncounterEvidence": [
+        {
+          "runTag": "R391",
+          "runManifest": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/RUN.json",
+          "encounterID": "B_R03_B",
+          "observedStates": [
+            "anticipate",
+            "hit",
+            "idle",
+            "resolve",
+            "walk"
+          ],
+          "missingInThisTrace": [
+            "execute",
+            "recover"
+          ],
+          "videoPath": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/enemy_event_traces/case14_B_R03_B/battle_first_8_seconds.mp4",
+          "videoSHA256": "aa80708bf5ffc8da5a3d6ada8f47591a0032ac43518e798143cd5f43c325ffb9",
+          "traceSHA256": "fd6b53cf635bf0aff5dc97742d39c21780f60a0422c2d9d005c0bd83fdc46ccb",
+          "fixtureClass": "SYNTHETIC_CHALLENGE_TECHNICAL_ONLY"
+        }
+      ]
+    },
+    {
+      "itemID": "ACT_B_R04_A",
+      "canonicalID": "B_R04_A",
+      "mappedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "forcedStateClip": {
+        "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/ACT_B_R04_A/full_screen_states.mp4",
+        "sha256": "f773c524f0eb9598bbaaf523ac1134698bd7a9b1e5553cbe2c1256c53448936c",
+        "sevenStateRequestsRecorded": true,
+        "reviewStatus": "NOT_INDIVIDUALLY_REVIEWED"
+      },
+      "observedActualEncounterStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "hit",
+        "resolve"
+      ],
+      "unobservedActualEncounterStates": [
+        "recover"
+      ],
+      "actualEncounterEvidence": [
+        {
+          "runTag": "R391",
+          "runManifest": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/RUN.json",
+          "encounterID": "B_R04_A",
+          "observedStates": [
+            "anticipate",
+            "execute",
+            "hit",
+            "idle",
+            "resolve",
+            "walk"
+          ],
+          "missingInThisTrace": [
+            "recover"
+          ],
+          "videoPath": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/enemy_event_traces/case19_B_R04_A/battle_first_8_seconds.mp4",
+          "videoSHA256": "8c31c14c06716f5ff24a082897db2ba8a236daa2c310f28dadf35d9457ec44d3",
+          "traceSHA256": "c7c39d50bff8fa1a6a8ba0e699751af07f51d0f38d36d3a6bd0db656f119181f",
+          "fixtureClass": "SYNTHETIC_CHALLENGE_TECHNICAL_ONLY"
+        }
+      ]
+    },
+    {
+      "itemID": "ACT_B_R04_B",
+      "canonicalID": "B_R04_B",
+      "mappedStates": [],
+      "forcedStateClip": {
+        "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/ACT_B_R04_B/full_screen_states.mp4",
+        "sha256": "f7e2797c3f2ce53ff16002860ddeafafd206fcba783d47a38d23371d8cc358bb",
+        "sevenStateRequestsRecorded": true,
+        "reviewStatus": "NOT_INDIVIDUALLY_REVIEWED"
+      },
+      "observedActualEncounterStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "hit",
+        "resolve"
+      ],
+      "unobservedActualEncounterStates": [
+        "recover"
+      ],
+      "actualEncounterEvidence": [
+        {
+          "runTag": "R407",
+          "runManifest": "docs/production/current/qa_drafts/composite_render_probe_r405/root_runner_r407_r002/capture_r001/RUN.json",
+          "encounterID": "B_R04_B",
+          "observedStates": [
+            "anticipate",
+            "execute",
+            "hit",
+            "idle",
+            "resolve",
+            "walk"
+          ],
+          "missingInThisTrace": [
+            "recover"
+          ],
+          "videoPath": "docs/production/current/qa_drafts/composite_render_probe_r405/root_runner_r407_r002/capture_r001/enemy_event_traces/case01_B_R04_B/battle_full_upto_60_seconds.mp4",
+          "videoSHA256": "1b09907b26b6915dae348528b81b50c57e7e56f0bbaa46f05a554b00549b6caa",
+          "traceSHA256": "aab0bd58cbe19b96ac3f19f874c21cb97cb348b08a24d5693fca3aed2a5394eb",
+          "fixtureClass": "SYNTHETIC_CHALLENGE_TECHNICAL_ONLY"
+        }
+      ]
+    },
+    {
+      "itemID": "ACT_B_R05_A",
+      "canonicalID": "B_R05_A",
+      "mappedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "forcedStateClip": {
+        "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/ACT_B_R05_A/full_screen_states.mp4",
+        "sha256": "7ae0cf0411e4692e08fc0c5133212f9d226888e309653ab10c24662e9ea7f18c",
+        "sevenStateRequestsRecorded": true,
+        "reviewStatus": "NOT_INDIVIDUALLY_REVIEWED"
+      },
+      "observedActualEncounterStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "unobservedActualEncounterStates": [],
+      "actualEncounterEvidence": [
+        {
+          "runTag": "R407",
+          "runManifest": "docs/production/current/qa_drafts/composite_render_probe_r405/root_runner_r407_r002/capture_r001/RUN.json",
+          "encounterID": "B_R05_A",
+          "observedStates": [
+            "anticipate",
+            "execute",
+            "hit",
+            "idle",
+            "recover",
+            "walk"
+          ],
+          "missingInThisTrace": [
+            "resolve"
+          ],
+          "videoPath": "docs/production/current/qa_drafts/composite_render_probe_r405/root_runner_r407_r002/capture_r001/enemy_event_traces/case06_B_R05_A/battle_full_upto_60_seconds.mp4",
+          "videoSHA256": "3173a7a615c197e3bd00b4f1aecc94540d2b5fad7b8efd63161a68fa8c0176cf",
+          "traceSHA256": "0bcf365a3a63add7b62d0d514197523e49c64cb1c29dd17f1a5bb5719bbe4bd9",
+          "fixtureClass": null
+        },
+        {
+          "runTag": "R411A",
+          "runManifest": "docs/production/current/qa_drafts/enemy_final_boss_render_r411/root_runner_r411_r004/capture_r001/RUN.json",
+          "encounterID": "B_R05_A",
+          "observedStates": [
+            "anticipate",
+            "execute",
+            "hit",
+            "idle",
+            "recover",
+            "resolve",
+            "walk"
+          ],
+          "missingInThisTrace": [],
+          "videoPath": "docs/production/current/qa_drafts/enemy_final_boss_render_r411/root_runner_r411_r004/capture_r001/enemy_event_traces/case01_B_R05_A/battle_full_upto_60_seconds.mp4",
+          "videoSHA256": "92b8b927b61624b2129c66658ab948faf7b1cb949e2b50ec3f47ab0fb3264d0d",
+          "traceSHA256": "f6b3f1bbaa13210146744e3ef9f57018e028b8c9dc382a24b43ad641c902f325",
+          "fixtureClass": null
+        }
+      ]
+    },
+    {
+      "itemID": "ACT_B_R05_B",
+      "canonicalID": "B_R05_B",
+      "mappedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "forcedStateClip": {
+        "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/ACT_B_R05_B/full_screen_states.mp4",
+        "sha256": "c883a20599943a5a898e62c0148c8a3431476163d68c485f374014de57f0a296",
+        "sevenStateRequestsRecorded": true,
+        "reviewStatus": "NOT_INDIVIDUALLY_REVIEWED"
+      },
+      "observedActualEncounterStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "hit",
+        "resolve"
+      ],
+      "unobservedActualEncounterStates": [
+        "recover"
+      ],
+      "actualEncounterEvidence": [
+        {
+          "runTag": "R411B",
+          "runManifest": "docs/production/current/qa_drafts/enemy_final_boss_render_r411/root_runner_r411_r005/capture_r001/RUN.json",
+          "encounterID": "B_R05_B",
+          "observedStates": [
+            "anticipate",
+            "hit",
+            "idle",
+            "resolve",
+            "walk"
+          ],
+          "missingInThisTrace": [
+            "execute",
+            "recover"
+          ],
+          "videoPath": "docs/production/current/qa_drafts/enemy_final_boss_render_r411/root_runner_r411_r005/capture_r001/enemy_event_traces/case01_B_R05_B/battle_full_upto_60_seconds.mp4",
+          "videoSHA256": "2ec5dde5a0367b0f91ed18102bebdf39266a1efb438f02140d56c65818ebbcad",
+          "traceSHA256": "06269cbcc85dc9f7b983e579c3f7217e347733a678fd3470ea3ddfb5b984ceca",
+          "fixtureClass": "ROOT_SEALED_CORE_SAVE_RENDER_FIXTURE_TECHNICAL_ONLY"
+        },
+        {
+          "runTag": "R418",
+          "runManifest": "docs/production/current/qa_drafts/enemy_attack_visibility_r418/capture_candidate_r002/capture_r001/RUN.json",
+          "encounterID": "B_R05_B",
+          "observedStates": [
+            "anticipate",
+            "execute",
+            "hit",
+            "idle",
+            "resolve",
+            "walk"
+          ],
+          "missingInThisTrace": [
+            "recover"
+          ],
+          "videoPath": "docs/production/current/qa_drafts/enemy_attack_visibility_r418/capture_candidate_r002/capture_r001/enemy_event_traces/case01_B_R05_B/battle_full_upto_60_seconds.mp4",
+          "videoSHA256": "e63de41d0f3346d8d89711fc4370e690bd5cac48ffabadfdf6011c73f395593f",
+          "traceSHA256": "b58eb4acf57c49529e50fb4422b7aaa5b55b54ea91f95f8296118cd5841c9065",
+          "fixtureClass": "ROOT_SEALED_CORE_SAVE_RENDER_FIXTURE_TECHNICAL_ONLY"
+        }
+      ]
+    },
+    {
+      "itemID": "ACT_E_R01_01",
+      "canonicalID": "E_R01_01",
+      "mappedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "forcedStateClip": {
+        "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/ACT_E_R01_01/full_screen_states.mp4",
+        "sha256": "ffecb78e1419935ddfb3e6cf11b4780792ebb3c0140b2655b9ca5311b93394c9",
+        "sevenStateRequestsRecorded": true,
+        "reviewStatus": "SAMPLED"
+      },
+      "observedActualEncounterStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "unobservedActualEncounterStates": [],
+      "actualEncounterEvidence": [
+        {
+          "runTag": "R377",
+          "runManifest": "docs/production/current/qa_drafts/enemy_motion_batch_r377/capture_candidate_r004/capture_r002/RUN.json",
+          "encounterID": "E_R01_01",
+          "observedStates": [
+            "anticipate",
+            "execute",
+            "hit",
+            "idle",
+            "recover",
+            "resolve",
+            "walk"
+          ],
+          "missingInThisTrace": [],
+          "videoPath": "docs/production/current/qa_drafts/enemy_motion_batch_r377/capture_candidate_r004/capture_r002/enemy_event_traces/case01_E_R01_01/battle_first_8_seconds.mp4",
+          "videoSHA256": "a7d58d7603f0f5c5cb551b7d944b56e1f3c6c274f471dc69a9d6cecf974aab87",
+          "traceSHA256": "ab0879cf244a4f8e693b22960c4eb8f4c124829fa206f38065e1f90fcf260fc0",
+          "fixtureClass": null
+        }
+      ]
+    },
+    {
+      "itemID": "ACT_E_R01_02",
+      "canonicalID": "E_R01_02",
+      "mappedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "forcedStateClip": {
+        "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/ACT_E_R01_02/full_screen_states.mp4",
+        "sha256": "dd9c53af2d68cd57d84ad7c5776d1181a8ac5fbec1c04a186f4dd272a0c8e339",
+        "sevenStateRequestsRecorded": true,
+        "reviewStatus": "NOT_INDIVIDUALLY_REVIEWED"
+      },
+      "observedActualEncounterStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "hit",
+        "resolve"
+      ],
+      "unobservedActualEncounterStates": [
+        "recover"
+      ],
+      "actualEncounterEvidence": [
+        {
+          "runTag": "R377",
+          "runManifest": "docs/production/current/qa_drafts/enemy_motion_batch_r377/capture_candidate_r004/capture_r002/RUN.json",
+          "encounterID": "E_R01_02",
+          "observedStates": [
+            "anticipate",
+            "execute",
+            "hit",
+            "idle",
+            "resolve",
+            "walk"
+          ],
+          "missingInThisTrace": [
+            "recover"
+          ],
+          "videoPath": "docs/production/current/qa_drafts/enemy_motion_batch_r377/capture_candidate_r004/capture_r002/enemy_event_traces/case02_E_R01_02/battle_first_8_seconds.mp4",
+          "videoSHA256": "f942e617fa976e3245b35be9383cca0089a261d43605142a80721dd34c311bcd",
+          "traceSHA256": "3e4cb0b8bd8edbc8cc91fceacd163eb15a23c14d6a1013986fc9fc77ed01238b",
+          "fixtureClass": null
+        }
+      ]
+    },
+    {
+      "itemID": "ACT_E_R01_03",
+      "canonicalID": "E_R01_03",
+      "mappedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "forcedStateClip": {
+        "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/ACT_E_R01_03/full_screen_states.mp4",
+        "sha256": "17ba695b9505a89afb3d22bf08aaac84cc7c548e6f5e1461b1a77e18f8c30da1",
+        "sevenStateRequestsRecorded": true,
+        "reviewStatus": "NOT_INDIVIDUALLY_REVIEWED"
+      },
+      "observedActualEncounterStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "hit",
+        "resolve"
+      ],
+      "unobservedActualEncounterStates": [
+        "recover"
+      ],
+      "actualEncounterEvidence": [
+        {
+          "runTag": "R377",
+          "runManifest": "docs/production/current/qa_drafts/enemy_motion_batch_r377/capture_candidate_r004/capture_r002/RUN.json",
+          "encounterID": "E_R01_03",
+          "observedStates": [
+            "anticipate",
+            "execute",
+            "hit",
+            "idle",
+            "resolve",
+            "walk"
+          ],
+          "missingInThisTrace": [
+            "recover"
+          ],
+          "videoPath": "docs/production/current/qa_drafts/enemy_motion_batch_r377/capture_candidate_r004/capture_r002/enemy_event_traces/case03_E_R01_03/battle_first_8_seconds.mp4",
+          "videoSHA256": "181ff00948c0d8c62b21cfb16395f0ea242aa0fa9080682c6e769760c7b5984d",
+          "traceSHA256": "9c9a6b61a58e0cf183e39d349ba8c6ea2c51144ef1f3b522d6226e3c6317a9a8",
+          "fixtureClass": null
+        }
+      ]
+    },
+    {
+      "itemID": "ACT_E_R01_04",
+      "canonicalID": "E_R01_04",
+      "mappedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "forcedStateClip": {
+        "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/ACT_E_R01_04/full_screen_states.mp4",
+        "sha256": "6380638414d6a9da828c5bcf0a4b1a5e84244ef6a5824eb9d5d195530052641b",
+        "sevenStateRequestsRecorded": true,
+        "reviewStatus": "NOT_INDIVIDUALLY_REVIEWED"
+      },
+      "observedActualEncounterStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "unobservedActualEncounterStates": [],
+      "actualEncounterEvidence": [
+        {
+          "runTag": "R377",
+          "runManifest": "docs/production/current/qa_drafts/enemy_motion_batch_r377/capture_candidate_r004/capture_r002/RUN.json",
+          "encounterID": "E_R01_04",
+          "observedStates": [
+            "anticipate",
+            "execute",
+            "hit",
+            "idle",
+            "recover",
+            "resolve",
+            "walk"
+          ],
+          "missingInThisTrace": [],
+          "videoPath": "docs/production/current/qa_drafts/enemy_motion_batch_r377/capture_candidate_r004/capture_r002/enemy_event_traces/case04_E_R01_04/battle_first_8_seconds.mp4",
+          "videoSHA256": "a2035b425bf805018135f4ef99fc4615e725b87ef652356af49684e1fb40f0d5",
+          "traceSHA256": "97ea397d1a26f6f3c88708d7f0fb343f977c48ec7c664f8545d4eb162908e86f",
+          "fixtureClass": null
+        }
+      ]
+    },
+    {
+      "itemID": "ACT_E_R02_01",
+      "canonicalID": "E_R02_01",
+      "mappedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "forcedStateClip": {
+        "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/ACT_E_R02_01/full_screen_states.mp4",
+        "sha256": "5738d8625c8f430b02b5f40e21495c1c64c2a11a07593562fba94a964a63299b",
+        "sevenStateRequestsRecorded": true,
+        "reviewStatus": "NOT_INDIVIDUALLY_REVIEWED"
+      },
+      "observedActualEncounterStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "hit",
+        "resolve"
+      ],
+      "unobservedActualEncounterStates": [
+        "execute",
+        "recover"
+      ],
+      "actualEncounterEvidence": [
+        {
+          "runTag": "R391",
+          "runManifest": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/RUN.json",
+          "encounterID": "E_R02_01",
+          "observedStates": [
+            "anticipate",
+            "hit",
+            "idle",
+            "resolve",
+            "walk"
+          ],
+          "missingInThisTrace": [
+            "execute",
+            "recover"
+          ],
+          "videoPath": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/enemy_event_traces/case03_E_R02_01/battle_first_8_seconds.mp4",
+          "videoSHA256": "0c0c060f79febb3cf0f406bf5079bef4b0fdacbad68e5e1537011c5eda215203",
+          "traceSHA256": "f211e19fc8852307030387a7bb9501c4b20a030c6bc91d2c0f322472f463afda",
+          "fixtureClass": "SYNTHETIC_CHALLENGE_TECHNICAL_ONLY"
+        }
+      ]
+    },
+    {
+      "itemID": "ACT_E_R02_02",
+      "canonicalID": "E_R02_02",
+      "mappedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "forcedStateClip": {
+        "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/ACT_E_R02_02/full_screen_states.mp4",
+        "sha256": "5400a723049d4103e2dd7288a58ebbcac84c6f8fe95e1599d03de1f8cb34a4f4",
+        "sevenStateRequestsRecorded": true,
+        "reviewStatus": "NOT_INDIVIDUALLY_REVIEWED"
+      },
+      "observedActualEncounterStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "hit",
+        "resolve"
+      ],
+      "unobservedActualEncounterStates": [
+        "execute",
+        "recover"
+      ],
+      "actualEncounterEvidence": [
+        {
+          "runTag": "R391",
+          "runManifest": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/RUN.json",
+          "encounterID": "E_R02_02",
+          "observedStates": [
+            "anticipate",
+            "hit",
+            "idle",
+            "resolve",
+            "walk"
+          ],
+          "missingInThisTrace": [
+            "execute",
+            "recover"
+          ],
+          "videoPath": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/enemy_event_traces/case04_E_R02_02/battle_first_8_seconds.mp4",
+          "videoSHA256": "e29a923a41e66ca508fccadbd85149cc869b542dd8541c674cce0bc2c229f21f",
+          "traceSHA256": "a0f1f736a2bb1fc8fb2efad17e7b4da14b2677c1778092f5552794b373226004",
+          "fixtureClass": "SYNTHETIC_CHALLENGE_TECHNICAL_ONLY"
+        }
+      ]
+    },
+    {
+      "itemID": "ACT_E_R02_03",
+      "canonicalID": "E_R02_03",
+      "mappedStates": [
+        "all_frames",
+        "walk"
+      ],
+      "forcedStateClip": {
+        "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/ACT_E_R02_03/full_screen_states.mp4",
+        "sha256": "aaeb320419afc6a289d704479a2175327e31a37c5a9306ec1372069c4000850c",
+        "sevenStateRequestsRecorded": true,
+        "reviewStatus": "NOT_INDIVIDUALLY_REVIEWED"
+      },
+      "observedActualEncounterStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "unobservedActualEncounterStates": [],
+      "actualEncounterEvidence": [
+        {
+          "runTag": "R391",
+          "runManifest": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/RUN.json",
+          "encounterID": "E_R02_03",
+          "observedStates": [
+            "anticipate",
+            "execute",
+            "hit",
+            "idle",
+            "recover",
+            "resolve",
+            "walk"
+          ],
+          "missingInThisTrace": [],
+          "videoPath": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/enemy_event_traces/case05_E_R02_03/battle_first_8_seconds.mp4",
+          "videoSHA256": "3d034d4c4d30d9b32a5f59325f04dcecaee9dbbccb3e741d9af349840f063732",
+          "traceSHA256": "375855b2666265fb91bba59930dcd966e66fad23f1ba229d6b4733d0237ce1c6",
+          "fixtureClass": "SYNTHETIC_CHALLENGE_TECHNICAL_ONLY"
+        }
+      ]
+    },
+    {
+      "itemID": "ACT_E_R02_04",
+      "canonicalID": "E_R02_04",
+      "mappedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "forcedStateClip": {
+        "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/ACT_E_R02_04/full_screen_states.mp4",
+        "sha256": "4807c4bec74383412475328b83f1d7ae0ccf7a8d3777b78521ea6c29c2b5fb43",
+        "sevenStateRequestsRecorded": true,
+        "reviewStatus": "NOT_INDIVIDUALLY_REVIEWED"
+      },
+      "observedActualEncounterStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "hit",
+        "resolve"
+      ],
+      "unobservedActualEncounterStates": [
+        "execute",
+        "recover"
+      ],
+      "actualEncounterEvidence": [
+        {
+          "runTag": "R391",
+          "runManifest": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/RUN.json",
+          "encounterID": "E_R02_04",
+          "observedStates": [
+            "anticipate",
+            "hit",
+            "idle",
+            "resolve",
+            "walk"
+          ],
+          "missingInThisTrace": [
+            "execute",
+            "recover"
+          ],
+          "videoPath": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/enemy_event_traces/case06_E_R02_04/battle_first_8_seconds.mp4",
+          "videoSHA256": "935a9b3b02467b3836c195ed524849d1ea3b18828e5aa33461ee18d04126eab0",
+          "traceSHA256": "ccfd8f52467a7e8afaf76f118524570c5baabdad769e03a1b410bacc802c2c30",
+          "fixtureClass": "SYNTHETIC_CHALLENGE_TECHNICAL_ONLY"
+        }
+      ]
+    },
+    {
+      "itemID": "ACT_E_R03_01",
+      "canonicalID": "E_R03_01",
+      "mappedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "forcedStateClip": {
+        "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/ACT_E_R03_01/full_screen_states.mp4",
+        "sha256": "d857ad68cfa53ea95bfec8146f073d4cc9e0aab80bde14a28bb1a6a10909d402",
+        "sevenStateRequestsRecorded": true,
+        "reviewStatus": "NOT_INDIVIDUALLY_REVIEWED"
+      },
+      "observedActualEncounterStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "unobservedActualEncounterStates": [],
+      "actualEncounterEvidence": [
+        {
+          "runTag": "R391",
+          "runManifest": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/RUN.json",
+          "encounterID": "E_R03_01",
+          "observedStates": [
+            "anticipate",
+            "execute",
+            "hit",
+            "idle",
+            "recover",
+            "resolve",
+            "walk"
+          ],
+          "missingInThisTrace": [],
+          "videoPath": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/enemy_event_traces/case09_E_R03_01/battle_first_8_seconds.mp4",
+          "videoSHA256": "942e0aa71db8f8bdb0446620924157e139c28c7dd2f1813564c2ac6f93f93f4a",
+          "traceSHA256": "f9aab821b8a31b45bce4e27fda9a2a9018413382ddc3bd366ac869dc4ffef7e1",
+          "fixtureClass": "SYNTHETIC_CHALLENGE_TECHNICAL_ONLY"
+        }
+      ]
+    },
+    {
+      "itemID": "ACT_E_R03_02",
+      "canonicalID": "E_R03_02",
+      "mappedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "forcedStateClip": {
+        "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/ACT_E_R03_02/full_screen_states.mp4",
+        "sha256": "6bdd56b4508248cdc56a0948ec94265354b59b87d1c45d95678d1f632cc716e9",
+        "sevenStateRequestsRecorded": true,
+        "reviewStatus": "SAMPLED"
+      },
+      "observedActualEncounterStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "hit",
+        "resolve"
+      ],
+      "unobservedActualEncounterStates": [
+        "execute",
+        "recover"
+      ],
+      "actualEncounterEvidence": [
+        {
+          "runTag": "R391",
+          "runManifest": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/RUN.json",
+          "encounterID": "E_R03_02",
+          "observedStates": [
+            "anticipate",
+            "hit",
+            "idle",
+            "resolve",
+            "walk"
+          ],
+          "missingInThisTrace": [
+            "execute",
+            "recover"
+          ],
+          "videoPath": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/enemy_event_traces/case10_E_R03_02/battle_first_8_seconds.mp4",
+          "videoSHA256": "5fae9028fc381ff6e70a29294c215b607105b00ebbc4244f0da17b160941a4be",
+          "traceSHA256": "b665fc8e8321b06e5e19c596d5cac45eb9ef935103b4032c0119c4f55d08fb9b",
+          "fixtureClass": "SYNTHETIC_CHALLENGE_TECHNICAL_ONLY"
+        }
+      ]
+    },
+    {
+      "itemID": "ACT_E_R03_03",
+      "canonicalID": "E_R03_03",
+      "mappedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "forcedStateClip": {
+        "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/ACT_E_R03_03/full_screen_states.mp4",
+        "sha256": "3c5e8f8d09bb687dc96ecc7d6fb71f7875f675b4952daacfa61db15c0755d049",
+        "sevenStateRequestsRecorded": true,
+        "reviewStatus": "NOT_INDIVIDUALLY_REVIEWED"
+      },
+      "observedActualEncounterStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "hit",
+        "resolve"
+      ],
+      "unobservedActualEncounterStates": [
+        "recover"
+      ],
+      "actualEncounterEvidence": [
+        {
+          "runTag": "R391",
+          "runManifest": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/RUN.json",
+          "encounterID": "E_R03_03",
+          "observedStates": [
+            "anticipate",
+            "execute",
+            "hit",
+            "idle",
+            "resolve",
+            "walk"
+          ],
+          "missingInThisTrace": [
+            "recover"
+          ],
+          "videoPath": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/enemy_event_traces/case11_E_R03_03/battle_first_8_seconds.mp4",
+          "videoSHA256": "f5c7cc048e505760761296fb08148c24138adde958081480a6107ef72470ed4f",
+          "traceSHA256": "3ec60dd27c302933081a196561e5f971d1b9e0940ab25a4ce1bddc73389fdbf8",
+          "fixtureClass": "SYNTHETIC_CHALLENGE_TECHNICAL_ONLY"
+        }
+      ]
+    },
+    {
+      "itemID": "ACT_E_R03_04",
+      "canonicalID": "E_R03_04",
+      "mappedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "forcedStateClip": {
+        "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/ACT_E_R03_04/full_screen_states.mp4",
+        "sha256": "03dab74679b9cf86195ec72413a70c5533eb2f7b9f608fed9f77d7410be8198c",
+        "sevenStateRequestsRecorded": true,
+        "reviewStatus": "NOT_INDIVIDUALLY_REVIEWED"
+      },
+      "observedActualEncounterStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "hit",
+        "resolve"
+      ],
+      "unobservedActualEncounterStates": [
+        "execute",
+        "recover"
+      ],
+      "actualEncounterEvidence": [
+        {
+          "runTag": "R391",
+          "runManifest": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/RUN.json",
+          "encounterID": "E_R03_04",
+          "observedStates": [
+            "anticipate",
+            "hit",
+            "idle",
+            "resolve",
+            "walk"
+          ],
+          "missingInThisTrace": [
+            "execute",
+            "recover"
+          ],
+          "videoPath": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/enemy_event_traces/case12_E_R03_04/battle_first_8_seconds.mp4",
+          "videoSHA256": "bc48cd8a10e3aabbc589ed1008eca17a74aee33f9635e9aa2fde743a9acef220",
+          "traceSHA256": "db0ccdda628455ed7c352f9c8de129c07838be9ef5c5c21afe233af4cec3da61",
+          "fixtureClass": "SYNTHETIC_CHALLENGE_TECHNICAL_ONLY"
+        }
+      ]
+    },
+    {
+      "itemID": "ACT_E_R04_01",
+      "canonicalID": "E_R04_01",
+      "mappedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "forcedStateClip": {
+        "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/ACT_E_R04_01/full_screen_states.mp4",
+        "sha256": "536c7e8322cd3953f2c8b7900d694983b213875f85c0050dd8d825490ff88963",
+        "sevenStateRequestsRecorded": true,
+        "reviewStatus": "NOT_INDIVIDUALLY_REVIEWED"
+      },
+      "observedActualEncounterStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "hit",
+        "resolve"
+      ],
+      "unobservedActualEncounterStates": [
+        "recover"
+      ],
+      "actualEncounterEvidence": [
+        {
+          "runTag": "R391",
+          "runManifest": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/RUN.json",
+          "encounterID": "E_R04_01",
+          "observedStates": [
+            "anticipate",
+            "execute",
+            "hit",
+            "idle",
+            "resolve",
+            "walk"
+          ],
+          "missingInThisTrace": [
+            "recover"
+          ],
+          "videoPath": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/enemy_event_traces/case15_E_R04_01/battle_first_8_seconds.mp4",
+          "videoSHA256": "84f6560146b1c6bb7efdd6689384d1001ce8c04afcc4f1f599c3300e09d32aec",
+          "traceSHA256": "741ce734555b4891a1ef6fd7d80955709383b66132f4a228271331ebe615585c",
+          "fixtureClass": "SYNTHETIC_CHALLENGE_TECHNICAL_ONLY"
+        }
+      ]
+    },
+    {
+      "itemID": "ACT_E_R04_02",
+      "canonicalID": "E_R04_02",
+      "mappedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "forcedStateClip": {
+        "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/ACT_E_R04_02/full_screen_states.mp4",
+        "sha256": "bd4a576d457e2987a130c8840dc58701a9e990c59dd1c835daf0357437314bc1",
+        "sevenStateRequestsRecorded": true,
+        "reviewStatus": "NOT_INDIVIDUALLY_REVIEWED"
+      },
+      "observedActualEncounterStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "hit",
+        "resolve"
+      ],
+      "unobservedActualEncounterStates": [
+        "execute",
+        "recover"
+      ],
+      "actualEncounterEvidence": [
+        {
+          "runTag": "R391",
+          "runManifest": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/RUN.json",
+          "encounterID": "E_R04_02",
+          "observedStates": [
+            "anticipate",
+            "hit",
+            "idle",
+            "resolve",
+            "walk"
+          ],
+          "missingInThisTrace": [
+            "execute",
+            "recover"
+          ],
+          "videoPath": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/enemy_event_traces/case16_E_R04_02/battle_first_8_seconds.mp4",
+          "videoSHA256": "33b9b2668fadb3aa32c5df1e17febb160834e7553c84956051b5e391070224e8",
+          "traceSHA256": "1731498850f23b254b98a0103b0c8bc8adece704cf68889130a9bfe4e69636ff",
+          "fixtureClass": "SYNTHETIC_CHALLENGE_TECHNICAL_ONLY"
+        }
+      ]
+    },
+    {
+      "itemID": "ACT_E_R04_03",
+      "canonicalID": "E_R04_03",
+      "mappedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "forcedStateClip": {
+        "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/ACT_E_R04_03/full_screen_states.mp4",
+        "sha256": "cfcf286ffd52f374ebb2cfb67632fe94744c12b5dd91ea5a2b5f34122c91cf37",
+        "sevenStateRequestsRecorded": true,
+        "reviewStatus": "NOT_INDIVIDUALLY_REVIEWED"
+      },
+      "observedActualEncounterStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "unobservedActualEncounterStates": [],
+      "actualEncounterEvidence": [
+        {
+          "runTag": "R391",
+          "runManifest": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/RUN.json",
+          "encounterID": "E_R04_03",
+          "observedStates": [
+            "anticipate",
+            "execute",
+            "hit",
+            "idle",
+            "recover",
+            "resolve",
+            "walk"
+          ],
+          "missingInThisTrace": [],
+          "videoPath": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/enemy_event_traces/case17_E_R04_03/battle_first_8_seconds.mp4",
+          "videoSHA256": "6591e1345ed4f0182328d493cf283170d8e7f6f6e6716db16da7686a9f915d4f",
+          "traceSHA256": "fbca5b763267ee8490847b229f8b93bc97b3796b030a6b57eb6fea763fa1585d",
+          "fixtureClass": "SYNTHETIC_CHALLENGE_TECHNICAL_ONLY"
+        }
+      ]
+    },
+    {
+      "itemID": "ACT_E_R04_04",
+      "canonicalID": "E_R04_04",
+      "mappedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "forcedStateClip": {
+        "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/ACT_E_R04_04/full_screen_states.mp4",
+        "sha256": "84bbe6cd951d605c5551d2dbbf026f3ef17192d2cccf4905328504ff941dacc1",
+        "sevenStateRequestsRecorded": true,
+        "reviewStatus": "NOT_INDIVIDUALLY_REVIEWED"
+      },
+      "observedActualEncounterStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "hit",
+        "resolve"
+      ],
+      "unobservedActualEncounterStates": [
+        "execute",
+        "recover"
+      ],
+      "actualEncounterEvidence": [
+        {
+          "runTag": "R391",
+          "runManifest": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/RUN.json",
+          "encounterID": "E_R04_04",
+          "observedStates": [
+            "anticipate",
+            "hit",
+            "idle",
+            "resolve",
+            "walk"
+          ],
+          "missingInThisTrace": [
+            "execute",
+            "recover"
+          ],
+          "videoPath": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/enemy_event_traces/case18_E_R04_04/battle_first_8_seconds.mp4",
+          "videoSHA256": "1738c67384a346ae432d057b1f35c06648a6c9829ea1567547edfa6d4b7227cd",
+          "traceSHA256": "327fe348d773adfa0465f90737303bed904944729924151b6d1d9b9fa86e2009",
+          "fixtureClass": "SYNTHETIC_CHALLENGE_TECHNICAL_ONLY"
+        }
+      ]
+    },
+    {
+      "itemID": "ACT_E_R05_01",
+      "canonicalID": "E_R05_01",
+      "mappedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "forcedStateClip": {
+        "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/ACT_E_R05_01/full_screen_states.mp4",
+        "sha256": "2c14fc651b66436c71af3ea6562a39af7b812b03106a311e98463e321d820e20",
+        "sevenStateRequestsRecorded": true,
+        "reviewStatus": "NOT_INDIVIDUALLY_REVIEWED"
+      },
+      "observedActualEncounterStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "unobservedActualEncounterStates": [],
+      "actualEncounterEvidence": [
+        {
+          "runTag": "R407",
+          "runManifest": "docs/production/current/qa_drafts/composite_render_probe_r405/root_runner_r407_r002/capture_r001/RUN.json",
+          "encounterID": "E_R05_01",
+          "observedStates": [
+            "anticipate",
+            "execute",
+            "hit",
+            "idle",
+            "recover",
+            "resolve",
+            "walk"
+          ],
+          "missingInThisTrace": [],
+          "videoPath": "docs/production/current/qa_drafts/composite_render_probe_r405/root_runner_r407_r002/capture_r001/enemy_event_traces/case02_E_R05_01/battle_full_upto_60_seconds.mp4",
+          "videoSHA256": "a8680e04d347a8adaefd4ab1028f223a290ba190c73fe3d374feff89d391175d",
+          "traceSHA256": "a3b3cd532f73deb91a0452490caa0283c23c3394c19ead28956aaf89aa17861a",
+          "fixtureClass": "SYNTHETIC_CHALLENGE_TECHNICAL_ONLY"
+        }
+      ]
+    },
+    {
+      "itemID": "ACT_E_R05_02",
+      "canonicalID": "E_R05_02",
+      "mappedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "forcedStateClip": {
+        "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/ACT_E_R05_02/full_screen_states.mp4",
+        "sha256": "55eeeb48517119896679500639f79a4455e12addde9643f99b82e202ceb284f2",
+        "sevenStateRequestsRecorded": true,
+        "reviewStatus": "NOT_INDIVIDUALLY_REVIEWED"
+      },
+      "observedActualEncounterStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "hit",
+        "resolve"
+      ],
+      "unobservedActualEncounterStates": [
+        "recover"
+      ],
+      "actualEncounterEvidence": [
+        {
+          "runTag": "R407",
+          "runManifest": "docs/production/current/qa_drafts/composite_render_probe_r405/root_runner_r407_r002/capture_r001/RUN.json",
+          "encounterID": "E_R05_02",
+          "observedStates": [
+            "anticipate",
+            "execute",
+            "hit",
+            "idle",
+            "resolve",
+            "walk"
+          ],
+          "missingInThisTrace": [
+            "recover"
+          ],
+          "videoPath": "docs/production/current/qa_drafts/composite_render_probe_r405/root_runner_r407_r002/capture_r001/enemy_event_traces/case03_E_R05_02/battle_full_upto_60_seconds.mp4",
+          "videoSHA256": "797975404ded0b6fdf775970ae78d90ebae1c13390791b29966697fe5c537f45",
+          "traceSHA256": "af6123612f6c0a61fc9339c3007a94be5e1354813a1970b7a73288a280c086bc",
+          "fixtureClass": "SYNTHETIC_CHALLENGE_TECHNICAL_ONLY"
+        }
+      ]
+    },
+    {
+      "itemID": "ACT_E_R05_03",
+      "canonicalID": "E_R05_03",
+      "mappedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "forcedStateClip": {
+        "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/ACT_E_R05_03/full_screen_states.mp4",
+        "sha256": "55530a687886f6d4afaeb3f83f9de2c47a7d23d25068d7188a4bee012c0d685a",
+        "sevenStateRequestsRecorded": true,
+        "reviewStatus": "NOT_INDIVIDUALLY_REVIEWED"
+      },
+      "observedActualEncounterStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "unobservedActualEncounterStates": [],
+      "actualEncounterEvidence": [
+        {
+          "runTag": "R407",
+          "runManifest": "docs/production/current/qa_drafts/composite_render_probe_r405/root_runner_r407_r002/capture_r001/RUN.json",
+          "encounterID": "E_R05_03",
+          "observedStates": [
+            "anticipate",
+            "execute",
+            "hit",
+            "idle",
+            "recover",
+            "resolve",
+            "walk"
+          ],
+          "missingInThisTrace": [],
+          "videoPath": "docs/production/current/qa_drafts/composite_render_probe_r405/root_runner_r407_r002/capture_r001/enemy_event_traces/case04_E_R05_03/battle_full_upto_60_seconds.mp4",
+          "videoSHA256": "5fb32ed5078077d520b9fba12bfdce273fe4a5588676f4edaeb88e6301f49fa8",
+          "traceSHA256": "6688e1e9309ee3de369f0f601535d02ddd7b83be232a18f535e57b6be1229c8c",
+          "fixtureClass": "SYNTHETIC_CHALLENGE_TECHNICAL_ONLY"
+        }
+      ]
+    },
+    {
+      "itemID": "ACT_E_R05_04",
+      "canonicalID": "E_R05_04",
+      "mappedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "recover",
+        "resolve",
+        "walk"
+      ],
+      "forcedStateClip": {
+        "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/ACT_E_R05_04/full_screen_states.mp4",
+        "sha256": "1e2bc90b313af217d2f4eeb815666f91a484b51f80201b609161f877d6248e7d",
+        "sevenStateRequestsRecorded": true,
+        "reviewStatus": "NOT_INDIVIDUALLY_REVIEWED"
+      },
+      "observedActualEncounterStates": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ],
+      "unobservedActualEncounterStates": [],
+      "actualEncounterEvidence": [
+        {
+          "runTag": "R407",
+          "runManifest": "docs/production/current/qa_drafts/composite_render_probe_r405/root_runner_r407_r002/capture_r001/RUN.json",
+          "encounterID": "E_R05_04",
+          "observedStates": [
+            "anticipate",
+            "execute",
+            "hit",
+            "idle",
+            "recover",
+            "resolve",
+            "walk"
+          ],
+          "missingInThisTrace": [],
+          "videoPath": "docs/production/current/qa_drafts/composite_render_probe_r405/root_runner_r407_r002/capture_r001/enemy_event_traces/case05_E_R05_04/battle_full_upto_60_seconds.mp4",
+          "videoSHA256": "d36e3dc5417d6e0100977630e682c6d5ca06ff0e6aed8cdd7cc36d5ba0a09f88",
+          "traceSHA256": "cfcbe4fb68f27eebbe0a736125a891aeffd1027777c2e972756c9a876dafffe1",
+          "fixtureClass": "SYNTHETIC_CHALLENGE_TECHNICAL_ONLY"
+        }
+      ]
+    }
+  ],
+  "partySummary": {
+    "actorCount": 4,
+    "statePresence": "All four have idle/walk/anticipate/execute/recover/resolve in the R377 full-party state trace; hit is complemented by R407 marker-matched native frames for all four across two windows.",
+    "scopedWindowResult": "R377 party trace has 519 rows and seven marker-joined sample points. R407 B_R04_B at E145 00568/9.5s shows AIRA/LUNA/NOIR hit and ERNA casting; separate E145 01608/27.45s image shows ERNA hit. Four named hit visuals exist across two windows; no gross crop, disappearance or total occlusion was reported in those windows.",
+    "members": [
+      {
+        "itemID": "AIRA",
+        "partyTraceStates": [
+          "anticipate",
+          "execute",
+          "hit",
+          "idle",
+          "recover",
+          "resolve",
+          "walk"
+        ],
+        "partyTraceMissing": [],
+        "hitVisualEvidence": "R377 trace plus R407 marker-matched visible hit samples; R407 9.5s shows AIRA/LUNA/NOIR hit and ERNA casting; separate 27.45s marker shows ERNA hit.",
+        "limit": "State rows/sparse images establish sampled state presence, not uninterrupted 7-state naturalness or every weapon/outfit combination.",
+        "hitVisualRefs": "docs/production/current/qa_drafts/composite_render_probe_r405/root_visual_r407_r001/B_R04_B_party_hit_at9p5s.png"
+      },
+      {
+        "itemID": "ERNA",
+        "partyTraceStates": [
+          "anticipate",
+          "execute",
+          "idle",
+          "recover",
+          "resolve",
+          "walk"
+        ],
+        "partyTraceMissing": [
+          "hit"
+        ],
+        "hitVisualEvidence": "R377 trace plus R407 marker-matched visible hit samples; R407 9.5s shows AIRA/LUNA/NOIR hit and ERNA casting; separate 27.45s marker shows ERNA hit.",
+        "limit": "State rows/sparse images establish sampled state presence, not uninterrupted 7-state naturalness or every weapon/outfit combination.",
+        "hitVisualRefs": "docs/production/current/qa_drafts/composite_render_probe_r405/root_visual_r407_r001/B_R04_B_erna_hit_at27p45s.png"
+      },
+      {
+        "itemID": "LUNA",
+        "partyTraceStates": [
+          "anticipate",
+          "execute",
+          "idle",
+          "recover",
+          "resolve",
+          "walk"
+        ],
+        "partyTraceMissing": [
+          "hit"
+        ],
+        "hitVisualEvidence": "R377 trace plus R407 marker-matched visible hit samples; R407 9.5s shows AIRA/LUNA/NOIR hit and ERNA casting; separate 27.45s marker shows ERNA hit.",
+        "limit": "State rows/sparse images establish sampled state presence, not uninterrupted 7-state naturalness or every weapon/outfit combination.",
+        "hitVisualRefs": "docs/production/current/qa_drafts/composite_render_probe_r405/root_visual_r407_r001/B_R04_B_party_hit_at9p5s.png"
+      },
+      {
+        "itemID": "NOIR",
+        "partyTraceStates": [
+          "anticipate",
+          "execute",
+          "idle",
+          "recover",
+          "resolve",
+          "walk"
+        ],
+        "partyTraceMissing": [
+          "hit"
+        ],
+        "hitVisualEvidence": "R377 trace plus R407 marker-matched visible hit samples; R407 9.5s shows AIRA/LUNA/NOIR hit and ERNA casting; separate 27.45s marker shows ERNA hit.",
+        "limit": "State rows/sparse images establish sampled state presence, not uninterrupted 7-state naturalness or every weapon/outfit combination.",
+        "hitVisualRefs": "docs/production/current/qa_drafts/composite_render_probe_r405/root_visual_r407_r001/B_R04_B_party_hit_at9p5s.png"
+      }
+    ],
+    "remaining": "No actor/state is wholly absent from existing state evidence. Continuous easing/contact/weapon visibility across every actor-state transition is not established; no concrete art defect is proven."
+  },
+  "sourceFacts": {
+    "R083": {
+      "path": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/RUN.json",
+      "sha256": "f9c922bc2a98361369dfb30f33703471df121a5aa0e48a71522072170afbd06e",
+      "capturedActors": 30,
+      "statesRequestedPerActor": 7,
+      "captureStatus": "CAPTURED_REQUIRES_HOST_AND_VISUAL_REVIEW",
+      "meaning": "Forced art-audit state clips; reuse for pose/pixel inspection only, not event-timed movement."
+    },
+    "R391": {
+      "status": "CAPTURE_FAILED_RAW_PRESERVED",
+      "completedCases": 19,
+      "visualReview": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/offline_review_r006/REVIEW_R006.json",
+      "limitations": "Raw batch ended CAPTURE_FAILED_RAW_PRESERVED; R391 offline review says cases 01–17 sampled and cases 18–19 not visually sampled. Six R05 cases were not launched in this batch."
+    },
+    "R418": {
+      "runStatus": "CAPTURED_RAW_REQUIRES_VISUAL_REVIEW",
+      "encounterID": "B_R05_B",
+      "executeVisibilityAcceptance": "PASS",
+      "observedStates": [
+        "anticipate",
+        "execute",
+        "hit",
+        "idle",
+        "resolve",
+        "walk"
+      ],
+      "limits": "One synthetic challenge fixture. Three execute groups now span 18/16/17 rendered frames; terminal resolve is visible; recover remains unobserved."
+    },
+    "R377": {
+      "manifestPath": "docs/production/current/qa_drafts/enemy_motion_batch_r377/capture_candidate_r004/capture_r002/RUN.json",
+      "manifestSHA256": "7f8a335ab40bb13abb63648db0db05dc50ba28871294f67a9a7ca5a62c9676db",
+      "reviewPath": "docs/production/current/qa_drafts/enemy_motion_batch_r377/capture_candidate_r004/independent_review_r004/REVIEW_R004.json",
+      "reviewSHA256": "bec0576ff6db3b5e522e69590a697abfaee9875c80d920d022cf32721f65ff53",
+      "reviewedStatus": "CAPTURE_COMPLETE_PRIOR_STATE_RECOVERED_REQUIRES_VISUAL_REVIEW",
+      "rawRunStatus": "RECOVERY_PENDING (retained raw RUN field; review/capture closure says prior state was recovered)",
+      "limits": "Four R01 ordinary encounters and one full-party 8s video; selected-party frames marker-joined at seven sample points only."
+    },
+    "R366VisualReview": {
+      "path": "docs/production/current/qa_drafts/enemy_completion_batch_r366/ENEMY_COVERAGE_LEDGER_R001.json",
+      "sha256": "0b7963a968411f8ff618f2f39beea7abc6ddcbc6704d6cdd42b914bc5bdd8306",
+      "coverage": "30/30 per-actor R083 forced-state clips are indexed; R372 records 30 total visual reviews (3 earlier sampled + first9 + remaining18) and 0/30 completeAnimation=true. Forced request clips remain pose evidence, not natural event evidence."
+    }
+  },
+  "locallyExecutableCloseout": {
+    "finding": "The remaining concrete coverage is not missing art mapping or an identified broken pose. It is 19 actor-specific event-state holes in retained actual-encounter traces: 9 actors have no execute/recover observation; 10 have no recover observation. The per-ID forced clips already exist for all 30 actors and should be reused for pose inspection.",
+    "boundedAction": "One gap-only technical batch for those 19 actors, each on a fresh QA UUID using existing battle fixtures and ordinary engine event dispatch (no forced state requests). For the 9 execute+recover gaps, choose a low-damage owned/fixture profile that lets the enemy take one real turn; for the 10 recover-only gaps, capture the first eligible recovery after the already-observed execute. Save one short full-battle segment or marker-bound transition window plus trace per case. Reuse all existing 11 fully covered actors and four R01/R05 runs; do not recapture them.",
+    "passCriteria": [
+      "For every gap actor, target event is present in event log and joins to that actor ID, action root, scene generation, and actual rendered state-frame rows.",
+      "For execute, at least one complete multi-frame execute interval precedes the corresponding hit/next action; for recover, actual recover rows appear after execute without substituting resolve.",
+      "Visual sample at beginning/middle/end of each joined interval shows stable bounds, no disappearance/crop, and identity/weapon silhouette readable at phone scale.",
+      "If the state is not reached after the one real encounter, mark it conditionally-unobserved with the actual event path; do not convert forced-state reads into natural-event proof or change combat values to force a pass."
+    ],
+    "scopeCap": "19 gap cases only, one capture attempt per case, ≤20 min total batch with bounded clip/output caps copied from current R407/R418 runner contracts. No artwork changes unless this gap-only review exposes a reproducible visual defect; formal art adoption remains separate."
+  },
+  "conclusion": "For the four allies, existing evidence covers each state category at least once and sampled hit imagery for each actor; a new capture is not justified by missing-state evidence. For enemies, all 30 have mapped states and forced-state clips, but actual encounter-trace union has seven-state evidence for only 11/30. The finite remaining technical review is the 19-row execute/recover gap listed in enemyByID. R418 closes its one confirmed B_R05_B execute interruption issue for that case; it does not close the other gaps or prove all-enemy naturalness.",
+  "authorityBoundary": "Local technical state and motion review remains delegated. Human formal art adoption is separate; it is not used as a substitute for the locally executable evidence gaps above."
+}

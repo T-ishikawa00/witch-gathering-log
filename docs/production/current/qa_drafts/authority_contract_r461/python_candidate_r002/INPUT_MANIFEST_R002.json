@@ -1,0 +1,60 @@
+{
+  "schema": "r461-python-candidate-inputs-v2",
+  "status": "PREPARED_NOT_RUN",
+  "supersedes": "python_candidate_r001; R001 preserved unchanged",
+  "scope": "isolated local authority facade with immutable ledger-bound policy pin; no production entitlement or network",
+  "candidateFiles": [
+    {
+      "path": "CONTRACT_R001.json",
+      "sha256": "98423b0f9b066537037a46aece349d1359558d96b30ea7e1f7592c7e02b263f3"
+    },
+    {
+      "path": "CONTRACT_R002.json",
+      "sha256": "24e88a2e2c197e7be36a8ff6d226cd55478fed007560d398f848c35d0052830d"
+    },
+    {
+      "path": "local_service_r461.py",
+      "sha256": "4aeb26423cfc5eb5aff171419f0673e46cd677bc4ec83147afec25fe50b6c734"
+    },
+    {
+      "path": "tests/test_local_service_r461.py",
+      "sha256": "06454d412ae2e881d47627de3f24025f6282a75c1e258d5870e618442b5cb318"
+    }
+  ],
+  "productionInputs": [
+    {
+      "path": "tools/witch_purchase_authority/authority.py",
+      "sha256": "fa181cfb5a9da78ae919dff6d4b6fd1a69abcbd717f3412fcd40a95675bac1ec"
+    },
+    {
+      "path": "tools/witch_purchase_authority/signed_transaction_audit.py",
+      "sha256": "d49f59e0db971fc517052729e875b1cd73f288398fbc0ea4ba513eb1402a1a0f"
+    },
+    {
+      "path": "tools/witch_purchase_authority/sandbox_ledger_adapter_r459.py",
+      "sha256": "b4ec379f82d2f1c4cf7da6848e5e68de793cc9db65ec5ff88a3e5947704a4edd"
+    },
+    {
+      "path": "tools/witch_purchase_authority/local_delivery_r453.py",
+      "sha256": "81e1906df738a7bd9fb69d423a4c42d10eab2ad452bd45442e69cb59cfa5f837"
+    }
+  ],
+  "plannedTestFilter": "tests.test_local_service_r461",
+  "execution": {
+    "pythonTestsRun": false,
+    "swiftTestsRun": false,
+    "buildRun": false,
+    "networkUsed": false,
+    "liveSaveModified": false,
+    "productionAuthorization": false
+  },
+  "crossLanguageFixture": {
+    "producer": "Root-owned driver using the real R459 synthetic certificate fixture and cryptographic auditor",
+    "consumer": "Core-owned Swift client contract tests",
+    "requestBytes": "canonical compact JSON without final LF",
+    "responseBytes": "canonical compact JSON with exactly one final LF",
+    "privateKeyExported": false,
+    "fixtureSHA256": null,
+    "status": "NOT_YET_EXPORTED"
+  }
+}

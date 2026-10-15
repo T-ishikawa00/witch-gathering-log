@@ -1,0 +1,17 @@
+{
+  "status": "PASS_INDEX_MERGE_AND_SOURCE_PROOF_ONLY",
+  "runtimeOverlay": "native/Art/runtime_overlay_aira_s02_r002.json",
+  "runtimeOverlaySHA256": "8c19682c92e769a6eadcddee71476af4a51743590c31c449ea24a16d02c56f9d",
+  "mergedIndexSHA256": "57045bc2c49913730035d55df2d10c52fdfe11448776ded743dba6c01f32d0ec",
+  "candidateAsset": "native/Art/GeneratedCandidates/EquipmentDetails/aira_hammer_inlay_r002/DETAIL_EQ_S_02_inlay_candidate_r002.png",
+  "candidateAssetSHA256": "9d1a20f3fedf5cda02845a769c5757cb5e97b925082727bc1ef770f71548d774",
+  "sourceFrameProofCount": 27,
+  "allSourceSHAReadback": "PASS",
+  "detailEQ_S_02Selected": "PASS",
+  "detailEQ_S_03Unchanged": "PASS",
+  "pngResourceCollectorInput": "selectedPNG field in merged runtime index",
+  "defaultHumanApproval": false,
+  "runtimeVisualQA": "NOT_RUN; awaiting frozen app build",
+  "fullResourceCommand": "python3 tools/witch_native/prepare_resources.py <OUTPUT_DIR>",
+  "indexOnlyCommand": "python3 tools/witch_native/prepare_resources.py --index-only /tmp/merged_runtime_index_aira_s02_r002.json"
+}

@@ -1,0 +1,184 @@
+{
+  "candidateAndManifestUnchanged": true,
+  "command": [
+    "/usr/bin/swift",
+    "test",
+    "--package-path",
+    "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/research_mechanic_closure_r371/execution_r001/runs/37100000-0001-4001-8000-000000000001/package",
+    "--scratch-path",
+    "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/research_mechanic_closure_r371/execution_r001/runs/37100000-0001-4001-8000-000000000001/scratch/build",
+    "--cache-path",
+    "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/research_mechanic_closure_r371/execution_r001/runs/37100000-0001-4001-8000-000000000001/scratch/cache",
+    "--config-path",
+    "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/research_mechanic_closure_r371/execution_r001/runs/37100000-0001-4001-8000-000000000001/scratch/config",
+    "--security-path",
+    "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/research_mechanic_closure_r371/execution_r001/runs/37100000-0001-4001-8000-000000000001/scratch/security",
+    "--jobs",
+    "2",
+    "--filter",
+    "ResearchMechanicClosureR371Tests"
+  ],
+  "elapsedSeconds": 16.335,
+  "errors": [
+    "XCTest exact 15-case verdict or 14 exact truthful trace outputs did not pass"
+  ],
+  "expectedTests": [
+    "ResearchMechanicClosureR371Tests/testCH_R01_01HeavyTellHitLifecycleAndLedger",
+    "ResearchMechanicClosureR371Tests/testCH_R01_02ThreeEnemySupportAndSlow",
+    "ResearchMechanicClosureR371Tests/testCH_R01_03AlternatingSingleHeavyAndMultihitTargets",
+    "ResearchMechanicClosureR371Tests/testCH_R02_01DotAndHealCycleEventsAreRooted",
+    "ResearchMechanicClosureR371Tests/testCH_R02_02ReusesPinnedR359MembranePassWithoutReplaying",
+    "ResearchMechanicClosureR371Tests/testCH_R02_03SupportWaveHasFourActorsAndSupportEvent",
+    "ResearchMechanicClosureR371Tests/testCH_R03_01AlternatesSingleHeavyAndThreeLinkedHits",
+    "ResearchMechanicClosureR371Tests/testCH_R03_02HeatThresholdShiftAndPostShiftAOEAccounting",
+    "ResearchMechanicClosureR371Tests/testCH_R03_03CastInterruptLinksToBossCast",
+    "ResearchMechanicClosureR371Tests/testCH_R04_01HeavyAndOrdinarySingleTargetCycles",
+    "ResearchMechanicClosureR371Tests/testCH_R04_02BuffWeakenAndDamageShareActionRoot",
+    "ResearchMechanicClosureR371Tests/testCH_R04_03AlternatingSingleTargetAndPartyAOE",
+    "ResearchMechanicClosureR371Tests/testCH_R05_01HeavyExecutionHasAuthoredRecoveryGap",
+    "ResearchMechanicClosureR371Tests/testCH_R05_02LampSupportLinkedToLivingGuardian",
+    "ResearchMechanicClosureR371Tests/testCH_R05_03ComboMultihitAndAOESequence"
+  ],
+  "finishedAt": "2026-10-14T07:15:46.785297+09:00",
+  "fixtureClass": "MECHANISM_ONLY",
+  "freeBytesAfter": 61018148864,
+  "inputManifestSHA256": "4718ab0a9e43fca8c4707847f5e0587126aa746071e8fd431d80bb942c4bcc93",
+  "limits": {
+    "maxAllocatedBytes": 350000000,
+    "maxConcurrentJobs": 2,
+    "maxInvocations": 1,
+    "maxWallSeconds": 120,
+    "minimumFreeBytes": 12000000000
+  },
+  "outputUsage": {
+    "allocatedBytes": 215707648,
+    "logicalBytes": 209368643
+  },
+  "ownedCleanup": [],
+  "ownedProcessesAbsent": true,
+  "ownedProcessesAfter": [],
+  "r359RunSHA256": "3b25ecc1e2ec1b12a29ce6b05b75c14bd6eafb43d1468baf4a149c86610dd971",
+  "r368InputManifestSHA256": "47ba83bfa951eaac593cf1059492233caec1064c959cdea6afb928a67fcf8417",
+  "returnCode": 1,
+  "runID": "37100000-0001-4001-8000-000000000001",
+  "runnerPID": 29521,
+  "runnerSHA256": "ba4ff2f8cb73569e4e28e721cc7597b84c9424c5ea01577068feadde5849f70a",
+  "saveMutation": "NONE",
+  "schema": "r371-core-run-v1",
+  "simulator": "NONE",
+  "sourceInputsUnchanged": true,
+  "status": "INCOMPLETE_RETAINED",
+  "testSHA256": "8acb825012c2df7a5f5db617ba83d67387ca432ced93daa01980b9c449e3d674",
+  "testVerdict": {
+    "accepted": false,
+    "expected": [
+      "ResearchMechanicClosureR371Tests/testCH_R01_01HeavyTellHitLifecycleAndLedger",
+      "ResearchMechanicClosureR371Tests/testCH_R01_02ThreeEnemySupportAndSlow",
+      "ResearchMechanicClosureR371Tests/testCH_R01_03AlternatingSingleHeavyAndMultihitTargets",
+      "ResearchMechanicClosureR371Tests/testCH_R02_01DotAndHealCycleEventsAreRooted",
+      "ResearchMechanicClosureR371Tests/testCH_R02_02ReusesPinnedR359MembranePassWithoutReplaying",
+      "ResearchMechanicClosureR371Tests/testCH_R02_03SupportWaveHasFourActorsAndSupportEvent",
+      "ResearchMechanicClosureR371Tests/testCH_R03_01AlternatesSingleHeavyAndThreeLinkedHits",
+      "ResearchMechanicClosureR371Tests/testCH_R03_02HeatThresholdShiftAndPostShiftAOEAccounting",
+      "ResearchMechanicClosureR371Tests/testCH_R03_03CastInterruptLinksToBossCast",
+      "ResearchMechanicClosureR371Tests/testCH_R04_01HeavyAndOrdinarySingleTargetCycles",
+      "ResearchMechanicClosureR371Tests/testCH_R04_02BuffWeakenAndDamageShareActionRoot",
+      "ResearchMechanicClosureR371Tests/testCH_R04_03AlternatingSingleTargetAndPartyAOE",
+      "ResearchMechanicClosureR371Tests/testCH_R05_01HeavyExecutionHasAuthoredRecoveryGap",
+      "ResearchMechanicClosureR371Tests/testCH_R05_02LampSupportLinkedToLivingGuardian",
+      "ResearchMechanicClosureR371Tests/testCH_R05_03ComboMultihitAndAOESequence"
+    ],
+    "failed": [
+      "ResearchMechanicClosureR371Tests/testCH_R03_03CastInterruptLinksToBossCast",
+      "ResearchMechanicClosureR371Tests/testCH_R04_03AlternatingSingleTargetAndPartyAOE",
+      "ResearchMechanicClosureR371Tests/testCH_R05_01HeavyExecutionHasAuthoredRecoveryGap",
+      "ResearchMechanicClosureR371Tests/testCH_R05_02LampSupportLinkedToLivingGuardian",
+      "ResearchMechanicClosureR371Tests/testCH_R05_03ComboMultihitAndAOESequence"
+    ],
+    "passed": [
+      "ResearchMechanicClosureR371Tests/testCH_R01_01HeavyTellHitLifecycleAndLedger",
+      "ResearchMechanicClosureR371Tests/testCH_R01_02ThreeEnemySupportAndSlow",
+      "ResearchMechanicClosureR371Tests/testCH_R01_03AlternatingSingleHeavyAndMultihitTargets",
+      "ResearchMechanicClosureR371Tests/testCH_R02_01DotAndHealCycleEventsAreRooted",
+      "ResearchMechanicClosureR371Tests/testCH_R02_02ReusesPinnedR359MembranePassWithoutReplaying",
+      "ResearchMechanicClosureR371Tests/testCH_R02_03SupportWaveHasFourActorsAndSupportEvent",
+      "ResearchMechanicClosureR371Tests/testCH_R03_01AlternatesSingleHeavyAndThreeLinkedHits",
+      "ResearchMechanicClosureR371Tests/testCH_R03_02HeatThresholdShiftAndPostShiftAOEAccounting",
+      "ResearchMechanicClosureR371Tests/testCH_R04_01HeavyAndOrdinarySingleTargetCycles",
+      "ResearchMechanicClosureR371Tests/testCH_R04_02BuffWeakenAndDamageShareActionRoot"
+    ],
+    "skipped": []
+  },
+  "traceFiles": [
+    {
+      "path": "CH_R01_01_seed_371001.json",
+      "sha256": "6616bc3812095f503390f91f4edbca8192f2b569a81a8ef679964408a9668cc3",
+      "sizeBytes": 27317
+    },
+    {
+      "path": "CH_R01_02_seed_371001.json",
+      "sha256": "71679da8c7affa5dcba28f6a02bc2095891911b9ffa886ce9b18c38b952a8e52",
+      "sizeBytes": 31827
+    },
+    {
+      "path": "CH_R01_03_seed_371001.json",
+      "sha256": "493f44bdba10d2df8d2f0f5faa817e33e9dfb6f200fc295d894317ce030d87a4",
+      "sizeBytes": 29525
+    },
+    {
+      "path": "CH_R02_01_seed_371001.json",
+      "sha256": "c096ef44e1c3185b2cf57c24f9b70d64404635f43b3618f5761ed77d9359a2a6",
+      "sizeBytes": 39303
+    },
+    {
+      "path": "CH_R02_03_seed_371001.json",
+      "sha256": "107e427ad5231c3b3989fa69804b71fbea085a45939c5b4f8a48ab896cfb0aa9",
+      "sizeBytes": 54695
+    },
+    {
+      "path": "CH_R03_01_seed_371001.json",
+      "sha256": "3939995d0dada27f27aa32c1e3d3b8885448c2977388ee2b32ee56fbd89d6a3f",
+      "sizeBytes": 46200
+    },
+    {
+      "path": "CH_R03_02_seed_371001.json",
+      "sha256": "cc358a009eb5638b1bb8c4fec1f93361541d8cdf183945c95b6c30ab40056d45",
+      "sizeBytes": 55234
+    },
+    {
+      "path": "CH_R03_03_seed_371001.json",
+      "sha256": "84d8d780d83a0eec009d2a72a99b4713bcf8cbc27c38fe4c963cd110165b8efa",
+      "sizeBytes": 64342
+    },
+    {
+      "path": "CH_R04_01_seed_371001.json",
+      "sha256": "addc4545549ddd35f93ab6f754021686d7379be973a54aa873372c650233db83",
+      "sizeBytes": 54056
+    },
+    {
+      "path": "CH_R04_02_seed_371001.json",
+      "sha256": "632ac125cafb39227191ae0c057204166fd97a1a6f4aa7eac71e34b265e29249",
+      "sizeBytes": 61276
+    },
+    {
+      "path": "CH_R04_03_seed_371001.json",
+      "sha256": "4fda13a86cdb5c5dc766d05615fe7f3ff949c37dc067ae4afe7e5f376dcb93de",
+      "sizeBytes": 83816
+    },
+    {
+      "path": "CH_R05_01_seed_371001.json",
+      "sha256": "debfa46d35e3c211690be1d0b6e4c3702f79af17f10d5f5ea145e37b9b23a83b",
+      "sizeBytes": 76831
+    },
+    {
+      "path": "CH_R05_02_seed_371001.json",
+      "sha256": "2c81234bb9188ae243cf5a9a25a56ac1399e23f76ae5b07b8fdf54571ab65a5b",
+      "sizeBytes": 91363
+    },
+    {
+      "path": "CH_R05_03_seed_371001.json",
+      "sha256": "94cc79db234497df51ff849b85b3e1be0f2406ad3f114a43f42282261d74fdb5",
+      "sizeBytes": 153029
+    }
+  ]
+}

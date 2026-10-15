@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "status": "READ_ONLY_ADDENDUM",
+  "supersedes": null,
+  "clarifies": "AUDIT_R001 does not mean a local purchase-authority reference is absent; it means the app has no production-authoritative path.",
+  "execution": {"tests": 0, "builds": 0, "simulator": false, "network": false, "sourceEdits": 0},
+  "local_reference_authority": {
+    "present": true,
+    "implementation": "SQLite single-node test-only PurchaseAuthority",
+    "mock_purchase_and_draw": true,
+    "paid_ticket_balance_draw": true,
+    "ticket_source_lot_attribution": true,
+    "purchase_draw_pity_history_idempotency_atomic": true,
+    "refund_debt_tombstone_notifications": true,
+    "apple_jws_ingest": "FAIL_CLOSED_NOT_CONNECTED",
+    "app_integration": false,
+    "production_authority": false,
+    "documented_qa_result": "21/21 PASS local only",
+    "additional_source_test_methods": {"notification": 16, "signed_transaction_audit": 21, "not_executed_in_this_audit": true}
+  },
+  "signed_transaction_audit": {
+    "signature_checks": "synthetic in-memory chain with official library; local only",
+    "grant_authorized": false,
+    "revocation_checked": false,
+    "ledger_connected": false,
+    "real_apple_sandbox_success_proven": false
+  },
+  "app_boundary": {
+    "summon_dispatch": "Swift GameEngine .mockSummon with ticket_free and local-revision-derived seed",
+    "storekit_test_sink": "isolated Xcode QA records; storekit_qa_ticket is not gacha currency",
+    "local_storekit_ticket_to_gacha_bridge": false,
+    "evidence": ["App.swift:1311-1325", "GameStoreKitQASink.swift:13-43", "GameStoreKitQA.swift:33-46"]
+  },
+  "prioritized_conclusion": {
+    "locally_executable_gap": "Test-only cross-boundary adapter and Swift/Python candidate policy parity contract; keep temporary SQLite and isolated mock StoreKit input, no live endpoint or production claim.",
+    "not_a_missing_local_model": "PurchaseAuthority already models mock account-bound grant/draw/refund/idempotency behavior.",
+    "external_production_gaps": ["authenticated account lifecycle", "Apple JWS/notification/revocation verification", "production product policy", "server CSPRNG", "distributed persistence/operations", "legal/platform approval"],
+    "rates_prices_and_product_decisions": "remain unapproved; no values adopted by this audit"
+  },
+  "sourcePins": {
+    "authority.py": "ba1ce9e581de66f4f28b7fc0de903700f5505e19832c8fdc4901c656ebc0b02c",
+    "README.md": "d982fe281e68442d94e93b33f1b9ef37d04a3692a2b0e8511fdd0020dd4f3b42",
+    "QA_RESULT_R001.md": "6d9aed0eaa8e52d20b204545957caf327a7a8a2d32ed4cb3173589a77561ae51",
+    "SIGNED_TRANSACTION_AUDIT.md": "74a05950a96def1d453957d8eb6979f1c37aeac41fa2d3b26d4c533b4be6e935",
+    "test_authority.py": "94ecca7044d8d89eba87d0531a4b0e4a363f2c19c3be0fe264ce5eb7432bb081",
+    "test_notifications.py": "5dfc9df8cf66d27d2184392e89dc869c91fc1583afbbfb08f2a7319665fb8c41",
+    "signed_transaction_audit.py": "dd69d282986d222473d38780c5430614231de3a7e2b53d740c98dd4e310a4351",
+    "test_signed_transaction_audit.py": "7db17e3f5bb0857eb141bf8bb8754554bb7dc1b87d759b7620e08a7ea74d8634",
+    "GameStoreKitQASink.swift": "7da7f638c8ac80803e10cce2069c9590f94f19539a3d03ab17f626f18630652f",
+    "GameStoreKitQA.swift": "e368e306df24a4045e7a0d7036e337de209cec40b4ad84e46d01f09ed97f070a"
+  }
+}

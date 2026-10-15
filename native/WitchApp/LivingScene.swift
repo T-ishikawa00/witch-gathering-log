@@ -7,6 +7,7 @@ import UIKit
     var place: Place = .home
     var cosmetics: [String:String] = [:]
     var furniture = Set<String>()
+    private var wardrobeCandidateDevelopmentEnabled = false
     private var figures: [String:SKSpriteNode] = [:]
 
     /// Shared recipient-excluded actor/equipment bounds for notice placement and QA readback.
@@ -82,6 +83,12 @@ import UIKit
     private var enemyLoopBoundaryTrace: EnemyLoopBoundaryTraceQA?
     private var enemyLoopBoundaryMotion: EnemyMotionController?
     private var pendingEnemyLoopBoundaryAction: (EnemyLoopBoundaryTraceQA.Action, EnemyMotionController)?
+    private var jellyfishSequenceQA_R137: JellyfishMeshSequenceQAR137?
+    private var jellyfishSequenceMotion_R137: EnemyMotionController?
+    private var pendingJellyfishSequenceAction_R137: (JellyfishMeshSequenceQAR137.Action, EnemyMotionController)?
+    private var jellyfishSequenceQA_R259: JellyfishMeshSequenceQAR259?
+    private var jellyfishSequenceMotion_R259: EnemyMotionController?
+    private var pendingJellyfishSequenceAction_R259: (JellyfishMeshSequenceQAR259.Action, EnemyMotionController)?
     private var dragonGaitR038SequenceQA: DragonGaitR038SequenceQA?
     private var dragonGaitR038SequenceMotion: EnemyMotionController?
     private var pendingDragonGaitR038SequenceAction: (DragonGaitR038SequenceQA.Action, EnemyMotionController)?
@@ -101,13 +108,58 @@ import UIKit
     private var hpBars: [String:SKShapeNode] = [:]
     private var hpTracks: [String:SKShapeNode] = [:]
     private var readingHands:SKCropNode?
+    private var readingHandsMantleMirror:SKSpriteNode?
     private let textureCache = CostBoundedCache<String, SKTexture>(maximumCost: 64 * 1024 * 1024, maximumEntryCount: 128)
     var frames = 0
     var maxFrameDelta = 0.0
     var artAudit:[String:Bool] = [:]
     private let frameStallTelemetry = FrameStallTelemetry.shared
+    // R275 furniture preview is a second renderer instance; keep it out of shared QA metrics.
+    var suppressSharedDiagnosticsR275 = false
     private var registeredRenderPreparationQA: [String: Any]?
     private var sceneGeneration = 0
+    private var enemyEventRenderTraceR145: EnemyEventRenderTraceR145?
+    // Renderer-only same-action deduplication; event processing is unchanged.
+    private var enemyExecuteCoalescerR154 = EnemyExecuteCoalescerR154()
+    private var executeCoalescingCountersR205 = ["rawRequests": 0, "controllerCalls": 0, "accepted": 0, "rejected": 0, "coalesced": 0]
+    private var executeCoalescingExamplesR205: [[String: Any]] = []
+    private var enemyHitLifecycleRowsR214: [[String: Any]] = []
+    // Set only by the bounded saved-combat replay route; the write is diagnostic-only.
+    var onR214ReplayLifecycleR239: ((String, [String: Any]) -> Void)?
+    private var enemyHitLifecycleDroppedRowsR214 = 0
+    private var enemyHitInstrumentationEnabledR214: Bool {
+        #if targetEnvironment(simulator)
+        #if DEBUG && STANDARD_PLAY_R169
+        return true
+        #else
+        return false
+        #endif
+        #else
+        return false
+        #endif
+    }
+    private var enemyHitDeferralEnabledR214: Bool {
+        #if targetEnvironment(simulator)
+        #if DEBUG && STANDARD_PLAY_R169
+        return !ProcessInfo.processInfo.arguments.contains("--r214-hit-deferral=off")
+        #else
+        return true
+        #endif
+        #else
+        return true
+        #endif
+    }
+    private var enemyExecuteCoalescingEnabledR154: Bool {
+        #if targetEnvironment(simulator)
+        #if DEBUG && STANDARD_PLAY_R169
+        return !ProcessInfo.processInfo.arguments.contains("--r154-execute-coalescing=off")
+        #else
+        return true
+        #endif
+        #else
+        return true
+        #endif
+    }
     private var currentArtTelemetryContext = FrameStallTelemetry.Context(phase: "home", actorID: nil, state: nil, source: "scene")
     private var previousFrameTelemetryContext = FrameStallTelemetry.Context(phase: "home", actorID: nil, state: nil, source: "scene")
     private var effectCounts:[String:Int]=[:]
@@ -123,16 +175,62 @@ import UIKit
     static let names = ["ERNA","LUNA","AIRA","NOIR"]
     override func didMove(to view: SKView) { backgroundColor = UIColor(red:0.04,green:0.07,blue:0.10,alpha:1); rebuild() }
     override func didChangeSize(_ oldSize: CGSize) { if view != nil { rebuild() } }
-    override func willMove(from view:SKView) {
+    override func willMove(from view: SKView) {
+        abortEnemyEventRenderTraceR145(reason: "SCENE_REMOVED")
         abortRenderBoundStateObserverR084(reason: "SCENE_REMOVED")
         abortFullBattleTrace(reason: "SCENE_REMOVED")
         isolatedWalkCycleObserverR018?.abort(reason: "SCENE_REMOVED")
         isolatedWalkCycleObserverR018 = nil
+        abortJellyfishSequenceR137(reason: "SCENE_REMOVED")
+        abortJellyfishSequenceR259(reason: "SCENE_REMOVED")
         abortDragonGaitR038Sequence(reason: "SCENE_REMOVED")
         partyCastHoldLifecycle.clearAll()
         _ = finishSyntheticDash2TailR047(observedMilliseconds: 0, sceneActive: false, cancelled: true)
         super.willMove(from:view)
     }
+    @discardableResult func beginEnemyEventRenderTraceR145(request: EnemyEventRenderRequestR145) -> Bool {
+        guard ProcessInfo.processInfo.arguments.filter({ $0 == "--qa-isolated" }).count == 1,
+              ProcessInfo.processInfo.arguments.filter({ $0 == EnemyEventRenderRequestR145.flag }).count == 1,
+              request.actorID == EnemyEventRenderRequestR145.encounterToActor[request.encounterID],
+              enemyEventRenderTraceR145 == nil, view?.window != nil,
+              let motion = enemyMotions[request.actorID], figures[request.actorID] === motion.node else { return false }
+        let observer = EnemyEventRenderTraceR145(request: request)
+        guard observer.attach(to: self, generation: sceneGeneration) else { return false }
+        enemyEventRenderTraceR145 = observer
+        observer.recordTransition(eventSequence: nil, actorID: request.actorID,
+                                  requestedState: motion.presentationSnapshot["state"] as? String ?? "none",
+                                  accepted: true, observedState: motion.presentationSnapshot["state"] as? String ?? "none",
+                                  requestKind: "battle_trace_armed_current_state",
+                                  sceneFrame: frames, sceneTime: clock, generation: sceneGeneration)
+        return true
+    }
+
+    func requestEnemyEventRenderTraceFinishR145(reason: String) {
+        guard let trace = enemyEventRenderTraceR145 else { return }
+        if reason == "BATTLE_FINISHED" {
+            trace.finishAtBattleResolution(sceneFrame: frames, sceneTime: clock, generation: sceneGeneration)
+        } else {
+            trace.abort(reason: reason, sceneGeneration: sceneGeneration, sceneFrame: frames, sceneTime: clock)
+        }
+        if trace.isTerminal { enemyEventRenderTraceR145 = nil }
+    }
+
+    private func abortEnemyEventRenderTraceR145(reason: String) {
+        enemyEventRenderTraceR145?.abort(reason: reason, sceneGeneration: sceneGeneration, sceneFrame: frames, sceneTime: clock)
+        enemyEventRenderTraceR145 = nil
+    }
+
+    private func recordEnemyEventMotionRequestR145(_ actorID: String, state: String,
+                                                    eventSequence: Int?, requestKind: String, accepted: Bool? = nil) {
+        guard let trace = enemyEventRenderTraceR145, let motion = enemyMotions[actorID],
+              let requested = EnemyMotionState(rawValue: state) else { return }
+        let snapshot = motion.presentationSnapshot
+        trace.recordTransition(eventSequence: eventSequence, actorID: actorID,
+                              requestedState: state, accepted: accepted,
+                              observedState: snapshot["state"] as? String ?? "none", requestKind: requestKind,
+                              sceneFrame: frames, sceneTime: clock, generation: sceneGeneration)
+    }
+
     @discardableResult func beginEquipmentMultiR084(request: EquipmentMultiConsumerRequestR084, outputDirectory: URL) -> Bool {
         guard ProcessInfo.processInfo.arguments.contains("--qa-isolated"), view != nil,
               equipmentMultiObserverR084 == nil, Self.names.allSatisfy({ figures[$0] != nil }) else { return false }
@@ -203,29 +301,48 @@ import UIKit
         guard pixels<=Int.max/4 else{return 0}
         return pixels*4
     }
-    func configure(place:Place,areaResolution:R015AreaSceneResolution?=nil,selectedGatherMaterialID:String?=nil,cosmetics:[String:String],furniture:Set<String>) {
+    func configure(place:Place,areaResolution:R015AreaSceneResolution?=nil,selectedGatherMaterialID:String?=nil,cosmetics:[String:String],furniture:Set<String>,wardrobeCandidateDevelopmentEnabled:Bool=false) {
         let areaChanged = self.areaResolution != areaResolution
         let gatherChanged = self.selectedGatherMaterialID != selectedGatherMaterialID
         if self.areaResolution?.selectionBasis == .activeFightEnemy,
            areaResolution?.selectionBasis != .activeFightEnemy {
             enemyIDs.removeAll();enemyPresentation.removeAll();hp.removeAll();maxHP.removeAll()
         }
-        if self.place != place || areaChanged || gatherChanged || self.cosmetics != cosmetics || self.furniture != furniture {
+        if self.place != place || areaChanged || gatherChanged || self.cosmetics != cosmetics || self.furniture != furniture || self.wardrobeCandidateDevelopmentEnabled != wardrobeCandidateDevelopmentEnabled {
             if self.place != place,case .field=place {enemyIDs.removeAll();enemyPresentation.removeAll();hp.removeAll();maxHP.removeAll()}
             self.place=place
             self.areaResolution=areaResolution
             self.selectedGatherMaterialID=selectedGatherMaterialID
-            if frameStallTelemetry.enabled {
+            if frameStallTelemetry.enabled && !suppressSharedDiagnosticsR275 {
                 currentArtTelemetryContext = FrameStallTelemetry.Context(phase: telemetryPhase(place), actorID: nil, state: nil, source: "scene.configure")
                 frameStallTelemetry.setContext(currentArtTelemetryContext)
             }
-            self.cosmetics=cosmetics;self.furniture=furniture; rebuild()
+            self.cosmetics=cosmetics;self.furniture=furniture;self.wardrobeCandidateDevelopmentEnabled=wardrobeCandidateDevelopmentEnabled; rebuild()
         }
+    }
+    func releaseFurnitureRoomPreviewR275() {
+        guard suppressSharedDiagnosticsR275 else { return }
+        isPaused = true
+        removeAllActions()
+        enumerateChildNodes(withName: "//*") { node, _ in node.removeAllActions() }
+        removeAllChildren()
+        textureCache.clear()
+        figures.removeAll(keepingCapacity: false)
+        baseline.removeAll(keepingCapacity: false)
+        baselineHeights.removeAll(keepingCapacity: false)
+        partyShadows.removeAll(keepingCapacity: false)
+        poses.removeAll(keepingCapacity: false)
+        enemyMotions.removeAll(keepingCapacity: false)
+        hp.removeAll(keepingCapacity: false)
+        maxHP.removeAll(keepingCapacity: false)
+        hpBars.removeAll(keepingCapacity: false)
+        hpTracks.removeAll(keepingCapacity: false)
     }
     private func image(_ id:String,_ height:CGFloat,_ point:CGPoint,_ depth:CGFloat)->SKSpriteNode? {
         guard let t=texture(id) else{return nil}; let n=SKSpriteNode(texture:t);n.size=CGSize(width:height*t.size().width/max(1,t.size().height),height:height);n.position=point;n.zPosition=depth;addChild(n);return n
     }
     private func rebuild(preservingPendingFullBattleTrace: Bool = false) {
+        abortEnemyEventRenderTraceR145(reason: "SCENE_REBUILT")
         abortRenderBoundStateObserverR084(reason: "SCENE_REBUILT")
         for motion in enemyMotions.values { motion.restoreNormalEntryFootpathR068R002() }
         dragonEntryFootpathSessionsR068R002.removeAll()
@@ -248,7 +365,15 @@ import UIKit
         }
         finishEquipmentMultiR084(reason: "SCENE_REBUILT")
         preparedPartyCastRoots.removeAll()
-        sceneGeneration &+= 1; _ = finishSyntheticDash2TailR047(observedMilliseconds: 0, sceneActive: false, reason: "SCENE_REBUILT"); r047VideoSyncMarker?.removeFromParent(); r047VideoSyncMarker=nil; r047VideoSyncMarkerSequence=0; partyCastHoldLifecycle.clearAll(); groundedBattleEntryTargets.removeAll(); holdingBattleResult=false; registeredRenderPreparationQA = nil; removeAllChildren();environmentCycle = -1;r04EnvironmentPolicy.reset();r04WeatherPolicyQACache=nil;readingHands=nil;layeredHand=nil;lunaBookHand=nil;gatherNode=nil;gatherNodeMaterialID=nil;gatherNodeAudit=[:];figures.removeAll();baseline.removeAll();baselineHeights.removeAll();partyShadows.removeAll();poses.removeAll();enemyMotions.removeAll();hpBars.removeAll();hpTracks.removeAll()
+        abortJellyfishSequenceR137(reason: "SCENE_REBUILT")
+        abortJellyfishSequenceR259(reason: "SCENE_REBUILT")
+        enemyExecuteCoalescerR154.clearAll()
+        executeCoalescingCountersR205 = ["rawRequests": 0, "controllerCalls": 0, "accepted": 0, "rejected": 0, "coalesced": 0]
+        executeCoalescingExamplesR205.removeAll(keepingCapacity: false)
+        enemyMotions.values.forEach { $0.resetVisualHitDeferralR214() }
+        enemyHitLifecycleRowsR214.removeAll(keepingCapacity: false)
+        enemyHitLifecycleDroppedRowsR214 = 0
+        sceneGeneration &+= 1; _ = finishSyntheticDash2TailR047(observedMilliseconds: 0, sceneActive: false, reason: "SCENE_REBUILT"); r047VideoSyncMarker?.removeFromParent(); r047VideoSyncMarker=nil; r047VideoSyncMarkerSequence=0; partyCastHoldLifecycle.clearAll(); groundedBattleEntryTargets.removeAll(); holdingBattleResult=false; registeredRenderPreparationQA = nil; removeAllChildren();environmentCycle = -1;r04EnvironmentPolicy.reset();r04WeatherPolicyQACache=nil;readingHands=nil;readingHandsMantleMirror=nil;layeredHand=nil;lunaBookHand=nil;gatherNode=nil;gatherNodeMaterialID=nil;gatherNodeAudit=[:];figures.removeAll();baseline.removeAll();baselineHeights.removeAll();partyShadows.removeAll();poses.removeAll();enemyMotions.removeAll();hpBars.removeAll();hpTracks.removeAll()
         for key in Array(artAudit.keys) where key.hasPrefix("background_") || key.hasPrefix("gather_node_") { artAudit.removeValue(forKey: key) }
         var bgID:String
         switch place {
@@ -402,7 +527,18 @@ import UIKit
             }
         }
         if isHome && FurniturePresentationR094.hasBotanicalDesk(furniture) {
-            _=image("FURN_DESK_BOTANICAL",size.width*0.39,CGPoint(x:size.width*0.65,y:size.height*(compact ? 0.55:0.49)),11.1)
+            let fitAvailable = HomeDeskVisualCandidateR138.requested && HomeDeskVisualCandidateR138.supports(texture: texture(HomeDeskVisualCandidateR138.assetID))
+            let visualID = fitAvailable ? HomeDeskVisualCandidateR138.assetID :
+                (HomeDeskVisualCandidateR124.requested ? HomeDeskVisualCandidateR124.assetID : "FURN_DESK_BOTANICAL")
+            let desk = image(visualID,size.width*0.39,CGPoint(x:size.width*0.65,y:size.height*(compact ? 0.55:0.49)),11.1)
+            if fitAvailable, let desk {
+                if !HomeDeskVisualCandidateR138.apply(to: desk) {
+                    desk.removeFromParent()
+                    image("FURN_DESK_BOTANICAL",size.width*0.39,CGPoint(x:size.width*0.65,y:size.height*(compact ? 0.55:0.49)),11.1)?.name = "furniture_botanical_desk"
+                    artAudit["r138_fit_failed_fallback_to_baseline"] = true
+                }
+            } else if HomeDeskVisualCandidateR124.requested { desk?.name = HomeDeskVisualCandidateR124.nodeName }
+            else { desk?.name = "furniture_botanical_desk" }
         }
         if case .field=place {for (index,id) in enemyIDs.enumerated(){addEnemy(id,index:index)}}
         environmentCycle = -1
@@ -411,11 +547,30 @@ import UIKit
     private func attachReadingHands(_ body:SKSpriteNode){
         let hands=SKCropNode();hands.position=body.position;hands.zPosition=11.2
         let drawing=SKSpriteNode(texture:body.texture);drawing.size=body.size;drawing.anchorPoint=body.anchorPoint;hands.addChild(drawing)
+        let mantleMirror=SKSpriteNode();mantleMirror.name="luna_mantle_reading_hands_mirror_r444";mantleMirror.zPosition=0.1;mantleMirror.isHidden=true;hands.addChild(mantleMirror)
         let mask=SKNode()
         for p in [CGPoint(x:0.39,y:0.39),CGPoint(x:0.60,y:0.39)] {
             let palm=SKShapeNode(ellipseOf:CGSize(width:body.size.width*0.19,height:body.size.height*0.20));palm.fillColor = .white;palm.strokeColor = .clear;palm.position=CGPoint(x:(p.x-0.5)*body.size.width,y:(p.y-0.04)*body.size.height);mask.addChild(palm)
         }
-        hands.maskNode=mask;readingHands=hands;addChild(hands)
+        hands.maskNode=mask;readingHands=hands;readingHandsMantleMirror=mantleMirror;addChild(hands)
+        syncReadingHandsMantle(from:body)
+    }
+    /// Reuses one accessory sprite inside the existing hand crop. This mirrors only
+    /// the selected R097 mantle layer; it does not duplicate the character body.
+    private func syncReadingHandsMantle(from body:SKSpriteNode){
+        guard let mirror=readingHandsMantleMirror,
+              let source=body.childNode(withName:LunaMantleOverlayR097.nodeName) as? SKSpriteNode,
+              let metadata=source.userData?["lunaMantleR097"] as? [String:Any],
+              metadata["appearance"] as? String == LunaMantleOverlayR097.appearanceValue,
+              metadata["poseState"] as? String == "reading",
+              let texture=source.texture else {
+            readingHandsMantleMirror?.texture=nil;readingHandsMantleMirror?.isHidden=true;return
+        }
+        mirror.texture=texture;mirror.size=source.size;mirror.anchorPoint=source.anchorPoint
+        mirror.position=source.position;mirror.zRotation=source.zRotation
+        mirror.xScale=source.xScale;mirror.yScale=source.yScale
+        mirror.alpha=source.alpha;mirror.blendMode=source.blendMode
+        mirror.isHidden=source.isHidden || source.alpha <= 0
     }
     func setEnemy(_ id:String){setEnemies([id])}
     func setEnemies(_ ids:[String]){enemyPresentation.removeAll();enemyIDs=ids.map{actorKey($0)};hp.removeAll();maxHP.removeAll();resolveAreaFromActualEnemies();if case .field=place {rebuild()}}
@@ -484,7 +639,7 @@ import UIKit
             return
         }
         let artID=actorKey(meta?.assetKey ?? meta?.catalogID ?? id)
-        do{let m=try EnemyMotionController(actorID:artID,artRoot:ArtLibrary.root);let n=m.node;let h=min(size.width*(count>3 ? 0.19:artID.hasPrefix("ACT_B_") ? 0.36:0.25),size.width*(count==1 ? 0.46:count>3 ? 0.23:0.31)/m.intrinsicAspectRatio);m.fit(height:h)
+        do{let m=try EnemyMotionController(actorID:artID,artRoot:ArtLibrary.root);if enemyHitInstrumentationEnabledR214 {m.onVisualHitLifecycleR214 = { [weak self] row in self?.recordVisualHitLifecycleR214(row) }};let n=m.node;let h=min(size.width*(count>3 ? 0.19:artID.hasPrefix("ACT_B_") ? 0.36:0.25),size.width*(count==1 ? 0.46:count>3 ? 0.23:0.31)/m.intrinsicAspectRatio);m.fit(height:h)
             // R085 local presentation candidate: this wolf source faces right,
             // while enemies occupy the right side and attack the party to the left.
             // Mirror the complete node so child/effect coordinates follow the body.
@@ -572,7 +727,7 @@ import UIKit
     }
 
     func auditEnemyState(_ state:EnemyMotionState) {
-        if frameStallTelemetry.enabled {
+        if frameStallTelemetry.enabled && !suppressSharedDiagnosticsR275 {
             let ids = enemyMotions.keys.sorted().joined(separator: ",")
             currentArtTelemetryContext = FrameStallTelemetry.Context(phase: telemetryPhase(place), actorID: ids.isEmpty ? nil : ids, state: state.rawValue, source: "qa_enemy_state_request_all")
             frameStallTelemetry.setContext(currentArtTelemetryContext)
@@ -610,7 +765,7 @@ import UIKit
                   figures[id] === motion.node else { stale = true; break }
             currentArtTelemetryContext = FrameStallTelemetry.Context(
                 phase: telemetryPhase(place), actorID: id, state: "render_prepare", source: "battle_or_art_audit_prepare")
-            frameStallTelemetry.setContext(currentArtTelemetryContext)
+            if !suppressSharedDiagnosticsR275 { frameStallTelemetry.setContext(currentArtTelemetryContext) }
             let result = await motion.prepareRegisteredPoseRendering(in: renderView, captureSnapshots: !skipSnapshots) { [weak self, weak motion] in
                 guard let self, let motion else { return false }
                 return self.sceneGeneration == generation && self.enemyMotions[id] === motion && self.figures[id] === motion.node
@@ -619,7 +774,7 @@ import UIKit
             if Task.isCancelled { cancelled = true; break }
             guard enemyMotions[id] === motion, figures[id] === motion.node else { stale = true; break }
             if let result {
-                frameStallTelemetry.recordRenderPreparation(actorID: id, result: result)
+                if !suppressSharedDiagnosticsR275 { frameStallTelemetry.recordRenderPreparation(actorID: id, result: result) }
                 let encoder = JSONEncoder()
                 if let data = try? encoder.encode(result),
                    let object = try? JSONSerialization.jsonObject(with: data) as? [String: Any] {
@@ -629,7 +784,7 @@ import UIKit
         }
         guard generation == sceneGeneration else { return "{\"outcome\":\"stale_scene_discarded\"}" }
         currentArtTelemetryContext = previousContext
-        frameStallTelemetry.setContext(previousContext)
+        if !suppressSharedDiagnosticsR275 { frameStallTelemetry.setContext(previousContext) }
         let snapshots = reports.reduce(0) { $0 + (($1["snapshotCount"] as? Int) ?? 0) }
         let succeeded = reports.reduce(0) { $0 + (($1["successfulSnapshotCount"] as? Int) ?? 0) }
         let textureMilliseconds = reports.reduce(0.0) { $0 + (($1["texturePreparationMilliseconds"] as? Double) ?? 0) }
@@ -837,7 +992,7 @@ import UIKit
 
     func auditPartyState(_ state:String) {
         heldPartyPose=true
-        if frameStallTelemetry.enabled {
+        if frameStallTelemetry.enabled && !suppressSharedDiagnosticsR275 {
             let ids = Self.names.filter { figures[$0] != nil }.joined(separator: ",")
             currentArtTelemetryContext = FrameStallTelemetry.Context(phase: telemetryPhase(place), actorID: ids.isEmpty ? nil : ids, state: state, source: "qa_party_state_request_all")
             frameStallTelemetry.setContext(currentArtTelemetryContext)
@@ -868,6 +1023,12 @@ import UIKit
     override func didFinishUpdate() {
         if frameAuditHeld {frameAuditRenderedFrames+=1}
         applyPendingEnemyLoopBoundaryAction()
+        applyPendingJellyfishSequenceActionR137()
+        applyPendingJellyfishSequenceActionR259()
+        jellyfishSequenceQA_R137?.deliverCompletionAfterRenderedFrame()
+        jellyfishSequenceQA_R137?.deliverCompletionAfterMarkerRemoval()
+        jellyfishSequenceQA_R259?.deliverCompletionAfterRenderedFrame()
+        jellyfishSequenceQA_R259?.deliverCompletionAfterMarkerRemoval()
         enemyLoopBoundaryTrace?.deliverCompletionAfterRenderedFrame()
         applyPendingDragonGaitR038SequenceAction()
         dragonGaitR038SequenceQA?.deliverCompletionAfterRenderedFrame()
@@ -876,6 +1037,8 @@ import UIKit
         sampleRenderBoundStateObserverR084()
         sampleEquipmentMultiR084()
         sampleEnemyLoopBoundaryTrace()
+        sampleJellyfishSequenceR137()
+        sampleJellyfishSequenceR259()
         sampleDragonGaitR038Sequence()
         sampleBattleEntryTrace(phase: "didFinishUpdate")
         let lunaArgs=ProcessInfo.processInfo.arguments
@@ -988,6 +1151,41 @@ import UIKit
         advancePendingERNAWalkCycleStart()
         reflowPursuitNoticesAfterSceneActionsR008()
         samplePursuitNoticeRenderR092()
+        if let trace = enemyEventRenderTraceR145 {
+            let partySnapshots = trace.needsPartyFrameSnapshots ? partyTargetFrameSnapshotsR391() : []
+            trace.sample(scene: self, sceneFrame: frames, sceneTime: clock, spriteKitTime: last,
+                         generation: sceneGeneration, motions: enemyMotions, partySnapshots: partySnapshots)
+            if trace.isTerminal {
+                enemyEventRenderTraceR145 = nil
+            }
+        }
+    }
+
+    private func partyTargetFrameSnapshotsR391() -> [[String: Any]] {
+        Self.names.compactMap { actorID in
+            guard let node = figures[actorID] else { return nil }
+            let bounds = node.frame
+            let visible = bounds.intersection(frame)
+            let area = max(0, bounds.width * bounds.height)
+            let visibleFraction = area > 0 && !visible.isNull
+                ? min(1, max(0, visible.width * visible.height / area)) : 0
+            let body = ActorBodyFrame.current(on: node)
+            let state = node.action(forKey: "party_walk_clip") != nil ? "walk" : poses[actorID]?.0 ?? "none"
+            return ["actorID": actorID, "poseState": state,
+                    "poseElapsedSceneSeconds": max(0, clock - (poses[actorID]?.1 ?? clock)),
+                    "bodyAssetID": body?.assetID ?? "", "bodyFrameIndex": body?.frameIndex ?? -1,
+                    "bodyCanvas": body.map { [Double($0.canvasSize.width), Double($0.canvasSize.height)] } ?? [0.0, 0.0],
+                    "bodyTexturePresent": node.texture != nil, "nodeAttached": node.parent === self,
+                    "hidden": node.isHidden, "alpha": Double(node.alpha),
+                    "position": [Double(node.position.x), Double(node.position.y)],
+                    "size": [Double(node.size.width), Double(node.size.height)],
+                    "anchor": [Double(node.anchorPoint.x), Double(node.anchorPoint.y)],
+                    "sceneRect": [Double(bounds.minX), Double(bounds.minY), Double(bounds.width), Double(bounds.height)],
+                    "visibleFraction": visibleFraction,
+                    "walkActionRunning": node.action(forKey: "party_walk_clip") != nil,
+                    "castActionRunning": node.action(forKey: "party_cast_clip") != nil,
+                    "restActionRunning": node.action(forKey: "party_rest_clip") != nil]
+        }
     }
 
     private func pursuitNoticeGroupsR092() -> [SKNode] {
@@ -1057,6 +1255,16 @@ import UIKit
         case .play(let state):
             if !motion.play(state, restart: true) {
                 enemyLoopBoundaryTrace?.abort("INCONCLUSIVE_UNSUPPORTED_STATE:\(state.rawValue)")
+            } else if state == .walk {
+                let jelly = motion.presentationSnapshot["qaJellyMeshR135"] as? [String: Any] ?? [:]
+                if jelly["enabled"] as? Bool == true, jelly["applied"] as? Bool != true {
+                    let reason = jelly["reason"] as? String ?? "unknown"
+                    enemyLoopBoundaryTrace?.abort("INCOMPLETE_MESH_CANDIDATE_FALLBACK:\(reason)")
+                    return
+                }
+                // A requested fallback aborts this trace rather than being
+                // scored as a successful catalog-only walk.
+                enemyLoopBoundaryTrace?.replaceCurrentDescriptor(motion.loopBoundaryMode(for: state))
             }
         case .finished:
             break
@@ -1072,6 +1280,123 @@ import UIKit
         case .play, .finished: pendingEnemyLoopBoundaryAction = (action, motion)
         }
     }
+
+    func runJellyfishSequenceR137(actorID: String, saveKey: String,
+                                  outputDirectory: URL) async -> String {
+        guard JellyfishMeshSequenceQAR137.isRequested(actorID: actorID),
+              actorID == JellyfishMeshSequenceQAR137.requiredActorID,
+              let motion = enemyMotions[actorID], motion.node.parent === self,
+              view != nil, jellyfishSequenceQA_R137 == nil else {
+            return "INCOMPLETE_R137_SEQUENCE_PRECONDITION"
+        }
+        guard let observer = JellyfishMeshSequenceQAR137(actorID: actorID, saveKey: saveKey,
+            sceneGeneration: sceneGeneration, outputDirectory: outputDirectory) else {
+            return "FAILED_INVALID_SAVE_KEY"
+        }
+        return await withCheckedContinuation { continuation in
+            jellyfishSequenceQA_R137 = observer
+            jellyfishSequenceMotion_R137 = motion
+            let first = observer.start(in: self) { [weak self] result in
+                guard let self else { continuation.resume(returning: result); return }
+                self.jellyfishSequenceQA_R137 = nil
+                self.jellyfishSequenceMotion_R137 = nil
+                self.pendingJellyfishSequenceAction_R137 = nil
+                continuation.resume(returning: result)
+            }
+            pendingJellyfishSequenceAction_R137 = (first, motion)
+        }
+    }
+
+    private func sampleJellyfishSequenceR137() {
+        guard let observer = jellyfishSequenceQA_R137,
+              let motion = jellyfishSequenceMotion_R137 else { return }
+        let action = observer.sample(presentation: motion.presentationSnapshot, motion: motion,
+            scene: self, sceneFrame: frames, currentSceneGeneration: sceneGeneration)
+        if case .none = action { return }
+        pendingJellyfishSequenceAction_R137 = (action, motion)
+    }
+
+    private func applyPendingJellyfishSequenceActionR137() {
+        guard let (action, motion) = pendingJellyfishSequenceAction_R137 else { return }
+        pendingJellyfishSequenceAction_R137 = nil
+        switch action {
+        case .none: break
+        case .play(let state):
+            if !motion.play(state, restart: true) {
+                jellyfishSequenceQA_R137?.abort("INCOMPLETE_UNSUPPORTED_STATE_\(state.rawValue)")
+            }
+        case .finished:
+            motion.stop()
+        }
+    }
+
+    private func abortJellyfishSequenceR137(reason: String) {
+        guard let observer = jellyfishSequenceQA_R137 else { return }
+        observer.abort("INCOMPLETE_" + reason)
+        jellyfishSequenceMotion_R137?.stop()
+        jellyfishSequenceQA_R137 = nil
+        jellyfishSequenceMotion_R137 = nil
+        pendingJellyfishSequenceAction_R137 = nil
+    }
+
+    func runJellyfishSequenceR259(actorID: String, saveKey: String,
+                                  outputDirectory: URL) async -> String {
+        guard JellyfishMeshSequenceQAR259.isRequested(actorID: actorID),
+              actorID == JellyfishMeshSequenceQAR259.requiredActorID,
+              let motion = enemyMotions[actorID], motion.node.parent === self,
+              view != nil, jellyfishSequenceQA_R259 == nil else {
+            return "INCOMPLETE_R259_SEQUENCE_PRECONDITION"
+        }
+        guard let observer = JellyfishMeshSequenceQAR259(actorID: actorID, saveKey: saveKey,
+            sceneGeneration: sceneGeneration, outputDirectory: outputDirectory) else {
+            return "FAILED_INVALID_SAVE_KEY"
+        }
+        return await withCheckedContinuation { continuation in
+            jellyfishSequenceQA_R259 = observer
+            jellyfishSequenceMotion_R259 = motion
+            let first = observer.start(in: self) { [weak self] result in
+                guard let self else { continuation.resume(returning: result); return }
+                self.jellyfishSequenceQA_R259 = nil
+                self.jellyfishSequenceMotion_R259 = nil
+                self.pendingJellyfishSequenceAction_R259 = nil
+                continuation.resume(returning: result)
+            }
+            pendingJellyfishSequenceAction_R259 = (first, motion)
+        }
+    }
+
+    private func sampleJellyfishSequenceR259() {
+        guard let observer = jellyfishSequenceQA_R259,
+              let motion = jellyfishSequenceMotion_R259 else { return }
+        let action = observer.sample(presentation: motion.presentationSnapshot, motion: motion,
+            scene: self, sceneFrame: frames, currentSceneGeneration: sceneGeneration)
+        if case .none = action { return }
+        pendingJellyfishSequenceAction_R259 = (action, motion)
+    }
+
+    private func applyPendingJellyfishSequenceActionR259() {
+        guard let (action, motion) = pendingJellyfishSequenceAction_R259 else { return }
+        pendingJellyfishSequenceAction_R259 = nil
+        switch action {
+        case .none: break
+        case .play(let state):
+            if !motion.play(state, restart: true) {
+                jellyfishSequenceQA_R259?.abort("INCOMPLETE_UNSUPPORTED_STATE_\(state.rawValue)")
+            }
+        case .finished:
+            motion.stop()
+        }
+    }
+
+    private func abortJellyfishSequenceR259(reason: String) {
+        guard let observer = jellyfishSequenceQA_R259 else { return }
+        observer.abort("INCOMPLETE_" + reason)
+        jellyfishSequenceMotion_R259?.stop()
+        jellyfishSequenceQA_R259 = nil
+        jellyfishSequenceMotion_R259 = nil
+        pendingJellyfishSequenceAction_R259 = nil
+    }
+
     func hasDragonFlightState(actorID: String) -> Bool {
         enemyMotions[actorID]?.availableStates.contains(.flight) == true
     }
@@ -1207,11 +1532,32 @@ import UIKit
         let hold:[String:Any]=["actor":frameAuditRequest?.actor ?? "","state":frameAuditRequest?.state ?? "","index":frameAuditRequest?.index ?? -1,"held":frameAuditHeld,"renderedFrames":frameAuditRenderedFrames,"warp":"disabled_for_isolated_frame_fit"]
         var payload:[String:Any] = ["actorIDs":enemyIDs,"states":artAudit,"geometry":geometry,"appearance":cosmetics,"effects":effects,"frameHold":hold,"expectedPartyHeights":baselineHeights,"frames":frames,"maxFrameDeltaSeconds":maxFrameDelta,"gatherNode":gatherNodeAudit,"textureCache":textureCache.snapshot()]
         payload["enemyPresentation"]=enemyMotions.mapValues(\.presentationSnapshot)
+        if enemyHitInstrumentationEnabledR214 {
+            payload["enemyHitInterruptionR214"] = [
+                "enabled": enemyHitDeferralEnabledR214,
+                "mode": enemyHitDeferralEnabledR214 ? "defer_during_execute" : "baseline_immediate_hit",
+                "rowLimit": 32, "droppedRows": enemyHitLifecycleDroppedRowsR214,
+                "rows": enemyHitLifecycleRowsR214
+            ]
+        }
+        if enemyHitInstrumentationEnabledR214 {
+            payload["enemyExecuteCoalescingR205"] = [
+                "enabled": enemyExecuteCoalescingEnabledR154, "sceneGeneration": sceneGeneration,
+                "counts": executeCoalescingCountersR205,
+                "exampleLimit": 16, "examples": executeCoalescingExamplesR205
+            ]
+        }
         if let observer = pursuitNoticeRenderObserverR092 {
             payload["pursuitNoticeRenderR092"] = observer.receipt()
         }
         payload["holdingBattleResult"]=holdingBattleResult
         let qaArguments = ProcessInfo.processInfo.arguments
+        if qaArguments.contains("--qa-isolated"), qaArguments.contains(LunaMantleOverlayR097.qaFlag), let luna = figures["LUNA"] {
+            payload["lunaMantleR097"] = LunaMantleOverlayR097.snapshot(on: luna)
+        }
+        if qaArguments.contains("--qa-isolated"), qaArguments.contains(LunaMantleBooklessR127.qaFlag), let luna = figures["LUNA"] {
+            payload["lunaMantleOffsetsR127"] = LunaMantleBooklessR127.snapshot(on: luna, equippedBookGearID: cosmetics["APPRENTICE_EQUIPPED_WEAPON_ID"])
+        }
         if qaArguments.contains("--qa-isolated") && qaArguments.contains("--qa-r04-weather-policy") {
             if r04WeatherPolicyQACache == nil { r04WeatherPolicyQACache = R04WeatherQA.run() }
             payload["r04EnvironmentPolicyQA"] = r04WeatherPolicyQACache
@@ -1219,13 +1565,42 @@ import UIKit
         if let node=gatherNode {
             payload["gatherNodeGeometry"]=["x":node.position.x,"y":node.position.y,"width":node.size.width,"height":node.size.height,"sceneWidth":size.width,"sceneHeight":size.height,"alpha":node.alpha,"hidden":node.isHidden,"nodeCount":children.filter{$0.name?.hasPrefix("gather_node:")==true}.count]
         } else {payload["gatherNodeGeometry"]=["nodeCount":0]}
+        if NoirNeckwearCandidateRegistrationR003.requested, let noir = figures["NOIR"] {
+            payload["noirNeckwearR124"] = NoirNeckwearCandidateRegistrationR003.snapshot(on: noir)
+        }
+        if WardrobeCandidateCatalogR130.enabled(arguments: ProcessInfo.processInfo.arguments), let airA = figures["AIRA"] {
+            payload["airaApronR130"] = AIRAHarvestApronOverlayR130.snapshot(on: airA)
+        }
+        if let desk = childNode(withName: "furniture_botanical_desk") as? SKSpriteNode {
+            payload["homeDeskBaseline"] = ["present": true,
+                "logicalPlaced": FurniturePresentationR094.hasBotanicalDesk(furniture),
+                "assetID": "FURN_DESK_BOTANICAL", "size": [desk.size.width, desk.size.height],
+                "nodeSize": [desk.size.width, desk.size.height],
+                "textureSize": [desk.texture?.size().width ?? 0, desk.texture?.size().height ?? 0],
+                "position": [desk.position.x, desk.position.y], "anchor": [desk.anchorPoint.x, desk.anchorPoint.y],
+                "scale": [desk.xScale, desk.yScale], "z": desk.zPosition,
+                "sceneSize": [size.width, size.height]] as [String: Any]
+        } else {
+            payload["homeDeskBaseline"] = ["present": false,
+                "logicalPlaced": FurniturePresentationR094.hasBotanicalDesk(furniture)]
+        }
+        if HomeDeskVisualCandidateR124.requested {
+            payload["homeDeskR124"] = HomeDeskVisualCandidateR124.snapshot(
+                node: childNode(withName: HomeDeskVisualCandidateR124.nodeName) as? SKSpriteNode,
+                sceneSize: size, logicalPlaced: FurniturePresentationR094.hasBotanicalDesk(furniture))
+        }
+        if HomeDeskVisualCandidateR138.requested {
+            payload["homeDeskR138"] = HomeDeskVisualCandidateR138.snapshot(
+                node: childNode(withName: HomeDeskVisualCandidateR138.nodeName) as? SKSpriteNode,
+                sceneSize: size, logicalPlaced: FurniturePresentationR094.hasBotanicalDesk(furniture))
+        }
         if let areaResolution { payload["areaBackground"] = areaResolution.qaReceipt() }
         if let injection = AreaFlowQAHook.injectionReceipt { payload["fallbackInjection"] = injection }
         if let observer = mothPassiveObserverR058 {
             payload["r058PassiveMothObservation"] = observer.receipt()
         }
         if let observer=lunaBookObserverR010 { payload["lunaBookNativeR010"]=observer.receipt(fault:lunaBookFailureR010) }
-        if frameStallTelemetry.enabled {
+        if frameStallTelemetry.enabled && !suppressSharedDiagnosticsR275 {
             payload["frameStallTelemetry"] = frameStallTelemetry.snapshot()
             payload["registeredRenderPreparation"] = registeredRenderPreparationQA ?? ["outcome": "not_run"]
         }
@@ -1262,6 +1637,10 @@ import UIKit
         for (id,motion) in enemyMotions {
             let grounded = motion.beginGroundedEntryIfRequested()
             let accepted=grounded || motion.play(.walk,restart:true);artAudit[id+":battle_entry_walk"]=accepted
+            if EnemyEventRenderRequestR145.encounterToActor.values.contains(id) {
+                recordEnemyEventMotionRequestR145(id, state: "walk", eventSequence: nil,
+                                                  requestKind: "battle_arrival", accepted: accepted)
+            }
             guard accepted,let home=baseline[id] else{continue}
             let enter: SKAction
             if grounded {
@@ -1305,7 +1684,19 @@ import UIKit
         partyCastHoldLifecycle.clearAll()
         holdingBattleResult=true
         WitchAudioCoordinator.shared.play(won ? .victory:.defeat)
-        for (id,motion) in enemyMotions {if won || hp[id]==0 {_ = motion.play(.resolve)}}
+        for (id,motion) in enemyMotions {
+            if won || hp[id] == 0 {
+                enemyExecuteCoalescerR154.clear(actorID: id)
+                let accepted = motion.play(.resolve)
+                if EnemyEventRenderRequestR145.encounterToActor.values.contains(id) {
+                    enemyEventRenderTraceR145?.recordTransition(eventSequence: nil, actorID: id,
+                        requestedState: "resolve", accepted: accepted,
+                        observedState: motion.presentationSnapshot["state"] as? String ?? "none",
+                        requestKind: "battle_resolution",
+                        sceneFrame: frames, sceneTime: clock, generation: sceneGeneration)
+                }
+            }
+        }
         for id in Self.names {let state=(hp[id] ?? 1)>0 && won ? "resolve":"hit";pose(id,state)}
         let longest=enemyMotions.filter{won || hp[$0.key]==0}.values.map(\.resolveDuration).max() ?? 0
         return max(1.25,longest+0.25)
@@ -1385,7 +1776,7 @@ import UIKit
         }
         return mismatches
     }
-    private func setHP(_ id:String,_ value:Int){
+    private func setHP(_ id:String,_ value:Int, r145EventSequence: Int? = nil){
         hp[id]=max(0,value);if value<=0{_ = clearPendingPartyCast(id)};guard let figure=figures[id],let maximum=maxHP[id],maximum>0 else{return}
         let bar:SKShapeNode
         if let existing=hpBars[id]{bar=existing}else{
@@ -1396,14 +1787,14 @@ import UIKit
         bar.path=CGPath(roundedRect:CGRect(x:0,y:0,width:width,height:3),cornerWidth:1,cornerHeight:1,transform:nil)
         bar.fillColor=Self.names.contains(id) ? .systemMint:.systemOrange
         bar.position=CGPoint(x:figure.position.x-20,y:figure.frame.maxY+3)
-        if value<=0{if enemyPresentation[id]?.kind=="prop" {figure.removeAction(forKey:"lamp_idle");figure.removeAction(forKey:"lamp_heal");figure.texture=texture("PROP_LAMP__3")};if let motion=enemyMotions[id]{_ = motion.play(.resolve)};figure.alpha=0.5}
+        if value<=0{if enemyPresentation[id]?.kind=="prop" {figure.removeAction(forKey:"lamp_idle");figure.removeAction(forKey:"lamp_heal");figure.texture=texture("PROP_LAMP__3")};if let motion=enemyMotions[id]{enemyExecuteCoalescerR154.clear(actorID: id);motion.clearVisualHitDeferralR214(reason: "lethal_resolve", triggeringEventSequence: r145EventSequence);let accepted=motion.play(.resolve);recordEnemyEventMotionRequestR145(id, state: "resolve", eventSequence: r145EventSequence, requestKind: "present_lethal_hp", accepted: accepted)};figure.alpha=0.5}
     }
     private func pose(_ id:String,_ state:String){
-        if frameStallTelemetry.enabled {
+        if frameStallTelemetry.enabled && !suppressSharedDiagnosticsR275 {
             currentArtTelemetryContext = FrameStallTelemetry.Context(phase: telemetryPhase(place), actorID: id, state: state, source: "scene.pose_request")
             frameStallTelemetry.setContext(currentArtTelemetryContext)
         }
-        if let enemy=enemyMotions[id],let mode=EnemyMotionState(rawValue:state){_ = enemy.play(mode,restart:true);return}
+        if let enemy=enemyMotions[id],let mode=EnemyMotionState(rawValue:state){enemyExecuteCoalescerR154.clear(actorID: id);_ = enemy.play(mode,restart:true);return}
         guard let figure=figures[id] else{return};poses[id]=(state,clock)
         bindEquipmentFrame(id,state:state,on:figure)
         if let height=baselineHeights[id]{figure.size.height=height}
@@ -1411,6 +1802,13 @@ import UIKit
         figure.removeAction(forKey:"party_rest_clip")
         if id=="ERNA" {layeredHand=nil}
         artAudit[id+":authored_"+state]=false
+        if id == "LUNA", LunaMantleBooklessR127.isEmptyBookSlot(cosmetics["APPRENTICE_EQUIPPED_WEAPON_ID"]),
+           LunaMantleBooklessR127.isEnabled(appearanceValue: cosmetics[LunaMantleOverlayR097.appearanceKey], developmentEnabled: wardrobeCandidateDevelopmentEnabled) {
+            _ = LunaBookPresentationCleanupR004.clearOwnedPresentation(on: figure)
+            _ = LunaMantleOverlayR097.clear(on: figure)
+            _ = LunaMantleBooklessR127.clear(on: figure)
+            lunaBookHand = nil
+        }
         if id=="LUNA",hasLunaBook,playLunaBook(state,on:figure){artAudit[id+":authored_"+state]=true;return}
         if id=="ERNA",hasSeparateWitchWeapon,playLayered(state,on:figure){artAudit[id+":authored_"+state]=true;return}
         let candidateEnabled=id != "ERNA" || !hasSeparateWitchWeapon
@@ -1426,13 +1824,107 @@ import UIKit
             for (gear,loaded) in EquipmentDetailRenderer.update(actor:actor,state:state,on:node,equipment:self.cosmetics,hand:hand) {
                 self.artAudit["detail_"+gear+":"+state]=loaded
             }
+            if actor == "LUNA" {
+                let requested = self.cosmetics[LunaMantleOverlayR097.appearanceKey]
+                if WardrobeCandidateCatalogR128.enabled(arguments: ProcessInfo.processInfo.arguments, developmentEnabled: self.wardrobeCandidateDevelopmentEnabled) {
+                    let selected = self.cosmetics[WardrobeCandidateResolverR128.lunaSceneKey]
+                    let route = WardrobeCandidateResolverR128.lunaRoute(
+                        enabled: selected == WardrobeCandidateResolverR128.lunaID, selectedID: selected,
+                        owned: selected != nil, actorID: "C_APPRENTICE",
+                        catalogAllowsActor: selected == WardrobeCandidateResolverR128.lunaID,
+                        equippedBookGearID: self.cosmetics["APPRENTICE_EQUIPPED_WEAPON_ID"],
+                        bodyAssetID: sample.assetID, localFrameIndex: sample.frameIndex,
+                        bookNodePresent: node.childNode(withName: "luna_book") != nil,
+                        palmNodePresent: node.childNode(withName: "luna_book_palm") != nil)
+                    switch route {
+                    case .emptyBookSlot:
+                        _ = LunaMantleOverlayR097.clear(on: node)
+                        _ = LunaMantleBooklessR127.apply(appearanceValue: requested, bodyAssetID: sample.assetID,
+                            frameIndex: sample.frameIndex, equippedBookGearID: self.cosmetics["APPRENTICE_EQUIPPED_WEAPON_ID"],
+                            on: node, arguments: ProcessInfo.processInfo.arguments, developmentEnabled: self.wardrobeCandidateDevelopmentEnabled,
+                            resolveTexture: { [weak self] assetID in self?.texture(assetID) })
+                    case .supportedBookRoute:
+                        _ = LunaMantleBooklessR127.clear(on: node)
+                        _ = LunaMantleOverlayR097.apply(appearanceValue: requested, bodyAssetID: sample.assetID,
+                            poseState: Self.lunaPoseState(for: sample.assetID), on: node, developmentEnabled: self.wardrobeCandidateDevelopmentEnabled,
+                            resolveTexture: { [weak self] assetID in self?.texture(assetID) })
+                    case .embeddedReadingRoute:
+                        _ = LunaMantleBooklessR127.clear(on: node)
+                        _ = LunaMantleOverlayR097.apply(appearanceValue: requested, bodyAssetID: sample.assetID,
+                            poseState: "reading", on: node, developmentEnabled: self.wardrobeCandidateDevelopmentEnabled,
+                            resolveTexture: { [weak self] assetID in self?.texture(assetID) })
+                    default:
+                        _ = LunaMantleBooklessR127.clear(on: node)
+                        _ = LunaMantleOverlayR097.clear(on: node)
+                    }
+                } else if LunaMantleBooklessR127.isEmptyBookSlot(self.cosmetics["APPRENTICE_EQUIPPED_WEAPON_ID"]),
+                          LunaMantleBooklessR127.isEnabled(appearanceValue: requested, developmentEnabled: self.wardrobeCandidateDevelopmentEnabled) {
+                    _ = LunaMantleOverlayR097.clear(on: node)
+                    _ = LunaMantleBooklessR127.apply(appearanceValue: requested, bodyAssetID: sample.assetID,
+                        frameIndex: sample.frameIndex, equippedBookGearID: self.cosmetics["APPRENTICE_EQUIPPED_WEAPON_ID"],
+                        on: node, developmentEnabled: self.wardrobeCandidateDevelopmentEnabled, resolveTexture: { [weak self] assetID in self?.texture(assetID) })
+                } else {
+                    _ = LunaMantleBooklessR127.clear(on: node)
+                    _ = LunaMantleOverlayR097.apply(appearanceValue: requested, bodyAssetID: sample.assetID,
+                        poseState: Self.lunaPoseState(for: sample.assetID), on: node, developmentEnabled: self.wardrobeCandidateDevelopmentEnabled,
+                        resolveTexture: { [weak self] assetID in self?.texture(assetID) })
+                }
+                self.syncReadingHandsMantle(from:node)
+            }
+            if actor == "NOIR" {
+                if WardrobeCandidateCatalogR128.enabled(arguments: ProcessInfo.processInfo.arguments, developmentEnabled: self.wardrobeCandidateDevelopmentEnabled) {
+                    if self.cosmetics[WardrobeCandidateResolverR128.noirSceneKey] == WardrobeCandidateResolverR128.noirID,
+                       (self.wardrobeCandidateDevelopmentEnabled || NoirNeckwearCandidateRegistrationR003.requested) {
+                        _ = NoirNeckwearCandidateRegistrationR003.apply(texture: self.texture(NoirNeckwearCandidateRegistrationR003.assetID),
+                            body: node, displayedBodyFramePath: sample.assetID, developmentEnabled: self.wardrobeCandidateDevelopmentEnabled)
+                    } else { NoirNeckwearCandidateRegistrationR003.clear(on: node) }
+                } else if NoirNeckwearCandidateRegistrationR003.requested {
+                    _ = NoirNeckwearCandidateRegistrationR003.apply(texture: self.texture(NoirNeckwearCandidateRegistrationR003.assetID),
+                        body: node, displayedBodyFramePath: sample.assetID, developmentEnabled: self.wardrobeCandidateDevelopmentEnabled)
+                } else { NoirNeckwearCandidateRegistrationR003.clear(on: node) }
+            }
+            if actor == "AIRA" {
+                let arguments = ProcessInfo.processInfo.arguments
+                if WardrobeCandidateCatalogR130.enabled(arguments: arguments, developmentEnabled: self.wardrobeCandidateDevelopmentEnabled),
+                   self.cosmetics[WardrobeCandidateCatalogR130.sceneKey] == WardrobeCandidateCatalogR130.appearanceID {
+                    _ = AIRAHarvestApronOverlayR130.apply(frameAssetID: sample.assetID, on: node)
+                } else {
+                    AIRAHarvestApronOverlayR130.clearOwnedNodes(on: node)
+                }
+            }
             if let request=self.frameAuditRequest,request.actor==actor,request.state==state,request.index==sample.frameIndex {
                 node.warpGeometry=nil;node.isPaused=true;self.frameAuditHeld=true
             }
         }
     }
+    private static func lunaPoseState(for bodyAssetID: String) -> String {
+        if WardrobeCandidateResolverR128.lunaReadingIndex(bodyAssetID) != nil { return "reading" }
+        for state in ["walk", "idle", "anticipate", "execute", "hit", "recover", "resolve"] {
+            if bodyAssetID.hasPrefix("LUNA_BOOK_MOTION_\(state.uppercased())_F") ||
+               bodyAssetID == "LUNA_BOOKLESS_\(state.uppercased())_CANDIDATE_R001" ||
+               bodyAssetID == "LUNA__\(state)__256__r001" { return state }
+        }
+        if bodyAssetID == "LUNA_BOOK_MOTION_EXEC_RECOVER_MID_R001_CANDIDATE" ||
+           bodyAssetID == "LUNA_EXEC_RECOVER_BRIDGE_R088_SOURCE" { return "execute" }
+        if bodyAssetID.hasPrefix("LUNA__walk_"), let index = Int(bodyAssetID.dropFirst("LUNA__walk_".count)), (0...8).contains(index) { return "walk" }
+        if bodyAssetID.hasPrefix("LUNA__cast_"), let index = Int(bodyAssetID.dropFirst("LUNA__cast_".count)), (0...7).contains(index) {
+            return index < 3 ? "anticipate" : "execute"
+        }
+        if bodyAssetID.hasPrefix("LUNA__attack_"), let index = Int(bodyAssetID.dropFirst("LUNA__attack_".count)), (0...8).contains(index) {
+            return index < 3 ? "anticipate" : (index < 6 ? "execute" : "recover")
+        }
+        if bodyAssetID.hasPrefix("LUNA__rest_"), let index = Int(bodyAssetID.dropFirst("LUNA__rest_".count)), (0...8).contains(index) { return "idle" }
+        return "unknown"
+    }
     private func playWalk(_ id:String,on figure:SKSpriteNode)->Bool {
         bindEquipmentFrame(id,state:"walk",on:figure)
+        if id == "LUNA", LunaMantleBooklessR127.isEmptyBookSlot(cosmetics["APPRENTICE_EQUIPPED_WEAPON_ID"]),
+           LunaMantleBooklessR127.isEnabled(appearanceValue: cosmetics[LunaMantleOverlayR097.appearanceKey], developmentEnabled: wardrobeCandidateDevelopmentEnabled) {
+            _ = LunaBookPresentationCleanupR004.clearOwnedPresentation(on: figure)
+            _ = LunaMantleOverlayR097.clear(on: figure)
+            _ = LunaMantleBooklessR127.clear(on: figure)
+            lunaBookHand = nil
+        }
         if let height=baselineHeights[id]{figure.size.height=height}
         figure.removeAction(forKey:"party_rest_clip")
         if id=="LUNA",hasLunaBook {
@@ -1507,15 +1999,22 @@ import UIKit
         r047VideoSyncMarkerSequence = 0
     }
 
-    func present(_ event:CombatEvent){
+    func present(_ event:CombatEvent, r214ReplayID: String? = nil,
+                 r214ReplayEventSequence: Int? = nil){
         let source=actorKey(GameModel.spriteIDs[event.sourceID] ?? event.sourceID)
         let target=actorKey(GameModel.spriteIDs[event.targetID] ?? event.targetID)
+        let classification=R6CombatPresentationSemantics.classify(event.kind)
+        let partyDamageTarget = classification == .damage && Self.names.contains(target) ? target : nil
+        let r145EventSequence = enemyEventRenderTraceR145?.recordPresentedEvent(
+            tick: event.tick, kind: event.kind, sourceID: event.sourceID, targetID: event.targetID,
+            amount: event.amount, rootActionID: event.rootActionID, timestampMs: event.timestampMs,
+            displaySourceID: source, displayTargetID: target, partyTargetActorID: partyDamageTarget,
+            sceneFrame: frames, sceneTime: clock, generation: sceneGeneration)
         if syntheticDash2TailTraceR047?.recordPresented(event, sceneFrame: frames, sceneTime: clock, spriteKitTime: last) == true {
             installR047VideoSyncMarker()
         }
         equipmentMotionTraceQA?.recordPartyCombatEvent(kind:event.kind,actorID:source,rootActionID:event.rootActionID,sceneFrame:frames)
         ernaStaffMotionTraceQA_R040?.recordPartyCombatEvent(kind:event.kind,actorID:source,rootActionID:event.rootActionID,sceneFrame:frames)
-        let classification=R6CombatPresentationSemantics.classify(event.kind)
         if event.kind=="cast_start" || event.kind=="enemy_cast_start" || event.kind.contains("telegraph") || event.kind == "enemy_magnet_mark" {
             if event.kind=="cast_start",Self.names.contains(source) {
                 if let root=event.rootActionID {
@@ -1533,7 +2032,9 @@ import UIKit
                 // action so cancellation or impact cannot leave stale text.
                 statusLabel("磁印",at:target,name:event.rootActionID.map{MagnetMarkIndicator.noticeName(rootID:$0)})
             }
-            pose(source,"anticipate");return
+            pose(source,"anticipate")
+            recordEnemyEventMotionRequestR145(source, state: "anticipate", eventSequence: r145EventSequence, requestKind: "present_telegraph")
+            return
         }
         if event.kind=="cast_interrupt",Self.names.contains(target),
            partyCastHoldLifecycle.interrupt(actorID:target,terminalEventRootActionID:event.rootActionID) {pose(target,"recover")}
@@ -1562,6 +2063,7 @@ import UIKit
         if event.kind == "enemy_magnet_target_lost" {
             effectCues.cancel(rootActionID:event.rootActionID,sourceID:event.sourceID,reason:event.kind)
             pose(source,"recover")
+            recordEnemyEventMotionRequestR145(source, state: "recover", eventSequence: r145EventSequence, requestKind: "present_target_lost")
         }
         if ["cast_interrupt","enemy_magnet_target_lost"].contains(event.kind), case .field(let region)=place {
             _ = reconcileR04EnvironmentPolicy(region:region)
@@ -1570,14 +2072,19 @@ import UIKit
         let heal=classification == .healing
         if event.kind=="lamp_support",let prop=figures[source],let flare=texture("PROP_LAMP__2"),let rest=texture("PROP_LAMP__0"){prop.run(.sequence([.setTexture(flare),.wait(forDuration:0.18),.setTexture(rest)]),withKey:"lamp_heal")}
         if classification == .damage || heal {
-            if let before=hp[target]{setHP(target,min(maxHP[target] ?? Int.max,before+(heal ? event.amount:-event.amount)))}
-            perform(source:source,target:target,kind:heal ? "heal":event.kind,amount:event.amount)
+            if let before=hp[target]{setHP(target,min(maxHP[target] ?? Int.max,before+(heal ? event.amount:-event.amount)), r145EventSequence: r145EventSequence)}
+            perform(source:source,target:target,kind:heal ? "heal":event.kind,amount:event.amount,
+                    r145EventSequence: r145EventSequence, rootActionID: event.rootActionID,
+                    r214ReplayID: r214ReplayID, r214ReplayEventSequence: r214ReplayEventSequence)
             if heal {
                 effectCues.record("healing_feedback:"+event.kind,root:event.rootActionID ?? "",source:event.sourceID,targets:[target])
             }
         } else if classification == .barrier {
             statusLabel(event.kind=="barrier_absorb" ? "防御":"結界",at:target)
-            if event.kind != "barrier_absorb" {pose(source,"execute")}
+            if event.kind != "barrier_absorb" {
+                pose(source,"execute")
+                recordEnemyEventMotionRequestR145(source, state: "execute", eventSequence: r145EventSequence, requestKind: "present_barrier")
+            }
         } else {
             let labels=["mark":"標的","cover_stance":"守護","guard":"防御","enemy_guard_stance":"守護態勢","enemy_guard_absorb":"防御","poison_stack":"毒 \(event.amount)","dot_applied":"毒付与","poison_burst":"毒の崩壊","enemy_regen":"再生 \(event.amount)","support_duration_reduced":"結界短縮","enemy_weaken":"弱体","party_weaken":"弱体","party_slow":"減速","cast_interrupt":"中断","party_cast_slow":"詠唱遅延","party_drowse":"眠気","enemy_buff":"高揚","enemy_phase_shift":"形態変化","phase_heat":"蓄熱 \(event.amount)","echo_grant":"共鳴","cover_redirect":"かばう"]
             if let label=labels[event.kind]{statusLabel(label,at:figures[target] != nil ? target:source)}
@@ -1875,11 +2382,99 @@ import UIKit
         effectLast=["id":id,"source":"ERNA","target":"LUNA","event":"isolated_effect_audit","phase":"isolated_full"] .merging(placement){_,new in new}
     }
     func actorKey(_ id:String)->String { let u=id.uppercased();if Self.names.contains(u){return u};if u.hasPrefix("ACT_"){return u};return "ACT_"+u }
-    func perform(source:String,target:String,kind:String,amount:Int){
+    private func recordVisualHitLifecycleR214(_ row: [String: Any]) {
+        if let replayID = row["replayID"] as? String {
+            onR214ReplayLifecycleR239?(replayID, row)
+        }
+        guard enemyHitInstrumentationEnabledR214 else { return }
+        guard enemyHitLifecycleRowsR214.count < 32 else {
+            enemyHitLifecycleDroppedRowsR214 += 1
+            return
+        }
+        enemyHitLifecycleRowsR214.append(row)
+    }
+
+    private func recordExecuteCoalescingR205(actorID: String, rootActionID: String?,
+                                               outcome: String, accepted: Bool?) {
+        guard enemyHitInstrumentationEnabledR214 else { return }
+        executeCoalescingCountersR205["rawRequests", default: 0] += 1
+        if outcome == "coalesced_same_root_execute" {
+            executeCoalescingCountersR205["coalesced", default: 0] += 1
+        } else {
+            executeCoalescingCountersR205["controllerCalls", default: 0] += 1
+            if accepted == true { executeCoalescingCountersR205["accepted", default: 0] += 1 }
+            else { executeCoalescingCountersR205["rejected", default: 0] += 1 }
+        }
+        guard executeCoalescingExamplesR205.count < 16 else { return }
+        executeCoalescingExamplesR205.append([
+            "actorID": actorID, "rootActionID": rootActionID ?? "",
+            "sceneFrame": frames, "sceneGeneration": sceneGeneration, "outcome": outcome
+        ])
+    }
+
+    func perform(source:String,target:String,kind:String,amount:Int, r145EventSequence: Int? = nil,
+                 rootActionID: String? = nil, r214ReplayID: String? = nil,
+                 r214ReplayEventSequence: Int? = nil){
         let s=actorKey(source),t=actorKey(target)
         if kind != "heal",amount>0 {WitchAudioCoordinator.shared.play(Self.names.contains(t) ? .hit:.attack)}
-        if let motion=enemyMotions[s]{_ = motion.play(.execute,restart:true)}
-        if kind != "heal",let motion=enemyMotions[t],(hp[t] ?? 1)>0{_ = motion.play(.hit,restart:true)}
+        if let motion=enemyMotions[s]{
+            let coalescingEnabled = enemyExecuteCoalescingEnabledR154
+            let coalesced = coalescingEnabled && enemyExecuteCoalescerR154.shouldCoalesce(
+                actorID: s, rootActionID: rootActionID, sceneGeneration: sceneGeneration, sceneFrame: frames)
+            if coalesced {
+                recordExecuteCoalescingR205(actorID: s, rootActionID: rootActionID,
+                                            outcome: "coalesced_same_root_execute", accepted: nil)
+                // Suppress only this redundant clip restart. The enclosing
+                // CombatEvent still performs every damage/presentation effect.
+                enemyEventRenderTraceR145?.recordTransition(eventSequence: r145EventSequence, actorID: s,
+                    requestedState: "execute", accepted: nil,
+                    observedState: motion.presentationSnapshot["state"] as? String ?? "none",
+                    requestKind: "coalesced_same_root_execute",
+                    sceneFrame: frames, sceneTime: clock, generation: sceneGeneration)
+            } else {
+                let accepted = motion.play(.execute,restart:true)
+                if accepted && (enemyHitInstrumentationEnabledR214 || enemyHitDeferralEnabledR214) {
+                    motion.noteExecuteStartedR214(.init(replayID: r214ReplayID,
+                        eventSequence: r214ReplayEventSequence ?? r145EventSequence, rootActionID: rootActionID,
+                        sceneFrame: frames, sceneTime: clock, sceneGeneration: sceneGeneration))
+                }
+                if coalescingEnabled {
+                    recordExecuteCoalescingR205(actorID: s, rootActionID: rootActionID,
+                                                outcome: accepted ? "controller_accepted" : "controller_rejected",
+                                                accepted: accepted)
+                    if accepted {
+                        enemyExecuteCoalescerR154.recordAccepted(actorID: s, rootActionID: rootActionID,
+                                                                  sceneGeneration: sceneGeneration, sceneFrame: frames)
+                    }
+                }
+                enemyEventRenderTraceR145?.recordTransition(eventSequence: r145EventSequence, actorID: s,
+                    requestedState: "execute", accepted: accepted,
+                    observedState: motion.presentationSnapshot["state"] as? String ?? "none",
+                    requestKind: "present_damage_execute",
+                    sceneFrame: frames, sceneTime: clock, generation: sceneGeneration)
+            }
+        }
+        if kind != "heal",let motion=enemyMotions[t],(hp[t] ?? 1)>0{
+            enemyExecuteCoalescerR154.clear(actorID: t)
+            let context = EnemyMotionController.R214EventContext(replayID: r214ReplayID,
+                eventSequence: r214ReplayEventSequence ?? r145EventSequence, rootActionID: rootActionID, sceneFrame: frames, sceneTime: clock, sceneGeneration: sceneGeneration)
+            if enemyHitDeferralEnabledR214 && motion.deferVisualHitDuringExecuteR214(context) {
+                enemyEventRenderTraceR145?.recordTransition(eventSequence: r145EventSequence, actorID: t,
+                    requestedState: "hit", accepted: nil,
+                    observedState: motion.presentationSnapshot["state"] as? String ?? "none",
+                    requestKind: "present_damage_target_deferred_r214",
+                    sceneFrame: frames, sceneTime: clock, generation: sceneGeneration)
+            } else {
+                motion.recordImmediateHitSupersedingExecuteR214(context)
+                let accepted = motion.play(.hit,restart:true)
+                motion.noteImmediateHitTransitionR214(context, accepted: accepted)
+                enemyEventRenderTraceR145?.recordTransition(eventSequence: r145EventSequence, actorID: t,
+                    requestedState: "hit", accepted: accepted,
+                    observedState: motion.presentationSnapshot["state"] as? String ?? "none",
+                    requestKind: "present_damage_target",
+                    sceneFrame: frames, sceneTime: clock, generation: sceneGeneration)
+            }
+        }
         if let actor=figures[s],Self.names.contains(s) {
             pose(s,"execute")
             let home=baseline[s] ?? actor.position
@@ -1901,11 +2496,14 @@ import UIKit
         gatherTraceRawDelta=rawDelta
         gatherFrameTrace?.sample(phase:"update",sceneTime:currentTime,rawDelta:rawDelta,scene:self,node:gatherNode)
         let delta=min(0.1,rawDelta)
-        if frameStallTelemetry.enabled && rawDelta>=FrameStallTelemetry.thresholdSeconds {
+        if frameStallTelemetry.enabled && !suppressSharedDiagnosticsR275 && rawDelta>=FrameStallTelemetry.thresholdSeconds {
             frameStallTelemetry.recordStall(rawDelta:rawDelta,clampedDelta:delta,sceneTimeBefore:previousTime,sceneTimeAfter:currentTime,previous:previousFrameTelemetryContext,current:currentArtTelemetryContext)
         }
         last=currentTime;previousFrameTelemetryContext=currentArtTelemetryContext;clock+=delta;frames+=1;maxFrameDelta=max(maxFrameDelta,rawDelta)
-        RuntimeMetrics.shared.frame(delta:rawDelta,time:currentTime,nodeCount:children.count,context:String(describing:place))
+        if enemyHitInstrumentationEnabledR214 {
+            for motion in enemyMotions.values { motion.updateR214SceneClock(frame: frames, time: clock, generation: sceneGeneration) }
+        }
+        if !suppressSharedDiagnosticsR275 { RuntimeMetrics.shared.frame(delta:rawDelta,time:currentTime,nodeCount:children.count,context:String(describing:place)) }
         if case .field(let region)=place {updateEnvironment(region:region)}
         for (id,n) in figures {
             if let track=hpTracks[id],let bar=hpBars[id] {track.position=CGPoint(x:n.position.x,y:n.frame.maxY+5);bar.position=CGPoint(x:n.position.x-20,y:n.frame.maxY+3)}

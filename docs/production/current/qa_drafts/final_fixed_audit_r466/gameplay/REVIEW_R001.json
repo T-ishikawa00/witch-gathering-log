@@ -1,0 +1,33 @@
+{
+  "audit": "R466 fixed-SHA gameplay and save review",
+  "targetCommit": "28d3d0b92c840f215a945f47e574fcb30ef2253b",
+  "baseCommit": "45dc02f73f0bcb7c37ad1f01969c3d4b43ceef2e",
+  "result": "NO_REPRODUCIBLE_P0_P1_FOUND",
+  "finding": {
+    "severity": "P2",
+    "id": "R466-P2-PROTECTED-FILE-COUNT",
+    "detail": "R465 reports 15300 prior protected files; disjoint input maps total 11550 + (1925 * 2) = 15400. Driver records verification; no loss evidence found.",
+    "action": "Reconcile count or define counting convention before citing total."
+  },
+  "scope": {
+    "readOnly": true,
+    "buildTestSimulatorOrSaveOperations": false,
+    "R461R463NormalAppWiring": false,
+    "R465GameplaySaveMutation": false,
+    "R465ReleaseBuildIncludesSimulatorAndIPhoneOS": true,
+    "physicalDeviceOrAppStoreValidation": false
+  },
+  "evidence": {
+    "r465BuildReceiptSha256": "6c1bdb0f5d5d9cd2c12f09d6130a13979442240f4fe59b956fb3593c00992247",
+    "r465RuntimeReceiptSha256": "c5e2fe7c64d04b652533de32235e8899471c8670ad4b92334ebf5069c49b685f",
+    "r461ScopedResultSha256": "6e363cc3ec43d5af4741c37293a72b51ebc5a7c0c86ac43b7c115e5361998c08",
+    "r463ScopedResultSha256": "6539fad2b2fa806a39d67d163cf2c9046150765c95bdc032b572d1511899a11f",
+    "r449ChallengeEvidence": "15 fresh challenge-battle wins during run; previously-cleared flags 7 to 15 (+8 first-time clear flags, with 7 previously-cleared challenges replayed); 19 UUIDs (18 natural, 1 starter); five historical mock draws retained",
+    "r452ProgressionEvidence": "2 virtual-30-day seeds; each 30 campaign wins, 15 challenge wins, 5 research, 1 craft, 11 evolutions; 0 summons and 0 synthetic grants"
+  },
+  "limitations": [
+    "No fresh-profile native run is established by the cited challenge capture.",
+    "Scripted virtual-time economy evidence is not player-paced timing or Human balance adoption.",
+    "No production purchase authorization, physical-device validation, or App Store readiness is established."
+  ]
+}

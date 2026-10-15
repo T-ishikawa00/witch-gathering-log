@@ -1,0 +1,88 @@
+{
+  "schema": "native-completion-r462-runtime-candidate-r001-v1",
+  "status": "PREPARED_UNSEALED_NOT_RUN",
+  "candidateFiles": [
+    {
+      "path": "docs/production/current/qa_drafts/native_completion_r462/runtime_tools_r001/run_r462.py",
+      "sizeBytes": 28765,
+      "sha256": "f94750898647a093b3e8e1d978427486a459e9db7897dc9b20c4ed35f0d46044"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/native_completion_r462/runtime_tools_r001/test_runtime_clock_r462.py",
+      "sizeBytes": 843,
+      "sha256": "09625ab71b2948103cc0c85e8f6aef371448a148f69b9aa6d2e539fc1c84ac81"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/native_completion_r462/runtime_tools_r001/RUNTIME_SEAL_R001.template.json",
+      "sizeBytes": 5616,
+      "sha256": "da92c2b90d96a5ebef2740fd94d3edfb612175c512a37803c828bd918e163aa5"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/native_completion_r462/runtime_tools_r001/README_R001.md",
+      "sizeBytes": 2090,
+      "sha256": "770c654721271ac39252cbbeced41f9ec31c3df0c1eebbe3e159eb33f8418c34"
+    }
+  ],
+  "upstreamPins": {
+    "r456ClosedRuntimeRun": {
+      "path": "docs/production/current/qa_drafts/native_completion_r456/runtime_tools_r002/runs/1605ec80-407f-4736-a077-1be866dac17a/RUN.json",
+      "sha256": "ea11dedb64844a89002fe3ea1412f921058a6a64ee704502f39f69d6f6f48252"
+    },
+    "r456BuildResult": {
+      "path": "docs/production/current/qa_drafts/native_completion_r456/build_tools_r003/BUILD_RESULT_R003.json",
+      "sha256": "1c3d3074e9d867e4c1cf478da8cc91e9e7ca13022cfda25a9aa67e95222efb71"
+    },
+    "r454InstalledOrigin": {
+      "path": "docs/production/current/qa_drafts/storekit_event_export_r454/runtime_r001/INSTALLED_ORIGIN_R004.json",
+      "sha256": "cdc41ac4e074b0cc209bbf49dd0e1f4e24734b46ce1986005bb0f8fe3de817de"
+    },
+    "r462BuildReceipt": {
+      "path": "docs/production/current/qa_drafts/native_completion_r462/build_tools_r002/BUILD_RESULT_R001.json",
+      "status": "PENDING_ROOT_BUILD"
+    }
+  },
+  "scope": {
+    "bundleID": "local.witch.autonomous.r1.completion.r462",
+    "device": "9A067715-7CF3-40D3-9064-38423223959B",
+    "seedRevision": 138,
+    "seedFiles": [
+      "save.json",
+      "save.json.previous",
+      "last_standard_play_identity_r169.json"
+    ],
+    "olderProtectedTrees": [
+      "R445 app",
+      "R445 data",
+      "R454 app",
+      "R454 data",
+      "R456 app",
+      "R456 data"
+    ],
+    "captureLabels": [
+      "launch",
+      "gear",
+      "before_cold",
+      "cold"
+    ],
+    "screenshotsMax": 3,
+    "battle": false,
+    "uiAutomation": false,
+    "automaticLaunch": false
+  },
+  "bounds": {
+    "wallSeconds": 600,
+    "allocatedAdditionalBytes": 1040000000,
+    "screenshotBytes": 40000000,
+    "startFreeBytes": 15000000000,
+    "freeFloorBytes": 10000000000
+  },
+  "execution": {
+    "install": false,
+    "launch": false,
+    "screenshot": false,
+    "tests": false,
+    "build": false,
+    "simulator": false
+  },
+  "knownLimit": "Root must populate exact current R456 seed file hashes/sizes and closed R462 build receipt before runtime seal; no seed hash is guessed."
+}

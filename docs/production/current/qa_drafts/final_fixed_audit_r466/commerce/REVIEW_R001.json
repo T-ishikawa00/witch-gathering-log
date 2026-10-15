@@ -1,0 +1,97 @@
+{
+  "actionsPerformed": {
+    "builds": false,
+    "network": false,
+    "sourceEdits": false,
+    "tests": false
+  },
+  "auditedCommit": "28d3d0b92c840f215a945f47e574fcb30ef2253b",
+  "baseCommit": "45dc02f73f0bcb7c37ad1f01969c3d4b43ceef2e",
+  "boundary": "No app production transport, live principal provider, Apple production verifier, production SKU policy, deployment, real credentials, or external validation. R014 correctly keeps these incomplete; clarify SDK-integrated wording means Core/test-target only.",
+  "evidence": [
+    {
+      "path": "tools/witch_purchase_authority/local_service_r461.py",
+      "sha256": "564b0b2d4fb4c079345c36ced790507c1d722e1b1436dec7ba9e6ba967fb84fe"
+    },
+    {
+      "path": "native/WitchGameCore/Sources/WitchGameCore/AuthorityClientContractR461.swift",
+      "sha256": "03bad37f64f990d7b344a0c6a8b60a7cfefac19f0eb864abe6aa24fadc605f9d"
+    },
+    {
+      "path": "native/WitchGameCore/Sources/WitchGameCore/FileBackedAuthorityStoreR463.swift",
+      "sha256": "611c33072323ea6ec33c38813826d32d1b220c932af8430e8f3ee36c381d7f24"
+    },
+    {
+      "path": "native/WitchGameCore/Tests/WitchGameCoreTests/AuthorityClientContractR461Tests.swift",
+      "sha256": "a0beb5aaa4bb2eceb7268f7ffa20f45a4f3deb828a325e446c524118bd96dd47"
+    },
+    {
+      "path": "native/WitchGameCore/Tests/WitchGameCoreTests/FileBackedAuthorityStoreR463Tests.swift",
+      "sha256": "e1e2038a8b8468bc2e61e76b95ec2800dfcb090c3bd597d873a03edd1dfb8af6"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/authority_contract_r461/root_test_tools_r002/PYTHON_RESULT.json",
+      "sha256": "e3849588a3dfaee6105ebbed7b7abb9d804e96650630bfc8c45f2c4d65b2befe"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/authority_contract_r461/root_test_tools_r003/RESULT.json",
+      "sha256": "aa0b519eda409e9b4595483c8573c7d8c4b1e39f2b2ed6c35a708585db580448"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/authority_persistence_r463/root_execution_r002/RESULT.json",
+      "sha256": "c3b898ebe3fe121643159c0c4c05f144290748d7eb345aa42e06c717ce919f2e"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/authority_persistence_r463/root_execution_r002/PROCESS_RESULT.json",
+      "sha256": "b8f4db463aeada0831ad20e1b1f362628e932ef3c89ff8db2141ea20f0f466c8"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/final_acceptance_r360/COMPLETION_REGISTER_R014.json",
+      "sha256": "b6cae7083e9c266b5f9d20c657c4a2004b0ec0b66c34617dd6b4e16856fb2ee8"
+    }
+  ],
+  "finding": "No demonstrated P0/P1 local authority defect. R461/R463 prove scoped local rehearsal/client persistence only; normal production purchase path remains absent by design.",
+  "r461Python": {
+    "sha256": "e3849588a3dfaee6105ebbed7b7abb9d804e96650630bfc8c45f2c4d65b2befe",
+    "status": "PASS",
+    "testMethodExecutions": 10
+  },
+  "r461Swift": {
+    "failed": 0,
+    "methods": 37,
+    "passed": 37,
+    "sha256": "aa0b519eda409e9b4595483c8573c7d8c4b1e39f2b2ed6c35a708585db580448",
+    "status": "PASS"
+  },
+  "r463CrossProcess": {
+    "checks": {
+      "exactlyOneProcessCASWinner": true,
+      "firstSave": true,
+      "newProcessColdRead": true,
+      "refundSaved": true,
+      "staleSuccessRejectedAfterProcessRestart": true,
+      "winningRevisionDurable": true,
+      "withinTimeAndSpace": true
+    },
+    "processes": 7,
+    "sha256": "b8f4db463aeada0831ad20e1b1f362628e932ef3c89ff8db2141ea20f0f466c8",
+    "status": "PASS"
+  },
+  "r463Swift": {
+    "addedStoreMethods": 8,
+    "failed": 0,
+    "methods": 45,
+    "passed": 45,
+    "sha256": "c3b898ebe3fe121643159c0c4c05f144290748d7eb345aa42e06c717ce919f2e",
+    "status": "PASS"
+  },
+  "registerR014": {
+    "commerceSeverity": "releasequality",
+    "formalHumanAdoption": false,
+    "localQuality": "ローカル検証の範囲では合格。本番課金、実Apple Sandbox、認証済みネットワーク、通常アプリとの正式購入連携は未完成。",
+    "remainingLocal": "R461/R463両SDK統合済み。既存のローカル契約/再送/保存試験は合格。本番認証サービス、アカウント/商品契約、Apple環境が未構成。本番ネットワーク/通常アプリ課金配線/実運用の保持方針は未実装であり、完成としない。"
+  },
+  "reviewSHA256": "98c3a8dd050d34e40eb9aa03abe3f2e74bb6e3451818939dc7364513766dd6cc",
+  "schema": "fixed-sha-commerce-audit-r466-v1",
+  "status": "REVIEW_COMPLETE_READ_ONLY"
+}

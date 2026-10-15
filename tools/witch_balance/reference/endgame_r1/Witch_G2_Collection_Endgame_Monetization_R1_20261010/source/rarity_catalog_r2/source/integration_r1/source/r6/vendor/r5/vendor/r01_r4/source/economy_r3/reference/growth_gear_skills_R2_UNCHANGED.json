@@ -1,0 +1,3286 @@
+{
+  "meta": {
+    "schema_version": "g2c-growth-0.2.0",
+    "content_version": "growth-gear-skills-r2-20261009",
+    "status": "DESIGN_PROPOSAL_WITH_EXECUTABLE_FORMULA_CHECKS",
+    "not_authorization": "既存G1/G2実装とアセット量産を変更する指示ではない。",
+    "source_world_sha256": "8452568dc72091de455521b5fe9e9fcca96237d4ba791bdfca712c9beb82bec5",
+    "source_authority": "既存ID・名称・入手条件・87材料接続は保持。数値は別overlay。新たな仕様/猫4型は承認待ち。"
+  },
+  "confirmed_constraints": {
+    "party_members": 4,
+    "auto_battle": true,
+    "manual_skill_cast": false,
+    "tactics_presets": false,
+    "ai_rule_editor": false,
+    "external_generation_ai_at_runtime": false
+  },
+  "proposed_controls": {
+    "manual_formation": false,
+    "manual_skill_loadout": false,
+    "stat_point_allocation": false,
+    "gear_loadout_save": true,
+    "research_claim": true,
+    "awakening_claim": true
+  },
+  "actors": [
+    {
+      "actor_id": "C_WITCH",
+      "display_name": "エルナ",
+      "name_status": "WORKING_LABEL_NOT_NEW_NAME_APPROVAL",
+      "role": "魔女",
+      "join_gate": "G_START",
+      "join_method": "開始時",
+      "base": {
+        "hp": 420,
+        "power": 38,
+        "defense": 28
+      },
+      "per_level": {
+        "hp": 32,
+        "power": 4,
+        "defense": 4
+      },
+      "basic_interval_ms": 1800,
+      "base_crit_bp": 500,
+      "base_guard_bp": 0,
+      "base_crit_multiplier_bp": 15000,
+      "slot_keys": [
+        "weapon",
+        "body",
+        "hands",
+        "feet",
+        "amulet",
+        "ring"
+      ],
+      "skills_available": "ALL_FOUR_AT_JOIN",
+      "level_cap": 60
+    },
+    {
+      "actor_id": "C_APPRENTICE",
+      "display_name": "ルナ",
+      "name_status": "WORKING_LABEL_NOT_NEW_NAME_APPROVAL",
+      "role": "弟子",
+      "join_gate": "G_R01_A",
+      "join_method": "渡しを開いた後の帰宅イベントで、手伝いを申し出る。ガチャ・稀少素材不要。",
+      "base": {
+        "hp": 360,
+        "power": 30,
+        "defense": 26
+      },
+      "per_level": {
+        "hp": 28,
+        "power": 3,
+        "defense": 4
+      },
+      "basic_interval_ms": 2000,
+      "base_crit_bp": 500,
+      "base_guard_bp": 0,
+      "base_crit_multiplier_bp": 15000,
+      "slot_keys": [
+        "weapon",
+        "body",
+        "hands",
+        "feet",
+        "amulet",
+        "ring"
+      ],
+      "skills_available": "ALL_FOUR_AT_JOIN",
+      "level_cap": 60
+    },
+    {
+      "actor_id": "C_SMITH",
+      "display_name": "アイラ",
+      "name_status": "WORKING_LABEL_NOT_NEW_NAME_APPROVAL",
+      "role": "鍛冶師",
+      "join_gate": "G_R01_A",
+      "join_method": "森の深部への道で合流する固定イベント。地域主ボス前に4人が揃う。",
+      "base": {
+        "hp": 620,
+        "power": 28,
+        "defense": 52
+      },
+      "per_level": {
+        "hp": 44,
+        "power": 3,
+        "defense": 6
+      },
+      "basic_interval_ms": 2200,
+      "base_crit_bp": 500,
+      "base_guard_bp": 1000,
+      "base_crit_multiplier_bp": 15000,
+      "slot_keys": [
+        "weapon",
+        "body",
+        "hands",
+        "feet",
+        "amulet",
+        "ring"
+      ],
+      "skills_available": "ALL_FOUR_AT_JOIN",
+      "level_cap": 60
+    },
+    {
+      "actor_id": "C_FAMILIAR",
+      "display_name": "ノワール",
+      "name_status": "WORKING_LABEL_NOT_NEW_NAME_APPROVAL",
+      "role": "黒猫",
+      "join_gate": "G_START",
+      "join_method": "開始時",
+      "base": {
+        "hp": 390,
+        "power": 32,
+        "defense": 30
+      },
+      "per_level": {
+        "hp": 30,
+        "power": 3,
+        "defense": 4
+      },
+      "basic_interval_ms": 1400,
+      "base_crit_bp": 1000,
+      "base_guard_bp": 0,
+      "base_crit_multiplier_bp": 15000,
+      "slot_keys": [
+        "weapon",
+        "body",
+        "hands",
+        "feet",
+        "amulet",
+        "ring"
+      ],
+      "skills_available": "ALL_FOUR_AT_JOIN",
+      "level_cap": 60
+    }
+  ],
+  "skills": [
+    {
+      "skill_id": "C_WITCH_BASIC",
+      "actor_id": "C_WITCH",
+      "name": "灰灯の魔弾",
+      "kind": "basic",
+      "cooldown_ms": 0,
+      "windup_ms": 250,
+      "recovery_ms": 250,
+      "effects": [
+        {
+          "type": "direct",
+          "coefficient_bp": 10000,
+          "crit": true
+        }
+      ],
+      "ai_rule": "攻撃対象が生存し、通常攻撃タイマーが到達したら実行。開始時無料攻撃なし。",
+      "notes": "",
+      "status": "PROPOSED_NUMERIC_BASELINE"
+    },
+    {
+      "skill_id": "C_APPRENTICE_BASIC",
+      "actor_id": "C_APPRENTICE",
+      "name": "頁灯の小弾",
+      "kind": "basic",
+      "cooldown_ms": 0,
+      "windup_ms": 250,
+      "recovery_ms": 250,
+      "effects": [
+        {
+          "type": "direct",
+          "coefficient_bp": 10000,
+          "crit": true
+        }
+      ],
+      "ai_rule": "攻撃対象が生存し、通常攻撃タイマーが到達したら実行。開始時無料攻撃なし。",
+      "notes": "",
+      "status": "PROPOSED_NUMERIC_BASELINE"
+    },
+    {
+      "skill_id": "C_SMITH_BASIC",
+      "actor_id": "C_SMITH",
+      "name": "鍛具打ち",
+      "kind": "basic",
+      "cooldown_ms": 0,
+      "windup_ms": 250,
+      "recovery_ms": 250,
+      "effects": [
+        {
+          "type": "direct",
+          "coefficient_bp": 10000,
+          "crit": true
+        }
+      ],
+      "ai_rule": "攻撃対象が生存し、通常攻撃タイマーが到達したら実行。開始時無料攻撃なし。",
+      "notes": "",
+      "status": "PROPOSED_NUMERIC_BASELINE"
+    },
+    {
+      "skill_id": "C_FAMILIAR_BASIC",
+      "actor_id": "C_FAMILIAR",
+      "name": "影爪",
+      "kind": "basic",
+      "cooldown_ms": 0,
+      "windup_ms": 250,
+      "recovery_ms": 250,
+      "effects": [
+        {
+          "type": "direct",
+          "coefficient_bp": 10000,
+          "crit": true
+        }
+      ],
+      "ai_rule": "攻撃対象が生存し、通常攻撃タイマーが到達したら実行。開始時無料攻撃なし。",
+      "notes": "",
+      "status": "PROPOSED_NUMERIC_BASELINE"
+    },
+    {
+      "skill_id": "SK_W_BURST",
+      "actor_id": "C_WITCH",
+      "name": "燐火の破砕",
+      "kind": "active",
+      "cooldown_ms": 7000,
+      "windup_ms": 450,
+      "recovery_ms": 300,
+      "effects": [
+        {
+          "type": "direct",
+          "coefficient_bp": 24000,
+          "crit": true
+        }
+      ],
+      "ai_rule": "有効な敵へ。自分の呪印が無い/切れかけなら呪印を先に処理。",
+      "notes": "",
+      "status": "PROPOSED_NUMERIC_BASELINE"
+    },
+    {
+      "skill_id": "SK_W_SEED",
+      "actor_id": "C_WITCH",
+      "name": "霧種の呪印",
+      "kind": "active",
+      "cooldown_ms": 6000,
+      "windup_ms": 400,
+      "recovery_ms": 300,
+      "effects": [
+        {
+          "type": "direct",
+          "coefficient_bp": 2500,
+          "crit": false
+        },
+        {
+          "type": "poison",
+          "add_stacks": 2,
+          "stack_cap": 5,
+          "duration_ms": 9000,
+          "tick_ms": 1000,
+          "coefficient_bp_per_stack": 600
+        }
+      ],
+      "ai_rule": "同じ敵の毒が未付与・残り2000ms以下・上限未到達のいずれか。結界系武器では同じskill_idの効果を置換。",
+      "notes": "付与時に既存層の終了時刻を更新。tickの予定はリセットしない。スナップショット威力。",
+      "status": "PROPOSED_NUMERIC_BASELINE"
+    },
+    {
+      "skill_id": "PS_W_RESONANCE",
+      "actor_id": "C_WITCH",
+      "name": "術式共鳴",
+      "kind": "passive",
+      "cooldown_ms": 0,
+      "windup_ms": 0,
+      "recovery_ms": 0,
+      "effects": [
+        {
+          "type": "battle_start_barrier",
+          "coefficient_bp": 10000,
+          "duration_ms": 6000,
+          "target": "self"
+        },
+        {
+          "type": "direct_bonus_vs_marked_bp",
+          "value": 800
+        }
+      ],
+      "ai_rule": "開幕の簡易結界と、狙印が付いた敵への直接ダメージ補助。",
+      "notes": "初歩の毒・結界は材料不要。戦闘間は無償で全快する暮らしの調合。",
+      "status": "PROPOSED_NUMERIC_BASELINE"
+    },
+    {
+      "skill_id": "SK_A_HEAL",
+      "actor_id": "C_APPRENTICE",
+      "name": "露灯の癒し",
+      "kind": "active",
+      "cooldown_ms": 6000,
+      "windup_ms": 300,
+      "recovery_ms": 250,
+      "effects": [
+        {
+          "type": "heal",
+          "coefficient_bp": 22000
+        },
+        {
+          "type": "cleanse_one",
+          "allowed": [
+            "slow"
+          ],
+          "replace_filter_on_awakening_2": true
+        }
+      ],
+      "ai_rule": "生存味方でHP割合70%以下を優先。既知の攻撃予告で予測HPが35%以下になる相手も対象。最も低い割合を優先。 回復需要が無い場合は、残り3秒以上・減速20%以上のslowを1種解除できる時だけ候補にする。危険な公開予告が無いこと。",
+      "notes": "回復と有用な解除の両方が0なら発動しない。覚醒2は解除種類の拡張であり、2個解除へ加算しない。",
+      "status": "PROPOSED_NUMERIC_BASELINE"
+    },
+    {
+      "skill_id": "SK_A_WARD",
+      "actor_id": "C_APPRENTICE",
+      "name": "月白の守り",
+      "kind": "active",
+      "cooldown_ms": 10000,
+      "windup_ms": 250,
+      "recovery_ms": 200,
+      "effects": [
+        {
+          "type": "barrier",
+          "coefficient_bp": 15000,
+          "duration_ms": 6000
+        }
+      ],
+      "ai_rule": "1.5秒以内の公開済み単体攻撃予告が最大HP20%以上、または味方HP50%以下。足せる結界が0なら使わない。",
+      "notes": "",
+      "status": "PROPOSED_NUMERIC_BASELINE"
+    },
+    {
+      "skill_id": "PS_A_ECHO",
+      "actor_id": "C_APPRENTICE",
+      "name": "添え詠唱",
+      "kind": "passive",
+      "cooldown_ms": 6000,
+      "windup_ms": 0,
+      "recovery_ms": 0,
+      "effects": [
+        {
+          "type": "echo",
+          "direct_bonus_bp": 1500,
+          "charges": 1,
+          "duration_ms": 8000
+        }
+      ],
+      "ai_rule": "主回復スキルの有効回復量が対象最大HPの5%以上なら発動。魔女を優先、いなければ自分以外の最大威力の生存味方。",
+      "notes": "次の主スキル直接ダメージ1回だけ。通常/毒/反応/派生回復では消費も再発動もしない。",
+      "status": "PROPOSED_NUMERIC_BASELINE"
+    },
+    {
+      "skill_id": "SK_S_GUARD",
+      "actor_id": "C_SMITH",
+      "name": "護鍛の構え",
+      "kind": "active",
+      "cooldown_ms": 10000,
+      "windup_ms": 150,
+      "recovery_ms": 250,
+      "effects": [
+        {
+          "type": "cover",
+          "duration_ms": 4000,
+          "root_action_charges": 2,
+          "redirect_reduction_bp": 1500,
+          "extra_guard_bp": 1500
+        }
+      ],
+      "ai_rule": "公開済み単体強攻撃で、対象の残HP割合が35%以下になる/単発が最大HP20%以上なら準備。自分への攻撃でも有効。",
+      "notes": "肩代わりは自HP35%超かつ予測で即死しない場合。全体/毒を肩代わりしない。1主動作に1チャージ。",
+      "status": "PROPOSED_NUMERIC_BASELINE"
+    },
+    {
+      "skill_id": "SK_S_HAMMER",
+      "actor_id": "C_SMITH",
+      "name": "響き槌",
+      "kind": "active",
+      "cooldown_ms": 8000,
+      "windup_ms": 500,
+      "recovery_ms": 400,
+      "effects": [
+        {
+          "type": "direct",
+          "coefficient_bp": 16000,
+          "crit": true
+        },
+        {
+          "type": "weaken",
+          "outgoing_reduction_bp": 1200,
+          "duration_ms": 6000
+        }
+      ],
+      "ai_rule": "護りの準備が不要なら攻撃。",
+      "notes": "同種の弱体は最大値のみ。",
+      "status": "PROPOSED_NUMERIC_BASELINE"
+    },
+    {
+      "skill_id": "PS_S_COUNTER",
+      "actor_id": "C_SMITH",
+      "name": "守りの反響",
+      "kind": "passive",
+      "cooldown_ms": 1500,
+      "windup_ms": 0,
+      "recovery_ms": 0,
+      "effects": [
+        {
+          "type": "counter",
+          "coefficient_bp": 7500,
+          "crit": false
+        }
+      ],
+      "ai_rule": "主攻撃の実ダメージ（HPまたは結界）を伴うガード/肩代わり成功で1回。",
+      "notes": "死亡時は発動しない。多段1主動作につき1回まで。反応深度1。",
+      "status": "PROPOSED_NUMERIC_BASELINE"
+    },
+    {
+      "skill_id": "SK_F_MARK",
+      "actor_id": "C_FAMILIAR",
+      "name": "影の印",
+      "kind": "active",
+      "cooldown_ms": 8000,
+      "windup_ms": 200,
+      "recovery_ms": 200,
+      "effects": [
+        {
+          "type": "mark",
+          "duration_ms": 8000,
+          "direct_vulnerability_bp": 600
+        }
+      ],
+      "ai_rule": "標的が狙印なし、または残り1000ms以下。付与時点の集中対象へ。",
+      "notes": "被ダメージ増加は最大1個、加算しない。",
+      "status": "PROPOSED_NUMERIC_BASELINE"
+    },
+    {
+      "skill_id": "SK_F_DASH",
+      "actor_id": "C_FAMILIAR",
+      "name": "夜駆け",
+      "kind": "active",
+      "cooldown_ms": 6000,
+      "windup_ms": 200,
+      "recovery_ms": 300,
+      "effects": [
+        {
+          "type": "direct",
+          "coefficient_bp": 16000,
+          "conditional_extra_bp": 4000,
+          "condition": "marked_or_poisoned",
+          "crit": true
+        }
+      ],
+      "ai_rule": "生存敵へ。狙印/毒は実行時点で判定。",
+      "notes": "",
+      "status": "PROPOSED_NUMERIC_BASELINE"
+    },
+    {
+      "skill_id": "PS_F_CHASE",
+      "actor_id": "C_FAMILIAR",
+      "name": "薄影の追い打ち",
+      "kind": "passive",
+      "cooldown_ms": 2000,
+      "windup_ms": 0,
+      "recovery_ms": 0,
+      "effects": [
+        {
+          "type": "chase",
+          "coefficient_bp": 4000,
+          "crit": false
+        }
+      ],
+      "ai_rule": "自分以外の味方の主アクティブ直接攻撃が狙印/毒対象へ実ダメージを与えた直後。",
+      "notes": "1主動作1回、反応深度1。通常攻撃/毒tick/反射/追撃/反撃では起動しない。",
+      "status": "PROPOSED_NUMERIC_BASELINE"
+    }
+  ],
+  "caps": {
+    "hp_pct": 10000,
+    "power_pct": 8000,
+    "defense_pct": 10000,
+    "crit_chance_bp": 6000,
+    "crit_multiplier_bp": 22500,
+    "haste_bp": 5000,
+    "cdr_bp": 2500,
+    "guard_chance_bp": 4500,
+    "dot_bonus_bp": 10000,
+    "heal_bonus_bp": 10000,
+    "barrier_bonus_bp": 10000,
+    "barrier_received_bp": 5000,
+    "direct_bonus_bp": 6000,
+    "counter_bonus_bp": 10000,
+    "chase_bonus_bp": 10000,
+    "debuff_duration_resist_bp": 5000,
+    "periodic_resist_bp": 5000,
+    "heavy_reduction_bp": 3000,
+    "defense_reduction_bp": 7000,
+    "guard_reduction_bp": 3500,
+    "barrier_total_max_hp_bp": 3500,
+    "poison_stacks": 8
+  },
+  "slot_budgets": {
+    "weapon": {
+      "hp": 0,
+      "power": 14,
+      "defense": 0
+    },
+    "body": {
+      "hp": 80,
+      "power": 0,
+      "defense": 10
+    },
+    "hands": {
+      "hp": 0,
+      "power": 4,
+      "defense": 5
+    },
+    "feet": {
+      "hp": 40,
+      "power": 0,
+      "defense": 8
+    },
+    "amulet": {
+      "hp": 25,
+      "power": 5,
+      "defense": 0
+    },
+    "ring": {
+      "hp": 0,
+      "power": 5,
+      "defense": 2
+    }
+  },
+  "attunement_ranks": [
+    {
+      "rank": 1,
+      "multiplier_bp": 10000,
+      "max_enhance": 3,
+      "gate": "G_START"
+    },
+    {
+      "rank": 2,
+      "multiplier_bp": 16000,
+      "max_enhance": 5,
+      "gate": "G_R01_B"
+    },
+    {
+      "rank": 3,
+      "multiplier_bp": 24000,
+      "max_enhance": 7,
+      "gate": "G_R02_B"
+    },
+    {
+      "rank": 4,
+      "multiplier_bp": 34000,
+      "max_enhance": 9,
+      "gate": "G_R03_B"
+    },
+    {
+      "rank": 5,
+      "multiplier_bp": 46000,
+      "max_enhance": 10,
+      "gate": "G_R04_B"
+    }
+  ],
+  "rarities": [
+    {
+      "id": "Q0",
+      "display_name": "普通",
+      "affix_count": 0,
+      "roll_floor_q": 0,
+      "drop_weight": 4500,
+      "salvage_base": 1
+    },
+    {
+      "id": "Q1",
+      "display_name": "良質",
+      "affix_count": 1,
+      "roll_floor_q": 0,
+      "drop_weight": 3000,
+      "salvage_base": 2
+    },
+    {
+      "id": "Q2",
+      "display_name": "希少",
+      "affix_count": 2,
+      "roll_floor_q": 0,
+      "drop_weight": 1800,
+      "salvage_base": 4
+    },
+    {
+      "id": "Q3",
+      "display_name": "特級",
+      "affix_count": 3,
+      "roll_floor_q": 0,
+      "drop_weight": 600,
+      "salvage_base": 8
+    },
+    {
+      "id": "Q4",
+      "display_name": "伝説",
+      "affix_count": 3,
+      "roll_floor_q": 600,
+      "drop_weight": 100,
+      "salvage_base": 12
+    }
+  ],
+  "affixes": [
+    {
+      "affix_id": "AF_HP",
+      "name": "生命",
+      "stat": "hp_pct",
+      "min_bp": 300,
+      "max_bp": 600,
+      "step_bp": 1,
+      "group": "AF_HP",
+      "actor_capability": "all",
+      "scales_with_rank": false
+    },
+    {
+      "affix_id": "AF_POWER",
+      "name": "威力",
+      "stat": "power_pct",
+      "min_bp": 300,
+      "max_bp": 600,
+      "step_bp": 1,
+      "group": "AF_POWER",
+      "actor_capability": "all",
+      "scales_with_rank": false
+    },
+    {
+      "affix_id": "AF_DEF",
+      "name": "防護",
+      "stat": "defense_pct",
+      "min_bp": 400,
+      "max_bp": 800,
+      "step_bp": 1,
+      "group": "AF_DEF",
+      "actor_capability": "all",
+      "scales_with_rank": false
+    },
+    {
+      "affix_id": "AF_CRIT",
+      "name": "会心率",
+      "stat": "crit_chance_bp",
+      "min_bp": 200,
+      "max_bp": 400,
+      "step_bp": 1,
+      "group": "AF_CRIT",
+      "actor_capability": "all",
+      "scales_with_rank": false
+    },
+    {
+      "affix_id": "AF_CRIT_DMG",
+      "name": "会心威力",
+      "stat": "crit_damage_extra_bp",
+      "min_bp": 500,
+      "max_bp": 1000,
+      "step_bp": 1,
+      "group": "AF_CRIT_DMG",
+      "actor_capability": "all",
+      "scales_with_rank": false
+    },
+    {
+      "affix_id": "AF_HASTE",
+      "name": "手数",
+      "stat": "haste_bp",
+      "min_bp": 200,
+      "max_bp": 500,
+      "step_bp": 1,
+      "group": "AF_HASTE",
+      "actor_capability": "all",
+      "scales_with_rank": false
+    },
+    {
+      "affix_id": "AF_CDR",
+      "name": "再使用短縮",
+      "stat": "cdr_bp",
+      "min_bp": 100,
+      "max_bp": 300,
+      "step_bp": 1,
+      "group": "AF_CDR",
+      "actor_capability": "all",
+      "scales_with_rank": false
+    },
+    {
+      "affix_id": "AF_DIRECT",
+      "name": "直接攻撃",
+      "stat": "direct_bonus_bp",
+      "min_bp": 400,
+      "max_bp": 800,
+      "step_bp": 1,
+      "group": "AF_DIRECT",
+      "actor_capability": "all",
+      "scales_with_rank": false
+    },
+    {
+      "affix_id": "AF_DOT",
+      "name": "呪毒",
+      "stat": "dot_bonus_bp",
+      "min_bp": 500,
+      "max_bp": 1000,
+      "step_bp": 1,
+      "group": "AF_DOT",
+      "actor_capability": [
+        "C_WITCH"
+      ],
+      "scales_with_rank": false
+    },
+    {
+      "affix_id": "AF_HEAL",
+      "name": "回復",
+      "stat": "heal_bonus_bp",
+      "min_bp": 500,
+      "max_bp": 1000,
+      "step_bp": 1,
+      "group": "AF_HEAL",
+      "actor_capability": [
+        "C_APPRENTICE"
+      ],
+      "scales_with_rank": false
+    },
+    {
+      "affix_id": "AF_WARD",
+      "name": "結界",
+      "stat": "barrier_bonus_bp",
+      "min_bp": 500,
+      "max_bp": 1000,
+      "step_bp": 1,
+      "group": "AF_WARD",
+      "actor_capability": [
+        "C_WITCH",
+        "C_APPRENTICE"
+      ],
+      "scales_with_rank": false
+    },
+    {
+      "affix_id": "AF_GUARD",
+      "name": "受け流し",
+      "stat": "guard_chance_bp",
+      "min_bp": 200,
+      "max_bp": 400,
+      "step_bp": 1,
+      "group": "AF_GUARD",
+      "actor_capability": "all",
+      "scales_with_rank": false
+    },
+    {
+      "affix_id": "AF_COUNTER",
+      "name": "反撃",
+      "stat": "counter_bonus_bp",
+      "min_bp": 500,
+      "max_bp": 1000,
+      "step_bp": 1,
+      "group": "AF_COUNTER",
+      "actor_capability": [
+        "C_SMITH"
+      ],
+      "scales_with_rank": false
+    },
+    {
+      "affix_id": "AF_CHASE",
+      "name": "追撃",
+      "stat": "chase_bonus_bp",
+      "min_bp": 500,
+      "max_bp": 1000,
+      "step_bp": 1,
+      "group": "AF_CHASE",
+      "actor_capability": [
+        "C_FAMILIAR"
+      ],
+      "scales_with_rank": false
+    },
+    {
+      "affix_id": "AF_STATUS_RESIST",
+      "name": "弱体耐性",
+      "stat": "debuff_duration_resist_bp",
+      "min_bp": 400,
+      "max_bp": 800,
+      "step_bp": 1,
+      "group": "AF_STATUS_RESIST",
+      "actor_capability": "all",
+      "scales_with_rank": false
+    },
+    {
+      "affix_id": "AF_DOT_RESIST",
+      "name": "持続耐性",
+      "stat": "periodic_resist_bp",
+      "min_bp": 400,
+      "max_bp": 800,
+      "step_bp": 1,
+      "group": "AF_DOT_RESIST",
+      "actor_capability": "all",
+      "scales_with_rank": false
+    }
+  ],
+  "gear_templates": [
+    {
+      "template_id": "EQ_W_01",
+      "name": "若枝の採集杖",
+      "slot": "weapon",
+      "actor_ids": [
+        "C_WITCH"
+      ],
+      "unlock_gate": "G_START",
+      "parent_template_id": null,
+      "origin": "WORLD_R1_UNCHANGED_ID",
+      "core_modifiers": {
+        "direct_bonus_bp": 800
+      },
+      "core_rules": [],
+      "core_note": "基礎術式を安定。毒と開幕結界もそのまま使用。",
+      "item_stat_budget": {
+        "hp": 0,
+        "power": 14,
+        "defense": 0
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。"
+    },
+    {
+      "template_id": "EQ_W_P1",
+      "name": "霧花の毒杖",
+      "slot": "weapon",
+      "actor_ids": [
+        "C_WITCH"
+      ],
+      "unlock_gate": "G_R02_A",
+      "parent_template_id": "EQ_W_01",
+      "origin": "WORLD_R1_UNCHANGED_ID",
+      "core_modifiers": {
+        "dot_bonus_bp": 2000
+      },
+      "core_rules": [
+        {
+          "op": "poison_stack_cap_add",
+          "value": 2
+        }
+      ],
+      "core_note": "毒の保持を強化。上限は他補正込み8層。",
+      "item_stat_budget": {
+        "hp": 0,
+        "power": 14,
+        "defense": 0
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。"
+    },
+    {
+      "template_id": "EQ_W_P2",
+      "name": "夢庭の呪杖",
+      "slot": "weapon",
+      "actor_ids": [
+        "C_WITCH"
+      ],
+      "unlock_gate": "G_R05_A",
+      "parent_template_id": "EQ_W_P1",
+      "origin": "WORLD_R1_UNCHANGED_ID",
+      "core_modifiers": {
+        "dot_bonus_bp": 2000
+      },
+      "core_rules": [
+        {
+          "op": "poison_stack_cap_add",
+          "value": 2
+        },
+        {
+          "op": "burst_bonus_if_poison_at_least",
+          "stacks": 5,
+          "bonus_bp": 2500
+        }
+      ],
+      "core_note": "毒を5層以上蓄えた対象への破砕術式を強める。",
+      "item_stat_budget": {
+        "hp": 0,
+        "power": 14,
+        "defense": 0
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。"
+    },
+    {
+      "template_id": "EQ_W_G1",
+      "name": "根守りの結界杖",
+      "slot": "weapon",
+      "actor_ids": [
+        "C_WITCH"
+      ],
+      "unlock_gate": "G_R01_B",
+      "parent_template_id": "EQ_W_01",
+      "origin": "WORLD_R1_UNCHANGED_ID",
+      "core_modifiers": {
+        "barrier_bonus_bp": 1000
+      },
+      "core_rules": [
+        {
+          "op": "replace_seed_with_ward",
+          "coefficient_bp": 20000,
+          "cooldown_ms": 10000,
+          "duration_ms": 6000
+        }
+      ],
+      "core_note": "呪印の主アクティブを味方結界へ置換。スキル数は増やさない。",
+      "item_stat_budget": {
+        "hp": 0,
+        "power": 14,
+        "defense": 0
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。"
+    },
+    {
+      "template_id": "EQ_W_G2",
+      "name": "月環の結界杖",
+      "slot": "weapon",
+      "actor_ids": [
+        "C_WITCH"
+      ],
+      "unlock_gate": "G_R05_A",
+      "parent_template_id": "EQ_W_G1",
+      "origin": "WORLD_R1_UNCHANGED_ID",
+      "core_modifiers": {
+        "barrier_bonus_bp": 1000
+      },
+      "core_rules": [
+        {
+          "op": "replace_seed_with_ward",
+          "coefficient_bp": 20000,
+          "cooldown_ms": 10000,
+          "duration_ms": 6000
+        },
+        {
+          "op": "reflect_on_own_barrier_absorb",
+          "coefficient_bp": 5000,
+          "icd_ms": 3000,
+          "depth": 1
+        }
+      ],
+      "core_note": "その魔女の結界が主攻撃を吸収したら一度返す。味方の結界でも所有者で集計。",
+      "item_stat_budget": {
+        "hp": 0,
+        "power": 14,
+        "defense": 0
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。"
+    },
+    {
+      "template_id": "EQ_A_01",
+      "name": "露灯の手帳",
+      "slot": "weapon",
+      "actor_ids": [
+        "C_APPRENTICE"
+      ],
+      "unlock_gate": "G_R01_A",
+      "parent_template_id": null,
+      "origin": "WORLD_R1_UNCHANGED_ID",
+      "core_modifiers": {
+        "heal_bonus_bp": 1000
+      },
+      "core_rules": [],
+      "core_note": "回復量を強化。",
+      "item_stat_budget": {
+        "hp": 0,
+        "power": 14,
+        "defense": 0
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。"
+    },
+    {
+      "template_id": "EQ_A_02",
+      "name": "水鏡の祈書",
+      "slot": "weapon",
+      "actor_ids": [
+        "C_APPRENTICE"
+      ],
+      "unlock_gate": "G_R02_B",
+      "parent_template_id": "EQ_A_01",
+      "origin": "WORLD_R1_UNCHANGED_ID",
+      "core_modifiers": {
+        "heal_bonus_bp": 1000
+      },
+      "core_rules": [
+        {
+          "op": "effective_heal_to_barrier",
+          "ratio_bp": 2000,
+          "duration_ms": 6000,
+          "root_heal_only": true
+        }
+      ],
+      "core_note": "有効な主回復の20%を結界に変える。過剰回復は含めない。",
+      "item_stat_budget": {
+        "hp": 0,
+        "power": 14,
+        "defense": 0
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。"
+    },
+    {
+      "template_id": "EQ_A_03",
+      "name": "月綴じの大典",
+      "slot": "weapon",
+      "actor_ids": [
+        "C_APPRENTICE"
+      ],
+      "unlock_gate": "G_R05_A",
+      "parent_template_id": "EQ_A_02",
+      "origin": "WORLD_R1_UNCHANGED_ID",
+      "core_modifiers": {
+        "heal_bonus_bp": 1000
+      },
+      "core_rules": [
+        {
+          "op": "effective_heal_to_barrier",
+          "ratio_bp": 2000,
+          "duration_ms": 6000,
+          "root_heal_only": true
+        },
+        {
+          "op": "echo_bonus_set_bp",
+          "value": 2000
+        }
+      ],
+      "core_note": "回復から次の仲間の主攻撃へ。添え詠唱は20%になる。",
+      "item_stat_budget": {
+        "hp": 0,
+        "power": 14,
+        "defense": 0
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。"
+    },
+    {
+      "template_id": "EQ_S_01",
+      "name": "山歩きの木槌",
+      "slot": "weapon",
+      "actor_ids": [
+        "C_SMITH"
+      ],
+      "unlock_gate": "G_R01_A",
+      "parent_template_id": null,
+      "origin": "WORLD_R1_UNCHANGED_ID",
+      "core_modifiers": {
+        "guard_chance_bp": 500
+      },
+      "core_rules": [],
+      "core_note": "防御の基礎。",
+      "item_stat_budget": {
+        "hp": 0,
+        "power": 14,
+        "defense": 0
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。"
+    },
+    {
+      "template_id": "EQ_S_02",
+      "name": "響炉の鍛鎚",
+      "slot": "weapon",
+      "actor_ids": [
+        "C_SMITH"
+      ],
+      "unlock_gate": "G_R03_B",
+      "parent_template_id": "EQ_S_01",
+      "origin": "WORLD_R1_UNCHANGED_ID",
+      "core_modifiers": {
+        "guard_chance_bp": 500,
+        "counter_bonus_bp": 2000
+      },
+      "core_rules": [
+        {
+          "op": "pressure_store",
+          "on": "eligible_counter",
+          "max_stacks": 3,
+          "consume_skill": "SK_S_HAMMER",
+          "extra_coefficient_per_stack_bp": 2000
+        }
+      ],
+      "core_note": "受けた圧を3層まで保存し、次の響き槌へ。",
+      "item_stat_budget": {
+        "hp": 0,
+        "power": 14,
+        "defense": 0
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。"
+    },
+    {
+      "template_id": "EQ_S_03",
+      "name": "月銀の護鍛鎚",
+      "slot": "weapon",
+      "actor_ids": [
+        "C_SMITH"
+      ],
+      "unlock_gate": "G_R05_A",
+      "parent_template_id": "EQ_S_02",
+      "origin": "WORLD_R1_UNCHANGED_ID",
+      "core_modifiers": {
+        "guard_chance_bp": 500,
+        "counter_bonus_bp": 2000
+      },
+      "core_rules": [
+        {
+          "op": "pressure_store",
+          "on": "eligible_counter",
+          "max_stacks": 3,
+          "consume_skill": "SK_S_HAMMER",
+          "extra_coefficient_per_stack_bp": 2000
+        },
+        {
+          "op": "cover_target_barrier",
+          "coefficient_bp": 4000,
+          "duration_ms": 4000,
+          "icd_ms": 3000,
+          "depth": 1
+        }
+      ],
+      "core_note": "肩代わりで守った相手へ小結界。反応から反応は起こさない。",
+      "item_stat_budget": {
+        "hp": 0,
+        "power": 14,
+        "defense": 0
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。"
+    },
+    {
+      "template_id": "EQ_F_01",
+      "name": "灯爪の触媒",
+      "slot": "weapon",
+      "actor_ids": [
+        "C_FAMILIAR"
+      ],
+      "unlock_gate": "G_START",
+      "parent_template_id": null,
+      "origin": "WORLD_R1_UNCHANGED_ID",
+      "core_modifiers": {
+        "chase_bonus_bp": 1000
+      },
+      "core_rules": [],
+      "core_note": "小さな追撃を強化。",
+      "item_stat_budget": {
+        "hp": 0,
+        "power": 14,
+        "defense": 0
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。"
+    },
+    {
+      "template_id": "EQ_F_02",
+      "name": "霧影の爪環",
+      "slot": "weapon",
+      "actor_ids": [
+        "C_FAMILIAR"
+      ],
+      "unlock_gate": "G_R02_A",
+      "parent_template_id": "EQ_F_01",
+      "origin": "WORLD_R1_UNCHANGED_ID",
+      "core_modifiers": {
+        "chase_bonus_bp": 1000
+      },
+      "core_rules": [
+        {
+          "op": "mark_duration_set_ms",
+          "value": 10000
+        },
+        {
+          "op": "dash_conditional_extra_set_bp",
+          "value": 6000
+        }
+      ],
+      "core_note": "印と夜駆けを接続。",
+      "item_stat_budget": {
+        "hp": 0,
+        "power": 14,
+        "defense": 0
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。"
+    },
+    {
+      "template_id": "EQ_F_03",
+      "name": "夜渡りの爪環",
+      "slot": "weapon",
+      "actor_ids": [
+        "C_FAMILIAR"
+      ],
+      "unlock_gate": "G_R05_A",
+      "parent_template_id": "EQ_F_02",
+      "origin": "WORLD_R1_UNCHANGED_ID",
+      "core_modifiers": {
+        "chase_bonus_bp": 1000
+      },
+      "core_rules": [
+        {
+          "op": "mark_duration_set_ms",
+          "value": 10000
+        },
+        {
+          "op": "dash_conditional_extra_set_bp",
+          "value": 6000
+        },
+        {
+          "op": "chase_icd_set_ms",
+          "value": 1500
+        }
+      ],
+      "core_note": "派生攻撃の再帰なしで、味方の主スキルへ続く。",
+      "item_stat_budget": {
+        "hp": 0,
+        "power": 14,
+        "defense": 0
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。"
+    },
+    {
+      "template_id": "EQ_BODY_01",
+      "name": "灯糸の採集衣",
+      "slot": "body",
+      "actor_ids": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "unlock_gate": "G_R01_A",
+      "parent_template_id": null,
+      "origin": "WORLD_R1_UNCHANGED_ID",
+      "core_modifiers": {
+        "hp_pct": 500
+      },
+      "core_rules": [],
+      "core_note": "基礎耐久。",
+      "item_stat_budget": {
+        "hp": 80,
+        "power": 0,
+        "defense": 10
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。"
+    },
+    {
+      "template_id": "EQ_BODY_02",
+      "name": "湿霧の外套",
+      "slot": "body",
+      "actor_ids": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "unlock_gate": "G_R02_A",
+      "parent_template_id": "EQ_BODY_01",
+      "origin": "WORLD_R1_UNCHANGED_ID",
+      "core_modifiers": {
+        "hp_pct": 500,
+        "periodic_resist_bp": 1500
+      },
+      "core_rules": [],
+      "core_note": "持続ダメージへの備え。",
+      "item_stat_budget": {
+        "hp": 80,
+        "power": 0,
+        "defense": 10
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。"
+    },
+    {
+      "template_id": "EQ_BODY_03",
+      "name": "霜守りの外套",
+      "slot": "body",
+      "actor_ids": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "unlock_gate": "G_R04_A",
+      "parent_template_id": "EQ_BODY_02",
+      "origin": "WORLD_R1_UNCHANGED_ID",
+      "core_modifiers": {
+        "hp_pct": 500,
+        "periodic_resist_bp": 1500,
+        "barrier_received_bp": 1000
+      },
+      "core_rules": [],
+      "core_note": "受ける結界の容量を増やす。総上限はHP35%。",
+      "item_stat_budget": {
+        "hp": 80,
+        "power": 0,
+        "defense": 10
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。"
+    },
+    {
+      "template_id": "EQ_HAND_01",
+      "name": "灯糸の作業手袋",
+      "slot": "hands",
+      "actor_ids": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "unlock_gate": "G_R01_A",
+      "parent_template_id": null,
+      "origin": "WORLD_R1_UNCHANGED_ID",
+      "core_modifiers": {
+        "haste_bp": 300
+      },
+      "core_rules": [],
+      "core_note": "手数を増やす。",
+      "item_stat_budget": {
+        "hp": 0,
+        "power": 4,
+        "defense": 5
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。"
+    },
+    {
+      "template_id": "EQ_HAND_02",
+      "name": "雲母の術籠手",
+      "slot": "hands",
+      "actor_ids": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "unlock_gate": "G_R03_A",
+      "parent_template_id": "EQ_HAND_01",
+      "origin": "WORLD_R1_UNCHANGED_ID",
+      "core_modifiers": {
+        "haste_bp": 300,
+        "guard_chance_bp": 400
+      },
+      "core_rules": [],
+      "core_note": "構えを支える。",
+      "item_stat_budget": {
+        "hp": 0,
+        "power": 4,
+        "defense": 5
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。"
+    },
+    {
+      "template_id": "EQ_HAND_03",
+      "name": "月銀の術籠手",
+      "slot": "hands",
+      "actor_ids": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "unlock_gate": "G_R05_A",
+      "parent_template_id": "EQ_HAND_02",
+      "origin": "WORLD_R1_UNCHANGED_ID",
+      "core_modifiers": {
+        "haste_bp": 300,
+        "guard_chance_bp": 400,
+        "cdr_bp": 400
+      },
+      "core_rules": [],
+      "core_note": "再使用と手数を整える。",
+      "item_stat_budget": {
+        "hp": 0,
+        "power": 4,
+        "defense": 5
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。"
+    },
+    {
+      "template_id": "EQ_FEET_01",
+      "name": "根道のブーツ",
+      "slot": "feet",
+      "actor_ids": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "unlock_gate": "G_R01_A",
+      "parent_template_id": null,
+      "origin": "WORLD_R1_UNCHANGED_ID",
+      "core_modifiers": {
+        "defense_pct": 800
+      },
+      "core_rules": [],
+      "core_note": "足元の防護。",
+      "item_stat_budget": {
+        "hp": 40,
+        "power": 0,
+        "defense": 8
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。"
+    },
+    {
+      "template_id": "EQ_FEET_02",
+      "name": "磁紋の踏靴",
+      "slot": "feet",
+      "actor_ids": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "unlock_gate": "G_R03_A",
+      "parent_template_id": "EQ_FEET_01",
+      "origin": "WORLD_R1_UNCHANGED_ID",
+      "core_modifiers": {
+        "defense_pct": 800,
+        "guard_chance_bp": 500
+      },
+      "core_rules": [],
+      "core_note": "ガードを安定させる。",
+      "item_stat_budget": {
+        "hp": 40,
+        "power": 0,
+        "defense": 8
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。"
+    },
+    {
+      "template_id": "EQ_FEET_03",
+      "name": "白角の踏靴",
+      "slot": "feet",
+      "actor_ids": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "unlock_gate": "G_R04_A",
+      "parent_template_id": "EQ_FEET_02",
+      "origin": "WORLD_R1_UNCHANGED_ID",
+      "core_modifiers": {
+        "defense_pct": 800,
+        "guard_chance_bp": 500,
+        "heavy_reduction_bp": 1000
+      },
+      "core_rules": [],
+      "core_note": "heavyタグの主直接攻撃を10%軽減。全攻撃扱いにしない。",
+      "item_stat_budget": {
+        "hp": 40,
+        "power": 0,
+        "defense": 8
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。"
+    },
+    {
+      "template_id": "EQ_AMU_01",
+      "name": "露苔のお守り",
+      "slot": "amulet",
+      "actor_ids": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH",
+        "C_FAMILIAR"
+      ],
+      "unlock_gate": "G_R01_A",
+      "parent_template_id": null,
+      "origin": "WORLD_R1_UNCHANGED_ID",
+      "core_modifiers": {
+        "power_pct": 400,
+        "heal_bonus_bp": 500
+      },
+      "core_rules": [],
+      "core_note": "魔力の循環。回復が無い者にも威力増加は有効。",
+      "item_stat_budget": {
+        "hp": 25,
+        "power": 5,
+        "defense": 0
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。"
+    },
+    {
+      "template_id": "EQ_AMU_02",
+      "name": "霧月の硝子符",
+      "slot": "amulet",
+      "actor_ids": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH",
+        "C_FAMILIAR"
+      ],
+      "unlock_gate": "G_R02_A",
+      "parent_template_id": "EQ_AMU_01",
+      "origin": "WORLD_R1_UNCHANGED_ID",
+      "core_modifiers": {
+        "power_pct": 400,
+        "heal_bonus_bp": 500,
+        "barrier_bonus_bp": 1000
+      },
+      "core_rules": [],
+      "core_note": "薄い結界の保持。",
+      "item_stat_budget": {
+        "hp": 25,
+        "power": 5,
+        "defense": 0
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。"
+    },
+    {
+      "template_id": "EQ_AMU_03",
+      "name": "月庭の種守り",
+      "slot": "amulet",
+      "actor_ids": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH",
+        "C_FAMILIAR"
+      ],
+      "unlock_gate": "G_R05_B",
+      "parent_template_id": "EQ_AMU_02",
+      "origin": "WORLD_R1_UNCHANGED_ID",
+      "core_modifiers": {
+        "power_pct": 400,
+        "heal_bonus_bp": 500,
+        "barrier_bonus_bp": 1000,
+        "counter_bonus_bp": 1000,
+        "chase_bonus_bp": 1000
+      },
+      "core_rules": [],
+      "core_note": "到達後の反応構成の拡張。倍率は各カテゴリ内に加算。",
+      "item_stat_budget": {
+        "hp": 25,
+        "power": 5,
+        "defense": 0
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。"
+    },
+    {
+      "template_id": "EQ_RING_01",
+      "name": "葉結びの指環",
+      "slot": "ring",
+      "actor_ids": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "unlock_gate": "G_R01_A",
+      "parent_template_id": null,
+      "origin": "WORLD_R1_UNCHANGED_ID",
+      "core_modifiers": {
+        "crit_chance_bp": 300
+      },
+      "core_rules": [],
+      "core_note": "狙いを補助。",
+      "item_stat_budget": {
+        "hp": 0,
+        "power": 5,
+        "defense": 2
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。"
+    },
+    {
+      "template_id": "EQ_RING_02",
+      "name": "灰銀の指環",
+      "slot": "ring",
+      "actor_ids": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "unlock_gate": "G_R03_A",
+      "parent_template_id": "EQ_RING_01",
+      "origin": "WORLD_R1_UNCHANGED_ID",
+      "core_modifiers": {
+        "crit_chance_bp": 300,
+        "cdr_bp": 300
+      },
+      "core_rules": [],
+      "core_note": "詠唱の再使用。",
+      "item_stat_budget": {
+        "hp": 0,
+        "power": 5,
+        "defense": 2
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。"
+    },
+    {
+      "template_id": "EQ_RING_03",
+      "name": "冬灯の指環",
+      "slot": "ring",
+      "actor_ids": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "unlock_gate": "G_R04_A",
+      "parent_template_id": "EQ_RING_02",
+      "origin": "WORLD_R1_UNCHANGED_ID",
+      "core_modifiers": {
+        "crit_chance_bp": 300,
+        "cdr_bp": 300,
+        "debuff_duration_resist_bp": 1000
+      },
+      "core_rules": [],
+      "core_note": "行動を妨げる弱体の持続を短縮。",
+      "item_stat_budget": {
+        "hp": 0,
+        "power": 5,
+        "defense": 2
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。"
+    },
+    {
+      "template_id": "EQ_F_BODY_01",
+      "name": "灯糸の使い魔裏布",
+      "slot": "body",
+      "actor_ids": [
+        "C_FAMILIAR"
+      ],
+      "unlock_gate": "G_R01_A",
+      "parent_template_id": null,
+      "origin": "G2C_R2_ADDITION_PROPOSED",
+      "core_modifiers": {
+        "hp_pct": 500
+      },
+      "core_rules": [],
+      "core_note": "猫の内部装具。承認済み赤いスカーフと身体を変更しない。",
+      "item_stat_budget": {
+        "hp": 80,
+        "power": 0,
+        "defense": 10
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "加入済み/到達済み条件下で制作・遺物抽選"
+    },
+    {
+      "template_id": "EQ_F_HAND_01",
+      "name": "葉脈の前脚環",
+      "slot": "hands",
+      "actor_ids": [
+        "C_FAMILIAR"
+      ],
+      "unlock_gate": "G_R01_A",
+      "parent_template_id": null,
+      "origin": "G2C_R2_ADDITION_PROPOSED",
+      "core_modifiers": {
+        "haste_bp": 300
+      },
+      "core_rules": [],
+      "core_note": "猫の内部装具。承認済み赤いスカーフと身体を変更しない。",
+      "item_stat_budget": {
+        "hp": 0,
+        "power": 4,
+        "defense": 5
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "加入済み/到達済み条件下で制作・遺物抽選"
+    },
+    {
+      "template_id": "EQ_F_FEET_01",
+      "name": "根結びの足輪",
+      "slot": "feet",
+      "actor_ids": [
+        "C_FAMILIAR"
+      ],
+      "unlock_gate": "G_R01_A",
+      "parent_template_id": null,
+      "origin": "G2C_R2_ADDITION_PROPOSED",
+      "core_modifiers": {
+        "defense_pct": 800
+      },
+      "core_rules": [],
+      "core_note": "猫の内部装具。承認済み赤いスカーフと身体を変更しない。",
+      "item_stat_budget": {
+        "hp": 40,
+        "power": 0,
+        "defense": 8
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "加入済み/到達済み条件下で制作・遺物抽選"
+    },
+    {
+      "template_id": "EQ_F_RING_01",
+      "name": "琥珀の首飾り",
+      "slot": "ring",
+      "actor_ids": [
+        "C_FAMILIAR"
+      ],
+      "unlock_gate": "G_R01_A",
+      "parent_template_id": null,
+      "origin": "G2C_R2_ADDITION_PROPOSED",
+      "core_modifiers": {
+        "crit_chance_bp": 300
+      },
+      "core_rules": [],
+      "core_note": "猫の内部装具。承認済み赤いスカーフと身体を変更しない。",
+      "item_stat_budget": {
+        "hp": 0,
+        "power": 5,
+        "defense": 2
+      },
+      "primary_template_multiplier_bp": 10000,
+      "initial_acquisition_policy": "加入済み/到達済み条件下で制作・遺物抽選"
+    }
+  ],
+  "recipe_cost_overlay": [
+    {
+      "recipe_id": "RC_EQ_W_01",
+      "output_gear_id": "EQ_W_01",
+      "parent_template_id": null,
+      "operation": "craft_new",
+      "unlock_gate": "G_START",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R01_G1",
+          "quantity": 6
+        },
+        {
+          "material_id": "M_R01_G2",
+          "quantity": 6
+        }
+      ],
+      "status": "TUNING_PROPOSAL_NOT_WRITTEN_TO_WORLD_R1"
+    },
+    {
+      "recipe_id": "RC_EQ_W_P1",
+      "output_gear_id": "EQ_W_P1",
+      "parent_template_id": "EQ_W_01",
+      "operation": "evolve_in_place",
+      "unlock_gate": "G_R02_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R02_E1",
+          "quantity": 16
+        },
+        {
+          "material_id": "M_R02_G4",
+          "quantity": 16
+        },
+        {
+          "material_id": "M_R02_BA",
+          "quantity": 1
+        }
+      ],
+      "status": "TUNING_PROPOSAL_NOT_WRITTEN_TO_WORLD_R1"
+    },
+    {
+      "recipe_id": "RC_EQ_W_P2",
+      "output_gear_id": "EQ_W_P2",
+      "parent_template_id": "EQ_W_P1",
+      "operation": "evolve_in_place",
+      "unlock_gate": "G_R05_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R05_G1",
+          "quantity": 28
+        },
+        {
+          "material_id": "M_R05_E4",
+          "quantity": 28
+        },
+        {
+          "material_id": "M_R05_BA",
+          "quantity": 2
+        }
+      ],
+      "status": "TUNING_PROPOSAL_NOT_WRITTEN_TO_WORLD_R1"
+    },
+    {
+      "recipe_id": "RC_EQ_W_G1",
+      "output_gear_id": "EQ_W_G1",
+      "parent_template_id": "EQ_W_01",
+      "operation": "evolve_in_place",
+      "unlock_gate": "G_R01_B",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R01_BA",
+          "quantity": 1
+        },
+        {
+          "material_id": "M_R01_BB",
+          "quantity": 1
+        },
+        {
+          "material_id": "M_R01_G3",
+          "quantity": 16
+        }
+      ],
+      "status": "TUNING_PROPOSAL_NOT_WRITTEN_TO_WORLD_R1"
+    },
+    {
+      "recipe_id": "RC_EQ_W_G2",
+      "output_gear_id": "EQ_W_G2",
+      "parent_template_id": "EQ_W_G1",
+      "operation": "evolve_in_place",
+      "unlock_gate": "G_R05_A",
+      "station": "forge",
+      "ingredients": [
+        {
+          "material_id": "M_R04_BB",
+          "quantity": 2
+        },
+        {
+          "material_id": "M_R05_E3",
+          "quantity": 28
+        },
+        {
+          "material_id": "M_R05_BA",
+          "quantity": 2
+        }
+      ],
+      "status": "TUNING_PROPOSAL_NOT_WRITTEN_TO_WORLD_R1"
+    },
+    {
+      "recipe_id": "RC_EQ_A_01",
+      "output_gear_id": "EQ_A_01",
+      "parent_template_id": null,
+      "operation": "craft_new",
+      "unlock_gate": "G_R01_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R01_G1",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G2",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_E2",
+          "quantity": 8
+        }
+      ],
+      "status": "TUNING_PROPOSAL_NOT_WRITTEN_TO_WORLD_R1"
+    },
+    {
+      "recipe_id": "RC_EQ_A_02",
+      "output_gear_id": "EQ_A_02",
+      "parent_template_id": "EQ_A_01",
+      "operation": "evolve_in_place",
+      "unlock_gate": "G_R02_B",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R02_G1",
+          "quantity": 20
+        },
+        {
+          "material_id": "M_R02_E3",
+          "quantity": 20
+        },
+        {
+          "material_id": "M_R02_BB",
+          "quantity": 1
+        }
+      ],
+      "status": "TUNING_PROPOSAL_NOT_WRITTEN_TO_WORLD_R1"
+    },
+    {
+      "recipe_id": "RC_EQ_A_03",
+      "output_gear_id": "EQ_A_03",
+      "parent_template_id": "EQ_A_02",
+      "operation": "evolve_in_place",
+      "unlock_gate": "G_R05_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R05_G2",
+          "quantity": 28
+        },
+        {
+          "material_id": "M_R05_E1",
+          "quantity": 28
+        },
+        {
+          "material_id": "M_R05_G4",
+          "quantity": 28
+        }
+      ],
+      "status": "TUNING_PROPOSAL_NOT_WRITTEN_TO_WORLD_R1"
+    },
+    {
+      "recipe_id": "RC_EQ_S_01",
+      "output_gear_id": "EQ_S_01",
+      "parent_template_id": null,
+      "operation": "craft_new",
+      "unlock_gate": "G_R01_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R01_G1",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G3",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_E4",
+          "quantity": 8
+        }
+      ],
+      "status": "TUNING_PROPOSAL_NOT_WRITTEN_TO_WORLD_R1"
+    },
+    {
+      "recipe_id": "RC_EQ_S_02",
+      "output_gear_id": "EQ_S_02",
+      "parent_template_id": "EQ_S_01",
+      "operation": "evolve_in_place",
+      "unlock_gate": "G_R03_B",
+      "station": "forge",
+      "ingredients": [
+        {
+          "material_id": "M_R03_G1",
+          "quantity": 24
+        },
+        {
+          "material_id": "M_R03_G2",
+          "quantity": 24
+        },
+        {
+          "material_id": "M_R03_G3",
+          "quantity": 24
+        },
+        {
+          "material_id": "M_R03_BB",
+          "quantity": 1
+        }
+      ],
+      "status": "TUNING_PROPOSAL_NOT_WRITTEN_TO_WORLD_R1"
+    },
+    {
+      "recipe_id": "RC_EQ_S_03",
+      "output_gear_id": "EQ_S_03",
+      "parent_template_id": "EQ_S_02",
+      "operation": "evolve_in_place",
+      "unlock_gate": "G_R05_A",
+      "station": "forge",
+      "ingredients": [
+        {
+          "material_id": "M_R05_E2",
+          "quantity": 28
+        },
+        {
+          "material_id": "M_R05_BA",
+          "quantity": 2
+        },
+        {
+          "material_id": "M_R04_G4",
+          "quantity": 28
+        }
+      ],
+      "status": "TUNING_PROPOSAL_NOT_WRITTEN_TO_WORLD_R1"
+    },
+    {
+      "recipe_id": "RC_EQ_F_01",
+      "output_gear_id": "EQ_F_01",
+      "parent_template_id": null,
+      "operation": "craft_new",
+      "unlock_gate": "G_START",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R01_G1",
+          "quantity": 6
+        },
+        {
+          "material_id": "M_R01_E2",
+          "quantity": 6
+        }
+      ],
+      "status": "TUNING_PROPOSAL_NOT_WRITTEN_TO_WORLD_R1"
+    },
+    {
+      "recipe_id": "RC_EQ_F_02",
+      "output_gear_id": "EQ_F_02",
+      "parent_template_id": "EQ_F_01",
+      "operation": "evolve_in_place",
+      "unlock_gate": "G_R02_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R02_E1",
+          "quantity": 16
+        },
+        {
+          "material_id": "M_R02_E4",
+          "quantity": 16
+        },
+        {
+          "material_id": "M_R02_G4",
+          "quantity": 16
+        }
+      ],
+      "status": "TUNING_PROPOSAL_NOT_WRITTEN_TO_WORLD_R1"
+    },
+    {
+      "recipe_id": "RC_EQ_F_03",
+      "output_gear_id": "EQ_F_03",
+      "parent_template_id": "EQ_F_02",
+      "operation": "evolve_in_place",
+      "unlock_gate": "G_R05_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R05_E3",
+          "quantity": 28
+        },
+        {
+          "material_id": "M_R05_E4",
+          "quantity": 28
+        },
+        {
+          "material_id": "M_R04_E2",
+          "quantity": 28
+        }
+      ],
+      "status": "TUNING_PROPOSAL_NOT_WRITTEN_TO_WORLD_R1"
+    },
+    {
+      "recipe_id": "RC_EQ_BODY_01",
+      "output_gear_id": "EQ_BODY_01",
+      "parent_template_id": null,
+      "operation": "craft_new",
+      "unlock_gate": "G_R01_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R01_E2",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G3",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G4",
+          "quantity": 8
+        }
+      ],
+      "status": "TUNING_PROPOSAL_NOT_WRITTEN_TO_WORLD_R1"
+    },
+    {
+      "recipe_id": "RC_EQ_BODY_02",
+      "output_gear_id": "EQ_BODY_02",
+      "parent_template_id": "EQ_BODY_01",
+      "operation": "evolve_in_place",
+      "unlock_gate": "G_R02_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R02_G1",
+          "quantity": 16
+        },
+        {
+          "material_id": "M_R02_E2",
+          "quantity": 16
+        },
+        {
+          "material_id": "M_R02_G3",
+          "quantity": 16
+        }
+      ],
+      "status": "TUNING_PROPOSAL_NOT_WRITTEN_TO_WORLD_R1"
+    },
+    {
+      "recipe_id": "RC_EQ_BODY_03",
+      "output_gear_id": "EQ_BODY_03",
+      "parent_template_id": "EQ_BODY_02",
+      "operation": "evolve_in_place",
+      "unlock_gate": "G_R04_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R04_E1",
+          "quantity": 24
+        },
+        {
+          "material_id": "M_R04_G3",
+          "quantity": 24
+        },
+        {
+          "material_id": "M_R04_E3",
+          "quantity": 24
+        }
+      ],
+      "status": "TUNING_PROPOSAL_NOT_WRITTEN_TO_WORLD_R1"
+    },
+    {
+      "recipe_id": "RC_EQ_HAND_01",
+      "output_gear_id": "EQ_HAND_01",
+      "parent_template_id": null,
+      "operation": "craft_new",
+      "unlock_gate": "G_R01_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R01_E2",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_E3",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G3",
+          "quantity": 8
+        }
+      ],
+      "status": "TUNING_PROPOSAL_NOT_WRITTEN_TO_WORLD_R1"
+    },
+    {
+      "recipe_id": "RC_EQ_HAND_02",
+      "output_gear_id": "EQ_HAND_02",
+      "parent_template_id": "EQ_HAND_01",
+      "operation": "evolve_in_place",
+      "unlock_gate": "G_R03_A",
+      "station": "forge",
+      "ingredients": [
+        {
+          "material_id": "M_R03_G4",
+          "quantity": 20
+        },
+        {
+          "material_id": "M_R03_E1",
+          "quantity": 20
+        },
+        {
+          "material_id": "M_R03_E3",
+          "quantity": 20
+        },
+        {
+          "material_id": "M_R03_BA",
+          "quantity": 1
+        }
+      ],
+      "status": "TUNING_PROPOSAL_NOT_WRITTEN_TO_WORLD_R1"
+    },
+    {
+      "recipe_id": "RC_EQ_HAND_03",
+      "output_gear_id": "EQ_HAND_03",
+      "parent_template_id": "EQ_HAND_02",
+      "operation": "evolve_in_place",
+      "unlock_gate": "G_R05_A",
+      "station": "forge",
+      "ingredients": [
+        {
+          "material_id": "M_R05_E2",
+          "quantity": 28
+        },
+        {
+          "material_id": "M_R05_G2",
+          "quantity": 28
+        },
+        {
+          "material_id": "M_R04_E4",
+          "quantity": 28
+        }
+      ],
+      "status": "TUNING_PROPOSAL_NOT_WRITTEN_TO_WORLD_R1"
+    },
+    {
+      "recipe_id": "RC_EQ_FEET_01",
+      "output_gear_id": "EQ_FEET_01",
+      "parent_template_id": null,
+      "operation": "craft_new",
+      "unlock_gate": "G_R01_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R01_G1",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_E1",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G3",
+          "quantity": 8
+        }
+      ],
+      "status": "TUNING_PROPOSAL_NOT_WRITTEN_TO_WORLD_R1"
+    },
+    {
+      "recipe_id": "RC_EQ_FEET_02",
+      "output_gear_id": "EQ_FEET_02",
+      "parent_template_id": "EQ_FEET_01",
+      "operation": "evolve_in_place",
+      "unlock_gate": "G_R03_A",
+      "station": "forge",
+      "ingredients": [
+        {
+          "material_id": "M_R03_E4",
+          "quantity": 20
+        },
+        {
+          "material_id": "M_R03_G2",
+          "quantity": 20
+        },
+        {
+          "material_id": "M_R03_G4",
+          "quantity": 20
+        }
+      ],
+      "status": "TUNING_PROPOSAL_NOT_WRITTEN_TO_WORLD_R1"
+    },
+    {
+      "recipe_id": "RC_EQ_FEET_03",
+      "output_gear_id": "EQ_FEET_03",
+      "parent_template_id": "EQ_FEET_02",
+      "operation": "evolve_in_place",
+      "unlock_gate": "G_R04_A",
+      "station": "forge",
+      "ingredients": [
+        {
+          "material_id": "M_R04_BA",
+          "quantity": 1
+        },
+        {
+          "material_id": "M_R04_G3",
+          "quantity": 24
+        },
+        {
+          "material_id": "M_R04_G4",
+          "quantity": 24
+        }
+      ],
+      "status": "TUNING_PROPOSAL_NOT_WRITTEN_TO_WORLD_R1"
+    },
+    {
+      "recipe_id": "RC_EQ_AMU_01",
+      "output_gear_id": "EQ_AMU_01",
+      "parent_template_id": null,
+      "operation": "craft_new",
+      "unlock_gate": "G_R01_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R01_G2",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G4",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_E2",
+          "quantity": 8
+        }
+      ],
+      "status": "TUNING_PROPOSAL_NOT_WRITTEN_TO_WORLD_R1"
+    },
+    {
+      "recipe_id": "RC_EQ_AMU_02",
+      "output_gear_id": "EQ_AMU_02",
+      "parent_template_id": "EQ_AMU_01",
+      "operation": "evolve_in_place",
+      "unlock_gate": "G_R02_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R02_G2",
+          "quantity": 16
+        },
+        {
+          "material_id": "M_R02_G4",
+          "quantity": 16
+        },
+        {
+          "material_id": "M_R02_E3",
+          "quantity": 16
+        }
+      ],
+      "status": "TUNING_PROPOSAL_NOT_WRITTEN_TO_WORLD_R1"
+    },
+    {
+      "recipe_id": "RC_EQ_AMU_03",
+      "output_gear_id": "EQ_AMU_03",
+      "parent_template_id": "EQ_AMU_02",
+      "operation": "evolve_in_place",
+      "unlock_gate": "G_R05_B",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R05_BB",
+          "quantity": 2
+        },
+        {
+          "material_id": "M_R05_G3",
+          "quantity": 28
+        },
+        {
+          "material_id": "M_R05_G4",
+          "quantity": 28
+        }
+      ],
+      "status": "TUNING_PROPOSAL_NOT_WRITTEN_TO_WORLD_R1"
+    },
+    {
+      "recipe_id": "RC_EQ_RING_01",
+      "output_gear_id": "EQ_RING_01",
+      "parent_template_id": null,
+      "operation": "craft_new",
+      "unlock_gate": "G_R01_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R01_G1",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_E3",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G3",
+          "quantity": 8
+        }
+      ],
+      "status": "TUNING_PROPOSAL_NOT_WRITTEN_TO_WORLD_R1"
+    },
+    {
+      "recipe_id": "RC_EQ_RING_02",
+      "output_gear_id": "EQ_RING_02",
+      "parent_template_id": "EQ_RING_01",
+      "operation": "evolve_in_place",
+      "unlock_gate": "G_R03_A",
+      "station": "forge",
+      "ingredients": [
+        {
+          "material_id": "M_R03_G2",
+          "quantity": 20
+        },
+        {
+          "material_id": "M_R03_E2",
+          "quantity": 20
+        },
+        {
+          "material_id": "M_R03_G1",
+          "quantity": 20
+        }
+      ],
+      "status": "TUNING_PROPOSAL_NOT_WRITTEN_TO_WORLD_R1"
+    },
+    {
+      "recipe_id": "RC_EQ_RING_03",
+      "output_gear_id": "EQ_RING_03",
+      "parent_template_id": "EQ_RING_02",
+      "operation": "evolve_in_place",
+      "unlock_gate": "G_R04_A",
+      "station": "forge",
+      "ingredients": [
+        {
+          "material_id": "M_R04_G1",
+          "quantity": 24
+        },
+        {
+          "material_id": "M_R04_G2",
+          "quantity": 24
+        },
+        {
+          "material_id": "M_R04_E4",
+          "quantity": 24
+        }
+      ],
+      "status": "TUNING_PROPOSAL_NOT_WRITTEN_TO_WORLD_R1"
+    }
+  ],
+  "new_cat_recipes": [
+    {
+      "recipe_id": "RC_EQ_F_BODY_01",
+      "output_gear_id": "EQ_F_BODY_01",
+      "parent_template_id": null,
+      "operation": "craft_new",
+      "unlock_gate": "G_R01_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R01_E2",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G3",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G4",
+          "quantity": 8
+        }
+      ],
+      "status": "PROPOSED_EXTENSION_AND_TUNING"
+    },
+    {
+      "recipe_id": "RC_EQ_F_HAND_01",
+      "output_gear_id": "EQ_F_HAND_01",
+      "parent_template_id": null,
+      "operation": "craft_new",
+      "unlock_gate": "G_R01_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R01_E2",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_E3",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G3",
+          "quantity": 8
+        }
+      ],
+      "status": "PROPOSED_EXTENSION_AND_TUNING"
+    },
+    {
+      "recipe_id": "RC_EQ_F_FEET_01",
+      "output_gear_id": "EQ_F_FEET_01",
+      "parent_template_id": null,
+      "operation": "craft_new",
+      "unlock_gate": "G_R01_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R01_G1",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_E1",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G3",
+          "quantity": 8
+        }
+      ],
+      "status": "PROPOSED_EXTENSION_AND_TUNING"
+    },
+    {
+      "recipe_id": "RC_EQ_F_RING_01",
+      "output_gear_id": "EQ_F_RING_01",
+      "parent_template_id": null,
+      "operation": "craft_new",
+      "unlock_gate": "G_R01_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R01_G1",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_E3",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G3",
+          "quantity": 8
+        }
+      ],
+      "status": "PROPOSED_EXTENSION_AND_TUNING"
+    }
+  ],
+  "awakenings": [
+    {
+      "awakening_id": "AW_C_WITCH_1",
+      "actor_id": "C_WITCH",
+      "stage": 1,
+      "name": "芽吹く術理",
+      "unlock_gate": "G_R01_B",
+      "min_level": 12,
+      "requires_previous_stage": 0,
+      "materials": [
+        {
+          "material_id": "M_R01_BB",
+          "quantity": 1
+        },
+        {
+          "material_id": "M_R01_G2",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G4",
+          "quantity": 8
+        }
+      ],
+      "rules": [
+        {
+          "op": "poison_stack_cap_add",
+          "value": 1
+        },
+        {
+          "op": "barrier_bonus_add_bp",
+          "value": 1000
+        }
+      ],
+      "note": "毒か護り、どちらの武器でも成長が効く。",
+      "level_reset": false,
+      "gear_reset": false,
+      "duplicate_character_required": false,
+      "status": "PROPOSED"
+    },
+    {
+      "awakening_id": "AW_C_WITCH_2",
+      "actor_id": "C_WITCH",
+      "stage": 2,
+      "name": "重なる術式",
+      "unlock_gate": "G_R03_B",
+      "min_level": 32,
+      "requires_previous_stage": 1,
+      "materials": [
+        {
+          "material_id": "M_R03_BB",
+          "quantity": 1
+        },
+        {
+          "material_id": "M_R03_G1",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R03_G2",
+          "quantity": 8
+        }
+      ],
+      "rules": [
+        {
+          "op": "marked_burst_bonus_add_bp",
+          "value": 1000
+        }
+      ],
+      "note": "狙印のある相手への破砕が強くなる。",
+      "level_reset": false,
+      "gear_reset": false,
+      "duplicate_character_required": false,
+      "status": "PROPOSED"
+    },
+    {
+      "awakening_id": "AW_C_WITCH_3",
+      "actor_id": "C_WITCH",
+      "stage": 3,
+      "name": "巡る調合",
+      "unlock_gate": "G_R05_B",
+      "min_level": 55,
+      "requires_previous_stage": 2,
+      "materials": [
+        {
+          "material_id": "M_R05_BB",
+          "quantity": 1
+        },
+        {
+          "material_id": "M_R05_G3",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R05_G4",
+          "quantity": 8
+        }
+      ],
+      "rules": [
+        {
+          "op": "seed_success_empowers_next_burst",
+          "bonus_bp": 2000,
+          "duration_ms": 12000,
+          "charges": 1
+        }
+      ],
+      "note": "毒付与/結界付与に成功した後、次の破砕を強化。重複保持不可。",
+      "level_reset": false,
+      "gear_reset": false,
+      "duplicate_character_required": false,
+      "status": "PROPOSED"
+    },
+    {
+      "awakening_id": "AW_C_APPRENTICE_1",
+      "actor_id": "C_APPRENTICE",
+      "stage": 1,
+      "name": "寄り添う灯",
+      "unlock_gate": "G_R01_B",
+      "min_level": 12,
+      "requires_previous_stage": 0,
+      "materials": [
+        {
+          "material_id": "M_R01_BB",
+          "quantity": 1
+        },
+        {
+          "material_id": "M_R01_G2",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G4",
+          "quantity": 8
+        }
+      ],
+      "rules": [
+        {
+          "op": "heal_bonus_when_target_below_bp",
+          "threshold_bp": 3500,
+          "bonus_bp": 2000
+        }
+      ],
+      "note": "深い傷の回復を得意にする。",
+      "level_reset": false,
+      "gear_reset": false,
+      "duplicate_character_required": false,
+      "status": "PROPOSED"
+    },
+    {
+      "awakening_id": "AW_C_APPRENTICE_2",
+      "actor_id": "C_APPRENTICE",
+      "stage": 2,
+      "name": "澄んだ詠唱",
+      "unlock_gate": "G_R03_B",
+      "min_level": 32,
+      "requires_previous_stage": 1,
+      "materials": [
+        {
+          "material_id": "M_R03_BB",
+          "quantity": 1
+        },
+        {
+          "material_id": "M_R03_G1",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R03_G2",
+          "quantity": 8
+        }
+      ],
+      "rules": [
+        {
+          "op": "heal_cleanse_one",
+          "priority": [
+            "poison",
+            "slow",
+            "weaken"
+          ],
+          "replaces_baseline_cleanse_filter": true
+        }
+      ],
+      "note": "回復に付く解除の対象をslowのみからpoison/slow/weakenへ拡張。1動作1種、死亡対象不可。",
+      "level_reset": false,
+      "gear_reset": false,
+      "duplicate_character_required": false,
+      "status": "PROPOSED"
+    },
+    {
+      "awakening_id": "AW_C_APPRENTICE_3",
+      "actor_id": "C_APPRENTICE",
+      "stage": 3,
+      "name": "二重の添え詠唱",
+      "unlock_gate": "G_R05_B",
+      "min_level": 55,
+      "requires_previous_stage": 2,
+      "materials": [
+        {
+          "material_id": "M_R05_BB",
+          "quantity": 1
+        },
+        {
+          "material_id": "M_R05_G3",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R05_G4",
+          "quantity": 8
+        }
+      ],
+      "rules": [
+        {
+          "op": "echo_charges_set",
+          "value": 2
+        }
+      ],
+      "note": "同じ支援を次の主攻撃2回へ。上限2で置き換え、加算不可。",
+      "level_reset": false,
+      "gear_reset": false,
+      "duplicate_character_required": false,
+      "status": "PROPOSED"
+    },
+    {
+      "awakening_id": "AW_C_SMITH_1",
+      "actor_id": "C_SMITH",
+      "stage": 1,
+      "name": "揺るがぬ手",
+      "unlock_gate": "G_R01_B",
+      "min_level": 12,
+      "requires_previous_stage": 0,
+      "materials": [
+        {
+          "material_id": "M_R01_BB",
+          "quantity": 1
+        },
+        {
+          "material_id": "M_R01_G2",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G4",
+          "quantity": 8
+        }
+      ],
+      "rules": [
+        {
+          "op": "guard_chance_add_bp",
+          "value": 500
+        }
+      ],
+      "note": "常時のガードを安定。",
+      "level_reset": false,
+      "gear_reset": false,
+      "duplicate_character_required": false,
+      "status": "PROPOSED"
+    },
+    {
+      "awakening_id": "AW_C_SMITH_2",
+      "actor_id": "C_SMITH",
+      "stage": 2,
+      "name": "耐える火種",
+      "unlock_gate": "G_R03_B",
+      "min_level": 32,
+      "requires_previous_stage": 1,
+      "materials": [
+        {
+          "material_id": "M_R03_BB",
+          "quantity": 1
+        },
+        {
+          "material_id": "M_R03_G1",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R03_G2",
+          "quantity": 8
+        }
+      ],
+      "rules": [
+        {
+          "op": "counter_bonus_when_self_below_bp",
+          "threshold_bp": 5000,
+          "bonus_bp": 2000
+        }
+      ],
+      "note": "追い込まれたときの反撃を強化。",
+      "level_reset": false,
+      "gear_reset": false,
+      "duplicate_character_required": false,
+      "status": "PROPOSED"
+    },
+    {
+      "awakening_id": "AW_C_SMITH_3",
+      "actor_id": "C_SMITH",
+      "stage": 3,
+      "name": "仲間の帰り道",
+      "unlock_gate": "G_R05_B",
+      "min_level": 55,
+      "requires_previous_stage": 2,
+      "materials": [
+        {
+          "material_id": "M_R05_BB",
+          "quantity": 1
+        },
+        {
+          "material_id": "M_R05_G3",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R05_G4",
+          "quantity": 8
+        }
+      ],
+      "rules": [
+        {
+          "op": "cover_charges_set",
+          "value": 3
+        },
+        {
+          "op": "cover_duration_set_ms",
+          "value": 6000
+        }
+      ],
+      "note": "かばう機会を2→3、持続4→6秒。全体攻撃/DoTは対象外のまま。",
+      "level_reset": false,
+      "gear_reset": false,
+      "duplicate_character_required": false,
+      "status": "PROPOSED"
+    },
+    {
+      "awakening_id": "AW_C_FAMILIAR_1",
+      "actor_id": "C_FAMILIAR",
+      "stage": 1,
+      "name": "影踏みの心得",
+      "unlock_gate": "G_R01_B",
+      "min_level": 12,
+      "requires_previous_stage": 0,
+      "materials": [
+        {
+          "material_id": "M_R01_BB",
+          "quantity": 1
+        },
+        {
+          "material_id": "M_R01_G2",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R01_G4",
+          "quantity": 8
+        }
+      ],
+      "rules": [
+        {
+          "op": "chase_coefficient_set_bp",
+          "value": 5000
+        }
+      ],
+      "note": "追撃の威力を0.40→0.50。",
+      "level_reset": false,
+      "gear_reset": false,
+      "duplicate_character_required": false,
+      "status": "PROPOSED"
+    },
+    {
+      "awakening_id": "AW_C_FAMILIAR_2",
+      "actor_id": "C_FAMILIAR",
+      "stage": 2,
+      "name": "夜目の見切り",
+      "unlock_gate": "G_R03_B",
+      "min_level": 32,
+      "requires_previous_stage": 1,
+      "materials": [
+        {
+          "material_id": "M_R03_BB",
+          "quantity": 1
+        },
+        {
+          "material_id": "M_R03_G1",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R03_G2",
+          "quantity": 8
+        }
+      ],
+      "rules": [
+        {
+          "op": "dash_extra_if_target_below_bp",
+          "threshold_bp": 5000,
+          "coefficient_bp": 2500
+        }
+      ],
+      "note": "弱った敵への夜駆けを強化。",
+      "level_reset": false,
+      "gear_reset": false,
+      "duplicate_character_required": false,
+      "status": "PROPOSED"
+    },
+    {
+      "awakening_id": "AW_C_FAMILIAR_3",
+      "actor_id": "C_FAMILIAR",
+      "stage": 3,
+      "name": "夜渡りの息継ぎ",
+      "unlock_gate": "G_R05_B",
+      "min_level": 55,
+      "requires_previous_stage": 2,
+      "materials": [
+        {
+          "material_id": "M_R05_BB",
+          "quantity": 1
+        },
+        {
+          "material_id": "M_R05_G3",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R05_G4",
+          "quantity": 8
+        }
+      ],
+      "rules": [
+        {
+          "op": "dash_effective_damage_to_self_heal",
+          "ratio_bp": 1500,
+          "self_max_hp_cap_bp": 500,
+          "depth": 1
+        }
+      ],
+      "note": "夜駆けの実HP損失の15%、自身HP5%まで回復。反応起点にしない。",
+      "level_reset": false,
+      "gear_reset": false,
+      "duplicate_character_required": false,
+      "status": "PROPOSED"
+    }
+  ],
+  "research": [
+    {
+      "research_id": "RS_THEORY_1",
+      "rank": 1,
+      "gate": "G_START",
+      "previous": null,
+      "effect_scalar_bp": 10000,
+      "ingredients": [],
+      "shared_across_party": true,
+      "choices_or_respec": false
+    },
+    {
+      "research_id": "RS_THEORY_2",
+      "rank": 2,
+      "gate": "G_R01_B",
+      "previous": "RS_THEORY_1",
+      "effect_scalar_bp": 10800,
+      "ingredients": [
+        {
+          "material_id": "M_R01_G2",
+          "quantity": 10
+        },
+        {
+          "material_id": "M_R01_G4",
+          "quantity": 10
+        }
+      ],
+      "shared_across_party": true,
+      "choices_or_respec": false
+    },
+    {
+      "research_id": "RS_THEORY_3",
+      "rank": 3,
+      "gate": "G_R02_B",
+      "previous": "RS_THEORY_2",
+      "effect_scalar_bp": 11600,
+      "ingredients": [
+        {
+          "material_id": "M_R02_G2",
+          "quantity": 12
+        },
+        {
+          "material_id": "M_R02_G3",
+          "quantity": 12
+        }
+      ],
+      "shared_across_party": true,
+      "choices_or_respec": false
+    },
+    {
+      "research_id": "RS_THEORY_4",
+      "rank": 4,
+      "gate": "G_R03_B",
+      "previous": "RS_THEORY_3",
+      "effect_scalar_bp": 12400,
+      "ingredients": [
+        {
+          "material_id": "M_R03_G1",
+          "quantity": 14
+        },
+        {
+          "material_id": "M_R03_G4",
+          "quantity": 14
+        }
+      ],
+      "shared_across_party": true,
+      "choices_or_respec": false
+    },
+    {
+      "research_id": "RS_THEORY_5",
+      "rank": 5,
+      "gate": "G_R04_B",
+      "previous": "RS_THEORY_4",
+      "effect_scalar_bp": 13200,
+      "ingredients": [
+        {
+          "material_id": "M_R04_G1",
+          "quantity": 16
+        },
+        {
+          "material_id": "M_R04_G2",
+          "quantity": 16
+        }
+      ],
+      "shared_across_party": true,
+      "choices_or_respec": false
+    }
+  ],
+  "attunement_costs": [
+    {
+      "to_rank": 2,
+      "from_rank": 1,
+      "gate": "G_R01_B",
+      "dust": 60,
+      "materials": [
+        {
+          "material_id": "M_R02_G1",
+          "quantity": 6
+        },
+        {
+          "material_id": "M_R02_G2",
+          "quantity": 6
+        }
+      ]
+    },
+    {
+      "to_rank": 3,
+      "from_rank": 2,
+      "gate": "G_R02_B",
+      "dust": 120,
+      "materials": [
+        {
+          "material_id": "M_R03_G1",
+          "quantity": 8
+        },
+        {
+          "material_id": "M_R03_G2",
+          "quantity": 8
+        }
+      ]
+    },
+    {
+      "to_rank": 4,
+      "from_rank": 3,
+      "gate": "G_R03_B",
+      "dust": 200,
+      "materials": [
+        {
+          "material_id": "M_R04_G1",
+          "quantity": 10
+        },
+        {
+          "material_id": "M_R04_G2",
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "to_rank": 5,
+      "from_rank": 4,
+      "gate": "G_R04_B",
+      "dust": 300,
+      "materials": [
+        {
+          "material_id": "M_R05_G1",
+          "quantity": 12
+        },
+        {
+          "material_id": "M_R05_G2",
+          "quantity": 12
+        }
+      ]
+    }
+  ],
+  "growth": {
+    "max_level": 60,
+    "next_level_xp_formula": "100 + 30*(L-1) + 4*(L-1)^2",
+    "level_growth_formula": "base + per_level*(L-1)",
+    "level_target_bands": [
+      {
+        "region": "R01",
+        "min": 1,
+        "max": 12
+      },
+      {
+        "region": "R02",
+        "min": 12,
+        "max": 24
+      },
+      {
+        "region": "R03",
+        "min": 24,
+        "max": 36
+      },
+      {
+        "region": "R04",
+        "min": 36,
+        "max": 48
+      },
+      {
+        "region": "R05",
+        "min": 48,
+        "max": 60
+      }
+    ],
+    "bands_are_not_gates": true,
+    "joined_xp_policy": "同じ遠征EXPを各加入者へ。分配しない。未加入者は加入時に既加入者の最大永久EXPに同期。素材/装備は隊で1回。",
+    "not_proven": "EXP供給速度、実日数、最終ボスの適正Lvは未検証。"
+  },
+  "equipment_rules": {
+    "enhance_step_bp": 300,
+    "enhance_next_cost_formula": "5 * next_enhancement_level",
+    "rarity_primary_multiplier": false,
+    "roll_q_range": [
+      0,
+      1000
+    ],
+    "substats_scale_with_attunement": false,
+    "max_affixes": 3,
+    "min_roll_legend": 600,
+    "group_duplicate_per_item": false,
+    "max_same_instance_owners": 1,
+    "wear_none_allowed": true,
+    "salvage_investment_return_bp": 8000,
+    "reforge_cost_dust": 40,
+    "reforge_max_selected_slots": 1,
+    "reforge_refundable": false,
+    "quality_upgrades": [
+      {
+        "from": "Q0",
+        "to": "Q1",
+        "gate": "G_R01_A",
+        "dust": 10
+      },
+      {
+        "from": "Q1",
+        "to": "Q2",
+        "gate": "G_R01_B",
+        "dust": 30
+      },
+      {
+        "from": "Q2",
+        "to": "Q3",
+        "gate": "G_R02_B",
+        "dust": 100
+      },
+      {
+        "from": "Q3",
+        "to": "Q4",
+        "gate": "G_R04_B",
+        "dust": 300
+      }
+    ],
+    "shared_resource_id": "RES_REFINING_DUST",
+    "new_resource_separate_from_50_materials": true,
+    "craft_quality": "Q2",
+    "craft_roll_floor_q": 250,
+    "craft_core_guaranteed": true,
+    "branch_switch_v1": "同一武器系統の別個体を制作して装備交換する。進化を戻して素材返還する操作は入れない。"
+  },
+  "combat": {
+    "clock_ms": true,
+    "defense_k_formula": "100 + 8*(attacker_level - 1)",
+    "poison_bypasses_defense": true,
+    "poison_hits_barrier": false,
+    "normal_hits_always": true,
+    "basic_first_hit_at_ms": "basic_interval_ms (haste applied)",
+    "cooldown_starts": "effect_commit",
+    "reaction_depth_max": 1,
+    "player_ai_settings": false,
+    "time_limit_ms": 120000,
+    "time_limit_is_tuning": true,
+    "minimum_busy_ms": 100,
+    "minimum_basic_interval_ms": 500,
+    "minimum_skill_cooldown_ms": 1000,
+    "reaction_icd_floor_ms": 1500,
+    "effect_order": [
+      "outgoing_modifiers_and_critical",
+      "target_defense",
+      "guard",
+      "specific_incoming_reduction",
+      "barrier",
+      "hp"
+    ],
+    "aoe_cover": false,
+    "dot_cover": false,
+    "barrier_consumption": "earliest_expiry_then_source_id",
+    "party_target_weights": {
+      "C_SMITH": 60,
+      "C_WITCH": 15,
+      "C_APPRENTICE": 10,
+      "C_FAMILIAR": 15
+    },
+    "pre_smith_weights": {
+      "C_WITCH": 60,
+      "C_FAMILIAR": 40
+    },
+    "enemy_level_does_not_scale_to_player": true
+  },
+  "unknowns": [
+    "4人戦闘の全自動AI実装と10ボスのバランス実測",
+    "ドロップ枠の毎時間供給量、EXP毎時間、全29レシピ/猫4型の体感取得時間",
+    "最終装備総型数、伝説級固有装備12型案の追加有無",
+    "キャラクター最終表記/年齢と新猫装具の美術承認",
+    "同期・バックアップ・本番セーブ移行と実機性能",
+    "広告・恒久購入の最終内容と無料/購入後の到達時間"
+  ],
+  "validation_boundary": "付属Pythonは数式・装備変換・参照整合性のモデル。4人自動戦闘エンジンではない。",
+  "ai_policy": {
+    "id": "AUTO_NO_TACTICS_R2",
+    "player_editable": false,
+    "priority": [
+      "imminent_survival",
+      "effective_heal",
+      "useful_cleanse",
+      "missing_or_expiring_status",
+      "active_damage",
+      "basic"
+    ],
+    "prediction": {
+      "public_telegraph_only": true,
+      "horizon_ms": 1500,
+      "single_damage_fraction_of_max_hp_bp": 2000,
+      "projected_hp_threshold_bp": 3500,
+      "assume_critical": false,
+      "assume_guard": false,
+      "consider_existing_shields_and_cover": true,
+      "consider_pending_heal_and_barrier_reservations": true
+    },
+    "target_sort": [
+      "living_marked_target",
+      "living_current_target",
+      "visible_enemy_priority_desc",
+      "hp_fraction_asc",
+      "stable_id_asc"
+    ],
+    "heal_threshold_bp": 7000,
+    "ward_hp_threshold_bp": 5000,
+    "cleanse_only": {
+      "min_slow_bp": 2000,
+      "min_remaining_ms": 3000,
+      "require_no_other_heal_need": true,
+      "require_no_visible_danger": true
+    },
+    "buff_reapply": "do_not_overwrite_stronger_and_do_not_exceed_shared_cap",
+    "display_order_not_combat_modifier": true
+  },
+  "timing_contract": {
+    "same_timestamp": [
+      "due_dot_tick_inclusive_at_expiry",
+      "expire_effects",
+      "scheduled_impacts_by_event_seq",
+      "eligible_reactions_depth_one",
+      "new_action_selection"
+    ],
+    "death_check": "after_each_atomic_effect_before_dead_actor_reaction",
+    "initial_free_normal_attack": false,
+    "basic_backlog_max": 1,
+    "action_whiff_recheck_ms": 500,
+    "minimum_failed_action_busy_ms": 100,
+    "basic_haste_applies_to_windup": false,
+    "skill_cdr_applies_to_reaction_icd": false,
+    "presentational_speed_in_input": false,
+    "dot_refresh_resets_next_tick": false,
+    "dot_expiry_tick_included": true,
+    "poison_persists_if_caster_dies": true,
+    "defeat_when_all_allies_dead_even_if_poison_remains": true
+  },
+  "acquisition_contract": {
+    "crafted_new_quality": "Q2",
+    "crafted_raw_roll_floor": 250,
+    "evolved_item_keeps_quality": true,
+    "drop_quality_distribution_is_conditional": true,
+    "normal_equipment_drop_gate_filter": true,
+    "weapons_require_equippable_joined_actor": true,
+    "shared_affix_filter_requires_joined_actor_capability": true,
+    "stored_latent_count": 3,
+    "raw_materials_never_auto_salvaged": true,
+    "initial_starting_weapon_ids": [
+      "EQ_W_01",
+      "EQ_F_01"
+    ],
+    "join_weapon_ids": [
+      "EQ_A_01",
+      "EQ_S_01"
+    ],
+    "grant_idempotency": "actor_join_event_id",
+    "initial_and_join_grant_rng": "fixed_fixture_not_lottery",
+    "loot_hourly_supply": "NOT_SET"
+  }
+}

@@ -1,0 +1,9 @@
+# Addendum R003 — Swift cross-language execution readback
+
+This addendum preserves the original review and R002 addendum. It updates Swift execution status using the retained root run records.
+
+The first Swift run (`root_test_tools_r001/RESULT.json`) compiled no test cases: exit 1, 0 executed, inputs unchanged. The compiler failure was confined to the XCTest harness capturing `XCTestCase` state from `async let`; the production candidate source was unchanged. The additive test-only repair R005 moved Sendable observations outside those closures (test SHA-256 `a0beb5aaa4bb2eceb7268f7ffa20f45a4f3deb828a325e446c524118bd96dd47`).
+
+The corrected run (`root_test_tools_r003/RESULT.json`, SHA-256 `aa0b519eda409e9b4595483c8573c7d8c4b1e39f2b2ed6c35a708585db580448`) passed 37 tests: 12 `AuthorityClientContractR461Tests` and 25 existing purchase/save regressions, with 0 failures and 0 skips. It consumed the exact pinned synthetic Python exchange fixture (SHA-256 `0e68e855f2458ce679a6b8ec7e7018ffb84fbddd4244f461215235659380059d`). The run took 18.14 seconds, used 222,560,256 allocated build bytes, and reported all input files unchanged. The detailed log SHA-256 is `31128960f9438a6c723111627dc42f62a99fceb52d691fab351629cd71068835`.
+
+This closes the Swift wire-contract fixture test at source/test level. It does not establish a durable implementation of `PendingPurchaseOperationStoreR461` or `AuthorityObservationStoreR461`: these remain protocols, and client tests use an in-memory actor/test serialization. The separate seven R453 importer tests do exercise file-backed game-save import, rollback, cold reopen, and retry once, but do not provide a persistent authority-observation/pending-request store or app/StoreKit wiring. The complete R461 candidate remains a local test contract, not Apple production authentication, online revocation, StoreKit entitlement, or production authorization.

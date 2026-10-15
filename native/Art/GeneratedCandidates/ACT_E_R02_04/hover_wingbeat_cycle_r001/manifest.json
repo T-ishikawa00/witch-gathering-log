@@ -1,0 +1,250 @@
+{
+  "asset_id": "ACT_E_R02_04",
+  "revision": "hover_wingbeat_cycle_r001",
+  "movement_semantics": "in_place_hover_with_repeated_wingbeat_not_ground_walk",
+  "quality_limit": "Wing shapes repeat several phases; not nine fully unique phases, candidate only.",
+  "source_still_path": "ActorStills/ACT_E_R02_04/ACT_E_R02_04__still__r001.png",
+  "source_still_sha256": "632bab3766840d25d1ccd2d7d9f357aeb30132766f0b941952a3508332b8db7c",
+  "atlas_path": "GeneratedCandidates/ACT_E_R02_04/hover_wingbeat_cycle_r001/imagegen_atlas_source.png",
+  "atlas_sha256": "e7ce329a2e69b916d8167b2f683b76d0f08d98ab60de7ee461530d85aa235905",
+  "atlas_px": [
+    1254,
+    1254
+  ],
+  "grid_x": [
+    0,
+    418,
+    836,
+    1254
+  ],
+  "grid_y": [
+    0,
+    418,
+    836,
+    1254
+  ],
+  "frame_canvas_px": [
+    512,
+    512
+  ],
+  "anchor_candidate_px": [
+    256,
+    300
+  ],
+  "registration": "alpha16 centroid centered on x; grounded poses align alpha16 bottom to visual-estimate anchor; hover frames center to canvas. Translation only, no resize/recolor. Disconnected generated alpha outside a 2px fringe of the largest alpha16 component is zeroed.",
+  "fps_candidate": 10,
+  "frames": [
+    {
+      "frame": "walk_000.png",
+      "source_cell_px": [
+        0,
+        0,
+        418,
+        418
+      ],
+      "translation_px": [
+        56,
+        24
+      ],
+      "alpha16_bounds_px": [
+        86,
+        71,
+        427,
+        441
+      ],
+      "alpha16_pixels": 63393,
+      "disconnected_alpha_pixels_zeroed": 9729,
+      "source_alpha16_component_count": 2,
+      "sha256": "db6f51b28b7c65dae42578a0a172fa5d11d74810198b25ee0bc6131a359917c5"
+    },
+    {
+      "frame": "walk_001.png",
+      "source_cell_px": [
+        418,
+        0,
+        418,
+        418
+      ],
+      "translation_px": [
+        57,
+        7
+      ],
+      "alpha16_bounds_px": [
+        67,
+        88,
+        445,
+        424
+      ],
+      "alpha16_pixels": 57308,
+      "disconnected_alpha_pixels_zeroed": 11327,
+      "source_alpha16_component_count": 2,
+      "sha256": "94ae769468e1226e4baa387ab107c503531959c35a093c5e7858cafc1d017a74"
+    },
+    {
+      "frame": "walk_002.png",
+      "source_cell_px": [
+        836,
+        0,
+        418,
+        418
+      ],
+      "translation_px": [
+        56,
+        -16
+      ],
+      "alpha16_bounds_px": [
+        56,
+        112,
+        456,
+        401
+      ],
+      "alpha16_pixels": 55884,
+      "disconnected_alpha_pixels_zeroed": 9850,
+      "source_alpha16_component_count": 1,
+      "sha256": "2c019be0722b24d8589ad4ce5fe19a90f041e64c99f984082697cc235de1fc4d"
+    },
+    {
+      "frame": "walk_003.png",
+      "source_cell_px": [
+        0,
+        418,
+        418,
+        418
+      ],
+      "translation_px": [
+        44,
+        -8
+      ],
+      "alpha16_bounds_px": [
+        66,
+        124,
+        445,
+        389
+      ],
+      "alpha16_pixels": 50367,
+      "disconnected_alpha_pixels_zeroed": 8253,
+      "source_alpha16_component_count": 3,
+      "sha256": "88a548892c64aac96bfb302e8a06d4a8a4ca932c708ff69af56f0545c47b223f"
+    },
+    {
+      "frame": "walk_004.png",
+      "source_cell_px": [
+        418,
+        418,
+        418,
+        418
+      ],
+      "translation_px": [
+        56,
+        -1
+      ],
+      "alpha16_bounds_px": [
+        73,
+        131,
+        440,
+        381
+      ],
+      "alpha16_pixels": 48379,
+      "disconnected_alpha_pixels_zeroed": 11477,
+      "source_alpha16_component_count": 4,
+      "sha256": "b5c0b951a9fb4c8e0e26fcd126129cc7f2a25fe6045372196ad195422ebd278d"
+    },
+    {
+      "frame": "walk_005.png",
+      "source_cell_px": [
+        836,
+        418,
+        418,
+        418
+      ],
+      "translation_px": [
+        52,
+        4
+      ],
+      "alpha16_bounds_px": [
+        52,
+        138,
+        459,
+        373
+      ],
+      "alpha16_pixels": 48569,
+      "disconnected_alpha_pixels_zeroed": 9004,
+      "source_alpha16_component_count": 2,
+      "sha256": "6a1a23228be5f390210c80678cca52c55ad8aeb797b420c9c8b83d22dd3205f2"
+    },
+    {
+      "frame": "walk_006.png",
+      "source_cell_px": [
+        0,
+        836,
+        418,
+        418
+      ],
+      "translation_px": [
+        38,
+        45
+      ],
+      "alpha16_bounds_px": [
+        62,
+        106,
+        449,
+        406
+      ],
+      "alpha16_pixels": 54044,
+      "disconnected_alpha_pixels_zeroed": 9781,
+      "source_alpha16_component_count": 1,
+      "sha256": "5278c7c328ed0501515fd3cfd7f7e5328920911342b2c93252744165225a2bf6"
+    },
+    {
+      "frame": "walk_007.png",
+      "source_cell_px": [
+        418,
+        836,
+        418,
+        418
+      ],
+      "translation_px": [
+        50,
+        64
+      ],
+      "alpha16_bounds_px": [
+        69,
+        87,
+        443,
+        425
+      ],
+      "alpha16_pixels": 60257,
+      "disconnected_alpha_pixels_zeroed": 11824,
+      "source_alpha16_component_count": 1,
+      "sha256": "a5624a85cf2de1fcf5a1e17b9eb1f924c595170404bebac631db85df0fb47730"
+    },
+    {
+      "frame": "walk_008.png",
+      "source_cell_px": [
+        836,
+        836,
+        418,
+        418
+      ],
+      "translation_px": [
+        57,
+        38
+      ],
+      "alpha16_bounds_px": [
+        57,
+        112,
+        455,
+        399
+      ],
+      "alpha16_pixels": 55034,
+      "disconnected_alpha_pixels_zeroed": 11216,
+      "source_alpha16_component_count": 1,
+      "sha256": "be687c0bfdb940fbe939cec01bb6c3d2b2439dbdff615231a246340e67242056"
+    }
+  ],
+  "qa_contact_sheet": "GeneratedCandidates/ACT_E_R02_04/hover_wingbeat_cycle_r001/qa_contact_sheet.jpg",
+  "runtime_overlay": "runtime_overlay_act_e_r02_04_pose_candidate_r003_hover_cycle.json",
+  "visual_status": "UNAPPROVED_CANDIDATE_PENDING_ROOT_NATIVE_SCREEN_REVIEW",
+  "approval_status": "HUMAN_ADOPTION_PENDING",
+  "natural_motion_complete": false
+}

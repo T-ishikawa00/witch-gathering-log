@@ -1,0 +1,3525 @@
+[
+  {
+    "id": "A_INTRO_Q2",
+    "gates": [
+      "G_START"
+    ],
+    "cleared": [
+      "A_R01_01"
+    ],
+    "joined": [
+      "C_WITCH",
+      "C_FAMILIAR"
+    ],
+    "credited_hours": 0.0,
+    "xp": {
+      "C_WITCH": 920,
+      "C_FAMILIAR": 920
+    },
+    "dust_remaining": 30,
+    "materials_remaining": {
+      "M_R01_G1": 12,
+      "M_R01_G2": 12,
+      "M_R01_E1": 12,
+      "M_R01_E2": 12
+    },
+    "spent_materials": {},
+    "spent_dust": 0,
+    "natural_gear_count_not_equipped": 0,
+    "loadout": [
+      {
+        "actor_id": "C_WITCH",
+        "level": 6,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "intro:relic",
+            "template_id": "EQ_W_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_POWER",
+                "roll_q": 350
+              },
+              {
+                "affix_id": "AF_HP",
+                "roll_q": 350
+              },
+              {
+                "affix_id": "AF_DEF",
+                "roll_q": 350
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "direct_bonus_bp": 800,
+          "power_pct": 405,
+          "hp_pct": 405,
+          "hp": 603,
+          "power": 74,
+          "defense": 48,
+          "crit_chance_bp": 500,
+          "crit_multiplier_bp": 15000,
+          "guard_chance_bp": 0
+        }
+      },
+      {
+        "actor_id": "C_FAMILIAR",
+        "level": 6,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "grant:C_FAMILIAR",
+            "template_id": "EQ_F_01",
+            "quality": "Q0",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_POWER",
+                "roll_q": 192
+              },
+              {
+                "affix_id": "AF_HP",
+                "roll_q": 189
+              },
+              {
+                "affix_id": "AF_DOT_RESIST",
+                "roll_q": 971
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": true,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "chase_bonus_bp": 1000,
+          "hp": 540,
+          "power": 61,
+          "defense": 50,
+          "crit_chance_bp": 1000,
+          "crit_multiplier_bp": 15000,
+          "guard_chance_bp": 0
+        }
+      }
+    ],
+    "inventory_sha256": "a4a5186c653fe85340b51d3d6378fcba141952cee5569027b52f6c7315e62f02",
+    "history": [
+      {
+        "event": "R3_INTRO_TOTALS_FIXTURE",
+        "not_played": true,
+        "normal_intro_fights_not_simulated": true,
+        "xp": 920,
+        "dust": 30
+      }
+    ]
+  },
+  {
+    "id": "A_START_L1",
+    "gates": [
+      "G_START"
+    ],
+    "cleared": [
+      "A_R01_01"
+    ],
+    "joined": [
+      "C_WITCH",
+      "C_FAMILIAR"
+    ],
+    "credited_hours": 0.0,
+    "xp": {
+      "C_WITCH": 0,
+      "C_FAMILIAR": 0
+    },
+    "dust_remaining": 30,
+    "materials_remaining": {
+      "M_R01_G1": 12,
+      "M_R01_G2": 12,
+      "M_R01_E1": 12,
+      "M_R01_E2": 12
+    },
+    "spent_materials": {},
+    "spent_dust": 0,
+    "natural_gear_count_not_equipped": 0,
+    "loadout": [
+      {
+        "actor_id": "C_WITCH",
+        "level": 1,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "grant:C_WITCH",
+            "template_id": "EQ_W_01",
+            "quality": "Q0",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_HASTE",
+                "roll_q": 159
+              },
+              {
+                "affix_id": "AF_DOT_RESIST",
+                "roll_q": 189
+              },
+              {
+                "affix_id": "AF_CRIT_DMG",
+                "roll_q": 874
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": true,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "direct_bonus_bp": 800,
+          "hp": 420,
+          "power": 52,
+          "defense": 28,
+          "crit_chance_bp": 500,
+          "crit_multiplier_bp": 15000,
+          "guard_chance_bp": 0
+        }
+      },
+      {
+        "actor_id": "C_FAMILIAR",
+        "level": 1,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "grant:C_FAMILIAR",
+            "template_id": "EQ_F_01",
+            "quality": "Q0",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_POWER",
+                "roll_q": 192
+              },
+              {
+                "affix_id": "AF_HP",
+                "roll_q": 189
+              },
+              {
+                "affix_id": "AF_DOT_RESIST",
+                "roll_q": 971
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": true,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "chase_bonus_bp": 1000,
+          "hp": 390,
+          "power": 46,
+          "defense": 30,
+          "crit_chance_bp": 1000,
+          "crit_multiplier_bp": 15000,
+          "guard_chance_bp": 0
+        }
+      }
+    ],
+    "inventory_sha256": "795b36ef666d646ae72f7c423976b7dcda13d7d4e2ce5f3c83a9aecab99a9ab4",
+    "history": [
+      {
+        "event": "R3_INTRO_TOTALS_FIXTURE",
+        "not_played": true,
+        "normal_intro_fights_not_simulated": true,
+        "xp": 920,
+        "dust": 30
+      }
+    ]
+  },
+  {
+    "id": "A_INTRO_PLUS1",
+    "gates": [
+      "G_START"
+    ],
+    "cleared": [
+      "A_R01_01"
+    ],
+    "joined": [
+      "C_WITCH",
+      "C_FAMILIAR"
+    ],
+    "credited_hours": 0.0,
+    "xp": {
+      "C_WITCH": 920,
+      "C_FAMILIAR": 920
+    },
+    "dust_remaining": 25,
+    "materials_remaining": {
+      "M_R01_G1": 12,
+      "M_R01_G2": 12,
+      "M_R01_E1": 12,
+      "M_R01_E2": 12
+    },
+    "spent_materials": {},
+    "spent_dust": 5,
+    "natural_gear_count_not_equipped": 0,
+    "loadout": [
+      {
+        "actor_id": "C_WITCH",
+        "level": 6,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "intro:relic",
+            "template_id": "EQ_W_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 1,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_POWER",
+                "roll_q": 350
+              },
+              {
+                "affix_id": "AF_HP",
+                "roll_q": 350
+              },
+              {
+                "affix_id": "AF_DEF",
+                "roll_q": 350
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 5,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 2
+          }
+        ],
+        "stats": {
+          "direct_bonus_bp": 800,
+          "power_pct": 405,
+          "hp_pct": 405,
+          "hp": 603,
+          "power": 74,
+          "defense": 48,
+          "crit_chance_bp": 500,
+          "crit_multiplier_bp": 15000,
+          "guard_chance_bp": 0
+        }
+      },
+      {
+        "actor_id": "C_FAMILIAR",
+        "level": 6,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "grant:C_FAMILIAR",
+            "template_id": "EQ_F_01",
+            "quality": "Q0",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_POWER",
+                "roll_q": 192
+              },
+              {
+                "affix_id": "AF_HP",
+                "roll_q": 189
+              },
+              {
+                "affix_id": "AF_DOT_RESIST",
+                "roll_q": 971
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": true,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "chase_bonus_bp": 1000,
+          "hp": 540,
+          "power": 61,
+          "defense": 50,
+          "crit_chance_bp": 1000,
+          "crit_multiplier_bp": 15000,
+          "guard_chance_bp": 0
+        }
+      }
+    ],
+    "inventory_sha256": "1003ea3d871a2abddf28c2bd39f9c0a74701cbc25dd93b73e81b0c5beff5cc41",
+    "history": [
+      {
+        "event": "R3_INTRO_TOTALS_FIXTURE",
+        "not_played": true,
+        "normal_intro_fights_not_simulated": true,
+        "xp": 920,
+        "dust": 30
+      }
+    ]
+  },
+  {
+    "id": "A_INTRO_PLUS3",
+    "gates": [
+      "G_START"
+    ],
+    "cleared": [
+      "A_R01_01"
+    ],
+    "joined": [
+      "C_WITCH",
+      "C_FAMILIAR"
+    ],
+    "credited_hours": 0.0,
+    "xp": {
+      "C_WITCH": 920,
+      "C_FAMILIAR": 920
+    },
+    "dust_remaining": 0,
+    "materials_remaining": {
+      "M_R01_G1": 12,
+      "M_R01_G2": 12,
+      "M_R01_E1": 12,
+      "M_R01_E2": 12
+    },
+    "spent_materials": {},
+    "spent_dust": 30,
+    "natural_gear_count_not_equipped": 0,
+    "loadout": [
+      {
+        "actor_id": "C_WITCH",
+        "level": 6,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "intro:relic",
+            "template_id": "EQ_W_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 3,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_POWER",
+                "roll_q": 350
+              },
+              {
+                "affix_id": "AF_HP",
+                "roll_q": 350
+              },
+              {
+                "affix_id": "AF_DEF",
+                "roll_q": 350
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 30,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 4
+          }
+        ],
+        "stats": {
+          "direct_bonus_bp": 800,
+          "power_pct": 405,
+          "hp_pct": 405,
+          "hp": 603,
+          "power": 75,
+          "defense": 48,
+          "crit_chance_bp": 500,
+          "crit_multiplier_bp": 15000,
+          "guard_chance_bp": 0
+        }
+      },
+      {
+        "actor_id": "C_FAMILIAR",
+        "level": 6,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "grant:C_FAMILIAR",
+            "template_id": "EQ_F_01",
+            "quality": "Q0",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_POWER",
+                "roll_q": 192
+              },
+              {
+                "affix_id": "AF_HP",
+                "roll_q": 189
+              },
+              {
+                "affix_id": "AF_DOT_RESIST",
+                "roll_q": 971
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": true,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "chase_bonus_bp": 1000,
+          "hp": 540,
+          "power": 61,
+          "defense": 50,
+          "crit_chance_bp": 1000,
+          "crit_multiplier_bp": 15000,
+          "guard_chance_bp": 0
+        }
+      }
+    ],
+    "inventory_sha256": "3542d9a827c33617afd8976eff01f316e1fd0812200a87712467bc672ee73291",
+    "history": [
+      {
+        "event": "R3_INTRO_TOTALS_FIXTURE",
+        "not_played": true,
+        "normal_intro_fights_not_simulated": true,
+        "xp": 920,
+        "dust": 30
+      }
+    ]
+  },
+  {
+    "id": "B_JOINED_NO_WAIT",
+    "gates": [
+      "G_R01_A",
+      "G_START"
+    ],
+    "cleared": [
+      "A_R01_01",
+      "A_R01_02",
+      "A_R01_03"
+    ],
+    "joined": [
+      "C_WITCH",
+      "C_FAMILIAR",
+      "C_APPRENTICE",
+      "C_SMITH"
+    ],
+    "credited_hours": 0.0,
+    "xp": {
+      "C_WITCH": 920,
+      "C_FAMILIAR": 920,
+      "C_APPRENTICE": 920,
+      "C_SMITH": 920
+    },
+    "dust_remaining": 30,
+    "materials_remaining": {
+      "M_R01_G1": 12,
+      "M_R01_G2": 12,
+      "M_R01_E1": 12,
+      "M_R01_E2": 12,
+      "M_R01_BA": 1
+    },
+    "spent_materials": {},
+    "spent_dust": 0,
+    "natural_gear_count_not_equipped": 0,
+    "loadout": [
+      {
+        "actor_id": "C_WITCH",
+        "level": 6,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "intro:relic",
+            "template_id": "EQ_W_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_POWER",
+                "roll_q": 350
+              },
+              {
+                "affix_id": "AF_HP",
+                "roll_q": 350
+              },
+              {
+                "affix_id": "AF_DEF",
+                "roll_q": 350
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "direct_bonus_bp": 800,
+          "power_pct": 405,
+          "hp_pct": 405,
+          "hp": 603,
+          "power": 74,
+          "defense": 48,
+          "crit_chance_bp": 500,
+          "crit_multiplier_bp": 15000,
+          "guard_chance_bp": 0
+        }
+      },
+      {
+        "actor_id": "C_FAMILIAR",
+        "level": 6,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "grant:C_FAMILIAR",
+            "template_id": "EQ_F_01",
+            "quality": "Q0",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_POWER",
+                "roll_q": 192
+              },
+              {
+                "affix_id": "AF_HP",
+                "roll_q": 189
+              },
+              {
+                "affix_id": "AF_DOT_RESIST",
+                "roll_q": 971
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": true,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "chase_bonus_bp": 1000,
+          "hp": 540,
+          "power": 61,
+          "defense": 50,
+          "crit_chance_bp": 1000,
+          "crit_multiplier_bp": 15000,
+          "guard_chance_bp": 0
+        }
+      },
+      {
+        "actor_id": "C_APPRENTICE",
+        "level": 6,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "grant:C_APPRENTICE",
+            "template_id": "EQ_A_01",
+            "quality": "Q0",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_HASTE",
+                "roll_q": 988
+              },
+              {
+                "affix_id": "AF_DOT_RESIST",
+                "roll_q": 530
+              },
+              {
+                "affix_id": "AF_HEAL",
+                "roll_q": 579
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": true,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "heal_bonus_bp": 1000,
+          "hp": 500,
+          "power": 59,
+          "defense": 46,
+          "crit_chance_bp": 500,
+          "crit_multiplier_bp": 15000,
+          "guard_chance_bp": 0
+        }
+      },
+      {
+        "actor_id": "C_SMITH",
+        "level": 6,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "grant:C_SMITH",
+            "template_id": "EQ_S_01",
+            "quality": "Q0",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_HP",
+                "roll_q": 988
+              },
+              {
+                "affix_id": "AF_HASTE",
+                "roll_q": 663
+              },
+              {
+                "affix_id": "AF_COUNTER",
+                "roll_q": 792
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": true,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "guard_chance_bp": 1500,
+          "hp": 840,
+          "power": 57,
+          "defense": 82,
+          "crit_chance_bp": 500,
+          "crit_multiplier_bp": 15000
+        }
+      }
+    ],
+    "inventory_sha256": "1d9f8adc7597c2c5df70808ed76f8a9d386e2ccfe4af694bfa5499858daaf2ec",
+    "history": [
+      {
+        "event": "R3_INTRO_TOTALS_FIXTURE",
+        "not_played": true,
+        "normal_intro_fights_not_simulated": true,
+        "xp": 920,
+        "dust": 30
+      },
+      {
+        "event": "boss_first_or_replay_commit",
+        "boss_id": "B_R01_A",
+        "battle_id": "025b3d060d745dfb1346933635811118cb0edf493d25390d841588e1c8de2db3",
+        "outcome": "VICTORY",
+        "time_ms": 0
+      },
+      {
+        "event": "join",
+        "actor": "C_APPRENTICE",
+        "xp": 920
+      },
+      {
+        "event": "EXPLICIT_UNSIMULATED_ROUTE_CLEARANCE_FIXTURE",
+        "area": "A_R01_03"
+      },
+      {
+        "event": "join",
+        "actor": "C_SMITH",
+        "xp": 920
+      }
+    ]
+  },
+  {
+    "id": "B_PROTECT_6H",
+    "gates": [
+      "G_R01_A",
+      "G_START"
+    ],
+    "cleared": [
+      "A_R01_01",
+      "A_R01_02",
+      "A_R01_03"
+    ],
+    "joined": [
+      "C_WITCH",
+      "C_FAMILIAR",
+      "C_APPRENTICE",
+      "C_SMITH"
+    ],
+    "credited_hours": 6.0,
+    "xp": {
+      "C_WITCH": 1784,
+      "C_FAMILIAR": 1784,
+      "C_APPRENTICE": 1784,
+      "C_SMITH": 1784
+    },
+    "dust_remaining": 102,
+    "materials_remaining": {
+      "M_R01_G1": 12,
+      "M_R01_G2": 0,
+      "M_R01_E1": 12,
+      "M_R01_E2": 0,
+      "M_R01_BA": 1,
+      "M_R01_G3": 0,
+      "M_R01_G4": 0
+    },
+    "spent_materials": {
+      "M_R01_E2": 32,
+      "M_R01_G3": 16,
+      "M_R01_G4": 32,
+      "M_R01_G2": 16
+    },
+    "spent_dust": 0,
+    "natural_gear_count_not_equipped": 12,
+    "loadout": [
+      {
+        "actor_id": "C_WITCH",
+        "level": 8,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "intro:relic",
+            "template_id": "EQ_W_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_POWER",
+                "roll_q": 350
+              },
+              {
+                "affix_id": "AF_HP",
+                "roll_q": 350
+              },
+              {
+                "affix_id": "AF_DEF",
+                "roll_q": 350
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          },
+          {
+            "uid": "craft:2",
+            "template_id": "EQ_AMU_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_DOT",
+                "roll_q": 46
+              },
+              {
+                "affix_id": "AF_DEF",
+                "roll_q": 864
+              },
+              {
+                "affix_id": "AF_HEAL",
+                "roll_q": 7
+              }
+            ],
+            "origin_roll_floor": 250,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "direct_bonus_bp": 800,
+          "power_pct": 805,
+          "hp_pct": 405,
+          "heal_bonus_bp": 500,
+          "dot_bonus_bp": 625,
+          "defense_pct": 745,
+          "hp": 696,
+          "power": 91,
+          "defense": 60,
+          "crit_chance_bp": 500,
+          "crit_multiplier_bp": 15000,
+          "guard_chance_bp": 0
+        }
+      },
+      {
+        "actor_id": "C_FAMILIAR",
+        "level": 8,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "grant:C_FAMILIAR",
+            "template_id": "EQ_F_01",
+            "quality": "Q0",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_POWER",
+                "roll_q": 192
+              },
+              {
+                "affix_id": "AF_HP",
+                "roll_q": 189
+              },
+              {
+                "affix_id": "AF_DOT_RESIST",
+                "roll_q": 971
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": true,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "chase_bonus_bp": 1000,
+          "hp": 600,
+          "power": 67,
+          "defense": 58,
+          "crit_chance_bp": 1000,
+          "crit_multiplier_bp": 15000,
+          "guard_chance_bp": 0
+        }
+      },
+      {
+        "actor_id": "C_APPRENTICE",
+        "level": 8,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "grant:C_APPRENTICE",
+            "template_id": "EQ_A_01",
+            "quality": "Q0",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_HASTE",
+                "roll_q": 988
+              },
+              {
+                "affix_id": "AF_DOT_RESIST",
+                "roll_q": 530
+              },
+              {
+                "affix_id": "AF_HEAL",
+                "roll_q": 579
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": true,
+            "revision": 1
+          },
+          {
+            "uid": "craft:1",
+            "template_id": "EQ_BODY_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_CRIT_DMG",
+                "roll_q": 882
+              },
+              {
+                "affix_id": "AF_STATUS_RESIST",
+                "roll_q": 689
+              },
+              {
+                "affix_id": "AF_HEAL",
+                "roll_q": 726
+              }
+            ],
+            "origin_roll_floor": 250,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          },
+          {
+            "uid": "craft:3",
+            "template_id": "EQ_AMU_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_DOT",
+                "roll_q": 725
+              },
+              {
+                "affix_id": "AF_POWER",
+                "roll_q": 329
+              },
+              {
+                "affix_id": "AF_CDR",
+                "roll_q": 216
+              }
+            ],
+            "origin_roll_floor": 250,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "heal_bonus_bp": 1500,
+          "hp_pct": 500,
+          "crit_damage_extra_bp": 941,
+          "debuff_duration_resist_bp": 675,
+          "power_pct": 798,
+          "dot_bonus_bp": 862,
+          "hp": 694,
+          "power": 75,
+          "defense": 64,
+          "crit_chance_bp": 500,
+          "crit_multiplier_bp": 15941,
+          "guard_chance_bp": 0
+        }
+      },
+      {
+        "actor_id": "C_SMITH",
+        "level": 8,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "grant:C_SMITH",
+            "template_id": "EQ_S_01",
+            "quality": "Q0",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_HP",
+                "roll_q": 988
+              },
+              {
+                "affix_id": "AF_HASTE",
+                "roll_q": 663
+              },
+              {
+                "affix_id": "AF_COUNTER",
+                "roll_q": 792
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": true,
+            "revision": 1
+          },
+          {
+            "uid": "craft:0",
+            "template_id": "EQ_BODY_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_WARD",
+                "roll_q": 795
+              },
+              {
+                "affix_id": "AF_DOT_RESIST",
+                "roll_q": 136
+              },
+              {
+                "affix_id": "AF_HASTE",
+                "roll_q": 251
+              }
+            ],
+            "origin_roll_floor": 250,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "guard_chance_bp": 1500,
+          "hp_pct": 500,
+          "barrier_bonus_bp": 897,
+          "periodic_resist_bp": 500,
+          "hp": 1058,
+          "power": 63,
+          "defense": 104,
+          "crit_chance_bp": 500,
+          "crit_multiplier_bp": 15000
+        }
+      }
+    ],
+    "inventory_sha256": "f528db6b52cf767dc74bb1116c5de5aeb0de6fea6f914364f9525e8e55d03291",
+    "history": [
+      {
+        "event": "R3_INTRO_TOTALS_FIXTURE",
+        "not_played": true,
+        "normal_intro_fights_not_simulated": true,
+        "xp": 920,
+        "dust": 30
+      },
+      {
+        "event": "boss_first_or_replay_commit",
+        "boss_id": "B_R01_A",
+        "battle_id": "025b3d060d745dfb1346933635811118cb0edf493d25390d841588e1c8de2db3",
+        "outcome": "VICTORY",
+        "time_ms": 0
+      },
+      {
+        "event": "join",
+        "actor": "C_APPRENTICE",
+        "xp": 920
+      },
+      {
+        "event": "EXPLICIT_UNSIMULATED_ROUTE_CLEARANCE_FIXTURE",
+        "area": "A_R01_03"
+      },
+      {
+        "event": "join",
+        "actor": "C_SMITH",
+        "xp": 920
+      },
+      {
+        "event": "four_items_crafted",
+        "policy": "protect",
+        "collected_ms": 21600000,
+        "operations": [
+          [
+            "RC_EQ_BODY_01",
+            2
+          ],
+          [
+            "RC_EQ_AMU_01",
+            2
+          ]
+        ],
+        "natural_gear_not_equipped": true
+      }
+    ]
+  },
+  {
+    "id": "B_PROTECT_12H",
+    "gates": [
+      "G_R01_A",
+      "G_START"
+    ],
+    "cleared": [
+      "A_R01_01",
+      "A_R01_02",
+      "A_R01_03"
+    ],
+    "joined": [
+      "C_WITCH",
+      "C_FAMILIAR",
+      "C_APPRENTICE",
+      "C_SMITH"
+    ],
+    "credited_hours": 12.0,
+    "xp": {
+      "C_WITCH": 2648,
+      "C_FAMILIAR": 2648,
+      "C_APPRENTICE": 2648,
+      "C_SMITH": 2648
+    },
+    "dust_remaining": 174,
+    "materials_remaining": {
+      "M_R01_G1": 21,
+      "M_R01_G2": 9,
+      "M_R01_E1": 21,
+      "M_R01_E2": 9,
+      "M_R01_BA": 1,
+      "M_R01_G3": 9,
+      "M_R01_G4": 9,
+      "M_R01_E4": 9,
+      "M_R01_E3": 9
+    },
+    "spent_materials": {
+      "M_R01_E2": 32,
+      "M_R01_G3": 16,
+      "M_R01_G4": 32,
+      "M_R01_G2": 16
+    },
+    "spent_dust": 0,
+    "natural_gear_count_not_equipped": 24,
+    "loadout": [
+      {
+        "actor_id": "C_WITCH",
+        "level": 9,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "intro:relic",
+            "template_id": "EQ_W_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_POWER",
+                "roll_q": 350
+              },
+              {
+                "affix_id": "AF_HP",
+                "roll_q": 350
+              },
+              {
+                "affix_id": "AF_DEF",
+                "roll_q": 350
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          },
+          {
+            "uid": "craft:2",
+            "template_id": "EQ_AMU_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_DOT",
+                "roll_q": 46
+              },
+              {
+                "affix_id": "AF_DEF",
+                "roll_q": 864
+              },
+              {
+                "affix_id": "AF_HEAL",
+                "roll_q": 7
+              }
+            ],
+            "origin_roll_floor": 250,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "direct_bonus_bp": 800,
+          "power_pct": 805,
+          "hp_pct": 405,
+          "heal_bonus_bp": 500,
+          "dot_bonus_bp": 625,
+          "defense_pct": 745,
+          "hp": 729,
+          "power": 96,
+          "defense": 64,
+          "crit_chance_bp": 500,
+          "crit_multiplier_bp": 15000,
+          "guard_chance_bp": 0
+        }
+      },
+      {
+        "actor_id": "C_FAMILIAR",
+        "level": 9,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "grant:C_FAMILIAR",
+            "template_id": "EQ_F_01",
+            "quality": "Q0",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_POWER",
+                "roll_q": 192
+              },
+              {
+                "affix_id": "AF_HP",
+                "roll_q": 189
+              },
+              {
+                "affix_id": "AF_DOT_RESIST",
+                "roll_q": 971
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": true,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "chase_bonus_bp": 1000,
+          "hp": 630,
+          "power": 70,
+          "defense": 62,
+          "crit_chance_bp": 1000,
+          "crit_multiplier_bp": 15000,
+          "guard_chance_bp": 0
+        }
+      },
+      {
+        "actor_id": "C_APPRENTICE",
+        "level": 9,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "grant:C_APPRENTICE",
+            "template_id": "EQ_A_01",
+            "quality": "Q0",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_HASTE",
+                "roll_q": 988
+              },
+              {
+                "affix_id": "AF_DOT_RESIST",
+                "roll_q": 530
+              },
+              {
+                "affix_id": "AF_HEAL",
+                "roll_q": 579
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": true,
+            "revision": 1
+          },
+          {
+            "uid": "craft:1",
+            "template_id": "EQ_BODY_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_CRIT_DMG",
+                "roll_q": 882
+              },
+              {
+                "affix_id": "AF_STATUS_RESIST",
+                "roll_q": 689
+              },
+              {
+                "affix_id": "AF_HEAL",
+                "roll_q": 726
+              }
+            ],
+            "origin_roll_floor": 250,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          },
+          {
+            "uid": "craft:3",
+            "template_id": "EQ_AMU_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_DOT",
+                "roll_q": 725
+              },
+              {
+                "affix_id": "AF_POWER",
+                "roll_q": 329
+              },
+              {
+                "affix_id": "AF_CDR",
+                "roll_q": 216
+              }
+            ],
+            "origin_roll_floor": 250,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "heal_bonus_bp": 1500,
+          "hp_pct": 500,
+          "crit_damage_extra_bp": 941,
+          "debuff_duration_resist_bp": 675,
+          "power_pct": 798,
+          "dot_bonus_bp": 862,
+          "hp": 723,
+          "power": 78,
+          "defense": 68,
+          "crit_chance_bp": 500,
+          "crit_multiplier_bp": 15941,
+          "guard_chance_bp": 0
+        }
+      },
+      {
+        "actor_id": "C_SMITH",
+        "level": 9,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "grant:C_SMITH",
+            "template_id": "EQ_S_01",
+            "quality": "Q0",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_HP",
+                "roll_q": 988
+              },
+              {
+                "affix_id": "AF_HASTE",
+                "roll_q": 663
+              },
+              {
+                "affix_id": "AF_COUNTER",
+                "roll_q": 792
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": true,
+            "revision": 1
+          },
+          {
+            "uid": "craft:0",
+            "template_id": "EQ_BODY_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_WARD",
+                "roll_q": 795
+              },
+              {
+                "affix_id": "AF_DOT_RESIST",
+                "roll_q": 136
+              },
+              {
+                "affix_id": "AF_HASTE",
+                "roll_q": 251
+              }
+            ],
+            "origin_roll_floor": 250,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "guard_chance_bp": 1500,
+          "hp_pct": 500,
+          "barrier_bonus_bp": 897,
+          "periodic_resist_bp": 500,
+          "hp": 1104,
+          "power": 66,
+          "defense": 110,
+          "crit_chance_bp": 500,
+          "crit_multiplier_bp": 15000
+        }
+      }
+    ],
+    "inventory_sha256": "6c8daa3951abc321f4cc7d8fcb35e6f3338f2d5da39f96a4ace1f0229c64269a",
+    "history": [
+      {
+        "event": "R3_INTRO_TOTALS_FIXTURE",
+        "not_played": true,
+        "normal_intro_fights_not_simulated": true,
+        "xp": 920,
+        "dust": 30
+      },
+      {
+        "event": "boss_first_or_replay_commit",
+        "boss_id": "B_R01_A",
+        "battle_id": "025b3d060d745dfb1346933635811118cb0edf493d25390d841588e1c8de2db3",
+        "outcome": "VICTORY",
+        "time_ms": 0
+      },
+      {
+        "event": "join",
+        "actor": "C_APPRENTICE",
+        "xp": 920
+      },
+      {
+        "event": "EXPLICIT_UNSIMULATED_ROUTE_CLEARANCE_FIXTURE",
+        "area": "A_R01_03"
+      },
+      {
+        "event": "join",
+        "actor": "C_SMITH",
+        "xp": 920
+      },
+      {
+        "event": "four_items_crafted",
+        "policy": "protect",
+        "collected_ms": 21600000,
+        "operations": [
+          [
+            "RC_EQ_BODY_01",
+            2
+          ],
+          [
+            "RC_EQ_AMU_01",
+            2
+          ]
+        ],
+        "natural_gear_not_equipped": true
+      }
+    ]
+  },
+  {
+    "id": "B_PROTECT_24H",
+    "gates": [
+      "G_R01_A",
+      "G_START"
+    ],
+    "cleared": [
+      "A_R01_01",
+      "A_R01_02",
+      "A_R01_03"
+    ],
+    "joined": [
+      "C_WITCH",
+      "C_FAMILIAR",
+      "C_APPRENTICE",
+      "C_SMITH"
+    ],
+    "credited_hours": 24.0,
+    "xp": {
+      "C_WITCH": 4376,
+      "C_FAMILIAR": 4376,
+      "C_APPRENTICE": 4376,
+      "C_SMITH": 4376
+    },
+    "dust_remaining": 318,
+    "materials_remaining": {
+      "M_R01_G1": 39,
+      "M_R01_G2": 27,
+      "M_R01_E1": 39,
+      "M_R01_E2": 27,
+      "M_R01_BA": 1,
+      "M_R01_G3": 27,
+      "M_R01_G4": 27,
+      "M_R01_E4": 27,
+      "M_R01_E3": 27
+    },
+    "spent_materials": {
+      "M_R01_E2": 32,
+      "M_R01_G3": 16,
+      "M_R01_G4": 32,
+      "M_R01_G2": 16
+    },
+    "spent_dust": 0,
+    "natural_gear_count_not_equipped": 48,
+    "loadout": [
+      {
+        "actor_id": "C_WITCH",
+        "level": 12,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "intro:relic",
+            "template_id": "EQ_W_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_POWER",
+                "roll_q": 350
+              },
+              {
+                "affix_id": "AF_HP",
+                "roll_q": 350
+              },
+              {
+                "affix_id": "AF_DEF",
+                "roll_q": 350
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          },
+          {
+            "uid": "craft:2",
+            "template_id": "EQ_AMU_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_DOT",
+                "roll_q": 46
+              },
+              {
+                "affix_id": "AF_DEF",
+                "roll_q": 864
+              },
+              {
+                "affix_id": "AF_HEAL",
+                "roll_q": 7
+              }
+            ],
+            "origin_roll_floor": 250,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "direct_bonus_bp": 800,
+          "power_pct": 805,
+          "hp_pct": 405,
+          "heal_bonus_bp": 500,
+          "dot_bonus_bp": 625,
+          "defense_pct": 745,
+          "hp": 829,
+          "power": 109,
+          "defense": 77,
+          "crit_chance_bp": 500,
+          "crit_multiplier_bp": 15000,
+          "guard_chance_bp": 0
+        }
+      },
+      {
+        "actor_id": "C_FAMILIAR",
+        "level": 12,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "grant:C_FAMILIAR",
+            "template_id": "EQ_F_01",
+            "quality": "Q0",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_POWER",
+                "roll_q": 192
+              },
+              {
+                "affix_id": "AF_HP",
+                "roll_q": 189
+              },
+              {
+                "affix_id": "AF_DOT_RESIST",
+                "roll_q": 971
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": true,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "chase_bonus_bp": 1000,
+          "hp": 720,
+          "power": 79,
+          "defense": 74,
+          "crit_chance_bp": 1000,
+          "crit_multiplier_bp": 15000,
+          "guard_chance_bp": 0
+        }
+      },
+      {
+        "actor_id": "C_APPRENTICE",
+        "level": 12,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "grant:C_APPRENTICE",
+            "template_id": "EQ_A_01",
+            "quality": "Q0",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_HASTE",
+                "roll_q": 988
+              },
+              {
+                "affix_id": "AF_DOT_RESIST",
+                "roll_q": 530
+              },
+              {
+                "affix_id": "AF_HEAL",
+                "roll_q": 579
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": true,
+            "revision": 1
+          },
+          {
+            "uid": "craft:1",
+            "template_id": "EQ_BODY_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_CRIT_DMG",
+                "roll_q": 882
+              },
+              {
+                "affix_id": "AF_STATUS_RESIST",
+                "roll_q": 689
+              },
+              {
+                "affix_id": "AF_HEAL",
+                "roll_q": 726
+              }
+            ],
+            "origin_roll_floor": 250,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          },
+          {
+            "uid": "craft:3",
+            "template_id": "EQ_AMU_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_DOT",
+                "roll_q": 725
+              },
+              {
+                "affix_id": "AF_POWER",
+                "roll_q": 329
+              },
+              {
+                "affix_id": "AF_CDR",
+                "roll_q": 216
+              }
+            ],
+            "origin_roll_floor": 250,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "heal_bonus_bp": 1500,
+          "hp_pct": 500,
+          "crit_damage_extra_bp": 941,
+          "debuff_duration_resist_bp": 675,
+          "power_pct": 798,
+          "dot_bonus_bp": 862,
+          "hp": 811,
+          "power": 88,
+          "defense": 80,
+          "crit_chance_bp": 500,
+          "crit_multiplier_bp": 15941,
+          "guard_chance_bp": 0
+        }
+      },
+      {
+        "actor_id": "C_SMITH",
+        "level": 12,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "grant:C_SMITH",
+            "template_id": "EQ_S_01",
+            "quality": "Q0",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_HP",
+                "roll_q": 988
+              },
+              {
+                "affix_id": "AF_HASTE",
+                "roll_q": 663
+              },
+              {
+                "affix_id": "AF_COUNTER",
+                "roll_q": 792
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": true,
+            "revision": 1
+          },
+          {
+            "uid": "craft:0",
+            "template_id": "EQ_BODY_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_WARD",
+                "roll_q": 795
+              },
+              {
+                "affix_id": "AF_DOT_RESIST",
+                "roll_q": 136
+              },
+              {
+                "affix_id": "AF_HASTE",
+                "roll_q": 251
+              }
+            ],
+            "origin_roll_floor": 250,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "guard_chance_bp": 1500,
+          "hp_pct": 500,
+          "barrier_bonus_bp": 897,
+          "periodic_resist_bp": 500,
+          "hp": 1243,
+          "power": 75,
+          "defense": 128,
+          "crit_chance_bp": 500,
+          "crit_multiplier_bp": 15000
+        }
+      }
+    ],
+    "inventory_sha256": "4dee627adfd309e76935c88ab4e3dacd58d275050b6693867516eda045e0613b",
+    "history": [
+      {
+        "event": "R3_INTRO_TOTALS_FIXTURE",
+        "not_played": true,
+        "normal_intro_fights_not_simulated": true,
+        "xp": 920,
+        "dust": 30
+      },
+      {
+        "event": "boss_first_or_replay_commit",
+        "boss_id": "B_R01_A",
+        "battle_id": "025b3d060d745dfb1346933635811118cb0edf493d25390d841588e1c8de2db3",
+        "outcome": "VICTORY",
+        "time_ms": 0
+      },
+      {
+        "event": "join",
+        "actor": "C_APPRENTICE",
+        "xp": 920
+      },
+      {
+        "event": "EXPLICIT_UNSIMULATED_ROUTE_CLEARANCE_FIXTURE",
+        "area": "A_R01_03"
+      },
+      {
+        "event": "join",
+        "actor": "C_SMITH",
+        "xp": 920
+      },
+      {
+        "event": "four_items_crafted",
+        "policy": "protect",
+        "collected_ms": 21600000,
+        "operations": [
+          [
+            "RC_EQ_BODY_01",
+            2
+          ],
+          [
+            "RC_EQ_AMU_01",
+            2
+          ]
+        ],
+        "natural_gear_not_equipped": true
+      }
+    ]
+  },
+  {
+    "id": "B_OFFENSE_6H",
+    "gates": [
+      "G_R01_A",
+      "G_START"
+    ],
+    "cleared": [
+      "A_R01_01",
+      "A_R01_02",
+      "A_R01_03"
+    ],
+    "joined": [
+      "C_WITCH",
+      "C_FAMILIAR",
+      "C_APPRENTICE",
+      "C_SMITH"
+    ],
+    "credited_hours": 6.0,
+    "xp": {
+      "C_WITCH": 1784,
+      "C_FAMILIAR": 1784,
+      "C_APPRENTICE": 1784,
+      "C_SMITH": 1784
+    },
+    "dust_remaining": 102,
+    "materials_remaining": {
+      "M_R01_G1": 12,
+      "M_R01_G2": 0,
+      "M_R01_E1": 12,
+      "M_R01_E2": 0,
+      "M_R01_BA": 1,
+      "M_R01_E3": 0,
+      "M_R01_G3": 0,
+      "M_R01_G4": 0
+    },
+    "spent_materials": {
+      "M_R01_E2": 32,
+      "M_R01_E3": 16,
+      "M_R01_G3": 16,
+      "M_R01_G2": 16,
+      "M_R01_G4": 16
+    },
+    "spent_dust": 0,
+    "natural_gear_count_not_equipped": 12,
+    "loadout": [
+      {
+        "actor_id": "C_WITCH",
+        "level": 8,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "intro:relic",
+            "template_id": "EQ_W_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_POWER",
+                "roll_q": 350
+              },
+              {
+                "affix_id": "AF_HP",
+                "roll_q": 350
+              },
+              {
+                "affix_id": "AF_DEF",
+                "roll_q": 350
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          },
+          {
+            "uid": "craft:0",
+            "template_id": "EQ_HAND_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_WARD",
+                "roll_q": 795
+              },
+              {
+                "affix_id": "AF_DOT_RESIST",
+                "roll_q": 136
+              },
+              {
+                "affix_id": "AF_HASTE",
+                "roll_q": 251
+              }
+            ],
+            "origin_roll_floor": 250,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          },
+          {
+            "uid": "craft:2",
+            "template_id": "EQ_AMU_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_DOT",
+                "roll_q": 46
+              },
+              {
+                "affix_id": "AF_DEF",
+                "roll_q": 864
+              },
+              {
+                "affix_id": "AF_HEAL",
+                "roll_q": 7
+              }
+            ],
+            "origin_roll_floor": 250,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "direct_bonus_bp": 800,
+          "power_pct": 805,
+          "hp_pct": 405,
+          "haste_bp": 300,
+          "barrier_bonus_bp": 897,
+          "periodic_resist_bp": 500,
+          "heal_bonus_bp": 500,
+          "dot_bonus_bp": 625,
+          "defense_pct": 745,
+          "hp": 696,
+          "power": 96,
+          "defense": 65,
+          "crit_chance_bp": 500,
+          "crit_multiplier_bp": 15000,
+          "guard_chance_bp": 0
+        }
+      },
+      {
+        "actor_id": "C_FAMILIAR",
+        "level": 8,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "grant:C_FAMILIAR",
+            "template_id": "EQ_F_01",
+            "quality": "Q0",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_POWER",
+                "roll_q": 192
+              },
+              {
+                "affix_id": "AF_HP",
+                "roll_q": 189
+              },
+              {
+                "affix_id": "AF_DOT_RESIST",
+                "roll_q": 971
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": true,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "chase_bonus_bp": 1000,
+          "hp": 600,
+          "power": 67,
+          "defense": 58,
+          "crit_chance_bp": 1000,
+          "crit_multiplier_bp": 15000,
+          "guard_chance_bp": 0
+        }
+      },
+      {
+        "actor_id": "C_APPRENTICE",
+        "level": 8,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "grant:C_APPRENTICE",
+            "template_id": "EQ_A_01",
+            "quality": "Q0",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_HASTE",
+                "roll_q": 988
+              },
+              {
+                "affix_id": "AF_DOT_RESIST",
+                "roll_q": 530
+              },
+              {
+                "affix_id": "AF_HEAL",
+                "roll_q": 579
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": true,
+            "revision": 1
+          },
+          {
+            "uid": "craft:3",
+            "template_id": "EQ_AMU_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_DOT",
+                "roll_q": 725
+              },
+              {
+                "affix_id": "AF_POWER",
+                "roll_q": 329
+              },
+              {
+                "affix_id": "AF_CDR",
+                "roll_q": 216
+              }
+            ],
+            "origin_roll_floor": 250,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "heal_bonus_bp": 1500,
+          "power_pct": 798,
+          "dot_bonus_bp": 862,
+          "hp": 581,
+          "power": 75,
+          "defense": 54,
+          "crit_chance_bp": 500,
+          "crit_multiplier_bp": 15000,
+          "guard_chance_bp": 0
+        }
+      },
+      {
+        "actor_id": "C_SMITH",
+        "level": 8,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "grant:C_SMITH",
+            "template_id": "EQ_S_01",
+            "quality": "Q0",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_HP",
+                "roll_q": 988
+              },
+              {
+                "affix_id": "AF_HASTE",
+                "roll_q": 663
+              },
+              {
+                "affix_id": "AF_COUNTER",
+                "roll_q": 792
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": true,
+            "revision": 1
+          },
+          {
+            "uid": "craft:1",
+            "template_id": "EQ_HAND_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_CRIT_DMG",
+                "roll_q": 882
+              },
+              {
+                "affix_id": "AF_STATUS_RESIST",
+                "roll_q": 689
+              },
+              {
+                "affix_id": "AF_HEAL",
+                "roll_q": 726
+              }
+            ],
+            "origin_roll_floor": 250,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "guard_chance_bp": 1500,
+          "haste_bp": 300,
+          "crit_damage_extra_bp": 941,
+          "debuff_duration_resist_bp": 675,
+          "hp": 928,
+          "power": 67,
+          "defense": 99,
+          "crit_chance_bp": 500,
+          "crit_multiplier_bp": 15941
+        }
+      }
+    ],
+    "inventory_sha256": "19dd99050eae7aee17a6af2b184fbcce391c02ea91c2a2fb14eb1f3170f1d34e",
+    "history": [
+      {
+        "event": "R3_INTRO_TOTALS_FIXTURE",
+        "not_played": true,
+        "normal_intro_fights_not_simulated": true,
+        "xp": 920,
+        "dust": 30
+      },
+      {
+        "event": "boss_first_or_replay_commit",
+        "boss_id": "B_R01_A",
+        "battle_id": "025b3d060d745dfb1346933635811118cb0edf493d25390d841588e1c8de2db3",
+        "outcome": "VICTORY",
+        "time_ms": 0
+      },
+      {
+        "event": "join",
+        "actor": "C_APPRENTICE",
+        "xp": 920
+      },
+      {
+        "event": "EXPLICIT_UNSIMULATED_ROUTE_CLEARANCE_FIXTURE",
+        "area": "A_R01_03"
+      },
+      {
+        "event": "join",
+        "actor": "C_SMITH",
+        "xp": 920
+      },
+      {
+        "event": "four_items_crafted",
+        "policy": "offense",
+        "collected_ms": 21600000,
+        "operations": [
+          [
+            "RC_EQ_HAND_01",
+            2
+          ],
+          [
+            "RC_EQ_AMU_01",
+            2
+          ]
+        ],
+        "natural_gear_not_equipped": true
+      }
+    ]
+  },
+  {
+    "id": "B_OFFENSE_12H",
+    "gates": [
+      "G_R01_A",
+      "G_START"
+    ],
+    "cleared": [
+      "A_R01_01",
+      "A_R01_02",
+      "A_R01_03"
+    ],
+    "joined": [
+      "C_WITCH",
+      "C_FAMILIAR",
+      "C_APPRENTICE",
+      "C_SMITH"
+    ],
+    "credited_hours": 12.0,
+    "xp": {
+      "C_WITCH": 2648,
+      "C_FAMILIAR": 2648,
+      "C_APPRENTICE": 2648,
+      "C_SMITH": 2648
+    },
+    "dust_remaining": 174,
+    "materials_remaining": {
+      "M_R01_G1": 21,
+      "M_R01_G2": 9,
+      "M_R01_E1": 21,
+      "M_R01_E2": 9,
+      "M_R01_BA": 1,
+      "M_R01_E3": 9,
+      "M_R01_G3": 9,
+      "M_R01_G4": 9,
+      "M_R01_E4": 9
+    },
+    "spent_materials": {
+      "M_R01_E2": 32,
+      "M_R01_E3": 16,
+      "M_R01_G3": 16,
+      "M_R01_G2": 16,
+      "M_R01_G4": 16
+    },
+    "spent_dust": 0,
+    "natural_gear_count_not_equipped": 24,
+    "loadout": [
+      {
+        "actor_id": "C_WITCH",
+        "level": 9,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "intro:relic",
+            "template_id": "EQ_W_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_POWER",
+                "roll_q": 350
+              },
+              {
+                "affix_id": "AF_HP",
+                "roll_q": 350
+              },
+              {
+                "affix_id": "AF_DEF",
+                "roll_q": 350
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          },
+          {
+            "uid": "craft:0",
+            "template_id": "EQ_HAND_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_WARD",
+                "roll_q": 795
+              },
+              {
+                "affix_id": "AF_DOT_RESIST",
+                "roll_q": 136
+              },
+              {
+                "affix_id": "AF_HASTE",
+                "roll_q": 251
+              }
+            ],
+            "origin_roll_floor": 250,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          },
+          {
+            "uid": "craft:2",
+            "template_id": "EQ_AMU_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_DOT",
+                "roll_q": 46
+              },
+              {
+                "affix_id": "AF_DEF",
+                "roll_q": 864
+              },
+              {
+                "affix_id": "AF_HEAL",
+                "roll_q": 7
+              }
+            ],
+            "origin_roll_floor": 250,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "direct_bonus_bp": 800,
+          "power_pct": 805,
+          "hp_pct": 405,
+          "haste_bp": 300,
+          "barrier_bonus_bp": 897,
+          "periodic_resist_bp": 500,
+          "heal_bonus_bp": 500,
+          "dot_bonus_bp": 625,
+          "defense_pct": 745,
+          "hp": 729,
+          "power": 100,
+          "defense": 69,
+          "crit_chance_bp": 500,
+          "crit_multiplier_bp": 15000,
+          "guard_chance_bp": 0
+        }
+      },
+      {
+        "actor_id": "C_FAMILIAR",
+        "level": 9,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "grant:C_FAMILIAR",
+            "template_id": "EQ_F_01",
+            "quality": "Q0",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_POWER",
+                "roll_q": 192
+              },
+              {
+                "affix_id": "AF_HP",
+                "roll_q": 189
+              },
+              {
+                "affix_id": "AF_DOT_RESIST",
+                "roll_q": 971
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": true,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "chase_bonus_bp": 1000,
+          "hp": 630,
+          "power": 70,
+          "defense": 62,
+          "crit_chance_bp": 1000,
+          "crit_multiplier_bp": 15000,
+          "guard_chance_bp": 0
+        }
+      },
+      {
+        "actor_id": "C_APPRENTICE",
+        "level": 9,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "grant:C_APPRENTICE",
+            "template_id": "EQ_A_01",
+            "quality": "Q0",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_HASTE",
+                "roll_q": 988
+              },
+              {
+                "affix_id": "AF_DOT_RESIST",
+                "roll_q": 530
+              },
+              {
+                "affix_id": "AF_HEAL",
+                "roll_q": 579
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": true,
+            "revision": 1
+          },
+          {
+            "uid": "craft:3",
+            "template_id": "EQ_AMU_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_DOT",
+                "roll_q": 725
+              },
+              {
+                "affix_id": "AF_POWER",
+                "roll_q": 329
+              },
+              {
+                "affix_id": "AF_CDR",
+                "roll_q": 216
+              }
+            ],
+            "origin_roll_floor": 250,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "heal_bonus_bp": 1500,
+          "power_pct": 798,
+          "dot_bonus_bp": 862,
+          "hp": 609,
+          "power": 78,
+          "defense": 58,
+          "crit_chance_bp": 500,
+          "crit_multiplier_bp": 15000,
+          "guard_chance_bp": 0
+        }
+      },
+      {
+        "actor_id": "C_SMITH",
+        "level": 9,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "grant:C_SMITH",
+            "template_id": "EQ_S_01",
+            "quality": "Q0",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_HP",
+                "roll_q": 988
+              },
+              {
+                "affix_id": "AF_HASTE",
+                "roll_q": 663
+              },
+              {
+                "affix_id": "AF_COUNTER",
+                "roll_q": 792
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": true,
+            "revision": 1
+          },
+          {
+            "uid": "craft:1",
+            "template_id": "EQ_HAND_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_CRIT_DMG",
+                "roll_q": 882
+              },
+              {
+                "affix_id": "AF_STATUS_RESIST",
+                "roll_q": 689
+              },
+              {
+                "affix_id": "AF_HEAL",
+                "roll_q": 726
+              }
+            ],
+            "origin_roll_floor": 250,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "guard_chance_bp": 1500,
+          "haste_bp": 300,
+          "crit_damage_extra_bp": 941,
+          "debuff_duration_resist_bp": 675,
+          "hp": 972,
+          "power": 70,
+          "defense": 105,
+          "crit_chance_bp": 500,
+          "crit_multiplier_bp": 15941
+        }
+      }
+    ],
+    "inventory_sha256": "422ad6b72ad7806c47fa6a200aab445fce6863d7cb13c0c2f2bef8e2a23d17c7",
+    "history": [
+      {
+        "event": "R3_INTRO_TOTALS_FIXTURE",
+        "not_played": true,
+        "normal_intro_fights_not_simulated": true,
+        "xp": 920,
+        "dust": 30
+      },
+      {
+        "event": "boss_first_or_replay_commit",
+        "boss_id": "B_R01_A",
+        "battle_id": "025b3d060d745dfb1346933635811118cb0edf493d25390d841588e1c8de2db3",
+        "outcome": "VICTORY",
+        "time_ms": 0
+      },
+      {
+        "event": "join",
+        "actor": "C_APPRENTICE",
+        "xp": 920
+      },
+      {
+        "event": "EXPLICIT_UNSIMULATED_ROUTE_CLEARANCE_FIXTURE",
+        "area": "A_R01_03"
+      },
+      {
+        "event": "join",
+        "actor": "C_SMITH",
+        "xp": 920
+      },
+      {
+        "event": "four_items_crafted",
+        "policy": "offense",
+        "collected_ms": 21600000,
+        "operations": [
+          [
+            "RC_EQ_HAND_01",
+            2
+          ],
+          [
+            "RC_EQ_AMU_01",
+            2
+          ]
+        ],
+        "natural_gear_not_equipped": true
+      }
+    ]
+  },
+  {
+    "id": "B_OFFENSE_24H",
+    "gates": [
+      "G_R01_A",
+      "G_START"
+    ],
+    "cleared": [
+      "A_R01_01",
+      "A_R01_02",
+      "A_R01_03"
+    ],
+    "joined": [
+      "C_WITCH",
+      "C_FAMILIAR",
+      "C_APPRENTICE",
+      "C_SMITH"
+    ],
+    "credited_hours": 24.0,
+    "xp": {
+      "C_WITCH": 4376,
+      "C_FAMILIAR": 4376,
+      "C_APPRENTICE": 4376,
+      "C_SMITH": 4376
+    },
+    "dust_remaining": 318,
+    "materials_remaining": {
+      "M_R01_G1": 39,
+      "M_R01_G2": 27,
+      "M_R01_E1": 39,
+      "M_R01_E2": 27,
+      "M_R01_BA": 1,
+      "M_R01_E3": 27,
+      "M_R01_G3": 27,
+      "M_R01_G4": 27,
+      "M_R01_E4": 27
+    },
+    "spent_materials": {
+      "M_R01_E2": 32,
+      "M_R01_E3": 16,
+      "M_R01_G3": 16,
+      "M_R01_G2": 16,
+      "M_R01_G4": 16
+    },
+    "spent_dust": 0,
+    "natural_gear_count_not_equipped": 48,
+    "loadout": [
+      {
+        "actor_id": "C_WITCH",
+        "level": 12,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "intro:relic",
+            "template_id": "EQ_W_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_POWER",
+                "roll_q": 350
+              },
+              {
+                "affix_id": "AF_HP",
+                "roll_q": 350
+              },
+              {
+                "affix_id": "AF_DEF",
+                "roll_q": 350
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          },
+          {
+            "uid": "craft:0",
+            "template_id": "EQ_HAND_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_WARD",
+                "roll_q": 795
+              },
+              {
+                "affix_id": "AF_DOT_RESIST",
+                "roll_q": 136
+              },
+              {
+                "affix_id": "AF_HASTE",
+                "roll_q": 251
+              }
+            ],
+            "origin_roll_floor": 250,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          },
+          {
+            "uid": "craft:2",
+            "template_id": "EQ_AMU_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_DOT",
+                "roll_q": 46
+              },
+              {
+                "affix_id": "AF_DEF",
+                "roll_q": 864
+              },
+              {
+                "affix_id": "AF_HEAL",
+                "roll_q": 7
+              }
+            ],
+            "origin_roll_floor": 250,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "direct_bonus_bp": 800,
+          "power_pct": 805,
+          "hp_pct": 405,
+          "haste_bp": 300,
+          "barrier_bonus_bp": 897,
+          "periodic_resist_bp": 500,
+          "heal_bonus_bp": 500,
+          "dot_bonus_bp": 625,
+          "defense_pct": 745,
+          "hp": 829,
+          "power": 113,
+          "defense": 82,
+          "crit_chance_bp": 500,
+          "crit_multiplier_bp": 15000,
+          "guard_chance_bp": 0
+        }
+      },
+      {
+        "actor_id": "C_FAMILIAR",
+        "level": 12,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "grant:C_FAMILIAR",
+            "template_id": "EQ_F_01",
+            "quality": "Q0",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_POWER",
+                "roll_q": 192
+              },
+              {
+                "affix_id": "AF_HP",
+                "roll_q": 189
+              },
+              {
+                "affix_id": "AF_DOT_RESIST",
+                "roll_q": 971
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": true,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "chase_bonus_bp": 1000,
+          "hp": 720,
+          "power": 79,
+          "defense": 74,
+          "crit_chance_bp": 1000,
+          "crit_multiplier_bp": 15000,
+          "guard_chance_bp": 0
+        }
+      },
+      {
+        "actor_id": "C_APPRENTICE",
+        "level": 12,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "grant:C_APPRENTICE",
+            "template_id": "EQ_A_01",
+            "quality": "Q0",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_HASTE",
+                "roll_q": 988
+              },
+              {
+                "affix_id": "AF_DOT_RESIST",
+                "roll_q": 530
+              },
+              {
+                "affix_id": "AF_HEAL",
+                "roll_q": 579
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": true,
+            "revision": 1
+          },
+          {
+            "uid": "craft:3",
+            "template_id": "EQ_AMU_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_DOT",
+                "roll_q": 725
+              },
+              {
+                "affix_id": "AF_POWER",
+                "roll_q": 329
+              },
+              {
+                "affix_id": "AF_CDR",
+                "roll_q": 216
+              }
+            ],
+            "origin_roll_floor": 250,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "heal_bonus_bp": 1500,
+          "power_pct": 798,
+          "dot_bonus_bp": 862,
+          "hp": 693,
+          "power": 88,
+          "defense": 70,
+          "crit_chance_bp": 500,
+          "crit_multiplier_bp": 15000,
+          "guard_chance_bp": 0
+        }
+      },
+      {
+        "actor_id": "C_SMITH",
+        "level": 12,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "grant:C_SMITH",
+            "template_id": "EQ_S_01",
+            "quality": "Q0",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_HP",
+                "roll_q": 988
+              },
+              {
+                "affix_id": "AF_HASTE",
+                "roll_q": 663
+              },
+              {
+                "affix_id": "AF_COUNTER",
+                "roll_q": 792
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": true,
+            "revision": 1
+          },
+          {
+            "uid": "craft:1",
+            "template_id": "EQ_HAND_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_CRIT_DMG",
+                "roll_q": 882
+              },
+              {
+                "affix_id": "AF_STATUS_RESIST",
+                "roll_q": 689
+              },
+              {
+                "affix_id": "AF_HEAL",
+                "roll_q": 726
+              }
+            ],
+            "origin_roll_floor": 250,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "guard_chance_bp": 1500,
+          "haste_bp": 300,
+          "crit_damage_extra_bp": 941,
+          "debuff_duration_resist_bp": 675,
+          "hp": 1104,
+          "power": 79,
+          "defense": 123,
+          "crit_chance_bp": 500,
+          "crit_multiplier_bp": 15941
+        }
+      }
+    ],
+    "inventory_sha256": "d998e614934692189f10ab4bb750a09527bc570ec91858d5d652065761f15e2b",
+    "history": [
+      {
+        "event": "R3_INTRO_TOTALS_FIXTURE",
+        "not_played": true,
+        "normal_intro_fights_not_simulated": true,
+        "xp": 920,
+        "dust": 30
+      },
+      {
+        "event": "boss_first_or_replay_commit",
+        "boss_id": "B_R01_A",
+        "battle_id": "025b3d060d745dfb1346933635811118cb0edf493d25390d841588e1c8de2db3",
+        "outcome": "VICTORY",
+        "time_ms": 0
+      },
+      {
+        "event": "join",
+        "actor": "C_APPRENTICE",
+        "xp": 920
+      },
+      {
+        "event": "EXPLICIT_UNSIMULATED_ROUTE_CLEARANCE_FIXTURE",
+        "area": "A_R01_03"
+      },
+      {
+        "event": "join",
+        "actor": "C_SMITH",
+        "xp": 920
+      },
+      {
+        "event": "four_items_crafted",
+        "policy": "offense",
+        "collected_ms": 21600000,
+        "operations": [
+          [
+            "RC_EQ_HAND_01",
+            2
+          ],
+          [
+            "RC_EQ_AMU_01",
+            2
+          ]
+        ],
+        "natural_gear_not_equipped": true
+      }
+    ]
+  },
+  {
+    "id": "B_SAME_ITEMS_REALLOCATED_12H",
+    "gates": [
+      "G_R01_A",
+      "G_START"
+    ],
+    "cleared": [
+      "A_R01_01",
+      "A_R01_02",
+      "A_R01_03"
+    ],
+    "joined": [
+      "C_WITCH",
+      "C_FAMILIAR",
+      "C_APPRENTICE",
+      "C_SMITH"
+    ],
+    "credited_hours": 12.0,
+    "xp": {
+      "C_WITCH": 2648,
+      "C_FAMILIAR": 2648,
+      "C_APPRENTICE": 2648,
+      "C_SMITH": 2648
+    },
+    "dust_remaining": 174,
+    "materials_remaining": {
+      "M_R01_G1": 21,
+      "M_R01_G2": 9,
+      "M_R01_E1": 21,
+      "M_R01_E2": 9,
+      "M_R01_BA": 1,
+      "M_R01_G3": 9,
+      "M_R01_G4": 9,
+      "M_R01_E4": 9,
+      "M_R01_E3": 9
+    },
+    "spent_materials": {
+      "M_R01_E2": 32,
+      "M_R01_G3": 16,
+      "M_R01_G4": 32,
+      "M_R01_G2": 16
+    },
+    "spent_dust": 0,
+    "natural_gear_count_not_equipped": 24,
+    "loadout": [
+      {
+        "actor_id": "C_WITCH",
+        "level": 9,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "intro:relic",
+            "template_id": "EQ_W_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_POWER",
+                "roll_q": 350
+              },
+              {
+                "affix_id": "AF_HP",
+                "roll_q": 350
+              },
+              {
+                "affix_id": "AF_DEF",
+                "roll_q": 350
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          },
+          {
+            "uid": "craft:0",
+            "template_id": "EQ_BODY_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_WARD",
+                "roll_q": 795
+              },
+              {
+                "affix_id": "AF_DOT_RESIST",
+                "roll_q": 136
+              },
+              {
+                "affix_id": "AF_HASTE",
+                "roll_q": 251
+              }
+            ],
+            "origin_roll_floor": 250,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "direct_bonus_bp": 800,
+          "power_pct": 405,
+          "hp_pct": 905,
+          "barrier_bonus_bp": 897,
+          "periodic_resist_bp": 500,
+          "hp": 824,
+          "power": 87,
+          "defense": 70,
+          "crit_chance_bp": 500,
+          "crit_multiplier_bp": 15000,
+          "guard_chance_bp": 0
+        }
+      },
+      {
+        "actor_id": "C_FAMILIAR",
+        "level": 9,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "grant:C_FAMILIAR",
+            "template_id": "EQ_F_01",
+            "quality": "Q0",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_POWER",
+                "roll_q": 192
+              },
+              {
+                "affix_id": "AF_HP",
+                "roll_q": 189
+              },
+              {
+                "affix_id": "AF_DOT_RESIST",
+                "roll_q": 971
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": true,
+            "revision": 1
+          },
+          {
+            "uid": "craft:3",
+            "template_id": "EQ_AMU_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_DOT",
+                "roll_q": 725
+              },
+              {
+                "affix_id": "AF_POWER",
+                "roll_q": 329
+              },
+              {
+                "affix_id": "AF_CDR",
+                "roll_q": 216
+              }
+            ],
+            "origin_roll_floor": 250,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "chase_bonus_bp": 1000,
+          "power_pct": 798,
+          "heal_bonus_bp": 500,
+          "dot_bonus_bp": 862,
+          "hp": 655,
+          "power": 80,
+          "defense": 62,
+          "crit_chance_bp": 1000,
+          "crit_multiplier_bp": 15000,
+          "guard_chance_bp": 0
+        }
+      },
+      {
+        "actor_id": "C_APPRENTICE",
+        "level": 9,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "grant:C_APPRENTICE",
+            "template_id": "EQ_A_01",
+            "quality": "Q0",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_HASTE",
+                "roll_q": 988
+              },
+              {
+                "affix_id": "AF_DOT_RESIST",
+                "roll_q": 530
+              },
+              {
+                "affix_id": "AF_HEAL",
+                "roll_q": 579
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": true,
+            "revision": 1
+          },
+          {
+            "uid": "craft:1",
+            "template_id": "EQ_BODY_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_CRIT_DMG",
+                "roll_q": 882
+              },
+              {
+                "affix_id": "AF_STATUS_RESIST",
+                "roll_q": 689
+              },
+              {
+                "affix_id": "AF_HEAL",
+                "roll_q": 726
+              }
+            ],
+            "origin_roll_floor": 250,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "heal_bonus_bp": 1000,
+          "hp_pct": 500,
+          "crit_damage_extra_bp": 941,
+          "debuff_duration_resist_bp": 675,
+          "hp": 697,
+          "power": 68,
+          "defense": 68,
+          "crit_chance_bp": 500,
+          "crit_multiplier_bp": 15941,
+          "guard_chance_bp": 0
+        }
+      },
+      {
+        "actor_id": "C_SMITH",
+        "level": 9,
+        "awakening": 0,
+        "items": [
+          {
+            "uid": "grant:C_SMITH",
+            "template_id": "EQ_S_01",
+            "quality": "Q0",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_HP",
+                "roll_q": 988
+              },
+              {
+                "affix_id": "AF_HASTE",
+                "roll_q": 663
+              },
+              {
+                "affix_id": "AF_COUNTER",
+                "roll_q": 792
+              }
+            ],
+            "origin_roll_floor": 0,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": true,
+            "revision": 1
+          },
+          {
+            "uid": "craft:2",
+            "template_id": "EQ_AMU_01",
+            "quality": "Q2",
+            "rank": 1,
+            "enhancement": 0,
+            "latent_affixes": [
+              {
+                "affix_id": "AF_DOT",
+                "roll_q": 46
+              },
+              {
+                "affix_id": "AF_DEF",
+                "roll_q": 864
+              },
+              {
+                "affix_id": "AF_HEAL",
+                "roll_q": 7
+              }
+            ],
+            "origin_roll_floor": 250,
+            "invested_dust": 0,
+            "locked": false,
+            "equipped_by": null,
+            "referenced_by_loadout": false,
+            "starter_grant": false,
+            "revision": 1
+          }
+        ],
+        "stats": {
+          "guard_chance_bp": 1500,
+          "power_pct": 400,
+          "heal_bonus_bp": 500,
+          "dot_bonus_bp": 625,
+          "defense_pct": 745,
+          "hp": 997,
+          "power": 73,
+          "defense": 107,
+          "crit_chance_bp": 500,
+          "crit_multiplier_bp": 15000
+        }
+      }
+    ],
+    "inventory_sha256": "0f8d5c066845be45b1a1bcadc5b72ca54e709c2ac39a5ece7947de74a99c43ed",
+    "history": [
+      {
+        "event": "R3_INTRO_TOTALS_FIXTURE",
+        "not_played": true,
+        "normal_intro_fights_not_simulated": true,
+        "xp": 920,
+        "dust": 30
+      },
+      {
+        "event": "boss_first_or_replay_commit",
+        "boss_id": "B_R01_A",
+        "battle_id": "025b3d060d745dfb1346933635811118cb0edf493d25390d841588e1c8de2db3",
+        "outcome": "VICTORY",
+        "time_ms": 0
+      },
+      {
+        "event": "join",
+        "actor": "C_APPRENTICE",
+        "xp": 920
+      },
+      {
+        "event": "EXPLICIT_UNSIMULATED_ROUTE_CLEARANCE_FIXTURE",
+        "area": "A_R01_03"
+      },
+      {
+        "event": "join",
+        "actor": "C_SMITH",
+        "xp": 920
+      },
+      {
+        "event": "four_items_crafted",
+        "policy": "protect",
+        "collected_ms": 21600000,
+        "operations": [
+          [
+            "RC_EQ_BODY_01",
+            2
+          ],
+          [
+            "RC_EQ_AMU_01",
+            2
+          ]
+        ],
+        "natural_gear_not_equipped": true
+      }
+    ]
+  }
+]

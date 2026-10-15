@@ -1,0 +1,352 @@
+{
+  "schema": "witch.enemy_rest_hit_resolve_candidate.v1",
+  "actorId": "ACT_B_R01_A",
+  "revision": "rest_hit_resolve_r001",
+  "status": "UNAPPROVED_AUTHORED_REST_HIT_RESOLVE_CANDIDATE",
+  "referenceStill": "native/Art/ActorStills/ACT_B_R01_A/ACT_B_R01_A__still__B_R01_A_base_v2.png",
+  "referenceStillSHA256": "c8d4d9a88b3db897bab69f13c13189d536eef62b31de451fd851d22adf972511",
+  "atlasOriginalPath": "/Users/PUBLIC_USER/.codex/generated_images/01a12399-b8c7-76a0-adb6-39606fe83b65/exec-85a48dfd-8f8b-4481-874c-8f3e527fdfbe.png",
+  "atlasPackedPath": "native/Art/GeneratedCandidates/ACT_B_R01_A/rest_hit_resolve_r001/imagegen_atlas_r001.png",
+  "atlasSHA256": "2e6e4c35453e2c4c3ee153e60b90da0bd25c176ca0f1a132d1214cae9a8f09a8",
+  "atlasPx": [
+    1254,
+    1254
+  ],
+  "gridYEdgesPx": [
+    0,
+    454,
+    872,
+    1254
+  ],
+  "gridXEdgesByRowPx": [
+    [
+      0,
+      420,
+      836,
+      1254
+    ],
+    [
+      0,
+      428,
+      840,
+      1254
+    ],
+    [
+      0,
+      417,
+      837,
+      1254
+    ]
+  ],
+  "baselineIdleFrames": [
+    {
+      "path": "native/Art/GeneratedCandidates/ACT_B_R01_A/pose_candidate_r003/frames/idle_a.png",
+      "bbox_alpha16": [
+        22,
+        158,
+        490,
+        490
+      ],
+      "height_px": 332,
+      "width_px": 468
+    },
+    {
+      "path": "native/Art/GeneratedCandidates/ACT_B_R01_A/pose_candidate_r003/frames/idle_b.png",
+      "bbox_alpha16": [
+        23,
+        145,
+        488,
+        489
+      ],
+      "height_px": 344,
+      "width_px": 465
+    }
+  ],
+  "targetIdleAlpha16HeightPx": 338.0,
+  "generatedIdleAlpha16MedianHeightPx": 280,
+  "uniformFitScale": 1.1898734177215189,
+  "candidateCanvasPx": [
+    512,
+    512
+  ],
+  "candidateAnchorPx": [
+    256,
+    490
+  ],
+  "sharedDisplayScaleAcrossStates": 1.0,
+  "frames": [
+    {
+      "state": "idle",
+      "index": 0,
+      "path": "GeneratedCandidates/ACT_B_R01_A/rest_hit_resolve_r001/frames/idle_000.png",
+      "sha256": "8938b04fc986829d4a7bc600a4fed474389940a853d644ec6128699f4e2850b7",
+      "source_cell_xyxy": [
+        0,
+        0,
+        420,
+        454
+      ],
+      "source_alpha16_bbox": [
+        19,
+        122,
+        402,
+        402
+      ],
+      "source_alpha16_margin_px": 18,
+      "packed_alpha16_bbox": [
+        28,
+        157,
+        485,
+        490
+      ],
+      "translation_px": [
+        6,
+        12
+      ]
+    },
+    {
+      "state": "idle",
+      "index": 1,
+      "path": "GeneratedCandidates/ACT_B_R01_A/rest_hit_resolve_r001/frames/idle_001.png",
+      "sha256": "2b3a3770601fc8a7f8e84e1650ba84df3f6d31af876492debf47b225a61431c9",
+      "source_cell_xyxy": [
+        420,
+        0,
+        836,
+        454
+      ],
+      "source_alpha16_bbox": [
+        19,
+        114,
+        399,
+        401
+      ],
+      "source_alpha16_margin_px": 17,
+      "packed_alpha16_bbox": [
+        30,
+        148,
+        483,
+        490
+      ],
+      "translation_px": [
+        8,
+        13
+      ]
+    },
+    {
+      "state": "idle",
+      "index": 2,
+      "path": "GeneratedCandidates/ACT_B_R01_A/rest_hit_resolve_r001/frames/idle_002.png",
+      "sha256": "68f53325f67670f1793b78a1448e962a22fce330da7ea212751e59a0ec293f9c",
+      "source_cell_xyxy": [
+        836,
+        0,
+        1254,
+        454
+      ],
+      "source_alpha16_bbox": [
+        19,
+        132,
+        401,
+        402
+      ],
+      "source_alpha16_margin_px": 17,
+      "packed_alpha16_bbox": [
+        29,
+        169,
+        483,
+        490
+      ],
+      "translation_px": [
+        7,
+        12
+      ]
+    },
+    {
+      "state": "hit",
+      "index": 0,
+      "path": "GeneratedCandidates/ACT_B_R01_A/rest_hit_resolve_r001/frames/hit_000.png",
+      "sha256": "20e8d737be737d2eb57c563c31a8d8799cd7e82618638bde2250a65ef2a03384",
+      "source_cell_xyxy": [
+        0,
+        454,
+        428,
+        872
+      ],
+      "source_alpha16_bbox": [
+        21,
+        92,
+        416,
+        359
+      ],
+      "source_alpha16_margin_px": 12,
+      "packed_alpha16_bbox": [
+        22,
+        172,
+        490,
+        490
+      ],
+      "translation_px": [
+        -4,
+        63
+      ]
+    },
+    {
+      "state": "hit",
+      "index": 1,
+      "path": "GeneratedCandidates/ACT_B_R01_A/rest_hit_resolve_r001/frames/hit_001.png",
+      "sha256": "89f1f038a03881608a0a7c08afa4a9bb68e58fff1503b274243be76b35192b29",
+      "source_cell_xyxy": [
+        428,
+        454,
+        840,
+        872
+      ],
+      "source_alpha16_bbox": [
+        14,
+        86,
+        396,
+        362
+      ],
+      "source_alpha16_margin_px": 14,
+      "packed_alpha16_bbox": [
+        28,
+        162,
+        483,
+        490
+      ],
+      "translation_px": [
+        12,
+        60
+      ]
+    },
+    {
+      "state": "hit",
+      "index": 2,
+      "path": "GeneratedCandidates/ACT_B_R01_A/rest_hit_resolve_r001/frames/hit_002.png",
+      "sha256": "c27d0b2d089570fd7122f5b2036dac01812e43548bfc627809be6029fdeac0e4",
+      "source_cell_xyxy": [
+        840,
+        454,
+        1254,
+        872
+      ],
+      "source_alpha16_bbox": [
+        18,
+        93,
+        399,
+        364
+      ],
+      "source_alpha16_margin_px": 15,
+      "packed_alpha16_bbox": [
+        30,
+        169,
+        483,
+        490
+      ],
+      "translation_px": [
+        8,
+        58
+      ]
+    },
+    {
+      "state": "resolve",
+      "index": 0,
+      "path": "GeneratedCandidates/ACT_B_R01_A/rest_hit_resolve_r001/frames/resolve_000.png",
+      "sha256": "5097afafbbbfc540f1fc38481de3ddd32a28334ecb877574c63c9261d597be40",
+      "source_cell_xyxy": [
+        0,
+        872,
+        417,
+        1254
+      ],
+      "source_alpha16_bbox": [
+        25,
+        80,
+        402,
+        342
+      ],
+      "source_alpha16_margin_px": 15,
+      "packed_alpha16_bbox": [
+        31,
+        177,
+        480,
+        490
+      ],
+      "translation_px": [
+        2,
+        82
+      ]
+    },
+    {
+      "state": "resolve",
+      "index": 1,
+      "path": "GeneratedCandidates/ACT_B_R01_A/rest_hit_resolve_r001/frames/resolve_001.png",
+      "sha256": "5b34aba4b61410cafe89cedcf00f1fe38035de3857f02c0fb86e289a4a867b44",
+      "source_cell_xyxy": [
+        417,
+        872,
+        837,
+        1254
+      ],
+      "source_alpha16_bbox": [
+        16,
+        87,
+        402,
+        346
+      ],
+      "source_alpha16_margin_px": 16,
+      "packed_alpha16_bbox": [
+        26,
+        181,
+        487,
+        490
+      ],
+      "translation_px": [
+        8,
+        78
+      ]
+    },
+    {
+      "state": "resolve",
+      "index": 2,
+      "path": "GeneratedCandidates/ACT_B_R01_A/rest_hit_resolve_r001/frames/resolve_002.png",
+      "sha256": "cba264e8a1b1329d4ea785ae7b6089b97a58b7cfe6f7f99cdcd6a77d5629df6f",
+      "source_cell_xyxy": [
+        837,
+        872,
+        1254,
+        1254
+      ],
+      "source_alpha16_bbox": [
+        19,
+        75,
+        400,
+        343
+      ],
+      "source_alpha16_margin_px": 17,
+      "packed_alpha16_bbox": [
+        29,
+        170,
+        483,
+        490
+      ],
+      "translation_px": [
+        7,
+        81
+      ]
+    }
+  ],
+  "contactSheet": "native/Art/GeneratedCandidates/ACT_B_R01_A/rest_hit_resolve_r001/qa_contact_dark.jpg",
+  "overlay": "native/Art/runtime_overlay_zzzzzz_act_b_r01_a_rest_hit_resolve_r001.json",
+  "overlaySHA256": "833b12f130e180a7efe567ad5a11c2096ea79faeefe5660b26acbdc123514aee",
+  "packingMethod": "Measured fully transparent alpha>=16 gutters; preserve full RGBA cell art; one common Lanczos downscale factor; position on transparent 512x512 canvases at common foot baseline. No alpha cleanup, recoloring, or source edits. Atomic PNG and JSON publish.",
+  "nativeRuntimeReview": "PENDING_ROOT_REVIEW",
+  "humanAdoption": "PENDING",
+  "naturalMotionComplete": false,
+  "limitations": [
+    "Generated poses retain source identity broadly but remain subject to close review for redraw drift and motion quality.",
+    "3 sampled frames per state do not establish natural continuous animation.",
+    "The overlay updates idle/hit/resolve only and leaves walk and attack state clips inherited."
+  ]
+}

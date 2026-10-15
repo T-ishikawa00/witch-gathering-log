@@ -1,0 +1,25 @@
+{
+  "at": "2026-10-15T08:00:35.245639+09:00",
+  "R462rawStatus": "CAPTURE_CLOSED_FILTER_GUIDANCE_COLD_SAVES_EXACT",
+  "runtimeSeconds": 197.167773,
+  "UIAcceptance": "FAIL_IME_NATIVE_TEXT_REMAINS_AFTER_MODEL_FILTER_RESET",
+  "saveAcceptance": "PASS_REVISION138_PRIMARY_AND_PREVIOUS_EXACT",
+  "R462Stopped": true,
+  "repair": "Focus loss and new TextField identity discard marked text; no gameplay mutation",
+  "repairAcceptance": [
+    "visible and AX search empty",
+    "quality all and43items",
+    "refocus/submit no oldtext resurrection",
+    "cold primary/previous exact"
+  ],
+  "repairLimit": {
+    "implementationAttempts": 1,
+    "dualSDKBuildSeconds": 600,
+    "runtimeSeconds": 600,
+    "note": "Separate regression for a concrete functional defect found by the first UI attempt; original guidance and failed result retained."
+  },
+  "freeBytes": 132437139456,
+  "forecastFreezeMaxBytes": 1000000000,
+  "forecastBuildMaxBytes": 2000000000,
+  "safetyBytes": 2000000000
+}

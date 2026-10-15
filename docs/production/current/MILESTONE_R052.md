@@ -1,0 +1,17 @@
+# R052 local checkpoint — native read-only gear trial comparison
+
+Stages III–V remain partial. Parent checkpoint is R051 `35f754202c64757f089d60d34854c28b42c8cae7`. No push, deletion, public release, real purchase, authentication or security change.
+
+The comparison sheet now tries each of its two selected gear instances against an unlocked research challenge from one unchanged actor/party/snapshot/seed. Ordinary unassigned gear, universal eligibility and an empty current slot are supported by the corrected Core R003 contract; seven focused tests include actual-equip combat-result parity. UI displays per-item outcome, duration, party/enemy HP and selected observed event counts without attributing all events to the gear or choosing an automatic winner. Work runs off the UI actor and is serialized across reopened sheets; stale/cancelled results cannot publish. One synchronous simulation already started is bounded and not immediately interruptible.
+
+Initial native R001 failed3/3: the DisclosureGroup accessibility identifier overrode nested HP identifiers, and a new test assumed that native toolbar accessibility frame height proves a44pt touch area. Raw hierarchy and failures remain retained. R002 moves the identifier to the disclosure label, stacks label/value at accessibility sizes, verifies each item's own rows, and tests the actual native close operation without the unsupported touch-area claim.
+
+R002 native3/3 PASS: AXXXL143.752s, Large53.832s, locked28.258s. Fifteen host phase checks bind exact app/test/source/resource/save/PID/run token and prove byte-identical saves through preview, close and cold reopen. The current starter remains equipped while both comparison items remain unassigned. R131 fixture is synthetic, not earned. Same tested baseline reports poison18ticks/AIRA110of120, ward20ticks/AIRA117of120; both win. These are one-case observations, not general balance or fun conclusions.
+
+Build: `native/qa_source_20261012T203249`;184source pins and1919resources verified. App SHA `358082dac314efd1cdabb2ab4f1735c4f6613c7a8268b6a8e3d0fa0cfeb1f50e`; test SHA `ebdae97fd5a0ff39afaf1d67210a18df97bd206bade0f48cc5190655eed03795`.
+
+Root re-read all15phase save copies and independently rehashed1557priorfiles9preferences after the run. Eleven known diagnostic receipts changed during testing, were archived and restored; new isolated saves remain. Independent reviewer viewed all13unique PNGs and rehashed16exported payloads. The separate root screenshot with AXXXL in its filename actually captured Large and has an explicit case-binding erratum; it was not used as AXXXL evidence.
+
+Evidence: `qa_drafts/native_integration_r131/ROOT_FINAL_READBACK_R003.json`, `ui_native_r002/XCRESULT_SUMMARY.json`, `ui_native_r002/phase_readbacks/SUMMARY.json`, `ui_native_r002/selected_ui_evidence_r001/EXPORT_RECEIPT_R001.json`, and `independent_review/native_integration_r131/native_ui_r002/REVIEW_R001.md`.
+
+Remaining: native rapid-close stress,44pt actual toolbar hit-region measurement, broader layout assessment, natural equipment acquisition/value/fun, original UIKit cause, full natural animation quality/Human art approval, signed physical iPhone and Apple positive-payment chain. R134 genuine scripted progression continuation and R135 jelly SpriteKit rendering continue independently outside this checkpoint payload. Asset159runtime mappings are not final art acceptance.

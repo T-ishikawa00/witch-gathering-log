@@ -1,0 +1,19 @@
+{
+  "status": "PREPARED_FOR_INDEPENDENT_REVIEW_NOT_EXECUTED",
+  "runnerSHA256": "f447c23ce4051d867164c3f8772aa5d9d3b8319e123decd5439a1d4d0a2f7d6b",
+  "manifestSHA256": "77bc0270e256429b1078eb1c7e0dc245f4355466dc254a99c9c280e805deccc9",
+  "testSHA256": "c62c945b8f3c75f4ae3ed9b1706b01c34bcad7a656f5273bc50b6870bb964933",
+  "priorRunSHA256": "98b1203821d5ddb6ecf07980b53ef17a4f1529cf6f361b070c47d99c4d50aa7d",
+  "scope": "R001 five assertion failures retained: compare enhancement identity to enhancement fields; separately verify actual App profile chain; observe gear provenance around direct offline claim and target selection. No game policy or simulation schedule change.",
+  "maxNewExecutions": 1,
+  "limits": {
+    "compileInvocations": 1,
+    "jobs": 2,
+    "maxAttempts": 1,
+    "maxBuildAllocatedBytes": 500000000,
+    "maxCaseSeconds": 90,
+    "maxEvidenceAllocatedBytes": 50000000,
+    "maxWallSeconds": 600,
+    "minimumFreeBytes": 12000000000
+  }
+}

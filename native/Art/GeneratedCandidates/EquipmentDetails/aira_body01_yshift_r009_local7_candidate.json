@@ -1,0 +1,375 @@
+{
+  "schema": "equipment.underlay.local-placement-candidate.r009",
+  "status": "UNAPPROVED_METADATA_COMPARISON_CANDIDATE_OFF_GLOB",
+  "runtimeConsumable": false,
+  "humanApproved": false,
+  "visualFitStatus": "PARTIAL_NEEDS_NATIVE_COMPARISON",
+  "scope": "Partial per-frame BODY01 AIRA overrides only for seven source frames with a visible narrow gap in the held R006 screenshots. No other detail ID, row or image is included or changed.",
+  "baseBundle": "native/build/app_20261011T001149/WitchGathering.app",
+  "baseExecutableSHA256": "97dd08e24cdf40a6abcfc5610f669f1f9e158d72e62f19108a1383d425efa28e",
+  "baseRuntimeIndexSHA256": "89ea2a98aa40ccc4abd4421baa7928a368b8198200dcc097a863c7fe5b18bd87",
+  "baseBuildReceiptSHA256": "94a252fe9602aef656f3b9b6b9d2a7d6eaf7d711db03aca25d21f991da84b967",
+  "sourceWindowPreserved": true,
+  "assetHeightPreserved": 0.12,
+  "angleDegreesPreserved": 0,
+  "bodyPixelsModified": false,
+  "change": "placement_px_top_left.y = outerHemCandidatePx.y + 1 instead of +4; visibilityRegion_px_top_left and x unchanged.",
+  "evidenceContact": "docs/production/current/art/aira_r006_fit/tier01/contacts/BODY01_HEM_PIXEL_CROPS_R2.jpg",
+  "rows": [
+    {
+      "actorID": "AIRA",
+      "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_00.png",
+      "frameIndex": 0,
+      "canvas_px": [
+        320,
+        256
+      ],
+      "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_00.png",
+      "sourceSHA256": "50cbd3a45a3aa5f3a9c938f77fd59dbd8c850328beeec8d47a0b8cfa41072044",
+      "outerHemCandidatePx": [
+        134,
+        207
+      ],
+      "sourceRowState": "anticipate",
+      "visible": true,
+      "occlusionReason": null,
+      "placement_px_top_left": [
+        134,
+        208
+      ],
+      "height": 0.12,
+      "angle_degrees": 0,
+      "visibilityRegion_px_top_left": [
+        122,
+        205,
+        24,
+        8
+      ],
+      "placementRevision": "R009_BODY01_LOCAL_Y_MINUS3PX_VISUAL_TRIAL",
+      "placementInterpretation": "NEW_SMALL_UNDERLAY_BEHIND_ORIGINAL_BODY_NOT_RECOVERED_INTERIOR_SURFACE",
+      "sourceEvidenceLandmarkJSON": "docs/production/current/art/aira_apron_landmark_r003_pending24/root_source_grid_r003/ROOT_SOURCE_CANDIDATE_R004.json",
+      "sourceEvidenceSourceProof": "docs/production/current/art/aira_details_fit_r001/tier01/anticipate-0/SOURCE_PROOF.json",
+      "landmarkName": "central_hanging_leather_apron_bottom_edge_candidate",
+      "landmarkMeasurementStatus": "ROOT_MANUAL_SOURCE_CANDIDATE_REQUIRES_MARKER_REVIEW",
+      "landmarkMeasurementBasis": "Root directly inspected unmarked original-source grid at 4x; selected the lower central hanging tab in rest/attack or visible shorter apron edge in walk. No alpha or neighboring-frame inference.",
+      "rejectedPriorPoint": [
+        145,
+        188
+      ],
+      "pointAlphaSanityOnly": 248,
+      "fitVerifiedInRuntime": false,
+      "humanApproved": false,
+      "previousPlacement_px_top_left": [
+        134,
+        211
+      ],
+      "candidateReason": "Nearest-neighbor runtime screenshot showed pale lining detail separated from central leather-tab edge by an apparent 1-2 display-pixel gap in this pose. Move the attachment center 3 source px upward; keep the same 24x8 aperture, source body, asset size, angle, and all other metadata. This is an unbuilt, unverified comparison candidate.",
+      "sourceScreenshot": "docs/production/current/art/aira_r006_fit/tier01/anticipate-0/held.png"
+    },
+    {
+      "actorID": "AIRA",
+      "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_01.png",
+      "frameIndex": 1,
+      "canvas_px": [
+        320,
+        256
+      ],
+      "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_01.png",
+      "sourceSHA256": "7a0dd13d7ba6e2222b4edfb0ad3b04a37f90249a04b34a0e7558095d7b9d51f8",
+      "outerHemCandidatePx": [
+        166,
+        220
+      ],
+      "sourceRowState": "anticipate",
+      "visible": true,
+      "occlusionReason": null,
+      "placement_px_top_left": [
+        166,
+        221
+      ],
+      "height": 0.12,
+      "angle_degrees": 0,
+      "visibilityRegion_px_top_left": [
+        154,
+        218,
+        24,
+        8
+      ],
+      "placementRevision": "R009_BODY01_LOCAL_Y_MINUS3PX_VISUAL_TRIAL",
+      "placementInterpretation": "NEW_SMALL_UNDERLAY_BEHIND_ORIGINAL_BODY_NOT_RECOVERED_INTERIOR_SURFACE",
+      "sourceEvidenceLandmarkJSON": "docs/production/current/art/aira_apron_landmark_r003_pending24/root_source_grid_r003/ROOT_SOURCE_CANDIDATE_R004.json",
+      "sourceEvidenceSourceProof": "docs/production/current/art/aira_details_fit_r001/tier01/anticipate-1/SOURCE_PROOF.json",
+      "landmarkName": "central_hanging_leather_apron_bottom_edge_candidate",
+      "landmarkMeasurementStatus": "ROOT_MANUAL_SOURCE_CANDIDATE_REQUIRES_MARKER_REVIEW",
+      "landmarkMeasurementBasis": "Root directly inspected unmarked original-source grid at 4x; selected the lower central hanging tab in rest/attack or visible shorter apron edge in walk. No alpha or neighboring-frame inference.",
+      "rejectedPriorPoint": [
+        151,
+        198
+      ],
+      "pointAlphaSanityOnly": 251,
+      "fitVerifiedInRuntime": false,
+      "humanApproved": false,
+      "previousPlacement_px_top_left": [
+        166,
+        224
+      ],
+      "candidateReason": "Nearest-neighbor runtime screenshot showed pale lining detail separated from central leather-tab edge by an apparent 1-2 display-pixel gap in this pose. Move the attachment center 3 source px upward; keep the same 24x8 aperture, source body, asset size, angle, and all other metadata. This is an unbuilt, unverified comparison candidate.",
+      "sourceScreenshot": "docs/production/current/art/aira_r006_fit/tier01/anticipate-1/held.png"
+    },
+    {
+      "actorID": "AIRA",
+      "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_02.png",
+      "frameIndex": 2,
+      "canvas_px": [
+        320,
+        256
+      ],
+      "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_02.png",
+      "sourceSHA256": "be07aa515ab14e82589e04a32053734b1c239cb4bc0589d3de3acfd022a38fe3",
+      "outerHemCandidatePx": [
+        170,
+        213
+      ],
+      "sourceRowState": "anticipate",
+      "visible": true,
+      "occlusionReason": null,
+      "placement_px_top_left": [
+        170,
+        214
+      ],
+      "height": 0.12,
+      "angle_degrees": 0,
+      "visibilityRegion_px_top_left": [
+        158,
+        211,
+        24,
+        8
+      ],
+      "placementRevision": "R009_BODY01_LOCAL_Y_MINUS3PX_VISUAL_TRIAL",
+      "placementInterpretation": "NEW_SMALL_UNDERLAY_BEHIND_ORIGINAL_BODY_NOT_RECOVERED_INTERIOR_SURFACE",
+      "sourceEvidenceLandmarkJSON": "docs/production/current/art/aira_apron_landmark_r003_pending24/root_source_grid_r003/ROOT_SOURCE_CANDIDATE_R004.json",
+      "sourceEvidenceSourceProof": "docs/production/current/art/aira_details_fit_r001/tier01/anticipate-2/SOURCE_PROOF.json",
+      "landmarkName": "central_hanging_leather_apron_bottom_edge_candidate",
+      "landmarkMeasurementStatus": "ROOT_MANUAL_SOURCE_CANDIDATE_REQUIRES_MARKER_REVIEW",
+      "landmarkMeasurementBasis": "Root directly inspected unmarked original-source grid at 4x; selected the lower central hanging tab in rest/attack or visible shorter apron edge in walk. No alpha or neighboring-frame inference.",
+      "rejectedPriorPoint": [
+        137,
+        201
+      ],
+      "pointAlphaSanityOnly": 228,
+      "fitVerifiedInRuntime": false,
+      "humanApproved": false,
+      "previousPlacement_px_top_left": [
+        170,
+        217
+      ],
+      "candidateReason": "Nearest-neighbor runtime screenshot showed pale lining detail separated from central leather-tab edge by an apparent 1-2 display-pixel gap in this pose. Move the attachment center 3 source px upward; keep the same 24x8 aperture, source body, asset size, angle, and all other metadata. This is an unbuilt, unverified comparison candidate.",
+      "sourceScreenshot": "docs/production/current/art/aira_r006_fit/tier01/anticipate-2/held.png"
+    },
+    {
+      "actorID": "AIRA",
+      "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_03.png",
+      "frameIndex": 0,
+      "canvas_px": [
+        320,
+        256
+      ],
+      "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_03.png",
+      "sourceSHA256": "681fd98de966891ac4f7b3ed6090c014372aa7c9a9219b1436049e9da1233958",
+      "outerHemCandidatePx": [
+        183,
+        222
+      ],
+      "sourceRowState": "execute",
+      "visible": true,
+      "occlusionReason": null,
+      "placement_px_top_left": [
+        183,
+        223
+      ],
+      "height": 0.12,
+      "angle_degrees": 0,
+      "visibilityRegion_px_top_left": [
+        171,
+        220,
+        24,
+        8
+      ],
+      "placementRevision": "R009_BODY01_LOCAL_Y_MINUS3PX_VISUAL_TRIAL",
+      "placementInterpretation": "NEW_SMALL_UNDERLAY_BEHIND_ORIGINAL_BODY_NOT_RECOVERED_INTERIOR_SURFACE",
+      "sourceEvidenceLandmarkJSON": "docs/production/current/art/aira_apron_landmark_r003_pending24/root_source_grid_r003/ROOT_SOURCE_CANDIDATE_R004.json",
+      "sourceEvidenceSourceProof": "docs/production/current/art/aira_details_fit_r001/tier01/execute-0/SOURCE_PROOF.json",
+      "landmarkName": "central_hanging_leather_apron_bottom_edge_candidate",
+      "landmarkMeasurementStatus": "ROOT_MANUAL_SOURCE_CANDIDATE_REQUIRES_MARKER_REVIEW",
+      "landmarkMeasurementBasis": "Root directly inspected unmarked original-source grid at 4x; selected the lower central hanging tab in rest/attack or visible shorter apron edge in walk. No alpha or neighboring-frame inference.",
+      "rejectedPriorPoint": [
+        152,
+        196
+      ],
+      "pointAlphaSanityOnly": 195,
+      "fitVerifiedInRuntime": false,
+      "humanApproved": false,
+      "previousPlacement_px_top_left": [
+        183,
+        226
+      ],
+      "candidateReason": "Nearest-neighbor runtime screenshot showed pale lining detail separated from central leather-tab edge by an apparent 1-2 display-pixel gap in this pose. Move the attachment center 3 source px upward; keep the same 24x8 aperture, source body, asset size, angle, and all other metadata. This is an unbuilt, unverified comparison candidate.",
+      "sourceScreenshot": "docs/production/current/art/aira_r006_fit/tier01/execute-0/held.png"
+    },
+    {
+      "actorID": "AIRA",
+      "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_05.png",
+      "frameIndex": 2,
+      "canvas_px": [
+        320,
+        256
+      ],
+      "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_05.png",
+      "sourceSHA256": "973cb7f285dd545aea5178a4fd9af9e134ad96b8352d548453992add58199106",
+      "outerHemCandidatePx": [
+        116,
+        219
+      ],
+      "sourceRowState": "execute",
+      "visible": true,
+      "occlusionReason": null,
+      "placement_px_top_left": [
+        116,
+        220
+      ],
+      "height": 0.12,
+      "angle_degrees": 0,
+      "visibilityRegion_px_top_left": [
+        104,
+        217,
+        24,
+        8
+      ],
+      "placementRevision": "R009_BODY01_LOCAL_Y_MINUS3PX_VISUAL_TRIAL",
+      "placementInterpretation": "NEW_SMALL_UNDERLAY_BEHIND_ORIGINAL_BODY_NOT_RECOVERED_INTERIOR_SURFACE",
+      "sourceEvidenceLandmarkJSON": "docs/production/current/art/aira_apron_landmark_r003_pending24/root_source_grid_r003/ROOT_SOURCE_CANDIDATE_R004.json",
+      "sourceEvidenceSourceProof": "docs/production/current/art/aira_details_fit_r001/tier01/execute-2/SOURCE_PROOF.json",
+      "landmarkName": "central_hanging_leather_apron_bottom_edge_candidate",
+      "landmarkMeasurementStatus": "ROOT_MANUAL_SOURCE_CANDIDATE_REQUIRES_MARKER_REVIEW",
+      "landmarkMeasurementBasis": "Root directly inspected unmarked original-source grid at 4x; selected the lower central hanging tab in rest/attack or visible shorter apron edge in walk. No alpha or neighboring-frame inference.",
+      "rejectedPriorPoint": [
+        121,
+        198
+      ],
+      "pointAlphaSanityOnly": 249,
+      "fitVerifiedInRuntime": false,
+      "humanApproved": false,
+      "previousPlacement_px_top_left": [
+        116,
+        223
+      ],
+      "candidateReason": "Nearest-neighbor runtime screenshot showed pale lining detail separated from central leather-tab edge by an apparent 1-2 display-pixel gap in this pose. Move the attachment center 3 source px upward; keep the same 24x8 aperture, source body, asset size, angle, and all other metadata. This is an unbuilt, unverified comparison candidate.",
+      "sourceScreenshot": "docs/production/current/art/aira_r006_fit/tier01/execute-2/held.png"
+    },
+    {
+      "actorID": "AIRA",
+      "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_06.png",
+      "frameIndex": 0,
+      "canvas_px": [
+        320,
+        256
+      ],
+      "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_06.png",
+      "sourceSHA256": "c93e4788a2ab41f62ef8a9916bc064b186269a486951ed2f439edaf982d242de",
+      "outerHemCandidatePx": [
+        115,
+        212
+      ],
+      "sourceRowState": "recover",
+      "visible": true,
+      "occlusionReason": null,
+      "placement_px_top_left": [
+        115,
+        213
+      ],
+      "height": 0.12,
+      "angle_degrees": 0,
+      "visibilityRegion_px_top_left": [
+        103,
+        210,
+        24,
+        8
+      ],
+      "placementRevision": "R009_BODY01_LOCAL_Y_MINUS3PX_VISUAL_TRIAL",
+      "placementInterpretation": "NEW_SMALL_UNDERLAY_BEHIND_ORIGINAL_BODY_NOT_RECOVERED_INTERIOR_SURFACE",
+      "sourceEvidenceLandmarkJSON": "docs/production/current/art/aira_apron_landmark_r003_pending24/root_source_grid_r003/ROOT_SOURCE_CANDIDATE_R004.json",
+      "sourceEvidenceSourceProof": "docs/production/current/art/aira_details_fit_r001/tier01/recover-0/SOURCE_PROOF.json",
+      "landmarkName": "central_hanging_leather_apron_bottom_edge_candidate",
+      "landmarkMeasurementStatus": "ROOT_MANUAL_SOURCE_CANDIDATE_REQUIRES_MARKER_REVIEW",
+      "landmarkMeasurementBasis": "Root directly inspected unmarked original-source grid at 4x; selected the lower central hanging tab in rest/attack or visible shorter apron edge in walk. No alpha or neighboring-frame inference.",
+      "rejectedPriorPoint": [
+        123,
+        199
+      ],
+      "pointAlphaSanityOnly": 252,
+      "fitVerifiedInRuntime": false,
+      "humanApproved": false,
+      "previousPlacement_px_top_left": [
+        115,
+        216
+      ],
+      "candidateReason": "Nearest-neighbor runtime screenshot showed pale lining detail separated from central leather-tab edge by an apparent 1-2 display-pixel gap in this pose. Move the attachment center 3 source px upward; keep the same 24x8 aperture, source body, asset size, angle, and all other metadata. This is an unbuilt, unverified comparison candidate.",
+      "sourceScreenshot": "docs/production/current/art/aira_r006_fit/tier01/recover-0/held.png"
+    },
+    {
+      "actorID": "AIRA",
+      "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_07.png",
+      "frameIndex": 1,
+      "canvas_px": [
+        320,
+        256
+      ],
+      "source_path": "native/GeneratedArt/party_attack_r001/AIRA__attack_07.png",
+      "sourceSHA256": "c9c926380275c17d6cd21de70b2fbd461351deb9dea95275184d54524764862d",
+      "outerHemCandidatePx": [
+        115,
+        210
+      ],
+      "sourceRowState": "recover",
+      "visible": true,
+      "occlusionReason": null,
+      "placement_px_top_left": [
+        115,
+        211
+      ],
+      "height": 0.12,
+      "angle_degrees": 0,
+      "visibilityRegion_px_top_left": [
+        103,
+        208,
+        24,
+        8
+      ],
+      "placementRevision": "R009_BODY01_LOCAL_Y_MINUS3PX_VISUAL_TRIAL",
+      "placementInterpretation": "NEW_SMALL_UNDERLAY_BEHIND_ORIGINAL_BODY_NOT_RECOVERED_INTERIOR_SURFACE",
+      "sourceEvidenceLandmarkJSON": "docs/production/current/art/aira_apron_landmark_r003_pending24/root_source_grid_r003/ROOT_SOURCE_CANDIDATE_R004.json",
+      "sourceEvidenceSourceProof": "docs/production/current/art/aira_details_fit_r001/tier01/recover-1/SOURCE_PROOF.json",
+      "landmarkName": "central_hanging_leather_apron_bottom_edge_candidate",
+      "landmarkMeasurementStatus": "ROOT_MANUAL_SOURCE_CANDIDATE_REQUIRES_MARKER_REVIEW",
+      "landmarkMeasurementBasis": "Root directly inspected unmarked original-source grid at 4x; selected the lower central hanging tab in rest/attack or visible shorter apron edge in walk. No alpha or neighboring-frame inference.",
+      "rejectedPriorPoint": [
+        121,
+        203
+      ],
+      "pointAlphaSanityOnly": 251,
+      "fitVerifiedInRuntime": false,
+      "humanApproved": false,
+      "previousPlacement_px_top_left": [
+        115,
+        214
+      ],
+      "candidateReason": "Nearest-neighbor runtime screenshot showed pale lining detail separated from central leather-tab edge by an apparent 1-2 display-pixel gap in this pose. Move the attachment center 3 source px upward; keep the same 24x8 aperture, source body, asset size, angle, and all other metadata. This is an unbuilt, unverified comparison candidate.",
+      "sourceScreenshot": "docs/production/current/art/aira_r006_fit/tier01/recover-1/held.png"
+    }
+  ],
+  "limitations": [
+    "The gap is a visual estimate from static held screenshots, not a measured source-pixel edge-to-edge distance.",
+    "The candidate has not been merged or built.",
+    "A different asset alpha extent or mask could also affect the visible seam; compare before adopting."
+  ]
+}

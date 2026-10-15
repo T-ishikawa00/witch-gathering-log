@@ -7,19 +7,29 @@ struct GearStatsPresentation {
 
 extension GameModel {
     var candidateLatentPolicy: CandidateLatentSlotPolicyR003? { engine?.candidateLatentPolicy }
+    var enhancementProjectionPolicyR230: EnhancementProjectionPolicyR230 { engine?.enhancementProjectionPolicyR230 ?? .legacy }
 
     func gearStats(for actorID: String, with gear: [GearInstance]) throws -> GearStatsPresentation {
         guard let catalog else { throw CoreError.invalidCommand("catalog is unavailable") }
+        if enhancementProjectionPolicyR230 == .r2SlotBudgetCandidate {
+            for item in gear where item.ownerID == nil || item.ownerID == actorID {
+                try GearEnhancementGrowthR230.validatePersistedEnhancement(item, in: catalog)
+            }
+        }
         if let policy = candidateLatentPolicy {
             let projection = try catalog.projectCandidateCombatantR005(for: actorID, with: gear,
                 completedResearchIDs: state.completedResearchIDs,
                 totalXP: state.characterXP[actorID, default: 0], candidateGrowth: candidateCharacterGrowth,
-                candidateLatentPolicy: policy)
+                candidateLatentPolicy: policy,
+                enhancementProjectionPolicyR230: enhancementProjectionPolicyR230,
+                refinementRanksR352: state.naturalGearRefinementR352?.ranksByUUID ?? [:])
             return GearStatsPresentation(combatant: projection.combatant, latent: projection.latent)
         }
         return GearStatsPresentation(combatant: catalog.projectCombatant(for: actorID, with: gear,
             completedResearchIDs: state.completedResearchIDs,
-            totalXP: state.characterXP[actorID, default: 0], candidateGrowth: candidateCharacterGrowth), latent: nil)
+            totalXP: state.characterXP[actorID, default: 0], candidateGrowth: candidateCharacterGrowth,
+            enhancementProjectionPolicyR230: enhancementProjectionPolicyR230,
+            refinementRanksR352: state.naturalGearRefinementR352?.ranksByUUID ?? [:]), latent: nil)
     }
 
     func latentDisplay(for item: GearInstance) throws -> CandidateLatentItemDisplayR005 {

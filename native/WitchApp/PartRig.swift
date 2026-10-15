@@ -100,7 +100,7 @@ final class EnemyPartRig {
     let node: SKNode
     private(set) var availableStates: Set<String>
     var onUnsupportedState: ((String) -> Void)?
-    var onClipCompleted: ((String) -> Void)?
+    var onClipCompleted: ((String, UInt64) -> Void)?
 
     private let definition: EnemyPartRigDefinition
     private let actionKey = "witch.enemy.part-rig.clip"
@@ -142,6 +142,8 @@ final class EnemyPartRig {
     private var normalEntryFootpathR068R002Status = "not_started"
     private var normalEntryFootpathR068R002LastSnapshot: [String: Any] = [:]
     private let normalEntryBackendR068: String
+    private let r214CompletionGenerationGuardEnabled: Bool
+    private(set) var r214PlaybackGeneration: UInt64 = 0
     private(set) var walkFourLegR064Status = "not_enabled"
     private var walkDistalR007Mount: DragonDistalLegRigMountR007?
     private var walkDistalR007Active = false
@@ -159,7 +161,9 @@ final class EnemyPartRig {
          walkOverlay: [String: Any]? = nil, qaWalkMeshCandidateEnabled: Bool = false,
          qaDragonGaitR038Enabled: Bool = false, qaDragonDistalLegR007Enabled: Bool = false,
          qaDragonFourLegR064Enabled: Bool = false,
-         normalEntryBackendR068: String = "legacy_existing_override") throws {
+         normalEntryBackendR068: String = "legacy_existing_override",
+         r214CompletionGenerationGuardEnabled: Bool = false) throws {
+        self.r214CompletionGenerationGuardEnabled = r214CompletionGenerationGuardEnabled
         let data = try Data(contentsOf: definitionURL)
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
@@ -328,6 +332,7 @@ final class EnemyPartRig {
     func play(_ state: String, restart: Bool = false) -> Bool {
         if state == "walk", walkFourLegR064Requested {
             guard playWalkFourLegR064(restart: restart) else { onUnsupportedState?(state); return false }
+            if r214CompletionGenerationGuardEnabled { r214PlaybackGeneration &+= 1 }
             return true
         }
         if state == "walk", walkDistalR007Requested {
@@ -335,6 +340,7 @@ final class EnemyPartRig {
                 onUnsupportedState?(state)
                 return false
             }
+            if r214CompletionGenerationGuardEnabled { r214PlaybackGeneration &+= 1 }
             return true
         }
         if state == "walk", walkGaitR038Requested {
@@ -342,6 +348,7 @@ final class EnemyPartRig {
                 onUnsupportedState?(state)
                 return false
             }
+            if r214CompletionGenerationGuardEnabled { r214PlaybackGeneration &+= 1 }
             return true
         }
         if state == "walk", walkMeshCandidate != nil {
@@ -349,6 +356,7 @@ final class EnemyPartRig {
                 onUnsupportedState?(state)
                 return false
             }
+            if r214CompletionGenerationGuardEnabled { r214PlaybackGeneration &+= 1 }
             return true
         }
         if state == "walk", walkLegOverlay != nil {
@@ -356,6 +364,7 @@ final class EnemyPartRig {
                 onUnsupportedState?(state)
                 return false
             }
+            if r214CompletionGenerationGuardEnabled { r214PlaybackGeneration &+= 1 }
             return true
         }
         guard let clip = definition.clips[state] else {
@@ -383,6 +392,8 @@ final class EnemyPartRig {
         setWalkLegOverlayActive(false)
         walkCandidateSprite?.removeAction(forKey: walkOverlayActionKey)
         node.removeAction(forKey: actionKey)
+        if r214CompletionGenerationGuardEnabled { r214PlaybackGeneration &+= 1 }
+        let completionGeneration = r214PlaybackGeneration
         activeState = state
 
         let fps = clip.fps ?? definition.fps
@@ -403,11 +414,12 @@ final class EnemyPartRig {
         }
         let completion = SKAction.run { [weak self] in
             guard let self, self.activeState == state else { return }
+            if self.r214CompletionGenerationGuardEnabled && self.r214PlaybackGeneration != completionGeneration { return }
             if !clip.loop {
                 self.presentationStatus = "completed"
                 self.presentationElapsed = duration
                 self.presentationFramePosition = Double(clip.frameCount - 1)
-                self.onClipCompleted?(state)
+                self.onClipCompleted?(state, completionGeneration)
             }
         }
         let action = SKAction.sequence([update, completion])
@@ -416,6 +428,7 @@ final class EnemyPartRig {
     }
 
     func stop(resetToRestPose: Bool = true) {
+        if r214CompletionGenerationGuardEnabled { r214PlaybackGeneration &+= 1 }
         node.removeAction(forKey: actionKey)
         stopWalkFourLegR064()
         stopWalkDistalR007()
@@ -467,6 +480,7 @@ final class EnemyPartRig {
          "keyframeBlend": presentationKeyframeBlend,
          "completed": presentationStatus == "completed",
          "actionRunning": node.action(forKey: actionKey) != nil,
+         "renderProof": renderProofSnapshot,
          "walkLegOverlayStatus": walkOverlayStatus,
          "walkLegOverlayActive": walkCandidateCrop?.isHidden == false,
          "walkLegOverlayFrameIndex": walkCandidateFrameIndex,
@@ -539,6 +553,38 @@ final class EnemyPartRig {
             }
         }
         return snapshot
+    }
+
+
+    /// Compact proof of loaded composite sprite parts. Hidden parts remain in the
+    /// required integrity set; visibility is reported separately so temporary
+    /// pose masking does not look like missing content.
+    private var renderProofSnapshot: [String: Any] {
+        let requiredIDs = definition.parts.map(\.id).sorted()
+        let missingOrDetachedIDs = definition.parts.compactMap { part -> String? in
+            guard let sprite = partNodes[part.id], sprite.texture != nil,
+                  sprite.parent === node else { return part.id }
+            return nil
+        }.sorted()
+        let texturedCount = definition.parts.reduce(into: 0) { count, part in
+            if partNodes[part.id]?.texture != nil { count += 1 }
+        }
+        let attachedCount = definition.parts.reduce(into: 0) { count, part in
+            if partNodes[part.id]?.parent === node { count += 1 }
+        }
+        let visibleTexturedCount = definition.parts.reduce(into: 0) { count, part in
+            guard let sprite = partNodes[part.id], sprite.texture != nil,
+                  sprite.parent === node, !sprite.isHidden, sprite.alpha > 0,
+                  !node.isHidden, node.alpha > 0 else { return }
+            count += 1
+        }
+        return ["requiredPartIDs": requiredIDs,
+                "requiredPartCount": requiredIDs.count,
+                "texturedPartCount": texturedCount,
+                "attachedPartCount": attachedCount,
+                "visibleTexturedAttachedPartCount": visibleTexturedCount,
+                "missingOrDetachedPartIDs": missingOrDetachedIDs,
+                "allRequiredPartsAttachedAndTextured": missingOrDetachedIDs.isEmpty]
     }
 
     func loopBoundaryMode(for state: String) -> EnemyLoopBoundaryMode? {

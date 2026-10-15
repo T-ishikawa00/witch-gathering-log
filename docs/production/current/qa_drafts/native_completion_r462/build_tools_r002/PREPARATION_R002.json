@@ -1,0 +1,11 @@
+{
+  "status": "PREPARED_NOT_SEALED_NOT_EXECUTED",
+  "previousDriverSHA256": "4b4e00019dda90370739606948b301db5a015865a1d6db30bae01f8b1e3d6dd4",
+  "driverSHA256": "456f524977cee7e56ea39966ee569d768b569d03eafc952046221c1aa27dc45a",
+  "change": "Expect 240 native inputs after R461 contract and R463 durable stores. Earlier239driver preserved unexecuted. Build one combined revision.",
+  "maxBuildBytes": 2000000000,
+  "reserveBytes": 2000000000,
+  "minimumFreeBytes": 20000000000,
+  "aggregateSeconds": 600,
+  "requires": "R463 review/tests/integration and new exact freeze"
+}

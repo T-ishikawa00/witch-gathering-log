@@ -1,0 +1,23 @@
+{
+  "status": "COMPARISON_RULES_TESTED_DESIGN_UNAPPROVED",
+  "new_math_contract_tests": 30,
+  "new_tests_pass": true,
+  "previous_R2_tests": 74,
+  "previous_tests_pass": true,
+  "analytic_method": "Finite state quality DP + first/second top convolution; floating point",
+  "sampling_series": 60000,
+  "mock_pulls_until_first_selected_top": 9580004,
+  "maximum_CDF_error": 0.005203616555731538,
+  "counterfactuals": "A retains old parameters, B approximately normalizes target cost, C explicitly changes generosity.",
+  "not_validated": [
+    "player fun",
+    "willingness to pay",
+    "profit",
+    "live competitor rates",
+    "R6 combat",
+    "full R3 economy",
+    "StoreKit",
+    "real devices"
+  ],
+  "changes_to_Mac_or_GitHub": false
+}

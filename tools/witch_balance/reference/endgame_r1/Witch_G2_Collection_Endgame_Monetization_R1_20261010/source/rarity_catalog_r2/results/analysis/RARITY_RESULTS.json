@@ -1,0 +1,658 @@
+{
+  "static_states": 6435,
+  "battle_count": 576,
+  "summary": [
+    {
+      "case": "JOINED_C50",
+      "model": "H0_EXISTING",
+      "n": 64,
+      "wins": 62,
+      "median_victory_seconds": 63.75
+    },
+    {
+      "case": "JOINED_C50",
+      "model": "H1_RECOMMENDED",
+      "n": 64,
+      "wins": 64,
+      "median_victory_seconds": 60.08
+    },
+    {
+      "case": "JOINED_C50",
+      "model": "H2_STRONG_DIAGNOSTIC",
+      "n": 64,
+      "wins": 64,
+      "median_victory_seconds": 57.5
+    },
+    {
+      "case": "SIX_HOUR_C50",
+      "model": "H0_EXISTING",
+      "n": 64,
+      "wins": 64,
+      "median_victory_seconds": 51.37
+    },
+    {
+      "case": "SIX_HOUR_C50",
+      "model": "H1_RECOMMENDED",
+      "n": 64,
+      "wins": 64,
+      "median_victory_seconds": 47.794
+    },
+    {
+      "case": "SIX_HOUR_C50",
+      "model": "H2_STRONG_DIAGNOSTIC",
+      "n": 64,
+      "wins": 64,
+      "median_victory_seconds": 45.85
+    },
+    {
+      "case": "SIX_HOUR_NO_GACHA",
+      "model": "H0_EXISTING",
+      "n": 64,
+      "wins": 64,
+      "median_victory_seconds": 60.104
+    },
+    {
+      "case": "SIX_HOUR_NO_GACHA",
+      "model": "H1_RECOMMENDED",
+      "n": 64,
+      "wins": 64,
+      "median_victory_seconds": 57.45
+    },
+    {
+      "case": "SIX_HOUR_NO_GACHA",
+      "model": "H2_STRONG_DIAGNOSTIC",
+      "n": 64,
+      "wins": 64,
+      "median_victory_seconds": 55.168
+    }
+  ],
+  "item_examples": [
+    {
+      "template": "EQ_W_01",
+      "quality": "Q0",
+      "H0": {
+        "hp": 0.0,
+        "power": 14.0,
+        "defense": 0.0
+      },
+      "H1": {
+        "hp": 0.0,
+        "power": 14.0,
+        "defense": 0.0
+      }
+    },
+    {
+      "template": "EQ_W_01",
+      "quality": "Q1",
+      "H0": {
+        "hp": 0.0,
+        "power": 14.0,
+        "defense": 0.0
+      },
+      "H1": {
+        "hp": 0.0,
+        "power": 15.4,
+        "defense": 0.0
+      }
+    },
+    {
+      "template": "EQ_W_01",
+      "quality": "Q2",
+      "H0": {
+        "hp": 0.0,
+        "power": 14.0,
+        "defense": 0.0
+      },
+      "H1": {
+        "hp": 0.0,
+        "power": 17.5,
+        "defense": 0.0
+      }
+    },
+    {
+      "template": "EQ_W_01",
+      "quality": "Q3",
+      "H0": {
+        "hp": 0.0,
+        "power": 14.0,
+        "defense": 0.0
+      },
+      "H1": {
+        "hp": 0.0,
+        "power": 20.3,
+        "defense": 0.0
+      }
+    },
+    {
+      "template": "EQ_W_01",
+      "quality": "Q4",
+      "H0": {
+        "hp": 0.0,
+        "power": 14.0,
+        "defense": 0.0
+      },
+      "H1": {
+        "hp": 0.0,
+        "power": 23.8,
+        "defense": 0.0
+      }
+    },
+    {
+      "template": "EQ_BODY_01",
+      "quality": "Q0",
+      "H0": {
+        "hp": 80.0,
+        "power": 0.0,
+        "defense": 10.0
+      },
+      "H1": {
+        "hp": 80.0,
+        "power": 0.0,
+        "defense": 10.0
+      }
+    },
+    {
+      "template": "EQ_BODY_01",
+      "quality": "Q1",
+      "H0": {
+        "hp": 80.0,
+        "power": 0.0,
+        "defense": 10.0
+      },
+      "H1": {
+        "hp": 88.0,
+        "power": 0.0,
+        "defense": 11.0
+      }
+    },
+    {
+      "template": "EQ_BODY_01",
+      "quality": "Q2",
+      "H0": {
+        "hp": 80.0,
+        "power": 0.0,
+        "defense": 10.0
+      },
+      "H1": {
+        "hp": 100.0,
+        "power": 0.0,
+        "defense": 12.5
+      }
+    },
+    {
+      "template": "EQ_BODY_01",
+      "quality": "Q3",
+      "H0": {
+        "hp": 80.0,
+        "power": 0.0,
+        "defense": 10.0
+      },
+      "H1": {
+        "hp": 116.0,
+        "power": 0.0,
+        "defense": 14.5
+      }
+    },
+    {
+      "template": "EQ_BODY_01",
+      "quality": "Q4",
+      "H0": {
+        "hp": 80.0,
+        "power": 0.0,
+        "defense": 10.0
+      },
+      "H1": {
+        "hp": 136.0,
+        "power": 0.0,
+        "defense": 17.0
+      }
+    }
+  ],
+  "actor_examples": [
+    {
+      "model": "H0_EXISTING",
+      "level": 6,
+      "rank": 1,
+      "quality": "Q0",
+      "raw_base_power": 58,
+      "weapon_primary": 14.0,
+      "final_power_including_affixes": 72.0,
+      "latent": {
+        "uid": "example:wand",
+        "template_id": "EQ_W_01",
+        "quality": "Q0",
+        "rank": 1,
+        "enhancement": 0,
+        "latent_affixes": [
+          {
+            "affix_id": "AF_DEF",
+            "roll_q": 842
+          },
+          {
+            "affix_id": "AF_HP",
+            "roll_q": 988
+          },
+          {
+            "affix_id": "AF_CRIT",
+            "roll_q": 623
+          }
+        ],
+        "origin_roll_floor": 0,
+        "invested_dust": 0,
+        "locked": false,
+        "equipped_by": null,
+        "referenced_by_loadout": false,
+        "starter_grant": false,
+        "revision": 1
+      }
+    },
+    {
+      "model": "H0_EXISTING",
+      "level": 6,
+      "rank": 1,
+      "quality": "Q4",
+      "raw_base_power": 58,
+      "weapon_primary": 14.0,
+      "final_power_including_affixes": 72.0,
+      "latent": {
+        "uid": "example:wand",
+        "template_id": "EQ_W_01",
+        "quality": "Q4",
+        "rank": 1,
+        "enhancement": 0,
+        "latent_affixes": [
+          {
+            "affix_id": "AF_DEF",
+            "roll_q": 842
+          },
+          {
+            "affix_id": "AF_HP",
+            "roll_q": 988
+          },
+          {
+            "affix_id": "AF_CRIT",
+            "roll_q": 623
+          }
+        ],
+        "origin_roll_floor": 0,
+        "invested_dust": 0,
+        "locked": false,
+        "equipped_by": null,
+        "referenced_by_loadout": false,
+        "starter_grant": false,
+        "revision": 1
+      }
+    },
+    {
+      "model": "H0_EXISTING",
+      "level": 60,
+      "rank": 5,
+      "quality": "Q0",
+      "raw_base_power": 274,
+      "weapon_primary": 64.4,
+      "final_power_including_affixes": 338.4,
+      "latent": {
+        "uid": "example:wand",
+        "template_id": "EQ_W_01",
+        "quality": "Q0",
+        "rank": 5,
+        "enhancement": 0,
+        "latent_affixes": [
+          {
+            "affix_id": "AF_DEF",
+            "roll_q": 842
+          },
+          {
+            "affix_id": "AF_HP",
+            "roll_q": 988
+          },
+          {
+            "affix_id": "AF_CRIT",
+            "roll_q": 623
+          }
+        ],
+        "origin_roll_floor": 0,
+        "invested_dust": 0,
+        "locked": false,
+        "equipped_by": null,
+        "referenced_by_loadout": false,
+        "starter_grant": false,
+        "revision": 1
+      }
+    },
+    {
+      "model": "H0_EXISTING",
+      "level": 60,
+      "rank": 5,
+      "quality": "Q4",
+      "raw_base_power": 274,
+      "weapon_primary": 64.4,
+      "final_power_including_affixes": 338.4,
+      "latent": {
+        "uid": "example:wand",
+        "template_id": "EQ_W_01",
+        "quality": "Q4",
+        "rank": 5,
+        "enhancement": 0,
+        "latent_affixes": [
+          {
+            "affix_id": "AF_DEF",
+            "roll_q": 842
+          },
+          {
+            "affix_id": "AF_HP",
+            "roll_q": 988
+          },
+          {
+            "affix_id": "AF_CRIT",
+            "roll_q": 623
+          }
+        ],
+        "origin_roll_floor": 0,
+        "invested_dust": 0,
+        "locked": false,
+        "equipped_by": null,
+        "referenced_by_loadout": false,
+        "starter_grant": false,
+        "revision": 1
+      }
+    },
+    {
+      "model": "H1_RECOMMENDED",
+      "level": 6,
+      "rank": 1,
+      "quality": "Q0",
+      "raw_base_power": 58,
+      "weapon_primary": 14.0,
+      "final_power_including_affixes": 72.0,
+      "latent": {
+        "uid": "example:wand",
+        "template_id": "EQ_W_01",
+        "quality": "Q0",
+        "rank": 1,
+        "enhancement": 0,
+        "latent_affixes": [
+          {
+            "affix_id": "AF_DEF",
+            "roll_q": 842
+          },
+          {
+            "affix_id": "AF_HP",
+            "roll_q": 988
+          },
+          {
+            "affix_id": "AF_CRIT",
+            "roll_q": 623
+          }
+        ],
+        "origin_roll_floor": 0,
+        "invested_dust": 0,
+        "locked": false,
+        "equipped_by": null,
+        "referenced_by_loadout": false,
+        "starter_grant": false,
+        "revision": 1
+      }
+    },
+    {
+      "model": "H1_RECOMMENDED",
+      "level": 6,
+      "rank": 1,
+      "quality": "Q4",
+      "raw_base_power": 58,
+      "weapon_primary": 23.8,
+      "final_power_including_affixes": 81.8,
+      "latent": {
+        "uid": "example:wand",
+        "template_id": "EQ_W_01",
+        "quality": "Q4",
+        "rank": 1,
+        "enhancement": 0,
+        "latent_affixes": [
+          {
+            "affix_id": "AF_DEF",
+            "roll_q": 842
+          },
+          {
+            "affix_id": "AF_HP",
+            "roll_q": 988
+          },
+          {
+            "affix_id": "AF_CRIT",
+            "roll_q": 623
+          }
+        ],
+        "origin_roll_floor": 0,
+        "invested_dust": 0,
+        "locked": false,
+        "equipped_by": null,
+        "referenced_by_loadout": false,
+        "starter_grant": false,
+        "revision": 1
+      }
+    },
+    {
+      "model": "H1_RECOMMENDED",
+      "level": 60,
+      "rank": 5,
+      "quality": "Q0",
+      "raw_base_power": 274,
+      "weapon_primary": 64.4,
+      "final_power_including_affixes": 338.4,
+      "latent": {
+        "uid": "example:wand",
+        "template_id": "EQ_W_01",
+        "quality": "Q0",
+        "rank": 5,
+        "enhancement": 0,
+        "latent_affixes": [
+          {
+            "affix_id": "AF_DEF",
+            "roll_q": 842
+          },
+          {
+            "affix_id": "AF_HP",
+            "roll_q": 988
+          },
+          {
+            "affix_id": "AF_CRIT",
+            "roll_q": 623
+          }
+        ],
+        "origin_roll_floor": 0,
+        "invested_dust": 0,
+        "locked": false,
+        "equipped_by": null,
+        "referenced_by_loadout": false,
+        "starter_grant": false,
+        "revision": 1
+      }
+    },
+    {
+      "model": "H1_RECOMMENDED",
+      "level": 60,
+      "rank": 5,
+      "quality": "Q4",
+      "raw_base_power": 274,
+      "weapon_primary": 109.48,
+      "final_power_including_affixes": 383.48,
+      "latent": {
+        "uid": "example:wand",
+        "template_id": "EQ_W_01",
+        "quality": "Q4",
+        "rank": 5,
+        "enhancement": 0,
+        "latent_affixes": [
+          {
+            "affix_id": "AF_DEF",
+            "roll_q": 842
+          },
+          {
+            "affix_id": "AF_HP",
+            "roll_q": 988
+          },
+          {
+            "affix_id": "AF_CRIT",
+            "roll_q": 623
+          }
+        ],
+        "origin_roll_floor": 0,
+        "invested_dust": 0,
+        "locked": false,
+        "equipped_by": null,
+        "referenced_by_loadout": false,
+        "starter_grant": false,
+        "revision": 1
+      }
+    },
+    {
+      "model": "H2_STRONG_DIAGNOSTIC",
+      "level": 6,
+      "rank": 1,
+      "quality": "Q0",
+      "raw_base_power": 58,
+      "weapon_primary": 14.0,
+      "final_power_including_affixes": 72.0,
+      "latent": {
+        "uid": "example:wand",
+        "template_id": "EQ_W_01",
+        "quality": "Q0",
+        "rank": 1,
+        "enhancement": 0,
+        "latent_affixes": [
+          {
+            "affix_id": "AF_DEF",
+            "roll_q": 842
+          },
+          {
+            "affix_id": "AF_HP",
+            "roll_q": 988
+          },
+          {
+            "affix_id": "AF_CRIT",
+            "roll_q": 623
+          }
+        ],
+        "origin_roll_floor": 0,
+        "invested_dust": 0,
+        "locked": false,
+        "equipped_by": null,
+        "referenced_by_loadout": false,
+        "starter_grant": false,
+        "revision": 1
+      }
+    },
+    {
+      "model": "H2_STRONG_DIAGNOSTIC",
+      "level": 6,
+      "rank": 1,
+      "quality": "Q4",
+      "raw_base_power": 58,
+      "weapon_primary": 29.4,
+      "final_power_including_affixes": 87.4,
+      "latent": {
+        "uid": "example:wand",
+        "template_id": "EQ_W_01",
+        "quality": "Q4",
+        "rank": 1,
+        "enhancement": 0,
+        "latent_affixes": [
+          {
+            "affix_id": "AF_DEF",
+            "roll_q": 842
+          },
+          {
+            "affix_id": "AF_HP",
+            "roll_q": 988
+          },
+          {
+            "affix_id": "AF_CRIT",
+            "roll_q": 623
+          }
+        ],
+        "origin_roll_floor": 0,
+        "invested_dust": 0,
+        "locked": false,
+        "equipped_by": null,
+        "referenced_by_loadout": false,
+        "starter_grant": false,
+        "revision": 1
+      }
+    },
+    {
+      "model": "H2_STRONG_DIAGNOSTIC",
+      "level": 60,
+      "rank": 5,
+      "quality": "Q0",
+      "raw_base_power": 274,
+      "weapon_primary": 64.4,
+      "final_power_including_affixes": 338.4,
+      "latent": {
+        "uid": "example:wand",
+        "template_id": "EQ_W_01",
+        "quality": "Q0",
+        "rank": 5,
+        "enhancement": 0,
+        "latent_affixes": [
+          {
+            "affix_id": "AF_DEF",
+            "roll_q": 842
+          },
+          {
+            "affix_id": "AF_HP",
+            "roll_q": 988
+          },
+          {
+            "affix_id": "AF_CRIT",
+            "roll_q": 623
+          }
+        ],
+        "origin_roll_floor": 0,
+        "invested_dust": 0,
+        "locked": false,
+        "equipped_by": null,
+        "referenced_by_loadout": false,
+        "starter_grant": false,
+        "revision": 1
+      }
+    },
+    {
+      "model": "H2_STRONG_DIAGNOSTIC",
+      "level": 60,
+      "rank": 5,
+      "quality": "Q4",
+      "raw_base_power": 274,
+      "weapon_primary": 135.24,
+      "final_power_including_affixes": 409.24,
+      "latent": {
+        "uid": "example:wand",
+        "template_id": "EQ_W_01",
+        "quality": "Q4",
+        "rank": 5,
+        "enhancement": 0,
+        "latent_affixes": [
+          {
+            "affix_id": "AF_DEF",
+            "roll_q": 842
+          },
+          {
+            "affix_id": "AF_HP",
+            "roll_q": 988
+          },
+          {
+            "affix_id": "AF_CRIT",
+            "roll_q": 623
+          }
+        ],
+        "origin_roll_floor": 0,
+        "invested_dust": 0,
+        "locked": false,
+        "equipped_by": null,
+        "referenced_by_loadout": false,
+        "starter_grant": false,
+        "revision": 1
+      }
+    }
+  ],
+  "scope": "Fixed first-forest loadouts, eight loot fixtures and eight combat seeds per case. Equipment selector frozen to original H0. Not universal monotonicity, full progression, all 33-template combat, or payer behaviour."
+}

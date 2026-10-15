@@ -1,0 +1,11 @@
+# R443 gear provenance addendum
+
+**Conclusion:** the rev13 draw was not a direct save edit or `QAScenarios` fixture grant. It was dispatched from the visible in-app free-ticket UI on the R420 local candidate Release build. However, the command and contents are explicitly a test overlay: `App.swift` dispatches `.mockSummon`; `GameEngine.swift` labels the output `MOCK_ONLY R3 test draw` and creates `AFFIX_*_TEST` values. Thus the 30/30 encounters are real UI-dispatched candidate-play results, but they are **not** evidence for a no-mock/no-test-affix equipment route.
+
+R420 build contract/receipt identifies `local.witch.autonomous.r1.completion.r420`, Release, with `STANDARD_PLAY_R169` and local candidate feature flags. Home and expedition views expose the 魔導庫, `GachaViews.swift` offers a five-ticket summon, and `App.swift` routes that action through the runtime catalog pool and `ticket_free`. The rev12 tutorial receipt grants five initial tickets with `[UNAPPROVED_TEST_OVERLAY]`; rev13 spends them on `EQ_HAND_02`, `EQ_RING_03`, `EQ_W_P2`, `EQ_S_03`, `EQ_S_02`.
+
+Three rev13 products are still equipped at rev91: WITCH's `EQ_RING_03` UUID `E56F7BB6-D8A6-4611-8B5D-94DB13508979` with `AFFIX_POWER_TEST`; WITCH's `EQ_W_P2` UUID `45135D4D-CECB-4896-80B6-2D1894782322` with `AFFIX_GUARD_TEST`; and SMITH's `EQ_S_02` UUID `C71D598A-C628-4B98-967D-0F3FF551E1E6` with `AFFIX_GUARD_TEST`. The catalog defines poison effects for `EQ_W_P2`, so mock-draw use is material to the build provenance. No claim is made that these affixes altered a particular win or that their marginal effect is known.
+
+For the report, call the 30 clears “local candidate UI progression using the built-in free mock summon.” If the required standard excludes mock/test gear, keep those clears as historical evidence and use already-owned non-mock alternatives for narrowly scoped replays; the inventory contains starter `EQ_W_01` and `EQ_S_01`. This does not establish production gacha, StoreKit, or monetization readiness.
+
+Pins: R420 source map SHA `cee0238900cbd8bade40a52d0aac98e880770064e02b5130366b32c2b6acc355`; R420 install receipt SHA `79013d5b03fc10b9a86955ce18761b3ec541d1333d95a3c1add26fdda32b51c3`; before-save SHA `51c07a8d8c262f930bda41728b2775ac1338187644ed3a60fda05fbf24786475`; rev91 save SHA `46abb206178cac46b722a5dd8b1dabd26a3c2f0885835f05d589c79ada6fa9ba`.

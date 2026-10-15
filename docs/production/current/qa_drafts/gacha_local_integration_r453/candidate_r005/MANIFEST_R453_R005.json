@@ -1,0 +1,28 @@
+{
+  "candidate": "R453 local receipt delivery adapter test-fixture path correction",
+  "revision": "R005",
+  "status": "PREPARED_NOT_RUN",
+  "scope": "test-only temporary-directory canonicalization; no production path-policy change",
+  "change": "Resolve unittest TemporaryDirectory path strictly so macOS /var/folders symlink ancestors do not trigger the production adapter symlink rejection.",
+  "testSource": {
+    "path": "tools/witch_purchase_authority/tests/test_local_delivery_r453.py",
+    "sha256": "3fb400f5d6b3f9f5ab8569af181dbbd0fb022d12f70623ee946cae4a76df0959"
+  },
+  "ownedSnapshot": {
+    "path": "docs/production/current/qa_drafts/gacha_local_integration_r453/candidate_r005/test_local_delivery_r453.py",
+    "sha256": "3fb400f5d6b3f9f5ab8569af181dbbd0fb022d12f70623ee946cae4a76df0959"
+  },
+  "baseR004Manifest": {
+    "path": "docs/production/current/qa_drafts/gacha_local_integration_r453/candidate_r004/MANIFEST_R453_R004.json",
+    "sha256": "a60902015a4a0d47e333a1ed675ead2526156f08921932b8fe19593d91b358f8"
+  },
+  "sourcePolicyChanged": false,
+  "testsRunByAuthor": false,
+  "priorExecution": {
+    "ran": 73,
+    "errors": 15,
+    "otherPass": 58,
+    "skipped": 0,
+    "failure": "All 15 R453 setup errors due macOS temp path resolving through /var/folders symlink ancestors; production symlink policy remains correct."
+  }
+}

@@ -1,0 +1,21 @@
+# R460 fixed-SHA UI and art review
+
+**Audited revision:** `45dc02f73f0bcb7c37ad1f01969c3d4b43ceef2e` (R086). The checkout also had dirty `ACTIVE_WORK_R026.json` and `native/WitchGathering.xcodeproj/project.pbxproj`; both were excluded. Read-only review only.
+
+## Finding
+
+I found no reproducible high-impact UI/art defect that justifies another source or asset change at this revision. This is scoped technical evidence, not blanket acceptance: the reviewed ordinary UI is usable; 29 direct-attack enemy roles have rendered execute evidence, while 17 recover routes remain unobserved because hit/resolve preempts them or execute is never rendered; and the 159-unit ledger remains partial/unaccepted per row without evidence that all 159 are missing or defective. Formal art adoption remains a separate Human decision.
+
+## Evidence reviewed
+
+- R456 normal Release runtime: I inspected the four saved 1170×2532 screens directly. Home and cold reopen show the same four-actor room and gathering card. The explore screenshot shows four actors, region title and live battle HUD with the R05 boss in frame. The gear comparison labels chosen/current equipment and presents stats, refinement rank and latent effects side by side. These screens do not cover every workflow or accessibility size. Runtime receipt reports 238 source inputs, 1,922 resources, revision 137→138 for a B_R05_B win, 30 campaign clears and 15 challenge clears retained, and byte-exact primary/previous saves after cold reopen. Simulator-only; no physical-device claim.
+- R433 ordinary UI exercised four cosmetic preview/apply flows, both staff appearances, botanical desk place/store and cold restore. It recorded the LUNA reading-pose mantle omission. The fixed R456 source has the subsequent reading-specific route and mirrored mantle on the reading-hands crop. R446 selected/reset screenshots show a selected-only shoulder accent, readable book/hands, unchanged desk and clean reset. The raw R446 harness remains `INCOMPLETE_RETAINED` because of three app-specific OS saved-state plist additions; separate readback confirms protected app/data and cold save bytes exact.
+- Party: R374/R377/R407 combine home/field composition, seven state-route categories, and marker-joined hit examples for all four actors. No sampled crop, detached sprite or major overlap was reported. This does not cover every costume/weapon/state combination.
+- Enemies: R418 independently reviewed the B_R05_B fix (three roots, 16–18 visible execute frames each); R424/R425 extend rendered execute coverage across the remaining direct-attack actors with visual sampling and Core replay. E_R02_04 is a support role and has no direct execute requirement. R457 finds 17 direct recover windows unobserved: 16 attacks proceed to hit/resolve; B_R01_A never reaches rendered execute; zero retained eligible-but-uninspected recover intervals remain. This is an evidence gap, not a confirmed renderer fault.
+- Assets: R308’s 159-row index comparison establishes registration (149 matching kinds plus 10 explicit ENV/FX kind consolidations), not finish. R457 leaves all 159 rows `PARTIAL_OR_NOT_ACCEPTED`, while reporting no specific absent required asset or reproduced gross defect. Do not translate that label into “159 defective”; do not promote it to “159 complete.”
+
+## Residual limits
+
+R370’s AXXXL sample has two low-priority clarity issues: 「防御」 wraps between characters, and the zero-result inventory view lacks explanatory copy or a clear-search affordance. They did not block the pictured operation. R456 screenshots do not prove every below-fold action or display size. No further art production is justified by the evidence reviewed here; future work should start from a concrete row-specific failure or an eligible naturally rendered recovery interval, not a blanket redraw/replay.
+
+Key fixed-tree records: `COMPLETION_REGISTER_R012.json`; `native_completion_r456/ROOT_RUNTIME_RESULT_R001.json`; `native_reading_mantle_r446/independent_review_r001/REVIEW_R001.json`; `state_acceptance_reconciliation_r418/STATE_ACCEPTANCE_R001.json`; `enemy_execute_regression_r424/independent_visual_review_r001/REVIEW_R001.json`; `completion_priority_r457/RECOVERY_ELIGIBILITY_R002.json`; `asset_readiness_r308/ASSET_READINESS_R001.json`.

@@ -1,0 +1,36 @@
+{
+  "review": "R461 independent source review",
+  "status": "SOURCE_REVIEW_NO_BLOCKER_FOUND_TESTS_UNRUN",
+  "scope": "read-only source review; no test, fixture export, build, network, or production integration",
+  "pins": {
+    "contractR002": "24e88a2e2c197e7be36a8ff6d226cd55478fed007560d398f848c35d0052830d",
+    "pythonR003": {
+      "service": "564b0b2d4fb4c079345c36ced790507c1d722e1b1436dec7ba9e6ba967fb84fe",
+      "tests": "84f1b3b418ae0c1d2988e82bfeb3cc4d321479e7e071dfdfa623309f88265e3b",
+      "manifest": "c697ec8d000a3e99e6d39992b4917709287bd53e557ae8f6814b5ff87e034d53"
+    },
+    "swiftR002": {
+      "source": "03bad37f64f990d7b344a0c6a8b60a7cfefac19f0eb864abe6aa24fadc605f9d",
+      "tests": "9c8a3b4e2c96e46cf9d0eb9c3d5b7f8d042b1cea50fed30f171f5bed10c3e98a",
+      "manifest": "008cd46dd0ca6dfd0e470502a2ce802307bbcd0ecbbe896dc0102be5a480c678"
+    }
+  },
+  "findings": [
+    {
+      "severity": "resolved-in-R003",
+      "finding": "R002 Python emitted a non-null operationID in null-binding auth/request/policy-denial responses; Swift rejects that correlation shape. R003 now nulls operationID when binding is absent and authenticates before pinned-policy rejection."
+    },
+    {
+      "severity": "none-blocking-in-reviewed-source",
+      "finding": "Python R003 marker/path binding and Swift R002 payload, freshness, and CAS logic are source-consistent with Contract R002."
+    }
+  ],
+  "unverified": [
+    "Python R003 tests unrun",
+    "Swift R002 tests unrun",
+    "cross-language fixture not yet exported",
+    "Swift observation and pending-operation durability not proven by the protocol/test actor",
+    "no Apple production authentication, TLS, revocation, or production entitlement"
+  ],
+  "production_authorization": false
+}

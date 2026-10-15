@@ -1,0 +1,28 @@
+// !$*UTF8*$!
+{
+  archiveVersion = 1;
+  classes = {};
+  objectVersion = 56;
+  objects = {
+    A20000000000000000000001 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitLocalQATests.swift; sourceTree = "<group>";};
+    A20000000000000000000002 = {isa = PBXFileReference; lastKnownFileType = text; path = WitchLocalTest.storekit; sourceTree = "<group>";};
+    A20000000000000000000003 = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoreKitLocalQATests.xctest; sourceTree = BUILT_PRODUCTS_DIR;};
+    A20000000000000000000010 = {isa = PBXGroup; children = (A20000000000000000000011, A20000000000000000000012,); sourceTree = "<group>";};
+    A20000000000000000000011 = {isa = PBXGroup; children = (A20000000000000000000001, A20000000000000000000002,); path = Tests; sourceTree = "<group>";};
+    A20000000000000000000012 = {isa = PBXGroup; children = (A20000000000000000000003,); name = Products; sourceTree = "<group>";};
+    A20000000000000000000020 = {isa = PBXBuildFile; fileRef = A20000000000000000000001;};
+    A20000000000000000000021 = {isa = PBXBuildFile; fileRef = A20000000000000000000002;};
+    A20000000000000000000030 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A20000000000000000000020,); runOnlyForDeploymentPostprocessing = 0;};
+    A20000000000000000000031 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0;};
+    A20000000000000000000032 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A20000000000000000000021,); runOnlyForDeploymentPostprocessing = 0;};
+    A20000000000000000000040 = {isa = PBXNativeTarget; buildConfigurationList = A20000000000000000000051; buildPhases = (A20000000000000000000030, A20000000000000000000031, A20000000000000000000032,); buildRules = (); dependencies = (); name = StoreKitLocalQAiOSTests; productName = StoreKitLocalQAiOSTests; productReference = A20000000000000000000003; productType = "com.apple.product-type.bundle.unit-test";};
+    A20000000000000000000041 = {isa = PBXProject; attributes = {LastUpgradeCheck = 2660; TargetAttributes = {A20000000000000000000040 = {CreatedOnToolsVersion = 26.6;};};}; buildConfigurationList = A20000000000000000000050; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, ja, Base,); mainGroup = A20000000000000000000010; productRefGroup = A20000000000000000000012; projectDirPath = ""; projectRoot = ""; targets = (A20000000000000000000040,);};
+    A20000000000000000000050 = {isa = XCConfigurationList; buildConfigurations = (A20000000000000000000060, A20000000000000000000061,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Debug;};
+    A20000000000000000000051 = {isa = XCConfigurationList; buildConfigurations = (A20000000000000000000062, A20000000000000000000063,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Debug;};
+    A20000000000000000000060 = {isa = XCBuildConfiguration; buildSettings = {SDKROOT = iphoneos; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 17.0;}; name = Debug;};
+    A20000000000000000000061 = {isa = XCBuildConfiguration; buildSettings = {SDKROOT = iphoneos; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 17.0;}; name = Release;};
+    A20000000000000000000062 = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGNING_ALLOWED = NO; GENERATE_INFOPLIST_FILE = YES; PRODUCT_BUNDLE_IDENTIFIER = local.witch.storekitqa.ios.tests; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SUPPORTED_PLATFORMS = "iphonesimulator iphoneos"; TARGETED_DEVICE_FAMILY = 1;}; name = Debug;};
+    A20000000000000000000063 = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGNING_ALLOWED = NO; GENERATE_INFOPLIST_FILE = YES; PRODUCT_BUNDLE_IDENTIFIER = local.witch.storekitqa.ios.tests; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SUPPORTED_PLATFORMS = "iphonesimulator iphoneos"; TARGETED_DEVICE_FAMILY = 1;}; name = Release;};
+  };
+  rootObject = A20000000000000000000041;
+}

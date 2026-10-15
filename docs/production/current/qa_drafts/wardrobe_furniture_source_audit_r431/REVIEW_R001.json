@@ -1,0 +1,40 @@
+{
+  "revision": "R431",
+  "scope": "read-only source and existing-native-evidence reconciliation",
+  "formalAdoption": false,
+  "catalogScope": {
+    "costumeOptions": ["ERNA_TRAVEL", "LUNA_MANTLE_GREEN_WORK_MANTLE_CANDIDATE", "AIRA_HARVEST_APRON_GREEN_CANDIDATE_R130"],
+    "accessoryOption": ["NOIR_NECKWEAR_MOSS_R001"],
+    "weaponAppearances": ["STAFF_BRANCH", "STAFF_MOON"],
+    "furniture": ["FURN_DESK_BOTANICAL"],
+    "countInterpretation": "existing-development-sample-only; no future SKU count inferred"
+  },
+  "sourcePins": {
+    "WorkflowViews.swift": "8bea8f0ac8eccd580236d9eea7703568b36ded1716d9e2b4f2b76e3bb860f72a",
+    "App.swift": "3ae262c5c3bae250b20e7c4971256ff1c3ec00043f4b607de34b2e683603594a",
+    "LivingScene.swift": "e4505b57d66f41b391831392ed23c25a4829bf9cd6301bd8127012cb1486038",
+    "catalog_overlay.json": "bb218f0fe6b4b1a6037faa75ddb301ded27d7b9de070747bebf99a3e72209337"
+  },
+  "contextCoverage": [
+    {"item":"AIRA_HARVEST_APRON_GREEN_CANDIDATE_R130","wardrobePreview":true,"appliedOrCold":true,"home":true,"battle": "partial held-frame idle/execute only; independent image review scoped", "status":"partial"},
+    {"item":"LUNA_MANTLE_GREEN_WORK_MANTLE_CANDIDATE","wardrobePreview":true,"appliedOrCold":false,"home":false,"battle":false,"status":"partial"},
+    {"item":"NOIR_NECKWEAR_MOSS_R001","wardrobePreview":true,"appliedOrCold":false,"home":false,"battle":false,"status":"partial; neck placement unclear in preview"},
+    {"item":"ERNA_TRAVEL","wardrobePreview":"legacy screenshots; relevant RUN records remain RUNNING","appliedOrCold":"unclosed","home":"legacy/older-build only","battle":"source route only in this audit","status":"partial"},
+    {"item":"STAFF_BRANCH","wardrobePreview":"legacy screenshots; RUN records remain RUNNING","appliedOrCold":"unclosed","home":"unclosed current build","battle":"source route only in this audit","status":"partial"},
+    {"item":"STAFF_MOON","wardrobePreview":"legacy screenshots; RUN records remain RUNNING","appliedOrCold":"unclosed","home":"unclosed current build","battle":"source route only in this audit","status":"partial"},
+    {"item":"FURN_DESK_BOTANICAL","wardrobePreview":"R190/R279 placement UI","appliedOrCold":"R279 persistence and cold reopen","home":"R052 older-build actual room screenshot with LUNA reading; R190 preview evidence","battle":"not applicable/none claimed","status":"partial; static companion-use pose evidenced, not animated work interaction"}
+  ],
+  "nativeEvidencePins": {
+    "r130WardrobeRunStatus": "COMPLETE_REQUIRES_RESULT_REVIEW",
+    "r130AppSHA256": "0d62b24c1f00b6839e1997cea0610c8dfa75019de1110d05a60ef97b4cc7558d",
+    "r130PriorFilesExact": 1519,
+    "r130PriorPreferencesExact": 9,
+    "r130ApronCaptureStatus": "CAPTURED_REQUIRES_VISUAL_REVIEW",
+    "r130VisualReviewLimit": "idle and execute screenshots inspected; not full sequence/art acceptance",
+    "r190ExitCode": 0,
+    "r190AppSHA256": "33a065427d785b71c377c16e85bdcefd1af50104bb0e47af65d641dd6744da68",
+    "r279Erratum": "qa_drafts/ordinary_furniture_preview_r279/independent_review_r001/ERRATUM_R002.md",
+    "r052HomeScreenshotSHA256": "a020b8741d34af8e768b59235d616b74bc233d7c8773c7b626264d14e63064cc"
+  },
+  "nextLocalAcceptance": "On the same current development build, compare the existing appearance options at a fixed actor/pose/camera in preview and applied home/companion/battle; cold-reopen the selected styles. Record the legacy R094 RUNNING artifacts as historical only. No new catalog items required."
+}

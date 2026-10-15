@@ -1,0 +1,193 @@
+{
+  "schema": "witch_runtime_index_candidate_overlay_r001",
+  "status": "OPTIONAL_CANDIDATE_OVERLAY_NOT_ADOPTED",
+  "base_runtime_index": "../../Art/runtime_index.json",
+  "base_entry_id": "ACT_E_R01_02",
+  "asset_id": "ACT_E_R01_02",
+  "selectedPNG": "ACT_E_R01_02__sprite_sheet__r001.png",
+  "textureRoot": "native/GeneratedArt/enemy_r001",
+  "canvas_px": [
+    1536,
+    1024
+  ],
+  "fps": null,
+  "anchor": null,
+  "availableTimedClips": [],
+  "poseStates": {
+    "idle_1": {
+      "row": 0,
+      "column": 0,
+      "frameIndex": 0,
+      "sourceRectPixelsTopLeft": [
+        0,
+        0,
+        512,
+        341
+      ],
+      "spriteKitNormalizedRectBottomLeft": [
+        0.0,
+        0.6669921875,
+        0.3333333333333333,
+        0.3330078125
+      ]
+    },
+    "idle_2": {
+      "row": 0,
+      "column": 1,
+      "frameIndex": 1,
+      "sourceRectPixelsTopLeft": [
+        512,
+        0,
+        512,
+        341
+      ],
+      "spriteKitNormalizedRectBottomLeft": [
+        0.3333333333333333,
+        0.6669921875,
+        0.3333333333333333,
+        0.3330078125
+      ]
+    },
+    "walk_1": {
+      "row": 0,
+      "column": 2,
+      "frameIndex": 2,
+      "sourceRectPixelsTopLeft": [
+        1024,
+        0,
+        512,
+        341
+      ],
+      "spriteKitNormalizedRectBottomLeft": [
+        0.6666666666666666,
+        0.6669921875,
+        0.3333333333333333,
+        0.3330078125
+      ]
+    },
+    "walk_2": {
+      "row": 1,
+      "column": 0,
+      "frameIndex": 3,
+      "sourceRectPixelsTopLeft": [
+        0,
+        341,
+        512,
+        342
+      ],
+      "spriteKitNormalizedRectBottomLeft": [
+        0.0,
+        0.3330078125,
+        0.3333333333333333,
+        0.333984375
+      ]
+    },
+    "anticipate": {
+      "row": 1,
+      "column": 1,
+      "frameIndex": 4,
+      "sourceRectPixelsTopLeft": [
+        512,
+        341,
+        512,
+        342
+      ],
+      "spriteKitNormalizedRectBottomLeft": [
+        0.3333333333333333,
+        0.3330078125,
+        0.3333333333333333,
+        0.333984375
+      ]
+    },
+    "execute": {
+      "row": 1,
+      "column": 2,
+      "frameIndex": 5,
+      "sourceRectPixelsTopLeft": [
+        1024,
+        341,
+        512,
+        342
+      ],
+      "spriteKitNormalizedRectBottomLeft": [
+        0.6666666666666666,
+        0.3330078125,
+        0.3333333333333333,
+        0.333984375
+      ]
+    },
+    "recover": {
+      "row": 2,
+      "column": 0,
+      "frameIndex": 6,
+      "sourceRectPixelsTopLeft": [
+        0,
+        683,
+        512,
+        341
+      ],
+      "spriteKitNormalizedRectBottomLeft": [
+        0.0,
+        0.0,
+        0.3333333333333333,
+        0.3330078125
+      ]
+    },
+    "hit": {
+      "row": 2,
+      "column": 1,
+      "frameIndex": 7,
+      "sourceRectPixelsTopLeft": [
+        512,
+        683,
+        512,
+        341
+      ],
+      "spriteKitNormalizedRectBottomLeft": [
+        0.3333333333333333,
+        0.0,
+        0.3333333333333333,
+        0.3330078125
+      ]
+    },
+    "resolve": {
+      "row": 2,
+      "column": 2,
+      "frameIndex": 8,
+      "sourceRectPixelsTopLeft": [
+        1024,
+        683,
+        512,
+        341
+      ],
+      "spriteKitNormalizedRectBottomLeft": [
+        0.6666666666666666,
+        0.0,
+        0.3333333333333333,
+        0.3330078125
+      ]
+    }
+  },
+  "loopCandidatePoseOrder": {
+    "idle": [
+      "idle_1",
+      "idle_2"
+    ],
+    "walk": [
+      "walk_1",
+      "walk_2"
+    ]
+  },
+  "oneShotPoseCandidates": [
+    "anticipate",
+    "execute",
+    "recover",
+    "hit",
+    "resolve"
+  ],
+  "integrationRule": "Texture atlas pose candidates only. Do not treat as timed animation until cadence, registration anchors, cell QA and Human visual adoption are resolved.",
+  "sourceStill": "../../Art/ActorStills/ACT_E_R01_02/ACT_E_R01_02__still__E_R01_02_base_v2.png",
+  "manifest": "ACT_E_R01_02__manifest__r001.json",
+  "baseRuntimeIndexSha256": "e3b5ac62b64358f0a7e7fddf7900177afd33fb88bd9e37f684d5709d973c659f",
+  "sheetSha256": "1bbb3a9943faaa9ee9662dba405e05588a1ff3581ab0b8f98c023880d76040cf"
+}

@@ -1,0 +1,53 @@
+{
+  "files": [
+    {
+      "path": "docs/production/current/qa_drafts/economy_release_matrix_r374/candidate_r002/README_R002.md",
+      "sha256": "a63e5f4a9d6888ce8e4a84fd73ee78899b19b08f864a0513364c4559f40097c5",
+      "sizeBytes": 1147
+    },
+    {
+      "path": "docs/production/current/qa_drafts/economy_release_matrix_r374/candidate_r002/runner_r002/run_r374.py",
+      "sha256": "0046c6147a65703a5c86423028eff74df0f86d261bc4d0eed626a92925021374",
+      "sizeBytes": 29404
+    },
+    {
+      "path": "docs/production/current/qa_drafts/economy_release_matrix_r374/candidate_r002/runner_r002/INPUT_MANIFEST_R002.json",
+      "sha256": "da774ac0d079240ed5a96f3ea617da87d43463a4999974d849dc4feb3cf9eb61",
+      "sizeBytes": 36427
+    }
+  ],
+  "limits": {
+    "aggregateWallSeconds": 6000,
+    "caseInvocations": 16,
+    "compileInvocations": 1,
+    "configuration": "release",
+    "horizonsDays": [
+      30,
+      90
+    ],
+    "maxAllocatedBytes": 2000000000,
+    "maxAttempts": 1,
+    "minimumFreeBytes": 12000000000,
+    "perCaseWallSeconds": {
+      "30": 180,
+      "90": 600
+    },
+    "seed": 100049
+  },
+  "preservesR369IncompleteRUNSHA256": "2ff8dff96c734e621808518d6994c5386f2ec5e5fd0d0244135a2f7a91f7fb62",
+  "preservesR374CandidateR001ManifestSHA256": "7d434f48d33180f2920e355700c8695ccd93764a235937a7fa766ce24afd380e",
+  "preservesR374R001InputManifestSHA256": "7af08a301eb6721e8cf6af12b652219240205bcf6a9f8437c24609ff4cf0dbd1",
+  "preservesR374R001RunnerSHA256": "78a40513de5020149594515191a70ad9f4ea9cb97ead160f7f7c4a708fbd57d6",
+  "revision": "R002",
+  "schema": "r374-runner-revision-seal-v1",
+  "status": "PREPARED_NOT_RUN",
+  "validation": {
+    "binaryCaptureBeforeVerdictInspection": "PASS_STATIC_CONTROL_FLOW",
+    "compile": "NOT_RUN",
+    "pythonAST": "PASS",
+    "reportDecodePrecedesDailyAccess": "PASS_STATIC_CONTROL_FLOW",
+    "simulator": "NOT_RUN",
+    "stagedInputs": "69/69_EXACT",
+    "xctest": "NOT_RUN"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "accepted": true,
+  "case": {
+    "attempt": 1,
+    "caseID": "R452-free_no_ad-30-seed100069",
+    "cohort": "free_no_ad",
+    "horizonDays": 30,
+    "runID": "45200000-0001-4002-8000-000000000001",
+    "seed": 100069,
+    "suite": "EconomyCohortProgressionR355Tests",
+    "testFilter": "EconomyCohortProgressionR355Tests/testR452FreeNoAdZeroSummonFirstCraftProgression",
+    "testMethod": "testR452FreeNoAdZeroSummonFirstCraftProgression"
+  },
+  "command": [
+    "/usr/bin/swift",
+    "test",
+    "--package-path",
+    "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_seed_robustness_r452/candidate_r001/runner_r001/runs/R452_BATCH_001/package",
+    "--scratch-path",
+    "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_seed_robustness_r452/candidate_r001/runner_r001/runs/R452_BATCH_001/scratch/build",
+    "--cache-path",
+    "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_seed_robustness_r452/candidate_r001/runner_r001/runs/R452_BATCH_001/scratch/cache",
+    "--config-path",
+    "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_seed_robustness_r452/candidate_r001/runner_r001/runs/R452_BATCH_001/scratch/config",
+    "--security-path",
+    "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_seed_robustness_r452/candidate_r001/runner_r001/runs/R452_BATCH_001/scratch/security",
+    "--jobs",
+    "2",
+    "--filter",
+    "EconomyCohortProgressionR355Tests/testR452FreeNoAdZeroSummonFirstCraftProgression"
+  ],
+  "compileExpected": true,
+  "logPath": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_seed_robustness_r452/candidate_r001/runner_r001/runs/R452_BATCH_001/cases/45200000-0001-4002-8000-000000000001/swift_test.log",
+  "processWallSeconds": 71.981,
+  "report": {
+    "campaignWins": 30,
+    "challengeWins": 15,
+    "crafted": 1,
+    "enhanceActions": 17,
+    "evolved": 11,
+    "freeSummons": 0,
+    "naturalAcquisitionRecords": 96,
+    "paidSummons": 0,
+    "refineActions": 13,
+    "researchCompleted": 5,
+    "seed": 100069,
+    "sha256": "dfb0a27459c310f10eedcb0cfc2cddc7cdca41d29f5b72833b97ec35fc8dc052",
+    "sizeBytes": 10470607,
+    "syntheticGrants": 0
+  },
+  "reportPath": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/zero_summon_seed_robustness_r452/candidate_r001/runner_r001/runs/R452_BATCH_001/cases/45200000-0001-4002-8000-000000000001/r452_45200000-0001-4002-8000-000000000001/report.json",
+  "reportValidationErrors": [],
+  "returnCode": 0,
+  "selectedTestElapsedSeconds": 44.233,
+  "status": "PASS",
+  "xctestEvents": [
+    {
+      "class": "EconomyCohortProgressionR355Tests",
+      "elapsedSeconds": 44.233,
+      "method": "testR452FreeNoAdZeroSummonFirstCraftProgression",
+      "result": "passed"
+    }
+  ]
+}

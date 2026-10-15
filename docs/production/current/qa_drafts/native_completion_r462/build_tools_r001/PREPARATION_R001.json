@@ -1,0 +1,16 @@
+{
+  "status": "PREPARED_NOT_SEALED_NOT_EXECUTED",
+  "sourceDriver": "docs/production/current/qa_drafts/native_completion_r456/build_tools_r003/build_r456.py",
+  "sourceSHA256": "64955e92d4fc40dff4cf579d5338f811d7e2a165ea20d277bf57164f08a70dca",
+  "driverSHA256": "4b4e00019dda90370739606948b301db5a015865a1d6db30bae01f8b1e3d6dd4",
+  "changes": [
+    "Dedicated R462 output and bundleID",
+    "Expected native inputs239 afteroneCorefile addition",
+    "R001 receipts andseals"
+  ],
+  "expectedMaximumBuildBytes": 2000000000,
+  "minimumFreeBytes": 20000000000,
+  "aggregateSeconds": 600,
+  "normalReleaseFlagsUnchanged": true,
+  "executeOnlyAfterR461IntegrationAndNewFreeze": true
+}

@@ -1,0 +1,79 @@
+{
+  "schema": "r461-synthetic-cross-language-fixture-v1",
+  "status": "SYNTHETIC_TEST_ONLY_NOT_APPLE_AUTHORIZATION",
+  "operationID": "26c3c2a8-dac9-48d4-af13-f52d0c0656e2",
+  "files": [
+    {
+      "path": "request.json",
+      "sizeBytes": 3199,
+      "sha256": "a982009c3a450b6b680e9877161d5208c2bcae7848e232cedc1f50d27cb64641"
+    },
+    {
+      "path": "delivered.json",
+      "sizeBytes": 2540,
+      "sha256": "09a3fed77ca3fa5fc926c4410d793fcb4567d7e6a468b6713f1d81d0572415d7"
+    },
+    {
+      "path": "replay.json",
+      "sizeBytes": 2540,
+      "sha256": "09a3fed77ca3fa5fc926c4410d793fcb4567d7e6a468b6713f1d81d0572415d7"
+    },
+    {
+      "path": "post_refund_rejected.json",
+      "sizeBytes": 494,
+      "sha256": "8d0007c970863552e13212da0ada4bfdaa20e38d9c1471ea1ac8e19df63c3d0a"
+    }
+  ],
+  "crossLanguageFixture": {
+    "path": "CROSS_LANGUAGE_FIXTURE.json",
+    "sizeBytes": 12748,
+    "sha256": "0e68e855f2458ce679a6b8ec7e7018ffb84fbddd4244f461215235659380059d"
+  },
+  "refundOutcome": {
+    "status": "NOT_AUTHORIZED_FOR_PRODUCTION",
+    "auditStatus": "OFFLINE_REFUND_NOTICE_CHECKED_NOT_AUTHORIZATION",
+    "grantAuthorized": false,
+    "onlineRevocationChecked": false,
+    "notificationUUID": "577d855c-1984-47c2-87d1-431258d38461",
+    "result": {
+      "notification_id": "577d855c-1984-47c2-87d1-431258d38461",
+      "delivery_status": "RECORDED",
+      "duplicate_notification": false,
+      "delivery_receipt": {
+        "notification_id": "577d855c-1984-47c2-87d1-431258d38461",
+        "event_kind": "REFUND",
+        "payload_sha256": "1b0227b1768bbbb7f41edfb6165fc9bacf65734378478304ee92f2365f02485f",
+        "received_at": 1792017213,
+        "outcome": "REFUNDED_TEST_ONLY",
+        "production_entitlement_authorized": false,
+        "clawed_back": 2,
+        "debt_added": 2
+      },
+      "current_transaction": {
+        "transaction_id": "r461-synthetic-signed-1",
+        "transaction_status": "refunded",
+        "purchase_status": "refunded",
+        "tickets_granted": 4,
+        "tickets_remaining": 0,
+        "tickets_spent": 2,
+        "tickets_debt_offset": 0,
+        "account_ticket_balance": 0,
+        "account_ticket_debt": 2,
+        "account_revision": 3,
+        "production_entitlement_authorized": false
+      },
+      "production_entitlement_authorized": false,
+      "fixture_mutation": true
+    }
+  },
+  "productionEntitlementAuthorized": false,
+  "realAppleTransaction": false,
+  "realCryptographicVerifierUsed": true,
+  "syntheticRootNotApple": true,
+  "networkCalls": 0,
+  "privateKeysPersisted": false,
+  "finalDrawCount": 2,
+  "finalTicketBalance": 0,
+  "finalTicketDebt": 2,
+  "scope": "Synthetic signed chain -> actual R459 adapter -> R461 service; no production authorization"
+}

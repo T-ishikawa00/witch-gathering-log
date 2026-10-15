@@ -1,0 +1,80 @@
+{
+  "schema": "r450-e-r02-01-recover-idle-visual-join-r004-v1",
+  "status": "SCOPED_RECOVER_AND_IDLE_VISUAL_SAMPLES_JOINED",
+  "readOnly": true,
+  "newCapture": false,
+  "buildOrSimulator": false,
+  "encounterID": "E_R02_01",
+  "actorID": "ACT_E_R02_01",
+  "fixtureContext": "R424 isolated QAScenarios.challenge technical capture; not ordinary progression.",
+  "sourceVideo": {
+    "path": "docs/production/current/qa_drafts/enemy_execute_regression_r424/candidate_r002/capture_r001/enemy_event_traces/case01_E_R02_01/battle_execute_window_upto_20_seconds.mp4",
+    "sha256": "4cef77fd35f083c30b94ad76c5adab23b8f9e4cf590609660e244630a1466a43",
+    "bytes": 29197309,
+    "originalUnchanged": true
+  },
+  "trace": {
+    "path": "docs/production/current/qa_drafts/enemy_execute_regression_r424/candidate_r002/capture_r001/enemy_event_traces/case01_E_R02_01/enemy_event_render_r145_ade42a64-6979-4e85-a87c-d110b39e3b03.json",
+    "sha256": "b3e8df6345db2691fa86d7b2f72fe955ff9573f351c58350ce6bea54e728d4dd",
+    "recoveryFrames": "452-470",
+    "idleFrames": "471-508",
+    "nextHitFrame": 509
+  },
+  "joinedSamples": [
+    {
+      "marker": "E145 00451",
+      "traceSceneFrame": 452,
+      "state": "recover",
+      "videoTimeSeconds": 7.87,
+      "image": "docs/production/current/qa_drafts/enemy_execute_regression_r424/recovery_classification_r002/E_R02_01_recover_video_7p87s.jpg",
+      "imageSHA256": "86ed048f43b15a4a3ad8fa362d8b1d652d3ad11bd243f7f38ab0504e38c9cef1",
+      "source": "prior_independent_recovery_review"
+    },
+    {
+      "marker": "E145 00461",
+      "traceSceneFrame": 462,
+      "state": "recover",
+      "videoTimeSeconds": 8.05,
+      "image": "docs/production/current/qa_drafts/enemy_execute_regression_r424/recovery_classification_r002/E_R02_01_recover_video_8p05s.jpg",
+      "imageSHA256": "f8167cc23238a810f2f9e4a6244b21286a7ff0e3fe5d1874cc10941b11feb4ad",
+      "source": "prior_independent_recovery_review"
+    },
+    {
+      "marker": "E145 00471",
+      "traceSceneFrame": 472,
+      "state": "idle",
+      "videoTimeSeconds": 8.22,
+      "image": "docs/production/current/qa_drafts/art_completion_acceptance_r450/recover_path_r004/idle_boundary_8p22.png",
+      "imageSHA256": "597aff551e377d10db36f479b6a54c3c9486c1cc659c8582404413eb5502b0b7"
+    },
+    {
+      "marker": "E145 00482",
+      "traceSceneFrame": 483,
+      "state": "idle",
+      "videoTimeSeconds": 8.4,
+      "image": "docs/production/current/qa_drafts/art_completion_acceptance_r450/recover_path_r004/idle_loop_8p40.png",
+      "imageSHA256": "4f56376e2124b417ec35d57707f69cd0f4b16abd23fb3f4352b0813eb670479c"
+    },
+    {
+      "marker": "E145 00510",
+      "traceSceneFrame": 511,
+      "state": "hit",
+      "videoTimeSeconds": 8.88,
+      "image": "docs/production/current/qa_drafts/art_completion_acceptance_r450/recover_path_r004/late_idle_8p88.png",
+      "imageSHA256": "bcea1d679c8b8d55a4d9cb21a2319a597109f1ccd7d2bbd7d26c774eba58df32"
+    }
+  ],
+  "assessment": {
+    "enemyVisibleAcrossSamples": true,
+    "recoverToIdleReturnObserved": true,
+    "continuousMotionNaturalnessAccepted": false,
+    "allEnemyOrAllArtAcceptance": false,
+    "formalArtAdoption": false,
+    "limit": "Manual marker-to-trace row matching for this one capture; trace videoJoin field remains NOT_ESTABLISHED_OCR_REQUIRED."
+  },
+  "derivedArtifacts": {
+    "pngCount": 3,
+    "totalBytes": 3315889,
+    "maxBudgetBytes": 5000000
+  }
+}

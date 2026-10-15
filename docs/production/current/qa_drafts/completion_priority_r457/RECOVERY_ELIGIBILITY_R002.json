@@ -1,0 +1,140 @@
+{
+  "schema": "r457-recovery-eligibility-addendum-r002-v1",
+  "status": "READ_ONLY_RECONCILIATION; R001_PRESERVED; NO_NEW_CAPTURE",
+  "decision": "The 17 residual direct-attack rows have no eligible recovery interval in retained encounter traces. This is not evidence of a missing/broken animation. The observed attack windows are preempted by hit or terminal resolve, or (for B_R01_A) do not reach a rendered execute. No source/art correction is justified.",
+  "counts": {
+    "directAttackRecoverUnobserved": 17,
+    "executeRenderedButThenHitOrResolve": 16,
+    "noRenderedExecuteSoNoRecoveryOpportunity": [
+      "B_R01_A"
+    ],
+    "recoveryThenIdleVisuallyJoined": [
+      "E_R02_01"
+    ],
+    "supportRoleExcluded": [
+      "E_R02_04"
+    ],
+    "eligibleUninspectedRecoveryIntervalsInRetainedWindows": 0
+  },
+  "perID": {
+    "preemptedOrTerminal": [
+      "B_R01_B",
+      "B_R03_A",
+      "B_R03_B",
+      "B_R04_A",
+      "B_R04_B",
+      "B_R05_B",
+      "E_R01_02",
+      "E_R01_03",
+      "E_R02_02",
+      "E_R03_02",
+      "E_R03_03",
+      "E_R03_04",
+      "E_R04_01",
+      "E_R04_02",
+      "E_R04_04",
+      "E_R05_02"
+    ],
+    "executeNotRendered": [
+      "B_R01_A"
+    ],
+    "positiveVisualRoute": [
+      "E_R02_01"
+    ],
+    "roleException": [
+      "E_R02_04"
+    ]
+  },
+  "routeGrouping": [
+    {
+      "ids": [
+        "B_R03_B",
+        "E_R02_02",
+        "E_R03_02",
+        "E_R03_04",
+        "E_R04_02",
+        "E_R04_04"
+      ],
+      "evidence": "R424 per-window classification: execute rendered; pending hit replays after execute completion, bypassing recovery."
+    },
+    {
+      "ids": [
+        "B_R05_B"
+      ],
+      "evidence": "R418: three execute intervals rendered; hit follows each."
+    },
+    {
+      "ids": [
+        "B_R01_B",
+        "B_R03_A",
+        "B_R04_A",
+        "B_R04_B",
+        "E_R01_02",
+        "E_R01_03",
+        "E_R03_03",
+        "E_R04_01",
+        "E_R05_02"
+      ],
+      "evidence": "R391/R377/R407 retained encounter windows: execute followed by hit or resolve; no recover row."
+    },
+    {
+      "ids": [
+        "B_R01_A"
+      ],
+      "evidence": "R391 retained trace: anticipation/request is present, but no rendered execute before subsequent hit/resolve."
+    }
+  ],
+  "visuallyClosedRoute": {
+    "id": "E_R02_01",
+    "evidence": "R424 trace + R450 R004 video-marker join shows 2 recover samples, idle return samples, then later hit; one actor/route only.",
+    "scope": "SCOPED_PASS; not all-enemy naturalness acceptance"
+  },
+  "technicalCompletionDisposition": {
+    "implementation": "No content absent: the 30 actors are mapped and existing state clips are retained; E_R02_04 is support-role behavior.",
+    "verification": "17 rows remain accurately UNOBSERVED_NO_ELIGIBLE_WINDOW. Of those, 16 have execute rows but their retained route proceeds to hit/resolve; B_R01_A lacks a rendered execute. There are zero retained eligible-but-uninspected recover rows.",
+    "launchDefect": "None demonstrated by these traces.",
+    "closeout": "Close the reproducible behavior as INTERRUPTED_OR_NOT_REACHED, retain the 17 per-ID observation gaps, and do not fail the renderer or mark recovery visually passed. No new capture or forced combat change is warranted absent a concrete gameplay defect. If a future naturally eligible route occurs, review that existing evidence rather than replaying solely to raise counts."
+  },
+  "limits": [
+    "Event/state traces establish route timing, not a visual recovery pass.",
+    "Only E_R02_01 has marker-joined recovery-to-idle visual samples here.",
+    "This does not certify all 30 enemies, all animation combinations, or formal art adoption."
+  ],
+  "pins": {
+    "r457Prior": {
+      "path": "docs/production/current/qa_drafts/completion_priority_r457/FINAL_LOCAL_REMAINDERS_R001.json",
+      "sha256": "b2b62201f2824c04131e6228968eb825c741241813aef0843bef7b25b4045cde",
+      "bytes": 7852
+    },
+    "r450Classification": {
+      "path": "docs/production/current/qa_drafts/art_completion_acceptance_r450/RECOVER_PATH_CLASSIFICATION_R002.json",
+      "sha256": "0512c966412dba78c5a8fdf88a12018ada91b6604ae52fb080b0a904a46152ea",
+      "bytes": 8814
+    },
+    "r450Erratum": {
+      "path": "docs/production/current/qa_drafts/art_completion_acceptance_r450/RECOVER_PATH_CLASSIFICATION_ERRATUM_R003.json",
+      "sha256": "9fec1fd628c07b9c4642a1ecaad40b72ff1ff12b651669b2531db9be7c60f877",
+      "bytes": 3259
+    },
+    "r450VisualClosure": {
+      "path": "docs/production/current/qa_drafts/art_completion_acceptance_r450/recover_path_r004/REVIEW_R004.json",
+      "sha256": "084634725e9c7d366b8c6bd69357b105e8b1427b87541601711e4c6c97ac3e7c",
+      "bytes": 3428
+    },
+    "r391B01A": {
+      "path": "docs/production/current/qa_drafts/enemy_event_party_frames_r391/root_runner_r006/capture_r001/enemy_event_traces/case01_B_R01_A/enemy_event_render_r145_f93b0c85-acca-41bd-9ae1-e74fdc4ec51b.json",
+      "sha256": "cb45cd095bb8bfd86d009b30b28592784461dfa30157afc73c1e0518de47e840",
+      "bytes": 1309236
+    },
+    "r418B05B": {
+      "path": "docs/production/current/qa_drafts/enemy_attack_visibility_r418/capture_candidate_r002/capture_r001/enemy_event_traces/case01_B_R05_B/enemy_event_render_r145_ced2268c-e3d4-4716-99e5-74343987fb49.json",
+      "sha256": "b58eb4acf57c49529e50fb4422b7aaa5b55b54ea91f95f8296118cd5841c9065",
+      "bytes": 3220734
+    },
+    "r424E02_02": {
+      "path": "docs/production/current/qa_drafts/enemy_execute_regression_r424/candidate_r002/capture_r001/enemy_event_traces/case01_E_R02_02/enemy_event_render_r145_6a6360f4-cf98-4c73-9347-d6455b4b2f3a.json",
+      "sha256": "d09d8c094c36f09858694358e668d55f0fcb7f00e88716b2573c928bf4e8f2da",
+      "bytes": 737380
+    }
+  }
+}

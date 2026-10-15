@@ -1,0 +1,11 @@
+{
+  "status": "PREEXECUTION_SOURCE_REPAIR",
+  "priorDriverSHA256": "1785d2b27ce4229868da4deb17c2cbefb7dc53e3d6f7e0556bd5847b7881642b",
+  "newDriverSHA256": "879224d02392848c114093eacc4b76fb95d30c0329a978525e4e8b46df7b9e32",
+  "findings": [
+    "R002 seed path mistakenly requiredworktree instead ofpinned external Simulator read-only directory",
+    "R002 protectedcontainer loop shadowed selected R462 buildapp withlastoldcontainer; correctedlocalvariable beforeanyinstall"
+  ],
+  "priorExecuted": false,
+  "scope": "Runner corrections only; noapp/save/sourcechange"
+}

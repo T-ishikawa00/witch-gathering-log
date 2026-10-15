@@ -1,0 +1,329 @@
+{
+  "actor_id": "ACT_E_R02_01",
+  "revision": "walk_cycle_r004",
+  "status": "UNAPPROVED_NINE_FRAME_WALK_CANDIDATE",
+  "motion_family": "small_quadruped_mushroom_trot",
+  "source_reference": "native/Art/ActorStills/ACT_E_R02_01/ACT_E_R02_01__still__r002.png",
+  "source_reference_sha256": "08da7c81c66b7d69eff4da92bee4d3cbb35fac0afcfecebd1b2aafdb294e7b31",
+  "imagegen_atlas": "native/Art/GeneratedCandidates/ACT_E_R02_01/walk_cycle_r004/imagegen_walk_atlas_r004.png",
+  "imagegen_atlas_sha256": "ca7753d4b793faf536f8a37f0ca6fffb445f7d53a4b3686ec52ddc9722f6631b",
+  "source_atlas_grid_y_boundaries_px": [
+    0,
+    341,
+    683,
+    1024
+  ],
+  "component_selection": "largest alpha-connected body component independently within each 512x341/342 grid cell; neighboring alpha slivers excluded",
+  "canvas_px": [
+    512,
+    512
+  ],
+  "anchor_px": [
+    256,
+    462
+  ],
+  "anchor_type": "visual_candidate_foot_contact_line",
+  "fps": 12,
+  "loop": true,
+  "frame_records": [
+    {
+      "frame": "walk_000.png",
+      "path": "native/Art/GeneratedCandidates/ACT_E_R02_01/walk_cycle_r004/frames/walk_000.png",
+      "sha256": "5db8917e458c46ae9504af3487c077e44fdad5325e0e415ba08def048b4d2ae3",
+      "source_cell_xyxy": [
+        0,
+        0,
+        512,
+        341
+      ],
+      "source_subject_component_bounds_xyxy": [
+        33,
+        24,
+        430,
+        341
+      ],
+      "source_component_area": 82863,
+      "canvas_px": [
+        512,
+        512
+      ],
+      "visible_bounds_xyxy": [
+        6,
+        60,
+        506,
+        465
+      ],
+      "anchor_px": [
+        256,
+        462
+      ]
+    },
+    {
+      "frame": "walk_001.png",
+      "path": "native/Art/GeneratedCandidates/ACT_E_R02_01/walk_cycle_r004/frames/walk_001.png",
+      "sha256": "d0f939d8a4f3f5e477bef801b84562d4845c2a942c2bb1086ffcc348fa386bc2",
+      "source_cell_xyxy": [
+        512,
+        0,
+        1024,
+        341
+      ],
+      "source_subject_component_bounds_xyxy": [
+        46,
+        38,
+        445,
+        339
+      ],
+      "source_component_area": 80621,
+      "canvas_px": [
+        512,
+        512
+      ],
+      "visible_bounds_xyxy": [
+        6,
+        60,
+        506,
+        465
+      ],
+      "anchor_px": [
+        256,
+        462
+      ]
+    },
+    {
+      "frame": "walk_002.png",
+      "path": "native/Art/GeneratedCandidates/ACT_E_R02_01/walk_cycle_r004/frames/walk_002.png",
+      "sha256": "421f117da256c13267cec75d704b9342952b66acb1d6c84abc0be39c6b6f0e9f",
+      "source_cell_xyxy": [
+        1024,
+        0,
+        1536,
+        341
+      ],
+      "source_subject_component_bounds_xyxy": [
+        57,
+        9,
+        484,
+        338
+      ],
+      "source_component_area": 85562,
+      "canvas_px": [
+        512,
+        512
+      ],
+      "visible_bounds_xyxy": [
+        6,
+        60,
+        506,
+        465
+      ],
+      "anchor_px": [
+        256,
+        462
+      ]
+    },
+    {
+      "frame": "walk_003.png",
+      "path": "native/Art/GeneratedCandidates/ACT_E_R02_01/walk_cycle_r004/frames/walk_003.png",
+      "sha256": "a806a7b051c8b30191ff2ab478972d3769f7e20d4c480be93b0d5fe957f8eeba",
+      "source_cell_xyxy": [
+        0,
+        341,
+        512,
+        683
+      ],
+      "source_subject_component_bounds_xyxy": [
+        41,
+        10,
+        432,
+        342
+      ],
+      "source_component_area": 80702,
+      "canvas_px": [
+        512,
+        512
+      ],
+      "visible_bounds_xyxy": [
+        6,
+        60,
+        506,
+        465
+      ],
+      "anchor_px": [
+        256,
+        462
+      ]
+    },
+    {
+      "frame": "walk_004.png",
+      "path": "native/Art/GeneratedCandidates/ACT_E_R02_01/walk_cycle_r004/frames/walk_004.png",
+      "sha256": "dcacf4fa408bc6fc9982c90201be9d5c06a2463a84fd9a3f442795eeacada6b1",
+      "source_cell_xyxy": [
+        512,
+        341,
+        1024,
+        683
+      ],
+      "source_subject_component_bounds_xyxy": [
+        45,
+        15,
+        512,
+        332
+      ],
+      "source_component_area": 86122,
+      "canvas_px": [
+        512,
+        512
+      ],
+      "visible_bounds_xyxy": [
+        6,
+        60,
+        506,
+        465
+      ],
+      "anchor_px": [
+        256,
+        462
+      ]
+    },
+    {
+      "frame": "walk_005.png",
+      "path": "native/Art/GeneratedCandidates/ACT_E_R02_01/walk_cycle_r004/frames/walk_005.png",
+      "sha256": "2f8d26726b9daddbd996fcb4a8df8a7a7e0297ef2dd6125e175d82f350db3868",
+      "source_cell_xyxy": [
+        1024,
+        341,
+        1536,
+        683
+      ],
+      "source_subject_component_bounds_xyxy": [
+        82,
+        21,
+        462,
+        330
+      ],
+      "source_component_area": 79474,
+      "canvas_px": [
+        512,
+        512
+      ],
+      "visible_bounds_xyxy": [
+        6,
+        60,
+        506,
+        465
+      ],
+      "anchor_px": [
+        256,
+        462
+      ]
+    },
+    {
+      "frame": "walk_006.png",
+      "path": "native/Art/GeneratedCandidates/ACT_E_R02_01/walk_cycle_r004/frames/walk_006.png",
+      "sha256": "b9db578c81edc8f107084002c14e3f85bb16eefb0ca71a491384fda8ab197a36",
+      "source_cell_xyxy": [
+        0,
+        683,
+        512,
+        1024
+      ],
+      "source_subject_component_bounds_xyxy": [
+        49,
+        0,
+        467,
+        309
+      ],
+      "source_component_area": 81026,
+      "canvas_px": [
+        512,
+        512
+      ],
+      "visible_bounds_xyxy": [
+        6,
+        60,
+        506,
+        465
+      ],
+      "anchor_px": [
+        256,
+        462
+      ]
+    },
+    {
+      "frame": "walk_007.png",
+      "path": "native/Art/GeneratedCandidates/ACT_E_R02_01/walk_cycle_r004/frames/walk_007.png",
+      "sha256": "7567bc1939b42380967dc8d1281087a7cd73edbee6a5b0a8ee7c6b13653b77e7",
+      "source_cell_xyxy": [
+        512,
+        683,
+        1024,
+        1024
+      ],
+      "source_subject_component_bounds_xyxy": [
+        57,
+        11,
+        480,
+        316
+      ],
+      "source_component_area": 83797,
+      "canvas_px": [
+        512,
+        512
+      ],
+      "visible_bounds_xyxy": [
+        6,
+        60,
+        506,
+        465
+      ],
+      "anchor_px": [
+        256,
+        462
+      ]
+    },
+    {
+      "frame": "walk_008.png",
+      "path": "native/Art/GeneratedCandidates/ACT_E_R02_01/walk_cycle_r004/frames/walk_008.png",
+      "sha256": "208f48429307e963e5a090dcd739ac200fe489a8927e1412728e38587d724db0",
+      "source_cell_xyxy": [
+        1024,
+        683,
+        1536,
+        1024
+      ],
+      "source_subject_component_bounds_xyxy": [
+        72,
+        0,
+        469,
+        316
+      ],
+      "source_component_area": 83681,
+      "canvas_px": [
+        512,
+        512
+      ],
+      "visible_bounds_xyxy": [
+        6,
+        60,
+        506,
+        465
+      ],
+      "anchor_px": [
+        256,
+        462
+      ]
+    }
+  ],
+  "preview_path": "native/Art/GeneratedCandidates/ACT_E_R02_01/walk_cycle_r004/qa_contact_sheet_walk_r004.jpg",
+  "preview_sha256": "17576674b6e4e17c8588577369ae1dbb22bbec2eb115122e018b006a3494cf1a",
+  "normalization": "Nine 3x3 cells cropped independently by fixed grid y boundaries [0,341,683,1024]; largest body alpha component kept; each body normalized to source still bounds [6,60,506,465] and fixed foot baseline y=462.",
+  "continuous_animation_complete": false,
+  "runtime_visual_qa": "PENDING_ROOT_SIMULATOR",
+  "human_adoption": "PENDING",
+  "limitations": [
+    "Nine distinct imagegen gait poses; redrawing of spots/edges varies between cells.",
+    "Contact rhythm and feet require root in-engine motion review.",
+    "Other six battle states remain earlier unapproved pose-only candidate."
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schema": "art-completion-acceptance-review-r450-v1",
+  "result": "NO_CONFIRMED_GROSS_ART_DEFECT; CONDITIONAL_ENEMY_RECOVER_ACCEPTANCE_GAP",
+  "scope": "Read-only reconciliation of canonical acceptance, current completion register, 4-party/30-enemy motion evidence, 159-unit asset reviews, R418/R424 attack correction, and R446 wardrobe closeout.",
+  "sourceAuthority": {
+    "acceptance": {
+      "path": "docs/production/mission_20261010_r1/Witch_Codex_Autonomous_03to05_20261010/03_ACCEPTANCE_AND_BLOCKERS.md",
+      "sha256": "5c26036ca41f3a45a870c3e5590481c97321ae01e54aa52a26a74c12d674012c"
+    },
+    "currentCompletionRegister": {
+      "path": "docs/production/current/qa_drafts/final_acceptance_r360/COMPLETION_REGISTER_R009.json",
+      "sha256": "cd28c407631bd89a5dac3a6a55996b5f6c5920b266be281844ba72251af2815f"
+    },
+    "historicalAssetStatuses": [
+      {"path": "docs/production/current/qa_drafts/launch_asset_scope_r097/LAUNCH_ASSET_STATUS_R009.json", "sha256": "201ac30600f4a0e39547653f08993e9f608e7e0980ac8641e1a7077117444d38", "current": false},
+      {"path": "docs/production/current/qa_drafts/launch_asset_scope_r097/LAUNCH_ASSET_STATUS_R010.json", "sha256": "fea659d814d77b74702fdd7bd359fbe183364e81ebd67f31ad3111aa8d45c554", "current": false}
+    ],
+    "stateReconciliation": {
+      "path": "docs/production/current/qa_drafts/state_acceptance_reconciliation_r418/STATE_ACCEPTANCE_R001.json",
+      "sha256": "b2a7f6524bc67220ded7c3d5bed088f4f28ffa06410c70ac679d6e772c618cd7",
+      "limitation": "Predates R424 execute captures; 9 execute-and-recover rows are not current after additive R418/R424 evidence."
+    },
+    "currentRelease": {
+      "sourceMapPath": "docs/production/current/qa_drafts/native_completion_r445/build_tools_r001/NATIVE_SOURCE_MAP_R001.json",
+      "sourceMapSHA256": "0202edfce1602c2937274c5e1c72fad8b75d1e654fba576ca8855df94d748fe0",
+      "buildReceiptPath": "docs/production/current/qa_drafts/native_completion_r445/build_tools_r001/postbuild_readback_r001/release_BUILD_PASS.json",
+      "buildReceiptSHA256": "f6482cdd910d30e633af9a78068e751a85074bcdfa744a9ccffa0bde2f2d123c",
+      "sourceCount": 235,
+      "resourceCount": 1922,
+      "executableSHA256": "e85f9985813ccfca71d119515e5f90afb65eab5184017be81c57d106c45d4c14"
+    }
+  },
+  "findings": {
+    "party": {
+      "count": 4,
+      "implementation": "PRESENT",
+      "stateEvidence": "R377 seven-state trace for all 4; R407 marker-matched actual hit visuals for AIRA/LUNA/NOIR at 9.5s and ERNA at 27.45s.",
+      "observedDefect": false,
+      "remaining": "No confirmed defect. Evidence is sampled and does not prove every animation combination or full continuous naturalness."
+    },
+    "enemies": {
+      "count": 30,
+      "stateMapping": "30/30 mapped; R083 requested-state clips were individually sampled in R366 reviews, but forced-state evidence is not natural-transition proof.",
+      "attackVisibility": "R418 fixed B_R05_B same-root execute interruption; three attack roots showed 16-18 visible frames before hit. R424 added 8 captured attack-capable actors, 14-53 visible execute frames each; 24 samples visually reviewed; R425 replayed all 8 Core results, snapshots, and cold loads exactly.",
+      "executeApplicability": "Observed for all 29 applicable enemies after additive captures; E_R02_04 is a magic-support role and does not require a direct execute state.",
+      "recoverGap": {
+        "unobservedIDs": ["B_R01_A", "B_R01_B", "B_R03_A", "B_R03_B", "B_R04_A", "B_R04_B", "B_R05_B", "E_R01_02", "E_R01_03", "E_R02_01", "E_R02_02", "E_R02_04", "E_R03_02", "E_R03_03", "E_R03_04", "E_R04_01", "E_R04_02", "E_R04_04", "E_R05_02"],
+        "classification": "LOCAL_ACCEPTANCE_GAP_NOT_CONFIRMED_RENDER_DEFECT",
+        "reason": "Latest state union lacks a naturally rendered recover phase for these rows. R418/R424 attack captures proceed from execute to hit, an allowed R214 priority path; the source maps and forced clips establish state availability, not natural completion."
+      },
+      "observedGrossDefect": false
+    },
+    "portfolio159": {
+      "mappedIDs": 159,
+      "staticReviews": 149,
+      "environmentVFXTemporalUnits": 10,
+      "observedGrossDefect": false,
+      "note": "R308/R360 counts are mapping and scoped-review claims, not blanket final visual acceptance. R416 found no obvious pop/clipping/obstruction in reviewed windows; ambient motifs remain subtle at phone scale without a demonstrated user-facing failure."
+    },
+    "wardrobeR446": {
+      "selectedResetAppearance": "SCOPED_PASS",
+      "evidence": "Matched images show a selected-only LUNA shoulder band; hands/book remain readable, desk unchanged, band disappears after reset.",
+      "runStatus": "INCOMPLETE_RETAINED due three small app-specific Saved Application State plist additions; app/protected trees/cold save readback were exact.",
+      "formalArtAdoption": false
+    }
+  },
+  "recommendedLocalAction": {
+    "priority": "Only remaining specific motion acceptance gap",
+    "task": "For each enemy with recovery semantics, inspect retained joins first; otherwise capture one naturally completed attack where target remains alive and no hit supersedes recovery. Confirm rendered recover frames and return to idle. If hit preempts recovery, classify that route as interrupted/unobserved rather than failed.",
+    "productionChange": "None justified until a rendered failure or visible discontinuity is observed.",
+    "acceptance": [
+      "At least two rendered recover frames join the actual actor/event.",
+      "Actor remains attached/textured and inside scene bounds.",
+      "Recovery returns to idle without a visible pop, disappearance, or crop."
+    ]
+  },
+  "authorityBoundary": {
+    "technicalReview": "Locally executable and delegated; do not defer technical verification solely to Human review.",
+    "formalArtAdoption": "Human decision remains pending.",
+    "releaseReady": false
+  },
+  "limits": [
+    "No build, Simulator operation, artwork generation, source edit, or asset change was performed.",
+    "Prior evidence is tied to its own pinned builds. R445 has exact source equality for core motion files vs R420, but this is not same-binary proof for older captures.",
+    "No conclusion that all 159 units are formally approved or that all 30 natural transitions are fully accepted."
+  ]
+}

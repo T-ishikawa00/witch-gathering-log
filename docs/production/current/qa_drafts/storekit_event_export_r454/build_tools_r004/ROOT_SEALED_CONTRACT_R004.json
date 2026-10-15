@@ -1,0 +1,48 @@
+{
+  "driverSHA256": "d7d4c14f28f6d684af3110e7aeac043992efdf0bf25ff1dad6c779e8f095568a",
+  "inputManifestSHA256": "bbc3e76caa38681739735960d332ab8d9123cf2a3ec7fff92f50bc25639fc12f",
+  "launchArguments": [
+    "--qa-isolated",
+    "--qa-save-key=storekit-authority-r454",
+    "--xcode-local-storekit-qa",
+    "--screen=購入検証",
+    "--r454-local-authority-qa",
+    "--r454-test-token",
+    "45400000-0000-4000-8000-000000000001",
+    "--r454-profile-fingerprint",
+    "62ce1ce493d34a7864cd7c7c1a5ee17aebdc8891b2b7b8dcb4eb7e6534c06e99"
+  ],
+  "limits": {
+    "attempts": 1,
+    "debugBuildSeconds": 600,
+    "freezeAndDebugAggregateSeconds": 600,
+    "install": false,
+    "launch": false,
+    "maxAllocatedBytes": 2000000000,
+    "minimumFreeBytes": 20000000000,
+    "requiredStartFreeBytes": 20000000000,
+    "safetyBytes": 2000000000
+  },
+  "notes": [
+    "Second actual native build only: local QA iOS18+ finished-consumable-history requirement found by actual Xcode purchase tx2. App gate and generated Info.plist opt-in; generated PBX bundle matches actual. Original R003 artifacts/evidence retained. No production payment or old app modifications."
+  ],
+  "profileFingerprint": "62ce1ce493d34a7864cd7c7c1a5ee17aebdc8891b2b7b8dcb4eb7e6534c06e99",
+  "protectedPBXSHA256": "b83573270f2e0fde46411aabe9a539343b0fd1301760b3de7fe672b796dc18e9",
+  "resourceCount": 1922,
+  "schema": "storekit-event-export-r454-build-contract-r004-v1",
+  "sealedAt": "2026-10-15T06:22:31.966885+09:00",
+  "sourceCount": 238,
+  "sourceMapSHA256": "af7c36f3ff74fcc449f8937fe7bf2afe1bdb3877a940865c1a70ed4b3cf5c694",
+  "status": "ROOT_SEALED_READY_TO_BUILD",
+  "variants": {
+    "debug": {
+      "bundleIdentifier": "local.witch.autonomous.r1.storekit.r454",
+      "configuration": "Debug",
+      "flags": [
+        "DEBUG"
+      ]
+    }
+  },
+  "worktree": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg",
+  "testToken": "45400000-0000-4000-8000-000000000001"
+}

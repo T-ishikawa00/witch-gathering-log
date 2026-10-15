@@ -13,7 +13,7 @@ enum GameText {
     }
     static func effect(_ id:String)->String {
         if id.hasPrefix("AF_"), GearLatentText.name(id) != "効果を確認できません" { return GearLatentText.name(id) }
-        return ["BARRIER_REFLECT":"結界反射","BARRIER_WARD":"結界の護り","FAMILIAR_CHASE":"使い魔の追撃","FAMILIAR_CHASE_ICD_1500MS":"追撃の間隔短縮","FAMILIAR_DASH_BONUS_6000BP":"跳びかかり強化","FAMILIAR_MARK_10S":"追跡の印","HEAL_LINK":"回復の連鎖","HEAL_TO_BARRIER":"余剰回復の結界化","POISON_BURST_25_AT_5":"毒が深まった敵への追い打ち","POISON_SHATTER":"毒の崩壊","POISON_STACK":"毒の蓄積","POISON_STACK_CAP_2":"毒の上限拡張","SMITH_COVER_BARRIER":"かばう結界","SMITH_PRESSURE":"響き槌の蓄圧","AFFIX_POWER_TEST":"攻撃の副効果","AFFIX_GUARD_TEST":"守備の副効果","AFFIX_VITALITY_TEST":"体力の副効果","LATENT_TEST_01":"力の潜在","LATENT_POWER_TEST":"力の潜在","LATENT_GUARD_TEST":"守りの潜在","LATENT_VITALITY_TEST":"生命の潜在"][id] ?? id
+        return ["ECHO_BONUS_2000BP":"こだまの威力強化","BARRIER_REFLECT":"結界反射","BARRIER_WARD":"結界の護り","WARD_REPLACES_SEED":"毒の種スキルを使わない","FAMILIAR_CHASE":"使い魔の追撃","FAMILIAR_CHASE_ICD_1500MS":"追撃の間隔短縮","FAMILIAR_DASH_BONUS_6000BP":"跳びかかり強化","FAMILIAR_MARK_10S":"追跡の印","HEAL_LINK":"回復の連鎖","HEAL_TO_BARRIER":"余剰回復の結界化","POISON_BURST_25_AT_5":"毒が深まった敵への追い打ち","POISON_SHATTER":"毒の崩壊","POISON_STACK":"毒の蓄積","POISON_STACK_CAP_2":"毒の上限拡張","SMITH_COVER_BARRIER":"かばう結界","SMITH_PRESSURE":"響き槌の蓄圧","AFFIX_POWER_TEST":"攻撃の副効果","AFFIX_GUARD_TEST":"守備の副効果","AFFIX_VITALITY_TEST":"体力の副効果","LATENT_TEST_01":"力の潜在","LATENT_POWER_TEST":"力の潜在","LATENT_GUARD_TEST":"守りの潜在","LATENT_VITALITY_TEST":"生命の潜在"][id] ?? id
     }
     static func error(_ value:Error)->String {
         if let latent = value as? CandidateLatentPolicyErrorR003 {
@@ -29,6 +29,7 @@ enum GameText {
         case .gearInUse:return "使用中の装備です。別の装備へ変更してから分解してください。"
         case .revisionConflict:return "別の操作で保存が更新されました。最新の状態を読み直しました。"
         case .invalidCommand(let detail):
+            if detail.hasPrefix("R342") {return "装備セットを使えませんでした。持ちものと装備できる仲間を確認し、現在の構成で登録し直してください。"}
             if detail.contains("gacha") || detail.contains("comparison"){return "まず工房で装備を作り、同じ部位の装備を比較しましょう。"}
             if detail.contains("gate") || detail.contains("previous encounter"){return "先に手前のボスを乗り越える必要があります。"}
             if detail.contains("daily"){return "今日の無料券は受取済みです。次の日をお待ちください。"}

@@ -1,0 +1,47 @@
+{
+  "schema": "r452-independent-result-review-erratum-v1",
+  "correctsReview": "REVIEW_R001.md and REVIEW_R001.json",
+  "preservation": "Original report preserved unchanged; this additive erratum supersedes only the stated UUID-join discrepancy.",
+  "finding": "The apparent one-UUID mismatch was expected: the action journal shows a post-day-30 explicit dismantle of that natural duplicate. In both runs, the day-30 snapshot contains 1,445 gear IDs; removing the logged natural duplicate yields exactly the 1,444 IDs in GEAR_ORIGIN_JOIN_R002.finalGearIDs. The final save hash differs from the pre-dismantle day-30 cold-reopen hash, consistent with the logged transaction. Thus the origin join is exact after accounting for this actual action.",
+  "cases": [
+    {
+      "seed": 100069,
+      "reportSHA256": "dfb0a27459c310f10eedcb0cfc2cddc7cdca41d29f5b72833b97ec35fc8dc052",
+      "joinSHA256": "09159a030903a8d64419e672bcdd44b62cad09217caa0901b16159878af4f530",
+      "dismantleCommand": "dismantle_actual_natural_duplicate_036d0113-4efe-54af-8b7d-de645b956f58",
+      "dismantledUUID": "036d0113-4efe-54af-8b7d-de645b956f58",
+      "outcome": "gear dismantled for 1 refine_dust",
+      "resourceDelta": {
+        "material:refine_dust": 1
+      },
+      "revisionBefore": 227,
+      "revisionAfter": 228,
+      "UUIDPresentInNaturalOriginJoin": true,
+      "day30GearCount": 1445,
+      "finalOriginJoinGearCount": 1444,
+      "day30MinusDismantledUUIDEqualsFinalJoin": true,
+      "finalSaveSHA256": "4fadf40146b22cb2952b279a62a3f66f496e64147845904298e49334dee0e866",
+      "day30ColdReopenSaveSHA256": "185295e21112fccb068f5e7fc5d4cb725ce47911a949b66d2f56d2e5b2f8f895"
+    },
+    {
+      "seed": 200071,
+      "reportSHA256": "adb2517ba66b4023a6ea232defbff4f59d210ebbbab8b1b3ce7e427ff7831f6e",
+      "joinSHA256": "2ea61a9cab283e919429ac177027b9d98634a55310d870d57048c82245776f5d",
+      "dismantleCommand": "dismantle_actual_natural_duplicate_036d0113-4efe-54af-8b7d-de645b956f58",
+      "dismantledUUID": "036d0113-4efe-54af-8b7d-de645b956f58",
+      "outcome": "gear dismantled for 1 refine_dust",
+      "resourceDelta": {
+        "material:refine_dust": 1
+      },
+      "revisionBefore": 229,
+      "revisionAfter": 230,
+      "UUIDPresentInNaturalOriginJoin": true,
+      "day30GearCount": 1445,
+      "finalOriginJoinGearCount": 1444,
+      "day30MinusDismantledUUIDEqualsFinalJoin": true,
+      "finalSaveSHA256": "dcb7ec871b8600b0344befeca6f59821786ec87c13104a18b50b8cd6a04c80b9",
+      "day30ColdReopenSaveSHA256": "0adeb289fd7573c0eb9641ae35ec31d9d418dd42444af4705676aeaf9413713d"
+    }
+  ],
+  "scope": "No rerun. No game state, source, or prior evidence changed."
+}

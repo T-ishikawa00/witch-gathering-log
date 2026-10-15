@@ -1,0 +1,58 @@
+{
+  "status": "PROPOSED_NOT_APPROVED",
+  "ids_preserved": [
+    "Q0",
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+  ],
+  "labels": [
+    "C コモン",
+    "R レア",
+    "SR スーパーレア",
+    "UR ウルトラレア",
+    "LR レジェンドレア"
+  ],
+  "affix_counts": [
+    0,
+    1,
+    2,
+    3,
+    3
+  ],
+  "models": {
+    "H0_EXISTING": [
+      10000,
+      10000,
+      10000,
+      10000,
+      10000
+    ],
+    "H1_RECOMMENDED": [
+      10000,
+      11000,
+      12500,
+      14500,
+      17000
+    ],
+    "H2_STRONG_DIAGNOSTIC": [
+      10000,
+      12000,
+      14500,
+      17500,
+      21000
+    ]
+  },
+  "recommended_is_not_human_confirmation": true,
+  "multiplier_scope": "item flat hp/power/defense only; no character-base, skill coefficients, speed/CD, bonus affixes or reward multiplier",
+  "calculation": "budget * attunement_bp * (10000 + 300*enhancement) * rarity_bp * scale // 10**12; round once at fixed-point end",
+  "fixed_scale": 10000,
+  "evolution_keeps_quality": true,
+  "quality_promotion_keeps_uid_latent_rolls_and_investment": true,
+  "same_stats_for_same_item_parameters_regardless_of_acquisition": true,
+  "H0_is_R5_precision_not_R2_floor": true,
+  "old_quality_promotion_costs_not_approved_with_new_multipliers": true,
+  "core_skills_not_LR_exclusive": true,
+  "all_visual_tier_shaders_are_design_only": true
+}

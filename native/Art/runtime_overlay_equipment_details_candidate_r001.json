@@ -1,0 +1,1731 @@
+{
+  "status": "UNAPPROVED_EQUIPMENT_DETAILS_CANDIDATE_OVERLAY",
+  "scope": "R4 existing 20 equipment IDs; bounded small attachment details only; no new product IDs",
+  "new_product_count": 0,
+  "humanApproval": false,
+  "entries": {
+    "DETAIL_EQ_BODY_01": {
+      "kind": "equipment_small_detail",
+      "assetID": "DETAIL_EQ_BODY_01",
+      "equipmentID": "EQ_BODY_01",
+      "selectedPNG": "GeneratedCandidates/EquipmentDetails/details_r002/DETAIL_EQ_EQ_BODY_01__candidate_r002.png",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "canvas_px": [
+        256,
+        256
+      ],
+      "part_anchor_px": [
+        128,
+        140
+      ],
+      "attachmentSlotCandidate": "BODY_HEM_INSERT",
+      "status": "UNAPPROVED_SMALL_DETAIL_CANDIDATE",
+      "scope": "ICON_AND_SMALL_DETAIL_ONLY",
+      "humanAdoption": "PENDING_INDIVIDUAL",
+      "sourceIcon": "GearIcons/ICO_EQ_BODY_01/ICO_EQ_BODY_01__128__r001.png",
+      "description": "folded plant-fiber lining tab with resin seam tacks",
+      "runtimeIntegrationStatus": "CANDIDATE_PREVIEW_ONLY_NOT_RELEASED",
+      "visualFitStatus": "PARTIAL_PENDING_SLOT_BY_SLOT_REVIEW",
+      "sourceIconSHA256": "0e68aef17618e8e395a2842d8a2499c5b42f4d0de437b9b1aacd94d63ac375f7",
+      "source_path": "native/Art/GearIcons/ICO_EQ_BODY_01/ICO_EQ_BODY_01__128__r001.png",
+      "sourceArtReferenceSHA256": "0e68aef17618e8e395a2842d8a2499c5b42f4d0de437b9b1aacd94d63ac375f7",
+      "sourceArtReferenceProvenance": "SHA-256 of existing bundled 128px sourceIcon; legacy 256px provenance corrected"
+    },
+    "DETAIL_EQ_BODY_02": {
+      "kind": "equipment_small_detail",
+      "assetID": "DETAIL_EQ_BODY_02",
+      "equipmentID": "EQ_BODY_02",
+      "selectedPNG": "GeneratedCandidates/EquipmentDetails/details_r002/DETAIL_EQ_EQ_BODY_02__candidate_r002.png",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "canvas_px": [
+        256,
+        256
+      ],
+      "part_anchor_px": [
+        128,
+        128
+      ],
+      "attachmentSlotCandidate": "BODY_CLOAK_LINING",
+      "status": "UNAPPROVED_SMALL_DETAIL_CANDIDATE",
+      "scope": "ICON_AND_SMALL_DETAIL_ONLY",
+      "humanAdoption": "PENDING_INDIVIDUAL",
+      "sourceIcon": "GearIcons/ICO_EQ_BODY_02/ICO_EQ_BODY_02__128__r001.png",
+      "description": "partial damp-mist lining insert with marsh-scale flecks",
+      "runtimeIntegrationStatus": "CANDIDATE_PREVIEW_ONLY_NOT_RELEASED",
+      "visualFitStatus": "PARTIAL_PENDING_SLOT_BY_SLOT_REVIEW",
+      "sourceIconSHA256": "9946946e750465b5bdd17601be07278710d11dd4e4c311477d84f7099e3179ff",
+      "source_path": "native/Art/GearIcons/ICO_EQ_BODY_02/ICO_EQ_BODY_02__128__r001.png",
+      "sourceArtReferenceSHA256": "9946946e750465b5bdd17601be07278710d11dd4e4c311477d84f7099e3179ff",
+      "sourceArtReferenceProvenance": "SHA-256 of existing bundled 128px sourceIcon; legacy 256px provenance corrected"
+    },
+    "DETAIL_EQ_BODY_03": {
+      "kind": "equipment_small_detail",
+      "assetID": "DETAIL_EQ_BODY_03",
+      "equipmentID": "EQ_BODY_03",
+      "selectedPNG": "GeneratedCandidates/EquipmentDetails/details_r002/DETAIL_EQ_EQ_BODY_03__candidate_r002.png",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "canvas_px": [
+        256,
+        256
+      ],
+      "part_anchor_px": [
+        128,
+        128
+      ],
+      "attachmentSlotCandidate": "BODY_COLLAR_INSERT",
+      "status": "UNAPPROVED_SMALL_DETAIL_CANDIDATE",
+      "scope": "ICON_AND_SMALL_DETAIL_ONLY",
+      "humanAdoption": "PENDING_INDIVIDUAL",
+      "sourceIcon": "GearIcons/ICO_EQ_BODY_03/ICO_EQ_BODY_03__128__r001.png",
+      "description": "small frost-fur and wind-woven linen collar insert",
+      "runtimeIntegrationStatus": "CANDIDATE_PREVIEW_ONLY_NOT_RELEASED",
+      "visualFitStatus": "PARTIAL_PENDING_SLOT_BY_SLOT_REVIEW",
+      "sourceIconSHA256": "42f1ae127d2e0b1af3ec99133d352c7cefdee37c5db66b0dd2462b0808712f20",
+      "source_path": "native/Art/GearIcons/ICO_EQ_BODY_03/ICO_EQ_BODY_03__128__r001.png",
+      "sourceArtReferenceSHA256": "42f1ae127d2e0b1af3ec99133d352c7cefdee37c5db66b0dd2462b0808712f20",
+      "frameRegistrationCandidate": {
+        "status": "UNAPPROVED_FRAME_KEYED_ATTACHMENT_CANDIDATE",
+        "scope": "AIRA/EQ_BODY_03 only; candidate geometry for 27 existing PartyRest/PartyAttack/PartyWalk frames; no source pixels altered",
+        "key": [
+          "actorID",
+          "bodyAssetID",
+          "frameIndex"
+        ],
+        "coordinate_origin": "top_left_canvas_pixels",
+        "mask_method": "draw an exact current body-frame texture copy above the detail, clipped to foreground_occlusion_px ellipses; this is geometry metadata only and remains subject to visual fit review",
+        "rows": [
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_00.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              154,
+              138
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  153,
+                  100
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_01.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              145,
+              137
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  146,
+                  101
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_02.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              149,
+              138
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  147,
+                  99
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_03.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              151,
+              151
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  170,
+                  121
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  151,
+                  151
+                ],
+                "radius_px": [
+                  25,
+                  12
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_04.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              149,
+              151
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  153,
+                  124
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  151,
+                  151
+                ],
+                "radius_px": [
+                  25,
+                  12
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_05.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              151,
+              151
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  152,
+                  125
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  151,
+                  151
+                ],
+                "radius_px": [
+                  25,
+                  12
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_06.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              155,
+              138
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  181,
+                  97
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  204,
+                  105
+                ],
+                "radius_px": [
+                  18,
+                  29
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_07.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              154,
+              138
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  178,
+                  95
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  204,
+                  105
+                ],
+                "radius_px": [
+                  18,
+                  29
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyRest/AIRA__rest_08.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              157,
+              138
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  181,
+                  95
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  204,
+                  105
+                ],
+                "radius_px": [
+                  18,
+                  29
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_00.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              146,
+              138
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  150,
+                  116
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  121,
+                  151
+                ],
+                "radius_px": [
+                  18,
+                  13
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_01.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              153,
+              144
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  166,
+                  119
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  190,
+                  98
+                ],
+                "radius_px": [
+                  20,
+                  14
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_02.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              155,
+              138
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  164,
+                  108
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  181,
+                  93
+                ],
+                "radius_px": [
+                  20,
+                  16
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_03.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              152,
+              157
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  171,
+                  126
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  140,
+                  102
+                ],
+                "radius_px": [
+                  22,
+                  12
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_04.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              153,
+              154
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  166,
+                  135
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  184,
+                  156
+                ],
+                "radius_px": [
+                  21,
+                  12
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_05.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              152,
+              154
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  163,
+                  135
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  187,
+                  157
+                ],
+                "radius_px": [
+                  21,
+                  12
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_06.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              143,
+              151
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  164,
+                  129
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  140,
+                  151
+                ],
+                "radius_px": [
+                  24,
+                  12
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_07.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              151,
+              143
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  159,
+                  121
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  141,
+                  140
+                ],
+                "radius_px": [
+                  20,
+                  11
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyAttack/AIRA__attack_08.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              320,
+              256
+            ],
+            "anchor_px_top_left": [
+              151,
+              141
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  159,
+                  120
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  141,
+                  140
+                ],
+                "radius_px": [
+                  20,
+                  11
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_0.png",
+            "frameIndex": 0,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "anchor_px_top_left": [
+              123,
+              140
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  129,
+                  102
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  111,
+                  153
+                ],
+                "radius_px": [
+                  17,
+                  13
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_1.png",
+            "frameIndex": 1,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "anchor_px_top_left": [
+              124,
+              140
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  129,
+                  102
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  111,
+                  153
+                ],
+                "radius_px": [
+                  17,
+                  13
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_2.png",
+            "frameIndex": 2,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "anchor_px_top_left": [
+              124,
+              140
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  129,
+                  102
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  111,
+                  153
+                ],
+                "radius_px": [
+                  17,
+                  13
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_3.png",
+            "frameIndex": 3,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "anchor_px_top_left": [
+              124,
+              139
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  128,
+                  102
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  111,
+                  153
+                ],
+                "radius_px": [
+                  17,
+                  13
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_4.png",
+            "frameIndex": 4,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "anchor_px_top_left": [
+              124,
+              139
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  128,
+                  102
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  111,
+                  153
+                ],
+                "radius_px": [
+                  17,
+                  13
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_5.png",
+            "frameIndex": 5,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "anchor_px_top_left": [
+              124,
+              138
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  128,
+                  100
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  111,
+                  153
+                ],
+                "radius_px": [
+                  17,
+                  13
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_6.png",
+            "frameIndex": 6,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "anchor_px_top_left": [
+              123,
+              139
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  127,
+                  101
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  111,
+                  153
+                ],
+                "radius_px": [
+                  17,
+                  13
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_7.png",
+            "frameIndex": 7,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "anchor_px_top_left": [
+              123,
+              139
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  128,
+                  99
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  111,
+                  153
+                ],
+                "radius_px": [
+                  17,
+                  13
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          },
+          {
+            "actorID": "AIRA",
+            "bodyAssetID": "GeneratedArt/PartyWalk/AIRA__walk_8.png",
+            "frameIndex": 8,
+            "canvas_px": [
+              256,
+              256
+            ],
+            "anchor_px_top_left": [
+              124,
+              138
+            ],
+            "detail_scale": 0.15,
+            "angle_degrees": 0,
+            "foreground_occlusion_px": [
+              {
+                "name": "face_foreground",
+                "shape": "ellipse",
+                "center_px": [
+                  129,
+                  101
+                ],
+                "radius_px": [
+                  25,
+                  29
+                ]
+              },
+              {
+                "name": "arm_foreground_candidate",
+                "shape": "ellipse",
+                "center_px": [
+                  111,
+                  153
+                ],
+                "radius_px": [
+                  17,
+                  13
+                ]
+              }
+            ],
+            "measurement_status": "UNAPPROVED_VISUAL_CANDIDATE_SOURCE_FRAME_MEASURED"
+          }
+        ]
+      },
+      "sourceArtReferenceProvenance": "SHA-256 of existing bundled 128px sourceIcon; legacy 256px provenance corrected"
+    },
+    "DETAIL_EQ_HAND_01": {
+      "kind": "equipment_small_detail",
+      "assetID": "DETAIL_EQ_HAND_01",
+      "equipmentID": "EQ_HAND_01",
+      "selectedPNG": "GeneratedCandidates/EquipmentDetails/details_r002/DETAIL_EQ_EQ_HAND_01__candidate_r002.png",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "canvas_px": [
+        256,
+        256
+      ],
+      "part_anchor_px": [
+        128,
+        128
+      ],
+      "attachmentSlotCandidate": "HAND_BACK_PLATE",
+      "status": "UNAPPROVED_SMALL_DETAIL_CANDIDATE",
+      "scope": "ICON_AND_SMALL_DETAIL_ONLY",
+      "humanAdoption": "PENDING_INDIVIDUAL",
+      "sourceIcon": "GearIcons/ICO_EQ_HAND_01/ICO_EQ_HAND_01__128__r001.png",
+      "description": "single layered leafblade-shell glove-back plate",
+      "runtimeIntegrationStatus": "CANDIDATE_PREVIEW_ONLY_NOT_RELEASED",
+      "visualFitStatus": "PARTIAL_PENDING_SLOT_BY_SLOT_REVIEW",
+      "sourceIconSHA256": "90fbf3be4fca61c1ceba0c22f7a2fef980b4d733ece31aea7007c64e0c2e5ab0",
+      "source_path": "native/Art/GearIcons/ICO_EQ_HAND_01/ICO_EQ_HAND_01__128__r001.png",
+      "sourceArtReferenceSHA256": "90fbf3be4fca61c1ceba0c22f7a2fef980b4d733ece31aea7007c64e0c2e5ab0",
+      "sourceArtReferenceProvenance": "SHA-256 of existing bundled 128px sourceIcon; legacy 256px provenance corrected"
+    },
+    "DETAIL_EQ_HAND_02": {
+      "kind": "equipment_small_detail",
+      "assetID": "DETAIL_EQ_HAND_02",
+      "equipmentID": "EQ_HAND_02",
+      "selectedPNG": "GeneratedCandidates/EquipmentDetails/details_r002/DETAIL_EQ_EQ_HAND_02__candidate_r002.png",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "canvas_px": [
+        256,
+        256
+      ],
+      "part_anchor_px": [
+        128,
+        128
+      ],
+      "attachmentSlotCandidate": "HAND_BACK_PLATE",
+      "status": "UNAPPROVED_SMALL_DETAIL_CANDIDATE",
+      "scope": "ICON_AND_SMALL_DETAIL_ONLY",
+      "humanAdoption": "PENDING_INDIVIDUAL",
+      "sourceIcon": "GearIcons/ICO_EQ_HAND_02/ICO_EQ_HAND_02__128__r001.png",
+      "description": "mica laminate plate with two copper fasteners",
+      "runtimeIntegrationStatus": "CANDIDATE_PREVIEW_ONLY_NOT_RELEASED",
+      "visualFitStatus": "PARTIAL_PENDING_SLOT_BY_SLOT_REVIEW",
+      "sourceIconSHA256": "6254454df7a9a31cfb08fbf3199b61fefbb54e5945b3a3bf48d2aee5510aafc9",
+      "source_path": "native/Art/GearIcons/ICO_EQ_HAND_02/ICO_EQ_HAND_02__128__r001.png",
+      "sourceArtReferenceSHA256": "6254454df7a9a31cfb08fbf3199b61fefbb54e5945b3a3bf48d2aee5510aafc9",
+      "sourceArtReferenceProvenance": "SHA-256 of existing bundled 128px sourceIcon; legacy 256px provenance corrected"
+    },
+    "DETAIL_EQ_HAND_03": {
+      "kind": "equipment_small_detail",
+      "assetID": "DETAIL_EQ_HAND_03",
+      "equipmentID": "EQ_HAND_03",
+      "selectedPNG": "GeneratedCandidates/EquipmentDetails/details_r002/DETAIL_EQ_EQ_HAND_03__candidate_r002.png",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "canvas_px": [
+        256,
+        256
+      ],
+      "part_anchor_px": [
+        128,
+        128
+      ],
+      "attachmentSlotCandidate": "HAND_COVER_PLATE",
+      "status": "UNAPPROVED_SMALL_DETAIL_CANDIDATE",
+      "scope": "ICON_AND_SMALL_DETAIL_ONLY",
+      "humanAdoption": "PENDING_INDIVIDUAL",
+      "sourceIcon": "GearIcons/ICO_EQ_HAND_03/ICO_EQ_HAND_03__128__r001.png",
+      "description": "compact moon-silver ring and frost-crystal hand-cover detail",
+      "runtimeIntegrationStatus": "CANDIDATE_PREVIEW_ONLY_NOT_RELEASED",
+      "visualFitStatus": "PARTIAL_PENDING_SLOT_BY_SLOT_REVIEW",
+      "sourceIconSHA256": "debbfa04fe9a5b0d0e5890c48b85bfe579fbb0bcccc3e9bb6ddf79ea8c1d0ddb",
+      "source_path": "native/Art/GearIcons/ICO_EQ_HAND_03/ICO_EQ_HAND_03__128__r001.png",
+      "sourceArtReferenceSHA256": "debbfa04fe9a5b0d0e5890c48b85bfe579fbb0bcccc3e9bb6ddf79ea8c1d0ddb",
+      "sourceArtReferenceProvenance": "SHA-256 of existing bundled 128px sourceIcon; legacy 256px provenance corrected"
+    },
+    "DETAIL_EQ_FEET_01": {
+      "kind": "equipment_small_detail",
+      "assetID": "DETAIL_EQ_FEET_01",
+      "equipmentID": "EQ_FEET_01",
+      "selectedPNG": "GeneratedCandidates/EquipmentDetails/details_r002/DETAIL_EQ_EQ_FEET_01__candidate_r002.png",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "canvas_px": [
+        256,
+        256
+      ],
+      "part_anchor_px": [
+        128,
+        42
+      ],
+      "attachmentSlotCandidate": "FEET_ANKLE_PATCH",
+      "status": "UNAPPROVED_SMALL_DETAIL_CANDIDATE",
+      "scope": "ICON_AND_SMALL_DETAIL_ONLY",
+      "humanAdoption": "PENDING_INDIVIDUAL",
+      "sourceIcon": "GearIcons/ICO_EQ_FEET_01/ICO_EQ_FEET_01__128__r001.png",
+      "description": "curved root-fiber ankle/sole reinforcement with horn tip",
+      "runtimeIntegrationStatus": "CANDIDATE_PREVIEW_ONLY_NOT_RELEASED",
+      "visualFitStatus": "PARTIAL_PENDING_SLOT_BY_SLOT_REVIEW",
+      "sourceIconSHA256": "4d8e4fc4731a30fc812ecd754fbd9566bc13a6f109c84fd4f066af2e5537fab8",
+      "source_path": "native/Art/GearIcons/ICO_EQ_FEET_01/ICO_EQ_FEET_01__128__r001.png",
+      "sourceArtReferenceSHA256": "4d8e4fc4731a30fc812ecd754fbd9566bc13a6f109c84fd4f066af2e5537fab8",
+      "sourceArtReferenceProvenance": "SHA-256 of existing bundled 128px sourceIcon; legacy 256px provenance corrected"
+    },
+    "DETAIL_EQ_FEET_02": {
+      "kind": "equipment_small_detail",
+      "assetID": "DETAIL_EQ_FEET_02",
+      "equipmentID": "EQ_FEET_02",
+      "selectedPNG": "GeneratedCandidates/EquipmentDetails/details_r002/DETAIL_EQ_EQ_FEET_02__candidate_r002.png",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "canvas_px": [
+        256,
+        256
+      ],
+      "part_anchor_px": [
+        128,
+        42
+      ],
+      "attachmentSlotCandidate": "FEET_ANKLE_PATCH",
+      "status": "UNAPPROVED_SMALL_DETAIL_CANDIDATE",
+      "scope": "ICON_AND_SMALL_DETAIL_ONLY",
+      "humanAdoption": "PENDING_INDIVIDUAL",
+      "sourceIcon": "GearIcons/ICO_EQ_FEET_02/ICO_EQ_FEET_02__128__r001.png",
+      "description": "magnetic scale plate and ash-silver heel edge",
+      "runtimeIntegrationStatus": "CANDIDATE_PREVIEW_ONLY_NOT_RELEASED",
+      "visualFitStatus": "PARTIAL_PENDING_SLOT_BY_SLOT_REVIEW",
+      "sourceIconSHA256": "2170ad5f8f84874efe2d7a8117e3737b4d89a3ddc83dbab4fe15389acf17744c",
+      "source_path": "native/Art/GearIcons/ICO_EQ_FEET_02/ICO_EQ_FEET_02__128__r001.png",
+      "sourceArtReferenceSHA256": "2170ad5f8f84874efe2d7a8117e3737b4d89a3ddc83dbab4fe15389acf17744c",
+      "sourceArtReferenceProvenance": "SHA-256 of existing bundled 128px sourceIcon; legacy 256px provenance corrected"
+    },
+    "DETAIL_EQ_FEET_03": {
+      "kind": "equipment_small_detail",
+      "assetID": "DETAIL_EQ_FEET_03",
+      "equipmentID": "EQ_FEET_03",
+      "selectedPNG": "GeneratedCandidates/EquipmentDetails/details_r002/DETAIL_EQ_EQ_FEET_03__candidate_r002.png",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "canvas_px": [
+        256,
+        256
+      ],
+      "part_anchor_px": [
+        128,
+        42
+      ],
+      "attachmentSlotCandidate": "FEET_ANKLE_SUPPORT",
+      "status": "UNAPPROVED_SMALL_DETAIL_CANDIDATE",
+      "scope": "ICON_AND_SMALL_DETAIL_ONLY",
+      "humanAdoption": "PENDING_INDIVIDUAL",
+      "sourceIcon": "GearIcons/ICO_EQ_FEET_03/ICO_EQ_FEET_03__128__r001.png",
+      "description": "curved white-horn ankle stabilizer with binding",
+      "runtimeIntegrationStatus": "CANDIDATE_PREVIEW_ONLY_NOT_RELEASED",
+      "visualFitStatus": "PARTIAL_PENDING_SLOT_BY_SLOT_REVIEW",
+      "sourceIconSHA256": "282469a12a2657e75d3896659bba7ba588ed2672371192e9e8f3bb67b2f9bdd2",
+      "source_path": "native/Art/GearIcons/ICO_EQ_FEET_03/ICO_EQ_FEET_03__128__r001.png",
+      "sourceArtReferenceSHA256": "282469a12a2657e75d3896659bba7ba588ed2672371192e9e8f3bb67b2f9bdd2",
+      "sourceArtReferenceProvenance": "SHA-256 of existing bundled 128px sourceIcon; legacy 256px provenance corrected"
+    },
+    "DETAIL_EQ_AMU_01": {
+      "kind": "equipment_small_detail",
+      "assetID": "DETAIL_EQ_AMU_01",
+      "equipmentID": "EQ_AMU_01",
+      "selectedPNG": "GeneratedCandidates/EquipmentDetails/details_r002/DETAIL_EQ_EQ_AMU_01__candidate_r002.png",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "canvas_px": [
+        256,
+        256
+      ],
+      "part_anchor_px": [
+        128,
+        228
+      ],
+      "attachmentSlotCandidate": "AMULET_ATTACHMENT",
+      "status": "UNAPPROVED_SMALL_DETAIL_CANDIDATE",
+      "scope": "ICON_AND_SMALL_DETAIL_ONLY",
+      "humanAdoption": "PENDING_INDIVIDUAL",
+      "sourceIcon": "GearIcons/ICO_EQ_AMU_01/ICO_EQ_AMU_01__128__r001.png",
+      "description": "small leaf sachet with thread knot and hanging loop",
+      "runtimeIntegrationStatus": "CANDIDATE_PREVIEW_ONLY_NOT_RELEASED",
+      "visualFitStatus": "PARTIAL_PENDING_SLOT_BY_SLOT_REVIEW",
+      "sourceIconSHA256": "4c70095a5ce1d58da8dec0ebc7ede63df7407ab945185f7c748f569a2d10e43c",
+      "source_path": "native/Art/GearIcons/ICO_EQ_AMU_01/ICO_EQ_AMU_01__128__r001.png",
+      "sourceArtReferenceSHA256": "4c70095a5ce1d58da8dec0ebc7ede63df7407ab945185f7c748f569a2d10e43c",
+      "sourceArtReferenceProvenance": "SHA-256 of existing bundled 128px sourceIcon; legacy 256px provenance corrected"
+    },
+    "DETAIL_EQ_AMU_02": {
+      "kind": "equipment_small_detail",
+      "assetID": "DETAIL_EQ_AMU_02",
+      "equipmentID": "EQ_AMU_02",
+      "selectedPNG": "GeneratedCandidates/EquipmentDetails/details_r002/DETAIL_EQ_EQ_AMU_02__candidate_r002.png",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "canvas_px": [
+        256,
+        256
+      ],
+      "part_anchor_px": [
+        128,
+        228
+      ],
+      "attachmentSlotCandidate": "AMULET_ATTACHMENT",
+      "status": "UNAPPROVED_SMALL_DETAIL_CANDIDATE",
+      "scope": "ICON_AND_SMALL_DETAIL_ONLY",
+      "humanAdoption": "PENDING_INDIVIDUAL",
+      "sourceIcon": "GearIcons/ICO_EQ_AMU_02/ICO_EQ_AMU_02__128__r001.png",
+      "description": "polished mist-crystal talisman with thin natural setting",
+      "runtimeIntegrationStatus": "CANDIDATE_PREVIEW_ONLY_NOT_RELEASED",
+      "visualFitStatus": "PARTIAL_PENDING_SLOT_BY_SLOT_REVIEW",
+      "sourceIconSHA256": "51ffe6af7de295a0f849e66d3fef92ad262c1652eda406f2b9876778d965e8d6",
+      "source_path": "native/Art/GearIcons/ICO_EQ_AMU_02/ICO_EQ_AMU_02__128__r001.png",
+      "sourceArtReferenceSHA256": "51ffe6af7de295a0f849e66d3fef92ad262c1652eda406f2b9876778d965e8d6",
+      "sourceArtReferenceProvenance": "SHA-256 of existing bundled 128px sourceIcon; legacy 256px provenance corrected"
+    },
+    "DETAIL_EQ_AMU_03": {
+      "kind": "equipment_small_detail",
+      "assetID": "DETAIL_EQ_AMU_03",
+      "equipmentID": "EQ_AMU_03",
+      "selectedPNG": "GeneratedCandidates/EquipmentDetails/details_r002/DETAIL_EQ_EQ_AMU_03__candidate_r002.png",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "canvas_px": [
+        256,
+        256
+      ],
+      "part_anchor_px": [
+        128,
+        228
+      ],
+      "attachmentSlotCandidate": "AMULET_ATTACHMENT",
+      "status": "UNAPPROVED_SMALL_DETAIL_CANDIDATE",
+      "scope": "ICON_AND_SMALL_DETAIL_ONLY",
+      "humanAdoption": "PENDING_INDIVIDUAL",
+      "sourceIcon": "GearIcons/ICO_EQ_AMU_03/ICO_EQ_AMU_03__128__r001.png",
+      "description": "open woven seed-core basket charm with tiny sprout",
+      "runtimeIntegrationStatus": "CANDIDATE_PREVIEW_ONLY_NOT_RELEASED",
+      "visualFitStatus": "PARTIAL_PENDING_SLOT_BY_SLOT_REVIEW",
+      "sourceIconSHA256": "341fb8cd65e6e980a881e9955fa61e72a08ef7227f424ef8ee2c1a8e59db67c9",
+      "source_path": "native/Art/GearIcons/ICO_EQ_AMU_03/ICO_EQ_AMU_03__128__r001.png",
+      "sourceArtReferenceSHA256": "341fb8cd65e6e980a881e9955fa61e72a08ef7227f424ef8ee2c1a8e59db67c9",
+      "sourceArtReferenceProvenance": "SHA-256 of existing bundled 128px sourceIcon; legacy 256px provenance corrected"
+    },
+    "DETAIL_EQ_RING_01": {
+      "kind": "equipment_small_detail",
+      "assetID": "DETAIL_EQ_RING_01",
+      "equipmentID": "EQ_RING_01",
+      "selectedPNG": "GeneratedCandidates/EquipmentDetails/details_r002/DETAIL_EQ_EQ_RING_01__candidate_r002.png",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "canvas_px": [
+        256,
+        256
+      ],
+      "part_anchor_px": [
+        128,
+        128
+      ],
+      "attachmentSlotCandidate": "RING_ATTACHMENT",
+      "status": "UNAPPROVED_SMALL_DETAIL_CANDIDATE",
+      "scope": "ICON_AND_SMALL_DETAIL_ONLY",
+      "humanAdoption": "PENDING_INDIVIDUAL",
+      "sourceIcon": "GearIcons/ICO_EQ_RING_01/ICO_EQ_RING_01__128__r001.png",
+      "description": "slim twig-and-resin organic ring",
+      "runtimeIntegrationStatus": "CANDIDATE_PREVIEW_ONLY_NOT_RELEASED",
+      "visualFitStatus": "PARTIAL_PENDING_SLOT_BY_SLOT_REVIEW",
+      "sourceIconSHA256": "aba62bdf1ae14fee9ab74448893a6909dfca7aa76c60c9454ffe28ad92390451",
+      "source_path": "native/Art/GearIcons/ICO_EQ_RING_01/ICO_EQ_RING_01__128__r001.png",
+      "sourceArtReferenceSHA256": "aba62bdf1ae14fee9ab74448893a6909dfca7aa76c60c9454ffe28ad92390451",
+      "sourceArtReferenceProvenance": "SHA-256 of existing bundled 128px sourceIcon; legacy 256px provenance corrected"
+    },
+    "DETAIL_EQ_RING_02": {
+      "kind": "equipment_small_detail",
+      "assetID": "DETAIL_EQ_RING_02",
+      "equipmentID": "EQ_RING_02",
+      "selectedPNG": "GeneratedCandidates/EquipmentDetails/details_r002/DETAIL_EQ_EQ_RING_02__candidate_r002.png",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "canvas_px": [
+        256,
+        256
+      ],
+      "part_anchor_px": [
+        128,
+        128
+      ],
+      "attachmentSlotCandidate": "RING_ATTACHMENT",
+      "status": "UNAPPROVED_SMALL_DETAIL_CANDIDATE",
+      "scope": "ICON_AND_SMALL_DETAIL_ONLY",
+      "humanAdoption": "PENDING_INDIVIDUAL",
+      "sourceIcon": "GearIcons/ICO_EQ_RING_02/ICO_EQ_RING_02__128__r001.png",
+      "description": "fine ash-silver ring with small tuning-fork crystal",
+      "runtimeIntegrationStatus": "CANDIDATE_PREVIEW_ONLY_NOT_RELEASED",
+      "visualFitStatus": "PARTIAL_PENDING_SLOT_BY_SLOT_REVIEW",
+      "sourceIconSHA256": "2d157299e2c028b01f85e68666e7c7de53bdfabccfe32c7f1d65df3d96849f65",
+      "source_path": "native/Art/GearIcons/ICO_EQ_RING_02/ICO_EQ_RING_02__128__r001.png",
+      "sourceArtReferenceSHA256": "2d157299e2c028b01f85e68666e7c7de53bdfabccfe32c7f1d65df3d96849f65",
+      "sourceArtReferenceProvenance": "SHA-256 of existing bundled 128px sourceIcon; legacy 256px provenance corrected"
+    },
+    "DETAIL_EQ_RING_03": {
+      "kind": "equipment_small_detail",
+      "assetID": "DETAIL_EQ_RING_03",
+      "equipmentID": "EQ_RING_03",
+      "selectedPNG": "GeneratedCandidates/EquipmentDetails/details_r002/DETAIL_EQ_EQ_RING_03__candidate_r002.png",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "canvas_px": [
+        256,
+        256
+      ],
+      "part_anchor_px": [
+        128,
+        128
+      ],
+      "attachmentSlotCandidate": "RING_ATTACHMENT",
+      "status": "UNAPPROVED_SMALL_DETAIL_CANDIDATE",
+      "scope": "ICON_AND_SMALL_DETAIL_ONLY",
+      "humanAdoption": "PENDING_INDIVIDUAL",
+      "sourceIcon": "GearIcons/ICO_EQ_RING_03/ICO_EQ_RING_03__128__r001.png",
+      "description": "delicate winter ring with red flower core and frost rim",
+      "runtimeIntegrationStatus": "CANDIDATE_PREVIEW_ONLY_NOT_RELEASED",
+      "visualFitStatus": "PARTIAL_PENDING_SLOT_BY_SLOT_REVIEW",
+      "sourceIconSHA256": "6c704e19765a453146db4e9d11e4d22a65514dd13afddb18ed0e82b3d1988bce",
+      "source_path": "native/Art/GearIcons/ICO_EQ_RING_03/ICO_EQ_RING_03__128__r001.png",
+      "sourceArtReferenceSHA256": "6c704e19765a453146db4e9d11e4d22a65514dd13afddb18ed0e82b3d1988bce",
+      "sourceArtReferenceProvenance": "SHA-256 of existing bundled 128px sourceIcon; legacy 256px provenance corrected"
+    },
+    "DETAIL_EQ_F_01": {
+      "kind": "equipment_small_detail",
+      "assetID": "DETAIL_EQ_F_01",
+      "equipmentID": "EQ_F_01",
+      "selectedPNG": "GeneratedCandidates/EquipmentDetails/details_r003/DETAIL_EQ_F_01__candidate_r001.png",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "canvas_px": [
+        256,
+        256
+      ],
+      "part_anchor_px": [
+        128,
+        128
+      ],
+      "attachmentSlotCandidate": "CAT_FOREPAW_FLOATING_CATALYST",
+      "status": "UNAPPROVED_CAT_EFFECT_DETAIL_CANDIDATE",
+      "scope": "EXISTING_EQUIPMENT_ATTACHMENT_DETAIL",
+      "humanAdoption": "PENDING_INDIVIDUAL",
+      "sourceIcon": "GearIcons/ICO_EQ_F_01/ICO_EQ_F_01__128__r001.png",
+      "description": "small floating leaf catalyst in front of cat forepaw",
+      "preserveActorOrWeaponBase": true,
+      "runtimeIntegrationStatus": "CANDIDATE_PREVIEW_ONLY_NOT_RELEASED",
+      "visualFitStatus": "PARTIAL_PENDING_SLOT_BY_SLOT_REVIEW",
+      "sourceIconSHA256": "098adeb593ab10217d75544770acfbe25486b68cf30d91482126b481dfc2c154",
+      "source_path": "native/Art/GearIcons/ICO_EQ_F_01/ICO_EQ_F_01__128__r001.png",
+      "sourceArtReferenceSHA256": "098adeb593ab10217d75544770acfbe25486b68cf30d91482126b481dfc2c154",
+      "sourceArtReferenceProvenance": "SHA-256 of existing bundled 128px sourceIcon; legacy 256px provenance corrected"
+    },
+    "DETAIL_EQ_F_02": {
+      "kind": "equipment_small_detail",
+      "assetID": "DETAIL_EQ_F_02",
+      "equipmentID": "EQ_F_02",
+      "selectedPNG": "GeneratedCandidates/EquipmentDetails/details_r003/DETAIL_EQ_F_02__candidate_r001.png",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "canvas_px": [
+        256,
+        256
+      ],
+      "part_anchor_px": [
+        128,
+        128
+      ],
+      "attachmentSlotCandidate": "CAT_GROUND_TEMPORARY_RING",
+      "status": "UNAPPROVED_CAT_EFFECT_DETAIL_CANDIDATE",
+      "scope": "EXISTING_EQUIPMENT_ATTACHMENT_DETAIL",
+      "humanAdoption": "PENDING_INDIVIDUAL",
+      "sourceIcon": "GearIcons/ICO_EQ_F_02/ICO_EQ_F_02__128__r001.png",
+      "description": "thin temporary magical ring effect below cat feet",
+      "preserveActorOrWeaponBase": true,
+      "runtimeIntegrationStatus": "CANDIDATE_PREVIEW_ONLY_NOT_RELEASED",
+      "visualFitStatus": "PARTIAL_PENDING_SLOT_BY_SLOT_REVIEW",
+      "sourceIconSHA256": "04748a35f00e58ddf5b2e54440e95c0feee93a263db6de54f8835b844cef928e",
+      "source_path": "native/Art/GearIcons/ICO_EQ_F_02/ICO_EQ_F_02__128__r001.png",
+      "sourceArtReferenceSHA256": "04748a35f00e58ddf5b2e54440e95c0feee93a263db6de54f8835b844cef928e",
+      "sourceArtReferenceProvenance": "SHA-256 of existing bundled 128px sourceIcon; legacy 256px provenance corrected"
+    },
+    "DETAIL_EQ_F_03": {
+      "kind": "equipment_small_detail",
+      "assetID": "DETAIL_EQ_F_03",
+      "equipmentID": "EQ_F_03",
+      "selectedPNG": "GeneratedCandidates/EquipmentDetails/details_r003/DETAIL_EQ_F_03__candidate_r001.png",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "canvas_px": [
+        256,
+        256
+      ],
+      "part_anchor_px": [
+        110,
+        145
+      ],
+      "attachmentSlotCandidate": "CAT_TEMPORARY_SHADOW_CLAW",
+      "status": "UNAPPROVED_CAT_EFFECT_DETAIL_CANDIDATE",
+      "scope": "EXISTING_EQUIPMENT_ATTACHMENT_DETAIL",
+      "humanAdoption": "PENDING_INDIVIDUAL",
+      "sourceIcon": "GearIcons/ICO_EQ_F_03/ICO_EQ_F_03__128__r001.png",
+      "description": "small sealed-lamp crystal shard with crescent ice-feather shadow claw",
+      "preserveActorOrWeaponBase": true,
+      "runtimeIntegrationStatus": "CANDIDATE_PREVIEW_ONLY_NOT_RELEASED",
+      "visualFitStatus": "PARTIAL_PENDING_SLOT_BY_SLOT_REVIEW",
+      "sourceIconSHA256": "a7bb81a357e1a5fc04d47b9445bed32867162016a9ca4981ecee139b192fd9c3",
+      "source_path": "native/Art/GearIcons/ICO_EQ_F_03/ICO_EQ_F_03__128__r001.png",
+      "sourceArtReferenceSHA256": "a7bb81a357e1a5fc04d47b9445bed32867162016a9ca4981ecee139b192fd9c3",
+      "sourceArtReferenceProvenance": "SHA-256 of existing bundled 128px sourceIcon; legacy 256px provenance corrected"
+    },
+    "DETAIL_EQ_S_02": {
+      "kind": "equipment_small_detail",
+      "assetID": "DETAIL_EQ_S_02",
+      "equipmentID": "EQ_S_02",
+      "selectedPNG": "GeneratedCandidates/EquipmentDetails/details_r003/DETAIL_EQ_S_02__candidate_r001.png",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "canvas_px": [
+        256,
+        256
+      ],
+      "part_anchor_px": [
+        128,
+        128
+      ],
+      "attachmentSlotCandidate": "HAMMER_HEAD_FACE_CORE_INSET",
+      "status": "UNAPPROVED_HAMMER_DETAIL_CANDIDATE",
+      "scope": "EXISTING_EQUIPMENT_ATTACHMENT_DETAIL",
+      "humanAdoption": "PENDING_INDIVIDUAL",
+      "sourceIcon": "GearIcons/ICO_EQ_S_02/ICO_EQ_S_02__128__r001.png",
+      "description": "flush ash-silver square bezel with small warm furnace-core crystal inset",
+      "preserveActorOrWeaponBase": true,
+      "runtimeIntegrationStatus": "CANDIDATE_PREVIEW_ONLY_NOT_RELEASED",
+      "visualFitStatus": "PARTIAL_PENDING_SLOT_BY_SLOT_REVIEW",
+      "sourceIconSHA256": "91cb796fd9ac004ed8b2672d2f96e07c75b414019949a783c181a0fd80e6a86e",
+      "source_path": "native/Art/GearIcons/ICO_EQ_S_02/ICO_EQ_S_02__128__r001.png",
+      "sourceArtReferenceSHA256": "91cb796fd9ac004ed8b2672d2f96e07c75b414019949a783c181a0fd80e6a86e",
+      "sourceArtReferenceProvenance": "SHA-256 of existing bundled 128px sourceIcon; legacy 256px provenance corrected"
+    },
+    "DETAIL_EQ_S_03": {
+      "kind": "equipment_small_detail",
+      "assetID": "DETAIL_EQ_S_03",
+      "equipmentID": "EQ_S_03",
+      "selectedPNG": "GeneratedCandidates/EquipmentDetails/details_r003/DETAIL_EQ_S_03__candidate_r001.png",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "canvas_px": [
+        256,
+        256
+      ],
+      "part_anchor_px": [
+        128,
+        128
+      ],
+      "attachmentSlotCandidate": "HAMMER_HEAD_NARROW_REINFORCEMENT",
+      "status": "UNAPPROVED_HAMMER_DETAIL_CANDIDATE",
+      "scope": "EXISTING_EQUIPMENT_ATTACHMENT_DETAIL",
+      "humanAdoption": "PENDING_INDIVIDUAL",
+      "sourceIcon": "GearIcons/ICO_EQ_S_03/ICO_EQ_S_03__128__r001.png",
+      "description": "narrow moon-silver square-head face reinforcement with porcelain buffer and shallow ring engraving",
+      "preserveActorOrWeaponBase": true,
+      "runtimeIntegrationStatus": "CANDIDATE_PREVIEW_ONLY_NOT_RELEASED",
+      "visualFitStatus": "PARTIAL_PENDING_SLOT_BY_SLOT_REVIEW",
+      "sourceIconSHA256": "ca6ee378ea14cd6e46a2957c1fede15365c13f8504722de15cf5c99147787bcb",
+      "source_path": "native/Art/GearIcons/ICO_EQ_S_03/ICO_EQ_S_03__128__r001.png",
+      "sourceArtReferenceSHA256": "ca6ee378ea14cd6e46a2957c1fede15365c13f8504722de15cf5c99147787bcb",
+      "sourceArtReferenceProvenance": "SHA-256 of existing bundled 128px sourceIcon; legacy 256px provenance corrected"
+    }
+  },
+  "candidateRuntimeEvidence": {
+    "simulatorBuild": "R052 and R003/R004/R005 follow-up captures",
+    "fixtureCoverage": "12 actor-tier fixtures; focused Smith EQ_S_02/03 reruns",
+    "stateCoverage": "7 detail texture/state loads asserted per selected candidate",
+    "visualApproval": "PENDING_INDIVIDUAL",
+    "humanApproval": false
+  }
+}

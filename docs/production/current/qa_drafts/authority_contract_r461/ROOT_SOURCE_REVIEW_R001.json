@@ -1,0 +1,35 @@
+{
+  "status": "R001_HELD_FOR_BOUNDED_REPAIR_BEFORE_EXECUTION",
+  "sourcePins": {
+    "python_candidate_r001/local_service_r461.py": "9565e1e43676fd1928baff864eea72eb48a27598bdf59d071936a3799d9ffe17",
+    "swift_candidate_r001/AuthorityClientContractR461.swift": "e65d5425363390ced6e0088c73ebb2259a98f3a3ef4c2590ce6370e8ee97cc78",
+    "swift_candidate_r001/AuthorityClientContractR461Tests.swift": "58ed16e7d809c472c455edc90d14ee1e8afc607c66a42df7158efbc086dde939"
+  },
+  "findings": [
+    {
+      "id": "PY_POLICY_RESTART",
+      "severity": "P1",
+      "condition": "Recreate service for same ledger with a different internally matching profile/policy; historical receipt is reprojected with changed item payload. No persisted policy-to-ledger binding in R001.",
+      "required": "Persist canonical config binding and reject changed policy on restart; replay unchanged profile byte-identically."
+    },
+    {
+      "id": "SWIFT_EQUAL_REVISION_RACE",
+      "severity": "P1",
+      "condition": "Load observation revision7; another request persists refunded revision8 while transport awaits; response7 equals stale local prior and skips CAS, so candidate delivery may return despite known newer state.",
+      "required": "Atomic comparison for identical revision as well as newer revisions, deterministic interleaving regression."
+    },
+    {
+      "id": "SWIFT_TEST_CONSTRUCTOR",
+      "severity": "compile blocker",
+      "condition": "XCTFailure is an empty error struct but exactInt helper calls XCTFailure(string).",
+      "required": "Correct test helper initializer and compile/run."
+    }
+  ],
+  "executionPerformed": false,
+  "repairBudget": {
+    "attempts": 1,
+    "minutesPerAuthor": 10
+  },
+  "liveCodeChanged": false,
+  "productionEnabled": false
+}

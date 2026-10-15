@@ -1,0 +1,4043 @@
+{
+  "meta": {
+    "schema_version": "0.1.0",
+    "content_version": "world-design-r1-20261008",
+    "title": "魔女の採集帳",
+    "status": "PROPOSED_FOR_REVIEW",
+    "scope": "G2の世界・生態・素材・装備関係の設計案。実装命令・全量制作承認ではない。",
+    "authority": "会話で承認済みの魔女の暮らし／4人育成・戦闘／5地域／witch_characters_R1.pngを維持。新しい固有名・ルール・対応表は本提案。画像内の名前・年齢は仕様値として抽出しない。",
+    "numeric_policy": "ドロップ率、必要数、戦闘数値、所要時間はnull。0や仮の確定値へ自動補完しない。",
+    "provenance": "本会話と提供G1資料。外部市場調査・実機検証は今回の範囲外。"
+  },
+  "gates": [
+    {
+      "id": "G_START",
+      "rank": 0,
+      "requires": [],
+      "event": "新規ゲーム開始",
+      "auto_unlock": true
+    },
+    {
+      "id": "G_R01_A",
+      "rank": 1,
+      "requires": [
+        "G_START"
+      ],
+      "event": "初回勝利 B_R01_A",
+      "auto_unlock": false
+    },
+    {
+      "id": "G_R01_B",
+      "rank": 2,
+      "requires": [
+        "G_R01_A"
+      ],
+      "event": "初回勝利 B_R01_B",
+      "auto_unlock": false
+    },
+    {
+      "id": "G_R02_A",
+      "rank": 3,
+      "requires": [
+        "G_R01_B"
+      ],
+      "event": "初回勝利 B_R02_A",
+      "auto_unlock": false
+    },
+    {
+      "id": "G_R02_B",
+      "rank": 4,
+      "requires": [
+        "G_R02_A"
+      ],
+      "event": "初回勝利 B_R02_B",
+      "auto_unlock": false
+    },
+    {
+      "id": "G_R03_A",
+      "rank": 5,
+      "requires": [
+        "G_R02_B"
+      ],
+      "event": "初回勝利 B_R03_A",
+      "auto_unlock": false
+    },
+    {
+      "id": "G_R03_B",
+      "rank": 6,
+      "requires": [
+        "G_R03_A"
+      ],
+      "event": "初回勝利 B_R03_B",
+      "auto_unlock": false
+    },
+    {
+      "id": "G_R04_A",
+      "rank": 7,
+      "requires": [
+        "G_R03_B"
+      ],
+      "event": "初回勝利 B_R04_A",
+      "auto_unlock": false
+    },
+    {
+      "id": "G_R04_B",
+      "rank": 8,
+      "requires": [
+        "G_R04_A"
+      ],
+      "event": "初回勝利 B_R04_B",
+      "auto_unlock": false
+    },
+    {
+      "id": "G_R05_A",
+      "rank": 9,
+      "requires": [
+        "G_R04_B"
+      ],
+      "event": "初回勝利 B_R05_A",
+      "auto_unlock": false
+    },
+    {
+      "id": "G_R05_B",
+      "rank": 10,
+      "requires": [
+        "G_R05_A"
+      ],
+      "event": "初回勝利 B_R05_B",
+      "auto_unlock": false
+    }
+  ],
+  "regions": [
+    {
+      "id": "R01",
+      "name": "木漏れ日の森",
+      "entry_gate": "G_START",
+      "inner_gate": "G_R01_A",
+      "clear_gate": "G_R01_B",
+      "geography": "家の南東に広がる低山の森。湿原から流れ出した小川が家の近くを通る。",
+      "palette": "琥珀色の木漏れ日／苔の緑／生成りの石",
+      "visual_rule": "葉先の透過光、丸い樹洞、月と蔓を刻んだ小さな道標。足場は見せる。",
+      "story_goal": "薬草の下処理に使う樹脂を探し、古い採集路を整える。",
+      "emotion": "普通の森に見えて、研究の種があちこちにある。",
+      "gameplay_theme": "回復・持続・安定の基礎。森だけで攻撃・毒・守りを試す入口を用意する。",
+      "extension_port": "月白苔の沢の分岐から追加可能。既存本編の門やレシピを書き換えない。",
+      "design_status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "R02",
+      "name": "眠り霧の湿原",
+      "entry_gate": "G_R01_B",
+      "inner_gate": "G_R02_A",
+      "clear_gate": "G_R02_B",
+      "geography": "森の北側、鉱洞の湧水がたまる浅い盆地。毒性は胞子溜まりに局在し、流出口の苔床で薄まる。",
+      "palette": "青緑の霧／薄紫の花／淡い月白",
+      "visual_rule": "背の低い霧を層に分ける。発光植物だけを光源にし、全面をネオンにしない。",
+      "story_goal": "月光花を求め、眠り胞子の性質と霧を留める結晶を調べる。",
+      "emotion": "怖い毒沼ではなく、美しいが扱いを誤ると危うい温室。",
+      "gameplay_theme": "毒の蓄積・回復の配分・解除の選択肢。毒だけが正解にならない。",
+      "extension_port": "月光花の水辺の分岐から追加可能。既存本編の門やレシピを書き換えない。",
+      "design_status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "R03",
+      "name": "こだまの鉱洞",
+      "entry_gate": "G_R02_B",
+      "inner_gate": "G_R03_A",
+      "clear_gate": "G_R03_B",
+      "geography": "湿原の上流側の斜面に入口。上層坑道が山道につながり、地下水は湿原へ下る。",
+      "palette": "青紫の水晶／暖かな銅／灰銀の岩",
+      "visual_rule": "晶洞・手掘りの石段・古い金属留め。工業都市や現代配線にはしない。",
+      "story_goal": "アイラと、魔法を通す金属と熱を留める炉心晶を探す。",
+      "emotion": "機械工場ではなく、昔の魔女と職人が協働した採掘場。",
+      "gameplay_theme": "ガード・反撃・詠唱妨害・熱の蓄積。金属だから毒完全無効にはしない。",
+      "extension_port": "雲母の地下湖の分岐から追加可能。既存本編の門やレシピを書き換えない。",
+      "design_status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "R04",
+      "name": "白霜の山嶺",
+      "entry_gate": "G_R03_B",
+      "inner_gate": "G_R04_A",
+      "clear_gate": "G_R04_B",
+      "geography": "鉱洞の上層出口から登る北の稜線。雪解け水が鉱床を通り、湿原と森へ戻る。",
+      "palette": "雪の生成り／氷青／遠景の藍／小さな朱",
+      "visual_rule": "白一色にしない。風で磨かれた岩・赤い山道布・透過する氷で形をつくる。",
+      "story_goal": "寒い場所でも魔力を安定させる素材と、古庭へ向く観測道を探す。",
+      "emotion": "厳しい山だが、見晴らしと静けさがご褒美になる。",
+      "gameplay_theme": "結界維持・手数調整・大技の備え。寒さゲージや消耗品持込を新設しない。",
+      "extension_port": "風編みの観測塔の分岐から追加可能。既存本編の門やレシピを書き換えない。",
+      "design_status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "R05",
+      "name": "月隠れの古庭",
+      "entry_gate": "G_R04_B",
+      "inner_gate": "G_R05_A",
+      "clear_gate": "G_R05_B",
+      "geography": "森の東奥の高い段丘。空間が折り畳まれた古庭を、山嶺で調律した道標から訪れる。",
+      "palette": "月白／深藍／熟した金／鈍い薔薇",
+      "visual_rule": "先行4地域の意匠が、手入れされた庭園として一つにつながる。宇宙・天界には飛ばない。",
+      "story_goal": "古い魔女の採集記録を読み、栽培と道具づくりの知恵を受け継ぐ。",
+      "emotion": "世界を救う終着点ではなく、明日の研究の種を見つける到達点。",
+      "gameplay_theme": "これまでの機構の組合せ。単一の全属性耐性・全回復禁止で難度をつくらない。",
+      "extension_port": "月露の種床の分岐から追加可能。既存本編の門やレシピを書き換えない。",
+      "design_status": "PROPOSED_FOR_REVIEW"
+    }
+  ],
+  "areas": [
+    {
+      "id": "A_R01_01",
+      "region_id": "R01",
+      "name": "こもれびの採集路",
+      "unlock_gate": "G_START",
+      "purpose": "入口・基礎採集",
+      "background_brief": "家を遠景に望む小道。手前のシダで奥行きを作るが足元を隠さない。",
+      "camera_policy": "縦画面の固定斜め視点を検証。4人＋敵の足元と予告を優先。",
+      "production_unit": "地図ノード。独立背景4枚を意味しない。地域内の戦闘背景2系統を想定。",
+      "stable_slug": "home-path"
+    },
+    {
+      "id": "A_R01_02",
+      "region_id": "R01",
+      "name": "根絡みの渡し",
+      "unlock_gate": "G_START",
+      "purpose": "中ボス",
+      "background_brief": "小川に横たわる根の橋。猪の突進の向きが読める横長の踏み場。",
+      "camera_policy": "縦画面の固定斜め視点を検証。4人＋敵の足元と予告を優先。",
+      "production_unit": "地図ノード。独立背景4枚を意味しない。地域内の戦闘背景2系統を想定。",
+      "stable_slug": "river-crossing"
+    },
+    {
+      "id": "A_R01_03",
+      "region_id": "R01",
+      "name": "月白苔の沢",
+      "unlock_gate": "G_R01_A",
+      "purpose": "深部採集・遺物捜索",
+      "background_brief": "白い苔の岸と樹脂の滴る木。過剰な光点を抑え、採集対象の形を見せる。",
+      "camera_policy": "縦画面の固定斜め視点を検証。4人＋敵の足元と予告を優先。",
+      "production_unit": "地図ノード。独立背景4枚を意味しない。地域内の戦闘背景2系統を想定。",
+      "stable_slug": "moss-bank"
+    },
+    {
+      "id": "A_R01_04",
+      "region_id": "R01",
+      "name": "苔冠の古樹前",
+      "unlock_gate": "G_R01_A",
+      "purpose": "地域主ボス",
+      "background_brief": "巨大な幹が石の道標を抱く円形の空地。樹冠は上辺、戦闘の床面は中央に残す。",
+      "camera_policy": "縦画面の固定斜め視点を検証。4人＋敵の足元と予告を優先。",
+      "production_unit": "地図ノード。独立背景4枚を意味しない。地域内の戦闘背景2系統を想定。",
+      "stable_slug": "old-tree-arena"
+    },
+    {
+      "id": "A_R02_01",
+      "region_id": "R02",
+      "name": "葦綿の木道",
+      "unlock_gate": "G_R01_B",
+      "purpose": "入口・基礎採集",
+      "background_brief": "森林と同じ木材の細い木道。暖色の採集灯を画面端の目印にする。",
+      "camera_policy": "縦画面の固定斜め視点を検証。4人＋敵の足元と予告を優先。",
+      "production_unit": "地図ノード。独立背景4枚を意味しない。地域内の戦闘背景2系統を想定。",
+      "stable_slug": "reed-walk"
+    },
+    {
+      "id": "A_R02_02",
+      "region_id": "R02",
+      "name": "夢茸の足場",
+      "unlock_gate": "G_R01_B",
+      "purpose": "中ボス",
+      "background_brief": "朽ち木と菌傘がつくる高低差。胞子の予告域を床面に描ける余白を残す。",
+      "camera_policy": "縦画面の固定斜め視点を検証。4人＋敵の足元と予告を優先。",
+      "production_unit": "地図ノード。独立背景4枚を意味しない。地域内の戦闘背景2系統を想定。",
+      "stable_slug": "mushroom-isle"
+    },
+    {
+      "id": "A_R02_03",
+      "region_id": "R02",
+      "name": "月光花の水辺",
+      "unlock_gate": "G_R02_A",
+      "purpose": "深部採集・遺物捜索",
+      "background_brief": "静水面に花弁が反射する。敵を反射と同化させず輪郭に明暗差をつける。",
+      "camera_policy": "縦画面の固定斜め視点を検証。4人＋敵の足元と予告を優先。",
+      "production_unit": "地図ノード。独立背景4枚を意味しない。地域内の戦闘背景2系統を想定。",
+      "stable_slug": "flower-bank"
+    },
+    {
+      "id": "A_R02_04",
+      "region_id": "R02",
+      "name": "水鏡の入江",
+      "unlock_gate": "G_R02_A",
+      "purpose": "地域主ボス",
+      "background_brief": "大きな根のアーチが鏡状の水面を囲む。ボスの冠鱗が月光花と同じ形を持つ。",
+      "camera_policy": "縦画面の固定斜め視点を検証。4人＋敵の足元と予告を優先。",
+      "production_unit": "地図ノード。独立背景4枚を意味しない。地域内の戦闘背景2系統を想定。",
+      "stable_slug": "mirror-inlet"
+    },
+    {
+      "id": "A_R03_01",
+      "region_id": "R03",
+      "name": "響晶の坑口",
+      "unlock_gate": "G_R02_B",
+      "purpose": "入口・基礎採集",
+      "background_brief": "森林で見た蔓月紋が坑口の補強材に続く。坑夫の小道具は同じ革と真鍮。",
+      "camera_policy": "縦画面の固定斜め視点を検証。4人＋敵の足元と予告を優先。",
+      "production_unit": "地図ノード。独立背景4枚を意味しない。地域内の戦闘背景2系統を想定。",
+      "stable_slug": "echo-entry"
+    },
+    {
+      "id": "A_R03_02",
+      "region_id": "R03",
+      "name": "連槌兵の橋",
+      "unlock_gate": "G_R02_B",
+      "purpose": "中ボス",
+      "background_brief": "渓谷上の低い橋と、左右に退避できる石床。連撃の予告を大きく読ませる。",
+      "camera_policy": "縦画面の固定斜め視点を検証。4人＋敵の足元と予告を優先。",
+      "production_unit": "地図ノード。独立背景4枚を意味しない。地域内の戦闘背景2系統を想定。",
+      "stable_slug": "hammer-bridge"
+    },
+    {
+      "id": "A_R03_03",
+      "region_id": "R03",
+      "name": "雲母の地下湖",
+      "unlock_gate": "G_R03_A",
+      "purpose": "深部採集・遺物捜索",
+      "background_brief": "水晶の柱と黒い湖。背景の小さな光を抑え、装備色と混同しない。",
+      "camera_policy": "縦画面の固定斜め視点を検証。4人＋敵の足元と予告を優先。",
+      "production_unit": "地図ノード。独立背景4枚を意味しない。地域内の戦闘背景2系統を想定。",
+      "stable_slug": "mica-lake"
+    },
+    {
+      "id": "A_R03_04",
+      "region_id": "R03",
+      "name": "古い炉守りの間",
+      "unlock_gate": "G_R03_A",
+      "purpose": "地域主ボス",
+      "background_brief": "炉の中心だけ琥珀色。ボスの輪郭を逆光で抜き、床上の熱予告を背景炎と分離する。",
+      "camera_policy": "縦画面の固定斜め視点を検証。4人＋敵の足元と予告を優先。",
+      "production_unit": "地図ノード。独立背景4枚を意味しない。地域内の戦闘背景2系統を想定。",
+      "stable_slug": "furnace-hall"
+    },
+    {
+      "id": "A_R04_01",
+      "region_id": "R04",
+      "name": "雪灯草の登り道",
+      "unlock_gate": "G_R03_B",
+      "purpose": "入口・基礎採集",
+      "background_brief": "雪の合間に草花と黒い岩が出る。足跡・毛・羽根を採集の予告に使う。",
+      "camera_policy": "縦画面の固定斜め視点を検証。4人＋敵の足元と予告を優先。",
+      "production_unit": "地図ノード。独立背景4枚を意味しない。地域内の戦闘背景2系統を想定。",
+      "stable_slug": "snow-path"
+    },
+    {
+      "id": "A_R04_02",
+      "region_id": "R04",
+      "name": "白角の稜線",
+      "unlock_gate": "G_R03_B",
+      "purpose": "中ボス",
+      "background_brief": "空と谷を見渡せる広い雪面。吹雪は薄いレイヤーで、敵の予告を覆わない。",
+      "camera_policy": "縦画面の固定斜め視点を検証。4人＋敵の足元と予告を優先。",
+      "production_unit": "地図ノード。独立背景4枚を意味しない。地域内の戦闘背景2系統を想定。",
+      "stable_slug": "whitehorn-ridge"
+    },
+    {
+      "id": "A_R04_03",
+      "region_id": "R04",
+      "name": "風編みの観測塔",
+      "unlock_gate": "G_R04_A",
+      "purpose": "深部採集・遺物捜索",
+      "background_brief": "丸い窓と月形の観測器。古庭と同じ石材だが、ここでは風化している。",
+      "camera_policy": "縦画面の固定斜め視点を検証。4人＋敵の足元と予告を優先。",
+      "production_unit": "地図ノード。独立背景4枚を意味しない。地域内の戦闘背景2系統を想定。",
+      "stable_slug": "wind-tower"
+    },
+    {
+      "id": "A_R04_04",
+      "region_id": "R04",
+      "name": "月氷竜の岩棚",
+      "unlock_gate": "G_R04_A",
+      "purpose": "地域主ボス",
+      "background_brief": "巨大な竜と人の対比。頭・翼・足元を同時に全部画面へ詰めず、戦闘で必要な部位を優先。",
+      "camera_policy": "縦画面の固定斜め視点を検証。4人＋敵の足元と予告を優先。",
+      "production_unit": "地図ノード。独立背景4枚を意味しない。地域内の戦闘背景2系統を想定。",
+      "stable_slug": "dragon-ledge"
+    },
+    {
+      "id": "A_R05_01",
+      "region_id": "R05",
+      "name": "蔓綴じの門廊",
+      "unlock_gate": "G_R04_B",
+      "purpose": "入口・基礎採集",
+      "background_brief": "森で見た蔓月紋の完全な姿。ガラスと真鍮、淡い石を同じスケールで反復する。",
+      "camera_policy": "縦画面の固定斜め視点を検証。4人＋敵の足元と予告を優先。",
+      "production_unit": "地図ノード。独立背景4枚を意味しない。地域内の戦闘背景2系統を想定。",
+      "stable_slug": "vine-gate"
+    },
+    {
+      "id": "A_R05_02",
+      "region_id": "R05",
+      "name": "剪定機の温室",
+      "unlock_gate": "G_R04_B",
+      "purpose": "中ボス",
+      "background_brief": "剪定用の輪と透明な温室。巨大な刃を増やすより、切り取られる床の予告を見せる。",
+      "camera_policy": "縦画面の固定斜め視点を検証。4人＋敵の足元と予告を優先。",
+      "production_unit": "地図ノード。独立背景4枚を意味しない。地域内の戦闘背景2系統を想定。",
+      "stable_slug": "pruning-house"
+    },
+    {
+      "id": "A_R05_03",
+      "region_id": "R05",
+      "name": "月露の種床",
+      "unlock_gate": "G_R05_A",
+      "purpose": "深部採集・遺物捜索",
+      "background_brief": "常夜の青と室内の金。月光は結晶に蓄える設定で、現実時刻の夜限定にしない。",
+      "camera_policy": "縦画面の固定斜め視点を検証。4人＋敵の足元と予告を優先。",
+      "production_unit": "地図ノード。独立背景4枚を意味しない。地域内の戦闘背景2系統を想定。",
+      "stable_slug": "moon-seedbed"
+    },
+    {
+      "id": "A_R05_04",
+      "region_id": "R05",
+      "name": "庭守りの月苑",
+      "unlock_gate": "G_R05_A",
+      "purpose": "地域主ボス",
+      "background_brief": "中心に月鹿、その背後に古い研究小屋。魔女の家の形と呼応し、帰宅の余韻につなげる。",
+      "camera_policy": "縦画面の固定斜め視点を検証。4人＋敵の足元と予告を優先。",
+      "production_unit": "地図ノード。独立背景4枚を意味しない。地域内の戦闘背景2系統を想定。",
+      "stable_slug": "keeper-court"
+    }
+  ],
+  "enemies": [
+    {
+      "id": "E_R01_01",
+      "name": "苔角いのしし",
+      "kind": "normal",
+      "region_id": "R01",
+      "area_id": "A_R01_01",
+      "encounter_gate": "G_START",
+      "victory_gate": null,
+      "silhouette": "低い重心、苔の生えた二本の前歯。人の腰ほど。",
+      "ecology": "根を掘る魔獣。採集路へ縄張りを広げた個体を狩る。",
+      "mechanic": "前脚で土をかいてから前列へ突進。",
+      "counterplay": [
+        "予告に合わせるガード構成",
+        "行動前の集中火力と支援"
+      ],
+      "material_id": "M_R01_E1",
+      "resolution": "戦闘後に欠けた牙の外層を回収。流血・解体の演出はしない。",
+      "prep_gear_ids": [],
+      "numbers_status": "UNSIMULATED"
+    },
+    {
+      "id": "E_R01_02",
+      "name": "糸灯ぐも",
+      "kind": "normal",
+      "region_id": "R01",
+      "area_id": "A_R01_01",
+      "encounter_gate": "G_START",
+      "victory_gate": null,
+      "silhouette": "丸い腹に灯、細い脚は短くまとめ、白い糸巻きが目印。",
+      "ecology": "草食の虫を捕る小型魔物。採集路を覆う巣を払う。",
+      "mechanic": "糸で一人の手数を落とす。",
+      "counterplay": [
+        "弱体解除を使う支援構成",
+        "持続ダメージと複数の攻撃担当"
+      ],
+      "material_id": "M_R01_E2",
+      "resolution": "巣と抜け糸を回収する。",
+      "prep_gear_ids": [],
+      "numbers_status": "UNSIMULATED"
+    },
+    {
+      "id": "E_R01_03",
+      "name": "葉刃むし",
+      "kind": "normal",
+      "region_id": "R01",
+      "area_id": "A_R01_03",
+      "encounter_gate": "G_R01_A",
+      "victory_gate": null,
+      "silhouette": "背の葉が二枚の弧。脚ではなく葉刃を大きく描く。",
+      "ecology": "魔力を含む葉を擬態する狩食性魔物。",
+      "mechanic": "短い連撃の後に休む。",
+      "counterplay": [
+        "ガードと反撃",
+        "回復を置き、休止中へ火力を寄せる"
+      ],
+      "material_id": "M_R01_E3",
+      "resolution": "外殻の欠片を回収する。",
+      "prep_gear_ids": [],
+      "numbers_status": "UNSIMULATED"
+    },
+    {
+      "id": "E_R01_04",
+      "name": "樹脂ころがし",
+      "kind": "normal",
+      "region_id": "R01",
+      "area_id": "A_R01_03",
+      "encounter_gate": "G_R01_A",
+      "victory_gate": null,
+      "silhouette": "半透明の丸い琥珀甲殻、短い六脚。",
+      "ecology": "樹脂を固めて身を守る甲虫。",
+      "mechanic": "甲殻を閉じる間だけ防御が上がる。",
+      "counterplay": [
+        "防御が下がる時間の一撃",
+        "長い戦いを支える呪毒と回復"
+      ],
+      "material_id": "M_R01_E4",
+      "resolution": "剥がれた甲殻を回収する。",
+      "prep_gear_ids": [],
+      "numbers_status": "UNSIMULATED"
+    },
+    {
+      "id": "B_R01_A",
+      "name": "根絡みの大猪",
+      "kind": "miniboss",
+      "region_id": "R01",
+      "area_id": "A_R01_02",
+      "encounter_gate": "G_START",
+      "victory_gate": "G_R01_A",
+      "silhouette": "木の根を冠にした大型の猪。顔と前脚を大きくする。",
+      "ecology": "倒木で帰り道を塞ぐ縄張りの主。",
+      "mechanic": "土を掻く→突進→疲れて隙。",
+      "counterplay": [
+        "集中火力で次の突進前に押す",
+        "ガードと回復で隙を待つ"
+      ],
+      "material_id": "M_R01_BA",
+      "resolution": "同種の上位個体を調査対象にする。牙片は一本丸ごとの生体ではない。",
+      "prep_gear_ids": [
+        "EQ_W_01",
+        "EQ_F_01"
+      ],
+      "numbers_status": "UNSIMULATED"
+    },
+    {
+      "id": "B_R01_B",
+      "name": "苔冠の古樹",
+      "kind": "boss",
+      "region_id": "R01",
+      "area_id": "A_R01_04",
+      "encounter_gate": "G_R01_A",
+      "victory_gate": "G_R01_B",
+      "silhouette": "家より高い古木。胸ではなく枝の結び目に魔力。",
+      "ecology": "古い道標を守る樹の精。採集路に伸びすぎた根を鎮める。",
+      "mechanic": "細い根の連撃→広い枝の溜め打撃。",
+      "counterplay": [
+        "連撃を受け止めて反撃",
+        "結界と回復を保ち呪毒を維持"
+      ],
+      "material_id": "M_R01_BB",
+      "resolution": "本体を伐採しない。再戦は根の手入れと力比べで、更新枝の節を譲られる。",
+      "prep_gear_ids": [
+        "EQ_BODY_01",
+        "EQ_A_01"
+      ],
+      "numbers_status": "UNSIMULATED"
+    },
+    {
+      "id": "E_R02_01",
+      "name": "胞子ふくろ",
+      "kind": "normal",
+      "region_id": "R02",
+      "area_id": "A_R02_01",
+      "encounter_gate": "G_R01_B",
+      "victory_gate": null,
+      "silhouette": "丸い菌袋に短い根足。目立つ一つの胞子孔。",
+      "ecology": "湿原の枯れ葉を分解する菌獣。",
+      "mechanic": "胞子をためて小範囲の眠気。",
+      "counterplay": [
+        "解除と回復",
+        "ため動作を崩す火力"
+      ],
+      "material_id": "M_R02_E1",
+      "resolution": "膨らんだ菌袋から胞子を密閉回収。",
+      "prep_gear_ids": [],
+      "numbers_status": "UNSIMULATED"
+    },
+    {
+      "id": "E_R02_02",
+      "name": "霧背の沼蜥蜴",
+      "kind": "normal",
+      "region_id": "R02",
+      "area_id": "A_R02_01",
+      "encounter_gate": "G_R01_B",
+      "victory_gate": null,
+      "silhouette": "低く横長の体、背に薄い霧のひれ。",
+      "ecology": "澄んだ流路を縄張りにする鱗獣。",
+      "mechanic": "体表に霧を巻き、一時的に被ダメージを減らす。",
+      "counterplay": [
+        "切れ目への瞬間火力",
+        "維持できる継続ダメージ"
+      ],
+      "material_id": "M_R02_E2",
+      "resolution": "戦闘で落ちた鱗を回収。",
+      "prep_gear_ids": [],
+      "numbers_status": "UNSIMULATED"
+    },
+    {
+      "id": "E_R02_03",
+      "name": "水鏡くらげ",
+      "kind": "normal",
+      "region_id": "R02",
+      "area_id": "A_R02_03",
+      "encounter_gate": "G_R02_A",
+      "victory_gate": null,
+      "silhouette": "透ける傘と太い二本の触手、空中より水面を滑る。",
+      "ecology": "湿原に漏れた術式を吸う魔法生物。",
+      "mechanic": "受けた攻撃の一部を次の小弾にして返す。",
+      "counterplay": [
+        "小弾を受け止める結界",
+        "返す前に削る集中攻撃"
+      ],
+      "material_id": "M_R02_E3",
+      "resolution": "古い外膜を残して小さく退散。",
+      "prep_gear_ids": [],
+      "numbers_status": "UNSIMULATED"
+    },
+    {
+      "id": "E_R02_04",
+      "name": "月灯蛾",
+      "kind": "normal",
+      "region_id": "R02",
+      "area_id": "A_R02_03",
+      "encounter_gate": "G_R02_A",
+      "victory_gate": null,
+      "silhouette": "月形の大きな上翅。明るさを翼端に限定。",
+      "ecology": "月光花の花粉を運ぶ。高濃度の魔力で大型化した個体。",
+      "mechanic": "仲間へ一時的な魔力支援。",
+      "counterplay": [
+        "支援役を先に狙う方針",
+        "回復維持で支援切れを待つ"
+      ],
+      "material_id": "M_R02_E4",
+      "resolution": "舞い落ちた鱗粉を集める。",
+      "prep_gear_ids": [],
+      "numbers_status": "UNSIMULATED"
+    },
+    {
+      "id": "B_R02_A",
+      "name": "夢茸の歩き主",
+      "kind": "miniboss",
+      "region_id": "R02",
+      "area_id": "A_R02_02",
+      "encounter_gate": "G_R01_B",
+      "victory_gate": "G_R02_A",
+      "silhouette": "複数の傘を一つの胴体に重ねる。最大傘が目印。",
+      "ecology": "胞子溜まりを歩く老菌獣。",
+      "mechanic": "予告した胞子→眠気→短い休息。",
+      "counterplay": [
+        "解除と手厚い回復",
+        "休息まで持続で削り大技に集中"
+      ],
+      "material_id": "M_R02_BA",
+      "resolution": "同種の老菌獣の胞子袋を間引く。菌糸全体を焼き払わない。",
+      "prep_gear_ids": [
+        "EQ_W_G1",
+        "EQ_HAND_01"
+      ],
+      "numbers_status": "UNSIMULATED"
+    },
+    {
+      "id": "B_R02_B",
+      "name": "水鏡の大蜥蜴",
+      "kind": "boss",
+      "region_id": "R02",
+      "area_id": "A_R02_04",
+      "encounter_gate": "G_R02_A",
+      "victory_gate": "G_R02_B",
+      "silhouette": "花弁形の冠鱗。長い尾、背は水鏡。",
+      "ecology": "澄んだ水面を守る大蜥蜴。",
+      "mechanic": "反射姿勢→水弾→鱗が乾く隙。",
+      "counterplay": [
+        "結界を維持する持続戦",
+        "隙の大きな火力で短期化"
+      ],
+      "material_id": "M_R02_BB",
+      "resolution": "勝利時に古い冠鱗が脱落。再戦は同種の成体との調査。",
+      "prep_gear_ids": [
+        "EQ_W_P1",
+        "EQ_AMU_02"
+      ],
+      "numbers_status": "UNSIMULATED"
+    },
+    {
+      "id": "E_R03_01",
+      "name": "銅殻やどかり",
+      "kind": "normal",
+      "region_id": "R03",
+      "area_id": "A_R03_01",
+      "encounter_gate": "G_R02_B",
+      "victory_gate": null,
+      "silhouette": "青銅の廃材を殻にした四角い背。",
+      "ecology": "古い金属を体表へ取り込む洞窟生物。",
+      "mechanic": "正面だけ厚い殻で受ける。",
+      "counterplay": [
+        "柔らかい時を狙う火力",
+        "内側に残る呪毒を維持"
+      ],
+      "material_id": "M_R03_E1",
+      "resolution": "脱いだ金属殻を回収。",
+      "prep_gear_ids": [],
+      "numbers_status": "UNSIMULATED"
+    },
+    {
+      "id": "E_R03_02",
+      "name": "晶鳴こうもり",
+      "kind": "normal",
+      "region_id": "R03",
+      "area_id": "A_R03_01",
+      "encounter_gate": "G_R02_B",
+      "victory_gate": null,
+      "silhouette": "水晶の耳、膜の翼。霜の鳥と輪郭を分ける。",
+      "ecology": "晶洞の振動を聞いて飛ぶ。",
+      "mechanic": "鳴き声で詠唱のリズムを崩す。",
+      "counterplay": [
+        "手数を分散した連携",
+        "結界と回復で立て直す"
+      ],
+      "material_id": "M_R03_E2",
+      "resolution": "耳周りに析出した結晶片を採取。",
+      "prep_gear_ids": [],
+      "numbers_status": "UNSIMULATED"
+    },
+    {
+      "id": "E_R03_03",
+      "name": "坑道の削り偶",
+      "kind": "normal",
+      "region_id": "R03",
+      "area_id": "A_R03_03",
+      "encounter_gate": "G_R03_A",
+      "victory_gate": null,
+      "silhouette": "背の低い二腕の作業人形。丸い炉蓋の胸。",
+      "ecology": "廃坑に残った自動工具。誤認識で道を塞ぐ。",
+      "mechanic": "一人へ複数の小打撃。",
+      "counterplay": [
+        "ガードと反撃",
+        "回復支援で凌ぎ高火力を返す"
+      ],
+      "material_id": "M_R03_E3",
+      "resolution": "停止した交換部品を回収。",
+      "prep_gear_ids": [],
+      "numbers_status": "UNSIMULATED"
+    },
+    {
+      "id": "E_R03_04",
+      "name": "磁紋とかげ",
+      "kind": "normal",
+      "region_id": "R03",
+      "area_id": "A_R03_03",
+      "encounter_gate": "G_R03_A",
+      "victory_gate": null,
+      "silhouette": "黒い鱗に弧の模様。尾の鉱石は小さめ。",
+      "ecology": "魔力を帯びた鉱石に引かれる爬虫魔物。",
+      "mechanic": "狙いを一人へ寄せ、次の打撃を強める。",
+      "counterplay": [
+        "対象への結界を厚くする",
+        "強める前に行動を断つ"
+      ],
+      "material_id": "M_R03_E4",
+      "resolution": "欠け落ちた鱗を回収。",
+      "prep_gear_ids": [],
+      "numbers_status": "UNSIMULATED"
+    },
+    {
+      "id": "B_R03_A",
+      "name": "晶洞の連槌兵",
+      "kind": "miniboss",
+      "region_id": "R03",
+      "area_id": "A_R03_02",
+      "encounter_gate": "G_R02_B",
+      "victory_gate": "G_R03_A",
+      "silhouette": "三つの槌腕が周回する作業ゴーレム。",
+      "ecology": "古い橋の耐久を点検し続ける保守兵。",
+      "mechanic": "小さな多段→槌をまとめる一撃。",
+      "counterplay": [
+        "反撃と結界で多段を使う",
+        "回復を添えた呪毒・集中火力"
+      ],
+      "material_id": "M_R03_BA",
+      "resolution": "壊れた交換部品を返却報酬として回収。複数の同型保守兵が存在する。",
+      "prep_gear_ids": [
+        "EQ_W_P1",
+        "EQ_A_02"
+      ],
+      "numbers_status": "UNSIMULATED"
+    },
+    {
+      "id": "B_R03_B",
+      "name": "炉守りの鉱巨人",
+      "kind": "boss",
+      "region_id": "R03",
+      "area_id": "A_R03_04",
+      "encounter_gate": "G_R03_A",
+      "victory_gate": "G_R03_B",
+      "silhouette": "岩と炉蓋の巨体。赤い熱は腹の一箇所だけ。",
+      "ecology": "坑道の魔力炉を保守する番人。",
+      "mechanic": "放熱→蓄熱→重い範囲打撃。",
+      "counterplay": [
+        "弱まる放熱中の集中攻撃",
+        "結界・回復・持続を重ねる"
+      ],
+      "material_id": "M_R03_BB",
+      "resolution": "中枢を壊さず過熱を鎮め、余剰の析出晶を分けてもらう。",
+      "prep_gear_ids": [
+        "EQ_HAND_02",
+        "EQ_RING_02"
+      ],
+      "numbers_status": "UNSIMULATED"
+    },
+    {
+      "id": "E_R04_01",
+      "name": "霜毛おおかみ",
+      "kind": "normal",
+      "region_id": "R04",
+      "area_id": "A_R04_01",
+      "encounter_gate": "G_R03_B",
+      "victory_gate": null,
+      "silhouette": "細長い体に霜毛の襟。猫と同じ丸顔にしない。",
+      "ecology": "山道で群れを組む魔獣。",
+      "mechanic": "仲間に続いて同じ対象を追撃。",
+      "counterplay": [
+        "狙われた仲間の護り",
+        "追撃役を早く減らす"
+      ],
+      "material_id": "M_R04_E1",
+      "resolution": "落ちた霜毛を集める。",
+      "prep_gear_ids": [],
+      "numbers_status": "UNSIMULATED"
+    },
+    {
+      "id": "E_R04_02",
+      "name": "氷羽ふくろう",
+      "kind": "normal",
+      "region_id": "R04",
+      "area_id": "A_R04_01",
+      "encounter_gate": "G_R03_B",
+      "victory_gate": null,
+      "silhouette": "丸い胴、左右へ広い氷羽、細い耳。",
+      "ecology": "観測塔の近くに棲む鳥の魔物。",
+      "mechanic": "風で詠唱速度を一時的に下げる。",
+      "counterplay": [
+        "速度を補う連携",
+        "持続効果と護りで凌ぐ"
+      ],
+      "material_id": "M_R04_E2",
+      "resolution": "換羽や戦闘で落ちた羽根を回収。",
+      "prep_gear_ids": [],
+      "numbers_status": "UNSIMULATED"
+    },
+    {
+      "id": "E_R04_03",
+      "name": "雪甲ころがし",
+      "kind": "normal",
+      "region_id": "R04",
+      "area_id": "A_R04_03",
+      "encounter_gate": "G_R04_A",
+      "victory_gate": null,
+      "silhouette": "白い板状甲殻、朱色の小さな脚。",
+      "ecology": "雪面の魔力を食べる大型甲虫。",
+      "mechanic": "甲殻を固め、遅い一撃に備える。",
+      "counterplay": [
+        "溜め中へ継続ダメージ",
+        "一撃用に結界を用意"
+      ],
+      "material_id": "M_R04_E3",
+      "resolution": "剥がれた外殻を回収。",
+      "prep_gear_ids": [],
+      "numbers_status": "UNSIMULATED"
+    },
+    {
+      "id": "E_R04_04",
+      "name": "霜晶の削り偶",
+      "kind": "normal",
+      "region_id": "R04",
+      "area_id": "A_R04_03",
+      "encounter_gate": "G_R04_A",
+      "victory_gate": null,
+      "silhouette": "同系の坑道人形に長い除氷具。輪郭も変更。",
+      "ecology": "山道の観測設備を保守していた。",
+      "mechanic": "交互に小打撃と重打撃。",
+      "counterplay": [
+        "回復と反撃を使い分ける",
+        "溜めに集中して短期化"
+      ],
+      "material_id": "M_R04_E4",
+      "resolution": "交換可能な壊れた歯輪を回収。",
+      "prep_gear_ids": [],
+      "numbers_status": "UNSIMULATED"
+    },
+    {
+      "id": "B_R04_A",
+      "name": "稜線の白角獣",
+      "kind": "miniboss",
+      "region_id": "R04",
+      "area_id": "A_R04_02",
+      "encounter_gate": "G_R03_B",
+      "victory_gate": "G_R04_A",
+      "silhouette": "白い山羊型の大獣、一本の太い弧角。",
+      "ecology": "観測塔への尾根を縄張りにする。",
+      "mechanic": "風の予告→突進→崖際で長い隙。",
+      "counterplay": [
+        "予告を受け止める護り",
+        "手数を分散し隙へ集中"
+      ],
+      "material_id": "M_R04_BA",
+      "resolution": "同種上位個体の欠けた角片を回収。",
+      "prep_gear_ids": [
+        "EQ_S_02",
+        "EQ_BODY_02"
+      ],
+      "numbers_status": "UNSIMULATED"
+    },
+    {
+      "id": "B_R04_B",
+      "name": "月氷の山竜",
+      "kind": "boss",
+      "region_id": "R04",
+      "area_id": "A_R04_04",
+      "encounter_gate": "G_R04_A",
+      "victory_gate": "G_R04_B",
+      "silhouette": "長い首、半透明の氷翼、月形の額。人の数倍。",
+      "ecology": "月光を蓄える竜。道標の調律を試す。",
+      "mechanic": "冷気で手数低下→息を吸う→氷息。",
+      "counterplay": [
+        "結界と回復で氷息へ備える",
+        "氷息前に削る連携と瞬間火力"
+      ],
+      "material_id": "M_R04_BB",
+      "resolution": "殺して皮を剥がさず力比べ。古い外鱗を試練の報酬として受け取る。",
+      "prep_gear_ids": [
+        "EQ_BODY_03",
+        "EQ_FEET_03"
+      ],
+      "numbers_status": "UNSIMULATED"
+    },
+    {
+      "id": "E_R05_01",
+      "name": "蔓綴じの書霊",
+      "kind": "normal",
+      "region_id": "R05",
+      "area_id": "A_R05_01",
+      "encounter_gate": "G_R04_B",
+      "victory_gate": null,
+      "silhouette": "開いた本に蔓の脚、紙片は少なめ。",
+      "ecology": "古い採集帳を守る自律術式。",
+      "mechanic": "支援の効果時間を少し削る。",
+      "counterplay": [
+        "短い間隔で掛け直す",
+        "支援に頼らず持続火力"
+      ],
+      "material_id": "M_R05_E1",
+      "resolution": "古い綴じ蔓を交換して回収。",
+      "prep_gear_ids": [],
+      "numbers_status": "UNSIMULATED"
+    },
+    {
+      "id": "E_R05_02",
+      "name": "月面の庭衛",
+      "kind": "normal",
+      "region_id": "R05",
+      "area_id": "A_R05_01",
+      "encounter_gate": "G_R04_B",
+      "victory_gate": null,
+      "silhouette": "面は月の弧、細い体と幅広の足。",
+      "ecology": "庭の境界を見張る月銀の守衛。",
+      "mechanic": "護りと攻めの姿勢を交互に取る。",
+      "counterplay": [
+        "姿勢ごとに寄与が変わる混成",
+        "安定した護りと継続ダメージ"
+      ],
+      "material_id": "M_R05_E2",
+      "resolution": "止めた守衛の交換用外板を回収。",
+      "prep_gear_ids": [],
+      "numbers_status": "UNSIMULATED"
+    },
+    {
+      "id": "E_R05_03",
+      "name": "灯瓶の使い魔",
+      "kind": "normal",
+      "region_id": "R05",
+      "area_id": "A_R05_03",
+      "encounter_gate": "G_R05_A",
+      "victory_gate": null,
+      "silhouette": "空のランタンが浮かび短い影の腕を持つ。",
+      "ecology": "古庭に蓄えた魔力の輸送器。黒猫と同一種ではない。",
+      "mechanic": "魔力をためて隣の敵へ渡す。",
+      "counterplay": [
+        "輸送役の優先処理",
+        "護りを保ち充填切れを待つ"
+      ],
+      "material_id": "M_R05_E3",
+      "resolution": "空になった交換硝子を回収。",
+      "prep_gear_ids": [],
+      "numbers_status": "UNSIMULATED"
+    },
+    {
+      "id": "E_R05_04",
+      "name": "夜咲きの花獣",
+      "kind": "normal",
+      "region_id": "R05",
+      "area_id": "A_R05_03",
+      "encounter_gate": "G_R05_A",
+      "victory_gate": null,
+      "silhouette": "鹿でなく猫より大きい蔓の四足、花は背側。",
+      "ecology": "種床の余剰魔力で動く植物。",
+      "mechanic": "自身を少量再生しながら呪毒を重ねる。",
+      "counterplay": [
+        "再生を上回る集中火力",
+        "解除・回復を交えた持続戦"
+      ],
+      "material_id": "M_R05_E4",
+      "resolution": "花房から余剰蜜を採る。",
+      "prep_gear_ids": [],
+      "numbers_status": "UNSIMULATED"
+    },
+    {
+      "id": "B_R05_A",
+      "name": "月環の剪定機",
+      "kind": "miniboss",
+      "region_id": "R05",
+      "area_id": "A_R05_02",
+      "encounter_gate": "G_R04_B",
+      "victory_gate": "G_R05_A",
+      "silhouette": "丸い輪に二本の剪定腕、花壇の作業台が下半身。",
+      "ecology": "暴走でなく、訪問者を試す古庭の手入れ装置。",
+      "mechanic": "刈込みの連打→輪が開く隙→範囲予告。",
+      "counterplay": [
+        "反撃と回復を支える構成",
+        "輪の隙へ詠唱と呪毒を重ねる"
+      ],
+      "material_id": "M_R05_BA",
+      "resolution": "定期交換される輪の欠片を修復報酬として回収。",
+      "prep_gear_ids": [
+        "EQ_RING_03",
+        "EQ_W_P1"
+      ],
+      "numbers_status": "UNSIMULATED"
+    },
+    {
+      "id": "B_R05_B",
+      "name": "庭守りの月鹿",
+      "kind": "boss",
+      "region_id": "R05",
+      "area_id": "A_R05_04",
+      "encounter_gate": "G_R05_A",
+      "victory_gate": "G_R05_B",
+      "silhouette": "枝角に葉と月の弧。白金の鹿、目は穏やか。",
+      "ecology": "初代の魔女が残した庭の管理精霊。",
+      "mechanic": "芽吹きの持続圧→守りの姿勢→静かな大技。",
+      "counterplay": [
+        "持続圧を支援で受け、隙に強打",
+        "反撃と持続火力を組み合わせる"
+      ],
+      "material_id": "M_R05_BB",
+      "resolution": "初回は訪問の試験、以後は力比べ。種床で育てた種核が報酬。角や心臓は落とさない。",
+      "prep_gear_ids": [
+        "EQ_W_G2",
+        "EQ_A_03"
+      ],
+      "numbers_status": "UNSIMULATED"
+    }
+  ],
+  "materials": [
+    {
+      "id": "M_R01_G1",
+      "name": "しなり霊枝",
+      "region_id": "R01",
+      "category": "wood",
+      "function": "杖のしなり、触媒の柄、根を結ぶ骨格",
+      "visual": "曲がった枝先に乳白色の導管。生木を切らず落枝を選ぶ。",
+      "is_progression_key": false,
+      "first_available_gate": "G_START",
+      "discovery": "採取",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_W_01",
+        "RC_EQ_A_01",
+        "RC_EQ_S_01",
+        "RC_EQ_F_01",
+        "RC_EQ_FEET_01",
+        "RC_EQ_RING_01"
+      ]
+    },
+    {
+      "id": "M_R01_G2",
+      "name": "露灯草",
+      "region_id": "R01",
+      "category": "herb",
+      "function": "回復と魔力の緩衝",
+      "visual": "半透明の露を抱く丸い葉。黄色の粒はレア表示でなく葉の特徴。",
+      "is_progression_key": false,
+      "first_available_gate": "G_START",
+      "discovery": "採取",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_W_01",
+        "RC_EQ_A_01",
+        "RC_EQ_AMU_01"
+      ]
+    },
+    {
+      "id": "M_R01_G3",
+      "name": "琥珀樹脂",
+      "region_id": "R01",
+      "category": "binder",
+      "function": "布・木・鉱物の固定、軽い護り",
+      "visual": "蜂蜜色の涙形。内部に葉脈状の気泡。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R01_A",
+      "discovery": "採取",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_W_G1",
+        "RC_EQ_S_01",
+        "RC_EQ_BODY_01",
+        "RC_EQ_HAND_01",
+        "RC_EQ_FEET_01",
+        "RC_EQ_RING_01"
+      ]
+    },
+    {
+      "id": "M_R01_G4",
+      "name": "月白苔",
+      "region_id": "R01",
+      "category": "fiber",
+      "function": "触媒の安定、穏やかな循環",
+      "visual": "銀白の短い繊維。根元は緑で発光は弱い。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R01_A",
+      "discovery": "採取",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_BODY_01",
+        "RC_EQ_AMU_01"
+      ]
+    },
+    {
+      "id": "M_R02_G1",
+      "name": "葦綿",
+      "region_id": "R02",
+      "category": "fiber",
+      "function": "外套・書頁の保湿と断熱",
+      "visual": "葦の房に薄い青み。柔らかな繊維束。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R01_B",
+      "discovery": "採取",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_A_02",
+        "RC_EQ_BODY_02"
+      ]
+    },
+    {
+      "id": "M_R02_G2",
+      "name": "月光花",
+      "region_id": "R02",
+      "category": "herb",
+      "function": "支援術式・呪毒の制御",
+      "visual": "六弁の乳白花、紫の根元。透けるが白飛びしない。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R01_B",
+      "discovery": "採取",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_AMU_02"
+      ]
+    },
+    {
+      "id": "M_R02_G3",
+      "name": "澄み雫",
+      "region_id": "R02",
+      "category": "fluid",
+      "function": "解毒・反応の洗浄と安定",
+      "visual": "丸底瓶の淡青の一滴。毒液と別シルエット。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R02_A",
+      "discovery": "採取",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_BODY_02"
+      ]
+    },
+    {
+      "id": "M_R02_G4",
+      "name": "霧結晶",
+      "region_id": "R02",
+      "category": "mineral",
+      "function": "毒の持続・結界の層",
+      "visual": "曇りを封じた短い六角柱。水晶系とは不透明度で区別。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R02_A",
+      "discovery": "採取",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_W_P1",
+        "RC_EQ_F_02",
+        "RC_EQ_AMU_02"
+      ]
+    },
+    {
+      "id": "M_R03_G1",
+      "name": "響晶石",
+      "region_id": "R03",
+      "category": "mineral",
+      "function": "詠唱の共鳴・連携・打撃の伝達",
+      "visual": "青紫の柱状晶、断面に同心の鳴り模様。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R02_B",
+      "discovery": "採取",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_S_02",
+        "RC_EQ_RING_02"
+      ]
+    },
+    {
+      "id": "M_R03_G2",
+      "name": "灰銀鉱",
+      "region_id": "R03",
+      "category": "ore",
+      "function": "武具の骨格・導魔金属",
+      "visual": "灰色の母岩に薄い銀線。金塊に見せない。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R02_B",
+      "discovery": "採取",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_S_02",
+        "RC_EQ_FEET_02",
+        "RC_EQ_RING_02"
+      ]
+    },
+    {
+      "id": "M_R03_G3",
+      "name": "耐熱粘土",
+      "region_id": "R03",
+      "category": "binder",
+      "function": "炉や武具の耐熱、熱制御",
+      "visual": "赤褐色の小さな土塊、乾燥した割れ目。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R03_A",
+      "discovery": "採取",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_S_02"
+      ]
+    },
+    {
+      "id": "M_R03_G4",
+      "name": "透光雲母",
+      "region_id": "R03",
+      "category": "mineral",
+      "function": "結界の層、重い金属の電気的絶縁ではなく魔力絶縁",
+      "visual": "扇形の薄片、角度で淡い青と金。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R03_A",
+      "discovery": "採取",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_HAND_02",
+        "RC_EQ_FEET_02"
+      ]
+    },
+    {
+      "id": "M_R04_G1",
+      "name": "雪灯草",
+      "region_id": "R04",
+      "category": "herb",
+      "function": "冷気下の魔力循環・結界維持",
+      "visual": "深赤の芯を持つ白い草。雪面から一株だけ見せる。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R03_B",
+      "discovery": "採取",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_RING_03"
+      ]
+    },
+    {
+      "id": "M_R04_G2",
+      "name": "凍結晶",
+      "region_id": "R04",
+      "category": "mineral",
+      "function": "術式の時間保持・冷却",
+      "visual": "針を束ねた氷青の結晶。霧結晶と形を変える。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R03_B",
+      "discovery": "採取",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_RING_03"
+      ]
+    },
+    {
+      "id": "M_R04_G3",
+      "name": "風編み麻",
+      "region_id": "R04",
+      "category": "fiber",
+      "function": "靴・衣の軽量化、連携の速さ",
+      "visual": "銀灰の長い麻繊維が一方向に流れる。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R04_A",
+      "discovery": "採取",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_BODY_03",
+        "RC_EQ_FEET_03"
+      ]
+    },
+    {
+      "id": "M_R04_G4",
+      "name": "白陶石",
+      "region_id": "R04",
+      "category": "stone",
+      "function": "成長装飾・熱と冷気の緩衝",
+      "visual": "乳白の丸い欠片に淡青の筋。白い陶器状の岩。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R04_A",
+      "discovery": "採取",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_S_03",
+        "RC_EQ_FEET_03"
+      ]
+    },
+    {
+      "id": "M_R05_G1",
+      "name": "古庭霊枝",
+      "region_id": "R05",
+      "category": "wood",
+      "function": "高位の木製触媒、長期魔力保持",
+      "visual": "金茶色の節と白い芽。若い霊枝と同じ導管模様。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R04_B",
+      "discovery": "採取",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_W_P2"
+      ]
+    },
+    {
+      "id": "M_R05_G2",
+      "name": "月白糸",
+      "region_id": "R05",
+      "category": "fiber",
+      "function": "書綴じ・外套・結界線",
+      "visual": "月白苔の繊維を長く育てた乳白の糸。小瓶でなく糸巻き。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R04_B",
+      "discovery": "採取",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_A_03",
+        "RC_EQ_HAND_03"
+      ]
+    },
+    {
+      "id": "M_R05_G3",
+      "name": "眠り種",
+      "region_id": "R05",
+      "category": "seed",
+      "function": "研究の核・夜間ではなく休息時の魔力調律",
+      "visual": "閉じた三日月形の種皮、淡い薔薇の芯。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R05_A",
+      "discovery": "採取",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_AMU_03"
+      ]
+    },
+    {
+      "id": "M_R05_G4",
+      "name": "月露晶",
+      "region_id": "R05",
+      "category": "mineral",
+      "function": "高位の術式切替、支援の余韻",
+      "visual": "露形の透明結晶に月の弧。氷晶や水晶とは成長形が異なる。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R05_A",
+      "discovery": "採取",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_A_03",
+        "RC_EQ_AMU_03"
+      ]
+    },
+    {
+      "id": "M_R01_E1",
+      "name": "苔角片",
+      "region_id": "R01",
+      "category": "horn",
+      "function": "打撃・防御・丈夫な触媒",
+      "visual": "折り口が乳白、外側が苔色の湾曲片。",
+      "is_progression_key": false,
+      "first_available_gate": "G_START",
+      "discovery": "通常魔物",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_FEET_01"
+      ]
+    },
+    {
+      "id": "M_R01_E2",
+      "name": "灯糸",
+      "region_id": "R01",
+      "category": "fiber",
+      "function": "衣類・手袋・詠唱の保持",
+      "visual": "光る結び目のある乳白の糸玉。",
+      "is_progression_key": false,
+      "first_available_gate": "G_START",
+      "discovery": "通常魔物",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_A_01",
+        "RC_EQ_F_01",
+        "RC_EQ_BODY_01",
+        "RC_EQ_HAND_01",
+        "RC_EQ_AMU_01"
+      ]
+    },
+    {
+      "id": "M_R01_E3",
+      "name": "葉刃殻",
+      "region_id": "R01",
+      "category": "shell",
+      "function": "軽量刃・触媒の狙い・機動性",
+      "visual": "葉脈のある緑の鎌形殻。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R01_A",
+      "discovery": "通常魔物",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_HAND_01",
+        "RC_EQ_RING_01"
+      ]
+    },
+    {
+      "id": "M_R01_E4",
+      "name": "琥珀の甲片",
+      "region_id": "R01",
+      "category": "shell",
+      "function": "防具の層・護りの持続",
+      "visual": "樹脂とは別の薄く湾曲した板。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R01_A",
+      "discovery": "通常魔物",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_S_01"
+      ]
+    },
+    {
+      "id": "M_R01_BA",
+      "name": "根絡みの牙",
+      "region_id": "R01",
+      "category": "horn",
+      "function": "守り・制動・杖の骨格",
+      "visual": "太い牙に根の年輪。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R01_A",
+      "discovery": "ボス",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_W_G1"
+      ]
+    },
+    {
+      "id": "M_R01_BB",
+      "name": "苔冠の生木核",
+      "region_id": "R01",
+      "category": "core",
+      "function": "木製触媒・持続する護り",
+      "visual": "小さな枝節に白い導管と芽。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R01_B",
+      "discovery": "ボス",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_W_G1"
+      ]
+    },
+    {
+      "id": "M_R02_E1",
+      "name": "眠り胞子",
+      "region_id": "R02",
+      "category": "spore",
+      "function": "呪毒の持続・相手の手数調整",
+      "visual": "紫の粉を密封した丸瓶。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R01_B",
+      "discovery": "通常魔物",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_W_P1",
+        "RC_EQ_F_02"
+      ]
+    },
+    {
+      "id": "M_R02_E2",
+      "name": "湿霧鱗",
+      "region_id": "R02",
+      "category": "scale",
+      "function": "外套・水性の魔力保持",
+      "visual": "水滴を抱く青緑の三角鱗。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R01_B",
+      "discovery": "通常魔物",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_BODY_02"
+      ]
+    },
+    {
+      "id": "M_R02_E3",
+      "name": "水鏡膜",
+      "region_id": "R02",
+      "category": "membrane",
+      "function": "薄い結界・水面反射を応用した支援",
+      "visual": "畳まれた透明な膜、青い一筋。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R02_A",
+      "discovery": "通常魔物",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_A_02",
+        "RC_EQ_AMU_02"
+      ]
+    },
+    {
+      "id": "M_R02_E4",
+      "name": "月燐粉",
+      "region_id": "R02",
+      "category": "powder",
+      "function": "支援魔法・連鎖の伝達",
+      "visual": "金ではなく月白の鱗粉。三日月瓶。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R02_A",
+      "discovery": "通常魔物",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_F_02"
+      ]
+    },
+    {
+      "id": "M_R02_BA",
+      "name": "夢茸の菌核",
+      "region_id": "R02",
+      "category": "core",
+      "function": "呪毒を暴走させず保持する核",
+      "visual": "密閉する薄紫の硬い菌核。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R02_A",
+      "discovery": "ボス",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_W_P1"
+      ]
+    },
+    {
+      "id": "M_R02_BB",
+      "name": "水鏡の冠鱗",
+      "region_id": "R02",
+      "category": "scale",
+      "function": "薄い結界・攻撃を受ける支援",
+      "visual": "鏡面の一枚の冠鱗。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R02_B",
+      "discovery": "ボス",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_A_02"
+      ]
+    },
+    {
+      "id": "M_R03_E1",
+      "name": "銅殻片",
+      "region_id": "R03",
+      "category": "metal",
+      "function": "工具・武具の金属結合",
+      "visual": "薄い銅板に自然の節。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R02_B",
+      "discovery": "通常魔物",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_HAND_02"
+      ]
+    },
+    {
+      "id": "M_R03_E2",
+      "name": "鳴晶片",
+      "region_id": "R03",
+      "category": "mineral",
+      "function": "連携・詠唱・音による魔力制御",
+      "visual": "音叉のように割れた細晶。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R02_B",
+      "discovery": "通常魔物",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_RING_02"
+      ]
+    },
+    {
+      "id": "M_R03_E3",
+      "name": "古合金の歯",
+      "region_id": "R03",
+      "category": "metal",
+      "function": "鍛造・装備の関節・固定具",
+      "visual": "蔓月紋入りの短い歯片。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R03_A",
+      "discovery": "通常魔物",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_HAND_02"
+      ]
+    },
+    {
+      "id": "M_R03_E4",
+      "name": "磁紋鱗",
+      "region_id": "R03",
+      "category": "scale",
+      "function": "狙いの制御・足場と構えの安定",
+      "visual": "灰黒の鱗に青い弧。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R03_A",
+      "discovery": "通常魔物",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_FEET_02"
+      ]
+    },
+    {
+      "id": "M_R03_BA",
+      "name": "連槌の駆動環",
+      "region_id": "R03",
+      "category": "mechanism",
+      "function": "反撃・連撃の拍子と支持",
+      "visual": "歯ではなく円い駆動環に三つの刻み。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R03_A",
+      "discovery": "ボス",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_HAND_02"
+      ]
+    },
+    {
+      "id": "M_R03_BB",
+      "name": "炉心晶",
+      "region_id": "R03",
+      "category": "core",
+      "function": "鍛造の熱制御・長く働く武具",
+      "visual": "多面体の橙晶、金属の枠はドロップに含めない。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R03_B",
+      "discovery": "ボス",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_S_02"
+      ]
+    },
+    {
+      "id": "M_R04_E1",
+      "name": "霜毛束",
+      "region_id": "R04",
+      "category": "fur",
+      "function": "防寒・外套・魔力の保温",
+      "visual": "青灰の長毛の束。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R03_B",
+      "discovery": "通常魔物",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_BODY_03"
+      ]
+    },
+    {
+      "id": "M_R04_E2",
+      "name": "氷羽根",
+      "region_id": "R04",
+      "category": "feather",
+      "function": "連携・軽さ・氷の結界",
+      "visual": "透明な縁と白い羽軸。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R03_B",
+      "discovery": "通常魔物",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_F_03"
+      ]
+    },
+    {
+      "id": "M_R04_E3",
+      "name": "雪甲殻",
+      "region_id": "R04",
+      "category": "shell",
+      "function": "結界と防具の冷気耐久",
+      "visual": "白い六角板と濃い縁。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R04_A",
+      "discovery": "通常魔物",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_BODY_03"
+      ]
+    },
+    {
+      "id": "M_R04_E4",
+      "name": "霜晶歯輪",
+      "region_id": "R04",
+      "category": "mechanism",
+      "function": "遅延・連携のタイミング保持",
+      "visual": "青白い歯輪、灰銀の軸。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R04_A",
+      "discovery": "通常魔物",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_HAND_03",
+        "RC_EQ_RING_03"
+      ]
+    },
+    {
+      "id": "M_R04_BA",
+      "name": "白角片",
+      "region_id": "R04",
+      "category": "horn",
+      "function": "姿勢維持・結界の骨格",
+      "visual": "鈍い白の曲線角、根元は灰。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R04_A",
+      "discovery": "ボス",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_FEET_03"
+      ]
+    },
+    {
+      "id": "M_R04_BB",
+      "name": "月氷の竜鱗",
+      "region_id": "R04",
+      "category": "scale",
+      "function": "多層結界・高位支援",
+      "visual": "長い氷青の鱗に月の筋。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R04_B",
+      "discovery": "ボス",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_W_G2"
+      ]
+    },
+    {
+      "id": "M_R05_E1",
+      "name": "綴じ蔓",
+      "region_id": "R05",
+      "category": "fiber",
+      "function": "魔導書・成長ノートの綴じ、術式の保持",
+      "visual": "蔓の糸と小さな葉。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R04_B",
+      "discovery": "通常魔物",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_A_03"
+      ]
+    },
+    {
+      "id": "M_R05_E2",
+      "name": "月銀片",
+      "region_id": "R05",
+      "category": "metal",
+      "function": "高位鍛造・装備の接続",
+      "visual": "乳白の薄板に弧の打刻。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R04_B",
+      "discovery": "通常魔物",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_S_03",
+        "RC_EQ_HAND_03"
+      ]
+    },
+    {
+      "id": "M_R05_E3",
+      "name": "封灯硝子",
+      "region_id": "R05",
+      "category": "glass",
+      "function": "魔法を入れる瓶・護符の器",
+      "visual": "小さな弧を刻んだ厚い硝子片。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R05_A",
+      "discovery": "通常魔物",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_W_G2",
+        "RC_EQ_F_03"
+      ]
+    },
+    {
+      "id": "M_R05_E4",
+      "name": "夜花蜜",
+      "region_id": "R05",
+      "category": "fluid",
+      "function": "高位錬金・術式の余韻",
+      "visual": "深い薔薇色の蜜。毒胞子と瓶形を変える。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R05_A",
+      "discovery": "通常魔物",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_W_P2",
+        "RC_EQ_F_03"
+      ]
+    },
+    {
+      "id": "M_R05_BA",
+      "name": "剪定輪の欠片",
+      "region_id": "R05",
+      "category": "mechanism",
+      "function": "術式の切替・輪状触媒",
+      "visual": "金と月銀の半円部品。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R05_A",
+      "discovery": "ボス",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_W_P2",
+        "RC_EQ_W_G2",
+        "RC_EQ_S_03"
+      ]
+    },
+    {
+      "id": "M_R05_BB",
+      "name": "月庭の種核",
+      "region_id": "R05",
+      "category": "seed_core",
+      "function": "到達後の研究・固有能力の完成",
+      "visual": "鹿の器官でなく、金の殻と緑の芽を持つ大きな種。",
+      "is_progression_key": false,
+      "first_available_gate": "G_R05_B",
+      "discovery": "ボス",
+      "description_status": "PROPOSED_FOR_REVIEW",
+      "recipe_ids": [
+        "RC_EQ_AMU_03"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S_R01_G1",
+      "source_type": "gather",
+      "region_id": "R01",
+      "area_id": "A_R01_01",
+      "enemy_id": null,
+      "material_id": "M_R01_G1",
+      "available_gate": "G_START",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。"
+    },
+    {
+      "id": "S_R01_G2",
+      "source_type": "gather",
+      "region_id": "R01",
+      "area_id": "A_R01_01",
+      "enemy_id": null,
+      "material_id": "M_R01_G2",
+      "available_gate": "G_START",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。"
+    },
+    {
+      "id": "S_R01_G3",
+      "source_type": "gather",
+      "region_id": "R01",
+      "area_id": "A_R01_03",
+      "enemy_id": null,
+      "material_id": "M_R01_G3",
+      "available_gate": "G_R01_A",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。"
+    },
+    {
+      "id": "S_R01_G4",
+      "source_type": "gather",
+      "region_id": "R01",
+      "area_id": "A_R01_03",
+      "enemy_id": null,
+      "material_id": "M_R01_G4",
+      "available_gate": "G_R01_A",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。"
+    },
+    {
+      "id": "S_R02_G1",
+      "source_type": "gather",
+      "region_id": "R02",
+      "area_id": "A_R02_01",
+      "enemy_id": null,
+      "material_id": "M_R02_G1",
+      "available_gate": "G_R01_B",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。"
+    },
+    {
+      "id": "S_R02_G2",
+      "source_type": "gather",
+      "region_id": "R02",
+      "area_id": "A_R02_01",
+      "enemy_id": null,
+      "material_id": "M_R02_G2",
+      "available_gate": "G_R01_B",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。"
+    },
+    {
+      "id": "S_R02_G3",
+      "source_type": "gather",
+      "region_id": "R02",
+      "area_id": "A_R02_03",
+      "enemy_id": null,
+      "material_id": "M_R02_G3",
+      "available_gate": "G_R02_A",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。"
+    },
+    {
+      "id": "S_R02_G4",
+      "source_type": "gather",
+      "region_id": "R02",
+      "area_id": "A_R02_03",
+      "enemy_id": null,
+      "material_id": "M_R02_G4",
+      "available_gate": "G_R02_A",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。"
+    },
+    {
+      "id": "S_R03_G1",
+      "source_type": "gather",
+      "region_id": "R03",
+      "area_id": "A_R03_01",
+      "enemy_id": null,
+      "material_id": "M_R03_G1",
+      "available_gate": "G_R02_B",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。"
+    },
+    {
+      "id": "S_R03_G2",
+      "source_type": "gather",
+      "region_id": "R03",
+      "area_id": "A_R03_01",
+      "enemy_id": null,
+      "material_id": "M_R03_G2",
+      "available_gate": "G_R02_B",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。"
+    },
+    {
+      "id": "S_R03_G3",
+      "source_type": "gather",
+      "region_id": "R03",
+      "area_id": "A_R03_03",
+      "enemy_id": null,
+      "material_id": "M_R03_G3",
+      "available_gate": "G_R03_A",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。"
+    },
+    {
+      "id": "S_R03_G4",
+      "source_type": "gather",
+      "region_id": "R03",
+      "area_id": "A_R03_03",
+      "enemy_id": null,
+      "material_id": "M_R03_G4",
+      "available_gate": "G_R03_A",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。"
+    },
+    {
+      "id": "S_R04_G1",
+      "source_type": "gather",
+      "region_id": "R04",
+      "area_id": "A_R04_01",
+      "enemy_id": null,
+      "material_id": "M_R04_G1",
+      "available_gate": "G_R03_B",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。"
+    },
+    {
+      "id": "S_R04_G2",
+      "source_type": "gather",
+      "region_id": "R04",
+      "area_id": "A_R04_01",
+      "enemy_id": null,
+      "material_id": "M_R04_G2",
+      "available_gate": "G_R03_B",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。"
+    },
+    {
+      "id": "S_R04_G3",
+      "source_type": "gather",
+      "region_id": "R04",
+      "area_id": "A_R04_03",
+      "enemy_id": null,
+      "material_id": "M_R04_G3",
+      "available_gate": "G_R04_A",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。"
+    },
+    {
+      "id": "S_R04_G4",
+      "source_type": "gather",
+      "region_id": "R04",
+      "area_id": "A_R04_03",
+      "enemy_id": null,
+      "material_id": "M_R04_G4",
+      "available_gate": "G_R04_A",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。"
+    },
+    {
+      "id": "S_R05_G1",
+      "source_type": "gather",
+      "region_id": "R05",
+      "area_id": "A_R05_01",
+      "enemy_id": null,
+      "material_id": "M_R05_G1",
+      "available_gate": "G_R04_B",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。"
+    },
+    {
+      "id": "S_R05_G2",
+      "source_type": "gather",
+      "region_id": "R05",
+      "area_id": "A_R05_01",
+      "enemy_id": null,
+      "material_id": "M_R05_G2",
+      "available_gate": "G_R04_B",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。"
+    },
+    {
+      "id": "S_R05_G3",
+      "source_type": "gather",
+      "region_id": "R05",
+      "area_id": "A_R05_03",
+      "enemy_id": null,
+      "material_id": "M_R05_G3",
+      "available_gate": "G_R05_A",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。"
+    },
+    {
+      "id": "S_R05_G4",
+      "source_type": "gather",
+      "region_id": "R05",
+      "area_id": "A_R05_03",
+      "enemy_id": null,
+      "material_id": "M_R05_G4",
+      "available_gate": "G_R05_A",
+      "guarantee": "対象を指定した採取作業の完了で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "採取作業時間を精算。画面タップ回数では増えない。"
+    },
+    {
+      "id": "S_R01_E1",
+      "source_type": "normal_enemy",
+      "region_id": "R01",
+      "area_id": "A_R01_01",
+      "enemy_id": "E_R01_01",
+      "material_id": "M_R01_E1",
+      "available_gate": "G_START",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。"
+    },
+    {
+      "id": "S_R01_E2",
+      "source_type": "normal_enemy",
+      "region_id": "R01",
+      "area_id": "A_R01_01",
+      "enemy_id": "E_R01_02",
+      "material_id": "M_R01_E2",
+      "available_gate": "G_START",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。"
+    },
+    {
+      "id": "S_R01_E3",
+      "source_type": "normal_enemy",
+      "region_id": "R01",
+      "area_id": "A_R01_03",
+      "enemy_id": "E_R01_03",
+      "material_id": "M_R01_E3",
+      "available_gate": "G_R01_A",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。"
+    },
+    {
+      "id": "S_R01_E4",
+      "source_type": "normal_enemy",
+      "region_id": "R01",
+      "area_id": "A_R01_03",
+      "enemy_id": "E_R01_04",
+      "material_id": "M_R01_E4",
+      "available_gate": "G_R01_A",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。"
+    },
+    {
+      "id": "S_R01_BA",
+      "source_type": "boss",
+      "region_id": "R01",
+      "area_id": "A_R01_02",
+      "enemy_id": "B_R01_A",
+      "material_id": "M_R01_BA",
+      "available_gate": "G_R01_A",
+      "guarantee": "初回勝利で1個以上を確定。以後は撃破済みボスの調査周回で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "再戦ボタンの即結果は報酬なし。報酬付き周回は探索時間枠を共有。"
+    },
+    {
+      "id": "S_R01_BB",
+      "source_type": "boss",
+      "region_id": "R01",
+      "area_id": "A_R01_04",
+      "enemy_id": "B_R01_B",
+      "material_id": "M_R01_BB",
+      "available_gate": "G_R01_B",
+      "guarantee": "初回勝利で1個以上を確定。以後は撃破済みボスの調査周回で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "再戦ボタンの即結果は報酬なし。報酬付き周回は探索時間枠を共有。"
+    },
+    {
+      "id": "S_R02_E1",
+      "source_type": "normal_enemy",
+      "region_id": "R02",
+      "area_id": "A_R02_01",
+      "enemy_id": "E_R02_01",
+      "material_id": "M_R02_E1",
+      "available_gate": "G_R01_B",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。"
+    },
+    {
+      "id": "S_R02_E2",
+      "source_type": "normal_enemy",
+      "region_id": "R02",
+      "area_id": "A_R02_01",
+      "enemy_id": "E_R02_02",
+      "material_id": "M_R02_E2",
+      "available_gate": "G_R01_B",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。"
+    },
+    {
+      "id": "S_R02_E3",
+      "source_type": "normal_enemy",
+      "region_id": "R02",
+      "area_id": "A_R02_03",
+      "enemy_id": "E_R02_03",
+      "material_id": "M_R02_E3",
+      "available_gate": "G_R02_A",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。"
+    },
+    {
+      "id": "S_R02_E4",
+      "source_type": "normal_enemy",
+      "region_id": "R02",
+      "area_id": "A_R02_03",
+      "enemy_id": "E_R02_04",
+      "material_id": "M_R02_E4",
+      "available_gate": "G_R02_A",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。"
+    },
+    {
+      "id": "S_R02_BA",
+      "source_type": "boss",
+      "region_id": "R02",
+      "area_id": "A_R02_02",
+      "enemy_id": "B_R02_A",
+      "material_id": "M_R02_BA",
+      "available_gate": "G_R02_A",
+      "guarantee": "初回勝利で1個以上を確定。以後は撃破済みボスの調査周回で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "再戦ボタンの即結果は報酬なし。報酬付き周回は探索時間枠を共有。"
+    },
+    {
+      "id": "S_R02_BB",
+      "source_type": "boss",
+      "region_id": "R02",
+      "area_id": "A_R02_04",
+      "enemy_id": "B_R02_B",
+      "material_id": "M_R02_BB",
+      "available_gate": "G_R02_B",
+      "guarantee": "初回勝利で1個以上を確定。以後は撃破済みボスの調査周回で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "再戦ボタンの即結果は報酬なし。報酬付き周回は探索時間枠を共有。"
+    },
+    {
+      "id": "S_R03_E1",
+      "source_type": "normal_enemy",
+      "region_id": "R03",
+      "area_id": "A_R03_01",
+      "enemy_id": "E_R03_01",
+      "material_id": "M_R03_E1",
+      "available_gate": "G_R02_B",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。"
+    },
+    {
+      "id": "S_R03_E2",
+      "source_type": "normal_enemy",
+      "region_id": "R03",
+      "area_id": "A_R03_01",
+      "enemy_id": "E_R03_02",
+      "material_id": "M_R03_E2",
+      "available_gate": "G_R02_B",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。"
+    },
+    {
+      "id": "S_R03_E3",
+      "source_type": "normal_enemy",
+      "region_id": "R03",
+      "area_id": "A_R03_03",
+      "enemy_id": "E_R03_03",
+      "material_id": "M_R03_E3",
+      "available_gate": "G_R03_A",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。"
+    },
+    {
+      "id": "S_R03_E4",
+      "source_type": "normal_enemy",
+      "region_id": "R03",
+      "area_id": "A_R03_03",
+      "enemy_id": "E_R03_04",
+      "material_id": "M_R03_E4",
+      "available_gate": "G_R03_A",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。"
+    },
+    {
+      "id": "S_R03_BA",
+      "source_type": "boss",
+      "region_id": "R03",
+      "area_id": "A_R03_02",
+      "enemy_id": "B_R03_A",
+      "material_id": "M_R03_BA",
+      "available_gate": "G_R03_A",
+      "guarantee": "初回勝利で1個以上を確定。以後は撃破済みボスの調査周回で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "再戦ボタンの即結果は報酬なし。報酬付き周回は探索時間枠を共有。"
+    },
+    {
+      "id": "S_R03_BB",
+      "source_type": "boss",
+      "region_id": "R03",
+      "area_id": "A_R03_04",
+      "enemy_id": "B_R03_B",
+      "material_id": "M_R03_BB",
+      "available_gate": "G_R03_B",
+      "guarantee": "初回勝利で1個以上を確定。以後は撃破済みボスの調査周回で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "再戦ボタンの即結果は報酬なし。報酬付き周回は探索時間枠を共有。"
+    },
+    {
+      "id": "S_R04_E1",
+      "source_type": "normal_enemy",
+      "region_id": "R04",
+      "area_id": "A_R04_01",
+      "enemy_id": "E_R04_01",
+      "material_id": "M_R04_E1",
+      "available_gate": "G_R03_B",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。"
+    },
+    {
+      "id": "S_R04_E2",
+      "source_type": "normal_enemy",
+      "region_id": "R04",
+      "area_id": "A_R04_01",
+      "enemy_id": "E_R04_02",
+      "material_id": "M_R04_E2",
+      "available_gate": "G_R03_B",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。"
+    },
+    {
+      "id": "S_R04_E3",
+      "source_type": "normal_enemy",
+      "region_id": "R04",
+      "area_id": "A_R04_03",
+      "enemy_id": "E_R04_03",
+      "material_id": "M_R04_E3",
+      "available_gate": "G_R04_A",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。"
+    },
+    {
+      "id": "S_R04_E4",
+      "source_type": "normal_enemy",
+      "region_id": "R04",
+      "area_id": "A_R04_03",
+      "enemy_id": "E_R04_04",
+      "material_id": "M_R04_E4",
+      "available_gate": "G_R04_A",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。"
+    },
+    {
+      "id": "S_R04_BA",
+      "source_type": "boss",
+      "region_id": "R04",
+      "area_id": "A_R04_02",
+      "enemy_id": "B_R04_A",
+      "material_id": "M_R04_BA",
+      "available_gate": "G_R04_A",
+      "guarantee": "初回勝利で1個以上を確定。以後は撃破済みボスの調査周回で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "再戦ボタンの即結果は報酬なし。報酬付き周回は探索時間枠を共有。"
+    },
+    {
+      "id": "S_R04_BB",
+      "source_type": "boss",
+      "region_id": "R04",
+      "area_id": "A_R04_04",
+      "enemy_id": "B_R04_B",
+      "material_id": "M_R04_BB",
+      "available_gate": "G_R04_B",
+      "guarantee": "初回勝利で1個以上を確定。以後は撃破済みボスの調査周回で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "再戦ボタンの即結果は報酬なし。報酬付き周回は探索時間枠を共有。"
+    },
+    {
+      "id": "S_R05_E1",
+      "source_type": "normal_enemy",
+      "region_id": "R05",
+      "area_id": "A_R05_01",
+      "enemy_id": "E_R05_01",
+      "material_id": "M_R05_E1",
+      "available_gate": "G_R04_B",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。"
+    },
+    {
+      "id": "S_R05_E2",
+      "source_type": "normal_enemy",
+      "region_id": "R05",
+      "area_id": "A_R05_01",
+      "enemy_id": "E_R05_02",
+      "material_id": "M_R05_E2",
+      "available_gate": "G_R04_B",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。"
+    },
+    {
+      "id": "S_R05_E3",
+      "source_type": "normal_enemy",
+      "region_id": "R05",
+      "area_id": "A_R05_03",
+      "enemy_id": "E_R05_03",
+      "material_id": "M_R05_E3",
+      "available_gate": "G_R05_A",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。"
+    },
+    {
+      "id": "S_R05_E4",
+      "source_type": "normal_enemy",
+      "region_id": "R05",
+      "area_id": "A_R05_03",
+      "enemy_id": "E_R05_04",
+      "material_id": "M_R05_E4",
+      "available_gate": "G_R05_A",
+      "guarantee": "対象を指定した調査討伐作業の成功で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "同じ個体を即復活させて無限入手ではなく、作業時間で精算。"
+    },
+    {
+      "id": "S_R05_BA",
+      "source_type": "boss",
+      "region_id": "R05",
+      "area_id": "A_R05_02",
+      "enemy_id": "B_R05_A",
+      "material_id": "M_R05_BA",
+      "available_gate": "G_R05_A",
+      "guarantee": "初回勝利で1個以上を確定。以後は撃破済みボスの調査周回で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "再戦ボタンの即結果は報酬なし。報酬付き周回は探索時間枠を共有。"
+    },
+    {
+      "id": "S_R05_BB",
+      "source_type": "boss",
+      "region_id": "R05",
+      "area_id": "A_R05_04",
+      "enemy_id": "B_R05_B",
+      "material_id": "M_R05_BB",
+      "available_gate": "G_R05_B",
+      "guarantee": "初回勝利で1個以上を確定。以後は撃破済みボスの調査周回で基礎分を保証",
+      "min_per_success": 1,
+      "quantity": null,
+      "probability": null,
+      "numeric_status": "TUNE_PENDING",
+      "repetition": "再戦ボタンの即結果は報酬なし。報酬付き周回は探索時間枠を共有。"
+    }
+  ],
+  "gear": [
+    {
+      "id": "EQ_W_01",
+      "name": "若枝の採集杖",
+      "actor_ids": [
+        "C_WITCH"
+      ],
+      "slot": "weapon",
+      "unlock_gate": "G_START",
+      "parent_template_id": null,
+      "function_hypothesis": "基礎魔力・安定",
+      "visual_contract": "しなり霊枝の節を小さな真鍮色の既存金具で留めた杖。初期既製の金具は素材通貨化しない。",
+      "acquisition": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。",
+      "rarity": null,
+      "stats": null,
+      "status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "EQ_W_P1",
+      "name": "霧花の毒杖",
+      "actor_ids": [
+        "C_WITCH"
+      ],
+      "slot": "weapon",
+      "unlock_gate": "G_R02_A",
+      "parent_template_id": "EQ_W_01",
+      "function_hypothesis": "毒を保持して蓄積",
+      "visual_contract": "共通の柄を残し、密閉菌核と半透明の霧室を追加。花房は小さく、顔を隠さない。",
+      "acquisition": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。",
+      "rarity": null,
+      "stats": null,
+      "status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "EQ_W_P2",
+      "name": "夢庭の呪杖",
+      "actor_ids": [
+        "C_WITCH"
+      ],
+      "slot": "weapon",
+      "unlock_gate": "G_R05_A",
+      "parent_template_id": "EQ_W_P1",
+      "function_hypothesis": "蓄積から別効果への接続",
+      "visual_contract": "霧室を剪定輪で囲み、夜花蜜の弧が内部を巡る。承認帽子・顔は変えない。",
+      "acquisition": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。",
+      "rarity": null,
+      "stats": null,
+      "status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "EQ_W_G1",
+      "name": "根守りの結界杖",
+      "actor_ids": [
+        "C_WITCH"
+      ],
+      "slot": "weapon",
+      "unlock_gate": "G_R01_B",
+      "parent_template_id": "EQ_W_01",
+      "function_hypothesis": "護りを継続する分岐",
+      "visual_contract": "枝核を蔓の支柱で囲み、根絡みの牙は小さな支持具。毒分岐と先端形を分ける。",
+      "acquisition": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。",
+      "rarity": null,
+      "stats": null,
+      "status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "EQ_W_G2",
+      "name": "月環の結界杖",
+      "actor_ids": [
+        "C_WITCH"
+      ],
+      "slot": "weapon",
+      "unlock_gate": "G_R05_A",
+      "parent_template_id": "EQ_W_G1",
+      "function_hypothesis": "受け止めて返す結界",
+      "visual_contract": "竜鱗を外枠にせず内側の薄膜へ。月銀の環と封灯硝子で光を整える。",
+      "acquisition": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。",
+      "rarity": null,
+      "stats": null,
+      "status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "EQ_A_01",
+      "name": "露灯の手帳",
+      "actor_ids": [
+        "C_APPRENTICE"
+      ],
+      "slot": "weapon",
+      "unlock_gate": "G_R01_A",
+      "parent_template_id": null,
+      "function_hypothesis": "基礎回復・支援",
+      "visual_contract": "薄い木板表紙に露灯草の押し葉。弟子の承認済み魔導書の小型初期外装。",
+      "acquisition": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。",
+      "rarity": null,
+      "stats": null,
+      "status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "EQ_A_02",
+      "name": "水鏡の祈書",
+      "actor_ids": [
+        "C_APPRENTICE"
+      ],
+      "slot": "weapon",
+      "unlock_gate": "G_R02_B",
+      "parent_template_id": "EQ_A_01",
+      "function_hypothesis": "回復と小さな護り",
+      "visual_contract": "葦繊維の頁、水鏡膜の見返し、冠鱗の留め具。",
+      "acquisition": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。",
+      "rarity": null,
+      "stats": null,
+      "status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "EQ_A_03",
+      "name": "月綴じの大典",
+      "actor_ids": [
+        "C_APPRENTICE"
+      ],
+      "slot": "weapon",
+      "unlock_gate": "G_R05_A",
+      "parent_template_id": "EQ_A_02",
+      "function_hypothesis": "支援から仲間の次動作へ接続",
+      "visual_contract": "綴じ蔓と月白糸で同じ本を綴じ直す。頁を増やしすぎず輪郭を維持。",
+      "acquisition": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。",
+      "rarity": null,
+      "stats": null,
+      "status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "EQ_S_01",
+      "name": "山歩きの木槌",
+      "actor_ids": [
+        "C_SMITH"
+      ],
+      "slot": "weapon",
+      "unlock_gate": "G_R01_A",
+      "parent_template_id": null,
+      "function_hypothesis": "構え・鈍打",
+      "visual_contract": "重い霊木の芯と琥珀甲殻の帯。巨大鉄槌は既存ビジュアルの基準、ここは初期性能型の差分候補。",
+      "acquisition": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。",
+      "rarity": null,
+      "stats": null,
+      "status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "EQ_S_02",
+      "name": "響炉の鍛鎚",
+      "actor_ids": [
+        "C_SMITH"
+      ],
+      "slot": "weapon",
+      "unlock_gate": "G_R03_B",
+      "parent_template_id": "EQ_S_01",
+      "function_hypothesis": "受けた圧を次の一撃へ",
+      "visual_contract": "灰銀の四角い槌頭に炉心晶。鍛冶師の承認済み大型ハンマーの形を崩さない。",
+      "acquisition": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。",
+      "rarity": null,
+      "stats": null,
+      "status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "EQ_S_03",
+      "name": "月銀の護鍛鎚",
+      "actor_ids": [
+        "C_SMITH"
+      ],
+      "slot": "weapon",
+      "unlock_gate": "G_R05_A",
+      "parent_template_id": "EQ_S_02",
+      "function_hypothesis": "仲間を守る反撃",
+      "visual_contract": "月銀の補強と白磁状の緩衝材。槌頭のサイズは増やさず輪の彫刻を追加。",
+      "acquisition": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。",
+      "rarity": null,
+      "stats": null,
+      "status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "EQ_F_01",
+      "name": "灯爪の触媒",
+      "actor_ids": [
+        "C_FAMILIAR"
+      ],
+      "slot": "weapon",
+      "unlock_gate": "G_START",
+      "parent_template_id": null,
+      "function_hypothesis": "補助・小さな一撃",
+      "visual_contract": "猫の前脚に小さく浮く葉形触媒。手で杖を持たせず黒猫の体を変えない。",
+      "acquisition": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。",
+      "rarity": null,
+      "stats": null,
+      "status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "EQ_F_02",
+      "name": "霧影の爪環",
+      "actor_ids": [
+        "C_FAMILIAR"
+      ],
+      "slot": "weapon",
+      "unlock_gate": "G_R02_A",
+      "parent_template_id": "EQ_F_01",
+      "function_hypothesis": "弱体・追撃の準備",
+      "visual_contract": "薄い環を足元に短時間だけ表示。首の赤いスカーフは固定。",
+      "acquisition": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。",
+      "rarity": null,
+      "stats": null,
+      "status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "EQ_F_03",
+      "name": "夜渡りの爪環",
+      "actor_ids": [
+        "C_FAMILIAR"
+      ],
+      "slot": "weapon",
+      "unlock_gate": "G_R05_A",
+      "parent_template_id": "EQ_F_02",
+      "function_hypothesis": "味方効果に続く追撃",
+      "visual_contract": "封灯硝子の小片と氷羽の弧で影の爪を形成。恒常的な巨大武器は付けない。",
+      "acquisition": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。",
+      "rarity": null,
+      "stats": null,
+      "status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "EQ_BODY_01",
+      "name": "灯糸の採集衣",
+      "actor_ids": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "slot": "body",
+      "unlock_gate": "G_R01_A",
+      "parent_template_id": null,
+      "function_hypothesis": "基礎耐久・術式の安定",
+      "visual_contract": "布・樹脂の裏地部品。承認済み全身衣装を置換しない内部装具。",
+      "acquisition": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。",
+      "rarity": null,
+      "stats": null,
+      "status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "EQ_BODY_02",
+      "name": "湿霧の外套",
+      "actor_ids": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "slot": "body",
+      "unlock_gate": "G_R02_A",
+      "parent_template_id": "EQ_BODY_01",
+      "function_hypothesis": "持続圧への備え",
+      "visual_contract": "裾裏に湿霧鱗の薄片、外観の色はキャラ固有配色を優先。",
+      "acquisition": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。",
+      "rarity": null,
+      "stats": null,
+      "status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "EQ_BODY_03",
+      "name": "霜守りの外套",
+      "actor_ids": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "slot": "body",
+      "unlock_gate": "G_R04_A",
+      "parent_template_id": "EQ_BODY_02",
+      "function_hypothesis": "護りの維持",
+      "visual_contract": "霜毛と風編み麻の内張り。毛皮を全身へ増やさず小さな襟差分。",
+      "acquisition": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。",
+      "rarity": null,
+      "stats": null,
+      "status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "EQ_HAND_01",
+      "name": "灯糸の作業手袋",
+      "actor_ids": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "slot": "hands",
+      "unlock_gate": "G_R01_A",
+      "parent_template_id": null,
+      "function_hypothesis": "手数・道具の扱い",
+      "visual_contract": "葉刃殻を指先ではなく手背の小板に。",
+      "acquisition": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。",
+      "rarity": null,
+      "stats": null,
+      "status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "EQ_HAND_02",
+      "name": "雲母の術籠手",
+      "actor_ids": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "slot": "hands",
+      "unlock_gate": "G_R03_A",
+      "parent_template_id": "EQ_HAND_01",
+      "function_hypothesis": "反撃・構え",
+      "visual_contract": "雲母の積層と銅の留め。駆動環は魔法制御で常時回転させない。",
+      "acquisition": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。",
+      "rarity": null,
+      "stats": null,
+      "status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "EQ_HAND_03",
+      "name": "月銀の術籠手",
+      "actor_ids": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "slot": "hands",
+      "unlock_gate": "G_R05_A",
+      "parent_template_id": "EQ_HAND_02",
+      "function_hypothesis": "連携の拍子を整える",
+      "visual_contract": "月銀の細い輪、霜晶歯輪を一枚のカバー内へ。",
+      "acquisition": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。",
+      "rarity": null,
+      "stats": null,
+      "status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "EQ_FEET_01",
+      "name": "根道のブーツ",
+      "actor_ids": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "slot": "feet",
+      "unlock_gate": "G_R01_A",
+      "parent_template_id": null,
+      "function_hypothesis": "姿勢・基礎防御",
+      "visual_contract": "既製の布靴へ根の底板と角片の補強。革を未定義素材として要求しない。",
+      "acquisition": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。",
+      "rarity": null,
+      "stats": null,
+      "status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "EQ_FEET_02",
+      "name": "磁紋の踏靴",
+      "actor_ids": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "slot": "feet",
+      "unlock_gate": "G_R03_A",
+      "parent_template_id": "EQ_FEET_01",
+      "function_hypothesis": "構え・ガード",
+      "visual_contract": "磁紋鱗の小板と灰銀の踵。脚の見た目を大きく覆わない。",
+      "acquisition": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。",
+      "rarity": null,
+      "stats": null,
+      "status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "EQ_FEET_03",
+      "name": "白角の踏靴",
+      "actor_ids": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "slot": "feet",
+      "unlock_gate": "G_R04_A",
+      "parent_template_id": "EQ_FEET_02",
+      "function_hypothesis": "大きな一撃への備え",
+      "visual_contract": "白角の曲線が足首の支持具に残る。",
+      "acquisition": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。",
+      "rarity": null,
+      "stats": null,
+      "status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "EQ_AMU_01",
+      "name": "露苔のお守り",
+      "actor_ids": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH",
+        "C_FAMILIAR"
+      ],
+      "slot": "amulet",
+      "unlock_gate": "G_R01_A",
+      "parent_template_id": null,
+      "function_hypothesis": "回復・魔力の循環",
+      "visual_contract": "葉袋と糸結び。黒猫には首飾りの小さな付属物として表示。",
+      "acquisition": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。",
+      "rarity": null,
+      "stats": null,
+      "status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "EQ_AMU_02",
+      "name": "霧月の硝子符",
+      "actor_ids": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH",
+        "C_FAMILIAR"
+      ],
+      "slot": "amulet",
+      "unlock_gate": "G_R02_A",
+      "parent_template_id": "EQ_AMU_01",
+      "function_hypothesis": "薄い結界と支援",
+      "visual_contract": "材料名は硝子符でも、器は霧結晶を研磨して作る。別のガラス素材を消費しない。",
+      "acquisition": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。",
+      "rarity": null,
+      "stats": null,
+      "status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "EQ_AMU_03",
+      "name": "月庭の種守り",
+      "actor_ids": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH",
+        "C_FAMILIAR"
+      ],
+      "slot": "amulet",
+      "unlock_gate": "G_R05_B",
+      "parent_template_id": "EQ_AMU_02",
+      "function_hypothesis": "到達後の構成拡張",
+      "visual_contract": "種核を小さな籠状装飾へ。完成画の顔や衣装を変えず、光の芽を足す。",
+      "acquisition": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。",
+      "rarity": null,
+      "stats": null,
+      "status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "EQ_RING_01",
+      "name": "葉結びの指環",
+      "actor_ids": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "slot": "ring",
+      "unlock_gate": "G_R01_A",
+      "parent_template_id": null,
+      "function_hypothesis": "狙い・小さな攻撃補助",
+      "visual_contract": "細枝と樹脂で固めた輪。金属鉱のない森で真鍮生成はしない。",
+      "acquisition": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。",
+      "rarity": null,
+      "stats": null,
+      "status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "EQ_RING_02",
+      "name": "灰銀の指環",
+      "actor_ids": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "slot": "ring",
+      "unlock_gate": "G_R03_A",
+      "parent_template_id": "EQ_RING_01",
+      "function_hypothesis": "詠唱・連携",
+      "visual_contract": "灰銀の輪に音叉形の鳴晶。宝石だけ巨大化しない。",
+      "acquisition": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。",
+      "rarity": null,
+      "stats": null,
+      "status": "PROPOSED_FOR_REVIEW"
+    },
+    {
+      "id": "EQ_RING_03",
+      "name": "冬灯の指環",
+      "actor_ids": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "slot": "ring",
+      "unlock_gate": "G_R04_A",
+      "parent_template_id": "EQ_RING_02",
+      "function_hypothesis": "術式の保持・手数の安定",
+      "visual_contract": "雪灯草の朱を小さな芯にし、凍結晶の白い縁で包む。",
+      "acquisition": "初期型は制作／探索遺物。進化型は明示レシピ。同型の上位個体・ランダム副効果は別軸。",
+      "rarity": null,
+      "stats": null,
+      "status": "PROPOSED_FOR_REVIEW"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "RC_EQ_W_01",
+      "output_gear_id": "EQ_W_01",
+      "operation": "craft_new",
+      "parent_template_id": null,
+      "unlock_gate": "G_START",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R01_G1",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R01_G2",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        }
+      ],
+      "affix_policy": "固定の性能下限＋後で定義する適格副効果プール。狙い装備の核は乱数で欠落させない。",
+      "blueprint_source": "到達フラグで確定解放。ボス周回の抽選鍵にしない。"
+    },
+    {
+      "id": "RC_EQ_W_P1",
+      "output_gear_id": "EQ_W_P1",
+      "operation": "evolve_in_place",
+      "parent_template_id": "EQ_W_01",
+      "unlock_gate": "G_R02_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R02_E1",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R02_G4",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R02_BA",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        }
+      ],
+      "affix_policy": "進化対象の個体ID・副効果抽選値・ロック・強化投資を維持。非互換時は実行不可として説明。無断再抽選なし。",
+      "blueprint_source": "到達フラグで確定解放。ボス周回の抽選鍵にしない。"
+    },
+    {
+      "id": "RC_EQ_W_P2",
+      "output_gear_id": "EQ_W_P2",
+      "operation": "evolve_in_place",
+      "parent_template_id": "EQ_W_P1",
+      "unlock_gate": "G_R05_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R05_G1",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R05_E4",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R05_BA",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        }
+      ],
+      "affix_policy": "進化対象の個体ID・副効果抽選値・ロック・強化投資を維持。非互換時は実行不可として説明。無断再抽選なし。",
+      "blueprint_source": "到達フラグで確定解放。ボス周回の抽選鍵にしない。"
+    },
+    {
+      "id": "RC_EQ_W_G1",
+      "output_gear_id": "EQ_W_G1",
+      "operation": "evolve_in_place",
+      "parent_template_id": "EQ_W_01",
+      "unlock_gate": "G_R01_B",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R01_BA",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R01_BB",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R01_G3",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        }
+      ],
+      "affix_policy": "進化対象の個体ID・副効果抽選値・ロック・強化投資を維持。非互換時は実行不可として説明。無断再抽選なし。",
+      "blueprint_source": "到達フラグで確定解放。ボス周回の抽選鍵にしない。"
+    },
+    {
+      "id": "RC_EQ_W_G2",
+      "output_gear_id": "EQ_W_G2",
+      "operation": "evolve_in_place",
+      "parent_template_id": "EQ_W_G1",
+      "unlock_gate": "G_R05_A",
+      "station": "forge",
+      "ingredients": [
+        {
+          "material_id": "M_R04_BB",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R05_E3",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R05_BA",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        }
+      ],
+      "affix_policy": "進化対象の個体ID・副効果抽選値・ロック・強化投資を維持。非互換時は実行不可として説明。無断再抽選なし。",
+      "blueprint_source": "到達フラグで確定解放。ボス周回の抽選鍵にしない。"
+    },
+    {
+      "id": "RC_EQ_A_01",
+      "output_gear_id": "EQ_A_01",
+      "operation": "craft_new",
+      "parent_template_id": null,
+      "unlock_gate": "G_R01_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R01_G1",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R01_G2",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R01_E2",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        }
+      ],
+      "affix_policy": "固定の性能下限＋後で定義する適格副効果プール。狙い装備の核は乱数で欠落させない。",
+      "blueprint_source": "到達フラグで確定解放。ボス周回の抽選鍵にしない。"
+    },
+    {
+      "id": "RC_EQ_A_02",
+      "output_gear_id": "EQ_A_02",
+      "operation": "evolve_in_place",
+      "parent_template_id": "EQ_A_01",
+      "unlock_gate": "G_R02_B",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R02_G1",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R02_E3",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R02_BB",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        }
+      ],
+      "affix_policy": "進化対象の個体ID・副効果抽選値・ロック・強化投資を維持。非互換時は実行不可として説明。無断再抽選なし。",
+      "blueprint_source": "到達フラグで確定解放。ボス周回の抽選鍵にしない。"
+    },
+    {
+      "id": "RC_EQ_A_03",
+      "output_gear_id": "EQ_A_03",
+      "operation": "evolve_in_place",
+      "parent_template_id": "EQ_A_02",
+      "unlock_gate": "G_R05_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R05_G2",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R05_E1",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R05_G4",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        }
+      ],
+      "affix_policy": "進化対象の個体ID・副効果抽選値・ロック・強化投資を維持。非互換時は実行不可として説明。無断再抽選なし。",
+      "blueprint_source": "到達フラグで確定解放。ボス周回の抽選鍵にしない。"
+    },
+    {
+      "id": "RC_EQ_S_01",
+      "output_gear_id": "EQ_S_01",
+      "operation": "craft_new",
+      "parent_template_id": null,
+      "unlock_gate": "G_R01_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R01_G1",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R01_G3",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R01_E4",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        }
+      ],
+      "affix_policy": "固定の性能下限＋後で定義する適格副効果プール。狙い装備の核は乱数で欠落させない。",
+      "blueprint_source": "到達フラグで確定解放。ボス周回の抽選鍵にしない。"
+    },
+    {
+      "id": "RC_EQ_S_02",
+      "output_gear_id": "EQ_S_02",
+      "operation": "evolve_in_place",
+      "parent_template_id": "EQ_S_01",
+      "unlock_gate": "G_R03_B",
+      "station": "forge",
+      "ingredients": [
+        {
+          "material_id": "M_R03_G1",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R03_G2",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R03_G3",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R03_BB",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        }
+      ],
+      "affix_policy": "進化対象の個体ID・副効果抽選値・ロック・強化投資を維持。非互換時は実行不可として説明。無断再抽選なし。",
+      "blueprint_source": "到達フラグで確定解放。ボス周回の抽選鍵にしない。"
+    },
+    {
+      "id": "RC_EQ_S_03",
+      "output_gear_id": "EQ_S_03",
+      "operation": "evolve_in_place",
+      "parent_template_id": "EQ_S_02",
+      "unlock_gate": "G_R05_A",
+      "station": "forge",
+      "ingredients": [
+        {
+          "material_id": "M_R05_E2",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R05_BA",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R04_G4",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        }
+      ],
+      "affix_policy": "進化対象の個体ID・副効果抽選値・ロック・強化投資を維持。非互換時は実行不可として説明。無断再抽選なし。",
+      "blueprint_source": "到達フラグで確定解放。ボス周回の抽選鍵にしない。"
+    },
+    {
+      "id": "RC_EQ_F_01",
+      "output_gear_id": "EQ_F_01",
+      "operation": "craft_new",
+      "parent_template_id": null,
+      "unlock_gate": "G_START",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R01_G1",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R01_E2",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        }
+      ],
+      "affix_policy": "固定の性能下限＋後で定義する適格副効果プール。狙い装備の核は乱数で欠落させない。",
+      "blueprint_source": "到達フラグで確定解放。ボス周回の抽選鍵にしない。"
+    },
+    {
+      "id": "RC_EQ_F_02",
+      "output_gear_id": "EQ_F_02",
+      "operation": "evolve_in_place",
+      "parent_template_id": "EQ_F_01",
+      "unlock_gate": "G_R02_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R02_E1",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R02_E4",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R02_G4",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        }
+      ],
+      "affix_policy": "進化対象の個体ID・副効果抽選値・ロック・強化投資を維持。非互換時は実行不可として説明。無断再抽選なし。",
+      "blueprint_source": "到達フラグで確定解放。ボス周回の抽選鍵にしない。"
+    },
+    {
+      "id": "RC_EQ_F_03",
+      "output_gear_id": "EQ_F_03",
+      "operation": "evolve_in_place",
+      "parent_template_id": "EQ_F_02",
+      "unlock_gate": "G_R05_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R05_E3",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R05_E4",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R04_E2",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        }
+      ],
+      "affix_policy": "進化対象の個体ID・副効果抽選値・ロック・強化投資を維持。非互換時は実行不可として説明。無断再抽選なし。",
+      "blueprint_source": "到達フラグで確定解放。ボス周回の抽選鍵にしない。"
+    },
+    {
+      "id": "RC_EQ_BODY_01",
+      "output_gear_id": "EQ_BODY_01",
+      "operation": "craft_new",
+      "parent_template_id": null,
+      "unlock_gate": "G_R01_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R01_E2",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R01_G3",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R01_G4",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        }
+      ],
+      "affix_policy": "固定の性能下限＋後で定義する適格副効果プール。狙い装備の核は乱数で欠落させない。",
+      "blueprint_source": "到達フラグで確定解放。ボス周回の抽選鍵にしない。"
+    },
+    {
+      "id": "RC_EQ_BODY_02",
+      "output_gear_id": "EQ_BODY_02",
+      "operation": "evolve_in_place",
+      "parent_template_id": "EQ_BODY_01",
+      "unlock_gate": "G_R02_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R02_G1",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R02_E2",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R02_G3",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        }
+      ],
+      "affix_policy": "進化対象の個体ID・副効果抽選値・ロック・強化投資を維持。非互換時は実行不可として説明。無断再抽選なし。",
+      "blueprint_source": "到達フラグで確定解放。ボス周回の抽選鍵にしない。"
+    },
+    {
+      "id": "RC_EQ_BODY_03",
+      "output_gear_id": "EQ_BODY_03",
+      "operation": "evolve_in_place",
+      "parent_template_id": "EQ_BODY_02",
+      "unlock_gate": "G_R04_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R04_E1",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R04_G3",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R04_E3",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        }
+      ],
+      "affix_policy": "進化対象の個体ID・副効果抽選値・ロック・強化投資を維持。非互換時は実行不可として説明。無断再抽選なし。",
+      "blueprint_source": "到達フラグで確定解放。ボス周回の抽選鍵にしない。"
+    },
+    {
+      "id": "RC_EQ_HAND_01",
+      "output_gear_id": "EQ_HAND_01",
+      "operation": "craft_new",
+      "parent_template_id": null,
+      "unlock_gate": "G_R01_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R01_E2",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R01_E3",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R01_G3",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        }
+      ],
+      "affix_policy": "固定の性能下限＋後で定義する適格副効果プール。狙い装備の核は乱数で欠落させない。",
+      "blueprint_source": "到達フラグで確定解放。ボス周回の抽選鍵にしない。"
+    },
+    {
+      "id": "RC_EQ_HAND_02",
+      "output_gear_id": "EQ_HAND_02",
+      "operation": "evolve_in_place",
+      "parent_template_id": "EQ_HAND_01",
+      "unlock_gate": "G_R03_A",
+      "station": "forge",
+      "ingredients": [
+        {
+          "material_id": "M_R03_G4",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R03_E1",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R03_E3",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R03_BA",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        }
+      ],
+      "affix_policy": "進化対象の個体ID・副効果抽選値・ロック・強化投資を維持。非互換時は実行不可として説明。無断再抽選なし。",
+      "blueprint_source": "到達フラグで確定解放。ボス周回の抽選鍵にしない。"
+    },
+    {
+      "id": "RC_EQ_HAND_03",
+      "output_gear_id": "EQ_HAND_03",
+      "operation": "evolve_in_place",
+      "parent_template_id": "EQ_HAND_02",
+      "unlock_gate": "G_R05_A",
+      "station": "forge",
+      "ingredients": [
+        {
+          "material_id": "M_R05_E2",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R05_G2",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R04_E4",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        }
+      ],
+      "affix_policy": "進化対象の個体ID・副効果抽選値・ロック・強化投資を維持。非互換時は実行不可として説明。無断再抽選なし。",
+      "blueprint_source": "到達フラグで確定解放。ボス周回の抽選鍵にしない。"
+    },
+    {
+      "id": "RC_EQ_FEET_01",
+      "output_gear_id": "EQ_FEET_01",
+      "operation": "craft_new",
+      "parent_template_id": null,
+      "unlock_gate": "G_R01_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R01_G1",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R01_E1",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R01_G3",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        }
+      ],
+      "affix_policy": "固定の性能下限＋後で定義する適格副効果プール。狙い装備の核は乱数で欠落させない。",
+      "blueprint_source": "到達フラグで確定解放。ボス周回の抽選鍵にしない。"
+    },
+    {
+      "id": "RC_EQ_FEET_02",
+      "output_gear_id": "EQ_FEET_02",
+      "operation": "evolve_in_place",
+      "parent_template_id": "EQ_FEET_01",
+      "unlock_gate": "G_R03_A",
+      "station": "forge",
+      "ingredients": [
+        {
+          "material_id": "M_R03_E4",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R03_G2",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R03_G4",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        }
+      ],
+      "affix_policy": "進化対象の個体ID・副効果抽選値・ロック・強化投資を維持。非互換時は実行不可として説明。無断再抽選なし。",
+      "blueprint_source": "到達フラグで確定解放。ボス周回の抽選鍵にしない。"
+    },
+    {
+      "id": "RC_EQ_FEET_03",
+      "output_gear_id": "EQ_FEET_03",
+      "operation": "evolve_in_place",
+      "parent_template_id": "EQ_FEET_02",
+      "unlock_gate": "G_R04_A",
+      "station": "forge",
+      "ingredients": [
+        {
+          "material_id": "M_R04_BA",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R04_G3",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R04_G4",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        }
+      ],
+      "affix_policy": "進化対象の個体ID・副効果抽選値・ロック・強化投資を維持。非互換時は実行不可として説明。無断再抽選なし。",
+      "blueprint_source": "到達フラグで確定解放。ボス周回の抽選鍵にしない。"
+    },
+    {
+      "id": "RC_EQ_AMU_01",
+      "output_gear_id": "EQ_AMU_01",
+      "operation": "craft_new",
+      "parent_template_id": null,
+      "unlock_gate": "G_R01_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R01_G2",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R01_G4",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R01_E2",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        }
+      ],
+      "affix_policy": "固定の性能下限＋後で定義する適格副効果プール。狙い装備の核は乱数で欠落させない。",
+      "blueprint_source": "到達フラグで確定解放。ボス周回の抽選鍵にしない。"
+    },
+    {
+      "id": "RC_EQ_AMU_02",
+      "output_gear_id": "EQ_AMU_02",
+      "operation": "evolve_in_place",
+      "parent_template_id": "EQ_AMU_01",
+      "unlock_gate": "G_R02_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R02_G2",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R02_G4",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R02_E3",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        }
+      ],
+      "affix_policy": "進化対象の個体ID・副効果抽選値・ロック・強化投資を維持。非互換時は実行不可として説明。無断再抽選なし。",
+      "blueprint_source": "到達フラグで確定解放。ボス周回の抽選鍵にしない。"
+    },
+    {
+      "id": "RC_EQ_AMU_03",
+      "output_gear_id": "EQ_AMU_03",
+      "operation": "evolve_in_place",
+      "parent_template_id": "EQ_AMU_02",
+      "unlock_gate": "G_R05_B",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R05_BB",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R05_G3",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R05_G4",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        }
+      ],
+      "affix_policy": "進化対象の個体ID・副効果抽選値・ロック・強化投資を維持。非互換時は実行不可として説明。無断再抽選なし。",
+      "blueprint_source": "到達フラグで確定解放。ボス周回の抽選鍵にしない。"
+    },
+    {
+      "id": "RC_EQ_RING_01",
+      "output_gear_id": "EQ_RING_01",
+      "operation": "craft_new",
+      "parent_template_id": null,
+      "unlock_gate": "G_R01_A",
+      "station": "witch_bench",
+      "ingredients": [
+        {
+          "material_id": "M_R01_G1",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R01_E3",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R01_G3",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        }
+      ],
+      "affix_policy": "固定の性能下限＋後で定義する適格副効果プール。狙い装備の核は乱数で欠落させない。",
+      "blueprint_source": "到達フラグで確定解放。ボス周回の抽選鍵にしない。"
+    },
+    {
+      "id": "RC_EQ_RING_02",
+      "output_gear_id": "EQ_RING_02",
+      "operation": "evolve_in_place",
+      "parent_template_id": "EQ_RING_01",
+      "unlock_gate": "G_R03_A",
+      "station": "forge",
+      "ingredients": [
+        {
+          "material_id": "M_R03_G2",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R03_E2",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R03_G1",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        }
+      ],
+      "affix_policy": "進化対象の個体ID・副効果抽選値・ロック・強化投資を維持。非互換時は実行不可として説明。無断再抽選なし。",
+      "blueprint_source": "到達フラグで確定解放。ボス周回の抽選鍵にしない。"
+    },
+    {
+      "id": "RC_EQ_RING_03",
+      "output_gear_id": "EQ_RING_03",
+      "operation": "evolve_in_place",
+      "parent_template_id": "EQ_RING_02",
+      "unlock_gate": "G_R04_A",
+      "station": "forge",
+      "ingredients": [
+        {
+          "material_id": "M_R04_G1",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R04_G2",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        },
+        {
+          "material_id": "M_R04_E4",
+          "quantity": null,
+          "status": "TUNE_PENDING"
+        }
+      ],
+      "affix_policy": "進化対象の個体ID・副効果抽選値・ロック・強化投資を維持。非互換時は実行不可として説明。無断再抽選なし。",
+      "blueprint_source": "到達フラグで確定解放。ボス周回の抽選鍵にしない。"
+    }
+  ],
+  "actors": [
+    {
+      "id": "C_WITCH",
+      "display_name": "エルナ（呼称整理案）",
+      "role": "魔女",
+      "join_gate": "G_START",
+      "join_method": "開始時",
+      "craft_role": "初期から採集道具・布・触媒を制作可能。金属の高位加工はアイラ加入後。"
+    },
+    {
+      "id": "C_APPRENTICE",
+      "display_name": "ルナ（呼称整理案）",
+      "role": "弟子",
+      "join_gate": "G_R01_A",
+      "join_method": "渡しを開いた後の帰宅イベントで、手伝いを申し出る。ガチャ・稀少素材不要。",
+      "craft_role": "研究と書物の補助。加入前も基礎回復・調合は主人公が使える。"
+    },
+    {
+      "id": "C_SMITH",
+      "display_name": "アイラ（呼称整理案）",
+      "role": "鍛冶師",
+      "join_gate": "G_R01_A",
+      "join_method": "森の深部への道で合流する固定イベント。地域主ボス前に4人が揃う。",
+      "craft_role": "金属加工と強化。遠征中の別稼働工房を仮定せず、拠点操作時に処理する。"
+    },
+    {
+      "id": "C_FAMILIAR",
+      "display_name": "ノワール（呼称整理案）",
+      "role": "黒猫の使い魔",
+      "join_gate": "G_START",
+      "join_method": "開始時",
+      "craft_role": "探索補助。素材探知は機能案であり4人編成の必須鍵にはしない。"
+    }
+  ],
+  "decision_register": [
+    {
+      "id": "D01",
+      "topic": "世界の中心",
+      "status": "USER_APPROVED_BASE",
+      "decision": "森の奥の魔女の家と採集・研究の日常。世界救済・常時イベントに広げない。",
+      "gate": "維持"
+    },
+    {
+      "id": "D02",
+      "topic": "5地域・パーティー",
+      "status": "USER_APPROVED_BASE",
+      "decision": "5地域名と方向性、4人の育成・戦闘を維持。",
+      "gate": "維持"
+    },
+    {
+      "id": "D03",
+      "topic": "全量制作",
+      "status": "NOT_AUTHORIZED",
+      "decision": "5地域30魔物50素材29レシピは関係確認用の設計量。全量の制作・実装発注ではない。",
+      "gate": "G2代表品質の評価後"
+    },
+    {
+      "id": "D04",
+      "topic": "キャラ名・年齢",
+      "status": "PENDING",
+      "decision": "エルナ／ルナ／アイラ／ノワールは呼称整理案。最終プロフィールは画像内テキストから自動決定しない。",
+      "gate": "会話・ローカライズ原稿の固定前"
+    },
+    {
+      "id": "D05",
+      "topic": "猫の装備枠",
+      "status": "PROPOSED_FOR_REVIEW",
+      "decision": "内部6枠を共有する案。表示を爪触媒・胴布・前脚飾り・足輪・護符・首飾りに分け、互換性をタグで制限。人の服を猫へ着せない。",
+      "gate": "4人戦闘・装備スキーマ実装前"
+    },
+    {
+      "id": "D06",
+      "topic": "ドロップ率・必要数",
+      "status": "TUNE_PENDING",
+      "decision": "材料の種類と入手順を今回提案。確率・必要数・所要時間・レアリティ比率はnull。",
+      "gate": "経済シミュレーション前に入力"
+    },
+    {
+      "id": "D07",
+      "topic": "進化の扱い",
+      "status": "PROPOSED_FOR_REVIEW",
+      "decision": "同一個体の変換。副効果や強化投資を勝手に消さない。分岐変更・振り直しは別の未設計操作。",
+      "gate": "セーブ設計・UI実装前"
+    },
+    {
+      "id": "D08",
+      "topic": "戦闘",
+      "status": "UNSIMULATED",
+      "decision": "4人・複数敵・狙い・回復・反撃連鎖は再設計。G1の単体戦検証を流用して保証しない。",
+      "gate": "新しい参照戦闘モデル"
+    },
+    {
+      "id": "D09",
+      "topic": "数週間の遊び",
+      "status": "UNVALIDATED",
+      "decision": "5地域で数週間遊べるとは未検証。プレイテストと無料／広告／購入条件の経済検証が必要。",
+      "gate": "G2→G3判断"
+    },
+    {
+      "id": "D10",
+      "topic": "画面・生産方式",
+      "status": "PENDING",
+      "decision": "承認正本の姿・画風を維持。各地域2背景系統の見込み。実ピクセル寸法、カメラ、2.5D方式、制作費は未測定。",
+      "gate": "代表背景＋4人＋敵の実機見本"
+    },
+    {
+      "id": "D11",
+      "topic": "保存移行",
+      "status": "DESIGN_REQUIRED",
+      "decision": "G1と本設計は別content/schema。IDの上書きとセーブ自動変換禁止。",
+      "gate": "G2実装前"
+    },
+    {
+      "id": "D12",
+      "topic": "新地域追加",
+      "status": "PROPOSED_FOR_REVIEW",
+      "decision": "既存の本編・レシピを保持し分岐で追加。必須素材の唯一の入手先を期間限定にしない。",
+      "gate": "追加コンテンツのレビュー"
+    }
+  ],
+  "references": [
+    {
+      "name": "witch_characters_R1.png",
+      "sha256": "c20e010feec532d3fba9bc33a2a9e4bc54fae67aa4b5ffc7554e6ab884537601",
+      "bytes": 3114648,
+      "role": "ビジュアル最上位正本"
+    },
+    {
+      "name": "README.md",
+      "sha256": "868877cf73d514da35d593f53e6705b05dfe94a9ed30fe9a7bfce05ec2a17586",
+      "bytes": 5306,
+      "role": "過去G1の基準。新G2への自動適用なし。"
+    },
+    {
+      "name": "Idle_Loot_RPG_G1_Preflight_Audit_R3_20261008.md",
+      "sha256": "938ebad708bdabe347ba6949f321ddf43bfe12626c2065c8b739646b75b9fbce",
+      "bytes": 11967,
+      "role": "過去G1の基準。新G2への自動適用なし。"
+    }
+  ],
+  "startup": {
+    "status": "PROPOSED_FOR_REVIEW",
+    "grant_once": [
+      {
+        "actor_id": "C_WITCH",
+        "gear_id": "EQ_W_01"
+      },
+      {
+        "actor_id": "C_FAMILIAR",
+        "gear_id": "EQ_F_01"
+      }
+    ],
+    "starter_capabilities": [
+      "基礎の魔力弾",
+      "初歩の呪毒",
+      "簡易結界"
+    ],
+    "policy": "基礎術式は装備の固有効果とは別に利用可能。森だけで攻撃・持続・護りを試せる。初回の付与は同じセーブで一度、通常抽選とは分離する。加入時の非武器装備セットと能力値は別の開始装備表で確定する。"
+  },
+  "loot_contract": {
+    "status": "PROPOSED_FOR_REVIEW",
+    "normal_materials": "調査対象の魔物と採取地点に材料の出自を保持。新規素材・固有素材を共通粉へ自動変換しない。",
+    "direct_gear": "地域内の採集路・旧工房・遺物庫の捜索による完成装備を、材料とは別の戦利品枠として出す。動物が服を生産した説明にしない。",
+    "gear_pool_scope": "開放済みのエリア・到達フラグに適格な既存装備テンプレートのみ。ボス撃破後の型を事前に落とさない。",
+    "numeric_parameters": null,
+    "unique_policy": "固有名の伝説装備は未知の確率で永久に入手不能にしない。同型の制作経路か欠片交換の数値仕様をG2経済設計で確定。",
+    "early_material_policy": "恒久の基礎型レシピに利用。全上位レシピへ低位素材を重ねない。既に作った親装備に過去素材が含まれるため、上位段階で初期素材を再要求しすぎない。",
+    "pending": "遺物装備の出現比率、レアリティ、副効果プール、保険の必要周回数は未確定。"
+  },
+  "changes_from_g1": [
+    "G1の固定18装備・3地域・単体戦は維持保管。本書は新しいG2コンテンツ提案であり、G1 content.jsonを上書きしない。",
+    "4人編成、敵の狙い、回復・弱体・反撃連鎖は新参照戦闘モデルが必要。旧69,984戦の一致は本書の戦闘保証ではない。",
+    "G1の15分/1装備・素材120・放置24hはG1の仮値。本書の50素材へ等配分などの形で流用しない。",
+    "6内部装備枠を共有する案と猫の表示名・適格タグは未承認のG2スキーマ提案。",
+    "初期2人→森の中ボス後に弟子→森の深部合流で鍛冶師という加入順は今回の提案。"
+  ]
+}

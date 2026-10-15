@@ -26,7 +26,7 @@ extension GameModel {
     }
     func qaSetWriteFailure(_ enabled:Bool){guard localStoreKitQAEnabled,!busy,let sink=qaPurchaseSink else{return};busy=true;Task{await sink.setFailureInjection(enabled);qaFailPurchaseWrites=enabled;busy=false}}
     func qaRetryUnfinished(){guard localStoreKitQAEnabled,!busy,let bridge=qaPurchaseBridge else{return};busy=true;Task{do{await bridge.stopObserving();try await bridge.startObserving();purchaseStatus="未完了取引の再読込を開始"}catch{purchaseStatus=String(reflecting:error)};busy=false}}
-    func qaPurchase(_ id:String){guard let bridge=qaPurchaseBridge,!busy else{return};busy=true;Task{do{let result=try await bridge.purchase(productID:id);purchaseStatus=String(describing:result);await refresh()}catch{purchaseStatus=String(reflecting:error)};writeReceipt("purchase",purchaseStatus);busy=false}}
+    func qaPurchase(_ id:String){guard let bridge=qaPurchaseBridge,!busy else{return};busy=true;Task{do{let result=try await bridge.purchase(productID:id,appAccountToken:localAuthorityQAContextR454?.token);purchaseStatus=String(describing:result);await refresh()}catch{purchaseStatus=String(reflecting:error)};writeReceipt("purchase",purchaseStatus);busy=false}}
     func qaRestore(){guard let bridge=qaPurchaseBridge,!busy else{return};busy=true;Task{do{try await bridge.restoreEntitlementsExcludingConsumables();purchaseStatus="ローカル復元完了";await refresh()}catch{purchaseStatus=String(reflecting:error)};busy=false}}
 }
 
@@ -44,7 +44,12 @@ struct GameStoreKitQAPanel:View {
             Button("存在しない商品で取得失敗を検証"){model.qaPurchase("local.witch.test.missing")}.accessibilityIdentifier("qa_missing_product")
             Toggle("保存失敗を注入（QA）",isOn:Binding(get:{model.qaFailPurchaseWrites},set:model.qaSetWriteFailure)).accessibilityIdentifier("qa_fail_writes")
             Button("未完了取引を再読み込み"){model.qaRetryUnfinished()}.accessibilityIdentifier("qa_retry_unfinished")
-            Text("検証券は抽選に使用できません。有料抽選とサーバー権威は未統合です。").font(.caption)
+            if model.localAuthorityQAContextR454 != nil {
+                Button("ローカル台帳から検証装備を受取・再送"){model.qaReceiveAuthorityGearR454()}.accessibilityIdentifier("qa_authority_gear_r454")
+                Text("専用ホスト台帳の応答が必要です。検証用の装備であり、本番課金ではありません。").font(.caption)
+            } else {
+                Text("検証券は抽選に使用できません。有料抽選とサーバー権威は未統合です。").font(.caption)
+            }
         }.buttonStyle(.bordered).disabled(model.busy)
     }
 }

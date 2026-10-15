@@ -1,0 +1,47 @@
+{
+  "schema": "r454-root-scoped-summary-v1",
+  "at": "2026-10-15T06:34:11.903033+09:00",
+  "status": "LOCAL_IMPLEMENTATION_AND_SCOPED_QA_PASS_INDEPENDENT_REVIEW_COMPLETE",
+  "evidence": {
+    "runtime_r001/RUNTIME_RESULT_R001.json": "ec784e713b85b1cdaef76a6ee1ab73ef703074ac4e8c34d7878ae5e80afce10a",
+    "build_tools_r004/postbuild_readback_r001/debug_BUILD_PASS.json": "733b12f9e71b651533be74a351047f9154c1c971232f60915df7cf6b07a6a679",
+    "core_execution_r001/SWIFT_RESULT.json": "c00b96582575bbae7e7ddaa13b2e7493a388756eb08a0c60e4601b3f6406896a",
+    "host_runtime_r001/PYTHON_RESULT.json": "9a7d82909583e223a5737fbab987103bfffa3f8e2a1aa7c828b7b72c359dac15",
+    "transaction_history_diagnosis_r001/DIAGNOSIS_R001.md": "cee9a6d860195e5774413d76d7ae9f7a0421bb2d67b642b4c23780689af0a82b",
+    "runtime_independent_review_r001/REVIEW_R001.md": "35f828f3feaac4e25daecdc0980ee421d10e8351f2ee4174d4d2a3b99bb9fcd7"
+  },
+  "codeInputs": {
+    "native/StoreKitLocalQA/ReusableBridge.swift": "24f26a7f8b44251aeb2ed6bd615f7e74ef59204370943f54ef4dfda9c52ff62a",
+    "native/WitchApp/GameStoreKitQA.swift": "504e78e2a9e0ab4e4b0405ffcc3f0865567288144f5ed894fb2d872a05d6c854",
+    "native/WitchApp/GamePurchaseAuthorityQA_R454.swift": "19375066951f5b9381e6fafa7c36ac635c3b6a4967cdc3905aa3f9de1820a11c",
+    "native/WitchGameCore/Sources/WitchGameCore/LocalPurchaseTransactionIdentityR454.swift": "d187cf9d2c33e582d9e6ba5656aa35d053bac5e21e9829f3e2fa8e16f1153759",
+    "tools/witch_purchase_authority/local_exchange_r454.py": "43061db6ae53442bdcbca9b4342f58a4040e42b4d59579a98456b7c5787ccd52"
+  },
+  "counts": {
+    "swiftTestsPassed": 25,
+    "swiftTestsFailed": 0,
+    "swiftTestsSkipped": 0,
+    "pythonTestsPassed": 6,
+    "pythonTestsFailed": 0,
+    "actualDebugBuilds": 2,
+    "metadataOnlyFailedPreflights": 2,
+    "nativeActualXcodePurchases": 1,
+    "nativeHostExchanges": 3,
+    "screenshots": 6
+  },
+  "rootCause": "Finished consumable transactions are absent from Transaction.all without the iOS18+ SKIncludeConsumableInAppPurchaseHistory opt-in. Dedicated QA R004 enabled it and recovered already saved transaction2 without repurchase.",
+  "separateIncidents": [
+    "ProbeApp.swift36 Optional nil forced unwrap",
+    "SKInternalErrorDomain Code3 authorization error",
+    "IDE absolute StoreKit configuration path assertion SIGABRT",
+    "R003 generated bundle route product fetch0, samebinary corrected UIroute fetched2"
+  ],
+  "limitations": [
+    "Explicitlymock local authority; no production Apple JWS or backend",
+    "Host refund simulation only; not an Apple refund",
+    "Existing delivered gear retained; ledger debtblocksnewspend/replay",
+    "DedicatediOS18+Simulator QA only;Release hides this route",
+    "No formal payment completion or Human SKU/art approval",
+    "Host ticket is spent; separate client storekit_qa_ticket remains1. Not end-to-end production paid-currency accounting."
+  ]
+}

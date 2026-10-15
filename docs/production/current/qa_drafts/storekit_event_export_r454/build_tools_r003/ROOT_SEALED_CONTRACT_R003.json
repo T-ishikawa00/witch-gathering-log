@@ -1,0 +1,48 @@
+{
+  "driverSHA256": "a9519454696a07b384a6fd98b9244566d3387644c2ae1e15f0f1035ab61a1936",
+  "inputManifestSHA256": "4b229a8e5f5c6cb321631affed6e6aad1d5755eeaec9c4a759d444713b142f96",
+  "launchArguments": [
+    "--qa-isolated",
+    "--qa-save-key=storekit-authority-r454",
+    "--xcode-local-storekit-qa",
+    "--screen=購入検証",
+    "--r454-local-authority-qa",
+    "--r454-test-token",
+    "45400000-0000-4000-8000-000000000001",
+    "--r454-profile-fingerprint",
+    "62ce1ce493d34a7864cd7c7c1a5ee17aebdc8891b2b7b8dcb4eb7e6534c06e99"
+  ],
+  "limits": {
+    "attempts": 1,
+    "debugBuildSeconds": 600,
+    "freezeAndDebugAggregateSeconds": 600,
+    "install": false,
+    "launch": false,
+    "maxAllocatedBytes": 2000000000,
+    "minimumFreeBytes": 20000000000,
+    "requiredStartFreeBytes": 20000000000,
+    "safetyBytes": 2000000000
+  },
+  "notes": [
+    "Two preflight-only errors retained. No freeze/build attempted. R003 adds missing contract testToken, no product/source changes."
+  ],
+  "profileFingerprint": "62ce1ce493d34a7864cd7c7c1a5ee17aebdc8891b2b7b8dcb4eb7e6534c06e99",
+  "protectedPBXSHA256": "b83573270f2e0fde46411aabe9a539343b0fd1301760b3de7fe672b796dc18e9",
+  "resourceCount": 1922,
+  "schema": "storekit-event-export-r454-build-contract-r003-v1",
+  "sealedAt": "2026-10-15T06:08:30.985344+09:00",
+  "sourceCount": 238,
+  "sourceMapSHA256": "f7e90c5caadce71ad72e1612ae2f06094092a90d4b43cd4840a16607be0e1efe",
+  "status": "ROOT_SEALED_READY_TO_BUILD",
+  "variants": {
+    "debug": {
+      "bundleIdentifier": "local.witch.autonomous.r1.storekit.r454",
+      "configuration": "Debug",
+      "flags": [
+        "DEBUG"
+      ]
+    }
+  },
+  "worktree": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg",
+  "testToken": "45400000-0000-4000-8000-000000000001"
+}

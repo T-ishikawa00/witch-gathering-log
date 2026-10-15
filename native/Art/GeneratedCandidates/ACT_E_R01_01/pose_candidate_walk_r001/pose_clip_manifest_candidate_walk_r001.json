@@ -1,0 +1,239 @@
+{
+  "actor_id": "ACT_E_R01_01",
+  "revision": "walk_r001",
+  "status": "CANDIDATE_UNAPPROVED",
+  "source_reference_path": "native/Art/ActorStills/ACT_E_R01_01/ACT_E_R01_01__still__E_R01_01_MOSS_TUSK_BOAR_sprite_prototype_v2.png",
+  "source_reference_sha256": "f7352eb595d36fd6d1a478c38678653bc709d40e3051da6c5fc182941d19e096",
+  "imagegen_atlas_path": "native/Art/GeneratedCandidates/ACT_E_R01_01/pose_candidate_walk_r001/imagegen_atlas_walk_r001.png",
+  "imagegen_atlas_sha256": "09f1ec2884a1ae763ea6a25385c2ec1185dd65d2defde6b9768723c047aa0a86",
+  "pose_order": [
+    "idle_a",
+    "idle_b",
+    "walk_a",
+    "walk_b",
+    "anticipate",
+    "execute",
+    "recover",
+    "hit",
+    "resolve"
+  ],
+  "state_frames": {
+    "idle": [
+      "native/Art/GeneratedCandidates/ACT_E_R01_01/pose_candidate_walk_r001/frames/idle_a.png",
+      "native/Art/GeneratedCandidates/ACT_E_R01_01/pose_candidate_walk_r001/frames/idle_b.png"
+    ],
+    "walk": [
+      "native/Art/GeneratedCandidates/ACT_E_R01_01/pose_candidate_walk_r001/frames/walk_a.png",
+      "native/Art/GeneratedCandidates/ACT_E_R01_01/pose_candidate_walk_r001/frames/walk_b.png"
+    ],
+    "anticipate": [
+      "native/Art/GeneratedCandidates/ACT_E_R01_01/pose_candidate_walk_r001/frames/anticipate.png"
+    ],
+    "execute": [
+      "native/Art/GeneratedCandidates/ACT_E_R01_01/pose_candidate_walk_r001/frames/execute.png"
+    ],
+    "recover": [
+      "native/Art/GeneratedCandidates/ACT_E_R01_01/pose_candidate_walk_r001/frames/recover.png"
+    ],
+    "hit": [
+      "native/Art/GeneratedCandidates/ACT_E_R01_01/pose_candidate_walk_r001/frames/hit.png"
+    ],
+    "resolve": [
+      "native/Art/GeneratedCandidates/ACT_E_R01_01/pose_candidate_walk_r001/frames/resolve.png"
+    ]
+  },
+  "frames": [
+    {
+      "pose": "idle_a",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R01_01/pose_candidate_walk_r001/frames/idle_a.png",
+      "sha256": "afd100f298c22f2e14238752c97c8264b5af7a1e90e41ab3ef09908931542138",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        65,
+        21,
+        474,
+        328
+      ]
+    },
+    {
+      "pose": "idle_b",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R01_01/pose_candidate_walk_r001/frames/idle_b.png",
+      "sha256": "c011e93f377b696440b7190c3f9e2297d26c423086e3dc53d5901c6d49ec8b40",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        567,
+        19,
+        977,
+        327
+      ]
+    },
+    {
+      "pose": "walk_a",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R01_01/pose_candidate_walk_r001/frames/walk_a.png",
+      "sha256": "80bcd3f8b72183f55953069348fde40b2b063c6b2c2095ccca0d6a0c4673510d",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        1068,
+        19,
+        1481,
+        328
+      ]
+    },
+    {
+      "pose": "walk_b",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R01_01/pose_candidate_walk_r001/frames/walk_b.png",
+      "sha256": "2c8f7c1fe4468fc2d3946c838ed1c71b6e88aaf249b994eff8a42272445dde38",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        64,
+        353,
+        477,
+        659
+      ]
+    },
+    {
+      "pose": "anticipate",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R01_01/pose_candidate_walk_r001/frames/anticipate.png",
+      "sha256": "49be75c6d1ff57bbb6c57e534b1022322c98ebf456b85ab76aa51411e2cf6115",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        565,
+        353,
+        978,
+        659
+      ]
+    },
+    {
+      "pose": "execute",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R01_01/pose_candidate_walk_r001/frames/execute.png",
+      "sha256": "039846cea22ae14babfe6b44001ef01bae2cd8572bf9bb763c17c51bf7c5465d",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        1069,
+        354,
+        1477,
+        659
+      ]
+    },
+    {
+      "pose": "recover",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R01_01/pose_candidate_walk_r001/frames/recover.png",
+      "sha256": "42ad49d90e1667cda8dd9267fad5aea96cb0e944ec8744557dbfef8a3061d4ca",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        64,
+        685,
+        477,
+        995
+      ]
+    },
+    {
+      "pose": "hit",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R01_01/pose_candidate_walk_r001/frames/hit.png",
+      "sha256": "437c5e9500efec66d66c45dd6a054b5aa9e8f26fe8f7b5f129970c070138e5a5",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        564,
+        684,
+        988,
+        994
+      ]
+    },
+    {
+      "pose": "resolve",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_E_R01_01/pose_candidate_walk_r001/frames/resolve.png",
+      "sha256": "4f21146ebd07c70e8ed97167a0d52633f06686c32829b24fa76e1d8fb6415d39",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        1067,
+        685,
+        1482,
+        994
+      ]
+    }
+  ],
+  "fps": 6,
+  "canvas_px": [
+    512,
+    512
+  ],
+  "anchor_px": [
+    256.0,
+    490
+  ],
+  "review": "Nine sequential trot phases preserve pixelated Moss Tusk Boar identity and show alternating hoof positions. Check soft halo and source-canvas registration in composite previews; this supplies walk only and is not continuous-motion approval.",
+  "qa_contact_sheet_path": "native/Art/GeneratedCandidates/ACT_E_R01_01/pose_candidate_walk_r001/qa_contact_sheet_walk_r001.png",
+  "qa_contact_sheet_sha256": "4e95cbda04381f7cac3e7546b377ef49f35cc867e820e920307ae93836939229",
+  "runtime_integration": "NOT_DONE",
+  "runtime_visual_qa": "PENDING_ROOT_REVIEW",
+  "human_adoption": "PENDING",
+  "limitations": [
+    "Each action state currently has only one authored pose; idle and walk each have two poses.",
+    "This is a corrected composition/identity candidate, not evidence of natural continuous animation.",
+    "All frames derive from a generated atlas and remain unapproved pending visual/runtime review.",
+    "Source reference was not modified."
+  ]
+}

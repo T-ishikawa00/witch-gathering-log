@@ -1,0 +1,96 @@
+{
+  "status": "MECHANICS_FROM_GROWTH_R2_COMPOSITION_HYPOTHESES",
+  "not_player_ai_presets": true,
+  "baseline_inventory_target": 24,
+  "first_alternate_candidate_delta_range": [
+    4,
+    8
+  ],
+  "not_all_new_items_or_same_rarity_required": true,
+  "builds": [
+    {
+      "id": "BL_BURST",
+      "name": "破砕・追撃",
+      "core_templates": [
+        "EQ_W_01",
+        "EQ_F_03",
+        "EQ_A_03"
+      ],
+      "affix_goals": [
+        "AF_DIRECT",
+        "AF_CRIT",
+        "AF_CDR",
+        "AF_CHASE"
+      ],
+      "loop": "主攻撃→狙印→猫の追撃。短い開放窓で大きく削る。",
+      "weakness": "継続圧力で支援行動が増えると、想定した速度を出せない。",
+      "not_required": "LRでしか技能が出ない条件を入れない。"
+    },
+    {
+      "id": "BL_DOT",
+      "name": "呪毒・持久",
+      "core_templates": [
+        "EQ_W_P1",
+        "EQ_W_P2",
+        "EQ_A_02"
+      ],
+      "affix_goals": [
+        "AF_DOT",
+        "AF_CDR",
+        "AF_POWER"
+      ],
+      "loop": "毒の層を保ち、5層以上の破砕を生かす。",
+      "weakness": "短い雑魚戦では蓄積が間に合わない。毒免疫で強制不採用にしない。"
+    },
+    {
+      "id": "BL_WARD",
+      "name": "結界・反射",
+      "core_templates": [
+        "EQ_W_G1",
+        "EQ_W_G2",
+        "EQ_A_02"
+      ],
+      "affix_goals": [
+        "AF_WARD",
+        "AF_CDR",
+        "AF_HP"
+      ],
+      "loop": "魔女の呪印枠を味方結界へ置き換え、吸収に応じた反射へつなぐ。",
+      "weakness": "毒の枠と両取りしない。結界を迂回する持続被害には別の備え。"
+    },
+    {
+      "id": "BL_COUNTER",
+      "name": "護鍛・反撃",
+      "core_templates": [
+        "EQ_S_02",
+        "EQ_S_03",
+        "EQ_HAND_02",
+        "EQ_FEET_02"
+      ],
+      "affix_goals": [
+        "AF_GUARD",
+        "AF_COUNTER",
+        "AF_DEF"
+      ],
+      "loop": "かばう・ガード→反撃→蓄圧を主技能に還元。",
+      "weakness": "主動作内多段だけで反撃無限発火しない。広域へかばうだけで対応しない。"
+    },
+    {
+      "id": "BL_SUPPORT",
+      "name": "回復・連携",
+      "core_templates": [
+        "EQ_A_03",
+        "EQ_F_03",
+        "EQ_HAND_03"
+      ],
+      "affix_goals": [
+        "AF_HEAL",
+        "AF_WARD",
+        "AF_CDR",
+        "AF_CHASE"
+      ],
+      "loop": "有効な回復→添え詠唱→仲間の主攻撃と追撃。",
+      "weakness": "回復不要なら通常攻撃へ。回復を空撃ちして強化を稼がない。"
+    }
+  ]
+}

@@ -133,7 +133,26 @@ final class EnemyRegisteredPoses {
          "completed": presentationStatus == "completed",
          "isHidden": node.isHidden,
          "actionRunning": node.action(forKey: key) != nil,
+         "renderProof": renderProofSnapshot,
          "generation": generation]
+    }
+
+    /// The selected keypose renderer is one textured SpriteKit surface. Its
+    /// texture and parent/visibility are reported separately from the clear
+    /// actor container so registered poses are not mistaken for a missing rig.
+    private var renderProofSnapshot: [String: Any] {
+        let attached = surface.parent === node
+        let textured = surface.texture != nil
+        let visibleCount = attached && textured && !surface.isHidden && surface.alpha > 0
+            && !node.isHidden && node.alpha > 0 ? 1 : 0
+        let missing = attached && textured ? [] : ["registered_pose_surface"]
+        return ["requiredPartIDs": ["registered_pose_surface"],
+                "requiredPartCount": 1,
+                "texturedPartCount": textured ? 1 : 0,
+                "attachedPartCount": attached ? 1 : 0,
+                "visibleTexturedAttachedPartCount": visibleCount,
+                "missingOrDetachedPartIDs": missing,
+                "allRequiredPartsAttachedAndTextured": attached && textured]
     }
 
     /// Load through the same validation and cache path used by play, then render

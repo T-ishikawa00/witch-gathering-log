@@ -1,0 +1,83 @@
+{
+  "blockingFindings": [],
+  "checks": {
+    "all_phases_accepted": true,
+    "cold_reopen_asserted_by_passed_test": true,
+    "crash_child_SIGKILL_exact_pid": true,
+    "crash_marker_identity": true,
+    "manifest_matches_source_receipt": true,
+    "no_owned_process_remains": true,
+    "older_runner_attempt_still_incomplete": true,
+    "payload_receipt_and_duplicate_replay_asserted_by_passed_test": true,
+    "previous_generation_matches_seed": true,
+    "primary_matches_after_replace_marker": true,
+    "protected_state_unchanged": true,
+    "runner_source_matches_seal": true,
+    "seed_and_verify_exit_zero": true,
+    "three_phase_sequence": true
+  },
+  "elapsedSeconds": 1.122,
+  "evidence": {
+    "crash-child.log": "3459fe308442bc6f58274343d47bfa58f9d0c1296c0e3b5e2ee7bbfb29ca1c4c",
+    "seed.log": "2673e22ad3a857edee2f2f9e630ba848eeba0b47cadd586568cd5f60445b789e",
+    "verify.log": "9fd9179dcaf20e5cb0004055b02987f299a2f4a909d36eb5bf224d3a221b16bb"
+  },
+  "inputManifestSHA256": "388616de0070128dea2190713f804bd21645b989615cd46adda7d1fec94aa7f8",
+  "limitations": [
+    "Reused the XCTest executable from the earlier successful seed/compile phase; this review does not establish a fresh build.",
+    "The test demonstrates process termination after the SaveRepository after-primary-replace fault hook on a synthetic local fixture; it does not simulate hardware power loss or certify filesystem/device durability under physical failure.",
+    "Only this R342 loadout-payload save boundary is covered; this is not broad save-system or release acceptance.",
+    "The earlier runner_root_r003 attempt remains INCOMPLETE_RETAINED and is not relabeled as passing."
+  ],
+  "observedSemantics": {
+    "crashExitCode": -9,
+    "crashPID": 99148,
+    "previousReceiptCount": 2,
+    "previousRevision": 1,
+    "primaryLoadoutEqualsEquipped": true,
+    "primaryReceiptCount": 4,
+    "primaryRevision": 2,
+    "seedRevision": 1
+  },
+  "outputBytes": 21261,
+  "reviewedAt": "2026-10-14T06:12:58.815769+09:00",
+  "runPath": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/save_crash_completion_r362/direct_completion_root_r002/execution_r001/trial_001/RUN.json",
+  "runSHA256": "64656be33d3275ce386169c0ae4ff9c718249c873b33d043c4b899ea09016249",
+  "runnerPath": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/save_crash_completion_r362/direct_completion_root_r002/run_direct_r362.py",
+  "runnerSHA256": "b91bd1e22e4af4e38bb29038b202bf9b86e83b77d21c1c1d0b21cc738c9f8bfa",
+  "saveArtifacts": {
+    "after-primary-replace.json": {
+      "bytes": 395,
+      "sha256": "d77f87baf2596d9949affe44255f41d743cff3d89b900981b3540f8d9892a6c9"
+    },
+    "save.json": {
+      "bytes": 3500,
+      "sha256": "f02dcb6489487a4aa3ccd415cee8bc647d780dcb34b972b25d823aa710118222"
+    },
+    "save.json.lock": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "save.json.previous": {
+      "bytes": 3012,
+      "sha256": "475044023053c76c32f5e841a0f303ed42de17c674bc9145ee831499032bfd9b"
+    },
+    "seed-save.bytes": {
+      "bytes": 3012,
+      "sha256": "475044023053c76c32f5e841a0f303ed42de17c674bc9145ee831499032bfd9b"
+    },
+    "seed.json": {
+      "bytes": 3175,
+      "sha256": "5825c95cbc711728aa112a000b7feca3514e218a0fd963ad8dfb12c9ed06b05b"
+    }
+  },
+  "schema": "r362-independent-direct-review-v1",
+  "sourceSealPath": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/save_crash_completion_r362/direct_completion_root_r002/ROOT_SOURCE_SEAL_R001.json",
+  "sourceSealSHA256": "48149af3e75bf69e6ee291f60250df07b7e47100aee8e8e0c3c280681be48ee5",
+  "stagedTestSHA256": "4c012727b15ad8b99e5c0096ce1f3f406e2fc64efd8129d2aba5ce1769d93ace",
+  "status": "SCOPED_PASS_WITH_LIMITS",
+  "testExecutableSHA256": "92540006504035e70d103eef5610ca000bc952dacfeb5645590bee51b0a0aacf",
+  "testPath": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/save_crash_completion_r362/candidate_r001/LoadoutCrashIntegrityR362Tests.swift",
+  "testSHA256": "4c012727b15ad8b99e5c0096ce1f3f406e2fc64efd8129d2aba5ce1769d93ace",
+  "xctestSHA256": "947f17b5df53b2871ed5d542bc53d49059c73a51bb610e2be9bc5bc0d0b2dc16"
+}

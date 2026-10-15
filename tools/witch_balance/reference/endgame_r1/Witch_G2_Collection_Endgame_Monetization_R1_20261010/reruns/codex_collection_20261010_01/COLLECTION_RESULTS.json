@@ -1,0 +1,4747 @@
+{
+  "scope": "late-game fixed discovery snapshot; acquisition, NOT whole progression or completed loadouts",
+  "metrics": [
+    "READY_2_AFFIX_SR",
+    "LATENT_2_AFFIX_PROJECT",
+    "LR_2_AFFIX",
+    "LR_3_AFFIX_Q900"
+  ],
+  "numpy": "2.0.2",
+  "targets": [
+    {
+      "target": "EQ_W_P2",
+      "oracle": {
+        "pool_size": 13,
+        "natural_latent_2": 0.10839160839160839,
+        "gacha_latent_2": 0.31818181818181823,
+        "natural_SR_visible2": 0.038461538461538464,
+        "gacha_SR_visible2": 0.16666666666666666,
+        "natural_LR_exact3_Q900_given_target_LR": 3.59166527453994e-06,
+        "gacha_LR_exact3_Q900_given_target_LR": 0.001922348014897077,
+        "natural_target_prob_non_sixth": 0.09783549783549783,
+        "natural_target_mean_per_day": 11.913419913419913
+      },
+      "rows": [
+        {
+          "target": "EQ_W_P2",
+          "persona": "FREE_NO_AD",
+          "day": 7,
+          "purchase_yen": 0,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 35,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 463,
+              "probability": 0.904296875,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 85,
+              "probability": 0.166015625,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 0,
+              "probability": 0.0,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_P2",
+          "persona": "FREE_NO_AD",
+          "day": 30,
+          "purchase_yen": 0,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 150,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 334,
+              "probability": 0.65234375,
+              "median_day": 22.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 1,
+              "probability": 0.001953125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_P2",
+          "persona": "FREE_NO_AD",
+          "day": 90,
+          "purchase_yen": 0,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 450,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 497,
+              "probability": 0.970703125,
+              "median_day": 22.0,
+              "p90_day": 62.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 3,
+              "probability": 0.005859375,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_P2",
+          "persona": "AD_ONLY",
+          "day": 7,
+          "purchase_yen": 980,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 35,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 463,
+              "probability": 0.904296875,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 85,
+              "probability": 0.166015625,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 0,
+              "probability": 0.0,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_P2",
+          "persona": "AD_ONLY",
+          "day": 30,
+          "purchase_yen": 980,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 150,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 334,
+              "probability": 0.65234375,
+              "median_day": 22.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 1,
+              "probability": 0.001953125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_P2",
+          "persona": "AD_ONLY",
+          "day": 90,
+          "purchase_yen": 980,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 450,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 497,
+              "probability": 0.970703125,
+              "median_day": 22.0,
+              "p90_day": 62.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 3,
+              "probability": 0.005859375,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_P2",
+          "persona": "ONE_OUTFIT",
+          "day": 7,
+          "purchase_yen": 1480,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 35,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 463,
+              "probability": 0.904296875,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 85,
+              "probability": 0.166015625,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 0,
+              "probability": 0.0,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_P2",
+          "persona": "ONE_OUTFIT",
+          "day": 30,
+          "purchase_yen": 1480,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 150,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 334,
+              "probability": 0.65234375,
+              "median_day": 22.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 1,
+              "probability": 0.001953125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_P2",
+          "persona": "ONE_OUTFIT",
+          "day": 90,
+          "purchase_yen": 1480,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 450,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 497,
+              "probability": 0.970703125,
+              "median_day": 22.0,
+              "p90_day": 62.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 3,
+              "probability": 0.005859375,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_P2",
+          "persona": "ONE_SMALL_PURCHASE",
+          "day": 7,
+          "purchase_yen": 160,
+          "purchase_tickets": 10,
+          "total_gacha_draws": 45,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 476,
+              "probability": 0.9296875,
+              "median_day": 2.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 93,
+              "probability": 0.181640625,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 0,
+              "probability": 0.0,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_P2",
+          "persona": "ONE_SMALL_PURCHASE",
+          "day": 30,
+          "purchase_yen": 160,
+          "purchase_tickets": 10,
+          "total_gacha_draws": 160,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 2.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 337,
+              "probability": 0.658203125,
+              "median_day": 20.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 1,
+              "probability": 0.001953125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_P2",
+          "persona": "ONE_SMALL_PURCHASE",
+          "day": 90,
+          "purchase_yen": 160,
+          "purchase_tickets": 10,
+          "total_gacha_draws": 460,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 2.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 500,
+              "probability": 0.9765625,
+              "median_day": 20.0,
+              "p90_day": 61.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 3,
+              "probability": 0.005859375,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_P2",
+          "persona": "VALUE_PACK_ONLY",
+          "day": 7,
+          "purchase_yen": 480,
+          "purchase_tickets": 20,
+          "total_gacha_draws": 55,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 483,
+              "probability": 0.943359375,
+              "median_day": 1.0,
+              "p90_day": 6.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 102,
+              "probability": 0.19921875,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 0,
+              "probability": 0.0,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_P2",
+          "persona": "VALUE_PACK_ONLY",
+          "day": 30,
+          "purchase_yen": 480,
+          "purchase_tickets": 20,
+          "total_gacha_draws": 170,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 6.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 344,
+              "probability": 0.671875,
+              "median_day": 19.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 1,
+              "probability": 0.001953125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_P2",
+          "persona": "VALUE_PACK_ONLY",
+          "day": 90,
+          "purchase_yen": 1440,
+          "purchase_tickets": 60,
+          "total_gacha_draws": 510,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 6.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 504,
+              "probability": 0.984375,
+              "median_day": 19.0,
+              "p90_day": 59.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 3,
+              "probability": 0.005859375,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_P2",
+          "persona": "VALUE_PLUS_DELIVERY",
+          "day": 7,
+          "purchase_yen": 1130,
+          "purchase_tickets": 27,
+          "total_gacha_draws": 62,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 488,
+              "probability": 0.953125,
+              "median_day": 1.0,
+              "p90_day": 6.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 106,
+              "probability": 0.20703125,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 0,
+              "probability": 0.0,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_P2",
+          "persona": "VALUE_PLUS_DELIVERY",
+          "day": 30,
+          "purchase_yen": 1130,
+          "purchase_tickets": 50,
+          "total_gacha_draws": 200,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 6.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 359,
+              "probability": 0.701171875,
+              "median_day": 18.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 2,
+              "probability": 0.00390625,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_P2",
+          "persona": "VALUE_PLUS_DELIVERY",
+          "day": 90,
+          "purchase_yen": 3390,
+          "purchase_tickets": 150,
+          "total_gacha_draws": 600,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 6.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 506,
+              "probability": 0.98828125,
+              "median_day": 18.0,
+              "p90_day": 54.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 4,
+              "probability": 0.0078125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_P2",
+          "persona": "REGULAR_100_PER_30D",
+          "day": 7,
+          "purchase_yen": 3000,
+          "purchase_tickets": 100,
+          "total_gacha_draws": 135,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 511,
+              "probability": 0.998046875,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 202,
+              "probability": 0.39453125,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 1,
+              "probability": 0.001953125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_P2",
+          "persona": "REGULAR_100_PER_30D",
+          "day": 30,
+          "purchase_yen": 3000,
+          "purchase_tickets": 100,
+          "total_gacha_draws": 250,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 381,
+              "probability": 0.744140625,
+              "median_day": 12.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 3,
+              "probability": 0.005859375,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_P2",
+          "persona": "REGULAR_100_PER_30D",
+          "day": 90,
+          "purchase_yen": 9000,
+          "purchase_tickets": 300,
+          "total_gacha_draws": 750,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 508,
+              "probability": 0.9921875,
+              "median_day": 12.0,
+              "p90_day": 44.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 5,
+              "probability": 0.009765625,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_P2",
+          "persona": "HIGH_BUDGET_400_PER_30D",
+          "day": 7,
+          "purchase_yen": 12000,
+          "purchase_tickets": 400,
+          "total_gacha_draws": 435,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 407,
+              "probability": 0.794921875,
+              "median_day": 1.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 3,
+              "probability": 0.005859375,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_P2",
+          "persona": "HIGH_BUDGET_400_PER_30D",
+          "day": 30,
+          "purchase_yen": 12000,
+          "purchase_tickets": 400,
+          "total_gacha_draws": 550,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 475,
+              "probability": 0.927734375,
+              "median_day": 1.0,
+              "p90_day": 26.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 3,
+              "probability": 0.005859375,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_P2",
+          "persona": "HIGH_BUDGET_400_PER_30D",
+          "day": 90,
+          "purchase_yen": 36000,
+          "purchase_tickets": 1200,
+          "total_gacha_draws": 1650,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 26.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 17,
+              "probability": 0.033203125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        }
+      ],
+      "standalone_batches": [
+        {
+          "draws": 10,
+          "goals": {
+            "READY_2_AFFIX_SR": 0.240234375,
+            "LATENT_2_AFFIX_PROJECT": 0.837890625,
+            "LR_2_AFFIX": 0.0078125,
+            "LR_3_AFFIX_Q900": 0.0
+          }
+        },
+        {
+          "draws": 20,
+          "goals": {
+            "READY_2_AFFIX_SR": 0.4296875,
+            "LATENT_2_AFFIX_PROJECT": 0.97265625,
+            "LR_2_AFFIX": 0.013671875,
+            "LR_3_AFFIX_Q900": 0.0
+          }
+        },
+        {
+          "draws": 50,
+          "goals": {
+            "READY_2_AFFIX_SR": 0.748046875,
+            "LATENT_2_AFFIX_PROJECT": 1.0,
+            "LR_2_AFFIX": 0.0703125,
+            "LR_3_AFFIX_Q900": 0.0
+          }
+        },
+        {
+          "draws": 100,
+          "goals": {
+            "READY_2_AFFIX_SR": 0.935546875,
+            "LATENT_2_AFFIX_PROJECT": 1.0,
+            "LR_2_AFFIX": 0.2109375,
+            "LR_3_AFFIX_Q900": 0.001953125
+          }
+        },
+        {
+          "draws": 200,
+          "goals": {
+            "READY_2_AFFIX_SR": 1.0,
+            "LATENT_2_AFFIX_PROJECT": 1.0,
+            "LR_2_AFFIX": 0.46484375,
+            "LR_3_AFFIX_Q900": 0.00390625
+          }
+        },
+        {
+          "draws": 400,
+          "goals": {
+            "READY_2_AFFIX_SR": 1.0,
+            "LATENT_2_AFFIX_PROJECT": 1.0,
+            "LR_2_AFFIX": 0.74609375,
+            "LR_3_AFFIX_Q900": 0.005859375
+          }
+        }
+      ],
+      "gacha_quality_counts_for_maxpull_all_samples": [
+        286488,
+        325989,
+        163759,
+        55401,
+        13163
+      ],
+      "samples": 512,
+      "maxpull": 1650,
+      "rng_seed_natural": 261010,
+      "rng_seed_gacha": 361010
+    },
+    {
+      "target": "EQ_W_G2",
+      "oracle": {
+        "pool_size": 12,
+        "natural_latent_2": 0.12727272727272726,
+        "gacha_latent_2": 0.34545454545454546,
+        "natural_SR_visible2": 0.045454545454545456,
+        "gacha_SR_visible2": 0.18181818181818182,
+        "natural_LR_exact3_Q900_given_target_LR": 4.669164856901922e-06,
+        "gacha_LR_exact3_Q900_given_target_LR": 0.0023068176178764922,
+        "natural_target_prob_non_sixth": 0.09783549783549783,
+        "natural_target_mean_per_day": 11.913419913419913
+      },
+      "rows": [
+        {
+          "target": "EQ_W_G2",
+          "persona": "FREE_NO_AD",
+          "day": 7,
+          "purchase_yen": 0,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 35,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 467,
+              "probability": 0.912109375,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 110,
+              "probability": 0.21484375,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 0,
+              "probability": 0.0,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_G2",
+          "persona": "FREE_NO_AD",
+          "day": 30,
+          "purchase_yen": 0,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 150,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 354,
+              "probability": 0.69140625,
+              "median_day": 20.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 2,
+              "probability": 0.00390625,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_G2",
+          "persona": "FREE_NO_AD",
+          "day": 90,
+          "purchase_yen": 0,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 450,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 497,
+              "probability": 0.970703125,
+              "median_day": 20.0,
+              "p90_day": 59.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 3,
+              "probability": 0.005859375,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_G2",
+          "persona": "AD_ONLY",
+          "day": 7,
+          "purchase_yen": 980,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 35,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 467,
+              "probability": 0.912109375,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 110,
+              "probability": 0.21484375,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 0,
+              "probability": 0.0,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_G2",
+          "persona": "AD_ONLY",
+          "day": 30,
+          "purchase_yen": 980,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 150,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 354,
+              "probability": 0.69140625,
+              "median_day": 20.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 2,
+              "probability": 0.00390625,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_G2",
+          "persona": "AD_ONLY",
+          "day": 90,
+          "purchase_yen": 980,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 450,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 497,
+              "probability": 0.970703125,
+              "median_day": 20.0,
+              "p90_day": 59.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 3,
+              "probability": 0.005859375,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_G2",
+          "persona": "ONE_OUTFIT",
+          "day": 7,
+          "purchase_yen": 1480,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 35,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 467,
+              "probability": 0.912109375,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 110,
+              "probability": 0.21484375,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 0,
+              "probability": 0.0,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_G2",
+          "persona": "ONE_OUTFIT",
+          "day": 30,
+          "purchase_yen": 1480,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 150,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 354,
+              "probability": 0.69140625,
+              "median_day": 20.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 2,
+              "probability": 0.00390625,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_G2",
+          "persona": "ONE_OUTFIT",
+          "day": 90,
+          "purchase_yen": 1480,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 450,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 497,
+              "probability": 0.970703125,
+              "median_day": 20.0,
+              "p90_day": 59.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 3,
+              "probability": 0.005859375,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_G2",
+          "persona": "ONE_SMALL_PURCHASE",
+          "day": 7,
+          "purchase_yen": 160,
+          "purchase_tickets": 10,
+          "total_gacha_draws": 45,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 483,
+              "probability": 0.943359375,
+              "median_day": 2.0,
+              "p90_day": 6.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 117,
+              "probability": 0.228515625,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 1,
+              "probability": 0.001953125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_G2",
+          "persona": "ONE_SMALL_PURCHASE",
+          "day": 30,
+          "purchase_yen": 160,
+          "purchase_tickets": 10,
+          "total_gacha_draws": 160,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 2.0,
+              "p90_day": 6.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 360,
+              "probability": 0.703125,
+              "median_day": 19.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 2,
+              "probability": 0.00390625,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_G2",
+          "persona": "ONE_SMALL_PURCHASE",
+          "day": 90,
+          "purchase_yen": 160,
+          "purchase_tickets": 10,
+          "total_gacha_draws": 460,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 2.0,
+              "p90_day": 6.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 497,
+              "probability": 0.970703125,
+              "median_day": 19.0,
+              "p90_day": 58.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 4,
+              "probability": 0.0078125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_G2",
+          "persona": "VALUE_PACK_ONLY",
+          "day": 7,
+          "purchase_yen": 480,
+          "purchase_tickets": 20,
+          "total_gacha_draws": 55,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 487,
+              "probability": 0.951171875,
+              "median_day": 1.0,
+              "p90_day": 5.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 123,
+              "probability": 0.240234375,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 1,
+              "probability": 0.001953125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_G2",
+          "persona": "VALUE_PACK_ONLY",
+          "day": 30,
+          "purchase_yen": 480,
+          "purchase_tickets": 20,
+          "total_gacha_draws": 170,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 5.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 361,
+              "probability": 0.705078125,
+              "median_day": 18.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 2,
+              "probability": 0.00390625,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_G2",
+          "persona": "VALUE_PACK_ONLY",
+          "day": 90,
+          "purchase_yen": 1440,
+          "purchase_tickets": 60,
+          "total_gacha_draws": 510,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 5.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 500,
+              "probability": 0.9765625,
+              "median_day": 18.0,
+              "p90_day": 56.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 6,
+              "probability": 0.01171875,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_G2",
+          "persona": "VALUE_PLUS_DELIVERY",
+          "day": 7,
+          "purchase_yen": 1130,
+          "purchase_tickets": 27,
+          "total_gacha_draws": 62,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 490,
+              "probability": 0.95703125,
+              "median_day": 1.0,
+              "p90_day": 5.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 129,
+              "probability": 0.251953125,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 1,
+              "probability": 0.001953125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_G2",
+          "persona": "VALUE_PLUS_DELIVERY",
+          "day": 30,
+          "purchase_yen": 1130,
+          "purchase_tickets": 50,
+          "total_gacha_draws": 200,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 5.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 380,
+              "probability": 0.7421875,
+              "median_day": 16.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 2,
+              "probability": 0.00390625,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_G2",
+          "persona": "VALUE_PLUS_DELIVERY",
+          "day": 90,
+          "purchase_yen": 3390,
+          "purchase_tickets": 150,
+          "total_gacha_draws": 600,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 5.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 504,
+              "probability": 0.984375,
+              "median_day": 16.0,
+              "p90_day": 53.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 7,
+              "probability": 0.013671875,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_G2",
+          "persona": "REGULAR_100_PER_30D",
+          "day": 7,
+          "purchase_yen": 3000,
+          "purchase_tickets": 100,
+          "total_gacha_draws": 135,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 509,
+              "probability": 0.994140625,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 233,
+              "probability": 0.455078125,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 2,
+              "probability": 0.00390625,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_G2",
+          "persona": "REGULAR_100_PER_30D",
+          "day": 30,
+          "purchase_yen": 3000,
+          "purchase_tickets": 100,
+          "total_gacha_draws": 250,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 397,
+              "probability": 0.775390625,
+              "median_day": 10.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 2,
+              "probability": 0.00390625,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_G2",
+          "persona": "REGULAR_100_PER_30D",
+          "day": 90,
+          "purchase_yen": 9000,
+          "purchase_tickets": 300,
+          "total_gacha_draws": 750,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 508,
+              "probability": 0.9921875,
+              "median_day": 10.0,
+              "p90_day": 42.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 7,
+              "probability": 0.013671875,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_G2",
+          "persona": "HIGH_BUDGET_400_PER_30D",
+          "day": 7,
+          "purchase_yen": 12000,
+          "purchase_tickets": 400,
+          "total_gacha_draws": 435,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 430,
+              "probability": 0.83984375,
+              "median_day": 1.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 3,
+              "probability": 0.005859375,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_G2",
+          "persona": "HIGH_BUDGET_400_PER_30D",
+          "day": 30,
+          "purchase_yen": 12000,
+          "purchase_tickets": 400,
+          "total_gacha_draws": 550,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 480,
+              "probability": 0.9375,
+              "median_day": 1.0,
+              "p90_day": 20.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 7,
+              "probability": 0.013671875,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_W_G2",
+          "persona": "HIGH_BUDGET_400_PER_30D",
+          "day": 90,
+          "purchase_yen": 36000,
+          "purchase_tickets": 1200,
+          "total_gacha_draws": 1650,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 20.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 16,
+              "probability": 0.03125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        }
+      ],
+      "standalone_batches": [
+        {
+          "draws": 10,
+          "goals": {
+            "READY_2_AFFIX_SR": 0.248046875,
+            "LATENT_2_AFFIX_PROJECT": 0.826171875,
+            "LR_2_AFFIX": 0.013671875,
+            "LR_3_AFFIX_Q900": 0.0
+          }
+        },
+        {
+          "draws": 20,
+          "goals": {
+            "READY_2_AFFIX_SR": 0.4921875,
+            "LATENT_2_AFFIX_PROJECT": 0.96484375,
+            "LR_2_AFFIX": 0.044921875,
+            "LR_3_AFFIX_Q900": 0.0
+          }
+        },
+        {
+          "draws": 50,
+          "goals": {
+            "READY_2_AFFIX_SR": 0.810546875,
+            "LATENT_2_AFFIX_PROJECT": 1.0,
+            "LR_2_AFFIX": 0.087890625,
+            "LR_3_AFFIX_Q900": 0.001953125
+          }
+        },
+        {
+          "draws": 100,
+          "goals": {
+            "READY_2_AFFIX_SR": 0.97265625,
+            "LATENT_2_AFFIX_PROJECT": 1.0,
+            "LR_2_AFFIX": 0.244140625,
+            "LR_3_AFFIX_Q900": 0.00390625
+          }
+        },
+        {
+          "draws": 200,
+          "goals": {
+            "READY_2_AFFIX_SR": 0.998046875,
+            "LATENT_2_AFFIX_PROJECT": 1.0,
+            "LR_2_AFFIX": 0.484375,
+            "LR_3_AFFIX_Q900": 0.00390625
+          }
+        },
+        {
+          "draws": 400,
+          "goals": {
+            "READY_2_AFFIX_SR": 1.0,
+            "LATENT_2_AFFIX_PROJECT": 1.0,
+            "LR_2_AFFIX": 0.7734375,
+            "LR_3_AFFIX_Q900": 0.005859375
+          }
+        }
+      ],
+      "gacha_quality_counts_for_maxpull_all_samples": [
+        286377,
+        326826,
+        163128,
+        55265,
+        13204
+      ],
+      "samples": 512,
+      "maxpull": 1650,
+      "rng_seed_natural": 262010,
+      "rng_seed_gacha": 362010
+    },
+    {
+      "target": "EQ_A_03",
+      "oracle": {
+        "pool_size": 13,
+        "natural_latent_2": 0.10839160839160839,
+        "gacha_latent_2": 0.31818181818181823,
+        "natural_SR_visible2": 0.038461538461538464,
+        "gacha_SR_visible2": 0.16666666666666666,
+        "natural_LR_exact3_Q900_given_target_LR": 3.59166527453994e-06,
+        "gacha_LR_exact3_Q900_given_target_LR": 0.001922348014897077,
+        "natural_target_prob_non_sixth": 0.09783549783549783,
+        "natural_target_mean_per_day": 11.913419913419913
+      },
+      "rows": [
+        {
+          "target": "EQ_A_03",
+          "persona": "FREE_NO_AD",
+          "day": 7,
+          "purchase_yen": 0,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 35,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 463,
+              "probability": 0.904296875,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 2.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 95,
+              "probability": 0.185546875,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 0,
+              "probability": 0.0,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_A_03",
+          "persona": "FREE_NO_AD",
+          "day": 30,
+          "purchase_yen": 0,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 150,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 511,
+              "probability": 0.998046875,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 2.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 333,
+              "probability": 0.650390625,
+              "median_day": 20.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 1,
+              "probability": 0.001953125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_A_03",
+          "persona": "FREE_NO_AD",
+          "day": 90,
+          "purchase_yen": 0,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 450,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 2.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 492,
+              "probability": 0.9609375,
+              "median_day": 20.0,
+              "p90_day": 59.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 3,
+              "probability": 0.005859375,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_A_03",
+          "persona": "AD_ONLY",
+          "day": 7,
+          "purchase_yen": 980,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 35,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 463,
+              "probability": 0.904296875,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 2.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 95,
+              "probability": 0.185546875,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 0,
+              "probability": 0.0,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_A_03",
+          "persona": "AD_ONLY",
+          "day": 30,
+          "purchase_yen": 980,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 150,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 511,
+              "probability": 0.998046875,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 2.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 333,
+              "probability": 0.650390625,
+              "median_day": 20.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 1,
+              "probability": 0.001953125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_A_03",
+          "persona": "AD_ONLY",
+          "day": 90,
+          "purchase_yen": 980,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 450,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 2.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 492,
+              "probability": 0.9609375,
+              "median_day": 20.0,
+              "p90_day": 59.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 3,
+              "probability": 0.005859375,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_A_03",
+          "persona": "ONE_OUTFIT",
+          "day": 7,
+          "purchase_yen": 1480,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 35,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 463,
+              "probability": 0.904296875,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 2.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 95,
+              "probability": 0.185546875,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 0,
+              "probability": 0.0,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_A_03",
+          "persona": "ONE_OUTFIT",
+          "day": 30,
+          "purchase_yen": 1480,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 150,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 511,
+              "probability": 0.998046875,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 2.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 333,
+              "probability": 0.650390625,
+              "median_day": 20.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 1,
+              "probability": 0.001953125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_A_03",
+          "persona": "ONE_OUTFIT",
+          "day": 90,
+          "purchase_yen": 1480,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 450,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 2.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 492,
+              "probability": 0.9609375,
+              "median_day": 20.0,
+              "p90_day": 59.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 3,
+              "probability": 0.005859375,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_A_03",
+          "persona": "ONE_SMALL_PURCHASE",
+          "day": 7,
+          "purchase_yen": 160,
+          "purchase_tickets": 10,
+          "total_gacha_draws": 45,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 483,
+              "probability": 0.943359375,
+              "median_day": 2.0,
+              "p90_day": 6.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 104,
+              "probability": 0.203125,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 0,
+              "probability": 0.0,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_A_03",
+          "persona": "ONE_SMALL_PURCHASE",
+          "day": 30,
+          "purchase_yen": 160,
+          "purchase_tickets": 10,
+          "total_gacha_draws": 160,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 511,
+              "probability": 0.998046875,
+              "median_day": 2.0,
+              "p90_day": 6.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 337,
+              "probability": 0.658203125,
+              "median_day": 19.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 1,
+              "probability": 0.001953125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_A_03",
+          "persona": "ONE_SMALL_PURCHASE",
+          "day": 90,
+          "purchase_yen": 160,
+          "purchase_tickets": 10,
+          "total_gacha_draws": 460,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 2.0,
+              "p90_day": 6.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 494,
+              "probability": 0.96484375,
+              "median_day": 19.0,
+              "p90_day": 58.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 3,
+              "probability": 0.005859375,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_A_03",
+          "persona": "VALUE_PACK_ONLY",
+          "day": 7,
+          "purchase_yen": 480,
+          "purchase_tickets": 20,
+          "total_gacha_draws": 55,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 491,
+              "probability": 0.958984375,
+              "median_day": 1.0,
+              "p90_day": 5.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 110,
+              "probability": 0.21484375,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 0,
+              "probability": 0.0,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_A_03",
+          "persona": "VALUE_PACK_ONLY",
+          "day": 30,
+          "purchase_yen": 480,
+          "purchase_tickets": 20,
+          "total_gacha_draws": 170,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 5.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 344,
+              "probability": 0.671875,
+              "median_day": 19.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 1,
+              "probability": 0.001953125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_A_03",
+          "persona": "VALUE_PACK_ONLY",
+          "day": 90,
+          "purchase_yen": 1440,
+          "purchase_tickets": 60,
+          "total_gacha_draws": 510,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 5.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 497,
+              "probability": 0.970703125,
+              "median_day": 19.0,
+              "p90_day": 56.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 6,
+              "probability": 0.01171875,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_A_03",
+          "persona": "VALUE_PLUS_DELIVERY",
+          "day": 7,
+          "purchase_yen": 1130,
+          "purchase_tickets": 27,
+          "total_gacha_draws": 62,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 495,
+              "probability": 0.966796875,
+              "median_day": 1.0,
+              "p90_day": 5.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 116,
+              "probability": 0.2265625,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 0,
+              "probability": 0.0,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_A_03",
+          "persona": "VALUE_PLUS_DELIVERY",
+          "day": 30,
+          "purchase_yen": 1130,
+          "purchase_tickets": 50,
+          "total_gacha_draws": 200,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 5.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 370,
+              "probability": 0.72265625,
+              "median_day": 17.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 1,
+              "probability": 0.001953125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_A_03",
+          "persona": "VALUE_PLUS_DELIVERY",
+          "day": 90,
+          "purchase_yen": 3390,
+          "purchase_tickets": 150,
+          "total_gacha_draws": 600,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 5.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 500,
+              "probability": 0.9765625,
+              "median_day": 17.0,
+              "p90_day": 55.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 9,
+              "probability": 0.017578125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_A_03",
+          "persona": "REGULAR_100_PER_30D",
+          "day": 7,
+          "purchase_yen": 3000,
+          "purchase_tickets": 100,
+          "total_gacha_draws": 135,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 509,
+              "probability": 0.994140625,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 198,
+              "probability": 0.38671875,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 1,
+              "probability": 0.001953125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_A_03",
+          "persona": "REGULAR_100_PER_30D",
+          "day": 30,
+          "purchase_yen": 3000,
+          "purchase_tickets": 100,
+          "total_gacha_draws": 250,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 392,
+              "probability": 0.765625,
+              "median_day": 13.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 1,
+              "probability": 0.001953125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_A_03",
+          "persona": "REGULAR_100_PER_30D",
+          "day": 90,
+          "purchase_yen": 9000,
+          "purchase_tickets": 300,
+          "total_gacha_draws": 750,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 504,
+              "probability": 0.984375,
+              "median_day": 13.0,
+              "p90_day": 44.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 12,
+              "probability": 0.0234375,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_A_03",
+          "persona": "HIGH_BUDGET_400_PER_30D",
+          "day": 7,
+          "purchase_yen": 12000,
+          "purchase_tickets": 400,
+          "total_gacha_draws": 435,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 406,
+              "probability": 0.79296875,
+              "median_day": 1.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 2,
+              "probability": 0.00390625,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_A_03",
+          "persona": "HIGH_BUDGET_400_PER_30D",
+          "day": 30,
+          "purchase_yen": 12000,
+          "purchase_tickets": 400,
+          "total_gacha_draws": 550,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 471,
+              "probability": 0.919921875,
+              "median_day": 1.0,
+              "p90_day": 25.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 7,
+              "probability": 0.013671875,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_A_03",
+          "persona": "HIGH_BUDGET_400_PER_30D",
+          "day": 90,
+          "purchase_yen": 36000,
+          "purchase_tickets": 1200,
+          "total_gacha_draws": 1650,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 25.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 22,
+              "probability": 0.04296875,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        }
+      ],
+      "standalone_batches": [
+        {
+          "draws": 10,
+          "goals": {
+            "READY_2_AFFIX_SR": 0.236328125,
+            "LATENT_2_AFFIX_PROJECT": 0.798828125,
+            "LR_2_AFFIX": 0.029296875,
+            "LR_3_AFFIX_Q900": 0.0
+          }
+        },
+        {
+          "draws": 20,
+          "goals": {
+            "READY_2_AFFIX_SR": 0.439453125,
+            "LATENT_2_AFFIX_PROJECT": 0.94921875,
+            "LR_2_AFFIX": 0.04296875,
+            "LR_3_AFFIX_Q900": 0.0
+          }
+        },
+        {
+          "draws": 50,
+          "goals": {
+            "READY_2_AFFIX_SR": 0.767578125,
+            "LATENT_2_AFFIX_PROJECT": 1.0,
+            "LR_2_AFFIX": 0.078125,
+            "LR_3_AFFIX_Q900": 0.0
+          }
+        },
+        {
+          "draws": 100,
+          "goals": {
+            "READY_2_AFFIX_SR": 0.951171875,
+            "LATENT_2_AFFIX_PROJECT": 1.0,
+            "LR_2_AFFIX": 0.22265625,
+            "LR_3_AFFIX_Q900": 0.0
+          }
+        },
+        {
+          "draws": 200,
+          "goals": {
+            "READY_2_AFFIX_SR": 0.99609375,
+            "LATENT_2_AFFIX_PROJECT": 1.0,
+            "LR_2_AFFIX": 0.451171875,
+            "LR_3_AFFIX_Q900": 0.001953125
+          }
+        },
+        {
+          "draws": 400,
+          "goals": {
+            "READY_2_AFFIX_SR": 1.0,
+            "LATENT_2_AFFIX_PROJECT": 1.0,
+            "LR_2_AFFIX": 0.720703125,
+            "LR_3_AFFIX_Q900": 0.00390625
+          }
+        }
+      ],
+      "gacha_quality_counts_for_maxpull_all_samples": [
+        286373,
+        327122,
+        162963,
+        55245,
+        13097
+      ],
+      "samples": 512,
+      "maxpull": 1650,
+      "rng_seed_natural": 263010,
+      "rng_seed_gacha": 363010
+    },
+    {
+      "target": "EQ_S_03",
+      "oracle": {
+        "pool_size": 12,
+        "natural_latent_2": 0.12727272727272726,
+        "gacha_latent_2": 0.34545454545454546,
+        "natural_SR_visible2": 0.045454545454545456,
+        "gacha_SR_visible2": 0.18181818181818182,
+        "natural_LR_exact3_Q900_given_target_LR": 4.669164856901922e-06,
+        "gacha_LR_exact3_Q900_given_target_LR": 0.0023068176178764922,
+        "natural_target_prob_non_sixth": 0.09783549783549783,
+        "natural_target_mean_per_day": 11.913419913419913
+      },
+      "rows": [
+        {
+          "target": "EQ_S_03",
+          "persona": "FREE_NO_AD",
+          "day": 7,
+          "purchase_yen": 0,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 35,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 480,
+              "probability": 0.9375,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 98,
+              "probability": 0.19140625,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 1,
+              "probability": 0.001953125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_S_03",
+          "persona": "FREE_NO_AD",
+          "day": 30,
+          "purchase_yen": 0,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 150,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 339,
+              "probability": 0.662109375,
+              "median_day": 20.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 1,
+              "probability": 0.001953125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_S_03",
+          "persona": "FREE_NO_AD",
+          "day": 90,
+          "purchase_yen": 0,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 450,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 500,
+              "probability": 0.9765625,
+              "median_day": 20.0,
+              "p90_day": 58.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 4,
+              "probability": 0.0078125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_S_03",
+          "persona": "AD_ONLY",
+          "day": 7,
+          "purchase_yen": 980,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 35,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 480,
+              "probability": 0.9375,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 98,
+              "probability": 0.19140625,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 1,
+              "probability": 0.001953125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_S_03",
+          "persona": "AD_ONLY",
+          "day": 30,
+          "purchase_yen": 980,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 150,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 339,
+              "probability": 0.662109375,
+              "median_day": 20.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 1,
+              "probability": 0.001953125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_S_03",
+          "persona": "AD_ONLY",
+          "day": 90,
+          "purchase_yen": 980,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 450,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 500,
+              "probability": 0.9765625,
+              "median_day": 20.0,
+              "p90_day": 58.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 4,
+              "probability": 0.0078125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_S_03",
+          "persona": "ONE_OUTFIT",
+          "day": 7,
+          "purchase_yen": 1480,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 35,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 480,
+              "probability": 0.9375,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 98,
+              "probability": 0.19140625,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 1,
+              "probability": 0.001953125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_S_03",
+          "persona": "ONE_OUTFIT",
+          "day": 30,
+          "purchase_yen": 1480,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 150,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 339,
+              "probability": 0.662109375,
+              "median_day": 20.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 1,
+              "probability": 0.001953125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_S_03",
+          "persona": "ONE_OUTFIT",
+          "day": 90,
+          "purchase_yen": 1480,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 450,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 500,
+              "probability": 0.9765625,
+              "median_day": 20.0,
+              "p90_day": 58.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 4,
+              "probability": 0.0078125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_S_03",
+          "persona": "ONE_SMALL_PURCHASE",
+          "day": 7,
+          "purchase_yen": 160,
+          "purchase_tickets": 10,
+          "total_gacha_draws": 45,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 492,
+              "probability": 0.9609375,
+              "median_day": 2.0,
+              "p90_day": 6.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 106,
+              "probability": 0.20703125,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 1,
+              "probability": 0.001953125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_S_03",
+          "persona": "ONE_SMALL_PURCHASE",
+          "day": 30,
+          "purchase_yen": 160,
+          "purchase_tickets": 10,
+          "total_gacha_draws": 160,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 2.0,
+              "p90_day": 6.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 344,
+              "probability": 0.671875,
+              "median_day": 19.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 1,
+              "probability": 0.001953125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_S_03",
+          "persona": "ONE_SMALL_PURCHASE",
+          "day": 90,
+          "purchase_yen": 160,
+          "purchase_tickets": 10,
+          "total_gacha_draws": 460,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 2.0,
+              "p90_day": 6.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 502,
+              "probability": 0.98046875,
+              "median_day": 19.0,
+              "p90_day": 57.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 4,
+              "probability": 0.0078125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_S_03",
+          "persona": "VALUE_PACK_ONLY",
+          "day": 7,
+          "purchase_yen": 480,
+          "purchase_tickets": 20,
+          "total_gacha_draws": 55,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 495,
+              "probability": 0.966796875,
+              "median_day": 1.0,
+              "p90_day": 5.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 114,
+              "probability": 0.22265625,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 1,
+              "probability": 0.001953125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_S_03",
+          "persona": "VALUE_PACK_ONLY",
+          "day": 30,
+          "purchase_yen": 480,
+          "purchase_tickets": 20,
+          "total_gacha_draws": 170,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 5.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 351,
+              "probability": 0.685546875,
+              "median_day": 18.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 1,
+              "probability": 0.001953125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_S_03",
+          "persona": "VALUE_PACK_ONLY",
+          "day": 90,
+          "purchase_yen": 1440,
+          "purchase_tickets": 60,
+          "total_gacha_draws": 510,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 5.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 504,
+              "probability": 0.984375,
+              "median_day": 18.0,
+              "p90_day": 53.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 4,
+              "probability": 0.0078125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_S_03",
+          "persona": "VALUE_PLUS_DELIVERY",
+          "day": 7,
+          "purchase_yen": 1130,
+          "purchase_tickets": 27,
+          "total_gacha_draws": 62,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 499,
+              "probability": 0.974609375,
+              "median_day": 1.0,
+              "p90_day": 5.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 117,
+              "probability": 0.228515625,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 1,
+              "probability": 0.001953125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_S_03",
+          "persona": "VALUE_PLUS_DELIVERY",
+          "day": 30,
+          "purchase_yen": 1130,
+          "purchase_tickets": 50,
+          "total_gacha_draws": 200,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 5.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 375,
+              "probability": 0.732421875,
+              "median_day": 17.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 2,
+              "probability": 0.00390625,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_S_03",
+          "persona": "VALUE_PLUS_DELIVERY",
+          "day": 90,
+          "purchase_yen": 3390,
+          "purchase_tickets": 150,
+          "total_gacha_draws": 600,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 5.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 506,
+              "probability": 0.98828125,
+              "median_day": 17.0,
+              "p90_day": 50.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 4,
+              "probability": 0.0078125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_S_03",
+          "persona": "REGULAR_100_PER_30D",
+          "day": 7,
+          "purchase_yen": 3000,
+          "purchase_tickets": 100,
+          "total_gacha_draws": 135,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 510,
+              "probability": 0.99609375,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 210,
+              "probability": 0.41015625,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 1,
+              "probability": 0.001953125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_S_03",
+          "persona": "REGULAR_100_PER_30D",
+          "day": 30,
+          "purchase_yen": 3000,
+          "purchase_tickets": 100,
+          "total_gacha_draws": 250,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 393,
+              "probability": 0.767578125,
+              "median_day": 11.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 2,
+              "probability": 0.00390625,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_S_03",
+          "persona": "REGULAR_100_PER_30D",
+          "day": 90,
+          "purchase_yen": 9000,
+          "purchase_tickets": 300,
+          "total_gacha_draws": 750,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 511,
+              "probability": 0.998046875,
+              "median_day": 11.0,
+              "p90_day": 43.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 4,
+              "probability": 0.0078125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_S_03",
+          "persona": "HIGH_BUDGET_400_PER_30D",
+          "day": 7,
+          "purchase_yen": 12000,
+          "purchase_tickets": 400,
+          "total_gacha_draws": 435,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 415,
+              "probability": 0.810546875,
+              "median_day": 1.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 4,
+              "probability": 0.0078125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_S_03",
+          "persona": "HIGH_BUDGET_400_PER_30D",
+          "day": 30,
+          "purchase_yen": 12000,
+          "purchase_tickets": 400,
+          "total_gacha_draws": 550,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 481,
+              "probability": 0.939453125,
+              "median_day": 1.0,
+              "p90_day": 21.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 4,
+              "probability": 0.0078125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_S_03",
+          "persona": "HIGH_BUDGET_400_PER_30D",
+          "day": 90,
+          "purchase_yen": 36000,
+          "purchase_tickets": 1200,
+          "total_gacha_draws": 1650,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 21.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 15,
+              "probability": 0.029296875,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        }
+      ],
+      "standalone_batches": [
+        {
+          "draws": 10,
+          "goals": {
+            "READY_2_AFFIX_SR": 0.224609375,
+            "LATENT_2_AFFIX_PROJECT": 0.849609375,
+            "LR_2_AFFIX": 0.017578125,
+            "LR_3_AFFIX_Q900": 0.0
+          }
+        },
+        {
+          "draws": 20,
+          "goals": {
+            "READY_2_AFFIX_SR": 0.44140625,
+            "LATENT_2_AFFIX_PROJECT": 0.978515625,
+            "LR_2_AFFIX": 0.029296875,
+            "LR_3_AFFIX_Q900": 0.0
+          }
+        },
+        {
+          "draws": 50,
+          "goals": {
+            "READY_2_AFFIX_SR": 0.79296875,
+            "LATENT_2_AFFIX_PROJECT": 1.0,
+            "LR_2_AFFIX": 0.087890625,
+            "LR_3_AFFIX_Q900": 0.001953125
+          }
+        },
+        {
+          "draws": 100,
+          "goals": {
+            "READY_2_AFFIX_SR": 0.95703125,
+            "LATENT_2_AFFIX_PROJECT": 1.0,
+            "LR_2_AFFIX": 0.216796875,
+            "LR_3_AFFIX_Q900": 0.001953125
+          }
+        },
+        {
+          "draws": 200,
+          "goals": {
+            "READY_2_AFFIX_SR": 1.0,
+            "LATENT_2_AFFIX_PROJECT": 1.0,
+            "LR_2_AFFIX": 0.482421875,
+            "LR_3_AFFIX_Q900": 0.00390625
+          }
+        },
+        {
+          "draws": 400,
+          "goals": {
+            "READY_2_AFFIX_SR": 1.0,
+            "LATENT_2_AFFIX_PROJECT": 1.0,
+            "LR_2_AFFIX": 0.75,
+            "LR_3_AFFIX_Q900": 0.005859375
+          }
+        }
+      ],
+      "gacha_quality_counts_for_maxpull_all_samples": [
+        286014,
+        327022,
+        163484,
+        55036,
+        13244
+      ],
+      "samples": 512,
+      "maxpull": 1650,
+      "rng_seed_natural": 264010,
+      "rng_seed_gacha": 364010
+    },
+    {
+      "target": "EQ_F_03",
+      "oracle": {
+        "pool_size": 12,
+        "natural_latent_2": 0.12727272727272726,
+        "gacha_latent_2": 0.34545454545454546,
+        "natural_SR_visible2": 0.045454545454545456,
+        "gacha_SR_visible2": 0.18181818181818182,
+        "natural_LR_exact3_Q900_given_target_LR": 4.669164856901922e-06,
+        "gacha_LR_exact3_Q900_given_target_LR": 0.0023068176178764922,
+        "natural_target_prob_non_sixth": 0.09783549783549783,
+        "natural_target_mean_per_day": 11.913419913419913
+      },
+      "rows": [
+        {
+          "target": "EQ_F_03",
+          "persona": "FREE_NO_AD",
+          "day": 7,
+          "purchase_yen": 0,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 35,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 461,
+              "probability": 0.900390625,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 125,
+              "probability": 0.244140625,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 0,
+              "probability": 0.0,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_F_03",
+          "persona": "FREE_NO_AD",
+          "day": 30,
+          "purchase_yen": 0,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 150,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 371,
+              "probability": 0.724609375,
+              "median_day": 20.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 0,
+              "probability": 0.0,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_F_03",
+          "persona": "FREE_NO_AD",
+          "day": 90,
+          "purchase_yen": 0,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 450,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 501,
+              "probability": 0.978515625,
+              "median_day": 20.0,
+              "p90_day": 48.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 6,
+              "probability": 0.01171875,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_F_03",
+          "persona": "AD_ONLY",
+          "day": 7,
+          "purchase_yen": 980,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 35,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 461,
+              "probability": 0.900390625,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 125,
+              "probability": 0.244140625,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 0,
+              "probability": 0.0,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_F_03",
+          "persona": "AD_ONLY",
+          "day": 30,
+          "purchase_yen": 980,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 150,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 371,
+              "probability": 0.724609375,
+              "median_day": 20.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 0,
+              "probability": 0.0,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_F_03",
+          "persona": "AD_ONLY",
+          "day": 90,
+          "purchase_yen": 980,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 450,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 501,
+              "probability": 0.978515625,
+              "median_day": 20.0,
+              "p90_day": 48.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 6,
+              "probability": 0.01171875,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_F_03",
+          "persona": "ONE_OUTFIT",
+          "day": 7,
+          "purchase_yen": 1480,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 35,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 461,
+              "probability": 0.900390625,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 125,
+              "probability": 0.244140625,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 0,
+              "probability": 0.0,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_F_03",
+          "persona": "ONE_OUTFIT",
+          "day": 30,
+          "purchase_yen": 1480,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 150,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 371,
+              "probability": 0.724609375,
+              "median_day": 20.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 0,
+              "probability": 0.0,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_F_03",
+          "persona": "ONE_OUTFIT",
+          "day": 90,
+          "purchase_yen": 1480,
+          "purchase_tickets": 0,
+          "total_gacha_draws": 450,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 3.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 501,
+              "probability": 0.978515625,
+              "median_day": 20.0,
+              "p90_day": 48.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 6,
+              "probability": 0.01171875,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_F_03",
+          "persona": "ONE_SMALL_PURCHASE",
+          "day": 7,
+          "purchase_yen": 160,
+          "purchase_tickets": 10,
+          "total_gacha_draws": 45,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 472,
+              "probability": 0.921875,
+              "median_day": 2.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 138,
+              "probability": 0.26953125,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 0,
+              "probability": 0.0,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_F_03",
+          "persona": "ONE_SMALL_PURCHASE",
+          "day": 30,
+          "purchase_yen": 160,
+          "purchase_tickets": 10,
+          "total_gacha_draws": 160,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 2.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 380,
+              "probability": 0.7421875,
+              "median_day": 18.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 0,
+              "probability": 0.0,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_F_03",
+          "persona": "ONE_SMALL_PURCHASE",
+          "day": 90,
+          "purchase_yen": 160,
+          "purchase_tickets": 10,
+          "total_gacha_draws": 460,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 2.0,
+              "p90_day": 7.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 501,
+              "probability": 0.978515625,
+              "median_day": 18.0,
+              "p90_day": 48.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 6,
+              "probability": 0.01171875,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_F_03",
+          "persona": "VALUE_PACK_ONLY",
+          "day": 7,
+          "purchase_yen": 480,
+          "purchase_tickets": 20,
+          "total_gacha_draws": 55,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 485,
+              "probability": 0.947265625,
+              "median_day": 1.0,
+              "p90_day": 6.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 146,
+              "probability": 0.28515625,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 0,
+              "probability": 0.0,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_F_03",
+          "persona": "VALUE_PACK_ONLY",
+          "day": 30,
+          "purchase_yen": 480,
+          "purchase_tickets": 20,
+          "total_gacha_draws": 170,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 6.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 384,
+              "probability": 0.75,
+              "median_day": 16.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 0,
+              "probability": 0.0,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_F_03",
+          "persona": "VALUE_PACK_ONLY",
+          "day": 90,
+          "purchase_yen": 1440,
+          "purchase_tickets": 60,
+          "total_gacha_draws": 510,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 6.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 501,
+              "probability": 0.978515625,
+              "median_day": 16.0,
+              "p90_day": 46.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 6,
+              "probability": 0.01171875,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_F_03",
+          "persona": "VALUE_PLUS_DELIVERY",
+          "day": 7,
+          "purchase_yen": 1130,
+          "purchase_tickets": 27,
+          "total_gacha_draws": 62,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 491,
+              "probability": 0.958984375,
+              "median_day": 1.0,
+              "p90_day": 5.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 153,
+              "probability": 0.298828125,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 0,
+              "probability": 0.0,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_F_03",
+          "persona": "VALUE_PLUS_DELIVERY",
+          "day": 30,
+          "purchase_yen": 1130,
+          "purchase_tickets": 50,
+          "total_gacha_draws": 200,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 5.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 406,
+              "probability": 0.79296875,
+              "median_day": 15.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 1,
+              "probability": 0.001953125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_F_03",
+          "persona": "VALUE_PLUS_DELIVERY",
+          "day": 90,
+          "purchase_yen": 3390,
+          "purchase_tickets": 150,
+          "total_gacha_draws": 600,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 5.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 504,
+              "probability": 0.984375,
+              "median_day": 15.0,
+              "p90_day": 42.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 6,
+              "probability": 0.01171875,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_F_03",
+          "persona": "REGULAR_100_PER_30D",
+          "day": 7,
+          "purchase_yen": 3000,
+          "purchase_tickets": 100,
+          "total_gacha_draws": 135,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 510,
+              "probability": 0.99609375,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 238,
+              "probability": 0.46484375,
+              "median_day": null,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 0,
+              "probability": 0.0,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_F_03",
+          "persona": "REGULAR_100_PER_30D",
+          "day": 30,
+          "purchase_yen": 3000,
+          "purchase_tickets": 100,
+          "total_gacha_draws": 250,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 430,
+              "probability": 0.83984375,
+              "median_day": 9.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 1,
+              "probability": 0.001953125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_F_03",
+          "persona": "REGULAR_100_PER_30D",
+          "day": 90,
+          "purchase_yen": 9000,
+          "purchase_tickets": 300,
+          "total_gacha_draws": 750,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 506,
+              "probability": 0.98828125,
+              "median_day": 9.0,
+              "p90_day": 34.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 7,
+              "probability": 0.013671875,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_F_03",
+          "persona": "HIGH_BUDGET_400_PER_30D",
+          "day": 7,
+          "purchase_yen": 12000,
+          "purchase_tickets": 400,
+          "total_gacha_draws": 435,
+          "natural_draws": 336,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 436,
+              "probability": 0.8515625,
+              "median_day": 1.0,
+              "p90_day": null
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 6,
+              "probability": 0.01171875,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_F_03",
+          "persona": "HIGH_BUDGET_400_PER_30D",
+          "day": 30,
+          "purchase_yen": 12000,
+          "purchase_tickets": 400,
+          "total_gacha_draws": 550,
+          "natural_draws": 1440,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 477,
+              "probability": 0.931640625,
+              "median_day": 1.0,
+              "p90_day": 20.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 6,
+              "probability": 0.01171875,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        },
+        {
+          "target": "EQ_F_03",
+          "persona": "HIGH_BUDGET_400_PER_30D",
+          "day": 90,
+          "purchase_yen": 36000,
+          "purchase_tickets": 1200,
+          "total_gacha_draws": 1650,
+          "natural_draws": 4320,
+          "samples": 512,
+          "goals": {
+            "READY_2_AFFIX_SR": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LATENT_2_AFFIX_PROJECT": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 1.0
+            },
+            "LR_2_AFFIX": {
+              "success_count": 512,
+              "probability": 1.0,
+              "median_day": 1.0,
+              "p90_day": 20.0
+            },
+            "LR_3_AFFIX_Q900": {
+              "success_count": 16,
+              "probability": 0.03125,
+              "median_day": null,
+              "p90_day": null
+            }
+          }
+        }
+      ],
+      "standalone_batches": [
+        {
+          "draws": 10,
+          "goals": {
+            "READY_2_AFFIX_SR": 0.248046875,
+            "LATENT_2_AFFIX_PROJECT": 0.859375,
+            "LR_2_AFFIX": 0.025390625,
+            "LR_3_AFFIX_Q900": 0.0
+          }
+        },
+        {
+          "draws": 20,
+          "goals": {
+            "READY_2_AFFIX_SR": 0.45703125,
+            "LATENT_2_AFFIX_PROJECT": 0.974609375,
+            "LR_2_AFFIX": 0.056640625,
+            "LR_3_AFFIX_Q900": 0.0
+          }
+        },
+        {
+          "draws": 50,
+          "goals": {
+            "READY_2_AFFIX_SR": 0.794921875,
+            "LATENT_2_AFFIX_PROJECT": 1.0,
+            "LR_2_AFFIX": 0.119140625,
+            "LR_3_AFFIX_Q900": 0.0
+          }
+        },
+        {
+          "draws": 100,
+          "goals": {
+            "READY_2_AFFIX_SR": 0.95703125,
+            "LATENT_2_AFFIX_PROJECT": 1.0,
+            "LR_2_AFFIX": 0.265625,
+            "LR_3_AFFIX_Q900": 0.0
+          }
+        },
+        {
+          "draws": 200,
+          "goals": {
+            "READY_2_AFFIX_SR": 0.998046875,
+            "LATENT_2_AFFIX_PROJECT": 1.0,
+            "LR_2_AFFIX": 0.533203125,
+            "LR_3_AFFIX_Q900": 0.001953125
+          }
+        },
+        {
+          "draws": 400,
+          "goals": {
+            "READY_2_AFFIX_SR": 1.0,
+            "LATENT_2_AFFIX_PROJECT": 1.0,
+            "LR_2_AFFIX": 0.806640625,
+            "LR_3_AFFIX_Q900": 0.009765625
+          }
+        }
+      ],
+      "gacha_quality_counts_for_maxpull_all_samples": [
+        286143,
+        326642,
+        163416,
+        55305,
+        13294
+      ],
+      "samples": 512,
+      "maxpull": 1650,
+      "rng_seed_natural": 265010,
+      "rng_seed_gacha": 365010
+    }
+  ]
+}

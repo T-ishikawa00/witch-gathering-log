@@ -1,0 +1,11 @@
+{
+  "status": "INDEPENDENT_SOURCE_REVIEW_PASS_RUNTIME_PENDING",
+  "sourceSHA256": "084775eba33c4cfda3eaf81b298c9189f61f70157b343328f3ed06fc6a0059de",
+  "reviewer": "core-independent UI/art reviewer art_inventory",
+  "checks": [
+    "Diff adds only visible.isEmpty explanation andclearfilters",
+    "Distinguishes emptyownedinventory, emptynewitems andfilter no-match",
+    "Clearchanges @State search andquality only; no model/engine/savecall"
+  ],
+  "scope": "Sourceinspection only; Rootmust inspect4runtime screenshots andsavedbytes"
+}

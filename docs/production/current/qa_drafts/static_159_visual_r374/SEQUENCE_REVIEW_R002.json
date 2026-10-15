@@ -1,0 +1,505 @@
+{
+  "schema": "ambient-vfx-sequence-review-r374-r002-v1",
+  "reviewedAtLocal": "2026-10-14 Asia/Tokyo",
+  "scope": "Bounded read-only inspection of the remaining five ambient kits and five regional combat VFX kits using existing frame PNGs and runtime screenshots/contact sheets; no source/image/runtime edits, build, or device action.",
+  "ledger": {
+    "path": "docs/production/current/qa_drafts/asset_readiness_r308/ASSET_READINESS_R001.json",
+    "sha256": "02b76b68239cdaf0af7934dfc7bbcdb4eef1592dff2cff99aec896b6f8d29a25",
+    "bytes": 1587027,
+    "rows": 159,
+    "R308Classification": "PARTIAL_OR_NOT_ACCEPTED; existing runtime index maps ENV/FX sequences but does not qualify integration or adoption."
+  },
+  "tenUnitReview": [
+    {
+      "unitID": "ENV_R01",
+      "kind": "ambient_kit",
+      "sourceSample": {
+        "path": "native/qa_source_20261014T000207/PreparedResources/Art/Effects/ENV_R01_01/ENV_R01_01__frame_00__r001.png",
+        "sha256": "f6411607914d90accbe95d5652f41dc5abf3983fe6185c997a7a357ce80812a6"
+      },
+      "runtimeVisual": {
+        "path": "docs/production/current/qa_drafts/enemy_event_render_r145/root_capture_candidate_r002/capture_r001/case01_E_R01_01/terminal_screen.png",
+        "sha256": "9c8e0a2c38259a02fa7fe63d31eb41ebc39f0161105530053ad091d799a7ae1d"
+      },
+      "observation": "ENV_R01 source sample is sparse warm glints on transparency; native terminal screen shows a forest scene with small floral/edge details, but no direct emitter-to-frame join. R145 six real battle traces exist, but terminal screen is post-battle, not VFX proof.",
+      "status": "PARTIAL_VISUAL_SAMPLE; no source/runtime defect proven; not integration/adoption acceptance"
+    },
+    {
+      "unitID": "FX_R01",
+      "kind": "combat_vfx_kit",
+      "sourceSample": null,
+      "runtimeVisual": {
+        "path": "docs/production/current/qa_drafts/enemy_event_render_r145/root_capture_candidate_r002/capture_r001/case01_E_R01_01/terminal_screen.png",
+        "sha256": "9c8e0a2c38259a02fa7fe63d31eb41ebc39f0161105530053ad091d799a7ae1d"
+      },
+      "observation": "FX_R01 not visually tied to a specific effect: R145 event traces are real but the inspected battle sample has no visible FX; cannot accept the 56-frame region pack from a final screen.",
+      "status": "PARTIAL_VISUAL_SAMPLE; no source/runtime defect proven; not integration/adoption acceptance"
+    },
+    {
+      "unitID": "ENV_R02",
+      "kind": "ambient_kit",
+      "sourceSample": {
+        "path": "native/qa_source_20261014T000207/PreparedResources/Art/Effects/ENV_R02_01/ENV_R02_01__frame_00__r002.png",
+        "sha256": "4c56888d11a7a9ee028791fd3d4fdb8233ef3b949c2b37b853d0f6e1eb67772c"
+      },
+      "runtimeVisual": {
+        "path": "docs/production/current/qa_drafts/earned_multi_enemy_effects_r001/run_20261011T1140JST/CH_R02_03_c6577885-43c9-4d45-8e46-9f0392f2e972/video_samples/CONTACT.jpg",
+        "sha256": "bdb9a6079293898b0a78e1c40b42631484609279a8608e53282190ada4eec9ae"
+      },
+      "observation": "ENV_R02 sample is a faint horizontal cool glint; existing R02 scene contact sheet has bright water/flowers and ambient detail. Static/runtime presence only.",
+      "status": "PARTIAL_VISUAL_SAMPLE; no source/runtime defect proven; not integration/adoption acceptance"
+    },
+    {
+      "unitID": "FX_R02",
+      "kind": "combat_vfx_kit",
+      "sourceSample": null,
+      "runtimeVisual": {
+        "path": "docs/production/current/qa_drafts/earned_multi_enemy_effects_r001/run_20261011T1140JST/CH_R02_03_c6577885-43c9-4d45-8e46-9f0392f2e972/video_samples/CONTACT.jpg",
+        "sha256": "bdb9a6079293898b0a78e1c40b42631484609279a8608e53282190ada4eec9ae"
+      },
+      "observation": "R02 challenge contact sheet shows readable yellow target ring around an enemy and impact/damage sequence. This is actual runtime imagery, not proof every one of the 48 refs plays or is authored correctly.",
+      "status": "PARTIAL_VISUAL_SAMPLE; no source/runtime defect proven; not integration/adoption acceptance"
+    },
+    {
+      "unitID": "ENV_R03",
+      "kind": "ambient_kit",
+      "sourceSample": {
+        "path": "native/qa_source_20261014T000207/PreparedResources/Art/Effects/ENV_R03_01/ENV_R03_01__frame_00__r002.png",
+        "sha256": "71635458c7dd4c3d8c66b589bb34a146a424f8546ecd600dcabca90811e00ee9"
+      },
+      "runtimeVisual": {
+        "path": "docs/production/current/qa_drafts/scene_texture_cache_r001/native_battle_r001/E_R03_02/battle.png",
+        "sha256": "32acf6adfe397f5c56c05dc27338b67164eda3f778434e78cc901a480a8f2069"
+      },
+      "observation": "ENV_R03 sample is very small warm/violet particle marks; cave scene screenshot shows the crystal-lit environment. No obvious clipping; particle sequence timing is not established.",
+      "status": "PARTIAL_VISUAL_SAMPLE; no source/runtime defect proven; not integration/adoption acceptance"
+    },
+    {
+      "unitID": "FX_R03",
+      "kind": "combat_vfx_kit",
+      "sourceSample": null,
+      "runtimeVisual": {
+        "path": "docs/production/current/qa_drafts/scene_texture_cache_r001/native_battle_r001/E_R03_02/battle.png",
+        "sha256": "32acf6adfe397f5c56c05dc27338b67164eda3f778434e78cc901a480a8f2069"
+      },
+      "observation": "R03 battle screenshot shows blue glint near familiar and a yellow enemy marker; exact FX_R03 actor/effect attribution is not joined, so visual inspection is provisional.",
+      "status": "PARTIAL_VISUAL_SAMPLE; no source/runtime defect proven; not integration/adoption acceptance"
+    },
+    {
+      "unitID": "ENV_R04",
+      "kind": "ambient_kit",
+      "sourceSample": {
+        "path": "native/qa_source_20261014T000207/PreparedResources/Art/Effects/ENV_R04_01/ENV_R04_01__frame_00__r002.png",
+        "sha256": "12db9e702f528c418d146fd85c8dbd06f6e55ae726703dab0f846f73ea389706"
+      },
+      "runtimeVisual": {
+        "path": "docs/production/current/qa_drafts/current_effect_routes_r058/native_run_r005_R010_F843_CH_R04_02/visual_review_r001/CONTACT_R001.jpg",
+        "sha256": "c0cfcaf7fcdffb5476bfbd09c6274c0ccdfbeadbedb0bd958b3e6f9c1febdb7f"
+      },
+      "observation": "ENV_R04 source sample is nearly invisible blue/white spark points; R04 snowy battle contact sheet shows the snow scene clearly. No definite defect, but ambient legibility at phone size is subtle.",
+      "status": "PARTIAL_VISUAL_SAMPLE; no source/runtime defect proven; not integration/adoption acceptance"
+    },
+    {
+      "unitID": "FX_R04",
+      "kind": "combat_vfx_kit",
+      "sourceSample": null,
+      "runtimeVisual": {
+        "path": "docs/production/current/qa_drafts/current_effect_routes_r058/native_run_r005_R010_F843_CH_R04_02/visual_review_r001/CONTACT_R001.jpg",
+        "sha256": "c0cfcaf7fcdffb5476bfbd09c6274c0ccdfbeadbedb0bd958b3e6f9c1febdb7f"
+      },
+      "observation": "R04 contact sheet shows repeated yellow rings on the wolf/enemy and combat context. No obvious bounds/occlusion defect in the viewed sheet; full temporal/naturalness acceptance remains open.",
+      "status": "PARTIAL_VISUAL_SAMPLE; no source/runtime defect proven; not integration/adoption acceptance"
+    },
+    {
+      "unitID": "ENV_R05",
+      "kind": "ambient_kit",
+      "sourceSample": {
+        "path": "native/qa_source_20261014T000207/PreparedResources/Art/Effects/ENV_R05_01/ENV_R05_01__frame_00__r002.png",
+        "sha256": "5a9db504a2efe7eb62d0cd119cc9045308df5525bf4fc35956bf0c6a1f14c326"
+      },
+      "runtimeVisual": {
+        "path": "docs/production/current/qa_drafts/earned_multi_enemy_effects_r001/run_20261011T1140JST/CH_R05_02_d65e9027-064d-4e98-b1ab-ce75412ca2db/video_samples/CONTACT.jpg",
+        "sha256": "9995ba0fe8569d15f7d450076ed2131ac02b381bcea40ee9caed321c364535f2"
+      },
+      "observation": "ENV_R05 sample is sparse warm gold glints; R05 lantern-garden battle contact sheet renders the scene and lanterns distinctly. No concrete defect found.",
+      "status": "PARTIAL_VISUAL_SAMPLE; no source/runtime defect proven; not integration/adoption acceptance"
+    },
+    {
+      "unitID": "FX_R05",
+      "kind": "combat_vfx_kit",
+      "sourceSample": null,
+      "runtimeVisual": {
+        "path": "docs/production/current/qa_drafts/earned_multi_enemy_effects_r001/run_20261011T1140JST/CH_R05_02_d65e9027-064d-4e98-b1ab-ce75412ca2db/video_samples/CONTACT.jpg",
+        "sha256": "9995ba0fe8569d15f7d450076ed2131ac02b381bcea40ee9caed321c364535f2"
+      },
+      "observation": "R05 contact sheet shows gold targeting/impact rings around lantern-like enemies; individual pack actions are not all separated or verified.",
+      "status": "PARTIAL_VISUAL_SAMPLE; no source/runtime defect proven; not integration/adoption acceptance"
+    }
+  ],
+  "sequenceLimits": {
+    "sourceFrameSets": "Each ENV_Rxx pack references 24 frames across three 8-frame motifs. This review visually sampled representative frames only, not all 120 PNGs. Samples are 128x128 transparent canvases with very sparse glints/particles; intermittent fully transparent frames in ENV_R03_03/ENV_R04_03/ENV_R05_03 were measured previously and may be intentional blink gaps, not a proven defect.",
+    "runtimeEvidence": "R02/R04/R05 effect contact sheets and R03 battle screenshot show effects in live battle scenes; R01 current view is postbattle forest screen, and the R145 receipt proves battle events/render snapshots but does not bind a viewed R01 effect frame.",
+    "noDefect": "No concrete malformed/clipped ambient or VFX sprite was proven. These ten units remain candidate sequences; viewed screens do not qualify every effect identity/frame/timing."
+  },
+  "R145R01Trace": {
+    "runPath": "docs/production/current/qa_drafts/enemy_event_render_r145/root_capture_candidate_r002/capture_r001/RUN.json",
+    "runSHA256": "bbff4bc5d167f1209579978cfeae1634dbf4e5ba16a9f637aa42690ef0ba6770",
+    "case01TracePath": "docs/production/current/qa_drafts/enemy_event_render_r145/root_capture_candidate_r002/capture_r001/case01_E_R01_01/receipts/enemy_event_render_r145_ee8b5484-d8e5-4ca6-83f7-81ea50fc93ce.json",
+    "case01TraceSHA256": "2f5594d0aaa1e3fce0ebddb12a499507c1dd2eb2d56c3b8a2963ff0475690cc8",
+    "case01ObservedStates": {
+      "ACT_E_R01_01": [
+        "idle",
+        "walk",
+        "anticipate",
+        "execute",
+        "recover",
+        "hit",
+        "resolve"
+      ]
+    },
+    "scope": "Six R01 real battles on older source snapshot; useful event trace, not current R373 visual acceptance."
+  },
+  "R373VsR083": {
+    "R373ResultPath": "docs/production/current/qa_drafts/sheet_navigation_integration_r373/build_tools_r001/build_attempt_001/RESULT.json",
+    "R373ResultSHA256": "a67aebfdad75d5b05d1418ab9732c1ee2d5b67ff426739bec34a468c68b02da5",
+    "R373SourceMapPath": "docs/production/current/qa_drafts/sheet_navigation_integration_r373/build_tools_r001/NATIVE_SOURCE_MAP_R001.json",
+    "R373SourceMapSHA256": "cb6d2c39679db9c673fa76158be7205ef30ab9edff967422389805849d6d7e9b",
+    "R373SourceCount": 232,
+    "R373ResourceCount": 1922,
+    "R373ResourceManifestSHA256": "90d213640ea8bf1ac0791ece0b2bfa01f68228e3eed3d56479b8c5628b3cc7de",
+    "R083RunPath": "docs/production/current/qa_drafts/enemy_motion_batch_r083/native_candidate_r004/native_run_r001_F843/RUN.json",
+    "R083RunSHA256": "f9c922bc2a98361369dfb30f33703471df121a5aa0e48a71522072170afbd06e",
+    "R083SourceCount": 128,
+    "R083ResourceCount": 1913,
+    "R083ResourceMapSHA256": "012d071f2aecb34c814e9090d578158a1341fdf1bb4f8f0d945e3da0a93c911b",
+    "changedRelevantSources": {
+      "WitchApp/EnemyMotion.swift": {
+        "R083": "4507b310f3096c396f24d36f151b127fc35c29afc57581489716d55007faf663",
+        "R373": "d2491abb24d0fdefee34c8c375266787ec83de34c43603be9535e9eed12baa48"
+      },
+      "WitchApp/LivingScene.swift": {
+        "R083": "52242ad55510b116596b9e27d1a68167a0f555454221ca93961cf267328ef99b",
+        "R373": "3520f93057a3434be001e3b343e8aa895c399a9b1522e379689b6ec4a37cfd86"
+      },
+      "WitchApp/BattlePlayback.swift": {
+        "R083": "c7437862879fdb0872d79cacfb940a23cbd0bdc95573f8d560221ab5f5270cc4",
+        "R373": "112dcff156070e83e15d346d2f48e5b13ea89e94d9ecf01e48121fff9ccbbf45"
+      }
+    },
+    "reuseDecision": "R083/R145 evidence can be used as historical references, but exact source/resource parity is not established; do not count those as R373 current-source motion acceptance.",
+    "R083SourceMapSHA256": "655467f37a59df0aa2add43199e5ed1d049bbaff6188df5679e7fbf0407c933f"
+  },
+  "nextNativeBatch": {
+    "recommendedFirstBatch": "R373 ordinary-native event/render check for the 14 enemy encounters without newer ordinary-native evidence: E_R02_01, E_R02_03, E_R02_04, E_R03_02, E_R03_03, E_R03_04, E_R04_02, E_R04_03, E_R04_04, B_R02_A, B_R02_B, B_R03_A, B_R03_B, B_R04_A.",
+    "reason": "R366 ledger has newer ordinary native evidence for 10/30 enemies. R083 has all 30 x 7 isolated/requested-state captures but is CAPTURED_REQUIRES_HOST_AND_VISUAL_REVIEW and does not show organic transitions. R145 has real event/render traces for six R01 encounters but is an older app snapshot; R373 has source differences in EnemyMotion, LivingScene, and BattlePlayback and 1922 resources vs R083 1913, so old frame evidence cannot stand in for R373.",
+    "statesForEachTarget": [
+      "idle",
+      "walk",
+      "anticipate",
+      "execute",
+      "recover",
+      "hit",
+      "resolve"
+    ],
+    "currentEvidenceGap": "For the 14 targets above, no newer ordinary fight screen/video is registered in R366; only R083 per-state requests/movies exist. For the other 16, screenshots/traces are partial, not state-by-state current-build acceptance. R145 actually observed all seven states for E_R01_01 and E_R01_04; it missed recover for E_R01_02, E_R01_03, B_R01_A, B_R01_B. All six R145 cases are still old-source evidence, not current R373 acceptance.",
+    "procedure": "On the already-installed R373 app, use ordinary encounter UI only; do not inject states or seed/economy data. Per encounter, retain start/result receipt and normal battle_art receipt, and one continuous screen recording through natural telegraph→execution→hit→resolve when those occur. If a state does not occur naturally, mark it unobserved. Stop for any target the ordinary UI cannot reach; no forced unlock. The normal battle_art snapshot is endpoint evidence only; the video is needed to inspect temporal appearance.",
+    "observerLimit": "R145 is compiled in R373 but its request parser accepts only six R01 IDs and requires --qa-isolated, --qa-enemy-event-render-trace-r145, and a UUID save key. R373 is a Release STANDARD_PLAY_R169 build. This review did not establish that those QA arguments are launch-compatible; do not rely on R145 for this batch without root preflight. Existing no-flag battle_art records geometry/effects/enemyPresentation at end but not per-event state timing.",
+    "expectedBound": "One batch: 14 encounters, <=600 s wall time, <=500 MB total outputs; at most 14 short native clips (target 10–13 s each where battle duration permits) plus existing compact battle/art receipts. At ~20 Mb/s observed R145 video rates, 14 x 12 s is ~420 MB; treat this as a hard output ceiling, not an estimate of exact compression. No new build/resource changes or video copies.",
+    "coverageEffect": "Closes direct ordinary-screen/video observation for the largest unrepresented 14 IDs if reachable. It will not establish all30 final quality or exact hidden event-to-frame causality where R145 is unavailable; a broader per-event observer would require a separate source/build step.",
+    "perTargetGap": [
+      {
+        "encounterID": "E_R02_01",
+        "actorID": "ACT_E_R02_01",
+        "R083": {
+          "stateCaptures": "seven requested states captured for this ID",
+          "limitation": "static/forced state requests; no ordinary timed transition proof"
+        },
+        "R145": {
+          "actualTrace": false,
+          "reason": "observer allowlist contains only E_R01_01..04 and B_R01_A/B"
+        },
+        "newerOrdinaryEvidence": null,
+        "remainingStateCoverage": [
+          "natural idle↔walk loop continuity",
+          "ordinary event-timed anticipate→execute→recover",
+          "hit interruption/contact visibility",
+          "resolve/death timing and persistence in ordinary fight"
+        ],
+        "captureGoal": "Observe ordinary idle/walk plus naturally occurring anticipate→execute→recover, target hit, and resolve; mark each state absent if not triggered."
+      },
+      {
+        "encounterID": "E_R02_03",
+        "actorID": "ACT_E_R02_03",
+        "R083": {
+          "stateCaptures": "seven requested states captured for this ID",
+          "limitation": "static/forced state requests; no ordinary timed transition proof"
+        },
+        "R145": {
+          "actualTrace": false,
+          "reason": "observer allowlist contains only E_R01_01..04 and B_R01_A/B"
+        },
+        "newerOrdinaryEvidence": null,
+        "remainingStateCoverage": [
+          "natural idle↔walk loop continuity",
+          "ordinary event-timed anticipate→execute→recover",
+          "hit interruption/contact visibility",
+          "resolve/death timing and persistence in ordinary fight"
+        ],
+        "captureGoal": "Observe ordinary idle/walk plus naturally occurring anticipate→execute→recover, target hit, and resolve; mark each state absent if not triggered."
+      },
+      {
+        "encounterID": "E_R02_04",
+        "actorID": "ACT_E_R02_04",
+        "R083": {
+          "stateCaptures": "seven requested states captured for this ID",
+          "limitation": "static/forced state requests; no ordinary timed transition proof"
+        },
+        "R145": {
+          "actualTrace": false,
+          "reason": "observer allowlist contains only E_R01_01..04 and B_R01_A/B"
+        },
+        "newerOrdinaryEvidence": null,
+        "remainingStateCoverage": [
+          "natural idle↔walk loop continuity",
+          "ordinary event-timed anticipate→execute→recover",
+          "hit interruption/contact visibility",
+          "resolve/death timing and persistence in ordinary fight"
+        ],
+        "captureGoal": "Observe ordinary idle/walk plus naturally occurring anticipate→execute→recover, target hit, and resolve; mark each state absent if not triggered."
+      },
+      {
+        "encounterID": "E_R03_02",
+        "actorID": "ACT_E_R03_02",
+        "R083": {
+          "stateCaptures": "seven requested states captured for this ID",
+          "limitation": "static/forced state requests; no ordinary timed transition proof"
+        },
+        "R145": {
+          "actualTrace": false,
+          "reason": "observer allowlist contains only E_R01_01..04 and B_R01_A/B"
+        },
+        "newerOrdinaryEvidence": null,
+        "remainingStateCoverage": [
+          "natural idle↔walk loop continuity",
+          "ordinary event-timed anticipate→execute→recover",
+          "hit interruption/contact visibility",
+          "resolve/death timing and persistence in ordinary fight"
+        ],
+        "captureGoal": "Observe ordinary idle/walk plus naturally occurring anticipate→execute→recover, target hit, and resolve; mark each state absent if not triggered."
+      },
+      {
+        "encounterID": "E_R03_03",
+        "actorID": "ACT_E_R03_03",
+        "R083": {
+          "stateCaptures": "seven requested states captured for this ID",
+          "limitation": "static/forced state requests; no ordinary timed transition proof"
+        },
+        "R145": {
+          "actualTrace": false,
+          "reason": "observer allowlist contains only E_R01_01..04 and B_R01_A/B"
+        },
+        "newerOrdinaryEvidence": null,
+        "remainingStateCoverage": [
+          "natural idle↔walk loop continuity",
+          "ordinary event-timed anticipate→execute→recover",
+          "hit interruption/contact visibility",
+          "resolve/death timing and persistence in ordinary fight"
+        ],
+        "captureGoal": "Observe ordinary idle/walk plus naturally occurring anticipate→execute→recover, target hit, and resolve; mark each state absent if not triggered."
+      },
+      {
+        "encounterID": "E_R03_04",
+        "actorID": "ACT_E_R03_04",
+        "R083": {
+          "stateCaptures": "seven requested states captured for this ID",
+          "limitation": "static/forced state requests; no ordinary timed transition proof"
+        },
+        "R145": {
+          "actualTrace": false,
+          "reason": "observer allowlist contains only E_R01_01..04 and B_R01_A/B"
+        },
+        "newerOrdinaryEvidence": null,
+        "remainingStateCoverage": [
+          "natural idle↔walk loop continuity",
+          "ordinary event-timed anticipate→execute→recover",
+          "hit interruption/contact visibility",
+          "resolve/death timing and persistence in ordinary fight"
+        ],
+        "captureGoal": "Observe ordinary idle/walk plus naturally occurring anticipate→execute→recover, target hit, and resolve; mark each state absent if not triggered."
+      },
+      {
+        "encounterID": "E_R04_02",
+        "actorID": "ACT_E_R04_02",
+        "R083": {
+          "stateCaptures": "seven requested states captured for this ID",
+          "limitation": "static/forced state requests; no ordinary timed transition proof"
+        },
+        "R145": {
+          "actualTrace": false,
+          "reason": "observer allowlist contains only E_R01_01..04 and B_R01_A/B"
+        },
+        "newerOrdinaryEvidence": null,
+        "remainingStateCoverage": [
+          "natural idle↔walk loop continuity",
+          "ordinary event-timed anticipate→execute→recover",
+          "hit interruption/contact visibility",
+          "resolve/death timing and persistence in ordinary fight"
+        ],
+        "captureGoal": "Observe ordinary idle/walk plus naturally occurring anticipate→execute→recover, target hit, and resolve; mark each state absent if not triggered."
+      },
+      {
+        "encounterID": "E_R04_03",
+        "actorID": "ACT_E_R04_03",
+        "R083": {
+          "stateCaptures": "seven requested states captured for this ID",
+          "limitation": "static/forced state requests; no ordinary timed transition proof"
+        },
+        "R145": {
+          "actualTrace": false,
+          "reason": "observer allowlist contains only E_R01_01..04 and B_R01_A/B"
+        },
+        "newerOrdinaryEvidence": null,
+        "remainingStateCoverage": [
+          "natural idle↔walk loop continuity",
+          "ordinary event-timed anticipate→execute→recover",
+          "hit interruption/contact visibility",
+          "resolve/death timing and persistence in ordinary fight"
+        ],
+        "captureGoal": "Observe ordinary idle/walk plus naturally occurring anticipate→execute→recover, target hit, and resolve; mark each state absent if not triggered."
+      },
+      {
+        "encounterID": "E_R04_04",
+        "actorID": "ACT_E_R04_04",
+        "R083": {
+          "stateCaptures": "seven requested states captured for this ID",
+          "limitation": "static/forced state requests; no ordinary timed transition proof"
+        },
+        "R145": {
+          "actualTrace": false,
+          "reason": "observer allowlist contains only E_R01_01..04 and B_R01_A/B"
+        },
+        "newerOrdinaryEvidence": null,
+        "remainingStateCoverage": [
+          "natural idle↔walk loop continuity",
+          "ordinary event-timed anticipate→execute→recover",
+          "hit interruption/contact visibility",
+          "resolve/death timing and persistence in ordinary fight"
+        ],
+        "captureGoal": "Observe ordinary idle/walk plus naturally occurring anticipate→execute→recover, target hit, and resolve; mark each state absent if not triggered."
+      },
+      {
+        "encounterID": "B_R02_A",
+        "actorID": "ACT_B_R02_A",
+        "R083": {
+          "stateCaptures": "seven requested states captured for this ID",
+          "limitation": "static/forced state requests; no ordinary timed transition proof"
+        },
+        "R145": {
+          "actualTrace": false,
+          "reason": "observer allowlist contains only E_R01_01..04 and B_R01_A/B"
+        },
+        "newerOrdinaryEvidence": null,
+        "remainingStateCoverage": [
+          "natural idle↔walk loop continuity",
+          "ordinary event-timed anticipate→execute→recover",
+          "hit interruption/contact visibility",
+          "resolve/death timing and persistence in ordinary fight"
+        ],
+        "captureGoal": "Observe ordinary idle/walk plus naturally occurring anticipate→execute→recover, target hit, and resolve; mark each state absent if not triggered."
+      },
+      {
+        "encounterID": "B_R02_B",
+        "actorID": "ACT_B_R02_B",
+        "R083": {
+          "stateCaptures": "seven requested states captured for this ID",
+          "limitation": "static/forced state requests; no ordinary timed transition proof"
+        },
+        "R145": {
+          "actualTrace": false,
+          "reason": "observer allowlist contains only E_R01_01..04 and B_R01_A/B"
+        },
+        "newerOrdinaryEvidence": null,
+        "remainingStateCoverage": [
+          "natural idle↔walk loop continuity",
+          "ordinary event-timed anticipate→execute→recover",
+          "hit interruption/contact visibility",
+          "resolve/death timing and persistence in ordinary fight"
+        ],
+        "captureGoal": "Observe ordinary idle/walk plus naturally occurring anticipate→execute→recover, target hit, and resolve; mark each state absent if not triggered."
+      },
+      {
+        "encounterID": "B_R03_A",
+        "actorID": "ACT_B_R03_A",
+        "R083": {
+          "stateCaptures": "seven requested states captured for this ID",
+          "limitation": "static/forced state requests; no ordinary timed transition proof"
+        },
+        "R145": {
+          "actualTrace": false,
+          "reason": "observer allowlist contains only E_R01_01..04 and B_R01_A/B"
+        },
+        "newerOrdinaryEvidence": null,
+        "remainingStateCoverage": [
+          "natural idle↔walk loop continuity",
+          "ordinary event-timed anticipate→execute→recover",
+          "hit interruption/contact visibility",
+          "resolve/death timing and persistence in ordinary fight"
+        ],
+        "captureGoal": "Observe ordinary idle/walk plus naturally occurring anticipate→execute→recover, target hit, and resolve; mark each state absent if not triggered."
+      },
+      {
+        "encounterID": "B_R03_B",
+        "actorID": "ACT_B_R03_B",
+        "R083": {
+          "stateCaptures": "seven requested states captured for this ID",
+          "limitation": "static/forced state requests; no ordinary timed transition proof"
+        },
+        "R145": {
+          "actualTrace": false,
+          "reason": "observer allowlist contains only E_R01_01..04 and B_R01_A/B"
+        },
+        "newerOrdinaryEvidence": null,
+        "remainingStateCoverage": [
+          "natural idle↔walk loop continuity",
+          "ordinary event-timed anticipate→execute→recover",
+          "hit interruption/contact visibility",
+          "resolve/death timing and persistence in ordinary fight"
+        ],
+        "captureGoal": "Observe ordinary idle/walk plus naturally occurring anticipate→execute→recover, target hit, and resolve; mark each state absent if not triggered."
+      },
+      {
+        "encounterID": "B_R04_A",
+        "actorID": "ACT_B_R04_A",
+        "R083": {
+          "stateCaptures": "seven requested states captured for this ID",
+          "limitation": "static/forced state requests; no ordinary timed transition proof"
+        },
+        "R145": {
+          "actualTrace": false,
+          "reason": "observer allowlist contains only E_R01_01..04 and B_R01_A/B"
+        },
+        "newerOrdinaryEvidence": null,
+        "remainingStateCoverage": [
+          "natural idle↔walk loop continuity",
+          "ordinary event-timed anticipate→execute→recover",
+          "hit interruption/contact visibility",
+          "resolve/death timing and persistence in ordinary fight"
+        ],
+        "captureGoal": "Observe ordinary idle/walk plus naturally occurring anticipate→execute→recover, target hit, and resolve; mark each state absent if not triggered."
+      }
+    ],
+    "sourceLedgerEvidence": {
+      "path": "docs/production/current/qa_drafts/enemy_completion_batch_r366/ENEMY_COVERAGE_LEDGER_R001.json",
+      "sha256": "0b7963a968411f8ff618f2f39beea7abc6ddcbc6704d6cdd42b914bc5bdd8306",
+      "selectedTargetCount": 14
+    }
+  },
+  "budgetDeviation": {
+    "capBytes": 3145728,
+    "derivedArtifactPath": "docs/production/current/qa_drafts/static_159_visual_r374/sequence_samples/R01_E_R01_01_7s.png",
+    "bytes": 3794850,
+    "sha256": "7b96d0979afd64e371edacac916804e048a3fdea9c7b38dd1cedcdfa8b6e541c",
+    "status": "OVER_BUDGET_DERIVATIVE_RETAINED; source video unchanged; no further media derived."
+  },
+  "approval": "No formal art/adoption or all30 quality acceptance changed."
+}

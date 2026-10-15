@@ -1,0 +1,42 @@
+{
+  "schema": "aira_attachment_fit_r008",
+  "status": "CANDIDATE_METADATA_CREATED_RUNTIME_BUILD_PASS_VISUAL_FIT_PENDING",
+  "humanApproval": false,
+  "buildBundle": "native/build/app_20261010T215112/WitchGathering.app",
+  "buildStatus": "SIMULATOR_BUILD_PASS",
+  "buildExecutableSHA256": "ab4a23a9ee406ea4d8e87c50a00e07ee47d415f729727a718b4e02097f58c932",
+  "buildRendererSHA256": "420b1e7d2cef74f352e3428ee438ab7b5494ef35f39b2d33607e1e2303c3eeac",
+  "warning": "R008 files were added after that frozen bundle; bundle contains R007 and effective BODY03 remained 0.15 due overlay merge order. Do not use for R008 visual fit.",
+  "sourceOverlayR006SHA256": "fa2c0b18bfcaee34127fb4aa1e6fa0dc6a0e0b5886f65ddd56a2b2a57d2780b5",
+  "outputs": [
+    {
+      "path": "native/Art/runtime_overlay_zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz_equipment_landmarks_aira_r008.json",
+      "sha256": "3929f13f04a5dea6d924341308be8d1a4157967e8effc26d391a0fb9d0cc5fcd",
+      "rows": 27
+    },
+    {
+      "path": "native/Art/runtime_overlay_zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz_zz_aira_body03_fit_r008.json",
+      "sha256": "2afd2b51ccc2b1e785b6f7803c0dcf2c34da0a6997f5437374910544b7dd1f80",
+      "rows": 27
+    }
+  ],
+  "effectiveCandidateValues": {
+    "BODY_03.detail_scale": 0.09,
+    "FEET_01..03.height": 0.08,
+    "RING_01..03.height": 0.03,
+    "S_03.height": 0.09,
+    "S_03.angle_degrees_source_suffix": {
+      "0": 22,
+      "1": -18,
+      "2": -25,
+      "3": 18,
+      "4": 0,
+      "5": 0,
+      "6": 12,
+      "7": 8,
+      "8": 8
+    }
+  },
+  "sourceArtMutated": false,
+  "visualFit": "PENDING_FRESH_R008_BUNDLE_AND_ALL_27_FRAMES_X_3_APPLICABLE_TIERS"
+}

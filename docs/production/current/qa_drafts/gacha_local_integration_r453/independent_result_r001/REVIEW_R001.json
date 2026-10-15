@@ -1,0 +1,55 @@
+{
+  "review": "R453 isolated Core and Python delivery evidence",
+  "status": "SCOPED_PASS_WITH_BOUNDARIES",
+  "reviewMode": "read-only evidence and pin review; no test or build rerun",
+  "swift": {
+    "resultPath": "../root_execution_r001/SWIFT_RESULT.json",
+    "resultSHA256": "45544534451a4a26386e910e0781da6082bf3b106c56d570d4e34f56158455d1",
+    "logSHA256": "7c1748ca14528e2c89400fd4ae1bb499cc5a0ea4523629279eaf9266019b7f01",
+    "status": "PASS",
+    "elapsedSeconds": 17.979423459,
+    "testCounts": {
+      "LocalPurchaseDeliveryQAImporterR453Tests": {"passed": 7, "failed": 0, "skipped": 0},
+      "SaveRepositoryRecoveryR001Tests": {"passed": 17, "failed": 0, "skipped": 0},
+      "total": {"passed": 24, "failed": 0, "skipped": 0}
+    },
+    "inputManifestSHA256": "8b521d2cacddd9933090338ea522fe0a209d30f2da0388afec6b4449dc0974e7",
+    "inputFiles": 61,
+    "inputsUnchanged": true,
+    "fixtureSHA256": "eb6600a352123c88b167eaeedc892b1a9d72cc0c2bf2c40351413061f7c2c75a",
+    "importerSHA256": "0e595275da5035eb9831878147e3e3ec84deb8565a6d1d18bfdc62367b96d890",
+    "focusedTestSHA256": "716f1a77be05d8f059196b0fa3037ccfdd3e5a0be34187c9c2927777177405eb",
+    "recoveryTestSHA256": "1a8abab220f6da3da5afad3051572d5e88861ea224e532dac46ed47a4615e0be",
+    "compilerNote": "Build log has a non-fatal warning that helper local rows is never mutated. No test failures or skips."
+  },
+  "python": {
+    "fullR005": {
+      "resultPath": "../root_execution_r001/PYTHON_RESULT_R002.json",
+      "resultSHA256": "5e4cc63c7246675b9c6e1e4a132a2b137978527f9357a60a7ae642b064beeafe",
+      "status": "PASS",
+      "passed": 73,
+      "failed": 0,
+      "skipped": 0,
+      "scopeNote": "This full 73-test run used its recorded R005-era test/source pins; it is not a combined rerun of the later R006 sources."
+    },
+    "focusedR006": {
+      "resultPath": "../root_execution_r001/PYTHON_RESULT_R003.json",
+      "resultSHA256": "fa96be5e467b39e966c4e6cb5d9e0946ccfb6c1c232fb0da3f6e0be29cd8c721",
+      "logSHA256": "17797ecf28d5eb6b9d579ec2ad82fb1279283e52a79890f44e9e921fe8ed7723",
+      "status": "PASS",
+      "passed": 15,
+      "failed": 0,
+      "skipped": 0,
+      "warningsAsErrors": true,
+      "resourceWarningDetected": false,
+      "sourceUnchanged": true,
+      "existing58TestsReusedFrom": "PYTHON_RESULT_R002.json"
+    },
+    "priorWarnings": "R005-era full run logged SQLite ResourceWarnings; the focused R006 run used -W error::ResourceWarning and reports none. Do not rewrite the earlier warning-bearing run as warning-free."
+  },
+  "limitations": [
+    "The Swift provider is an injected mock/current-state seam, not actual StoreKit authentication or transaction validation.",
+    "The Python authority is explicit local mock authority; no Apple transaction or external account was used.",
+    "This does not establish StoreKit runtime integration, Sandbox behavior, production entitlement, or release approval; R454 remains separate."
+  ]
+}

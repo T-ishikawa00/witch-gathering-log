@@ -1,0 +1,55 @@
+{
+  "schema": "witch.generated_runtime_overlay.actor_candidate.v1",
+  "status": "UNAPPROVED_CANDIDATE_WALK_MIDPOINT",
+  "approval": "HUMAN_ADOPTION_PENDING",
+  "humanApproved": false,
+  "mergePriority": 139,
+  "sourceEvidence": "docs/production/current/qa_drafts/enemy_loop_seams_r001/jelly_e02_r001/midpoint_walkb_idle_a_r002/NATIVE_PREVIEW_REVIEW_R001.md",
+  "entries": {
+    "ACT_E_R02_03": {
+      "clips": {
+        "walk": {
+          "frames": [
+            "GeneratedCandidates/ACT_E_R02_03/walk_midpoint_candidate_r002/walk_a.png",
+            "GeneratedCandidates/ACT_E_R02_03/walk_midpoint_candidate_r002/walk_b.png",
+            "GeneratedCandidates/ACT_E_R02_03/walk_midpoint_candidate_r002/mid_walkb_idle_a_r002.png",
+            "GeneratedCandidates/ACT_E_R02_03/walk_midpoint_candidate_r002/idle_a.png",
+            "GeneratedCandidates/ACT_E_R02_03/walk_midpoint_candidate_r002/idle_b.png"
+          ],
+          "frame_count": 5,
+          "fps": 10,
+          "duration_seconds": 0.5,
+          "loop": true,
+          "canvas_px": [
+            384,
+            256
+          ],
+          "anchor": [
+            192,
+            97.5
+          ],
+          "anchor_type": "floating_core_pivot_candidate",
+          "status": "UNAPPROVED_PARTIAL_TRANSITION_CANDIDATE",
+          "complete_animation": false,
+          "movement_semantics": "Existing walk_a→walk_b then generated right-tentacle-downward transition, then existing idle_a→idle_b; hover/glide-like movement, not a completed natural walk.",
+          "source_contract": "Pinned app130510 frames, byte-identical copies; one candidate PNG uniformly normalized to 384×256.",
+          "quality_limit": "Partial improvement only; bell/detail drift and left alpha-boundary shift remain; exact curled-tentacle anatomical tip is unknown."
+        }
+      },
+      "sequenceFrames": {
+        "walk": [
+          "GeneratedCandidates/ACT_E_R02_03/walk_midpoint_candidate_r002/walk_a.png",
+          "GeneratedCandidates/ACT_E_R02_03/walk_midpoint_candidate_r002/walk_b.png",
+          "GeneratedCandidates/ACT_E_R02_03/walk_midpoint_candidate_r002/mid_walkb_idle_a_r002.png",
+          "GeneratedCandidates/ACT_E_R02_03/walk_midpoint_candidate_r002/idle_a.png",
+          "GeneratedCandidates/ACT_E_R02_03/walk_midpoint_candidate_r002/idle_b.png"
+        ]
+      }
+    }
+  },
+  "candidateNotes": {
+    "artAcceptance": "PENDING_ROOT_REVIEW_AND_HUMAN_ADOPTION",
+    "continuousAnimationComplete": false,
+    "scope": "Only ACT_E_R02_03 walk clip plus matching sequenceFrames.walk. No idle or other state values are present in this overlay."
+  }
+}

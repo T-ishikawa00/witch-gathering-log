@@ -1,0 +1,77 @@
+{
+  "files": [
+    {
+      "path": "docs/production/current/qa_drafts/economy_release_matrix_r374/candidate_r001/PREPARATION_RECEIPT_R001.json",
+      "sha256": "646ae16e73e21507d121457970059b6d13d4c6ecf70920fe0f86b505881f8acd",
+      "sizeBytes": 1103
+    },
+    {
+      "path": "docs/production/current/qa_drafts/economy_release_matrix_r374/candidate_r001/README_R001.md",
+      "sha256": "5cba372b9021b12aa41fbeef8bd4e1a70cbd1aecc141ef92bd6360fc593dc035",
+      "sizeBytes": 2453
+    },
+    {
+      "path": "docs/production/current/qa_drafts/economy_release_matrix_r374/candidate_r001/SOURCE_DIFF_R001.diff",
+      "sha256": "434d3af7b97ed620db07f72106290e002c3b2469d676792d839d050fe6d3a0f0",
+      "sizeBytes": 24803
+    },
+    {
+      "path": "docs/production/current/qa_drafts/economy_release_matrix_r374/candidate_r001/runner_r001/INPUT_MANIFEST_R001.json",
+      "sha256": "7af08a301eb6721e8cf6af12b652219240205bcf6a9f8437c24609ff4cf0dbd1",
+      "sizeBytes": 36416
+    },
+    {
+      "path": "docs/production/current/qa_drafts/economy_release_matrix_r374/candidate_r001/runner_r001/run_r374.py",
+      "sha256": "78a40513de5020149594515191a70ad9f4ea9cb97ead160f7f7c4a708fbd57d6",
+      "sizeBytes": 28946
+    },
+    {
+      "path": "docs/production/current/qa_drafts/economy_release_matrix_r374/candidate_r001/source/EconomyCohortProgressionR374Tests.swift",
+      "sha256": "1631a55f9000b2f431a40322b8805a716d33a473a8bf0b9386c1689dab44e77e",
+      "sizeBytes": 104164
+    },
+    {
+      "path": "docs/production/current/qa_drafts/economy_release_matrix_r374/candidate_r001/source/EconomyCohortTreatmentR374.swift",
+      "sha256": "8279b8d444797f4ade00e2219a615083a651253102f2b7586b902532ab9f5690",
+      "sizeBytes": 12402
+    }
+  ],
+  "formalAdoption": false,
+  "limits": {
+    "aggregateWallSeconds": 6000,
+    "caseInvocations": 16,
+    "compileInvocations": 1,
+    "configuration": "release",
+    "horizonsDays": [
+      30,
+      90
+    ],
+    "maxAllocatedBytes": 2000000000,
+    "maxAttempts": 1,
+    "minimumFreeBytes": 12000000000,
+    "perCaseWallSeconds": {
+      "30": 180,
+      "90": 600
+    },
+    "seed": 100049
+  },
+  "linkedR369": {
+    "candidateManifestPath": "docs/production/current/qa_drafts/normal_onboarding_progression_r369/candidate_r001/CANDIDATE_MANIFEST_R002.json",
+    "candidateManifestSHA256": "1ae59189671817040c6561d8e074e2088e3aabf818450c3fc74f99dea10d099d",
+    "inputManifestPath": "docs/production/current/qa_drafts/normal_onboarding_progression_r369/candidate_r001/runner_r002/INPUT_MANIFEST_R002.json",
+    "inputManifestSHA256": "37d848935c330825ba8af5c5895727b6b3556db2fce8f8ec38886f4b20b97962",
+    "runPath": "docs/production/current/qa_drafts/normal_onboarding_progression_r369/candidate_r001/runner_r002/runs/R369_MATRIX_001/RUN.json",
+    "runSHA256": "2ff8dff96c734e621808518d6994c5386f2ec5e5fd0d0244135a2f7a91f7fb62",
+    "status": "INCOMPLETE_RETAINED"
+  },
+  "schema": "r374-candidate-seal-v1",
+  "status": "PREPARED_NOT_RUN",
+  "validation": {
+    "runnerPythonAST": "PASS",
+    "simulator": "NOT_RUN",
+    "staticStagedInputCrossJoin": "PASS",
+    "swiftReleaseCompile": "NOT_RUN",
+    "testLogicDifferenceReview": "PASS_NAMESPACE_AND_EVIDENCE_SIDECAR_ONLY",
+    "xctest": "NOT_RUN"
+  }
+}

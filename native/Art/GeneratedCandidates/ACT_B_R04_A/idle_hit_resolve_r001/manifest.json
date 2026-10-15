@@ -1,0 +1,371 @@
+{
+  "status": "UNAPPROVED_PARTIAL_MOTION_CANDIDATE",
+  "actorID": "ACT_B_R04_A",
+  "sourceStill": "ActorStills/ACT_B_R04_A/ACT_B_R04_A__still__r001.png",
+  "sourceStillSHA256": "b97dab009499f231325e8242bca66855ba64e4a6ea414831cbb7eee96c404c1c",
+  "generatorAtlas": "exec-f161cfb0-6176-446e-b6a9-c8d53bc88691.png",
+  "atlasSHA256": "4b2f98516fb179d80c6b65a8d31c33079139b217baf841404d79bb55cad0a73c",
+  "atlasCanvasPx": [
+    1254,
+    1254
+  ],
+  "gridCuts": {
+    "x": [
+      0,
+      413,
+      834,
+      1254
+    ],
+    "y": [
+      0,
+      419,
+      857,
+      1254
+    ],
+    "xGutters": [
+      [
+        406,
+        420,
+        15
+      ],
+      [
+        828,
+        840,
+        13
+      ]
+    ],
+    "yGutters": [
+      [
+        407,
+        430,
+        24
+      ],
+      [
+        834,
+        880,
+        47
+      ]
+    ]
+  },
+  "minimumCellAlpha16MarginPx": 6,
+  "states": [
+    "idle",
+    "hit",
+    "resolve"
+  ],
+  "frames": [
+    {
+      "state": "idle",
+      "frameIndex": 1,
+      "sourceCell": [
+        0,
+        0,
+        413,
+        419
+      ],
+      "alpha16BBoxWithinCell": [
+        24,
+        35,
+        406,
+        405
+      ],
+      "alpha16Margins": [
+        24,
+        35,
+        7,
+        14
+      ],
+      "normalizedSizePx": [
+        403,
+        390
+      ],
+      "scale": 1.054054054054054,
+      "frameSHA256": "bbf77cfefe00e2dd1665c2ee8e558c00eab53485c4ba6bf54dd2c5c322ff4f80",
+      "edgeAlphaPixels4px": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "state": "idle",
+      "frameIndex": 2,
+      "sourceCell": [
+        413,
+        0,
+        834,
+        419
+      ],
+      "alpha16BBoxWithinCell": [
+        21,
+        33,
+        400,
+        407
+      ],
+      "alpha16Margins": [
+        21,
+        33,
+        21,
+        12
+      ],
+      "normalizedSizePx": [
+        395,
+        390
+      ],
+      "scale": 1.0427807486631016,
+      "frameSHA256": "bd200d47884f3ab8a9fe6f777a0bbe411f99fa0c0089c99b9b6a0fd47e9f0543",
+      "edgeAlphaPixels4px": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "state": "idle",
+      "frameIndex": 3,
+      "sourceCell": [
+        834,
+        0,
+        1254,
+        419
+      ],
+      "alpha16BBoxWithinCell": [
+        7,
+        45,
+        398,
+        406
+      ],
+      "alpha16Margins": [
+        7,
+        45,
+        22,
+        13
+      ],
+      "normalizedSizePx": [
+        422,
+        390
+      ],
+      "scale": 1.080332409972299,
+      "frameSHA256": "79a5b1feeb28743c1b397486243684600544920eba5532f9e3ea73e2ce2da66e",
+      "edgeAlphaPixels4px": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "state": "hit",
+      "frameIndex": 1,
+      "sourceCell": [
+        0,
+        419,
+        413,
+        857
+      ],
+      "alpha16BBoxWithinCell": [
+        46,
+        12,
+        399,
+        411
+      ],
+      "alpha16Margins": [
+        46,
+        12,
+        14,
+        27
+      ],
+      "normalizedSizePx": [
+        345,
+        390
+      ],
+      "scale": 0.9774436090225563,
+      "frameSHA256": "dee7edc149635d20d265fed8b6fe172f45f44b14959ae7ab5188d80dc53afc31",
+      "edgeAlphaPixels4px": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "state": "hit",
+      "frameIndex": 2,
+      "sourceCell": [
+        413,
+        419,
+        834,
+        857
+      ],
+      "alpha16BBoxWithinCell": [
+        17,
+        27,
+        415,
+        415
+      ],
+      "alpha16Margins": [
+        17,
+        27,
+        6,
+        23
+      ],
+      "normalizedSizePx": [
+        400,
+        390
+      ],
+      "scale": 1.0051546391752577,
+      "frameSHA256": "a63a292cef65857fc3704cbb6d0fc5a210a9699a88973eb95be243e04c4a74d1",
+      "edgeAlphaPixels4px": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "state": "hit",
+      "frameIndex": 3,
+      "sourceCell": [
+        834,
+        419,
+        1254,
+        857
+      ],
+      "alpha16BBoxWithinCell": [
+        10,
+        40,
+        411,
+        414
+      ],
+      "alpha16Margins": [
+        10,
+        40,
+        9,
+        24
+      ],
+      "normalizedSizePx": [
+        418,
+        390
+      ],
+      "scale": 1.0427807486631016,
+      "frameSHA256": "a52e32412a215336a2d42ba42d022de650cca5b779384ba0bb496229c1800345",
+      "edgeAlphaPixels4px": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "state": "resolve",
+      "frameIndex": 1,
+      "sourceCell": [
+        0,
+        857,
+        413,
+        1254
+      ],
+      "alpha16BBoxWithinCell": [
+        27,
+        24,
+        398,
+        346
+      ],
+      "alpha16Margins": [
+        27,
+        24,
+        15,
+        51
+      ],
+      "normalizedSizePx": [
+        449,
+        390
+      ],
+      "scale": 1.2111801242236024,
+      "frameSHA256": "049fef29c14bf11030588159f6f0536996d8e6703ebb75650f09922c99fbe85e",
+      "edgeAlphaPixels4px": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "state": "resolve",
+      "frameIndex": 2,
+      "sourceCell": [
+        413,
+        857,
+        834,
+        1254
+      ],
+      "alpha16BBoxWithinCell": [
+        8,
+        71,
+        409,
+        346
+      ],
+      "alpha16Margins": [
+        8,
+        71,
+        12,
+        51
+      ],
+      "normalizedSizePx": [
+        480,
+        329
+      ],
+      "scale": 1.1970074812967582,
+      "frameSHA256": "7c7ab90aaf7d1ba16ed0918abf8bee1e5bc458d495cf6d3eecb4017cb39ab1a9",
+      "edgeAlphaPixels4px": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "state": "resolve",
+      "frameIndex": 3,
+      "sourceCell": [
+        834,
+        857,
+        1254,
+        1254
+      ],
+      "alpha16BBoxWithinCell": [
+        15,
+        136,
+        410,
+        345
+      ],
+      "alpha16Margins": [
+        15,
+        136,
+        10,
+        52
+      ],
+      "normalizedSizePx": [
+        480,
+        254
+      ],
+      "scale": 1.2151898734177216,
+      "frameSHA256": "1bb0a1fec5c80b802663eeaeb7576b58ec6a87918e4151b195692c2c3d501b7a",
+      "edgeAlphaPixels4px": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      }
+    }
+  ],
+  "darkContactSheet": "native/Art/GeneratedCandidates/ACT_B_R04_A/idle_hit_resolve_r001/CONTACT_DARK.jpg",
+  "limitations": [
+    "All poses remain unapproved generated candidates.",
+    "Clip naturalness and transition timing remain unverified.",
+    "Simulator playback and Human art review are pending.",
+    "Existing walk and attack sequences remain separately overlaid."
+  ]
+}

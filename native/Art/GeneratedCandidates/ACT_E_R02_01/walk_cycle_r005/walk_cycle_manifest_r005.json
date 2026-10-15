@@ -1,0 +1,293 @@
+{
+  "candidate_id": "ACT_E_R02_01_walk_cycle_r005",
+  "status": "UNAPPROVED_PARTIAL_GAIT_CANDIDATE",
+  "source_original_png": "ActorStills/ACT_E_R02_01/ACT_E_R02_01__still__r002.png",
+  "source_original_sha256": "08da7c81c66b7d69eff4da92bee4d3cbb35fac0afcfecebd1b2aafdb294e7b31",
+  "generated_atlas_workspace_copy": "GeneratedCandidates/ACT_E_R02_01/walk_cycle_r005/imagegen_walk_atlas_r005.png",
+  "generated_atlas_sha256": "4215abcca6e7850b6a72a09b927923fcbfa4ce3551670c2cd41e7d609be64c3f",
+  "generation_mode": "built-in image_gen edit/reference, transparent_background requested; alpha preserved unchanged",
+  "atlas_px": [
+    1536,
+    1024
+  ],
+  "grid": [
+    3,
+    3
+  ],
+  "cell_bounds_x": [
+    0,
+    512,
+    1024,
+    1536
+  ],
+  "cell_bounds_y": [
+    0,
+    341,
+    683,
+    1024
+  ],
+  "packed_canvas_px": [
+    512,
+    512
+  ],
+  "registration": "translation only, alpha>16 lowest pixel aligned to y=460 and alpha bounds horizontal center x=256; no rescale/recolor/alpha edits",
+  "anchor_px": [
+    256,
+    460
+  ],
+  "anchor_status": "VISUAL_ESTIMATE_UNAPPROVED",
+  "fps": 12,
+  "motion_sequence": [
+    "plant/compress",
+    "passing",
+    "lift/push-off",
+    "contact",
+    "passing",
+    "lift/push-off",
+    "contact",
+    "raised step",
+    "return/contact"
+  ],
+  "qa_contact_sheet": "GeneratedCandidates/ACT_E_R02_01/walk_cycle_r005/qa_contact_sheet_walk_r005.jpg",
+  "all_frames": [
+    {
+      "frame": "walk_000.png",
+      "source_cell_xywh": [
+        0,
+        0,
+        512,
+        341
+      ],
+      "source_alpha16_bounds": [
+        34,
+        35,
+        466,
+        337
+      ],
+      "translation_px": [
+        6,
+        123
+      ],
+      "packed_alpha16_bounds": [
+        40,
+        158,
+        472,
+        460
+      ],
+      "sha256": "46a3138723e20cdfb7f59ca431bbf63fffea534d8d8bf74ef82268a8739c86d4"
+    },
+    {
+      "frame": "walk_001.png",
+      "source_cell_xywh": [
+        512,
+        0,
+        512,
+        341
+      ],
+      "source_alpha16_bounds": [
+        26,
+        40,
+        484,
+        340
+      ],
+      "translation_px": [
+        1,
+        120
+      ],
+      "packed_alpha16_bounds": [
+        27,
+        160,
+        485,
+        460
+      ],
+      "sha256": "56673b646d4d55ca71b2394bb4188f95047ab972f5ed50cc05801c45fd769e71"
+    },
+    {
+      "frame": "walk_002.png",
+      "source_cell_xywh": [
+        1024,
+        0,
+        512,
+        341
+      ],
+      "source_alpha16_bounds": [
+        83,
+        30,
+        477,
+        340
+      ],
+      "translation_px": [
+        -24,
+        120
+      ],
+      "packed_alpha16_bounds": [
+        59,
+        150,
+        453,
+        460
+      ],
+      "sha256": "7c69e0dfd114ede08e665909d9f862b32991a65a5abddeef9f765299b8db1cb9"
+    },
+    {
+      "frame": "walk_003.png",
+      "source_cell_xywh": [
+        0,
+        341,
+        512,
+        342
+      ],
+      "source_alpha16_bounds": [
+        38,
+        32,
+        470,
+        329
+      ],
+      "translation_px": [
+        2,
+        131
+      ],
+      "packed_alpha16_bounds": [
+        40,
+        163,
+        472,
+        460
+      ],
+      "sha256": "b3a8cce8592eb2b39d84ea934ff0a1f9595f8e6032438ff0b1b7fcc5ac320f14"
+    },
+    {
+      "frame": "walk_004.png",
+      "source_cell_xywh": [
+        512,
+        341,
+        512,
+        342
+      ],
+      "source_alpha16_bounds": [
+        35,
+        45,
+        487,
+        327
+      ],
+      "translation_px": [
+        -5,
+        133
+      ],
+      "packed_alpha16_bounds": [
+        30,
+        178,
+        482,
+        460
+      ],
+      "sha256": "ee90327eeee3c18fa77a1bfe015406b6f2ed1c43ea78c7b5c9aa604d60116f5d"
+    },
+    {
+      "frame": "walk_005.png",
+      "source_cell_xywh": [
+        1024,
+        341,
+        512,
+        342
+      ],
+      "source_alpha16_bounds": [
+        69,
+        29,
+        482,
+        330
+      ],
+      "translation_px": [
+        -20,
+        130
+      ],
+      "packed_alpha16_bounds": [
+        49,
+        159,
+        462,
+        460
+      ],
+      "sha256": "4a17be6af5b761a3c38f8c71be3403cebf27cbd67554664c63e4524acdefb5f8"
+    },
+    {
+      "frame": "walk_006.png",
+      "source_cell_xywh": [
+        0,
+        683,
+        512,
+        341
+      ],
+      "source_alpha16_bounds": [
+        47,
+        14,
+        473,
+        315
+      ],
+      "translation_px": [
+        -4,
+        145
+      ],
+      "packed_alpha16_bounds": [
+        43,
+        159,
+        469,
+        460
+      ],
+      "sha256": "1c6fbe784181de9788d82d4e8b4aec3e36ca15b3da77b8dd70a7e257908c3771"
+    },
+    {
+      "frame": "walk_007.png",
+      "source_cell_xywh": [
+        512,
+        683,
+        512,
+        341
+      ],
+      "source_alpha16_bounds": [
+        72,
+        13,
+        477,
+        315
+      ],
+      "translation_px": [
+        -18,
+        145
+      ],
+      "packed_alpha16_bounds": [
+        54,
+        158,
+        459,
+        460
+      ],
+      "sha256": "9257aafc09943ea388e6ec709e46af072df5851a82bfd14f6b7baed6da9c1b2f"
+    },
+    {
+      "frame": "walk_008.png",
+      "source_cell_xywh": [
+        1024,
+        683,
+        512,
+        341
+      ],
+      "source_alpha16_bounds": [
+        45,
+        22,
+        481,
+        316
+      ],
+      "translation_px": [
+        -7,
+        144
+      ],
+      "packed_alpha16_bounds": [
+        38,
+        166,
+        474,
+        460
+      ],
+      "sha256": "9ed7131726c57b74e5a33eb02c97c79285e3ba66002a8c5aa097119ab7d72f9c"
+    }
+  ],
+  "visual_limitations": [
+    "Repeated spot pattern drifts subtly between generated poses.",
+    "Pose-level gait candidate only; contact cadence and screen naturalness unverified.",
+    "Must remain PARTIAL / UNAPPROVED until integrated visual review."
+  ]
+}

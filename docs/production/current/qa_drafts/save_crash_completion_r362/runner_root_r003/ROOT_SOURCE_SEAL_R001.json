@@ -1,0 +1,13 @@
+{
+  "status": "PREPARED_NOT_EXECUTED_ROOT_CORRECTION",
+  "runnerSHA256": "22ed9a7a7e6c62bbd04c0ccc4464d102bb8d5b478576f7e6c5e0b894b5380eae",
+  "inputSHA256": "388616de0070128dea2190713f804bd21645b989615cd46adda7d1fec94aa7f8",
+  "originalR001RunnerSHA256": "fdd9be6186e4541d17c57625b57f8da8f8ba987037d78175c2fa4d68d69ddccb",
+  "R002RunnerSHA256": "7d090dc396dfd9a6c926ff76eb427f16b59e94e4fe7dd4762343e3cbb198edfb",
+  "correction": "R002 removed observed reparented non-bundle children from cleanup set before was_observed guard. Include only exact previously observed PID+start+command identities even after reparenting; existing owned_live guard rechecks identity before signals. No group signals.",
+  "independentSourceEvidence": "Art audit confirms all56Core/resource rows sameR356 and postprimaryreplacement semantics; originalkey andtimeoutcleanup issuesfixedbeforeanyrun",
+  "attemptCap": 1,
+  "totalWallSeconds": 180,
+  "maxBytes": 300000000,
+  "formalAdoption": false
+}

@@ -1,9 +1,9 @@
-# Continuation R110
+# 次の作業 R088
 
-1. Review R011 unique XCTest runtime identity/completion binding, then Root alone executes one F843 wardrobe case. Preserve all prior JSON, exact R093 resources and protected processes; continue other five only after evidence confirms safety and correct test execution.
-2. Freeze progress/all159 mapping/current sources into local R046; build isolated-index audit snapshot parented on verified remote main; independent tree review and secret/large-file checks. Authorized normal push only to existing private T-ishikawa00/witch-gathering-log on a new codex/audit branch. Report SHA/branch/index once, then continue without waiting.
-3. Compare genuine remaining full-game requirements with prior R037 recipe and R039 gathering completion; close earned progression/evolution/15 challenge experience gaps and define rational initial asset candidates without deciding paid product count.
-4. Integrate and verify bounded R095 recipient-layout/grounding correction after host review. Defer R0961px-book-shift A/B; improve meaningful hand grip and launch art coverage instead.
-5. Continue unsigned packaging, broad regression, crash/performance analysis and physical-device readiness. Production commerce/Apple auth/device signing/Human adoption remain separate unmet gates. Do not label local payment QA as complete production payment.
+1. R087実装版とR088監査記録を保護し、同一入力での不要な再ビルド/再試験を行わない。
+2. 固定SHA監査で再現P0/P1は確認されなかった。新たな具体的な保存破損/進行不能/クラッシュが確認された場合は最優先で修正する。
+3. 認証済みサービスの運用先・アカウント結合・商品条件が揃った後、本番クライアント/サーバー接続、通知と再送、保持/復旧、実Apple Sandboxを実装・検証する。現時点では未実装であり、ローカルmock合格で代替しない。
+4. Humanが実機導入とApple認証を行える段階で、保存互換・強制終了/復帰・端末性能・通し操作を実機で確認する。端末接続の存在だけを許可や実測と扱わない。
+5. 159単位の技術的な限定審査と美術の正式採用を分離。未観測条件を保持し、正式レビューで具体的な品質不合格が特定された場合は対象を絞って制作/修正する。
 
-Use existing worktree and checkpoints. No original checkout mutation, deletion/reset/stash/history rewrite/force push, privacy change, publication, external messages, actual charges or macOS security/SIP changes. Existing protected Simulator processes are not owned. Only this R046 audit share is authorized for push.
+現在再現した検索操作不整合はR465で解消済み。細部は1件2試行/15分を原則とし、別の重大問題が出た場合は受入条件と実行枠を明示して扱う。価格/商品数/美術の未承認候補を正式採用へ変更しない。実課金・公開・第三者送信・無断Push・未承認削除は禁止。

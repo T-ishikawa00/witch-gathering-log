@@ -1,0 +1,141 @@
+{
+  "battleAndSave": {
+    "campaignEncounterCount": 30,
+    "campaignIDsUnchangedAsSet": true,
+    "challengeCount": 15,
+    "challengeIDsUnchangedAsSet": true,
+    "coldPrimaryAndPreviousBytesExact": true,
+    "coldProcessChanged": true,
+    "currencyAndPityUnchanged": true,
+    "encounter": "B_R05_B",
+    "equippedCount": 19,
+    "equippedUUIDsUnchanged": true,
+    "finalRevision": 138,
+    "finalSaveSHA256": "3725e9c13d0e514804d5941d23b7847e12d7c13eb04aac0b3e676b190ae3a3c1",
+    "gearCountAfter": 43,
+    "gearCountBefore": 41,
+    "inputRevision": 137,
+    "inputSaveSHA256": "27e965d92ab0d943541a075a599055d37ffd8e4bff501862b00f127846ca3a44",
+    "newGearUUIDs": [
+      "7D86ACE2-3EC4-5D4A-8F1D-4172F88D4F6B",
+      "8F41CACF-7CB3-5DA4-818C-930CB34FE9D3"
+    ],
+    "receiptCountAfter": 138,
+    "receiptCountBefore": 137,
+    "regionCount": 5,
+    "remainingEnemyHP": {
+      "B_R05_B": 0
+    },
+    "remainingPartyHP": {
+      "C_APPRENTICE": 23,
+      "C_FAMILIAR": 26,
+      "C_SMITH": 78,
+      "C_WITCH": 44
+    },
+    "researchCount": 1,
+    "researchIDsUnchanged": true,
+    "ticks": 37,
+    "unlockedRegionsUnchangedAsSet": true,
+    "won": true
+  },
+  "preservation": {
+    "appStoppedAtReview": true,
+    "installedExecutableStillPresent": true,
+    "noDeletionOrAutomaticLaunch": true,
+    "protectedFileTotal": 3901,
+    "protectedTreeMapsIndependentlyRehashed": [
+      {
+        "exact": true,
+        "fileCount": 1925,
+        "root": "/Users/PUBLIC_USER/Library/Developer/CoreSimulator/Devices/9A067715-7CF3-40D3-9064-38423223959B/data/Containers/Bundle/Application/1BEDDB67-CEDB-4BA6-A436-F143749796A5/WitchGathering.app"
+      },
+      {
+        "exact": true,
+        "fileCount": 1925,
+        "root": "/Users/PUBLIC_USER/Library/Developer/CoreSimulator/Devices/9A067715-7CF3-40D3-9064-38423223959B/data/Containers/Bundle/Application/AC385BAE-8797-41D1-BE61-034E02172368/WitchGathering.app"
+      },
+      {
+        "exact": true,
+        "fileCount": 20,
+        "root": "/Users/PUBLIC_USER/Library/Developer/CoreSimulator/Devices/9A067715-7CF3-40D3-9064-38423223959B/data/Containers/Data/Application/61DD54AD-8723-4481-9FF0-46624F4C8096"
+      },
+      {
+        "exact": true,
+        "fileCount": 31,
+        "root": "/Users/PUBLIC_USER/Library/Developer/CoreSimulator/Devices/9A067715-7CF3-40D3-9064-38423223959B/data/Containers/Data/Application/850C97A2-1407-47E5-969F-578007C089AD"
+      }
+    ]
+  },
+  "rawRun": {
+    "buildReceiptSHA256": "1c3d3074e9d867e4c1cf478da8cc91e9e7ca13022cfda25a9aa67e95222efb71",
+    "bundleID": "local.witch.autonomous.r1.completion.r456",
+    "device": "9A067715-7CF3-40D3-9064-38423223959B",
+    "executableSHA256": "2c4e48e8be951691bb2a589656b9524226bfb03386a40ac8f294389fd8cfbcab",
+    "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/native_completion_r456/runtime_tools_r002/runs/1605ec80-407f-4736-a077-1be866dac17a/RUN.json",
+    "resourceCount": 1922,
+    "sha256": "ea11dedb64844a89002fe3ea1412f921058a6a64ee704502f39f69d6f6f48252",
+    "sourceCount": 238,
+    "status": "CAPTURE_CLOSED_COLD_BYTES_EXACT"
+  },
+  "reviewType": "Independent readback of Root-authored runtime closure/result; not an independent helper implementation review.",
+  "rootRuntimeResult": {
+    "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/native_completion_r456/ROOT_RUNTIME_RESULT_R001.json",
+    "sha256": "3b98eee9c794c6b1af73ea6b398bbb7dbea988cceb05f23110722e9c29ef77f8",
+    "status": "SCOPED_NORMAL_RUNTIME_PASS_WITH_TIMER_ERRATUM"
+  },
+  "schema": "r456-independent-root-runtime-result-review-v1",
+  "scopeLimits": [
+    "R445 input has historical five local QA free draws; current equipped UUIDs were unchanged, but the session does not establish zero-summon history.",
+    "The 30 campaign/15 challenge set was retained; only the R05 B battle was newly fought here.",
+    "No physical device, App Store, real payment, production profile, or broad art acceptance is claimed."
+  ],
+  "status": "SCOPED_RESULT_CONFIRMED_WITH_TIMER_ERRATUM",
+  "timeErratum": {
+    "basis": "Conservative upper bound only; not a precise elapsed-time measurement.",
+    "immutableRunDirectoryBirthEpoch": 1792014373.3201466,
+    "initialInstallWithinProcessElapsed": 6.549201291,
+    "maxSeconds": 600,
+    "rawFinishEpoch": 1792014792.7287319,
+    "rawMonotonicCrossProcessValueValid": false,
+    "recomputedConservativeUpperSeconds": 425.9577865600586,
+    "withinBound": true
+  },
+  "visualReview": {
+    "observations": {
+      "battle": "Live R05 B battle screen with party and boss visible; this frame itself is mid-battle, victory is established by persisted combat result.",
+      "cold": "Home screen after cold relaunch with ordinary work panel visible.",
+      "gear": "Equipment comparison screen visible; selected and equipped item cards are displayed.",
+      "launch": "Home screen with four party figures and ordinary work controls visible."
+    },
+    "screenshots": [
+      {
+        "bytes": 3287674,
+        "label": "launch",
+        "matchesReceipt": true,
+        "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/native_completion_r456/runtime_tools_r002/runs/1605ec80-407f-4736-a077-1be866dac17a/checkpoints/launch/screen.png",
+        "sha256": "633bf619e35c7e89ddf9718fff0efbe5520d72f0a9376c71604ff8bee965680e"
+      },
+      {
+        "bytes": 370315,
+        "label": "gear",
+        "matchesReceipt": true,
+        "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/native_completion_r456/runtime_tools_r002/runs/1605ec80-407f-4736-a077-1be866dac17a/checkpoints/gear/screen.png",
+        "sha256": "f1d6fc6ad24641fd7af3d931da7a05ff5d2cec088a8a3aeba279e44fc4663aeb"
+      },
+      {
+        "bytes": 4179551,
+        "label": "battle",
+        "matchesReceipt": true,
+        "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/native_completion_r456/runtime_tools_r002/runs/1605ec80-407f-4736-a077-1be866dac17a/checkpoints/battle/screen.png",
+        "sha256": "2e68e5787e64c7d56ddc29df96521b90664ae35e55f9e536d50ce33a4dc53569"
+      },
+      {
+        "bytes": 3285674,
+        "label": "cold",
+        "matchesReceipt": true,
+        "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/native_completion_r456/runtime_tools_r002/runs/1605ec80-407f-4736-a077-1be866dac17a/checkpoints/cold/screen.png",
+        "sha256": "c868956439aca8b7754b8a0253fa9c60acc5f1b4e4e39e6776c3247493700504"
+      }
+    ]
+  }
+}

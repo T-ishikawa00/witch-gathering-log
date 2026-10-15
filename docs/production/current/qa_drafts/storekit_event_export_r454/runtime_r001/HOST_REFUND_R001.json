@@ -1,0 +1,41 @@
+{
+  "at": "2026-10-15T06:30:33.242150+09:00",
+  "scope": "HOST_MOCK_REFUND_ONLY_NOT_APPLE_REFUND",
+  "requestSHA256": "95b1ceb3b909d95bc7c2c3b8bfbfbfc6e6acc5af680a1d33b7f98ec9db337a61",
+  "before": {
+    "account_id": "r454-local-account",
+    "ticket_balance": 0,
+    "ticket_debt": 0,
+    "pity": {
+      "drawsSinceMid": 1,
+      "drawsSinceTop": 1,
+      "guaranteeTargetOnNextTop": false,
+      "targetTemplateID": null
+    },
+    "revision": 3,
+    "purchase_count": 1,
+    "draw_count": 1,
+    "idempotency_count": 2
+  },
+  "result": {
+    "clawed_back": 0,
+    "debt_added": 1,
+    "duplicate": 0,
+    "tombstone": 0
+  },
+  "after": {
+    "account_id": "r454-local-account",
+    "ticket_balance": 0,
+    "ticket_debt": 1,
+    "pity": {
+      "drawsSinceMid": 1,
+      "drawsSinceTop": 1,
+      "guaranteeTargetOnNextTop": false,
+      "targetTemplateID": null
+    },
+    "revision": 4,
+    "purchase_count": 1,
+    "draw_count": 1,
+    "idempotency_count": 2
+  }
+}

@@ -1,0 +1,11 @@
+# R452 independent source review
+
+**Result: no blocking source/runner issue found; prepared-only, not executed.** Reviewed the exact candidate manifest, test, runner, source delta and R448 result. No build, test, Simulator, save, or source action was run.
+
+The manifest permits exactly two one-attempt cases: `free_no_ad`, 30 virtual days, seeds 100069 and 200071, with distinct run IDs. The copied R448 test source matches its pinned base SHA; the patch changes seed/case identity, output namespace and operation-ID namespace, while leaving the schedule, candidate policies, transaction flow and assertions unchanged. The exact candidate test SHA is pinned. The runner validates the seed/run/test allowlist, 56 Core Swift files and two resources against the frozen R445 source map, the R368/product inputs, R446 identity and R447 compile-only provenance. It invokes one compile+test followed by one `--skip-build` test, and gives each seed separate logs, reports, save/origin sidecars and receipts under a fresh batch directory.
+
+The test keeps the prior zero-summon scope: `summonAvailable` returns zero; the source contains no `.mockSummon` dispatch; it asserts zero free/paid draws, zero synthetic grants and no summon action rows. It retains actual engine transactions, daily snapshots, origin joins, source-digest start/end checks and the explicit unapproved-comparison / virtual-clock limits. The runner parses the exact selected XCTest event and duration instead of the R448 summary regex that missed `(0 unexpected)`, and checks each report against its seed, run ID, outcome counts and gear-origin joins. Per-case and aggregate time, scratch/evidence, free-space and owned-process checks are present.
+
+R448 remains a separate one-seed result: its XCTest passed, but its raw runner status remains `INCOMPLETE_RETAINED` because of the parser mismatch. R452 does not retry seed 100049 or rewrite that record. No cross-seed causal or product-adoption claim is warranted; distinct operation IDs can affect generated latent rolls.
+
+Execution must remain gated on Root sealing the identity/manifest/runner pins. This review establishes only static source plausibility; it does not establish compilation, two passing cases, or any economy/design approval.

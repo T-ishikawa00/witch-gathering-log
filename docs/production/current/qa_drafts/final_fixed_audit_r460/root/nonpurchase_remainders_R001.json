@@ -1,0 +1,66 @@
+{
+  "schema": "r460-nonpurchase-remainders-r001-v1",
+  "status": "READ_ONLY_SCOPED_ASSESSMENT",
+  "auditedRevision": "45dc02f73f0bcb7c37ad1f01969c3d4b43ceef2e",
+  "scope": "Non-purchase local completion only; excludes StoreKit, purchase authority, and commerce implementation under R463.",
+  "result": {
+    "confirmedHighImpactLocalDefect": false,
+    "specificFeatureOrAssetPatchRecommended": false,
+    "remainingLocalAction": "Run the R012 FINAL-AUDIT-01 fixed-SHA reconciliation against the then-current integrated source after R463 is reviewable; reuse existing pinned evidence and change code only for a concrete reproducible defect.",
+    "formalArtAdoption": "Separate Human decision; not used as a substitute for local technical review.",
+    "releaseCompletion": "Not claimed. This is bounded evidence synthesis, not global acceptance."
+  },
+  "boundedRemainders": {
+    "enemyRecovery": {
+      "unobserved": 17,
+      "executeThenHitOrResolve": 16,
+      "noRenderedExecute": ["B_R01_A"],
+      "visuallyJoinedRecoveryToIdle": ["E_R02_01"],
+      "eligibleRetainedWindowsUnreviewed": 0,
+      "interpretation": "Evidence gap, not a demonstrated missing/broken animation; no forced state or combat adjustment recommended."
+    },
+    "assets": {
+      "rows": 159,
+      "classification": "PARTIAL_OR_NOT_ACCEPTED for all rows",
+      "boundedReview": "149 static units and 10 time-varying units in limited windows",
+      "specificMissingAssetOrGrossDefect": "None established by the reviewed pass."
+    },
+    "partyAndWardrobe": "Selected/reset reading-mantle, cold persistence, and ordinary UI evidence exist; comprehensive outfit/state combinations remain unclaimed, with no reproduced high-impact blocker.",
+    "save": "Process-kill and cold/replay evidence exists; physical power-loss and physical-device behavior remain unverified."
+  },
+  "evidencePins": [
+    {
+      "path": "docs/production/mission_20261010_r1/Witch_Codex_Autonomous_03to05_20261010/01_CODEX_MASTER_MISSION.md",
+      "sha256": "cdfbccef0939f39c4953a63e255977a732fc955653e4bf6ea9fbfb9f8f1df23b"
+    },
+    {
+      "path": "docs/production/mission_20261010_r1/Witch_Codex_Autonomous_03to05_20261010/03_ACCEPTANCE_AND_BLOCKERS.md",
+      "sha256": "5c26036ca41f3a45a870c3e5590481c97321ae01e54aa52a26a74c12d674012c"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/final_acceptance_r360/COMPLETION_REGISTER_R012.json",
+      "sha256": "05b0e2d5e7d13585a180652bc429109d20859a57c6c09fc26a5b2db6789ec1bc"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/completion_priority_r457/FINAL_LOCAL_REMAINDERS_R001.json",
+      "sha256": "b2b62201f2824c04131e6228968eb825c741241813aef0843bef7b25b4045cde"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/completion_priority_r457/RECOVERY_ELIGIBILITY_R002.json",
+      "sha256": "fd095cf16dbf160c26fda63444cbd49b37004d35cb410bad0387ef39f1abaab1"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/final_fixed_audit_r460/ui_art/REVIEW_R001.md",
+      "sha256": "5d3fcfa5542dddbdcd3d134014c83a0b6708da91dff405e5160f1f873707a75d"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/final_fixed_audit_r460/ui_art/REVIEW_R001.json",
+      "sha256": "d33b136aa9d365c11493fdd7873d9f7858a6b5166a0871592ea31df14ea02d26"
+    }
+  ],
+  "limitations": [
+    "No new test, build, device, Simulator, or source execution was performed.",
+    "Evidence is fixed to the cited revision and does not automatically cover subsequent R463 integration.",
+    "No purchase/StoreKit conclusion is made."
+  ]
+}

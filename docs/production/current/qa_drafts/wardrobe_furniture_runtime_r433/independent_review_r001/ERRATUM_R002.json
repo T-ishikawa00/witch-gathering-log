@@ -1,0 +1,32 @@
+{
+  "schema": "r433-capture-helper-review-erratum-v1",
+  "supersedesFinding": {
+    "review": "REVIEW_R001.json",
+    "finding": "blockingFindings[0] path-depth/import failure",
+    "disposition": "RETRACTED_AS_INCORRECT"
+  },
+  "verifiedPath": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/wardrobe_furniture_runtime_r433/capture_r433.py",
+  "runnerSHA256": "518302214736da663ad9d0264f771cf28bf1534fe845db29fa4b674b894a71fd",
+  "correctResolution": {
+    "BASE": ".../qa_drafts/wardrobe_furniture_runtime_r433",
+    "BASE.parents[4]": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg",
+    "PRIOR": ".../qa_drafts/normal_progression_r421",
+    "pinnedHelperSHA256": "6fe314a33ce19de71af8b21cec035070ee0a3a54c54434a7d460dfd315d9b9bd"
+  },
+  "remainingFindings": [
+    {
+      "severity": "P2",
+      "lines": "57-61",
+      "status": "PENDING_OPERATOR_FIX",
+      "finding": "Aggregate evidence size is gated before screenshot capture but not after; 180MB total can be exceeded."
+    },
+    {
+      "severity": "P2",
+      "lines": "110-115",
+      "status": "LIMITATION_WITH_SEPARATE_CUA_CONFIRMATION",
+      "finding": "Cold path snapshots/captures 0.5 seconds after relaunch; separately confirm the UI is ready and visibly restored before treating it as visual cold-reopen evidence."
+    }
+  ],
+  "status": "BLOCKED_PENDING_POST_CAPTURE_CAP_GUARD",
+  "execution": {"run": false, "appActions": false, "simulator": false, "sourceChanges": false}
+}

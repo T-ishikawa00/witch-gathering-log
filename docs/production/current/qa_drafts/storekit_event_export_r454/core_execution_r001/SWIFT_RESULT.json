@@ -1,0 +1,138 @@
+{
+  "status": "PASS",
+  "exitCode": 0,
+  "hold": null,
+  "elapsedSeconds": 17.96590225,
+  "testCases": [
+    {
+      "suite": "LocalPurchaseDeliveryQAImporterR453Tests",
+      "test": "testAfterPrimaryReplaceAmbiguityColdReopenAndRetryDoNotDoubleApply",
+      "result": "passed"
+    },
+    {
+      "suite": "LocalPurchaseDeliveryQAImporterR453Tests",
+      "test": "testBeforePrimaryReplaceFailureLeavesNoReceiptAndRetryCommitsOnce",
+      "result": "passed"
+    },
+    {
+      "suite": "LocalPurchaseDeliveryQAImporterR453Tests",
+      "test": "testCurrentRefundProviderIsRecheckedEvenForSavedOperationReplay",
+      "result": "passed"
+    },
+    {
+      "suite": "LocalPurchaseDeliveryQAImporterR453Tests",
+      "test": "testOutOfOrderPityRejectsWithoutSaveOrReceiptMutation",
+      "result": "passed"
+    },
+    {
+      "suite": "LocalPurchaseDeliveryQAImporterR453Tests",
+      "test": "testPinnedFixtureImportsExactGearAndPityOnceAcrossColdReplay",
+      "result": "passed"
+    },
+    {
+      "suite": "LocalPurchaseDeliveryQAImporterR453Tests",
+      "test": "testTamperedPayloadsAndSameUUIDChangedPayloadRejectWithoutSaveMutation",
+      "result": "passed"
+    },
+    {
+      "suite": "LocalPurchaseDeliveryQAImporterR453Tests",
+      "test": "testUnknownPityTargetsRejectAcrossDrawSequenceWithoutMutation",
+      "result": "passed"
+    },
+    {
+      "suite": "LocalPurchaseTransactionIdentityR454Tests",
+      "test": "testExactPinnedReceiptIdentityAcceptsAndEveryBoundFieldMismatchRejects",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testCorruptPrimaryAndPreviousRefuseWithoutOverwritingEitherGeneration",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testCorruptPrimaryReportsRollbackAndArchivesExactBytesOnSuccessfulRecoveryWrite",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testFutureEnvelopeSchemaNeverFallsBackToPreviousGeneration",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testFutureKnownPayloadVersionIsDetectedBeforeTypedDecodeOrBackupFallback",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testInvalidReceiptIdentityOrFutureRevisionTriggersProtectedBackupRecovery",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testLegacyMissingEnvelopeMetadataMigratesOnlyOnSuccessfulWrite",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testLegacyPartialSnapshotStillUsesSchemaZeroDefaults",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testMalformedDeclaredSchemaVersionFailsClosedWithoutChangingPrimary",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testMalformedKnownNestedVersionMarkerRefusesBackupFallback",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testNestedFutureVersionMarkerRefusesWithoutUsingValidBackupOrChangingBytes",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testReceiptDictionaryKeyMustMatchReceiptOperationID",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testSchemaOneRequiresAllNonoptionalSnapshotFieldsAndDoesNotRewritePartialJSON",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testSchemaZeroNegativeRevisionIsRejectedAtLoadWithoutRewritingInput",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testUnkeyedArrayWithOpaqueElementsFailsClosedOnPossibleReassociation",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testUnknownFieldsStayWithStableGearIDsAcrossReorderAndKnownMutation",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testValidJSONBitChangeFailsChecksumAndRecoversFromPreviousGeneration",
+      "result": "passed"
+    },
+    {
+      "suite": "SaveRepositoryRecoveryR001Tests",
+      "test": "testWriteFailureBeforeReplacePreservesBytesAndAfterReplaceIsDeduplicated",
+      "result": "passed"
+    }
+  ],
+  "inputFilesUnchanged": true,
+  "allocatedBuildBytes": 218771456,
+  "freeBytesAfter": 136579665920,
+  "logSHA256": "cc0e54024864b3ad3b107eb1a851083f831cea4436c96b6982d175ffa0fcd29f",
+  "scope": "isolated Core fixture-to-save boundary and save regressions; not StoreKit runtime or Apple authorization"
+}

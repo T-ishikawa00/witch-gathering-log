@@ -1,0 +1,57 @@
+test_atomic_failure_then_retry (test_bridge.ActionTests.test_atomic_failure_then_retry) ... ok
+test_confirmation_required (test_bridge.ActionTests.test_confirmation_required) ... ok
+test_duplicate_batch_unaccepted (test_bridge.ActionTests.test_duplicate_batch_unaccepted) ... ok
+test_equip_stats_componentwise (test_bridge.ActionTests.test_equip_stats_componentwise) ... ok
+test_equipment_selector_no_resource_change (test_bridge.ActionTests.test_equipment_selector_no_resource_change) ... ok
+test_equipped_single_ownership (test_bridge.ActionTests.test_equipped_single_ownership) ... ok
+test_exact_received_duplicate_idempotent (test_bridge.ActionTests.test_exact_received_duplicate_idempotent) ... ok
+test_future_hidden_difference_not_called_safe (test_bridge.ActionTests.test_future_hidden_difference_not_called_safe) ... ok
+test_materials_xp_dont_change_by_growth (test_bridge.ActionTests.test_materials_xp_dont_change_by_growth) ... ok
+test_no_double_dust (test_bridge.ActionTests.test_no_double_dust) ... ok
+test_other_receipt_collision (test_bridge.ActionTests.test_other_receipt_collision) ... ok
+test_protected_not_scrapped (test_bridge.ActionTests.test_protected_not_scrapped) ... ok
+test_quote_lock_stales (test_bridge.ActionTests.test_quote_lock_stales) ... ok
+test_quote_tamper_rejected (test_bridge.ActionTests.test_quote_tamper_rejected) ... ok
+test_selector_does_not_peek_in_hidden_affixes (test_bridge.ActionTests.test_selector_does_not_peek_in_hidden_affixes) ... ok
+test_spend_real_formula_and_no_debt (test_bridge.ActionTests.test_spend_real_formula_and_no_debt) ... ok
+test13_vs9_forest_pool (test_bridge.CatalogTests.test13_vs9_forest_pool) ... ok
+test_29_plus4 (test_bridge.CatalogTests.test_29_plus4) ... ok
+test_alias_explicit (test_bridge.CatalogTests.test_alias_explicit) ... ok
+test_all_world_metadata_preserved (test_bridge.CatalogTests.test_all_world_metadata_preserved) ... ok
+test_cats_use_cat_only (test_bridge.CatalogTests.test_cats_use_cat_only) ... ok
+test_core_and_pools_valid (test_bridge.CatalogTests.test_core_and_pools_valid) ... ok
+test_early_start_2 (test_bridge.CatalogTests.test_early_start_2) ... ok
+test_evolution_needs_creation_flag (test_bridge.CatalogTests.test_evolution_needs_creation_flag) ... ok
+test_gacha_does_not_silently_expand_natural_affixes (test_bridge.CatalogTests.test_gacha_does_not_silently_expand_natural_affixes) ... ok
+test_locked_target_rejected (test_bridge.CatalogTests.test_locked_target_rejected) ... ok
+test_unjoined_weapon_excluded (test_bridge.CatalogTests.test_unjoined_weapon_excluded) ... ok
+test_unknown_affix_rejected (test_bridge.CatalogTests.test_unknown_affix_rejected) ... ok
+test_batch_equals_singles (test_bridge.DrawTests.test_batch_equals_singles) ... ok
+test_common_has_no_active_affix (test_bridge.DrawTests.test_common_has_no_active_affix) ... ok
+test_core_not_alphabetically_reordered (test_bridge.DrawTests.test_core_not_alphabetically_reordered) ... ok
+test_halved_coordinate_not_10000 (test_bridge.DrawTests.test_halved_coordinate_not_10000) ... ok
+test_immutable_three_latent_slots_every_quality (test_bridge.DrawTests.test_immutable_three_latent_slots_every_quality) ... ok
+test_legend_upper_half600_to1000 (test_bridge.DrawTests.test_legend_upper_half600_to1000) ... ok
+test_mid20 (test_bridge.DrawTests.test_mid20) ... ok
+test_negative_count_rejected (test_bridge.DrawTests.test_negative_count_rejected) ... ok
+test_no_investment_refund_for_spawn_rank (test_bridge.DrawTests.test_no_investment_refund_for_spawn_rank) ... ok
+test_one_slot_good_quality (test_bridge.DrawTests.test_one_slot_good_quality) ... ok
+test_other_quality_upper_half0_to1000 (test_bridge.DrawTests.test_other_quality_upper_half0_to1000) ... ok
+test_pity100 (test_bridge.DrawTests.test_pity100) ... ok
+test_price_not_in_gear_stats (test_bridge.DrawTests.test_price_not_in_gear_stats) ... ok
+test_quality_does_not_multiply_flat_budget (test_bridge.DrawTests.test_quality_does_not_multiply_flat_budget) ... ok
+test_target_pity_kept_on_change (test_bridge.DrawTests.test_target_pity_kept_on_change) ... ok
+test_upgrade_does_not_reroll_hidden (test_bridge.DrawTests.test_upgrade_does_not_reroll_hidden) ... ok
+test_all_source_files_unchanged (test_bridge.RuntimeTests.test_all_source_files_unchanged) ... ok
+test_barrier_mapping_works_in_formula (test_bridge.RuntimeTests.test_barrier_mapping_works_in_formula) ... ok
+test_battle_has_no_inventory_sideeffects (test_bridge.RuntimeTests.test_battle_has_no_inventory_sideeffects) ... ok
+test_battle_roundtrip_exact (test_bridge.RuntimeTests.test_battle_roundtrip_exact) ... ok
+test_cat_four_types_accepted_in_slice (test_bridge.RuntimeTests.test_cat_four_types_accepted_in_slice) ... ok
+test_natural_items_are_real_items (test_bridge.RuntimeTests.test_natural_items_are_real_items) ... ok
+test_r6_future_gear_stays_rejected (test_bridge.RuntimeTests.test_r6_future_gear_stays_rejected) ... ok
+test_reference_preparation_6h (test_bridge.RuntimeTests.test_reference_preparation_6h) ... ok
+
+----------------------------------------------------------------------
+Ran 52 tests in 1.148s
+
+OK

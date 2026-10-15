@@ -1,0 +1,31 @@
+{
+  "schema": "native-challenge-completion-r449-scope-v1",
+  "status": "PREPARED_NOT_RUN_UNSEALED",
+  "worktree": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg",
+  "helper": "docs/production/current/qa_drafts/native_challenge_completion_r449/candidate_r001/capture_r449.py",
+  "device": "9A067715-7CF3-40D3-9064-38423223959B",
+  "bundleID": "local.witch.autonomous.r1.completion.r445",
+  "startingSave": {
+    "revision": 117,
+    "sha256": "af864f432b2e16255e9fa050f0b1cf5189492c297260e64d1eae6ec465d03cc4",
+    "provenance": "R446 cold_after archive; exact preflight required"
+  },
+  "challengeIDs": [
+    "CH_R01_01", "CH_R01_02", "CH_R01_03",
+    "CH_R02_01", "CH_R02_02", "CH_R02_03",
+    "CH_R03_01", "CH_R03_02", "CH_R03_03",
+    "CH_R04_01", "CH_R04_02", "CH_R04_03",
+    "CH_R05_01", "CH_R05_02", "CH_R05_03"
+  ],
+  "existingHistory": {
+    "priorClearMarkers": 7,
+    "historicalMockDrawCount": 5,
+    "equippedMockGearAtBaseline": 0,
+    "policy": "Retain old history; require a newly observed actual WIN for each of the 15 challenge IDs; a persistent clear marker is not proof of the current attempt outcome."
+  },
+  "checkpoints": ["before", "region_R01", "region_R02", "region_R03", "region_R04", "region_R05", "cold_before", "cold_after"],
+  "requiredScreenshots": ["before", "region_R03", "region_R04", "region_R05", "cold_after"],
+  "optionalScreenshots": "At most one named challenge checkpoint; six total maximum.",
+  "limits": {"wallSeconds": 1800, "evidenceBytes": 35000000, "screenshots": 6, "minimumFreeBytes": 10000000000},
+  "execution": "Root-operated ordinary UI only. This candidate has not been run. No pristine-profile claim, first-clear reward claim, art acceptance, or formal design acceptance."
+}

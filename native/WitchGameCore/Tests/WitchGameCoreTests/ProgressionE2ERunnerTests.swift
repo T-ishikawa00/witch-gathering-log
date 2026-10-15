@@ -82,15 +82,25 @@ final class ProgressionE2ERunnerTests: XCTestCase {
         } else { seed = baseSeed }
         let epoch: Int64 = 1_792_000_000
         let fm = FileManager.default
-        let root = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("witch-progression-e2e-r003-\(overlayTag)-\(seed)", isDirectory: true)
-        try fm.createDirectory(at: root, withIntermediateDirectories: true)
+        let runID = UUID().uuidString
+        let root = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("witch-progression-e2e-r003-\(overlayTag)-\(seed)-\(runID)", isDirectory: true)
+        try fm.createDirectory(at: root, withIntermediateDirectories: false)
         let output = URL(fileURLWithPath: ProcessInfo.processInfo.environment["WITCH_E2E_OUTPUT"] ?? root.appendingPathComponent("report.json").path)
         try fm.createDirectory(at: output.deletingLastPathComponent(), withIntermediateDirectories: true)
         let checkpointDirectory = output.deletingLastPathComponent().appendingPathComponent("combat_checkpoints", isDirectory: true)
-        try fm.createDirectory(at: checkpointDirectory, withIntermediateDirectories: true)
+        let seedTag = String(seed, radix: 16, uppercase: false)
+        let actionURL = output.deletingLastPathComponent().appendingPathComponent("progression_actions_seed_\(seedTag).json")
+        let saveArtifactURL = output.deletingLastPathComponent().appendingPathComponent("qa_final_save_seed_\(seedTag).json")
+        let sourceURL = output.deletingLastPathComponent().appendingPathComponent("source_sha256.txt")
+        let outputFiles = [output, output.deletingPathExtension().appendingPathExtension("md"), actionURL, saveArtifactURL, sourceURL]
+        guard outputFiles.allSatisfy({ !fm.fileExists(atPath: $0.path) }),
+              !fm.fileExists(atPath: checkpointDirectory.path) else {
+            throw NSError(domain: "ProgressionE2E", code: 5,
+                          userInfo: [NSLocalizedDescriptionKey: "refusing to overwrite prior E2E artifacts"])
+        }
+        try fm.createDirectory(at: checkpointDirectory, withIntermediateDirectories: false)
         var checkpointArtifacts: [String: String] = [:]
         let saveURL = root.appendingPathComponent("save.json")
-        try? fm.removeItem(at: saveURL)
         let initial = GameSnapshot.newGame(catalog: catalog)
         XCTAssertEqual(initial.gear.count, 4, "only canonical starter gear should exist at start")
         XCTAssertEqual(initial.unlockedRegionIDs, [catalog.regions.first!.id])
@@ -560,10 +570,6 @@ final class ProgressionE2ERunnerTests: XCTestCase {
         let normalizedState = normalizeIDs(snapshotObject)
         let normalizedStateData = try JSONSerialization.data(withJSONObject: normalizedState, options: [.sortedKeys, .fragmentsAllowed])
         let semanticStateHash = SHA256.hash(data: normalizedStateData).map { String(format: "%02x", $0) }.joined()
-        let seedTag = String(seed, radix: 16, uppercase: false)
-        let actionURL = output.deletingLastPathComponent().appendingPathComponent("progression_actions_seed_\(seedTag).json")
-        let saveArtifactURL = output.deletingLastPathComponent().appendingPathComponent("qa_final_save_seed_\(seedTag).json")
-        let sourceURL = output.deletingLastPathComponent().appendingPathComponent("source_sha256.txt")
         let summary = Summary(schema: "actual_gameengine_progression_e2e_r003_growth_profiles", approval: "UNAPPROVED_TEST_OVERLAY",
             seed: seed, candidateOverlayID: candidateMode ? CandidateCombatOverlay.r014LocalCandidate.id : "NONE",
             investmentStrategy: investmentStrategy, gearTierPolicy: gearTierPolicy,

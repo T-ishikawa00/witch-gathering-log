@@ -1,0 +1,53 @@
+{
+  "blockingFindings": [],
+  "executionPrecondition": "Root identity seal required; current manifest is not execution-ready.",
+  "findings": [
+    {
+      "finding": "Manifest is intentionally unsealed: appRuntimeIdentity is null and status is PREPARED_UNSEALED_ROOT_IDENTITY. Runner requires PREPARED_NOT_RUN plus path/SHA/size identity when --execute is used. Root must seal the R447-compatible runtime identity and regenerate the invocation pins before any execution.",
+      "id": "R448-01",
+      "severity": "NOTE"
+    },
+    {
+      "finding": "The challenge pass is actual GameEngine.resolveChallenge -> catalog scenario -> R6TimelineSimulator output. GameEngine stores the result and only writes CHALLENGE_CLEAR/reward on result.won. SIMULATED_VICTORY is therefore not a forced/stubbed win. DESIGN_ONLY_NOT_PLAYTESTED remains authored scenario metadata; this Core test does not prove player-facing UI reachability, human play, or design acceptance.",
+      "id": "R448-02",
+      "severity": "SCOPE"
+    },
+    {
+      "finding": "Fresh snapshot mirrors App R179 behavior by setting firstCraftAidEligibleR179=true only on a new isolated save. It is not a material/gear/XP grant; craft/evolve paths use actual engine dispatch and evolution mutates the parent definition in place, preserving its UUID. The test is a virtual 30-day deterministic progression, not real elapsed play or retention evidence.",
+      "id": "R448-03",
+      "severity": "SCOPE"
+    },
+    {
+      "finding": "No .mockSummon dispatch occurs in the selected test; summonAvailable returns zero, synthetic grant receipts are asserted empty, and added gear UUIDs must join to craft or natural acquisition. The zero summon counters are partly structural because the test removes the dispatch opportunity; they do not independently exercise a runtime summon-blocking policy. This is acceptable for the requested zero-summon route, with that boundary retained.",
+      "id": "R448-04",
+      "severity": "LIMIT"
+    }
+  ],
+  "pins": {
+    "manifest": {
+      "expected": "0ec432c399b03750137a3aa01822403c2eb73d05eddc4c6a8e03280c1e3e7726",
+      "path": "docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/INPUT_MANIFEST_R001.json",
+      "sha256": "0ec432c399b03750137a3aa01822403c2eb73d05eddc4c6a8e03280c1e3e7726"
+    },
+    "r445FrozenCoreGameEngineSHA256": "c50d7418a1442c7f8b5a5ecd1b0a76f937877fc90267cb0b2460fb6645347b65",
+    "runner": {
+      "expected": "9b364229486767a179f75b52134df822fcaba16f9dd719ccf9c104e90f87102f",
+      "path": "docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/runner_r001/run_r448.py",
+      "sha256": "9b364229486767a179f75b52134df822fcaba16f9dd719ccf9c104e90f87102f"
+    },
+    "test": {
+      "expected": "a4e903e3cda8dd26ccc935b73e1eaf4821577ae877938fc620190072a84549f9",
+      "path": "docs/production/current/qa_drafts/zero_summon_first_craft_r448/candidate_r001/source/EconomyCohortProgressionR355Tests.swift",
+      "sha256": "a4e903e3cda8dd26ccc935b73e1eaf4821577ae877938fc620190072a84549f9"
+    }
+  },
+  "reviewedAtLocal": "2026-10-15",
+  "runnerAssessment": {
+    "bounded": "One fixed test/method, one attempt, one compile; 600s overall, 90s case, 500MB scratch, 50MB evidence, 12GB free floor; no Simulator or live save access.",
+    "noRun": "The runner and candidate were not executed or compiled during this review.",
+    "safety": "Cross-checks candidate/test/staged file SHA-size-mode, R445 frozen source map/build receipt and R368 support/product inputs; unique run ID and exclusive lock; subprocess ownership monitoring and cleanup; failures retained without retry."
+  },
+  "schema": "r448-independent-pre-review-v1",
+  "scope": "Read-only source and runner review; no compile, test, app, or Simulator execution.",
+  "status": "PASS_FOR_BOUNDED_CORE_REVIEW_CONDITIONAL_ON_ROOT_IDENTITY_SEAL"
+}

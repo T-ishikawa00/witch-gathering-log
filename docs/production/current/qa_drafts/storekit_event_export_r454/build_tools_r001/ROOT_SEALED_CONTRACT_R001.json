@@ -1,0 +1,47 @@
+{
+  "driverSHA256": "a7fb2f6bb0119ec2a42d44700480c4afd06f6c3fe77c8fd738f3a27f9e5d7f3e",
+  "inputManifestSHA256": "c88abae2e41e7617b513932c7725be4597efd045ea4fb96e5ef6f446b1fdd1ef",
+  "launchArguments": [
+    "--qa-isolated",
+    "--qa-save-key=storekit-authority-r454",
+    "--xcode-local-storekit-qa",
+    "--screen=購入検証",
+    "--r454-local-authority-qa",
+    "--r454-test-token",
+    "45400000-0000-4000-8000-000000000001",
+    "--r454-profile-fingerprint",
+    "62ce1ce493d34a7864cd7c7c1a5ee17aebdc8891b2b7b8dcb4eb7e6534c06e99"
+  ],
+  "limits": {
+    "attempts": 1,
+    "debugBuildSeconds": 600,
+    "freezeAndDebugAggregateSeconds": 600,
+    "install": false,
+    "launch": false,
+    "maxAllocatedBytes": 2000000000,
+    "minimumFreeBytes": 20000000000,
+    "requiredStartFreeBytes": 20000000000,
+    "safetyBytes": 2000000000
+  },
+  "notes": [
+    "Root reviewed full driver and normalizer. Exact 238 sources, 21293 protected external files and 23244 protected build files verified. R454 Core25 and host6 pass; independent App review no P1. Local build only."
+  ],
+  "profileFingerprint": "62ce1ce493d34a7864cd7c7c1a5ee17aebdc8891b2b7b8dcb4eb7e6534c06e99",
+  "protectedPBXSHA256": "b83573270f2e0fde46411aabe9a539343b0fd1301760b3de7fe672b796dc18e9",
+  "resourceCount": 1922,
+  "schema": "storekit-event-export-r454-build-contract-r001-v1",
+  "sourceCount": 238,
+  "sourceMapSHA256": "f7e90c5caadce71ad72e1612ae2f06094092a90d4b43cd4840a16607be0e1efe",
+  "status": "ROOT_SEALED_READY_TO_BUILD",
+  "variants": {
+    "debug": {
+      "bundleIdentifier": "local.witch.autonomous.r1.storekit.r454",
+      "configuration": "Debug",
+      "flags": [
+        "DEBUG"
+      ]
+    }
+  },
+  "worktree": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg",
+  "sealedAt": "2026-10-15T06:05:31.710419+09:00"
+}

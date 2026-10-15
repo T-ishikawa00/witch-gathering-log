@@ -1,0 +1,77 @@
+{
+  "status": "SCOPED_VISUAL_PASS_WITH_LIMITS",
+  "worktree": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg",
+  "reviewed": "Saved R433 screenshot checkpoints only; no app, simulator, build, or save interaction.",
+  "findings": [],
+  "visualChecks": {
+    "partyAppearances": {
+      "result": "PASS_SCOPED",
+      "evidence": {
+        "AIRA": "checkpoints/aira_companion/screen.png",
+        "ERNA": "checkpoints/erna_companion/screen.png",
+        "LUNA": "checkpoints/luna_companion/screen.png",
+        "NOIR": "checkpoints/noir_companion/screen.png",
+        "combinedHome": "checkpoints/all_applied_home/screen.png"
+      },
+      "note": "Companion views show each selected appearance attached to the intended actor without obvious clipping or blocking the character. NOIR's green collar is at the neck; the green paw-side item is consistent with her equipped catalyst and is not treated as a misplaced collar."
+    },
+    "weaponAppearances": {
+      "result": "PASS_SCOPED",
+      "evidence": [
+        "checkpoints/branch_battle/screen.png",
+        "checkpoints/moon_battle/screen.png"
+      ],
+      "note": "Branch and moon staff variants are distinguishable in battle. The moon battle frame shows the four party members and moon staff; capture label/state records 6 seconds into battle. No obvious character, weapon, or enemy occlusion is visible in these frames."
+    },
+    "furniture": {
+      "result": "PASS_SCOPED",
+      "evidence": [
+        "checkpoints/desk_placed_preview/screen.png",
+        "checkpoints/desk_placed_home/screen.png",
+        "checkpoints/desk_stored_preview/screen.png"
+      ],
+      "note": "The botanical desk is visible in the room and the reading pose is understandable. Preview text and place/store controls are legible in the saved screens. The stored-state preview shows the room without the desk and exposes the place action."
+    }
+  },
+  "stateReadback": {
+    "selectedCosmeticIDsAtRevision23": {
+      "C_APPRENTICE": "LUNA_MANTLE_CANDIDATE_R128",
+      "C_FAMILIAR": "NOIR_NECKWEAR_MOSS_R001",
+      "C_SMITH": "AIRA_HARVEST_APRON_GREEN_CANDIDATE_R130",
+      "C_WITCH": "ERNA_TRAVEL"
+    },
+    "selectedWeaponAppearanceAtRevision23": {
+      "C_WITCH": "STAFF_BRANCH"
+    },
+    "moonBattleRevision30": {
+      "selectedWeaponAppearance": "STAFF_MOON",
+      "allFourCosmeticsRetained": true,
+      "furnitureOwned": ["FURN_DESK_BOTANICAL"]
+    },
+    "deskPlacedRevision26": ["FURN_DESK_BOTANICAL"],
+    "deskStoredRevision27": [],
+    "coldReadbacks": {
+      "moonStoredRevision29": "save SHA 0efb892d8dd637e2aa207eef0d0b0d3272af4056fe9ca5ffaec67974a6949f1a, before/after exact",
+      "combinedAppearanceRevision23": "save SHA b5e930dc68a8a7c284ec97fc10fca6f4e2b001a888d27bee70745d21e2ae0e90, before/after exact",
+      "deskPlacedRevision26": "save SHA 623a1421e221c42b8a1f0ba8949d9e1e44b85cdcaa409868fe11f449577c1ed9, before/after exact"
+    }
+  },
+  "limits": [
+    "This review covers only the saved screenshots and checkpoint metadata. At review time no top-level final RUN/closure receipt was present, so I do not independently certify final protected-tree preservation or run closure.",
+    "The known LUNA desk-reading mantle issue remains tracked separately under R435; it is not counted as a new finding here.",
+    "No formal art approval, VoiceOver/accessibility review, physical-device review, or general wardrobe quality acceptance is inferred."
+  ],
+  "imageSHA256": {
+    "all_applied_home": "90144e28183481d7a3297217d322121cf562e96a5e83f00e1b9e8454788a52c5",
+    "aira_companion": "bf37e8727e6202c7c398ad5c247e8e6e4597a57e127b754d73054dd498a81b65",
+    "erna_companion": "dfab6bcc4903b436dfc9978c8d64dc3d7702833db4ea93417ade081fdefb8fd1",
+    "luna_companion": "8159d1f9be9357bb5e67da871800372ea8f8742ba289f32f6274d5b911e0d287",
+    "noir_companion": "4b48db15a605798a026b22beb728c0e71489709c647529fc5ad5651773bc8e36",
+    "branch_battle": "4e8c3cc3658242934bf01bbc0dfb7f0c1c3afc830449a10302fa7989f464c32a",
+    "moon_battle": "4765c3c3477686973bf234b8919d8ff4e34ec7b54586267c7f2918cc6e3db6df",
+    "moon_companion_cold": "b1ca599e8c35055a58f3104f15f2d9af9a41058051c7772b006c9f1e5e59fdf9",
+    "desk_placed_home": "c3abcb41997a368096573ddc52c2524fe871b6067e35213ae015cae9f580922f",
+    "desk_placed_preview": "d651c46316000a85df27a0ea5b82597eabdebe213ebeb324479778ff7f0752ce",
+    "desk_stored_preview": "84cf27796f0f5dda3a9a72a9a6433fa7e9664770e0eb47736830233626d78afc"
+  }
+}

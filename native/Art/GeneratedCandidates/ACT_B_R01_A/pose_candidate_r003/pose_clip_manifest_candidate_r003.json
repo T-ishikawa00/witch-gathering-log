@@ -1,0 +1,239 @@
+{
+  "actor_id": "ACT_B_R01_A",
+  "revision": "r003",
+  "status": "CANDIDATE_UNAPPROVED",
+  "source_reference_path": "/Users/PUBLIC_USER/Projects/idle-loot-rpg/assets/g2/regions/region01_forest/imports/20261009_R01_delivery/R01_PACKAGE/bosses/B_R01_A/B_R01_A_base_v2.png",
+  "source_reference_sha256": "c8d4d9a88b3db897bab69f13c13189d536eef62b31de451fd851d22adf972511",
+  "imagegen_atlas_path": "native/Art/GeneratedCandidates/ACT_B_R01_A/pose_candidate_r003/imagegen_atlas_r003.png",
+  "imagegen_atlas_sha256": "c4e1ca1d4337e4141174ffdc1a2f27a26897a7484952a878469b367a981d4a65",
+  "pose_order": [
+    "idle_a",
+    "idle_b",
+    "walk_a",
+    "walk_b",
+    "anticipate",
+    "execute",
+    "recover",
+    "hit",
+    "resolve"
+  ],
+  "state_frames": {
+    "idle": [
+      "native/Art/GeneratedCandidates/ACT_B_R01_A/pose_candidate_r003/frames/idle_a.png",
+      "native/Art/GeneratedCandidates/ACT_B_R01_A/pose_candidate_r003/frames/idle_b.png"
+    ],
+    "walk": [
+      "native/Art/GeneratedCandidates/ACT_B_R01_A/pose_candidate_r003/frames/walk_a.png",
+      "native/Art/GeneratedCandidates/ACT_B_R01_A/pose_candidate_r003/frames/walk_b.png"
+    ],
+    "anticipate": [
+      "native/Art/GeneratedCandidates/ACT_B_R01_A/pose_candidate_r003/frames/anticipate.png"
+    ],
+    "execute": [
+      "native/Art/GeneratedCandidates/ACT_B_R01_A/pose_candidate_r003/frames/execute.png"
+    ],
+    "recover": [
+      "native/Art/GeneratedCandidates/ACT_B_R01_A/pose_candidate_r003/frames/recover.png"
+    ],
+    "hit": [
+      "native/Art/GeneratedCandidates/ACT_B_R01_A/pose_candidate_r003/frames/hit.png"
+    ],
+    "resolve": [
+      "native/Art/GeneratedCandidates/ACT_B_R01_A/pose_candidate_r003/frames/resolve.png"
+    ]
+  },
+  "frames": [
+    {
+      "pose": "idle_a",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_B_R01_A/pose_candidate_r003/frames/idle_a.png",
+      "sha256": "f13f31f925f83d43a662e70b0a207e104a55a44a9df4eebfbbaeb520199d20ba",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        36,
+        12,
+        512,
+        350
+      ]
+    },
+    {
+      "pose": "idle_b",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_B_R01_A/pose_candidate_r003/frames/idle_b.png",
+      "sha256": "54c926329f25219bd0b5addc569456be5d3ffe4b31d3eff3b1176eb82574bd9e",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        543,
+        6,
+        1008,
+        351
+      ]
+    },
+    {
+      "pose": "walk_a",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_B_R01_A/pose_candidate_r003/frames/walk_a.png",
+      "sha256": "6e8e62775a5658a854ad48928e4b49ae72d208626f43c1b990396f0c4f85a256",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        1028,
+        17,
+        1509,
+        350
+      ]
+    },
+    {
+      "pose": "walk_b",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_B_R01_A/pose_candidate_r003/frames/walk_b.png",
+      "sha256": "ce849eee91ffe4a9c3fa0b12c950ed7b52ad131a39e279158769aae11f436c37",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        10,
+        353,
+        500,
+        679
+      ]
+    },
+    {
+      "pose": "anticipate",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_B_R01_A/pose_candidate_r003/frames/anticipate.png",
+      "sha256": "ce3691e3c29d12df31b6492d086e35b6f44abfd1e69d6a089f839eb87a451bfb",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        520,
+        360,
+        998,
+        680
+      ]
+    },
+    {
+      "pose": "execute",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_B_R01_A/pose_candidate_r003/frames/execute.png",
+      "sha256": "7eda2d37226fb307d51962b3fec5c8b3cc9dbdb17c4835c719f8116a14871823",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        1009,
+        361,
+        1525,
+        676
+      ]
+    },
+    {
+      "pose": "recover",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_B_R01_A/pose_candidate_r003/frames/recover.png",
+      "sha256": "492af254b13573d4e539c40729bc77e9f7f572be5c48fe665d5b4e7ff1c735a5",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        57,
+        674,
+        495,
+        1009
+      ]
+    },
+    {
+      "pose": "hit",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_B_R01_A/pose_candidate_r003/frames/hit.png",
+      "sha256": "5e207a5ed025f285d840dada7e13888461f71934d3c8ffb45d2f9d5c5ae26838",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        540,
+        688,
+        996,
+        1011
+      ]
+    },
+    {
+      "pose": "resolve",
+      "frame_path": "native/Art/GeneratedCandidates/ACT_B_R01_A/pose_candidate_r003/frames/resolve.png",
+      "sha256": "5c66fe3250b4f2a3527ce150d498c74bcfa2f42066d14bcd9602a10eaca58e9e",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "anchor_px": [
+        256.0,
+        490
+      ],
+      "source_bounds_xyxy": [
+        1023,
+        681,
+        1514,
+        1013
+      ]
+    }
+  ],
+  "fps": 6,
+  "canvas_px": [
+    512,
+    512
+  ],
+  "anchor_px": [
+    256.0,
+    490
+  ],
+  "review": "Compared against canonical boss source: root-wrapped giant boar, moss, paired tusks, broad frontal body and four legs retained; all nine crops fully fit. Detached alpha fragments removed by dominant-component extraction. Head/tusk proportions and foot/leg configurations show generated drift; action states are useful distinct poses but not continuous clips. Pending runtime and art review.",
+  "qa_contact_sheet_path": "native/Art/GeneratedCandidates/ACT_B_R01_A/pose_candidate_r003/qa_contact_sheet_r003.png",
+  "qa_contact_sheet_sha256": "dda3aee60b1a127bf8cfea4fba2fcd5fa5c2f775736df94007f6540a99522dfc",
+  "runtime_integration": "NOT_DONE",
+  "runtime_visual_qa": "PENDING_ROOT_REVIEW",
+  "human_adoption": "PENDING",
+  "limitations": [
+    "Each action state currently has only one authored pose; idle and walk each have two poses.",
+    "This is a corrected composition/identity candidate, not evidence of natural continuous animation.",
+    "All frames derive from a generated atlas and remain unapproved pending visual/runtime review.",
+    "Source reference was not modified."
+  ]
+}

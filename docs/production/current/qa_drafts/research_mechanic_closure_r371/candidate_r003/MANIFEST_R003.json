@@ -1,0 +1,32 @@
+{
+  "buildPerformed": false,
+  "executionPerformed": false,
+  "fixtureClass": "MECHANISM_ONLY",
+  "formalAdoption": false,
+  "inputManifestPath": "docs/production/current/qa_drafts/research_mechanic_closure_r371/candidate_r003/INPUT_MANIFEST_R003.json",
+  "inputManifestSHA256": "8debf74c284cbac0fdc4818da526f53c5fb852b080cac2cd39674cc1cf436931",
+  "limitations": [
+    "MECHANISM_ONLY controlled-stat fixture; not ordinary progression, balance, player experience, or formal acceptance.",
+    "R02_02 reuses pinned R359 evidence and is not rerun.",
+    "This revision corrects five event-shape/identity expectations and replaces R05_02 positive-heal expectation with authored light-transfer evidence; no production source changed."
+  ],
+  "newSimulations": 14,
+  "r368PayloadCounts": {
+    "CoreSources": 54,
+    "additionalCandidateHelperSources": 1,
+    "resources": 2,
+    "sourceRoles": [
+      "core",
+      "override",
+      "candidate_helper",
+      "resource"
+    ]
+  },
+  "reusedEvidenceCases": 1,
+  "schema": "r371-research-mechanic-closure-candidate-v3",
+  "simulatorTouched": false,
+  "status": "SOURCE_ONLY_NOT_RUN",
+  "testMethods": 15,
+  "testSourcePath": "docs/production/current/qa_drafts/research_mechanic_closure_r371/candidate_r003/ResearchMechanicClosureR371Tests.swift",
+  "testSourceSHA256": "b78acbb5917d55782a8de904abb5a41145ce868b65fb5227dac8f71d457a93dc"
+}

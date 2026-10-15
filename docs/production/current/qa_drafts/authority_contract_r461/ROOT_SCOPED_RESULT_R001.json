@@ -1,0 +1,48 @@
+{
+  "schema": "authority-contract-r461-root-result-v1",
+  "status": "SCOPED_LOCAL_CONTRACT_PASS; DURABLE_CLIENT_STORE_GAP_OPEN_R463",
+  "evidence": [
+    {
+      "path": "docs/production/current/qa_drafts/authority_contract_r461/root_test_tools_r001/PYTHON_RESULT.json",
+      "sha256": "44baf64855f5e1b5da6742a25b27c210a6f307b251c633449da77d8696924846",
+      "scope": "120 executions:119 passed/1 test-fixture error; raw retained"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/authority_contract_r461/root_test_tools_r002/PYTHON_RESULT.json",
+      "sha256": "e3849588a3dfaee6105ebbed7b7abb9d804e96650630bfc8c45f2c4d65b2befe",
+      "scope": "10 corrected focused service methods passed; unchanged110 legacy executions passed in previous run"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/authority_contract_r461/root_test_tools_r001/RESULT.json",
+      "sha256": "72cdbd99608389ff2e09e313c0d786d025b7580caa123a7d3cd209969f16a748",
+      "scope": "Swift test compile failed;0methods executed"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/authority_contract_r461/root_test_tools_r003/RESULT.json",
+      "sha256": "aa0b519eda409e9b4595483c8573c7d8c4b1e39f2b2ed6c35a708585db580448",
+      "scope": "37passed/0failed/0skipped;12contract+25legacy methods"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/authority_contract_r461/independent_review_r001/ERRATUM_R003.json",
+      "sha256": "ed6166feb81d08dfca7e5ab394c66303cdf47d7d22493c2a86be97dc7891521f",
+      "scope": "Independent bounded result review"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/authority_contract_r461/ROOT_INTEGRATION_R001.json",
+      "sha256": "c7d53556c0eaa8aeaa92ff8d8042ad42bb2197d2a883283c68b725ebc73b6172",
+      "scope": "Exact4files installed; no normalapp behavior change"
+    }
+  ],
+  "notEstablished": [
+    "Actual Apple signatures/accounts, online revocation, production authority",
+    "Durable pendingoperation/observation across process exit: R463 being implemented",
+    "Native App/StoreKit transport wiring for R461",
+    "Any GameSnapshot, entitlement orcurrencygrant from R461"
+  ],
+  "preservedFailures": [
+    "Python test SyntheticAuditor refund status missing;test-only fix",
+    "Swift asynclet XCTestCase capture compileerror;test-only fix",
+    "Initial integration literalpin transposition, preflight stopped allwrites"
+  ],
+  "liveProductionEnabled": false
+}

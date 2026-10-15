@@ -1,0 +1,120 @@
+{
+  "elapsedSeconds": 1.122,
+  "executionContract": {
+    "directOwnedPIDKillOnly": true,
+    "noBuild": true,
+    "outputCapBytes": 2000000,
+    "totalSeconds": 90
+  },
+  "finishedAt": "2026-10-14T06:09:00.069516+09:00",
+  "inputManifestSHA256": "388616de0070128dea2190713f804bd21645b989615cd46adda7d1fec94aa7f8",
+  "operationIDs": {
+    "save": "a7dc48ff-e713-49e3-b59f-95ef5a1f3e91",
+    "seed": "1ed55a7b-ba66-4864-91d8-df08e3b0ceba"
+  },
+  "outputBytes": 21261,
+  "ownedProcessesAfter": [],
+  "pbxUnchanged": true,
+  "phaseTokens": {
+    "crash-child": "aa6508dc-0b59-4a9d-9b53-2ea20200e2b5",
+    "seed": "a1de4e6e-263d-4b34-90d0-0a5360e1dc3c",
+    "verify": "38f9110d-53b6-4d0f-93b6-bd9c30a4811d"
+  },
+  "phases": [
+    {
+      "accepted": true,
+      "allOwnedProcessesAbsent": true,
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/xctest",
+        "-XCTest",
+        "WitchGameCoreTests.LoadoutCrashIntegrityR362Tests/testR342LoadoutPayloadCrashBoundary",
+        "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/save_crash_completion_r362/runner_root_r003/execution_r002/scratch/arm64-apple-macosx/debug/WitchGameCorePackageTests.xctest"
+      ],
+      "commandIdentity": "/Applications/Xcode.app/Contents/Developer/usr/bin/xctest -XCTest WitchGameCoreTests.LoadoutCrashIntegrityR362Tests/testR342LoadoutPayloadCrashBoundary /Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/save_crash_completion_r362/runner_root_r003/execution_r002/scratch/arm64-apple-macosx/debug/WitchGameCorePackageTests.xctest",
+      "elapsedSeconds": 0.235,
+      "logBytes": 909,
+      "logSHA256": "2673e22ad3a857edee2f2f9e630ba848eeba0b47cadd586568cd5f60445b789e",
+      "mode": "seed",
+      "ownedProcessesRemaining": [],
+      "phaseToken": "a1de4e6e-263d-4b34-90d0-0a5360e1dc3c",
+      "pid": 99143,
+      "returnCode": 0,
+      "startIdentity": "Wed Oct 14 06:08:59 2026",
+      "startedAt": "2026-10-14T06:08:59.068880+09:00",
+      "targetPIDAbsent": true
+    },
+    {
+      "accepted": true,
+      "allOwnedProcessesAbsent": true,
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/xctest",
+        "-XCTest",
+        "WitchGameCoreTests.LoadoutCrashIntegrityR362Tests/testR342LoadoutPayloadCrashBoundary",
+        "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/save_crash_completion_r362/runner_root_r003/execution_r002/scratch/arm64-apple-macosx/debug/WitchGameCorePackageTests.xctest"
+      ],
+      "commandIdentity": "/Applications/Xcode.app/Contents/Developer/usr/bin/xctest -XCTest WitchGameCoreTests.LoadoutCrashIntegrityR362Tests/testR342LoadoutPayloadCrashBoundary /Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/save_crash_completion_r362/runner_root_r003/execution_r002/scratch/arm64-apple-macosx/debug/WitchGameCorePackageTests.xctest",
+      "elapsedSeconds": 0.322,
+      "logBytes": 336,
+      "logSHA256": "3459fe308442bc6f58274343d47bfa58f9d0c1296c0e3b5e2ee7bbfb29ca1c4c",
+      "mode": "crash-child",
+      "ownedProcessesRemaining": [],
+      "phaseToken": "aa6508dc-0b59-4a9d-9b53-2ea20200e2b5",
+      "pid": 99148,
+      "returnCode": -9,
+      "signal": "SIGKILL_EXACT_POPEN_PID",
+      "stageMarker": {
+        "markerUnixTime": 1791925739.347742,
+        "operationID": "a7dc48ff-e713-49e3-b59f-95ef5a1f3e91",
+        "parentPID": 99131,
+        "phase": "afterPrimaryReplace",
+        "phaseToken": "aa6508dc-0b59-4a9d-9b53-2ea20200e2b5",
+        "pid": 99148,
+        "primarySHA256": "f02dcb6489487a4aa3ccd415cee8bc647d780dcb34b972b25d823aa710118222",
+        "processGroupID": 99148,
+        "requestFingerprint": "saveGearLoadoutR342|1:1",
+        "schema": "r362-after-primary-replace-v1"
+      },
+      "startIdentity": "Wed Oct 14 06:08:59 2026",
+      "startedAt": "2026-10-14T06:08:59.307413+09:00",
+      "targetPIDAbsent": true
+    },
+    {
+      "accepted": true,
+      "allOwnedProcessesAbsent": true,
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/xctest",
+        "-XCTest",
+        "WitchGameCoreTests.LoadoutCrashIntegrityR362Tests/testR342LoadoutPayloadCrashBoundary",
+        "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/save_crash_completion_r362/runner_root_r003/execution_r002/scratch/arm64-apple-macosx/debug/WitchGameCorePackageTests.xctest"
+      ],
+      "commandIdentity": "/Applications/Xcode.app/Contents/Developer/usr/bin/xctest -XCTest WitchGameCoreTests.LoadoutCrashIntegrityR362Tests/testR342LoadoutPayloadCrashBoundary /Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/save_crash_completion_r362/runner_root_r003/execution_r002/scratch/arm64-apple-macosx/debug/WitchGameCorePackageTests.xctest",
+      "elapsedSeconds": 0.263,
+      "logBytes": 909,
+      "logSHA256": "9fd9179dcaf20e5cb0004055b02987f299a2f4a909d36eb5bf224d3a221b16bb",
+      "mode": "verify",
+      "ownedProcessesRemaining": [],
+      "phaseToken": "38f9110d-53b6-4d0f-93b6-bd9c30a4811d",
+      "pid": 99157,
+      "returnCode": 0,
+      "startIdentity": "Wed Oct 14 06:08:59 2026",
+      "startedAt": "2026-10-14T06:08:59.635795+09:00",
+      "targetPIDAbsent": true
+    }
+  ],
+  "pins": {
+    "inputManifestSHA256": "388616de0070128dea2190713f804bd21645b989615cd46adda7d1fec94aa7f8",
+    "packageRowCount": 58,
+    "packageRowsSHA256": "981de5c3cf85a722049ee48653a6746b0d30f5c7acea3ffadb5e454809b4f974",
+    "testExecutableSHA256": "92540006504035e70d103eef5610ca000bc952dacfeb5645590bee51b0a0aacf",
+    "xctestAlias": "/Applications/Xcode.app/Contents/Developer/usr/bin/xctest",
+    "xctestCanonical": "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Xcode/Agents/xctest",
+    "xctestDevice": 16777232,
+    "xctestInode": 671162,
+    "xctestSHA256": "947f17b5df53b2871ed5d542bc53d49059c73a51bb610e2be9bc5bc0d0b2dc16"
+  },
+  "protectedUnchanged": true,
+  "saveUnchanged": true,
+  "schema": "r362-direct-xctest-v1",
+  "startedAt": "2026-10-14T06:08:58.947416+09:00",
+  "status": "SEMANTIC_REVIEW_REQUIRED"
+}

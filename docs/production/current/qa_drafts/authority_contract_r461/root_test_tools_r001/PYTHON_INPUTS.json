@@ -1,0 +1,104 @@
+{
+  "status": "SEALED_BEFORE_EXECUTION",
+  "inputs": [
+    {
+      "path": "tools/witch_purchase_authority/__init__.py",
+      "destination": "__init__.py",
+      "sha256": "1de1a7bfe8c72943640f408bf1a8030af6e008be3bc53e9c7d17be276cdbd324",
+      "bytes": 736
+    },
+    {
+      "path": "tools/witch_purchase_authority/authority.py",
+      "destination": "authority.py",
+      "sha256": "fa181cfb5a9da78ae919dff6d4b6fd1a69abcbd717f3412fcd40a95675bac1ec",
+      "bytes": 59796
+    },
+    {
+      "path": "tools/witch_purchase_authority/local_delivery_r453.py",
+      "destination": "local_delivery_r453.py",
+      "sha256": "81e1906df738a7bd9fb69d423a4c42d10eab2ad452bd45442e69cb59cfa5f837",
+      "bytes": 38010
+    },
+    {
+      "path": "tools/witch_purchase_authority/local_exchange_r454.py",
+      "destination": "local_exchange_r454.py",
+      "sha256": "43061db6ae53442bdcbca9b4342f58a4040e42b4d59579a98456b7c5787ccd52",
+      "bytes": 13047
+    },
+    {
+      "path": "docs/production/current/qa_drafts/authority_contract_r461/root_candidate_r003/python/local_service_r461.py",
+      "destination": "local_service_r461.py",
+      "sha256": "564b0b2d4fb4c079345c36ced790507c1d722e1b1436dec7ba9e6ba967fb84fe",
+      "bytes": 33787
+    },
+    {
+      "path": "tools/witch_purchase_authority/sandbox_ledger_adapter_r459.py",
+      "destination": "sandbox_ledger_adapter_r459.py",
+      "sha256": "b4ec379f82d2f1c4cf7da6848e5e68de793cc9db65ec5ff88a3e5947704a4edd",
+      "bytes": 6725
+    },
+    {
+      "path": "tools/witch_purchase_authority/signed_transaction_audit.py",
+      "destination": "signed_transaction_audit.py",
+      "sha256": "d49f59e0db971fc517052729e875b1cd73f288398fbc0ea4ba513eb1402a1a0f",
+      "bytes": 13998
+    },
+    {
+      "path": "tools/witch_purchase_authority/tests/test_authority.py",
+      "destination": "tests/test_authority.py",
+      "sha256": "8f50056755334b199a58d4392853a15c08fe7f374106360fd7f4f54ae021bc21",
+      "bytes": 15213
+    },
+    {
+      "path": "tools/witch_purchase_authority/tests/test_local_delivery_r453.py",
+      "destination": "tests/test_local_delivery_r453.py",
+      "sha256": "8b45d156d5dc957de202448f9f9dca5f18802960b5d5d04e588ed31729ccde4f",
+      "bytes": 18323
+    },
+    {
+      "path": "tools/witch_purchase_authority/tests/test_local_exchange_r454.py",
+      "destination": "tests/test_local_exchange_r454.py",
+      "sha256": "01f5f45046fb0799ed0b40f37b394f305cf1a3eb64ca961b8537d704780560cd",
+      "bytes": 10236
+    },
+    {
+      "path": "docs/production/current/qa_drafts/authority_contract_r461/root_candidate_r003/python/tests/test_local_service_r461.py",
+      "destination": "tests/test_local_service_r461.py",
+      "sha256": "84f1b3b418ae0c1d2988e82bfeb3cc4d321479e7e071dfdfa623309f88265e3b",
+      "bytes": 16661
+    },
+    {
+      "path": "tools/witch_purchase_authority/tests/test_notifications.py",
+      "destination": "tests/test_notifications.py",
+      "sha256": "8192e63fd2b88ef06dc43f0fa002778a315483557d5f13e291b84e6c1a9bd9c6",
+      "bytes": 16396
+    },
+    {
+      "path": "tools/witch_purchase_authority/tests/test_sandbox_ledger_r459.py",
+      "destination": "tests/test_sandbox_ledger_r459.py",
+      "sha256": "5489b277227077f73fb44d7195cdd975be88d5e8db72d3470475d59aa565577c",
+      "bytes": 29530
+    },
+    {
+      "path": "tools/witch_purchase_authority/tests/test_signed_transaction_audit.py",
+      "destination": "tests/test_signed_transaction_audit.py",
+      "sha256": "7db17e3f5bb0857eb141bf8bb8754554bb7dc1b87d759b7620e08a7ea74d8634",
+      "bytes": 13267
+    }
+  ],
+  "runnerSHA256": "6ac2987950a47d4b6076724e86ba8df0b140c2489ecc50c2f906ecd8690e6fa6",
+  "exporterSHA256": "ba77604b8c673ade531c87c7aef9c8a37aa74549bd506d06a5f18c65cda7efe4",
+  "command": [
+    "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/bin/python",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/build/ActiveIntegrationR461/python_r001/package/tools/witch_purchase_authority/tests",
+    "-v"
+  ],
+  "maxSeconds": 180,
+  "maximumAllocatedBytes": 100000000,
+  "freeBytesBefore": 134087778304
+}

@@ -1,0 +1,51 @@
+test_battle_snapshot_immutable_on_cosmetic_purchase (test_expansion_model.AppearanceAndBonus.test_battle_snapshot_immutable_on_cosmetic_purchase) ... ok
+test_bonus_cap_not_unlimited_collection (test_expansion_model.AppearanceAndBonus.test_bonus_cap_not_unlimited_collection) ... ok
+test_cap_preview_can_be_zero (test_expansion_model.AppearanceAndBonus.test_cap_preview_can_be_zero) ... ok
+test_change_outfit_not_stats (test_expansion_model.AppearanceAndBonus.test_change_outfit_not_stats) ... ok
+test_duplicate_revoke_idempotent (test_expansion_model.AppearanceAndBonus.test_duplicate_revoke_idempotent) ... ok
+test_final_revoke_fallback_does_not_touch_gear (test_expansion_model.AppearanceAndBonus.test_final_revoke_fallback_does_not_touch_gear) ... ok
+test_free_path_same_cap (test_expansion_model.AppearanceAndBonus.test_free_path_same_cap) ... ok
+test_move_furniture_not_stats (test_expansion_model.AppearanceAndBonus.test_move_furniture_not_stats) ... ok
+test_owned_duplicates_count_once (test_expansion_model.AppearanceAndBonus.test_owned_duplicates_count_once) ... ok
+test_preview_not_ownership (test_expansion_model.AppearanceAndBonus.test_preview_not_ownership) ... ok
+test_revoke_one_of_two_grants_keeps_right (test_expansion_model.AppearanceAndBonus.test_revoke_one_of_two_grants_keeps_right) ... ok
+test_same_percent_group_not_multiply (test_expansion_model.AppearanceAndBonus.test_same_percent_group_not_multiply) ... ok
+test_harder_guarantee_cannot_lengthen_expected_wait (test_expansion_model.MathChecks.test_harder_guarantee_cannot_lengthen_expected_wait) ... ok
+test_mean_closed_form (test_expansion_model.MathChecks.test_mean_closed_form) ... ok
+test_pool_expansion_dilutes_target_without_control (test_expansion_model.MathChecks.test_pool_expansion_dilutes_target_without_control) ... ok
+test_probability_mass (test_expansion_model.MathChecks.test_probability_mass) ... ok
+test_furniture_category_and_interaction (test_expansion_model.ProductionContracts.test_furniture_category_and_interaction) ... ok
+test_furniture_too_big (test_expansion_model.ProductionContracts.test_furniture_too_big) ... ok
+test_missing_battle_state_blocks_contract (test_expansion_model.ProductionContracts.test_missing_battle_state_blocks_contract) ... ok
+test_missing_editable_source_blocks_contract (test_expansion_model.ProductionContracts.test_missing_editable_source_blocks_contract) ... ok
+test_no_flattened_hole_accepted (test_expansion_model.ProductionContracts.test_no_flattened_hole_accepted) ... ok
+test_outfit_coverage_schema (test_expansion_model.ProductionContracts.test_outfit_coverage_schema) ... ok
+test_shop_only_image_is_not_outfit_kit (test_expansion_model.ProductionContracts.test_shop_only_image_is_not_outfit_kit) ... ok
+test_altered_purchase_rejected (test_expansion_model.TransactionContract.test_altered_purchase_rejected) ... ok
+test_draw_payload_conflict (test_expansion_model.TransactionContract.test_draw_payload_conflict) ... ok
+test_draw_retry_same_result (test_expansion_model.TransactionContract.test_draw_retry_same_result) ... ok
+test_duplicate_purchase_once (test_expansion_model.TransactionContract.test_duplicate_purchase_once) ... ok
+test_first_evolution_required (test_expansion_model.TransactionContract.test_first_evolution_required) ... ok
+test_free_then_paid (test_expansion_model.TransactionContract.test_free_then_paid) ... ok
+test_future_gate_not_in_pool (test_expansion_model.TransactionContract.test_future_gate_not_in_pool) ... ok
+test_high_guarantee_separate_from_target (test_expansion_model.TransactionContract.test_high_guarantee_separate_from_target) ... ok
+test_insufficient_no_state_change (test_expansion_model.TransactionContract.test_insufficient_no_state_change) ... ok
+test_natural_pity_separate (test_expansion_model.TransactionContract.test_natural_pity_separate) ... ok
+test_natural_template_and_gacha_use_same_type_identity (test_expansion_model.TransactionContract.test_natural_template_and_gacha_use_same_type_identity) ... ok
+test_no_local_paid_roll (test_expansion_model.TransactionContract.test_no_local_paid_roll) ... ok
+test_no_unpaid_refund_investment (test_expansion_model.TransactionContract.test_no_unpaid_refund_investment) ... ok
+test_one_batch_matches_ten_single_steps (test_expansion_model.TransactionContract.test_one_batch_matches_ten_single_steps) ... ok
+test_pending_offline_journal_prevents_purchase_quote (test_expansion_model.TransactionContract.test_pending_offline_journal_prevents_purchase_quote) ... ok
+test_quote_version_not_silently_replaced (test_expansion_model.TransactionContract.test_quote_version_not_silently_replaced) ... ok
+test_result_output_cannot_mutate_ledger (test_expansion_model.TransactionContract.test_result_output_cannot_mutate_ledger) ... ok
+test_rollback_before_commit (test_expansion_model.TransactionContract.test_rollback_before_commit) ... ok
+test_stale_second_device_quote (test_expansion_model.TransactionContract.test_stale_second_device_quote) ... ok
+test_switch_target_does_not_erase_progress (test_expansion_model.TransactionContract.test_switch_target_does_not_erase_progress) ... ok
+test_target_hard_guarantee (test_expansion_model.TransactionContract.test_target_hard_guarantee) ... ok
+test_unjoined_actor_cannot_be_only_recipient (test_expansion_model.TransactionContract.test_unjoined_actor_cannot_be_only_recipient) ... ok
+test_unverified_does_not_grant (test_expansion_model.TransactionContract.test_unverified_does_not_grant) ... ok
+
+----------------------------------------------------------------------
+Ran 46 tests in 0.109s
+
+OK

@@ -1,0 +1,32 @@
+{
+  "schema": "r433-capture-helper-independent-review-v1",
+  "status": "BLOCKED_BEFORE_EXECUTION",
+  "runnerPath": "docs/production/current/qa_drafts/wardrobe_furniture_runtime_r433/capture_r433.py",
+  "runnerSHA256": "518302214736da663ad9d0264f771cf28bf1534fe845db29fa4b674b894a71fd",
+  "blockingFindings": [
+    {
+      "severity": "P1",
+      "lines": "10,12,24-30",
+      "finding": "BASE.parents[4] points to repository/docs from nested candidate_r001; PRIOR becomes docs/docs/production/... and load_helper fails reading snapshot_r421_r002.py before argument handling.",
+      "minimumFix": "Resolve the worktree root explicitly or use BASE.parents[5], then revalidate pinned helper path and hash."
+    }
+  ],
+  "additionalFindings": [
+    {
+      "severity": "P2",
+      "lines": "110-115",
+      "finding": "Cold relaunch is followed by a fixed 0.5-second delay and immediate snapshot/screenshot, without a readiness handshake; byte equality alone does not prove the restored UI was ready/visible."
+    },
+    {
+      "severity": "P2",
+      "lines": "38-43,57-61",
+      "finding": "Evidence byte cap is checked before the screenshot, but not after it; capture can cross the 180MB cap."
+    }
+  ],
+  "positiveChecks": [
+    "The helper pins R420 install/build receipts and exact initial save SHA through the imported R421 read-only helper.",
+    "Lifecycle termination is restricted to PIDs recorded by helper launch receipts and exact pinned executable command paths.",
+    "Save/support snapshots use stable double reads and do not write the game save; app and protected-tree hashes are compared at close."
+  ],
+  "execution": {"imported": false, "run": false, "appActions": false, "simulator": false, "sourceChanges": false}
+}

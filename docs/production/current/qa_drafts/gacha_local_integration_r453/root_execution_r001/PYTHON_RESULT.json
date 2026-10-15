@@ -1,0 +1,55 @@
+{
+  "status": "FAIL_OR_SKIPPED",
+  "exitCode": 1,
+  "testSummary": [
+    [
+      "73",
+      "0.486"
+    ]
+  ],
+  "passed": 57,
+  "skipped": 0,
+  "elapsedSeconds": 1.187918167,
+  "sourcePins": [
+    {
+      "path": "tools/witch_purchase_authority/authority.py",
+      "sha256": "3967d70f3bb4f5d90e1afec789114503250e3df41d9bb6efb6972531f5d06a98"
+    },
+    {
+      "path": "tools/witch_purchase_authority/local_delivery_r453.py",
+      "sha256": "d0c254bfcbf682c31dbd82cbe87c298e0207410509bfb0e139dafe1093beb8a4"
+    },
+    {
+      "path": "tools/witch_purchase_authority/tests/test_local_delivery_r453.py",
+      "sha256": "64704510ff33141bac1eccf9361ff88db97340680764b5b6767181648afb7cae"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/gacha_local_integration_r453/candidate_r004/snapshot_r004/authority.py",
+      "sha256": "3967d70f3bb4f5d90e1afec789114503250e3df41d9bb6efb6972531f5d06a98",
+      "role": "final owned source snapshot"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/gacha_local_integration_r453/candidate_r004/snapshot_r004/local_delivery_r453.py",
+      "sha256": "d0c254bfcbf682c31dbd82cbe87c298e0207410509bfb0e139dafe1093beb8a4",
+      "role": "final owned source snapshot"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/gacha_local_integration_r453/candidate_r004/snapshot_r004/test_local_delivery_r453.py",
+      "sha256": "64704510ff33141bac1eccf9361ff88db97340680764b5b6767181648afb7cae",
+      "role": "final owned source snapshot"
+    }
+  ],
+  "sourceUnchanged": true,
+  "manifestSHA256": "a60902015a4a0d47e333a1ed675ead2526156f08921932b8fe19593d91b358f8",
+  "logSHA256": "73e810e2e759d70ff0c9a45c6023cb658dc55ad1c4d983721341ca20918f15c2",
+  "command": [
+    "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/.venv_signed_audit_r001/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tools/witch_purchase_authority/tests",
+    "-v"
+  ],
+  "network": "signed audit explicitly rejects network; no live Apple transaction"
+}

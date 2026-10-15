@@ -1,0 +1,84 @@
+{
+  "candidate": "R453 local receipt delivery adapter",
+  "status": "PREPARED_NOT_RUN",
+  "scope": "host-side explicit Xcode mock fixture exporter only; no StoreKit/Core/App wiring",
+  "rulesStatus": "UNAPPROVED_R3_CANDIDATE",
+  "execution": {
+    "testsRun": false,
+    "cliRun": false,
+    "authorityDatabaseOpened": false,
+    "swiftBuildOrRun": false,
+    "note": "One Python syntax compile check was inadvertently run during authoring before the final edits. It did not import or initialize PurchaseAuthority and no test ran."
+  },
+  "ownedCandidateFiles": [
+    {
+      "path": "tools/witch_purchase_authority/local_delivery_r453.py",
+      "sha256": "20e1a7a2a13199423cf2a535768836b3d22d1d9f596cfd0e72d32a2654f16142"
+    },
+    {
+      "path": "tools/witch_purchase_authority/tests/test_local_delivery_r453.py",
+      "sha256": "c5fdfde1a4fb049cc1202a13d5afd9484e99c058d668cce266acda5ebcd1b5e5",
+      "testMethodCount": 9
+    },
+    {
+      "path": "docs/production/current/qa_drafts/gacha_local_integration_r453/candidate_r002/CONTRACT_R453.md",
+      "sha256": "92de41da34cfe147de0462405972ab97a645ac61d3b20c575d8757abf818591b"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/gacha_local_integration_r453/candidate_r002/PROFILE_EXAMPLE_R453.json",
+      "sha256": "fd70bc5d40d736d79812354a568558a695c69962dbf5ea1ce88a1bd10f9f8bcd"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/gacha_local_integration_r453/candidate_r002/EVENT_ENVELOPE_EXAMPLE_R453.json",
+      "sha256": "d9910f0d11b5e5ad948535b3733b27d0414427ab943ec3fe9d9548596a4030d1"
+    }
+  ],
+  "readOnlySourcePins": [
+    {
+      "path": "tools/witch_purchase_authority/authority.py",
+      "sha256": "ba1ce9e581de66f4f28b7fc0de903700f5505e19832c8fdc4901c656ebc0b02c",
+      "role": "existing explicit mock authority/ledger; unchanged"
+    },
+    {
+      "path": "native/qa_source_20261015T041901/WitchGameCore/Sources/WitchGameCore/Domain.swift",
+      "sha256": "9e4df37260d5e39a8e6354121f9ccd5ad9a4202bf16b493f8878ce6480d92eda",
+      "role": "GearInstance and GachaPityState payload shape"
+    },
+    {
+      "path": "native/qa_source_20261015T041901/WitchGameCore/Sources/WitchGameCore/SaveRepository.swift",
+      "sha256": "e072b14bf922f90d5840a6031a7bb0cc0f9b8197342b94f41045b88a346341ce",
+      "role": "SaveRepository.transact(operationID:requestFingerprint:) dedupe boundary"
+    },
+    {
+      "path": "native/qa_source_20261015T041901/StoreKitLocalQA/ReusableBridge.swift",
+      "sha256": "4c6582273ac9c19e775e89bf6b2cc9d75ac2d3abe99718be6fa66f6de60ea6b7",
+      "role": "current local StoreKit event fields and delivery key; does not include the R453 authority identity envelope"
+    },
+    {
+      "path": "native/qa_source_20261015T041901/WitchApp/GameStoreKitQASink.swift",
+      "sha256": "7da7f638c8ac80803e10cce2069c9590f94f19539a3d03ab17f626f18630652f",
+      "role": "current local sink is not wired to PurchaseAuthority"
+    },
+    {
+      "path": "native/qa_source_20261015T041901/WitchApp/GameStoreKitQA.swift",
+      "sha256": "e368e306df24a4045e7a0d7036e337de209cec40b4ad84e46d01f09ed97f070a",
+      "role": "existing QA gating; unchanged"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/gacha_local_integration_r453/candidate_r001/ARCHITECTURE_R001.md",
+      "sha256": "746fae3f84798da605bd1d21e8673a4ceb73dd7bd58af065a4c033a5fd1e1a01",
+      "role": "prior read-only architecture note"
+    },
+    {
+      "path": "docs/production/current/qa_drafts/gacha_local_integration_r453/candidate_r001/INPUTS_R001.json",
+      "sha256": "9b4a845f86d18a1bbda6f97030143258a0e4f627a2ecb2677e64a7d344dbc0de",
+      "role": "prior read-only source map"
+    }
+  ],
+  "acceptancePending": [
+    "Root review of source, strict payload identity, sidecar retry semantics, CLI, and 9 focused tests.",
+    "Root-owned bounded Python test execution only after source review.",
+    "Separate Swift importer using exact GearInstance/pity keys and SaveRepository operation ID plus fingerprint.",
+    "No StoreKit-to-PurchaseAuthority or StoreKit-to-SaveRepository integration is claimed by this candidate."
+  ]
+}

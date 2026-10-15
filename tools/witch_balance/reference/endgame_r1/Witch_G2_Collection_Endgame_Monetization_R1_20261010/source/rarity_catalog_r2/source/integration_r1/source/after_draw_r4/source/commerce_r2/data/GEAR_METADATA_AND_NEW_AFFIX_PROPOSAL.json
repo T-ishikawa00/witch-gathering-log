@@ -1,0 +1,601 @@
+{
+  "scope": "29 World R1 ids/relationships; affix choices are R2-commerce proposals, NOT imported R2 affix tables; no game stats",
+  "items": [
+    {
+      "id": "EQ_W_01",
+      "name": "若枝の採集杖",
+      "actors": [
+        "C_WITCH"
+      ],
+      "slot": "weapon",
+      "gate": "G_START",
+      "parent": null,
+      "core_affix": "AF_POWER",
+      "affix_pool": [
+        "AF_POWER",
+        "AF_HP",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "catalog_enabled_in_mock": true
+    },
+    {
+      "id": "EQ_W_P1",
+      "name": "霧花の毒杖",
+      "actors": [
+        "C_WITCH"
+      ],
+      "slot": "weapon",
+      "gate": "G_R02_A",
+      "parent": "EQ_W_01",
+      "core_affix": "AF_DOT",
+      "affix_pool": [
+        "AF_DOT",
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "catalog_enabled_in_mock": true
+    },
+    {
+      "id": "EQ_W_P2",
+      "name": "夢庭の呪杖",
+      "actors": [
+        "C_WITCH"
+      ],
+      "slot": "weapon",
+      "gate": "G_R05_A",
+      "parent": "EQ_W_P1",
+      "core_affix": "AF_DOT",
+      "affix_pool": [
+        "AF_DOT",
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "catalog_enabled_in_mock": true
+    },
+    {
+      "id": "EQ_W_G1",
+      "name": "根守りの結界杖",
+      "actors": [
+        "C_WITCH"
+      ],
+      "slot": "weapon",
+      "gate": "G_R01_B",
+      "parent": "EQ_W_01",
+      "core_affix": "AF_BARRIER",
+      "affix_pool": [
+        "AF_BARRIER",
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "catalog_enabled_in_mock": true
+    },
+    {
+      "id": "EQ_W_G2",
+      "name": "月環の結界杖",
+      "actors": [
+        "C_WITCH"
+      ],
+      "slot": "weapon",
+      "gate": "G_R05_A",
+      "parent": "EQ_W_G1",
+      "core_affix": "AF_BARRIER",
+      "affix_pool": [
+        "AF_BARRIER",
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "catalog_enabled_in_mock": true
+    },
+    {
+      "id": "EQ_A_01",
+      "name": "露灯の手帳",
+      "actors": [
+        "C_APPRENTICE"
+      ],
+      "slot": "weapon",
+      "gate": "G_R01_A",
+      "parent": null,
+      "core_affix": "AF_HEAL",
+      "affix_pool": [
+        "AF_HEAL",
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "catalog_enabled_in_mock": true
+    },
+    {
+      "id": "EQ_A_02",
+      "name": "水鏡の祈書",
+      "actors": [
+        "C_APPRENTICE"
+      ],
+      "slot": "weapon",
+      "gate": "G_R02_B",
+      "parent": "EQ_A_01",
+      "core_affix": "AF_HEAL",
+      "affix_pool": [
+        "AF_HEAL",
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "catalog_enabled_in_mock": true
+    },
+    {
+      "id": "EQ_A_03",
+      "name": "月綴じの大典",
+      "actors": [
+        "C_APPRENTICE"
+      ],
+      "slot": "weapon",
+      "gate": "G_R05_A",
+      "parent": "EQ_A_02",
+      "core_affix": "AF_HEAL",
+      "affix_pool": [
+        "AF_HEAL",
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "catalog_enabled_in_mock": true
+    },
+    {
+      "id": "EQ_S_01",
+      "name": "山歩きの木槌",
+      "actors": [
+        "C_SMITH"
+      ],
+      "slot": "weapon",
+      "gate": "G_R01_A",
+      "parent": null,
+      "core_affix": "AF_DEF",
+      "affix_pool": [
+        "AF_DEF",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "catalog_enabled_in_mock": true
+    },
+    {
+      "id": "EQ_S_02",
+      "name": "響炉の鍛鎚",
+      "actors": [
+        "C_SMITH"
+      ],
+      "slot": "weapon",
+      "gate": "G_R03_B",
+      "parent": "EQ_S_01",
+      "core_affix": "AF_COUNTER",
+      "affix_pool": [
+        "AF_COUNTER",
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "catalog_enabled_in_mock": true
+    },
+    {
+      "id": "EQ_S_03",
+      "name": "月銀の護鍛鎚",
+      "actors": [
+        "C_SMITH"
+      ],
+      "slot": "weapon",
+      "gate": "G_R05_A",
+      "parent": "EQ_S_02",
+      "core_affix": "AF_COUNTER",
+      "affix_pool": [
+        "AF_COUNTER",
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "catalog_enabled_in_mock": true
+    },
+    {
+      "id": "EQ_F_01",
+      "name": "灯爪の触媒",
+      "actors": [
+        "C_FAMILIAR"
+      ],
+      "slot": "weapon",
+      "gate": "G_START",
+      "parent": null,
+      "core_affix": "AF_POWER",
+      "affix_pool": [
+        "AF_POWER",
+        "AF_HP",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "catalog_enabled_in_mock": true
+    },
+    {
+      "id": "EQ_F_02",
+      "name": "霧影の爪環",
+      "actors": [
+        "C_FAMILIAR"
+      ],
+      "slot": "weapon",
+      "gate": "G_R02_A",
+      "parent": "EQ_F_01",
+      "core_affix": "AF_CHASE",
+      "affix_pool": [
+        "AF_CHASE",
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "catalog_enabled_in_mock": true
+    },
+    {
+      "id": "EQ_F_03",
+      "name": "夜渡りの爪環",
+      "actors": [
+        "C_FAMILIAR"
+      ],
+      "slot": "weapon",
+      "gate": "G_R05_A",
+      "parent": "EQ_F_02",
+      "core_affix": "AF_CHASE",
+      "affix_pool": [
+        "AF_CHASE",
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "catalog_enabled_in_mock": true
+    },
+    {
+      "id": "EQ_BODY_01",
+      "name": "灯糸の採集衣",
+      "actors": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "slot": "body",
+      "gate": "G_R01_A",
+      "parent": null,
+      "core_affix": "AF_HP",
+      "affix_pool": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "catalog_enabled_in_mock": true
+    },
+    {
+      "id": "EQ_BODY_02",
+      "name": "湿霧の外套",
+      "actors": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "slot": "body",
+      "gate": "G_R02_A",
+      "parent": "EQ_BODY_01",
+      "core_affix": "AF_HP",
+      "affix_pool": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "catalog_enabled_in_mock": true
+    },
+    {
+      "id": "EQ_BODY_03",
+      "name": "霜守りの外套",
+      "actors": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "slot": "body",
+      "gate": "G_R04_A",
+      "parent": "EQ_BODY_02",
+      "core_affix": "AF_HP",
+      "affix_pool": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "catalog_enabled_in_mock": true
+    },
+    {
+      "id": "EQ_HAND_01",
+      "name": "灯糸の作業手袋",
+      "actors": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "slot": "hands",
+      "gate": "G_R01_A",
+      "parent": null,
+      "core_affix": "AF_POWER",
+      "affix_pool": [
+        "AF_POWER",
+        "AF_HP",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "catalog_enabled_in_mock": true
+    },
+    {
+      "id": "EQ_HAND_02",
+      "name": "雲母の術籠手",
+      "actors": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "slot": "hands",
+      "gate": "G_R03_A",
+      "parent": "EQ_HAND_01",
+      "core_affix": "AF_DEF",
+      "affix_pool": [
+        "AF_DEF",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "catalog_enabled_in_mock": true
+    },
+    {
+      "id": "EQ_HAND_03",
+      "name": "月銀の術籠手",
+      "actors": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "slot": "hands",
+      "gate": "G_R05_A",
+      "parent": "EQ_HAND_02",
+      "core_affix": "AF_POWER",
+      "affix_pool": [
+        "AF_POWER",
+        "AF_HP",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "catalog_enabled_in_mock": true
+    },
+    {
+      "id": "EQ_FEET_01",
+      "name": "根道のブーツ",
+      "actors": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "slot": "feet",
+      "gate": "G_R01_A",
+      "parent": null,
+      "core_affix": "AF_DEF",
+      "affix_pool": [
+        "AF_DEF",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "catalog_enabled_in_mock": true
+    },
+    {
+      "id": "EQ_FEET_02",
+      "name": "磁紋の踏靴",
+      "actors": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "slot": "feet",
+      "gate": "G_R03_A",
+      "parent": "EQ_FEET_01",
+      "core_affix": "AF_DEF",
+      "affix_pool": [
+        "AF_DEF",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "catalog_enabled_in_mock": true
+    },
+    {
+      "id": "EQ_FEET_03",
+      "name": "白角の踏靴",
+      "actors": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "slot": "feet",
+      "gate": "G_R04_A",
+      "parent": "EQ_FEET_02",
+      "core_affix": "AF_DEF",
+      "affix_pool": [
+        "AF_DEF",
+        "AF_HP",
+        "AF_POWER",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "catalog_enabled_in_mock": true
+    },
+    {
+      "id": "EQ_AMU_01",
+      "name": "露苔のお守り",
+      "actors": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH",
+        "C_FAMILIAR"
+      ],
+      "slot": "amulet",
+      "gate": "G_R01_A",
+      "parent": null,
+      "core_affix": "AF_HP",
+      "affix_pool": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "catalog_enabled_in_mock": true
+    },
+    {
+      "id": "EQ_AMU_02",
+      "name": "霧月の硝子符",
+      "actors": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH",
+        "C_FAMILIAR"
+      ],
+      "slot": "amulet",
+      "gate": "G_R02_A",
+      "parent": "EQ_AMU_01",
+      "core_affix": "AF_HP",
+      "affix_pool": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "catalog_enabled_in_mock": true
+    },
+    {
+      "id": "EQ_AMU_03",
+      "name": "月庭の種守り",
+      "actors": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH",
+        "C_FAMILIAR"
+      ],
+      "slot": "amulet",
+      "gate": "G_R05_B",
+      "parent": "EQ_AMU_02",
+      "core_affix": "AF_HP",
+      "affix_pool": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "catalog_enabled_in_mock": true
+    },
+    {
+      "id": "EQ_RING_01",
+      "name": "葉結びの指環",
+      "actors": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "slot": "ring",
+      "gate": "G_R01_A",
+      "parent": null,
+      "core_affix": "AF_POWER",
+      "affix_pool": [
+        "AF_POWER",
+        "AF_HP",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "catalog_enabled_in_mock": true
+    },
+    {
+      "id": "EQ_RING_02",
+      "name": "灰銀の指環",
+      "actors": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "slot": "ring",
+      "gate": "G_R03_A",
+      "parent": "EQ_RING_01",
+      "core_affix": "AF_POWER",
+      "affix_pool": [
+        "AF_POWER",
+        "AF_HP",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "catalog_enabled_in_mock": true
+    },
+    {
+      "id": "EQ_RING_03",
+      "name": "冬灯の指環",
+      "actors": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "slot": "ring",
+      "gate": "G_R04_A",
+      "parent": "EQ_RING_02",
+      "core_affix": "AF_POWER",
+      "affix_pool": [
+        "AF_POWER",
+        "AF_HP",
+        "AF_DEF",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST"
+      ],
+      "catalog_enabled_in_mock": true
+    }
+  ],
+  "excluded_unavailable_new_cat_armor": "4 additional cat templates from past conversation not in retrieved world catalogue; do not fabricate source ids"
+}

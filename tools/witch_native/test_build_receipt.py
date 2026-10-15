@@ -1,16 +1,18 @@
 #!/usr/bin/env python3
 """Exercise failed builds in disposable project roots; never alter the real app."""
 from pathlib import Path
-import json,shutil,subprocess,sys,tempfile,unittest
+import json,plistlib,shutil,subprocess,sys,tempfile,unittest
 SOURCE=Path(__file__).resolve().parent
 class BuildReceiptTests(unittest.TestCase):
     def run_failure(self,broken_png):
         with tempfile.TemporaryDirectory(prefix='witch-build-receipt-') as directory:
             root=Path(directory);scripts=root/'tools/witch_native';scripts.mkdir(parents=True)
-            for name in ['build.py','prepare_resources.py']:shutil.copy2(SOURCE/name,scripts/name)
+            for name in ['build.py','prepare_resources.py','storage_guard.py']:shutil.copy2(SOURCE/name,scripts/name)
             for path in ['native/WitchApp','native/StoreKitLocalQA','native/Art','native/build']:(root/path).mkdir(parents=True,exist_ok=True)
             (root/'native/WitchApp/Broken.swift').write_text('#error("Intentional isolated compiler failure")\n')
             (root/'native/StoreKitLocalQA/ReusableBridge.swift').write_text('// isolated fixture\n')
+            (root/'native/PrivacyInfo.xcprivacy').write_bytes(plistlib.dumps({'NSPrivacyTracking':False,'NSPrivacyCollectedDataTypes':[],'NSPrivacyAccessedAPITypes':[]}))
+            (root/'native/Art/effect_contract_candidate_r001.json').write_text('{}')
             entries={'BROKEN':{'selectedPNG':'broken.png'}} if broken_png else {}
             (root/'native/Art/runtime_index.json').write_text(json.dumps({'entries':entries}))
             if broken_png:(root/'native/Art/broken.png').write_bytes(b'')

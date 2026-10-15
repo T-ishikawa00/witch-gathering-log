@@ -1,0 +1,327 @@
+test_apple_jws_fails_closed_and_mock_hook_must_be_enabled (test_authority.PurchaseAuthorityTests.test_apple_jws_fails_closed_and_mock_hook_must_be_enabled) ... ok
+test_balance_draw_failures_are_atomic_and_retryable (test_authority.PurchaseAuthorityTests.test_balance_draw_failures_are_atomic_and_retryable) ... ok
+test_balance_draw_numeric_inputs_are_strict_integers (test_authority.PurchaseAuthorityTests.test_balance_draw_numeric_inputs_are_strict_integers) ... ok
+test_balance_draw_rejects_refunded_ticket_provenance_on_idempotent_retry (test_authority.PurchaseAuthorityTests.test_balance_draw_rejects_refunded_ticket_provenance_on_idempotent_retry) ... ok
+test_candidate_rng_quality_distribution_and_pity_boundaries_are_explicit (test_authority.PurchaseAuthorityTests.test_candidate_rng_quality_distribution_and_pity_boundaries_are_explicit) ... ok
+test_concurrent_duplicate_callback_same_key_has_one_commit (test_authority.PurchaseAuthorityTests.test_concurrent_duplicate_callback_same_key_has_one_commit) ... ok
+test_concurrent_two_terminal_retries_cannot_double_consume_transaction (test_authority.PurchaseAuthorityTests.test_concurrent_two_terminal_retries_cannot_double_consume_transaction) ... ok
+test_draw_history_records_actual_source_ticket_lot_across_purchase_operations (test_authority.PurchaseAuthorityTests.test_draw_history_records_actual_source_ticket_lot_across_purchase_operations) ... ok
+test_every_injected_failure_rolls_back_then_same_event_retries (test_authority.PurchaseAuthorityTests.test_every_injected_failure_rolls_back_then_same_event_retries) ... ok
+test_idempotency_key_payload_collision_rejected (test_authority.PurchaseAuthorityTests.test_idempotency_key_payload_collision_rejected) ... ok
+test_idempotent_purchase_retry_after_refund_is_not_replayed_as_success (test_authority.PurchaseAuthorityTests.test_idempotent_purchase_retry_after_refund_is_not_replayed_as_success) ... ok
+test_old_schema_is_rejected_instead_of_silently_partially_used (test_authority.PurchaseAuthorityTests.test_old_schema_is_rejected_instead_of_silently_partially_used) ... ok
+test_purchase_draw_atomic_idempotency_and_persistent_history (test_authority.PurchaseAuthorityTests.test_purchase_draw_atomic_idempotency_and_persistent_history) ... ok
+test_quantity_draw_count_seed_and_product_spec_require_strict_bounded_ints (test_authority.PurchaseAuthorityTests.test_quantity_draw_count_seed_and_product_spec_require_strict_bounded_ints) ... ok
+test_refund_before_purchase_writes_tombstone_and_rejects_late_delivery (test_authority.PurchaseAuthorityTests.test_refund_before_purchase_writes_tombstone_and_rejects_late_delivery) ... ok
+test_refund_claws_unspent_and_blocks_spent_reuse (test_authority.PurchaseAuthorityTests.test_refund_claws_unspent_and_blocks_spent_reuse) ... ok
+test_refund_failure_rolls_back_and_can_retry (test_authority.PurchaseAuthorityTests.test_refund_failure_rolls_back_and_can_retry) ... ok
+test_refund_tombstone_fault_rolls_back_and_late_purchase_is_retryable (test_authority.PurchaseAuthorityTests.test_refund_tombstone_fault_rolls_back_and_late_purchase_is_retryable) ... ok
+test_same_transaction_different_key_cannot_regrant (test_authority.PurchaseAuthorityTests.test_same_transaction_different_key_cannot_regrant) ... ok
+test_ticket_only_purchase_can_be_drawn_later_under_operation_uuid (test_authority.PurchaseAuthorityTests.test_ticket_only_purchase_can_be_drawn_later_under_operation_uuid) ... ok
+test_user_token_binding_bundle_environment_product_and_quantity (test_authority.PurchaseAuthorityTests.test_user_token_binding_bundle_environment_product_and_quantity) ... ok
+test_apple_jws_entrypoint_remains_fail_closed (test_local_delivery_r453.LocalDeliveryR453Tests.test_apple_jws_entrypoint_remains_fail_closed) ... ERROR
+test_atomic_expected_fifo_lot_rejects_interleaved_spend_without_spilling (test_local_delivery_r453.LocalDeliveryR453Tests.test_atomic_expected_fifo_lot_rejects_interleaved_spend_without_spilling) ... ERROR
+test_bad_identity_envelopes_reject_without_authority_mutation (test_local_delivery_r453.LocalDeliveryR453Tests.test_bad_identity_envelopes_reject_without_authority_mutation) ... ERROR
+test_cli_output_collision_rejects_before_authority_mutation (test_local_delivery_r453.LocalDeliveryR453Tests.test_cli_output_collision_rejects_before_authority_mutation) ... ERROR
+test_draw_rejects_original_transaction_mismatch_against_current_purchase_row (test_local_delivery_r453.LocalDeliveryR453Tests.test_draw_rejects_original_transaction_mismatch_against_current_purchase_row) ... ERROR
+test_fifo_source_join_checks_environment_bundle_and_transaction (test_local_delivery_r453.LocalDeliveryR453Tests.test_fifo_source_join_checks_environment_bundle_and_transaction) ... ERROR
+test_hardlinked_cache_cannot_alias_authority_database (test_local_delivery_r453.LocalDeliveryR453Tests.test_hardlinked_cache_cannot_alias_authority_database) ... ERROR
+test_profile_payload_collision_is_rejected_before_second_draw (test_local_delivery_r453.LocalDeliveryR453Tests.test_profile_payload_collision_is_rejected_before_second_draw) ... ERROR
+test_profile_schema_version_and_template_identity_are_strict (test_local_delivery_r453.LocalDeliveryR453Tests.test_profile_schema_version_and_template_identity_are_strict) ... ERROR
+test_refund_tombstone_before_purchase_suppresses_late_ticket_grant (test_local_delivery_r453.LocalDeliveryR453Tests.test_refund_tombstone_before_purchase_suppresses_late_ticket_grant) ... ERROR
+test_refund_tombstone_is_current_state_and_blocks_later_delivery (test_local_delivery_r453.LocalDeliveryR453Tests.test_refund_tombstone_is_current_state_and_blocks_later_delivery) ... ERROR
+test_replay_is_byte_stable_and_payload_collision_is_rejected (test_local_delivery_r453.LocalDeliveryR453Tests.test_replay_is_byte_stable_and_payload_collision_is_rejected) ... ERROR
+test_retry_reconstructs_payload_if_sidecar_write_fails_after_authority_commit (test_local_delivery_r453.LocalDeliveryR453Tests.test_retry_reconstructs_payload_if_sidecar_write_fails_after_authority_commit) ... ERROR
+test_source_identity_binding_changes_only_bound_operation_fingerprint (test_local_delivery_r453.LocalDeliveryR453Tests.test_source_identity_binding_changes_only_bound_operation_fingerprint) ... ERROR
+test_ticket_grant_then_separate_draw_emits_core_gear_payload (test_local_delivery_r453.LocalDeliveryR453Tests.test_ticket_grant_then_separate_draw_emits_core_gear_payload) ... ERROR
+test_cancel_unfinished_and_product_failure_are_audited_without_grant (test_notifications.NotificationAtomicityTests.test_cancel_unfinished_and_product_failure_are_audited_without_grant) ... ok
+test_duplicate_notification_race_commits_one_grant (test_notifications.NotificationAtomicityTests.test_duplicate_notification_race_commits_one_grant) ... ok
+test_existing_authority_rows_survive_inbox_schema_upgrade (test_notifications.NotificationAtomicityTests.test_existing_authority_rows_survive_inbox_schema_upgrade) ... ok
+test_faults_rollback_notification_and_economic_rows_then_retry (test_notifications.NotificationAtomicityTests.test_faults_rollback_notification_and_economic_rows_then_retry) ... ok
+test_mock_jws_path_remains_rejected (test_notifications.NotificationAtomicityTests.test_mock_jws_path_remains_rejected) ... ok
+test_notification_id_payload_collision_rejects_without_any_change (test_notifications.NotificationAtomicityTests.test_notification_id_payload_collision_rejects_without_any_change) ... ok
+test_purchase_notification_grant_and_ledger_commit_together_and_replay_once (test_notifications.NotificationAtomicityTests.test_purchase_notification_grant_and_ledger_commit_together_and_replay_once) ... ok
+test_purchase_replay_after_refund_separates_historical_grant_from_current_state (test_notifications.NotificationAtomicityTests.test_purchase_replay_after_refund_separates_historical_grant_from_current_state) ... ok
+test_purchase_replays_after_consumption_show_zero_current_value (test_notifications.NotificationAtomicityTests.test_purchase_replays_after_consumption_show_zero_current_value) ... ok
+test_purchase_then_refund_with_draw_spend_creates_debt_atomically (test_notifications.NotificationAtomicityTests.test_purchase_then_refund_with_draw_spend_creates_debt_atomically) ... ok
+test_refund_delivery_updates_grant_ledger_in_same_transaction (test_notifications.NotificationAtomicityTests.test_refund_delivery_updates_grant_ledger_in_same_transaction) ... ok
+test_refund_fault_points_rollback_inbox_refund_and_ticket_ledger_together (test_notifications.NotificationAtomicityTests.test_refund_fault_points_rollback_inbox_refund_and_ticket_ledger_together) ... ok
+test_refund_fault_rolls_back_tombstone_and_retry_can_suppress_purchase (test_notifications.NotificationAtomicityTests.test_refund_fault_rolls_back_tombstone_and_retry_can_suppress_purchase) ... ok
+test_refund_first_tombstone_suppresses_late_purchase (test_notifications.NotificationAtomicityTests.test_refund_first_tombstone_suppresses_late_purchase) ... ok
+test_tombstone_same_and_new_notification_replays_keep_current_state_separate (test_notifications.NotificationAtomicityTests.test_tombstone_same_and_new_notification_replays_keep_current_state_separate) ... ok
+test_wrong_account_product_and_unverified_inputs_fail_closed (test_notifications.NotificationAtomicityTests.test_wrong_account_product_and_unverified_inputs_fail_closed) ... ok
+test_audit_report_does_not_allow_constructor_or_replace_to_authorize (test_signed_transaction_audit.SignedTransactionAuditTests.test_audit_report_does_not_allow_constructor_or_replace_to_authorize) ... /opt/homebrew/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_parser.py:260: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1076ee980>
+  def get(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/homebrew/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_parser.py:260: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1076ed300>
+  def get(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/homebrew/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_parser.py:260: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1076ee890>
+  def get(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/homebrew/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_parser.py:260: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1076ed8a0>
+  def get(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/homebrew/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_parser.py:260: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1076ee020>
+  def get(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/homebrew/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_parser.py:260: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1076edf30>
+  def get(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/homebrew/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_parser.py:260: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1076eda80>
+  def get(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/homebrew/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_parser.py:260: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x10600b880>
+  def get(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/homebrew/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_parser.py:260: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1076ee110>
+  def get(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/homebrew/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_parser.py:260: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1076efe20>
+  def get(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/homebrew/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_parser.py:260: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1076ef6a0>
+  def get(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/homebrew/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_parser.py:260: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1076efc40>
+  def get(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/homebrew/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_parser.py:260: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1076ef970>
+  def get(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/homebrew/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_parser.py:260: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1076ef3d0>
+  def get(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/homebrew/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_parser.py:260: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1076ef100>
+  def get(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/homebrew/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_parser.py:260: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1076ed3f0>
+  def get(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/homebrew/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_parser.py:260: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1076ef010>
+  def get(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/homebrew/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_parser.py:260: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1076edc60>
+  def get(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/homebrew/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_parser.py:260: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1076efb50>
+  def get(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/homebrew/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_parser.py:260: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1076efd30>
+  def get(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/homebrew/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_parser.py:260: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1076ef880>
+  def get(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/homebrew/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_parser.py:260: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1076eeb60>
+  def get(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/homebrew/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_parser.py:260: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1076ed6c0>
+  def get(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/homebrew/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_parser.py:260: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x106190e50>
+  def get(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/homebrew/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_parser.py:260: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1076ef2e0>
+  def get(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/homebrew/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_parser.py:260: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1076ef4c0>
+  def get(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/homebrew/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_parser.py:260: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1076ef790>
+  def get(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/homebrew/Cellar/python@3.13/3.13.15/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_parser.py:260: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1076eed40>
+  def get(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_duplicate_json_keys_rejected_even_before_signature (test_signed_transaction_audit.SignedTransactionAuditTests.test_duplicate_json_keys_rejected_even_before_signature) ... ok
+test_future_invalid_or_out_of_order_dates (test_signed_transaction_audit.SignedTransactionAuditTests.test_future_invalid_or_out_of_order_dates) ... ok
+test_header_downgrade_missing_chain_and_critical_header_rejected (test_signed_transaction_audit.SignedTransactionAuditTests.test_header_downgrade_missing_chain_and_critical_header_rejected) ... ok
+test_historical_restore_time_is_not_arbitrarily_expired (test_signed_transaction_audit.SignedTransactionAuditTests.test_historical_restore_time_is_not_arbitrarily_expired) ... ok
+test_invalid_configuration_and_unreviewed_version (test_signed_transaction_audit.SignedTransactionAuditTests.test_invalid_configuration_and_unreviewed_version) ... ok
+test_invalid_identifiers_are_rejected (test_signed_transaction_audit.SignedTransactionAuditTests.test_invalid_identifiers_are_rejected) ... ok
+test_malformed_and_oversized_tokens (test_signed_transaction_audit.SignedTransactionAuditTests.test_malformed_and_oversized_tokens) ... ok
+test_missing_or_different_account_binding_rejected (test_signed_transaction_audit.SignedTransactionAuditTests.test_missing_or_different_account_binding_rejected) ... ok
+test_nonconsumable_configuration_and_quantity (test_signed_transaction_audit.SignedTransactionAuditTests.test_nonconsumable_configuration_and_quantity) ... ok
+test_product_and_type_policy (test_signed_transaction_audit.SignedTransactionAuditTests.test_product_and_type_policy) ... ok
+test_quantity_types_and_bounds_rejected (test_signed_transaction_audit.SignedTransactionAuditTests.test_quantity_types_and_bounds_rejected) ... ok
+test_real_signed_chain_passes_strict_checks_but_cannot_authorize_grant (test_signed_transaction_audit.SignedTransactionAuditTests.test_real_signed_chain_passes_strict_checks_but_cannot_authorize_grant) ... ok
+test_required_leaf_oid_is_checked (test_signed_transaction_audit.SignedTransactionAuditTests.test_required_leaf_oid_is_checked) ... ok
+test_revoked_or_family_shared_transaction_is_not_purchase_candidate (test_signed_transaction_audit.SignedTransactionAuditTests.test_revoked_or_family_shared_transaction_is_not_purchase_candidate) ... ok
+test_signature_from_other_key_rejected (test_signed_transaction_audit.SignedTransactionAuditTests.test_signature_from_other_key_rejected) ... ok
+test_tampered_payload_rejected_without_raw_data_in_error (test_signed_transaction_audit.SignedTransactionAuditTests.test_tampered_payload_rejected_without_raw_data_in_error) ... ok
+test_untrusted_root_cannot_be_supplied_by_jws_chain (test_signed_transaction_audit.SignedTransactionAuditTests.test_untrusted_root_cannot_be_supplied_by_jws_chain) ... ok
+test_uuid_case_normalizes_without_losing_binding (test_signed_transaction_audit.SignedTransactionAuditTests.test_uuid_case_normalizes_without_losing_binding) ... ok
+test_wrong_bundle_and_environment_rejected (test_signed_transaction_audit.SignedTransactionAuditTests.test_wrong_bundle_and_environment_rejected) ... ok
+test_xcode_local_and_production_configuration_never_bypass_signature (test_signed_transaction_audit.SignedTransactionAuditTests.test_xcode_local_and_production_configuration_never_bypass_signature) ... ok
+
+======================================================================
+ERROR: test_apple_jws_entrypoint_remains_fail_closed (test_local_delivery_r453.LocalDeliveryR453Tests.test_apple_jws_entrypoint_remains_fail_closed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/tests/test_local_delivery_r453.py", line 83, in setUp
+    self.adapter = LocalDeliveryAdapterR453(self.authority, self.profile, self.cache_path)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/local_delivery_r453.py", line 281, in __init__
+    raise LocalDeliveryError("delivery cache must be separate from the PurchaseAuthority database and must not use symlinks or hardlinks")
+tools.witch_purchase_authority.local_delivery_r453.LocalDeliveryError: delivery cache must be separate from the PurchaseAuthority database and must not use symlinks or hardlinks
+
+======================================================================
+ERROR: test_atomic_expected_fifo_lot_rejects_interleaved_spend_without_spilling (test_local_delivery_r453.LocalDeliveryR453Tests.test_atomic_expected_fifo_lot_rejects_interleaved_spend_without_spilling)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/tests/test_local_delivery_r453.py", line 83, in setUp
+    self.adapter = LocalDeliveryAdapterR453(self.authority, self.profile, self.cache_path)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/local_delivery_r453.py", line 281, in __init__
+    raise LocalDeliveryError("delivery cache must be separate from the PurchaseAuthority database and must not use symlinks or hardlinks")
+tools.witch_purchase_authority.local_delivery_r453.LocalDeliveryError: delivery cache must be separate from the PurchaseAuthority database and must not use symlinks or hardlinks
+
+======================================================================
+ERROR: test_bad_identity_envelopes_reject_without_authority_mutation (test_local_delivery_r453.LocalDeliveryR453Tests.test_bad_identity_envelopes_reject_without_authority_mutation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/tests/test_local_delivery_r453.py", line 83, in setUp
+    self.adapter = LocalDeliveryAdapterR453(self.authority, self.profile, self.cache_path)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/local_delivery_r453.py", line 281, in __init__
+    raise LocalDeliveryError("delivery cache must be separate from the PurchaseAuthority database and must not use symlinks or hardlinks")
+tools.witch_purchase_authority.local_delivery_r453.LocalDeliveryError: delivery cache must be separate from the PurchaseAuthority database and must not use symlinks or hardlinks
+
+======================================================================
+ERROR: test_cli_output_collision_rejects_before_authority_mutation (test_local_delivery_r453.LocalDeliveryR453Tests.test_cli_output_collision_rejects_before_authority_mutation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/tests/test_local_delivery_r453.py", line 83, in setUp
+    self.adapter = LocalDeliveryAdapterR453(self.authority, self.profile, self.cache_path)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/local_delivery_r453.py", line 281, in __init__
+    raise LocalDeliveryError("delivery cache must be separate from the PurchaseAuthority database and must not use symlinks or hardlinks")
+tools.witch_purchase_authority.local_delivery_r453.LocalDeliveryError: delivery cache must be separate from the PurchaseAuthority database and must not use symlinks or hardlinks
+
+======================================================================
+ERROR: test_draw_rejects_original_transaction_mismatch_against_current_purchase_row (test_local_delivery_r453.LocalDeliveryR453Tests.test_draw_rejects_original_transaction_mismatch_against_current_purchase_row)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/tests/test_local_delivery_r453.py", line 83, in setUp
+    self.adapter = LocalDeliveryAdapterR453(self.authority, self.profile, self.cache_path)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/local_delivery_r453.py", line 281, in __init__
+    raise LocalDeliveryError("delivery cache must be separate from the PurchaseAuthority database and must not use symlinks or hardlinks")
+tools.witch_purchase_authority.local_delivery_r453.LocalDeliveryError: delivery cache must be separate from the PurchaseAuthority database and must not use symlinks or hardlinks
+
+======================================================================
+ERROR: test_fifo_source_join_checks_environment_bundle_and_transaction (test_local_delivery_r453.LocalDeliveryR453Tests.test_fifo_source_join_checks_environment_bundle_and_transaction)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/tests/test_local_delivery_r453.py", line 83, in setUp
+    self.adapter = LocalDeliveryAdapterR453(self.authority, self.profile, self.cache_path)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/local_delivery_r453.py", line 281, in __init__
+    raise LocalDeliveryError("delivery cache must be separate from the PurchaseAuthority database and must not use symlinks or hardlinks")
+tools.witch_purchase_authority.local_delivery_r453.LocalDeliveryError: delivery cache must be separate from the PurchaseAuthority database and must not use symlinks or hardlinks
+
+======================================================================
+ERROR: test_hardlinked_cache_cannot_alias_authority_database (test_local_delivery_r453.LocalDeliveryR453Tests.test_hardlinked_cache_cannot_alias_authority_database)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/tests/test_local_delivery_r453.py", line 83, in setUp
+    self.adapter = LocalDeliveryAdapterR453(self.authority, self.profile, self.cache_path)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/local_delivery_r453.py", line 281, in __init__
+    raise LocalDeliveryError("delivery cache must be separate from the PurchaseAuthority database and must not use symlinks or hardlinks")
+tools.witch_purchase_authority.local_delivery_r453.LocalDeliveryError: delivery cache must be separate from the PurchaseAuthority database and must not use symlinks or hardlinks
+
+======================================================================
+ERROR: test_profile_payload_collision_is_rejected_before_second_draw (test_local_delivery_r453.LocalDeliveryR453Tests.test_profile_payload_collision_is_rejected_before_second_draw)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/tests/test_local_delivery_r453.py", line 83, in setUp
+    self.adapter = LocalDeliveryAdapterR453(self.authority, self.profile, self.cache_path)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/local_delivery_r453.py", line 281, in __init__
+    raise LocalDeliveryError("delivery cache must be separate from the PurchaseAuthority database and must not use symlinks or hardlinks")
+tools.witch_purchase_authority.local_delivery_r453.LocalDeliveryError: delivery cache must be separate from the PurchaseAuthority database and must not use symlinks or hardlinks
+
+======================================================================
+ERROR: test_profile_schema_version_and_template_identity_are_strict (test_local_delivery_r453.LocalDeliveryR453Tests.test_profile_schema_version_and_template_identity_are_strict)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/tests/test_local_delivery_r453.py", line 83, in setUp
+    self.adapter = LocalDeliveryAdapterR453(self.authority, self.profile, self.cache_path)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/local_delivery_r453.py", line 281, in __init__
+    raise LocalDeliveryError("delivery cache must be separate from the PurchaseAuthority database and must not use symlinks or hardlinks")
+tools.witch_purchase_authority.local_delivery_r453.LocalDeliveryError: delivery cache must be separate from the PurchaseAuthority database and must not use symlinks or hardlinks
+
+======================================================================
+ERROR: test_refund_tombstone_before_purchase_suppresses_late_ticket_grant (test_local_delivery_r453.LocalDeliveryR453Tests.test_refund_tombstone_before_purchase_suppresses_late_ticket_grant)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/tests/test_local_delivery_r453.py", line 83, in setUp
+    self.adapter = LocalDeliveryAdapterR453(self.authority, self.profile, self.cache_path)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/local_delivery_r453.py", line 281, in __init__
+    raise LocalDeliveryError("delivery cache must be separate from the PurchaseAuthority database and must not use symlinks or hardlinks")
+tools.witch_purchase_authority.local_delivery_r453.LocalDeliveryError: delivery cache must be separate from the PurchaseAuthority database and must not use symlinks or hardlinks
+
+======================================================================
+ERROR: test_refund_tombstone_is_current_state_and_blocks_later_delivery (test_local_delivery_r453.LocalDeliveryR453Tests.test_refund_tombstone_is_current_state_and_blocks_later_delivery)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/tests/test_local_delivery_r453.py", line 83, in setUp
+    self.adapter = LocalDeliveryAdapterR453(self.authority, self.profile, self.cache_path)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/local_delivery_r453.py", line 281, in __init__
+    raise LocalDeliveryError("delivery cache must be separate from the PurchaseAuthority database and must not use symlinks or hardlinks")
+tools.witch_purchase_authority.local_delivery_r453.LocalDeliveryError: delivery cache must be separate from the PurchaseAuthority database and must not use symlinks or hardlinks
+
+======================================================================
+ERROR: test_replay_is_byte_stable_and_payload_collision_is_rejected (test_local_delivery_r453.LocalDeliveryR453Tests.test_replay_is_byte_stable_and_payload_collision_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/tests/test_local_delivery_r453.py", line 83, in setUp
+    self.adapter = LocalDeliveryAdapterR453(self.authority, self.profile, self.cache_path)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/local_delivery_r453.py", line 281, in __init__
+    raise LocalDeliveryError("delivery cache must be separate from the PurchaseAuthority database and must not use symlinks or hardlinks")
+tools.witch_purchase_authority.local_delivery_r453.LocalDeliveryError: delivery cache must be separate from the PurchaseAuthority database and must not use symlinks or hardlinks
+
+======================================================================
+ERROR: test_retry_reconstructs_payload_if_sidecar_write_fails_after_authority_commit (test_local_delivery_r453.LocalDeliveryR453Tests.test_retry_reconstructs_payload_if_sidecar_write_fails_after_authority_commit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/tests/test_local_delivery_r453.py", line 83, in setUp
+    self.adapter = LocalDeliveryAdapterR453(self.authority, self.profile, self.cache_path)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/local_delivery_r453.py", line 281, in __init__
+    raise LocalDeliveryError("delivery cache must be separate from the PurchaseAuthority database and must not use symlinks or hardlinks")
+tools.witch_purchase_authority.local_delivery_r453.LocalDeliveryError: delivery cache must be separate from the PurchaseAuthority database and must not use symlinks or hardlinks
+
+======================================================================
+ERROR: test_source_identity_binding_changes_only_bound_operation_fingerprint (test_local_delivery_r453.LocalDeliveryR453Tests.test_source_identity_binding_changes_only_bound_operation_fingerprint)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/tests/test_local_delivery_r453.py", line 83, in setUp
+    self.adapter = LocalDeliveryAdapterR453(self.authority, self.profile, self.cache_path)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/local_delivery_r453.py", line 281, in __init__
+    raise LocalDeliveryError("delivery cache must be separate from the PurchaseAuthority database and must not use symlinks or hardlinks")
+tools.witch_purchase_authority.local_delivery_r453.LocalDeliveryError: delivery cache must be separate from the PurchaseAuthority database and must not use symlinks or hardlinks
+
+======================================================================
+ERROR: test_ticket_grant_then_separate_draw_emits_core_gear_payload (test_local_delivery_r453.LocalDeliveryR453Tests.test_ticket_grant_then_separate_draw_emits_core_gear_payload)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/tests/test_local_delivery_r453.py", line 83, in setUp
+    self.adapter = LocalDeliveryAdapterR453(self.authority, self.profile, self.cache_path)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/tools/witch_purchase_authority/local_delivery_r453.py", line 281, in __init__
+    raise LocalDeliveryError("delivery cache must be separate from the PurchaseAuthority database and must not use symlinks or hardlinks")
+tools.witch_purchase_authority.local_delivery_r453.LocalDeliveryError: delivery cache must be separate from the PurchaseAuthority database and must not use symlinks or hardlinks
+
+----------------------------------------------------------------------
+Ran 73 tests in 0.486s
+
+FAILED (errors=15)

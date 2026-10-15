@@ -1,0 +1,42 @@
+{
+  "status": "FIRST_REGION_REFERENCE_CONNECTION_VALIDATED_WITH_DESIGN_OPEN_ISSUES",
+  "scope": "selected R6-B first-tree fight, R2/R3 item/earning functions; new explicit candidate bridge",
+  "pinned_commit": "497549e9339431b5680eaa398fef16ff1b81f117",
+  "live_remote_blob_matches": 9,
+  "original_files_unchanged": 369,
+  "new_contract_tests": 52,
+  "baseline_tests": {
+    "growth_r2": 55,
+    "economy_r3": 61,
+    "support_r6b": 30,
+    "gacha_compare": 30
+  },
+  "known_golden_replay_cases": 4,
+  "all33_static_item_quality_cases": 165,
+  "main_battle_cells": 7680,
+  "posthoc_mechanism_battles": 192,
+  "paired_extra_enhance_checks": 3456,
+  "paired_extra_enhance_improvements": 7,
+  "paired_extra_enhance_regressions": 0,
+  "historical_r6_six_of_2000_fixed": false,
+  "production_approved": false,
+  "source_code_modified": false,
+  "mac_or_github_modified": false,
+  "not_tested": [
+    "all33 combat/advanced skills",
+    "full30_90day economy",
+    "liveStoreKit/DB",
+    "userfun_and_sales",
+    "UI_or_iPhone"
+  ],
+  "key_findings": [
+    "33=29+4 explicit cat additions; no world ID loss",
+    "Barrier ID needs explicit adapter; no numeric Commerce definition",
+    "C fills empty starter slots strongly; prepared free control already wins all sampled fights",
+    "Low rarity can be equipped; salvage is not its only value",
+    "Hidden latent slots invalidate claiming visible duplicates redundant in all future states",
+    "Gacha optional pool is narrower than natural pool",
+    "Original R6 supports only13 early templates, not all33 skills"
+  ],
+  "report_links_verified": 4
+}

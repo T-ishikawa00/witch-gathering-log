@@ -1,0 +1,160 @@
+{
+  "schema": "asset-completion-reconciliation-r418-v1",
+  "status": "SCOPED_RECONCILIATION; NOT_RELEASE_OR_FORMAL_ART_ACCEPTANCE",
+  "createdLocalDate": "2026-10-14",
+  "scope": "Read-only reconciliation of current asset acceptance, the 159-unit ledger, four party members, thirty enemy identities, R416 environment/effect review, and R418 attack-visibility delta. No assets, code, app, saves, or prior records changed.",
+  "sourceAuthority": {
+    "originalAcceptance": {
+      "path": "docs/production/mission_20261010_r1/Witch_Codex_Autonomous_03to05_20261010/03_ACCEPTANCE_AND_BLOCKERS.md",
+      "sha256": "5c26036ca41f3a45a870c3e5590481c97321ae01e54aa52a26a74c12d674012c"
+    },
+    "canonicalRegisterR008": {
+      "path": "docs/production/current/qa_drafts/final_acceptance_r360/COMPLETION_REGISTER_R008.json",
+      "sha256": "de41a6fb1cf1650c9e7000156c19e48c1253a3742ab54de850a007d5897156bf"
+    },
+    "checkpointR082": {
+      "path": "docs/production/current/CHECKPOINT_R082_RECEIPT_R001.json",
+      "sha256": "97ccd5171652f372d889f4da1f97d7fc22b4b6e432ab9b9239d2920ae3545623"
+    },
+    "159UnitLedgerR308": {
+      "path": "docs/production/current/qa_drafts/asset_readiness_r308/ASSET_READINESS_R001.json",
+      "sha256": "02b76b68239cdaf0af7934dfc7bbcdb4eef1592dff2cff99aec896b6f8d29a25"
+    },
+    "enemyLedgerR366": {
+      "path": "docs/production/current/qa_drafts/enemy_completion_batch_r366/ENEMY_COVERAGE_LEDGER_R001.json",
+      "sha256": "0b7963a968411f8ff618f2f39beea7abc6ddcbc6704d6cdd42b914bc5bdd8306"
+    },
+    "enemyAcceptanceR372": {
+      "path": "docs/production/current/qa_drafts/enemy_motion_acceptance_r372/REMAINING_ACCEPTANCE_R001.json",
+      "sha256": "d6b673253d3ea84bf5e14c122a23ce13f934793aed7c26d67c6839f0b0c0194d"
+    },
+    "enemyR418Visual": {
+      "path": "docs/production/current/qa_drafts/enemy_attack_visibility_r418/capture_candidate_r002/capture_r001/independent_visual_review_r001/REVIEW_R001.json",
+      "sha256": "7908abca841865a0bc47330c7e87d4102d9d5ae6a1365371b3f1b3d44d722e68"
+    },
+    "ambientR416Visual": {
+      "path": "docs/production/current/qa_drafts/ambient_cycle_capture_r416/visual_review_r001/REVIEW_R001.json",
+      "sha256": "7b6ff86e55314518be9e8afc23bf386a628d751523255bd871557794ef6421f8"
+    },
+    "ambientR407Visual": {
+      "path": "docs/production/current/qa_drafts/env_fx_temporal_r407/review_r003/REVIEW_R003.json",
+      "sha256": "eceb7da3c7a85f9eaf2a1fab9a2ba48f52af70e9a908a307f35d099a8253a463"
+    },
+    "partyEventVisual": {
+      "path": "docs/production/current/qa_drafts/composite_render_probe_r405/root_visual_r407_r001/TWO_MARKER_JOIN_R001.json",
+      "sha256": "50f2d003266a041f52968e602e7a0702d40aaf08bf1679f0ea774a5ed4ed071a"
+    },
+    "standardPlayR190": {
+      "path": "docs/production/current/qa_drafts/native_completion_r190/native_run_r001/TEST_SUMMARY.json",
+      "sha256": "e51129c044f43a8865da8ba5d38d40afbae0b564e6b1f651a8d03fc78bb6b9a3"
+    },
+    "gearFurnitureR358Review": {
+      "path": "docs/production/current/qa_drafts/native_equipment_integration_r358/independent_native_review_r001/REVIEW_R001.json",
+      "sha256": "178870bb4f1c87dc455ad4d0e0b1039b49262350cb1258b61029cede13c4cd0f"
+    }
+  },
+  "countSummary": {
+    "assetPortfolio159": {
+      "mapped": 159,
+      "missingIDs": 0,
+      "kindOrMappingMismatches": 0,
+      "categories": {
+        "background_kit": 10,
+        "area_variant": 10,
+        "ambient_kit": 5,
+        "combat_vfx_kit": 5,
+        "enemy_actor_kit": 30,
+        "material_icon": 50,
+        "gather_prop": 20,
+        "gear_icon": 29
+      },
+      "limitedStaticVisualReviews": 149,
+      "temporalEnvironmentEffectEvidence": 10,
+      "fullyCompletedAsPortfolio": 0,
+      "interpretation": "R008 records 149 bounded static reviews and 10 ENV/FX temporal evidence items. These are scoped reviews, not 159 individual final-quality passes. R308 is a 159-row mapping/readiness ledger, not an acceptance ledger."
+    },
+    "enemyActors": {
+      "identityCount": 30,
+      "recordedNativeBattleWins": 30,
+      "forcedClipVisualReviews": 30,
+      "completeAnimationTrueInR372Ledger": 0,
+      "stateQualityCompleteCount": "not established"
+    },
+    "partyActors": {
+      "identityCount": 4,
+      "runtimeMapped": 4,
+      "scopedFourActorEventWindowsReviewed": 2,
+      "allSevenStatesAcceptedPerActor": 0
+    },
+    "wardrobeFurniture": {
+      "demonstratedOrdinaryFlows": "one AIRA apron appearance and one desk placement/home return in R190 route; R358 gear evidence is separate",
+      "catalogTotalApproved": null
+    }
+  },
+  "itemTable": [
+    {
+      "itemID": "BG_R01..R05 / A_R01..R05 / material, prop and gear icon rows",
+      "count": 149,
+      "status": "MAPPED; LIMITED STATIC REVIEW",
+      "evidence": "R308 exact 159 entry-key match and no missing IDs; R008 says 149 bounded static reviews.",
+      "remainingExplicit": "Do not promote a whole group from mapping or limited review. No specific missing file/visual defect is identified by this reconciliation; retain individual ledger classifications."
+    },
+    {
+      "itemID": "ENV_R01..ENV_R05 / FX_R01..FX_R05 temporal families",
+      "count": 10,
+      "status": "MAPPED; BOUNDED TEMPORAL REVIEW",
+      "evidence": "R416 sampled 54+51 frames across 20s R01–R03; R407 R003 reviewed R04/R05 0.72s loops and 12s boundaries. No conspicuous pop, cut, or actor obstruction was seen in those windows.",
+      "remainingExplicit": "The motifs are subtle and exact pair identity is not reliably distinguishable at phone scale; this is a limited legibility/acceptance gap, not proof of missing effect assets. No redraw is justified without a concrete obstructive or broken frame."
+    },
+    {
+      "itemID": "ACT_E_* and ACT_B_* enemy motion actors",
+      "count": 30,
+      "status": "MAPPED; TECHNICAL AND VISUAL EVIDENCE PARTIAL",
+      "evidence": "R366 has 30 forced-state clips/reviews; R008 records 30 native wins. R391/R407/R411 provide encounter clips for subsets. R418 independently reviewed B_R05_B execute/resolve windows.",
+      "remainingExplicit": "R372 ledger records 0/30 completeAnimation=true. In R418 B_R05_B, execute and resolve are now visible; recover remains unobserved because hit follows. This is a state-observation gap, not confirmed missing art. Other 29 actors have no per-actor all-state completion status."
+    },
+    {
+      "itemID": "ERNA, LUNA, AIRA, NOIR party motion and presentation",
+      "count": 4,
+      "status": "MAPPED; SCOPED FOUR-ACTOR EVENT WINDOWS PASS",
+      "evidence": "R407 two marker-bound B_R04_B windows show all four render; at the hit window three members are in hit and one is casting, with HP/damage/shield feedback. R008 limits the pass to these samples.",
+      "remainingExplicit": "No demonstrated gross crop, disappearance, or total occlusion in the reviewed windows. Do not call every actor/state combination accepted; no concrete party-art defect was found here."
+    },
+    {
+      "itemID": "Wardrobe appearance and home furniture",
+      "count": "catalog scope not set",
+      "status": "ORDINARY FLOW DEMONSTRATED FOR ONE LOOK AND ONE DESK; PRODUCT SCOPE UNSET",
+      "evidence": "R190 ordinary route passed 1 UI test with AIRA apron/home desk flow; R358 is separate earned gear/refinement/target evidence.",
+      "remainingExplicit": "No approved outfit/furniture SKU total exists in this evidence. Do not turn the tested example into a complete catalog claim or create new inventory targets."
+    },
+    {
+      "itemID": "Gear icons/equipment appearance and refinement",
+      "count": "29 gear-icon rows within 159",
+      "status": "MAPPED; ACTUAL EQUIPMENT FLOWS SCOPED",
+      "evidence": "R308 maps 29 gear icons; R358 actual earned EQ_FEET_01 rank I→II and exact cold readback are reviewed; R190 covers a normal equipment/look route.",
+      "remainingExplicit": "No defect in a specific icon or equipped appearance is established here. All-item icon legibility and every loadout/appearance combination remain outside these scoped demonstrations."
+    }
+  ],
+  "r418Delta": {
+    "priorConcreteDefect": "R411 B_R05_B had 12 accepted execute requests across three AoE roots but zero visible execute frames; hit interrupted the same-frame execute presentation.",
+    "currentObserved": "R418 B_R05_B: three roots each coalesced three duplicate same-frame target requests, producing 18, 16, and 17 consecutive execute frames; reviewed start/middle/end markers show the boss on-screen, followed by hit. Terminal resolve is visible at alpha 0.5.",
+    "judgment": "SCOPED_PRESENTATION_DEFECT_CORRECTED_FOR_THIS_B_R05_B_CASE; no gross crop/pop in sampled windows.",
+    "limits": "Synthetic challenge fixture; not ordinary earned progression. Three brief windows do not establish all-frame easing, all-enemy parity, or formal art adoption."
+  },
+  "locallyActionableResiduals": [
+    {
+      "priority": 1,
+      "condition": "ACT_B_R05_B recover state after execute→hit",
+      "classification": "UNOBSERVED, NOT CONFIRMED_DEFECT",
+      "closureCondition": "Use current source/event semantics plus an existing or naturally occurring sequence to determine whether recover should render in this path; if applicable, capture that transition. Do not author replacement frames unless the renderer/source shows the authored state is absent or visibly broken."
+    },
+    {
+      "priority": 2,
+      "condition": "Ten ENV/FX motifs across five regions",
+      "classification": "NO_GROSS_TEMPORAL_DEFECT OBSERVED; PHONE-SCALE MOTIF IDENTITY PARTIAL",
+      "closureCondition": "Any next change should be triggered by a named motif that is visually absent/obstructive in a representative phone-scale window; otherwise retain current assets and bounded review."
+    }
+  ],
+  "assessment": "No confirmed missing asset mapping, no new source/art defect, and no justified regeneration target was found. The specific R418 attack-visibility defect is corrected for B_R05_B in scoped synthetic QA evidence. Remaining work is finite state-specific verification and subtle motif legibility, not a basis for treating 159 mappings as complete art acceptance.",
+  "authorityBoundary": "Local technical quality work remains delegated. This report does not claim universal natural-motion completion, all 159 final-quality passes, formal Human art adoption, full game/release readiness, production StoreKit, or physical-device acceptance."
+}

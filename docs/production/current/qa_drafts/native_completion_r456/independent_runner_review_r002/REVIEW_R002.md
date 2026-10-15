@@ -1,0 +1,15 @@
+# R456 builder independent source review R002
+
+**Disposition: no blocking source-guard issue found in sealed R003; build not run.** This read-only review covers `build_tools_r003/build_r456.py`, the R003 candidate manifest, and the Root-sealed input/seal files. No runner invocation, build, install, launch, or Simulator action was performed.
+
+The three R001 blockers are addressed in the current driver:
+
+- Every `xcodebuild` output root is explicitly under the new `native/build/ActiveIntegrationR456/af7c36f3ff74cc4` output. The R004 generated Xcode project is an input only. `DerivedData`, `SYMROOT`, `BUILD_DIR`, `OBJROOT`, and the SDK-specific product directories are redirected beneath the R456 output (driver lines 441–461); logs, derived Info.plist, lock, and result are in the R456 `build_tools_r003` directory. The sealed contract disables freeze, resource copy, install, and launch.
+- After both targets, the driver rechecks the source maps and all 238 frozen files, generated project tree/PBX, protected live PBX, resource map, all 1,922 prepared resources, Info.plist template, and every pinned prior product (lines 245–278, called at 493–495).
+- It hashes every regular file in each built `.app`, excluding only root `Info.plist`, `PkgInfo`, and the declared executable; each resulting map must equal the pinned 1,922-entry resource map, and the two SDK maps must match (227–242, 488–492). The full maps are retained in the success receipt.
+
+The cap is checked during both builds and again after product validation. `final_bounds` checks elapsed time, allocated output and the 20 GB free-space floor (280–291); a success receipt is written only after those checks and is checked again after receipt writing (493–527). A two-second and 1 MB margin is required before writing the receipt. The process cleanup records PID plus start identity and signals only recorded identities; this is materially safer than broad process-name or process-group killing. This remains a source review: it does not prove runtime cleanup against detached or reparented Xcode descendants.
+
+Pins read back consistently: driver SHA-256 `64955e92d4fc40dff4cf579d5338f811d7e2a165ea20d277bf57164f08a70dca`; candidate manifest `940930afebaf0479f796974366ab66162b7a3fb0893eaf7340c4204b7d940c05`; Root-sealed input manifest `1c371a5725e01bf98950a1cb7a32ce9f2543106dd383e7690ac951b8d4af4e5b`; seal `92084bafb482b80524dffc9225a0f133f7397f589c41a72b9841ff3744e94748`. The sealed input identifies the R004 project as a read-only input, the new R456 output path, 7,700 prior app-product files, and the exact resource map SHA `90d213640ea8bf1ac0791ece0b2bfa01f68228e3eed3d56479b8c5628b3cc7de`. Candidate-manifest file hashes match the files listed in that manifest. Python AST and JSON parsing passed; no script was invoked.
+
+**Residual boundary:** process ownership/cleanup is only statically inspected, and this build proves compilation only if later run successfully. It does not establish app behavior, StoreKit runtime behavior, Apple authorization, or production purchase readiness.

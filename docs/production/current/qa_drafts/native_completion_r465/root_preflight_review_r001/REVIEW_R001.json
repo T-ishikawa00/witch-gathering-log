@@ -1,0 +1,60 @@
+{
+  "buildResultPresentAtReview": false,
+  "buildResultSHA256": null,
+  "findings": [
+    {
+      "finding": "Preflight path correction is narrow and validated. R001 retained its failure (`all sealed paths must be absolute`); R002 records exit 0 and PINS_READY_NO_BUILD. Current sourceMapPath is absolute and points to the local copy whose bytes/hash equal the frozen SOURCE_SHA256.json.",
+      "severity": "PASS"
+    },
+    {
+      "finding": "R465 source map has 240 files and differs from R462 only in WitchApp/WorkflowViews.swift. Diff adds FocusState, field generation identity, submit focus dismissal, and clear-action focus dismissal/filter reset/field recreation. Search predicate, inventory row rendering, save dispatch and model state are unchanged.",
+      "severity": "PASS"
+    },
+    {
+      "finding": "Output is a new R465-only path. Install, launch, freeze, and resource copy are disabled. Bounds remain one attempt, 600 seconds, 2,000,000,000 allocated bytes, 2,000,000,000 safety reserve, 20,000,000,000 free floor / 22,000,000,000 start.",
+      "severity": "PASS"
+    },
+    {
+      "finding": "R462 protection is complete at file level for both SDK product trees (1,925 files each), bound to the R462 BUILD_COMMANDS_PASS receipt; prior product manifest remains hash-pinned by reference. Driver verifies R462 trees pre-build and post-build. R462 executables and output paths match their receipt.",
+      "severity": "PASS"
+    },
+    {
+      "finding": "R465 build is in progress; this review does not certify successful compilation or final output preservation. Current simulator Release log reports a warning in frozen LocalPurchaseDeliveryQAImporterR453.swift: code after throw is unreachable. It predates the sole R465 source delta and is not caused by this UI change; assess separately if build policy treats warnings as blocking.",
+      "severity": "LIMIT"
+    }
+  ],
+  "pins": {
+    "R462ProductMapSHA256": "e320e08d6a0ebdf233f02fc0ba4e92c04edd55a4193f3df26f87ee913283be52",
+    "driverSHA256": "eaf28d5d0650705c5b6de891ab1110d5069968abfd2a577b83a503e8fae7f9b1",
+    "freezeResultSHA256": "9346d4f12c7807d6d68b1747fa48075a263699ccf99c5e0fe54df5ee255fb7b5",
+    "inputSHA256": "b3b8f9289327275d29fd1d036552d921e4e2c90c195c3be7e5ffc3fef97cfedf",
+    "priorFailedInputSHA256": "9f0f8caca0a1e9e39a2ab91ade7e28ebb57123d416bd1f8e71d8855c10ae29cf",
+    "rootSealSHA256": "0f9e995b4087e5c03370cc58de00617b4f70884cdf03c4867feca0f2b180714d",
+    "sourceMapSHA256": "6f50a2e250c99450d303e509946d9199fa14e95fac2718df7619947d8a1a268a"
+  },
+  "preflight": {
+    "R001": {
+      "exitCode": 2,
+      "sealSHA256": "ec35c4828253b182bb025c95110cc1578f47078745119d70a7cea09f1cc75f3e",
+      "stderr": "HOLD_OR_FAIL: RuntimeError: all sealed paths must be absolute\n"
+    },
+    "R002": {
+      "exitCode": 0,
+      "repair": "sourceMapPath was relative after local copy; now absolute. Prior input/seal retained, no build was run.",
+      "sealSHA256": "0f9e995b4087e5c03370cc58de00617b4f70884cdf03c4867feca0f2b180714d",
+      "stdout": "{\"bundleIdentifier\": \"local.witch.autonomous.r1.completion.r465\", \"project\": \"/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/WitchGatheringQA_20261015T080035.xcodeproj\", \"resourceCount\": 1922, \"sourceCount\": 240, \"status\": \"PINS_READY_NO_BUILD\"}\n"
+    }
+  },
+  "prohibitedActionsByReviewer": {
+    "build": false,
+    "simulator": false,
+    "sourceChanges": false
+  },
+  "reviewedAtLocal": "2026-10-15T08:05:01.444668+09:00",
+  "schema": "native-completion-r465-independent-preflight-review-v1",
+  "scope": "Read-only review of R465 UI source delta, input/seal/path repair, build bounds, and R462 product preservation bindings. No build or simulator actions performed by reviewer.",
+  "sourceDiffPaths": [
+    "WitchApp/WorkflowViews.swift"
+  ],
+  "status": "NO_BLOCKER_FOUND_IN_REVIEWED_SCOPE_BUILD_IN_PROGRESS"
+}

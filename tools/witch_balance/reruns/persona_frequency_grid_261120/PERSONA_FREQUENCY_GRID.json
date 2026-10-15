@@ -1,0 +1,733 @@
+{
+  "status": "UNAPPROVED_ENDGAME_ACQUISITION_PROJECTION",
+  "target": "EQ_W_P2",
+  "samples_per_persona_frequency": 512,
+  "seed_start": 261120,
+  "frequencies_hours": [
+    24,
+    72
+  ],
+  "personas": [
+    "FREE_NO_AD",
+    "AD_ONLY",
+    "ONE_OUTFIT",
+    "ONE_SMALL_PURCHASE",
+    "VALUE_PACK_ONLY",
+    "VALUE_PLUS_DELIVERY",
+    "REGULAR_100_PER_30D",
+    "HIGH_BUDGET_400_PER_30D"
+  ],
+  "rows": [
+    {
+      "persona": "FREE_NO_AD",
+      "login_interval_hours": 24,
+      "day": 30,
+      "purchase_yen": 0,
+      "purchase_tickets": 0,
+      "total_gacha_draws": 150,
+      "natural_gear_count": 1440,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 0.65234375,
+        "LR_3_AFFIX_Q900": 0.0
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 334,
+        "LR_3_AFFIX_Q900": 0
+      }
+    },
+    {
+      "persona": "FREE_NO_AD",
+      "login_interval_hours": 24,
+      "day": 90,
+      "purchase_yen": 0,
+      "purchase_tickets": 0,
+      "total_gacha_draws": 450,
+      "natural_gear_count": 4320,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 0.966796875,
+        "LR_3_AFFIX_Q900": 0.005859375
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 495,
+        "LR_3_AFFIX_Q900": 3
+      }
+    },
+    {
+      "persona": "FREE_NO_AD",
+      "login_interval_hours": 72,
+      "day": 30,
+      "purchase_yen": 0,
+      "purchase_tickets": 0,
+      "total_gacha_draws": 150,
+      "natural_gear_count": 960,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 0.56640625,
+        "LR_3_AFFIX_Q900": 0.0
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 290,
+        "LR_3_AFFIX_Q900": 0
+      }
+    },
+    {
+      "persona": "FREE_NO_AD",
+      "login_interval_hours": 72,
+      "day": 90,
+      "purchase_yen": 0,
+      "purchase_tickets": 0,
+      "total_gacha_draws": 450,
+      "natural_gear_count": 2880,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 0.9375,
+        "LR_3_AFFIX_Q900": 0.005859375
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 480,
+        "LR_3_AFFIX_Q900": 3
+      }
+    },
+    {
+      "persona": "AD_ONLY",
+      "login_interval_hours": 24,
+      "day": 30,
+      "purchase_yen": 980,
+      "purchase_tickets": 0,
+      "total_gacha_draws": 150,
+      "natural_gear_count": 1440,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 0.63671875,
+        "LR_3_AFFIX_Q900": 0.0
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 326,
+        "LR_3_AFFIX_Q900": 0
+      }
+    },
+    {
+      "persona": "AD_ONLY",
+      "login_interval_hours": 24,
+      "day": 90,
+      "purchase_yen": 980,
+      "purchase_tickets": 0,
+      "total_gacha_draws": 450,
+      "natural_gear_count": 4320,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 0.962890625,
+        "LR_3_AFFIX_Q900": 0.0
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 493,
+        "LR_3_AFFIX_Q900": 0
+      }
+    },
+    {
+      "persona": "AD_ONLY",
+      "login_interval_hours": 72,
+      "day": 30,
+      "purchase_yen": 980,
+      "purchase_tickets": 0,
+      "total_gacha_draws": 150,
+      "natural_gear_count": 960,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 0.564453125,
+        "LR_3_AFFIX_Q900": 0.0
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 289,
+        "LR_3_AFFIX_Q900": 0
+      }
+    },
+    {
+      "persona": "AD_ONLY",
+      "login_interval_hours": 72,
+      "day": 90,
+      "purchase_yen": 980,
+      "purchase_tickets": 0,
+      "total_gacha_draws": 450,
+      "natural_gear_count": 2880,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 0.92578125,
+        "LR_3_AFFIX_Q900": 0.0
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 474,
+        "LR_3_AFFIX_Q900": 0
+      }
+    },
+    {
+      "persona": "ONE_OUTFIT",
+      "login_interval_hours": 24,
+      "day": 30,
+      "purchase_yen": 1480,
+      "purchase_tickets": 0,
+      "total_gacha_draws": 150,
+      "natural_gear_count": 1440,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 0.666015625,
+        "LR_3_AFFIX_Q900": 0.0
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 341,
+        "LR_3_AFFIX_Q900": 0
+      }
+    },
+    {
+      "persona": "ONE_OUTFIT",
+      "login_interval_hours": 24,
+      "day": 90,
+      "purchase_yen": 1480,
+      "purchase_tickets": 0,
+      "total_gacha_draws": 450,
+      "natural_gear_count": 4320,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 0.966796875,
+        "LR_3_AFFIX_Q900": 0.009765625
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 495,
+        "LR_3_AFFIX_Q900": 5
+      }
+    },
+    {
+      "persona": "ONE_OUTFIT",
+      "login_interval_hours": 72,
+      "day": 30,
+      "purchase_yen": 1480,
+      "purchase_tickets": 0,
+      "total_gacha_draws": 150,
+      "natural_gear_count": 960,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 0.5859375,
+        "LR_3_AFFIX_Q900": 0.0
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 300,
+        "LR_3_AFFIX_Q900": 0
+      }
+    },
+    {
+      "persona": "ONE_OUTFIT",
+      "login_interval_hours": 72,
+      "day": 90,
+      "purchase_yen": 1480,
+      "purchase_tickets": 0,
+      "total_gacha_draws": 450,
+      "natural_gear_count": 2880,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 0.951171875,
+        "LR_3_AFFIX_Q900": 0.009765625
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 487,
+        "LR_3_AFFIX_Q900": 5
+      }
+    },
+    {
+      "persona": "ONE_SMALL_PURCHASE",
+      "login_interval_hours": 24,
+      "day": 30,
+      "purchase_yen": 160,
+      "purchase_tickets": 10,
+      "total_gacha_draws": 160,
+      "natural_gear_count": 1440,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 0.642578125,
+        "LR_3_AFFIX_Q900": 0.005859375
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 329,
+        "LR_3_AFFIX_Q900": 3
+      }
+    },
+    {
+      "persona": "ONE_SMALL_PURCHASE",
+      "login_interval_hours": 24,
+      "day": 90,
+      "purchase_yen": 160,
+      "purchase_tickets": 10,
+      "total_gacha_draws": 460,
+      "natural_gear_count": 4320,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 0.978515625,
+        "LR_3_AFFIX_Q900": 0.0078125
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 501,
+        "LR_3_AFFIX_Q900": 4
+      }
+    },
+    {
+      "persona": "ONE_SMALL_PURCHASE",
+      "login_interval_hours": 72,
+      "day": 30,
+      "purchase_yen": 160,
+      "purchase_tickets": 10,
+      "total_gacha_draws": 160,
+      "natural_gear_count": 960,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 0.533203125,
+        "LR_3_AFFIX_Q900": 0.005859375
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 273,
+        "LR_3_AFFIX_Q900": 3
+      }
+    },
+    {
+      "persona": "ONE_SMALL_PURCHASE",
+      "login_interval_hours": 72,
+      "day": 90,
+      "purchase_yen": 160,
+      "purchase_tickets": 10,
+      "total_gacha_draws": 460,
+      "natural_gear_count": 2880,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 0.955078125,
+        "LR_3_AFFIX_Q900": 0.0078125
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 489,
+        "LR_3_AFFIX_Q900": 4
+      }
+    },
+    {
+      "persona": "VALUE_PACK_ONLY",
+      "login_interval_hours": 24,
+      "day": 30,
+      "purchase_yen": 480,
+      "purchase_tickets": 20,
+      "total_gacha_draws": 170,
+      "natural_gear_count": 1440,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 0.671875,
+        "LR_3_AFFIX_Q900": 0.001953125
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 344,
+        "LR_3_AFFIX_Q900": 1
+      }
+    },
+    {
+      "persona": "VALUE_PACK_ONLY",
+      "login_interval_hours": 24,
+      "day": 90,
+      "purchase_yen": 1440,
+      "purchase_tickets": 60,
+      "total_gacha_draws": 510,
+      "natural_gear_count": 4320,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 0.982421875,
+        "LR_3_AFFIX_Q900": 0.0078125
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 503,
+        "LR_3_AFFIX_Q900": 4
+      }
+    },
+    {
+      "persona": "VALUE_PACK_ONLY",
+      "login_interval_hours": 72,
+      "day": 30,
+      "purchase_yen": 480,
+      "purchase_tickets": 20,
+      "total_gacha_draws": 170,
+      "natural_gear_count": 960,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 0.576171875,
+        "LR_3_AFFIX_Q900": 0.001953125
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 295,
+        "LR_3_AFFIX_Q900": 1
+      }
+    },
+    {
+      "persona": "VALUE_PACK_ONLY",
+      "login_interval_hours": 72,
+      "day": 90,
+      "purchase_yen": 1440,
+      "purchase_tickets": 60,
+      "total_gacha_draws": 510,
+      "natural_gear_count": 2880,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 0.9609375,
+        "LR_3_AFFIX_Q900": 0.0078125
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 492,
+        "LR_3_AFFIX_Q900": 4
+      }
+    },
+    {
+      "persona": "VALUE_PLUS_DELIVERY",
+      "login_interval_hours": 24,
+      "day": 30,
+      "purchase_yen": 1130,
+      "purchase_tickets": 50,
+      "total_gacha_draws": 200,
+      "natural_gear_count": 1440,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 0.705078125,
+        "LR_3_AFFIX_Q900": 0.001953125
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 361,
+        "LR_3_AFFIX_Q900": 1
+      }
+    },
+    {
+      "persona": "VALUE_PLUS_DELIVERY",
+      "login_interval_hours": 24,
+      "day": 90,
+      "purchase_yen": 3390,
+      "purchase_tickets": 150,
+      "total_gacha_draws": 600,
+      "natural_gear_count": 4320,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 0.96484375,
+        "LR_3_AFFIX_Q900": 0.005859375
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 494,
+        "LR_3_AFFIX_Q900": 3
+      }
+    },
+    {
+      "persona": "VALUE_PLUS_DELIVERY",
+      "login_interval_hours": 72,
+      "day": 30,
+      "purchase_yen": 1130,
+      "purchase_tickets": 50,
+      "total_gacha_draws": 200,
+      "natural_gear_count": 960,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 0.650390625,
+        "LR_3_AFFIX_Q900": 0.001953125
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 333,
+        "LR_3_AFFIX_Q900": 1
+      }
+    },
+    {
+      "persona": "VALUE_PLUS_DELIVERY",
+      "login_interval_hours": 72,
+      "day": 90,
+      "purchase_yen": 3390,
+      "purchase_tickets": 150,
+      "total_gacha_draws": 600,
+      "natural_gear_count": 2880,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 0.951171875,
+        "LR_3_AFFIX_Q900": 0.005859375
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 487,
+        "LR_3_AFFIX_Q900": 3
+      }
+    },
+    {
+      "persona": "REGULAR_100_PER_30D",
+      "login_interval_hours": 24,
+      "day": 30,
+      "purchase_yen": 3000,
+      "purchase_tickets": 100,
+      "total_gacha_draws": 250,
+      "natural_gear_count": 1440,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 0.74609375,
+        "LR_3_AFFIX_Q900": 0.001953125
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 382,
+        "LR_3_AFFIX_Q900": 1
+      }
+    },
+    {
+      "persona": "REGULAR_100_PER_30D",
+      "login_interval_hours": 24,
+      "day": 90,
+      "purchase_yen": 9000,
+      "purchase_tickets": 300,
+      "total_gacha_draws": 750,
+      "natural_gear_count": 4320,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 0.9921875,
+        "LR_3_AFFIX_Q900": 0.01171875
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 508,
+        "LR_3_AFFIX_Q900": 6
+      }
+    },
+    {
+      "persona": "REGULAR_100_PER_30D",
+      "login_interval_hours": 72,
+      "day": 30,
+      "purchase_yen": 3000,
+      "purchase_tickets": 100,
+      "total_gacha_draws": 250,
+      "natural_gear_count": 960,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 0.685546875,
+        "LR_3_AFFIX_Q900": 0.001953125
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 351,
+        "LR_3_AFFIX_Q900": 1
+      }
+    },
+    {
+      "persona": "REGULAR_100_PER_30D",
+      "login_interval_hours": 72,
+      "day": 90,
+      "purchase_yen": 9000,
+      "purchase_tickets": 300,
+      "total_gacha_draws": 750,
+      "natural_gear_count": 2880,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 0.98828125,
+        "LR_3_AFFIX_Q900": 0.01171875
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 506,
+        "LR_3_AFFIX_Q900": 6
+      }
+    },
+    {
+      "persona": "HIGH_BUDGET_400_PER_30D",
+      "login_interval_hours": 24,
+      "day": 30,
+      "purchase_yen": 12000,
+      "purchase_tickets": 400,
+      "total_gacha_draws": 550,
+      "natural_gear_count": 1440,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 0.91796875,
+        "LR_3_AFFIX_Q900": 0.01171875
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 470,
+        "LR_3_AFFIX_Q900": 6
+      }
+    },
+    {
+      "persona": "HIGH_BUDGET_400_PER_30D",
+      "login_interval_hours": 24,
+      "day": 90,
+      "purchase_yen": 36000,
+      "purchase_tickets": 1200,
+      "total_gacha_draws": 1650,
+      "natural_gear_count": 4320,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 1.0,
+        "LR_3_AFFIX_Q900": 0.037109375
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 512,
+        "LR_3_AFFIX_Q900": 19
+      }
+    },
+    {
+      "persona": "HIGH_BUDGET_400_PER_30D",
+      "login_interval_hours": 72,
+      "day": 30,
+      "purchase_yen": 12000,
+      "purchase_tickets": 400,
+      "total_gacha_draws": 550,
+      "natural_gear_count": 960,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 0.90234375,
+        "LR_3_AFFIX_Q900": 0.01171875
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 462,
+        "LR_3_AFFIX_Q900": 6
+      }
+    },
+    {
+      "persona": "HIGH_BUDGET_400_PER_30D",
+      "login_interval_hours": 72,
+      "day": 90,
+      "purchase_yen": 36000,
+      "purchase_tickets": 1200,
+      "total_gacha_draws": 1650,
+      "natural_gear_count": 2880,
+      "samples": 512,
+      "goal_probabilities": {
+        "READY_2_AFFIX_SR": 1.0,
+        "LATENT_2_AFFIX_PROJECT": 1.0,
+        "LR_2_AFFIX": 1.0,
+        "LR_3_AFFIX_Q900": 0.037109375
+      },
+      "goal_success_counts": {
+        "READY_2_AFFIX_SR": 512,
+        "LATENT_2_AFFIX_PROJECT": 512,
+        "LR_2_AFFIX": 512,
+        "LR_3_AFFIX_Q900": 19
+      }
+    }
+  ],
+  "limitations": [
+    "starts after R05 with all equipment types unlocked",
+    "no combat or gate progression",
+    "no crafting, quality promotion, reforging, inventory decisions, ads, or spend of powder",
+    "purchase schedules are candidate catalog scenarios, not approved products",
+    "72h login settles 48h offline cap every third day; purchased draw entitlements accrue by calendar day"
+  ]
+}

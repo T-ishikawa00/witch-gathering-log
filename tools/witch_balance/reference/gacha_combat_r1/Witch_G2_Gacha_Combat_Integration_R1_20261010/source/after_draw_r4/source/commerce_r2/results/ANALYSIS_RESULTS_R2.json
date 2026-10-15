@@ -1,0 +1,592 @@
+{
+  "status": "PROPOSED_REFERENCE_RULES_TESTED_NOT_PRODUCTION_ACCEPTANCE",
+  "target_first_distribution": {
+    "pmf": [
+      0.015,
+      0.015,
+      0.0149865,
+      0.01496031,
+      0.014922203549999997,
+      0.014872919207999998,
+      0.014813161943324998,
+      0.014743604487243298,
+      0.014664888632777508,
+      0.014577626485541145,
+      0.014482401667369464,
+      0.014379770474451097,
+      0.014270262991607198,
+      0.01415438416430693,
+      0.01403261482995223,
+      0.013905412709910938,
+      0.013773213363725164,
+      0.013636431106871618,
+      0.013495459893401932,
+      0.013350674164744239,
+      0.013202429665901953,
+      0.01305106423024193,
+      0.012896898534022195,
+      0.012740236821768431,
+      0.012581367603569269,
+      0.012420564325322465,
+      0.012258086012927256,
+      0.012094177891382975,
+      0.011929071979719715,
+      0.011762987662654004,
+      0.01159613223983048,
+      0.011428701453479987,
+      0.011260879995294678,
+      0.011092841993292354,
+      0.0109247514794144,
+      0.010756762838575164,
+      0.01058902123985481,
+      0.01042166305050296,
+      0.01025481623339635,
+      0.15794474442813697,
+      0.014358813130411478,
+      0.01379497820716954,
+      0.013252050447504722,
+      0.012729282873033357,
+      0.012225954507627496,
+      0.011741369489560283,
+      0.01127485621352022,
+      0.010825766501501969,
+      0.010393474801612651,
+      0.009977377413865332,
+      0.009576891742061396,
+      0.009191455570893214,
+      0.008820526367427283,
+      0.008463580606155496,
+      0.008120113116829324,
+      0.007789636454317192,
+      0.00747168028975064,
+      0.007165790822249192,
+      0.006871530210537059,
+      0.0065884760237876275,
+      0.006316220711053684,
+      0.006054371088662358,
+      0.005802547844974575,
+      0.005560385061928252,
+      0.005327529752804237,
+      0.0051036414156719265,
+      0.004888391601990031,
+      0.004681463499854944,
+      0.004482551531406175,
+      0.004291360963914457,
+      0.00410760753409398,
+      0.003931017085195207,
+      0.0037613252164496753,
+      0.0035982769444522014,
+      0.0034416263760797703,
+      0.0032911363925596784,
+      0.00314657834431232,
+      0.0030077317562065,
+      0.002874384042877148,
+      0.046469208693180566
+    ],
+    "mass": 0.9999999999999992,
+    "mean": 35.214385630043324,
+    "percentiles": {
+      "0.5": 38,
+      "0.9": 66,
+      "0.95": 78,
+      "0.99": 80
+    },
+    "maximum": 80,
+    "residual_mass": 0
+  },
+  "candidates": [
+    {
+      "base_q4_probability": 0.02,
+      "top_pity": 40,
+      "mean_first_top": 27.714979802452465,
+      "q4_stationary_rate": 0.036081570584854304,
+      "mean_selected_top": 41.57246970367864,
+      "p50_selected_top": 40,
+      "p95_selected_top": 80,
+      "max_selected_top": 80,
+      "selected_cost_jpy_at150_all_paid": 6235.870455551796
+    },
+    {
+      "base_q4_probability": 0.03,
+      "top_pity": 30,
+      "mean_first_top": 19.966431048561418,
+      "q4_stationary_rate": 0.05008406347473151,
+      "mean_selected_top": 29.949646572842088,
+      "p50_selected_top": 30,
+      "p95_selected_top": 60,
+      "max_selected_top": 60,
+      "selected_cost_jpy_at150_all_paid": 4492.446985926314
+    },
+    {
+      "base_q4_probability": 0.03,
+      "top_pity": 40,
+      "mean_first_top": 23.476257086695586,
+      "q4_stationary_rate": 0.04259622802336399,
+      "mean_selected_top": 35.214385630043324,
+      "p50_selected_top": 38,
+      "p95_selected_top": 78,
+      "max_selected_top": 80,
+      "selected_cost_jpy_at150_all_paid": 5282.157844506499
+    },
+    {
+      "base_q4_probability": 0.03,
+      "top_pity": 50,
+      "mean_first_top": 26.064487488419758,
+      "q4_stationary_rate": 0.03836637879199781,
+      "mean_selected_top": 39.09673123262957,
+      "p50_selected_top": 38,
+      "p95_selected_top": 87,
+      "max_selected_top": 100,
+      "selected_cost_jpy_at150_all_paid": 5864.509684894436
+    },
+    {
+      "base_q4_probability": 0.05,
+      "top_pity": 40,
+      "mean_first_top": 17.429756868697936,
+      "q4_stationary_rate": 0.057373146827762005,
+      "mean_selected_top": 26.144635303046844,
+      "p50_selected_top": 23,
+      "p95_selected_top": 60,
+      "max_selected_top": 80,
+      "selected_cost_jpy_at150_all_paid": 3921.6952954570265
+    }
+  ],
+  "simulation_cross_check": {
+    "seed": 261010,
+    "sample_count": 50000,
+    "observed_mean": 35.17582,
+    "exact_mean": 35.214385630043324,
+    "max_cdf_absolute_error": 0.002275705075620804,
+    "support_min": 1,
+    "support_max": 80,
+    "total_mock_pulls": 1758791
+  },
+  "quality_horizons": [
+    {
+      "draws": 1,
+      "expected_counts": {
+        "Q2": 0.7999999999999999,
+        "Q3": 0.17,
+        "Q4": 0.03
+      },
+      "mass": 1.0
+    },
+    {
+      "draws": 10,
+      "expected_counts": {
+        "Q2": 7.892625817599994,
+        "Q3": 1.8073741824000005,
+        "Q4": 0.3000000000000001
+      },
+      "mass": 0.9999999999999997
+    },
+    {
+      "draws": 20,
+      "expected_counts": {
+        "Q2": 15.666348237753878,
+        "Q3": 3.733651762246068,
+        "Q4": 0.5999999999999999
+      },
+      "mass": 0.9999999999999991
+    },
+    {
+      "draws": 40,
+      "expected_counts": {
+        "Q2": 30.951939391370132,
+        "Q3": 7.552348321230852,
+        "Q4": 1.4957122873991258
+      },
+      "mass": 0.9999999999999981
+    },
+    {
+      "draws": 50,
+      "expected_counts": {
+        "Q2": 38.69478878569084,
+        "Q3": 9.420785240690735,
+        "Q4": 1.884425973618861
+      },
+      "mass": 0.9999999999999973
+    },
+    {
+      "draws": 65,
+      "expected_counts": {
+        "Q2": 50.254616418437855,
+        "Q3": 12.27788707861463,
+        "Q4": 2.467496502948478
+      },
+      "mass": 0.9999999999999962
+    },
+    {
+      "draws": 80,
+      "expected_counts": {
+        "Q2": 61.7404200290823,
+        "Q3": 15.121567181722025,
+        "Q4": 3.138012789196949
+      },
+      "mass": 0.9999999999999952
+    },
+    {
+      "draws": 115,
+      "expected_counts": {
+        "Q2": 88.6576525880732,
+        "Q3": 21.752018676196002,
+        "Q4": 4.590328735730842
+      },
+      "mass": 0.9999999999999932
+    },
+    {
+      "draws": 1000,
+      "expected_counts": {
+        "Q2": 768.3257526970589,
+        "Q3": 189.37354741359746,
+        "Q4": 42.300699889306664
+      },
+      "mass": 0.9999999999999447
+    }
+  ],
+  "supply_scenarios": [
+    {
+      "days_after_gacha_unlock": 30,
+      "first_region_boss_clears_assumed": 0,
+      "paid_tickets_assumed": 0,
+      "total_tickets": 40,
+      "earnings_conditions": "all accrued tickets claimed before 7-day cap; no predicted clear times",
+      "gacha_expected": {
+        "draws": 40,
+        "expected_counts": {
+          "Q2": 30.951939391370132,
+          "Q3": 7.552348321230852,
+          "Q4": 1.4957122873991258
+        },
+        "mass": 0.9999999999999981
+      },
+      "natural_q4_expected_if_24h_per_day_same_R3_rate": 22.380739247794327,
+      "note": "natural R3 rates taken from conversation; not executed with missing R3 runner. Distinct reward channels."
+    },
+    {
+      "days_after_gacha_unlock": 30,
+      "first_region_boss_clears_assumed": 2,
+      "paid_tickets_assumed": 0,
+      "total_tickets": 50,
+      "earnings_conditions": "all accrued tickets claimed before 7-day cap; no predicted clear times",
+      "gacha_expected": {
+        "draws": 50,
+        "expected_counts": {
+          "Q2": 38.69478878569084,
+          "Q3": 9.420785240690735,
+          "Q4": 1.884425973618861
+        },
+        "mass": 0.9999999999999973
+      },
+      "natural_q4_expected_if_24h_per_day_same_R3_rate": 22.380739247794327,
+      "note": "natural R3 rates taken from conversation; not executed with missing R3 runner. Distinct reward channels."
+    },
+    {
+      "days_after_gacha_unlock": 30,
+      "first_region_boss_clears_assumed": 5,
+      "paid_tickets_assumed": 0,
+      "total_tickets": 65,
+      "earnings_conditions": "all accrued tickets claimed before 7-day cap; no predicted clear times",
+      "gacha_expected": {
+        "draws": 65,
+        "expected_counts": {
+          "Q2": 50.254616418437855,
+          "Q3": 12.27788707861463,
+          "Q4": 2.467496502948478
+        },
+        "mass": 0.9999999999999962
+      },
+      "natural_q4_expected_if_24h_per_day_same_R3_rate": 22.380739247794327,
+      "note": "natural R3 rates taken from conversation; not executed with missing R3 runner. Distinct reward channels."
+    },
+    {
+      "days_after_gacha_unlock": 30,
+      "first_region_boss_clears_assumed": 5,
+      "paid_tickets_assumed": 10,
+      "total_tickets": 75,
+      "earnings_conditions": "all accrued tickets claimed before 7-day cap; no predicted clear times",
+      "gacha_expected": {
+        "draws": 75,
+        "expected_counts": {
+          "Q2": 57.95816313840557,
+          "Q3": 14.185626672427395,
+          "Q4": 2.8562101891682405
+        },
+        "mass": 0.9999999999999956
+      },
+      "natural_q4_expected_if_24h_per_day_same_R3_rate": 22.380739247794327,
+      "note": "natural R3 rates taken from conversation; not executed with missing R3 runner. Distinct reward channels."
+    },
+    {
+      "days_after_gacha_unlock": 30,
+      "first_region_boss_clears_assumed": 5,
+      "paid_tickets_assumed": 20,
+      "total_tickets": 85,
+      "earnings_conditions": "all accrued tickets claimed before 7-day cap; no predicted clear times",
+      "gacha_expected": {
+        "draws": 85,
+        "expected_counts": {
+          "Q2": 65.59439407020606,
+          "Q3": 16.060119433950636,
+          "Q4": 3.3454864958446517
+        },
+        "mass": 0.999999999999995
+      },
+      "natural_q4_expected_if_24h_per_day_same_R3_rate": 22.380739247794327,
+      "note": "natural R3 rates taken from conversation; not executed with missing R3 runner. Distinct reward channels."
+    },
+    {
+      "days_after_gacha_unlock": 30,
+      "first_region_boss_clears_assumed": 5,
+      "paid_tickets_assumed": 40,
+      "total_tickets": 105,
+      "earnings_conditions": "all accrued tickets claimed before 7-day cap; no predicted clear times",
+      "gacha_expected": {
+        "draws": 105,
+        "expected_counts": {
+          "Q2": 80.9707162062139,
+          "Q3": 19.853902471351642,
+          "Q4": 4.175381322435444
+        },
+        "mass": 0.9999999999999938
+      },
+      "natural_q4_expected_if_24h_per_day_same_R3_rate": 22.380739247794327,
+      "note": "natural R3 rates taken from conversation; not executed with missing R3 runner. Distinct reward channels."
+    },
+    {
+      "days_after_gacha_unlock": 90,
+      "first_region_boss_clears_assumed": 5,
+      "paid_tickets_assumed": 0,
+      "total_tickets": 125,
+      "earnings_conditions": "all accrued tickets claimed before 7-day cap; no predicted clear times",
+      "gacha_expected": {
+        "draws": 125,
+        "expected_counts": {
+          "Q2": 96.3246828642357,
+          "Q3": 23.64030338421538,
+          "Q4": 5.035013751548298
+        },
+        "mass": 0.9999999999999926
+      },
+      "natural_q4_expected_if_24h_per_day_same_R3_rate": 67.8089240348741,
+      "note": "natural R3 rates taken from conversation; not executed with missing R3 runner. Distinct reward channels."
+    }
+  ],
+  "price_sensitivity": [
+    {
+      "price_per_ticket_candidate": 100,
+      "ten_tickets": 1000,
+      "mean_cost_selected_top_all_paid_no_start_pity": 3521.4385630043325,
+      "max_cost_selected_top_all_paid_no_start_pity": 8000
+    },
+    {
+      "price_per_ticket_candidate": 150,
+      "ten_tickets": 1500,
+      "mean_cost_selected_top_all_paid_no_start_pity": 5282.157844506499,
+      "max_cost_selected_top_all_paid_no_start_pity": 12000
+    },
+    {
+      "price_per_ticket_candidate": 200,
+      "ten_tickets": 2000,
+      "mean_cost_selected_top_all_paid_no_start_pity": 7042.877126008665,
+      "max_cost_selected_top_all_paid_no_start_pity": 16000
+    }
+  ],
+  "living_scenarios": [
+    {
+      "region_boss_clears": 0,
+      "outfits_owned": 0,
+      "furniture_owned": 0,
+      "score": 0,
+      "additive_bp": 0
+    },
+    {
+      "region_boss_clears": 0,
+      "outfits_owned": 1,
+      "furniture_owned": 0,
+      "score": 20,
+      "additive_bp": 60
+    },
+    {
+      "region_boss_clears": 0,
+      "outfits_owned": 1,
+      "furniture_owned": 5,
+      "score": 30,
+      "additive_bp": 90
+    },
+    {
+      "region_boss_clears": 0,
+      "outfits_owned": 4,
+      "furniture_owned": 10,
+      "score": 100,
+      "additive_bp": 300
+    },
+    {
+      "region_boss_clears": 1,
+      "outfits_owned": 0,
+      "furniture_owned": 0,
+      "score": 20,
+      "additive_bp": 60
+    },
+    {
+      "region_boss_clears": 1,
+      "outfits_owned": 1,
+      "furniture_owned": 0,
+      "score": 40,
+      "additive_bp": 120
+    },
+    {
+      "region_boss_clears": 1,
+      "outfits_owned": 1,
+      "furniture_owned": 5,
+      "score": 50,
+      "additive_bp": 150
+    },
+    {
+      "region_boss_clears": 1,
+      "outfits_owned": 4,
+      "furniture_owned": 10,
+      "score": 100,
+      "additive_bp": 300
+    },
+    {
+      "region_boss_clears": 2,
+      "outfits_owned": 0,
+      "furniture_owned": 0,
+      "score": 40,
+      "additive_bp": 120
+    },
+    {
+      "region_boss_clears": 2,
+      "outfits_owned": 1,
+      "furniture_owned": 0,
+      "score": 60,
+      "additive_bp": 180
+    },
+    {
+      "region_boss_clears": 2,
+      "outfits_owned": 1,
+      "furniture_owned": 5,
+      "score": 70,
+      "additive_bp": 210
+    },
+    {
+      "region_boss_clears": 2,
+      "outfits_owned": 4,
+      "furniture_owned": 10,
+      "score": 100,
+      "additive_bp": 300
+    },
+    {
+      "region_boss_clears": 3,
+      "outfits_owned": 0,
+      "furniture_owned": 0,
+      "score": 60,
+      "additive_bp": 180
+    },
+    {
+      "region_boss_clears": 3,
+      "outfits_owned": 1,
+      "furniture_owned": 0,
+      "score": 80,
+      "additive_bp": 240
+    },
+    {
+      "region_boss_clears": 3,
+      "outfits_owned": 1,
+      "furniture_owned": 5,
+      "score": 90,
+      "additive_bp": 270
+    },
+    {
+      "region_boss_clears": 3,
+      "outfits_owned": 4,
+      "furniture_owned": 10,
+      "score": 100,
+      "additive_bp": 300
+    },
+    {
+      "region_boss_clears": 4,
+      "outfits_owned": 0,
+      "furniture_owned": 0,
+      "score": 80,
+      "additive_bp": 240
+    },
+    {
+      "region_boss_clears": 4,
+      "outfits_owned": 1,
+      "furniture_owned": 0,
+      "score": 100,
+      "additive_bp": 300
+    },
+    {
+      "region_boss_clears": 4,
+      "outfits_owned": 1,
+      "furniture_owned": 5,
+      "score": 100,
+      "additive_bp": 300
+    },
+    {
+      "region_boss_clears": 4,
+      "outfits_owned": 4,
+      "furniture_owned": 10,
+      "score": 100,
+      "additive_bp": 300
+    },
+    {
+      "region_boss_clears": 5,
+      "outfits_owned": 0,
+      "furniture_owned": 0,
+      "score": 100,
+      "additive_bp": 300
+    },
+    {
+      "region_boss_clears": 5,
+      "outfits_owned": 1,
+      "furniture_owned": 0,
+      "score": 100,
+      "additive_bp": 300
+    },
+    {
+      "region_boss_clears": 5,
+      "outfits_owned": 1,
+      "furniture_owned": 5,
+      "score": 100,
+      "additive_bp": 300
+    },
+    {
+      "region_boss_clears": 5,
+      "outfits_owned": 4,
+      "furniture_owned": 10,
+      "score": 100,
+      "additive_bp": 300
+    }
+  ],
+  "production_arithmetic": {
+    "outfit_context_cells": 88,
+    "weapon_templates": 14,
+    "look_weapon_pairs": 28,
+    "first_proof_cells": 44,
+    "not_images_or_hours": true
+  },
+  "memory_arithmetic": {
+    "formula": "width*height*4 bytes per RGBA8 decoded texture, excluding GPU copies/mips/metadata",
+    "one_512_rgba_mib": 1.0,
+    "120_512_rgba_mib": 120.0,
+    "seven_24frame_clips_per_outfit_mib": 168.0,
+    "four_active_outfits_naive_full_decode_mib": 672.0,
+    "not_device_observation": true
+  },
+  "product_price_sum_jpy_proposal": {
+    "four_outfits": 5420,
+    "ten_furniture_individuals": 3680
+  },
+  "limitations": [
+    "not human purchase demand",
+    "not R6 combat or 30/90 day game-clear simulation",
+    "mock receipts not cryptographic checks",
+    "not server concurrency/real crash persistence",
+    "not actual new art/device testing",
+    "not legal approval"
+  ]
+}

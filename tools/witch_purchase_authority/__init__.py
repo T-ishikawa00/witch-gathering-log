@@ -2,13 +2,13 @@
 from .authority import (
     AuthorityError, CandidateDrawEngine, DrawReceipt, DuplicateTransaction,
     IdempotencyCollision, InjectedFailure, InsufficientPaidTickets,
-    InvalidPurchase, MockVerifiedPurchase, ProductSpec, PurchaseAlreadyRefunded, PurchaseAuthority,
+    InvalidPurchase, MockNotificationDelivery, MockVerifiedPurchase, ProductSpec, PurchaseAlreadyRefunded, PurchaseAuthority,
     VerificationUnavailable,
 )
 
 __all__ = [
     "AuthorityError", "CandidateDrawEngine", "DrawReceipt", "DuplicateTransaction",
     "IdempotencyCollision", "InjectedFailure", "InsufficientPaidTickets",
-    "InvalidPurchase", "MockVerifiedPurchase", "ProductSpec", "PurchaseAlreadyRefunded", "PurchaseAuthority",
+    "InvalidPurchase", "MockNotificationDelivery", "MockVerifiedPurchase", "ProductSpec", "PurchaseAlreadyRefunded", "PurchaseAuthority",
     "VerificationUnavailable",
 ]

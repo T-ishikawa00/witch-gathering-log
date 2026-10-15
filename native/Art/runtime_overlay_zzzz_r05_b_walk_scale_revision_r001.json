@@ -1,0 +1,56 @@
+{
+  "status": "UNAPPROVED_DISPLAY_SCALE_CANDIDATE_OVERLAY",
+  "complete_animation": false,
+  "humanApproval": false,
+  "sourceEvidence": "R029 movement_audit_r005 CONTACT_2: root reports B_R05_B walk approximately 1.4x too large against idle/attack; candidate inverse correction 1/1.4 applied to prior display_scale 1.711103 gives 1.222, rounded down for first review to 1.22.",
+  "entries": {
+    "ACT_B_R05_B": {
+      "clips": {
+        "walk": {
+          "frames": [
+            "GeneratedCandidates/ACT_B_R05_B/deer_walk_candidate_r001/frames/walk_000.png",
+            "GeneratedCandidates/ACT_B_R05_B/deer_walk_candidate_r001/frames/walk_001.png",
+            "GeneratedCandidates/ACT_B_R05_B/deer_walk_candidate_r001/frames/walk_002.png",
+            "GeneratedCandidates/ACT_B_R05_B/deer_walk_candidate_r001/frames/walk_003.png",
+            "GeneratedCandidates/ACT_B_R05_B/deer_walk_candidate_r001/frames/walk_004.png",
+            "GeneratedCandidates/ACT_B_R05_B/deer_walk_candidate_r001/frames/walk_005.png",
+            "GeneratedCandidates/ACT_B_R05_B/deer_walk_candidate_r001/frames/walk_006.png",
+            "GeneratedCandidates/ACT_B_R05_B/deer_walk_candidate_r001/frames/walk_007.png",
+            "GeneratedCandidates/ACT_B_R05_B/deer_walk_candidate_r001/frames/walk_008.png"
+          ],
+          "frame_count": 9,
+          "fps": 8,
+          "duration_seconds": 1.125,
+          "loop": true,
+          "complete_animation": false,
+          "status": "UNAPPROVED_NINE_FRAME_QUADRUPED_GAIT_CANDIDATE_NOT_NATURAL_MOTION_COMPLETE",
+          "canvas_px": [
+            512,
+            704
+          ],
+          "anchor": [
+            256,
+            600
+          ],
+          "anchor_status": "VISUAL_ESTIMATE_UNAPPROVED",
+          "anchor_type": "candidate_ground_baseline_alpha16_registration",
+          "display_scale": 1.22,
+          "movement_semantics": "heavy quadruped walk/trot; generated phases suggest alternating fore/hind hoof contacts and swing, but native visual continuity and ground contact remain unverified"
+        }
+      },
+      "sequenceFrames": {
+        "walk": [
+          "GeneratedCandidates/ACT_B_R05_B/deer_walk_candidate_r001/frames/walk_000.png",
+          "GeneratedCandidates/ACT_B_R05_B/deer_walk_candidate_r001/frames/walk_001.png",
+          "GeneratedCandidates/ACT_B_R05_B/deer_walk_candidate_r001/frames/walk_002.png",
+          "GeneratedCandidates/ACT_B_R05_B/deer_walk_candidate_r001/frames/walk_003.png",
+          "GeneratedCandidates/ACT_B_R05_B/deer_walk_candidate_r001/frames/walk_004.png",
+          "GeneratedCandidates/ACT_B_R05_B/deer_walk_candidate_r001/frames/walk_005.png",
+          "GeneratedCandidates/ACT_B_R05_B/deer_walk_candidate_r001/frames/walk_006.png",
+          "GeneratedCandidates/ACT_B_R05_B/deer_walk_candidate_r001/frames/walk_007.png",
+          "GeneratedCandidates/ACT_B_R05_B/deer_walk_candidate_r001/frames/walk_008.png"
+        ]
+      }
+    }
+  }
+}

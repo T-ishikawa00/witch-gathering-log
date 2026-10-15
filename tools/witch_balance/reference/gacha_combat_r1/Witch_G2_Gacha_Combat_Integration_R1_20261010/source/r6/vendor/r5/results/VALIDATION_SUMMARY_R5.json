@@ -1,0 +1,24 @@
+{
+  "status": "REFERENCE_TESTS_PASS_WITH_OPEN_GAMEPLAY_FINDINGS",
+  "r5_unit_tests": 48,
+  "legacy_regressions": {
+    "R2": 55,
+    "R3": 61,
+    "R4": 53
+  },
+  "legal_enhancement_transitions_checked": 1122,
+  "main_comparison_cells": 37,
+  "main_battles": 7400,
+  "secondary_battles": 1200,
+  "development_battles_not_holdout": 2600,
+  "open_gameplay_findings": [
+    "F07: 2 of 200 paid enhancement comparisons turn victory into defeat because AI support thresholds change actions",
+    "HP and power jointly +10% remains sensitive",
+    "UI perception, R02-R05, evolved weapon combat and awakening, device and real DB not validated"
+  ],
+  "approved_for_production": false,
+  "mac_or_github_modified": false,
+  "prior_design_archives": 4,
+  "r4_frozen_vendor_files": 41,
+  "reproduction": "tools/test_r5.py; tools/run_holdout.py --output <new_dir> --max-new-cells 5 (repeat same directory until complete)"
+}

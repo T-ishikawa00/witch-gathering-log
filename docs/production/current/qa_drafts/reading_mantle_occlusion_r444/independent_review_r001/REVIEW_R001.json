@@ -1,0 +1,57 @@
+{
+  "blockingFindings": [],
+  "findings": [
+    {
+      "finding": "The patch owns one mantle mirror sprite inside the existing reading-hand SKCropNode, synchronizes only when the R097 node has the exact appearance and reading-pose metadata, and clears/hides the mirror when that selection/route is absent. It does not alter the source body, book, palm nodes, Core, saves, assets, or equipment rules.",
+      "severity": "none"
+    },
+    {
+      "finding": "The rebuild path resets the mirror reference alongside readingHands before removeAllChildren(), so a prior scene mirror is not retained. Initial attach creates the mirror then performs a sync; subsequent ActorBodyFrame.record invokes the callback registered in bindEquipmentFrame, and Root R002 correctly removes the redundant explicit post-record sync from that callback.",
+      "severity": "none"
+    }
+  ],
+  "limitations": [
+    "This source change only mirrors the existing mantle layer through the two palm masks; it does not establish visibility of the full seated torso mantle.",
+    "Visual acceptance of selected/reset comparisons and book/hand readability remains pending; this source review is not build or runtime approval."
+  ],
+  "pins": {
+    "R097Overlay": {
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/qa_source_20261014T145742/WitchApp/LunaMantleOverlayR097.swift",
+      "sha256": "0d44150d14b807452dbdf7cac3c2c712f638d5d6044e119b0ea65440b13bbeeb",
+      "sizeBytes": 8939
+    },
+    "R127Bookless": {
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/qa_source_20261014T145742/WitchApp/LunaMantleBooklessR127.swift",
+      "sha256": "972ed49a7cf3bd8e5082895e23419e27f865ff43db05e3ddc21b80271d075e7d",
+      "sizeBytes": 8498
+    },
+    "baseline": {
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/native/qa_source_20261014T145742/WitchApp/LivingScene.swift",
+      "sha256": "7e4305b6843606c492f7e68e9421f018ea41332c9a346159b99cde590048b1f1",
+      "sizeBytes": 169266
+    },
+    "candidate": {
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/reading_mantle_occlusion_r444/candidate_r001/LivingScene.swift",
+      "sha256": "4e05a7d2355c21f0abaf575dbed03b8251047ea0b7e469d8518e5a3450964d42",
+      "sizeBytes": 170831
+    },
+    "patch": {
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/reading_mantle_occlusion_r444/candidate_r001/PATCH_R001.diff",
+      "sha256": "4684150b6193314fc740b6692ee1d3f20af3e5ff55c07ba4c58dff7dc0939a70",
+      "sizeBytes": 6633
+    },
+    "rootIntegratedR002": {
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/reading_mantle_occlusion_r444/root_integrated_r002/LivingScene.after.swift",
+      "sha256": "3358f91ddd4133d097a03ab1a65c8e5eb079ca888e28b3f8fdff004336f225d2",
+      "sizeBytes": 170800
+    },
+    "rootPatchR002": {
+      "path": "/Users/PUBLIC_USER/.codex/worktrees/witch-03to05-r1/idle-loot-rpg/docs/production/current/qa_drafts/reading_mantle_occlusion_r444/root_integrated_r002/PATCH_R002.diff",
+      "sha256": "a29a8c7569425b91852e521c54c362db2884053501935e82ef292412b6efd067",
+      "sizeBytes": 5443
+    }
+  },
+  "reviewScope": "R001 candidate diff against pinned native/qa_source_20261014T145742 baseline; inspected R097/R127 helpers and Root R002 integration correction. No build, test, Simulator or live edit.",
+  "schema": "r444-independent-static-review-v1",
+  "status": "NO_STATIC_BLOCKER_FOUND_BOUNDED_SCOPE"
+}
