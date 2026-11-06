@@ -1002,3 +1002,10 @@ save.json.*
 
 !/native/WitchGameCore/fixtures/
 !/native/WitchGameCore/fixtures/r227_earned_save.json
+# Reassert credential-file names after source extension allow rules.
+credentials*.json
+service-account*.json
+service_account*.json
+*.keystore
+*.jks
+*.p8

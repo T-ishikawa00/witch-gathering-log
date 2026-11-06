@@ -31,3 +31,9 @@
 [今回のrun summary](evidence/VALIDATION.json)、[ソースreceipt](evidence/SOURCE_SNAPSHOT.json)、[画面出所](SCREENSHOTS.md)を参照。完全ログ・xcresult・個人用の実行パスはローカル最終報告から参照する。共有用に生ログ・実セーブ・端末IDを転載しない。
 
 コンパイラの既存警告は残っている。警告0件・全端末合格とはしていない。2026-10-18やW008/R020の過去試験と今回の件数は合算しない。アプリはGit＋固定資材packによる再現であり、Gitのみの完全なasset再生成ではない。
+
+## GitHub独立cloneからの再試験
+
+整理ブランチのsource checkpoint `a497d8082c8d078c193b6b9d47c695e1702cfb49`をHTTPSで独立cloneした。object alternatesなし。1,195ファイルのtreeと、変更389ファイルのSHA-256が一致。Coreは418成功・17skip・0失敗、専用packを明示したSimulator build成功、READMEのUI wrapperによる別の新規Simulatorで7成功・0失敗。ローカルrunと合算していない。clone作業treeも試験後cleanだった。
+
+[独立読戻しreceipt](evidence/REMOTE_READBACK.json)に対象SHA、tree、件数、packとログhashを保存した。この後のreceipt・素材所在訂正・ignore／文書guard更新はゲーム入力を変更しない。最終GitHub treeはpush後に再取得して照合する。

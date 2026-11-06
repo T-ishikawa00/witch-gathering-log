@@ -1,0 +1,59 @@
+{
+  "sha": "a497d8082c8d078c193b6b9d47c695e1702cfb49",
+  "tree": "db58482c2dea87150f955a9c5cdfe12e7763b712",
+  "tree_files": 1195,
+  "tree_bytes": 134729022,
+  "new_changed_paths_verified_sha256": 389,
+  "git_alternates_present": false,
+  "clone_source": "HTTPS GitHub remote; no local object alternates",
+  "source_origin": "selected snapshot not original110commit history",
+  "private_repository": true,
+  "observed_date_jst": "2026-11-07",
+  "verification": "INDEPENDENT_GITHUB_HTTPS_CLONE_PASS",
+  "source_sha256_match": 261,
+  "core": {
+    "total": 435,
+    "passed": 418,
+    "skipped": 17,
+    "failed": 0
+  },
+  "simulator_build": "UNSIGNED_RELEASE_BUILD_FOR_TESTING_PASS",
+  "ui": {
+    "total": 7,
+    "passed": 7,
+    "failed": 0,
+    "skipped": 0,
+    "new_dedicated_simulator": true,
+    "shutdown_after_run": true
+  },
+  "resource_pack": {
+    "source": "OWNER_RETAINED_W008_PACK_NOT_IN_GIT",
+    "files": 1923,
+    "bytes": 365929993,
+    "manifest_sha256": "72352024b2b2f765c21a18d65b9d56b8153dd0d01689821af6afda9ccf927df9"
+  },
+  "log_receipts": [
+    {
+      "run_relative_path": "remote-core-r1/core-test.log",
+      "sha256": "dee0ffa2fa1422acfcc346afe497461f0b431eba2e31bd4aecab195484c04555",
+      "uploaded": false
+    },
+    {
+      "run_relative_path": "remote-simulator-build-r1/build.log",
+      "sha256": "8dc0cca43c0eb85cdcafc661d1ae224f8780595b6dcd2b4afbd0e783d08a50e4",
+      "uploaded": false
+    },
+    {
+      "run_relative_path": "remote-ui-smoke-r1/ui-smoke.log",
+      "sha256": "839d8e6bc83092b0d85a3c5b61f64dc42003bfc363061d1c5dfc18ccc93df4c9",
+      "uploaded": false
+    }
+  ],
+  "scope_limits": [
+    "Not Git-only app reproduction",
+    "No physical device or signing",
+    "No production IAP or release",
+    "No blanket asset rights approval",
+    "Final receipt/ignore/document guard changes do not change W008 game inputs"
+  ]
+}

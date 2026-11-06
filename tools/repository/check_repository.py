@@ -43,6 +43,16 @@ def main():
             errors.append('Important file is ignored: ' + relative)
         elif result.returncode != 1:
             errors.append('Ignore check failed: ' + relative)
+    for relative, ignored in [
+        ('native/WitchApp/FutureSource.swift', False),
+        ('native/WitchGameCore/Sources/WitchGameCore/credentials.json', True),
+        ('docs/project/service-account-example.json', True),
+        ('native/WitchGameCore/save.json', True),
+        ('native/WitchApp/SigningKey.p8', True),
+    ]:
+        result = subprocess.run(['git', 'check-ignore', '--no-index', '-q', '--', relative], cwd=ROOT)
+        if result.returncode not in (0, 1) or (result.returncode == 0) != ignored:
+            errors.append('Save-policy probe mismatch: ' + relative)
     print(json.dumps({'source_snapshot_files': len(snapshot['files']), 'w008_working_inputs': len(working),
                       'current_document_links': links, 'save_coverage_paths': len(candidates), 'errors': errors}, indent=2))
     raise SystemExit(1 if errors else 0)
