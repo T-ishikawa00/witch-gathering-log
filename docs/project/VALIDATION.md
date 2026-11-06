@@ -34,6 +34,8 @@
 
 ## GitHub独立cloneからの再試験
 
-整理ブランチのsource checkpoint `a497d8082c8d078c193b6b9d47c695e1702cfb49`をHTTPSで独立cloneした。object alternatesなし。1,195ファイルのtreeと、変更389ファイルのSHA-256が一致。Coreは418成功・17skip・0失敗、専用packを明示したSimulator build成功、READMEのUI wrapperによる別の新規Simulatorで7成功・0失敗。ローカルrunと合算していない。clone作業treeも試験後cleanだった。
+整理ブランチのsource checkpoint `a497d8082c8d078c193b6b9d47c695e1702cfb49`をHTTPSで独立cloneした。object alternatesなし。1,195ファイルのtreeと、変更389ファイルのSHA-256が一致。Coreは418成功・17skip・0失敗、専用packを明示したSimulator build成功、READMEのUI wrapperによる別の新規Simulatorで7成功・0失敗。ローカルrunと合算していない。最終readbackで旧CSV4件の属性による正規化差分を検出した。下記の属性修正で対応する。
 
 [独立読戻しreceipt](evidence/REMOTE_READBACK.json)に対象SHA、tree、件数、packとログhashを保存した。この後のreceipt・素材所在訂正・ignore／文書guard更新はゲーム入力を変更しない。最終GitHub treeはpush後に再取得して照合する。
+
+最終readbackで、包括的なCSVのtext属性が既存のCRLF原資料4件に正規化を要求すると判明した。作業fileの生バイトは元blobと完全一致しており、試験が資料を書き換えたものではない。旧CSVは`-text`でbyte保持、新規`docs/project/*.csv`だけLF指定へ限定した。CSVデータ自体やゲームソースは変更せず、修正commitのfresh cloneでclean状態と全treeを再検証する。初回の属性検査では見逃した問題として記録する。

@@ -55,5 +55,12 @@
     "No production IAP or release",
     "No blanket asset rights approval",
     "Final receipt/ignore/document guard changes do not change W008 game inputs"
-  ]
+  ],
+  "post_test_checkout_finding": {
+    "affected_historical_csv": 4,
+    "raw_worktree_matches_committed_blob": true,
+    "diagnosis": "New text clean filter requests CRLF normalization on existing blobs",
+    "fix": "Preserve historical CSV bytes; LF applies only to new docs/project CSV",
+    "final_fresh_clone_verification": "Recorded in local final report after this fix commit"
+  }
 }
