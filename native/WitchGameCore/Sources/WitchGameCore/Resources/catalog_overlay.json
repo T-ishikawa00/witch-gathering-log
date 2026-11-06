@@ -1,0 +1,2370 @@
+{
+  "version": "world-design-r1 + UNAPPROVED_TEST_OVERLAY 20261010",
+  "authority": "UNAPPROVED_TEST_OVERLAY",
+  "source": "world_catalog R1 IDs/names/relationships, plus 4 proposed cat gear IDs from Growth R2; numerical combat stats/rarity are UNAPPROVED_TEST_OVERLAY.",
+  "regions": [
+    {
+      "id": "R01",
+      "name": "木漏れ日の森",
+      "enemyIDs": [
+        "E_R01_01",
+        "E_R01_02",
+        "E_R01_03",
+        "E_R01_04",
+        "B_R01_A",
+        "B_R01_B"
+      ],
+      "gatherMaterialIDs": [
+        "M_R01_G1",
+        "M_R01_G2",
+        "M_R01_G3",
+        "M_R01_G4"
+      ],
+      "xpPerWork": 12,
+      "dustPerWork": 1,
+      "workSeconds": 300
+    },
+    {
+      "id": "R02",
+      "name": "眠り霧の湿原",
+      "enemyIDs": [
+        "E_R02_01",
+        "E_R02_02",
+        "E_R02_03",
+        "E_R02_04",
+        "B_R02_A",
+        "B_R02_B"
+      ],
+      "gatherMaterialIDs": [
+        "M_R02_G1",
+        "M_R02_G2",
+        "M_R02_G3",
+        "M_R02_G4"
+      ],
+      "xpPerWork": 30,
+      "dustPerWork": 3,
+      "workSeconds": 300
+    },
+    {
+      "id": "R03",
+      "name": "こだまの鉱洞",
+      "enemyIDs": [
+        "E_R03_01",
+        "E_R03_02",
+        "E_R03_03",
+        "E_R03_04",
+        "B_R03_A",
+        "B_R03_B"
+      ],
+      "gatherMaterialIDs": [
+        "M_R03_G1",
+        "M_R03_G2",
+        "M_R03_G3",
+        "M_R03_G4"
+      ],
+      "xpPerWork": 54,
+      "dustPerWork": 5,
+      "workSeconds": 300
+    },
+    {
+      "id": "R04",
+      "name": "白霜の山嶺",
+      "enemyIDs": [
+        "E_R04_01",
+        "E_R04_02",
+        "E_R04_03",
+        "E_R04_04",
+        "B_R04_A",
+        "B_R04_B"
+      ],
+      "gatherMaterialIDs": [
+        "M_R04_G1",
+        "M_R04_G2",
+        "M_R04_G3",
+        "M_R04_G4"
+      ],
+      "xpPerWork": 81,
+      "dustPerWork": 8,
+      "workSeconds": 300
+    },
+    {
+      "id": "R05",
+      "name": "月隠れの古庭",
+      "enemyIDs": [
+        "E_R05_01",
+        "E_R05_02",
+        "E_R05_03",
+        "E_R05_04",
+        "B_R05_A",
+        "B_R05_B"
+      ],
+      "gatherMaterialIDs": [
+        "M_R05_G1",
+        "M_R05_G2",
+        "M_R05_G3",
+        "M_R05_G4"
+      ],
+      "xpPerWork": 108,
+      "dustPerWork": 12,
+      "workSeconds": 300
+    }
+  ],
+  "enemies": [
+    {
+      "id": "E_R01_01",
+      "name": "苔角いのしし",
+      "regionID": "R01",
+      "hp": 288,
+      "attack": 12,
+      "defense": 1,
+      "boss": false,
+      "dropMaterialID": "M_R01_E1",
+      "prerequisiteEncounterID": null,
+      "actionPattern": "heavy"
+    },
+    {
+      "id": "E_R01_02",
+      "name": "糸灯ぐも",
+      "regionID": "R01",
+      "hp": 288,
+      "attack": 12,
+      "defense": 1,
+      "boss": false,
+      "dropMaterialID": "M_R01_E2",
+      "prerequisiteEncounterID": null,
+      "actionPattern": "slow"
+    },
+    {
+      "id": "E_R01_03",
+      "name": "葉刃むし",
+      "regionID": "R01",
+      "hp": 288,
+      "attack": 12,
+      "defense": 1,
+      "boss": false,
+      "dropMaterialID": "M_R01_E3",
+      "prerequisiteEncounterID": null,
+      "actionPattern": "multiHitRest"
+    },
+    {
+      "id": "E_R01_04",
+      "name": "樹脂ころがし",
+      "regionID": "R01",
+      "hp": 288,
+      "attack": 12,
+      "defense": 1,
+      "boss": false,
+      "dropMaterialID": "M_R01_E4",
+      "prerequisiteEncounterID": null,
+      "actionPattern": "armor"
+    },
+    {
+      "id": "B_R01_A",
+      "name": "根絡みの大猪",
+      "regionID": "R01",
+      "hp": 864,
+      "attack": 12,
+      "defense": 1,
+      "boss": false,
+      "dropMaterialID": "M_R01_BA",
+      "prerequisiteEncounterID": null,
+      "actionPattern": "rootChargeCycle"
+    },
+    {
+      "id": "B_R01_B",
+      "name": "苔冠の古樹",
+      "regionID": "R01",
+      "hp": 690,
+      "attack": 20,
+      "defense": 4,
+      "boss": true,
+      "dropMaterialID": "M_R01_BB",
+      "prerequisiteEncounterID": "B_R01_A",
+      "actionPattern": "rootBranchCycle"
+    },
+    {
+      "id": "E_R02_01",
+      "name": "胞子ふくろ",
+      "regionID": "R02",
+      "hp": 348,
+      "attack": 16,
+      "defense": 2,
+      "boss": false,
+      "dropMaterialID": "M_R02_E1",
+      "prerequisiteEncounterID": null,
+      "actionPattern": "drowse"
+    },
+    {
+      "id": "E_R02_02",
+      "name": "霧背の沼蜥蜴",
+      "regionID": "R02",
+      "hp": 348,
+      "attack": 16,
+      "defense": 2,
+      "boss": false,
+      "dropMaterialID": "M_R02_E2",
+      "prerequisiteEncounterID": null,
+      "actionPattern": "armor"
+    },
+    {
+      "id": "E_R02_03",
+      "name": "水鏡くらげ",
+      "regionID": "R02",
+      "hp": 348,
+      "attack": 16,
+      "defense": 2,
+      "boss": false,
+      "dropMaterialID": "M_R02_E3",
+      "prerequisiteEncounterID": null,
+      "actionPattern": "reflect"
+    },
+    {
+      "id": "E_R02_04",
+      "name": "月灯蛾",
+      "regionID": "R02",
+      "hp": 348,
+      "attack": 16,
+      "defense": 2,
+      "boss": false,
+      "dropMaterialID": "M_R02_E4",
+      "prerequisiteEncounterID": null,
+      "actionPattern": "magicSupport"
+    },
+    {
+      "id": "B_R02_A",
+      "name": "夢茸の歩き主",
+      "regionID": "R02",
+      "hp": 1044,
+      "attack": 16,
+      "defense": 2,
+      "boss": false,
+      "dropMaterialID": "M_R02_BA",
+      "prerequisiteEncounterID": "B_R01_B",
+      "actionPattern": "sporeRest"
+    },
+    {
+      "id": "B_R02_B",
+      "name": "水鏡の大蜥蜴",
+      "regionID": "R02",
+      "hp": 840,
+      "attack": 24,
+      "defense": 5,
+      "boss": true,
+      "dropMaterialID": "M_R02_BB",
+      "prerequisiteEncounterID": "B_R02_A",
+      "actionPattern": "mirrorCycle"
+    },
+    {
+      "id": "E_R03_01",
+      "name": "銅殻やどかり",
+      "regionID": "R03",
+      "hp": 408,
+      "attack": 20,
+      "defense": 3,
+      "boss": false,
+      "dropMaterialID": "M_R03_E1",
+      "prerequisiteEncounterID": null,
+      "actionPattern": "armor"
+    },
+    {
+      "id": "E_R03_02",
+      "name": "晶鳴こうもり",
+      "regionID": "R03",
+      "hp": 408,
+      "attack": 20,
+      "defense": 3,
+      "boss": false,
+      "dropMaterialID": "M_R03_E2",
+      "prerequisiteEncounterID": null,
+      "actionPattern": "interrupt"
+    },
+    {
+      "id": "E_R03_03",
+      "name": "坑道の削り偶",
+      "regionID": "R03",
+      "hp": 408,
+      "attack": 20,
+      "defense": 3,
+      "boss": false,
+      "dropMaterialID": "M_R03_E3",
+      "prerequisiteEncounterID": null,
+      "actionPattern": "multiHit"
+    },
+    {
+      "id": "E_R03_04",
+      "name": "磁紋とかげ",
+      "regionID": "R03",
+      "hp": 408,
+      "attack": 20,
+      "defense": 3,
+      "boss": false,
+      "dropMaterialID": "M_R03_E4",
+      "prerequisiteEncounterID": null,
+      "actionPattern": "heavy"
+    },
+    {
+      "id": "B_R03_A",
+      "name": "晶洞の連槌兵",
+      "regionID": "R03",
+      "hp": 1224,
+      "attack": 20,
+      "defense": 3,
+      "boss": false,
+      "dropMaterialID": "M_R03_BA",
+      "prerequisiteEncounterID": "B_R02_B",
+      "actionPattern": "hammerCombo"
+    },
+    {
+      "id": "B_R03_B",
+      "name": "炉守りの鉱巨人",
+      "regionID": "R03",
+      "hp": 990,
+      "attack": 28,
+      "defense": 6,
+      "boss": true,
+      "dropMaterialID": "M_R03_BB",
+      "prerequisiteEncounterID": "B_R03_A",
+      "actionPattern": "heatCycle"
+    },
+    {
+      "id": "E_R04_01",
+      "name": "霜毛おおかみ",
+      "regionID": "R04",
+      "hp": 468,
+      "attack": 24,
+      "defense": 4,
+      "boss": false,
+      "dropMaterialID": "M_R04_E1",
+      "prerequisiteEncounterID": null,
+      "actionPattern": "allyFollowup"
+    },
+    {
+      "id": "E_R04_02",
+      "name": "氷羽ふくろう",
+      "regionID": "R04",
+      "hp": 468,
+      "attack": 24,
+      "defense": 4,
+      "boss": false,
+      "dropMaterialID": "M_R04_E2",
+      "prerequisiteEncounterID": null,
+      "actionPattern": "castingSlow"
+    },
+    {
+      "id": "E_R04_03",
+      "name": "雪甲ころがし",
+      "regionID": "R04",
+      "hp": 468,
+      "attack": 24,
+      "defense": 4,
+      "boss": false,
+      "dropMaterialID": "M_R04_E3",
+      "prerequisiteEncounterID": null,
+      "actionPattern": "shellHeavy"
+    },
+    {
+      "id": "E_R04_04",
+      "name": "霜晶の削り偶",
+      "regionID": "R04",
+      "hp": 468,
+      "attack": 24,
+      "defense": 4,
+      "boss": false,
+      "dropMaterialID": "M_R04_E4",
+      "prerequisiteEncounterID": null,
+      "actionPattern": "alternating"
+    },
+    {
+      "id": "B_R04_A",
+      "name": "稜線の白角獣",
+      "regionID": "R04",
+      "hp": 1404,
+      "attack": 24,
+      "defense": 4,
+      "boss": false,
+      "dropMaterialID": "M_R04_BA",
+      "prerequisiteEncounterID": "B_R03_B",
+      "actionPattern": "cliffCharge"
+    },
+    {
+      "id": "B_R04_B",
+      "name": "月氷の山竜",
+      "regionID": "R04",
+      "hp": 1140,
+      "attack": 32,
+      "defense": 7,
+      "boss": true,
+      "dropMaterialID": "M_R04_BB",
+      "prerequisiteEncounterID": "B_R04_A",
+      "actionPattern": "iceBreathCycle"
+    },
+    {
+      "id": "E_R05_01",
+      "name": "蔓綴じの書霊",
+      "regionID": "R05",
+      "hp": 528,
+      "attack": 28,
+      "defense": 5,
+      "boss": false,
+      "dropMaterialID": "M_R05_E1",
+      "prerequisiteEncounterID": null,
+      "actionPattern": "supportDisrupt"
+    },
+    {
+      "id": "E_R05_02",
+      "name": "月面の庭衛",
+      "regionID": "R05",
+      "hp": 528,
+      "attack": 28,
+      "defense": 5,
+      "boss": false,
+      "dropMaterialID": "M_R05_E2",
+      "prerequisiteEncounterID": null,
+      "actionPattern": "guardAlternating"
+    },
+    {
+      "id": "E_R05_03",
+      "name": "灯瓶の使い魔",
+      "regionID": "R05",
+      "hp": 528,
+      "attack": 28,
+      "defense": 5,
+      "boss": false,
+      "dropMaterialID": "M_R05_E3",
+      "prerequisiteEncounterID": null,
+      "actionPattern": "lightTransfer"
+    },
+    {
+      "id": "E_R05_04",
+      "name": "夜咲きの花獣",
+      "regionID": "R05",
+      "hp": 528,
+      "attack": 28,
+      "defense": 5,
+      "boss": false,
+      "dropMaterialID": "M_R05_E4",
+      "prerequisiteEncounterID": null,
+      "actionPattern": "regenPoison"
+    },
+    {
+      "id": "B_R05_A",
+      "name": "月環の剪定機",
+      "regionID": "R05",
+      "hp": 1584,
+      "attack": 28,
+      "defense": 5,
+      "boss": false,
+      "dropMaterialID": "M_R05_BA",
+      "prerequisiteEncounterID": "B_R04_B",
+      "actionPattern": "pruningCycle"
+    },
+    {
+      "id": "B_R05_B",
+      "name": "庭守りの月鹿",
+      "regionID": "R05",
+      "hp": 1290,
+      "attack": 36,
+      "defense": 8,
+      "boss": true,
+      "dropMaterialID": "M_R05_BB",
+      "prerequisiteEncounterID": "B_R05_A",
+      "actionPattern": "seedGuardUltimate"
+    }
+  ],
+  "gear": [
+    {
+      "id": "EQ_W_01",
+      "name": "若枝の採集杖",
+      "rarity": "C",
+      "slot": "weapon",
+      "effects": [],
+      "actorIDs": [
+        "C_WITCH"
+      ]
+    },
+    {
+      "id": "EQ_W_P1",
+      "name": "霧花の毒杖",
+      "rarity": "C",
+      "slot": "weapon",
+      "effects": [
+        "POISON_STACK",
+        "POISON_STACK_CAP_2"
+      ],
+      "actorIDs": [
+        "C_WITCH"
+      ]
+    },
+    {
+      "id": "EQ_W_P2",
+      "name": "夢庭の呪杖",
+      "rarity": "C",
+      "slot": "weapon",
+      "effects": [
+        "POISON_STACK",
+        "POISON_SHATTER",
+        "POISON_STACK_CAP_2",
+        "POISON_BURST_25_AT_5"
+      ],
+      "actorIDs": [
+        "C_WITCH"
+      ]
+    },
+    {
+      "id": "EQ_W_G1",
+      "name": "根守りの結界杖",
+      "rarity": "C",
+      "slot": "weapon",
+      "effects": [
+        "BARRIER_WARD",
+        "WARD_REPLACES_SEED"
+      ],
+      "actorIDs": [
+        "C_WITCH"
+      ]
+    },
+    {
+      "id": "EQ_W_G2",
+      "name": "月環の結界杖",
+      "rarity": "C",
+      "slot": "weapon",
+      "effects": [
+        "BARRIER_WARD",
+        "BARRIER_REFLECT",
+        "WARD_REPLACES_SEED"
+      ],
+      "actorIDs": [
+        "C_WITCH"
+      ]
+    },
+    {
+      "id": "EQ_A_01",
+      "name": "露灯の手帳",
+      "rarity": "C",
+      "slot": "weapon",
+      "effects": [],
+      "actorIDs": [
+        "C_APPRENTICE"
+      ]
+    },
+    {
+      "id": "EQ_A_02",
+      "name": "水鏡の祈書",
+      "rarity": "C",
+      "slot": "weapon",
+      "effects": [
+        "HEAL_TO_BARRIER"
+      ],
+      "actorIDs": [
+        "C_APPRENTICE"
+      ]
+    },
+    {
+      "id": "EQ_A_03",
+      "name": "月綴じの大典",
+      "rarity": "C",
+      "slot": "weapon",
+      "effects": [
+        "HEAL_TO_BARRIER",
+        "HEAL_LINK",
+        "ECHO_BONUS_2000BP"
+      ],
+      "actorIDs": [
+        "C_APPRENTICE"
+      ]
+    },
+    {
+      "id": "EQ_S_01",
+      "name": "山歩きの木槌",
+      "rarity": "C",
+      "slot": "weapon",
+      "effects": [],
+      "actorIDs": [
+        "C_SMITH"
+      ],
+      "guardChanceBonusBP": 500
+    },
+    {
+      "id": "EQ_S_02",
+      "name": "響炉の鍛鎚",
+      "rarity": "C",
+      "slot": "weapon",
+      "effects": [
+        "SMITH_PRESSURE"
+      ],
+      "actorIDs": [
+        "C_SMITH"
+      ],
+      "guardChanceBonusBP": 500
+    },
+    {
+      "id": "EQ_S_03",
+      "name": "月銀の護鍛鎚",
+      "rarity": "C",
+      "slot": "weapon",
+      "effects": [
+        "SMITH_PRESSURE",
+        "SMITH_COVER_BARRIER"
+      ],
+      "actorIDs": [
+        "C_SMITH"
+      ],
+      "guardChanceBonusBP": 500
+    },
+    {
+      "id": "EQ_F_01",
+      "name": "灯爪の触媒",
+      "rarity": "C",
+      "slot": "weapon",
+      "effects": [],
+      "actorIDs": [
+        "C_FAMILIAR"
+      ]
+    },
+    {
+      "id": "EQ_F_02",
+      "name": "霧影の爪環",
+      "rarity": "C",
+      "slot": "weapon",
+      "effects": [
+        "FAMILIAR_CHASE",
+        "FAMILIAR_MARK_10S",
+        "FAMILIAR_DASH_BONUS_6000BP"
+      ],
+      "actorIDs": [
+        "C_FAMILIAR"
+      ]
+    },
+    {
+      "id": "EQ_F_03",
+      "name": "夜渡りの爪環",
+      "rarity": "C",
+      "slot": "weapon",
+      "effects": [
+        "FAMILIAR_CHASE",
+        "FAMILIAR_MARK_10S",
+        "FAMILIAR_DASH_BONUS_6000BP",
+        "FAMILIAR_CHASE_ICD_1500MS"
+      ],
+      "actorIDs": [
+        "C_FAMILIAR"
+      ]
+    },
+    {
+      "id": "EQ_BODY_01",
+      "name": "灯糸の採集衣",
+      "rarity": "C",
+      "slot": "body",
+      "effects": [],
+      "actorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ]
+    },
+    {
+      "id": "EQ_BODY_02",
+      "name": "湿霧の外套",
+      "rarity": "C",
+      "slot": "body",
+      "effects": [],
+      "actorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ]
+    },
+    {
+      "id": "EQ_BODY_03",
+      "name": "霜守りの外套",
+      "rarity": "C",
+      "slot": "body",
+      "effects": [],
+      "actorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ]
+    },
+    {
+      "id": "EQ_HAND_01",
+      "name": "灯糸の作業手袋",
+      "rarity": "C",
+      "slot": "hands",
+      "effects": [],
+      "actorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ]
+    },
+    {
+      "id": "EQ_HAND_02",
+      "name": "雲母の術籠手",
+      "rarity": "C",
+      "slot": "hands",
+      "effects": [],
+      "actorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ]
+    },
+    {
+      "id": "EQ_HAND_03",
+      "name": "月銀の術籠手",
+      "rarity": "C",
+      "slot": "hands",
+      "effects": [],
+      "actorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ]
+    },
+    {
+      "id": "EQ_FEET_01",
+      "name": "根道のブーツ",
+      "rarity": "C",
+      "slot": "feet",
+      "effects": [],
+      "actorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ]
+    },
+    {
+      "id": "EQ_FEET_02",
+      "name": "磁紋の踏靴",
+      "rarity": "C",
+      "slot": "feet",
+      "effects": [],
+      "actorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ]
+    },
+    {
+      "id": "EQ_FEET_03",
+      "name": "白角の踏靴",
+      "rarity": "C",
+      "slot": "feet",
+      "effects": [],
+      "actorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ]
+    },
+    {
+      "id": "EQ_AMU_01",
+      "name": "露苔のお守り",
+      "rarity": "C",
+      "slot": "amulet",
+      "effects": [],
+      "actorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH",
+        "C_FAMILIAR"
+      ]
+    },
+    {
+      "id": "EQ_AMU_02",
+      "name": "霧月の硝子符",
+      "rarity": "C",
+      "slot": "amulet",
+      "effects": [],
+      "actorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH",
+        "C_FAMILIAR"
+      ]
+    },
+    {
+      "id": "EQ_AMU_03",
+      "name": "月庭の種守り",
+      "rarity": "C",
+      "slot": "amulet",
+      "effects": [],
+      "actorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH",
+        "C_FAMILIAR"
+      ]
+    },
+    {
+      "id": "EQ_RING_01",
+      "name": "葉結びの指環",
+      "rarity": "C",
+      "slot": "ring",
+      "effects": [],
+      "actorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ]
+    },
+    {
+      "id": "EQ_RING_02",
+      "name": "灰銀の指環",
+      "rarity": "C",
+      "slot": "ring",
+      "effects": [],
+      "actorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ]
+    },
+    {
+      "id": "EQ_RING_03",
+      "name": "冬灯の指環",
+      "rarity": "C",
+      "slot": "ring",
+      "effects": [],
+      "actorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ]
+    },
+    {
+      "id": "EQ_F_BODY_01",
+      "name": "使い魔の胴具",
+      "rarity": "C",
+      "slot": "body",
+      "effects": [
+        "FAMILIAR_CHASE"
+      ],
+      "actorIDs": [
+        "C_FAMILIAR"
+      ]
+    },
+    {
+      "id": "EQ_F_HAND_01",
+      "name": "使い魔の手袋",
+      "rarity": "C",
+      "slot": "hand",
+      "effects": [
+        "FAMILIAR_CHASE"
+      ],
+      "actorIDs": [
+        "C_FAMILIAR"
+      ]
+    },
+    {
+      "id": "EQ_F_FEET_01",
+      "name": "使い魔の靴",
+      "rarity": "C",
+      "slot": "feet",
+      "effects": [
+        "FAMILIAR_CHASE"
+      ],
+      "actorIDs": [
+        "C_FAMILIAR"
+      ]
+    },
+    {
+      "id": "EQ_F_RING_01",
+      "name": "使い魔の指輪",
+      "rarity": "C",
+      "slot": "ring",
+      "effects": [
+        "FAMILIAR_CHASE"
+      ],
+      "actorIDs": [
+        "C_FAMILIAR"
+      ]
+    }
+  ],
+  "research": [
+    {
+      "id": "RS_THEORY_1",
+      "name": "研究課題 1",
+      "cost": {},
+      "effectID": "RESEARCH_R3_CANDIDATE_1"
+    },
+    {
+      "id": "RS_THEORY_2",
+      "name": "研究課題 2",
+      "cost": {
+        "M_R01_G2": 10,
+        "M_R01_G4": 10
+      },
+      "effectID": "RESEARCH_R3_CANDIDATE_2"
+    },
+    {
+      "id": "RS_THEORY_3",
+      "name": "研究課題 3",
+      "cost": {
+        "M_R02_G2": 12,
+        "M_R02_G3": 12
+      },
+      "effectID": "RESEARCH_R3_CANDIDATE_3"
+    },
+    {
+      "id": "RS_THEORY_4",
+      "name": "研究課題 4",
+      "cost": {
+        "M_R03_G1": 14,
+        "M_R03_G4": 14
+      },
+      "effectID": "RESEARCH_R3_CANDIDATE_4"
+    },
+    {
+      "id": "RS_THEORY_5",
+      "name": "研究課題 5",
+      "cost": {
+        "M_R04_G1": 16,
+        "M_R04_G2": 16
+      },
+      "effectID": "RESEARCH_R3_CANDIDATE_5"
+    }
+  ],
+  "materialIDs": [
+    "M_R01_BA",
+    "M_R01_BB",
+    "M_R01_E1",
+    "M_R01_E2",
+    "M_R01_E3",
+    "M_R01_E4",
+    "M_R01_G1",
+    "M_R01_G2",
+    "M_R01_G3",
+    "M_R01_G4",
+    "M_R02_BA",
+    "M_R02_BB",
+    "M_R02_E1",
+    "M_R02_E2",
+    "M_R02_E3",
+    "M_R02_E4",
+    "M_R02_G1",
+    "M_R02_G2",
+    "M_R02_G3",
+    "M_R02_G4",
+    "M_R03_BA",
+    "M_R03_BB",
+    "M_R03_E1",
+    "M_R03_E2",
+    "M_R03_E3",
+    "M_R03_E4",
+    "M_R03_G1",
+    "M_R03_G2",
+    "M_R03_G3",
+    "M_R03_G4",
+    "M_R04_BA",
+    "M_R04_BB",
+    "M_R04_E1",
+    "M_R04_E2",
+    "M_R04_E3",
+    "M_R04_E4",
+    "M_R04_G1",
+    "M_R04_G2",
+    "M_R04_G3",
+    "M_R04_G4",
+    "M_R05_BA",
+    "M_R05_BB",
+    "M_R05_E1",
+    "M_R05_E2",
+    "M_R05_E3",
+    "M_R05_E4",
+    "M_R05_G1",
+    "M_R05_G2",
+    "M_R05_G3",
+    "M_R05_G4"
+  ],
+  "materialAvailabilityGates": {
+    "M_R01_G1": "G_START",
+    "M_R01_G2": "G_START",
+    "M_R01_G3": "G_R01_A",
+    "M_R01_G4": "G_R01_A",
+    "M_R02_G1": "G_R01_B",
+    "M_R02_G2": "G_R01_B",
+    "M_R02_G3": "G_R02_A",
+    "M_R02_G4": "G_R02_A",
+    "M_R03_G1": "G_R02_B",
+    "M_R03_G2": "G_R02_B",
+    "M_R03_G3": "G_R03_A",
+    "M_R03_G4": "G_R03_A",
+    "M_R04_G1": "G_R03_B",
+    "M_R04_G2": "G_R03_B",
+    "M_R04_G3": "G_R04_A",
+    "M_R04_G4": "G_R04_A",
+    "M_R05_G1": "G_R04_B",
+    "M_R05_G2": "G_R04_B",
+    "M_R05_G3": "G_R05_A",
+    "M_R05_G4": "G_R05_A"
+  },
+  "actors": [
+    "C_WITCH",
+    "C_APPRENTICE",
+    "C_SMITH",
+    "C_FAMILIAR"
+  ],
+  "actorIDs": [
+    "C_WITCH",
+    "C_APPRENTICE",
+    "C_SMITH",
+    "C_FAMILIAR"
+  ],
+  "recipes": [
+    {
+      "id": "RC_EQ_W_01",
+      "outputGearID": "EQ_W_01",
+      "costs": {
+        "M_R01_G1": 6,
+        "M_R01_G2": 6
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "craft_new",
+      "dustCost": 0,
+      "parentTemplateID": null,
+      "gateID": "G_START",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_W_P1",
+      "outputGearID": "EQ_W_P1",
+      "costs": {
+        "M_R02_E1": 16,
+        "M_R02_G4": 16,
+        "M_R02_BA": 1
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "evolve_in_place",
+      "dustCost": 0,
+      "parentTemplateID": "EQ_W_01",
+      "gateID": "G_R02_A",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_W_P2",
+      "outputGearID": "EQ_W_P2",
+      "costs": {
+        "M_R05_G1": 28,
+        "M_R05_E4": 28,
+        "M_R05_BA": 2
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "evolve_in_place",
+      "dustCost": 0,
+      "parentTemplateID": "EQ_W_P1",
+      "gateID": "G_R05_A",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_W_G1",
+      "outputGearID": "EQ_W_G1",
+      "costs": {
+        "M_R01_BA": 1,
+        "M_R01_BB": 1,
+        "M_R01_G3": 16
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "evolve_in_place",
+      "dustCost": 0,
+      "parentTemplateID": "EQ_W_01",
+      "gateID": "G_R01_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_W_G2",
+      "outputGearID": "EQ_W_G2",
+      "costs": {
+        "M_R04_BB": 2,
+        "M_R05_E3": 28,
+        "M_R05_BA": 2
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "evolve_in_place",
+      "dustCost": 0,
+      "parentTemplateID": "EQ_W_G1",
+      "gateID": "G_R05_A",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_A_01",
+      "outputGearID": "EQ_A_01",
+      "costs": {
+        "M_R01_G1": 8,
+        "M_R01_G2": 8,
+        "M_R01_E2": 8
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "craft_new",
+      "dustCost": 0,
+      "parentTemplateID": null,
+      "gateID": "G_R01_A",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_A_02",
+      "outputGearID": "EQ_A_02",
+      "costs": {
+        "M_R02_G1": 20,
+        "M_R02_E3": 20,
+        "M_R02_BB": 1
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "evolve_in_place",
+      "dustCost": 0,
+      "parentTemplateID": "EQ_A_01",
+      "gateID": "G_R02_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_A_03",
+      "outputGearID": "EQ_A_03",
+      "costs": {
+        "M_R05_G2": 28,
+        "M_R05_E1": 28,
+        "M_R05_G4": 28
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "evolve_in_place",
+      "dustCost": 0,
+      "parentTemplateID": "EQ_A_02",
+      "gateID": "G_R05_A",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_S_01",
+      "outputGearID": "EQ_S_01",
+      "costs": {
+        "M_R01_G1": 8,
+        "M_R01_G3": 8,
+        "M_R01_E4": 8
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "craft_new",
+      "dustCost": 0,
+      "parentTemplateID": null,
+      "gateID": "G_R01_A",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_S_02",
+      "outputGearID": "EQ_S_02",
+      "costs": {
+        "M_R03_G1": 24,
+        "M_R03_G2": 24,
+        "M_R03_G3": 24,
+        "M_R03_BB": 1
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "evolve_in_place",
+      "dustCost": 0,
+      "parentTemplateID": "EQ_S_01",
+      "gateID": "G_R03_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_S_03",
+      "outputGearID": "EQ_S_03",
+      "costs": {
+        "M_R05_E2": 28,
+        "M_R05_BA": 2,
+        "M_R04_G4": 28
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "evolve_in_place",
+      "dustCost": 0,
+      "parentTemplateID": "EQ_S_02",
+      "gateID": "G_R05_A",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_F_01",
+      "outputGearID": "EQ_F_01",
+      "costs": {
+        "M_R01_G1": 6,
+        "M_R01_E2": 6
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "craft_new",
+      "dustCost": 0,
+      "parentTemplateID": null,
+      "gateID": "G_START",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_F_02",
+      "outputGearID": "EQ_F_02",
+      "costs": {
+        "M_R02_E1": 16,
+        "M_R02_E4": 16,
+        "M_R02_G4": 16
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "evolve_in_place",
+      "dustCost": 0,
+      "parentTemplateID": "EQ_F_01",
+      "gateID": "G_R02_A",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_F_03",
+      "outputGearID": "EQ_F_03",
+      "costs": {
+        "M_R05_E3": 28,
+        "M_R05_E4": 28,
+        "M_R04_E2": 28
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "evolve_in_place",
+      "dustCost": 0,
+      "parentTemplateID": "EQ_F_02",
+      "gateID": "G_R05_A",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_BODY_01",
+      "outputGearID": "EQ_BODY_01",
+      "costs": {
+        "M_R01_E2": 8,
+        "M_R01_G3": 8,
+        "M_R01_G4": 8
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "craft_new",
+      "dustCost": 0,
+      "parentTemplateID": null,
+      "gateID": "G_R01_A",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_BODY_02",
+      "outputGearID": "EQ_BODY_02",
+      "costs": {
+        "M_R02_G1": 16,
+        "M_R02_E2": 16,
+        "M_R02_G3": 16
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "evolve_in_place",
+      "dustCost": 0,
+      "parentTemplateID": "EQ_BODY_01",
+      "gateID": "G_R02_A",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_BODY_03",
+      "outputGearID": "EQ_BODY_03",
+      "costs": {
+        "M_R04_E1": 24,
+        "M_R04_G3": 24,
+        "M_R04_E3": 24
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "evolve_in_place",
+      "dustCost": 0,
+      "parentTemplateID": "EQ_BODY_02",
+      "gateID": "G_R04_A",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_HAND_01",
+      "outputGearID": "EQ_HAND_01",
+      "costs": {
+        "M_R01_E2": 8,
+        "M_R01_E3": 8,
+        "M_R01_G3": 8
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "craft_new",
+      "dustCost": 0,
+      "parentTemplateID": null,
+      "gateID": "G_R01_A",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_HAND_02",
+      "outputGearID": "EQ_HAND_02",
+      "costs": {
+        "M_R03_G4": 20,
+        "M_R03_E1": 20,
+        "M_R03_E3": 20,
+        "M_R03_BA": 1
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "evolve_in_place",
+      "dustCost": 0,
+      "parentTemplateID": "EQ_HAND_01",
+      "gateID": "G_R03_A",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_HAND_03",
+      "outputGearID": "EQ_HAND_03",
+      "costs": {
+        "M_R05_E2": 28,
+        "M_R05_G2": 28,
+        "M_R04_E4": 28
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "evolve_in_place",
+      "dustCost": 0,
+      "parentTemplateID": "EQ_HAND_02",
+      "gateID": "G_R05_A",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_FEET_01",
+      "outputGearID": "EQ_FEET_01",
+      "costs": {
+        "M_R01_G1": 8,
+        "M_R01_E1": 8,
+        "M_R01_G3": 8
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "craft_new",
+      "dustCost": 0,
+      "parentTemplateID": null,
+      "gateID": "G_R01_A",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_FEET_02",
+      "outputGearID": "EQ_FEET_02",
+      "costs": {
+        "M_R03_E4": 20,
+        "M_R03_G2": 20,
+        "M_R03_G4": 20
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "evolve_in_place",
+      "dustCost": 0,
+      "parentTemplateID": "EQ_FEET_01",
+      "gateID": "G_R03_A",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_FEET_03",
+      "outputGearID": "EQ_FEET_03",
+      "costs": {
+        "M_R04_BA": 1,
+        "M_R04_G3": 24,
+        "M_R04_G4": 24
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "evolve_in_place",
+      "dustCost": 0,
+      "parentTemplateID": "EQ_FEET_02",
+      "gateID": "G_R04_A",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_AMU_01",
+      "outputGearID": "EQ_AMU_01",
+      "costs": {
+        "M_R01_G2": 8,
+        "M_R01_G4": 8,
+        "M_R01_E2": 8
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "craft_new",
+      "dustCost": 0,
+      "parentTemplateID": null,
+      "gateID": "G_R01_A",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_AMU_02",
+      "outputGearID": "EQ_AMU_02",
+      "costs": {
+        "M_R02_G2": 16,
+        "M_R02_G4": 16,
+        "M_R02_E3": 16
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "evolve_in_place",
+      "dustCost": 0,
+      "parentTemplateID": "EQ_AMU_01",
+      "gateID": "G_R02_A",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_AMU_03",
+      "outputGearID": "EQ_AMU_03",
+      "costs": {
+        "M_R05_BB": 2,
+        "M_R05_G3": 28,
+        "M_R05_G4": 28
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "evolve_in_place",
+      "dustCost": 0,
+      "parentTemplateID": "EQ_AMU_02",
+      "gateID": "G_R05_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_RING_01",
+      "outputGearID": "EQ_RING_01",
+      "costs": {
+        "M_R01_G1": 8,
+        "M_R01_E3": 8,
+        "M_R01_G3": 8
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "craft_new",
+      "dustCost": 0,
+      "parentTemplateID": null,
+      "gateID": "G_R01_A",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_RING_02",
+      "outputGearID": "EQ_RING_02",
+      "costs": {
+        "M_R03_G2": 20,
+        "M_R03_E2": 20,
+        "M_R03_G1": 20
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "evolve_in_place",
+      "dustCost": 0,
+      "parentTemplateID": "EQ_RING_01",
+      "gateID": "G_R03_A",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_RING_03",
+      "outputGearID": "EQ_RING_03",
+      "costs": {
+        "M_R04_G1": 24,
+        "M_R04_G2": 24,
+        "M_R04_E4": 24
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "evolve_in_place",
+      "dustCost": 0,
+      "parentTemplateID": "EQ_RING_02",
+      "gateID": "G_R04_A",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "ATTUNE_1_2",
+      "outputGearID": null,
+      "costs": {
+        "M_R02_G1": 6,
+        "M_R02_G2": 6
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "attune",
+      "dustCost": 60,
+      "parentTemplateID": null,
+      "gateID": "G_R01_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "ATTUNE_2_3",
+      "outputGearID": null,
+      "costs": {
+        "M_R03_G1": 8,
+        "M_R03_G2": 8
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "attune",
+      "dustCost": 120,
+      "parentTemplateID": null,
+      "gateID": "G_R02_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "ATTUNE_3_4",
+      "outputGearID": null,
+      "costs": {
+        "M_R04_G1": 10,
+        "M_R04_G2": 10
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "attune",
+      "dustCost": 200,
+      "parentTemplateID": null,
+      "gateID": "G_R03_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "ATTUNE_4_5",
+      "outputGearID": null,
+      "costs": {
+        "M_R05_G1": 12,
+        "M_R05_G2": 12
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "attune",
+      "dustCost": 300,
+      "parentTemplateID": null,
+      "gateID": "G_R04_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "ENHANCE_1",
+      "outputGearID": null,
+      "costs": {},
+      "status": "INHERITED_R2_TUNING",
+      "kind": "enhance",
+      "dustCost": 5,
+      "parentTemplateID": null,
+      "gateID": "G_START",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "ENHANCE_2",
+      "outputGearID": null,
+      "costs": {},
+      "status": "INHERITED_R2_TUNING",
+      "kind": "enhance",
+      "dustCost": 10,
+      "parentTemplateID": null,
+      "gateID": "G_START",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "ENHANCE_3",
+      "outputGearID": null,
+      "costs": {},
+      "status": "INHERITED_R2_TUNING",
+      "kind": "enhance",
+      "dustCost": 15,
+      "parentTemplateID": null,
+      "gateID": "G_START",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "ENHANCE_4",
+      "outputGearID": null,
+      "costs": {},
+      "status": "INHERITED_R2_TUNING",
+      "kind": "enhance",
+      "dustCost": 20,
+      "parentTemplateID": null,
+      "gateID": "G_R01_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "ENHANCE_5",
+      "outputGearID": null,
+      "costs": {},
+      "status": "INHERITED_R2_TUNING",
+      "kind": "enhance",
+      "dustCost": 25,
+      "parentTemplateID": null,
+      "gateID": "G_R01_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "ENHANCE_6",
+      "outputGearID": null,
+      "costs": {},
+      "status": "INHERITED_R2_TUNING",
+      "kind": "enhance",
+      "dustCost": 30,
+      "parentTemplateID": null,
+      "gateID": "G_R02_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "ENHANCE_7",
+      "outputGearID": null,
+      "costs": {},
+      "status": "INHERITED_R2_TUNING",
+      "kind": "enhance",
+      "dustCost": 35,
+      "parentTemplateID": null,
+      "gateID": "G_R02_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "ENHANCE_8",
+      "outputGearID": null,
+      "costs": {},
+      "status": "INHERITED_R2_TUNING",
+      "kind": "enhance",
+      "dustCost": 40,
+      "parentTemplateID": null,
+      "gateID": "G_R03_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "ENHANCE_9",
+      "outputGearID": null,
+      "costs": {},
+      "status": "INHERITED_R2_TUNING",
+      "kind": "enhance",
+      "dustCost": 45,
+      "parentTemplateID": null,
+      "gateID": "G_R03_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "ENHANCE_10",
+      "outputGearID": null,
+      "costs": {},
+      "status": "INHERITED_R2_TUNING",
+      "kind": "enhance",
+      "dustCost": 50,
+      "parentTemplateID": null,
+      "gateID": "G_R04_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "AW_C_WITCH_1",
+      "outputGearID": null,
+      "costs": {
+        "M_R01_BB": 1,
+        "M_R01_G2": 8,
+        "M_R01_G4": 8
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "awaken",
+      "dustCost": 0,
+      "parentTemplateID": null,
+      "gateID": "G_R01_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "AW_C_WITCH_2",
+      "outputGearID": null,
+      "costs": {
+        "M_R03_BB": 1,
+        "M_R03_G1": 8,
+        "M_R03_G2": 8
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "awaken",
+      "dustCost": 0,
+      "parentTemplateID": null,
+      "gateID": "G_R03_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "AW_C_WITCH_3",
+      "outputGearID": null,
+      "costs": {
+        "M_R05_BB": 1,
+        "M_R05_G3": 8,
+        "M_R05_G4": 8
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "awaken",
+      "dustCost": 0,
+      "parentTemplateID": null,
+      "gateID": "G_R05_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "AW_C_APPRENTICE_1",
+      "outputGearID": null,
+      "costs": {
+        "M_R01_BB": 1,
+        "M_R01_G2": 8,
+        "M_R01_G4": 8
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "awaken",
+      "dustCost": 0,
+      "parentTemplateID": null,
+      "gateID": "G_R01_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "AW_C_APPRENTICE_2",
+      "outputGearID": null,
+      "costs": {
+        "M_R03_BB": 1,
+        "M_R03_G1": 8,
+        "M_R03_G2": 8
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "awaken",
+      "dustCost": 0,
+      "parentTemplateID": null,
+      "gateID": "G_R03_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "AW_C_APPRENTICE_3",
+      "outputGearID": null,
+      "costs": {
+        "M_R05_BB": 1,
+        "M_R05_G3": 8,
+        "M_R05_G4": 8
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "awaken",
+      "dustCost": 0,
+      "parentTemplateID": null,
+      "gateID": "G_R05_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "AW_C_SMITH_1",
+      "outputGearID": null,
+      "costs": {
+        "M_R01_BB": 1,
+        "M_R01_G2": 8,
+        "M_R01_G4": 8
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "awaken",
+      "dustCost": 0,
+      "parentTemplateID": null,
+      "gateID": "G_R01_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "AW_C_SMITH_2",
+      "outputGearID": null,
+      "costs": {
+        "M_R03_BB": 1,
+        "M_R03_G1": 8,
+        "M_R03_G2": 8
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "awaken",
+      "dustCost": 0,
+      "parentTemplateID": null,
+      "gateID": "G_R03_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "AW_C_SMITH_3",
+      "outputGearID": null,
+      "costs": {
+        "M_R05_BB": 1,
+        "M_R05_G3": 8,
+        "M_R05_G4": 8
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "awaken",
+      "dustCost": 0,
+      "parentTemplateID": null,
+      "gateID": "G_R05_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "AW_C_FAMILIAR_1",
+      "outputGearID": null,
+      "costs": {
+        "M_R01_BB": 1,
+        "M_R01_G2": 8,
+        "M_R01_G4": 8
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "awaken",
+      "dustCost": 0,
+      "parentTemplateID": null,
+      "gateID": "G_R01_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "AW_C_FAMILIAR_2",
+      "outputGearID": null,
+      "costs": {
+        "M_R03_BB": 1,
+        "M_R03_G1": 8,
+        "M_R03_G2": 8
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "awaken",
+      "dustCost": 0,
+      "parentTemplateID": null,
+      "gateID": "G_R03_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "AW_C_FAMILIAR_3",
+      "outputGearID": null,
+      "costs": {
+        "M_R05_BB": 1,
+        "M_R05_G3": 8,
+        "M_R05_G4": 8
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "awaken",
+      "dustCost": 0,
+      "parentTemplateID": null,
+      "gateID": "G_R05_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RS_THEORY_1",
+      "outputGearID": null,
+      "costs": {},
+      "status": "INHERITED_R2_TUNING",
+      "kind": "research",
+      "dustCost": 0,
+      "parentTemplateID": null,
+      "gateID": "G_START",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RS_THEORY_2",
+      "outputGearID": null,
+      "costs": {
+        "M_R01_G2": 10,
+        "M_R01_G4": 10
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "research",
+      "dustCost": 0,
+      "parentTemplateID": null,
+      "gateID": "G_R01_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RS_THEORY_3",
+      "outputGearID": null,
+      "costs": {
+        "M_R02_G2": 12,
+        "M_R02_G3": 12
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "research",
+      "dustCost": 0,
+      "parentTemplateID": null,
+      "gateID": "G_R02_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RS_THEORY_4",
+      "outputGearID": null,
+      "costs": {
+        "M_R03_G1": 14,
+        "M_R03_G4": 14
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "research",
+      "dustCost": 0,
+      "parentTemplateID": null,
+      "gateID": "G_R03_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RS_THEORY_5",
+      "outputGearID": null,
+      "costs": {
+        "M_R04_G1": 16,
+        "M_R04_G2": 16
+      },
+      "status": "INHERITED_R2_TUNING",
+      "kind": "research",
+      "dustCost": 0,
+      "parentTemplateID": null,
+      "gateID": "G_R04_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "QUALITY_Q0_Q1",
+      "outputGearID": null,
+      "costs": {},
+      "status": "UNAPPROVED_TEST_OVERLAY: 10/30/600/6000 candidate overrides R3 10/30/100/300",
+      "kind": "quality",
+      "dustCost": 10,
+      "parentTemplateID": null,
+      "gateID": "G_R01_A",
+      "qualityFrom": "Q0",
+      "qualityTo": "Q1"
+    },
+    {
+      "id": "QUALITY_Q1_Q2",
+      "outputGearID": null,
+      "costs": {},
+      "status": "UNAPPROVED_TEST_OVERLAY: 10/30/600/6000 candidate overrides R3 10/30/100/300",
+      "kind": "quality",
+      "dustCost": 30,
+      "parentTemplateID": null,
+      "gateID": "G_R01_B",
+      "qualityFrom": "Q1",
+      "qualityTo": "Q2"
+    },
+    {
+      "id": "QUALITY_Q2_Q3",
+      "outputGearID": null,
+      "costs": {},
+      "status": "UNAPPROVED_TEST_OVERLAY: 10/30/600/6000 candidate overrides R3 10/30/100/300",
+      "kind": "quality",
+      "dustCost": 600,
+      "parentTemplateID": null,
+      "gateID": "G_R02_B",
+      "qualityFrom": "Q2",
+      "qualityTo": "Q3"
+    },
+    {
+      "id": "QUALITY_Q3_Q4",
+      "outputGearID": null,
+      "costs": {},
+      "status": "UNAPPROVED_TEST_OVERLAY: 10/30/600/6000 candidate overrides R3 10/30/100/300",
+      "kind": "quality",
+      "dustCost": 6000,
+      "parentTemplateID": null,
+      "gateID": "G_R04_B",
+      "qualityFrom": "Q3",
+      "qualityTo": "Q4"
+    },
+    {
+      "id": "REFORGE_ONE",
+      "outputGearID": null,
+      "costs": {},
+      "status": "INHERITED_R2_TUNING",
+      "kind": "reforge",
+      "dustCost": 40,
+      "parentTemplateID": null,
+      "gateID": "G_R03_B",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_F_BODY_01",
+      "outputGearID": "EQ_F_BODY_01",
+      "costs": {
+        "M_R01_E2": 8,
+        "M_R01_G3": 8,
+        "M_R01_G4": 8
+      },
+      "status": "PROPOSED_EXTENSION_AND_TUNING",
+      "kind": "craft_new",
+      "dustCost": 0,
+      "parentTemplateID": null,
+      "gateID": "G_R01_A",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_F_HAND_01",
+      "outputGearID": "EQ_F_HAND_01",
+      "costs": {
+        "M_R01_E2": 8,
+        "M_R01_E3": 8,
+        "M_R01_G3": 8
+      },
+      "status": "PROPOSED_EXTENSION_AND_TUNING",
+      "kind": "craft_new",
+      "dustCost": 0,
+      "parentTemplateID": null,
+      "gateID": "G_R01_A",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_F_FEET_01",
+      "outputGearID": "EQ_F_FEET_01",
+      "costs": {
+        "M_R01_G1": 8,
+        "M_R01_E1": 8,
+        "M_R01_G3": 8
+      },
+      "status": "PROPOSED_EXTENSION_AND_TUNING",
+      "kind": "craft_new",
+      "dustCost": 0,
+      "parentTemplateID": null,
+      "gateID": "G_R01_A",
+      "qualityFrom": null,
+      "qualityTo": null
+    },
+    {
+      "id": "RC_EQ_F_RING_01",
+      "outputGearID": "EQ_F_RING_01",
+      "costs": {
+        "M_R01_G1": 8,
+        "M_R01_E3": 8,
+        "M_R01_G3": 8
+      },
+      "status": "PROPOSED_EXTENSION_AND_TUNING",
+      "kind": "craft_new",
+      "dustCost": 0,
+      "parentTemplateID": null,
+      "gateID": "G_R01_A",
+      "qualityFrom": null,
+      "qualityTo": null
+    }
+  ],
+  "gearAttackBonuses": {
+    "EQ_W_01": 3,
+    "EQ_W_P1": 3,
+    "EQ_W_P2": 3,
+    "EQ_W_G1": 3,
+    "EQ_W_G2": 3,
+    "EQ_A_01": 3,
+    "EQ_A_02": 3,
+    "EQ_A_03": 3,
+    "EQ_S_01": 3,
+    "EQ_S_02": 3,
+    "EQ_S_03": 3,
+    "EQ_F_01": 3,
+    "EQ_F_02": 3,
+    "EQ_F_03": 3,
+    "EQ_HAND_01": 1,
+    "EQ_HAND_02": 1,
+    "EQ_HAND_03": 1,
+    "EQ_F_HAND_01": 1
+  },
+  "gearHPBonuses": {
+    "EQ_BODY_01": 10,
+    "EQ_BODY_02": 10,
+    "EQ_BODY_03": 10,
+    "EQ_AMU_01": 4,
+    "EQ_AMU_02": 4,
+    "EQ_AMU_03": 4,
+    "EQ_RING_01": 4,
+    "EQ_RING_02": 4,
+    "EQ_RING_03": 4,
+    "EQ_F_BODY_01": 10,
+    "EQ_F_RING_01": 4
+  },
+  "gearDefenseBonuses": {
+    "EQ_FEET_01": 1,
+    "EQ_FEET_02": 1,
+    "EQ_FEET_03": 1,
+    "EQ_F_FEET_01": 1
+  },
+  "gachaOddsBasisPoints": {
+    "Q0": 3500,
+    "Q1": 4000,
+    "Q2": 2000,
+    "Q3": 400,
+    "Q4": 100
+  },
+  "challenges": [
+    {
+      "id": "CH_R01_01",
+      "region": "R01",
+      "name": "根道の再観測",
+      "enemy_ids": [
+        "B_R01_A"
+      ],
+      "mechanic": "単発heavyと長い後隙",
+      "unlock_gate": "G_R05_B",
+      "first_clear_powder": 200,
+      "status": "DESIGN_ONLY_NOT_PLAYTESTED",
+      "enemy_hp_scale": 1,
+      "enemy_attack_scale": 1
+    },
+    {
+      "id": "CH_R01_02",
+      "region": "R01",
+      "name": "灯糸の群れ",
+      "enemy_ids": [
+        "E_R01_02",
+        "E_R01_03"
+      ],
+      "mechanic": "小型2〜3体、支援・減速",
+      "unlock_gate": "G_R05_B",
+      "first_clear_powder": 200,
+      "status": "DESIGN_ONLY_NOT_PLAYTESTED",
+      "enemy_hp_scale": 1,
+      "enemy_attack_scale": 1
+    },
+    {
+      "id": "CH_R01_03",
+      "region": "R01",
+      "name": "古樹の脈動",
+      "enemy_ids": [
+        "B_R01_B"
+      ],
+      "mechanic": "根の連撃と枝の大振り",
+      "unlock_gate": "G_R05_B",
+      "first_clear_powder": 200,
+      "status": "DESIGN_ONLY_NOT_PLAYTESTED",
+      "enemy_hp_scale": 1,
+      "enemy_attack_scale": 1
+    },
+    {
+      "id": "CH_R02_01",
+      "region": "R02",
+      "name": "霧の重なり",
+      "enemy_ids": [
+        "E_R02_01",
+        "E_R02_02"
+      ],
+      "mechanic": "持続ダメージと回復周期",
+      "unlock_gate": "G_R05_B",
+      "first_clear_powder": 200,
+      "status": "DESIGN_ONLY_NOT_PLAYTESTED",
+      "enemy_hp_scale": 1,
+      "enemy_attack_scale": 1
+    },
+    {
+      "id": "CH_R02_02",
+      "region": "R02",
+      "name": "水鏡のゆらぎ",
+      "enemy_ids": [
+        "B_R02_B"
+      ],
+      "mechanic": "膜の防御期と解除期",
+      "unlock_gate": "G_R05_B",
+      "first_clear_powder": 200,
+      "status": "DESIGN_ONLY_NOT_PLAYTESTED",
+      "enemy_hp_scale": 1,
+      "enemy_attack_scale": 1
+    },
+    {
+      "id": "CH_R02_03",
+      "region": "R02",
+      "name": "月灯の合唱",
+      "enemy_ids": [
+        "E_R02_04",
+        "E_R02_02"
+      ],
+      "mechanic": "支援敵と主敵",
+      "unlock_gate": "G_R05_B",
+      "first_clear_powder": 200,
+      "status": "DESIGN_ONLY_NOT_PLAYTESTED",
+      "enemy_hp_scale": 1,
+      "enemy_attack_scale": 1
+    },
+    {
+      "id": "CH_R03_01",
+      "region": "R03",
+      "name": "連槌の検分",
+      "enemy_ids": [
+        "B_R03_A"
+      ],
+      "mechanic": "別主動作の連打・主動作内多段の区別",
+      "unlock_gate": "G_R05_B",
+      "first_clear_powder": 200,
+      "status": "DESIGN_ONLY_NOT_PLAYTESTED",
+      "enemy_hp_scale": 1,
+      "enemy_attack_scale": 1
+    },
+    {
+      "id": "CH_R03_02",
+      "region": "R03",
+      "name": "炉心の呼吸",
+      "enemy_ids": [
+        "B_R03_B"
+      ],
+      "mechanic": "蓄熱・放熱の二局面",
+      "unlock_gate": "G_R05_B",
+      "first_clear_powder": 200,
+      "status": "DESIGN_ONLY_NOT_PLAYTESTED",
+      "enemy_hp_scale": 1,
+      "enemy_attack_scale": 1
+    },
+    {
+      "id": "CH_R03_03",
+      "region": "R03",
+      "name": "坑道の残響",
+      "enemy_ids": [
+        "E_R03_02",
+        "E_R03_03"
+      ],
+      "mechanic": "詠唱妨害と小型追撃",
+      "unlock_gate": "G_R05_B",
+      "first_clear_powder": 200,
+      "status": "DESIGN_ONLY_NOT_PLAYTESTED",
+      "enemy_hp_scale": 1,
+      "enemy_attack_scale": 1
+    },
+    {
+      "id": "CH_R04_01",
+      "region": "R04",
+      "name": "稜線の重圧",
+      "enemy_ids": [
+        "B_R04_A"
+      ],
+      "mechanic": "heavy単体と通常攻撃",
+      "unlock_gate": "G_R05_B",
+      "first_clear_powder": 200,
+      "status": "DESIGN_ONLY_NOT_PLAYTESTED",
+      "enemy_hp_scale": 1,
+      "enemy_attack_scale": 1
+    },
+    {
+      "id": "CH_R04_02",
+      "region": "R04",
+      "name": "氷羽の追い風",
+      "enemy_ids": [
+        "E_R04_02",
+        "E_R04_01"
+      ],
+      "mechanic": "敵強化・弱体化・連携",
+      "unlock_gate": "G_R05_B",
+      "first_clear_powder": 200,
+      "status": "DESIGN_ONLY_NOT_PLAYTESTED",
+      "enemy_hp_scale": 1,
+      "enemy_attack_scale": 1
+    },
+    {
+      "id": "CH_R04_03",
+      "region": "R04",
+      "name": "山竜の薄翼",
+      "enemy_ids": [
+        "B_R04_B"
+      ],
+      "mechanic": "単体と広域の予告を交互に扱う",
+      "unlock_gate": "G_R05_B",
+      "first_clear_powder": 200,
+      "status": "DESIGN_ONLY_NOT_PLAYTESTED",
+      "enemy_hp_scale": 1,
+      "enemy_attack_scale": 1
+    },
+    {
+      "id": "CH_R05_01",
+      "region": "R05",
+      "name": "剪定の拍子",
+      "enemy_ids": [
+        "B_R05_A"
+      ],
+      "mechanic": "準備・実行・後隙",
+      "unlock_gate": "G_R05_B",
+      "first_clear_powder": 200,
+      "status": "DESIGN_ONLY_NOT_PLAYTESTED",
+      "enemy_hp_scale": 1,
+      "enemy_attack_scale": 1
+    },
+    {
+      "id": "CH_R05_02",
+      "region": "R05",
+      "name": "灯瓶の継承",
+      "enemy_ids": [
+        "E_R05_02",
+        "E_R05_03"
+      ],
+      "mechanic": "守衛を支える灯瓶",
+      "unlock_gate": "G_R05_B",
+      "first_clear_powder": 200,
+      "status": "DESIGN_ONLY_NOT_PLAYTESTED",
+      "enemy_hp_scale": 1,
+      "enemy_attack_scale": 1
+    },
+    {
+      "id": "CH_R05_03",
+      "region": "R05",
+      "name": "月苑の巡環",
+      "enemy_ids": [
+        "B_R05_B"
+      ],
+      "mechanic": "既存機構を二つずつ組み合わせる",
+      "unlock_gate": "G_R05_B",
+      "first_clear_powder": 200,
+      "status": "DESIGN_ONLY_NOT_PLAYTESTED",
+      "enemy_hp_scale": 1,
+      "enemy_attack_scale": 1
+    }
+  ],
+  "researchEffects": {
+    "RESEARCH_R3_CANDIDATE_1": {
+      "party_attack": 1,
+      "party_max_hp": 0,
+      "party_defense": 0
+    },
+    "RESEARCH_R3_CANDIDATE_2": {
+      "party_attack": 0,
+      "party_max_hp": 5,
+      "party_defense": 0
+    },
+    "RESEARCH_R3_CANDIDATE_3": {
+      "party_attack": 0,
+      "party_max_hp": 0,
+      "party_defense": 1
+    },
+    "RESEARCH_R3_CANDIDATE_4": {
+      "party_attack": 2,
+      "party_max_hp": 0,
+      "party_defense": 0
+    },
+    "RESEARCH_R3_CANDIDATE_5": {
+      "party_attack": 0,
+      "party_max_hp": 10,
+      "party_defense": 0
+    }
+  },
+  "appearances": [
+    {
+      "id": "ERNA_TRAVEL",
+      "kind": "costume",
+      "actorIDs": [
+        "C_WITCH"
+      ],
+      "status": "UNAPPROVED_TEST_OVERLAY_CANDIDATE"
+    },
+    {
+      "id": "STAFF_BRANCH",
+      "kind": "weapon",
+      "actorIDs": [
+        "C_WITCH"
+      ],
+      "status": "UNAPPROVED_TEST_OVERLAY_CANDIDATE"
+    },
+    {
+      "id": "STAFF_MOON",
+      "kind": "weapon",
+      "actorIDs": [
+        "C_WITCH"
+      ],
+      "status": "UNAPPROVED_TEST_OVERLAY_CANDIDATE"
+    }
+  ],
+  "furnitureIDs": [
+    "FURN_DESK_BOTANICAL"
+  ],
+  "dailyFreeTicketGrant": 5
+}

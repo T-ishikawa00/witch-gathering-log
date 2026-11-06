@@ -1,0 +1,66 @@
+{
+  "observed_date_jst": "2026-11-07",
+  "source_origin_checkpoint": "d09b7f37071c17a6cc428cc888f12eae44dc3701",
+  "app_source": "26ab9d74e7580db00c6a08252d441908d82b7f1f",
+  "source_snapshot_sha256": "e4adcc76b42abf54be0ecef4cec724d775f96329deb09d6b294e13f99c6753fb",
+  "xcode": "27.2 (27B52)",
+  "swift": "6.4.2",
+  "sdk": "27.2",
+  "core": {
+    "total": 435,
+    "passed": 418,
+    "skipped": 17,
+    "failed": 0
+  },
+  "ui_smoke": {
+    "total": 7,
+    "passed": 7,
+    "skipped": 0,
+    "failed": 0
+  },
+  "resource_copy_tests": {
+    "total": 4,
+    "passed": 4,
+    "failed": 0
+  },
+  "builds": {
+    "simulator": "UNSIGNED_BUILD_FOR_TESTING_PASS",
+    "iphoneos": "UNSIGNED_BUILD_PASS_NOT_DEVICE_TEST"
+  },
+  "binary_sha256": {
+    "simulator": "bae729666146f13235901af88f3b64e0d8742202bde96d4661465febbf2a3ad2",
+    "iphoneos": "59768f495178c5b7b89f98bca534919d19f52fda346e85f38cb38f34456c3420"
+  },
+  "local_log_receipts": [
+    {
+      "run_relative_path": "core-r2/core-test.log",
+      "sha256": "a16990e52f7b7b6869022309756bec182bf2290e888207e714620d310200c8ed",
+      "uploaded": false
+    },
+    {
+      "run_relative_path": "simulator-build-r3/build.log",
+      "sha256": "9a6a362972dbe3f90f06ff036212a06caa22d34115c9fc2fc810c1bdb59d2dba",
+      "uploaded": false
+    },
+    {
+      "run_relative_path": "iphoneos-build-r1/build.log",
+      "sha256": "15a0ba16b6bf96a54ecee30d13e6ab51be1b09bf463cd8974bacccff2f4dc4de",
+      "uploaded": false
+    },
+    {
+      "run_relative_path": "ui-smoke-r2.log",
+      "sha256": "9a19ad5574e22deed5eb1f025934e89cb45f21271489565fab3ee8367b7df1c9",
+      "uploaded": false
+    }
+  ],
+  "unrun": [
+    "all48_current_screen_suite",
+    "host_prepared_recovery_ui",
+    "physical_device",
+    "Apple_Sandbox",
+    "production_IAP",
+    "ordinary_play_acceptance",
+    "rights_clearance"
+  ],
+  "remote_readback": "PENDING_AT_THIS_SOURCE_CHECKPOINT"
+}

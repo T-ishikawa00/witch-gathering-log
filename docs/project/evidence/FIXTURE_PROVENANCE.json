@@ -1,0 +1,26 @@
+[
+  {
+    "path": "native/WitchGameCore/Tests/WitchGameCoreTests/R159_DAY30_SAVE_AFTER_REOPEN.json",
+    "sha256": "eaccda4c80ee5190d9c407ecfed8a101d41eddc7c39bc48265749a30ac8085c4",
+    "bytes": 109953,
+    "classification": "DETERMINISTIC_SCRIPTED_30_VIRTUAL_DAY_QA",
+    "evidence": "Consumed by R181 tests; source receipts pin generated test snapshot; no Human play proof",
+    "privacy_review": "No personal identity/device/auth fields detected in scoped review"
+  },
+  {
+    "path": "native/WitchGameCore/Tests/WitchGameCoreTests/Fixtures/R179_LEGACY_BASELINE.json",
+    "sha256": "412568c60ce01030e4ab4fc348269c6014f692f1711326b30639229c3da93363",
+    "bytes": 11396,
+    "classification": "GENERATED_FIXED_SEED_FIRST_CRAFT_QA",
+    "evidence": "R179 test pins sha; R176 engine command run; no Human save",
+    "privacy_review": "No personal identity/device/auth fields detected in scoped review"
+  },
+  {
+    "path": "native/WitchGameCore/fixtures/r227_earned_save.json",
+    "sha256": "69257251318ba75746eef2b65e7084c38f1522a660d0f4f26fb6afb3a13df319",
+    "bytes": 72094,
+    "classification": "ENGINE_QA_CANDIDATE_FIXTURE",
+    "evidence": "R230 tests and matching candidate copies; synthetic command receipts and deterministic ids; no Human provenance found; not anonymization",
+    "privacy_review": "No personal identity/device/auth fields detected in scoped review"
+  }
+]

@@ -1,0 +1,1330 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02836475015D9723965CC5E9 /* WitchGameCore/Sources/WitchGameCore/PostClearGoalProjectionR122.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACF9D3D85F5B832250B53D5 /* WitchGameCore/Sources/WitchGameCore/PostClearGoalProjectionR122.swift */; };
+		03C44149F493049827B73A18 /* WitchGameCore/Sources/WitchGameCore/StandardPlayRuntimeProfileR1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA349633B1D1AA4FEC1529B7 /* WitchGameCore/Sources/WitchGameCore/StandardPlayRuntimeProfileR1.swift */; };
+		04D8A2DCB17FC35719FDEBAD /* WitchApp/ERNAStaffMotionTraceQA_R040.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F36747EFE6958F4B1D0790 /* WitchApp/ERNAStaffMotionTraceQA_R040.swift */; };
+		05903E339201F1B862999A10 /* WitchUITests/UI48GameplayAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E794F7F5583CD13C38D20447 /* WitchUITests/UI48GameplayAcceptanceTests.swift */; };
+		065FD911626D900DB58BC1CA /* WitchUITests/UI48EnvironmentAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A98202D9F0A7856D23D4BB /* WitchUITests/UI48EnvironmentAcceptanceTests.swift */; };
+		066B550EB4401F9F8DB0E763 /* WitchApp/GearRefinementConfirmationR352.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE44EDC3FD0320C4EB6DEE /* WitchApp/GearRefinementConfirmationR352.swift */; };
+		06D6F4E675C2F0E04332C89B /* WitchGameCore/Sources/WitchGameCore/GearComparisonPartnerSelectionR210.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA4210BD5344499FB86F08 /* WitchGameCore/Sources/WitchGameCore/GearComparisonPartnerSelectionR210.swift */; };
+		0877A574B0B68667A2E15F9A /* WitchApp/CharacterClips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A65FCF2A6BD33EAD344EE36 /* WitchApp/CharacterClips.swift */; };
+		09D331EE8E16426BA43C6117 /* WitchApp/LRCollectionViewR384.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D28FA6D2A116EF64741D2F9 /* WitchApp/LRCollectionViewR384.swift */; };
+		0A0142FDB00665FB33E43434 /* WitchApp/LunaBookSpriteMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF04441F3FC32BBDDF56B1A4 /* WitchApp/LunaBookSpriteMotion.swift */; };
+		0A094D1FF9171FACA21580AE /* WitchApp/EquipmentMultiConsumerPixelDigestR084.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EB0EEF0E937FED3B64C4D7 /* WitchApp/EquipmentMultiConsumerPixelDigestR084.swift */; };
+		0AF1856F4C7783A54DED4180 /* WitchApp/LivingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666473BB70BFE536F3BB5194 /* WitchApp/LivingScene.swift */; };
+		0C8285A92B4A22DE2758618F /* WitchApp/ERNAWalkCycleStableSceneGateR004.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741653E83D060E922F99D65D /* WitchApp/ERNAWalkCycleStableSceneGateR004.swift */; };
+		0C922B39AD3F1C8A8FB6644E /* WitchGameCore/Sources/WitchGameCore/LunaBookMotionDataR001.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19201A7678F37F42041DDBE7 /* WitchGameCore/Sources/WitchGameCore/LunaBookMotionDataR001.swift */; };
+		0E37897CA8704CA07F4C8458 /* WitchApp/StandardPlayBuildPolicyR332.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF43DC39F8A59D4B3F449F91 /* WitchApp/StandardPlayBuildPolicyR332.swift */; };
+		0FF0E17EA233F4217BC4AEAD /* WitchApp/CharacterMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850EC68714981140ABC560AF /* WitchApp/CharacterMotion.swift */; };
+		10D1C38C31900AAD63CDFD6A /* StoreKitLocalQA/ReusableBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E112B836126B801EA17060A /* StoreKitLocalQA/ReusableBridge.swift */; };
+		11BFB820CD47AECB2EACA25E /* WitchUITests/ERNABodyFitR061Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1793E08DCEDC758197614885 /* WitchUITests/ERNABodyFitR061Tests.swift */; };
+		11F11AB0A84FC28411EC2529 /* WitchApp/JellyfishMeshRigR135_QA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B33A30FE419E2AD71876434 /* WitchApp/JellyfishMeshRigR135_QA.swift */; };
+		141AEB9891D1EC87F6BEDBED /* WitchGameCore/Sources/WitchGameCore/CommerceAuthorityCandidateV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75ACEC660E954C773021575 /* WitchGameCore/Sources/WitchGameCore/CommerceAuthorityCandidateV1.swift */; };
+		15C4156C44AC11180F87286E /* WitchApp/DragonGaitR038SequenceQA.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47145AC404F78E11FFB59A6 /* WitchApp/DragonGaitR038SequenceQA.swift */; };
+		167FCC48FAEDFE8C3573051B /* WitchApp/NoirNeckwearCandidateRegistrationR002.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6D3C92020CBAAD86AA1C83 /* WitchApp/NoirNeckwearCandidateRegistrationR002.swift */; };
+		190440508AB5A29A3B103FC5 /* WitchGameCore/Sources/WitchGameCore/CandidateLatentCombatModifiersR005.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1D1DE007A9DD5F9FBDBAF0 /* WitchGameCore/Sources/WitchGameCore/CandidateLatentCombatModifiersR005.swift */; };
+		197ECD18D98AFCEE8103D838 /* WitchApp/EnemyLoopBoundaryTraceQA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B701278EC3DE20DFBFFBD79 /* WitchApp/EnemyLoopBoundaryTraceQA.swift */; };
+		1AC3A20A3721F6508C29A008 /* WitchApp/ERNAStaffWalkCycleRequestR002.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D887AAEBBB7137DF208711 /* WitchApp/ERNAStaffWalkCycleRequestR002.swift */; };
+		1B6D3329EBE693A77C6D750B /* WitchUITests/LargeTextContextDiagnosticR247Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F71C376B94E181D1688F845 /* WitchUITests/LargeTextContextDiagnosticR247Tests.swift */; };
+		1C2DC89ABFC1F4488CE7042F /* WitchGameCore/Sources/WitchGameCore/GameRuntimeRefinementProfileR352.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F06A5CD05B3F964B56C614B /* WitchGameCore/Sources/WitchGameCore/GameRuntimeRefinementProfileR352.swift */; };
+		1C71F3541314FE45ECB43456 /* WitchApp/LayeredWitchMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890E54BD0BB539924D7917CD /* WitchApp/LayeredWitchMotion.swift */; };
+		1DE987E3A60FFBCDFD7F7023 /* WitchApp/WardrobeCandidateThumbnailR130.swift in Sources */ = {isa = PBXBuildFile; fileRef = B688B7A373CBA7450216B9B2 /* WitchApp/WardrobeCandidateThumbnailR130.swift */; };
+		212E548570C7E2807062E434 /* WitchApp/DragonLocalizedLegWarpCandidateR003.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAC830F79EF584DFCF28900 /* WitchApp/DragonLocalizedLegWarpCandidateR003.swift */; };
+		215DA841451AD77D3CBEE6E5 /* WitchUITests/StaticCopyReadabilityR048Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC4DDE0715827E57645323D /* WitchUITests/StaticCopyReadabilityR048Tests.swift */; };
+		219C72BD170B96CE8E8D91F9 /* WitchGameCore/Sources/WitchGameCore/SaveRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0534D8137CADD288903D4A9F /* WitchGameCore/Sources/WitchGameCore/SaveRepository.swift */; };
+		21F25A14AD9147E8C1AF2AB5 /* WitchApp/ERNAStaffFrameSnapshotR040.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9CEE4C544CE1282AF8BE4B /* WitchApp/ERNAStaffFrameSnapshotR040.swift */; };
+		23BDFCB9CEA684665150C3D9 /* WitchUITests/UI48ExtendedAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DB0055930AC3B718FD472F /* WitchUITests/UI48ExtendedAcceptanceTests.swift */; };
+		25759A040DBD8002B2E83EBD /* WitchGameCore/Sources/WitchGameCore/OwnedPartyLoadoutPreviewR181.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CEED815587D7EFFDDF566B /* WitchGameCore/Sources/WitchGameCore/OwnedPartyLoadoutPreviewR181.swift */; };
+		258C31A340D1351917E3F02F /* WitchApp/ProductCommerceModelR1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6399711B04ADA917A3F34119 /* WitchApp/ProductCommerceModelR1.swift */; };
+		2860CE3EDC85ED6B3304AA17 /* WitchGameCore/Sources/WitchGameCore/LunaBookMotionDataR088Candidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE86A87B185BFE858B8C07C2 /* WitchGameCore/Sources/WitchGameCore/LunaBookMotionDataR088Candidate.swift */; };
+		294A2FBE58BB99FB9A8ACEFC /* WitchApp/BattleEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8EA087B75EDD62D1D6EC6E /* WitchApp/BattleEffects.swift */; };
+		29F8B0A8295747B3819F8FEC /* WitchGameCore/Sources/WitchGameCore/WardrobeCandidateCatalogR130.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9418C3D42E6112C16D62CB0C /* WitchGameCore/Sources/WitchGameCore/WardrobeCandidateCatalogR130.swift */; };
+		2B1717D41F9E3E2FB76BF813 /* WitchApp/DragonGaitR038FailureLifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CBCAA6F55AB39AC96B607 /* WitchApp/DragonGaitR038FailureLifecycle.swift */; };
+		2C978A04A77D22F130FA5F31 /* WitchApp/AIRAApronPlacementR130.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCCCACC0537809985070F56 /* WitchApp/AIRAApronPlacementR130.swift */; };
+		2CA0D9EFC0D6E25182861AEB /* WitchGameCore/Sources/WitchGameCore/SyntheticDash2VisualTailR047.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A3A03475D358AF3AC814E7 /* WitchGameCore/Sources/WitchGameCore/SyntheticDash2VisualTailR047.swift */; };
+		2D40B397B075A1576BAA64B1 /* WitchUITests/LargeTextRemainingCompanionsR265Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B40272EFD2F9FA9D1C15C77 /* WitchUITests/LargeTextRemainingCompanionsR265Tests.swift */; };
+		2E5968AADBBE5535A26AAC09 /* WitchApp/GearComparisonR131Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223B4C2C0B7D98953456F6C1 /* WitchApp/GearComparisonR131Section.swift */; };
+		2E5F5697E1FDAEC5F1F536E3 /* WitchApp/LunaMantleBooklessR126.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5424049DFEA7D2B280432 /* WitchApp/LunaMantleBooklessR126.swift */; };
+		2ECFB856CBE41DB5A1DCBE7C /* WitchGameCore/Sources/WitchGameCore/CandidateCombatOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E7F654E55CBF4AC7F3741 /* WitchGameCore/Sources/WitchGameCore/CandidateCombatOverlay.swift */; };
+		2F635AE4B26DAB687A432B9B /* WitchApp/GatheringSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BB0C98DE155D1ABC8AA98 /* WitchApp/GatheringSummary.swift */; };
+		3423789CE356E42BB1DD4097 /* WitchGameCore/Sources/WitchGameCore/GearLegendaryCollectionProjectionR384.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99EB6166BF4BF0B8EE3741D /* WitchGameCore/Sources/WitchGameCore/GearLegendaryCollectionProjectionR384.swift */; };
+		34BC19967C37D44CF851C43D /* WitchApp/PursuitNoticeRenderObserverR092.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B23FB4403FECF23C650C9BB /* WitchApp/PursuitNoticeRenderObserverR092.swift */; };
+		3568A7017BCB152CD8F6BA9D /* WitchGameCore/Sources/WitchGameCore/PartyWorkPolicyR144.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E086DCB5D01516557F59D6 /* WitchGameCore/Sources/WitchGameCore/PartyWorkPolicyR144.swift */; };
+		36169D5AE9BA76998E36B0EC /* WitchApp/TransferPathGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5661EC04E567FE84D85868 /* WitchApp/TransferPathGeometry.swift */; };
+		36CE16E165C13A34DF16A794 /* WitchUITests/UI48CoverageAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E0C0D7FEEA8493BA560633 /* WitchUITests/UI48CoverageAcceptanceTests.swift */; };
+		373451B7E54C004F2C0BB16D /* WitchUITests/HomeAccessibilityR045Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F2E48B5388D4479FBD0F36 /* WitchUITests/HomeAccessibilityR045Tests.swift */; };
+		37F655B8CDEB1ACDCC4B778E /* WitchApp/RenderBoundStateObserverR084.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787F99E2D53BA9CC22D20CD5 /* WitchApp/RenderBoundStateObserverR084.swift */; };
+		39AD2AA351ED3041263D2559 /* WitchGameCore/Sources/WitchGameCore/GearSwapCombatSummaryR131.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB37FBE9854C16F33EC9FED9 /* WitchGameCore/Sources/WitchGameCore/GearSwapCombatSummaryR131.swift */; };
+		3B38063EB8323C8D4C4DEED7 /* WitchGameCore/Sources/WitchGameCore/CommerceOwnershipR1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA7313A5FE1033C6D9A0AC8 /* WitchGameCore/Sources/WitchGameCore/CommerceOwnershipR1.swift */; };
+		40D995CB8D4EC30F7F2B3770 /* WitchApp/CommerceStoreKit2R465.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93174B6AA72FED51680618E1 /* WitchApp/CommerceStoreKit2R465.swift */; };
+		41A148696762646841778425 /* WitchApp/AreaFlowQAHook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6EB8E362C74C8C20FD0E60 /* WitchApp/AreaFlowQAHook.swift */; };
+		422AFEA22E224CC56446B4B0 /* WitchUITests/StandardPlayContinuationR196Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4477270164156A5F03C07BD6 /* WitchUITests/StandardPlayContinuationR196Tests.swift */; };
+		4587978D03B14B5D27E17743 /* WitchGameCore/Sources/WitchGameCore/GearSwapCombatPreviewR131.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F0C35307F4FAFFBC742D7 /* WitchGameCore/Sources/WitchGameCore/GearSwapCombatPreviewR131.swift */; };
+		480013F505286F65BE5FD96D /* WitchGameCore/Sources/WitchGameCore/GameRuntimeEnhancementProfileR230.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B0B77B0DE216BE485E58AC /* WitchGameCore/Sources/WitchGameCore/GameRuntimeEnhancementProfileR230.swift */; };
+		492613317813EFFEDF2E9BC3 /* WitchGameCore/Sources/WitchGameCore/GameRuntimeConfigurationR098.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10024CB0BBF2E7396616696D /* WitchGameCore/Sources/WitchGameCore/GameRuntimeConfigurationR098.swift */; };
+		49C38B80291828570B0C188C /* WitchApp/AIRAHarvestApronOverlayR130.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C61104C2AE502276604075 /* WitchApp/AIRAHarvestApronOverlayR130.swift */; };
+		4A3DB8AA18F4EAE6D1BCFBD6 /* WitchApp/DragonGroundedEntryCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AF34698F20E1F2F06F3E44 /* WitchApp/DragonGroundedEntryCandidate.swift */; };
+		4B0326F5D3DDD1AACB792874 /* WitchGameCore/Sources/WitchGameCore/EnemyExecuteCoalescerR154.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB11F798A4269343C33721DC /* WitchGameCore/Sources/WitchGameCore/EnemyExecuteCoalescerR154.swift */; };
+		4B24AD0DAF623A5C101A9AB3 /* WitchGameCore/Sources/WitchGameCore/LocalPurchaseTransactionIdentityR454.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD3B51B619CEF57F3269748 /* WitchGameCore/Sources/WitchGameCore/LocalPurchaseTransactionIdentityR454.swift */; };
+		4D283D87BBFC00FD9E885218 /* WitchGameCore/Sources/WitchGameCore/FileBackedAuthorityStoreR463.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304BFD8E5458F5F84E78797A /* WitchGameCore/Sources/WitchGameCore/FileBackedAuthorityStoreR463.swift */; };
+		4D8D506E23D2ACC2C5F7E466 /* WitchGameCore/Sources/WitchGameCore/CandidateLatentSlotPolicyR003.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0153013ED9A07EC447B99E /* WitchGameCore/Sources/WitchGameCore/CandidateLatentSlotPolicyR003.swift */; };
+		4EBD850A7B10B65BFF043EB9 /* WitchUITests/LargeTextCompanionReachabilityR233Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CB60BAF4730D8911C3B098 /* WitchUITests/LargeTextCompanionReachabilityR233Tests.swift */; };
+		4EC6B2625927CAABB231EBC0 /* WitchApp/DragonDistalLegRigCandidateR007.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C65FF41ADB0AA08C9DCEDC8 /* WitchApp/DragonDistalLegRigCandidateR007.swift */; };
+		4ED18653E3CC519834EFF915 /* WitchApp/PursuitNoticeCopyR059.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D338E8142143C85160D0B2 /* WitchApp/PursuitNoticeCopyR059.swift */; };
+		4FA1AEC2BE94E44F4CBD143E /* WitchApp/EquipmentMultiConsumerRequestR084.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4837B6768D2B45B2668860 /* WitchApp/EquipmentMultiConsumerRequestR084.swift */; };
+		4FFC8DFC2EA7D8652E778678 /* WitchApp/HomeDeskVisualCandidateR124.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181C2B48F4A34E0101363F35 /* WitchApp/HomeDeskVisualCandidateR124.swift */; };
+		50B04B608F79609AF21E8602 /* WitchApp/QASaveReadback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DD30B0C48ACB1ACA391991 /* WitchApp/QASaveReadback.swift */; };
+		50BC4D2F429203C7D0F4CE85 /* WitchUITests/DragonGroundedEntryLifecycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454ED4982B3B82EAE001EF25 /* WitchUITests/DragonGroundedEntryLifecycleTests.swift */; };
+		51ACF94FF633595824D341C9 /* WitchApp/UI48QAFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0921AC1196576ECEC93C327 /* WitchApp/UI48QAFixture.swift */; };
+		51B4DF89BA7FFF99A25AE425 /* WitchGameCore/Sources/WitchGameCore/WorkshopPresentationR1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D576EE2B76661A257D301D /* WitchGameCore/Sources/WitchGameCore/WorkshopPresentationR1.swift */; };
+		52231159539B566FB53C0A18 /* WitchApp/App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC88701977082A15E58F580 /* WitchApp/App.swift */; };
+		5284D8A649912A82EABDDDDB /* WitchApp/WitchAudioCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7A6C58829D384A5A281131 /* WitchApp/WitchAudioCoordinator.swift */; };
+		5347EE22BA721388FF1E7F6D /* WitchApp/GatheringProgressViewR041.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD397291C82A7768A1C43BC /* WitchApp/GatheringProgressViewR041.swift */; };
+		54C01CFFC2D99DB6B10E5189 /* WitchApp/ERNAWalkCycleCoverageR002.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5CA74EE3910657AD3B52F8 /* WitchApp/ERNAWalkCycleCoverageR002.swift */; };
+		55F260C7F29C2D52D4F1ADAB /* WitchUITests/FreshSaveFirstSessionR140Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D91C184746BA77A9A13F67F /* WitchUITests/FreshSaveFirstSessionR140Tests.swift */; };
+		56C5E31EC52FFEECFEE68B5F /* WitchApp/WitchMusicCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292BBD0F3855017C38F0AA5A /* WitchApp/WitchMusicCoordinator.swift */; };
+		56D81946C6389B541901D018 /* WitchUITests/AccessibilityContrastDiagnosticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88C2F68FF1FFDBB6D3757F /* WitchUITests/AccessibilityContrastDiagnosticTests.swift */; };
+		5723D9A89F0B612926003DD5 /* WitchApp/PartRig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2756E2D2DDBE1C46C33C3DED /* WitchApp/PartRig.swift */; };
+		576E98E7DEB320D0133BBB0E /* WitchApp/EquipmentMultiConsumerFixtureR084.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B3C4874E984D04334D20A /* WitchApp/EquipmentMultiConsumerFixtureR084.swift */; };
+		5793700FB9CAF1DC71127466 /* WitchApp/R016GatherNodePresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9C1F1457F5105A70B9339A /* WitchApp/R016GatherNodePresentation.swift */; };
+		5A7DFBF94700E0641D5CD1B0 /* WitchGameCore/Sources/WitchGameCore/WardrobeCandidateR128.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36750427F478631FF18C22D4 /* WitchGameCore/Sources/WitchGameCore/WardrobeCandidateR128.swift */; };
+		5BA95890EDBA946DB6641B5D /* WitchGameCore/Sources/WitchGameCore/GearEnhancementGrowthR230.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433CDB6B95431B53A2790979 /* WitchGameCore/Sources/WitchGameCore/GearEnhancementGrowthR230.swift */; };
+		5BDE926B0167BBFDCBE2C4FE /* WitchUITests/SharedPartyWorkLifecycleR146Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C83D087D25235641212EE5 /* WitchUITests/SharedPartyWorkLifecycleR146Tests.swift */; };
+		5CC8116A1F070BEA46E5F118 /* WitchApp/EquipmentLoadoutsViewR342.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD98B20B9B644E395870C395 /* WitchApp/EquipmentLoadoutsViewR342.swift */; };
+		5D8DC03D4D281F8C87B3AEC7 /* WitchApp/LocalAdQAPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A28F9AFA2F85B366F0CE101 /* WitchApp/LocalAdQAPanel.swift */; };
+		5DFB0BFE0BC406E4E46DD2EA /* WitchApp/QAScenarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EF0C84064D29E6CD569DAE /* WitchApp/QAScenarios.swift */; };
+		5E1700BA9FA91629F48DB611 /* WitchApp/DefeatGuidanceR229.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC3E666383950042B888FD /* WitchApp/DefeatGuidanceR229.swift */; };
+		5EE8DD35F9FE668FCA99EDEA /* WitchApp/GameStoreKitQA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9700CE4C82B6DA8FA64E7273 /* WitchApp/GameStoreKitQA.swift */; };
+		5F08B75F14F5E143E7BCA2BB /* WitchGameCore/Sources/WitchGameCore/SharedPartyWorkRuntimeR170.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2042544CF25358545E17D1F /* WitchGameCore/Sources/WitchGameCore/SharedPartyWorkRuntimeR170.swift */; };
+		60A5FEF9A4B59B1E850C6FA0 /* WitchApp/GachaViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2913965B5355D05CE935DCE4 /* WitchApp/GachaViews.swift */; };
+		6274B2D7DF9B26D447C5AF08 /* WitchApp/PartyAuthoredMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ABDF64D1B33FB5FDCDE08F /* WitchApp/PartyAuthoredMotion.swift */; };
+		627AD57F2136225BDE4D798B /* WitchApp/PartyCastHoldLifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0E4C0023E0845050588EF4 /* WitchApp/PartyCastHoldLifecycle.swift */; };
+		631D34D167E910F3569EDA71 /* WitchGameCore/Sources/WitchGameCore/R6CampaignQA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B260387F6B11429A1617E75 /* WitchGameCore/Sources/WitchGameCore/R6CampaignQA.swift */; };
+		633C6777034B0CDE6F47EE54 /* WitchApp/EquipmentMultiConsumerObserverR084.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8383237A422685EAB15867D /* WitchApp/EquipmentMultiConsumerObserverR084.swift */; };
+		64BC348C22140497DC491854 /* WitchUITests/UI48JourneyAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5105FDED6E559D7A5D4E8D4D /* WitchUITests/UI48JourneyAcceptanceTests.swift */; };
+		65A16A52D52427C0587AC2AA /* WitchGameCore/Sources/WitchGameCore/GearAppearanceProjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2371D2D88FED84C52D132683 /* WitchGameCore/Sources/WitchGameCore/GearAppearanceProjection.swift */; };
+		65CFBC7F7972E1BD32E760B8 /* WitchApp/MothPassiveRenderStateR058.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C56AA355E77233EAC5CB9A /* WitchApp/MothPassiveRenderStateR058.swift */; };
+		67AD6BC25F0285FA14AE5595 /* WitchGameCore/Sources/WitchGameCore/R6CombatPresentationSemantics.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8909A95C26E885BB96A22EE /* WitchGameCore/Sources/WitchGameCore/R6CombatPresentationSemantics.swift */; };
+		685FBF0EE024457813F9BF3F /* WitchGameCore/Sources/WitchGameCore/AuthorityClientContractR461.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C45095538F42560C3A08417 /* WitchGameCore/Sources/WitchGameCore/AuthorityClientContractR461.swift */; };
+		69EEFBF777C3224866467786 /* WitchGameCore/Sources/WitchGameCore/GameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA780286B6EB6F14E5D01C9 /* WitchGameCore/Sources/WitchGameCore/GameEngine.swift */; };
+		6A1503C36257B6353EA492BB /* WitchUITests/RecipeGoalCandidateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3ACD3B0AA382B6BD79836B /* WitchUITests/RecipeGoalCandidateTests.swift */; };
+		6A9BAB448C9F04D4C3B296C8 /* WitchApp/MotionCoverageR018.swift in Sources */ = {isa = PBXBuildFile; fileRef = D922C6B629237E61370265FA /* WitchApp/MotionCoverageR018.swift */; };
+		6B252C093BF4A484EDBD3845 /* WitchApp/GaitContactScheduleR064.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5944FE2D28CACE5627FE541 /* WitchApp/GaitContactScheduleR064.swift */; };
+		6BDA3B3D9339AA168FA460D1 /* WitchApp/LunaBookNativeObserverR010.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F44AC95293D7138B23416C /* WitchApp/LunaBookNativeObserverR010.swift */; };
+		6D1299E06D9F13D029812BFB /* WitchApp/HomeDeskVisualCandidateR138.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866F56C5A5C521F942BAD81 /* WitchApp/HomeDeskVisualCandidateR138.swift */; };
+		6D3E81890C15FED2E7530195 /* WitchApp/R6CampaignPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3147742FB7DA979C69B7013 /* WitchApp/R6CampaignPreview.swift */; };
+		70BCAE9DA56EEA700FAE9708 /* WitchUITests/GatheringProgressR041Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E875BBA766EAADC48A9D6DD /* WitchUITests/GatheringProgressR041Tests.swift */; };
+		712B453C7F5B10BA0884AAB0 /* WitchApp/EffectBudgetRegressionQA.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15A60D6476BB5019458CB42 /* WitchApp/EffectBudgetRegressionQA.swift */; };
+		725775816772A1E87BA85A82 /* WitchApp/RuntimeMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8167C90D4D35C9881A3C88C5 /* WitchApp/RuntimeMetrics.swift */; };
+		76229DDE0AC378A4CB92014E /* WitchApp/MagnetMarkIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A516766E29ECE595FAD03771 /* WitchApp/MagnetMarkIndicator.swift */; };
+		768299FF39101510DC836A0E /* WitchApp/UI48DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD86EE1AF44B48E9493A3B /* WitchApp/UI48DesignSystem.swift */; };
+		78D7AFF02C50E63ADF9F52F7 /* WitchGameCore/Sources/WitchGameCore/NaturalGearRefinementR352.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FB4C0EBD2B1B0EC33F33F5 /* WitchGameCore/Sources/WitchGameCore/NaturalGearRefinementR352.swift */; };
+		78F6502F2509132271FDF474 /* WitchApp/EquipmentMotionTraceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5E342ACB1DEFB84B8A7F2E /* WitchApp/EquipmentMotionTraceRequest.swift */; };
+		79A720EF74FB1C4A052E6EDB /* WitchApp/LunaBookPresentationCleanupR004.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8E2521C6C2E2EE8212CA99 /* WitchApp/LunaBookPresentationCleanupR004.swift */; };
+		7CD7C224458AA0AB1A3889F4 /* WitchApp/EnemyMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB2BB86815DE137C6D6A771 /* WitchApp/EnemyMotion.swift */; };
+		7E2BC75C677958EE7A6F66B2 /* WitchGameCore/Sources/WitchGameCore/GameRuntimeNaturalGearProfileR350.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9352264105DA7881AA1E8B2D /* WitchGameCore/Sources/WitchGameCore/GameRuntimeNaturalGearProfileR350.swift */; };
+		7E5B84F62CA9524D93FFE989 /* WitchApp/MothPassiveRenderObserverR058.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19903A3C9FBB2277EE7DA56E /* WitchApp/MothPassiveRenderObserverR058.swift */; };
+		7F69F35E2EA564389B7A9318 /* WitchApp/ActorBodyFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F7203B7496E82C26881EF /* WitchApp/ActorBodyFrame.swift */; };
+		809885463E8A4DC71D647F56 /* WitchUITests/ScrollIndicatorCandidateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6340536B2EE11E4652D66A1 /* WitchUITests/ScrollIndicatorCandidateTests.swift */; };
+		818CB3E3DEA2EC7FFB4E1228 /* WitchApp/EnemyEventRenderTraceR145.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBEFCA0B1E5353132F93BC9 /* WitchApp/EnemyEventRenderTraceR145.swift */; };
+		8400F72A87679CD21D65E66F /* WitchApp/UI48Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D1A3AD065D5E851CDEBF56 /* WitchApp/UI48Journal.swift */; };
+		8599C7796568A12E1EA9F220 /* WitchGameCore/Sources/WitchGameCore/StandardPlayStartupSelectionR169.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7966E1FC2D74F5F6B5316AE /* WitchGameCore/Sources/WitchGameCore/StandardPlayStartupSelectionR169.swift */; };
+		85B478CAFE9BB78B22729EE0 /* WitchApp/PursuitSuppressionNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B533DD6E3AEA85FF0D41F5F1 /* WitchApp/PursuitSuppressionNotice.swift */; };
+		85D3290C5DABFA6E1EBEB3EC /* WitchApp/EffectAnchorProjectionQA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD2F9675DCBD57C30477BB /* WitchApp/EffectAnchorProjectionQA.swift */; };
+		8786717A2E25490F3A9BE785 /* WitchGameCore/Sources/WitchGameCore/EquippedVisualCandidates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDE1D54946C375BBAD75DBB /* WitchGameCore/Sources/WitchGameCore/EquippedVisualCandidates.swift */; };
+		88439CB915EC1DA2289DAEE0 /* WitchApp/GearDismantleRefundPresentationR353.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538FAB9A54B74408C608ABD5 /* WitchApp/GearDismantleRefundPresentationR353.swift */; };
+		8A147A0D025D7605227795A2 /* WitchGameCore/Sources/WitchGameCore/RecipeGoalProjectionR035.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610C3D49672159294774FE66 /* WitchGameCore/Sources/WitchGameCore/RecipeGoalProjectionR035.swift */; };
+		8A72FE0386800F68DF338CB5 /* WitchGameCore/Sources/WitchGameCore/BattleTargetWarningR299.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5A79ABF6EA8F670A554410 /* WitchGameCore/Sources/WitchGameCore/BattleTargetWarningR299.swift */; };
+		8B8109573C7DB776C3D2DC5C /* WitchGameCore/Sources/WitchGameCore/Domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7273AC8E4941C19378691176 /* WitchGameCore/Sources/WitchGameCore/Domain.swift */; };
+		8D1DDE5C89F467484D462A99 /* WitchGameCore/Sources/WitchGameCore/SyntheticPartyDash2PreviewR043.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D28AF71443344B24297DD01 /* WitchGameCore/Sources/WitchGameCore/SyntheticPartyDash2PreviewR043.swift */; };
+		8F81D3CC0AB91D0346D08C3D /* WitchApp/DragonFourLegStanceMountR064.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5235D2F3E7E3AF0FD26585 /* WitchApp/DragonFourLegStanceMountR064.swift */; };
+		8FB89C3039EE82DE1671F87F /* WitchApp/CommerceAppIntegrationR1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FBD2D57151855C589C78E3 /* WitchApp/CommerceAppIntegrationR1.swift */; };
+		90783A037E69E3B3CFC791B2 /* WitchGameCore/Sources/WitchGameCore/RecipeEvolutionOutcomeProjectionR129.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9EDCB95B765C9525AB9051 /* WitchGameCore/Sources/WitchGameCore/RecipeEvolutionOutcomeProjectionR129.swift */; };
+		90B6058F5E5FC4356A2A268C /* WitchApp/GameStoreKitQASink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77996765C24AD8F38E574793 /* WitchApp/GameStoreKitQASink.swift */; };
+		9110A13AF9CA8136DD3ECF93 /* WitchUITests/GearComparisonR131LifecycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFDEF7E490B5BEBD14AE9F2 /* WitchUITests/GearComparisonR131LifecycleTests.swift */; };
+		919E5162595FA7957C302DBB /* WitchUITests/DragonWalkMeshDiagnosticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE24F7DB470503F3B8F931F /* WitchUITests/DragonWalkMeshDiagnosticTests.swift */; };
+		91EE9325D0AD2C82B57B0844 /* WitchApp/LunaMantleBooklessR127.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BC51D22487DA13B73ECFE5 /* WitchApp/LunaMantleBooklessR127.swift */; };
+		9357FF581FDCBE4A45B01E0D /* WitchApp/LatentGearQAFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7B55B711E68F5EA0BD7ABC /* WitchApp/LatentGearQAFixture.swift */; };
+		93A65A39124DF9F94ABFB80D /* WitchApp/GearUpgradeClarityR218.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993EEBA91B806CF7CECB7968 /* WitchApp/GearUpgradeClarityR218.swift */; };
+		963024A0AC1ECA496B9F92A3 /* WitchApp/FurnitureRoomPreviewR275.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4D144193ABBC2034C79161 /* WitchApp/FurnitureRoomPreviewR275.swift */; };
+		967DE2A1D52F186A8BA54E2B /* WitchGameCore/Sources/WitchGameCore/GearInventoryIndexR374.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FC40A2D7F27FE2AAE0E9BB /* WitchGameCore/Sources/WitchGameCore/GearInventoryIndexR374.swift */; };
+		981D8829B06E8CBED93BCB67 /* WitchApp/SyntheticDash2TailTraceR047.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57355FCDF6870D2B440F01E0 /* WitchApp/SyntheticDash2TailTraceR047.swift */; };
+		98E3C34B08EB66A02CDD6467 /* WitchUITests/FurnitureVisualR124Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B186BEF3EE9FC780DDB1D4 /* WitchUITests/FurnitureVisualR124Tests.swift */; };
+		9906F5A437CF17EFBF54EF25 /* WitchApp/EquipmentMultiConsumerSampleRecordR084.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF189F2C298F39AABC7D075 /* WitchApp/EquipmentMultiConsumerSampleRecordR084.swift */; };
+		995131BED49F62FF08E9D225 /* WitchApp/UI48RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507558AFE9CE866E5A2B9C0 /* WitchApp/UI48RootView.swift */; };
+		9991F53BCF42CC7E59AE9BA9 /* WitchApp/ERNAStaffWalkCycleTraceQA_R002.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF1962A0B32485C2F215B75 /* WitchApp/ERNAStaffWalkCycleTraceQA_R002.swift */; };
+		9A2EA4F1A5488587C60E441C /* WitchUITests/PostClearResearchR122UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F30A845EA179516580BCC53 /* WitchUITests/PostClearResearchR122UITests.swift */; };
+		9BB44453797D4A7566804A5E /* WitchUITests/LatentGearCandidateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F618DF68589949DF49C221 /* WitchUITests/LatentGearCandidateTests.swift */; };
+		9C54E4F23B14DFEC16A3C43D /* WitchApp/AreaSceneRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96A808D02F999B8B9641F6B /* WitchApp/AreaSceneRouting.swift */; };
+		9D59FEF1A211B0114B935F49 /* WitchGameCore/Sources/WitchGameCore/ProductProgressionRulesR1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F51D552C5430A1AE0F0E91C /* WitchGameCore/Sources/WitchGameCore/ProductProgressionRulesR1.swift */; };
+		9EF562AD3FE65EFBA89E00C8 /* WitchApp/GamePurchaseAuthorityQA_R454.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6998EE3B7B569135DD3BFA2 /* WitchApp/GamePurchaseAuthorityQA_R454.swift */; };
+		9F041724A4D4C37D13FCCF5C /* WitchUITests/RecipeEvolutionPreviewLifecycleR129Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EED3F745806780085DF425 /* WitchUITests/RecipeEvolutionPreviewLifecycleR129Tests.swift */; };
+		A01B6EDBEAD31D9A416DC70C /* WitchApp/EffectMechanicPreviewQA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA32F43D80854FD3BB7F9AAC /* WitchApp/EffectMechanicPreviewQA.swift */; };
+		A0C21E3CC3E60713F7F2F42D /* WitchUITests/EquipmentAuditDiagnosticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2975C38CB988A9C57D82B5 /* WitchUITests/EquipmentAuditDiagnosticTests.swift */; };
+		A1C26DB87E13B54821C68418 /* WitchApp/UI48Adventure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6616BEE406BE87BFA2C6F1 /* WitchApp/UI48Adventure.swift */; };
+		A666B89905D3909AE113BF78 /* WitchGameCore/Sources/WitchGameCore/R6TimelineSimulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2F8FCCE9C55750EBE07D1 /* WitchGameCore/Sources/WitchGameCore/R6TimelineSimulator.swift */; };
+		A66A3090F51743BE2EA08F8C /* WitchUITests/StandardPlayCompletionR190Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B3176C5D008BE87F412B73 /* WitchUITests/StandardPlayCompletionR190Tests.swift */; };
+		A72D2FB217F07646C7E361A2 /* WitchGameCore/Sources/WitchGameCore/LunaBookAppearanceCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4647252944BD0FB02F6339 /* WitchGameCore/Sources/WitchGameCore/LunaBookAppearanceCandidate.swift */; };
+		A7332504249610BC4FF8A433 /* WitchApp/PursuitNoticeCaptureWindowR092.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D5D3450B5B97A51014C9E9 /* WitchApp/PursuitNoticeCaptureWindowR092.swift */; };
+		A7D16E0CFF78D811EF151BD3 /* WitchApp/SharedPartyWorkR146.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EA81288ADC83433506BE58 /* WitchApp/SharedPartyWorkR146.swift */; };
+		A8EFDBBD82F89E7B5F0A1BD7 /* WitchApp/GearLatentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDEC57A0054AB9958D889FB /* WitchApp/GearLatentModel.swift */; };
+		AAE8F2779B5D061A4E1B36DB /* WitchGameCore/Sources/WitchGameCore/CommerceRuntimeR465.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64080143A1DBCD904BF5E810 /* WitchGameCore/Sources/WitchGameCore/CommerceRuntimeR465.swift */; };
+		AD8A888FA6AA7B40B0EFDAA4 /* WitchApp/GearComparisonQAFixtureR131.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013210D4D748F14761F35E03 /* WitchApp/GearComparisonQAFixtureR131.swift */; };
+		AD8B8D3F548643580CD17AC0 /* WitchApp/BattleTimingTraceR319.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8453281BBF58D447D9B1FA /* WitchApp/BattleTimingTraceR319.swift */; };
+		AEB363890E82BA9A9FC487B3 /* WitchUITests/LunaBookNativeContinuityTestsR010.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2CB27B55BD9FEC8ECC09EA /* WitchUITests/LunaBookNativeContinuityTestsR010.swift */; };
+		B03AF38D310AED7043A79F3E /* WitchApp/ArtLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0433F681E340D87AD9003F /* WitchApp/ArtLibrary.swift */; };
+		B051AC8C8447196F49DFEA35 /* WitchApp/EffectCueCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72340E9FF9C167849D6916C /* WitchApp/EffectCueCoordinator.swift */; };
+		B13D80E3BAD60F9A9E5BD8C4 /* WitchApp/PursuitNoticePointerGeometryR059.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE355EB6AD7F320930EF3F35 /* WitchApp/PursuitNoticePointerGeometryR059.swift */; };
+		B14A68771C95B666B36BDF1E /* WitchGameCore/Sources/WitchGameCore/GearDismantleRefundR353.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ABC727021713295E5DA983 /* WitchGameCore/Sources/WitchGameCore/GearDismantleRefundR353.swift */; };
+		B34294F5F2FDE5DB3B2F9A49 /* WitchGameCore/Sources/WitchGameCore/ResearchMaterialGuidanceR280.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F573636D8CCC00A52A4DC /* WitchGameCore/Sources/WitchGameCore/ResearchMaterialGuidanceR280.swift */; };
+		B4CAF301BCA6CDA7318DBA7E /* WitchUITests/WitchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3254B5D76DD023644C53D769 /* WitchUITests/WitchUITests.swift */; };
+		B4E4E098744DACD215C2C8EE /* WitchApp/BattlePlayback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A64C276445BA268C4CCBA8C /* WitchApp/BattlePlayback.swift */; };
+		B5F984BD4557F5571B6CFA68 /* WitchApp/UI48Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D5170E7C611D602983C38D /* WitchApp/UI48Equipment.swift */; };
+		B71B5C5E71AA86504A152C68 /* WitchGameCore/Sources/WitchGameCore/GearSwapCampaignPreviewR136.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86C20B32E8BB6C67E0EEC9B /* WitchGameCore/Sources/WitchGameCore/GearSwapCampaignPreviewR136.swift */; };
+		B89FEAFFB82E1973FFBD00C7 /* WitchApp/EquipmentMotionTraceRootSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D40A9B77B45617566CA000 /* WitchApp/EquipmentMotionTraceRootSummary.swift */; };
+		B8D325B63039A74D6F1AFC30 /* WitchApp/RecipeGatherSnapshotQA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319F9AC3CB4130FC79443E1C /* WitchApp/RecipeGatherSnapshotQA.swift */; };
+		B9E1690BC0659A74A47BEC2B /* WitchApp/DragonWalkMeshQA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE1F73A6F78F89C39ADBBBC /* WitchApp/DragonWalkMeshQA.swift */; };
+		BA62145D6EA113A8D4BAB4A3 /* WitchApp/ActiveBattleQA.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EEE79B8F26194AA9D3A07F /* WitchApp/ActiveBattleQA.swift */; };
+		BA9377A4478ECD3D900765D6 /* WitchApp/EffectMechanicMultiEnemyPreviewQA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446D8E10C50B5300C054EA0F /* WitchApp/EffectMechanicMultiEnemyPreviewQA.swift */; };
+		BDA3F9969AECC4A8EB580531 /* WitchApp/GameText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E803ABAFBB5993733DD64A79 /* WitchApp/GameText.swift */; };
+		BDE3FCB422EFB399C45BECFA /* WitchApp/CostBoundedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AA82A6B58F0F7F2351A765 /* WitchApp/CostBoundedCache.swift */; };
+		BEFD13453086BE5E310032C3 /* WitchGameCore/Sources/WitchGameCore/R6CanonicalProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531BFCC5E81910FEADA1FE7A /* WitchGameCore/Sources/WitchGameCore/R6CanonicalProfile.swift */; };
+		BF169C23544EB3F6651B6B1F /* WitchApp/CharacterLocomotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DAD28C8615F4F3AF8FFAC0 /* WitchApp/CharacterLocomotion.swift */; };
+		BF7DA61D0DAED02FCC877B22 /* WitchGameCore/Sources/WitchGameCore/GatheringProgressProjectionR041.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAECB458067B2CF208B6C9A /* WitchGameCore/Sources/WitchGameCore/GatheringProgressProjectionR041.swift */; };
+		BFA85DC1A7D37CF907A878D0 /* WitchApp/GearLatentPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD0353285E17720AB865B8 /* WitchApp/GearLatentPresentation.swift */; };
+		C1289E75996FF3A490D4022E /* WitchApp/CandidateSceneQA_R124.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E8684B74E4EAFC1F4E6378 /* WitchApp/CandidateSceneQA_R124.swift */; };
+		C1FB875D53253EB3F7457CE9 /* WitchApp/EquipmentMotionTraceQA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55298CE471EDE6C66B345965 /* WitchApp/EquipmentMotionTraceQA.swift */; };
+		C282ACD02CD77BA15090C466 /* WitchGameCore/Sources/WitchGameCore/CandidateCharacterGrowth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590EECFB20923056769A6AD6 /* WitchGameCore/Sources/WitchGameCore/CandidateCharacterGrowth.swift */; };
+		C338875AFE6355D496835D39 /* WitchGameCore/Sources/WitchGameCore/RecipeGoalCoreAdapterR002.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34668C48197A1501D123F036 /* WitchGameCore/Sources/WitchGameCore/RecipeGoalCoreAdapterR002.swift */; };
+		C3580B7392F3870A9D1CFF3B /* WitchApp/PursuitNoticePlacementR059Collision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FFD29CFD3B6E90D03F5957 /* WitchApp/PursuitNoticePlacementR059Collision.swift */; };
+		C3D998760D9452915A3A1D00 /* WitchUITests/UI48AcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3638B782295573CFC78C6F /* WitchUITests/UI48AcceptanceTests.swift */; };
+		C482B33009E3DD978B9CD23A /* WitchUITests/R058VisibleChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B4C59E3F09664F6007A051 /* WitchUITests/R058VisibleChallengeTests.swift */; };
+		C49C6B0B31B74D11E6815B93 /* WitchApp/BattleGroundingLayoutCandidateR090.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9904D75C38B192A177C17525 /* WitchApp/BattleGroundingLayoutCandidateR090.swift */; };
+		C4CD4976A902B7EB34E76458 /* WitchApp/DragonFourLegCoordinateContractR064.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7FC1127BEC591952C88B8 /* WitchApp/DragonFourLegCoordinateContractR064.swift */; };
+		C5F72F32A393F058B05828D5 /* WitchApp/EquipmentMultiConsumerShowcaseR084.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0076FD0C6E3136C796BD1DB0 /* WitchApp/EquipmentMultiConsumerShowcaseR084.swift */; };
+		C622A253368EA796FBD4C2CC /* WitchApp/ERNAStaffMotionTraceRequestR040.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02ADAC94BE76F424F5CB3F2 /* WitchApp/ERNAStaffMotionTraceRequestR040.swift */; };
+		C726AF963B20B75058BE5992 /* WitchApp/LunaBookFailureInjectionR010.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6BA13AAC31CF4A7D5CACB3 /* WitchApp/LunaBookFailureInjectionR010.swift */; };
+		CA14969F0E3F80237229A960 /* WitchApp/DragonEntryFootpathSpriteKitAdapterR068R002.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EBCE41CBBC7D52F0D49B32 /* WitchApp/DragonEntryFootpathSpriteKitAdapterR068R002.swift */; };
+		CA26C7E5543B803B1616EC63 /* WitchGameCore/Sources/WitchGameCore/EnemyActionPreviewFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49E0C37C4D7B84146171E68 /* WitchGameCore/Sources/WitchGameCore/EnemyActionPreviewFixture.swift */; };
+		CAD89C102D7F875214E3F4AB /* WitchApp/WorkflowViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CCB3A4CCEC3505AC664DE2 /* WitchApp/WorkflowViews.swift */; };
+		CAEEEC3ABC1A9B523D122082 /* WitchApp/GearRefinementPresentationR352.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61412A385FAED9F889AD47A3 /* WitchApp/GearRefinementPresentationR352.swift */; };
+		CB0557B41BC2A04B3439DF57 /* WitchGameCore/Sources/WitchGameCore/MothIdleAnchorRegistrationR050.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127DC55C8F49080C82D2279B /* WitchGameCore/Sources/WitchGameCore/MothIdleAnchorRegistrationR050.swift */; };
+		CD5979727E81D61554964468 /* WitchApp/PursuitNoticeLabelLayoutR059.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362F5BD42EF9E6A13BC73CAC /* WitchApp/PursuitNoticeLabelLayoutR059.swift */; };
+		CEB2D9088FA8B98A942EACB3 /* WitchGameCore/Sources/WitchGameCore/LocalPurchaseDeliveryQAImporterR453.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4AC05F338D701AF2E8BD8 /* WitchGameCore/Sources/WitchGameCore/LocalPurchaseDeliveryQAImporterR453.swift */; };
+		D0DF013C067214056C771FF3 /* WitchApp/ResearchGatherPreviewR310.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE571E4BAB3D9E3591861D2 /* WitchApp/ResearchGatherPreviewR310.swift */; };
+		D13D9D63A036931B4746F678 /* WitchApp/FrameStallTelemetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931BAB715256D661A15A398 /* WitchApp/FrameStallTelemetry.swift */; };
+		D21F5342017A1F2DAFEE4DF4 /* WitchGameCore/Sources/WitchGameCore/LunaBookMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B74005B2F3F91502221EB0 /* WitchGameCore/Sources/WitchGameCore/LunaBookMotion.swift */; };
+		D31757D69EC28665EB7F41F9 /* WitchApp/HomeFurnitureFitR138.swift in Sources */ = {isa = PBXBuildFile; fileRef = D097A741620CA2F0DC5C9E95 /* WitchApp/HomeFurnitureFitR138.swift */; };
+		D3544D64528EBC9172F761B3 /* WitchApp/LunaBookWalkFallbackR009.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1EA6C6CB02CF7FA9C515DE /* WitchApp/LunaBookWalkFallbackR009.swift */; };
+		D40C1D5C8B680C46E44159AA /* WitchApp/DragonWalkMeshCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53A99C3043D0EAAF8BAC613 /* WitchApp/DragonWalkMeshCandidate.swift */; };
+		D420296EBC7F7199293DD7BA /* WitchGameCore/Sources/WitchGameCore/ResearchGatherRouteR310.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B835105FD1DF0DBBD54E9F /* WitchGameCore/Sources/WitchGameCore/ResearchGatherRouteR310.swift */; };
+		D6A69CB844FC7275902D2F8F /* WitchGameCore/Sources/WitchGameCore/RecipeGatherHandoffTargetR157.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8007EAC18D52C5F115136 /* WitchGameCore/Sources/WitchGameCore/RecipeGatherHandoffTargetR157.swift */; };
+		D6FD4B84149BD49331398672 /* WitchApp/GatherNodePresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAFDFED59C118A6BF4DAAC0 /* WitchApp/GatherNodePresentation.swift */; };
+		D7030A792C9B66D1545B5836 /* WitchApp/R04TelegraphEnvironmentPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FBFB3EEB2CA2A17956D239 /* WitchApp/R04TelegraphEnvironmentPolicy.swift */; };
+		D71F20AF6D267372D3D01A7E /* WitchApp/GatherNodeQA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C35C010B4C48D06328F1B /* WitchApp/GatherNodeQA.swift */; };
+		D78569EC11AA1816F4ABAA00 /* WitchApp/UI48Lifestyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6ED4E297B11B3A9788100E /* WitchApp/UI48Lifestyle.swift */; };
+		D79E5C3D759ACFCF8FCFDF10 /* WitchApp/EnemyRegisteredPoses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E43157C70350B00BF09DE /* WitchApp/EnemyRegisteredPoses.swift */; };
+		D843ADB1193F882462686564 /* WitchApp/GatherFrameTraceQA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99576610D71516375414C660 /* WitchApp/GatherFrameTraceQA.swift */; };
+		D931151E81FAE216FA4C7A76 /* WitchApp/NaturalGearBuildPolicyR350.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4178E8505EFE314172B3EC80 /* WitchApp/NaturalGearBuildPolicyR350.swift */; };
+		D9FEC0F1E7E9DE9B9AE3927C /* WitchApp/DragonGaitR038QA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8F9D4C12F7AF223663F99 /* WitchApp/DragonGaitR038QA.swift */; };
+		DA2437EC7A056A49DE7E4AD8 /* WitchApp/LunaMantleOverlayR097.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBBC33C1755C7A4A3A2472A /* WitchApp/LunaMantleOverlayR097.swift */; };
+		DA76149CA31BE2BFCEBAD75D /* WitchUITests/WardrobeLifecycleR128UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4409237605017E1F3CA501A /* WitchUITests/WardrobeLifecycleR128UITests.swift */; };
+		DC874C840EBBD11DD72915CC /* WitchUITests/WardrobeLifecycleR130UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22634FC609F1BBCFA288D71D /* WitchUITests/WardrobeLifecycleR130UITests.swift */; };
+		DFD3A5403F0EA95656925251 /* WitchUITests/EquipmentAXStatePairDiagnosticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450D2B70653EC828B2D337B1 /* WitchUITests/EquipmentAXStatePairDiagnosticTests.swift */; };
+		E15EF5D62250ED22818C6626 /* WitchApp/EquipmentMultiConsumerResourceProofR084.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26BBAF63785719CBAB1E128 /* WitchApp/EquipmentMultiConsumerResourceProofR084.swift */; };
+		E1E2F4B6AF246EDE230BF875 /* WitchApp/PartyFrameAuditQA.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CEC5023C5E476F0819E24B /* WitchApp/PartyFrameAuditQA.swift */; };
+		E226AB4C252105B7D85E9DEA /* WitchApp/EquipmentDetailRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77779A2FEE646E5B42C1EB33 /* WitchApp/EquipmentDetailRenderer.swift */; };
+		E2E474DB26055D14D9C39483 /* WitchGameCore/Sources/WitchGameCore/UI48QALaunchGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0095BD2265F04B5E3C6C4D5 /* WitchGameCore/Sources/WitchGameCore/UI48QALaunchGate.swift */; };
+		E324E547EF9024C43ACA6778 /* WitchApp/RecipeGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45561F4DCF6FEED727F207E2 /* WitchApp/RecipeGoalView.swift */; };
+		E6B3F7667D8AA6B7BE80A2CF /* WitchApp/DragonEntryFootpathIKR068R002.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDC4DCB6B1BE7F9DB050776 /* WitchApp/DragonEntryFootpathIKR068R002.swift */; };
+		E7626B234319AC8AAB98EC07 /* WitchApp/DragonNormalEntryBackendR068.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BB7EB4AB8BB636FB02F8D4 /* WitchApp/DragonNormalEntryBackendR068.swift */; };
+		E7C568E01E63E07EBE19E5E8 /* WitchApp/DragonDistalLegRigMountR007.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4B4996681C6D0F2A75F9FC /* WitchApp/DragonDistalLegRigMountR007.swift */; };
+		EA974F7E22E327059B561CE9 /* WitchApp/JellyfishMeshRigR254QA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF3A459D6D12D093C4FFD44 /* WitchApp/JellyfishMeshRigR254QA.swift */; };
+		EAA3F18A1206445E0ADB7230 /* WitchGameCore/Sources/WitchGameCore/CombatSimulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3461928AEAC44AAAD79DC9 /* WitchGameCore/Sources/WitchGameCore/CombatSimulator.swift */; };
+		EB6BDFF7F12D6C81159BA986 /* WitchGameCore/Sources/WitchGameCore/LunaBookMotionDataR050Candidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177794BCE636459BDF4850AB /* WitchGameCore/Sources/WitchGameCore/LunaBookMotionDataR050Candidate.swift */; };
+		EC6CAF5240904E3BA4380887 /* WitchApp/GearComparisonR136Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C05A2A1AB18971BC42203D9 /* WitchApp/GearComparisonR136Section.swift */; };
+		ED22AD5563F2B0C98DDB43AC /* WitchApp/PartyCastRenderedEvidenceR006.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F73C929007F7DDAEDEDC4 /* WitchApp/PartyCastRenderedEvidenceR006.swift */; };
+		ED68A1BBC0EFE5E88DAAA2C2 /* WitchApp/BattleEntryTraceQA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD57651F909B2748A722A03 /* WitchApp/BattleEntryTraceQA.swift */; };
+		EDE7082C9F20B8CC3A994AA8 /* WitchApp/NoirNeckwearCandidateRegistrationR003.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58A912289196DB52F8F8858 /* WitchApp/NoirNeckwearCandidateRegistrationR003.swift */; };
+		EDE84177BBA7759AD28253EB /* WitchApp/LunaBookNativeSnapshotR010.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D057A7E021AF21A0C37A1C /* WitchApp/LunaBookNativeSnapshotR010.swift */; };
+		EDFB1ECA0669988B8A2FEF70 /* WitchGameCore/Sources/WitchGameCore/FirstCraftCostR179.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C3394D646AC4E42EF1112F /* WitchGameCore/Sources/WitchGameCore/FirstCraftCostR179.swift */; };
+		F04641A4A8B54A5265F21664 /* WitchApp/RecipeGoalQAFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B31206B6536C6011B5F204C /* WitchApp/RecipeGoalQAFixture.swift */; };
+		F11E9BE3FB1C126D164CBF2A /* WitchUITests/RecipeGatherHandoffR039Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2391ED86469A2AEE09B2816 /* WitchUITests/RecipeGatherHandoffR039Tests.swift */; };
+		F2E7E63DA9D95C60C2BD83D9 /* WitchApp/IsolatedWalkCycleObserverR018.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8098073DCAB46BCCF7B194B2 /* WitchApp/IsolatedWalkCycleObserverR018.swift */; };
+		F31BA5176A29E300908CD280 /* WitchGameCore/Sources/WitchGameCore/RecipeInvestigationRouteR158.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F3017F5EE2FC65871997A6 /* WitchGameCore/Sources/WitchGameCore/RecipeInvestigationRouteR158.swift */; };
+		F62BCD291A7BBB0D15C3F22F /* WitchApp/R04WeatherQA.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA7BB325C3DB0C54997E09B /* WitchApp/R04WeatherQA.swift */; };
+		F7E0C89A38F8004ECFBFD3C1 /* WitchApp/PursuitNoticeRenderedBoundsQA_R059.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60143050F8ABE56F55A3F29 /* WitchApp/PursuitNoticeRenderedBoundsQA_R059.swift */; };
+		F94101A37D12DBA3D8DD224D /* WitchGameCore/Sources/WitchGameCore/NaturalGearDiscoveryR350.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BDBE54F574E9C54FEAF097 /* WitchGameCore/Sources/WitchGameCore/NaturalGearDiscoveryR350.swift */; };
+		FA4B33A6075811DFC1346024 /* WitchGameCore/Sources/WitchGameCore/GameRuntimeDismantleProfileR353.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1C5E1004B932DE39C540DE /* WitchGameCore/Sources/WitchGameCore/GameRuntimeDismantleProfileR353.swift */; };
+		FACF1149BE03ECEC14214993 /* WitchApp/JellyfishMeshSequenceQAR259.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26DC8FC6D0E76B00E470EAF /* WitchApp/JellyfishMeshSequenceQAR259.swift */; };
+		FBD3A033CB66B7FD07662ED0 /* WitchApp/SceneTextureCacheQA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859C7D2FA3CC72E8FC7372EA /* WitchApp/SceneTextureCacheQA.swift */; };
+		FC04926EEB66AC427CF4B97C /* WitchApp/JellyfishMeshSequenceQAR137.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0099CE53E1F0F58DF51DB /* WitchApp/JellyfishMeshSequenceQAR137.swift */; };
+		FF9508811E939D36DD0D227E /* WitchApp/GearLatentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1014FC08566AC17C7281AB /* WitchApp/GearLatentView.swift */; };
+		FFFF467AEE361BA322E5F3C7 /* WitchUITests/SaveRecoveryR120UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7483018AFDAE52D62D648B /* WitchUITests/SaveRecoveryR120UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D799BAE6088A90139B415FCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98F54143AB4E86B28C3AFEE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F6027D858B72CC70E5CC8E9;
+			remoteInfo = WitchGathering;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000CBCAA6F55AB39AC96B607 /* WitchApp/DragonGaitR038FailureLifecycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/DragonGaitR038FailureLifecycle.swift; sourceTree = SOURCE_ROOT; };
+		0076FD0C6E3136C796BD1DB0 /* WitchApp/EquipmentMultiConsumerShowcaseR084.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/EquipmentMultiConsumerShowcaseR084.swift; sourceTree = SOURCE_ROOT; };
+		00CEED815587D7EFFDDF566B /* WitchGameCore/Sources/WitchGameCore/OwnedPartyLoadoutPreviewR181.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/OwnedPartyLoadoutPreviewR181.swift; sourceTree = SOURCE_ROOT; };
+		013210D4D748F14761F35E03 /* WitchApp/GearComparisonQAFixtureR131.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/GearComparisonQAFixtureR131.swift; sourceTree = SOURCE_ROOT; };
+		03CCB3A4CCEC3505AC664DE2 /* WitchApp/WorkflowViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/WorkflowViews.swift; sourceTree = SOURCE_ROOT; };
+		03DD30B0C48ACB1ACA391991 /* WitchApp/QASaveReadback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/QASaveReadback.swift; sourceTree = SOURCE_ROOT; };
+		0534D8137CADD288903D4A9F /* WitchGameCore/Sources/WitchGameCore/SaveRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/SaveRepository.swift; sourceTree = SOURCE_ROOT; };
+		06CB60BAF4730D8911C3B098 /* WitchUITests/LargeTextCompanionReachabilityR233Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/LargeTextCompanionReachabilityR233Tests.swift; sourceTree = SOURCE_ROOT; };
+		0B40272EFD2F9FA9D1C15C77 /* WitchUITests/LargeTextRemainingCompanionsR265Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/LargeTextRemainingCompanionsR265Tests.swift; sourceTree = SOURCE_ROOT; };
+		0BC88701977082A15E58F580 /* WitchApp/App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/App.swift; sourceTree = SOURCE_ROOT; };
+		0C05A2A1AB18971BC42203D9 /* WitchApp/GearComparisonR136Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/GearComparisonR136Section.swift; sourceTree = SOURCE_ROOT; };
+		0C45095538F42560C3A08417 /* WitchGameCore/Sources/WitchGameCore/AuthorityClientContractR461.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/AuthorityClientContractR461.swift; sourceTree = SOURCE_ROOT; };
+		0C5235D2F3E7E3AF0FD26585 /* WitchApp/DragonFourLegStanceMountR064.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/DragonFourLegStanceMountR064.swift; sourceTree = SOURCE_ROOT; };
+		0D0E4C0023E0845050588EF4 /* WitchApp/PartyCastHoldLifecycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/PartyCastHoldLifecycle.swift; sourceTree = SOURCE_ROOT; };
+		0D1EA6C6CB02CF7FA9C515DE /* WitchApp/LunaBookWalkFallbackR009.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/LunaBookWalkFallbackR009.swift; sourceTree = SOURCE_ROOT; };
+		0D8453281BBF58D447D9B1FA /* WitchApp/BattleTimingTraceR319.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/BattleTimingTraceR319.swift; sourceTree = SOURCE_ROOT; };
+		0F7B55B711E68F5EA0BD7ABC /* WitchApp/LatentGearQAFixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/LatentGearQAFixture.swift; sourceTree = SOURCE_ROOT; };
+		10024CB0BBF2E7396616696D /* WitchGameCore/Sources/WitchGameCore/GameRuntimeConfigurationR098.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/GameRuntimeConfigurationR098.swift; sourceTree = SOURCE_ROOT; };
+		11EED3F745806780085DF425 /* WitchUITests/RecipeEvolutionPreviewLifecycleR129Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/RecipeEvolutionPreviewLifecycleR129Tests.swift; sourceTree = SOURCE_ROOT; };
+		127DC55C8F49080C82D2279B /* WitchGameCore/Sources/WitchGameCore/MothIdleAnchorRegistrationR050.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/MothIdleAnchorRegistrationR050.swift; sourceTree = SOURCE_ROOT; };
+		177794BCE636459BDF4850AB /* WitchGameCore/Sources/WitchGameCore/LunaBookMotionDataR050Candidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/LunaBookMotionDataR050Candidate.swift; sourceTree = SOURCE_ROOT; };
+		1793E08DCEDC758197614885 /* WitchUITests/ERNABodyFitR061Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/ERNABodyFitR061Tests.swift; sourceTree = SOURCE_ROOT; };
+		181C2B48F4A34E0101363F35 /* WitchApp/HomeDeskVisualCandidateR124.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/HomeDeskVisualCandidateR124.swift; sourceTree = SOURCE_ROOT; };
+		18B8007EAC18D52C5F115136 /* WitchGameCore/Sources/WitchGameCore/RecipeGatherHandoffTargetR157.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/RecipeGatherHandoffTargetR157.swift; sourceTree = SOURCE_ROOT; };
+		19201A7678F37F42041DDBE7 /* WitchGameCore/Sources/WitchGameCore/LunaBookMotionDataR001.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/LunaBookMotionDataR001.swift; sourceTree = SOURCE_ROOT; };
+		19903A3C9FBB2277EE7DA56E /* WitchApp/MothPassiveRenderObserverR058.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/MothPassiveRenderObserverR058.swift; sourceTree = SOURCE_ROOT; };
+		1B23FB4403FECF23C650C9BB /* WitchApp/PursuitNoticeRenderObserverR092.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/PursuitNoticeRenderObserverR092.swift; sourceTree = SOURCE_ROOT; };
+		1B33A30FE419E2AD71876434 /* WitchApp/JellyfishMeshRigR135_QA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/JellyfishMeshRigR135_QA.swift; sourceTree = SOURCE_ROOT; };
+		1BA5424049DFEA7D2B280432 /* WitchApp/LunaMantleBooklessR126.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/LunaMantleBooklessR126.swift; sourceTree = SOURCE_ROOT; };
+		1D1D1DE007A9DD5F9FBDBAF0 /* WitchGameCore/Sources/WitchGameCore/CandidateLatentCombatModifiersR005.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/CandidateLatentCombatModifiersR005.swift; sourceTree = SOURCE_ROOT; };
+		1D7483018AFDAE52D62D648B /* WitchUITests/SaveRecoveryR120UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/SaveRecoveryR120UITests.swift; sourceTree = SOURCE_ROOT; };
+		1E6ED4E297B11B3A9788100E /* WitchApp/UI48Lifestyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/UI48Lifestyle.swift; sourceTree = SOURCE_ROOT; };
+		1EA780286B6EB6F14E5D01C9 /* WitchGameCore/Sources/WitchGameCore/GameEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/GameEngine.swift; sourceTree = SOURCE_ROOT; };
+		1F4B4996681C6D0F2A75F9FC /* WitchApp/DragonDistalLegRigMountR007.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/DragonDistalLegRigMountR007.swift; sourceTree = SOURCE_ROOT; };
+		1F6EB8E362C74C8C20FD0E60 /* WitchApp/AreaFlowQAHook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/AreaFlowQAHook.swift; sourceTree = SOURCE_ROOT; };
+		1FB2BB86815DE137C6D6A771 /* WitchApp/EnemyMotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/EnemyMotion.swift; sourceTree = SOURCE_ROOT; };
+		21D5170E7C611D602983C38D /* WitchApp/UI48Equipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/UI48Equipment.swift; sourceTree = SOURCE_ROOT; };
+		223B4C2C0B7D98953456F6C1 /* WitchApp/GearComparisonR131Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/GearComparisonR131Section.swift; sourceTree = SOURCE_ROOT; };
+		22634FC609F1BBCFA288D71D /* WitchUITests/WardrobeLifecycleR130UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/WardrobeLifecycleR130UITests.swift; sourceTree = SOURCE_ROOT; };
+		2371D2D88FED84C52D132683 /* WitchGameCore/Sources/WitchGameCore/GearAppearanceProjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/GearAppearanceProjection.swift; sourceTree = SOURCE_ROOT; };
+		24D40A9B77B45617566CA000 /* WitchApp/EquipmentMotionTraceRootSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/EquipmentMotionTraceRootSummary.swift; sourceTree = SOURCE_ROOT; };
+		2756E2D2DDBE1C46C33C3DED /* WitchApp/PartRig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/PartRig.swift; sourceTree = SOURCE_ROOT; };
+		2913965B5355D05CE935DCE4 /* WitchApp/GachaViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/GachaViews.swift; sourceTree = SOURCE_ROOT; };
+		292BBD0F3855017C38F0AA5A /* WitchApp/WitchMusicCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/WitchMusicCoordinator.swift; sourceTree = SOURCE_ROOT; };
+		2A0153013ED9A07EC447B99E /* WitchGameCore/Sources/WitchGameCore/CandidateLatentSlotPolicyR003.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/CandidateLatentSlotPolicyR003.swift; sourceTree = SOURCE_ROOT; };
+		2DD3B51B619CEF57F3269748 /* WitchGameCore/Sources/WitchGameCore/LocalPurchaseTransactionIdentityR454.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/LocalPurchaseTransactionIdentityR454.swift; sourceTree = SOURCE_ROOT; };
+		2F4D144193ABBC2034C79161 /* WitchApp/FurnitureRoomPreviewR275.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/FurnitureRoomPreviewR275.swift; sourceTree = SOURCE_ROOT; };
+		304BFD8E5458F5F84E78797A /* WitchGameCore/Sources/WitchGameCore/FileBackedAuthorityStoreR463.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/FileBackedAuthorityStoreR463.swift; sourceTree = SOURCE_ROOT; };
+		30FE44EDC3FD0320C4EB6DEE /* WitchApp/GearRefinementConfirmationR352.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/GearRefinementConfirmationR352.swift; sourceTree = SOURCE_ROOT; };
+		319F9AC3CB4130FC79443E1C /* WitchApp/RecipeGatherSnapshotQA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/RecipeGatherSnapshotQA.swift; sourceTree = SOURCE_ROOT; };
+		31D057A7E021AF21A0C37A1C /* WitchApp/LunaBookNativeSnapshotR010.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/LunaBookNativeSnapshotR010.swift; sourceTree = SOURCE_ROOT; };
+		3254B5D76DD023644C53D769 /* WitchUITests/WitchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/WitchUITests.swift; sourceTree = SOURCE_ROOT; };
+		34668C48197A1501D123F036 /* WitchGameCore/Sources/WitchGameCore/RecipeGoalCoreAdapterR002.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/RecipeGoalCoreAdapterR002.swift; sourceTree = SOURCE_ROOT; };
+		362F5BD42EF9E6A13BC73CAC /* WitchApp/PursuitNoticeLabelLayoutR059.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/PursuitNoticeLabelLayoutR059.swift; sourceTree = SOURCE_ROOT; };
+		36750427F478631FF18C22D4 /* WitchGameCore/Sources/WitchGameCore/WardrobeCandidateR128.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/WardrobeCandidateR128.swift; sourceTree = SOURCE_ROOT; };
+		36AF34698F20E1F2F06F3E44 /* WitchApp/DragonGroundedEntryCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/DragonGroundedEntryCandidate.swift; sourceTree = SOURCE_ROOT; };
+		3AC4AC05F338D701AF2E8BD8 /* WitchGameCore/Sources/WitchGameCore/LocalPurchaseDeliveryQAImporterR453.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/LocalPurchaseDeliveryQAImporterR453.swift; sourceTree = SOURCE_ROOT; };
+		3B31206B6536C6011B5F204C /* WitchApp/RecipeGoalQAFixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/RecipeGoalQAFixture.swift; sourceTree = SOURCE_ROOT; };
+		3E112B836126B801EA17060A /* StoreKitLocalQA/ReusableBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitLocalQA/ReusableBridge.swift; sourceTree = SOURCE_ROOT; };
+		3F30A845EA179516580BCC53 /* WitchUITests/PostClearResearchR122UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/PostClearResearchR122UITests.swift; sourceTree = SOURCE_ROOT; };
+		3F51D552C5430A1AE0F0E91C /* WitchGameCore/Sources/WitchGameCore/ProductProgressionRulesR1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/ProductProgressionRulesR1.swift; sourceTree = SOURCE_ROOT; };
+		4178E8505EFE314172B3EC80 /* WitchApp/NaturalGearBuildPolicyR350.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/NaturalGearBuildPolicyR350.swift; sourceTree = SOURCE_ROOT; };
+		426B3C4874E984D04334D20A /* WitchApp/EquipmentMultiConsumerFixtureR084.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/EquipmentMultiConsumerFixtureR084.swift; sourceTree = SOURCE_ROOT; };
+		433CDB6B95431B53A2790979 /* WitchGameCore/Sources/WitchGameCore/GearEnhancementGrowthR230.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/GearEnhancementGrowthR230.swift; sourceTree = SOURCE_ROOT; };
+		446D8E10C50B5300C054EA0F /* WitchApp/EffectMechanicMultiEnemyPreviewQA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/EffectMechanicMultiEnemyPreviewQA.swift; sourceTree = SOURCE_ROOT; };
+		4477270164156A5F03C07BD6 /* WitchUITests/StandardPlayContinuationR196Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/StandardPlayContinuationR196Tests.swift; sourceTree = SOURCE_ROOT; };
+		44BDBE54F574E9C54FEAF097 /* WitchGameCore/Sources/WitchGameCore/NaturalGearDiscoveryR350.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/NaturalGearDiscoveryR350.swift; sourceTree = SOURCE_ROOT; };
+		44E086DCB5D01516557F59D6 /* WitchGameCore/Sources/WitchGameCore/PartyWorkPolicyR144.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/PartyWorkPolicyR144.swift; sourceTree = SOURCE_ROOT; };
+		4507558AFE9CE866E5A2B9C0 /* WitchApp/UI48RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/UI48RootView.swift; sourceTree = SOURCE_ROOT; };
+		450D2B70653EC828B2D337B1 /* WitchUITests/EquipmentAXStatePairDiagnosticTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/EquipmentAXStatePairDiagnosticTests.swift; sourceTree = SOURCE_ROOT; };
+		454ED4982B3B82EAE001EF25 /* WitchUITests/DragonGroundedEntryLifecycleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/DragonGroundedEntryLifecycleTests.swift; sourceTree = SOURCE_ROOT; };
+		45561F4DCF6FEED727F207E2 /* WitchApp/RecipeGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/RecipeGoalView.swift; sourceTree = SOURCE_ROOT; };
+		45ABDF64D1B33FB5FDCDE08F /* WitchApp/PartyAuthoredMotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/PartyAuthoredMotion.swift; sourceTree = SOURCE_ROOT; };
+		45D1A3AD065D5E851CDEBF56 /* WitchApp/UI48Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/UI48Journal.swift; sourceTree = SOURCE_ROOT; };
+		45FBFB3EEB2CA2A17956D239 /* WitchApp/R04TelegraphEnvironmentPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/R04TelegraphEnvironmentPolicy.swift; sourceTree = SOURCE_ROOT; };
+		47EA81288ADC83433506BE58 /* WitchApp/SharedPartyWorkR146.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/SharedPartyWorkR146.swift; sourceTree = SOURCE_ROOT; };
+		4866F56C5A5C521F942BAD81 /* WitchApp/HomeDeskVisualCandidateR138.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/HomeDeskVisualCandidateR138.swift; sourceTree = SOURCE_ROOT; };
+		49FD2F9675DCBD57C30477BB /* WitchApp/EffectAnchorProjectionQA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/EffectAnchorProjectionQA.swift; sourceTree = SOURCE_ROOT; };
+		4A28F9AFA2F85B366F0CE101 /* WitchApp/LocalAdQAPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/LocalAdQAPanel.swift; sourceTree = SOURCE_ROOT; };
+		4A7A6C58829D384A5A281131 /* WitchApp/WitchAudioCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/WitchAudioCoordinator.swift; sourceTree = SOURCE_ROOT; };
+		4A9F573636D8CCC00A52A4DC /* WitchGameCore/Sources/WitchGameCore/ResearchMaterialGuidanceR280.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/ResearchMaterialGuidanceR280.swift; sourceTree = SOURCE_ROOT; };
+		4AAC830F79EF584DFCF28900 /* WitchApp/DragonLocalizedLegWarpCandidateR003.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/DragonLocalizedLegWarpCandidateR003.swift; sourceTree = SOURCE_ROOT; };
+		4C2CB27B55BD9FEC8ECC09EA /* WitchUITests/LunaBookNativeContinuityTestsR010.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/LunaBookNativeContinuityTestsR010.swift; sourceTree = SOURCE_ROOT; };
+		4D28AF71443344B24297DD01 /* WitchGameCore/Sources/WitchGameCore/SyntheticPartyDash2PreviewR043.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/SyntheticPartyDash2PreviewR043.swift; sourceTree = SOURCE_ROOT; };
+		4D3ACD3B0AA382B6BD79836B /* WitchUITests/RecipeGoalCandidateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/RecipeGoalCandidateTests.swift; sourceTree = SOURCE_ROOT; };
+		4DD2F8FCCE9C55750EBE07D1 /* WitchGameCore/Sources/WitchGameCore/R6TimelineSimulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/R6TimelineSimulator.swift; sourceTree = SOURCE_ROOT; };
+		4E6616BEE406BE87BFA2C6F1 /* WitchApp/UI48Adventure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/UI48Adventure.swift; sourceTree = SOURCE_ROOT; };
+		4FDE1D54946C375BBAD75DBB /* WitchGameCore/Sources/WitchGameCore/EquippedVisualCandidates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/EquippedVisualCandidates.swift; sourceTree = SOURCE_ROOT; };
+		50B835105FD1DF0DBBD54E9F /* WitchGameCore/Sources/WitchGameCore/ResearchGatherRouteR310.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/ResearchGatherRouteR310.swift; sourceTree = SOURCE_ROOT; };
+		50EB0EEF0E937FED3B64C4D7 /* WitchApp/EquipmentMultiConsumerPixelDigestR084.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/EquipmentMultiConsumerPixelDigestR084.swift; sourceTree = SOURCE_ROOT; };
+		5105FDED6E559D7A5D4E8D4D /* WitchUITests/UI48JourneyAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/UI48JourneyAcceptanceTests.swift; sourceTree = SOURCE_ROOT; };
+		521E7F654E55CBF4AC7F3741 /* WitchGameCore/Sources/WitchGameCore/CandidateCombatOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/CandidateCombatOverlay.swift; sourceTree = SOURCE_ROOT; };
+		531BFCC5E81910FEADA1FE7A /* WitchGameCore/Sources/WitchGameCore/R6CanonicalProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/R6CanonicalProfile.swift; sourceTree = SOURCE_ROOT; };
+		538FAB9A54B74408C608ABD5 /* WitchApp/GearDismantleRefundPresentationR353.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/GearDismantleRefundPresentationR353.swift; sourceTree = SOURCE_ROOT; };
+		55298CE471EDE6C66B345965 /* WitchApp/EquipmentMotionTraceQA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/EquipmentMotionTraceQA.swift; sourceTree = SOURCE_ROOT; };
+		57355FCDF6870D2B440F01E0 /* WitchApp/SyntheticDash2TailTraceR047.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/SyntheticDash2TailTraceR047.swift; sourceTree = SOURCE_ROOT; };
+		57FD86EE1AF44B48E9493A3B /* WitchApp/UI48DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/UI48DesignSystem.swift; sourceTree = SOURCE_ROOT; };
+		590EECFB20923056769A6AD6 /* WitchGameCore/Sources/WitchGameCore/CandidateCharacterGrowth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/CandidateCharacterGrowth.swift; sourceTree = SOURCE_ROOT; };
+		59D576EE2B76661A257D301D /* WitchGameCore/Sources/WitchGameCore/WorkshopPresentationR1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/WorkshopPresentationR1.swift; sourceTree = SOURCE_ROOT; };
+		5E3461928AEAC44AAAD79DC9 /* WitchGameCore/Sources/WitchGameCore/CombatSimulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/CombatSimulator.swift; sourceTree = SOURCE_ROOT; };
+		5E4837B6768D2B45B2668860 /* WitchApp/EquipmentMultiConsumerRequestR084.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/EquipmentMultiConsumerRequestR084.swift; sourceTree = SOURCE_ROOT; };
+		5E5E342ACB1DEFB84B8A7F2E /* WitchApp/EquipmentMotionTraceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/EquipmentMotionTraceRequest.swift; sourceTree = SOURCE_ROOT; };
+		5E9CEE4C544CE1282AF8BE4B /* WitchApp/ERNAStaffFrameSnapshotR040.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/ERNAStaffFrameSnapshotR040.swift; sourceTree = SOURCE_ROOT; };
+		5F3638B782295573CFC78C6F /* WitchUITests/UI48AcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/UI48AcceptanceTests.swift; sourceTree = SOURCE_ROOT; };
+		60E8684B74E4EAFC1F4E6378 /* WitchApp/CandidateSceneQA_R124.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/CandidateSceneQA_R124.swift; sourceTree = SOURCE_ROOT; };
+		610C3D49672159294774FE66 /* WitchGameCore/Sources/WitchGameCore/RecipeGoalProjectionR035.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/RecipeGoalProjectionR035.swift; sourceTree = SOURCE_ROOT; };
+		61412A385FAED9F889AD47A3 /* WitchApp/GearRefinementPresentationR352.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/GearRefinementPresentationR352.swift; sourceTree = SOURCE_ROOT; };
+		6399711B04ADA917A3F34119 /* WitchApp/ProductCommerceModelR1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/ProductCommerceModelR1.swift; sourceTree = SOURCE_ROOT; };
+		64080143A1DBCD904BF5E810 /* WitchGameCore/Sources/WitchGameCore/CommerceRuntimeR465.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/CommerceRuntimeR465.swift; sourceTree = SOURCE_ROOT; };
+		666473BB70BFE536F3BB5194 /* WitchApp/LivingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/LivingScene.swift; sourceTree = SOURCE_ROOT; };
+		6AF3A459D6D12D093C4FFD44 /* WitchApp/JellyfishMeshRigR254QA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/JellyfishMeshRigR254QA.swift; sourceTree = SOURCE_ROOT; };
+		6B260387F6B11429A1617E75 /* WitchGameCore/Sources/WitchGameCore/R6CampaignQA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/R6CampaignQA.swift; sourceTree = SOURCE_ROOT; };
+		6B701278EC3DE20DFBFFBD79 /* WitchApp/EnemyLoopBoundaryTraceQA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/EnemyLoopBoundaryTraceQA.swift; sourceTree = SOURCE_ROOT; };
+		6D795F13C8C22E022040EE00 /* WitchGathering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = WitchGathering.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D91C184746BA77A9A13F67F /* WitchUITests/FreshSaveFirstSessionR140Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/FreshSaveFirstSessionR140Tests.swift; sourceTree = SOURCE_ROOT; };
+		6F5661EC04E567FE84D85868 /* WitchApp/TransferPathGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/TransferPathGeometry.swift; sourceTree = SOURCE_ROOT; };
+		6F71C376B94E181D1688F845 /* WitchUITests/LargeTextContextDiagnosticR247Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/LargeTextContextDiagnosticR247Tests.swift; sourceTree = SOURCE_ROOT; };
+		6FCCCACC0537809985070F56 /* WitchApp/AIRAApronPlacementR130.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/AIRAApronPlacementR130.swift; sourceTree = SOURCE_ROOT; };
+		7273AC8E4941C19378691176 /* WitchGameCore/Sources/WitchGameCore/Domain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/Domain.swift; sourceTree = SOURCE_ROOT; };
+		741653E83D060E922F99D65D /* WitchApp/ERNAWalkCycleStableSceneGateR004.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/ERNAWalkCycleStableSceneGateR004.swift; sourceTree = SOURCE_ROOT; };
+		77779A2FEE646E5B42C1EB33 /* WitchApp/EquipmentDetailRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/EquipmentDetailRenderer.swift; sourceTree = SOURCE_ROOT; };
+		77996765C24AD8F38E574793 /* WitchApp/GameStoreKitQASink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/GameStoreKitQASink.swift; sourceTree = SOURCE_ROOT; };
+		787F99E2D53BA9CC22D20CD5 /* WitchApp/RenderBoundStateObserverR084.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/RenderBoundStateObserverR084.swift; sourceTree = SOURCE_ROOT; };
+		78FFD29CFD3B6E90D03F5957 /* WitchApp/PursuitNoticePlacementR059Collision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/PursuitNoticePlacementR059Collision.swift; sourceTree = SOURCE_ROOT; };
+		7A2975C38CB988A9C57D82B5 /* WitchUITests/EquipmentAuditDiagnosticTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/EquipmentAuditDiagnosticTests.swift; sourceTree = SOURCE_ROOT; };
+		7A5A79ABF6EA8F670A554410 /* WitchGameCore/Sources/WitchGameCore/BattleTargetWarningR299.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/BattleTargetWarningR299.swift; sourceTree = SOURCE_ROOT; };
+		7AD57651F909B2748A722A03 /* WitchApp/BattleEntryTraceQA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/BattleEntryTraceQA.swift; sourceTree = SOURCE_ROOT; };
+		7C65FF41ADB0AA08C9DCEDC8 /* WitchApp/DragonDistalLegRigCandidateR007.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/DragonDistalLegRigCandidateR007.swift; sourceTree = SOURCE_ROOT; };
+		7C88C2F68FF1FFDBB6D3757F /* WitchUITests/AccessibilityContrastDiagnosticTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/AccessibilityContrastDiagnosticTests.swift; sourceTree = SOURCE_ROOT; };
+		7D28FA6D2A116EF64741D2F9 /* WitchApp/LRCollectionViewR384.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/LRCollectionViewR384.swift; sourceTree = SOURCE_ROOT; };
+		7EAECB458067B2CF208B6C9A /* WitchGameCore/Sources/WitchGameCore/GatheringProgressProjectionR041.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/GatheringProgressProjectionR041.swift; sourceTree = SOURCE_ROOT; };
+		805C35C010B4C48D06328F1B /* WitchApp/GatherNodeQA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/GatherNodeQA.swift; sourceTree = SOURCE_ROOT; };
+		8098073DCAB46BCCF7B194B2 /* WitchApp/IsolatedWalkCycleObserverR018.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/IsolatedWalkCycleObserverR018.swift; sourceTree = SOURCE_ROOT; };
+		80B4C59E3F09664F6007A051 /* WitchUITests/R058VisibleChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/R058VisibleChallengeTests.swift; sourceTree = SOURCE_ROOT; };
+		80D887AAEBBB7137DF208711 /* WitchApp/ERNAStaffWalkCycleRequestR002.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/ERNAStaffWalkCycleRequestR002.swift; sourceTree = SOURCE_ROOT; };
+		8167C90D4D35C9881A3C88C5 /* WitchApp/RuntimeMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/RuntimeMetrics.swift; sourceTree = SOURCE_ROOT; };
+		81C56AA355E77233EAC5CB9A /* WitchApp/MothPassiveRenderStateR058.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/MothPassiveRenderStateR058.swift; sourceTree = SOURCE_ROOT; };
+		844E43157C70350B00BF09DE /* WitchApp/EnemyRegisteredPoses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/EnemyRegisteredPoses.swift; sourceTree = SOURCE_ROOT; };
+		84F618DF68589949DF49C221 /* WitchUITests/LatentGearCandidateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/LatentGearCandidateTests.swift; sourceTree = SOURCE_ROOT; };
+		850EC68714981140ABC560AF /* WitchApp/CharacterMotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/CharacterMotion.swift; sourceTree = SOURCE_ROOT; };
+		859C7D2FA3CC72E8FC7372EA /* WitchApp/SceneTextureCacheQA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/SceneTextureCacheQA.swift; sourceTree = SOURCE_ROOT; };
+		88D0099CE53E1F0F58DF51DB /* WitchApp/JellyfishMeshSequenceQAR137.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/JellyfishMeshSequenceQAR137.swift; sourceTree = SOURCE_ROOT; };
+		890A6C6AC91737902635B620 /* WitchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = WitchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		890E54BD0BB539924D7917CD /* WitchApp/LayeredWitchMotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/LayeredWitchMotion.swift; sourceTree = SOURCE_ROOT; };
+		8ACF9D3D85F5B832250B53D5 /* WitchGameCore/Sources/WitchGameCore/PostClearGoalProjectionR122.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/PostClearGoalProjectionR122.swift; sourceTree = SOURCE_ROOT; };
+		8B8E2521C6C2E2EE8212CA99 /* WitchApp/LunaBookPresentationCleanupR004.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/LunaBookPresentationCleanupR004.swift; sourceTree = SOURCE_ROOT; };
+		8DFDEF7E490B5BEBD14AE9F2 /* WitchUITests/GearComparisonR131LifecycleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/GearComparisonR131LifecycleTests.swift; sourceTree = SOURCE_ROOT; };
+		906BB0C98DE155D1ABC8AA98 /* WitchApp/GatheringSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/GatheringSummary.swift; sourceTree = SOURCE_ROOT; };
+		90ABC727021713295E5DA983 /* WitchGameCore/Sources/WitchGameCore/GearDismantleRefundR353.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/GearDismantleRefundR353.swift; sourceTree = SOURCE_ROOT; };
+		91FB4C0EBD2B1B0EC33F33F5 /* WitchGameCore/Sources/WitchGameCore/NaturalGearRefinementR352.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/NaturalGearRefinementR352.swift; sourceTree = SOURCE_ROOT; };
+		92EF0C84064D29E6CD569DAE /* WitchApp/QAScenarios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/QAScenarios.swift; sourceTree = SOURCE_ROOT; };
+		93174B6AA72FED51680618E1 /* WitchApp/CommerceStoreKit2R465.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/CommerceStoreKit2R465.swift; sourceTree = SOURCE_ROOT; };
+		9352264105DA7881AA1E8B2D /* WitchGameCore/Sources/WitchGameCore/GameRuntimeNaturalGearProfileR350.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/GameRuntimeNaturalGearProfileR350.swift; sourceTree = SOURCE_ROOT; };
+		93B8F9D4C12F7AF223663F99 /* WitchApp/DragonGaitR038QA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/DragonGaitR038QA.swift; sourceTree = SOURCE_ROOT; };
+		9418C3D42E6112C16D62CB0C /* WitchGameCore/Sources/WitchGameCore/WardrobeCandidateCatalogR130.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/WardrobeCandidateCatalogR130.swift; sourceTree = SOURCE_ROOT; };
+		9700CE4C82B6DA8FA64E7273 /* WitchApp/GameStoreKitQA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/GameStoreKitQA.swift; sourceTree = SOURCE_ROOT; };
+		9904D75C38B192A177C17525 /* WitchApp/BattleGroundingLayoutCandidateR090.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/BattleGroundingLayoutCandidateR090.swift; sourceTree = SOURCE_ROOT; };
+		993EEBA91B806CF7CECB7968 /* WitchApp/GearUpgradeClarityR218.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/GearUpgradeClarityR218.swift; sourceTree = SOURCE_ROOT; };
+		99576610D71516375414C660 /* WitchApp/GatherFrameTraceQA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/GatherFrameTraceQA.swift; sourceTree = SOURCE_ROOT; };
+		99B74005B2F3F91502221EB0 /* WitchGameCore/Sources/WitchGameCore/LunaBookMotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/LunaBookMotion.swift; sourceTree = SOURCE_ROOT; };
+		9A64C276445BA268C4CCBA8C /* WitchApp/BattlePlayback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/BattlePlayback.swift; sourceTree = SOURCE_ROOT; };
+		9A65FCF2A6BD33EAD344EE36 /* WitchApp/CharacterClips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/CharacterClips.swift; sourceTree = SOURCE_ROOT; };
+		9B8EA087B75EDD62D1D6EC6E /* WitchApp/BattleEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/BattleEffects.swift; sourceTree = SOURCE_ROOT; };
+		9E875BBA766EAADC48A9D6DD /* WitchUITests/GatheringProgressR041Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/GatheringProgressR041Tests.swift; sourceTree = SOURCE_ROOT; };
+		9F06A5CD05B3F964B56C614B /* WitchGameCore/Sources/WitchGameCore/GameRuntimeRefinementProfileR352.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/GameRuntimeRefinementProfileR352.swift; sourceTree = SOURCE_ROOT; };
+		A0DB0055930AC3B718FD472F /* WitchUITests/UI48ExtendedAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/UI48ExtendedAcceptanceTests.swift; sourceTree = SOURCE_ROOT; };
+		A1BB7EB4AB8BB636FB02F8D4 /* WitchApp/DragonNormalEntryBackendR068.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/DragonNormalEntryBackendR068.swift; sourceTree = SOURCE_ROOT; };
+		A516766E29ECE595FAD03771 /* WitchApp/MagnetMarkIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/MagnetMarkIndicator.swift; sourceTree = SOURCE_ROOT; };
+		A6340536B2EE11E4652D66A1 /* WitchUITests/ScrollIndicatorCandidateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/ScrollIndicatorCandidateTests.swift; sourceTree = SOURCE_ROOT; };
+		A7C3394D646AC4E42EF1112F /* WitchGameCore/Sources/WitchGameCore/FirstCraftCostR179.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/FirstCraftCostR179.swift; sourceTree = SOURCE_ROOT; };
+		A96A808D02F999B8B9641F6B /* WitchApp/AreaSceneRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/AreaSceneRouting.swift; sourceTree = SOURCE_ROOT; };
+		A9D5D3450B5B97A51014C9E9 /* WitchApp/PursuitNoticeCaptureWindowR092.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/PursuitNoticeCaptureWindowR092.swift; sourceTree = SOURCE_ROOT; };
+		ADDC4DCB6B1BE7F9DB050776 /* WitchApp/DragonEntryFootpathIKR068R002.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/DragonEntryFootpathIKR068R002.swift; sourceTree = SOURCE_ROOT; };
+		AE355EB6AD7F320930EF3F35 /* WitchApp/PursuitNoticePointerGeometryR059.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/PursuitNoticePointerGeometryR059.swift; sourceTree = SOURCE_ROOT; };
+		AE6BA13AAC31CF4A7D5CACB3 /* WitchApp/LunaBookFailureInjectionR010.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/LunaBookFailureInjectionR010.swift; sourceTree = SOURCE_ROOT; };
+		AEAFDFED59C118A6BF4DAAC0 /* WitchApp/GatherNodePresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/GatherNodePresentation.swift; sourceTree = SOURCE_ROOT; };
+		B0095BD2265F04B5E3C6C4D5 /* WitchGameCore/Sources/WitchGameCore/UI48QALaunchGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/UI48QALaunchGate.swift; sourceTree = SOURCE_ROOT; };
+		B0921AC1196576ECEC93C327 /* WitchApp/UI48QAFixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/UI48QAFixture.swift; sourceTree = SOURCE_ROOT; };
+		B0FBD2D57151855C589C78E3 /* WitchApp/CommerceAppIntegrationR1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/CommerceAppIntegrationR1.swift; sourceTree = SOURCE_ROOT; };
+		B1B186BEF3EE9FC780DDB1D4 /* WitchUITests/FurnitureVisualR124Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/FurnitureVisualR124Tests.swift; sourceTree = SOURCE_ROOT; };
+		B3B0B77B0DE216BE485E58AC /* WitchGameCore/Sources/WitchGameCore/GameRuntimeEnhancementProfileR230.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/GameRuntimeEnhancementProfileR230.swift; sourceTree = SOURCE_ROOT; };
+		B3EEE79B8F26194AA9D3A07F /* WitchApp/ActiveBattleQA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/ActiveBattleQA.swift; sourceTree = SOURCE_ROOT; };
+		B4FC40A2D7F27FE2AAE0E9BB /* WitchGameCore/Sources/WitchGameCore/GearInventoryIndexR374.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/GearInventoryIndexR374.swift; sourceTree = SOURCE_ROOT; };
+		B533DD6E3AEA85FF0D41F5F1 /* WitchApp/PursuitSuppressionNotice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/PursuitSuppressionNotice.swift; sourceTree = SOURCE_ROOT; };
+		B5FC3E666383950042B888FD /* WitchApp/DefeatGuidanceR229.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/DefeatGuidanceR229.swift; sourceTree = SOURCE_ROOT; };
+		B60143050F8ABE56F55A3F29 /* WitchApp/PursuitNoticeRenderedBoundsQA_R059.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/PursuitNoticeRenderedBoundsQA_R059.swift; sourceTree = SOURCE_ROOT; };
+		B688B7A373CBA7450216B9B2 /* WitchApp/WardrobeCandidateThumbnailR130.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/WardrobeCandidateThumbnailR130.swift; sourceTree = SOURCE_ROOT; };
+		B86C20B32E8BB6C67E0EEC9B /* WitchGameCore/Sources/WitchGameCore/GearSwapCampaignPreviewR136.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/GearSwapCampaignPreviewR136.swift; sourceTree = SOURCE_ROOT; };
+		B9F2E48B5388D4479FBD0F36 /* WitchUITests/HomeAccessibilityR045Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/HomeAccessibilityR045Tests.swift; sourceTree = SOURCE_ROOT; };
+		BBA7313A5FE1033C6D9A0AC8 /* WitchGameCore/Sources/WitchGameCore/CommerceOwnershipR1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/CommerceOwnershipR1.swift; sourceTree = SOURCE_ROOT; };
+		BDDEC57A0054AB9958D889FB /* WitchApp/GearLatentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/GearLatentModel.swift; sourceTree = SOURCE_ROOT; };
+		BEC4DDE0715827E57645323D /* WitchUITests/StaticCopyReadabilityR048Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/StaticCopyReadabilityR048Tests.swift; sourceTree = SOURCE_ROOT; };
+		BEDD0353285E17720AB865B8 /* WitchApp/GearLatentPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/GearLatentPresentation.swift; sourceTree = SOURCE_ROOT; };
+		C55F7203B7496E82C26881EF /* WitchApp/ActorBodyFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/ActorBodyFrame.swift; sourceTree = SOURCE_ROOT; };
+		C6A98202D9F0A7856D23D4BB /* WitchUITests/UI48EnvironmentAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/UI48EnvironmentAcceptanceTests.swift; sourceTree = SOURCE_ROOT; };
+		C72340E9FF9C167849D6916C /* WitchApp/EffectCueCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/EffectCueCoordinator.swift; sourceTree = SOURCE_ROOT; };
+		C7A3A03475D358AF3AC814E7 /* WitchGameCore/Sources/WitchGameCore/SyntheticDash2VisualTailR047.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/SyntheticDash2VisualTailR047.swift; sourceTree = SOURCE_ROOT; };
+		C8383237A422685EAB15867D /* WitchApp/EquipmentMultiConsumerObserverR084.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/EquipmentMultiConsumerObserverR084.swift; sourceTree = SOURCE_ROOT; };
+		C99EB6166BF4BF0B8EE3741D /* WitchGameCore/Sources/WitchGameCore/GearLegendaryCollectionProjectionR384.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/GearLegendaryCollectionProjectionR384.swift; sourceTree = SOURCE_ROOT; };
+		CA4647252944BD0FB02F6339 /* WitchGameCore/Sources/WitchGameCore/LunaBookAppearanceCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/LunaBookAppearanceCandidate.swift; sourceTree = SOURCE_ROOT; };
+		CB11F798A4269343C33721DC /* WitchGameCore/Sources/WitchGameCore/EnemyExecuteCoalescerR154.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/EnemyExecuteCoalescerR154.swift; sourceTree = SOURCE_ROOT; };
+		CB37FBE9854C16F33EC9FED9 /* WitchGameCore/Sources/WitchGameCore/GearSwapCombatSummaryR131.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/GearSwapCombatSummaryR131.swift; sourceTree = SOURCE_ROOT; };
+		CBA7BB325C3DB0C54997E09B /* WitchApp/R04WeatherQA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/R04WeatherQA.swift; sourceTree = SOURCE_ROOT; };
+		CC0433F681E340D87AD9003F /* WitchApp/ArtLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/ArtLibrary.swift; sourceTree = SOURCE_ROOT; };
+		CC6D3C92020CBAAD86AA1C83 /* WitchApp/NoirNeckwearCandidateRegistrationR002.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/NoirNeckwearCandidateRegistrationR002.swift; sourceTree = SOURCE_ROOT; };
+		CEA7FC1127BEC591952C88B8 /* WitchApp/DragonFourLegCoordinateContractR064.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/DragonFourLegCoordinateContractR064.swift; sourceTree = SOURCE_ROOT; };
+		CF04441F3FC32BBDDF56B1A4 /* WitchApp/LunaBookSpriteMotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/LunaBookSpriteMotion.swift; sourceTree = SOURCE_ROOT; };
+		D097A741620CA2F0DC5C9E95 /* WitchApp/HomeFurnitureFitR138.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/HomeFurnitureFitR138.swift; sourceTree = SOURCE_ROOT; };
+		D2042544CF25358545E17D1F /* WitchGameCore/Sources/WitchGameCore/SharedPartyWorkRuntimeR170.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/SharedPartyWorkRuntimeR170.swift; sourceTree = SOURCE_ROOT; };
+		D26BBAF63785719CBAB1E128 /* WitchApp/EquipmentMultiConsumerResourceProofR084.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/EquipmentMultiConsumerResourceProofR084.swift; sourceTree = SOURCE_ROOT; };
+		D3147742FB7DA979C69B7013 /* WitchApp/R6CampaignPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/R6CampaignPreview.swift; sourceTree = SOURCE_ROOT; };
+		D47145AC404F78E11FFB59A6 /* WitchApp/DragonGaitR038SequenceQA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/DragonGaitR038SequenceQA.swift; sourceTree = SOURCE_ROOT; };
+		D4C83D087D25235641212EE5 /* WitchUITests/SharedPartyWorkLifecycleR146Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/SharedPartyWorkLifecycleR146Tests.swift; sourceTree = SOURCE_ROOT; };
+		D58A912289196DB52F8F8858 /* WitchApp/NoirNeckwearCandidateRegistrationR003.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/NoirNeckwearCandidateRegistrationR003.swift; sourceTree = SOURCE_ROOT; };
+		D5944FE2D28CACE5627FE541 /* WitchApp/GaitContactScheduleR064.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/GaitContactScheduleR064.swift; sourceTree = SOURCE_ROOT; };
+		D6E0C0D7FEEA8493BA560633 /* WitchUITests/UI48CoverageAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/UI48CoverageAcceptanceTests.swift; sourceTree = SOURCE_ROOT; };
+		D7966E1FC2D74F5F6B5316AE /* WitchGameCore/Sources/WitchGameCore/StandardPlayStartupSelectionR169.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/StandardPlayStartupSelectionR169.swift; sourceTree = SOURCE_ROOT; };
+		D8DAD28C8615F4F3AF8FFAC0 /* WitchApp/CharacterLocomotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/CharacterLocomotion.swift; sourceTree = SOURCE_ROOT; };
+		D922C6B629237E61370265FA /* WitchApp/MotionCoverageR018.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/MotionCoverageR018.swift; sourceTree = SOURCE_ROOT; };
+		D931BAB715256D661A15A398 /* WitchApp/FrameStallTelemetry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/FrameStallTelemetry.swift; sourceTree = SOURCE_ROOT; };
+		DB9C1F1457F5105A70B9339A /* WitchApp/R016GatherNodePresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/R016GatherNodePresentation.swift; sourceTree = SOURCE_ROOT; };
+		DB9EDCB95B765C9525AB9051 /* WitchGameCore/Sources/WitchGameCore/RecipeEvolutionOutcomeProjectionR129.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/RecipeEvolutionOutcomeProjectionR129.swift; sourceTree = SOURCE_ROOT; };
+		DBBBC33C1755C7A4A3A2472A /* WitchApp/LunaMantleOverlayR097.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/LunaMantleOverlayR097.swift; sourceTree = SOURCE_ROOT; };
+		DC1014FC08566AC17C7281AB /* WitchApp/GearLatentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/GearLatentView.swift; sourceTree = SOURCE_ROOT; };
+		DD98B20B9B644E395870C395 /* WitchApp/EquipmentLoadoutsViewR342.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/EquipmentLoadoutsViewR342.swift; sourceTree = SOURCE_ROOT; };
+		DDEA4210BD5344499FB86F08 /* WitchGameCore/Sources/WitchGameCore/GearComparisonPartnerSelectionR210.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/GearComparisonPartnerSelectionR210.swift; sourceTree = SOURCE_ROOT; };
+		DDF1962A0B32485C2F215B75 /* WitchApp/ERNAStaffWalkCycleTraceQA_R002.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/ERNAStaffWalkCycleTraceQA_R002.swift; sourceTree = SOURCE_ROOT; };
+		DE86A87B185BFE858B8C07C2 /* WitchGameCore/Sources/WitchGameCore/LunaBookMotionDataR088Candidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/LunaBookMotionDataR088Candidate.swift; sourceTree = SOURCE_ROOT; };
+		E02ADAC94BE76F424F5CB3F2 /* WitchApp/ERNAStaffMotionTraceRequestR040.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/ERNAStaffMotionTraceRequestR040.swift; sourceTree = SOURCE_ROOT; };
+		E15A60D6476BB5019458CB42 /* WitchApp/EffectBudgetRegressionQA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/EffectBudgetRegressionQA.swift; sourceTree = SOURCE_ROOT; };
+		E1B3176C5D008BE87F412B73 /* WitchUITests/StandardPlayCompletionR190Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/StandardPlayCompletionR190Tests.swift; sourceTree = SOURCE_ROOT; };
+		E1BC51D22487DA13B73ECFE5 /* WitchApp/LunaMantleBooklessR127.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/LunaMantleBooklessR127.swift; sourceTree = SOURCE_ROOT; };
+		E2391ED86469A2AEE09B2816 /* WitchUITests/RecipeGatherHandoffR039Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/RecipeGatherHandoffR039Tests.swift; sourceTree = SOURCE_ROOT; };
+		E2F44AC95293D7138B23416C /* WitchApp/LunaBookNativeObserverR010.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/LunaBookNativeObserverR010.swift; sourceTree = SOURCE_ROOT; };
+		E49E0C37C4D7B84146171E68 /* WitchGameCore/Sources/WitchGameCore/EnemyActionPreviewFixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/EnemyActionPreviewFixture.swift; sourceTree = SOURCE_ROOT; };
+		E4F3017F5EE2FC65871997A6 /* WitchGameCore/Sources/WitchGameCore/RecipeInvestigationRouteR158.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/RecipeInvestigationRouteR158.swift; sourceTree = SOURCE_ROOT; };
+		E6998EE3B7B569135DD3BFA2 /* WitchApp/GamePurchaseAuthorityQA_R454.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/GamePurchaseAuthorityQA_R454.swift; sourceTree = SOURCE_ROOT; };
+		E75ACEC660E954C773021575 /* WitchGameCore/Sources/WitchGameCore/CommerceAuthorityCandidateV1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/CommerceAuthorityCandidateV1.swift; sourceTree = SOURCE_ROOT; };
+		E794F7F5583CD13C38D20447 /* WitchUITests/UI48GameplayAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/UI48GameplayAcceptanceTests.swift; sourceTree = SOURCE_ROOT; };
+		E7C61104C2AE502276604075 /* WitchApp/AIRAHarvestApronOverlayR130.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/AIRAHarvestApronOverlayR130.swift; sourceTree = SOURCE_ROOT; };
+		E803ABAFBB5993733DD64A79 /* WitchApp/GameText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/GameText.swift; sourceTree = SOURCE_ROOT; };
+		E8909A95C26E885BB96A22EE /* WitchGameCore/Sources/WitchGameCore/R6CombatPresentationSemantics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/R6CombatPresentationSemantics.swift; sourceTree = SOURCE_ROOT; };
+		E98F73C929007F7DDAEDEDC4 /* WitchApp/PartyCastRenderedEvidenceR006.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/PartyCastRenderedEvidenceR006.swift; sourceTree = SOURCE_ROOT; };
+		EA32F43D80854FD3BB7F9AAC /* WitchApp/EffectMechanicPreviewQA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/EffectMechanicPreviewQA.swift; sourceTree = SOURCE_ROOT; };
+		EAE24F7DB470503F3B8F931F /* WitchUITests/DragonWalkMeshDiagnosticTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/DragonWalkMeshDiagnosticTests.swift; sourceTree = SOURCE_ROOT; };
+		EBE571E4BAB3D9E3591861D2 /* WitchApp/ResearchGatherPreviewR310.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/ResearchGatherPreviewR310.swift; sourceTree = SOURCE_ROOT; };
+		EDE1F73A6F78F89C39ADBBBC /* WitchApp/DragonWalkMeshQA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/DragonWalkMeshQA.swift; sourceTree = SOURCE_ROOT; };
+		EE9F0C35307F4FAFFBC742D7 /* WitchGameCore/Sources/WitchGameCore/GearSwapCombatPreviewR131.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/GearSwapCombatPreviewR131.swift; sourceTree = SOURCE_ROOT; };
+		EF5CA74EE3910657AD3B52F8 /* WitchApp/ERNAWalkCycleCoverageR002.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/ERNAWalkCycleCoverageR002.swift; sourceTree = SOURCE_ROOT; };
+		F0AA82A6B58F0F7F2351A765 /* WitchApp/CostBoundedCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/CostBoundedCache.swift; sourceTree = SOURCE_ROOT; };
+		F26DC8FC6D0E76B00E470EAF /* WitchApp/JellyfishMeshSequenceQAR259.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/JellyfishMeshSequenceQAR259.swift; sourceTree = SOURCE_ROOT; };
+		F3EBCE41CBBC7D52F0D49B32 /* WitchApp/DragonEntryFootpathSpriteKitAdapterR068R002.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/DragonEntryFootpathSpriteKitAdapterR068R002.swift; sourceTree = SOURCE_ROOT; };
+		F4409237605017E1F3CA501A /* WitchUITests/WardrobeLifecycleR128UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchUITests/WardrobeLifecycleR128UITests.swift; sourceTree = SOURCE_ROOT; };
+		F53A99C3043D0EAAF8BAC613 /* WitchApp/DragonWalkMeshCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/DragonWalkMeshCandidate.swift; sourceTree = SOURCE_ROOT; };
+		F7F36747EFE6958F4B1D0790 /* WitchApp/ERNAStaffMotionTraceQA_R040.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/ERNAStaffMotionTraceQA_R040.swift; sourceTree = SOURCE_ROOT; };
+		F9CEC5023C5E476F0819E24B /* WitchApp/PartyFrameAuditQA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/PartyFrameAuditQA.swift; sourceTree = SOURCE_ROOT; };
+		F9D338E8142143C85160D0B2 /* WitchApp/PursuitNoticeCopyR059.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/PursuitNoticeCopyR059.swift; sourceTree = SOURCE_ROOT; };
+		FA349633B1D1AA4FEC1529B7 /* WitchGameCore/Sources/WitchGameCore/StandardPlayRuntimeProfileR1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/StandardPlayRuntimeProfileR1.swift; sourceTree = SOURCE_ROOT; };
+		FAD397291C82A7768A1C43BC /* WitchApp/GatheringProgressViewR041.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/GatheringProgressViewR041.swift; sourceTree = SOURCE_ROOT; };
+		FBF189F2C298F39AABC7D075 /* WitchApp/EquipmentMultiConsumerSampleRecordR084.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/EquipmentMultiConsumerSampleRecordR084.swift; sourceTree = SOURCE_ROOT; };
+		FC1C5E1004B932DE39C540DE /* WitchGameCore/Sources/WitchGameCore/GameRuntimeDismantleProfileR353.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchGameCore/Sources/WitchGameCore/GameRuntimeDismantleProfileR353.swift; sourceTree = SOURCE_ROOT; };
+		FF43DC39F8A59D4B3F449F91 /* WitchApp/StandardPlayBuildPolicyR332.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/StandardPlayBuildPolicyR332.swift; sourceTree = SOURCE_ROOT; };
+		FFBEFCA0B1E5353132F93BC9 /* WitchApp/EnemyEventRenderTraceR145.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitchApp/EnemyEventRenderTraceR145.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		325F10A6957A34D66CB8C0E4 = {
+			isa = PBXGroup;
+			children = (
+				B0FBD2D57151855C589C78E3 /* WitchApp/CommerceAppIntegrationR1.swift */,
+				BBA7313A5FE1033C6D9A0AC8 /* WitchGameCore/Sources/WitchGameCore/CommerceOwnershipR1.swift */,
+				6FCCCACC0537809985070F56 /* WitchApp/AIRAApronPlacementR130.swift */,
+				E7C61104C2AE502276604075 /* WitchApp/AIRAHarvestApronOverlayR130.swift */,
+				B3EEE79B8F26194AA9D3A07F /* WitchApp/ActiveBattleQA.swift */,
+				C55F7203B7496E82C26881EF /* WitchApp/ActorBodyFrame.swift */,
+				0BC88701977082A15E58F580 /* WitchApp/App.swift */,
+				1F6EB8E362C74C8C20FD0E60 /* WitchApp/AreaFlowQAHook.swift */,
+				A96A808D02F999B8B9641F6B /* WitchApp/AreaSceneRouting.swift */,
+				CC0433F681E340D87AD9003F /* WitchApp/ArtLibrary.swift */,
+				9B8EA087B75EDD62D1D6EC6E /* WitchApp/BattleEffects.swift */,
+				7AD57651F909B2748A722A03 /* WitchApp/BattleEntryTraceQA.swift */,
+				9904D75C38B192A177C17525 /* WitchApp/BattleGroundingLayoutCandidateR090.swift */,
+				9A64C276445BA268C4CCBA8C /* WitchApp/BattlePlayback.swift */,
+				0D8453281BBF58D447D9B1FA /* WitchApp/BattleTimingTraceR319.swift */,
+				60E8684B74E4EAFC1F4E6378 /* WitchApp/CandidateSceneQA_R124.swift */,
+				9A65FCF2A6BD33EAD344EE36 /* WitchApp/CharacterClips.swift */,
+				D8DAD28C8615F4F3AF8FFAC0 /* WitchApp/CharacterLocomotion.swift */,
+				850EC68714981140ABC560AF /* WitchApp/CharacterMotion.swift */,
+				93174B6AA72FED51680618E1 /* WitchApp/CommerceStoreKit2R465.swift */,
+				F0AA82A6B58F0F7F2351A765 /* WitchApp/CostBoundedCache.swift */,
+				B5FC3E666383950042B888FD /* WitchApp/DefeatGuidanceR229.swift */,
+				7C65FF41ADB0AA08C9DCEDC8 /* WitchApp/DragonDistalLegRigCandidateR007.swift */,
+				1F4B4996681C6D0F2A75F9FC /* WitchApp/DragonDistalLegRigMountR007.swift */,
+				ADDC4DCB6B1BE7F9DB050776 /* WitchApp/DragonEntryFootpathIKR068R002.swift */,
+				F3EBCE41CBBC7D52F0D49B32 /* WitchApp/DragonEntryFootpathSpriteKitAdapterR068R002.swift */,
+				CEA7FC1127BEC591952C88B8 /* WitchApp/DragonFourLegCoordinateContractR064.swift */,
+				0C5235D2F3E7E3AF0FD26585 /* WitchApp/DragonFourLegStanceMountR064.swift */,
+				000CBCAA6F55AB39AC96B607 /* WitchApp/DragonGaitR038FailureLifecycle.swift */,
+				93B8F9D4C12F7AF223663F99 /* WitchApp/DragonGaitR038QA.swift */,
+				D47145AC404F78E11FFB59A6 /* WitchApp/DragonGaitR038SequenceQA.swift */,
+				36AF34698F20E1F2F06F3E44 /* WitchApp/DragonGroundedEntryCandidate.swift */,
+				4AAC830F79EF584DFCF28900 /* WitchApp/DragonLocalizedLegWarpCandidateR003.swift */,
+				A1BB7EB4AB8BB636FB02F8D4 /* WitchApp/DragonNormalEntryBackendR068.swift */,
+				F53A99C3043D0EAAF8BAC613 /* WitchApp/DragonWalkMeshCandidate.swift */,
+				EDE1F73A6F78F89C39ADBBBC /* WitchApp/DragonWalkMeshQA.swift */,
+				5E9CEE4C544CE1282AF8BE4B /* WitchApp/ERNAStaffFrameSnapshotR040.swift */,
+				F7F36747EFE6958F4B1D0790 /* WitchApp/ERNAStaffMotionTraceQA_R040.swift */,
+				E02ADAC94BE76F424F5CB3F2 /* WitchApp/ERNAStaffMotionTraceRequestR040.swift */,
+				80D887AAEBBB7137DF208711 /* WitchApp/ERNAStaffWalkCycleRequestR002.swift */,
+				DDF1962A0B32485C2F215B75 /* WitchApp/ERNAStaffWalkCycleTraceQA_R002.swift */,
+				EF5CA74EE3910657AD3B52F8 /* WitchApp/ERNAWalkCycleCoverageR002.swift */,
+				741653E83D060E922F99D65D /* WitchApp/ERNAWalkCycleStableSceneGateR004.swift */,
+				49FD2F9675DCBD57C30477BB /* WitchApp/EffectAnchorProjectionQA.swift */,
+				E15A60D6476BB5019458CB42 /* WitchApp/EffectBudgetRegressionQA.swift */,
+				C72340E9FF9C167849D6916C /* WitchApp/EffectCueCoordinator.swift */,
+				446D8E10C50B5300C054EA0F /* WitchApp/EffectMechanicMultiEnemyPreviewQA.swift */,
+				EA32F43D80854FD3BB7F9AAC /* WitchApp/EffectMechanicPreviewQA.swift */,
+				FFBEFCA0B1E5353132F93BC9 /* WitchApp/EnemyEventRenderTraceR145.swift */,
+				6B701278EC3DE20DFBFFBD79 /* WitchApp/EnemyLoopBoundaryTraceQA.swift */,
+				1FB2BB86815DE137C6D6A771 /* WitchApp/EnemyMotion.swift */,
+				844E43157C70350B00BF09DE /* WitchApp/EnemyRegisteredPoses.swift */,
+				77779A2FEE646E5B42C1EB33 /* WitchApp/EquipmentDetailRenderer.swift */,
+				DD98B20B9B644E395870C395 /* WitchApp/EquipmentLoadoutsViewR342.swift */,
+				55298CE471EDE6C66B345965 /* WitchApp/EquipmentMotionTraceQA.swift */,
+				5E5E342ACB1DEFB84B8A7F2E /* WitchApp/EquipmentMotionTraceRequest.swift */,
+				24D40A9B77B45617566CA000 /* WitchApp/EquipmentMotionTraceRootSummary.swift */,
+				426B3C4874E984D04334D20A /* WitchApp/EquipmentMultiConsumerFixtureR084.swift */,
+				C8383237A422685EAB15867D /* WitchApp/EquipmentMultiConsumerObserverR084.swift */,
+				50EB0EEF0E937FED3B64C4D7 /* WitchApp/EquipmentMultiConsumerPixelDigestR084.swift */,
+				5E4837B6768D2B45B2668860 /* WitchApp/EquipmentMultiConsumerRequestR084.swift */,
+				D26BBAF63785719CBAB1E128 /* WitchApp/EquipmentMultiConsumerResourceProofR084.swift */,
+				FBF189F2C298F39AABC7D075 /* WitchApp/EquipmentMultiConsumerSampleRecordR084.swift */,
+				0076FD0C6E3136C796BD1DB0 /* WitchApp/EquipmentMultiConsumerShowcaseR084.swift */,
+				D931BAB715256D661A15A398 /* WitchApp/FrameStallTelemetry.swift */,
+				2F4D144193ABBC2034C79161 /* WitchApp/FurnitureRoomPreviewR275.swift */,
+				2913965B5355D05CE935DCE4 /* WitchApp/GachaViews.swift */,
+				D5944FE2D28CACE5627FE541 /* WitchApp/GaitContactScheduleR064.swift */,
+				E6998EE3B7B569135DD3BFA2 /* WitchApp/GamePurchaseAuthorityQA_R454.swift */,
+				9700CE4C82B6DA8FA64E7273 /* WitchApp/GameStoreKitQA.swift */,
+				77996765C24AD8F38E574793 /* WitchApp/GameStoreKitQASink.swift */,
+				E803ABAFBB5993733DD64A79 /* WitchApp/GameText.swift */,
+				99576610D71516375414C660 /* WitchApp/GatherFrameTraceQA.swift */,
+				AEAFDFED59C118A6BF4DAAC0 /* WitchApp/GatherNodePresentation.swift */,
+				805C35C010B4C48D06328F1B /* WitchApp/GatherNodeQA.swift */,
+				FAD397291C82A7768A1C43BC /* WitchApp/GatheringProgressViewR041.swift */,
+				906BB0C98DE155D1ABC8AA98 /* WitchApp/GatheringSummary.swift */,
+				013210D4D748F14761F35E03 /* WitchApp/GearComparisonQAFixtureR131.swift */,
+				223B4C2C0B7D98953456F6C1 /* WitchApp/GearComparisonR131Section.swift */,
+				0C05A2A1AB18971BC42203D9 /* WitchApp/GearComparisonR136Section.swift */,
+				538FAB9A54B74408C608ABD5 /* WitchApp/GearDismantleRefundPresentationR353.swift */,
+				BDDEC57A0054AB9958D889FB /* WitchApp/GearLatentModel.swift */,
+				BEDD0353285E17720AB865B8 /* WitchApp/GearLatentPresentation.swift */,
+				DC1014FC08566AC17C7281AB /* WitchApp/GearLatentView.swift */,
+				30FE44EDC3FD0320C4EB6DEE /* WitchApp/GearRefinementConfirmationR352.swift */,
+				61412A385FAED9F889AD47A3 /* WitchApp/GearRefinementPresentationR352.swift */,
+				993EEBA91B806CF7CECB7968 /* WitchApp/GearUpgradeClarityR218.swift */,
+				181C2B48F4A34E0101363F35 /* WitchApp/HomeDeskVisualCandidateR124.swift */,
+				4866F56C5A5C521F942BAD81 /* WitchApp/HomeDeskVisualCandidateR138.swift */,
+				D097A741620CA2F0DC5C9E95 /* WitchApp/HomeFurnitureFitR138.swift */,
+				8098073DCAB46BCCF7B194B2 /* WitchApp/IsolatedWalkCycleObserverR018.swift */,
+				1B33A30FE419E2AD71876434 /* WitchApp/JellyfishMeshRigR135_QA.swift */,
+				6AF3A459D6D12D093C4FFD44 /* WitchApp/JellyfishMeshRigR254QA.swift */,
+				88D0099CE53E1F0F58DF51DB /* WitchApp/JellyfishMeshSequenceQAR137.swift */,
+				F26DC8FC6D0E76B00E470EAF /* WitchApp/JellyfishMeshSequenceQAR259.swift */,
+				7D28FA6D2A116EF64741D2F9 /* WitchApp/LRCollectionViewR384.swift */,
+				0F7B55B711E68F5EA0BD7ABC /* WitchApp/LatentGearQAFixture.swift */,
+				890E54BD0BB539924D7917CD /* WitchApp/LayeredWitchMotion.swift */,
+				666473BB70BFE536F3BB5194 /* WitchApp/LivingScene.swift */,
+				4A28F9AFA2F85B366F0CE101 /* WitchApp/LocalAdQAPanel.swift */,
+				AE6BA13AAC31CF4A7D5CACB3 /* WitchApp/LunaBookFailureInjectionR010.swift */,
+				E2F44AC95293D7138B23416C /* WitchApp/LunaBookNativeObserverR010.swift */,
+				31D057A7E021AF21A0C37A1C /* WitchApp/LunaBookNativeSnapshotR010.swift */,
+				8B8E2521C6C2E2EE8212CA99 /* WitchApp/LunaBookPresentationCleanupR004.swift */,
+				CF04441F3FC32BBDDF56B1A4 /* WitchApp/LunaBookSpriteMotion.swift */,
+				0D1EA6C6CB02CF7FA9C515DE /* WitchApp/LunaBookWalkFallbackR009.swift */,
+				1BA5424049DFEA7D2B280432 /* WitchApp/LunaMantleBooklessR126.swift */,
+				E1BC51D22487DA13B73ECFE5 /* WitchApp/LunaMantleBooklessR127.swift */,
+				DBBBC33C1755C7A4A3A2472A /* WitchApp/LunaMantleOverlayR097.swift */,
+				A516766E29ECE595FAD03771 /* WitchApp/MagnetMarkIndicator.swift */,
+				19903A3C9FBB2277EE7DA56E /* WitchApp/MothPassiveRenderObserverR058.swift */,
+				81C56AA355E77233EAC5CB9A /* WitchApp/MothPassiveRenderStateR058.swift */,
+				D922C6B629237E61370265FA /* WitchApp/MotionCoverageR018.swift */,
+				4178E8505EFE314172B3EC80 /* WitchApp/NaturalGearBuildPolicyR350.swift */,
+				CC6D3C92020CBAAD86AA1C83 /* WitchApp/NoirNeckwearCandidateRegistrationR002.swift */,
+				D58A912289196DB52F8F8858 /* WitchApp/NoirNeckwearCandidateRegistrationR003.swift */,
+				2756E2D2DDBE1C46C33C3DED /* WitchApp/PartRig.swift */,
+				45ABDF64D1B33FB5FDCDE08F /* WitchApp/PartyAuthoredMotion.swift */,
+				0D0E4C0023E0845050588EF4 /* WitchApp/PartyCastHoldLifecycle.swift */,
+				E98F73C929007F7DDAEDEDC4 /* WitchApp/PartyCastRenderedEvidenceR006.swift */,
+				F9CEC5023C5E476F0819E24B /* WitchApp/PartyFrameAuditQA.swift */,
+				6399711B04ADA917A3F34119 /* WitchApp/ProductCommerceModelR1.swift */,
+				A9D5D3450B5B97A51014C9E9 /* WitchApp/PursuitNoticeCaptureWindowR092.swift */,
+				F9D338E8142143C85160D0B2 /* WitchApp/PursuitNoticeCopyR059.swift */,
+				362F5BD42EF9E6A13BC73CAC /* WitchApp/PursuitNoticeLabelLayoutR059.swift */,
+				78FFD29CFD3B6E90D03F5957 /* WitchApp/PursuitNoticePlacementR059Collision.swift */,
+				AE355EB6AD7F320930EF3F35 /* WitchApp/PursuitNoticePointerGeometryR059.swift */,
+				1B23FB4403FECF23C650C9BB /* WitchApp/PursuitNoticeRenderObserverR092.swift */,
+				B60143050F8ABE56F55A3F29 /* WitchApp/PursuitNoticeRenderedBoundsQA_R059.swift */,
+				B533DD6E3AEA85FF0D41F5F1 /* WitchApp/PursuitSuppressionNotice.swift */,
+				03DD30B0C48ACB1ACA391991 /* WitchApp/QASaveReadback.swift */,
+				92EF0C84064D29E6CD569DAE /* WitchApp/QAScenarios.swift */,
+				DB9C1F1457F5105A70B9339A /* WitchApp/R016GatherNodePresentation.swift */,
+				45FBFB3EEB2CA2A17956D239 /* WitchApp/R04TelegraphEnvironmentPolicy.swift */,
+				CBA7BB325C3DB0C54997E09B /* WitchApp/R04WeatherQA.swift */,
+				D3147742FB7DA979C69B7013 /* WitchApp/R6CampaignPreview.swift */,
+				319F9AC3CB4130FC79443E1C /* WitchApp/RecipeGatherSnapshotQA.swift */,
+				3B31206B6536C6011B5F204C /* WitchApp/RecipeGoalQAFixture.swift */,
+				45561F4DCF6FEED727F207E2 /* WitchApp/RecipeGoalView.swift */,
+				787F99E2D53BA9CC22D20CD5 /* WitchApp/RenderBoundStateObserverR084.swift */,
+				EBE571E4BAB3D9E3591861D2 /* WitchApp/ResearchGatherPreviewR310.swift */,
+				8167C90D4D35C9881A3C88C5 /* WitchApp/RuntimeMetrics.swift */,
+				859C7D2FA3CC72E8FC7372EA /* WitchApp/SceneTextureCacheQA.swift */,
+				47EA81288ADC83433506BE58 /* WitchApp/SharedPartyWorkR146.swift */,
+				FF43DC39F8A59D4B3F449F91 /* WitchApp/StandardPlayBuildPolicyR332.swift */,
+				57355FCDF6870D2B440F01E0 /* WitchApp/SyntheticDash2TailTraceR047.swift */,
+				6F5661EC04E567FE84D85868 /* WitchApp/TransferPathGeometry.swift */,
+				4E6616BEE406BE87BFA2C6F1 /* WitchApp/UI48Adventure.swift */,
+				57FD86EE1AF44B48E9493A3B /* WitchApp/UI48DesignSystem.swift */,
+				21D5170E7C611D602983C38D /* WitchApp/UI48Equipment.swift */,
+				45D1A3AD065D5E851CDEBF56 /* WitchApp/UI48Journal.swift */,
+				1E6ED4E297B11B3A9788100E /* WitchApp/UI48Lifestyle.swift */,
+				B0921AC1196576ECEC93C327 /* WitchApp/UI48QAFixture.swift */,
+				4507558AFE9CE866E5A2B9C0 /* WitchApp/UI48RootView.swift */,
+				B688B7A373CBA7450216B9B2 /* WitchApp/WardrobeCandidateThumbnailR130.swift */,
+				4A7A6C58829D384A5A281131 /* WitchApp/WitchAudioCoordinator.swift */,
+				292BBD0F3855017C38F0AA5A /* WitchApp/WitchMusicCoordinator.swift */,
+				03CCB3A4CCEC3505AC664DE2 /* WitchApp/WorkflowViews.swift */,
+				0C45095538F42560C3A08417 /* WitchGameCore/Sources/WitchGameCore/AuthorityClientContractR461.swift */,
+				7A5A79ABF6EA8F670A554410 /* WitchGameCore/Sources/WitchGameCore/BattleTargetWarningR299.swift */,
+				590EECFB20923056769A6AD6 /* WitchGameCore/Sources/WitchGameCore/CandidateCharacterGrowth.swift */,
+				521E7F654E55CBF4AC7F3741 /* WitchGameCore/Sources/WitchGameCore/CandidateCombatOverlay.swift */,
+				1D1D1DE007A9DD5F9FBDBAF0 /* WitchGameCore/Sources/WitchGameCore/CandidateLatentCombatModifiersR005.swift */,
+				2A0153013ED9A07EC447B99E /* WitchGameCore/Sources/WitchGameCore/CandidateLatentSlotPolicyR003.swift */,
+				5E3461928AEAC44AAAD79DC9 /* WitchGameCore/Sources/WitchGameCore/CombatSimulator.swift */,
+				E75ACEC660E954C773021575 /* WitchGameCore/Sources/WitchGameCore/CommerceAuthorityCandidateV1.swift */,
+				64080143A1DBCD904BF5E810 /* WitchGameCore/Sources/WitchGameCore/CommerceRuntimeR465.swift */,
+				7273AC8E4941C19378691176 /* WitchGameCore/Sources/WitchGameCore/Domain.swift */,
+				E49E0C37C4D7B84146171E68 /* WitchGameCore/Sources/WitchGameCore/EnemyActionPreviewFixture.swift */,
+				CB11F798A4269343C33721DC /* WitchGameCore/Sources/WitchGameCore/EnemyExecuteCoalescerR154.swift */,
+				4FDE1D54946C375BBAD75DBB /* WitchGameCore/Sources/WitchGameCore/EquippedVisualCandidates.swift */,
+				304BFD8E5458F5F84E78797A /* WitchGameCore/Sources/WitchGameCore/FileBackedAuthorityStoreR463.swift */,
+				A7C3394D646AC4E42EF1112F /* WitchGameCore/Sources/WitchGameCore/FirstCraftCostR179.swift */,
+				1EA780286B6EB6F14E5D01C9 /* WitchGameCore/Sources/WitchGameCore/GameEngine.swift */,
+				10024CB0BBF2E7396616696D /* WitchGameCore/Sources/WitchGameCore/GameRuntimeConfigurationR098.swift */,
+				FC1C5E1004B932DE39C540DE /* WitchGameCore/Sources/WitchGameCore/GameRuntimeDismantleProfileR353.swift */,
+				B3B0B77B0DE216BE485E58AC /* WitchGameCore/Sources/WitchGameCore/GameRuntimeEnhancementProfileR230.swift */,
+				9352264105DA7881AA1E8B2D /* WitchGameCore/Sources/WitchGameCore/GameRuntimeNaturalGearProfileR350.swift */,
+				9F06A5CD05B3F964B56C614B /* WitchGameCore/Sources/WitchGameCore/GameRuntimeRefinementProfileR352.swift */,
+				7EAECB458067B2CF208B6C9A /* WitchGameCore/Sources/WitchGameCore/GatheringProgressProjectionR041.swift */,
+				2371D2D88FED84C52D132683 /* WitchGameCore/Sources/WitchGameCore/GearAppearanceProjection.swift */,
+				DDEA4210BD5344499FB86F08 /* WitchGameCore/Sources/WitchGameCore/GearComparisonPartnerSelectionR210.swift */,
+				90ABC727021713295E5DA983 /* WitchGameCore/Sources/WitchGameCore/GearDismantleRefundR353.swift */,
+				433CDB6B95431B53A2790979 /* WitchGameCore/Sources/WitchGameCore/GearEnhancementGrowthR230.swift */,
+				B4FC40A2D7F27FE2AAE0E9BB /* WitchGameCore/Sources/WitchGameCore/GearInventoryIndexR374.swift */,
+				C99EB6166BF4BF0B8EE3741D /* WitchGameCore/Sources/WitchGameCore/GearLegendaryCollectionProjectionR384.swift */,
+				B86C20B32E8BB6C67E0EEC9B /* WitchGameCore/Sources/WitchGameCore/GearSwapCampaignPreviewR136.swift */,
+				EE9F0C35307F4FAFFBC742D7 /* WitchGameCore/Sources/WitchGameCore/GearSwapCombatPreviewR131.swift */,
+				CB37FBE9854C16F33EC9FED9 /* WitchGameCore/Sources/WitchGameCore/GearSwapCombatSummaryR131.swift */,
+				3AC4AC05F338D701AF2E8BD8 /* WitchGameCore/Sources/WitchGameCore/LocalPurchaseDeliveryQAImporterR453.swift */,
+				2DD3B51B619CEF57F3269748 /* WitchGameCore/Sources/WitchGameCore/LocalPurchaseTransactionIdentityR454.swift */,
+				CA4647252944BD0FB02F6339 /* WitchGameCore/Sources/WitchGameCore/LunaBookAppearanceCandidate.swift */,
+				99B74005B2F3F91502221EB0 /* WitchGameCore/Sources/WitchGameCore/LunaBookMotion.swift */,
+				19201A7678F37F42041DDBE7 /* WitchGameCore/Sources/WitchGameCore/LunaBookMotionDataR001.swift */,
+				177794BCE636459BDF4850AB /* WitchGameCore/Sources/WitchGameCore/LunaBookMotionDataR050Candidate.swift */,
+				DE86A87B185BFE858B8C07C2 /* WitchGameCore/Sources/WitchGameCore/LunaBookMotionDataR088Candidate.swift */,
+				127DC55C8F49080C82D2279B /* WitchGameCore/Sources/WitchGameCore/MothIdleAnchorRegistrationR050.swift */,
+				44BDBE54F574E9C54FEAF097 /* WitchGameCore/Sources/WitchGameCore/NaturalGearDiscoveryR350.swift */,
+				91FB4C0EBD2B1B0EC33F33F5 /* WitchGameCore/Sources/WitchGameCore/NaturalGearRefinementR352.swift */,
+				00CEED815587D7EFFDDF566B /* WitchGameCore/Sources/WitchGameCore/OwnedPartyLoadoutPreviewR181.swift */,
+				44E086DCB5D01516557F59D6 /* WitchGameCore/Sources/WitchGameCore/PartyWorkPolicyR144.swift */,
+				8ACF9D3D85F5B832250B53D5 /* WitchGameCore/Sources/WitchGameCore/PostClearGoalProjectionR122.swift */,
+				3F51D552C5430A1AE0F0E91C /* WitchGameCore/Sources/WitchGameCore/ProductProgressionRulesR1.swift */,
+				6B260387F6B11429A1617E75 /* WitchGameCore/Sources/WitchGameCore/R6CampaignQA.swift */,
+				531BFCC5E81910FEADA1FE7A /* WitchGameCore/Sources/WitchGameCore/R6CanonicalProfile.swift */,
+				E8909A95C26E885BB96A22EE /* WitchGameCore/Sources/WitchGameCore/R6CombatPresentationSemantics.swift */,
+				4DD2F8FCCE9C55750EBE07D1 /* WitchGameCore/Sources/WitchGameCore/R6TimelineSimulator.swift */,
+				DB9EDCB95B765C9525AB9051 /* WitchGameCore/Sources/WitchGameCore/RecipeEvolutionOutcomeProjectionR129.swift */,
+				18B8007EAC18D52C5F115136 /* WitchGameCore/Sources/WitchGameCore/RecipeGatherHandoffTargetR157.swift */,
+				34668C48197A1501D123F036 /* WitchGameCore/Sources/WitchGameCore/RecipeGoalCoreAdapterR002.swift */,
+				610C3D49672159294774FE66 /* WitchGameCore/Sources/WitchGameCore/RecipeGoalProjectionR035.swift */,
+				E4F3017F5EE2FC65871997A6 /* WitchGameCore/Sources/WitchGameCore/RecipeInvestigationRouteR158.swift */,
+				50B835105FD1DF0DBBD54E9F /* WitchGameCore/Sources/WitchGameCore/ResearchGatherRouteR310.swift */,
+				4A9F573636D8CCC00A52A4DC /* WitchGameCore/Sources/WitchGameCore/ResearchMaterialGuidanceR280.swift */,
+				0534D8137CADD288903D4A9F /* WitchGameCore/Sources/WitchGameCore/SaveRepository.swift */,
+				D2042544CF25358545E17D1F /* WitchGameCore/Sources/WitchGameCore/SharedPartyWorkRuntimeR170.swift */,
+				FA349633B1D1AA4FEC1529B7 /* WitchGameCore/Sources/WitchGameCore/StandardPlayRuntimeProfileR1.swift */,
+				D7966E1FC2D74F5F6B5316AE /* WitchGameCore/Sources/WitchGameCore/StandardPlayStartupSelectionR169.swift */,
+				C7A3A03475D358AF3AC814E7 /* WitchGameCore/Sources/WitchGameCore/SyntheticDash2VisualTailR047.swift */,
+				4D28AF71443344B24297DD01 /* WitchGameCore/Sources/WitchGameCore/SyntheticPartyDash2PreviewR043.swift */,
+				B0095BD2265F04B5E3C6C4D5 /* WitchGameCore/Sources/WitchGameCore/UI48QALaunchGate.swift */,
+				9418C3D42E6112C16D62CB0C /* WitchGameCore/Sources/WitchGameCore/WardrobeCandidateCatalogR130.swift */,
+				36750427F478631FF18C22D4 /* WitchGameCore/Sources/WitchGameCore/WardrobeCandidateR128.swift */,
+				59D576EE2B76661A257D301D /* WitchGameCore/Sources/WitchGameCore/WorkshopPresentationR1.swift */,
+				3E112B836126B801EA17060A /* StoreKitLocalQA/ReusableBridge.swift */,
+				7C88C2F68FF1FFDBB6D3757F /* WitchUITests/AccessibilityContrastDiagnosticTests.swift */,
+				454ED4982B3B82EAE001EF25 /* WitchUITests/DragonGroundedEntryLifecycleTests.swift */,
+				EAE24F7DB470503F3B8F931F /* WitchUITests/DragonWalkMeshDiagnosticTests.swift */,
+				1793E08DCEDC758197614885 /* WitchUITests/ERNABodyFitR061Tests.swift */,
+				450D2B70653EC828B2D337B1 /* WitchUITests/EquipmentAXStatePairDiagnosticTests.swift */,
+				7A2975C38CB988A9C57D82B5 /* WitchUITests/EquipmentAuditDiagnosticTests.swift */,
+				6D91C184746BA77A9A13F67F /* WitchUITests/FreshSaveFirstSessionR140Tests.swift */,
+				B1B186BEF3EE9FC780DDB1D4 /* WitchUITests/FurnitureVisualR124Tests.swift */,
+				9E875BBA766EAADC48A9D6DD /* WitchUITests/GatheringProgressR041Tests.swift */,
+				8DFDEF7E490B5BEBD14AE9F2 /* WitchUITests/GearComparisonR131LifecycleTests.swift */,
+				B9F2E48B5388D4479FBD0F36 /* WitchUITests/HomeAccessibilityR045Tests.swift */,
+				06CB60BAF4730D8911C3B098 /* WitchUITests/LargeTextCompanionReachabilityR233Tests.swift */,
+				6F71C376B94E181D1688F845 /* WitchUITests/LargeTextContextDiagnosticR247Tests.swift */,
+				0B40272EFD2F9FA9D1C15C77 /* WitchUITests/LargeTextRemainingCompanionsR265Tests.swift */,
+				84F618DF68589949DF49C221 /* WitchUITests/LatentGearCandidateTests.swift */,
+				4C2CB27B55BD9FEC8ECC09EA /* WitchUITests/LunaBookNativeContinuityTestsR010.swift */,
+				3F30A845EA179516580BCC53 /* WitchUITests/PostClearResearchR122UITests.swift */,
+				80B4C59E3F09664F6007A051 /* WitchUITests/R058VisibleChallengeTests.swift */,
+				11EED3F745806780085DF425 /* WitchUITests/RecipeEvolutionPreviewLifecycleR129Tests.swift */,
+				E2391ED86469A2AEE09B2816 /* WitchUITests/RecipeGatherHandoffR039Tests.swift */,
+				4D3ACD3B0AA382B6BD79836B /* WitchUITests/RecipeGoalCandidateTests.swift */,
+				1D7483018AFDAE52D62D648B /* WitchUITests/SaveRecoveryR120UITests.swift */,
+				A6340536B2EE11E4652D66A1 /* WitchUITests/ScrollIndicatorCandidateTests.swift */,
+				D4C83D087D25235641212EE5 /* WitchUITests/SharedPartyWorkLifecycleR146Tests.swift */,
+				E1B3176C5D008BE87F412B73 /* WitchUITests/StandardPlayCompletionR190Tests.swift */,
+				4477270164156A5F03C07BD6 /* WitchUITests/StandardPlayContinuationR196Tests.swift */,
+				BEC4DDE0715827E57645323D /* WitchUITests/StaticCopyReadabilityR048Tests.swift */,
+				5F3638B782295573CFC78C6F /* WitchUITests/UI48AcceptanceTests.swift */,
+				D6E0C0D7FEEA8493BA560633 /* WitchUITests/UI48CoverageAcceptanceTests.swift */,
+				C6A98202D9F0A7856D23D4BB /* WitchUITests/UI48EnvironmentAcceptanceTests.swift */,
+				A0DB0055930AC3B718FD472F /* WitchUITests/UI48ExtendedAcceptanceTests.swift */,
+				E794F7F5583CD13C38D20447 /* WitchUITests/UI48GameplayAcceptanceTests.swift */,
+				5105FDED6E559D7A5D4E8D4D /* WitchUITests/UI48JourneyAcceptanceTests.swift */,
+				F4409237605017E1F3CA501A /* WitchUITests/WardrobeLifecycleR128UITests.swift */,
+				22634FC609F1BBCFA288D71D /* WitchUITests/WardrobeLifecycleR130UITests.swift */,
+				3254B5D76DD023644C53D769 /* WitchUITests/WitchUITests.swift */,
+				FBDC4F23F93125BBEEAE800C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBDC4F23F93125BBEEAE800C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D795F13C8C22E022040EE00 /* WitchGathering.app */,
+				890A6C6AC91737902635B620 /* WitchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0AD4B07A83E05DBD45B7FC37 /* WitchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9438044C2E3DA8B7D373989E /* Build configuration list for PBXNativeTarget "WitchUITests" */;
+			buildPhases = (
+				32BD98CC04BFC728701D7CBE /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE58E2B17C19600779694943 /* PBXTargetDependency */,
+			);
+			name = WitchUITests;
+			productName = WitchUITests;
+			productReference = 890A6C6AC91737902635B620 /* WitchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		4F6027D858B72CC70E5CC8E9 /* WitchGathering */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA1189605F4160DBE5714E93 /* Build configuration list for PBXNativeTarget "WitchGathering" */;
+			buildPhases = (
+				D3C3E067FC1BBCCEAA4D9313 /* Sources */,
+				963488E8A773A44C9A5DC523 /* Prepare owned game resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WitchGathering;
+			productName = WitchGathering;
+			productReference = 6D795F13C8C22E022040EE00 /* WitchGathering.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98F54143AB4E86B28C3AFEE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 2600;
+			};
+			buildConfigurationList = F8C70E4123C9AE82C42562CC /* Build configuration list for PBXProject "WitchProductCandidate_R1" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = ja;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				ja,
+				en,
+				Base,
+			);
+			mainGroup = 325F10A6957A34D66CB8C0E4;
+			productRefGroup = FBDC4F23F93125BBEEAE800C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F6027D858B72CC70E5CC8E9 /* WitchGathering */,
+				0AD4B07A83E05DBD45B7FC37 /* WitchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		963488E8A773A44C9A5DC523 /* Prepare owned game resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Prepare owned game resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/bin/python3 \"${SRCROOT}/../tools/repository/copy_resources.py\" --source \"${WITCH_RESOURCE_ROOT}\" --manifest \"${SRCROOT}/ResourceManifests/W008_RESOURCE_SHA256.json\" --destination \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32BD98CC04BFC728701D7CBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56D81946C6389B541901D018 /* WitchUITests/AccessibilityContrastDiagnosticTests.swift in Sources */,
+				50BC4D2F429203C7D0F4CE85 /* WitchUITests/DragonGroundedEntryLifecycleTests.swift in Sources */,
+				919E5162595FA7957C302DBB /* WitchUITests/DragonWalkMeshDiagnosticTests.swift in Sources */,
+				11BFB820CD47AECB2EACA25E /* WitchUITests/ERNABodyFitR061Tests.swift in Sources */,
+				DFD3A5403F0EA95656925251 /* WitchUITests/EquipmentAXStatePairDiagnosticTests.swift in Sources */,
+				A0C21E3CC3E60713F7F2F42D /* WitchUITests/EquipmentAuditDiagnosticTests.swift in Sources */,
+				55F260C7F29C2D52D4F1ADAB /* WitchUITests/FreshSaveFirstSessionR140Tests.swift in Sources */,
+				98E3C34B08EB66A02CDD6467 /* WitchUITests/FurnitureVisualR124Tests.swift in Sources */,
+				70BCAE9DA56EEA700FAE9708 /* WitchUITests/GatheringProgressR041Tests.swift in Sources */,
+				9110A13AF9CA8136DD3ECF93 /* WitchUITests/GearComparisonR131LifecycleTests.swift in Sources */,
+				373451B7E54C004F2C0BB16D /* WitchUITests/HomeAccessibilityR045Tests.swift in Sources */,
+				4EBD850A7B10B65BFF043EB9 /* WitchUITests/LargeTextCompanionReachabilityR233Tests.swift in Sources */,
+				1B6D3329EBE693A77C6D750B /* WitchUITests/LargeTextContextDiagnosticR247Tests.swift in Sources */,
+				2D40B397B075A1576BAA64B1 /* WitchUITests/LargeTextRemainingCompanionsR265Tests.swift in Sources */,
+				9BB44453797D4A7566804A5E /* WitchUITests/LatentGearCandidateTests.swift in Sources */,
+				AEB363890E82BA9A9FC487B3 /* WitchUITests/LunaBookNativeContinuityTestsR010.swift in Sources */,
+				9A2EA4F1A5488587C60E441C /* WitchUITests/PostClearResearchR122UITests.swift in Sources */,
+				C482B33009E3DD978B9CD23A /* WitchUITests/R058VisibleChallengeTests.swift in Sources */,
+				9F041724A4D4C37D13FCCF5C /* WitchUITests/RecipeEvolutionPreviewLifecycleR129Tests.swift in Sources */,
+				F11E9BE3FB1C126D164CBF2A /* WitchUITests/RecipeGatherHandoffR039Tests.swift in Sources */,
+				6A1503C36257B6353EA492BB /* WitchUITests/RecipeGoalCandidateTests.swift in Sources */,
+				FFFF467AEE361BA322E5F3C7 /* WitchUITests/SaveRecoveryR120UITests.swift in Sources */,
+				809885463E8A4DC71D647F56 /* WitchUITests/ScrollIndicatorCandidateTests.swift in Sources */,
+				5BDE926B0167BBFDCBE2C4FE /* WitchUITests/SharedPartyWorkLifecycleR146Tests.swift in Sources */,
+				A66A3090F51743BE2EA08F8C /* WitchUITests/StandardPlayCompletionR190Tests.swift in Sources */,
+				422AFEA22E224CC56446B4B0 /* WitchUITests/StandardPlayContinuationR196Tests.swift in Sources */,
+				215DA841451AD77D3CBEE6E5 /* WitchUITests/StaticCopyReadabilityR048Tests.swift in Sources */,
+				C3D998760D9452915A3A1D00 /* WitchUITests/UI48AcceptanceTests.swift in Sources */,
+				36CE16E165C13A34DF16A794 /* WitchUITests/UI48CoverageAcceptanceTests.swift in Sources */,
+				065FD911626D900DB58BC1CA /* WitchUITests/UI48EnvironmentAcceptanceTests.swift in Sources */,
+				23BDFCB9CEA684665150C3D9 /* WitchUITests/UI48ExtendedAcceptanceTests.swift in Sources */,
+				05903E339201F1B862999A10 /* WitchUITests/UI48GameplayAcceptanceTests.swift in Sources */,
+				64BC348C22140497DC491854 /* WitchUITests/UI48JourneyAcceptanceTests.swift in Sources */,
+				DA76149CA31BE2BFCEBAD75D /* WitchUITests/WardrobeLifecycleR128UITests.swift in Sources */,
+				DC874C840EBBD11DD72915CC /* WitchUITests/WardrobeLifecycleR130UITests.swift in Sources */,
+				B4CAF301BCA6CDA7318DBA7E /* WitchUITests/WitchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3C3E067FC1BBCCEAA4D9313 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FB89C3039EE82DE1671F87F /* WitchApp/CommerceAppIntegrationR1.swift in Sources */,
+				3B38063EB8323C8D4C4DEED7 /* WitchGameCore/Sources/WitchGameCore/CommerceOwnershipR1.swift in Sources */,
+				2C978A04A77D22F130FA5F31 /* WitchApp/AIRAApronPlacementR130.swift in Sources */,
+				49C38B80291828570B0C188C /* WitchApp/AIRAHarvestApronOverlayR130.swift in Sources */,
+				BA62145D6EA113A8D4BAB4A3 /* WitchApp/ActiveBattleQA.swift in Sources */,
+				7F69F35E2EA564389B7A9318 /* WitchApp/ActorBodyFrame.swift in Sources */,
+				52231159539B566FB53C0A18 /* WitchApp/App.swift in Sources */,
+				41A148696762646841778425 /* WitchApp/AreaFlowQAHook.swift in Sources */,
+				9C54E4F23B14DFEC16A3C43D /* WitchApp/AreaSceneRouting.swift in Sources */,
+				B03AF38D310AED7043A79F3E /* WitchApp/ArtLibrary.swift in Sources */,
+				294A2FBE58BB99FB9A8ACEFC /* WitchApp/BattleEffects.swift in Sources */,
+				ED68A1BBC0EFE5E88DAAA2C2 /* WitchApp/BattleEntryTraceQA.swift in Sources */,
+				C49C6B0B31B74D11E6815B93 /* WitchApp/BattleGroundingLayoutCandidateR090.swift in Sources */,
+				B4E4E098744DACD215C2C8EE /* WitchApp/BattlePlayback.swift in Sources */,
+				AD8B8D3F548643580CD17AC0 /* WitchApp/BattleTimingTraceR319.swift in Sources */,
+				C1289E75996FF3A490D4022E /* WitchApp/CandidateSceneQA_R124.swift in Sources */,
+				0877A574B0B68667A2E15F9A /* WitchApp/CharacterClips.swift in Sources */,
+				BF169C23544EB3F6651B6B1F /* WitchApp/CharacterLocomotion.swift in Sources */,
+				0FF0E17EA233F4217BC4AEAD /* WitchApp/CharacterMotion.swift in Sources */,
+				40D995CB8D4EC30F7F2B3770 /* WitchApp/CommerceStoreKit2R465.swift in Sources */,
+				BDE3FCB422EFB399C45BECFA /* WitchApp/CostBoundedCache.swift in Sources */,
+				5E1700BA9FA91629F48DB611 /* WitchApp/DefeatGuidanceR229.swift in Sources */,
+				4EC6B2625927CAABB231EBC0 /* WitchApp/DragonDistalLegRigCandidateR007.swift in Sources */,
+				E7C568E01E63E07EBE19E5E8 /* WitchApp/DragonDistalLegRigMountR007.swift in Sources */,
+				E6B3F7667D8AA6B7BE80A2CF /* WitchApp/DragonEntryFootpathIKR068R002.swift in Sources */,
+				CA14969F0E3F80237229A960 /* WitchApp/DragonEntryFootpathSpriteKitAdapterR068R002.swift in Sources */,
+				C4CD4976A902B7EB34E76458 /* WitchApp/DragonFourLegCoordinateContractR064.swift in Sources */,
+				8F81D3CC0AB91D0346D08C3D /* WitchApp/DragonFourLegStanceMountR064.swift in Sources */,
+				2B1717D41F9E3E2FB76BF813 /* WitchApp/DragonGaitR038FailureLifecycle.swift in Sources */,
+				D9FEC0F1E7E9DE9B9AE3927C /* WitchApp/DragonGaitR038QA.swift in Sources */,
+				15C4156C44AC11180F87286E /* WitchApp/DragonGaitR038SequenceQA.swift in Sources */,
+				4A3DB8AA18F4EAE6D1BCFBD6 /* WitchApp/DragonGroundedEntryCandidate.swift in Sources */,
+				212E548570C7E2807062E434 /* WitchApp/DragonLocalizedLegWarpCandidateR003.swift in Sources */,
+				E7626B234319AC8AAB98EC07 /* WitchApp/DragonNormalEntryBackendR068.swift in Sources */,
+				D40C1D5C8B680C46E44159AA /* WitchApp/DragonWalkMeshCandidate.swift in Sources */,
+				B9E1690BC0659A74A47BEC2B /* WitchApp/DragonWalkMeshQA.swift in Sources */,
+				21F25A14AD9147E8C1AF2AB5 /* WitchApp/ERNAStaffFrameSnapshotR040.swift in Sources */,
+				04D8A2DCB17FC35719FDEBAD /* WitchApp/ERNAStaffMotionTraceQA_R040.swift in Sources */,
+				C622A253368EA796FBD4C2CC /* WitchApp/ERNAStaffMotionTraceRequestR040.swift in Sources */,
+				1AC3A20A3721F6508C29A008 /* WitchApp/ERNAStaffWalkCycleRequestR002.swift in Sources */,
+				9991F53BCF42CC7E59AE9BA9 /* WitchApp/ERNAStaffWalkCycleTraceQA_R002.swift in Sources */,
+				54C01CFFC2D99DB6B10E5189 /* WitchApp/ERNAWalkCycleCoverageR002.swift in Sources */,
+				0C8285A92B4A22DE2758618F /* WitchApp/ERNAWalkCycleStableSceneGateR004.swift in Sources */,
+				85D3290C5DABFA6E1EBEB3EC /* WitchApp/EffectAnchorProjectionQA.swift in Sources */,
+				712B453C7F5B10BA0884AAB0 /* WitchApp/EffectBudgetRegressionQA.swift in Sources */,
+				B051AC8C8447196F49DFEA35 /* WitchApp/EffectCueCoordinator.swift in Sources */,
+				BA9377A4478ECD3D900765D6 /* WitchApp/EffectMechanicMultiEnemyPreviewQA.swift in Sources */,
+				A01B6EDBEAD31D9A416DC70C /* WitchApp/EffectMechanicPreviewQA.swift in Sources */,
+				818CB3E3DEA2EC7FFB4E1228 /* WitchApp/EnemyEventRenderTraceR145.swift in Sources */,
+				197ECD18D98AFCEE8103D838 /* WitchApp/EnemyLoopBoundaryTraceQA.swift in Sources */,
+				7CD7C224458AA0AB1A3889F4 /* WitchApp/EnemyMotion.swift in Sources */,
+				D79E5C3D759ACFCF8FCFDF10 /* WitchApp/EnemyRegisteredPoses.swift in Sources */,
+				E226AB4C252105B7D85E9DEA /* WitchApp/EquipmentDetailRenderer.swift in Sources */,
+				5CC8116A1F070BEA46E5F118 /* WitchApp/EquipmentLoadoutsViewR342.swift in Sources */,
+				C1FB875D53253EB3F7457CE9 /* WitchApp/EquipmentMotionTraceQA.swift in Sources */,
+				78F6502F2509132271FDF474 /* WitchApp/EquipmentMotionTraceRequest.swift in Sources */,
+				B89FEAFFB82E1973FFBD00C7 /* WitchApp/EquipmentMotionTraceRootSummary.swift in Sources */,
+				576E98E7DEB320D0133BBB0E /* WitchApp/EquipmentMultiConsumerFixtureR084.swift in Sources */,
+				633C6777034B0CDE6F47EE54 /* WitchApp/EquipmentMultiConsumerObserverR084.swift in Sources */,
+				0A094D1FF9171FACA21580AE /* WitchApp/EquipmentMultiConsumerPixelDigestR084.swift in Sources */,
+				4FA1AEC2BE94E44F4CBD143E /* WitchApp/EquipmentMultiConsumerRequestR084.swift in Sources */,
+				E15EF5D62250ED22818C6626 /* WitchApp/EquipmentMultiConsumerResourceProofR084.swift in Sources */,
+				9906F5A437CF17EFBF54EF25 /* WitchApp/EquipmentMultiConsumerSampleRecordR084.swift in Sources */,
+				C5F72F32A393F058B05828D5 /* WitchApp/EquipmentMultiConsumerShowcaseR084.swift in Sources */,
+				D13D9D63A036931B4746F678 /* WitchApp/FrameStallTelemetry.swift in Sources */,
+				963024A0AC1ECA496B9F92A3 /* WitchApp/FurnitureRoomPreviewR275.swift in Sources */,
+				60A5FEF9A4B59B1E850C6FA0 /* WitchApp/GachaViews.swift in Sources */,
+				6B252C093BF4A484EDBD3845 /* WitchApp/GaitContactScheduleR064.swift in Sources */,
+				9EF562AD3FE65EFBA89E00C8 /* WitchApp/GamePurchaseAuthorityQA_R454.swift in Sources */,
+				5EE8DD35F9FE668FCA99EDEA /* WitchApp/GameStoreKitQA.swift in Sources */,
+				90B6058F5E5FC4356A2A268C /* WitchApp/GameStoreKitQASink.swift in Sources */,
+				BDA3F9969AECC4A8EB580531 /* WitchApp/GameText.swift in Sources */,
+				D843ADB1193F882462686564 /* WitchApp/GatherFrameTraceQA.swift in Sources */,
+				D6FD4B84149BD49331398672 /* WitchApp/GatherNodePresentation.swift in Sources */,
+				D71F20AF6D267372D3D01A7E /* WitchApp/GatherNodeQA.swift in Sources */,
+				5347EE22BA721388FF1E7F6D /* WitchApp/GatheringProgressViewR041.swift in Sources */,
+				2F635AE4B26DAB687A432B9B /* WitchApp/GatheringSummary.swift in Sources */,
+				AD8A888FA6AA7B40B0EFDAA4 /* WitchApp/GearComparisonQAFixtureR131.swift in Sources */,
+				2E5968AADBBE5535A26AAC09 /* WitchApp/GearComparisonR131Section.swift in Sources */,
+				EC6CAF5240904E3BA4380887 /* WitchApp/GearComparisonR136Section.swift in Sources */,
+				88439CB915EC1DA2289DAEE0 /* WitchApp/GearDismantleRefundPresentationR353.swift in Sources */,
+				A8EFDBBD82F89E7B5F0A1BD7 /* WitchApp/GearLatentModel.swift in Sources */,
+				BFA85DC1A7D37CF907A878D0 /* WitchApp/GearLatentPresentation.swift in Sources */,
+				FF9508811E939D36DD0D227E /* WitchApp/GearLatentView.swift in Sources */,
+				066B550EB4401F9F8DB0E763 /* WitchApp/GearRefinementConfirmationR352.swift in Sources */,
+				CAEEEC3ABC1A9B523D122082 /* WitchApp/GearRefinementPresentationR352.swift in Sources */,
+				93A65A39124DF9F94ABFB80D /* WitchApp/GearUpgradeClarityR218.swift in Sources */,
+				4FFC8DFC2EA7D8652E778678 /* WitchApp/HomeDeskVisualCandidateR124.swift in Sources */,
+				6D1299E06D9F13D029812BFB /* WitchApp/HomeDeskVisualCandidateR138.swift in Sources */,
+				D31757D69EC28665EB7F41F9 /* WitchApp/HomeFurnitureFitR138.swift in Sources */,
+				F2E7E63DA9D95C60C2BD83D9 /* WitchApp/IsolatedWalkCycleObserverR018.swift in Sources */,
+				11F11AB0A84FC28411EC2529 /* WitchApp/JellyfishMeshRigR135_QA.swift in Sources */,
+				EA974F7E22E327059B561CE9 /* WitchApp/JellyfishMeshRigR254QA.swift in Sources */,
+				FC04926EEB66AC427CF4B97C /* WitchApp/JellyfishMeshSequenceQAR137.swift in Sources */,
+				FACF1149BE03ECEC14214993 /* WitchApp/JellyfishMeshSequenceQAR259.swift in Sources */,
+				09D331EE8E16426BA43C6117 /* WitchApp/LRCollectionViewR384.swift in Sources */,
+				9357FF581FDCBE4A45B01E0D /* WitchApp/LatentGearQAFixture.swift in Sources */,
+				1C71F3541314FE45ECB43456 /* WitchApp/LayeredWitchMotion.swift in Sources */,
+				0AF1856F4C7783A54DED4180 /* WitchApp/LivingScene.swift in Sources */,
+				5D8DC03D4D281F8C87B3AEC7 /* WitchApp/LocalAdQAPanel.swift in Sources */,
+				C726AF963B20B75058BE5992 /* WitchApp/LunaBookFailureInjectionR010.swift in Sources */,
+				6BDA3B3D9339AA168FA460D1 /* WitchApp/LunaBookNativeObserverR010.swift in Sources */,
+				EDE84177BBA7759AD28253EB /* WitchApp/LunaBookNativeSnapshotR010.swift in Sources */,
+				79A720EF74FB1C4A052E6EDB /* WitchApp/LunaBookPresentationCleanupR004.swift in Sources */,
+				0A0142FDB00665FB33E43434 /* WitchApp/LunaBookSpriteMotion.swift in Sources */,
+				D3544D64528EBC9172F761B3 /* WitchApp/LunaBookWalkFallbackR009.swift in Sources */,
+				2E5F5697E1FDAEC5F1F536E3 /* WitchApp/LunaMantleBooklessR126.swift in Sources */,
+				91EE9325D0AD2C82B57B0844 /* WitchApp/LunaMantleBooklessR127.swift in Sources */,
+				DA2437EC7A056A49DE7E4AD8 /* WitchApp/LunaMantleOverlayR097.swift in Sources */,
+				76229DDE0AC378A4CB92014E /* WitchApp/MagnetMarkIndicator.swift in Sources */,
+				7E5B84F62CA9524D93FFE989 /* WitchApp/MothPassiveRenderObserverR058.swift in Sources */,
+				65CFBC7F7972E1BD32E760B8 /* WitchApp/MothPassiveRenderStateR058.swift in Sources */,
+				6A9BAB448C9F04D4C3B296C8 /* WitchApp/MotionCoverageR018.swift in Sources */,
+				D931151E81FAE216FA4C7A76 /* WitchApp/NaturalGearBuildPolicyR350.swift in Sources */,
+				167FCC48FAEDFE8C3573051B /* WitchApp/NoirNeckwearCandidateRegistrationR002.swift in Sources */,
+				EDE7082C9F20B8CC3A994AA8 /* WitchApp/NoirNeckwearCandidateRegistrationR003.swift in Sources */,
+				5723D9A89F0B612926003DD5 /* WitchApp/PartRig.swift in Sources */,
+				6274B2D7DF9B26D447C5AF08 /* WitchApp/PartyAuthoredMotion.swift in Sources */,
+				627AD57F2136225BDE4D798B /* WitchApp/PartyCastHoldLifecycle.swift in Sources */,
+				ED22AD5563F2B0C98DDB43AC /* WitchApp/PartyCastRenderedEvidenceR006.swift in Sources */,
+				E1E2F4B6AF246EDE230BF875 /* WitchApp/PartyFrameAuditQA.swift in Sources */,
+				258C31A340D1351917E3F02F /* WitchApp/ProductCommerceModelR1.swift in Sources */,
+				A7332504249610BC4FF8A433 /* WitchApp/PursuitNoticeCaptureWindowR092.swift in Sources */,
+				4ED18653E3CC519834EFF915 /* WitchApp/PursuitNoticeCopyR059.swift in Sources */,
+				CD5979727E81D61554964468 /* WitchApp/PursuitNoticeLabelLayoutR059.swift in Sources */,
+				C3580B7392F3870A9D1CFF3B /* WitchApp/PursuitNoticePlacementR059Collision.swift in Sources */,
+				B13D80E3BAD60F9A9E5BD8C4 /* WitchApp/PursuitNoticePointerGeometryR059.swift in Sources */,
+				34BC19967C37D44CF851C43D /* WitchApp/PursuitNoticeRenderObserverR092.swift in Sources */,
+				F7E0C89A38F8004ECFBFD3C1 /* WitchApp/PursuitNoticeRenderedBoundsQA_R059.swift in Sources */,
+				85B478CAFE9BB78B22729EE0 /* WitchApp/PursuitSuppressionNotice.swift in Sources */,
+				50B04B608F79609AF21E8602 /* WitchApp/QASaveReadback.swift in Sources */,
+				5DFB0BFE0BC406E4E46DD2EA /* WitchApp/QAScenarios.swift in Sources */,
+				5793700FB9CAF1DC71127466 /* WitchApp/R016GatherNodePresentation.swift in Sources */,
+				D7030A792C9B66D1545B5836 /* WitchApp/R04TelegraphEnvironmentPolicy.swift in Sources */,
+				F62BCD291A7BBB0D15C3F22F /* WitchApp/R04WeatherQA.swift in Sources */,
+				6D3E81890C15FED2E7530195 /* WitchApp/R6CampaignPreview.swift in Sources */,
+				B8D325B63039A74D6F1AFC30 /* WitchApp/RecipeGatherSnapshotQA.swift in Sources */,
+				F04641A4A8B54A5265F21664 /* WitchApp/RecipeGoalQAFixture.swift in Sources */,
+				E324E547EF9024C43ACA6778 /* WitchApp/RecipeGoalView.swift in Sources */,
+				37F655B8CDEB1ACDCC4B778E /* WitchApp/RenderBoundStateObserverR084.swift in Sources */,
+				D0DF013C067214056C771FF3 /* WitchApp/ResearchGatherPreviewR310.swift in Sources */,
+				725775816772A1E87BA85A82 /* WitchApp/RuntimeMetrics.swift in Sources */,
+				FBD3A033CB66B7FD07662ED0 /* WitchApp/SceneTextureCacheQA.swift in Sources */,
+				A7D16E0CFF78D811EF151BD3 /* WitchApp/SharedPartyWorkR146.swift in Sources */,
+				0E37897CA8704CA07F4C8458 /* WitchApp/StandardPlayBuildPolicyR332.swift in Sources */,
+				981D8829B06E8CBED93BCB67 /* WitchApp/SyntheticDash2TailTraceR047.swift in Sources */,
+				36169D5AE9BA76998E36B0EC /* WitchApp/TransferPathGeometry.swift in Sources */,
+				A1C26DB87E13B54821C68418 /* WitchApp/UI48Adventure.swift in Sources */,
+				768299FF39101510DC836A0E /* WitchApp/UI48DesignSystem.swift in Sources */,
+				B5F984BD4557F5571B6CFA68 /* WitchApp/UI48Equipment.swift in Sources */,
+				8400F72A87679CD21D65E66F /* WitchApp/UI48Journal.swift in Sources */,
+				D78569EC11AA1816F4ABAA00 /* WitchApp/UI48Lifestyle.swift in Sources */,
+				51ACF94FF633595824D341C9 /* WitchApp/UI48QAFixture.swift in Sources */,
+				995131BED49F62FF08E9D225 /* WitchApp/UI48RootView.swift in Sources */,
+				1DE987E3A60FFBCDFD7F7023 /* WitchApp/WardrobeCandidateThumbnailR130.swift in Sources */,
+				5284D8A649912A82EABDDDDB /* WitchApp/WitchAudioCoordinator.swift in Sources */,
+				56C5E31EC52FFEECFEE68B5F /* WitchApp/WitchMusicCoordinator.swift in Sources */,
+				CAD89C102D7F875214E3F4AB /* WitchApp/WorkflowViews.swift in Sources */,
+				685FBF0EE024457813F9BF3F /* WitchGameCore/Sources/WitchGameCore/AuthorityClientContractR461.swift in Sources */,
+				8A72FE0386800F68DF338CB5 /* WitchGameCore/Sources/WitchGameCore/BattleTargetWarningR299.swift in Sources */,
+				C282ACD02CD77BA15090C466 /* WitchGameCore/Sources/WitchGameCore/CandidateCharacterGrowth.swift in Sources */,
+				2ECFB856CBE41DB5A1DCBE7C /* WitchGameCore/Sources/WitchGameCore/CandidateCombatOverlay.swift in Sources */,
+				190440508AB5A29A3B103FC5 /* WitchGameCore/Sources/WitchGameCore/CandidateLatentCombatModifiersR005.swift in Sources */,
+				4D8D506E23D2ACC2C5F7E466 /* WitchGameCore/Sources/WitchGameCore/CandidateLatentSlotPolicyR003.swift in Sources */,
+				EAA3F18A1206445E0ADB7230 /* WitchGameCore/Sources/WitchGameCore/CombatSimulator.swift in Sources */,
+				141AEB9891D1EC87F6BEDBED /* WitchGameCore/Sources/WitchGameCore/CommerceAuthorityCandidateV1.swift in Sources */,
+				AAE8F2779B5D061A4E1B36DB /* WitchGameCore/Sources/WitchGameCore/CommerceRuntimeR465.swift in Sources */,
+				8B8109573C7DB776C3D2DC5C /* WitchGameCore/Sources/WitchGameCore/Domain.swift in Sources */,
+				CA26C7E5543B803B1616EC63 /* WitchGameCore/Sources/WitchGameCore/EnemyActionPreviewFixture.swift in Sources */,
+				4B0326F5D3DDD1AACB792874 /* WitchGameCore/Sources/WitchGameCore/EnemyExecuteCoalescerR154.swift in Sources */,
+				8786717A2E25490F3A9BE785 /* WitchGameCore/Sources/WitchGameCore/EquippedVisualCandidates.swift in Sources */,
+				4D283D87BBFC00FD9E885218 /* WitchGameCore/Sources/WitchGameCore/FileBackedAuthorityStoreR463.swift in Sources */,
+				EDFB1ECA0669988B8A2FEF70 /* WitchGameCore/Sources/WitchGameCore/FirstCraftCostR179.swift in Sources */,
+				69EEFBF777C3224866467786 /* WitchGameCore/Sources/WitchGameCore/GameEngine.swift in Sources */,
+				492613317813EFFEDF2E9BC3 /* WitchGameCore/Sources/WitchGameCore/GameRuntimeConfigurationR098.swift in Sources */,
+				FA4B33A6075811DFC1346024 /* WitchGameCore/Sources/WitchGameCore/GameRuntimeDismantleProfileR353.swift in Sources */,
+				480013F505286F65BE5FD96D /* WitchGameCore/Sources/WitchGameCore/GameRuntimeEnhancementProfileR230.swift in Sources */,
+				7E2BC75C677958EE7A6F66B2 /* WitchGameCore/Sources/WitchGameCore/GameRuntimeNaturalGearProfileR350.swift in Sources */,
+				1C2DC89ABFC1F4488CE7042F /* WitchGameCore/Sources/WitchGameCore/GameRuntimeRefinementProfileR352.swift in Sources */,
+				BF7DA61D0DAED02FCC877B22 /* WitchGameCore/Sources/WitchGameCore/GatheringProgressProjectionR041.swift in Sources */,
+				65A16A52D52427C0587AC2AA /* WitchGameCore/Sources/WitchGameCore/GearAppearanceProjection.swift in Sources */,
+				06D6F4E675C2F0E04332C89B /* WitchGameCore/Sources/WitchGameCore/GearComparisonPartnerSelectionR210.swift in Sources */,
+				B14A68771C95B666B36BDF1E /* WitchGameCore/Sources/WitchGameCore/GearDismantleRefundR353.swift in Sources */,
+				5BA95890EDBA946DB6641B5D /* WitchGameCore/Sources/WitchGameCore/GearEnhancementGrowthR230.swift in Sources */,
+				967DE2A1D52F186A8BA54E2B /* WitchGameCore/Sources/WitchGameCore/GearInventoryIndexR374.swift in Sources */,
+				3423789CE356E42BB1DD4097 /* WitchGameCore/Sources/WitchGameCore/GearLegendaryCollectionProjectionR384.swift in Sources */,
+				B71B5C5E71AA86504A152C68 /* WitchGameCore/Sources/WitchGameCore/GearSwapCampaignPreviewR136.swift in Sources */,
+				4587978D03B14B5D27E17743 /* WitchGameCore/Sources/WitchGameCore/GearSwapCombatPreviewR131.swift in Sources */,
+				39AD2AA351ED3041263D2559 /* WitchGameCore/Sources/WitchGameCore/GearSwapCombatSummaryR131.swift in Sources */,
+				CEB2D9088FA8B98A942EACB3 /* WitchGameCore/Sources/WitchGameCore/LocalPurchaseDeliveryQAImporterR453.swift in Sources */,
+				4B24AD0DAF623A5C101A9AB3 /* WitchGameCore/Sources/WitchGameCore/LocalPurchaseTransactionIdentityR454.swift in Sources */,
+				A72D2FB217F07646C7E361A2 /* WitchGameCore/Sources/WitchGameCore/LunaBookAppearanceCandidate.swift in Sources */,
+				D21F5342017A1F2DAFEE4DF4 /* WitchGameCore/Sources/WitchGameCore/LunaBookMotion.swift in Sources */,
+				0C922B39AD3F1C8A8FB6644E /* WitchGameCore/Sources/WitchGameCore/LunaBookMotionDataR001.swift in Sources */,
+				EB6BDFF7F12D6C81159BA986 /* WitchGameCore/Sources/WitchGameCore/LunaBookMotionDataR050Candidate.swift in Sources */,
+				2860CE3EDC85ED6B3304AA17 /* WitchGameCore/Sources/WitchGameCore/LunaBookMotionDataR088Candidate.swift in Sources */,
+				CB0557B41BC2A04B3439DF57 /* WitchGameCore/Sources/WitchGameCore/MothIdleAnchorRegistrationR050.swift in Sources */,
+				F94101A37D12DBA3D8DD224D /* WitchGameCore/Sources/WitchGameCore/NaturalGearDiscoveryR350.swift in Sources */,
+				78D7AFF02C50E63ADF9F52F7 /* WitchGameCore/Sources/WitchGameCore/NaturalGearRefinementR352.swift in Sources */,
+				25759A040DBD8002B2E83EBD /* WitchGameCore/Sources/WitchGameCore/OwnedPartyLoadoutPreviewR181.swift in Sources */,
+				3568A7017BCB152CD8F6BA9D /* WitchGameCore/Sources/WitchGameCore/PartyWorkPolicyR144.swift in Sources */,
+				02836475015D9723965CC5E9 /* WitchGameCore/Sources/WitchGameCore/PostClearGoalProjectionR122.swift in Sources */,
+				9D59FEF1A211B0114B935F49 /* WitchGameCore/Sources/WitchGameCore/ProductProgressionRulesR1.swift in Sources */,
+				631D34D167E910F3569EDA71 /* WitchGameCore/Sources/WitchGameCore/R6CampaignQA.swift in Sources */,
+				BEFD13453086BE5E310032C3 /* WitchGameCore/Sources/WitchGameCore/R6CanonicalProfile.swift in Sources */,
+				67AD6BC25F0285FA14AE5595 /* WitchGameCore/Sources/WitchGameCore/R6CombatPresentationSemantics.swift in Sources */,
+				A666B89905D3909AE113BF78 /* WitchGameCore/Sources/WitchGameCore/R6TimelineSimulator.swift in Sources */,
+				90783A037E69E3B3CFC791B2 /* WitchGameCore/Sources/WitchGameCore/RecipeEvolutionOutcomeProjectionR129.swift in Sources */,
+				D6A69CB844FC7275902D2F8F /* WitchGameCore/Sources/WitchGameCore/RecipeGatherHandoffTargetR157.swift in Sources */,
+				C338875AFE6355D496835D39 /* WitchGameCore/Sources/WitchGameCore/RecipeGoalCoreAdapterR002.swift in Sources */,
+				8A147A0D025D7605227795A2 /* WitchGameCore/Sources/WitchGameCore/RecipeGoalProjectionR035.swift in Sources */,
+				F31BA5176A29E300908CD280 /* WitchGameCore/Sources/WitchGameCore/RecipeInvestigationRouteR158.swift in Sources */,
+				D420296EBC7F7199293DD7BA /* WitchGameCore/Sources/WitchGameCore/ResearchGatherRouteR310.swift in Sources */,
+				B34294F5F2FDE5DB3B2F9A49 /* WitchGameCore/Sources/WitchGameCore/ResearchMaterialGuidanceR280.swift in Sources */,
+				219C72BD170B96CE8E8D91F9 /* WitchGameCore/Sources/WitchGameCore/SaveRepository.swift in Sources */,
+				5F08B75F14F5E143E7BCA2BB /* WitchGameCore/Sources/WitchGameCore/SharedPartyWorkRuntimeR170.swift in Sources */,
+				03C44149F493049827B73A18 /* WitchGameCore/Sources/WitchGameCore/StandardPlayRuntimeProfileR1.swift in Sources */,
+				8599C7796568A12E1EA9F220 /* WitchGameCore/Sources/WitchGameCore/StandardPlayStartupSelectionR169.swift in Sources */,
+				2CA0D9EFC0D6E25182861AEB /* WitchGameCore/Sources/WitchGameCore/SyntheticDash2VisualTailR047.swift in Sources */,
+				8D1DDE5C89F467484D462A99 /* WitchGameCore/Sources/WitchGameCore/SyntheticPartyDash2PreviewR043.swift in Sources */,
+				E2E474DB26055D14D9C39483 /* WitchGameCore/Sources/WitchGameCore/UI48QALaunchGate.swift in Sources */,
+				29F8B0A8295747B3819F8FEC /* WitchGameCore/Sources/WitchGameCore/WardrobeCandidateCatalogR130.swift in Sources */,
+				5A7DFBF94700E0641D5CD1B0 /* WitchGameCore/Sources/WitchGameCore/WardrobeCandidateR128.swift in Sources */,
+				51B4DF89BA7FFF99A25AE425 /* WitchGameCore/Sources/WitchGameCore/WorkshopPresentationR1.swift in Sources */,
+				10D1C38C31900AAD63CDFD6A /* StoreKitLocalQA/ReusableBridge.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE58E2B17C19600779694943 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F6027D858B72CC70E5CC8E9 /* WitchGathering */;
+			targetProxy = D799BAE6088A90139B415FCC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5A8C91857F674E16E2724F47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/WitchReproduction.xcodeproj/GameInfo.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = local.witch.repository.reproduction;
+				PRODUCT_NAME = WitchGathering;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "STANDARD_PLAY_R169 FIRST_CRAFT_AID_R179 EQUIPMENT_LOADOUTS_R342 NATURAL_GEAR_R350 NATURAL_GEAR_REFINEMENT_R352 GEAR_DISMANTLE_REFUND_R353";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		89E1FD6268CC0F221A2BE178 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		94C1D7A82E2F92E70C5BA5D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/WitchReproduction.xcodeproj/WitchUITestInfo.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = local.witch.repository.reproduction.uitests;
+				PRODUCT_NAME = WitchUITests;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = WitchGathering;
+			};
+			name = Debug;
+		};
+		9609A256A79253DD705A918E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/WitchReproduction.xcodeproj/WitchUITestInfo.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = local.witch.repository.reproduction.uitests;
+				PRODUCT_NAME = WitchUITests;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = WitchGathering;
+			};
+			name = Release;
+		};
+		E6DE6C99132752C914FEF632 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E9B2E96ABC5F6856F2BE79CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/WitchReproduction.xcodeproj/GameInfo.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = local.witch.repository.reproduction;
+				PRODUCT_NAME = WitchGathering;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9438044C2E3DA8B7D373989E /* Build configuration list for PBXNativeTarget "WitchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94C1D7A82E2F92E70C5BA5D8 /* Debug */,
+				9609A256A79253DD705A918E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DA1189605F4160DBE5714E93 /* Build configuration list for PBXNativeTarget "WitchGathering" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9B2E96ABC5F6856F2BE79CF /* Debug */,
+				5A8C91857F674E16E2724F47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F8C70E4123C9AE82C42562CC /* Build configuration list for PBXProject "WitchProductCandidate_R1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89E1FD6268CC0F221A2BE178 /* Debug */,
+				E6DE6C99132752C914FEF632 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98F54143AB4E86B28C3AFEE0 /* Project object */;
+}

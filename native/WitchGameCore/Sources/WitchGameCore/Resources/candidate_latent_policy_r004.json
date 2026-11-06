@@ -1,0 +1,1222 @@
+{
+  "schemaVersion": 1,
+  "sourceStatus": "UNAPPROVED_TEST_CANDIDATE",
+  "sourceHashes": {
+    "r2_prose_sha256": "849e1d92a0d54694f8ee1ac650d45cc04441557b4b54ffb2f5da6c6c43046b44",
+    "r2_json_sha256": "70d36d335e69899f4232567d80e2dc17457d6baec1688590cf3757d8b0b4d874",
+    "reviewed_Domain_sha256": "9c8af89325377d4425cadd8e1bab15e79c6a908b63e1c046daaa4ea8ff42448a",
+    "reviewed_GameEngine_sha256": "4dd4fb373c521a64be10f8718721cda360e42aacff36e8b0caf9c4f2be3fa653"
+  },
+  "qualities": {
+    "Q0": {
+      "activeSlots": 0,
+      "floorQ": 0
+    },
+    "Q1": {
+      "activeSlots": 1,
+      "floorQ": 0
+    },
+    "Q2": {
+      "activeSlots": 2,
+      "floorQ": 0
+    },
+    "Q3": {
+      "activeSlots": 3,
+      "floorQ": 0
+    },
+    "Q4": {
+      "activeSlots": 3,
+      "floorQ": 600
+    }
+  },
+  "rawQRange": [
+    0,
+    1000
+  ],
+  "craftNewCandidate": {
+    "quality": "Q2",
+    "minimumRawQ": 250
+  },
+  "affixes": [
+    {
+      "id": "AF_HP",
+      "group": "AF_HP",
+      "capability": "all",
+      "stat": "hp_pct",
+      "minBP": 300,
+      "maxBP": 600,
+      "stepBP": 1,
+      "aggregateCapStat": "hp_pct",
+      "aggregateCapBP": 10000,
+      "scalesWithRank": false
+    },
+    {
+      "id": "AF_POWER",
+      "group": "AF_POWER",
+      "capability": "all",
+      "stat": "power_pct",
+      "minBP": 300,
+      "maxBP": 600,
+      "stepBP": 1,
+      "aggregateCapStat": "power_pct",
+      "aggregateCapBP": 8000,
+      "scalesWithRank": false
+    },
+    {
+      "id": "AF_DEF",
+      "group": "AF_DEF",
+      "capability": "all",
+      "stat": "defense_pct",
+      "minBP": 400,
+      "maxBP": 800,
+      "stepBP": 1,
+      "aggregateCapStat": "defense_pct",
+      "aggregateCapBP": 10000,
+      "scalesWithRank": false
+    },
+    {
+      "id": "AF_CRIT",
+      "group": "AF_CRIT",
+      "capability": "all",
+      "stat": "crit_chance_bp",
+      "minBP": 200,
+      "maxBP": 400,
+      "stepBP": 1,
+      "aggregateCapStat": "crit_chance_bp",
+      "aggregateCapBP": 6000,
+      "scalesWithRank": false
+    },
+    {
+      "id": "AF_CRIT_DMG",
+      "group": "AF_CRIT_DMG",
+      "capability": "all",
+      "stat": "crit_damage_extra_bp",
+      "minBP": 500,
+      "maxBP": 1000,
+      "stepBP": 1,
+      "aggregateCapStat": "crit_multiplier_bp",
+      "aggregateCapBP": 22500,
+      "scalesWithRank": false
+    },
+    {
+      "id": "AF_HASTE",
+      "group": "AF_HASTE",
+      "capability": "all",
+      "stat": "haste_bp",
+      "minBP": 200,
+      "maxBP": 500,
+      "stepBP": 1,
+      "aggregateCapStat": "haste_bp",
+      "aggregateCapBP": 5000,
+      "scalesWithRank": false
+    },
+    {
+      "id": "AF_CDR",
+      "group": "AF_CDR",
+      "capability": "all",
+      "stat": "cdr_bp",
+      "minBP": 100,
+      "maxBP": 300,
+      "stepBP": 1,
+      "aggregateCapStat": "cdr_bp",
+      "aggregateCapBP": 2500,
+      "scalesWithRank": false
+    },
+    {
+      "id": "AF_DIRECT",
+      "group": "AF_DIRECT",
+      "capability": "all",
+      "stat": "direct_bonus_bp",
+      "minBP": 400,
+      "maxBP": 800,
+      "stepBP": 1,
+      "aggregateCapStat": "direct_bonus_bp",
+      "aggregateCapBP": 6000,
+      "scalesWithRank": false
+    },
+    {
+      "id": "AF_DOT",
+      "group": "AF_DOT",
+      "capability": [
+        "C_WITCH"
+      ],
+      "stat": "dot_bonus_bp",
+      "minBP": 500,
+      "maxBP": 1000,
+      "stepBP": 1,
+      "aggregateCapStat": "dot_bonus_bp",
+      "aggregateCapBP": 10000,
+      "scalesWithRank": false
+    },
+    {
+      "id": "AF_HEAL",
+      "group": "AF_HEAL",
+      "capability": [
+        "C_APPRENTICE"
+      ],
+      "stat": "heal_bonus_bp",
+      "minBP": 500,
+      "maxBP": 1000,
+      "stepBP": 1,
+      "aggregateCapStat": "heal_bonus_bp",
+      "aggregateCapBP": 10000,
+      "scalesWithRank": false
+    },
+    {
+      "id": "AF_WARD",
+      "group": "AF_WARD",
+      "capability": [
+        "C_WITCH",
+        "C_APPRENTICE"
+      ],
+      "stat": "barrier_bonus_bp",
+      "minBP": 500,
+      "maxBP": 1000,
+      "stepBP": 1,
+      "aggregateCapStat": "barrier_bonus_bp",
+      "aggregateCapBP": 10000,
+      "scalesWithRank": false
+    },
+    {
+      "id": "AF_GUARD",
+      "group": "AF_GUARD",
+      "capability": "all",
+      "stat": "guard_chance_bp",
+      "minBP": 200,
+      "maxBP": 400,
+      "stepBP": 1,
+      "aggregateCapStat": "guard_chance_bp",
+      "aggregateCapBP": 4500,
+      "scalesWithRank": false
+    },
+    {
+      "id": "AF_COUNTER",
+      "group": "AF_COUNTER",
+      "capability": [
+        "C_SMITH"
+      ],
+      "stat": "counter_bonus_bp",
+      "minBP": 500,
+      "maxBP": 1000,
+      "stepBP": 1,
+      "aggregateCapStat": "counter_bonus_bp",
+      "aggregateCapBP": 10000,
+      "scalesWithRank": false
+    },
+    {
+      "id": "AF_CHASE",
+      "group": "AF_CHASE",
+      "capability": [
+        "C_FAMILIAR"
+      ],
+      "stat": "chase_bonus_bp",
+      "minBP": 500,
+      "maxBP": 1000,
+      "stepBP": 1,
+      "aggregateCapStat": "chase_bonus_bp",
+      "aggregateCapBP": 10000,
+      "scalesWithRank": false
+    },
+    {
+      "id": "AF_STATUS_RESIST",
+      "group": "AF_STATUS_RESIST",
+      "capability": "all",
+      "stat": "debuff_duration_resist_bp",
+      "minBP": 400,
+      "maxBP": 800,
+      "stepBP": 1,
+      "aggregateCapStat": "debuff_duration_resist_bp",
+      "aggregateCapBP": 5000,
+      "scalesWithRank": false
+    },
+    {
+      "id": "AF_DOT_RESIST",
+      "group": "AF_DOT_RESIST",
+      "capability": "all",
+      "stat": "periodic_resist_bp",
+      "minBP": 400,
+      "maxBP": 800,
+      "stepBP": 1,
+      "aggregateCapStat": "periodic_resist_bp",
+      "aggregateCapBP": 5000,
+      "scalesWithRank": false
+    }
+  ],
+  "templates": [
+    {
+      "id": "EQ_W_01",
+      "slot": "weapon",
+      "actorIDs": [
+        "C_WITCH"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [
+        "AF_DOT"
+      ],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_WARD"
+      ],
+      "status": "R2_EXISTING_TEMPLATE"
+    },
+    {
+      "id": "EQ_W_P1",
+      "slot": "weapon",
+      "actorIDs": [
+        "C_WITCH"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_DOT",
+        "AF_WARD"
+      ],
+      "status": "R2_EXISTING_TEMPLATE"
+    },
+    {
+      "id": "EQ_W_P2",
+      "slot": "weapon",
+      "actorIDs": [
+        "C_WITCH"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_DOT",
+        "AF_WARD"
+      ],
+      "status": "R2_EXISTING_TEMPLATE"
+    },
+    {
+      "id": "EQ_W_G1",
+      "slot": "weapon",
+      "actorIDs": [
+        "C_WITCH"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [
+        "AF_DOT"
+      ],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_WARD"
+      ],
+      "status": "R2_EXISTING_TEMPLATE"
+    },
+    {
+      "id": "EQ_W_G2",
+      "slot": "weapon",
+      "actorIDs": [
+        "C_WITCH"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [
+        "AF_DOT"
+      ],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_WARD"
+      ],
+      "status": "R2_EXISTING_TEMPLATE"
+    },
+    {
+      "id": "EQ_A_01",
+      "slot": "weapon",
+      "actorIDs": [
+        "C_APPRENTICE"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_HEAL",
+        "AF_WARD"
+      ],
+      "status": "R2_EXISTING_TEMPLATE"
+    },
+    {
+      "id": "EQ_A_02",
+      "slot": "weapon",
+      "actorIDs": [
+        "C_APPRENTICE"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_HEAL",
+        "AF_WARD"
+      ],
+      "status": "R2_EXISTING_TEMPLATE"
+    },
+    {
+      "id": "EQ_A_03",
+      "slot": "weapon",
+      "actorIDs": [
+        "C_APPRENTICE"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_HEAL",
+        "AF_WARD"
+      ],
+      "status": "R2_EXISTING_TEMPLATE"
+    },
+    {
+      "id": "EQ_S_01",
+      "slot": "weapon",
+      "actorIDs": [
+        "C_SMITH"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_COUNTER"
+      ],
+      "status": "R2_EXISTING_TEMPLATE"
+    },
+    {
+      "id": "EQ_S_02",
+      "slot": "weapon",
+      "actorIDs": [
+        "C_SMITH"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_COUNTER"
+      ],
+      "status": "R2_EXISTING_TEMPLATE"
+    },
+    {
+      "id": "EQ_S_03",
+      "slot": "weapon",
+      "actorIDs": [
+        "C_SMITH"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_COUNTER"
+      ],
+      "status": "R2_EXISTING_TEMPLATE"
+    },
+    {
+      "id": "EQ_F_01",
+      "slot": "weapon",
+      "actorIDs": [
+        "C_FAMILIAR"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_CHASE"
+      ],
+      "status": "R2_EXISTING_TEMPLATE"
+    },
+    {
+      "id": "EQ_F_02",
+      "slot": "weapon",
+      "actorIDs": [
+        "C_FAMILIAR"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_CHASE"
+      ],
+      "status": "R2_EXISTING_TEMPLATE"
+    },
+    {
+      "id": "EQ_F_03",
+      "slot": "weapon",
+      "actorIDs": [
+        "C_FAMILIAR"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_CHASE"
+      ],
+      "status": "R2_EXISTING_TEMPLATE"
+    },
+    {
+      "id": "EQ_BODY_01",
+      "slot": "body",
+      "actorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_DOT",
+        "AF_HEAL",
+        "AF_WARD",
+        "AF_COUNTER"
+      ],
+      "status": "R2_EXISTING_TEMPLATE"
+    },
+    {
+      "id": "EQ_BODY_02",
+      "slot": "body",
+      "actorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_DOT",
+        "AF_HEAL",
+        "AF_WARD",
+        "AF_COUNTER"
+      ],
+      "status": "R2_EXISTING_TEMPLATE"
+    },
+    {
+      "id": "EQ_BODY_03",
+      "slot": "body",
+      "actorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_DOT",
+        "AF_HEAL",
+        "AF_WARD",
+        "AF_COUNTER"
+      ],
+      "status": "R2_EXISTING_TEMPLATE"
+    },
+    {
+      "id": "EQ_HAND_01",
+      "slot": "hands",
+      "actorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_DOT",
+        "AF_HEAL",
+        "AF_WARD",
+        "AF_COUNTER"
+      ],
+      "status": "R2_EXISTING_TEMPLATE"
+    },
+    {
+      "id": "EQ_HAND_02",
+      "slot": "hands",
+      "actorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_DOT",
+        "AF_HEAL",
+        "AF_WARD",
+        "AF_COUNTER"
+      ],
+      "status": "R2_EXISTING_TEMPLATE"
+    },
+    {
+      "id": "EQ_HAND_03",
+      "slot": "hands",
+      "actorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_DOT",
+        "AF_HEAL",
+        "AF_WARD",
+        "AF_COUNTER"
+      ],
+      "status": "R2_EXISTING_TEMPLATE"
+    },
+    {
+      "id": "EQ_FEET_01",
+      "slot": "feet",
+      "actorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_DOT",
+        "AF_HEAL",
+        "AF_WARD",
+        "AF_COUNTER"
+      ],
+      "status": "R2_EXISTING_TEMPLATE"
+    },
+    {
+      "id": "EQ_FEET_02",
+      "slot": "feet",
+      "actorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_DOT",
+        "AF_HEAL",
+        "AF_WARD",
+        "AF_COUNTER"
+      ],
+      "status": "R2_EXISTING_TEMPLATE"
+    },
+    {
+      "id": "EQ_FEET_03",
+      "slot": "feet",
+      "actorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_DOT",
+        "AF_HEAL",
+        "AF_WARD",
+        "AF_COUNTER"
+      ],
+      "status": "R2_EXISTING_TEMPLATE"
+    },
+    {
+      "id": "EQ_AMU_01",
+      "slot": "amulet",
+      "actorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH",
+        "C_FAMILIAR"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_DOT",
+        "AF_HEAL",
+        "AF_WARD",
+        "AF_COUNTER",
+        "AF_CHASE"
+      ],
+      "status": "R2_EXISTING_TEMPLATE"
+    },
+    {
+      "id": "EQ_AMU_02",
+      "slot": "amulet",
+      "actorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH",
+        "C_FAMILIAR"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_DOT",
+        "AF_HEAL",
+        "AF_WARD",
+        "AF_COUNTER",
+        "AF_CHASE"
+      ],
+      "status": "R2_EXISTING_TEMPLATE"
+    },
+    {
+      "id": "EQ_AMU_03",
+      "slot": "amulet",
+      "actorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH",
+        "C_FAMILIAR"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_DOT",
+        "AF_HEAL",
+        "AF_WARD",
+        "AF_COUNTER",
+        "AF_CHASE"
+      ],
+      "status": "R2_EXISTING_TEMPLATE"
+    },
+    {
+      "id": "EQ_RING_01",
+      "slot": "ring",
+      "actorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_DOT",
+        "AF_HEAL",
+        "AF_WARD",
+        "AF_COUNTER"
+      ],
+      "status": "R2_EXISTING_TEMPLATE"
+    },
+    {
+      "id": "EQ_RING_02",
+      "slot": "ring",
+      "actorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_DOT",
+        "AF_HEAL",
+        "AF_WARD",
+        "AF_COUNTER"
+      ],
+      "status": "R2_EXISTING_TEMPLATE"
+    },
+    {
+      "id": "EQ_RING_03",
+      "slot": "ring",
+      "actorIDs": [
+        "C_WITCH",
+        "C_APPRENTICE",
+        "C_SMITH"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_DOT",
+        "AF_HEAL",
+        "AF_WARD",
+        "AF_COUNTER"
+      ],
+      "status": "R2_EXISTING_TEMPLATE"
+    },
+    {
+      "id": "EQ_F_BODY_01",
+      "slot": "body",
+      "actorIDs": [
+        "C_FAMILIAR"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_CHASE"
+      ],
+      "status": "R2_PROPOSED_CANDIDATE"
+    },
+    {
+      "id": "EQ_F_HAND_01",
+      "slot": "hands",
+      "actorIDs": [
+        "C_FAMILIAR"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_CHASE"
+      ],
+      "status": "R2_PROPOSED_CANDIDATE"
+    },
+    {
+      "id": "EQ_F_FEET_01",
+      "slot": "feet",
+      "actorIDs": [
+        "C_FAMILIAR"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_CHASE"
+      ],
+      "status": "R2_PROPOSED_CANDIDATE"
+    },
+    {
+      "id": "EQ_F_RING_01",
+      "slot": "ring",
+      "actorIDs": [
+        "C_FAMILIAR"
+      ],
+      "candidateAcquisitionExcludedAffixIDs": [],
+      "candidateStoredCompatibleAffixIDs": [
+        "AF_HP",
+        "AF_POWER",
+        "AF_DEF",
+        "AF_CRIT",
+        "AF_CRIT_DMG",
+        "AF_HASTE",
+        "AF_CDR",
+        "AF_DIRECT",
+        "AF_GUARD",
+        "AF_STATUS_RESIST",
+        "AF_DOT_RESIST",
+        "AF_CHASE"
+      ],
+      "status": "R2_PROPOSED_CANDIDATE"
+    }
+  ],
+  "evolutionEdges": [
+    {
+      "from": "EQ_W_01",
+      "to": "EQ_W_P1"
+    },
+    {
+      "from": "EQ_W_P1",
+      "to": "EQ_W_P2"
+    },
+    {
+      "from": "EQ_W_01",
+      "to": "EQ_W_G1"
+    },
+    {
+      "from": "EQ_W_G1",
+      "to": "EQ_W_G2"
+    },
+    {
+      "from": "EQ_A_01",
+      "to": "EQ_A_02"
+    },
+    {
+      "from": "EQ_A_02",
+      "to": "EQ_A_03"
+    },
+    {
+      "from": "EQ_S_01",
+      "to": "EQ_S_02"
+    },
+    {
+      "from": "EQ_S_02",
+      "to": "EQ_S_03"
+    },
+    {
+      "from": "EQ_F_01",
+      "to": "EQ_F_02"
+    },
+    {
+      "from": "EQ_F_02",
+      "to": "EQ_F_03"
+    },
+    {
+      "from": "EQ_BODY_01",
+      "to": "EQ_BODY_02"
+    },
+    {
+      "from": "EQ_BODY_02",
+      "to": "EQ_BODY_03"
+    },
+    {
+      "from": "EQ_HAND_01",
+      "to": "EQ_HAND_02"
+    },
+    {
+      "from": "EQ_HAND_02",
+      "to": "EQ_HAND_03"
+    },
+    {
+      "from": "EQ_FEET_01",
+      "to": "EQ_FEET_02"
+    },
+    {
+      "from": "EQ_FEET_02",
+      "to": "EQ_FEET_03"
+    },
+    {
+      "from": "EQ_AMU_01",
+      "to": "EQ_AMU_02"
+    },
+    {
+      "from": "EQ_AMU_02",
+      "to": "EQ_AMU_03"
+    },
+    {
+      "from": "EQ_RING_01",
+      "to": "EQ_RING_02"
+    },
+    {
+      "from": "EQ_RING_02",
+      "to": "EQ_RING_03"
+    }
+  ],
+  "notes": [
+    "All-slot eligibility is a candidate default; R2 has no complete slot allowlist.",
+    "AF_DOT exclusion on EQ_W_01 is source-backed by the R2 base-staff ward-branch note.",
+    "Duplicate-group candidate follows R2 prose pending clarification of the JSON field name/polarity."
+  ],
+  "numericSchemaVersion": 1,
+  "statCapsBP": {
+    "hp_pct": 10000,
+    "power_pct": 8000,
+    "defense_pct": 10000,
+    "crit_chance_bp": 6000,
+    "crit_multiplier_bp": 22500,
+    "haste_bp": 5000,
+    "cdr_bp": 2500,
+    "guard_chance_bp": 4500,
+    "dot_bonus_bp": 10000,
+    "heal_bonus_bp": 10000,
+    "barrier_bonus_bp": 10000,
+    "barrier_received_bp": 5000,
+    "direct_bonus_bp": 6000,
+    "counter_bonus_bp": 10000,
+    "chase_bonus_bp": 10000,
+    "debuff_duration_resist_bp": 5000,
+    "periodic_resist_bp": 5000,
+    "heavy_reduction_bp": 3000,
+    "defense_reduction_bp": 7000,
+    "guard_reduction_bp": 3500,
+    "barrier_total_max_hp_bp": 3500,
+    "poison_stacks": 8
+  },
+  "commerceAliasBridge": {
+    "AF_BARRIER": {
+      "candidateR2AffixID": "AF_WARD",
+      "numericSource": "growth_gear_skills_R2.json#affixes[AF_WARD]",
+      "commerceSource": "GEAR_METADATA_AND_NEW_AFFIX_PROPOSAL.json#items[EQ_W_G1,EQ_W_G2]",
+      "status": "test-only-numeric-bridge-not-canonical-equivalence",
+      "minimumBP": 500,
+      "maximumBP": 1000,
+      "stat": "barrier_bonus_bp",
+      "aggregateCapBP": 10000
+    }
+  }
+}

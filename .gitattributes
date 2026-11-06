@@ -1,0 +1,15 @@
+# No clean/smudge filters or history migration. Preserve binary assets byte-for-byte.
+*.swift text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.plist text eol=lf
+*.pbxproj text eol=lf
+*.xcscheme text eol=lf
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.wav -text
+*.mp4 -text
+*.zip -text

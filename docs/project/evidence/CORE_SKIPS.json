@@ -1,0 +1,70 @@
+[
+  {
+    "test": "AuthorityClientContractR461Tests testPythonExchangeFixtureThroughSubmitWhenRequired",
+    "reason": " Python exchange fixture is enabled only by the Root-pinned runner"
+  },
+  {
+    "test": "CandidateGrowthCombatSensitivityTests testPairedCampaignBossAndChallengeAtSavedProgressionCheckpoints",
+    "reason": " set WITCH_GROWTH_SENSITIVITY_SNAPSHOT_DIR to a completed actual-command E2E combat_checkpoints folder"
+  },
+  {
+    "test": "CurrentEconomySweepR002Tests testCurrentContractTenPersonaNinetyDaySweepR003",
+    "reason": " Set WITCH_CURRENT_ECONOMY_SWEEP_R002=1 to run the bounded 120-scenario 90-day current-contract matrix"
+  },
+  {
+    "test": "CurrentEconomySweepR004Tests testCurrentContractTenPersonaNinetyDaySweepR004",
+    "reason": " Set WITCH_CURRENT_ECONOMY_SWEEP_R004=1 to run the bounded 120-scenario 90-day current-contract matrix"
+  },
+  {
+    "test": "CurrentProfileEarnedMechanicOutcomesR120Tests testPairedCombatOutcomesFromEarnedR020Save",
+    "reason": " outcome comparison requires a preregistered earned source save and exclusive output"
+  },
+  {
+    "test": "CurrentProfileProgressionE2ERunnerR120Tests testResolvedCurrentProfileThirtyOrNinetyDayRun",
+    "reason": " R120 long-run test runs only for an explicit pre-registered case"
+  },
+  {
+    "test": "EarnedLoadoutSnapshotComparisonTests testActualProgressionCheckpointsOnlyReequipExistingOwnedItems",
+    "reason": " Set WITCH_EARNED_BUILD_SAVE_FILES (semicolon-separated QA final-save files) and WITCH_EARNED_BUILD_OUTPUT"
+  },
+  {
+    "test": "EarnedPostClearRefinementR352R120N4Tests testEarnedPostClearR352RankTwoWithRealR144GatherAndColdReload",
+    "reason": " supplemental post-clear run requires explicit preregistered paths and identity"
+  },
+  {
+    "test": "EarnedProgressionBattleMatrixR026Tests testSixEarnedSavesFourPlansSixBattlesThreeSeeds",
+    "reason": " Set WITCH_R026_INPUTS as six key|strategy|day|path records separated by semicolon and WITCH_R026_OUTPUT"
+  },
+  {
+    "test": "LocalPurchaseDeliveryQAImporterR453Tests testAfterPrimaryReplaceAmbiguityColdReopenAndRetryDoNotDoubleApply",
+    "reason": " Set WITCH_R453_DELIVERY_FIXTURE and its independently pinned WITCH_R453_DELIVERY_FIXTURE_SHA256"
+  },
+  {
+    "test": "LocalPurchaseDeliveryQAImporterR453Tests testBeforePrimaryReplaceFailureLeavesNoReceiptAndRetryCommitsOnce",
+    "reason": " Set WITCH_R453_DELIVERY_FIXTURE and its independently pinned WITCH_R453_DELIVERY_FIXTURE_SHA256"
+  },
+  {
+    "test": "LocalPurchaseDeliveryQAImporterR453Tests testCurrentRefundProviderIsRecheckedEvenForSavedOperationReplay",
+    "reason": " Set WITCH_R453_DELIVERY_FIXTURE and its independently pinned WITCH_R453_DELIVERY_FIXTURE_SHA256"
+  },
+  {
+    "test": "LocalPurchaseDeliveryQAImporterR453Tests testOutOfOrderPityRejectsWithoutSaveOrReceiptMutation",
+    "reason": " Set WITCH_R453_DELIVERY_FIXTURE and its independently pinned WITCH_R453_DELIVERY_FIXTURE_SHA256"
+  },
+  {
+    "test": "LocalPurchaseDeliveryQAImporterR453Tests testPinnedFixtureImportsExactGearAndPityOnceAcrossColdReplay",
+    "reason": " Set WITCH_R453_DELIVERY_FIXTURE and its independently pinned WITCH_R453_DELIVERY_FIXTURE_SHA256"
+  },
+  {
+    "test": "LocalPurchaseDeliveryQAImporterR453Tests testTamperedPayloadsAndSameUUIDChangedPayloadRejectWithoutSaveMutation",
+    "reason": " Set WITCH_R453_DELIVERY_FIXTURE and its independently pinned WITCH_R453_DELIVERY_FIXTURE_SHA256"
+  },
+  {
+    "test": "LocalPurchaseDeliveryQAImporterR453Tests testUnknownPityTargetsRejectAcrossDrawSequenceWithoutMutation",
+    "reason": " Set WITCH_R453_DELIVERY_FIXTURE and its independently pinned WITCH_R453_DELIVERY_FIXTURE_SHA256"
+  },
+  {
+    "test": "LocalPurchaseTransactionIdentityR454Tests testExactPinnedReceiptIdentityAcceptsAndEveryBoundFieldMismatchRejects",
+    "reason": " Requires the independently SHA-pinned R453 host fixture"
+  }
+]
