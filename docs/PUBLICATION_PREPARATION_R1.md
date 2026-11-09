@@ -1,3 +1,5 @@
+> R2追記：この文書はR1時点の記録です。素材・メールの追加本人承認と現状は[公開準備R2](PUBLICATION_PREPARATION_R2.md)を参照してください。
+
 # 公開準備候補 R1 の範囲
 
 これは隔離ローカルの候補です。GitHub原本はPrivateのままで、push・Public化・リモート履歴の変更はしていません。元の全取得履歴と参照は候補外のPrivate mirror/bundleに保全しています。

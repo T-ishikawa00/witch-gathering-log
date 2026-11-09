@@ -1,0 +1,25 @@
+# 公開準備R2補足 — 魔女の採集帳
+
+## 適用した本人確認
+
+所有者は、魔女の採集帳とTinlumoに掲載する画像・音楽に、無断利用した第三者素材がないことを確認しました。魔女の採集帳ではこの確認を OWNER_CONFIRMED_NO_UNAUTHORIZED_THIRD_PARTY_ASSETS として記録し、掲載画像のR1権利HOLDを所有者表明に基づき解除します。
+
+この確認を個別ファイルのライセンス証明や生成経路の証明として扱いません。R1で記録した AI_GENERATED 9件・UNKNOWN 104件の分類と各ファイルのhash/出典記録は維持し、AI生成サービス・時期・入力など未確認の出自情報を追加しません。C2PA等の生成経路証明は要求しません。
+
+## 素材台帳の更新範囲
+
+R1の113 trackedMediaAssetsのうち、画像ファイル109件（JPG 16、PNG 92、SVG 1）を所有者確認の対象として記録します。この109件の内訳は AI_GENERATED 9件、UNKNOWN 100件です。出自区分を権利区分へ読み替えず、各画像の権利状態だけに所有者確認を反映します。
+
+音楽ファイルは候補Git treeに0件です。R1 manifestの残る非画像4件も、拡張子だけを理由にHOLDを維持しません。MP4 preview 2件は各QA READMEがSimulator画面の記録と配布用変換を明記しています。PDF 2件は歴史的な素材検証レポートとしてR1に登録され、納品資料内のDOCX/PDF対応がSOURCE_MAPで記録されています。R1の出典・用途記録に実際の第三者権利疑義やPIIは示されていないため、TECHNICAL_DOCUMENTATION_NO_ADDITIONAL_RIGHTS_BLOCKERへ分類します。UNKNOWNのsourceClassは維持します。R1の汎用RIGHTS_UNVERIFIED表示は、出典・用途に基づく限定判定へ置き換えます。これは個別ライセンスや作者情報の主張ではありません。
+
+W008 runtime packの1,923項目は候補Git refsに存在しません。これは再現条件の制約としてREADMEとR1記録に残し、素材権利のHOLDとは分離します。未収録packがあることを理由に画像の権利保留へ戻しません。
+
+## Git履歴・OSS表示
+
+作者・committerメールの公開は本人承認済みです。履歴中のauthor/committer metadataを書き換える必要はありません。この補足ではメールアドレスを再掲しません。
+
+候補treeにNOTICE/LICENSE/COPYING相当の第三者ライセンスファイルはありません。Package.swiftに外部package依存はなく、package.jsonにも依存packageは記載されていません。既存の第三者OSS表示は削除・変更していません。今後の依存追加時は各依存のライセンスと必要なNOTICEを保持してください。
+
+## 状態と範囲
+
+この補足とREADME/manifest overlayはローカル公開候補への変更案です。元Private履歴・原本・リモートは変更していません。GitHub更新、Public化、push、releaseは未実施です。所有者表明は実装上の権利HOLD解除根拠であり、独立した法的ライセンス調査を意味しません。
